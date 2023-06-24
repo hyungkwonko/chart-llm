@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "5 Year Growth of House Prices vs Affordability",
+    "subtitle": "By English Constituency (2022).  Source:ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "#FeFeF8",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "height": 400,
+  "width": 600,
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ferguswalshe/ferguswalshe.github.io/main/incomevsaffordability.csv"
+      },
+      "mark": {
+        "type": "point",
+        "size": 100,
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "%affordability",
+          "type": "quantitative",
+          "title": "% Affordability",
+          "scale": {
+            "domain": [
+              0,
+              29
+            ]
+          },
+          "axis": {
+            "titleColor": "black",
+            "titleFontSize": 12,
+            "titleFontWeight": "normal",
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "%Growth5years",
+          "type": "quantitative",
+          "title": "%Growth5years",
+          "scale": {
+            "domain": [
+              -3,
+              10
+            ]
+          },
+          "axis": {
+            "titleColor": "black",
+            "titleFontSize": 12,
+            "titleFontWeight": "normal",
+            "grid": false
+          }
+        },
+        "tooltip": [
+          {
+            "field": "ConstituencyName",
+            "type": "nominal",
+            "title": "Constituency"
+          },
+          {
+            "field": "%Growth5years",
+            "type": "nominal",
+            "title": "%Growth5years"
+          },
+          {
+            "field": "%affordability",
+            "type": "nominal",
+            "title": "%affordability"
+          },
+          {
+            "field": "RegionName",
+            "type": "nominal",
+            "title": "Region"
+          }
+        ],
+        "color": {
+          "field": "RegionName",
+          "type": "nominal",
+          "title": "Region",
+          "legend": {
+            "orient": "right",
+            "labelFontSize": 10,
+            "titleFontSize": 12,
+            "titleFontWeight": "normal"
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ferguswalshe/ferguswalshe.github.io/main/incomevsaffordability.csv"
+      },
+      "mark": {
+        "type": "line",
+        "color": "black"
+      },
+      "transform": [
+        {
+          "regression": "%Growth5years",
+          "on": "%affordability",
+          "extent": [
+            0,
+            29
+          ]
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "%affordability",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "%Growth5years",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ferguswalshe/ferguswalshe.github.io/main/incomevsaffordability.csv"
+      },
+      "transform": [
+        {
+          "regression": "%Growth5years",
+          "on": "%affordability",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "#11414f",
+        "x": 550,
+        "align": "left",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ]
+}

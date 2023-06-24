@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Three assets",
+    "subtitle": [
+      "Payoffs over time",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 200,
+  "height": 300,
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/example_bondYields.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "bond1",
+        "bond2",
+        "bond3"
+      ],
+      "as": [
+        "asset",
+        "value"
+      ]
+    },
+    {
+      "filter": "datum.riskFreeRate==0.01"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": {
+      "color": "rgb(128,0,0)"
+    },
+    "color": "rgb(128,0,0)",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": null
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null
+    },
+    "facet": {
+      "field": "asset",
+      "type": "nominal",
+      "title": null,
+      "columns": 3
+    }
+  }
+}

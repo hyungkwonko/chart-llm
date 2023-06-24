@@ -1,0 +1,1001 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Solar Energy Generation",
+    "subtitle": [
+      "Electricity generation from solar, measured in terawatt-hours",
+      "(TWh) per year, Source: Our World in Data"
+    ],
+    "subtitleFontSize": 8,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "data": {
+    "values": [
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1965-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1966-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1967-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1968-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1969-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1970-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1971-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1972-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1973-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1974-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1975-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1976-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1977-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1978-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1979-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1980-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1981-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1982-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1983-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1984-01-01",
+        "Electricity from solar (TWh)": 0.001010101
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1985-01-01",
+        "Electricity from solar (TWh)": 0.001010101
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1986-01-01",
+        "Electricity from solar (TWh)": 0.001010101
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1987-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1988-01-01",
+        "Electricity from solar (TWh)": 0.001010101
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1989-01-01",
+        "Electricity from solar (TWh)": 0.009090909
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1990-01-01",
+        "Electricity from solar (TWh)": 0.0125
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1991-01-01",
+        "Electricity from solar (TWh)": 0.0155
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1992-01-01",
+        "Electricity from solar (TWh)": 0.025087999
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1993-01-01",
+        "Electricity from solar (TWh)": 0.032382999
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1994-01-01",
+        "Electricity from solar (TWh)": 0.034688499
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1995-01-01",
+        "Electricity from solar (TWh)": 0.044840001
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1996-01-01",
+        "Electricity from solar (TWh)": 0.047811411
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1997-01-01",
+        "Electricity from solar (TWh)": 0.056926243
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1998-01-01",
+        "Electricity from solar (TWh)": 0.0670885
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "1999-01-01",
+        "Electricity from solar (TWh)": 0.080198057
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2000-01-01",
+        "Electricity from solar (TWh)": 0.074473247
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2001-01-01",
+        "Electricity from solar (TWh)": 0.194202498
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2002-01-01",
+        "Electricity from solar (TWh)": 0.314754993
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2003-01-01",
+        "Electricity from solar (TWh)": 0.468697757
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2004-01-01",
+        "Electricity from solar (TWh)": 0.751097858
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2005-01-01",
+        "Electricity from solar (TWh)": 1.512383223
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2006-01-01",
+        "Electricity from solar (TWh)": 2.569087744
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2007-01-01",
+        "Electricity from solar (TWh)": 3.877704859
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2008-01-01",
+        "Electricity from solar (TWh)": 7.589071274
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2009-01-01",
+        "Electricity from solar (TWh)": 14.32483482
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2010-01-01",
+        "Electricity from solar (TWh)": 23.49743652
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2011-01-01",
+        "Electricity from solar (TWh)": 47.10554886
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2012-01-01",
+        "Electricity from solar (TWh)": 72.23394012
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2013-01-01",
+        "Electricity from solar (TWh)": 86.54611969
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2014-01-01",
+        "Electricity from solar (TWh)": 97.33773041
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2015-01-01",
+        "Electricity from solar (TWh)": 108.2346039
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2016-01-01",
+        "Electricity from solar (TWh)": 112.4035645
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2017-01-01",
+        "Electricity from solar (TWh)": 122.7574387
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2018-01-01",
+        "Electricity from solar (TWh)": 136.1681213
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2019-01-01",
+        "Electricity from solar (TWh)": 150.4425507
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2020-01-01",
+        "Electricity from solar (TWh)": 175.6517639
+      },
+      {
+        "Entity": "Europe (BP)",
+        "Year": "2021-01-01",
+        "Electricity from solar (TWh)": 195.552124
+      },
+      {
+        "Entity": "United States",
+        "Year": "1965-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1966-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1967-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1968-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1969-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1970-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1971-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1972-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1973-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1974-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1975-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1976-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1977-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1978-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1979-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1980-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1981-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1982-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "United States",
+        "Year": "1983-01-01",
+        "Electricity from solar (TWh)": 0.003
+      },
+      {
+        "Entity": "United States",
+        "Year": "1984-01-01",
+        "Electricity from solar (TWh)": 0.00530101
+      },
+      {
+        "Entity": "United States",
+        "Year": "1985-01-01",
+        "Electricity from solar (TWh)": 0.010737374
+      },
+      {
+        "Entity": "United States",
+        "Year": "1986-01-01",
+        "Electricity from solar (TWh)": 0.014173737
+      },
+      {
+        "Entity": "United States",
+        "Year": "1987-01-01",
+        "Electricity from solar (TWh)": 0.01060303
+      },
+      {
+        "Entity": "United States",
+        "Year": "1988-01-01",
+        "Electricity from solar (TWh)": 0.009185859
+      },
+      {
+        "Entity": "United States",
+        "Year": "1989-01-01",
+        "Electricity from solar (TWh)": 0.253132313
+      },
+      {
+        "Entity": "United States",
+        "Year": "1990-01-01",
+        "Electricity from solar (TWh)": 0.370794952
+      },
+      {
+        "Entity": "United States",
+        "Year": "1991-01-01",
+        "Electricity from solar (TWh)": 0.478252888
+      },
+      {
+        "Entity": "United States",
+        "Year": "1992-01-01",
+        "Electricity from solar (TWh)": 0.408844471
+      },
+      {
+        "Entity": "United States",
+        "Year": "1993-01-01",
+        "Electricity from solar (TWh)": 0.47516188
+      },
+      {
+        "Entity": "United States",
+        "Year": "1994-01-01",
+        "Electricity from solar (TWh)": 0.501872778
+      },
+      {
+        "Entity": "United States",
+        "Year": "1995-01-01",
+        "Electricity from solar (TWh)": 0.514471591
+      },
+      {
+        "Entity": "United States",
+        "Year": "1996-01-01",
+        "Electricity from solar (TWh)": 0.541341245
+      },
+      {
+        "Entity": "United States",
+        "Year": "1997-01-01",
+        "Electricity from solar (TWh)": 0.532695711
+      },
+      {
+        "Entity": "United States",
+        "Year": "1998-01-01",
+        "Electricity from solar (TWh)": 0.524659336
+      },
+      {
+        "Entity": "United States",
+        "Year": "1999-01-01",
+        "Electricity from solar (TWh)": 0.518342078
+      },
+      {
+        "Entity": "United States",
+        "Year": "2000-01-01",
+        "Electricity from solar (TWh)": 0.518512666
+      },
+      {
+        "Entity": "United States",
+        "Year": "2001-01-01",
+        "Electricity from solar (TWh)": 0.574351072
+      },
+      {
+        "Entity": "United States",
+        "Year": "2002-01-01",
+        "Electricity from solar (TWh)": 0.601597607
+      },
+      {
+        "Entity": "United States",
+        "Year": "2003-01-01",
+        "Electricity from solar (TWh)": 0.610654294
+      },
+      {
+        "Entity": "United States",
+        "Year": "2004-01-01",
+        "Electricity from solar (TWh)": 0.698132455
+      },
+      {
+        "Entity": "United States",
+        "Year": "2005-01-01",
+        "Electricity from solar (TWh)": 0.748900652
+      },
+      {
+        "Entity": "United States",
+        "Year": "2006-01-01",
+        "Electricity from solar (TWh)": 0.824432135
+      },
+      {
+        "Entity": "United States",
+        "Year": "2007-01-01",
+        "Electricity from solar (TWh)": 1.095410466
+      },
+      {
+        "Entity": "United States",
+        "Year": "2008-01-01",
+        "Electricity from solar (TWh)": 1.633062601
+      },
+      {
+        "Entity": "United States",
+        "Year": "2009-01-01",
+        "Electricity from solar (TWh)": 2.075960398
+      },
+      {
+        "Entity": "United States",
+        "Year": "2010-01-01",
+        "Electricity from solar (TWh)": 3.013036489
+      },
+      {
+        "Entity": "United States",
+        "Year": "2011-01-01",
+        "Electricity from solar (TWh)": 4.738903999
+      },
+      {
+        "Entity": "United States",
+        "Year": "2012-01-01",
+        "Electricity from solar (TWh)": 9.037014008
+      },
+      {
+        "Entity": "United States",
+        "Year": "2013-01-01",
+        "Electricity from solar (TWh)": 16.03969574
+      },
+      {
+        "Entity": "United States",
+        "Year": "2014-01-01",
+        "Electricity from solar (TWh)": 29.21616173
+      },
+      {
+        "Entity": "United States",
+        "Year": "2015-01-01",
+        "Electricity from solar (TWh)": 39.4262619
+      },
+      {
+        "Entity": "United States",
+        "Year": "2016-01-01",
+        "Electricity from solar (TWh)": 55.42020035
+      },
+      {
+        "Entity": "United States",
+        "Year": "2017-01-01",
+        "Electricity from solar (TWh)": 78.05757904
+      },
+      {
+        "Entity": "United States",
+        "Year": "2018-01-01",
+        "Electricity from solar (TWh)": 94.30808258
+      },
+      {
+        "Entity": "United States",
+        "Year": "2019-01-01",
+        "Electricity from solar (TWh)": 107.9737396
+      },
+      {
+        "Entity": "United States",
+        "Year": "2020-01-01",
+        "Electricity from solar (TWh)": 132.0414124
+      },
+      {
+        "Entity": "United States",
+        "Year": "2021-01-01",
+        "Electricity from solar (TWh)": 165.3565674
+      },
+      {
+        "Entity": "World",
+        "Year": "1965-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1966-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1967-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1968-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1969-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1970-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1971-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1972-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1973-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1974-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1975-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1976-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1977-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1978-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1979-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1980-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1981-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1982-01-01",
+        "Electricity from solar (TWh)": 0
+      },
+      {
+        "Entity": "World",
+        "Year": "1983-01-01",
+        "Electricity from solar (TWh)": 0.003
+      },
+      {
+        "Entity": "World",
+        "Year": "1984-01-01",
+        "Electricity from solar (TWh)": 0.006311111
+      },
+      {
+        "Entity": "World",
+        "Year": "1985-01-01",
+        "Electricity from solar (TWh)": 0.011747475
+      },
+      {
+        "Entity": "World",
+        "Year": "1986-01-01",
+        "Electricity from solar (TWh)": 0.015183838
+      },
+      {
+        "Entity": "World",
+        "Year": "1987-01-01",
+        "Electricity from solar (TWh)": 0.01060303
+      },
+      {
+        "Entity": "World",
+        "Year": "1988-01-01",
+        "Electricity from solar (TWh)": 0.01019596
+      },
+      {
+        "Entity": "World",
+        "Year": "1989-01-01",
+        "Electricity from solar (TWh)": 0.262223244
+      },
+      {
+        "Entity": "World",
+        "Year": "1990-01-01",
+        "Electricity from solar (TWh)": 0.388294935
+      },
+      {
+        "Entity": "World",
+        "Year": "1991-01-01",
+        "Electricity from solar (TWh)": 0.505202889
+      },
+      {
+        "Entity": "World",
+        "Year": "1992-01-01",
+        "Electricity from solar (TWh)": 0.4665851
+      },
+      {
+        "Entity": "World",
+        "Year": "1993-01-01",
+        "Electricity from solar (TWh)": 0.556697547
+      },
+      {
+        "Entity": "World",
+        "Year": "1994-01-01",
+        "Electricity from solar (TWh)": 0.59701395
+      },
+      {
+        "Entity": "World",
+        "Year": "1995-01-01",
+        "Electricity from solar (TWh)": 0.638813794
+      },
+      {
+        "Entity": "World",
+        "Year": "1996-01-01",
+        "Electricity from solar (TWh)": 0.699207962
+      },
+      {
+        "Entity": "World",
+        "Year": "1997-01-01",
+        "Electricity from solar (TWh)": 0.749584794
+      },
+      {
+        "Entity": "World",
+        "Year": "1998-01-01",
+        "Electricity from solar (TWh)": 0.811788976
+      },
+      {
+        "Entity": "World",
+        "Year": "1999-01-01",
+        "Electricity from solar (TWh)": 0.905196905
+      },
+      {
+        "Entity": "World",
+        "Year": "2000-01-01",
+        "Electricity from solar (TWh)": 1.058970094
+      },
+      {
+        "Entity": "World",
+        "Year": "2001-01-01",
+        "Electricity from solar (TWh)": 1.423285365
+      },
+      {
+        "Entity": "World",
+        "Year": "2002-01-01",
+        "Electricity from solar (TWh)": 1.799019575
+      },
+      {
+        "Entity": "World",
+        "Year": "2003-01-01",
+        "Electricity from solar (TWh)": 2.255103827
+      },
+      {
+        "Entity": "World",
+        "Year": "2004-01-01",
+        "Electricity from solar (TWh)": 2.971521616
+      },
+      {
+        "Entity": "World",
+        "Year": "2005-01-01",
+        "Electricity from solar (TWh)": 4.187109947
+      },
+      {
+        "Entity": "World",
+        "Year": "2006-01-01",
+        "Electricity from solar (TWh)": 5.761838913
+      },
+      {
+        "Entity": "World",
+        "Year": "2007-01-01",
+        "Electricity from solar (TWh)": 7.817909718
+      },
+      {
+        "Entity": "World",
+        "Year": "2008-01-01",
+        "Electricity from solar (TWh)": 12.69742298
+      },
+      {
+        "Entity": "World",
+        "Year": "2009-01-01",
+        "Electricity from solar (TWh)": 21.0739727
+      },
+      {
+        "Entity": "World",
+        "Year": "2010-01-01",
+        "Electricity from solar (TWh)": 33.91127014
+      },
+      {
+        "Entity": "World",
+        "Year": "2011-01-01",
+        "Electricity from solar (TWh)": 65.58232117
+      },
+      {
+        "Entity": "World",
+        "Year": "2012-01-01",
+        "Electricity from solar (TWh)": 101.5408783
+      },
+      {
+        "Entity": "World",
+        "Year": "2013-01-01",
+        "Electricity from solar (TWh)": 138.6014557
+      },
+      {
+        "Entity": "World",
+        "Year": "2014-01-01",
+        "Electricity from solar (TWh)": 196.3565063
+      },
+      {
+        "Entity": "World",
+        "Year": "2015-01-01",
+        "Electricity from solar (TWh)": 254.7397156
+      },
+      {
+        "Entity": "World",
+        "Year": "2016-01-01",
+        "Electricity from solar (TWh)": 327.5842285
+      },
+      {
+        "Entity": "World",
+        "Year": "2017-01-01",
+        "Electricity from solar (TWh)": 445.4662781
+      },
+      {
+        "Entity": "World",
+        "Year": "2018-01-01",
+        "Electricity from solar (TWh)": 576.230896
+      },
+      {
+        "Entity": "World",
+        "Year": "2019-01-01",
+        "Electricity from solar (TWh)": 703.9497681
+      },
+      {
+        "Entity": "World",
+        "Year": "2020-01-01",
+        "Electricity from solar (TWh)": 846.2293701
+      },
+      {
+        "Entity": "World",
+        "Year": "2021-01-01",
+        "Electricity from solar (TWh)": 1032.501221
+      }
+    ]
+  },
+  "width": 175,
+  "height": 175,
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "axis": {
+            "grid": false,
+            "title": null
+          }
+        },
+        "y": {
+          "field": "Electricity from solar (TWh)",
+          "type": "quantitative",
+          "axis": {
+            "grid": false
+          }
+        },
+        "color": {
+          "field": "Entity",
+          "type": "nominal",
+          "title": null,
+          "legend": {
+            "orient": "top-left"
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": "line"
+        },
+        {
+          "params": [
+            {
+              "name": "label",
+              "select": {
+                "type": "point",
+                "encodings": [
+                  "x"
+                ],
+                "nearest": true,
+                "on": "mouseover"
+              }
+            }
+          ],
+          "mark": "point",
+          "encoding": {
+            "opacity": {
+              "condition": {
+                "param": "label",
+                "empty": false,
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "param": "label",
+            "empty": false
+          }
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "color": "gray"
+          },
+          "encoding": {
+            "x": {
+              "type": "temporal",
+              "field": "Year",
+              "aggregate": "min"
+            }
+          }
+        },
+        {
+          "encoding": {
+            "text": {
+              "type": "quantitative",
+              "field": "Electricity from solar (TWh)"
+            },
+            "x": {
+              "type": "temporal",
+              "field": "Year"
+            },
+            "y": {
+              "type": "quantitative",
+              "field": "Electricity from solar (TWh)"
+            }
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "stroke": "white",
+                "strokeWidth": 2,
+                "align": "left",
+                "dx": 5,
+                "dy": -5
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 5,
+                "dy": -5
+              },
+              "encoding": {
+                "color": {
+                  "type": "nominal",
+                  "field": "Entity"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

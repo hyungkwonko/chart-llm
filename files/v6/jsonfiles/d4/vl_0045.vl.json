@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "name": "Pac-Man Pie Chart",
+  "usermeta": {
+    "source": "PAC-MAN\u2122 & \u00a91980 BANDAI NAMCO Entertainment Inc.",
+    "tags": [
+      "Pie Chart",
+      "Interactive"
+    ]
+  },
+  "height": 200,
+  "width": 200,
+  "padding": 0,
+  "config": {
+    "font": "Roboto",
+    "style": {
+      "guide-label": {
+        "fill": "#44475a"
+      },
+      "guide-title": {
+        "fill": "#44475a"
+      }
+    },
+    "axis": {
+      "domainColor": "#44475a",
+      "tickColor": "#44475a"
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "category": "Pac-Man",
+        "value": 305,
+        "order": 1
+      },
+      {
+        "category": "Not Pac-Man",
+        "value": 55,
+        "order": 2
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "outerRadius": 100
+  },
+  "selection": {
+    "element": {
+      "type": "multi",
+      "fields": [
+        "category"
+      ],
+      "bind": "legend"
+    }
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "range": [
+          2.051,
+          8.334
+        ]
+      },
+      "stack": true
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Pac-Man",
+          "Not Pac-Man"
+        ],
+        "range": [
+          "#f2af29",
+          "#44475a"
+        ]
+      },
+      "legend": {
+        "title": null,
+        "direction": "vertical",
+        "orient": "none",
+        "legendX": 220,
+        "legendY": 87.5,
+        "fillColor": "transparent"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "element",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "order": {
+      "field": "order",
+      "type": "quantitative"
+    }
+  },
+  "view": {
+    "stroke": null
+  }
+}

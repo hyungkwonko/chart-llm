@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Productivity, G7",
+    "subtitle": [
+      "GDP per hour worked. US dollars, 1970-2020. Source: OECD",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/data_GDPperHourOECD.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.LOCATION!='OECD'"
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "point": false
+  },
+  "encoding": {
+    "x": {
+      "field": "TIME",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "LOCATION",
+      "type": "nominal",
+      "scale": {
+        "range": [
+          "yellow",
+          "orange",
+          "lightgrey",
+          "black",
+          "lightblue",
+          "pink",
+          "lightgreen"
+        ]
+      },
+      "title": null,
+      "legend": {
+        "orient": "top-left"
+      }
+    }
+  }
+}

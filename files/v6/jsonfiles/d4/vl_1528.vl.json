@@ -1,0 +1,90 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-02511300044ae6e18eb7302b5883863b"
+  },
+  "mark": "line",
+  "background": "white",
+  "encoding": {
+    "x": {
+      "axis": {
+        "title": ""
+      },
+      "field": "Year",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "Megawatt-hours",
+      "type": "quantitative"
+    }
+  },
+  "height": 450,
+  "title": "Total US Electricity Consumption (all sectors)",
+  "width": 700,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-02511300044ae6e18eb7302b5883863b": [
+      {
+        "Year": "2010-01-01T00:00:00",
+        "Megawatt-hours": 3754841377
+      },
+      {
+        "Year": "2011-01-01T00:00:00",
+        "Megawatt-hours": 3749846184
+      },
+      {
+        "Year": "2012-01-01T00:00:00",
+        "Megawatt-hours": 3694649791
+      },
+      {
+        "Year": "2013-01-01T00:00:00",
+        "Megawatt-hours": 3724867829.370001
+      },
+      {
+        "Year": "2014-01-01T00:00:00",
+        "Megawatt-hours": 3764700270.750001
+      },
+      {
+        "Year": "2015-01-01T00:00:00",
+        "Megawatt-hours": 3758992392.5399966
+      },
+      {
+        "Year": "2016-01-01T00:00:00",
+        "Megawatt-hours": 3762461627.649998
+      },
+      {
+        "Year": "2017-01-01T00:00:00",
+        "Megawatt-hours": 3723355980.0500045
+      },
+      {
+        "Year": "2018-01-01T00:00:00",
+        "Megawatt-hours": 3860118799.6400013
+      },
+      {
+        "Year": "2019-01-01T00:00:00",
+        "Megawatt-hours": 3811150469.4899983
+      },
+      {
+        "Year": "2020-01-01T00:00:00",
+        "Megawatt-hours": 3717674484.46
+      },
+      {
+        "Year": "2021-01-01T00:00:00",
+        "Megawatt-hours": 3805874258.939997
+      },
+      {
+        "Year": "2022-01-01T00:00:00",
+        "Megawatt-hours": 3909052880.910002
+      },
+      {
+        "Year": "2023-01-01T00:00:00",
+        "Megawatt-hours": 613467866.7600002
+      }
+    ]
+  }
+}

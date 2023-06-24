@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "IMF Lending Outstanding as a percentage of GDP",
+    "subtitle": "Ratio of Credit Outstanding to GDP, Source IMF",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/dannysupple/dannysupple.github.io/main/data_IMF_creditOutstanding(2).csv"
+  },
+  "height": 300,
+  "width": 260,
+  "mark": {
+    "type": "bar",
+    "color": "#86d0bb"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "Totals_GDP",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": false
+      }
+    }
+  },
+  "config": {}
+}

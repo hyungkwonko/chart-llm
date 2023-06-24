@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": [
+      "Teams points and expected goal difference",
+      "in the 2021-22 Premier League"
+    ],
+    "subtitle": [
+      "Expected Goal Difference (x), Points (y).",
+      "Data from Fbref, all stats normalised per game."
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/vikrajendran/vikrajendran.github.io/main/PLTable1.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "color": "#5b92e5",
+    "opacity": 0.7
+  },
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "Expected Goal Difference per Game",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -1,
+          1.6
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "y": {
+      "field": "Points per Game",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0.5,
+          2.6
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "Team",
+        "type": "ordinal",
+        "title": "Team"
+      },
+      {
+        "field": "Points per Game",
+        "type": "quantitative",
+        "title": "Points per Game",
+        "format": ".2f"
+      },
+      {
+        "field": "Expected Goal Difference per Game",
+        "type": "quantitative",
+        "title": "Expected Goal Difference per Game",
+        "format": ".2f"
+      }
+    ]
+  }
+}

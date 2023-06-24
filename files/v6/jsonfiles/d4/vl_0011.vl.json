@@ -1,0 +1,43 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/scottyhq/snotel/0d81e09e0c53f92c68dc8f67f8f64b4266e56a17/301_CA_SNTL_slim.json"
+  },
+  "mark": "line",
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "datetime",
+        "type": "temporal"
+      },
+      {
+        "field": "SNWD",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "datetime",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "SNWD",
+      "type": "quantitative"
+    }
+  },
+  "selection": {
+    "selector014": {
+      "type": "interval",
+      "bind": "scales",
+      "encodings": [
+        "x",
+        "y"
+      ]
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
+}

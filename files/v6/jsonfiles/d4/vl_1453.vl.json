@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/GraemeHawker/GBEnergyDataManager/20f06b76bfae3b354000dc3729656e9674c244cc/BMRA/static/BMRA/regional_data_3.csv",
+    "name": "regional_generation_bytype",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "bar",
+    "orient": "horizontal",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "aggregate": "sum",
+      "field": "intensity",
+      "axis": {
+        "title": "Total intensity"
+      }
+    },
+    "y": {
+      "field": "marginal_region",
+      "axis": {
+        "title": null
+      },
+      "sort": [
+        "North Scotland",
+        "South Scotland",
+        "Northern",
+        "North Western",
+        "Yorkshire",
+        "Merseyside and North Wales",
+        "South Wales",
+        "Midlands",
+        "East Midlands",
+        "Eastern",
+        "South Western",
+        "Southern",
+        "London",
+        "Southern Eastern"
+      ]
+    },
+    "color": {
+      "field": "marginal_region",
+      "scale": {
+        "scheme": "tableau20"
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bubbleplot with religiosity on the x axis, median age on the y axis, and total population on size.",
+  "title": {
+    "text": "Is there a relationship between a country's religiosity level and the median age of its population?",
+    "subtitle": "Source: Worldometers and Wikipedia",
+    "fontSize": 12,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/MedianAge_Religiosity_Bubble.csv"
+  },
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "field": "Median_Age",
+      "legend": "",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "turbo"
+      }
+    },
+    "y": {
+      "field": "Median_Age",
+      "type": "quantitative",
+      "title": "Median Age (years)"
+    },
+    "x": {
+      "field": "Religiosity",
+      "type": "quantitative",
+      "title": "Religiosity (%)"
+    },
+    "size": {
+      "field": "Total_Population",
+      "type": "quantitative",
+      "title": "Population"
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "Median_Age",
+        "type": "quantitative",
+        "title": "Median Age"
+      },
+      {
+        "field": "Religiosity",
+        "type": "quantitative",
+        "title": "Religiosity (%)"
+      },
+      {
+        "field": "Total_Population",
+        "type": "quantitative",
+        "title": "Population"
+      }
+    ]
+  }
+}

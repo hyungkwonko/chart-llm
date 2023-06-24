@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Drugs deaths in Scotland",
+    "subtitle": "Annual deaths with drugs as reported cause. Source: NRS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "whitesmoke",
+    "subtitleColor": "whitesmoke"
+  },
+  "config": {
+    "background": "#122b39",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/extreme/data_Glasgow_ScottishDrugDeaths.csv"
+  },
+  "repeat": {
+    "layer": [
+      "All",
+      "Heroin",
+      "Methadone",
+      "Benzodiazepines",
+      "Gabapentin/Pregabalin",
+      "Cocaine",
+      "Ectasy",
+      "Amphetamines",
+      "Alcohol"
+    ]
+  },
+  "spec": {
+    "height": 300,
+    "width": 300,
+    "mark": {
+      "type": "line",
+      "point": true,
+      "strokeWidth": 2
+    },
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {
+          "title": null,
+          "grid": false,
+          "labelSeparation": 10,
+          "domainColor": "dimgrey",
+          "labelColor": "whitesmoke",
+          "tickColor": "pink",
+          "gridColor": "dimgrey"
+        }
+      },
+      "y": {
+        "field": {
+          "repeat": "layer"
+        },
+        "type": "quantitative",
+        "axis": {
+          "title": null,
+          "grid": false,
+          "labelSeparation": 10,
+          "domainColor": "dimgrey",
+          "labelColor": "whitesmoke",
+          "tickColor": "pink",
+          "gridColor": "dimgrey"
+        },
+        "title": null
+      },
+      "color": {
+        "datum": {
+          "repeat": "layer"
+        },
+        "legend": {
+          "orient": "top-left",
+          "labelColor": "whitesmoke"
+        },
+        "scale": {
+          "scheme": "set1"
+        }
+      }
+    }
+  }
+}

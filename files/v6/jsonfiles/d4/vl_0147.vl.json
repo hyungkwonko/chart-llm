@@ -1,0 +1,936 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    },
+    "title": {
+      "anchor": "start",
+      "font": "Fira Sans",
+      "fontSize": 16
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "graticule": true
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "lightgray"
+      }
+    },
+    {
+      "data": {
+        "url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/world-110m.json",
+        "format": {
+          "feature": "countries",
+          "type": "topojson"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgray",
+        "stroke": "black"
+      }
+    },
+    {
+      "data": {
+        "name": "data-a49a45ae22582172d58ca37bac1c4f7f"
+      },
+      "mark": "geoshape",
+      "encoding": {
+        "color": {
+          "type": "quantitative",
+          "field": "population"
+        },
+        "text": {
+          "type": "nominal",
+          "field": "name:en"
+        },
+        "tooltip": [
+          {
+            "type": "nominal",
+            "field": "name"
+          },
+          {
+            "type": "quantitative",
+            "field": "population"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "name": "data-a49a45ae22582172d58ca37bac1c4f7f"
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "dy": 10,
+        "font": "Ubuntu",
+        "fontSize": 12
+      },
+      "encoding": {
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "text": {
+          "type": "nominal",
+          "field": "name:en"
+        },
+        "tooltip": [
+          {
+            "type": "nominal",
+            "field": "name"
+          },
+          {
+            "type": "quantitative",
+            "field": "population"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "filter": "datum.population > 300000"
+        }
+      ]
+    }
+  ],
+  "height": 400,
+  "projection": {
+    "parallels": [
+      35,
+      65
+    ],
+    "rotate": [
+      -15,
+      -52,
+      0
+    ],
+    "scale": 400,
+    "type": "conicConformal"
+  },
+  "title": "European (major) Capitals",
+  "width": 500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-a49a45ae22582172d58ca37bac1c4f7f": [
+      {
+        "latitude": 51.5073219,
+        "longitude": -0.1276474,
+        "name": "London",
+        "name:en": "London",
+        "population": "8416535",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -0.1276474,
+            51.5073219
+          ]
+        }
+      },
+      {
+        "latitude": 37.9839412,
+        "longitude": 23.7283052,
+        "name": "\u0391\u03b8\u03ae\u03bd\u03b1",
+        "name:en": "Athens",
+        "population": "3090508",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            23.7283052,
+            37.9839412
+          ]
+        }
+      },
+      {
+        "latitude": 46.0499803,
+        "longitude": 14.5068602,
+        "name": "Ljubljana",
+        "name:en": "Ljubljana",
+        "population": "272000",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.5068602,
+            46.0499803
+          ]
+        }
+      },
+      {
+        "latitude": 55.6867243,
+        "longitude": 12.5700724,
+        "name": "K\u00f8benhavn",
+        "name:en": "Copenhagen",
+        "population": "613288",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            12.5700724,
+            55.6867243
+          ]
+        }
+      },
+      {
+        "latitude": 48.2083537,
+        "longitude": 16.3725042,
+        "name": "Wien",
+        "name:en": "Vienna",
+        "population": "1897481",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            16.3725042,
+            48.2083537
+          ]
+        }
+      },
+      {
+        "latitude": 48.8566969,
+        "longitude": 2.3514616,
+        "name": "Paris",
+        "name:en": "Paris",
+        "population": "2187526",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.3514616,
+            48.8566969
+          ]
+        }
+      },
+      {
+        "latitude": 46.9482713,
+        "longitude": 7.4514512,
+        "name": "Bern",
+        "name:en": "Bern",
+        "population": "128848",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            7.4514512,
+            46.9482713
+          ]
+        }
+      },
+      {
+        "latitude": 59.9133301,
+        "longitude": 10.7389701,
+        "name": "Oslo",
+        "name:en": "Oslo",
+        "population": "1036059",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            10.7389701,
+            59.9133301
+          ]
+        }
+      },
+      {
+        "latitude": 40.4167047,
+        "longitude": -3.7035825,
+        "name": "Madrid",
+        "name:en": "Madrid",
+        "population": "3233527",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -3.7035825,
+            40.4167047
+          ]
+        }
+      },
+      {
+        "latitude": 39.9207486,
+        "longitude": 32.8540093,
+        "name": "Ankara",
+        "name:en": "Ankara",
+        "population": "4338620",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            32.8540093,
+            39.9207486
+          ]
+        }
+      },
+      {
+        "latitude": 59.3251172,
+        "longitude": 18.0710935,
+        "name": "Stockholm",
+        "name:en": "Stockholm",
+        "population": "829417",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            18.0710935,
+            59.3251172
+          ]
+        }
+      },
+      {
+        "latitude": 50.4500336,
+        "longitude": 30.5241361,
+        "name": "\u041a\u0438\u0457\u0432",
+        "name:en": "Kyiv",
+        "population": "2909697",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            30.5241361,
+            50.4500336
+          ]
+        }
+      },
+      {
+        "latitude": 53.902334,
+        "longitude": 27.5618791,
+        "name": "\u041c\u0438\u043d\u0441\u043a",
+        "name:en": "Minsk",
+        "population": "2020600",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            27.5618791,
+            53.902334
+          ]
+        }
+      },
+      {
+        "latitude": 56.9493977,
+        "longitude": 24.1051846,
+        "name": "R\u012bga",
+        "name:en": "Riga",
+        "population": "698529",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            24.1051846,
+            56.9493977
+          ]
+        }
+      },
+      {
+        "latitude": 54.6870458,
+        "longitude": 25.2829111,
+        "name": "Vilnius",
+        "name:en": "Vilnius",
+        "population": "526356",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            25.2829111,
+            54.6870458
+          ]
+        }
+      },
+      {
+        "latitude": 36.8002068,
+        "longitude": 10.1857757,
+        "name": "\u062a\u0648\u0646\u0633",
+        "name:en": "Tunis",
+        "population": "728453",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            10.1857757,
+            36.8002068
+          ]
+        }
+      },
+      {
+        "latitude": 62.012,
+        "longitude": -6.768,
+        "name": "T\u00f3rshavn",
+        "name:en": "T\u00f3rshavn",
+        "population": "12620",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -6.768,
+            62.012
+          ]
+        }
+      },
+      {
+        "latitude": 59.4372155,
+        "longitude": 24.7453688,
+        "name": "Tallinn",
+        "name:en": "Tallinn",
+        "population": "444563",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            24.7453688,
+            59.4372155
+          ]
+        }
+      },
+      {
+        "latitude": 49.6112768,
+        "longitude": 6.129799,
+        "name": "Luxembourg",
+        "name:en": "Luxembourg",
+        "population": "122273",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            6.129799,
+            49.6112768
+          ]
+        }
+      },
+      {
+        "latitude": 42.5069391,
+        "longitude": 1.5212467,
+        "name": "Andorra la Vella",
+        "name:en": "Andorra la Vella",
+        "population": "24678",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1.5212467,
+            42.5069391
+          ]
+        }
+      },
+      {
+        "latitude": 44.8178131,
+        "longitude": 20.4568974,
+        "name": "\u0411\u0435\u043e\u0433\u0440\u0430\u0434",
+        "name:en": "Belgrade",
+        "population": "1166763",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            20.4568974,
+            44.8178131
+          ]
+        }
+      },
+      {
+        "latitude": 41.8933203,
+        "longitude": 12.4829321,
+        "name": "Roma",
+        "name:en": "Rome",
+        "population": "2864731",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            12.4829321,
+            41.8933203
+          ]
+        }
+      },
+      {
+        "latitude": 47.4983815,
+        "longitude": 19.0404707,
+        "name": "Budapest",
+        "name:en": "Budapest",
+        "population": "1759407",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            19.0404707,
+            47.4983815
+          ]
+        }
+      },
+      {
+        "latitude": 44.4361414,
+        "longitude": 26.1027202,
+        "name": "Bucure\u0219ti",
+        "name:en": "Bucharest",
+        "population": "1883425",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            26.1027202,
+            44.4361414
+          ]
+        }
+      },
+      {
+        "latitude": 49.4568142,
+        "longitude": -2.5389979,
+        "name": "St Peter Port",
+        "name:en": "Saint Peter Port",
+        "population": "18207",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -2.5389979,
+            49.4568142
+          ]
+        }
+      },
+      {
+        "latitude": 42.4415238,
+        "longitude": 19.2621081,
+        "name": "Podgorica",
+        "name:en": "Podgorica",
+        "population": "150799",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            19.2621081,
+            42.4415238
+          ]
+        }
+      },
+      {
+        "latitude": 47.0245117,
+        "longitude": 28.8322923,
+        "name": "Chi\u0219in\u0103u",
+        "name:en": "Chi\u0219in\u0103u",
+        "population": "750000",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            28.8322923,
+            47.0245117
+          ]
+        }
+      },
+      {
+        "latitude": 41.9960924,
+        "longitude": 21.4316495,
+        "name": "\u0421\u043a\u043e\u043f\u0458\u0435",
+        "name:en": "Skopje",
+        "population": "668500",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.4316495,
+            41.9960924
+          ]
+        }
+      },
+      {
+        "latitude": 52.5170365,
+        "longitude": 13.3888599,
+        "name": "Berlin",
+        "name:en": "Berlin",
+        "population": "3600000",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            13.3888599,
+            52.5170365
+          ]
+        }
+      },
+      {
+        "latitude": 38.7077507,
+        "longitude": -9.1365919,
+        "name": "Lisboa",
+        "name:en": "Lisbon",
+        "population": "552700",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -9.1365919,
+            38.7077507
+          ]
+        }
+      },
+      {
+        "latitude": 36.140807,
+        "longitude": -5.3541295,
+        "name": "Gibraltar",
+        "name:en": "Gibraltar",
+        "population": "32577",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -5.3541295,
+            36.140807
+          ]
+        }
+      },
+      {
+        "latitude": 52.3727598,
+        "longitude": 4.8936041,
+        "name": "Amsterdam",
+        "name:en": "Amsterdam",
+        "population": "841282",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8936041,
+            52.3727598
+          ]
+        }
+      },
+      {
+        "latitude": 43.9363996,
+        "longitude": 12.4466991,
+        "name": "Citt\u00e0 di San Marino",
+        "name:en": "City of San Marino",
+        "population": "4211",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            12.4466991,
+            43.9363996
+          ]
+        }
+      },
+      {
+        "latitude": 34.022405,
+        "longitude": -6.834543,
+        "name": "Rabat \u2d54\u2d31\u2d30\u2d5f \u0627\u0644\u0631\u0628\u0627\u0637",
+        "name:en": "Rabat",
+        "population": "1650000",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -6.834543,
+            34.022405
+          ]
+        }
+      },
+      {
+        "latitude": 36.7753606,
+        "longitude": 3.0601882,
+        "name": "Alger \u2d37\u2d63\u2d30\u2d62\u2d3b\u2d54 \u0627\u0644\u062c\u0632\u0627\u0626\u0631",
+        "name:en": "Algiers",
+        "population": "3415811",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            3.0601882,
+            36.7753606
+          ]
+        }
+      },
+      {
+        "latitude": 41.9034912,
+        "longitude": 12.4528349,
+        "name": "Citt\u00e0 del Vaticano",
+        "name:en": "Vatican City",
+        "population": "824",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            12.4528349,
+            41.9034912
+          ]
+        }
+      },
+      {
+        "latitude": 52.2319581,
+        "longitude": 21.0067249,
+        "name": "Warszawa",
+        "name:en": "Warsaw",
+        "population": "1744351",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.0067249,
+            52.2319581
+          ]
+        }
+      },
+      {
+        "latitude": 48.1516988,
+        "longitude": 17.1093063,
+        "name": "Bratislava",
+        "name:en": "Bratislava",
+        "population": "432801",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            17.1093063,
+            48.1516988
+          ]
+        }
+      },
+      {
+        "latitude": 60.1674881,
+        "longitude": 24.9427473,
+        "name": "Helsinki",
+        "name:en": "Helsinki",
+        "population": "657291",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            24.9427473,
+            60.1674881
+          ]
+        }
+      },
+      {
+        "latitude": 35.8989818,
+        "longitude": 14.5136759,
+        "name": "Valletta",
+        "name:en": "Valletta",
+        "population": "5721",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.5136759,
+            35.8989818
+          ]
+        }
+      },
+      {
+        "latitude": 45.8131847,
+        "longitude": 15.9771774,
+        "name": "Zagreb",
+        "name:en": "Zagreb",
+        "population": "688163",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            15.9771774,
+            45.8131847
+          ]
+        }
+      },
+      {
+        "latitude": 50.0874654,
+        "longitude": 14.4212535,
+        "name": "Praha",
+        "name:en": "Prague",
+        "population": "1324277",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.4212535,
+            50.0874654
+          ]
+        }
+      },
+      {
+        "latitude": 50.8465573,
+        "longitude": 4.351697,
+        "name": "Bruxelles - Brussel",
+        "name:en": "Brussels",
+        "population": "153377",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.351697,
+            50.8465573
+          ]
+        }
+      },
+      {
+        "latitude": 42.6978634,
+        "longitude": 23.3221789,
+        "name": "\u0421\u043e\u0444\u0438\u044f",
+        "name:en": "Sofia",
+        "population": "1286383",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            23.3221789,
+            42.6978634
+          ]
+        }
+      },
+      {
+        "latitude": 43.7311424,
+        "longitude": 7.4197576,
+        "name": "Monaco",
+        "name:en": "Monaco",
+        "population": "36371",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            7.4197576,
+            43.7311424
+          ]
+        }
+      },
+      {
+        "latitude": 41.3268733,
+        "longitude": 19.8187913,
+        "name": "Tiran\u00eb",
+        "name:en": "Tirana",
+        "population": "557422",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            19.8187913,
+            41.3268733
+          ]
+        }
+      },
+      {
+        "latitude": 35.1739302,
+        "longitude": 33.364726,
+        "name": "\u039b\u03b5\u03c5\u03ba\u03c9\u03c3\u03af\u03b1",
+        "name:en": "Nicosia",
+        "population": "310355",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            33.364726,
+            35.1739302
+          ]
+        }
+      },
+      {
+        "latitude": 47.1392862,
+        "longitude": 9.5227962,
+        "name": "Vaduz",
+        "name:en": "Vaduz",
+        "population": "5229",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            9.5227962,
+            47.1392862
+          ]
+        }
+      },
+      {
+        "latitude": 43.8519774,
+        "longitude": 18.3866868,
+        "name": "Sarajevo",
+        "name:en": "Sarajevo",
+        "population": "271194",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            18.3866868,
+            43.8519774
+          ]
+        }
+      },
+      {
+        "latitude": 64.145981,
+        "longitude": -21.9422367,
+        "name": "Reykjav\u00edk",
+        "name:en": "Reykjavik",
+        "population": "127333",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -21.9422367,
+            64.145981
+          ]
+        }
+      },
+      {
+        "latitude": 54.149774,
+        "longitude": -4.4779021,
+        "name": "Douglas",
+        "name:en": "Douglas",
+        "population": "27938",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -4.4779021,
+            54.149774
+          ]
+        }
+      },
+      {
+        "latitude": 49.1856637,
+        "longitude": -2.1102277,
+        "name": "St. Helier",
+        "name:en": "St. Helier",
+        "population": "32522",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -2.1102277,
+            49.1856637
+          ]
+        }
+      },
+      {
+        "latitude": 42.6638771,
+        "longitude": 21.1640849,
+        "name": "Prishtin\u00eb",
+        "name:en": "Pristina",
+        "population": "145149",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.1640849,
+            42.6638771
+          ]
+        }
+      },
+      {
+        "latitude": 53.3497645,
+        "longitude": -6.2602732,
+        "name": "Dublin",
+        "name:en": "Dublin",
+        "population": "554554",
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -6.2602732,
+            53.3497645
+          ]
+        }
+      }
+    ]
+  }
+}

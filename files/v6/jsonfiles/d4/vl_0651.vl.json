@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Ether",
+    "subtitle": "Daily volume (x), vs Price change (y)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#179fdb",
+    "subtitleColor": "#179fdb"
+  },
+  "config": {
+    "background": "#122b39",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 295,
+  "height": 300,
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/dataETH.csv"
+  },
+  "mark": {
+    "type": "circle",
+    "color": "hotpink",
+    "opacity": 0.5
+  },
+  "transform": [
+    {
+      "calculate": "replace(datum.Change,'%','')/100",
+      "as": "change"
+    },
+    {
+      "filter": {
+        "field": "change",
+        "range": [
+          -0.3,
+          0.3
+        ]
+      }
+    },
+    {
+      "calculate": "log(datum.Volume)",
+      "as": "logVol"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Volume",
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "domainColor": "dimgrey",
+        "labelColor": "#00a767",
+        "tickColor": "pink",
+        "gridColor": "dimgrey"
+      }
+    },
+    "y": {
+      "field": "change",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": false,
+        "domainColor": "dimgrey",
+        "labelColor": "#00a767",
+        "tickColor": "pink",
+        "gridColor": "dimgrey",
+        "format": "%"
+      },
+      "scale": {
+        "domain": [
+          -0.3,
+          0.3
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stacked column/bar",
+  "width": "container",
+  "title": {
+    "text": "Total population by region, 1952 to 2017"
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "timeUnit": "year",
+        "field": "year",
+        "range": [
+          1952,
+          2017
+        ]
+      }
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "pop",
+          "as": "total_pop"
+        }
+      ],
+      "groupby": [
+        "region",
+        "year"
+      ]
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "year",
+      "type": "ordinal",
+      "axis": {
+        "title": null,
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "total_pop",
+      "type": "quantitative",
+      "axis": {
+        "title": null
+      }
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Africa",
+          "Americas",
+          "Asia",
+          "Europe"
+        ],
+        "range": [
+          "#08C5ED",
+          "#80D322",
+          "#FF6973",
+          "#FFDC25"
+        ]
+      },
+      "legend": {
+        "title": null
+      }
+    },
+    "opacity": {
+      "value": 0.8
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "ordinal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "region",
+        "type": "nominal",
+        "title": "Continent"
+      },
+      {
+        "field": "total_pop",
+        "type": "quantitative",
+        "title": "Total population",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

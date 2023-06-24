@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/Data/credit_Score_mortgage%20(1).csv"
+  },
+  "mark": "bar",
+  "width": 600,
+  "height": 300,
+  "title": {
+    "text": " US Mortgage Originations by Credit Scores*",
+    "subtitle": "Biilion Dollars. 2003-2021. Source: Federal  Reserve Bank of New York. *Credit Score is Equifax Riskscore 3.0",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "bandSelector"
+      }
+    },
+    {
+      "filter": {
+        "field": "band",
+        "oneOf": [
+          "760+",
+          "<620",
+          "620-659",
+          "660-719",
+          "720-759"
+        ]
+      }
+    }
+  ],
+  "selection": {
+    "bandSelector": {
+      "type": "single",
+      "fields": [
+        "band"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "<620",
+          "620-659",
+          "660-719",
+          "720-759",
+          "760+"
+        ],
+        "name": "Choose Credit Score"
+      }
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "title": "Mortgage Originations ($, Billions)",
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "band",
+      "type": "nominal",
+      "legend": {
+        "orient": "top-right",
+        "columns": 1
+      },
+      "scale": {
+        "scheme": "yellowgreenblue"
+      },
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "band",
+        "title": "Credit Score"
+      },
+      {
+        "field": "Year",
+        "type": "temporal",
+        "timeUnit": "yearquarter",
+        "title": "Date"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Mortgage Originations (Billion Dollars)"
+      },
+      {
+        "field": "value_%",
+        "type": "quantitative",
+        "title": "Share of Quarterly total(%)",
+        "format": ".4"
+      }
+    ]
+  }
+}

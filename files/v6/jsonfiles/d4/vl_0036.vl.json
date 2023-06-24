@@ -1,0 +1,58 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "hconcat": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/mobility.csv"
+      },
+      "mark": "rect",
+      "encoding": {
+        "color": {
+          "aggregate": "count",
+          "type": "quantitative"
+        },
+        "x": {
+          "bin": {
+            "maxbins": 10
+          },
+          "field": "Student_teacher_ratio",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "State",
+          "type": "ordinal"
+        }
+      },
+      "height": 400
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/mobility.csv"
+      },
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "axis": {
+            "title": "Mobility Score"
+          },
+          "bin": true,
+          "field": "Mobility",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "axis": {
+            "title": "Mobility Score Distribution"
+          },
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300,
+  "height": 250,
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/total-share-renewable-w9.csv"
+  },
+  "title": {
+    "text": "Oil consumption",
+    "subtitle": "Sum of oil consumption for different entities, Source: Our World in Data",
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "type": "temporal",
+      "field": "Year",
+      "axis": {
+        "grid": false,
+        "ticks": false,
+        "title": null
+      }
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Oil Consumption - TWh (zero filled)",
+      "axis": {
+        "grid": false,
+        "ticks": true
+      },
+      "stack": "center"
+    },
+    "color": {
+      "field": "Entity",
+      "scale": {
+        "scheme": "greens"
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Entity"
+      },
+      {
+        "field": "Oil Consumption - TWh (zero filled)",
+        "type": "quantitative"
+      },
+      {
+        "field": "Year",
+        "type": "temporal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart of UK debt outstanding. Demo of string and date functions",
+  "title": {
+    "text": "UK debt - cumlative",
+    "subtitle": [
+      "Outstanding bonds by date of issuance. \u00a3 billion",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 400,
+  "width": 300,
+  "transform": [
+    {
+      "calculate": "datum.totalCumulative/1000",
+      "as": "totalBillion"
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/GiltsInIssueClean.csv"
+  },
+  "mark": {
+    "type": "point",
+    "color": "red"
+  },
+  "encoding": {
+    "x": {
+      "field": "issueYear",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "totalBillion",
+      "type": "quantitative",
+      "title": null
+    }
+  }
+}

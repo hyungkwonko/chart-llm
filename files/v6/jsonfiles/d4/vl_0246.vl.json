@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": [
+      "Difference between Men's and Women's Team Performance",
+      "vs Gender Equality"
+    ],
+    "subtitle": [
+      "UN Gender Inequality Index (x), Percentage Difference between",
+      "Men's and Women's FIFA Ranking Points (y). 2021 data"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/vikrajendran/vikrajendran.github.io/main/GenderPercentDiff.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "color": "#5b92e5",
+    "opacity": 0.7
+  },
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "Gender Inequality Index",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          0.8
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": [
+        "\u27f5                                                            \u27f6",
+        "More Equal                                            Less Equal"
+      ]
+    },
+    "y": {
+      "field": "Percentage Difference",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -60,
+          70
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": [
+        "Better Women's Team                        Better Men's Team",
+        "\u27f5                                                                \u27f6"
+      ]
+    },
+    "tooltip": [
+      {
+        "field": "Country Name",
+        "type": "ordinal",
+        "title": "Country"
+      },
+      {
+        "field": "Percentage Difference",
+        "type": "quantitative",
+        "title": "Percentage Difference",
+        "format": ".2f"
+      },
+      {
+        "field": "Gender Inequality Index",
+        "type": "quantitative",
+        "title": "Gender Inequality Index",
+        "format": ".2f"
+      }
+    ]
+  }
+}

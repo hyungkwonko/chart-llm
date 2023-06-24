@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/US%20Migration%205%20CSV.csv"
+  },
+  "title": {
+    "fontSize": 13,
+    "subtitleFontSize": 13,
+    "text": "Total Immigrants by State as percentage of population",
+    "subtitle": [
+      "Source: Homeland Security",
+      ""
+    ],
+    "anchor": "start"
+  },
+  "width": 800,
+  "height": 800,
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "y": {
+      "field": "State",
+      "sort": {
+        "op": "sum",
+        "order": "ascending",
+        "field": "ValueC"
+      },
+      "axis": {
+        "title": null
+      }
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "ValueC",
+      "axis": {
+        "title": "Migration as % of State Population"
+      }
+    },
+    "color": {
+      "field": "Type1",
+      "legend": {
+        "orient": "none",
+        "columns": 13,
+        "legendX": -100,
+        "legendY": -30,
+        "offset": 10,
+        "title": null
+      }
+    },
+    "tooltip": [
+      {
+        "field": "ValueC",
+        "title": "Migration as % of State Population"
+      }
+    ]
+  }
+}

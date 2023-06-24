@@ -1,0 +1,69 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "hconcat": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv"
+      },
+      "mark": "rect",
+      "encoding": {
+        "color": {
+          "aggregate": "count",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "Agency Name",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "County",
+          "type": "ordinal"
+        }
+      },
+      "height": 700,
+      "selection": {
+        "selector001": {
+          "type": "interval",
+          "encodings": [
+            "x",
+            "y"
+          ]
+        }
+      },
+      "width": 500
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv"
+      },
+      "mark": {
+        "type": "bar",
+        "color": "green"
+      },
+      "encoding": {
+        "x": {
+          "field": "Agency Name",
+          "type": "ordinal"
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "Square Footage",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "selection": "selector001"
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
+}

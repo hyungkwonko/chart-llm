@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "IMF Lending Outstaning (% of World GDP) ",
+    "subtitle": "credit outstanding to all members as a percentage of World GDP, source IMF",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/sadieward/sadieward.github.io/main/data_IMF_credit%25ofGDP.csv"
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "bar",
+    "color": "#13667a"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 35
+      }
+    },
+    "y": {
+      "field": "Totals%ofGDP",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

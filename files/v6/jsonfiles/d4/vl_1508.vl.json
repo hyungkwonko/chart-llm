@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 200,
+  "height": 50,
+  "data": {
+    "values": [
+      {
+        "coef": -1.403220164,
+        "metabolite": "pydx[e]",
+        "description": "Pyridoxal"
+      },
+      {
+        "coef": -1.3864171369,
+        "metabolite": "so3[e]",
+        "description": "Sulfite"
+      },
+      {
+        "coef": -1.2988432936,
+        "metabolite": "malt[e]",
+        "description": "Maltose"
+      },
+      {
+        "coef": -1.2627663038,
+        "metabolite": "h2[e]",
+        "description": "Hydrogen"
+      },
+      {
+        "coef": -0.9494759469,
+        "metabolite": "cit[e]",
+        "description": "Citrate"
+      },
+      {
+        "coef": -0.92410626,
+        "metabolite": "HC02194[e]",
+        "description": "Ursodiol"
+      },
+      {
+        "coef": -0.8255619351,
+        "metabolite": "glc_D[e]",
+        "description": "D-glucose"
+      },
+      {
+        "coef": -0.8189398698,
+        "metabolite": "h[e]",
+        "description": "proton"
+      },
+      {
+        "coef": -0.7426755129,
+        "metabolite": "glutar[e]",
+        "description": "Glutarate"
+      },
+      {
+        "coef": -0.7420113834,
+        "metabolite": "tsul[e]",
+        "description": "thiosulfate(2-)"
+      },
+      {
+        "coef": -0.6232042068,
+        "metabolite": "uchol[e]",
+        "description": "Ursocholate"
+      },
+      {
+        "coef": -0.5684139533,
+        "metabolite": "ddca[e]",
+        "description": "laurate"
+      },
+      {
+        "coef": -0.5605311581,
+        "metabolite": "ttdca[e]",
+        "description": "tetradecanoate (n-C14:0)"
+      },
+      {
+        "coef": -0.525357532,
+        "metabolite": "tmao[e]",
+        "description": "Trimethylamine N-oxide"
+      },
+      {
+        "coef": -0.2593162562,
+        "metabolite": "pydxn[e]",
+        "description": "Pyridoxine"
+      },
+      {
+        "coef": -0.2062304347,
+        "metabolite": "acmana[e]",
+        "description": "N-acetyl-D-mannosamine"
+      },
+      {
+        "coef": -0.193992698,
+        "metabolite": "2ddglcn[e]",
+        "description": "2-Dehydro-3-deoxy-D-gluconate"
+      },
+      {
+        "coef": -0.1555650235,
+        "metabolite": "gln_L[e]",
+        "description": "L-glutamine"
+      },
+      {
+        "coef": -0.1315094624,
+        "metabolite": "2obut[e]",
+        "description": "2-Oxobutanoate"
+      },
+      {
+        "coef": -0.017417445,
+        "metabolite": "man[e]",
+        "description": "D-Mannose"
+      },
+      {
+        "coef": 0.0052796728,
+        "metabolite": "isoval[e]",
+        "description": "Isovalerate, 3-Methylbutanoate"
+      },
+      {
+        "coef": 0.0068658506,
+        "metabolite": "13ppd[e]",
+        "description": "Propane-1,3-diol"
+      },
+      {
+        "coef": 0.1179742656,
+        "metabolite": "4abut[e]",
+        "description": "4-Aminobutanoate"
+      },
+      {
+        "coef": 0.4094416403,
+        "metabolite": "mnl[e]",
+        "description": "D-Mannitol"
+      },
+      {
+        "coef": 0.7845626081,
+        "metabolite": "fru[e]",
+        "description": "D-Fructose"
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "tooltip": {
+      "content": "data"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "metabolite",
+      "type": "nominal",
+      "sort": "-coef"
+    },
+    "y": {
+      "field": "coef",
+      "type": "quantitative",
+      "axis": {
+        "title": "coefficient [standardized]"
+      }
+    },
+    "color": {
+      "field": "coef",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "magma",
+        "legend": false
+      }
+    }
+  }
+}

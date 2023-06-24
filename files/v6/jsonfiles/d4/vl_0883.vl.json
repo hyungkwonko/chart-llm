@@ -1,0 +1,289 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "autosize": {
+    "resize": true
+  },
+  "background": "whitesmoke",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jisnu-Palanisamy/FIT3179/main/ne_110m_admin_0_countries.json",
+    "format": {
+      "type": "topojson",
+      "feature": "ne_110m_admin_0_countries"
+    }
+  },
+  "params": [
+    {
+      "name": "cornerRadius",
+      "value": 50
+    },
+    {
+      "name": "Cases_Above",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 100000000,
+        "step": 1000000,
+        "name": "Population: "
+      }
+    }
+  ],
+  "vconcat": [
+    {
+      "width": 600,
+      "height": 500,
+      "title": "Worldwide COVID-19 Confirmed Cases 2020",
+      "projection": {
+        "type": "equalEarth"
+      },
+      "layer": [
+        {
+          "transform": [
+            {
+              "calculate": "'Data is not available in ' + datum.properties.NAME",
+              "as": "note"
+            }
+          ],
+          "mark": {
+            "type": "geoshape",
+            "fill": "lightgray",
+            "stroke": "white"
+          },
+          "encoding": {
+            "tooltip": {
+              "field": "note"
+            }
+          }
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/Jisnu-Palanisamy/FIT3179/main/ocean.json",
+            "format": {
+              "type": "topojson",
+              "feature": "oceans"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "skyblue"
+          }
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/Jisnu-Palanisamy/FIT3179/main/WorldMapWithGraticules.json",
+            "format": {
+              "type": "topojson",
+              "feature": "ne_110m_graticules_30"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": null,
+            "stroke": "lightgray"
+          }
+        },
+        {
+          "transform": [
+            {
+              "lookup": "properties.NAME",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/Jisnu-Palanisamy/FIT3179/main/COVID-19%20Coronavirus.csv"
+                },
+                "key": "Country",
+                "fields": [
+                  "TotalCases",
+                  "TotalCasesPer1MPop",
+                  "Population"
+                ]
+              }
+            },
+            {
+              "calculate": "datum.TotalCasesPer1MPop",
+              "as": "Cases Per 1 Million Population"
+            },
+            {
+              "filter": "datum.Population > Cases_Above"
+            }
+          ],
+          "mark": {
+            "type": "geoshape",
+            "stroke": "white",
+            "cursor": "pointer"
+          },
+          "params": [
+            {
+              "name": "countrySelection",
+              "select": {
+                "type": "point",
+                "on": "click",
+                "resolve": "global"
+              }
+            }
+          ],
+          "encoding": {
+            "color": {
+              "field": "Cases Per 1 Million Population",
+              "type": "quantitative",
+              "scale": {
+                "type": "log",
+                "range": [
+                  "#fdbe85",
+                  "#fd8d3c",
+                  "#e6550d",
+                  "#a63603"
+                ]
+              }
+            },
+            "tooltip": [
+              {
+                "field": "properties.NAME",
+                "type": "nominal",
+                "title": "Country"
+              },
+              {
+                "field": "TotalCases",
+                "type": "quantitative",
+                "format": ",",
+                "title": "Total Cases"
+              },
+              {
+                "field": "Cases Per 1 Million Population",
+                "type": "quantitative",
+                "format": ","
+              },
+              {
+                "field": "Population",
+                "type": "quantitative",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "lookup": "properties.NAME",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/Jisnu-Palanisamy/FIT3179/main/countryInfo.csv"
+                },
+                "key": "name",
+                "fields": [
+                  "latitude",
+                  "longitude"
+                ]
+              }
+            }
+          ],
+          "mark": {
+            "type": "text"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "properties.NAME",
+              "type": "nominal"
+            },
+            "opacity": {
+              "condition": {
+                "test": "datum['properties.NAME'] == 'China' || datum['properties.NAME'] == 'Brazil' || datum['properties.NAME'] == 'Australia' || datum['properties.NAME'] == 'Malaysia' ||  datum['properties.NAME'] == 'Cameroon' ||  datum['properties.NAME'] == 'United States of America'",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 625,
+      "transform": [
+        {
+          "lookup": "properties.NAME",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/Jisnu-Palanisamy/FIT3179/main/COVID-19%20Coronavirus.csv"
+            },
+            "key": "Country",
+            "fields": [
+              "TotalCases",
+              "TotalCasesPer1MPop",
+              "Population"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.TotalCasesPer1MPop",
+          "as": "Cases Per 1 Million Population"
+        },
+        {
+          "filter": {
+            "param": "countrySelection",
+            "empty": false
+          }
+        }
+      ],
+      "title": "Selected Country",
+      "mark": {
+        "type": "bar",
+        "cornerRadius": {
+          "expr": "cornerRadius"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "Cases Per 1 Million Population",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "properties.NAME",
+          "type": "nominal",
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "properties.NAME",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "Cases Per 1 Million Population",
+            "type": "quantitative",
+            "format": ","
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "legend": {
+      "labelFont": "Sans-serif",
+      "titleFont": "Sans-serif",
+      "titleLimit": 0
+    },
+    "title": {
+      "font": "Sans-serif",
+      "fontWeight": "bold",
+      "fontSize": 24,
+      "fontStyle": "italic"
+    },
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    },
+    "text": {
+      "align": "center",
+      "fontWeight": "bold",
+      "font": "Sans-serif"
+    }
+  }
+}

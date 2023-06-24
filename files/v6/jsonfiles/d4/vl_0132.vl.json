@@ -1,0 +1,64 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    },
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 20
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "Bldg Status",
+      "scale": {
+        "scheme": "set2"
+      },
+      "type": "nominal"
+    },
+    "tooltip": {
+      "field": "County",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "Square Footage",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Senator Full Name",
+      "type": "nominal"
+    }
+  },
+  "height": 600,
+  "selection": {
+    "selector001": {
+      "type": "single",
+      "fields": [
+        "Bldg Status"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          "In Use",
+          "Abandon",
+          "In Progress"
+        ],
+        "name": "Building Status: "
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "selector001"
+      }
+    }
+  ],
+  "width": "container",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
+}

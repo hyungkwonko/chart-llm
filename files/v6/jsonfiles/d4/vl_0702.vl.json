@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/matsim-scenarios/matsim-duesseldorf/b160620ef3d645969b5060b436391be3bc378cb6/src/main/simwrapper/overview/validate.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "validated_travel_time",
+        "gt": 0
+      }
+    }
+  ],
+  "width": 500,
+  "height": 500,
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "clip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "simulated_travel_time",
+          "title": "Simulated travel time",
+          "scale": {
+            "domainMax": 3200
+          },
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "validated_travel_time",
+          "title": "Validated travel time",
+          "scale": {
+            "domainMax": 3200
+          },
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "green"
+      },
+      "encoding": {
+        "x": {
+          "field": "id",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "id",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "test",
+          "type": "nominal",
+          "legend": {
+            "title": "Line"
+          },
+          "scale": {
+            "domain": [
+              "Regression",
+              "Reference"
+            ],
+            "range": [
+              "firebrick",
+              "Black"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "id",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "id",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "validated_travel_time",
+          "on": "simulated_travel_time",
+          "extent": [
+            0,
+            3500
+          ]
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "simulated_travel_time",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "validated_travel_time",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

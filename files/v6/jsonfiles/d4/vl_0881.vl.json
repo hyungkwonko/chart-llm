@@ -1,0 +1,232 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "whitesmoke",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jisnu-Palanisamy/FIT3179/main/COVID-19%20Coronavirus.csv"
+  },
+  "hconcat": [
+    {
+      "width": 270,
+      "height": 600,
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "TotalCases",
+              "as": "Total Cases"
+            }
+          ],
+          "groupby": [
+            "Country"
+          ]
+        },
+        {
+          "window": [
+            {
+              "op": "rank",
+              "as": "rank"
+            }
+          ],
+          "sort": [
+            {
+              "field": "Total Cases",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.rank <= 10",
+          "as": "Country"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "Country",
+          "type": "ordinal",
+          "sort": {
+            "op": "sum",
+            "field": "Total Cases",
+            "order": "descending"
+          }
+        }
+      },
+      "layer": [
+        {
+          "selection": {
+            "highlight": {
+              "type": "single"
+            }
+          },
+          "mark": {
+            "type": "bar",
+            "stroke": "black",
+            "cursor": "pointer"
+          },
+          "title": "Top 10 Countries (Total Cases)",
+          "encoding": {
+            "x": {
+              "aggregate": "sum",
+              "field": "Total Cases",
+              "type": "quantitative",
+              "axis": null
+            },
+            "tooltip": [
+              {
+                "field": "Country",
+                "type": "nominal"
+              },
+              {
+                "field": "Total Cases",
+                "type": "quantitative",
+                "format": ","
+              }
+            ],
+            "fillOpacity": {
+              "condition": {
+                "selection": "highlight",
+                "value": 1
+              },
+              "value": 0.5
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "x": 1
+          },
+          "encoding": {
+            "text": {
+              "field": "Total Cases",
+              "type": "quantitative",
+              "format": ","
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 270,
+      "height": 600,
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "TotalDeaths",
+              "as": "Total Deaths"
+            }
+          ],
+          "groupby": [
+            "Country"
+          ]
+        },
+        {
+          "window": [
+            {
+              "op": "rank",
+              "as": "rank"
+            }
+          ],
+          "sort": [
+            {
+              "field": "Total Deaths",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.rank <= 10",
+          "as": "Country"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "Country",
+          "type": "ordinal",
+          "sort": {
+            "op": "sum",
+            "field": "Total Deaths",
+            "order": "descending"
+          }
+        }
+      },
+      "layer": [
+        {
+          "selection": {
+            "highlight": {
+              "type": "single"
+            }
+          },
+          "mark": {
+            "type": "bar",
+            "stroke": "black",
+            "cursor": "pointer"
+          },
+          "title": "Top 10 Countries (Total Deaths)",
+          "encoding": {
+            "x": {
+              "aggregate": "sum",
+              "field": "Total Deaths",
+              "type": "quantitative",
+              "axis": null
+            },
+            "tooltip": [
+              {
+                "field": "Country",
+                "type": "nominal"
+              },
+              {
+                "field": "Total Deaths",
+                "type": "quantitative",
+                "format": ","
+              }
+            ],
+            "fillOpacity": {
+              "condition": {
+                "selection": "highlight",
+                "value": 1
+              },
+              "value": 0.5
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "x": 1
+          },
+          "encoding": {
+            "text": {
+              "field": "Total Deaths",
+              "type": "quantitative",
+              "format": ","
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFont": "Sans-Serif",
+      "titleFont": "Sans-Serif"
+    },
+    "title": {
+      "font": "Sans-Serif",
+      "fontSize": 24,
+      "fontWeight": "bold",
+      "fontStyle": "italic"
+    },
+    "text": {
+      "align": "left",
+      "fontWeight": "bold",
+      "font": "Sans-Serif",
+      "color": "black",
+      "fontSize": 8
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Comparing standard USA trends as an indication for the global market",
+    "subtitle": [
+      "",
+      "The changes in key economic metrics in the USA",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 14,
+    "fontSize": 18,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/SamJones033/SamJones033.github.io/main/trellis2.csv"
+  },
+  "height": 120,
+  "width": 120,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 1.5
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "grid": true,
+        "labelAngle": 30,
+        "labelFontSize": 12
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Respective Value"
+    },
+    "facet": {
+      "field": "Type",
+      "columns": 4,
+      "title": null,
+      "header": {
+        "titleColor": "black",
+        "labelColor": "black",
+        "labelFontSize": 10
+      }
+    },
+    "color": {
+      "value": "black",
+      "condition": [
+        {
+          "test": "datum.Type =='GDP (Total US$)'",
+          "value": "darkorange"
+        },
+        {
+          "test": "datum.Type =='Inflation Rate (%)'",
+          "value": "blue"
+        },
+        {
+          "test": "datum.Type =='Fish Production (metric tonnes)'",
+          "value": "steelblue"
+        },
+        {
+          "test": "datum.Type =='Crop Production Index (2014-2016=100)'",
+          "value": "yellow"
+        },
+        {
+          "test": "datum.Type =='Unemployment Rate (%)'",
+          "value": "hotpink"
+        },
+        {
+          "test": "datum.Type =='Military Spending $'",
+          "value": "moccasin"
+        },
+        {
+          "test": "datum.Type =='Emissions (kg per PPP $ of GDP'",
+          "value": "orange"
+        },
+        {
+          "test": "datum.Type =='Electricity Production (kWh per capita)'",
+          "value": "purple"
+        },
+        {
+          "test": "datum.Type =='Birth Rate (Per 1000 women)'",
+          "value": "sandybrown"
+        },
+        {
+          "test": "datum.Type =='Life Expectancy'",
+          "value": "maroon"
+        },
+        {
+          "test": "datum.Type =='Gini Index'",
+          "value": "peru"
+        },
+        {
+          "test": "datum.Type =='International Tourism Arrivals'",
+          "value": "plum"
+        }
+      ]
+    },
+    "tooltip": [
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Respective Value"
+      },
+      {
+        "field": "Year",
+        "type": "temporal",
+        "title": "Year"
+      }
+    ]
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

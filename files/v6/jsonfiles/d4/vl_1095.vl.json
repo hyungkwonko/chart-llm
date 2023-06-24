@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 350,
+  "width": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/ECO2.TENREYO.C1.csv"
+  },
+  "mark": {
+    "type": "point",
+    "filled": true
+  },
+  "encoding": {
+    "x": {
+      "field": "Value1",
+      "type": "quantitative",
+      "title": "Target recution in GHG emissions from starting year (%)",
+      "scale": {
+        "domain": [
+          -1100,
+          1100
+        ]
+      }
+    },
+    "y": {
+      "field": "Value2",
+      "type": "quantitative",
+      "title": "Actual reduction in fossil CO\u2082 emissions 2010-2018 (%)",
+      "scale": {
+        "domain": [
+          -55,
+          55
+        ]
+      }
+    },
+    "color": {
+      "field": "country",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "scheme": "yellowgreenblue"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "country"
+      },
+      {
+        "field": "Value2",
+        "type": "quantitative",
+        "title": "Vaccinations per 100 people"
+      },
+      {
+        "field": "Value1",
+        "type": "quantitative",
+        "title": "GDP per capita (thousand $)"
+      }
+    ]
+  }
+}

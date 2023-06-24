@@ -1,0 +1,380 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "hconcat": [
+    {
+      "data": {
+        "name": "data-8b48908db5d271e2956e2a8272fc8e07"
+      },
+      "mark": {
+        "type": "line",
+        "color": "red"
+      },
+      "encoding": {
+        "x": {
+          "type": "quantitative",
+          "field": "x"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "y"
+        }
+      },
+      "title": "Normal Distribution",
+      "width": 360
+    },
+    {
+      "data": {
+        "name": "data-c7ad18303904753003e679bfb19caa8f"
+      },
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "type": "quantitative",
+          "field": "Number of Heads"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "Number of Ways"
+        }
+      },
+      "title": "Distribution of Heads",
+      "width": 360
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-8b48908db5d271e2956e2a8272fc8e07": [
+      {
+        "x": 0,
+        "y": 2.600281868827203e-10
+      },
+      {
+        "x": 1,
+        "y": 1.8276568877457265e-09
+      },
+      {
+        "x": 2,
+        "y": 1.1623567955302993e-08
+      },
+      {
+        "x": 3,
+        "y": 6.688901526032106e-08
+      },
+      {
+        "x": 4,
+        "y": 3.4828975312041506e-07
+      },
+      {
+        "x": 5,
+        "y": 1.6409567867287274e-06
+      },
+      {
+        "x": 6,
+        "y": 6.995586696268014e-06
+      },
+      {
+        "x": 7,
+        "y": 2.6984954724388374e-05
+      },
+      {
+        "x": 8,
+        "y": 9.418674667969561e-05
+      },
+      {
+        "x": 9,
+        "y": 0.000297459915550561
+      },
+      {
+        "x": 10,
+        "y": 0.000850036660252035
+      },
+      {
+        "x": 11,
+        "y": 0.0021979480031862693
+      },
+      {
+        "x": 12,
+        "y": 0.005142422126351767
+      },
+      {
+        "x": 13,
+        "y": 0.010886507726916078
+      },
+      {
+        "x": 14,
+        "y": 0.02085355003628301
+      },
+      {
+        "x": 15,
+        "y": 0.03614447853363626
+      },
+      {
+        "x": 16,
+        "y": 0.05668582612248957
+      },
+      {
+        "x": 17,
+        "y": 0.0804410163156249
+      },
+      {
+        "x": 18,
+        "y": 0.10328830949345566
+      },
+      {
+        "x": 19,
+        "y": 0.12000389484301362
+      },
+      {
+        "x": 20,
+        "y": 0.126156626101008
+      },
+      {
+        "x": 21,
+        "y": 0.12000389484301362
+      },
+      {
+        "x": 22,
+        "y": 0.10328830949345566
+      },
+      {
+        "x": 23,
+        "y": 0.0804410163156249
+      },
+      {
+        "x": 24,
+        "y": 0.05668582612248957
+      },
+      {
+        "x": 25,
+        "y": 0.03614447853363626
+      },
+      {
+        "x": 26,
+        "y": 0.02085355003628301
+      },
+      {
+        "x": 27,
+        "y": 0.010886507726916078
+      },
+      {
+        "x": 28,
+        "y": 0.005142422126351767
+      },
+      {
+        "x": 29,
+        "y": 0.0021979480031862693
+      },
+      {
+        "x": 30,
+        "y": 0.000850036660252035
+      },
+      {
+        "x": 31,
+        "y": 0.000297459915550561
+      },
+      {
+        "x": 32,
+        "y": 9.418674667969561e-05
+      },
+      {
+        "x": 33,
+        "y": 2.6984954724388374e-05
+      },
+      {
+        "x": 34,
+        "y": 6.995586696268014e-06
+      },
+      {
+        "x": 35,
+        "y": 1.6409567867287274e-06
+      },
+      {
+        "x": 36,
+        "y": 3.4828975312041506e-07
+      },
+      {
+        "x": 37,
+        "y": 6.688901526032106e-08
+      },
+      {
+        "x": 38,
+        "y": 1.1623567955302993e-08
+      },
+      {
+        "x": 39,
+        "y": 1.8276568877457265e-09
+      }
+    ],
+    "data-c7ad18303904753003e679bfb19caa8f": [
+      {
+        "Number of Heads": 0,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 1,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 2,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 3,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 4,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 5,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 6,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 7,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 8,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 9,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 10,
+        "Number of Ways": 2
+      },
+      {
+        "Number of Heads": 11,
+        "Number of Ways": 9
+      },
+      {
+        "Number of Heads": 12,
+        "Number of Ways": 16
+      },
+      {
+        "Number of Heads": 13,
+        "Number of Ways": 28
+      },
+      {
+        "Number of Heads": 14,
+        "Number of Ways": 54
+      },
+      {
+        "Number of Heads": 15,
+        "Number of Ways": 124
+      },
+      {
+        "Number of Heads": 16,
+        "Number of Ways": 174
+      },
+      {
+        "Number of Heads": 17,
+        "Number of Ways": 257
+      },
+      {
+        "Number of Heads": 18,
+        "Number of Ways": 326
+      },
+      {
+        "Number of Heads": 19,
+        "Number of Ways": 379
+      },
+      {
+        "Number of Heads": 20,
+        "Number of Ways": 351
+      },
+      {
+        "Number of Heads": 21,
+        "Number of Ways": 351
+      },
+      {
+        "Number of Heads": 22,
+        "Number of Ways": 289
+      },
+      {
+        "Number of Heads": 23,
+        "Number of Ways": 249
+      },
+      {
+        "Number of Heads": 24,
+        "Number of Ways": 156
+      },
+      {
+        "Number of Heads": 25,
+        "Number of Ways": 109
+      },
+      {
+        "Number of Heads": 26,
+        "Number of Ways": 68
+      },
+      {
+        "Number of Heads": 27,
+        "Number of Ways": 36
+      },
+      {
+        "Number of Heads": 28,
+        "Number of Ways": 15
+      },
+      {
+        "Number of Heads": 29,
+        "Number of Ways": 5
+      },
+      {
+        "Number of Heads": 30,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 31,
+        "Number of Ways": 2
+      },
+      {
+        "Number of Heads": 32,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 33,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 34,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 35,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 36,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 37,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 38,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 39,
+        "Number of Ways": 0
+      },
+      {
+        "Number of Heads": 40,
+        "Number of Ways": 0
+      }
+    ]
+  }
+}

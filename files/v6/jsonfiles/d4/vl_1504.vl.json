@@ -1,0 +1,97 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-e356e0b1438aa1961fbce41d6d0f2d33"
+  },
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "type": "nominal",
+      "field": "kind"
+    },
+    "column": {
+      "type": "nominal",
+      "field": "repo",
+      "header": {
+        "labelFontSize": 12,
+        "title": "Issue activity, last 10 days for numpy",
+        "titleFontSize": 15
+      }
+    },
+    "x": {
+      "type": "nominal",
+      "axis": {
+        "labelFontSize": 15,
+        "title": ""
+      },
+      "field": "kind"
+    },
+    "y": {
+      "type": "quantitative",
+      "axis": {
+        "labelFontSize": 12,
+        "titleFontSize": 15
+      },
+      "field": "count"
+    }
+  },
+  "width": 120,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-e356e0b1438aa1961fbce41d6d0f2d33": [
+      {
+        "org": "numpy",
+        "repo": "numpy",
+        "kind": "created",
+        "count": 17.0
+      },
+      {
+        "org": "numpy",
+        "repo": "numpy.org",
+        "kind": "created",
+        "count": 1.0
+      },
+      {
+        "org": "numpy",
+        "repo": "numpydoc",
+        "kind": "created",
+        "count": 2.0
+      },
+      {
+        "org": "numpy",
+        "repo": "numpy-tutorials",
+        "kind": "created",
+        "count": 0.0
+      },
+      {
+        "org": "numpy",
+        "repo": "numpy",
+        "kind": "closed",
+        "count": 19.0
+      },
+      {
+        "org": "numpy",
+        "repo": "numpy.org",
+        "kind": "closed",
+        "count": 0.0
+      },
+      {
+        "org": "numpy",
+        "repo": "numpydoc",
+        "kind": "closed",
+        "count": 2.0
+      },
+      {
+        "org": "numpy",
+        "repo": "numpy-tutorials",
+        "kind": "closed",
+        "count": 1.0
+      }
+    ]
+  }
+}

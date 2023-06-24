@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Coal's share of energy consumption over time",
+  "data": {
+    "url": "https://raw.githubusercontent.com/BenPimley/ECO/main/JT%20Coal%20Fig2.csv"
+  },
+  "height": 300,
+  "width": 400,
+  "mark": {
+    "type": "line",
+    "color": "#122b39"
+  },
+  "encoding": {
+    "x": {
+      "field": "Time",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Percentage share"
+    },
+    "tooltip": [
+      {
+        "field": "Time",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Coal's percentage share of energy consumption (%)"
+      }
+    ]
+  }
+}

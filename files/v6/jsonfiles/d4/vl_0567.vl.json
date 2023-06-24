@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/RA_work/main/p21v2.csv"
+  },
+  "height": 300,
+  "width": 450,
+  "title": {
+    "text": "Openness to trade: 21 Populous Countries",
+    "anchor": "start",
+    "subtitle": [
+      "Trade as a % of GDP",
+      "Source: World Bank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10
+  },
+  "params": [
+    {
+      "name": "year",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1970,
+        "max": 2021,
+        "step": 1,
+        "name": "Year"
+      }
+    },
+    {
+      "name": "highlight",
+      "select": {
+        "type": "point",
+        "on": "mouseover"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "toNumber(year)",
+      "as": "yearS"
+    },
+    {
+      "filter": "datum.yearS == datum.Year"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Country",
+      "type": "nominal",
+      "sort": {
+        "field": "rank",
+        "order": "ascending"
+      },
+      "title": ""
+    },
+    "y": {
+      "field": "GDP",
+      "type": "quantitative",
+      "axis": {
+        "format": "%",
+        "gridOpacity": 0.5
+      },
+      "title": null
+    },
+    "color": {
+      "field": "rank2",
+      "type": "quantitative",
+      "legend": null,
+      "scale": {
+        "range": [
+          "#000",
+          "#880000"
+        ]
+      }
+    },
+    "opacity": {
+      "condition": {
+        "test": {
+          "param": "highlight"
+        },
+        "value": 1
+      },
+      "value": 0.4
+    },
+    "tooltip": [
+      {
+        "field": "Country"
+      },
+      {
+        "field": "GDP",
+        "type": "quantitative",
+        "format": ".2%"
+      }
+    ]
+  }
+}

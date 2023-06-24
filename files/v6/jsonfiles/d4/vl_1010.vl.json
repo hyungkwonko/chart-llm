@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "International Territorial Level Map, to change regional hierarchy: replace x in 'ITLx_2021_20m' in URL, and 'ITLx21NM' in tooltip, with 1, 2 or 3.",
+  "title": {
+    "text": "South America",
+    "subtitle": [
+      "Countries by GDP per Capita, Mercator Projection",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/Data/custom.geo%20(3).json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "key": "Country",
+        "fields": [
+          "GDP_Per_Capita"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/Data/SA_GDP_per_capita.csv"
+        }
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "black",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "GDP_Per_Capita",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "properties.name",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "GDP_Per_Capita"
+      }
+    ]
+  }
+}

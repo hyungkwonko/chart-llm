@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mode": "vega-lite",
+  "data": {
+    "url": "https://vega.github.io/editor/data/seattle-weather.csv"
+  },
+  "padding": {
+    "left": 20,
+    "top": 5,
+    "right": 30,
+    "bottom": 5
+  },
+  "width": "container",
+  "height": "container",
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "background": "#ffffff",
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadius": 1,
+        "tooltip": true,
+        "binSpacing": 1
+      },
+      "encoding": {
+        "x": {
+          "timeUnit": "month",
+          "field": "date",
+          "type": "ordinal",
+          "axis": {
+            "title": "Month of the year",
+            "orient": "bottom"
+          }
+        },
+        "y": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "field": "weather",
+          "axis": {
+            "title": "Count",
+            "orient": "left",
+            "labelExpr": "datum.value*100"
+          },
+          "stack": "normalize"
+        },
+        "opacity": {
+          "value": 1
+        },
+        "color": {
+          "field": "weather",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "sun",
+              "fog",
+              "drizzle",
+              "rain",
+              "snow"
+            ],
+            "range": [
+              "#1f77b4",
+              "#ff7f0e",
+              "#2ca02c",
+              "#d62728",
+              "#9467bd",
+              "#8c564b",
+              "#e377c2",
+              "#7f7f7f",
+              "#bcbd22",
+              "#17becf"
+            ]
+          },
+          "legend": {
+            "title": "Weather type",
+            "orient": "right",
+            "symbolType": "circle",
+            "fillColor": "#ffffff"
+          }
+        }
+      }
+    }
+  ]
+}

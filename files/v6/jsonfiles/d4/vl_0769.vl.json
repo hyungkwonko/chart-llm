@@ -1,0 +1,128 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Regressing WGI Overall Score on Median Age for all countries featured in the 2022 edition of the CAF World Giving Index Report (which explores data from the year before - 2021). I ran the regression in Colab in order to ascertain the equation for the regression line",
+  "title": {
+    "text": [
+      "Regressing WGI Overall Score on Median Age using data from 2022"
+    ],
+    "fontSize": 12,
+    "subtitle": [
+      "Religiosity measured as the percentage of the population who consider religion important",
+      "Sources: CAF and Worldometers"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/_CAF_MedAge_TotPop_2022_dropna.csv"
+  },
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "Median_Age_2022",
+      "type": "quantitative",
+      "title": "Median Age (years)",
+      "axis": {
+        "grid": false
+      },
+      "scale": {
+        "domain": [
+          0,
+          50
+        ]
+      }
+    },
+    "y": {
+      "field": "CAF_2022",
+      "type": "quantitative",
+      "title": "WGI overall score (out of 100)",
+      "axis": {
+        "grid": false
+      },
+      "scale": {
+        "domain": [
+          0,
+          70
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "CAF_2022",
+        "type": "quantitative",
+        "title": "WGI Score"
+      },
+      {
+        "field": "Median_Age_2022",
+        "type": "quantitative",
+        "title": "Median Age"
+      },
+      {
+        "field": "Country",
+        "type": "nominal",
+        "title": "Country"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "CAF_2022": 42.01,
+            "Median_Age_2022": 0
+          },
+          {
+            "CAF_2022": 41.86,
+            "Median_Age_2022": 50
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "color": "#603881",
+        "clip": true
+      },
+      "encoding": {
+        "tooltip": null
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/_CAF_MedAge_TotPop_2022_dropna.csv"
+      },
+      "mark": {
+        "type": "circle",
+        "color": "#339a36",
+        "fillOpacity": 0.9
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "CAF_2022": 39,
+            "Median_Age_2022": 6,
+            "text": "R\u00b2 = 0.00"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "color": "red",
+        "fontWeight": "normal",
+        "fontSize": 12
+      },
+      "encoding": {
+        "tooltip": null,
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

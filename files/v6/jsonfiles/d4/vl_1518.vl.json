@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": null,
+  "width": 500,
+  "description": "NYCCAS data by season, source, and pollutant",
+  "data": {
+    "url": "https://raw.githubusercontent.com/nychealth/EH-dataportal/90358b782e5f5805b51ba86a1158c4d7cb930d74/content/key-topics/airquality/nyccas/embed/pollutant-trends-data.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.Source == 'Industrial Areas'"
+    }
+  ],
+  "config": {
+    "title": {
+      "anchor": "start",
+      "fontSize": 14
+    },
+    "axisY": {
+      "title": null
+    },
+    "axisX": {
+      "title": "Year",
+      "grid": false
+    },
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      },
+      "line": {
+        "stroke": "#1696d2",
+        "strokeWidth": 3
+      },
+      "text": {
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "size": 11,
+        "align": "left"
+      },
+      "group-title": {
+        "fontWeight": "normal"
+      }
+    },
+    "range": {
+      "category": [
+        "#810f7c",
+        "#b3cde3",
+        "#8c96c6"
+      ]
+    }
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "encoding": {
+    "facet": {
+      "field": "Season",
+      "type": "nominal",
+      "columns": 2,
+      "title": null,
+      "sort": [
+        "Winter",
+        "Spring",
+        "Summer",
+        "Fall"
+      ],
+      "header": {
+        "labelFontSize": 15,
+        "labelAlign": "left",
+        "labelAnchor": "start"
+      }
+    },
+    "x": {
+      "timeUnit": "utcyear",
+      "field": "Time"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "Value",
+        "title": "Value",
+        "format": ",.1~f"
+      },
+      {
+        "field": "Tertile",
+        "title": "Tertile"
+      }
+    ],
+    "color": {
+      "field": "Tertile",
+      "type": "nominal",
+      "legend": null
+    }
+  }
+}

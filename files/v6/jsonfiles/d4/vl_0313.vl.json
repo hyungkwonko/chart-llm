@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A population pyramid for the US in 2000.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/sadieward/sadieward.github.io/main/pop-pyramid3.csv"
+  },
+  "title": {
+    "text": "Age Demographics ",
+    "subtitle": "Of the general population and immigrants on arrival to the UK in 2021, percent, source ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "align": "center",
+    "color": "black"
+  },
+  "spacing": 0,
+  "hconcat": [
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "Category",
+            "equal": "%current_pop"
+          }
+        }
+      ],
+      "title": "Current Population",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "Ages",
+          "type": "ordinal",
+          "axis": null,
+          "sort": "-"
+        },
+        "x": {
+          "aggregate": "sum",
+          "field": "Value",
+          "title": "% of total population",
+          "axis": {
+            "format": "s"
+          },
+          "sort": "descending"
+        },
+        "color": {
+          "field": "Category",
+          "scale": {
+            "range": [
+              "#147FAA",
+              "#1B404F"
+            ]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "width": 10,
+      "view": {
+        "stroke": null
+      },
+      "mark": {
+        "type": "text",
+        "align": "center"
+      },
+      "encoding": {
+        "y": {
+          "field": "Ages",
+          "type": "ordinal",
+          "axis": null,
+          "sort": "descending"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "Category",
+            "equal": "%_imm"
+          }
+        }
+      ],
+      "title": "Immigrants",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "Ages",
+          "title": null,
+          "sort": "-"
+        },
+        "x": {
+          "aggregate": "sum",
+          "field": "Value",
+          "title": "% of total immigrants",
+          "axis": {
+            "format": "s"
+          }
+        },
+        "color": {
+          "field": "Category",
+          "legend": null
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "grid": false
+    }
+  }
+}

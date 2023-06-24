@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/ECO2.DEBT.C1c.csv"
+  },
+  "mark": "bar",
+  "width": 350,
+  "height": 300,
+  "title": {
+    "text": "Government debt - G7",
+    "subtitle": "$ million. Source: IMF World Economic Outlook 2021",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "nominal",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "labelAngle": 360
+      }
+    },
+    "y": {
+      "field": "Value2",
+      "title": null,
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          60000000
+        ]
+      },
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "Country",
+      "type": "nominal",
+      "legend": {
+        "orient": "top-left",
+        "columns": 2
+      },
+      "scale": {
+        "scheme": "yellowgreenblue"
+      },
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "Country"
+      },
+      {
+        "field": "Year",
+        "type": "nominal",
+        "title": "Year"
+      },
+      {
+        "field": "Value1",
+        "type": "quantitative",
+        "title": "GDP ($ million)"
+      },
+      {
+        "field": "Value2",
+        "type": "quantitative",
+        "title": "Gross debt ($ million)"
+      }
+    ]
+  }
+}

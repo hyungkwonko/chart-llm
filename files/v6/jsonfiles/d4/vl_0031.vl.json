@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Slope chart",
+  "width": "container",
+  "title": {
+    "text": "Change in income per person, 1952 - 2017",
+    "offset": 20
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "country",
+        "oneOf": [
+          "Iceland",
+          "Norway"
+        ]
+      }
+    },
+    {
+      "filter": {
+        "field": "year",
+        "oneOf": [
+          "1952",
+          "2017"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": false,
+      "fill": "white"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": {
+        "title": null,
+        "ticks": false,
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "gdpPercap",
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "ticks": false,
+        "labels": false
+      }
+    },
+    "color": {
+      "field": "country",
+      "type": "nominal",
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "gdpPercap",
+        "type": "quantitative",
+        "title": "GDP per capita",
+        "format": "$,.0f"
+      }
+    ]
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    },
+    "axis": {
+      "grid": false,
+      "domainColor": null
+    }
+  }
+}

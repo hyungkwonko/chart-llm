@@ -1,0 +1,127 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/antoniolch/KickstarterProjectDetails/master/data/whole_kickstarter_projects_filtered_vis2.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "width": 400,
+  "height": 400,
+  "title": {
+    "text": "Goal vs Pledged in Technology",
+    "anchor": "middle",
+    "fontSize": 15
+  },
+  "transform": [
+    {
+      "filter": "datum.usd_goal_real < 6500000"
+    },
+    {
+      "calculate": "(datum.usd_pledged_real /  datum.usd_goal_real) * 100",
+      "as": "% of Goal"
+    }
+  ],
+  "mark": {
+    "type": "point",
+    "filled": true
+  },
+  "encoding": {
+    "y": {
+      "field": "usd_pledged_real",
+      "title": "Pledged (USD)",
+      "type": "quantitative",
+      "scale": {
+        "zero": false,
+        "domain": [
+          0,
+          6500000
+        ]
+      },
+      "axis": {
+        "grid": false
+      }
+    },
+    "x": {
+      "field": "usd_goal_real",
+      "title": "Goal (USD)",
+      "type": "quantitative",
+      "scale": {
+        "zero": false,
+        "domain": [
+          0,
+          6500000
+        ]
+      },
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "state",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Successful",
+          "Failed"
+        ],
+        "range": [
+          "rgb(255,128,14)",
+          "rgb(0,107,164)"
+        ]
+      },
+      "legend": {
+        "orient": "top-right",
+        "title": "Project State"
+      }
+    },
+    "shape": {
+      "condition": {
+        "test": "datum.usd_pledged_real > 4000000",
+        "value": "triangle-up"
+      },
+      "value": "circle"
+    },
+    "size": {
+      "condition": {
+        "test": "datum.usd_pledged_real > 4000000",
+        "value": 150
+      },
+      "value": 30
+    },
+    "opacity": {
+      "condition": {
+        "test": "datum.usd_pledged_real > 4000000",
+        "value": 1
+      },
+      "value": 0.6
+    },
+    "tooltip": [
+      {
+        "field": "name",
+        "title": "Project Name",
+        "type": "nominal"
+      },
+      {
+        "field": "category",
+        "title": "Category",
+        "type": "nominal"
+      },
+      {
+        "field": "usd_pledged_real",
+        "title": "Pledged (USD)",
+        "type": "quantitative"
+      },
+      {
+        "field": "usd_goal_real",
+        "title": "Goal (USD)",
+        "type": "quantitative"
+      },
+      {
+        "field": "% of Goal",
+        "title": "% of Goal Earned",
+        "type": "quantitative"
+      }
+    ]
+  }
+}

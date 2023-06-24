@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Total Trade Balance in \u00a3m ",
+    "anchor": "start",
+    "subtitle": "Source: ONS",
+    "subtitleFontSize": 10
+  },
+  "config": {
+    "background": "#fff0d8"
+  },
+  "height": 150,
+  "width": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/data_ons-IKBM.json",
+    "format": {
+      "type": "json",
+      "property": "quarters"
+    }
+  },
+  "mark": {
+    "type": "bar",
+    "color": "#fe921f"
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "labelSeparation": 1,
+        "domainColor": "#fffff",
+        "gridColor": "#00000017"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Total Trade Balance",
+      "axis": {
+        "gridColor": "#00000017"
+      }
+    }
+  }
+}

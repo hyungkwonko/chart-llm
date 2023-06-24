@@ -1,0 +1,6406 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "stroke": null
+    },
+    "axis": {
+      "grid": false
+    }
+  },
+  "data": {
+    "name": "data-73e2b92d49cf0d6ac88f9c30b9249e81"
+  },
+  "mark": {
+    "type": "area",
+    "fillOpacity": 0.8,
+    "interpolate": "monotone",
+    "smooth": true,
+    "stroke": "lightgray",
+    "strokeWidth": 0.5
+  },
+  "bounds": "flush",
+  "encoding": {
+    "column": {
+      "field": "library",
+      "header": {
+        "labelFontWeight": "bold",
+        "labelPadding": 18.9
+      },
+      "title": null,
+      "type": "nominal"
+    },
+    "fill": {
+      "field": "mean_func_score",
+      "legend": {
+        "direction": "horizontal"
+      },
+      "scale": {
+        "scheme": "yellowgreenblue"
+      },
+      "title": "mean functional score",
+      "type": "quantitative"
+    },
+    "row": {
+      "field": "variant_class",
+      "header": {
+        "labelAlign": "left",
+        "labelAngle": 0
+      },
+      "sort": [
+        "wildtype",
+        "synonymous",
+        "1 nonsynonymous",
+        ">1 nonsynonymous",
+        "deletion",
+        "stop"
+      ],
+      "spacing": 0,
+      "title": null,
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "library",
+        "type": "nominal"
+      },
+      {
+        "field": "variant_class",
+        "type": "nominal"
+      },
+      {
+        "field": "mean_func_score",
+        "format": ".2f",
+        "title": "mean functional score",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "func_score",
+      "scale": {
+        "nice": false
+      },
+      "title": "functional score",
+      "type": "quantitative"
+    },
+    "y": {
+      "axis": null,
+      "field": "count",
+      "scale": {
+        "range": [
+          27,
+          -18.9
+        ]
+      },
+      "type": "quantitative"
+    }
+  },
+  "height": 27,
+  "width": 200,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-73e2b92d49cf0d6ac88f9c30b9249e81": [
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -11.4838,
+        "count": 3.868457626048094e-60,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -11.160410204081632,
+        "count": 5.019402574716319e-48,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -10.837020408163266,
+        "count": 2.047550963602749e-37,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -10.5136306122449,
+        "count": 2.625946780503889e-28,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -10.190240816326531,
+        "count": 1.0587799107673662e-20,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -9.866851020408163,
+        "count": 1.3421327432096906e-14,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -9.543461224489796,
+        "count": 5.34918828215988e-10,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -9.22007142857143,
+        "count": 6.714952422026064e-07,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -8.896681632653062,
+        "count": 2.772678968519752e-05,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -8.573291836734693,
+        "count": 9.1015050531857e-05,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -8.249902040816327,
+        "count": 0.00029184680960805807,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -7.9265122448979595,
+        "count": 0.00048410936972371257,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -7.603122448979592,
+        "count": 0.001228853434992647,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -7.279732653061225,
+        "count": 0.0025644933184950395,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -6.956342857142857,
+        "count": 0.004779817840013296,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -6.63295306122449,
+        "count": 0.007121047356872477,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -6.309563265306123,
+        "count": 0.011096419115491292,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -5.986173469387755,
+        "count": 0.013656756959433117,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -5.662783673469388,
+        "count": 0.01708432383162262,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -5.339393877551021,
+        "count": 0.018361265370931537,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -5.016004081632653,
+        "count": 0.021277946309444892,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -4.692614285714286,
+        "count": 0.02302424536031475,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -4.3692244897959185,
+        "count": 0.02391684971348984,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -4.045834693877551,
+        "count": 0.025245655910428193,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -3.7224448979591838,
+        "count": 0.028194093310380853,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -3.3990551020408173,
+        "count": 0.03488365464944853,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -3.075665306122449,
+        "count": 0.03957160562874745,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -2.752275510204081,
+        "count": 0.04589128902959864,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -2.4288857142857143,
+        "count": 0.05517498339520556,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -2.105495918367348,
+        "count": 0.07118925657794038,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -1.7821061224489796,
+        "count": 0.09509626876495687,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -1.4587163265306113,
+        "count": 0.13282741860098862,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -1.1353265306122449,
+        "count": 0.20052734416428364,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -0.8119367346938784,
+        "count": 0.2927527999459548,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -0.48854693877551014,
+        "count": 0.3907458585963831,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -0.1651571428571419,
+        "count": 0.4382732295086488,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 0.15823265306122458,
+        "count": 0.4069925396808227,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 0.48162244897959106,
+        "count": 0.30376054405239244,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 0.8050122448979593,
+        "count": 0.1928776004577856,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 1.1284020408163276,
+        "count": 0.10490898260999028,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 1.451791836734694,
+        "count": 0.05246569006893823,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 1.7751816326530605,
+        "count": 0.021716448295747065,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 2.0985714285714288,
+        "count": 0.00820675916038818,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 2.421961224489797,
+        "count": 0.003297207576183659,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 2.7453510204081635,
+        "count": 0.0013324129794948028,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 3.06874081632653,
+        "count": 0.0005486460588400809,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 3.392130612244898,
+        "count": 0.0004435637569113644,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 3.7155204081632665,
+        "count": 0.0001340533437619658,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 4.038910204081633,
+        "count": 4.31523457581888e-05,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 4.3623,
+        "count": 7.594311335371566e-05,
+        "mean_func_score": -0.6787553364315222
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -11.4838,
+        "count": 5.154396802846646e-44,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -11.160410204081632,
+        "count": 1.764980001113965e-35,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -10.837020408163266,
+        "count": 5.3167611231298865e-28,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -10.5136306122449,
+        "count": 1.409457962015929e-21,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -10.190240816326531,
+        "count": 3.2918391622656185e-16,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -9.866851020408163,
+        "count": 6.7995304694769075e-12,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -9.543461224489796,
+        "count": 1.2600968957566041e-08,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -9.22007142857143,
+        "count": 2.2169145834953385e-06,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -8.896681632653062,
+        "count": 4.574121923847863e-05,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -8.573291836734693,
+        "count": 0.00019723295468128998,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -8.249902040816327,
+        "count": 0.0005387614909966807,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -7.9265122448979595,
+        "count": 0.0018384840573123222,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -7.603122448979592,
+        "count": 0.004454716079115534,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -7.279732653061225,
+        "count": 0.009114537537114387,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -6.956342857142857,
+        "count": 0.016774157830617475,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -6.63295306122449,
+        "count": 0.026582714485919316,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -6.309563265306123,
+        "count": 0.03812340024596115,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -5.986173469387755,
+        "count": 0.04924833694194379,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -5.662783673469388,
+        "count": 0.056530700226745174,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -5.339393877551021,
+        "count": 0.0631198159306683,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -5.016004081632653,
+        "count": 0.06837659011763471,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -4.692614285714286,
+        "count": 0.07023917371059171,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -4.3692244897959185,
+        "count": 0.0721344438269393,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -4.045834693877551,
+        "count": 0.07277716664652242,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -3.7224448979591838,
+        "count": 0.07684833102272848,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -3.3990551020408173,
+        "count": 0.0858922533397165,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -3.075665306122449,
+        "count": 0.09660563631476468,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -2.752275510204081,
+        "count": 0.10535464081962317,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -2.4288857142857143,
+        "count": 0.11658101472276726,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -2.105495918367348,
+        "count": 0.12896013322708128,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -1.7821061224489796,
+        "count": 0.146849327179142,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -1.4587163265306113,
+        "count": 0.1701108118051164,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -1.1353265306122449,
+        "count": 0.2015259610435489,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -0.8119367346938784,
+        "count": 0.23761515023547697,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -0.48854693877551014,
+        "count": 0.26611050433330313,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -0.1651571428571419,
+        "count": 0.26762849250596965,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 0.15823265306122458,
+        "count": 0.2321275986010101,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 0.48162244897959106,
+        "count": 0.17369528408718948,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 0.8050122448979593,
+        "count": 0.11434978023019075,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 1.1284020408163276,
+        "count": 0.06461043829047075,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 1.451791836734694,
+        "count": 0.03225979427311461,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 1.7751816326530605,
+        "count": 0.01458982149505447,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 2.0985714285714288,
+        "count": 0.0063109034589668486,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 2.421961224489797,
+        "count": 0.002470375004121312,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 2.7453510204081635,
+        "count": 0.0009368118407047836,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 3.06874081632653,
+        "count": 0.00047151991347485744,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 3.392130612244898,
+        "count": 0.00018563551562185,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 3.7155204081632665,
+        "count": 4.9433912499529895e-05,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 4.038910204081633,
+        "count": 6.5116043705915805e-06,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 4.3623,
+        "count": 1.345465719042743e-07,
+        "mean_func_score": -1.7244659764750603
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -11.4838,
+        "count": 1.9184222792174474e-18,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -11.160410204081632,
+        "count": 5.619862618767861e-16,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -10.837020408163266,
+        "count": 9.824773225483319e-14,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -10.5136306122449,
+        "count": 1.0277285686894909e-11,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -10.190240816326531,
+        "count": 6.456564061364086e-10,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -9.866851020408163,
+        "count": 2.449095784228786e-08,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -9.543461224489796,
+        "count": 5.653007024133496e-07,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -9.22007142857143,
+        "count": 8.032358608603528e-06,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -8.896681632653062,
+        "count": 7.148333772632452e-05,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -8.573291836734693,
+        "count": 0.00040895746584199106,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -8.249902040816327,
+        "count": 0.0015639137360753995,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -7.9265122448979595,
+        "count": 0.004225646559284714,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -7.603122448979592,
+        "count": 0.008636425178753975,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -7.279732653061225,
+        "count": 0.014273068986464176,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -6.956342857142857,
+        "count": 0.020226522988884173,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -6.63295306122449,
+        "count": 0.0262378594955645,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -6.309563265306123,
+        "count": 0.033206489869244245,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -5.986173469387755,
+        "count": 0.041808975346315516,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -5.662783673469388,
+        "count": 0.051627244970254366,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -5.339393877551021,
+        "count": 0.061290912537807864,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -5.016004081632653,
+        "count": 0.06818625681786923,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -4.692614285714286,
+        "count": 0.0712001598376685,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -4.3692244897959185,
+        "count": 0.07219841222744551,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -4.045834693877551,
+        "count": 0.07283253942949515,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -3.7224448979591838,
+        "count": 0.07438702777551941,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -3.3990551020408173,
+        "count": 0.07832088258780917,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -3.075665306122449,
+        "count": 0.08355738960970384,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -2.752275510204081,
+        "count": 0.08835041026325434,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -2.4288857142857143,
+        "count": 0.09484645303625612,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -2.105495918367348,
+        "count": 0.10710268012301613,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -1.7821061224489796,
+        "count": 0.1275114995749997,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -1.4587163265306113,
+        "count": 0.15674027081694888,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -1.1353265306122449,
+        "count": 0.19368283259710273,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -0.8119367346938784,
+        "count": 0.23384805892543947,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -0.48854693877551014,
+        "count": 0.26576173318550284,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": -0.1651571428571419,
+        "count": 0.2731819566214928,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 0.15823265306122458,
+        "count": 0.2483390137135863,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 0.48162244897959106,
+        "count": 0.19845508122057684,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 0.8050122448979593,
+        "count": 0.13845764571175267,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 1.1284020408163276,
+        "count": 0.08369206435695928,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 1.451791836734694,
+        "count": 0.0445051211042259,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 1.7751816326530605,
+        "count": 0.02242676046531563,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 2.0985714285714288,
+        "count": 0.012518147989210948,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 2.421961224489797,
+        "count": 0.008388749973822713,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 2.7453510204081635,
+        "count": 0.005625200871727535,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 3.06874081632653,
+        "count": 0.003018316015765021,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 3.392130612244898,
+        "count": 0.0011587460678567666,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 3.7155204081632665,
+        "count": 0.0003042325169139835,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 4.038910204081633,
+        "count": 5.323379090403934e-05,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "deletion",
+        "func_score": 4.3623,
+        "count": 6.058826996505648e-06,
+        "mean_func_score": -1.5906054794520548
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -11.4838,
+        "count": 1.0237461851120733e-24,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -11.160410204081632,
+        "count": 6.336680672947798e-21,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -10.837020408163266,
+        "count": 1.625496147362362e-17,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -10.5136306122449,
+        "count": 1.7336711424690343e-14,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -10.190240816326531,
+        "count": 7.727779256756908e-12,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -9.866851020408163,
+        "count": 1.4517544288486905e-09,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -9.543461224489796,
+        "count": 1.1652729320204037e-07,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -9.22007142857143,
+        "count": 4.08742349527999e-06,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -8.896681632653062,
+        "count": 6.507085911242707e-05,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -8.573291836734693,
+        "count": 0.000502527097438363,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -8.249902040816327,
+        "count": 0.0021339994844941797,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -7.9265122448979595,
+        "count": 0.006194016617864252,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -7.603122448979592,
+        "count": 0.015454297684580062,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -7.279732653061225,
+        "count": 0.03525961645209328,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -6.956342857142857,
+        "count": 0.06895631126893507,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -6.63295306122449,
+        "count": 0.11141080487537651,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -6.309563265306123,
+        "count": 0.1543007933023622,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -5.986173469387755,
+        "count": 0.18958557874000623,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -5.662783673469388,
+        "count": 0.21273036084251903,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -5.339393877551021,
+        "count": 0.2302339682437883,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -5.016004081632653,
+        "count": 0.24642426692101876,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -4.692614285714286,
+        "count": 0.24704669262428017,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -4.3692244897959185,
+        "count": 0.22244656001125407,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -4.045834693877551,
+        "count": 0.19226077124099328,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -3.7224448979591838,
+        "count": 0.1796389610792684,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -3.3990551020408173,
+        "count": 0.17712251770863086,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -3.075665306122449,
+        "count": 0.1656270610480611,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -2.752275510204081,
+        "count": 0.142067441577767,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -2.4288857142857143,
+        "count": 0.11322055244531234,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -2.105495918367348,
+        "count": 0.08298525417241402,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -1.7821061224489796,
+        "count": 0.05833542042825419,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -1.4587163265306113,
+        "count": 0.04373617887811272,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -1.1353265306122449,
+        "count": 0.035267304315648715,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -0.8119367346938784,
+        "count": 0.030038850916577226,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -0.48854693877551014,
+        "count": 0.026255223709366646,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": -0.1651571428571419,
+        "count": 0.023995164107710815,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 0.15823265306122458,
+        "count": 0.022543246605680307,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 0.48162244897959106,
+        "count": 0.020614539467267986,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 0.8050122448979593,
+        "count": 0.016264373007568816,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 1.1284020408163276,
+        "count": 0.009516227333198903,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 1.451791836734694,
+        "count": 0.005024347758595633,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 1.7751816326530605,
+        "count": 0.0030377030958517477,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 2.0985714285714288,
+        "count": 0.0014493921020590746,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 2.421961224489797,
+        "count": 0.0004197977431845902,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 2.7453510204081635,
+        "count": 6.828339723213408e-05,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 3.06874081632653,
+        "count": 5.6200460428552165e-06,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 3.392130612244898,
+        "count": 2.1123614152130514e-07,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 3.7155204081632665,
+        "count": 3.4175586549685144e-09,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 4.038910204081633,
+        "count": 2.3185748467272122e-11,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "stop",
+        "func_score": 4.3623,
+        "count": 6.52718405003606e-14,
+        "mean_func_score": -4.258274640230253
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -11.4838,
+        "count": 9.390328799217213e-237,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -11.160410204081632,
+        "count": 1.587335856595407e-206,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -10.837020408163266,
+        "count": 2.1232700767767382e-178,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -10.5136306122449,
+        "count": 2.247449991504416e-152,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -10.190240816326531,
+        "count": 1.8824490029478862e-128,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -9.866851020408163,
+        "count": 1.2476845217133816e-106,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -9.543461224489796,
+        "count": 6.54387116315086e-87,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -9.22007142857143,
+        "count": 2.715895641980739e-69,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -8.896681632653062,
+        "count": 8.919485446173655e-54,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -8.573291836734693,
+        "count": 2.318007886729585e-40,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -8.249902040816327,
+        "count": 4.766925914850588e-29,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -7.9265122448979595,
+        "count": 7.757294520922403e-20,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -7.603122448979592,
+        "count": 9.98919623958897e-13,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -7.279732653061225,
+        "count": 1.0178869117667207e-07,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -6.956342857142857,
+        "count": 8.209495483600542e-05,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -6.63295306122449,
+        "count": 0.0005598562911225494,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -6.309563265306123,
+        "count": 0.0006993490591445648,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -5.986173469387755,
+        "count": 0.0005594972454413424,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -5.662783673469388,
+        "count": 0.0013457374070162402,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -5.339393877551021,
+        "count": 0.0020389283790881465,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -5.016004081632653,
+        "count": 0.0010431982587806759,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -4.692614285714286,
+        "count": 0.0015381860278586232,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -4.3692244897959185,
+        "count": 0.0030276884555805027,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -4.045834693877551,
+        "count": 0.001992683137124603,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -3.7224448979591838,
+        "count": 0.0016473323433885564,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -3.3990551020408173,
+        "count": 0.0017494587900876903,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -3.075665306122449,
+        "count": 0.0052724955243855474,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -2.752275510204081,
+        "count": 0.008445494142401345,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -2.4288857142857143,
+        "count": 0.010213159844312208,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -2.105495918367348,
+        "count": 0.018981962838775603,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -1.7821061224489796,
+        "count": 0.034450115090972976,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -1.4587163265306113,
+        "count": 0.0631814724151125,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -1.1353265306122449,
+        "count": 0.13160576991506498,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -0.8119367346938784,
+        "count": 0.26931410737662587,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -0.48854693877551014,
+        "count": 0.46119728208576033,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": -0.1651571428571419,
+        "count": 0.5788030741926627,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 0.15823265306122458,
+        "count": 0.5656304419317276,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 0.48162244897959106,
+        "count": 0.41969777507125816,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 0.8050122448979593,
+        "count": 0.2653506131064477,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 1.1284020408163276,
+        "count": 0.1394192290917477,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 1.451791836734694,
+        "count": 0.06450812985708886,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 1.7751816326530605,
+        "count": 0.024776177188615748,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 2.0985714285714288,
+        "count": 0.011921200751295684,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 2.421961224489797,
+        "count": 0.002526692930375132,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 2.7453510204081635,
+        "count": 0.0009533679518326289,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 3.06874081632653,
+        "count": 3.942397886544698e-05,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 3.392130612244898,
+        "count": 1.8150294152546976e-08,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 3.7155204081632665,
+        "count": 7.172784025677522e-14,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 4.038910204081633,
+        "count": 2.283062610740901e-21,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "synonymous",
+        "func_score": 4.3623,
+        "count": 5.771337440689781e-31,
+        "mean_func_score": -0.06105334131258728
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -11.4838,
+        "count": 2.953909797926566e-264,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -11.160410204081632,
+        "count": 3.537182455674694e-222,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -10.837020408163266,
+        "count": 8.126275601196715e-184,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -10.5136306122449,
+        "count": 3.5817847606906046e-149,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -10.190240816326531,
+        "count": 3.0288744623331936e-118,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -9.866851020408163,
+        "count": 4.914019944059216e-91,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -9.543461224489796,
+        "count": 1.5295596148131702e-67,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -9.22007142857143,
+        "count": 9.134184121115674e-48,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -8.896681632653062,
+        "count": 1.0465192690052148e-31,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -8.573291836734693,
+        "count": 2.3004224539743247e-19,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -8.249902040816327,
+        "count": 9.708540434456442e-11,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -7.9265122448979595,
+        "count": 8.055658947787111e-06,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -7.603122448979592,
+        "count": 0.00023265235494509542,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -7.279732653061225,
+        "count": 0.00013551123473157193,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -6.956342857142857,
+        "count": 0.0005868210678920266,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -6.63295306122449,
+        "count": 0.0006142215192915083,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -6.309563265306123,
+        "count": 0.0021362048946578873,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -5.986173469387755,
+        "count": 0.0017007810811385427,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -5.662783673469388,
+        "count": 0.0023110858757514783,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -5.339393877551021,
+        "count": 0.002715724018855046,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -5.016004081632653,
+        "count": 0.0027960033424750085,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -4.692614285714286,
+        "count": 0.003060406007925087,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -4.3692244897959185,
+        "count": 0.0024452436507317933,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -4.045834693877551,
+        "count": 0.001876846886998497,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -3.7224448979591838,
+        "count": 0.0025095128614173907,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -3.3990551020408173,
+        "count": 0.002632426435292586,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -3.075665306122449,
+        "count": 0.002962086200256371,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -2.752275510204081,
+        "count": 0.006812779639225757,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -2.4288857142857143,
+        "count": 0.008950064045936259,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -2.105495918367348,
+        "count": 0.014252202689664855,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -1.7821061224489796,
+        "count": 0.027223193159605297,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -1.4587163265306113,
+        "count": 0.06242727566430894,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -1.1353265306122449,
+        "count": 0.13705078712578644,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -0.8119367346938784,
+        "count": 0.2561355578747932,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -0.48854693877551014,
+        "count": 0.45415027736417213,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": -0.1651571428571419,
+        "count": 0.6222118307285418,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 0.15823265306122458,
+        "count": 0.5821194575872214,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 0.48162244897959106,
+        "count": 0.42121194967690434,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 0.8050122448979593,
+        "count": 0.24737145080977366,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 1.1284020408163276,
+        "count": 0.12772179560617045,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 1.451791836734694,
+        "count": 0.05871816339532786,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 1.7751816326530605,
+        "count": 0.023525323782555507,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 2.0985714285714288,
+        "count": 0.009116675219757462,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 2.421961224489797,
+        "count": 0.004054517399189379,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 2.7453510204081635,
+        "count": 0.0008072934270145741,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 3.06874081632653,
+        "count": 0.0005574609915303039,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 3.392130612244898,
+        "count": 0.00017469972747842193,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 3.7155204081632665,
+        "count": 0.00031133132878789966,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 4.038910204081633,
+        "count": 9.847486870754032e-06,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-1",
+        "variant_class": "wildtype",
+        "func_score": 4.3623,
+        "count": 1.507335270833383e-10,
+        "mean_func_score": -0.07742088985349974
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -11.4838,
+        "count": 2.634841000045389e-05,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -11.160410204081632,
+        "count": 7.597640725046949e-05,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -10.837020408163266,
+        "count": 0.0002322266759559273,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -10.5136306122449,
+        "count": 0.0008171900938223048,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -10.190240816326531,
+        "count": 0.0022980765221485514,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -9.866851020408163,
+        "count": 0.004945685424921219,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -9.543461224489796,
+        "count": 0.008769281644152908,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -9.22007142857143,
+        "count": 0.011847517602676407,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -8.896681632653062,
+        "count": 0.014828503911440345,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -8.573291836734693,
+        "count": 0.017907552010707966,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -8.249902040816327,
+        "count": 0.01971309715965981,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -7.9265122448979595,
+        "count": 0.019076531144623866,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -7.603122448979592,
+        "count": 0.016138573135987117,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -7.279732653061225,
+        "count": 0.010740578767536335,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -6.956342857142857,
+        "count": 0.00722731514664889,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -6.63295306122449,
+        "count": 0.006667273694724633,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -6.309563265306123,
+        "count": 0.0062599567976442515,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -5.986173469387755,
+        "count": 0.005300037659768896,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -5.662783673469388,
+        "count": 0.004564294629329405,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -5.339393877551021,
+        "count": 0.004996157132423528,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -5.016004081632653,
+        "count": 0.007110518185984546,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -4.692614285714286,
+        "count": 0.009468244055524473,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -4.3692244897959185,
+        "count": 0.012527629486387975,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -4.045834693877551,
+        "count": 0.018379678971432008,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -3.7224448979591838,
+        "count": 0.024349614276629575,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -3.3990551020408173,
+        "count": 0.029063676203048155,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -3.075665306122449,
+        "count": 0.0348001567248715,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -2.752275510204081,
+        "count": 0.042995893290160285,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -2.4288857142857143,
+        "count": 0.05603640071295182,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -2.105495918367348,
+        "count": 0.07095799025633953,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -1.7821061224489796,
+        "count": 0.09391083381071448,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -1.4587163265306113,
+        "count": 0.13356205653666356,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -1.1353265306122449,
+        "count": 0.19339064450851293,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -0.8119367346938784,
+        "count": 0.282509533673665,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -0.48854693877551014,
+        "count": 0.3802215906405764,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -0.1651571428571419,
+        "count": 0.43802121442094355,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 0.15823265306122458,
+        "count": 0.4186252658409116,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 0.48162244897959106,
+        "count": 0.31974019353054345,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 0.8050122448979593,
+        "count": 0.19408725821746822,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 1.1284020408163276,
+        "count": 0.09852421624909757,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 1.451791836734694,
+        "count": 0.044182821263265205,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 1.7751816326530605,
+        "count": 0.017625760098220148,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 2.0985714285714288,
+        "count": 0.0062687789804139245,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 2.421961224489797,
+        "count": 0.0022605252011163555,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 2.7453510204081635,
+        "count": 0.000787900411995765,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 3.06874081632653,
+        "count": 0.00015197156381965789,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 3.392130612244898,
+        "count": 7.163463851219716e-05,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 3.7155204081632665,
+        "count": 0.0001194683306176354,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 4.038910204081633,
+        "count": 5.248444863173061e-05,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 4.3623,
+        "count": 4.901213031428075e-06,
+        "mean_func_score": -0.8632327131285589
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -11.4838,
+        "count": 0.00013111743541557104,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -11.160410204081632,
+        "count": 0.00045568890934950785,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -10.837020408163266,
+        "count": 0.0013644111653171038,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -10.5136306122449,
+        "count": 0.003678715155981671,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -10.190240816326531,
+        "count": 0.008428683575155685,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -9.866851020408163,
+        "count": 0.016172122547619044,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -9.543461224489796,
+        "count": 0.026533081666360356,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -9.22007142857143,
+        "count": 0.03802979751950044,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -8.896681632653062,
+        "count": 0.04776184937164016,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -8.573291836734693,
+        "count": 0.05423545189305374,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -8.249902040816327,
+        "count": 0.05725986014069311,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -7.9265122448979595,
+        "count": 0.05579922017191061,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -7.603122448979592,
+        "count": 0.04814719800668467,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -7.279732653061225,
+        "count": 0.03534737368810201,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -6.956342857142857,
+        "count": 0.025594539476369887,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -6.63295306122449,
+        "count": 0.021090417556520125,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -6.309563265306123,
+        "count": 0.017956097047569668,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -5.986173469387755,
+        "count": 0.01565480730590573,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -5.662783673469388,
+        "count": 0.014687068727341726,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -5.339393877551021,
+        "count": 0.01636243971043058,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -5.016004081632653,
+        "count": 0.02118865257583424,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -4.692614285714286,
+        "count": 0.028460153751788644,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -4.3692244897959185,
+        "count": 0.037336399278124224,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -4.045834693877551,
+        "count": 0.04737570572276565,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -3.7224448979591838,
+        "count": 0.05751493654114419,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -3.3990551020408173,
+        "count": 0.0682377262229886,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -3.075665306122449,
+        "count": 0.07991152315160023,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -2.752275510204081,
+        "count": 0.09177511055379683,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -2.4288857142857143,
+        "count": 0.10522755488550521,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -2.105495918367348,
+        "count": 0.12193632661402384,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -1.7821061224489796,
+        "count": 0.1419908468149977,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -1.4587163265306113,
+        "count": 0.16700685711535126,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -1.1353265306122449,
+        "count": 0.19872730459185464,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -0.8119367346938784,
+        "count": 0.23319987752601454,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -0.48854693877551014,
+        "count": 0.2583077076701846,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -0.1651571428571419,
+        "count": 0.2607413685721647,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 0.15823265306122458,
+        "count": 0.2333164646242494,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 0.48162244897959106,
+        "count": 0.18125029764813827,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 0.8050122448979593,
+        "count": 0.12185283648442181,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 1.1284020408163276,
+        "count": 0.0710616478617758,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 1.451791836734694,
+        "count": 0.035706515980540095,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 1.7751816326530605,
+        "count": 0.015741993823365424,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 2.0985714285714288,
+        "count": 0.006337313978631269,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 2.421961224489797,
+        "count": 0.0022776827430914547,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 2.7453510204081635,
+        "count": 0.0007086923637862946,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 3.06874081632653,
+        "count": 0.00020687479768019323,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 3.392130612244898,
+        "count": 6.795464547086134e-05,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 3.7155204081632665,
+        "count": 2.8285654143394797e-05,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 4.038910204081633,
+        "count": 2.0838072958135172e-05,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 4.3623,
+        "count": 1.1318873628562988e-05,
+        "mean_func_score": -2.186504404028694
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -11.4838,
+        "count": 0.0006062734177255945,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -11.160410204081632,
+        "count": 0.0015682236577422037,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -10.837020408163266,
+        "count": 0.0035434778729852264,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -10.5136306122449,
+        "count": 0.007078867693457274,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -10.190240816326531,
+        "count": 0.012653947328891338,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -9.866851020408163,
+        "count": 0.020461178219147294,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -9.543461224489796,
+        "count": 0.03017472117389486,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -9.22007142857143,
+        "count": 0.04077648181839105,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -8.896681632653062,
+        "count": 0.05058086645908377,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -8.573291836734693,
+        "count": 0.057610003722205046,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -8.249902040816327,
+        "count": 0.06026553725368398,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -7.9265122448979595,
+        "count": 0.05798056561840276,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -7.603122448979592,
+        "count": 0.051510873191530714,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -7.279732653061225,
+        "count": 0.04269855992878193,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -6.956342857142857,
+        "count": 0.033749723125456405,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -6.63295306122449,
+        "count": 0.026373878636711427,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -6.309563265306123,
+        "count": 0.02135409721706038,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -5.986173469387755,
+        "count": 0.01877616685482033,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -5.662783673469388,
+        "count": 0.018505806064394403,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -5.339393877551021,
+        "count": 0.02043416127148862,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -5.016004081632653,
+        "count": 0.024477537121362827,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -4.692614285714286,
+        "count": 0.03050782755641281,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -4.3692244897959185,
+        "count": 0.03824468021917933,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -4.045834693877551,
+        "count": 0.04717065117050594,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -3.7224448979591838,
+        "count": 0.05663483339478545,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -3.3990551020408173,
+        "count": 0.06613313669987389,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -3.075665306122449,
+        "count": 0.07552866588583362,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -2.752275510204081,
+        "count": 0.08509292822229435,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -2.4288857142857143,
+        "count": 0.09554515294032931,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -2.105495918367348,
+        "count": 0.10819971963182122,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -1.7821061224489796,
+        "count": 0.1248396300528434,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -1.4587163265306113,
+        "count": 0.14679989989287556,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -1.1353265306122449,
+        "count": 0.17342287429052425,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -0.8119367346938784,
+        "count": 0.2008236462183564,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -0.48854693877551014,
+        "count": 0.22205785750955695,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": -0.1651571428571419,
+        "count": 0.22929504189044708,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 0.15823265306122458,
+        "count": 0.2174478805945083,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 0.48162244897959106,
+        "count": 0.18725272741941323,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 0.8050122448979593,
+        "count": 0.14548219386449385,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 1.1284020408163276,
+        "count": 0.10179395409815743,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 1.451791836734694,
+        "count": 0.06433252705791628,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 1.7751816326530605,
+        "count": 0.0370035943808928,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 2.0985714285714288,
+        "count": 0.01960113003372086,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 2.421961224489797,
+        "count": 0.009698239715743339,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 2.7453510204081635,
+        "count": 0.004538309721647007,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 3.06874081632653,
+        "count": 0.0020171308493527967,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 3.392130612244898,
+        "count": 0.0008432572783870677,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 3.7155204081632665,
+        "count": 0.0003238314034305947,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 4.038910204081633,
+        "count": 0.0001108239114188456,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "deletion",
+        "func_score": 4.3623,
+        "count": 3.2838147558823226e-05,
+        "mean_func_score": -2.2425226218097447
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -11.4838,
+        "count": 0.0025354971663202157,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -11.160410204081632,
+        "count": 0.0069139174910615945,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -10.837020408163266,
+        "count": 0.01633908613802674,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -10.5136306122449,
+        "count": 0.033580196233075406,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -10.190240816326531,
+        "count": 0.060372300448143956,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -9.866851020408163,
+        "count": 0.09580749481454,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -9.543461224489796,
+        "count": 0.1357036767982084,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -9.22007142857143,
+        "count": 0.17342452573556208,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -8.896681632653062,
+        "count": 0.20162251181898627,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -8.573291836734693,
+        "count": 0.21448848115725538,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -8.249902040816327,
+        "count": 0.20995867247492123,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -7.9265122448979595,
+        "count": 0.1903773333235239,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -7.603122448979592,
+        "count": 0.16121791885410358,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -7.279732653061225,
+        "count": 0.12930373356396233,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -6.956342857142857,
+        "count": 0.1009039893903294,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -6.63295306122449,
+        "count": 0.07955506659180417,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -6.309563265306123,
+        "count": 0.06537452553019449,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -5.986173469387755,
+        "count": 0.056914642030583544,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -5.662783673469388,
+        "count": 0.05344294462329299,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -5.339393877551021,
+        "count": 0.055279612630862694,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -5.016004081632653,
+        "count": 0.06241388084570705,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -4.692614285714286,
+        "count": 0.07326258524235496,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -4.3692244897959185,
+        "count": 0.08474566011404217,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -4.045834693877551,
+        "count": 0.09337839687661818,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -3.7224448979591838,
+        "count": 0.09661675995780847,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -3.3990551020408173,
+        "count": 0.09384390229632984,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -3.075665306122449,
+        "count": 0.08622719291482908,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -2.752275510204081,
+        "count": 0.07546710326009722,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -2.4288857142857143,
+        "count": 0.06301261374957137,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -2.105495918367348,
+        "count": 0.05051963154706638,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -1.7821061224489796,
+        "count": 0.04006208600805746,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -1.4587163265306113,
+        "count": 0.03314016135860916,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -1.1353265306122449,
+        "count": 0.02973990546309205,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -0.8119367346938784,
+        "count": 0.02854312135599258,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -0.48854693877551014,
+        "count": 0.02783760648741488,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": -0.1651571428571419,
+        "count": 0.026351795989179985,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 0.15823265306122458,
+        "count": 0.023605153754419538,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 0.48162244897959106,
+        "count": 0.0197082328247182,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 0.8050122448979593,
+        "count": 0.015079047995078344,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 1.1284020408163276,
+        "count": 0.010417108135718781,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 1.451791836734694,
+        "count": 0.00651720688102652,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 1.7751816326530605,
+        "count": 0.0037821056675865668,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 2.0985714285714288,
+        "count": 0.002068752972441706,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 2.421961224489797,
+        "count": 0.0010383808910964906,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 2.7453510204081635,
+        "count": 0.0004510325721812463,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 3.06874081632653,
+        "count": 0.0001605747676637161,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 3.392130612244898,
+        "count": 4.525876291833164e-05,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 3.7155204081632665,
+        "count": 9.909908270043665e-06,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 4.038910204081633,
+        "count": 1.6686180982916642e-06,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "stop",
+        "func_score": 4.3623,
+        "count": 2.1475695773336803e-07,
+        "mean_func_score": -6.362291295293627
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -11.4838,
+        "count": 5.2623571101523035e-62,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -11.160410204081632,
+        "count": 4.8620112109702586e-49,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -10.837020408163266,
+        "count": 1.0664324287063432e-37,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -10.5136306122449,
+        "count": 5.563149822571435e-28,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -10.190240816326531,
+        "count": 6.922524733401155e-20,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -9.866851020408163,
+        "count": 2.0645350692918445e-13,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -9.543461224489796,
+        "count": 1.4864680488917706e-08,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -9.22007142857143,
+        "count": 2.6109242711932255e-05,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -8.896681632653062,
+        "count": 0.0011339334055308597,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -8.573291836734693,
+        "count": 0.0013116374041633207,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -8.249902040816327,
+        "count": 0.0012451095466401631,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -7.9265122448979595,
+        "count": 0.0019627806766913296,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -7.603122448979592,
+        "count": 0.002437418557066052,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -7.279732653061225,
+        "count": 0.0016783331140046028,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -6.956342857142857,
+        "count": 0.0009125982635893344,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -6.63295306122449,
+        "count": 0.0009355073718414648,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -6.309563265306123,
+        "count": 0.0005455548130397595,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -5.986173469387755,
+        "count": 2.3186448460936414e-05,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -5.662783673469388,
+        "count": 0.00010109965954774928,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -5.339393877551021,
+        "count": 0.0006321431729978252,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -5.016004081632653,
+        "count": 0.0003242832974541991,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -4.692614285714286,
+        "count": 0.001459446882548439,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -4.3692244897959185,
+        "count": 0.001479837782425366,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -4.045834693877551,
+        "count": 0.0012465374925621337,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -3.7224448979591838,
+        "count": 0.0029347126313997176,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -3.3990551020408173,
+        "count": 0.003355623833263792,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -3.075665306122449,
+        "count": 0.003965511977479015,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -2.752275510204081,
+        "count": 0.007186708067785132,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -2.4288857142857143,
+        "count": 0.011809911317735667,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -2.105495918367348,
+        "count": 0.016145568027812564,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -1.7821061224489796,
+        "count": 0.035064255892092416,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -1.4587163265306113,
+        "count": 0.07107492177416565,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -1.1353265306122449,
+        "count": 0.13942746536632564,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -0.8119367346938784,
+        "count": 0.2548871174867498,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -0.48854693877551014,
+        "count": 0.4288617986826802,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": -0.1651571428571419,
+        "count": 0.6028096563190697,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 0.15823265306122458,
+        "count": 0.6414442983964218,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 0.48162244897959106,
+        "count": 0.4432133830245654,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 0.8050122448979593,
+        "count": 0.24287792244297163,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 1.1284020408163276,
+        "count": 0.11254278008155374,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 1.451791836734694,
+        "count": 0.0397000968468712,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 1.7751816326530605,
+        "count": 0.012551310258827086,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 2.0985714285714288,
+        "count": 0.003772792393314698,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 2.421961224489797,
+        "count": 0.00047581052646224946,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 2.7453510204081635,
+        "count": 0.0005907538910500021,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 3.06874081632653,
+        "count": 4.393314159382719e-05,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 3.392130612244898,
+        "count": 7.753085786858323e-08,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 3.7155204081632665,
+        "count": 3.233575651572696e-12,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 4.038910204081633,
+        "count": 3.1872191003221675e-18,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "synonymous",
+        "func_score": 4.3623,
+        "count": 7.424398107753976e-26,
+        "mean_func_score": -0.1123452311756935
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -11.4838,
+        "count": 2.288367269355006e-54,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -11.160410204081632,
+        "count": 5.866458873660023e-39,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -10.837020408163266,
+        "count": 2.1695531517591694e-26,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -10.5136306122449,
+        "count": 1.1596477585855395e-16,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -10.190240816326531,
+        "count": 9.114169943198411e-10,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -9.866851020408163,
+        "count": 1.2347885837926653e-05,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -9.543461224489796,
+        "count": 0.0007584779801921821,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -9.22007142857143,
+        "count": 0.001391406700720745,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -8.896681632653062,
+        "count": 0.0019287321618529274,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -8.573291836734693,
+        "count": 0.0020194825630572718,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -8.249902040816327,
+        "count": 0.001624086073705277,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -7.9265122448979595,
+        "count": 0.00256282966670473,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -7.603122448979592,
+        "count": 0.0029824593889465805,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -7.279732653061225,
+        "count": 0.00125627666479304,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -6.956342857142857,
+        "count": 0.0008665206870701842,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -6.63295306122449,
+        "count": 0.0006915450107201825,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -6.309563265306123,
+        "count": 0.00044365090187813394,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -5.986173469387755,
+        "count": 0.000392476509658687,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -5.662783673469388,
+        "count": 0.00022647617681972832,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -5.339393877551021,
+        "count": 1.6249251343586562e-06,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -5.016004081632653,
+        "count": 0.0003154381586101722,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -4.692614285714286,
+        "count": 0.000768869012769885,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -4.3692244897959185,
+        "count": 0.0014686145865245217,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -4.045834693877551,
+        "count": 0.0010908926464172203,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -3.7224448979591838,
+        "count": 0.0020840325475505153,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -3.3990551020408173,
+        "count": 0.0028908103854810305,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -3.075665306122449,
+        "count": 0.0037823247237506017,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -2.752275510204081,
+        "count": 0.006706416651671744,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -2.4288857142857143,
+        "count": 0.012116557119164812,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -2.105495918367348,
+        "count": 0.01999438247789182,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -1.7821061224489796,
+        "count": 0.03052388501968458,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -1.4587163265306113,
+        "count": 0.06001132354089042,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -1.1353265306122449,
+        "count": 0.12573004966585924,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -0.8119367346938784,
+        "count": 0.25619418633012164,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -0.48854693877551014,
+        "count": 0.4424572461606795,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": -0.1651571428571419,
+        "count": 0.6385831101161659,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 0.15823265306122458,
+        "count": 0.660343688062192,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 0.48162244897959106,
+        "count": 0.4550531662708051,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 0.8050122448979593,
+        "count": 0.22085532479773803,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 1.1284020408163276,
+        "count": 0.08896367573594309,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 1.451791836734694,
+        "count": 0.03180812459676596,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 1.7751816326530605,
+        "count": 0.010424715984744507,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 2.0985714285714288,
+        "count": 0.003332827186442377,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 2.421961224489797,
+        "count": 0.0006375278143787389,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 2.7453510204081635,
+        "count": 0.0002663671250514204,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 3.06874081632653,
+        "count": 0.00023206637060220464,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 3.392130612244898,
+        "count": 7.305403274050132e-05,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 3.7155204081632665,
+        "count": 4.341771751469955e-08,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 4.038910204081633,
+        "count": 4.3104668471562955e-14,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-2",
+        "variant_class": "wildtype",
+        "func_score": 4.3623,
+        "count": 6.559069185522828e-23,
+        "mean_func_score": -0.13263049240493424
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -11.4838,
+        "count": 0.00012250830105293216,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -11.160410204081632,
+        "count": 0.0002899784582413703,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -10.837020408163266,
+        "count": 0.00040504788167562683,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -10.5136306122449,
+        "count": 0.0009864006503719322,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -10.190240816326531,
+        "count": 0.0024196042163976018,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -9.866851020408163,
+        "count": 0.004380909523448391,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -9.543461224489796,
+        "count": 0.007360928354301922,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -9.22007142857143,
+        "count": 0.011378436978088487,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -8.896681632653062,
+        "count": 0.01399183251519756,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -8.573291836734693,
+        "count": 0.014642894022828994,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -8.249902040816327,
+        "count": 0.015621947650193759,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -7.9265122448979595,
+        "count": 0.015621703158220299,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -7.603122448979592,
+        "count": 0.01255313955320531,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -7.279732653061225,
+        "count": 0.008402307680483851,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -6.956342857142857,
+        "count": 0.007285925606890959,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -6.63295306122449,
+        "count": 0.006900163740727988,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -6.309563265306123,
+        "count": 0.006583258906950382,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -5.986173469387755,
+        "count": 0.007145058375773108,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -5.662783673469388,
+        "count": 0.008888319680169761,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -5.339393877551021,
+        "count": 0.012238291684886334,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -5.016004081632653,
+        "count": 0.015710340924227816,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -4.692614285714286,
+        "count": 0.01841441813361085,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -4.3692244897959185,
+        "count": 0.021693835665573785,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -4.045834693877551,
+        "count": 0.02587083280971901,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -3.7224448979591838,
+        "count": 0.029443096346273154,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -3.3990551020408173,
+        "count": 0.033375038892972775,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -3.075665306122449,
+        "count": 0.03952889853935803,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -2.752275510204081,
+        "count": 0.04683580075696333,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -2.4288857142857143,
+        "count": 0.058096549139745275,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -2.105495918367348,
+        "count": 0.07302546041085607,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -1.7821061224489796,
+        "count": 0.09571533535076417,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -1.4587163265306113,
+        "count": 0.13292578066680938,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -1.1353265306122449,
+        "count": 0.19440130790093835,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -0.8119367346938784,
+        "count": 0.28036372156590833,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -0.48854693877551014,
+        "count": 0.3852380432750264,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": -0.1651571428571419,
+        "count": 0.44284825145853746,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 0.15823265306122458,
+        "count": 0.41012466423617755,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 0.48162244897959106,
+        "count": 0.30410927606814975,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 0.8050122448979593,
+        "count": 0.1783385168526119,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 1.1284020408163276,
+        "count": 0.08773749012416653,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 1.451791836734694,
+        "count": 0.037719111592374704,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 1.7751816326530605,
+        "count": 0.014634654607536825,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 2.0985714285714288,
+        "count": 0.005538364781844544,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 2.421961224489797,
+        "count": 0.002111398770725967,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 2.7453510204081635,
+        "count": 0.0007451119433860304,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 3.06874081632653,
+        "count": 0.00033167096147780465,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 3.392130612244898,
+        "count": 0.00011637445020185428,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 3.7155204081632665,
+        "count": 1.5769456001770687e-05,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 4.038910204081633,
+        "count": 5.699914867197441e-07,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "1 nonsynonymous",
+        "func_score": 4.3623,
+        "count": 4.374285216620411e-09,
+        "mean_func_score": -0.9283554631479958
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -11.4838,
+        "count": 0.00017889347225380045,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -11.160410204081632,
+        "count": 0.0006218804242908799,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -10.837020408163266,
+        "count": 0.0016989268502955437,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -10.5136306122449,
+        "count": 0.004000427948453931,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -10.190240816326531,
+        "count": 0.008188375186777511,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -9.866851020408163,
+        "count": 0.014984106583753693,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -9.543461224489796,
+        "count": 0.024045795769001132,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -9.22007142857143,
+        "count": 0.03389735730826473,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -8.896681632653062,
+        "count": 0.042730980671134046,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -8.573291836734693,
+        "count": 0.048195165231900455,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -8.249902040816327,
+        "count": 0.05069318335233968,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -7.9265122448979595,
+        "count": 0.0488948763544386,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -7.603122448979592,
+        "count": 0.03968019792587267,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -7.279732653061225,
+        "count": 0.028430177095636385,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -6.956342857142857,
+        "count": 0.02331328245904283,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -6.63295306122449,
+        "count": 0.022284151611410143,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -6.309563265306123,
+        "count": 0.02191011099789821,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -5.986173469387755,
+        "count": 0.02278906759818521,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -5.662783673469388,
+        "count": 0.026599451887374087,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -5.339393877551021,
+        "count": 0.03390330276825511,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -5.016004081632653,
+        "count": 0.04289625521660739,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -4.692614285714286,
+        "count": 0.052017259159120144,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -4.3692244897959185,
+        "count": 0.0611629176465344,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -4.045834693877551,
+        "count": 0.06996768389567148,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -3.7224448979591838,
+        "count": 0.07809673886801435,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -3.3990551020408173,
+        "count": 0.08486572367049995,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -3.075665306122449,
+        "count": 0.09079547064849626,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -2.752275510204081,
+        "count": 0.09816852073117278,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -2.4288857142857143,
+        "count": 0.10772355254847282,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -2.105495918367348,
+        "count": 0.12050029940440479,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -1.7821061224489796,
+        "count": 0.13825361122751545,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -1.4587163265306113,
+        "count": 0.15988423889193457,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -1.1353265306122449,
+        "count": 0.18581829144580184,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -0.8119367346938784,
+        "count": 0.2152646614624035,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -0.48854693877551014,
+        "count": 0.23867136922534235,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": -0.1651571428571419,
+        "count": 0.24325240030691594,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 0.15823265306122458,
+        "count": 0.21891981070624353,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 0.48162244897959106,
+        "count": 0.16761273934134094,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 0.8050122448979593,
+        "count": 0.10856883086984145,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 1.1284020408163276,
+        "count": 0.060811914584628625,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 1.451791836734694,
+        "count": 0.030101721073468538,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 1.7751816326530605,
+        "count": 0.013496739957861683,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 2.0985714285714288,
+        "count": 0.005443068199861107,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 2.421961224489797,
+        "count": 0.001897592396525431,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 2.7453510204081635,
+        "count": 0.0006247127347831519,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 3.06874081632653,
+        "count": 0.00023844493252496253,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 3.392130612244898,
+        "count": 8.870251938576712e-05,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 3.7155204081632665,
+        "count": 2.1582362097763846e-05,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 4.038910204081633,
+        "count": 2.4682321757984042e-06,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": ">1 nonsynonymous",
+        "func_score": 4.3623,
+        "count": 1.123098367162721e-07,
+        "mean_func_score": -2.3235790600742487
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -11.4838,
+        "count": 0.001179998913152564,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -11.160410204081632,
+        "count": 0.0025572130180859273,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -10.837020408163266,
+        "count": 0.005047159332357119,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -10.5136306122449,
+        "count": 0.009093770938341508,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -10.190240816326531,
+        "count": 0.014939478961104447,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -9.866851020408163,
+        "count": 0.022363333747514057,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -9.543461224489796,
+        "count": 0.030565410951013196,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -9.22007142857143,
+        "count": 0.03832423394236874,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -8.896681632653062,
+        "count": 0.04436392863692338,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -8.573291836734693,
+        "count": 0.047744328342374416,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -8.249902040816327,
+        "count": 0.048127773024078675,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -7.9265122448979595,
+        "count": 0.04585803437628593,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -7.603122448979592,
+        "count": 0.04181266112320861,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -7.279732653061225,
+        "count": 0.037073052988541286,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -6.956342857142857,
+        "count": 0.03260610260137572,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -6.63295306122449,
+        "count": 0.029128797038644773,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -6.309563265306123,
+        "count": 0.02712899193503088,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -5.986173469387755,
+        "count": 0.026926895872984913,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -5.662783673469388,
+        "count": 0.028706700067761395,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -5.339393877551021,
+        "count": 0.03247428934652152,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -5.016004081632653,
+        "count": 0.03796133467331462,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -4.692614285714286,
+        "count": 0.044585742316686994,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -4.3692244897959185,
+        "count": 0.051528748657818195,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -4.045834693877551,
+        "count": 0.057913262073456394,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -3.7224448979591838,
+        "count": 0.06311853397864334,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -3.3990551020408173,
+        "count": 0.06719947577557872,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -3.075665306122449,
+        "count": 0.07113692705476173,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -2.752275510204081,
+        "count": 0.07666197916297084,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -2.4288857142857143,
+        "count": 0.0857554400208109,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -2.105495918367348,
+        "count": 0.1001530317410862,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -1.7821061224489796,
+        "count": 0.12099173296262743,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -1.4587163265306113,
+        "count": 0.1482784702307825,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -1.1353265306122449,
+        "count": 0.1798036040698386,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -0.8119367346938784,
+        "count": 0.21004640199443675,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -0.48854693877551014,
+        "count": 0.2306742495029655,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": -0.1651571428571419,
+        "count": 0.23361746407650927,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 0.15823265306122458,
+        "count": 0.21537161663375978,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 0.48162244897959106,
+        "count": 0.17947207468494678,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 0.8050122448979593,
+        "count": 0.13501290846024797,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 1.1284020408163276,
+        "count": 0.09209641306229985,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 1.451791836734694,
+        "count": 0.05748831284470045,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 1.7751816326530605,
+        "count": 0.03318825250118222,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 2.0985714285714288,
+        "count": 0.0178339978637342,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 2.421961224489797,
+        "count": 0.008899620091660116,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 2.7453510204081635,
+        "count": 0.0040800047215744945,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 3.06874081632653,
+        "count": 0.0016930178851531546,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 3.392130612244898,
+        "count": 0.0006267377296840899,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 3.7155204081632665,
+        "count": 0.0002044495232050671,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 4.038910204081633,
+        "count": 5.8154348104967214e-05,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "deletion",
+        "func_score": 4.3623,
+        "count": 1.4283518005464571e-05,
+        "mean_func_score": -2.2751206720233745
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -11.4838,
+        "count": 0.0021421456734207677,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -11.160410204081632,
+        "count": 0.0055006434583733275,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -10.837020408163266,
+        "count": 0.012654108745329172,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -10.5136306122449,
+        "count": 0.02549349229951944,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -10.190240816326531,
+        "count": 0.04507440764209965,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -9.866851020408163,
+        "count": 0.0708028223003398,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -9.543461224489796,
+        "count": 0.10008441233265165,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -9.22007142857143,
+        "count": 0.12870962321534488,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -8.896681632653062,
+        "count": 0.15195638309569004,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -8.573291836734693,
+        "count": 0.1655573707661401,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -8.249902040816327,
+        "count": 0.1661618097348585,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -7.9265122448979595,
+        "count": 0.1529289277451926,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -7.603122448979592,
+        "count": 0.13020864871197652,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -7.279732653061225,
+        "count": 0.10672657096115726,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -6.956342857142857,
+        "count": 0.08990534681380857,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -6.63295306122449,
+        "count": 0.08184314543094608,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -6.309563265306123,
+        "count": 0.08108684857516987,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -5.986173469387755,
+        "count": 0.08601525823746348,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -5.662783673469388,
+        "count": 0.09569115785518066,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -5.339393877551021,
+        "count": 0.10908459237624855,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -5.016004081632653,
+        "count": 0.12421675309113821,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -4.692614285714286,
+        "count": 0.13772300059006,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -4.3692244897959185,
+        "count": 0.14579388606413224,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -4.045834693877551,
+        "count": 0.14584622294154903,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -3.7224448979591838,
+        "count": 0.13723700468079333,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -3.3990551020408173,
+        "count": 0.12123166658880706,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -3.075665306122449,
+        "count": 0.1004940929437337,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -2.752275510204081,
+        "count": 0.07811359341219644,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -2.4288857142857143,
+        "count": 0.057102465333498935,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -2.105495918367348,
+        "count": 0.04010726585974689,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -1.7821061224489796,
+        "count": 0.028624029841067072,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -1.4587163265306113,
+        "count": 0.022512026765215756,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -1.1353265306122449,
+        "count": 0.020389117610833184,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -0.8119367346938784,
+        "count": 0.020356888101901168,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -0.48854693877551014,
+        "count": 0.02062208937453614,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": -0.1651571428571419,
+        "count": 0.02001985963339949,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 0.15823265306122458,
+        "count": 0.018226107665129613,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 0.48162244897959106,
+        "count": 0.015438387906918032,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 0.8050122448979593,
+        "count": 0.011962354348421144,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 1.1284020408163276,
+        "count": 0.008215916425865305,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 1.451791836734694,
+        "count": 0.00484589563738541,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 1.7751816326530605,
+        "count": 0.002441518205931982,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 2.0985714285714288,
+        "count": 0.001105319760312493,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 2.421961224489797,
+        "count": 0.0004906641658793064,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 2.7453510204081635,
+        "count": 0.00021414025720000143,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 3.06874081632653,
+        "count": 8.176404187389056e-05,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 3.392130612244898,
+        "count": 2.437328847546154e-05,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 3.7155204081632665,
+        "count": 5.350709372460262e-06,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 4.038910204081633,
+        "count": 8.453780699364088e-07,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "stop",
+        "func_score": 4.3623,
+        "count": 9.53266289076164e-08,
+        "mean_func_score": -5.983923579666809
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -11.4838,
+        "count": 1.8698724047396352e-48,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -11.160410204081632,
+        "count": 7.009698187115349e-36,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -10.837020408163266,
+        "count": 2.202186096769737e-25,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -10.5136306122449,
+        "count": 5.798761212735459e-17,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -10.190240816326531,
+        "count": 1.2814771764141103e-10,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -9.866851020408163,
+        "count": 2.4068355967498807e-06,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -9.543461224489796,
+        "count": 0.00043312934957285664,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -9.22007142857143,
+        "count": 0.0017304768033403637,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -8.896681632653062,
+        "count": 0.0010192101296866028,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -8.573291836734693,
+        "count": 0.00028057125909130935,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -8.249902040816327,
+        "count": 0.00037990404260141195,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -7.9265122448979595,
+        "count": 0.0016231570396039463,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -7.603122448979592,
+        "count": 0.0005678038817902584,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -7.279732653061225,
+        "count": 2.0488397918570575e-05,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -6.956342857142857,
+        "count": 0.0006555754033070136,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -6.63295306122449,
+        "count": 0.00020188978447495466,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -6.309563265306123,
+        "count": 5.210483408196599e-07,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -5.986173469387755,
+        "count": 5.904437978894846e-07,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -5.662783673469388,
+        "count": 0.00021290565636053737,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -5.339393877551021,
+        "count": 0.0006433756037119398,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -5.016004081632653,
+        "count": 1.6311817907138488e-05,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -4.692614285714286,
+        "count": 4.081956200452886e-05,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -4.3692244897959185,
+        "count": 0.0007465261158499843,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -4.045834693877551,
+        "count": 0.0004907778914785348,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -3.7224448979591838,
+        "count": 0.0005213285176966733,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -3.3990551020408173,
+        "count": 0.0013915986464471944,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -3.075665306122449,
+        "count": 0.0006071384906578678,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -2.752275510204081,
+        "count": 0.0038809551472807997,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -2.4288857142857143,
+        "count": 0.007190039283188957,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -2.105495918367348,
+        "count": 0.014132649615464569,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -1.7821061224489796,
+        "count": 0.026189675462788595,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -1.4587163265306113,
+        "count": 0.05346485535437212,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -1.1353265306122449,
+        "count": 0.1184372415523193,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -0.8119367346938784,
+        "count": 0.24925699617647085,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -0.48854693877551014,
+        "count": 0.4888009761203137,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": -0.1651571428571419,
+        "count": 0.6852718149537743,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 0.15823265306122458,
+        "count": 0.6467083728169358,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 0.48162244897959106,
+        "count": 0.43658945155687334,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 0.8050122448979593,
+        "count": 0.2132716736807696,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 1.1284020408163276,
+        "count": 0.08284668321529337,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 1.451791836734694,
+        "count": 0.032201400290432024,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 1.7751816326530605,
+        "count": 0.015676811086386314,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 2.0985714285714288,
+        "count": 0.004819471094343238,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 2.421961224489797,
+        "count": 0.0011805711159653743,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 2.7453510204081635,
+        "count": 4.985840167799142e-05,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 3.06874081632653,
+        "count": 2.527039776358337e-08,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 3.392130612244898,
+        "count": 1.1150880212532618e-13,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 3.7155204081632665,
+        "count": 4.139548530587398e-21,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 4.038910204081633,
+        "count": 1.2883276331512862e-30,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "synonymous",
+        "func_score": 4.3623,
+        "count": 3.360292210606393e-42,
+        "mean_func_score": -0.09205921201814059
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -11.4838,
+        "count": 6.944039504365834e-36,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -11.160410204081632,
+        "count": 3.7041754850792184e-23,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -10.837020408163266,
+        "count": 1.0263227756976754e-13,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -10.5136306122449,
+        "count": 1.4771925543511413e-07,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -10.190240816326531,
+        "count": 0.0001136735280931528,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -9.866851020408163,
+        "count": 0.0004462595664743875,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -9.543461224489796,
+        "count": 0.0003098239952870228,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -9.22007142857143,
+        "count": 0.0003991517378779859,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -8.896681632653062,
+        "count": 0.0009203608885487963,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -8.573291836734693,
+        "count": 0.0014585864292109142,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -8.249902040816327,
+        "count": 0.002133413612277912,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -7.9265122448979595,
+        "count": 0.002365940123553453,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -7.603122448979592,
+        "count": 0.0013049072021396537,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -7.279732653061225,
+        "count": 0.0006417936753880634,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -6.956342857142857,
+        "count": 0.00034465372020748983,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -6.63295306122449,
+        "count": 0.0003838734827837373,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -6.309563265306123,
+        "count": 0.0005950839404578988,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -5.986173469387755,
+        "count": 0.000680373773442406,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -5.662783673469388,
+        "count": 0.0006555885039520495,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -5.339393877551021,
+        "count": 0.00034728332090430843,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -5.016004081632653,
+        "count": 0.00030616450233337535,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -4.692614285714286,
+        "count": 0.0006252313879547673,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -4.3692244897959185,
+        "count": 0.0018115800350918078,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -4.045834693877551,
+        "count": 0.0019564199691403652,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -3.7224448979591838,
+        "count": 0.0014789885595994955,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -3.3990551020408173,
+        "count": 0.0018801284078976508,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -3.075665306122449,
+        "count": 0.003020834832223812,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -2.752275510204081,
+        "count": 0.0032012880266305507,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -2.4288857142857143,
+        "count": 0.007604413889805887,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -2.105495918367348,
+        "count": 0.012298003576479703,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -1.7821061224489796,
+        "count": 0.025165590901210646,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -1.4587163265306113,
+        "count": 0.05062953978559656,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -1.1353265306122449,
+        "count": 0.1151335066788192,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -0.8119367346938784,
+        "count": 0.2528698470580418,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -0.48854693877551014,
+        "count": 0.47752240601114293,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": -0.1651571428571419,
+        "count": 0.6808403083294045,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 0.15823265306122458,
+        "count": 0.6483077609214482,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 0.48162244897959106,
+        "count": 0.4458782356796378,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 0.8050122448979593,
+        "count": 0.21144373652010368,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 1.1284020408163276,
+        "count": 0.08698012684303766,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 1.451791836734694,
+        "count": 0.03125789372436147,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 1.7751816326530605,
+        "count": 0.01026847904363606,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 2.0985714285714288,
+        "count": 0.004089109027695361,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 2.421961224489797,
+        "count": 0.0012286336008228576,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 2.7453510204081635,
+        "count": 0.00047759201049890366,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 3.06874081632653,
+        "count": 0.0004029530792303694,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 3.392130612244898,
+        "count": 1.3690687743083096e-06,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 3.7155204081632665,
+        "count": 3.1476467271655002e-12,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 4.038910204081633,
+        "count": 4.154639090852144e-21,
+        "mean_func_score": -0.10805602746552964
+      },
+      {
+        "library": "Lib-3",
+        "variant_class": "wildtype",
+        "func_score": 4.3623,
+        "count": 2.988218307061913e-33,
+        "mean_func_score": -0.10805602746552964
+      }
+    ]
+  }
+}

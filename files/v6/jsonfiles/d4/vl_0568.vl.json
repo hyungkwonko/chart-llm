@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/RA_work/main/tradedta.csv"
+  },
+  "height": 300,
+  "width": 450,
+  "title": {
+    "text": "Global openness: Trade as a % of GDP",
+    "anchor": "start",
+    "subtitle": [
+      "Source: World Bank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "color": "black"
+  },
+  "encoding": {
+    "x": {
+      "field": "variable",
+      "type": "temporal",
+      "axis": {
+        "gridOpacity": 0.2
+      },
+      "title": ""
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "Type",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "range": [
+              "#880000",
+              "#ff0303",
+              "#000"
+            ]
+          }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": {
+            "gridOpacity": 0.2,
+            "format": "%"
+          },
+          "title": null
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": ""
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            }
+          ],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0.5,
+            "param": "hover",
+            "empty": false
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "value",
+            "title": "Trade as % of global GDP",
+            "format": ".2%"
+          },
+          {
+            "field": "variable",
+            "type": "temporal",
+            "format": "%Y",
+            "title": "Year"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "value"
+            ],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ]
+}

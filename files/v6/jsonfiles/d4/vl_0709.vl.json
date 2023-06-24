@@ -1,0 +1,119 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "High Giving Index \u2192": "A",
+        "GDP per capita \u2192": "A",
+        "color": "3",
+        "Classification": "High Giving Index, High GDP per capita"
+      },
+      {
+        "High Giving Index \u2192": "A",
+        "GDP per capita \u2192": "B",
+        "color": "6",
+        "Classification": "High Giving index, Average Equality"
+      },
+      {
+        "High Giving Index \u2192": "A",
+        "GDP per capita \u2192": "C",
+        "color": "9",
+        "Classification": "High Giving index, Low Equality"
+      },
+      {
+        "High Giving Index \u2192": "B",
+        "GDP per capita \u2192": "A",
+        "color": "2",
+        "Classification": "Average Giving index, High Equality"
+      },
+      {
+        "High Giving Index \u2192": "B",
+        "GDP per capita \u2192": "B",
+        "color": "5",
+        "Classification": "Giving index, Average Equality"
+      },
+      {
+        "High Giving Index \u2192": "B",
+        "GDP per capita \u2192": "C",
+        "color": "8",
+        "Classification": "Giving index, Low Equality"
+      },
+      {
+        "High Giving Index \u2192": "C",
+        "GDP per capita \u2192": "A",
+        "color": "1",
+        "Classification": "Giving index, High Equality"
+      },
+      {
+        "High Giving Index \u2192": "C",
+        "GDP per capita \u2192": "B",
+        "color": "4",
+        "Classification": "Giving index, Average Equality"
+      },
+      {
+        "High Giving Index \u2192": "C",
+        "GDP per capita \u2192": "C",
+        "color": "7",
+        "Classification": "Giving index, Low Equality"
+      }
+    ]
+  },
+  "mark": {
+    "type": "rect"
+  },
+  "config": {
+    "background": "transparent",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "height": 140,
+  "width": 140,
+  "encoding": {
+    "y": {
+      "field": "High Giving Index \u2192",
+      "type": "nominal",
+      "axis": {
+        "domainColor": "transparent",
+        "labels": false,
+        "ticks": false,
+        "titleColor": "white"
+      }
+    },
+    "x": {
+      "field": "GDP per capita \u2192",
+      "type": "nominal",
+      "axis": {
+        "domainColor": "transparent",
+        "labels": false,
+        "ticks": false,
+        "titleColor": "white"
+      }
+    },
+    "color": {
+      "legend": null,
+      "type": "nominal",
+      "field": "color",
+      "scale": {
+        "range": [
+          "#FFC390",
+          "#FFC300",
+          "#F1920E",
+          "#E3611E",
+          "#F41",
+          "#839",
+          "#C70089",
+          "#900C3F",
+          "#5A1846"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Classification",
+        "type": "nominal",
+        "title": "Interpretation"
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-0a30ebbeafb719cb7f4a23a7432da33a"
+  },
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "type": "nominal",
+      "field": "score_type"
+    },
+    "x": {
+      "type": "quantitative",
+      "field": "n_neighbors"
+    },
+    "y": {
+      "type": "quantitative",
+      "field": "accuracy",
+      "scale": {
+        "domain": [
+          0.67,
+          1.0
+        ]
+      }
+    }
+  },
+  "height": 300,
+  "title": "Accuracies of n_neighbors for KNeighborsClassifier",
+  "width": 500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-0a30ebbeafb719cb7f4a23a7432da33a": [
+      {
+        "n_neighbors": 1,
+        "score_type": "mean_train_score",
+        "accuracy": 1.0
+      },
+      {
+        "n_neighbors": 6,
+        "score_type": "mean_train_score",
+        "accuracy": 0.8416600441501103
+      },
+      {
+        "n_neighbors": 11,
+        "score_type": "mean_train_score",
+        "accuracy": 0.8230507726269316
+      },
+      {
+        "n_neighbors": 16,
+        "score_type": "mean_train_score",
+        "accuracy": 0.8077262693156733
+      },
+      {
+        "n_neighbors": 21,
+        "score_type": "mean_train_score",
+        "accuracy": 0.7778101545253863
+      },
+      {
+        "n_neighbors": 26,
+        "score_type": "mean_train_score",
+        "accuracy": 0.7658543046357617
+      },
+      {
+        "n_neighbors": 31,
+        "score_type": "mean_train_score",
+        "accuracy": 0.7585253863134657
+      },
+      {
+        "n_neighbors": 36,
+        "score_type": "mean_train_score",
+        "accuracy": 0.7385827814569536
+      },
+      {
+        "n_neighbors": 41,
+        "score_type": "mean_train_score",
+        "accuracy": 0.7259116997792494
+      },
+      {
+        "n_neighbors": 46,
+        "score_type": "mean_train_score",
+        "accuracy": 0.7339161147902871
+      },
+      {
+        "n_neighbors": 1,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.7676470588235293
+      },
+      {
+        "n_neighbors": 6,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.7856617647058823
+      },
+      {
+        "n_neighbors": 11,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8110294117647058
+      },
+      {
+        "n_neighbors": 16,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.7933823529411764
+      },
+      {
+        "n_neighbors": 21,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.7569852941176471
+      },
+      {
+        "n_neighbors": 26,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.7393382352941177
+      },
+      {
+        "n_neighbors": 31,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.7389705882352942
+      },
+      {
+        "n_neighbors": 36,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.7202205882352942
+      },
+      {
+        "n_neighbors": 41,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.7264705882352942
+      },
+      {
+        "n_neighbors": 46,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.7139705882352942
+      }
+    ]
+  }
+}

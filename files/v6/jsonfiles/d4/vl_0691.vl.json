@@ -1,0 +1,392 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/mleo0010/FIT3179-DataVis2-ML/main/data/best_players_img_data.csv"
+  },
+  "params": [
+    {
+      "name": "Tourney_level_selection",
+      "value": "Total",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Total",
+          "Grand",
+          "Masters",
+          "Tour",
+          "Other"
+        ],
+        "labels": [
+          "All Tourneys",
+          "Grand Slams",
+          "Masters",
+          "Tour Finals",
+          "Other"
+        ],
+        "name": "Tourney Level: "
+      }
+    }
+  ],
+  "hconcat": [
+    {
+      "height": 350,
+      "width": 350,
+      "transform": [
+        {
+          "filter": "datum.tourney_level == 'Total'"
+        },
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "Wins",
+              "as": "Total Wins"
+            }
+          ],
+          "groupby": [
+            "winner_name",
+            "img"
+          ]
+        }
+      ],
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "Name_select",
+              "select": {
+                "type": "point",
+                "encodings": [
+                  "y"
+                ]
+              }
+            }
+          ],
+          "mark": {
+            "type": "bar"
+          },
+          "encoding": {
+            "x": {
+              "field": "Total Wins",
+              "type": "quantitative",
+              "axis": {
+                "labelFontSize": 12,
+                "titleFontSize": 14
+              }
+            },
+            "y": {
+              "field": "winner_name",
+              "type": "nominal",
+              "axis": null,
+              "sort": [
+                "Jimmy Connors",
+                "Roger Federer",
+                "Ivan Lendl",
+                "Rafael Nadal",
+                "Novak Djokovic"
+              ]
+            },
+            "color": {
+              "field": "winner_name",
+              "type": "nominal"
+            },
+            "opacity": {
+              "condition": {
+                "param": "Name_select",
+                "value": 1
+              },
+              "value": 0.2
+            },
+            "tooltip": [
+              {
+                "field": "winner_name",
+                "type": "nominal",
+                "title": "Player Name"
+              },
+              {
+                "field": "Total Wins",
+                "type": "quantitative"
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "calculate": "-6",
+              "as": "xAxis"
+            }
+          ],
+          "mark": {
+            "type": "image",
+            "width": 63,
+            "height": 63,
+            "align": "right",
+            "xOffset": 10
+          },
+          "encoding": {
+            "x": {
+              "field": "xAxis",
+              "type": "quantitative",
+              "title": "Total Wins",
+              "scale": {
+                "domain": [
+                  0,
+                  120
+                ]
+              },
+              "axis": null
+            },
+            "y": {
+              "field": "winner_name",
+              "type": "nominal",
+              "sort": [
+                "Jimmy Connors",
+                "Roger Federer",
+                "Ivan Lendl",
+                "Rafael Nadal",
+                "Novak Djokovic"
+              ]
+            },
+            "tooltip": [
+              {
+                "field": "winner_name",
+                "type": "nominal",
+                "title": "Player Name"
+              },
+              {
+                "field": "Total Wins",
+                "type": "quantitative"
+              }
+            ],
+            "url": {
+              "field": "img",
+              "type": "ordinal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "xOffset": -4,
+            "fontSize": 12,
+            "aria": false
+          },
+          "encoding": {
+            "x": {
+              "field": "Total Wins",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y": {
+              "field": "winner_name",
+              "type": "nominal",
+              "sort": [
+                "Jimmy Connors",
+                "Roger Federer",
+                "Ivan Lendl",
+                "Rafael Nadal",
+                "Novak Djokovic"
+              ]
+            },
+            "text": {
+              "field": "Total Wins",
+              "type": "quantitative"
+            },
+            "color": {
+              "value": "white"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "calculate": "0",
+              "as": "Zero"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "aria": false,
+            "xOffset": -160,
+            "fontSize": 13
+          },
+          "encoding": {
+            "x": {
+              "field": "Zero",
+              "axis": null
+            },
+            "y": {
+              "field": "winner_name",
+              "type": "nominal",
+              "sort": [
+                "Jimmy Connors",
+                "Roger Federer",
+                "Ivan Lendl",
+                "Rafael Nadal",
+                "Novak Djokovic"
+              ]
+            },
+            "text": {
+              "field": "winner_name",
+              "type": "nominal"
+            },
+            "color": {
+              "value": "white"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 550,
+      "height": 400,
+      "data": {
+        "url": "https://raw.githubusercontent.com/mleo0010/FIT3179-DataVis2-ML/main/data/best_players_wins.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.tourney_level == Tourney_level_selection"
+        },
+        {
+          "filter": {
+            "param": "Name_select"
+          }
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "yOffset": 3
+          },
+          "encoding": {
+            "x": {
+              "field": "year",
+              "timeUnit": "year",
+              "axis": {
+                "labelFontSize": 12,
+                "tickCount": 20,
+                "titleFontSize": 14
+              },
+              "title": "Year"
+            },
+            "y": {
+              "field": "Wins",
+              "type": "quantitative",
+              "axis": {
+                "labelFontSize": 12,
+                "titleFontSize": 14,
+                "tickExtra": true
+              },
+              "scale": {
+                "domainMax": 16
+              },
+              "title": "Wins"
+            },
+            "color": {
+              "field": "winner_name",
+              "type": "nominal",
+              "legend": null,
+              "scale": {
+                "range": [
+                  "#f5ad42",
+                  "#468acf",
+                  "#de789d",
+                  "#20c9ad",
+                  "#c2a3e6"
+                ]
+              }
+            },
+            "tooltip": [
+              {
+                "field": "winner_name",
+                "type": "nominal",
+                "title": "Player Name"
+              },
+              {
+                "field": "year",
+                "title": "Year",
+                "timeUnit": "year"
+              },
+              {
+                "field": "Wins",
+                "type": "quantitative",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "xOffset": -6,
+            "yOffset": -15,
+            "fontSize": 12
+          },
+          "encoding": {
+            "x": {
+              "field": "year",
+              "timeUnit": "year",
+              "axis": {
+                "grid": false,
+                "gridOpacity": 0.5
+              }
+            },
+            "y": {
+              "field": "Wins",
+              "type": "quantitative",
+              "axis": {
+                "tickExtra": true
+              }
+            },
+            "text": {
+              "field": "Wins",
+              "type": "nominal",
+              "format": {
+                "yOffset": 10
+              }
+            },
+            "color": {
+              "field": "winner_name",
+              "type": "nominal"
+            },
+            "opacity": {
+              "condition": {
+                "test": "datum['Wins'] >= 11",
+                "value": 1
+              },
+              "value": 0
+            },
+            "tooltip": [
+              {
+                "field": "winner_name",
+                "type": "nominal",
+                "title": "Player Name"
+              },
+              {
+                "field": "year",
+                "title": "Year",
+                "timeUnit": "year"
+              },
+              {
+                "field": "Wins",
+                "type": "quantitative"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "padding": {
+      "top": 10
+    },
+    "background": "#fffcf9"
+  }
+}

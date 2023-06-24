@@ -1,0 +1,188 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/intensityv2.csv"
+  },
+  "background": "#fff0d8",
+  "title": {
+    "text": "Carbon and GDP intensity: China's Increasingly Efficient Usage of Energy",
+    "subtitle": [
+      "Source: World Bank and BP",
+      "Red line energy to GDP, measure of megajoules  to 1000$  of GDP",
+      "Orange line CO2 output per unit of energy, in millions tonnes of CO2 per Exajoule."
+    ],
+    "subtitleFontSize": 10
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.Year)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1965,
+      "bind": {
+        "input": "range",
+        "min": 1965,
+        "max": 2020,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1965,
+        "max": 2020,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "hconcat": [
+    {
+      "width": 400,
+      "height": 300,
+      "layer": [
+        {
+          "title": {
+            "text": "Carbon and Energy Intensity",
+            "anchor": "start",
+            "fontWeight": "bold"
+          },
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal"
+          },
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "type": "temporal"
+            },
+            "y": {
+              "field": "carbon_int",
+              "type": "quantitative",
+              "axis": {
+                "title": "Red: Carbon Intensity"
+              }
+            },
+            "color": {
+              "value": "darkorange"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal"
+          },
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "type": "temporal"
+            },
+            "y": {
+              "field": "eng_int",
+              "type": "quantitative",
+              "axis": {
+                "title": "Orange: Energy Intensity",
+                "format": ".0f"
+              }
+            },
+            "color": {
+              "value": "darkred"
+            }
+          }
+        }
+      ],
+      "resolve": {
+        "scale": {
+          "y": "independent"
+        }
+      }
+    },
+    {
+      "width": 400,
+      "height": 300,
+      "layer": [
+        {
+          "title": {
+            "text": "Rates of Change in Carbon and Energy Intensity",
+            "anchor": "start",
+            "fontWeight": "bold"
+          },
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal"
+          },
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "type": "temporal"
+            },
+            "y": {
+              "field": "pct_chng_int",
+              "axis": {
+                "format": "%"
+              },
+              "type": "quantitative"
+            },
+            "color": {
+              "value": "darkred"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "color": "black",
+            "size": 1,
+            "strokeDash": [
+              6,
+              4
+            ]
+          },
+          "encoding": {
+            "y": {
+              "datum": 0,
+              "bandPosition": 0
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal"
+          },
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "type": "temporal"
+            },
+            "y": {
+              "field": "carbon_int_cng",
+              "axis": {
+                "format": "%",
+                "title": "Percentage Change in carbon and energy intensity"
+              },
+              "type": "quantitative"
+            },
+            "color": {
+              "value": "orange"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

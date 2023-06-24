@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Glasgow scatterplot",
+  "title": {
+    "text": "Glasgow: deprivation and life expectancy",
+    "subtitle": [
+      "% of residents income deprived (x) and male life expectancy (y)",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitleColor": "white",
+    "anchor": "start",
+    "color": "white"
+  },
+  "config": {
+    "background": "#122b39",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/extreme/glasgowHealthData.csv"
+  },
+  "mark": {
+    "type": "circle",
+    "color": "hotpink",
+    "size": 100
+  },
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "incomeDeprevation",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "domainColor": "dimgrey",
+        "labelColor": "#00a767",
+        "tickColor": "pink",
+        "gridColor": "dimgrey",
+        "format": "%"
+      }
+    },
+    "y": {
+      "field": "maleLE",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": [
+          60,
+          85
+        ]
+      },
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "domainColor": "dimgrey",
+        "labelColor": "#00a767",
+        "tickColor": "pink",
+        "gridColor": "dimgrey",
+        "format": ""
+      }
+    },
+    "tooltip": [
+      {
+        "field": "areaName",
+        "title": "Area"
+      }
+    ]
+  }
+}

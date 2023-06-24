@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "view": {
+    "stroke": "transparent"
+  },
+  "title": {
+    "text": "Going West (and South)",
+    "fontSize": 12,
+    "subtitle": [
+      "US States, Population, 1900-2021",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 1900,
+      "bind": {
+        "input": "range",
+        "min": 1900,
+        "max": 2021,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "projection": {
+    "type": "albersUsa"
+  },
+  "mark": "geoshape",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataUSstatesPopulation.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "toNumber(yearSelector)",
+      "as": "yearS"
+    },
+    {
+      "filter": "datum.yearS == datum.Year"
+    },
+    {
+      "fold": [
+        "California",
+        "Florida",
+        "Arizona",
+        "New York",
+        "Texas",
+        "Alabama",
+        "North Carolina",
+        "Illinois",
+        "Utah",
+        "Nevada",
+        "Kentucky",
+        "District of Columbia",
+        "Wisconsin",
+        "Connecticut",
+        "Pennsylvania",
+        "Colorado",
+        "Missouri",
+        "Arizona",
+        "Washington",
+        "Louisiana",
+        "Georgia",
+        "New Mexico",
+        "Virginia",
+        "New Jersey",
+        "South Carolina",
+        "Oregon",
+        "Idaho",
+        "Ohio",
+        "Tennessee",
+        "Nebraska",
+        "Oklahoma",
+        "Indiana",
+        "Arkansas",
+        "Michigan",
+        "Massachusetts",
+        "Hawaii",
+        "Montana",
+        "Mississippi",
+        "New Hampshire",
+        "Maryland",
+        "Delaware",
+        "Vermont",
+        "Minnesota",
+        "Kansas",
+        "South Dakota",
+        "Maine",
+        "West Virginia",
+        "Wyoming",
+        "Iowa",
+        "Rhode Island",
+        "North Dakota"
+      ],
+      "as": [
+        "State",
+        "Value"
+      ]
+    },
+    {
+      "lookup": "State",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoUSStates.json",
+          "format": {
+            "property": "features"
+          }
+        },
+        "key": "properties.NAME",
+        "fields": [
+          "properties",
+          "type",
+          "geometry"
+        ]
+      }
+    }
+  ],
+  "encoding": {
+    "color": {
+      "field": "Value",
+      "legend": {
+        "title": null,
+        "orient": "right",
+        "direction": "vertical"
+      },
+      "type": "quantitative",
+      "scale": {
+        "scheme": "lightgreyred"
+      }
+    }
+  }
+}

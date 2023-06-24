@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Prices by region",
+  "title": {
+    "text": "Covid-19 and price collection - regional impact",
+    "subtitle": "Number of useable prices in the LRPD.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/dbPricesByRegion.csv"
+  },
+  "height": 300,
+  "width": 290,
+  "mark": {
+    "type": "line",
+    "point": false
+  },
+  "selection": {
+    "region": {
+      "type": "multi",
+      "fields": [
+        "region"
+      ],
+      "bind": "legend"
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "date",
+        "range": [
+          {
+            "year": 2018,
+            "month": "jan",
+            "date": 1
+          },
+          {
+            "year": 2030,
+            "month": "dec",
+            "date": 30
+          }
+        ]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "format": "%Y"
+      }
+    },
+    "y": {
+      "field": "prices",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "format": ".2s"
+      }
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "title": null,
+      "legend": {
+        "orient": "bottom",
+        "columns": 2
+      }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "region",
+        "value": 1
+      },
+      "value": 0.1
+    },
+    "tooltip": [
+      {
+        "field": "date",
+        "type": "temporal",
+        "title": "Date"
+      },
+      {
+        "field": "region",
+        "type": "nominal",
+        "title": "Region"
+      },
+      {
+        "field": "prices",
+        "type": "nominal",
+        "title": "Prices",
+        "format": ",.0f"
+      },
+      {
+        "field": "obs",
+        "type": "quantitative",
+        "title": "Total prices (UK)",
+        "format": ",.0f"
+      }
+    ]
+  }
+}

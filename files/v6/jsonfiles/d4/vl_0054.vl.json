@@ -1,0 +1,134 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "CPI - three headline inidces",
+    "subtitle": "RPI, CPI and CPIH",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "description": "Inflaiton indices",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/teaching2/main/cpiThreeIndMonthly.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "series",
+          "type": "nominal",
+          "scale": {
+            "range": [
+              "#000080",
+              "#00BFFF",
+              "#0276FD"
+            ]
+          },
+          "legend": {
+            "orient": "top-right"
+          },
+          "title": "Index"
+        },
+        "y": {
+          "field": "Value_s",
+          "type": "quantitative",
+          "title": ""
+        }
+      },
+      "layer": [
+        {
+          "mark": "line"
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "selection": "hover"
+              }
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "filled": true,
+            "size": 200,
+            "stroke": "#DCDCDC",
+            "fillOpacity": 1,
+            "strokeOpacity": 0.8,
+            "strokeWidth": 5
+          }
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "pivot": "series",
+          "value": "Value_s",
+          "groupby": [
+            "Date"
+          ]
+        }
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0,
+            "selection": "hover"
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal",
+            "format": "%b-%Y"
+          },
+          {
+            "field": "CPI",
+            "type": "quantitative",
+            "format": ",.1f",
+            "title": "CPI(%)"
+          },
+          {
+            "field": "CPIH",
+            "type": "quantitative",
+            "format": ",.1f",
+            "title": "CPIH(%)"
+          },
+          {
+            "field": "RPI",
+            "type": "quantitative",
+            "format": ",.1f",
+            "title": "RPI(%)"
+          }
+        ]
+      },
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": [
+            "Date"
+          ],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
+    }
+  ]
+}

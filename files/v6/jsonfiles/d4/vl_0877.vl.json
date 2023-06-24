@@ -1,0 +1,3985 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": {
+    "text": "UK COVID-19 Cases",
+    "subtitle": [
+      "COVID-19 cases recorded daily since beginning of the pandemic. Source: Gov.uk ",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 250,
+  "width": 250,
+  "data": {
+    "values": [
+      {
+        "date": "2022-10-12",
+        "newCasesBySpecimenDate": 5146
+      },
+      {
+        "date": "2022-10-11",
+        "newCasesBySpecimenDate": 7894
+      },
+      {
+        "date": "2022-10-10",
+        "newCasesBySpecimenDate": 9283
+      },
+      {
+        "date": "2022-10-09",
+        "newCasesBySpecimenDate": 7843
+      },
+      {
+        "date": "2022-10-08",
+        "newCasesBySpecimenDate": 6393
+      },
+      {
+        "date": "2022-10-07",
+        "newCasesBySpecimenDate": 8028
+      },
+      {
+        "date": "2022-10-06",
+        "newCasesBySpecimenDate": 8516
+      },
+      {
+        "date": "2022-10-05",
+        "newCasesBySpecimenDate": 9340
+      },
+      {
+        "date": "2022-10-04",
+        "newCasesBySpecimenDate": 10134
+      },
+      {
+        "date": "2022-10-03",
+        "newCasesBySpecimenDate": 10825
+      },
+      {
+        "date": "2022-10-02",
+        "newCasesBySpecimenDate": 8573
+      },
+      {
+        "date": "2022-10-01",
+        "newCasesBySpecimenDate": 6552
+      },
+      {
+        "date": "2022-09-30",
+        "newCasesBySpecimenDate": 7071
+      },
+      {
+        "date": "2022-09-29",
+        "newCasesBySpecimenDate": 7321
+      },
+      {
+        "date": "2022-09-28",
+        "newCasesBySpecimenDate": 7759
+      },
+      {
+        "date": "2022-09-27",
+        "newCasesBySpecimenDate": 7603
+      },
+      {
+        "date": "2022-09-26",
+        "newCasesBySpecimenDate": 8018
+      },
+      {
+        "date": "2022-09-25",
+        "newCasesBySpecimenDate": 6722
+      },
+      {
+        "date": "2022-09-24",
+        "newCasesBySpecimenDate": 5302
+      },
+      {
+        "date": "2022-09-23",
+        "newCasesBySpecimenDate": 5995
+      },
+      {
+        "date": "2022-09-22",
+        "newCasesBySpecimenDate": 6285
+      },
+      {
+        "date": "2022-09-21",
+        "newCasesBySpecimenDate": 6915
+      },
+      {
+        "date": "2022-09-20",
+        "newCasesBySpecimenDate": 7194
+      },
+      {
+        "date": "2022-09-19",
+        "newCasesBySpecimenDate": 5701
+      },
+      {
+        "date": "2022-09-18",
+        "newCasesBySpecimenDate": 3937
+      },
+      {
+        "date": "2022-09-17",
+        "newCasesBySpecimenDate": 3176
+      },
+      {
+        "date": "2022-09-16",
+        "newCasesBySpecimenDate": 3700
+      },
+      {
+        "date": "2022-09-15",
+        "newCasesBySpecimenDate": 4176
+      },
+      {
+        "date": "2022-09-14",
+        "newCasesBySpecimenDate": 4404
+      },
+      {
+        "date": "2022-09-13",
+        "newCasesBySpecimenDate": 4556
+      },
+      {
+        "date": "2022-09-12",
+        "newCasesBySpecimenDate": 4676
+      },
+      {
+        "date": "2022-09-11",
+        "newCasesBySpecimenDate": 3869
+      },
+      {
+        "date": "2022-09-10",
+        "newCasesBySpecimenDate": 2855
+      },
+      {
+        "date": "2022-09-09",
+        "newCasesBySpecimenDate": 3097
+      },
+      {
+        "date": "2022-09-08",
+        "newCasesBySpecimenDate": 3250
+      },
+      {
+        "date": "2022-09-07",
+        "newCasesBySpecimenDate": 3743
+      },
+      {
+        "date": "2022-09-06",
+        "newCasesBySpecimenDate": 3930
+      },
+      {
+        "date": "2022-09-05",
+        "newCasesBySpecimenDate": 4382
+      },
+      {
+        "date": "2022-09-04",
+        "newCasesBySpecimenDate": 3759
+      },
+      {
+        "date": "2022-09-03",
+        "newCasesBySpecimenDate": 2969
+      },
+      {
+        "date": "2022-09-02",
+        "newCasesBySpecimenDate": 3235
+      },
+      {
+        "date": "2022-09-01",
+        "newCasesBySpecimenDate": 3760
+      },
+      {
+        "date": "2022-08-31",
+        "newCasesBySpecimenDate": 3964
+      },
+      {
+        "date": "2022-08-30",
+        "newCasesBySpecimenDate": 4473
+      },
+      {
+        "date": "2022-08-29",
+        "newCasesBySpecimenDate": 3936
+      },
+      {
+        "date": "2022-08-28",
+        "newCasesBySpecimenDate": 2881
+      },
+      {
+        "date": "2022-08-27",
+        "newCasesBySpecimenDate": 2586
+      },
+      {
+        "date": "2022-08-26",
+        "newCasesBySpecimenDate": 2988
+      },
+      {
+        "date": "2022-08-25",
+        "newCasesBySpecimenDate": 3252
+      },
+      {
+        "date": "2022-08-24",
+        "newCasesBySpecimenDate": 3894
+      },
+      {
+        "date": "2022-08-23",
+        "newCasesBySpecimenDate": 4015
+      },
+      {
+        "date": "2022-08-22",
+        "newCasesBySpecimenDate": 4505
+      },
+      {
+        "date": "2022-08-21",
+        "newCasesBySpecimenDate": 3534
+      },
+      {
+        "date": "2022-08-20",
+        "newCasesBySpecimenDate": 2828
+      },
+      {
+        "date": "2022-08-19",
+        "newCasesBySpecimenDate": 3313
+      },
+      {
+        "date": "2022-08-18",
+        "newCasesBySpecimenDate": 3856
+      },
+      {
+        "date": "2022-08-17",
+        "newCasesBySpecimenDate": 4381
+      },
+      {
+        "date": "2022-08-16",
+        "newCasesBySpecimenDate": 4827
+      },
+      {
+        "date": "2022-08-15",
+        "newCasesBySpecimenDate": 5592
+      },
+      {
+        "date": "2022-08-14",
+        "newCasesBySpecimenDate": 4778
+      },
+      {
+        "date": "2022-08-13",
+        "newCasesBySpecimenDate": 3967
+      },
+      {
+        "date": "2022-08-12",
+        "newCasesBySpecimenDate": 4774
+      },
+      {
+        "date": "2022-08-11",
+        "newCasesBySpecimenDate": 5440
+      },
+      {
+        "date": "2022-08-10",
+        "newCasesBySpecimenDate": 5989
+      },
+      {
+        "date": "2022-08-09",
+        "newCasesBySpecimenDate": 6460
+      },
+      {
+        "date": "2022-08-08",
+        "newCasesBySpecimenDate": 7223
+      },
+      {
+        "date": "2022-08-07",
+        "newCasesBySpecimenDate": 5898
+      },
+      {
+        "date": "2022-08-06",
+        "newCasesBySpecimenDate": 4850
+      },
+      {
+        "date": "2022-08-05",
+        "newCasesBySpecimenDate": 5858
+      },
+      {
+        "date": "2022-08-04",
+        "newCasesBySpecimenDate": 6517
+      },
+      {
+        "date": "2022-08-03",
+        "newCasesBySpecimenDate": 7410
+      },
+      {
+        "date": "2022-08-02",
+        "newCasesBySpecimenDate": 8161
+      },
+      {
+        "date": "2022-08-01",
+        "newCasesBySpecimenDate": 8812
+      },
+      {
+        "date": "2022-07-31",
+        "newCasesBySpecimenDate": 7667
+      },
+      {
+        "date": "2022-07-30",
+        "newCasesBySpecimenDate": 6612
+      },
+      {
+        "date": "2022-07-29",
+        "newCasesBySpecimenDate": 7582
+      },
+      {
+        "date": "2022-07-28",
+        "newCasesBySpecimenDate": 8338
+      },
+      {
+        "date": "2022-07-27",
+        "newCasesBySpecimenDate": 9431
+      },
+      {
+        "date": "2022-07-26",
+        "newCasesBySpecimenDate": 10480
+      },
+      {
+        "date": "2022-07-25",
+        "newCasesBySpecimenDate": 11927
+      },
+      {
+        "date": "2022-07-24",
+        "newCasesBySpecimenDate": 10213
+      },
+      {
+        "date": "2022-07-23",
+        "newCasesBySpecimenDate": 8905
+      },
+      {
+        "date": "2022-07-22",
+        "newCasesBySpecimenDate": 11175
+      },
+      {
+        "date": "2022-07-21",
+        "newCasesBySpecimenDate": 12788
+      },
+      {
+        "date": "2022-07-20",
+        "newCasesBySpecimenDate": 14533
+      },
+      {
+        "date": "2022-07-19",
+        "newCasesBySpecimenDate": 14864
+      },
+      {
+        "date": "2022-07-18",
+        "newCasesBySpecimenDate": 16915
+      },
+      {
+        "date": "2022-07-17",
+        "newCasesBySpecimenDate": 15704
+      },
+      {
+        "date": "2022-07-16",
+        "newCasesBySpecimenDate": 13671
+      },
+      {
+        "date": "2022-07-15",
+        "newCasesBySpecimenDate": 16625
+      },
+      {
+        "date": "2022-07-14",
+        "newCasesBySpecimenDate": 19340
+      },
+      {
+        "date": "2022-07-13",
+        "newCasesBySpecimenDate": 21639
+      },
+      {
+        "date": "2022-07-12",
+        "newCasesBySpecimenDate": 24372
+      },
+      {
+        "date": "2022-07-11",
+        "newCasesBySpecimenDate": 27195
+      },
+      {
+        "date": "2022-07-10",
+        "newCasesBySpecimenDate": 23039
+      },
+      {
+        "date": "2022-07-09",
+        "newCasesBySpecimenDate": 19351
+      },
+      {
+        "date": "2022-07-08",
+        "newCasesBySpecimenDate": 22169
+      },
+      {
+        "date": "2022-07-07",
+        "newCasesBySpecimenDate": 24048
+      },
+      {
+        "date": "2022-07-06",
+        "newCasesBySpecimenDate": 26731
+      },
+      {
+        "date": "2022-07-05",
+        "newCasesBySpecimenDate": 28115
+      },
+      {
+        "date": "2022-07-04",
+        "newCasesBySpecimenDate": 30383
+      },
+      {
+        "date": "2022-07-03",
+        "newCasesBySpecimenDate": 25170
+      },
+      {
+        "date": "2022-07-02",
+        "newCasesBySpecimenDate": 19589
+      },
+      {
+        "date": "2022-07-01",
+        "newCasesBySpecimenDate": 21060
+      },
+      {
+        "date": "2022-06-30",
+        "newCasesBySpecimenDate": 21507
+      },
+      {
+        "date": "2022-06-29",
+        "newCasesBySpecimenDate": 21720
+      },
+      {
+        "date": "2022-06-28",
+        "newCasesBySpecimenDate": 21868
+      },
+      {
+        "date": "2022-06-27",
+        "newCasesBySpecimenDate": 21896
+      },
+      {
+        "date": "2022-06-26",
+        "newCasesBySpecimenDate": 18037
+      },
+      {
+        "date": "2022-06-25",
+        "newCasesBySpecimenDate": 14472
+      },
+      {
+        "date": "2022-06-24",
+        "newCasesBySpecimenDate": 15623
+      },
+      {
+        "date": "2022-06-23",
+        "newCasesBySpecimenDate": 16696
+      },
+      {
+        "date": "2022-06-22",
+        "newCasesBySpecimenDate": 17761
+      },
+      {
+        "date": "2022-06-21",
+        "newCasesBySpecimenDate": 17529
+      },
+      {
+        "date": "2022-06-20",
+        "newCasesBySpecimenDate": 16917
+      },
+      {
+        "date": "2022-06-19",
+        "newCasesBySpecimenDate": 14523
+      },
+      {
+        "date": "2022-06-18",
+        "newCasesBySpecimenDate": 11636
+      },
+      {
+        "date": "2022-06-17",
+        "newCasesBySpecimenDate": 11641
+      },
+      {
+        "date": "2022-06-16",
+        "newCasesBySpecimenDate": 11911
+      },
+      {
+        "date": "2022-06-15",
+        "newCasesBySpecimenDate": 12386
+      },
+      {
+        "date": "2022-06-14",
+        "newCasesBySpecimenDate": 12660
+      },
+      {
+        "date": "2022-06-13",
+        "newCasesBySpecimenDate": 12955
+      },
+      {
+        "date": "2022-06-12",
+        "newCasesBySpecimenDate": 10716
+      },
+      {
+        "date": "2022-06-11",
+        "newCasesBySpecimenDate": 8466
+      },
+      {
+        "date": "2022-06-10",
+        "newCasesBySpecimenDate": 9154
+      },
+      {
+        "date": "2022-06-09",
+        "newCasesBySpecimenDate": 9588
+      },
+      {
+        "date": "2022-06-08",
+        "newCasesBySpecimenDate": 9953
+      },
+      {
+        "date": "2022-06-07",
+        "newCasesBySpecimenDate": 9482
+      },
+      {
+        "date": "2022-06-06",
+        "newCasesBySpecimenDate": 9799
+      },
+      {
+        "date": "2022-06-05",
+        "newCasesBySpecimenDate": 8351
+      },
+      {
+        "date": "2022-06-04",
+        "newCasesBySpecimenDate": 6277
+      },
+      {
+        "date": "2022-06-03",
+        "newCasesBySpecimenDate": 5582
+      },
+      {
+        "date": "2022-06-02",
+        "newCasesBySpecimenDate": 5081
+      },
+      {
+        "date": "2022-06-01",
+        "newCasesBySpecimenDate": 5713
+      },
+      {
+        "date": "2022-05-31",
+        "newCasesBySpecimenDate": 5732
+      },
+      {
+        "date": "2022-05-30",
+        "newCasesBySpecimenDate": 5927
+      },
+      {
+        "date": "2022-05-29",
+        "newCasesBySpecimenDate": 4686
+      },
+      {
+        "date": "2022-05-28",
+        "newCasesBySpecimenDate": 4153
+      },
+      {
+        "date": "2022-05-27",
+        "newCasesBySpecimenDate": 4492
+      },
+      {
+        "date": "2022-05-26",
+        "newCasesBySpecimenDate": 4818
+      },
+      {
+        "date": "2022-05-25",
+        "newCasesBySpecimenDate": 5190
+      },
+      {
+        "date": "2022-05-24",
+        "newCasesBySpecimenDate": 5593
+      },
+      {
+        "date": "2022-05-23",
+        "newCasesBySpecimenDate": 6247
+      },
+      {
+        "date": "2022-05-22",
+        "newCasesBySpecimenDate": 5151
+      },
+      {
+        "date": "2022-05-21",
+        "newCasesBySpecimenDate": 4243
+      },
+      {
+        "date": "2022-05-20",
+        "newCasesBySpecimenDate": 5047
+      },
+      {
+        "date": "2022-05-19",
+        "newCasesBySpecimenDate": 5784
+      },
+      {
+        "date": "2022-05-18",
+        "newCasesBySpecimenDate": 6390
+      },
+      {
+        "date": "2022-05-17",
+        "newCasesBySpecimenDate": 6831
+      },
+      {
+        "date": "2022-05-16",
+        "newCasesBySpecimenDate": 7883
+      },
+      {
+        "date": "2022-05-15",
+        "newCasesBySpecimenDate": 6730
+      },
+      {
+        "date": "2022-05-14",
+        "newCasesBySpecimenDate": 5139
+      },
+      {
+        "date": "2022-05-13",
+        "newCasesBySpecimenDate": 5790
+      },
+      {
+        "date": "2022-05-12",
+        "newCasesBySpecimenDate": 6374
+      },
+      {
+        "date": "2022-05-11",
+        "newCasesBySpecimenDate": 7262
+      },
+      {
+        "date": "2022-05-10",
+        "newCasesBySpecimenDate": 8152
+      },
+      {
+        "date": "2022-05-09",
+        "newCasesBySpecimenDate": 8871
+      },
+      {
+        "date": "2022-05-08",
+        "newCasesBySpecimenDate": 7664
+      },
+      {
+        "date": "2022-05-07",
+        "newCasesBySpecimenDate": 6353
+      },
+      {
+        "date": "2022-05-06",
+        "newCasesBySpecimenDate": 7509
+      },
+      {
+        "date": "2022-05-05",
+        "newCasesBySpecimenDate": 8582
+      },
+      {
+        "date": "2022-05-04",
+        "newCasesBySpecimenDate": 9775
+      },
+      {
+        "date": "2022-05-03",
+        "newCasesBySpecimenDate": 11149
+      },
+      {
+        "date": "2022-05-02",
+        "newCasesBySpecimenDate": 10327
+      },
+      {
+        "date": "2022-05-01",
+        "newCasesBySpecimenDate": 7718
+      },
+      {
+        "date": "2022-04-30",
+        "newCasesBySpecimenDate": 6864
+      },
+      {
+        "date": "2022-04-29",
+        "newCasesBySpecimenDate": 7987
+      },
+      {
+        "date": "2022-04-28",
+        "newCasesBySpecimenDate": 9048
+      },
+      {
+        "date": "2022-04-27",
+        "newCasesBySpecimenDate": 10117
+      },
+      {
+        "date": "2022-04-26",
+        "newCasesBySpecimenDate": 11293
+      },
+      {
+        "date": "2022-04-25",
+        "newCasesBySpecimenDate": 13395
+      },
+      {
+        "date": "2022-04-24",
+        "newCasesBySpecimenDate": 11867
+      },
+      {
+        "date": "2022-04-23",
+        "newCasesBySpecimenDate": 10571
+      },
+      {
+        "date": "2022-04-22",
+        "newCasesBySpecimenDate": 12520
+      },
+      {
+        "date": "2022-04-21",
+        "newCasesBySpecimenDate": 14518
+      },
+      {
+        "date": "2022-04-20",
+        "newCasesBySpecimenDate": 16963
+      },
+      {
+        "date": "2022-04-19",
+        "newCasesBySpecimenDate": 20591
+      },
+      {
+        "date": "2022-04-18",
+        "newCasesBySpecimenDate": 20561
+      },
+      {
+        "date": "2022-04-17",
+        "newCasesBySpecimenDate": 16262
+      },
+      {
+        "date": "2022-04-16",
+        "newCasesBySpecimenDate": 16087
+      },
+      {
+        "date": "2022-04-15",
+        "newCasesBySpecimenDate": 17301
+      },
+      {
+        "date": "2022-04-14",
+        "newCasesBySpecimenDate": 21434
+      },
+      {
+        "date": "2022-04-13",
+        "newCasesBySpecimenDate": 25506
+      },
+      {
+        "date": "2022-04-12",
+        "newCasesBySpecimenDate": 27380
+      },
+      {
+        "date": "2022-04-11",
+        "newCasesBySpecimenDate": 30597
+      },
+      {
+        "date": "2022-04-10",
+        "newCasesBySpecimenDate": 25638
+      },
+      {
+        "date": "2022-04-09",
+        "newCasesBySpecimenDate": 23014
+      },
+      {
+        "date": "2022-04-08",
+        "newCasesBySpecimenDate": 27388
+      },
+      {
+        "date": "2022-04-07",
+        "newCasesBySpecimenDate": 31745
+      },
+      {
+        "date": "2022-04-06",
+        "newCasesBySpecimenDate": 36888
+      },
+      {
+        "date": "2022-04-05",
+        "newCasesBySpecimenDate": 40394
+      },
+      {
+        "date": "2022-04-04",
+        "newCasesBySpecimenDate": 45133
+      },
+      {
+        "date": "2022-04-03",
+        "newCasesBySpecimenDate": 35601
+      },
+      {
+        "date": "2022-04-02",
+        "newCasesBySpecimenDate": 31605
+      },
+      {
+        "date": "2022-04-01",
+        "newCasesBySpecimenDate": 40343
+      },
+      {
+        "date": "2022-03-31",
+        "newCasesBySpecimenDate": 45876
+      },
+      {
+        "date": "2022-03-30",
+        "newCasesBySpecimenDate": 62747
+      },
+      {
+        "date": "2022-03-29",
+        "newCasesBySpecimenDate": 67443
+      },
+      {
+        "date": "2022-03-28",
+        "newCasesBySpecimenDate": 78903
+      },
+      {
+        "date": "2022-03-27",
+        "newCasesBySpecimenDate": 57998
+      },
+      {
+        "date": "2022-03-26",
+        "newCasesBySpecimenDate": 51773
+      },
+      {
+        "date": "2022-03-25",
+        "newCasesBySpecimenDate": 60256
+      },
+      {
+        "date": "2022-03-24",
+        "newCasesBySpecimenDate": 68603
+      },
+      {
+        "date": "2022-03-23",
+        "newCasesBySpecimenDate": 77596
+      },
+      {
+        "date": "2022-03-22",
+        "newCasesBySpecimenDate": 81847
+      },
+      {
+        "date": "2022-03-21",
+        "newCasesBySpecimenDate": 89906
+      },
+      {
+        "date": "2022-03-20",
+        "newCasesBySpecimenDate": 66902
+      },
+      {
+        "date": "2022-03-19",
+        "newCasesBySpecimenDate": 55211
+      },
+      {
+        "date": "2022-03-18",
+        "newCasesBySpecimenDate": 61903
+      },
+      {
+        "date": "2022-03-17",
+        "newCasesBySpecimenDate": 67684
+      },
+      {
+        "date": "2022-03-16",
+        "newCasesBySpecimenDate": 73954
+      },
+      {
+        "date": "2022-03-15",
+        "newCasesBySpecimenDate": 74100
+      },
+      {
+        "date": "2022-03-14",
+        "newCasesBySpecimenDate": 79517
+      },
+      {
+        "date": "2022-03-13",
+        "newCasesBySpecimenDate": 60265
+      },
+      {
+        "date": "2022-03-12",
+        "newCasesBySpecimenDate": 49154
+      },
+      {
+        "date": "2022-03-11",
+        "newCasesBySpecimenDate": 52270
+      },
+      {
+        "date": "2022-03-10",
+        "newCasesBySpecimenDate": 54298
+      },
+      {
+        "date": "2022-03-09",
+        "newCasesBySpecimenDate": 55490
+      },
+      {
+        "date": "2022-03-08",
+        "newCasesBySpecimenDate": 52340
+      },
+      {
+        "date": "2022-03-07",
+        "newCasesBySpecimenDate": 50984
+      },
+      {
+        "date": "2022-03-06",
+        "newCasesBySpecimenDate": 35912
+      },
+      {
+        "date": "2022-03-05",
+        "newCasesBySpecimenDate": 28504
+      },
+      {
+        "date": "2022-03-04",
+        "newCasesBySpecimenDate": 30605
+      },
+      {
+        "date": "2022-03-03",
+        "newCasesBySpecimenDate": 31533
+      },
+      {
+        "date": "2022-03-02",
+        "newCasesBySpecimenDate": 33360
+      },
+      {
+        "date": "2022-03-01",
+        "newCasesBySpecimenDate": 31857
+      },
+      {
+        "date": "2022-02-28",
+        "newCasesBySpecimenDate": 31858
+      },
+      {
+        "date": "2022-02-27",
+        "newCasesBySpecimenDate": 22165
+      },
+      {
+        "date": "2022-02-26",
+        "newCasesBySpecimenDate": 17601
+      },
+      {
+        "date": "2022-02-25",
+        "newCasesBySpecimenDate": 19532
+      },
+      {
+        "date": "2022-02-24",
+        "newCasesBySpecimenDate": 21883
+      },
+      {
+        "date": "2022-02-23",
+        "newCasesBySpecimenDate": 26008
+      },
+      {
+        "date": "2022-02-22",
+        "newCasesBySpecimenDate": 28019
+      },
+      {
+        "date": "2022-02-21",
+        "newCasesBySpecimenDate": 33030
+      },
+      {
+        "date": "2022-02-20",
+        "newCasesBySpecimenDate": 28408
+      },
+      {
+        "date": "2022-02-19",
+        "newCasesBySpecimenDate": 26430
+      },
+      {
+        "date": "2022-02-18",
+        "newCasesBySpecimenDate": 24922
+      },
+      {
+        "date": "2022-02-17",
+        "newCasesBySpecimenDate": 34168
+      },
+      {
+        "date": "2022-02-16",
+        "newCasesBySpecimenDate": 39443
+      },
+      {
+        "date": "2022-02-15",
+        "newCasesBySpecimenDate": 40144
+      },
+      {
+        "date": "2022-02-14",
+        "newCasesBySpecimenDate": 42491
+      },
+      {
+        "date": "2022-02-13",
+        "newCasesBySpecimenDate": 32326
+      },
+      {
+        "date": "2022-02-12",
+        "newCasesBySpecimenDate": 29140
+      },
+      {
+        "date": "2022-02-11",
+        "newCasesBySpecimenDate": 34942
+      },
+      {
+        "date": "2022-02-10",
+        "newCasesBySpecimenDate": 41331
+      },
+      {
+        "date": "2022-02-09",
+        "newCasesBySpecimenDate": 51015
+      },
+      {
+        "date": "2022-02-08",
+        "newCasesBySpecimenDate": 55437
+      },
+      {
+        "date": "2022-02-07",
+        "newCasesBySpecimenDate": 62672
+      },
+      {
+        "date": "2022-02-06",
+        "newCasesBySpecimenDate": 50143
+      },
+      {
+        "date": "2022-02-05",
+        "newCasesBySpecimenDate": 43233
+      },
+      {
+        "date": "2022-02-04",
+        "newCasesBySpecimenDate": 52556
+      },
+      {
+        "date": "2022-02-03",
+        "newCasesBySpecimenDate": 64031
+      },
+      {
+        "date": "2022-02-02",
+        "newCasesBySpecimenDate": 73907
+      },
+      {
+        "date": "2022-02-01",
+        "newCasesBySpecimenDate": 78512
+      },
+      {
+        "date": "2022-01-31",
+        "newCasesBySpecimenDate": 88500
+      },
+      {
+        "date": "2022-01-30",
+        "newCasesBySpecimenDate": 74976
+      },
+      {
+        "date": "2022-01-29",
+        "newCasesBySpecimenDate": 63018
+      },
+      {
+        "date": "2022-01-28",
+        "newCasesBySpecimenDate": 71682
+      },
+      {
+        "date": "2022-01-27",
+        "newCasesBySpecimenDate": 82727
+      },
+      {
+        "date": "2022-01-26",
+        "newCasesBySpecimenDate": 93211
+      },
+      {
+        "date": "2022-01-25",
+        "newCasesBySpecimenDate": 96954
+      },
+      {
+        "date": "2022-01-24",
+        "newCasesBySpecimenDate": 109233
+      },
+      {
+        "date": "2022-01-23",
+        "newCasesBySpecimenDate": 88557
+      },
+      {
+        "date": "2022-01-22",
+        "newCasesBySpecimenDate": 70483
+      },
+      {
+        "date": "2022-01-21",
+        "newCasesBySpecimenDate": 79172
+      },
+      {
+        "date": "2022-01-20",
+        "newCasesBySpecimenDate": 86953
+      },
+      {
+        "date": "2022-01-19",
+        "newCasesBySpecimenDate": 97334
+      },
+      {
+        "date": "2022-01-18",
+        "newCasesBySpecimenDate": 103308
+      },
+      {
+        "date": "2022-01-17",
+        "newCasesBySpecimenDate": 114776
+      },
+      {
+        "date": "2022-01-16",
+        "newCasesBySpecimenDate": 85596
+      },
+      {
+        "date": "2022-01-15",
+        "newCasesBySpecimenDate": 67820
+      },
+      {
+        "date": "2022-01-14",
+        "newCasesBySpecimenDate": 75174
+      },
+      {
+        "date": "2022-01-13",
+        "newCasesBySpecimenDate": 84132
+      },
+      {
+        "date": "2022-01-12",
+        "newCasesBySpecimenDate": 90002
+      },
+      {
+        "date": "2022-01-11",
+        "newCasesBySpecimenDate": 100978
+      },
+      {
+        "date": "2022-01-10",
+        "newCasesBySpecimenDate": 116341
+      },
+      {
+        "date": "2022-01-09",
+        "newCasesBySpecimenDate": 83079
+      },
+      {
+        "date": "2022-01-08",
+        "newCasesBySpecimenDate": 81218
+      },
+      {
+        "date": "2022-01-07",
+        "newCasesBySpecimenDate": 105081
+      },
+      {
+        "date": "2022-01-06",
+        "newCasesBySpecimenDate": 150786
+      },
+      {
+        "date": "2022-01-05",
+        "newCasesBySpecimenDate": 183794
+      },
+      {
+        "date": "2022-01-04",
+        "newCasesBySpecimenDate": 234873
+      },
+      {
+        "date": "2022-01-03",
+        "newCasesBySpecimenDate": 193612
+      },
+      {
+        "date": "2022-01-02",
+        "newCasesBySpecimenDate": 148606
+      },
+      {
+        "date": "2022-01-01",
+        "newCasesBySpecimenDate": 99297
+      },
+      {
+        "date": "2021-12-31",
+        "newCasesBySpecimenDate": 152884
+      },
+      {
+        "date": "2021-12-30",
+        "newCasesBySpecimenDate": 192822
+      },
+      {
+        "date": "2021-12-29",
+        "newCasesBySpecimenDate": 224026
+      },
+      {
+        "date": "2021-12-28",
+        "newCasesBySpecimenDate": 170580
+      },
+      {
+        "date": "2021-12-27",
+        "newCasesBySpecimenDate": 155564
+      },
+      {
+        "date": "2021-12-26",
+        "newCasesBySpecimenDate": 98906
+      },
+      {
+        "date": "2021-12-25",
+        "newCasesBySpecimenDate": 59912
+      },
+      {
+        "date": "2021-12-24",
+        "newCasesBySpecimenDate": 117562
+      },
+      {
+        "date": "2021-12-23",
+        "newCasesBySpecimenDate": 137022
+      },
+      {
+        "date": "2021-12-22",
+        "newCasesBySpecimenDate": 138142
+      },
+      {
+        "date": "2021-12-21",
+        "newCasesBySpecimenDate": 129598
+      },
+      {
+        "date": "2021-12-20",
+        "newCasesBySpecimenDate": 117577
+      },
+      {
+        "date": "2021-12-19",
+        "newCasesBySpecimenDate": 78493
+      },
+      {
+        "date": "2021-12-18",
+        "newCasesBySpecimenDate": 78930
+      },
+      {
+        "date": "2021-12-17",
+        "newCasesBySpecimenDate": 84949
+      },
+      {
+        "date": "2021-12-16",
+        "newCasesBySpecimenDate": 93798
+      },
+      {
+        "date": "2021-12-15",
+        "newCasesBySpecimenDate": 99651
+      },
+      {
+        "date": "2021-12-14",
+        "newCasesBySpecimenDate": 90715
+      },
+      {
+        "date": "2021-12-13",
+        "newCasesBySpecimenDate": 76508
+      },
+      {
+        "date": "2021-12-12",
+        "newCasesBySpecimenDate": 46366
+      },
+      {
+        "date": "2021-12-11",
+        "newCasesBySpecimenDate": 41940
+      },
+      {
+        "date": "2021-12-10",
+        "newCasesBySpecimenDate": 45017
+      },
+      {
+        "date": "2021-12-09",
+        "newCasesBySpecimenDate": 48816
+      },
+      {
+        "date": "2021-12-08",
+        "newCasesBySpecimenDate": 50057
+      },
+      {
+        "date": "2021-12-07",
+        "newCasesBySpecimenDate": 48140
+      },
+      {
+        "date": "2021-12-06",
+        "newCasesBySpecimenDate": 51121
+      },
+      {
+        "date": "2021-12-05",
+        "newCasesBySpecimenDate": 35037
+      },
+      {
+        "date": "2021-12-04",
+        "newCasesBySpecimenDate": 33378
+      },
+      {
+        "date": "2021-12-03",
+        "newCasesBySpecimenDate": 39222
+      },
+      {
+        "date": "2021-12-02",
+        "newCasesBySpecimenDate": 43046
+      },
+      {
+        "date": "2021-12-01",
+        "newCasesBySpecimenDate": 47262
+      },
+      {
+        "date": "2021-11-30",
+        "newCasesBySpecimenDate": 47631
+      },
+      {
+        "date": "2021-11-29",
+        "newCasesBySpecimenDate": 47940
+      },
+      {
+        "date": "2021-11-28",
+        "newCasesBySpecimenDate": 33855
+      },
+      {
+        "date": "2021-11-27",
+        "newCasesBySpecimenDate": 28456
+      },
+      {
+        "date": "2021-11-26",
+        "newCasesBySpecimenDate": 33665
+      },
+      {
+        "date": "2021-11-25",
+        "newCasesBySpecimenDate": 37142
+      },
+      {
+        "date": "2021-11-24",
+        "newCasesBySpecimenDate": 39880
+      },
+      {
+        "date": "2021-11-23",
+        "newCasesBySpecimenDate": 41015
+      },
+      {
+        "date": "2021-11-22",
+        "newCasesBySpecimenDate": 42869
+      },
+      {
+        "date": "2021-11-21",
+        "newCasesBySpecimenDate": 31763
+      },
+      {
+        "date": "2021-11-20",
+        "newCasesBySpecimenDate": 29868
+      },
+      {
+        "date": "2021-11-19",
+        "newCasesBySpecimenDate": 33186
+      },
+      {
+        "date": "2021-11-18",
+        "newCasesBySpecimenDate": 37098
+      },
+      {
+        "date": "2021-11-17",
+        "newCasesBySpecimenDate": 38256
+      },
+      {
+        "date": "2021-11-16",
+        "newCasesBySpecimenDate": 38655
+      },
+      {
+        "date": "2021-11-15",
+        "newCasesBySpecimenDate": 42478
+      },
+      {
+        "date": "2021-11-14",
+        "newCasesBySpecimenDate": 29597
+      },
+      {
+        "date": "2021-11-13",
+        "newCasesBySpecimenDate": 27356
+      },
+      {
+        "date": "2021-11-12",
+        "newCasesBySpecimenDate": 31339
+      },
+      {
+        "date": "2021-11-11",
+        "newCasesBySpecimenDate": 33700
+      },
+      {
+        "date": "2021-11-10",
+        "newCasesBySpecimenDate": 35390
+      },
+      {
+        "date": "2021-11-09",
+        "newCasesBySpecimenDate": 34679
+      },
+      {
+        "date": "2021-11-08",
+        "newCasesBySpecimenDate": 36140
+      },
+      {
+        "date": "2021-11-07",
+        "newCasesBySpecimenDate": 25447
+      },
+      {
+        "date": "2021-11-06",
+        "newCasesBySpecimenDate": 22581
+      },
+      {
+        "date": "2021-11-05",
+        "newCasesBySpecimenDate": 24405
+      },
+      {
+        "date": "2021-11-04",
+        "newCasesBySpecimenDate": 27378
+      },
+      {
+        "date": "2021-11-03",
+        "newCasesBySpecimenDate": 29396
+      },
+      {
+        "date": "2021-11-02",
+        "newCasesBySpecimenDate": 31328
+      },
+      {
+        "date": "2021-11-01",
+        "newCasesBySpecimenDate": 37663
+      },
+      {
+        "date": "2021-10-31",
+        "newCasesBySpecimenDate": 29564
+      },
+      {
+        "date": "2021-10-30",
+        "newCasesBySpecimenDate": 28243
+      },
+      {
+        "date": "2021-10-29",
+        "newCasesBySpecimenDate": 33995
+      },
+      {
+        "date": "2021-10-28",
+        "newCasesBySpecimenDate": 35077
+      },
+      {
+        "date": "2021-10-27",
+        "newCasesBySpecimenDate": 36524
+      },
+      {
+        "date": "2021-10-26",
+        "newCasesBySpecimenDate": 35276
+      },
+      {
+        "date": "2021-10-25",
+        "newCasesBySpecimenDate": 39957
+      },
+      {
+        "date": "2021-10-24",
+        "newCasesBySpecimenDate": 30092
+      },
+      {
+        "date": "2021-10-23",
+        "newCasesBySpecimenDate": 29747
+      },
+      {
+        "date": "2021-10-22",
+        "newCasesBySpecimenDate": 34507
+      },
+      {
+        "date": "2021-10-21",
+        "newCasesBySpecimenDate": 38580
+      },
+      {
+        "date": "2021-10-20",
+        "newCasesBySpecimenDate": 43963
+      },
+      {
+        "date": "2021-10-19",
+        "newCasesBySpecimenDate": 44630
+      },
+      {
+        "date": "2021-10-18",
+        "newCasesBySpecimenDate": 49257
+      },
+      {
+        "date": "2021-10-17",
+        "newCasesBySpecimenDate": 37502
+      },
+      {
+        "date": "2021-10-16",
+        "newCasesBySpecimenDate": 31639
+      },
+      {
+        "date": "2021-10-15",
+        "newCasesBySpecimenDate": 36631
+      },
+      {
+        "date": "2021-10-14",
+        "newCasesBySpecimenDate": 39263
+      },
+      {
+        "date": "2021-10-13",
+        "newCasesBySpecimenDate": 40545
+      },
+      {
+        "date": "2021-10-12",
+        "newCasesBySpecimenDate": 40892
+      },
+      {
+        "date": "2021-10-11",
+        "newCasesBySpecimenDate": 43115
+      },
+      {
+        "date": "2021-10-10",
+        "newCasesBySpecimenDate": 31499
+      },
+      {
+        "date": "2021-10-09",
+        "newCasesBySpecimenDate": 27180
+      },
+      {
+        "date": "2021-10-08",
+        "newCasesBySpecimenDate": 29848
+      },
+      {
+        "date": "2021-10-07",
+        "newCasesBySpecimenDate": 32158
+      },
+      {
+        "date": "2021-10-06",
+        "newCasesBySpecimenDate": 32547
+      },
+      {
+        "date": "2021-10-05",
+        "newCasesBySpecimenDate": 32268
+      },
+      {
+        "date": "2021-10-04",
+        "newCasesBySpecimenDate": 36476
+      },
+      {
+        "date": "2021-10-03",
+        "newCasesBySpecimenDate": 27137
+      },
+      {
+        "date": "2021-10-02",
+        "newCasesBySpecimenDate": 21873
+      },
+      {
+        "date": "2021-10-01",
+        "newCasesBySpecimenDate": 24134
+      },
+      {
+        "date": "2021-09-30",
+        "newCasesBySpecimenDate": 26809
+      },
+      {
+        "date": "2021-09-29",
+        "newCasesBySpecimenDate": 28688
+      },
+      {
+        "date": "2021-09-28",
+        "newCasesBySpecimenDate": 29627
+      },
+      {
+        "date": "2021-09-27",
+        "newCasesBySpecimenDate": 34595
+      },
+      {
+        "date": "2021-09-26",
+        "newCasesBySpecimenDate": 26814
+      },
+      {
+        "date": "2021-09-25",
+        "newCasesBySpecimenDate": 23389
+      },
+      {
+        "date": "2021-09-24",
+        "newCasesBySpecimenDate": 25755
+      },
+      {
+        "date": "2021-09-23",
+        "newCasesBySpecimenDate": 28340
+      },
+      {
+        "date": "2021-09-22",
+        "newCasesBySpecimenDate": 28789
+      },
+      {
+        "date": "2021-09-21",
+        "newCasesBySpecimenDate": 30547
+      },
+      {
+        "date": "2021-09-20",
+        "newCasesBySpecimenDate": 32121
+      },
+      {
+        "date": "2021-09-19",
+        "newCasesBySpecimenDate": 24789
+      },
+      {
+        "date": "2021-09-18",
+        "newCasesBySpecimenDate": 20926
+      },
+      {
+        "date": "2021-09-17",
+        "newCasesBySpecimenDate": 22375
+      },
+      {
+        "date": "2021-09-16",
+        "newCasesBySpecimenDate": 22319
+      },
+      {
+        "date": "2021-09-15",
+        "newCasesBySpecimenDate": 22414
+      },
+      {
+        "date": "2021-09-14",
+        "newCasesBySpecimenDate": 22640
+      },
+      {
+        "date": "2021-09-13",
+        "newCasesBySpecimenDate": 25199
+      },
+      {
+        "date": "2021-09-12",
+        "newCasesBySpecimenDate": 17879
+      },
+      {
+        "date": "2021-09-11",
+        "newCasesBySpecimenDate": 16956
+      },
+      {
+        "date": "2021-09-10",
+        "newCasesBySpecimenDate": 21031
+      },
+      {
+        "date": "2021-09-09",
+        "newCasesBySpecimenDate": 24440
+      },
+      {
+        "date": "2021-09-08",
+        "newCasesBySpecimenDate": 25659
+      },
+      {
+        "date": "2021-09-07",
+        "newCasesBySpecimenDate": 27938
+      },
+      {
+        "date": "2021-09-06",
+        "newCasesBySpecimenDate": 33135
+      },
+      {
+        "date": "2021-09-05",
+        "newCasesBySpecimenDate": 23457
+      },
+      {
+        "date": "2021-09-04",
+        "newCasesBySpecimenDate": 23409
+      },
+      {
+        "date": "2021-09-03",
+        "newCasesBySpecimenDate": 28727
+      },
+      {
+        "date": "2021-09-02",
+        "newCasesBySpecimenDate": 30637
+      },
+      {
+        "date": "2021-09-01",
+        "newCasesBySpecimenDate": 31601
+      },
+      {
+        "date": "2021-08-31",
+        "newCasesBySpecimenDate": 33565
+      },
+      {
+        "date": "2021-08-30",
+        "newCasesBySpecimenDate": 24972
+      },
+      {
+        "date": "2021-08-29",
+        "newCasesBySpecimenDate": 19151
+      },
+      {
+        "date": "2021-08-28",
+        "newCasesBySpecimenDate": 20136
+      },
+      {
+        "date": "2021-08-27",
+        "newCasesBySpecimenDate": 24251
+      },
+      {
+        "date": "2021-08-26",
+        "newCasesBySpecimenDate": 26482
+      },
+      {
+        "date": "2021-08-25",
+        "newCasesBySpecimenDate": 27901
+      },
+      {
+        "date": "2021-08-24",
+        "newCasesBySpecimenDate": 28212
+      },
+      {
+        "date": "2021-08-23",
+        "newCasesBySpecimenDate": 30333
+      },
+      {
+        "date": "2021-08-22",
+        "newCasesBySpecimenDate": 22409
+      },
+      {
+        "date": "2021-08-21",
+        "newCasesBySpecimenDate": 22602
+      },
+      {
+        "date": "2021-08-20",
+        "newCasesBySpecimenDate": 25555
+      },
+      {
+        "date": "2021-08-19",
+        "newCasesBySpecimenDate": 29080
+      },
+      {
+        "date": "2021-08-18",
+        "newCasesBySpecimenDate": 31426
+      },
+      {
+        "date": "2021-08-17",
+        "newCasesBySpecimenDate": 31094
+      },
+      {
+        "date": "2021-08-16",
+        "newCasesBySpecimenDate": 30860
+      },
+      {
+        "date": "2021-08-15",
+        "newCasesBySpecimenDate": 21279
+      },
+      {
+        "date": "2021-08-14",
+        "newCasesBySpecimenDate": 21336
+      },
+      {
+        "date": "2021-08-13",
+        "newCasesBySpecimenDate": 24991
+      },
+      {
+        "date": "2021-08-12",
+        "newCasesBySpecimenDate": 27690
+      },
+      {
+        "date": "2021-08-11",
+        "newCasesBySpecimenDate": 29134
+      },
+      {
+        "date": "2021-08-10",
+        "newCasesBySpecimenDate": 27610
+      },
+      {
+        "date": "2021-08-09",
+        "newCasesBySpecimenDate": 28292
+      },
+      {
+        "date": "2021-08-08",
+        "newCasesBySpecimenDate": 20157
+      },
+      {
+        "date": "2021-08-07",
+        "newCasesBySpecimenDate": 19957
+      },
+      {
+        "date": "2021-08-06",
+        "newCasesBySpecimenDate": 24852
+      },
+      {
+        "date": "2021-08-05",
+        "newCasesBySpecimenDate": 28125
+      },
+      {
+        "date": "2021-08-04",
+        "newCasesBySpecimenDate": 28895
+      },
+      {
+        "date": "2021-08-03",
+        "newCasesBySpecimenDate": 27061
+      },
+      {
+        "date": "2021-08-02",
+        "newCasesBySpecimenDate": 26580
+      },
+      {
+        "date": "2021-08-01",
+        "newCasesBySpecimenDate": 18714
+      },
+      {
+        "date": "2021-07-31",
+        "newCasesBySpecimenDate": 18449
+      },
+      {
+        "date": "2021-07-30",
+        "newCasesBySpecimenDate": 22110
+      },
+      {
+        "date": "2021-07-29",
+        "newCasesBySpecimenDate": 25361
+      },
+      {
+        "date": "2021-07-28",
+        "newCasesBySpecimenDate": 26925
+      },
+      {
+        "date": "2021-07-27",
+        "newCasesBySpecimenDate": 26026
+      },
+      {
+        "date": "2021-07-26",
+        "newCasesBySpecimenDate": 26540
+      },
+      {
+        "date": "2021-07-25",
+        "newCasesBySpecimenDate": 19657
+      },
+      {
+        "date": "2021-07-24",
+        "newCasesBySpecimenDate": 20276
+      },
+      {
+        "date": "2021-07-23",
+        "newCasesBySpecimenDate": 24586
+      },
+      {
+        "date": "2021-07-22",
+        "newCasesBySpecimenDate": 27711
+      },
+      {
+        "date": "2021-07-21",
+        "newCasesBySpecimenDate": 31676
+      },
+      {
+        "date": "2021-07-20",
+        "newCasesBySpecimenDate": 35948
+      },
+      {
+        "date": "2021-07-19",
+        "newCasesBySpecimenDate": 43401
+      },
+      {
+        "date": "2021-07-18",
+        "newCasesBySpecimenDate": 33163
+      },
+      {
+        "date": "2021-07-17",
+        "newCasesBySpecimenDate": 35280
+      },
+      {
+        "date": "2021-07-16",
+        "newCasesBySpecimenDate": 51137
+      },
+      {
+        "date": "2021-07-15",
+        "newCasesBySpecimenDate": 57583
+      },
+      {
+        "date": "2021-07-14",
+        "newCasesBySpecimenDate": 50319
+      },
+      {
+        "date": "2021-07-13",
+        "newCasesBySpecimenDate": 43246
+      },
+      {
+        "date": "2021-07-12",
+        "newCasesBySpecimenDate": 40478
+      },
+      {
+        "date": "2021-07-11",
+        "newCasesBySpecimenDate": 27418
+      },
+      {
+        "date": "2021-07-10",
+        "newCasesBySpecimenDate": 25411
+      },
+      {
+        "date": "2021-07-09",
+        "newCasesBySpecimenDate": 29049
+      },
+      {
+        "date": "2021-07-08",
+        "newCasesBySpecimenDate": 29925
+      },
+      {
+        "date": "2021-07-07",
+        "newCasesBySpecimenDate": 34274
+      },
+      {
+        "date": "2021-07-06",
+        "newCasesBySpecimenDate": 31627
+      },
+      {
+        "date": "2021-07-05",
+        "newCasesBySpecimenDate": 30215
+      },
+      {
+        "date": "2021-07-04",
+        "newCasesBySpecimenDate": 21806
+      },
+      {
+        "date": "2021-07-03",
+        "newCasesBySpecimenDate": 20638
+      },
+      {
+        "date": "2021-07-02",
+        "newCasesBySpecimenDate": 22288
+      },
+      {
+        "date": "2021-07-01",
+        "newCasesBySpecimenDate": 24267
+      },
+      {
+        "date": "2021-06-30",
+        "newCasesBySpecimenDate": 23941
+      },
+      {
+        "date": "2021-06-29",
+        "newCasesBySpecimenDate": 23250
+      },
+      {
+        "date": "2021-06-28",
+        "newCasesBySpecimenDate": 23511
+      },
+      {
+        "date": "2021-06-27",
+        "newCasesBySpecimenDate": 15407
+      },
+      {
+        "date": "2021-06-26",
+        "newCasesBySpecimenDate": 13486
+      },
+      {
+        "date": "2021-06-25",
+        "newCasesBySpecimenDate": 14901
+      },
+      {
+        "date": "2021-06-24",
+        "newCasesBySpecimenDate": 15082
+      },
+      {
+        "date": "2021-06-23",
+        "newCasesBySpecimenDate": 14805
+      },
+      {
+        "date": "2021-06-22",
+        "newCasesBySpecimenDate": 13564
+      },
+      {
+        "date": "2021-06-21",
+        "newCasesBySpecimenDate": 12706
+      },
+      {
+        "date": "2021-06-20",
+        "newCasesBySpecimenDate": 8204
+      },
+      {
+        "date": "2021-06-19",
+        "newCasesBySpecimenDate": 7126
+      },
+      {
+        "date": "2021-06-18",
+        "newCasesBySpecimenDate": 8772
+      },
+      {
+        "date": "2021-06-17",
+        "newCasesBySpecimenDate": 9523
+      },
+      {
+        "date": "2021-06-16",
+        "newCasesBySpecimenDate": 9411
+      },
+      {
+        "date": "2021-06-15",
+        "newCasesBySpecimenDate": 9149
+      },
+      {
+        "date": "2021-06-14",
+        "newCasesBySpecimenDate": 8941
+      },
+      {
+        "date": "2021-06-13",
+        "newCasesBySpecimenDate": 6075
+      },
+      {
+        "date": "2021-06-12",
+        "newCasesBySpecimenDate": 5422
+      },
+      {
+        "date": "2021-06-11",
+        "newCasesBySpecimenDate": 6510
+      },
+      {
+        "date": "2021-06-10",
+        "newCasesBySpecimenDate": 6717
+      },
+      {
+        "date": "2021-06-09",
+        "newCasesBySpecimenDate": 6919
+      },
+      {
+        "date": "2021-06-08",
+        "newCasesBySpecimenDate": 6630
+      },
+      {
+        "date": "2021-06-07",
+        "newCasesBySpecimenDate": 6790
+      },
+      {
+        "date": "2021-06-06",
+        "newCasesBySpecimenDate": 4729
+      },
+      {
+        "date": "2021-06-05",
+        "newCasesBySpecimenDate": 3964
+      },
+      {
+        "date": "2021-06-04",
+        "newCasesBySpecimenDate": 4885
+      },
+      {
+        "date": "2021-06-03",
+        "newCasesBySpecimenDate": 5129
+      },
+      {
+        "date": "2021-06-02",
+        "newCasesBySpecimenDate": 5039
+      },
+      {
+        "date": "2021-06-01",
+        "newCasesBySpecimenDate": 4515
+      },
+      {
+        "date": "2021-05-31",
+        "newCasesBySpecimenDate": 3170
+      },
+      {
+        "date": "2021-05-30",
+        "newCasesBySpecimenDate": 2598
+      },
+      {
+        "date": "2021-05-29",
+        "newCasesBySpecimenDate": 2462
+      },
+      {
+        "date": "2021-05-28",
+        "newCasesBySpecimenDate": 2929
+      },
+      {
+        "date": "2021-05-27",
+        "newCasesBySpecimenDate": 3075
+      },
+      {
+        "date": "2021-05-26",
+        "newCasesBySpecimenDate": 3178
+      },
+      {
+        "date": "2021-05-25",
+        "newCasesBySpecimenDate": 2797
+      },
+      {
+        "date": "2021-05-24",
+        "newCasesBySpecimenDate": 2749
+      },
+      {
+        "date": "2021-05-23",
+        "newCasesBySpecimenDate": 1918
+      },
+      {
+        "date": "2021-05-22",
+        "newCasesBySpecimenDate": 1606
+      },
+      {
+        "date": "2021-05-21",
+        "newCasesBySpecimenDate": 1870
+      },
+      {
+        "date": "2021-05-20",
+        "newCasesBySpecimenDate": 2000
+      },
+      {
+        "date": "2021-05-19",
+        "newCasesBySpecimenDate": 2260
+      },
+      {
+        "date": "2021-05-18",
+        "newCasesBySpecimenDate": 2241
+      },
+      {
+        "date": "2021-05-17",
+        "newCasesBySpecimenDate": 2341
+      },
+      {
+        "date": "2021-05-16",
+        "newCasesBySpecimenDate": 1586
+      },
+      {
+        "date": "2021-05-15",
+        "newCasesBySpecimenDate": 1304
+      },
+      {
+        "date": "2021-05-14",
+        "newCasesBySpecimenDate": 1538
+      },
+      {
+        "date": "2021-05-13",
+        "newCasesBySpecimenDate": 1737
+      },
+      {
+        "date": "2021-05-12",
+        "newCasesBySpecimenDate": 1868
+      },
+      {
+        "date": "2021-05-11",
+        "newCasesBySpecimenDate": 1871
+      },
+      {
+        "date": "2021-05-10",
+        "newCasesBySpecimenDate": 2324
+      },
+      {
+        "date": "2021-05-09",
+        "newCasesBySpecimenDate": 1985
+      },
+      {
+        "date": "2021-05-08",
+        "newCasesBySpecimenDate": 1300
+      },
+      {
+        "date": "2021-05-07",
+        "newCasesBySpecimenDate": 1656
+      },
+      {
+        "date": "2021-05-06",
+        "newCasesBySpecimenDate": 1966
+      },
+      {
+        "date": "2021-05-05",
+        "newCasesBySpecimenDate": 2203
+      },
+      {
+        "date": "2021-05-04",
+        "newCasesBySpecimenDate": 2198
+      },
+      {
+        "date": "2021-05-03",
+        "newCasesBySpecimenDate": 1806
+      },
+      {
+        "date": "2021-05-02",
+        "newCasesBySpecimenDate": 1305
+      },
+      {
+        "date": "2021-05-01",
+        "newCasesBySpecimenDate": 1209
+      },
+      {
+        "date": "2021-04-30",
+        "newCasesBySpecimenDate": 1528
+      },
+      {
+        "date": "2021-04-29",
+        "newCasesBySpecimenDate": 1901
+      },
+      {
+        "date": "2021-04-28",
+        "newCasesBySpecimenDate": 2153
+      },
+      {
+        "date": "2021-04-27",
+        "newCasesBySpecimenDate": 1808
+      },
+      {
+        "date": "2021-04-26",
+        "newCasesBySpecimenDate": 2268
+      },
+      {
+        "date": "2021-04-25",
+        "newCasesBySpecimenDate": 1897
+      },
+      {
+        "date": "2021-04-24",
+        "newCasesBySpecimenDate": 1300
+      },
+      {
+        "date": "2021-04-23",
+        "newCasesBySpecimenDate": 1701
+      },
+      {
+        "date": "2021-04-22",
+        "newCasesBySpecimenDate": 2032
+      },
+      {
+        "date": "2021-04-21",
+        "newCasesBySpecimenDate": 2299
+      },
+      {
+        "date": "2021-04-20",
+        "newCasesBySpecimenDate": 2112
+      },
+      {
+        "date": "2021-04-19",
+        "newCasesBySpecimenDate": 2268
+      },
+      {
+        "date": "2021-04-18",
+        "newCasesBySpecimenDate": 2281
+      },
+      {
+        "date": "2021-04-17",
+        "newCasesBySpecimenDate": 1398
+      },
+      {
+        "date": "2021-04-16",
+        "newCasesBySpecimenDate": 1963
+      },
+      {
+        "date": "2021-04-15",
+        "newCasesBySpecimenDate": 1959
+      },
+      {
+        "date": "2021-04-14",
+        "newCasesBySpecimenDate": 2068
+      },
+      {
+        "date": "2021-04-13",
+        "newCasesBySpecimenDate": 2060
+      },
+      {
+        "date": "2021-04-12",
+        "newCasesBySpecimenDate": 2398
+      },
+      {
+        "date": "2021-04-11",
+        "newCasesBySpecimenDate": 2020
+      },
+      {
+        "date": "2021-04-10",
+        "newCasesBySpecimenDate": 2009
+      },
+      {
+        "date": "2021-04-09",
+        "newCasesBySpecimenDate": 2481
+      },
+      {
+        "date": "2021-04-08",
+        "newCasesBySpecimenDate": 2651
+      },
+      {
+        "date": "2021-04-07",
+        "newCasesBySpecimenDate": 2752
+      },
+      {
+        "date": "2021-04-06",
+        "newCasesBySpecimenDate": 2755
+      },
+      {
+        "date": "2021-04-05",
+        "newCasesBySpecimenDate": 2314
+      },
+      {
+        "date": "2021-04-04",
+        "newCasesBySpecimenDate": 2043
+      },
+      {
+        "date": "2021-04-03",
+        "newCasesBySpecimenDate": 2119
+      },
+      {
+        "date": "2021-04-02",
+        "newCasesBySpecimenDate": 2248
+      },
+      {
+        "date": "2021-04-01",
+        "newCasesBySpecimenDate": 3067
+      },
+      {
+        "date": "2021-03-31",
+        "newCasesBySpecimenDate": 3341
+      },
+      {
+        "date": "2021-03-30",
+        "newCasesBySpecimenDate": 3135
+      },
+      {
+        "date": "2021-03-29",
+        "newCasesBySpecimenDate": 3422
+      },
+      {
+        "date": "2021-03-28",
+        "newCasesBySpecimenDate": 4476
+      },
+      {
+        "date": "2021-03-27",
+        "newCasesBySpecimenDate": 3136
+      },
+      {
+        "date": "2021-03-26",
+        "newCasesBySpecimenDate": 3803
+      },
+      {
+        "date": "2021-03-25",
+        "newCasesBySpecimenDate": 4674
+      },
+      {
+        "date": "2021-03-24",
+        "newCasesBySpecimenDate": 5321
+      },
+      {
+        "date": "2021-03-23",
+        "newCasesBySpecimenDate": 4563
+      },
+      {
+        "date": "2021-03-22",
+        "newCasesBySpecimenDate": 5399
+      },
+      {
+        "date": "2021-03-21",
+        "newCasesBySpecimenDate": 4677
+      },
+      {
+        "date": "2021-03-20",
+        "newCasesBySpecimenDate": 3513
+      },
+      {
+        "date": "2021-03-19",
+        "newCasesBySpecimenDate": 4329
+      },
+      {
+        "date": "2021-03-18",
+        "newCasesBySpecimenDate": 4680
+      },
+      {
+        "date": "2021-03-17",
+        "newCasesBySpecimenDate": 5046
+      },
+      {
+        "date": "2021-03-16",
+        "newCasesBySpecimenDate": 4919
+      },
+      {
+        "date": "2021-03-15",
+        "newCasesBySpecimenDate": 5638
+      },
+      {
+        "date": "2021-03-14",
+        "newCasesBySpecimenDate": 3707
+      },
+      {
+        "date": "2021-03-13",
+        "newCasesBySpecimenDate": 3590
+      },
+      {
+        "date": "2021-03-12",
+        "newCasesBySpecimenDate": 4766
+      },
+      {
+        "date": "2021-03-11",
+        "newCasesBySpecimenDate": 4848
+      },
+      {
+        "date": "2021-03-10",
+        "newCasesBySpecimenDate": 5223
+      },
+      {
+        "date": "2021-03-09",
+        "newCasesBySpecimenDate": 5488
+      },
+      {
+        "date": "2021-03-08",
+        "newCasesBySpecimenDate": 5818
+      },
+      {
+        "date": "2021-03-07",
+        "newCasesBySpecimenDate": 3677
+      },
+      {
+        "date": "2021-03-06",
+        "newCasesBySpecimenDate": 3832
+      },
+      {
+        "date": "2021-03-05",
+        "newCasesBySpecimenDate": 4728
+      },
+      {
+        "date": "2021-03-04",
+        "newCasesBySpecimenDate": 5011
+      },
+      {
+        "date": "2021-03-03",
+        "newCasesBySpecimenDate": 5305
+      },
+      {
+        "date": "2021-03-02",
+        "newCasesBySpecimenDate": 5951
+      },
+      {
+        "date": "2021-03-01",
+        "newCasesBySpecimenDate": 6215
+      },
+      {
+        "date": "2021-02-28",
+        "newCasesBySpecimenDate": 4112
+      },
+      {
+        "date": "2021-02-27",
+        "newCasesBySpecimenDate": 4254
+      },
+      {
+        "date": "2021-02-26",
+        "newCasesBySpecimenDate": 5884
+      },
+      {
+        "date": "2021-02-25",
+        "newCasesBySpecimenDate": 6935
+      },
+      {
+        "date": "2021-02-24",
+        "newCasesBySpecimenDate": 7620
+      },
+      {
+        "date": "2021-02-23",
+        "newCasesBySpecimenDate": 8536
+      },
+      {
+        "date": "2021-02-22",
+        "newCasesBySpecimenDate": 10278
+      },
+      {
+        "date": "2021-02-21",
+        "newCasesBySpecimenDate": 7032
+      },
+      {
+        "date": "2021-02-20",
+        "newCasesBySpecimenDate": 7161
+      },
+      {
+        "date": "2021-02-19",
+        "newCasesBySpecimenDate": 9246
+      },
+      {
+        "date": "2021-02-18",
+        "newCasesBySpecimenDate": 10304
+      },
+      {
+        "date": "2021-02-17",
+        "newCasesBySpecimenDate": 10419
+      },
+      {
+        "date": "2021-02-16",
+        "newCasesBySpecimenDate": 11270
+      },
+      {
+        "date": "2021-02-15",
+        "newCasesBySpecimenDate": 12953
+      },
+      {
+        "date": "2021-02-14",
+        "newCasesBySpecimenDate": 7780
+      },
+      {
+        "date": "2021-02-13",
+        "newCasesBySpecimenDate": 8025
+      },
+      {
+        "date": "2021-02-12",
+        "newCasesBySpecimenDate": 10986
+      },
+      {
+        "date": "2021-02-11",
+        "newCasesBySpecimenDate": 11637
+      },
+      {
+        "date": "2021-02-10",
+        "newCasesBySpecimenDate": 12272
+      },
+      {
+        "date": "2021-02-09",
+        "newCasesBySpecimenDate": 12696
+      },
+      {
+        "date": "2021-02-08",
+        "newCasesBySpecimenDate": 14370
+      },
+      {
+        "date": "2021-02-07",
+        "newCasesBySpecimenDate": 10457
+      },
+      {
+        "date": "2021-02-06",
+        "newCasesBySpecimenDate": 10951
+      },
+      {
+        "date": "2021-02-05",
+        "newCasesBySpecimenDate": 14462
+      },
+      {
+        "date": "2021-02-04",
+        "newCasesBySpecimenDate": 16717
+      },
+      {
+        "date": "2021-02-03",
+        "newCasesBySpecimenDate": 17948
+      },
+      {
+        "date": "2021-02-02",
+        "newCasesBySpecimenDate": 18194
+      },
+      {
+        "date": "2021-02-01",
+        "newCasesBySpecimenDate": 20765
+      },
+      {
+        "date": "2021-01-31",
+        "newCasesBySpecimenDate": 14138
+      },
+      {
+        "date": "2021-01-30",
+        "newCasesBySpecimenDate": 15524
+      },
+      {
+        "date": "2021-01-29",
+        "newCasesBySpecimenDate": 20362
+      },
+      {
+        "date": "2021-01-28",
+        "newCasesBySpecimenDate": 22523
+      },
+      {
+        "date": "2021-01-27",
+        "newCasesBySpecimenDate": 23899
+      },
+      {
+        "date": "2021-01-26",
+        "newCasesBySpecimenDate": 25210
+      },
+      {
+        "date": "2021-01-25",
+        "newCasesBySpecimenDate": 27972
+      },
+      {
+        "date": "2021-01-24",
+        "newCasesBySpecimenDate": 15883
+      },
+      {
+        "date": "2021-01-23",
+        "newCasesBySpecimenDate": 20426
+      },
+      {
+        "date": "2021-01-22",
+        "newCasesBySpecimenDate": 27741
+      },
+      {
+        "date": "2021-01-21",
+        "newCasesBySpecimenDate": 29633
+      },
+      {
+        "date": "2021-01-20",
+        "newCasesBySpecimenDate": 32679
+      },
+      {
+        "date": "2021-01-19",
+        "newCasesBySpecimenDate": 37056
+      },
+      {
+        "date": "2021-01-18",
+        "newCasesBySpecimenDate": 41936
+      },
+      {
+        "date": "2021-01-17",
+        "newCasesBySpecimenDate": 26976
+      },
+      {
+        "date": "2021-01-16",
+        "newCasesBySpecimenDate": 28412
+      },
+      {
+        "date": "2021-01-15",
+        "newCasesBySpecimenDate": 37878
+      },
+      {
+        "date": "2021-01-14",
+        "newCasesBySpecimenDate": 39659
+      },
+      {
+        "date": "2021-01-13",
+        "newCasesBySpecimenDate": 42303
+      },
+      {
+        "date": "2021-01-12",
+        "newCasesBySpecimenDate": 45968
+      },
+      {
+        "date": "2021-01-11",
+        "newCasesBySpecimenDate": 53519
+      },
+      {
+        "date": "2021-01-10",
+        "newCasesBySpecimenDate": 33749
+      },
+      {
+        "date": "2021-01-09",
+        "newCasesBySpecimenDate": 36419
+      },
+      {
+        "date": "2021-01-08",
+        "newCasesBySpecimenDate": 43494
+      },
+      {
+        "date": "2021-01-07",
+        "newCasesBySpecimenDate": 48132
+      },
+      {
+        "date": "2021-01-06",
+        "newCasesBySpecimenDate": 52752
+      },
+      {
+        "date": "2021-01-05",
+        "newCasesBySpecimenDate": 59599
+      },
+      {
+        "date": "2021-01-04",
+        "newCasesBySpecimenDate": 70920
+      },
+      {
+        "date": "2021-01-03",
+        "newCasesBySpecimenDate": 50664
+      },
+      {
+        "date": "2021-01-02",
+        "newCasesBySpecimenDate": 55428
+      },
+      {
+        "date": "2021-01-01",
+        "newCasesBySpecimenDate": 28879
+      },
+      {
+        "date": "2020-12-31",
+        "newCasesBySpecimenDate": 47823
+      },
+      {
+        "date": "2020-12-30",
+        "newCasesBySpecimenDate": 64243
+      },
+      {
+        "date": "2020-12-29",
+        "newCasesBySpecimenDate": 74058
+      },
+      {
+        "date": "2020-12-28",
+        "newCasesBySpecimenDate": 40846
+      },
+      {
+        "date": "2020-12-27",
+        "newCasesBySpecimenDate": 43250
+      },
+      {
+        "date": "2020-12-26",
+        "newCasesBySpecimenDate": 37462
+      },
+      {
+        "date": "2020-12-25",
+        "newCasesBySpecimenDate": 12926
+      },
+      {
+        "date": "2020-12-24",
+        "newCasesBySpecimenDate": 29287
+      },
+      {
+        "date": "2020-12-23",
+        "newCasesBySpecimenDate": 38383
+      },
+      {
+        "date": "2020-12-22",
+        "newCasesBySpecimenDate": 41741
+      },
+      {
+        "date": "2020-12-21",
+        "newCasesBySpecimenDate": 43446
+      },
+      {
+        "date": "2020-12-20",
+        "newCasesBySpecimenDate": 29556
+      },
+      {
+        "date": "2020-12-19",
+        "newCasesBySpecimenDate": 22196
+      },
+      {
+        "date": "2020-12-18",
+        "newCasesBySpecimenDate": 32426
+      },
+      {
+        "date": "2020-12-17",
+        "newCasesBySpecimenDate": 30160
+      },
+      {
+        "date": "2020-12-16",
+        "newCasesBySpecimenDate": 30650
+      },
+      {
+        "date": "2020-12-15",
+        "newCasesBySpecimenDate": 29652
+      },
+      {
+        "date": "2020-12-14",
+        "newCasesBySpecimenDate": 30019
+      },
+      {
+        "date": "2020-12-13",
+        "newCasesBySpecimenDate": 18409
+      },
+      {
+        "date": "2020-12-12",
+        "newCasesBySpecimenDate": 16268
+      },
+      {
+        "date": "2020-12-11",
+        "newCasesBySpecimenDate": 20177
+      },
+      {
+        "date": "2020-12-10",
+        "newCasesBySpecimenDate": 18850
+      },
+      {
+        "date": "2020-12-09",
+        "newCasesBySpecimenDate": 17744
+      },
+      {
+        "date": "2020-12-08",
+        "newCasesBySpecimenDate": 16937
+      },
+      {
+        "date": "2020-12-07",
+        "newCasesBySpecimenDate": 17663
+      },
+      {
+        "date": "2020-12-06",
+        "newCasesBySpecimenDate": 11036
+      },
+      {
+        "date": "2020-12-05",
+        "newCasesBySpecimenDate": 10302
+      },
+      {
+        "date": "2020-12-04",
+        "newCasesBySpecimenDate": 13065
+      },
+      {
+        "date": "2020-12-03",
+        "newCasesBySpecimenDate": 12762
+      },
+      {
+        "date": "2020-12-02",
+        "newCasesBySpecimenDate": 13662
+      },
+      {
+        "date": "2020-12-01",
+        "newCasesBySpecimenDate": 13731
+      },
+      {
+        "date": "2020-11-30",
+        "newCasesBySpecimenDate": 15227
+      },
+      {
+        "date": "2020-11-29",
+        "newCasesBySpecimenDate": 9067
+      },
+      {
+        "date": "2020-11-28",
+        "newCasesBySpecimenDate": 9347
+      },
+      {
+        "date": "2020-11-27",
+        "newCasesBySpecimenDate": 12460
+      },
+      {
+        "date": "2020-11-26",
+        "newCasesBySpecimenDate": 12459
+      },
+      {
+        "date": "2020-11-25",
+        "newCasesBySpecimenDate": 14154
+      },
+      {
+        "date": "2020-11-24",
+        "newCasesBySpecimenDate": 14264
+      },
+      {
+        "date": "2020-11-23",
+        "newCasesBySpecimenDate": 16472
+      },
+      {
+        "date": "2020-11-22",
+        "newCasesBySpecimenDate": 10216
+      },
+      {
+        "date": "2020-11-21",
+        "newCasesBySpecimenDate": 10806
+      },
+      {
+        "date": "2020-11-20",
+        "newCasesBySpecimenDate": 14960
+      },
+      {
+        "date": "2020-11-19",
+        "newCasesBySpecimenDate": 15797
+      },
+      {
+        "date": "2020-11-18",
+        "newCasesBySpecimenDate": 18549
+      },
+      {
+        "date": "2020-11-17",
+        "newCasesBySpecimenDate": 20676
+      },
+      {
+        "date": "2020-11-16",
+        "newCasesBySpecimenDate": 24135
+      },
+      {
+        "date": "2020-11-15",
+        "newCasesBySpecimenDate": 14421
+      },
+      {
+        "date": "2020-11-14",
+        "newCasesBySpecimenDate": 16290
+      },
+      {
+        "date": "2020-11-13",
+        "newCasesBySpecimenDate": 22009
+      },
+      {
+        "date": "2020-11-12",
+        "newCasesBySpecimenDate": 22320
+      },
+      {
+        "date": "2020-11-11",
+        "newCasesBySpecimenDate": 25065
+      },
+      {
+        "date": "2020-11-10",
+        "newCasesBySpecimenDate": 24836
+      },
+      {
+        "date": "2020-11-09",
+        "newCasesBySpecimenDate": 28561
+      },
+      {
+        "date": "2020-11-08",
+        "newCasesBySpecimenDate": 18273
+      },
+      {
+        "date": "2020-11-07",
+        "newCasesBySpecimenDate": 16888
+      },
+      {
+        "date": "2020-11-06",
+        "newCasesBySpecimenDate": 21180
+      },
+      {
+        "date": "2020-11-05",
+        "newCasesBySpecimenDate": 21205
+      },
+      {
+        "date": "2020-11-04",
+        "newCasesBySpecimenDate": 21053
+      },
+      {
+        "date": "2020-11-03",
+        "newCasesBySpecimenDate": 22690
+      },
+      {
+        "date": "2020-11-02",
+        "newCasesBySpecimenDate": 28394
+      },
+      {
+        "date": "2020-11-01",
+        "newCasesBySpecimenDate": 13611
+      },
+      {
+        "date": "2020-10-31",
+        "newCasesBySpecimenDate": 14565
+      },
+      {
+        "date": "2020-10-30",
+        "newCasesBySpecimenDate": 19899
+      },
+      {
+        "date": "2020-10-29",
+        "newCasesBySpecimenDate": 20257
+      },
+      {
+        "date": "2020-10-28",
+        "newCasesBySpecimenDate": 20547
+      },
+      {
+        "date": "2020-10-27",
+        "newCasesBySpecimenDate": 20761
+      },
+      {
+        "date": "2020-10-26",
+        "newCasesBySpecimenDate": 23033
+      },
+      {
+        "date": "2020-10-25",
+        "newCasesBySpecimenDate": 13354
+      },
+      {
+        "date": "2020-10-24",
+        "newCasesBySpecimenDate": 13713
+      },
+      {
+        "date": "2020-10-23",
+        "newCasesBySpecimenDate": 18359
+      },
+      {
+        "date": "2020-10-22",
+        "newCasesBySpecimenDate": 19866
+      },
+      {
+        "date": "2020-10-21",
+        "newCasesBySpecimenDate": 21762
+      },
+      {
+        "date": "2020-10-20",
+        "newCasesBySpecimenDate": 21638
+      },
+      {
+        "date": "2020-10-19",
+        "newCasesBySpecimenDate": 22369
+      },
+      {
+        "date": "2020-10-18",
+        "newCasesBySpecimenDate": 11982
+      },
+      {
+        "date": "2020-10-17",
+        "newCasesBySpecimenDate": 12487
+      },
+      {
+        "date": "2020-10-16",
+        "newCasesBySpecimenDate": 14761
+      },
+      {
+        "date": "2020-10-15",
+        "newCasesBySpecimenDate": 15429
+      },
+      {
+        "date": "2020-10-14",
+        "newCasesBySpecimenDate": 16646
+      },
+      {
+        "date": "2020-10-13",
+        "newCasesBySpecimenDate": 15660
+      },
+      {
+        "date": "2020-10-12",
+        "newCasesBySpecimenDate": 16420
+      },
+      {
+        "date": "2020-10-11",
+        "newCasesBySpecimenDate": 9781
+      },
+      {
+        "date": "2020-10-10",
+        "newCasesBySpecimenDate": 10301
+      },
+      {
+        "date": "2020-10-09",
+        "newCasesBySpecimenDate": 13159
+      },
+      {
+        "date": "2020-10-08",
+        "newCasesBySpecimenDate": 15452
+      },
+      {
+        "date": "2020-10-07",
+        "newCasesBySpecimenDate": 15418
+      },
+      {
+        "date": "2020-10-06",
+        "newCasesBySpecimenDate": 14458
+      },
+      {
+        "date": "2020-10-05",
+        "newCasesBySpecimenDate": 14218
+      },
+      {
+        "date": "2020-10-04",
+        "newCasesBySpecimenDate": 9966
+      },
+      {
+        "date": "2020-10-03",
+        "newCasesBySpecimenDate": 9820
+      },
+      {
+        "date": "2020-10-02",
+        "newCasesBySpecimenDate": 11719
+      },
+      {
+        "date": "2020-10-01",
+        "newCasesBySpecimenDate": 11444
+      },
+      {
+        "date": "2020-09-30",
+        "newCasesBySpecimenDate": 10663
+      },
+      {
+        "date": "2020-09-29",
+        "newCasesBySpecimenDate": 8832
+      },
+      {
+        "date": "2020-09-28",
+        "newCasesBySpecimenDate": 8641
+      },
+      {
+        "date": "2020-09-27",
+        "newCasesBySpecimenDate": 6084
+      },
+      {
+        "date": "2020-09-26",
+        "newCasesBySpecimenDate": 5704
+      },
+      {
+        "date": "2020-09-25",
+        "newCasesBySpecimenDate": 6105
+      },
+      {
+        "date": "2020-09-24",
+        "newCasesBySpecimenDate": 6361
+      },
+      {
+        "date": "2020-09-23",
+        "newCasesBySpecimenDate": 5933
+      },
+      {
+        "date": "2020-09-22",
+        "newCasesBySpecimenDate": 5400
+      },
+      {
+        "date": "2020-09-21",
+        "newCasesBySpecimenDate": 4727
+      },
+      {
+        "date": "2020-09-20",
+        "newCasesBySpecimenDate": 4652
+      },
+      {
+        "date": "2020-09-19",
+        "newCasesBySpecimenDate": 4215
+      },
+      {
+        "date": "2020-09-18",
+        "newCasesBySpecimenDate": 4290
+      },
+      {
+        "date": "2020-09-17",
+        "newCasesBySpecimenDate": 3979
+      },
+      {
+        "date": "2020-09-16",
+        "newCasesBySpecimenDate": 3778
+      },
+      {
+        "date": "2020-09-15",
+        "newCasesBySpecimenDate": 3057
+      },
+      {
+        "date": "2020-09-14",
+        "newCasesBySpecimenDate": 2941
+      },
+      {
+        "date": "2020-09-13",
+        "newCasesBySpecimenDate": 1722
+      },
+      {
+        "date": "2020-09-12",
+        "newCasesBySpecimenDate": 2224
+      },
+      {
+        "date": "2020-09-11",
+        "newCasesBySpecimenDate": 2893
+      },
+      {
+        "date": "2020-09-10",
+        "newCasesBySpecimenDate": 3143
+      },
+      {
+        "date": "2020-09-09",
+        "newCasesBySpecimenDate": 2893
+      },
+      {
+        "date": "2020-09-08",
+        "newCasesBySpecimenDate": 3071
+      },
+      {
+        "date": "2020-09-07",
+        "newCasesBySpecimenDate": 3530
+      },
+      {
+        "date": "2020-09-06",
+        "newCasesBySpecimenDate": 2079
+      },
+      {
+        "date": "2020-09-05",
+        "newCasesBySpecimenDate": 2200
+      },
+      {
+        "date": "2020-09-04",
+        "newCasesBySpecimenDate": 2637
+      },
+      {
+        "date": "2020-09-03",
+        "newCasesBySpecimenDate": 2716
+      },
+      {
+        "date": "2020-09-02",
+        "newCasesBySpecimenDate": 2696
+      },
+      {
+        "date": "2020-09-01",
+        "newCasesBySpecimenDate": 1962
+      },
+      {
+        "date": "2020-08-31",
+        "newCasesBySpecimenDate": 1279
+      },
+      {
+        "date": "2020-08-30",
+        "newCasesBySpecimenDate": 987
+      },
+      {
+        "date": "2020-08-29",
+        "newCasesBySpecimenDate": 1051
+      },
+      {
+        "date": "2020-08-28",
+        "newCasesBySpecimenDate": 1395
+      },
+      {
+        "date": "2020-08-27",
+        "newCasesBySpecimenDate": 1356
+      },
+      {
+        "date": "2020-08-26",
+        "newCasesBySpecimenDate": 1181
+      },
+      {
+        "date": "2020-08-25",
+        "newCasesBySpecimenDate": 1085
+      },
+      {
+        "date": "2020-08-24",
+        "newCasesBySpecimenDate": 1157
+      },
+      {
+        "date": "2020-08-23",
+        "newCasesBySpecimenDate": 704
+      },
+      {
+        "date": "2020-08-22",
+        "newCasesBySpecimenDate": 732
+      },
+      {
+        "date": "2020-08-21",
+        "newCasesBySpecimenDate": 1031
+      },
+      {
+        "date": "2020-08-20",
+        "newCasesBySpecimenDate": 1254
+      },
+      {
+        "date": "2020-08-19",
+        "newCasesBySpecimenDate": 1109
+      },
+      {
+        "date": "2020-08-18",
+        "newCasesBySpecimenDate": 955
+      },
+      {
+        "date": "2020-08-17",
+        "newCasesBySpecimenDate": 1159
+      },
+      {
+        "date": "2020-08-16",
+        "newCasesBySpecimenDate": 534
+      },
+      {
+        "date": "2020-08-15",
+        "newCasesBySpecimenDate": 656
+      },
+      {
+        "date": "2020-08-14",
+        "newCasesBySpecimenDate": 1059
+      },
+      {
+        "date": "2020-08-13",
+        "newCasesBySpecimenDate": 1036
+      },
+      {
+        "date": "2020-08-12",
+        "newCasesBySpecimenDate": 1126
+      },
+      {
+        "date": "2020-08-11",
+        "newCasesBySpecimenDate": 1247
+      },
+      {
+        "date": "2020-08-10",
+        "newCasesBySpecimenDate": 1375
+      },
+      {
+        "date": "2020-08-09",
+        "newCasesBySpecimenDate": 569
+      },
+      {
+        "date": "2020-08-08",
+        "newCasesBySpecimenDate": 648
+      },
+      {
+        "date": "2020-08-07",
+        "newCasesBySpecimenDate": 892
+      },
+      {
+        "date": "2020-08-06",
+        "newCasesBySpecimenDate": 1005
+      },
+      {
+        "date": "2020-08-05",
+        "newCasesBySpecimenDate": 974
+      },
+      {
+        "date": "2020-08-04",
+        "newCasesBySpecimenDate": 965
+      },
+      {
+        "date": "2020-08-03",
+        "newCasesBySpecimenDate": 963
+      },
+      {
+        "date": "2020-08-02",
+        "newCasesBySpecimenDate": 518
+      },
+      {
+        "date": "2020-08-01",
+        "newCasesBySpecimenDate": 508
+      },
+      {
+        "date": "2020-07-31",
+        "newCasesBySpecimenDate": 644
+      },
+      {
+        "date": "2020-07-30",
+        "newCasesBySpecimenDate": 879
+      },
+      {
+        "date": "2020-07-29",
+        "newCasesBySpecimenDate": 994
+      },
+      {
+        "date": "2020-07-28",
+        "newCasesBySpecimenDate": 796
+      },
+      {
+        "date": "2020-07-27",
+        "newCasesBySpecimenDate": 824
+      },
+      {
+        "date": "2020-07-26",
+        "newCasesBySpecimenDate": 518
+      },
+      {
+        "date": "2020-07-25",
+        "newCasesBySpecimenDate": 499
+      },
+      {
+        "date": "2020-07-24",
+        "newCasesBySpecimenDate": 720
+      },
+      {
+        "date": "2020-07-23",
+        "newCasesBySpecimenDate": 741
+      },
+      {
+        "date": "2020-07-22",
+        "newCasesBySpecimenDate": 764
+      },
+      {
+        "date": "2020-07-21",
+        "newCasesBySpecimenDate": 697
+      },
+      {
+        "date": "2020-07-20",
+        "newCasesBySpecimenDate": 769
+      },
+      {
+        "date": "2020-07-19",
+        "newCasesBySpecimenDate": 419
+      },
+      {
+        "date": "2020-07-18",
+        "newCasesBySpecimenDate": 473
+      },
+      {
+        "date": "2020-07-17",
+        "newCasesBySpecimenDate": 548
+      },
+      {
+        "date": "2020-07-16",
+        "newCasesBySpecimenDate": 644
+      },
+      {
+        "date": "2020-07-15",
+        "newCasesBySpecimenDate": 726
+      },
+      {
+        "date": "2020-07-14",
+        "newCasesBySpecimenDate": 661
+      },
+      {
+        "date": "2020-07-13",
+        "newCasesBySpecimenDate": 694
+      },
+      {
+        "date": "2020-07-12",
+        "newCasesBySpecimenDate": 351
+      },
+      {
+        "date": "2020-07-11",
+        "newCasesBySpecimenDate": 433
+      },
+      {
+        "date": "2020-07-10",
+        "newCasesBySpecimenDate": 524
+      },
+      {
+        "date": "2020-07-09",
+        "newCasesBySpecimenDate": 688
+      },
+      {
+        "date": "2020-07-08",
+        "newCasesBySpecimenDate": 682
+      },
+      {
+        "date": "2020-07-07",
+        "newCasesBySpecimenDate": 565
+      },
+      {
+        "date": "2020-07-06",
+        "newCasesBySpecimenDate": 664
+      },
+      {
+        "date": "2020-07-05",
+        "newCasesBySpecimenDate": 544
+      },
+      {
+        "date": "2020-07-04",
+        "newCasesBySpecimenDate": 385
+      },
+      {
+        "date": "2020-07-03",
+        "newCasesBySpecimenDate": 536
+      },
+      {
+        "date": "2020-07-02",
+        "newCasesBySpecimenDate": 561
+      },
+      {
+        "date": "2020-07-01",
+        "newCasesBySpecimenDate": 607
+      },
+      {
+        "date": "2020-06-30",
+        "newCasesBySpecimenDate": 578
+      },
+      {
+        "date": "2020-06-29",
+        "newCasesBySpecimenDate": 666
+      },
+      {
+        "date": "2020-06-28",
+        "newCasesBySpecimenDate": 413
+      },
+      {
+        "date": "2020-06-27",
+        "newCasesBySpecimenDate": 506
+      },
+      {
+        "date": "2020-06-26",
+        "newCasesBySpecimenDate": 640
+      },
+      {
+        "date": "2020-06-25",
+        "newCasesBySpecimenDate": 643
+      },
+      {
+        "date": "2020-06-24",
+        "newCasesBySpecimenDate": 732
+      },
+      {
+        "date": "2020-06-23",
+        "newCasesBySpecimenDate": 727
+      },
+      {
+        "date": "2020-06-22",
+        "newCasesBySpecimenDate": 821
+      },
+      {
+        "date": "2020-06-21",
+        "newCasesBySpecimenDate": 550
+      },
+      {
+        "date": "2020-06-20",
+        "newCasesBySpecimenDate": 626
+      },
+      {
+        "date": "2020-06-19",
+        "newCasesBySpecimenDate": 818
+      },
+      {
+        "date": "2020-06-18",
+        "newCasesBySpecimenDate": 938
+      },
+      {
+        "date": "2020-06-17",
+        "newCasesBySpecimenDate": 914
+      },
+      {
+        "date": "2020-06-16",
+        "newCasesBySpecimenDate": 996
+      },
+      {
+        "date": "2020-06-15",
+        "newCasesBySpecimenDate": 944
+      },
+      {
+        "date": "2020-06-14",
+        "newCasesBySpecimenDate": 752
+      },
+      {
+        "date": "2020-06-13",
+        "newCasesBySpecimenDate": 785
+      },
+      {
+        "date": "2020-06-12",
+        "newCasesBySpecimenDate": 938
+      },
+      {
+        "date": "2020-06-11",
+        "newCasesBySpecimenDate": 915
+      },
+      {
+        "date": "2020-06-10",
+        "newCasesBySpecimenDate": 1086
+      },
+      {
+        "date": "2020-06-09",
+        "newCasesBySpecimenDate": 1066
+      },
+      {
+        "date": "2020-06-08",
+        "newCasesBySpecimenDate": 990
+      },
+      {
+        "date": "2020-06-07",
+        "newCasesBySpecimenDate": 668
+      },
+      {
+        "date": "2020-06-06",
+        "newCasesBySpecimenDate": 723
+      },
+      {
+        "date": "2020-06-05",
+        "newCasesBySpecimenDate": 1020
+      },
+      {
+        "date": "2020-06-04",
+        "newCasesBySpecimenDate": 1147
+      },
+      {
+        "date": "2020-06-03",
+        "newCasesBySpecimenDate": 1251
+      },
+      {
+        "date": "2020-06-02",
+        "newCasesBySpecimenDate": 1365
+      },
+      {
+        "date": "2020-06-01",
+        "newCasesBySpecimenDate": 1319
+      },
+      {
+        "date": "2020-05-31",
+        "newCasesBySpecimenDate": 984
+      },
+      {
+        "date": "2020-05-30",
+        "newCasesBySpecimenDate": 1010
+      },
+      {
+        "date": "2020-05-29",
+        "newCasesBySpecimenDate": 1374
+      },
+      {
+        "date": "2020-05-28",
+        "newCasesBySpecimenDate": 1575
+      },
+      {
+        "date": "2020-05-27",
+        "newCasesBySpecimenDate": 1616
+      },
+      {
+        "date": "2020-05-26",
+        "newCasesBySpecimenDate": 1461
+      },
+      {
+        "date": "2020-05-25",
+        "newCasesBySpecimenDate": 1389
+      },
+      {
+        "date": "2020-05-24",
+        "newCasesBySpecimenDate": 1206
+      },
+      {
+        "date": "2020-05-23",
+        "newCasesBySpecimenDate": 1309
+      },
+      {
+        "date": "2020-05-22",
+        "newCasesBySpecimenDate": 1798
+      },
+      {
+        "date": "2020-05-21",
+        "newCasesBySpecimenDate": 2277
+      },
+      {
+        "date": "2020-05-20",
+        "newCasesBySpecimenDate": 2359
+      },
+      {
+        "date": "2020-05-19",
+        "newCasesBySpecimenDate": 2602
+      },
+      {
+        "date": "2020-05-18",
+        "newCasesBySpecimenDate": 2226
+      },
+      {
+        "date": "2020-05-17",
+        "newCasesBySpecimenDate": 1593
+      },
+      {
+        "date": "2020-05-16",
+        "newCasesBySpecimenDate": 1781
+      },
+      {
+        "date": "2020-05-15",
+        "newCasesBySpecimenDate": 2145
+      },
+      {
+        "date": "2020-05-14",
+        "newCasesBySpecimenDate": 2222
+      },
+      {
+        "date": "2020-05-13",
+        "newCasesBySpecimenDate": 2899
+      },
+      {
+        "date": "2020-05-12",
+        "newCasesBySpecimenDate": 2940
+      },
+      {
+        "date": "2020-05-11",
+        "newCasesBySpecimenDate": 3088
+      },
+      {
+        "date": "2020-05-10",
+        "newCasesBySpecimenDate": 2013
+      },
+      {
+        "date": "2020-05-09",
+        "newCasesBySpecimenDate": 1797
+      },
+      {
+        "date": "2020-05-08",
+        "newCasesBySpecimenDate": 2622
+      },
+      {
+        "date": "2020-05-07",
+        "newCasesBySpecimenDate": 3205
+      },
+      {
+        "date": "2020-05-06",
+        "newCasesBySpecimenDate": 3264
+      },
+      {
+        "date": "2020-05-05",
+        "newCasesBySpecimenDate": 3148
+      },
+      {
+        "date": "2020-05-04",
+        "newCasesBySpecimenDate": 2851
+      },
+      {
+        "date": "2020-05-03",
+        "newCasesBySpecimenDate": 2648
+      },
+      {
+        "date": "2020-05-02",
+        "newCasesBySpecimenDate": 2762
+      },
+      {
+        "date": "2020-05-01",
+        "newCasesBySpecimenDate": 4109
+      },
+      {
+        "date": "2020-04-30",
+        "newCasesBySpecimenDate": 4314
+      },
+      {
+        "date": "2020-04-29",
+        "newCasesBySpecimenDate": 4737
+      },
+      {
+        "date": "2020-04-28",
+        "newCasesBySpecimenDate": 4113
+      },
+      {
+        "date": "2020-04-27",
+        "newCasesBySpecimenDate": 4056
+      },
+      {
+        "date": "2020-04-26",
+        "newCasesBySpecimenDate": 3137
+      },
+      {
+        "date": "2020-04-25",
+        "newCasesBySpecimenDate": 3381
+      },
+      {
+        "date": "2020-04-24",
+        "newCasesBySpecimenDate": 4352
+      },
+      {
+        "date": "2020-04-23",
+        "newCasesBySpecimenDate": 4575
+      },
+      {
+        "date": "2020-04-22",
+        "newCasesBySpecimenDate": 4812
+      },
+      {
+        "date": "2020-04-21",
+        "newCasesBySpecimenDate": 3995
+      },
+      {
+        "date": "2020-04-20",
+        "newCasesBySpecimenDate": 3698
+      },
+      {
+        "date": "2020-04-19",
+        "newCasesBySpecimenDate": 3494
+      },
+      {
+        "date": "2020-04-18",
+        "newCasesBySpecimenDate": 4142
+      },
+      {
+        "date": "2020-04-17",
+        "newCasesBySpecimenDate": 4088
+      },
+      {
+        "date": "2020-04-16",
+        "newCasesBySpecimenDate": 4360
+      },
+      {
+        "date": "2020-04-15",
+        "newCasesBySpecimenDate": 4240
+      },
+      {
+        "date": "2020-04-14",
+        "newCasesBySpecimenDate": 3568
+      },
+      {
+        "date": "2020-04-13",
+        "newCasesBySpecimenDate": 3463
+      },
+      {
+        "date": "2020-04-12",
+        "newCasesBySpecimenDate": 2958
+      },
+      {
+        "date": "2020-04-11",
+        "newCasesBySpecimenDate": 3085
+      },
+      {
+        "date": "2020-04-10",
+        "newCasesBySpecimenDate": 3590
+      },
+      {
+        "date": "2020-04-09",
+        "newCasesBySpecimenDate": 4076
+      },
+      {
+        "date": "2020-04-08",
+        "newCasesBySpecimenDate": 4315
+      },
+      {
+        "date": "2020-04-07",
+        "newCasesBySpecimenDate": 4605
+      },
+      {
+        "date": "2020-04-06",
+        "newCasesBySpecimenDate": 4407
+      },
+      {
+        "date": "2020-04-05",
+        "newCasesBySpecimenDate": 3094
+      },
+      {
+        "date": "2020-04-04",
+        "newCasesBySpecimenDate": 3405
+      },
+      {
+        "date": "2020-04-03",
+        "newCasesBySpecimenDate": 4102
+      },
+      {
+        "date": "2020-04-02",
+        "newCasesBySpecimenDate": 4097
+      },
+      {
+        "date": "2020-04-01",
+        "newCasesBySpecimenDate": 4150
+      },
+      {
+        "date": "2020-03-31",
+        "newCasesBySpecimenDate": 3816
+      },
+      {
+        "date": "2020-03-30",
+        "newCasesBySpecimenDate": 3514
+      },
+      {
+        "date": "2020-03-29",
+        "newCasesBySpecimenDate": 2449
+      },
+      {
+        "date": "2020-03-28",
+        "newCasesBySpecimenDate": 2379
+      },
+      {
+        "date": "2020-03-27",
+        "newCasesBySpecimenDate": 2672
+      },
+      {
+        "date": "2020-03-26",
+        "newCasesBySpecimenDate": 2633
+      },
+      {
+        "date": "2020-03-25",
+        "newCasesBySpecimenDate": 2284
+      },
+      {
+        "date": "2020-03-24",
+        "newCasesBySpecimenDate": 2041
+      },
+      {
+        "date": "2020-03-23",
+        "newCasesBySpecimenDate": 2010
+      },
+      {
+        "date": "2020-03-22",
+        "newCasesBySpecimenDate": 1212
+      },
+      {
+        "date": "2020-03-21",
+        "newCasesBySpecimenDate": 1040
+      },
+      {
+        "date": "2020-03-20",
+        "newCasesBySpecimenDate": 1096
+      },
+      {
+        "date": "2020-03-19",
+        "newCasesBySpecimenDate": 932
+      },
+      {
+        "date": "2020-03-18",
+        "newCasesBySpecimenDate": 910
+      },
+      {
+        "date": "2020-03-17",
+        "newCasesBySpecimenDate": 683
+      },
+      {
+        "date": "2020-03-16",
+        "newCasesBySpecimenDate": 552
+      },
+      {
+        "date": "2020-03-15",
+        "newCasesBySpecimenDate": 398
+      },
+      {
+        "date": "2020-03-14",
+        "newCasesBySpecimenDate": 315
+      },
+      {
+        "date": "2020-03-13",
+        "newCasesBySpecimenDate": 401
+      },
+      {
+        "date": "2020-03-12",
+        "newCasesBySpecimenDate": 421
+      },
+      {
+        "date": "2020-03-11",
+        "newCasesBySpecimenDate": 358
+      },
+      {
+        "date": "2020-03-10",
+        "newCasesBySpecimenDate": 229
+      },
+      {
+        "date": "2020-03-09",
+        "newCasesBySpecimenDate": 127
+      },
+      {
+        "date": "2020-03-08",
+        "newCasesBySpecimenDate": 50
+      },
+      {
+        "date": "2020-03-07",
+        "newCasesBySpecimenDate": 55
+      },
+      {
+        "date": "2020-03-06",
+        "newCasesBySpecimenDate": 74
+      },
+      {
+        "date": "2020-03-05",
+        "newCasesBySpecimenDate": 46
+      },
+      {
+        "date": "2020-03-04",
+        "newCasesBySpecimenDate": 49
+      },
+      {
+        "date": "2020-03-03",
+        "newCasesBySpecimenDate": 52
+      },
+      {
+        "date": "2020-03-02",
+        "newCasesBySpecimenDate": 40
+      },
+      {
+        "date": "2020-03-01",
+        "newCasesBySpecimenDate": 18
+      },
+      {
+        "date": "2020-02-29",
+        "newCasesBySpecimenDate": 4
+      },
+      {
+        "date": "2020-02-28",
+        "newCasesBySpecimenDate": 11
+      },
+      {
+        "date": "2020-02-27",
+        "newCasesBySpecimenDate": 7
+      },
+      {
+        "date": "2020-02-26",
+        "newCasesBySpecimenDate": 1
+      },
+      {
+        "date": "2020-02-25",
+        "newCasesBySpecimenDate": 3
+      },
+      {
+        "date": "2020-02-24",
+        "newCasesBySpecimenDate": 2
+      },
+      {
+        "date": "2020-02-23",
+        "newCasesBySpecimenDate": 6
+      },
+      {
+        "date": "2020-02-22",
+        "newCasesBySpecimenDate": 0
+      },
+      {
+        "date": "2020-02-21",
+        "newCasesBySpecimenDate": 2
+      },
+      {
+        "date": "2020-02-20",
+        "newCasesBySpecimenDate": 0
+      },
+      {
+        "date": "2020-02-19",
+        "newCasesBySpecimenDate": 0
+      },
+      {
+        "date": "2020-02-18",
+        "newCasesBySpecimenDate": 0
+      },
+      {
+        "date": "2020-02-17",
+        "newCasesBySpecimenDate": 1
+      },
+      {
+        "date": "2020-02-16",
+        "newCasesBySpecimenDate": 0
+      },
+      {
+        "date": "2020-02-15",
+        "newCasesBySpecimenDate": 0
+      },
+      {
+        "date": "2020-02-14",
+        "newCasesBySpecimenDate": 0
+      },
+      {
+        "date": "2020-02-13",
+        "newCasesBySpecimenDate": 1
+      },
+      {
+        "date": "2020-02-12",
+        "newCasesBySpecimenDate": 1
+      },
+      {
+        "date": "2020-02-11",
+        "newCasesBySpecimenDate": 4
+      },
+      {
+        "date": "2020-02-10",
+        "newCasesBySpecimenDate": 1
+      },
+      {
+        "date": "2020-02-09",
+        "newCasesBySpecimenDate": 1
+      },
+      {
+        "date": "2020-02-08",
+        "newCasesBySpecimenDate": 3
+      },
+      {
+        "date": "2020-02-07",
+        "newCasesBySpecimenDate": 0
+      },
+      {
+        "date": "2020-02-06",
+        "newCasesBySpecimenDate": 0
+      },
+      {
+        "date": "2020-02-05",
+        "newCasesBySpecimenDate": 1
+      },
+      {
+        "date": "2020-02-04",
+        "newCasesBySpecimenDate": 0
+      },
+      {
+        "date": "2020-02-03",
+        "newCasesBySpecimenDate": 18
+      },
+      {
+        "date": "2020-02-02",
+        "newCasesBySpecimenDate": 1
+      },
+      {
+        "date": "2020-02-01",
+        "newCasesBySpecimenDate": 0
+      },
+      {
+        "date": "2020-01-31",
+        "newCasesBySpecimenDate": 0
+      },
+      {
+        "date": "2020-01-30",
+        "newCasesBySpecimenDate": 1
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "labelAngle": 0
+      },
+      "title": "Date"
+    },
+    "y": {
+      "field": "newCasesBySpecimenDate",
+      "type": "quantitative",
+      "title": "New Cases Recorded"
+    }
+  }
+}

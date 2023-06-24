@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Glasgow scatterplot",
+  "title": {
+    "text": "The Glasgow Effect",
+    "subtitle": [
+      "Deprivation and Post-65 life expectancy; Source: GCPH",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitleColor": "black",
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/extreme/glasgowHealthData.csv"
+  },
+  "mark": {
+    "type": "circle",
+    "color": "rgba(128,0,0,.8)",
+    "size": 100
+  },
+  "height": 300,
+  "width": 300,
+  "transform": [
+    {
+      "calculate": "datum.maleLE-65",
+      "as": "post65LE"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "incomeDeprevation",
+      "type": "quantitative",
+      "title": "income deprivation, %",
+      "axis": {
+        "title": "Income deprivation rate, %",
+        "grid": false,
+        "labelSeparation": 10,
+        "format": "%"
+      }
+    },
+    "y": {
+      "field": "post65LE",
+      "type": "quantitative",
+      "title": "Male life expectancy",
+      "scale": {
+        "domain": [
+          0,
+          18
+        ]
+      },
+      "axis": {
+        "title": "Post 65 life expectancy",
+        "grid": false,
+        "labelSeparation": 10,
+        "format": "f"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "areaName",
+        "title": "Area"
+      }
+    ]
+  }
+}

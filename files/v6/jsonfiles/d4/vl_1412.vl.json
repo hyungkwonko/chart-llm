@@ -1,0 +1,347 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "step": "502",
+        "epoch": "0",
+        "rev": "workspace"
+      },
+      {
+        "step": "502",
+        "epoch": "0",
+        "rev": "workspace"
+      },
+      {
+        "step": "1005",
+        "epoch": "1",
+        "rev": "workspace"
+      },
+      {
+        "step": "1005",
+        "epoch": "1",
+        "rev": "workspace"
+      },
+      {
+        "step": "1508",
+        "epoch": "2",
+        "rev": "workspace"
+      },
+      {
+        "step": "1508",
+        "epoch": "2",
+        "rev": "workspace"
+      },
+      {
+        "step": "2011",
+        "epoch": "3",
+        "rev": "workspace"
+      },
+      {
+        "step": "2011",
+        "epoch": "3",
+        "rev": "workspace"
+      },
+      {
+        "step": "2514",
+        "epoch": "4",
+        "rev": "workspace"
+      },
+      {
+        "step": "2514",
+        "epoch": "4",
+        "rev": "workspace"
+      },
+      {
+        "step": "3017",
+        "epoch": "5",
+        "rev": "workspace"
+      },
+      {
+        "step": "3017",
+        "epoch": "5",
+        "rev": "workspace"
+      },
+      {
+        "step": "3520",
+        "epoch": "6",
+        "rev": "workspace"
+      },
+      {
+        "step": "3520",
+        "epoch": "6",
+        "rev": "workspace"
+      },
+      {
+        "step": "4023",
+        "epoch": "7",
+        "rev": "workspace"
+      },
+      {
+        "step": "4023",
+        "epoch": "7",
+        "rev": "workspace"
+      },
+      {
+        "step": "4526",
+        "epoch": "8",
+        "rev": "workspace"
+      },
+      {
+        "step": "4526",
+        "epoch": "8",
+        "rev": "workspace"
+      },
+      {
+        "step": "5029",
+        "epoch": "9",
+        "rev": "workspace"
+      },
+      {
+        "step": "5029",
+        "epoch": "9",
+        "rev": "workspace"
+      },
+      {
+        "step": "5532",
+        "epoch": "10",
+        "rev": "workspace"
+      },
+      {
+        "step": "5532",
+        "epoch": "10",
+        "rev": "workspace"
+      },
+      {
+        "step": "6035",
+        "epoch": "11",
+        "rev": "workspace"
+      },
+      {
+        "step": "6035",
+        "epoch": "11",
+        "rev": "workspace"
+      },
+      {
+        "step": "6538",
+        "epoch": "12",
+        "rev": "workspace"
+      },
+      {
+        "step": "6538",
+        "epoch": "12",
+        "rev": "workspace"
+      },
+      {
+        "step": "7041",
+        "epoch": "13",
+        "rev": "workspace"
+      },
+      {
+        "step": "7041",
+        "epoch": "13",
+        "rev": "workspace"
+      },
+      {
+        "step": "7544",
+        "epoch": "14",
+        "rev": "workspace"
+      },
+      {
+        "step": "7544",
+        "epoch": "14",
+        "rev": "workspace"
+      },
+      {
+        "step": "8047",
+        "epoch": "15",
+        "rev": "workspace"
+      },
+      {
+        "step": "8047",
+        "epoch": "15",
+        "rev": "workspace"
+      },
+      {
+        "step": "8550",
+        "epoch": "16",
+        "rev": "workspace"
+      },
+      {
+        "step": "8550",
+        "epoch": "16",
+        "rev": "workspace"
+      },
+      {
+        "step": "9053",
+        "epoch": "17",
+        "rev": "workspace"
+      },
+      {
+        "step": "9053",
+        "epoch": "17",
+        "rev": "workspace"
+      },
+      {
+        "step": "9556",
+        "epoch": "18",
+        "rev": "workspace"
+      },
+      {
+        "step": "9556",
+        "epoch": "18",
+        "rev": "workspace"
+      },
+      {
+        "step": "10059",
+        "epoch": "19",
+        "rev": "workspace"
+      },
+      {
+        "step": "10059",
+        "epoch": "19",
+        "rev": "workspace"
+      },
+      {
+        "step": "0",
+        "epoch": "0",
+        "rev": "workspace"
+      }
+    ]
+  },
+  "title": "epoch",
+  "width": 300,
+  "height": 300,
+  "params": [
+    {
+      "name": "smooth",
+      "value": 0.001,
+      "bind": {
+        "input": "range",
+        "min": 0.001,
+        "max": 1,
+        "step": 0.001
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "step",
+          "type": "quantitative",
+          "title": "step"
+        },
+        "y": {
+          "field": "epoch",
+          "type": "quantitative",
+          "title": "epoch",
+          "scale": {
+            "zero": false
+          }
+        },
+        "color": {
+          "field": "rev",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "step",
+            "title": "step",
+            "type": "quantitative"
+          },
+          {
+            "field": "epoch",
+            "title": "epoch",
+            "type": "quantitative"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "loess": "epoch",
+          "on": "step",
+          "groupby": [
+            "rev",
+            "filename",
+            "field",
+            "filename::field"
+          ],
+          "bandwidth": {
+            "signal": "smooth"
+          }
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "line",
+        "opacity": 0.2
+      },
+      "encoding": {
+        "x": {
+          "field": "step",
+          "type": "quantitative",
+          "title": "step"
+        },
+        "y": {
+          "field": "epoch",
+          "type": "quantitative",
+          "title": "epoch",
+          "scale": {
+            "zero": false
+          }
+        },
+        "color": {
+          "field": "rev",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "step",
+            "title": "step",
+            "type": "quantitative"
+          },
+          {
+            "field": "epoch",
+            "title": "epoch",
+            "type": "quantitative"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 10,
+        "tooltip": {
+          "content": "encoding"
+        }
+      },
+      "encoding": {
+        "x": {
+          "aggregate": "max",
+          "field": "step",
+          "type": "quantitative",
+          "title": "step"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "step"
+          },
+          "field": "epoch",
+          "type": "quantitative",
+          "title": "epoch",
+          "scale": {
+            "zero": false
+          }
+        },
+        "color": {
+          "field": "rev",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

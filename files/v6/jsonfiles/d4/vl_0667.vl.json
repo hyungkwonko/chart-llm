@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "2020: ODA, plotted against percentage Gross National Income (GNI) spent on ODA",
+    "subtitle": [
+      "ODA, millions (x), GNI (%)(y)",
+      "Size of points based on Total GNI, billions",
+      "source: World Bank API, 2020",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/2020_aid.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "color": "red",
+    "opacity": 0.7
+  },
+  "height": 300,
+  "width": 400,
+  "encoding": {
+    "x": {
+      "field": "ODA_mil",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          38000
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "y": {
+      "field": "GNI_perc",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          1.2
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "color": {
+      "field": "UN",
+      "type": "ordinal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "legend": {
+        "orient": "bottom"
+      },
+      "title": "UN benchmark: ODA = 0.7% GNI "
+    },
+    "size": {
+      "field": "GNI_bil",
+      "type": "quantitative",
+      "title": "Prison Rate",
+      "scale": {
+        "range": [
+          50,
+          800
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "ordinal",
+        "title": "Country"
+      },
+      {
+        "field": "GNI_perc",
+        "type": "quantitative",
+        "title": "Percent of GNI",
+        "format": ".2f"
+      },
+      {
+        "field": "ODA_mil",
+        "type": "quantitative",
+        "title": "ODA, millions",
+        "format": ".0f"
+      },
+      {
+        "field": "GNI_bil",
+        "type": "quantitative",
+        "title": "GNI",
+        "format": ".0f"
+      }
+    ]
+  }
+}

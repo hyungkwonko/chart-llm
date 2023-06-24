@@ -1,0 +1,641 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Host Countries By Origin Country and Income Level",
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "title": "Syria",
+          "width": 350,
+          "height": 200,
+          "data": {
+            "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/Datasets/Syria_move.csv"
+          },
+          "transform": [
+            {
+              "filter": "datum.rank <= 15"
+            }
+          ],
+          "layer": [
+            {
+              "encoding": {
+                "x": {
+                  "field": "Country of asylum",
+                  "type": "nominal",
+                  "axis": {
+                    "labelAngle": 30
+                  },
+                  "title": null
+                },
+                "y": {
+                  "field": "FDP over pop",
+                  "type": "quantitative",
+                  "scale": {
+                    "type": "log",
+                    "domain": [
+                      1,
+                      20000
+                    ]
+                  },
+                  "title": ""
+                },
+                "color": {
+                  "field": "Income group"
+                },
+                "tooltip": [
+                  {
+                    "field": "Country of asylum",
+                    "type": "nominal"
+                  },
+                  {
+                    "field": "FDP over pop",
+                    "type": "quantitative",
+                    "title": "FDPs hosted per 100,000 pop.",
+                    "format": "0.2f"
+                  },
+                  {
+                    "field": "FDP",
+                    "type": "quantitative",
+                    "title": "Total FDPs",
+                    "format": ","
+                  }
+                ]
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "rect",
+                    "width": 20
+                  },
+                  "selection": {
+                    "brush": {
+                      "type": "interval",
+                      "encodings": [
+                        "x"
+                      ]
+                    }
+                  },
+                  "encoding": {
+                    "opacity": {
+                      "condition": {
+                        "selection": "brush",
+                        "value": 1
+                      },
+                      "value": 0.2
+                    }
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "text",
+                    "fill": "black",
+                    "fontWeight": "bold",
+                    "dy": -5
+                  },
+                  "transform": [
+                    {
+                      "filter": "datum.rank <= 1"
+                    }
+                  ],
+                  "encoding": {
+                    "text": {
+                      "field": "FDP over pop"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "transform": [
+                {
+                  "filter": {
+                    "selection": "brush"
+                  }
+                }
+              ],
+              "mark": "rule",
+              "encoding": {
+                "y": {
+                  "aggregate": "mean",
+                  "field": "FDP over pop",
+                  "type": "quantitative"
+                },
+                "color": {
+                  "value": "firebrick"
+                },
+                "size": {
+                  "value": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "width": 350,
+          "height": 200,
+          "title": "Venezuela",
+          "data": {
+            "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/Datasets/Venezuela_move.csv"
+          },
+          "transform": [
+            {
+              "filter": "datum.rank <= 15"
+            }
+          ],
+          "layer": [
+            {
+              "encoding": {
+                "x": {
+                  "field": "Country of asylum",
+                  "type": "nominal",
+                  "axis": {
+                    "labelAngle": 30
+                  },
+                  "title": null
+                },
+                "y": {
+                  "field": "FDP over pop",
+                  "type": "quantitative",
+                  "scale": {
+                    "type": "log"
+                  },
+                  "title": ""
+                },
+                "color": {
+                  "field": "Income group"
+                },
+                "tooltip": [
+                  {
+                    "field": "Country of asylum",
+                    "type": "nominal"
+                  },
+                  {
+                    "field": "FDP over pop",
+                    "type": "quantitative",
+                    "title": "FDPs hosted per 100,000 pop.",
+                    "format": "0.2f"
+                  },
+                  {
+                    "field": "FDP",
+                    "type": "quantitative",
+                    "title": "Total FDPs",
+                    "format": ","
+                  }
+                ]
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "rect",
+                    "width": 20
+                  },
+                  "selection": {
+                    "brush": {
+                      "type": "interval",
+                      "encodings": [
+                        "x"
+                      ]
+                    }
+                  },
+                  "encoding": {
+                    "opacity": {
+                      "condition": {
+                        "selection": "brush",
+                        "value": 1
+                      },
+                      "value": 0.2
+                    }
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "text",
+                    "fill": "black",
+                    "fontWeight": "bold",
+                    "dy": -5
+                  },
+                  "transform": [
+                    {
+                      "filter": "datum.rank <= 1"
+                    }
+                  ],
+                  "encoding": {
+                    "text": {
+                      "field": "FDP over pop"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "transform": [
+                {
+                  "filter": {
+                    "selection": "brush"
+                  }
+                }
+              ],
+              "mark": "rule",
+              "encoding": {
+                "y": {
+                  "aggregate": "mean",
+                  "field": "FDP over pop",
+                  "type": "quantitative"
+                },
+                "color": {
+                  "value": "firebrick"
+                },
+                "size": {
+                  "value": 3
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hconcat": [
+        {
+          "title": "Afghanistan",
+          "width": 350,
+          "height": 200,
+          "data": {
+            "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/Datasets/Afghanistian_move.csv"
+          },
+          "transform": [
+            {
+              "filter": "datum.rank <= 15"
+            }
+          ],
+          "layer": [
+            {
+              "encoding": {
+                "x": {
+                  "field": "Country of asylum",
+                  "type": "nominal",
+                  "axis": {
+                    "labelAngle": 30
+                  },
+                  "title": null
+                },
+                "y": {
+                  "field": "FDP over pop",
+                  "type": "quantitative",
+                  "scale": {
+                    "type": "log"
+                  },
+                  "title": ""
+                },
+                "color": {
+                  "field": "Income group"
+                },
+                "tooltip": [
+                  {
+                    "field": "Country of asylum",
+                    "type": "nominal"
+                  },
+                  {
+                    "field": "FDP over pop",
+                    "type": "quantitative",
+                    "title": "FDPs hosted per 100,000 pop.",
+                    "format": "0.2f"
+                  },
+                  {
+                    "field": "FDP",
+                    "type": "quantitative",
+                    "title": "Total FDPs",
+                    "format": ","
+                  }
+                ]
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "rect",
+                    "width": 20
+                  },
+                  "selection": {
+                    "brush": {
+                      "type": "interval",
+                      "encodings": [
+                        "x"
+                      ]
+                    }
+                  },
+                  "encoding": {
+                    "opacity": {
+                      "condition": {
+                        "selection": "brush",
+                        "value": 1
+                      },
+                      "value": 0.2
+                    }
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "text",
+                    "fill": "black",
+                    "fontWeight": "bold",
+                    "dy": -5
+                  },
+                  "transform": [
+                    {
+                      "filter": "datum.rank <= 1"
+                    }
+                  ],
+                  "encoding": {
+                    "text": {
+                      "field": "FDP over pop"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "transform": [
+                {
+                  "filter": {
+                    "selection": "brush"
+                  }
+                }
+              ],
+              "mark": "rule",
+              "encoding": {
+                "y": {
+                  "aggregate": "mean",
+                  "field": "FDP over pop",
+                  "type": "quantitative"
+                },
+                "color": {
+                  "value": "firebrick"
+                },
+                "size": {
+                  "value": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "width": 350,
+          "height": 200,
+          "title": "South Sudan",
+          "data": {
+            "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/Datasets/Sudan_move.csv"
+          },
+          "transform": [
+            {
+              "filter": "datum.rank <= 15"
+            }
+          ],
+          "layer": [
+            {
+              "encoding": {
+                "x": {
+                  "field": "Country of asylum",
+                  "type": "nominal",
+                  "axis": {
+                    "labelAngle": 30
+                  },
+                  "title": null
+                },
+                "y": {
+                  "field": "FDP over pop",
+                  "type": "quantitative",
+                  "scale": {
+                    "type": "log"
+                  },
+                  "title": ""
+                },
+                "color": {
+                  "field": "Income group"
+                },
+                "tooltip": [
+                  {
+                    "field": "Country of asylum",
+                    "type": "nominal"
+                  },
+                  {
+                    "field": "FDP over pop",
+                    "type": "quantitative",
+                    "title": "FDPs hosted per 100,000 pop.",
+                    "format": "0.2f"
+                  },
+                  {
+                    "field": "FDP",
+                    "type": "quantitative",
+                    "title": "Total FDPs",
+                    "format": ","
+                  }
+                ]
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "rect",
+                    "width": 20
+                  },
+                  "selection": {
+                    "brush": {
+                      "type": "interval",
+                      "encodings": [
+                        "x"
+                      ]
+                    }
+                  },
+                  "encoding": {
+                    "opacity": {
+                      "condition": {
+                        "selection": "brush",
+                        "value": 1
+                      },
+                      "value": 0.2
+                    }
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "text",
+                    "fill": "black",
+                    "fontWeight": "bold",
+                    "dy": -5
+                  },
+                  "transform": [
+                    {
+                      "filter": "datum.rank <= 1"
+                    }
+                  ],
+                  "encoding": {
+                    "text": {
+                      "field": "FDP over pop"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "transform": [
+                {
+                  "filter": {
+                    "selection": "brush"
+                  }
+                }
+              ],
+              "mark": "rule",
+              "encoding": {
+                "y": {
+                  "aggregate": "mean",
+                  "field": "FDP over pop",
+                  "type": "quantitative"
+                },
+                "color": {
+                  "value": "firebrick"
+                },
+                "size": {
+                  "value": 3
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 350,
+      "height": 200,
+      "title": "Myanmar",
+      "data": {
+        "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/Datasets/Myanmar_move.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.rank <= 15"
+        }
+      ],
+      "layer": [
+        {
+          "encoding": {
+            "x": {
+              "field": "Country of asylum",
+              "type": "nominal",
+              "axis": {
+                "labelAngle": 30
+              }
+            },
+            "y": {
+              "field": "FDP over pop",
+              "type": "quantitative",
+              "scale": {
+                "type": "log"
+              },
+              "title": ""
+            },
+            "color": {
+              "field": "Income group"
+            },
+            "tooltip": [
+              {
+                "field": "Country of asylum",
+                "type": "nominal"
+              },
+              {
+                "field": "FDP over pop",
+                "type": "quantitative",
+                "title": "FDPs hosted per 100,000 pop.",
+                "format": "0.2f"
+              },
+              {
+                "field": "FDP",
+                "type": "quantitative",
+                "title": "Total FDPs",
+                "format": ","
+              }
+            ]
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "rect",
+                "width": 20
+              },
+              "selection": {
+                "brush": {
+                  "type": "interval",
+                  "encodings": [
+                    "x"
+                  ]
+                }
+              },
+              "encoding": {
+                "opacity": {
+                  "condition": {
+                    "selection": "brush",
+                    "value": 1
+                  },
+                  "value": 0.2
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fill": "black",
+                "fontWeight": "bold",
+                "dy": -5
+              },
+              "transform": [
+                {
+                  "filter": "datum.rank <= 1"
+                }
+              ],
+              "encoding": {
+                "text": {
+                  "field": "FDP over pop"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "selection": "brush"
+              }
+            }
+          ],
+          "mark": "rule",
+          "encoding": {
+            "y": {
+              "aggregate": "mean",
+              "field": "FDP over pop",
+              "type": "quantitative"
+            },
+            "color": {
+              "value": "firebrick"
+            },
+            "size": {
+              "value": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "#ff000000",
+    "axis": {
+      "gridColor": "#6e564b52"
+    },
+    "legend": {
+      "orient": "top",
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    }
+  }
+}

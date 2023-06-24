@@ -1,0 +1,105 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "stage": "demos.+g.c.",
+        "tracker": "CN",
+        "precision": 67.7,
+        "AUC": 41.9
+      },
+      {
+        "stage": "demos.+g.c.",
+        "tracker": "KCF",
+        "precision": 67.8,
+        "AUC": 40.7
+      },
+      {
+        "stage": "demos.+g.c.",
+        "tracker": "Staple",
+        "precision": 77.4,
+        "AUC": 56.4
+      },
+      {
+        "stage": "demos.+g.c.",
+        "tracker": "ECO_HC",
+        "precision": 78.9,
+        "AUC": 59.0
+      },
+      {
+        "stage": "demos.+g.c.",
+        "tracker": "AutoTrack",
+        "precision": 81.2,
+        "AUC": 58.5
+      },
+      {
+        "stage": "subs.+g.c.",
+        "tracker": "CN",
+        "precision": 68.4,
+        "AUC": 40.8
+      },
+      {
+        "stage": "subs.+g.c.",
+        "tracker": "KCF",
+        "precision": 64.2,
+        "AUC": 39.3
+      },
+      {
+        "stage": "subs.+g.c.",
+        "tracker": "Staple",
+        "precision": 80.1,
+        "AUC": 57.5
+      },
+      {
+        "stage": "subs.+g.c.",
+        "tracker": "ECO_HC",
+        "precision": 77.1,
+        "AUC": 56.3
+      },
+      {
+        "stage": "subs.+g.c.",
+        "tracker": "AutoTrack",
+        "precision": 79.2,
+        "AUC": 57.0
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "tracker",
+      "type": "nominal",
+      "sort": [
+        "CN",
+        "KCF",
+        "Staple",
+        "ECO_HC",
+        "AutoTrack"
+      ],
+      "axis": null
+    },
+    "y": {
+      "field": "AUC",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "tracker",
+      "sort": [
+        "CN",
+        "KCF",
+        "Staple",
+        "ECO_HC",
+        "AutoTrack"
+      ],
+      "type": "nominal"
+    },
+    "column": {
+      "field": "stage",
+      "sort": [
+        "demos.+g.c.",
+        "subs.+g.c."
+      ],
+      "title": "demosaic v.s. subsample"
+    }
+  }
+}

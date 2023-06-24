@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 450,
+  "projection": {
+    "type": "equalEarth"
+  },
+  "params": [
+    {
+      "name": "year_selection",
+      "value": 2020,
+      "bind": {
+        "input": "range",
+        "min": 1969,
+        "max": 2021,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/mleo0010/FIT3179-DataVis2-ML/main/json/oceans.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "oceans"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e0f5ff"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/mleo0010/FIT3179-DataVis2-ML/main/json/graticules.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_110m_graticules_30"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": null,
+        "stroke": "#dad9d9"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/mleo0010/FIT3179-DataVis2-ML/main/json/ne_110m_admin_0_countries.json",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_110m_admin_0_countries"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#fff6e0",
+        "stroke": "#c4c3c3"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/mleo0010/FIT3179-DataVis2-ML/main/data/country_wins_years_data.csv"
+      },
+      "transform": [
+        {
+          "filter": {
+            "not": {
+              "field": "latitude",
+              "equal": "NA"
+            }
+          }
+        },
+        {
+          "filter": "datum.year == year_selection"
+        }
+      ],
+      "mark": {
+        "type": "circle"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "country_name",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "wins",
+            "type": "quantitative",
+            "title": "Number of tournament wins"
+          },
+          {
+            "field": "win_rate",
+            "type": "quantitative",
+            "title": "Overall win rate (%)",
+            "format": ".2f"
+          }
+        ],
+        "size": {
+          "field": "wins",
+          "type": "quantitative",
+          "title": [
+            "Number of tournament wins"
+          ],
+          "scale": {
+            "domain": [
+              -1,
+              5
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "padding": 10,
+            "labelFontSize": 12.5,
+            "titleFontSize": 13.5
+          }
+        },
+        "color": {
+          "field": "win_rate",
+          "type": "quantitative",
+          "title": "Win rate of all matches (%)",
+          "scale": {
+            "scheme": "redblue"
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "gradientLength": 550,
+            "padding": 10,
+            "labelFontSize": 12.5,
+            "titleFontSize": 13.5
+          }
+        },
+        "fillOpacity": {
+          "value": 1
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": "#fffcf9"
+  }
+}

@@ -1,0 +1,442 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "width": 600
+    }
+  },
+  "title": {
+    "anchor": "middle",
+    "text": [
+      "Performance of encoding groups. Color coding corresponds to the max F1-score of a group.",
+      "X-axis are organized by sequence- and structure-based encodings. Y-axis are sorted by class",
+      "balance (cut-off 0.35, top) and in addition by biomedical application (bottom). Groups are",
+      "separated by white bars.",
+      ""
+    ]
+  },
+  "vconcat": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ghattab/CMANGOES/c492c918df3c0da3eaaf27d2b218b66c00610307/Data/Visualization_data/peptidereactor_vis_data/hm_imb_data.json"
+      },
+      "layer": [
+        {
+          "encoding": {
+            "color": {
+              "field": "F1",
+              "scale": {
+                "domain": [
+                  0.0,
+                  1.0
+                ],
+                "range": [
+                  "#a6bddb",
+                  "#023858"
+                ]
+              },
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "Encoding",
+                "type": "nominal"
+              },
+              {
+                "field": "Dataset",
+                "type": "nominal"
+              },
+              {
+                "field": "F1",
+                "type": "quantitative"
+              },
+              {
+                "field": "is_imbalanced",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "axis": {
+                "labelAngle": -45,
+                "labelExpr": "datum.label == 'zzz' ? null : datum.label",
+                "tickCount": 240
+              },
+              "field": "Encoding",
+              "sort": [
+                "seqbinary_centered_levels_1_and_2_encoding",
+                "seqbinary_shifted_levels_1_and_2_encoding",
+                "seqdiscretized_centered_levels_1_and_2_encoding",
+                "seqdiscretized_shifted_levels_1_and_2_encoding",
+                "strbinary_centered_levels_1_and_2_encoding",
+                "strbinary_shifted_levels_1_and_2_encoding",
+                "strdiscretized_centered_levels_1_and_2_encoding",
+                "strdiscretized_shifted_levels_1_and_2_encoding"
+              ],
+              "type": "nominal"
+            },
+            "y": {
+              "field": "Dataset",
+              "sort": [
+                "cpp_sanders",
+                "cpp_mixed",
+                "avp_avppred",
+                "cpp_kelmcpp",
+                "amp_antibp2",
+                "cpp_cellppdmod",
+                "amp_antibp",
+                "afp_antifp",
+                "cpp_cellppd",
+                "cpp_mlcppue",
+                "atb_antitbp",
+                "atb_iantitb",
+                "amp_csamp",
+                "acp_anticp",
+                "afp_amppred",
+                "cpp_cppredfl",
+                "avp_amppred",
+                "amp_fernandes",
+                "amp_modlamp",
+                "hem_hemopi",
+                "bce_ibce",
+                "ace_vaxinpad",
+                "aip_antiinflam",
+                "acp_iacp",
+                "aip_aippred",
+                "cpp_mlcpp",
+                "",
+                "acp_mlacp",
+                "amp_iamp2l",
+                "amp_gonzales"
+              ],
+              "type": "nominal"
+            }
+          },
+          "mark": {
+            "opacity": 0.9,
+            "type": "rect"
+          }
+        },
+        {
+          "encoding": {
+            "color": {
+              "field": "F1_new",
+              "scale": {
+                "domain": [
+                  "NA"
+                ],
+                "range": [
+                  "#a6611a"
+                ]
+              },
+              "title": "Value",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "labelAngle": -45,
+                "labelExpr": "datum.label == 'zzz' ? null : datum.label",
+                "tickCount": 240
+              },
+              "field": "Encoding",
+              "sort": [
+                "seqbinary_centered_levels_1_and_2_encoding",
+                "seqbinary_shifted_levels_1_and_2_encoding",
+                "seqdiscretized_centered_levels_1_and_2_encoding",
+                "seqdiscretized_shifted_levels_1_and_2_encoding",
+                "strbinary_centered_levels_1_and_2_encoding",
+                "strbinary_shifted_levels_1_and_2_encoding",
+                "strdiscretized_centered_levels_1_and_2_encoding",
+                "strdiscretized_shifted_levels_1_and_2_encoding"
+              ],
+              "type": "nominal"
+            },
+            "y": {
+              "field": "Dataset",
+              "sort": [
+                "cpp_sanders",
+                "cpp_mixed",
+                "avp_avppred",
+                "cpp_kelmcpp",
+                "amp_antibp2",
+                "cpp_cellppdmod",
+                "amp_antibp",
+                "afp_antifp",
+                "cpp_cellppd",
+                "cpp_mlcppue",
+                "atb_antitbp",
+                "atb_iantitb",
+                "amp_csamp",
+                "acp_anticp",
+                "afp_amppred",
+                "cpp_cppredfl",
+                "avp_amppred",
+                "amp_fernandes",
+                "amp_modlamp",
+                "hem_hemopi",
+                "bce_ibce",
+                "ace_vaxinpad",
+                "aip_antiinflam",
+                "acp_iacp",
+                "aip_aippred",
+                "cpp_mlcpp",
+                "",
+                "acp_mlacp",
+                "amp_iamp2l",
+                "amp_gonzales"
+              ],
+              "type": "nominal"
+            }
+          },
+          "height": {
+            "step": 13
+          },
+          "mark": {
+            "size": 13,
+            "type": "rect"
+          },
+          "transform": [
+            {
+              "as": "F1_new",
+              "calculate": "datum.F1 == null ? 'NA' : 'NA'"
+            },
+            {
+              "filter": "(datum.F1 === null)"
+            }
+          ],
+          "width": {
+            "step": 13
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ghattab/CMANGOES/c492c918df3c0da3eaaf27d2b218b66c00610307/Data/Visualization_data/peptidereactor_vis_data/hm_bio_data.json"
+      },
+      "layer": [
+        {
+          "encoding": {
+            "color": {
+              "field": "F1",
+              "scale": {
+                "domain": [
+                  0.0,
+                  1.0
+                ],
+                "range": [
+                  "#a6bddb",
+                  "#023858"
+                ]
+              },
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "Encoding",
+                "type": "nominal"
+              },
+              {
+                "field": "Dataset",
+                "type": "nominal"
+              },
+              {
+                "field": "F1",
+                "type": "quantitative"
+              },
+              {
+                "field": "is_imbalanced",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "axis": {
+                "labelAngle": -45,
+                "labelExpr": "datum.label == 'zzz' ? null : datum.label",
+                "tickCount": 536
+              },
+              "field": "Encoding",
+              "sort": [
+                "seqbinary_centered_levels_1_and_2_encoding",
+                "seqbinary_shifted_levels_1_and_2_encoding",
+                "seqdiscretized_centered_levels_1_and_2_encoding",
+                "seqdiscretized_shifted_levels_1_and_2_encoding",
+                "strbinary_centered_levels_1_and_2_encoding",
+                "strbinary_shifted_levels_1_and_2_encoding",
+                "strdiscretized_centered_levels_1_and_2_encoding",
+                "strdiscretized_shifted_levels_1_and_2_encoding"
+              ],
+              "type": "nominal"
+            },
+            "y": {
+              "axis": {
+                "labelExpr": "substring(datum.label, 4) == 'zzz' ? null : datum.label",
+                "tickCount": 536
+              },
+              "field": "Dataset",
+              "sort": [
+                "ace_vaxinpad",
+                "ace_zzz",
+                "acp_mlacp",
+                "acp_iacp",
+                "acp_anticp",
+                "acp_zzz",
+                "afp_amppred",
+                "afp_antifp",
+                "afp_zzz",
+                "aip_aippred",
+                "aip_antiinflam",
+                "aip_zzz",
+                "amp_gonzales",
+                "amp_iamp2l",
+                "amp_modlamp",
+                "amp_fernandes",
+                "amp_csamp",
+                "amp_antibp",
+                "amp_antibp2",
+                "amp_zzz",
+                "atb_iantitb",
+                "atb_antitbp",
+                "atb_zzz",
+                "avp_amppred",
+                "avp_avppred",
+                "avp_zzz",
+                "bce_ibce",
+                "bce_zzz",
+                "cpp_mlcpp",
+                "cpp_mlcppue",
+                "cpp_cppredfl",
+                "cpp_cellppd",
+                "cpp_cellppdmod",
+                "cpp_kelmcpp",
+                "cpp_mixed",
+                "cpp_sanders",
+                "cpp_zzz",
+                "hem_hemopi",
+                "hem_zzz"
+              ],
+              "type": "nominal"
+            }
+          },
+          "mark": {
+            "opacity": 0.9,
+            "type": "rect"
+          }
+        },
+        {
+          "encoding": {
+            "color": {
+              "field": "F1_new",
+              "scale": {
+                "domain": [
+                  "NA"
+                ],
+                "range": [
+                  "#a6611a"
+                ]
+              },
+              "title": "Value",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "labelAngle": -45,
+                "labelExpr": "datum.label == 'zzz' ? null : datum.label",
+                "tickCount": 536
+              },
+              "field": "Encoding",
+              "sort": [
+                "seqbinary_centered_levels_1_and_2_encoding",
+                "seqbinary_shifted_levels_1_and_2_encoding",
+                "seqdiscretized_centered_levels_1_and_2_encoding",
+                "seqdiscretized_shifted_levels_1_and_2_encoding",
+                "strbinary_centered_levels_1_and_2_encoding",
+                "strbinary_shifted_levels_1_and_2_encoding",
+                "strdiscretized_centered_levels_1_and_2_encoding",
+                "strdiscretized_shifted_levels_1_and_2_encoding"
+              ],
+              "type": "nominal"
+            },
+            "y": {
+              "axis": {
+                "labelExpr": "substring(datum.label, 4) == 'zzz' ? null : datum.label",
+                "tickCount": 536
+              },
+              "field": "Dataset",
+              "sort": [
+                "ace_vaxinpad",
+                "ace_zzz",
+                "acp_mlacp",
+                "acp_iacp",
+                "acp_anticp",
+                "acp_zzz",
+                "afp_amppred",
+                "afp_antifp",
+                "afp_zzz",
+                "aip_aippred",
+                "aip_antiinflam",
+                "aip_zzz",
+                "amp_gonzales",
+                "amp_iamp2l",
+                "amp_modlamp",
+                "amp_fernandes",
+                "amp_csamp",
+                "amp_antibp",
+                "amp_antibp2",
+                "amp_zzz",
+                "atb_iantitb",
+                "atb_antitbp",
+                "atb_zzz",
+                "avp_amppred",
+                "avp_avppred",
+                "avp_zzz",
+                "bce_ibce",
+                "bce_zzz",
+                "cpp_mlcpp",
+                "cpp_mlcppue",
+                "cpp_cppredfl",
+                "cpp_cellppd",
+                "cpp_cellppdmod",
+                "cpp_kelmcpp",
+                "cpp_mixed",
+                "cpp_sanders",
+                "cpp_zzz",
+                "hem_hemopi",
+                "hem_zzz"
+              ],
+              "type": "nominal"
+            }
+          },
+          "height": {
+            "step": 13
+          },
+          "mark": {
+            "size": 13,
+            "type": "rect"
+          },
+          "transform": [
+            {
+              "as": "F1_new",
+              "calculate": "datum.F1 == null ? 'NA' : 'NA'"
+            },
+            {
+              "filter": "(datum.F1 === null)"
+            }
+          ],
+          "width": {
+            "step": 13
+          }
+        }
+      ]
+    }
+  ]
+}

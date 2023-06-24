@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Emissions per capita",
+  "title": {
+    "text": "CO2 per capita emissions by region",
+    "subtitle": "Metric tons per capita (2019). Source: Center for International Climate Research.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/chartENV18.csv"
+  },
+  "mark": {
+    "type": "bar",
+    "color": "#86d0bb",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "height": 300,
+  "width": 180,
+  "encoding": {
+    "y": {
+      "field": "Region",
+      "type": "ordinal",
+      "sort": "-x",
+      "title": null
+    },
+    "x": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": [
+          0,
+          16
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Region",
+        "type": "nominal",
+        "title": "Region"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "C02 emissions (metric tons per capita)"
+      }
+    ]
+  }
+}

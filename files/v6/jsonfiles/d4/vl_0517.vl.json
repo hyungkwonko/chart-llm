@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Inflation - official target",
+    "subtitle": "CPI, % change over 12 months ",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7G7.json",
+    "format": {
+      "type": "json",
+      "property": "years"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "#00BFFF",
+        "width": 10,
+        "strokeWidth": 2,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": null
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null
+        }
+      }
+    },
+    {
+      "encoding": {
+        "x": {
+          "aggregate": "max",
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "date"
+          },
+          "field": "value",
+          "type": "quantitative"
+        },
+        "text": {
+          "aggregate": {
+            "argmax": "date"
+          },
+          "field": "value",
+          "type": "nominal"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "color": "#00BFFF",
+            "size": 100
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 8,
+            "color": "#00BFFF"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2291 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "stroke": null,
+      "width": 750
+    },
+    "facet": {
+      "spacing": 0
+    },
+    "title": {
+      "anchor": "middle"
+    }
+  },
+  "data": {
+    "name": "data-f5f1d5831f8d58cb4f0ea04be0483aff"
+  },
+  "facet": {
+    "row": {
+      "field": "variable_0",
+      "header": {
+        "labelColor": "white"
+      },
+      "title": null,
+      "type": "nominal"
+    }
+  },
+  "spec": {
+    "mark": {
+      "type": "area",
+      "fillOpacity": 0.9,
+      "interpolate": "monotone",
+      "stroke": "lightgray",
+      "strokeWidth": 0.5
+    },
+    "encoding": {
+      "fill": {
+        "field": "variable_0",
+        "scale": {
+          "scheme": "accent"
+        },
+        "title": "Sector",
+        "type": "nominal"
+      },
+      "tooltip": [
+        {
+          "field": "dt",
+          "type": "temporal"
+        },
+        {
+          "field": "variable_0",
+          "type": "nominal"
+        },
+        {
+          "field": "value",
+          "format": ",.02f",
+          "type": "quantitative"
+        }
+      ],
+      "x": {
+        "field": "dt",
+        "title": "",
+        "type": "temporal"
+      },
+      "y": {
+        "axis": null,
+        "field": "value",
+        "scale": {
+          "range": [
+            120,
+            -120
+          ]
+        },
+        "type": "quantitative"
+      }
+    },
+    "height": 120,
+    "transform": [
+      {
+        "joinaggregate": [
+          {
+            "op": "mean",
+            "field": "dt",
+            "as": "mean_val"
+          }
+        ],
+        "groupby": [
+          "variable_0"
+        ]
+      }
+    ]
+  },
+  "bounds": "flush",
+  "title": "US Growth of Electricity Consumption by Sector",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-f5f1d5831f8d58cb4f0ea04be0483aff": [
+      {
+        "dt": "2011-01-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -1.6530115591419259
+      },
+      {
+        "dt": "2011-02-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -2.2225867065897575
+      },
+      {
+        "dt": "2011-03-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -6.143533615445673
+      },
+      {
+        "dt": "2011-04-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 6.422974276630855
+      },
+      {
+        "dt": "2011-05-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 3.0008475269120094
+      },
+      {
+        "dt": "2011-06-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -1.1868477377013797
+      },
+      {
+        "dt": "2011-07-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 0.025991553759974195
+      },
+      {
+        "dt": "2011-08-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -0.2042752336546494
+      },
+      {
+        "dt": "2011-09-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -1.4955820442983714
+      },
+      {
+        "dt": "2011-10-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -2.1749475224617787
+      },
+      {
+        "dt": "2011-11-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 0.0583441580814581
+      },
+      {
+        "dt": "2011-12-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -10.516463602972381
+      },
+      {
+        "dt": "2012-01-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -13.22210194082537
+      },
+      {
+        "dt": "2012-02-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -10.102923011255049
+      },
+      {
+        "dt": "2012-03-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -5.299587670379335
+      },
+      {
+        "dt": "2012-04-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -5.974737666536178
+      },
+      {
+        "dt": "2012-05-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 3.2818543726987004
+      },
+      {
+        "dt": "2012-06-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -2.4198973091434484
+      },
+      {
+        "dt": "2012-07-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -0.09684550306978679
+      },
+      {
+        "dt": "2012-08-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -3.7711309384716896
+      },
+      {
+        "dt": "2012-09-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -3.168327034456475
+      },
+      {
+        "dt": "2012-10-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 2.2036394308110996
+      },
+      {
+        "dt": "2012-11-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 4.2208925361125305
+      },
+      {
+        "dt": "2012-12-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -1.8509567343240607
+      },
+      {
+        "dt": "2013-01-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 4.689613902067036
+      },
+      {
+        "dt": "2013-02-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 4.7589853699391504
+      },
+      {
+        "dt": "2013-03-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 12.816852663076306
+      },
+      {
+        "dt": "2013-04-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 8.441963862610692
+      },
+      {
+        "dt": "2013-05-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -5.652915749716092
+      },
+      {
+        "dt": "2013-06-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -4.0281923742413905
+      },
+      {
+        "dt": "2013-07-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -6.93775836574927
+      },
+      {
+        "dt": "2013-08-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -6.675616583108379
+      },
+      {
+        "dt": "2013-09-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 2.1777707265142388
+      },
+      {
+        "dt": "2013-10-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 2.3001893514739136
+      },
+      {
+        "dt": "2013-11-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 0.7707067331030437
+      },
+      {
+        "dt": "2013-12-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 12.94226305708972
+      },
+      {
+        "dt": "2014-01-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 11.174733817336868
+      },
+      {
+        "dt": "2014-02-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 13.580536880382454
+      },
+      {
+        "dt": "2014-03-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 1.9055675759725554
+      },
+      {
+        "dt": "2014-04-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -3.4028753678316037
+      },
+      {
+        "dt": "2014-05-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 0.5622027259374107
+      },
+      {
+        "dt": "2014-06-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 0.056729771864327816
+      },
+      {
+        "dt": "2014-07-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -4.745605757100235
+      },
+      {
+        "dt": "2014-08-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -1.6189993140118708
+      },
+      {
+        "dt": "2014-09-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -0.5582877005194109
+      },
+      {
+        "dt": "2014-10-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -0.8649080924143515
+      },
+      {
+        "dt": "2014-11-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 1.6156182409625908
+      },
+      {
+        "dt": "2014-12-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -6.331464639363061
+      },
+      {
+        "dt": "2015-01-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -5.969897766267485
+      },
+      {
+        "dt": "2015-02-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -3.609748767868415
+      },
+      {
+        "dt": "2015-03-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 2.5687072198780525
+      },
+      {
+        "dt": "2015-04-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -2.2651792224527845
+      },
+      {
+        "dt": "2015-05-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -0.5915117390962621
+      },
+      {
+        "dt": "2015-06-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 1.9065942283644999
+      },
+      {
+        "dt": "2015-07-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 6.575534727252053
+      },
+      {
+        "dt": "2015-08-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 6.3942887091632095
+      },
+      {
+        "dt": "2015-09-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 3.8721772216151473
+      },
+      {
+        "dt": "2015-10-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 1.337614264034448
+      },
+      {
+        "dt": "2015-11-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -6.84321165406635
+      },
+      {
+        "dt": "2015-12-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -7.558059434753983
+      },
+      {
+        "dt": "2016-01-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -4.930872750337844
+      },
+      {
+        "dt": "2016-02-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -6.361789376459903
+      },
+      {
+        "dt": "2016-03-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -14.458438810632545
+      },
+      {
+        "dt": "2016-04-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -2.1672559385482515
+      },
+      {
+        "dt": "2016-05-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -1.0114519966081592
+      },
+      {
+        "dt": "2016-06-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 4.082706607452846
+      },
+      {
+        "dt": "2016-07-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 5.732083017277945
+      },
+      {
+        "dt": "2016-08-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 8.252683178865428
+      },
+      {
+        "dt": "2016-09-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 3.1465240205281075
+      },
+      {
+        "dt": "2016-10-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 2.173064349534881
+      },
+      {
+        "dt": "2016-11-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 0.6110877907046897
+      },
+      {
+        "dt": "2016-12-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 8.606054059741641
+      },
+      {
+        "dt": "2017-01-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -1.343304017231739
+      },
+      {
+        "dt": "2017-02-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -12.92796119197057
+      },
+      {
+        "dt": "2017-03-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 2.86245907786844
+      },
+      {
+        "dt": "2017-04-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 2.810564133497939
+      },
+      {
+        "dt": "2017-05-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 4.334621965133145
+      },
+      {
+        "dt": "2017-06-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -2.1308554190263784
+      },
+      {
+        "dt": "2017-07-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -2.920060059716423
+      },
+      {
+        "dt": "2017-08-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -9.226678702567547
+      },
+      {
+        "dt": "2017-09-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -8.181748477503369
+      },
+      {
+        "dt": "2017-10-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 1.2837194065304036
+      },
+      {
+        "dt": "2017-11-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 5.444284986739056
+      },
+      {
+        "dt": "2017-12-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 0.5967642095723313
+      },
+      {
+        "dt": "2018-01-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 15.250284638562794
+      },
+      {
+        "dt": "2018-02-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 12.660794333777915
+      },
+      {
+        "dt": "2018-03-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 3.999431891515237
+      },
+      {
+        "dt": "2018-04-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 5.212906198640588
+      },
+      {
+        "dt": "2018-05-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 5.664434147326158
+      },
+      {
+        "dt": "2018-06-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 6.01418635350135
+      },
+      {
+        "dt": "2018-07-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 2.445516278607962
+      },
+      {
+        "dt": "2018-08-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 8.090851230813744
+      },
+      {
+        "dt": "2018-09-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 8.529496704118422
+      },
+      {
+        "dt": "2018-10-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 4.122066825950221
+      },
+      {
+        "dt": "2018-11-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 5.563094152450154
+      },
+      {
+        "dt": "2018-12-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 0.9640044320663899
+      },
+      {
+        "dt": "2019-01-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -10.475729184293648
+      },
+      {
+        "dt": "2019-02-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 2.5110725905333364
+      },
+      {
+        "dt": "2019-03-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 5.023989975282284
+      },
+      {
+        "dt": "2019-04-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -5.311533920697487
+      },
+      {
+        "dt": "2019-05-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -3.3868259842172566
+      },
+      {
+        "dt": "2019-06-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -7.541172719036493
+      },
+      {
+        "dt": "2019-07-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 0.11888392373697876
+      },
+      {
+        "dt": "2019-08-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -2.22395508216493
+      },
+      {
+        "dt": "2019-09-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 2.0609046981838075
+      },
+      {
+        "dt": "2019-10-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 0.8857855246959367
+      },
+      {
+        "dt": "2019-11-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -1.2884727425617637
+      },
+      {
+        "dt": "2019-12-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -1.7069793551048873
+      },
+      {
+        "dt": "2020-01-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -6.657291926949438
+      },
+      {
+        "dt": "2020-02-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -3.846323353586123
+      },
+      {
+        "dt": "2020-03-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -7.41569374726433
+      },
+      {
+        "dt": "2020-04-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 8.160068639133367
+      },
+      {
+        "dt": "2020-05-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 5.332219022359808
+      },
+      {
+        "dt": "2020-06-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 9.50902976589747
+      },
+      {
+        "dt": "2020-07-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 8.689008199684633
+      },
+      {
+        "dt": "2020-08-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 5.9007933200336815
+      },
+      {
+        "dt": "2020-09-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -2.844818083856804
+      },
+      {
+        "dt": "2020-10-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -2.2993842884894367
+      },
+      {
+        "dt": "2020-11-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -2.7251400569320405
+      },
+      {
+        "dt": "2020-12-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 7.171142831021493
+      },
+      {
+        "dt": "2021-01-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 9.836002686591282
+      },
+      {
+        "dt": "2021-02-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 12.86684335333148
+      },
+      {
+        "dt": "2021-03-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 9.706050421655132
+      },
+      {
+        "dt": "2021-04-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -3.9569916922440163
+      },
+      {
+        "dt": "2021-05-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -4.277638441698239
+      },
+      {
+        "dt": "2021-06-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 0.46787529702598807
+      },
+      {
+        "dt": "2021-07-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -7.548147795239402
+      },
+      {
+        "dt": "2021-08-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -0.7218957585031327
+      },
+      {
+        "dt": "2021-09-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 2.5718280963988427
+      },
+      {
+        "dt": "2021-10-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -1.4422005779946345
+      },
+      {
+        "dt": "2021-11-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 0.9331937160091064
+      },
+      {
+        "dt": "2021-12-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -9.298075082009783
+      },
+      {
+        "dt": "2022-01-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 3.200335330082149
+      },
+      {
+        "dt": "2022-02-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -0.18174869606804034
+      },
+      {
+        "dt": "2022-03-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -1.7341708952928636
+      },
+      {
+        "dt": "2022-04-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 4.59588322385156
+      },
+      {
+        "dt": "2022-05-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 9.769941375100611
+      },
+      {
+        "dt": "2022-06-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 4.03094461759681
+      },
+      {
+        "dt": "2022-07-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 7.2624564646040835
+      },
+      {
+        "dt": "2022-08-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 2.4421046058786144
+      },
+      {
+        "dt": "2022-09-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -0.5586901872567607
+      },
+      {
+        "dt": "2022-10-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -3.1424285246713812
+      },
+      {
+        "dt": "2022-11-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 3.334129055880042
+      },
+      {
+        "dt": "2022-12-01T00:00:00",
+        "variable_0": "Residential",
+        "value": 12.987984512376816
+      },
+      {
+        "dt": "2023-01-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -5.928478281695915
+      },
+      {
+        "dt": "2023-02-01T00:00:00",
+        "variable_0": "Residential",
+        "value": -10.479946261761286
+      },
+      {
+        "dt": "2011-01-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.12035274788668726
+      },
+      {
+        "dt": "2011-02-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.9443826785988874
+      },
+      {
+        "dt": "2011-03-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 2.4625785323701965
+      },
+      {
+        "dt": "2011-04-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.7173628867293669
+      },
+      {
+        "dt": "2011-05-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.3679987620853096
+      },
+      {
+        "dt": "2011-06-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.017570884114416
+      },
+      {
+        "dt": "2011-07-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.11059382377942573
+      },
+      {
+        "dt": "2011-08-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.15650363614889695
+      },
+      {
+        "dt": "2011-09-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.9950038412168571
+      },
+      {
+        "dt": "2011-10-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.174037069853461
+      },
+      {
+        "dt": "2011-11-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.9520578224325171
+      },
+      {
+        "dt": "2011-12-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -2.9254254051786277
+      },
+      {
+        "dt": "2012-01-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -2.7818054678886317
+      },
+      {
+        "dt": "2012-02-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.28517206279961016
+      },
+      {
+        "dt": "2012-03-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.7098458204188205
+      },
+      {
+        "dt": "2012-04-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.5278170948587402
+      },
+      {
+        "dt": "2012-05-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 2.950922007261325
+      },
+      {
+        "dt": "2012-06-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.13606140696772462
+      },
+      {
+        "dt": "2012-07-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.3668991501586838
+      },
+      {
+        "dt": "2012-08-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.9755537202810749
+      },
+      {
+        "dt": "2012-09-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.1583906854583437
+      },
+      {
+        "dt": "2012-10-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.6764430060340008
+      },
+      {
+        "dt": "2012-11-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.0823399377160703
+      },
+      {
+        "dt": "2012-12-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.7092150495912941
+      },
+      {
+        "dt": "2013-01-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 2.365500961570355
+      },
+      {
+        "dt": "2013-02-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.9347564889729432
+      },
+      {
+        "dt": "2013-03-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.4998206089000155
+      },
+      {
+        "dt": "2013-04-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.3545589327253129
+      },
+      {
+        "dt": "2013-05-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.911402271586482
+      },
+      {
+        "dt": "2013-06-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.5075661479782889
+      },
+      {
+        "dt": "2013-07-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.9528371301681604
+      },
+      {
+        "dt": "2013-08-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.8142800947390394
+      },
+      {
+        "dt": "2013-09-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.5634507839749512
+      },
+      {
+        "dt": "2013-10-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.2995351513529707
+      },
+      {
+        "dt": "2013-11-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.7155921013128461
+      },
+      {
+        "dt": "2013-12-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 4.456347312019493
+      },
+      {
+        "dt": "2014-01-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 5.696880653653724
+      },
+      {
+        "dt": "2014-02-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 3.3034572385921113
+      },
+      {
+        "dt": "2014-03-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 2.8425050215015624
+      },
+      {
+        "dt": "2014-04-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.0493706515093404
+      },
+      {
+        "dt": "2014-05-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.904416151497478
+      },
+      {
+        "dt": "2014-06-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.862033444597543
+      },
+      {
+        "dt": "2014-07-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.4738988158088717
+      },
+      {
+        "dt": "2014-08-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.149246438278051
+      },
+      {
+        "dt": "2014-09-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.385965469749384
+      },
+      {
+        "dt": "2014-10-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.9976908191975831
+      },
+      {
+        "dt": "2014-11-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.8328038833752549
+      },
+      {
+        "dt": "2014-12-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.6363965863105281
+      },
+      {
+        "dt": "2015-01-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.9727304014859448
+      },
+      {
+        "dt": "2015-02-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.0827074521473135
+      },
+      {
+        "dt": "2015-03-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.7742483430656755
+      },
+      {
+        "dt": "2015-04-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.6678367412786166
+      },
+      {
+        "dt": "2015-05-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.23698882916163289
+      },
+      {
+        "dt": "2015-06-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.7157349515414468
+      },
+      {
+        "dt": "2015-07-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 2.4475848391904975
+      },
+      {
+        "dt": "2015-08-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 2.3215354746669803
+      },
+      {
+        "dt": "2015-09-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.7881010059307867
+      },
+      {
+        "dt": "2015-10-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.17838354741964713
+      },
+      {
+        "dt": "2015-11-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.10094400318325647
+      },
+      {
+        "dt": "2015-12-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.1481575500714492
+      },
+      {
+        "dt": "2016-01-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.083304562243692
+      },
+      {
+        "dt": "2016-02-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.9252360817459402
+      },
+      {
+        "dt": "2016-03-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.908144831087899
+      },
+      {
+        "dt": "2016-04-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -2.0377405413045
+      },
+      {
+        "dt": "2016-05-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.8854764608514754
+      },
+      {
+        "dt": "2016-06-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.9165349073757767
+      },
+      {
+        "dt": "2016-07-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.1937851260526378
+      },
+      {
+        "dt": "2016-08-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 5.057558253141647
+      },
+      {
+        "dt": "2016-09-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.0617559147540367
+      },
+      {
+        "dt": "2016-10-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.1252674223723993
+      },
+      {
+        "dt": "2016-11-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.8830667097397438
+      },
+      {
+        "dt": "2016-12-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 3.12896354710408
+      },
+      {
+        "dt": "2017-01-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.8351472880841593
+      },
+      {
+        "dt": "2017-02-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -3.6845738746068
+      },
+      {
+        "dt": "2017-03-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.3558707307049778
+      },
+      {
+        "dt": "2017-04-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.5330200327869683
+      },
+      {
+        "dt": "2017-05-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.3235419873225185
+      },
+      {
+        "dt": "2017-06-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.2908850500572657
+      },
+      {
+        "dt": "2017-07-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.5857473228532251
+      },
+      {
+        "dt": "2017-08-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -4.842164168527329
+      },
+      {
+        "dt": "2017-09-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -3.80918007549621
+      },
+      {
+        "dt": "2017-10-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.28715250701034645
+      },
+      {
+        "dt": "2017-11-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.0825881774913606
+      },
+      {
+        "dt": "2017-12-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.7865515817502056
+      },
+      {
+        "dt": "2018-01-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 4.966172714999351
+      },
+      {
+        "dt": "2018-02-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 3.057014117618184
+      },
+      {
+        "dt": "2018-03-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.8733243911936084
+      },
+      {
+        "dt": "2018-04-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.7241413778734218
+      },
+      {
+        "dt": "2018-05-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 3.0070040669919917
+      },
+      {
+        "dt": "2018-06-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.6652351529053755
+      },
+      {
+        "dt": "2018-07-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.7369416789911662
+      },
+      {
+        "dt": "2018-08-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 4.956040667709116
+      },
+      {
+        "dt": "2018-09-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 2.7319039240219167
+      },
+      {
+        "dt": "2018-10-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 2.5127335707316956
+      },
+      {
+        "dt": "2018-11-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.009982414479647872
+      },
+      {
+        "dt": "2018-12-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.1956831407743174
+      },
+      {
+        "dt": "2019-01-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -2.5350101129982705
+      },
+      {
+        "dt": "2019-02-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.5989759090968994
+      },
+      {
+        "dt": "2019-03-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.5925799678385579
+      },
+      {
+        "dt": "2019-04-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.8574312669587636
+      },
+      {
+        "dt": "2019-05-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.7450754852969652
+      },
+      {
+        "dt": "2019-06-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -5.136090261954241
+      },
+      {
+        "dt": "2019-07-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.43386594136766155
+      },
+      {
+        "dt": "2019-08-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -3.019983226454248
+      },
+      {
+        "dt": "2019-09-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.020646638951182794
+      },
+      {
+        "dt": "2019-10-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.7137418630069781
+      },
+      {
+        "dt": "2019-11-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -2.041809995434396
+      },
+      {
+        "dt": "2019-12-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.0026868688199011004
+      },
+      {
+        "dt": "2020-01-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.964240859425903
+      },
+      {
+        "dt": "2020-02-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.9247392701297041
+      },
+      {
+        "dt": "2020-03-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -3.1249769489952395
+      },
+      {
+        "dt": "2020-04-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -10.77657801557821
+      },
+      {
+        "dt": "2020-05-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -15.199320671719763
+      },
+      {
+        "dt": "2020-06-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -5.3153971022855355
+      },
+      {
+        "dt": "2020-07-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -2.935417302843424
+      },
+      {
+        "dt": "2020-08-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -5.9026723557383365
+      },
+      {
+        "dt": "2020-09-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -7.241905383180747
+      },
+      {
+        "dt": "2020-10-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -5.929248064920012
+      },
+      {
+        "dt": "2020-11-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -4.806877910440644
+      },
+      {
+        "dt": "2020-12-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -2.3567004164012917
+      },
+      {
+        "dt": "2021-01-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -4.839670714836841
+      },
+      {
+        "dt": "2021-02-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -4.522740831317207
+      },
+      {
+        "dt": "2021-03-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.18395044474906
+      },
+      {
+        "dt": "2021-04-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 8.003440741983802
+      },
+      {
+        "dt": "2021-05-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 11.041503528775308
+      },
+      {
+        "dt": "2021-06-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 8.631933727311747
+      },
+      {
+        "dt": "2021-07-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.5886774827894792
+      },
+      {
+        "dt": "2021-08-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 6.545132485058502
+      },
+      {
+        "dt": "2021-09-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 5.0953495855113
+      },
+      {
+        "dt": "2021-10-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 3.4833138254816154
+      },
+      {
+        "dt": "2021-11-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 5.729981698420317
+      },
+      {
+        "dt": "2021-12-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.0045524380838833
+      },
+      {
+        "dt": "2022-01-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 7.455612922355992
+      },
+      {
+        "dt": "2022-02-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 3.3543034107323955
+      },
+      {
+        "dt": "2022-03-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 4.833906774824337
+      },
+      {
+        "dt": "2022-04-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 5.164605334808048
+      },
+      {
+        "dt": "2022-05-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 6.350457611530258
+      },
+      {
+        "dt": "2022-06-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 0.8054085072039197
+      },
+      {
+        "dt": "2022-07-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 3.4820473623686787
+      },
+      {
+        "dt": "2022-08-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 2.328391386700246
+      },
+      {
+        "dt": "2022-09-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 2.978702883119211
+      },
+      {
+        "dt": "2022-10-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.736373812628067
+      },
+      {
+        "dt": "2022-11-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 1.4053578369549236
+      },
+      {
+        "dt": "2022-12-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": 4.944755641695631
+      },
+      {
+        "dt": "2023-01-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -1.9691571919525863
+      },
+      {
+        "dt": "2023-02-01T00:00:00",
+        "variable_0": "Commercial",
+        "value": -0.7871158781734944
+      },
+      {
+        "dt": "2011-01-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 6.014602064715557
+      },
+      {
+        "dt": "2011-02-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.925577248024225
+      },
+      {
+        "dt": "2011-03-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 4.966856676107234
+      },
+      {
+        "dt": "2011-04-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.221912124553027
+      },
+      {
+        "dt": "2011-05-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.06505835572051533
+      },
+      {
+        "dt": "2011-06-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.6620212808569503
+      },
+      {
+        "dt": "2011-07-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.7532379100807738
+      },
+      {
+        "dt": "2011-08-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.2058687229951515
+      },
+      {
+        "dt": "2011-09-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.8624334923985186
+      },
+      {
+        "dt": "2011-10-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.6815990038286053
+      },
+      {
+        "dt": "2011-11-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.5808210631008013
+      },
+      {
+        "dt": "2011-12-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.4129939913420255
+      },
+      {
+        "dt": "2012-01-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.1089838445171973
+      },
+      {
+        "dt": "2012-02-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.5366811455231453
+      },
+      {
+        "dt": "2012-03-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.1079614458197162
+      },
+      {
+        "dt": "2012-04-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.824224867569523
+      },
+      {
+        "dt": "2012-05-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 3.1892328286856397
+      },
+      {
+        "dt": "2012-06-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.3486480040188922
+      },
+      {
+        "dt": "2012-07-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.032005646857913295
+      },
+      {
+        "dt": "2012-08-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.9919566996442364
+      },
+      {
+        "dt": "2012-09-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -3.3939265054078627
+      },
+      {
+        "dt": "2012-10-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.525877589980118
+      },
+      {
+        "dt": "2012-11-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.5040621381569927
+      },
+      {
+        "dt": "2012-12-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.0279467826506914
+      },
+      {
+        "dt": "2013-01-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.6423512057763823
+      },
+      {
+        "dt": "2013-02-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.0514179150360468
+      },
+      {
+        "dt": "2013-03-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.0133718264981328
+      },
+      {
+        "dt": "2013-04-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.0035858715166435
+      },
+      {
+        "dt": "2013-05-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.25895356663880875
+      },
+      {
+        "dt": "2013-06-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.6587583852045054
+      },
+      {
+        "dt": "2013-07-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.38096179074372793
+      },
+      {
+        "dt": "2013-08-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.33853774732126585
+      },
+      {
+        "dt": "2013-09-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.1760842061977694
+      },
+      {
+        "dt": "2013-10-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.019188020023985786
+      },
+      {
+        "dt": "2013-11-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.9946264894827639
+      },
+      {
+        "dt": "2013-12-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.3732814518379035
+      },
+      {
+        "dt": "2014-01-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.44298264270333787
+      },
+      {
+        "dt": "2014-02-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.667427919416542
+      },
+      {
+        "dt": "2014-03-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.0803735329883537
+      },
+      {
+        "dt": "2014-04-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.3600940730680957
+      },
+      {
+        "dt": "2014-05-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.5725292806178617
+      },
+      {
+        "dt": "2014-06-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.8311053392966459
+      },
+      {
+        "dt": "2014-07-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.7611312346356822
+      },
+      {
+        "dt": "2014-08-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.2800622472616716
+      },
+      {
+        "dt": "2014-09-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.967981333668668
+      },
+      {
+        "dt": "2014-10-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.427579840738092
+      },
+      {
+        "dt": "2014-11-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.773947279948107
+      },
+      {
+        "dt": "2014-12-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.632886473705276
+      },
+      {
+        "dt": "2015-01-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.6735561122228395
+      },
+      {
+        "dt": "2015-02-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.7709100622366192
+      },
+      {
+        "dt": "2015-03-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.030510215620739
+      },
+      {
+        "dt": "2015-04-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.020735795687654157
+      },
+      {
+        "dt": "2015-05-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.8896253928539006
+      },
+      {
+        "dt": "2015-06-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.5910647672258351
+      },
+      {
+        "dt": "2015-07-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.7574934537213918
+      },
+      {
+        "dt": "2015-08-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.5982176562436057
+      },
+      {
+        "dt": "2015-09-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.8874496251543573
+      },
+      {
+        "dt": "2015-10-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.0534767672643506
+      },
+      {
+        "dt": "2015-11-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -3.1458487776686583
+      },
+      {
+        "dt": "2015-12-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.369042912306485
+      },
+      {
+        "dt": "2016-01-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.9560937096792177
+      },
+      {
+        "dt": "2016-02-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.000399367986536614
+      },
+      {
+        "dt": "2016-03-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.5918332572226626
+      },
+      {
+        "dt": "2016-04-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.2884052465615756
+      },
+      {
+        "dt": "2016-05-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.717747409361925
+      },
+      {
+        "dt": "2016-06-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.952607167128818
+      },
+      {
+        "dt": "2016-07-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.7646367703321388
+      },
+      {
+        "dt": "2016-08-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.8231734649265521
+      },
+      {
+        "dt": "2016-09-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.7363018965216526
+      },
+      {
+        "dt": "2016-10-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.9838824670857624
+      },
+      {
+        "dt": "2016-11-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.09330173772175154
+      },
+      {
+        "dt": "2016-12-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.5010599545626881
+      },
+      {
+        "dt": "2017-01-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.04914500966484159
+      },
+      {
+        "dt": "2017-02-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.8856147020974943
+      },
+      {
+        "dt": "2017-03-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.6316336121181774
+      },
+      {
+        "dt": "2017-04-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.32020509942420894
+      },
+      {
+        "dt": "2017-05-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.016179361896042
+      },
+      {
+        "dt": "2017-06-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.063418561832764
+      },
+      {
+        "dt": "2017-07-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.8380379787986003
+      },
+      {
+        "dt": "2017-08-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.03805200356621352
+      },
+      {
+        "dt": "2017-09-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.3372984574713245
+      },
+      {
+        "dt": "2017-10-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.4925228796023982
+      },
+      {
+        "dt": "2017-11-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.3187214833296101
+      },
+      {
+        "dt": "2017-12-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.0676075554914686
+      },
+      {
+        "dt": "2018-01-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.4649332796078829
+      },
+      {
+        "dt": "2018-02-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.605529479934198
+      },
+      {
+        "dt": "2018-03-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.7413400399961745
+      },
+      {
+        "dt": "2018-04-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.32796386589359905
+      },
+      {
+        "dt": "2018-05-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 3.1061913172207856
+      },
+      {
+        "dt": "2018-06-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.2538833502808924
+      },
+      {
+        "dt": "2018-07-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.7967529805016147
+      },
+      {
+        "dt": "2018-08-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 3.427135015037397
+      },
+      {
+        "dt": "2018-09-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.6547193396134983
+      },
+      {
+        "dt": "2018-10-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 3.097524170075472
+      },
+      {
+        "dt": "2018-11-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.1888433935260077
+      },
+      {
+        "dt": "2018-12-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.17239224852625412
+      },
+      {
+        "dt": "2019-01-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 3.3091839847145366
+      },
+      {
+        "dt": "2019-02-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.9465231620707781
+      },
+      {
+        "dt": "2019-03-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.04239782507049483
+      },
+      {
+        "dt": "2019-04-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.6453841894622734
+      },
+      {
+        "dt": "2019-05-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.2313726430721594
+      },
+      {
+        "dt": "2019-06-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.7280896863723352
+      },
+      {
+        "dt": "2019-07-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.530921885798353
+      },
+      {
+        "dt": "2019-08-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.2228738548152651
+      },
+      {
+        "dt": "2019-09-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.46932222934079615
+      },
+      {
+        "dt": "2019-10-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.1527372994321605
+      },
+      {
+        "dt": "2019-11-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.9337290371985394
+      },
+      {
+        "dt": "2019-12-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.3550562722605344
+      },
+      {
+        "dt": "2020-01-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.422528319956052
+      },
+      {
+        "dt": "2020-02-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 3.2119773879176083
+      },
+      {
+        "dt": "2020-03-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.20003570890242406
+      },
+      {
+        "dt": "2020-04-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -9.531045368124769
+      },
+      {
+        "dt": "2020-05-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -12.270403570691146
+      },
+      {
+        "dt": "2020-06-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -7.703449304562615
+      },
+      {
+        "dt": "2020-07-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -6.604587494288605
+      },
+      {
+        "dt": "2020-08-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -5.156619657025773
+      },
+      {
+        "dt": "2020-09-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -6.016091073276519
+      },
+      {
+        "dt": "2020-10-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.399112233878975
+      },
+      {
+        "dt": "2020-11-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.5750325664984124
+      },
+      {
+        "dt": "2020-12-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.7527893687125364
+      },
+      {
+        "dt": "2021-01-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.06562240279795
+      },
+      {
+        "dt": "2021-02-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -5.9027987434651426
+      },
+      {
+        "dt": "2021-03-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -4.175298098278302
+      },
+      {
+        "dt": "2021-04-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 9.437633305818792
+      },
+      {
+        "dt": "2021-05-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 12.695729214713513
+      },
+      {
+        "dt": "2021-06-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 10.52580001130934
+      },
+      {
+        "dt": "2021-07-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 7.42566422001969
+      },
+      {
+        "dt": "2021-08-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 6.03273189455551
+      },
+      {
+        "dt": "2021-09-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 5.977321609238095
+      },
+      {
+        "dt": "2021-10-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 3.6233321635168236
+      },
+      {
+        "dt": "2021-11-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 4.267495000871024
+      },
+      {
+        "dt": "2021-12-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 3.9795730429853737
+      },
+      {
+        "dt": "2022-01-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 4.473111496445714
+      },
+      {
+        "dt": "2022-02-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 2.2994303259378457
+      },
+      {
+        "dt": "2022-03-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 6.968000584261902
+      },
+      {
+        "dt": "2022-04-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.9472525104941019
+      },
+      {
+        "dt": "2022-05-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.6599165051472964
+      },
+      {
+        "dt": "2022-06-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 1.7636348547391378
+      },
+      {
+        "dt": "2022-07-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.067969386074331
+      },
+      {
+        "dt": "2022-08-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": 0.01250690584013725
+      },
+      {
+        "dt": "2022-09-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.7874182763105697
+      },
+      {
+        "dt": "2022-10-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -1.527739011107776
+      },
+      {
+        "dt": "2022-11-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.5664015941215257
+      },
+      {
+        "dt": "2022-12-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -2.7327463954110898
+      },
+      {
+        "dt": "2023-01-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -4.318170908974039
+      },
+      {
+        "dt": "2023-02-01T00:00:00",
+        "variable_0": "Industrial",
+        "value": -0.03687559639158344
+      }
+    ]
+  }
+}

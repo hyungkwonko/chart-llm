@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "title": {
+    "text": "Human Development Index (2021)",
+    "fontSize": 15,
+    "subtitle": [
+      "Source: Our World in Data",
+      "White=N/A"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/custom.geo%20(1).json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.name_en",
+      "from": {
+        "key": "Entity",
+        "fields": [
+          "Value"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/human-development-index%20(1).csv"
+        }
+      }
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "slategrey"
+  },
+  "encoding": {
+    "color": {
+      "field": "Value",
+      "legend": {
+        "title": null,
+        "orient": "right",
+        "direction": "vertical"
+      },
+      "type": "quantitative",
+      "scale": {
+        "range": [
+          "red",
+          "orange",
+          "lightgreen"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.name_en",
+        "title": "Country"
+      },
+      {
+        "field": "Value",
+        "title": "HDI"
+      }
+    ]
+  },
+  "config": {
+    "mark": {
+      "invalid": null
+    }
+  }
+}

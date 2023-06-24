@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Compound returns",
+    "subtitle": [
+      "Returns from $1 invested today",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 500,
+  "height": 300,
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/example_bondYields.csv"
+  },
+  "transform": [
+    {
+      "calculate": "1/datum.discountFactor",
+      "as": "return"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": null
+    },
+    "y": {
+      "field": "return",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "type": "nominal",
+      "legend": {
+        "format": ".0%",
+        "orient": "top-left",
+        "fillColor": "white",
+        "strokeColor": "rgb(128,0,0)",
+        "cornerRadius": 5,
+        "padding": 5
+      },
+      "field": "riskFreeRate",
+      "title": "RF Rate"
+    }
+  }
+}

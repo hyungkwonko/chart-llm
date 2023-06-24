@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Punchcard Visualization like on Github. The day on y-axis uses a custom order from Monday to Sunday.  The sort property supports both full day names (e.g., 'Monday') and their three letter initials (e.g., 'mon') -- both of which are case insensitive.",
+  "data": {
+    "url": "https://vega.github.io/editor/data/github.csv"
+  },
+  "height": {
+    "step": 15
+  },
+  "width": {
+    "step": 20
+  },
+  "mark": {
+    "type": "point",
+    "stroke": null,
+    "size": 400
+  },
+  "encoding": {
+    "y": {
+      "field": "time",
+      "type": "ordinal",
+      "timeUnit": "day",
+      "sort": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ]
+    },
+    "x": {
+      "field": "time",
+      "type": "ordinal",
+      "timeUnit": "hours"
+    },
+    "fill": {
+      "field": "count",
+      "type": "quantitative",
+      "aggregate": "sum"
+    },
+    "shape": {
+      "condition": {
+        "test": "utcday(datum.day_time) % 2 == 1",
+        "value": "'M0,-0.6 L1,-1 L2,-0.6 L2,0.6 L1,1 L0,0.6 Z'"
+      },
+      "value": "'M-1,-0.6 L0,-1 L1,-0.6 L1,0.6 L0,1 L-1,0.6 Z'"
+    }
+  }
+}

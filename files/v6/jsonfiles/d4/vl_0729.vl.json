@@ -1,0 +1,116 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Graph showing main religion of countries featured in the 2022 CAF World Giving Index data",
+  "title": {
+    "text": "CAF World Giving Index 2022 by each country's main religion",
+    "subtitle": [
+      "Source: Everycountryintheworld.com",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "darkblue"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/fd17f2dda592d8d666a0b4bc937aaa6e691a4bd4/mainrelig%2BCAF_output_cleaned.csv"
+  },
+  "height": 300,
+  "width": 2000,
+  "mark": {
+    "type": "bar"
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "SectorSelector"
+      }
+    },
+    {
+      "filter": {
+        "field": "MainReligion_2022",
+        "oneOf": [
+          "Christianity",
+          "Islam",
+          "Buddhism",
+          "Hinduism",
+          "N/A",
+          "Judaism",
+          "Other"
+        ]
+      }
+    }
+  ],
+  "selection": {
+    "SectorSelector": {
+      "type": "single",
+      "fields": [
+        "MainReligion_2022"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Christianity",
+          "Islam",
+          "Buddhism",
+          "Hinduism",
+          "N/A",
+          "Judaism",
+          "Other"
+        ],
+        "name": "Choose Religion"
+      }
+    }
+  },
+  "encoding": {
+    "y": {
+      "field": "CAF_2022",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          70
+        ]
+      },
+      "title": "CAF WGI",
+      "axis": {
+        "grid": false
+      }
+    },
+    "x": {
+      "field": "Country",
+      "type": "nominal",
+      "title": "",
+      "axis": {
+        "grid": false,
+        "labelAngle": 90
+      },
+      "sort": "-y"
+    },
+    "color": {
+      "field": "MainReligion_2022",
+      "scale": {
+        "scheme": "yellowgreenblue"
+      },
+      "title": [
+        "Main Religion",
+        "expectancy from 1960 to 2020"
+      ]
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "title": "Country"
+      },
+      {
+        "field": "CAF_2022",
+        "title": "CAF WGI"
+      },
+      {
+        "field": "MainReligion_2022",
+        "title": "Main Religion"
+      }
+    ]
+  }
+}

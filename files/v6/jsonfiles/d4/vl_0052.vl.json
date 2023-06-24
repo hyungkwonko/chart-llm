@@ -1,0 +1,25 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Bldg Status",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "median",
+      "field": "Square Footage"
+    }
+  },
+  "height": 200,
+  "width": 300,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
+}

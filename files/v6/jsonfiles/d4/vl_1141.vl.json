@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Various US measures state by state",
+  "title": {
+    "text": "Premier League clubs expenditure and league position",
+    "subtitle": [
+      "2022 Expenditure in millions (x) and and Current league position  (y)",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/dannysupple/dannysupple.github.io/main/fexpenditure.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "size": 150,
+    "color": "rgb(0,67,167)",
+    "opacity": 0.6
+  },
+  "height": 340,
+  "width": 340,
+  "encoding": {
+    "x": {
+      "field": "Expenditure",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          300
+        ]
+      },
+      "title": null
+    },
+    "y": {
+      "field": "League position",
+      "type": "quantitative",
+      "title": null
+    }
+  },
+  "config": {}
+}

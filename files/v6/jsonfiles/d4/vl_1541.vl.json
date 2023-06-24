@@ -1,0 +1,157 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/rambaut/B117_figures/1f2a7fd684f9d7e8eb293f0add1ce2175c1c3894/docs/skygrids_rev.csv"
+  },
+  "vconcat": [
+    {
+      "width": 640,
+      "height": 640,
+      "view": {
+        "stroke": ""
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "errorband",
+            "clip": true,
+            "color": "goldenrod"
+          },
+          "encoding": {
+            "y": {
+              "field": "lower_B1177",
+              "type": "quantitative",
+              "title": ""
+            },
+            "y2": {
+              "field": "upper_B1177",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "clip": true,
+            "color": "goldenrod"
+          },
+          "encoding": {
+            "y": {
+              "field": "mean_B1177",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "errorband",
+            "clip": true,
+            "color": "steelblue"
+          },
+          "encoding": {
+            "y": {
+              "field": "lower_other",
+              "type": "quantitative",
+              "title": ""
+            },
+            "y2": {
+              "field": "upper_other",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "clip": true,
+            "color": "steelblue"
+          },
+          "encoding": {
+            "y": {
+              "field": "mean_other",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "errorband",
+            "clip": true,
+            "color": "darkred"
+          },
+          "encoding": {
+            "y": {
+              "field": "lower_B117",
+              "type": "quantitative",
+              "title": ""
+            },
+            "y2": {
+              "field": "upper_B117",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "clip": true,
+            "color": "darkred"
+          },
+          "encoding": {
+            "y": {
+              "field": "mean_B117",
+              "type": "quantitative",
+              "scale": {
+                "type": "log",
+                "domain": [
+                  0.001,
+                  10000
+                ]
+              },
+              "axis": {
+                "offset": 10,
+                "grid": false
+              },
+              "title": ""
+            },
+            "x": {
+              "field": "datetime",
+              "type": "temporal",
+              "scale": {
+                "domain": [
+                  "2020-08-31",
+                  "2021-01-03"
+                ]
+              },
+              "axis": {
+                "offset": 10,
+                "grid": false
+              },
+              "title": ""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

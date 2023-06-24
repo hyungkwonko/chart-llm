@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Inflation Price Data.",
+  "title": "schemaone",
+  "data": {
+    "url": "https://cdn.jsdelivr.net/gh/koaning/justcharts/bigmac.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "local_price",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "currency_code",
+      "type": "nominal"
+    }
+  }
+}

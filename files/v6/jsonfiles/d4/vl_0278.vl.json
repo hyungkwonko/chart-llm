@@ -1,0 +1,133 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/Datasets/FDP_movement.csv"
+  },
+  "mark": {
+    "type": "rect",
+    "strokeWidth": 2
+  },
+  "params": [
+    {
+      "name": "highlight",
+      "select": "point"
+    },
+    {
+      "name": "grid",
+      "select": "interval",
+      "bind": "scales"
+    },
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "on": "mouseover"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "datum.FDP+1",
+      "as": "FDPlog"
+    },
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "ranking"
+        }
+      ],
+      "sort": [
+        {
+          "field": "FDP",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.rank < 100"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "Country of origin",
+      "type": "nominal",
+      "title": "Country of Origin"
+    },
+    "x": {
+      "field": "Country of asylum",
+      "type": "nominal",
+      "title": "Country of Asylum",
+      "axis": {
+        "labelAngle": 60
+      }
+    },
+    "color": {
+      "field": "FDP",
+      "type": "quantitative",
+      "scale": {
+        "type": "log"
+      },
+      "title": "Number of FDPs"
+    },
+    "opacity": {
+      "condition": {
+        "param": "highlight",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "order": {
+      "condition": {
+        "param": "highlight",
+        "value": 1
+      },
+      "value": 0
+    },
+    "stroke": {
+      "condition": [
+        {
+          "param": "highlight",
+          "empty": false,
+          "value": "black"
+        },
+        {
+          "param": "hover",
+          "empty": false,
+          "value": "black"
+        }
+      ],
+      "value": null
+    },
+    "tooltip": [
+      {
+        "field": "Country of asylum"
+      },
+      {
+        "field": "FDP",
+        "format": ",",
+        "title": "FDPs"
+      }
+    ]
+  },
+  "config": {
+    "scale": {
+      "bandPaddingInner": 0,
+      "bandPaddingOuter": 0
+    },
+    "view": {
+      "step": 20,
+      "stroke": null
+    },
+    "range": {
+      "ramp": {
+        "scheme": "reds"
+      }
+    },
+    "axis": {
+      "domain": false
+    }
+  }
+}

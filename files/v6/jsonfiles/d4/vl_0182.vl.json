@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Average Water Quality Index (WQI) of Rivers by State in Malaysia in 2017",
+  "width": 1000,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Week%209/vg_json/malaysian_states.json",
+    "format": {
+      "type": "topojson",
+      "feature": "malaysian_states"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Week%209/data/Rivers_WQI.csv"
+        },
+        "key": "State",
+        "fields": [
+          "WQI_2017"
+        ]
+      }
+    },
+    {
+      "calculate": "datum.WQI_2017",
+      "as": "WQI"
+    }
+  ],
+  "projection": {
+    "type": "equirectangular"
+  },
+  "mark": {
+    "type": "geoshape"
+  },
+  "encoding": {
+    "color": {
+      "field": "WQI",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "properties.name",
+        "type": "nominal",
+        "title": "State"
+      },
+      {
+        "field": "WQI",
+        "type": "quantitative"
+      }
+    ]
+  }
+}

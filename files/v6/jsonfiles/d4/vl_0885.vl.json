@@ -1,0 +1,201 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Apple stock % annual change",
+    "subtitle": "",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 345,
+  "height": 345,
+  "config": {
+    "background": "#fff0d8"
+  },
+  "data": {
+    "values": [
+      {
+        "Year": "1981",
+        "Percent Gain or Loss": -0.35159999999999997
+      },
+      {
+        "Year": "1982",
+        "Percent Gain or Loss": 0.3503
+      },
+      {
+        "Year": "1983",
+        "Percent Gain or Loss": -0.1841
+      },
+      {
+        "Year": "1984",
+        "Percent Gain or Loss": 0.1949
+      },
+      {
+        "Year": "1985",
+        "Percent Gain or Loss": -0.2446
+      },
+      {
+        "Year": "1986",
+        "Percent Gain or Loss": 0.8409
+      },
+      {
+        "Year": "1987",
+        "Percent Gain or Loss": 1.0741
+      },
+      {
+        "Year": "1988",
+        "Percent Gain or Loss": -0.0417
+      },
+      {
+        "Year": "1989",
+        "Percent Gain or Loss": -0.1242
+      },
+      {
+        "Year": "1990",
+        "Percent Gain or Loss": 0.21989999999999998
+      },
+      {
+        "Year": "1991",
+        "Percent Gain or Loss": 0.311
+      },
+      {
+        "Year": "1992",
+        "Percent Gain or Loss": 0.0599
+      },
+      {
+        "Year": "1993",
+        "Percent Gain or Loss": -0.5105
+      },
+      {
+        "Year": "1994",
+        "Percent Gain or Loss": 0.3333
+      },
+      {
+        "Year": "1995",
+        "Percent Gain or Loss": -0.1827
+      },
+      {
+        "Year": "1996",
+        "Percent Gain or Loss": -0.34509999999999996
+      },
+      {
+        "Year": "1997",
+        "Percent Gain or Loss": -0.3713
+      },
+      {
+        "Year": "1998",
+        "Percent Gain or Loss": 2.119
+      },
+      {
+        "Year": "1999",
+        "Percent Gain or Loss": 1.5115
+      },
+      {
+        "Year": "2000",
+        "Percent Gain or Loss": -0.7106
+      },
+      {
+        "Year": "2001",
+        "Percent Gain or Loss": 0.47229999999999994
+      },
+      {
+        "Year": "2002",
+        "Percent Gain or Loss": -0.3457
+      },
+      {
+        "Year": "2003",
+        "Percent Gain or Loss": 0.4913
+      },
+      {
+        "Year": "2004",
+        "Percent Gain or Loss": 2.0136000000000003
+      },
+      {
+        "Year": "2005",
+        "Percent Gain or Loss": 1.2326000000000001
+      },
+      {
+        "Year": "2006",
+        "Percent Gain or Loss": 0.1801
+      },
+      {
+        "Year": "2007",
+        "Percent Gain or Loss": 1.3347
+      },
+      {
+        "Year": "2008",
+        "Percent Gain or Loss": -0.5690999999999999
+      },
+      {
+        "Year": "2009",
+        "Percent Gain or Loss": 1.469
+      },
+      {
+        "Year": "2010",
+        "Percent Gain or Loss": 0.5307
+      },
+      {
+        "Year": "2011",
+        "Percent Gain or Loss": 0.2556
+      },
+      {
+        "Year": "2012",
+        "Percent Gain or Loss": 0.314
+      },
+      {
+        "Year": "2013",
+        "Percent Gain or Loss": 0.0542
+      },
+      {
+        "Year": "2014",
+        "Percent Gain or Loss": 0.3772
+      },
+      {
+        "Year": "2015",
+        "Percent Gain or Loss": -0.0464
+      },
+      {
+        "Year": "2016",
+        "Percent Gain or Loss": 0.1003
+      },
+      {
+        "Year": "2017",
+        "Percent Gain or Loss": 0.4611
+      },
+      {
+        "Year": "2018",
+        "Percent Gain or Loss": -0.0679
+      },
+      {
+        "Year": "2019",
+        "Percent Gain or Loss": 0.8615999999999999
+      },
+      {
+        "Year": "2020",
+        "Percent Gain or Loss": 0.8075
+      },
+      {
+        "Year": "2021",
+        "Percent Gain or Loss": 0.3382
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "color": "#fe921f"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "Percent Gain or Loss",
+      "type": "quantitative",
+      "axis": {
+        "format": "%"
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "CPI - sources of inflation",
+    "subtitle": "Contributions to CPI all items by sub series",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "description": "CPI contribution",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/teaching2/main/cpiContributions.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "bar",
+    "width": 3
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "pickSeries"
+      }
+    }
+  ],
+  "selection": {
+    "pickSeries": {
+      "type": "single",
+      "fields": [
+        "series"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "AlcoholTobacco",
+          "ClothingFootwear",
+          "Communication",
+          "Education",
+          "Food",
+          "FurnitureHousehold",
+          "Health",
+          "HousingHouseService",
+          "Misc",
+          "RecreationCulture",
+          "RestaurantsHotels",
+          "Transport"
+        ],
+        "name": "Pick a series: "
+      }
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": ""
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": ""
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "legend": {
+        "orient": "bottom",
+        "columns": 2
+      },
+      "XYZscale": {
+        "range": [
+          "rgb(0, 0, 255)",
+          "rgb(40, 40, 255)",
+          "rgb(80, 80, 255)",
+          "rgb(120, 120, 255)",
+          "rgb(160, 160, 255)",
+          "rgb(200, 200, 255)"
+        ]
+      },
+      "scale": {
+        "range": [
+          "rgb(0, 0, 255)",
+          "rgb(20, 20, 255)",
+          "rgb(40, 40, 255)",
+          "rgb(60, 60, 255)",
+          "rgb(80, 80, 255)",
+          "rgb(100, 100, 255)",
+          "rgb(120, 120, 255)",
+          "rgb(140, 140, 255)",
+          "rgb(160, 160, 255)",
+          "rgb(180, 180, 255)",
+          "rgb(200, 200, 255)",
+          "rgb(200, 200, 255)"
+        ]
+      },
+      "title": ""
+    }
+  }
+}

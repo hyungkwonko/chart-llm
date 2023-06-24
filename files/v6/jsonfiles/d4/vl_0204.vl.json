@@ -1,0 +1,323 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {
+        "dataset_size": "1M",
+        "dataset": "flights",
+        "driver": "duckdb",
+        "meanDuration": 12.7984001828,
+        "countAnswered": 350040,
+        "durationCiLower": 12.7632030822,
+        "durationCiUpper": 12.8335972835,
+        "durationStd": 10.6246867556,
+        "countViolated": 0.0,
+        "responseRate": 0.9494154981
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "flights",
+        "driver": "monetdb",
+        "meanDuration": 4.6466989865,
+        "countAnswered": 266297,
+        "durationCiLower": 4.6397255527,
+        "durationCiUpper": 4.6536724203,
+        "durationStd": 1.8360299224,
+        "countViolated": 0.0,
+        "responseRate": 0.7222788793
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "flights",
+        "driver": "postgresql",
+        "meanDuration": 49.6392121936,
+        "countAnswered": 49403,
+        "durationCiLower": 49.5875247952,
+        "durationCiUpper": 49.690899592,
+        "durationStd": 5.8614167736,
+        "countViolated": 0.0,
+        "responseRate": 0.13399604
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "flights",
+        "driver": "sqlite",
+        "meanDuration": 116.713323695,
+        "countAnswered": 26284,
+        "durationCiLower": 115.9450655193,
+        "durationCiUpper": 117.4815818708,
+        "durationStd": 63.5455040164,
+        "countViolated": 11615.0,
+        "responseRate": 0.0397868128
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "flights",
+        "driver": "verdictdb",
+        "meanDuration": 14.529684974,
+        "countAnswered": 116911,
+        "durationCiLower": 14.4532475731,
+        "durationCiUpper": 14.606122375,
+        "durationStd": 13.3346312969,
+        "countViolated": 44.0,
+        "responseRate": 0.3169790339
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "movies",
+        "driver": "duckdb",
+        "meanDuration": 9.9982177235,
+        "countAnswered": 279979,
+        "durationCiLower": 9.9599435394,
+        "durationCiUpper": 10.0364919075,
+        "durationStd": 10.332816133,
+        "countViolated": 1.0,
+        "responseRate": 0.967275868
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "movies",
+        "driver": "monetdb",
+        "meanDuration": 3.8152013489,
+        "countAnswered": 237821,
+        "durationCiLower": 3.8055628654,
+        "durationCiUpper": 3.8248398324,
+        "durationStd": 2.3981895486,
+        "countViolated": 0.0,
+        "responseRate": 0.8216306789
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "movies",
+        "driver": "postgresql",
+        "meanDuration": 49.7640979955,
+        "countAnswered": 33675,
+        "durationCiLower": 49.3035374163,
+        "durationCiUpper": 50.2246585748,
+        "durationStd": 43.1198124712,
+        "countViolated": 877.0,
+        "responseRate": 0.1133114528
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "movies",
+        "driver": "sqlite",
+        "meanDuration": 103.670512955,
+        "countAnswered": 19066,
+        "durationCiLower": 102.1783045559,
+        "durationCiUpper": 105.1627213541,
+        "durationStd": 105.1195785225,
+        "countViolated": 2898.0,
+        "responseRate": 0.0558576611
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "movies",
+        "driver": "verdictdb",
+        "meanDuration": 12.9780373074,
+        "countAnswered": 92475,
+        "durationCiLower": 12.8899186314,
+        "durationCiUpper": 13.0661559833,
+        "durationStd": 13.6718208042,
+        "countViolated": 44.0,
+        "responseRate": 0.3193332182
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "weather",
+        "driver": "duckdb",
+        "meanDuration": 12.0232976492,
+        "countAnswered": 509751,
+        "durationCiLower": 11.9918368752,
+        "durationCiUpper": 12.0547584233,
+        "durationStd": 11.4603880817,
+        "countViolated": 5.0,
+        "responseRate": 0.9388002416
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "weather",
+        "driver": "monetdb",
+        "meanDuration": 4.4501154405,
+        "countAnswered": 399773,
+        "durationCiLower": 4.4431536975,
+        "durationCiUpper": 4.4570771835,
+        "durationStd": 2.2458218954,
+        "countViolated": 0.0,
+        "responseRate": 0.7362627446
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "weather",
+        "driver": "postgresql",
+        "meanDuration": 49.1993827785,
+        "countAnswered": 59298,
+        "durationCiLower": 49.1043495661,
+        "durationCiUpper": 49.2944159909,
+        "durationStd": 11.8069704675,
+        "countViolated": 172.0,
+        "responseRate": 0.1088924741
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "weather",
+        "driver": "sqlite",
+        "meanDuration": 107.3029443173,
+        "countAnswered": 32775,
+        "durationCiLower": 106.7516946384,
+        "durationCiUpper": 107.8541939962,
+        "durationStd": 50.9161514465,
+        "countViolated": 10411.0,
+        "responseRate": 0.0411878241
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "weather",
+        "driver": "verdictdb",
+        "meanDuration": 14.2781448177,
+        "countAnswered": 150907,
+        "durationCiLower": 14.2140388858,
+        "durationCiUpper": 14.3422507496,
+        "durationStd": 12.705780145,
+        "countViolated": 51.0,
+        "responseRate": 0.277831801
+      }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "round(datum.meanDuration) + 'ms'",
+      "as": "durationNice"
+    },
+    {
+      "calculate": "clamp(datum.meanDuration,0,407)",
+      "as": "durationTextPos"
+    }
+  ],
+  "facet": {
+    "row": {
+      "field": "dataset_size",
+      "type": "ordinal",
+      "title": "Dataset Size",
+      "header": {
+        "labelPadding": 2,
+        "titlePadding": 0
+      }
+    },
+    "column": {
+      "field": "dataset",
+      "type": "nominal",
+      "title": "Dataset",
+      "header": {
+        "labelPadding": 2,
+        "titlePadding": 0
+      }
+    }
+  },
+  "config": {
+    "facet": {
+      "spacing": 5
+    }
+  },
+  "spec": {
+    "height": 120,
+    "width": 100,
+    "layer": [
+      {
+        "mark": {
+          "type": "rule",
+          "color": "red"
+        },
+        "encoding": {
+          "x": {
+            "value": 28
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "bar",
+          "clip": true,
+          "height": 22
+        },
+        "encoding": {
+          "y": {
+            "field": "driver",
+            "type": "nominal",
+            "title": "DBMS"
+          },
+          "x": {
+            "field": "meanDuration",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                300
+              ]
+            },
+            "title": "Mean Duration"
+          },
+          "color": {
+            "field": "driver",
+            "type": "nominal",
+            "title": "DBMS",
+            "legend": null
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "errorbar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "field": "meanDuration",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                300
+              ]
+            },
+            "title": null
+          },
+          "xError": {
+            "field": "durationStd"
+          },
+          "y": {
+            "field": "driver",
+            "type": "nominal",
+            "title": "DBMS"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "clip": true,
+          "dy": -5,
+          "dx": 2
+        },
+        "encoding": {
+          "text": {
+            "field": "durationNice",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "driver",
+            "type": "nominal",
+            "title": "DBMS"
+          },
+          "x": {
+            "field": "durationTextPos",
+            "type": "quantitative"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Price adjustment - monthly",
+  "height": 300,
+  "width": 300,
+  "title": {
+    "text": "Price flexibility, by month",
+    "subtitle": [
+      "Share of prices changing month-on-month, 1990-2021",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/db_AdjustmentFrequency.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "timeParse(datum.date3, '%d-%m-%Y')",
+      "as": "date4"
+    },
+    {
+      "filter": {
+        "field": "year",
+        "gt": 1989
+      }
+    },
+    {
+      "filter": {
+        "field": "change_sh",
+        "lt": 0.4
+      }
+    }
+  ],
+  "mark": {
+    "type": "point",
+    "color": "rgba(0,67,167)",
+    "size": 90,
+    "opacity": 0.7
+  },
+  "selection": {
+    "paintbrush": {
+      "type": "multi",
+      "on": "mouseover",
+      "nearest": true
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "date4",
+      "type": "temporal",
+      "timeUnit": "month",
+      "title": null
+    },
+    "y": {
+      "field": "change_sh",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": [
+          0,
+          0.35
+        ]
+      }
+    },
+    "size": {
+      "condition": {
+        "test": {
+          "selection": "paintbrush"
+        },
+        "value": 150
+      },
+      "value": 90
+    },
+    "tooltip": [
+      {
+        "field": "date4",
+        "type": "temporal",
+        "format": "%b-%Y",
+        "title": "Date"
+      },
+      {
+        "field": "change_sh",
+        "type": "quantitative",
+        "format": ",.1%",
+        "title": "Price changes"
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Multiple line chart",
+  "width": "container",
+  "title": {
+    "text": "Average babies per woman, 1800-2018"
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder_dtfr.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "country",
+        "oneOf": [
+          "Iran",
+          "United States"
+        ]
+      }
+    }
+  ],
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "timeUnit": "year",
+      "axis": {
+        "title": null,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "fertilityRate",
+      "type": "quantitative",
+      "axis": {
+        "title": null
+      }
+    },
+    "color": {
+      "field": "country",
+      "type": "nominal",
+      "legend": {
+        "orient": "bottom",
+        "direction": "horizontal",
+        "title": null
+      }
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "fertilityRate",
+        "type": "quantitative",
+        "title": "Number of babies",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

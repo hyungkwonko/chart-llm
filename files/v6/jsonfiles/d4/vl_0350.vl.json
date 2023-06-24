@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "UK - household interest rates",
+    "subtitle": [
+      "Source: Bank of England. Series: IUMCCTL, IUMTLMV",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#cbc7cf",
+    "subtitleColor": "#cbc7cf"
+  },
+  "config": {
+    "background": "#122b39",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/interestRatesUK_household.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "creditCard",
+        "mortgage_revertTo"
+      ],
+      "as": [
+        "variable",
+        "value"
+      ]
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "date2",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "labelColor": "#cbc7cf"
+      }
+    },
+    "y": {
+      "field": "value",
+      "title": null,
+      "type": "quantitative",
+      "axis": {
+        "grid": false,
+        "gridColor": "aliceblue",
+        "gridWidth": 0.5,
+        "gridDash": 1,
+        "labelColor": "#cbc7cf"
+      }
+    },
+    "color": {
+      "field": "variable",
+      "title": null,
+      "scale": {
+        "range": [
+          "yellow",
+          "red"
+        ]
+      },
+      "legend": {
+        "orient": "bottom-left",
+        "labelColor": "#cbc7cf",
+        "labelExpr": "{'creditCard': 'Credit cards', 'mortgage_revertTo': 'Mortgages'}[datum.label]"
+      }
+    }
+  }
+}

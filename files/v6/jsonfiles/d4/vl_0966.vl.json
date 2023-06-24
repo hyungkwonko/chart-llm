@@ -1,0 +1,320 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart showing the US population distribution of age groups in 2000.",
+  "height": 150,
+  "width": 150,
+  "title": {
+    "text": "Best 25 ESG Companies 2021",
+    "subtitle": [
+      "Top stocks for environmental, social and goverance",
+      "values, Source: Investor's Business Daily"
+    ],
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "data": {
+    "values": [
+      {
+        "Rank_1-25": "Microsoft",
+        "ESG Score_1-25": "76.30",
+        "Rank_26-50": "ASML",
+        "ESG Score_26-50": "68.41",
+        "Rank_51-75": "Apple",
+        "ESG Score_51-75": "66.15**",
+        "Rank_76-100": "Abbott Labs",
+        "ESG Score_76-100": "63.51"
+      },
+      {
+        "Rank_1-25": "Linde",
+        "ESG Score_1-25": "76.00",
+        "Rank_26-50": "West Fraser Timber",
+        "ESG Score_26-50": "68.38",
+        "Rank_51-75": "Arcelor Mittal",
+        "ESG Score_51-75": "66.15",
+        "Rank_76-100": "Arista Networks",
+        "ESG Score_76-100": "63.50"
+      },
+      {
+        "Rank_1-25": "Accenture",
+        "ESG Score_1-25": "75.95",
+        "Rank_26-50": "Cabot",
+        "ESG Score_26-50": "68.10",
+        "Rank_51-75": "Fortinet",
+        "ESG Score_51-75": "66.07",
+        "Rank_76-100": "First Industrial Realty",
+        "ESG Score_76-100": "63.25"
+      },
+      {
+        "Rank_1-25": "J.B. Hunt",
+        "ESG Score_1-25": "74.14",
+        "Rank_26-50": "Moelis & Co.",
+        "ESG Score_26-50": "67.76",
+        "Rank_51-75": "Alphabet",
+        "ESG Score_51-75": "65.76",
+        "Rank_76-100": "Agilent",
+        "ESG Score_76-100": "63.23"
+      },
+      {
+        "Rank_1-25": "Xylem",
+        "ESG Score_1-25": "73.89",
+        "Rank_26-50": "Advansix",
+        "ESG Score_26-50": "67.76",
+        "Rank_51-75": "Simon Property Group",
+        "ESG Score_51-75": "65.40",
+        "Rank_76-100": "Waste Management",
+        "ESG Score_76-100": "63.21"
+      },
+      {
+        "Rank_1-25": "Texas Instruments",
+        "ESG Score_1-25": "73.14",
+        "Rank_26-50": "Advanced Micro Devices",
+        "ESG Score_26-50": "67.67",
+        "Rank_51-75": "Steel Dynamics",
+        "ESG Score_51-75": "65.39",
+        "Rank_76-100": "Danaher",
+        "ESG Score_76-100": "63.20"
+      },
+      {
+        "Rank_1-25": "Salesforce.com",
+        "ESG Score_1-25": "72.92",
+        "Rank_26-50": "Nike",
+        "ESG Score_26-50": "67.34",
+        "Rank_51-75": "Owens Corning",
+        "ESG Score_51-75": "65.36",
+        "Rank_76-100": "Darling Ingredients",
+        "ESG Score_76-100": "63.16"
+      },
+      {
+        "Rank_1-25": "Gildan Activewear",
+        "ESG Score_1-25": "72.84",
+        "Rank_26-50": "Artisan Partners",
+        "ESG Score_26-50": "67.10",
+        "Rank_51-75": "Brinks",
+        "ESG Score_51-75": "65.34",
+        "Rank_76-100": "Keysight Technologies",
+        "ESG Score_76-100": "63.07"
+      },
+      {
+        "Rank_1-25": "Metropolitan Bank",
+        "ESG Score_1-25": "72.68",
+        "Rank_26-50": "Ball Corp.",
+        "ESG Score_26-50": "67.05",
+        "Rank_51-75": "NetApp",
+        "ESG Score_51-75": "65.33",
+        "Rank_76-100": "Goldman Sachs",
+        "ESG Score_76-100": "62.93"
+      },
+      {
+        "Rank_1-25": "IHS Markit",
+        "ESG Score_1-25": "72.60",
+        "Rank_26-50": "Eaton",
+        "ESG Score_26-50": "66.95",
+        "Rank_51-75": "Ternium",
+        "ESG Score_51-75": "65.26",
+        "Rank_76-100": "Facebook",
+        "ESG Score_76-100": "62.86"
+      },
+      {
+        "Rank_1-25": "STMicroelectronics",
+        "ESG Score_1-25": "72.37",
+        "Rank_26-50": "Tradeweb Markets",
+        "ESG Score_26-50": "66.90",
+        "Rank_51-75": "Gartner",
+        "ESG Score_51-75": "65.20",
+        "Rank_76-100": "Wesco International",
+        "ESG Score_76-100": "62.81"
+      },
+      {
+        "Rank_1-25": "Nvidia",
+        "ESG Score_1-25": "72.19",
+        "Rank_26-50": "Applied Materials",
+        "ESG Score_26-50": "66.89",
+        "Rank_51-75": "Textron",
+        "ESG Score_51-75": "65.06",
+        "Rank_76-100": "Xilinx",
+        "ESG Score_76-100": "62.81"
+      },
+      {
+        "Rank_1-25": "Rogers",
+        "ESG Score_1-25": "72.08",
+        "Rank_26-50": "Fabrinet",
+        "ESG Score_26-50": "66.86",
+        "Rank_51-75": "Avery Dennison",
+        "ESG Score_51-75": "64.98",
+        "Rank_76-100": "Cadence Design Systems",
+        "ESG Score_76-100": "62.69"
+      },
+      {
+        "Rank_1-25": "Oracle",
+        "ESG Score_1-25": "71.14",
+        "Rank_26-50": "Vista Outdoor",
+        "ESG Score_26-50": "66.80",
+        "Rank_51-75": "Five Below",
+        "ESG Score_51-75": "64.86",
+        "Rank_76-100": "Semtech",
+        "ESG Score_76-100": "62.56"
+      },
+      {
+        "Rank_1-25": "Motorola Solutions",
+        "ESG Score_1-25": "70.81",
+        "Rank_26-50": "Qiagen",
+        "ESG Score_26-50": "66.73",
+        "Rank_51-75": "Chemours Co.",
+        "ESG Score_51-75": "64.58",
+        "Rank_76-100": "EBAY",
+        "ESG Score_76-100": "62.46"
+      },
+      {
+        "Rank_1-25": "Qualcomm",
+        "ESG Score_1-25": "70.53",
+        "Rank_26-50": "ASGN",
+        "ESG Score_26-50": "66.73",
+        "Rank_51-75": "Mattel",
+        "ESG Score_51-75": "64.54",
+        "Rank_76-100": "American Tower",
+        "ESG Score_76-100": "62.32"
+      },
+      {
+        "Rank_1-25": "Sherwin-Williams",
+        "ESG Score_1-25": "70.45",
+        "Rank_26-50": "Dover",
+        "ESG Score_26-50": "66.65",
+        "Rank_51-75": "Kimco Realty",
+        "ESG Score_51-75": "64.38",
+        "Rank_76-100": "Sun Communities",
+        "ESG Score_76-100": "62.29"
+      },
+      {
+        "Rank_1-25": "TE Connectivity",
+        "ESG Score_1-25": "70.38",
+        "Rank_26-50": "Thermo Fisher",
+        "ESG Score_26-50": "66.65",
+        "Rank_51-75": "Workday",
+        "ESG Score_51-75": "64.30",
+        "Rank_76-100": "Centerspace",
+        "ESG Score_76-100": "62.27"
+      },
+      {
+        "Rank_1-25": "Hewlett-Packard",
+        "ESG Score_1-25": "70.26",
+        "Rank_26-50": "American Financial Group",
+        "ESG Score_26-50": "66.54",
+        "Rank_51-75": "Yum Brands",
+        "ESG Score_51-75": "64.30",
+        "Rank_76-100": "Hologic",
+        "ESG Score_76-100": "62.26"
+      },
+      {
+        "Rank_1-25": "Exponent",
+        "ESG Score_1-25": "70.12",
+        "Rank_26-50": "CNH Industrial",
+        "ESG Score_26-50": "66.53",
+        "Rank_51-75": "Asbury Automotive",
+        "ESG Score_51-75": "64.10",
+        "Rank_76-100": "Flex",
+        "ESG Score_76-100": "62.25"
+      },
+      {
+        "Rank_1-25": "Adobe",
+        "ESG Score_1-25": "70.06",
+        "Rank_26-50": "Jabil",
+        "ESG Score_26-50": "66.52",
+        "Rank_51-75": "Northern Oil & Gas",
+        "ESG Score_51-75": "64.03",
+        "Rank_76-100": "Tractor Supply",
+        "ESG Score_76-100": "62.21"
+      },
+      {
+        "Rank_1-25": "Matson",
+        "ESG Score_1-25": "69.68",
+        "Rank_26-50": "Lam Research",
+        "ESG Score_26-50": "66.47",
+        "Rank_51-75": "Alexandria Real Estate Equities",
+        "ESG Score_51-75": "63.89",
+        "Rank_76-100": "Chipotle",
+        "ESG Score_76-100": "62.12"
+      },
+      {
+        "Rank_1-25": "Stellantis",
+        "ESG Score_1-25": "69.22",
+        "Rank_26-50": "Eli Lilly",
+        "ESG Score_26-50": "66.43",
+        "Rank_51-75": "Crane",
+        "ESG Score_51-75": "63.75",
+        "Rank_76-100": "Zoetis",
+        "ESG Score_76-100": "62.06"
+      },
+      {
+        "Rank_1-25": "Crown Holdings",
+        "ESG Score_1-25": "68.66",
+        "Rank_26-50": "ON Semiconductor",
+        "ESG Score_26-50": "66.27",
+        "Rank_51-75": "Mohawk Industries",
+        "ESG Score_51-75": "63.59",
+        "Rank_76-100": "Gentherm",
+        "ESG Score_76-100": "61.95"
+      },
+      {
+        "Rank_1-25": "Deere",
+        "ESG Score_1-25": "68.58",
+        "Rank_26-50": "Altair Engineering",
+        "ESG Score_26-50": "66.27",
+        "Rank_51-75": "Costco",
+        "ESG Score_51-75": "63.52",
+        "Rank_76-100": "Ameriprise",
+        "ESG Score_76-100": "61.89"
+      }
+    ]
+  },
+  "params": [
+    {
+      "name": "highlight",
+      "select": {
+        "type": "point",
+        "on": "mouseover"
+      }
+    },
+    {
+      "name": "select",
+      "select": "point"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "#86d0bb",
+    "size": 5,
+    "cursor": "pointer"
+  },
+  "encoding": {
+    "y": {
+      "field": "Rank_1-25",
+      "title": null,
+      "axis": {
+        "labelFontSize": 7
+      }
+    },
+    "fillOpacity": {
+      "condition": {
+        "param": "select",
+        "value": 1
+      },
+      "value": 0.3
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "ESG Score_1-25",
+      "title": "ESG score",
+      "axis": {
+        "grid": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "ESG Score_1-25",
+        "type": "quantitative",
+        "title": "ESG Score"
+      }
+    ]
+  }
+}

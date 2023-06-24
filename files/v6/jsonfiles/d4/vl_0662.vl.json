@@ -1,0 +1,286 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "An interactive scatter plot of global health statistics by country and year.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/refugee.json"
+  },
+  "width": 300,
+  "height": 300,
+  "layer": [
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "Country",
+            "equal": "Afghanistan"
+          }
+        },
+        {
+          "filter": {
+            "param": "Year"
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 100,
+        "x": 420,
+        "y": 250,
+        "opacity": 0.06
+      },
+      "encoding": {
+        "text": {
+          "field": "Year"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "lookup": "cluster",
+          "from": {
+            "key": "id",
+            "fields": [
+              "name"
+            ],
+            "data": {
+              "values": [
+                {
+                  "id": "Asia",
+                  "name": "Asia"
+                },
+                {
+                  "id": "Europe",
+                  "name": "Europe"
+                },
+                {
+                  "id": "Africa",
+                  "name": "Africa"
+                },
+                {
+                  "id": "Oceania",
+                  "name": "Oceania"
+                },
+                {
+                  "id": "South America",
+                  "name": "South America"
+                },
+                {
+                  "id": "North America",
+                  "name": "North America"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "refugees_asylum",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              4000000
+            ]
+          },
+          "axis": {
+            "tickCount": 10,
+            "title": "Refugees/Asylum Seekers Taken"
+          }
+        },
+        "y": {
+          "field": "GDP_CAP",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              250000
+            ]
+          },
+          "axis": {
+            "tickCount": 10,
+            "title": "GDP per Capita"
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "size": 4,
+            "color": "lightgray",
+            "strokeCap": "round"
+          },
+          "encoding": {
+            "detail": {
+              "field": "Country"
+            },
+            "order": {
+              "field": "Year"
+            },
+            "opacity": {
+              "condition": {
+                "test": {
+                  "or": [
+                    {
+                      "param": "hovered",
+                      "empty": false
+                    },
+                    {
+                      "param": "clicked",
+                      "empty": false
+                    }
+                  ]
+                },
+                "value": 0.8
+              },
+              "value": 0
+            }
+          }
+        },
+        {
+          "params": [
+            {
+              "name": "Year",
+              "value": [
+                {
+                  "Year": 2021
+                }
+              ],
+              "select": {
+                "type": "point",
+                "fields": [
+                  "Year"
+                ]
+              },
+              "bind": {
+                "name": "Year",
+                "input": "range",
+                "min": 1990,
+                "max": 2021,
+                "step": 1
+              }
+            },
+            {
+              "name": "hovered",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "Country"
+                ],
+                "toggle": false,
+                "on": "mouseover"
+              }
+            },
+            {
+              "name": "clicked",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "Country"
+                ]
+              }
+            }
+          ],
+          "transform": [
+            {
+              "filter": {
+                "param": "Year"
+              }
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "size": 100,
+            "opacity": 0.9
+          },
+          "encoding": {
+            "color": {
+              "field": "continent"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "and": [
+                  {
+                    "param": "Year"
+                  },
+                  {
+                    "or": [
+                      {
+                        "param": "clicked",
+                        "empty": false
+                      },
+                      {
+                        "param": "hovered",
+                        "empty": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "yOffset": -12,
+            "fontSize": 14,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "text": {
+              "field": "Country"
+            },
+            "color": {
+              "field": "name",
+              "title": "Region"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "hovered",
+                "empty": false
+              }
+            },
+            {
+              "filter": {
+                "not": {
+                  "param": "Year"
+                }
+              }
+            }
+          ],
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "yOffset": -12,
+                "fontSize": 0,
+                "color": "gray"
+              },
+              "encoding": {
+                "text": {
+                  "field": "Year"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "circle",
+                "color": "gray"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {}
+}

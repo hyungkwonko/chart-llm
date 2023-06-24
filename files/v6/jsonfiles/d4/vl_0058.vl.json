@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/demographicsUN.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "title": {
+    "text": "Aging populations",
+    "subtitle": "Share of popluation that is ages 65+. Source: UN. S Korea=blue",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "width": 10
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "Region"
+      }
+    }
+  ],
+  "selection": {
+    "Region": {
+      "type": "single",
+      "fields": [
+        "Region"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Australia",
+          "Bangladesh",
+          "Brazil",
+          "Canada",
+          "Chile",
+          "China",
+          "Democratic Republic of the Congo",
+          "France",
+          "India",
+          "Indonesia",
+          "Italy",
+          "France",
+          "Japan",
+          "Republic of Korea",
+          "Spain",
+          "United Kingdom",
+          "United States of America"
+        ],
+        "name": "Select a country"
+      }
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "sh_65+",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "Region",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "range": [
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "blue",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6"
+        ]
+      }
+    }
+  }
+}

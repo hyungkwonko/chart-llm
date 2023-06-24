@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Carbon Emissions Futures",
+    "subtitle": [
+      "Carbon emissions futures price per tonne in euros",
+      "Source: https://www.investing.com"
+    ],
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "width": 200,
+  "height": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/trial-chart-6.csv"
+  },
+  "transform": [
+    {
+      "window": [
+        {
+          "field": "Price",
+          "op": "mean",
+          "as": "rolling_mean"
+        }
+      ],
+      "frame": [
+        -15,
+        15
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "type": "quantitative",
+      "axis": {
+        "title": "Futures price (\u20ac/tonne) with 30-day rolling mean",
+        "grid": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Price",
+        "title": "\u20ac"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "gray"
+      },
+      "encoding": {
+        "y": {
+          "field": "Price",
+          "title": "Carbon Price"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "red",
+        "size": 3
+      },
+      "encoding": {
+        "y": {
+          "field": "rolling_mean"
+        }
+      }
+    }
+  ]
+}

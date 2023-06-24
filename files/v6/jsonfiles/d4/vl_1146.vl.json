@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "category": "GDP (PPP)",
+        "group": "Low",
+        "value": 18.19
+      },
+      {
+        "category": "GDP (PPP)",
+        "group": "Mid",
+        "value": 27
+      },
+      {
+        "category": "GDP (PPP)",
+        "group": "High",
+        "value": 68.36
+      },
+      {
+        "category": "GDP per capita",
+        "group": "Low",
+        "value": 22.95
+      },
+      {
+        "category": "GDP per capita",
+        "group": "Mid",
+        "value": 42.63
+      },
+      {
+        "category": "GDP per capita",
+        "group": "High",
+        "value": 48.91
+      },
+      {
+        "category": "Population",
+        "group": "Low",
+        "value": 27.1
+      },
+      {
+        "category": "Population",
+        "group": "Mid",
+        "value": 26.64
+      },
+      {
+        "category": "Population",
+        "group": "High",
+        "value": 60.23
+      },
+      {
+        "category": "Government expenditure",
+        "group": "Low",
+        "value": 18.67
+      },
+      {
+        "category": "Government expenditure",
+        "group": "Mid",
+        "value": 36.95
+      },
+      {
+        "category": "Government expenditure",
+        "group": "High",
+        "value": 57.95
+      },
+      {
+        "category": "Voice and Accountability",
+        "group": "Low",
+        "value": 17.57
+      },
+      {
+        "category": "Voice and Accountability",
+        "group": "Mid",
+        "value": 36.68
+      },
+      {
+        "category": "Voice and Accountability",
+        "group": "High",
+        "value": 59.27
+      }
+    ]
+  },
+  "width": 500,
+  "height": 500,
+  "mark": "bar",
+  "background": null,
+  "encoding": {
+    "x": {
+      "field": "category",
+      "title": ""
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Total points in World Cup finals",
+      "axis": {
+        "grid": false
+      }
+    },
+    "xOffset": {
+      "field": "group",
+      "sort": "ordinal"
+    },
+    "color": {
+      "field": "group",
+      "title": "Level",
+      "sort": [
+        "high",
+        "low",
+        "medium"
+      ]
+    },
+    "tooltip": {
+      "field": "value",
+      "type": "quantitative"
+    }
+  },
+  "config": {}
+}

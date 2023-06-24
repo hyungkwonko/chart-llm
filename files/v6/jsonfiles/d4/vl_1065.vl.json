@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mode": "vega-lite",
+  "description": "A population pyramid for the US in 2000, created using stack. See https://vega.github.io/vega-lite/examples/concat_population_pyramid.html for a variant of this created using concat.",
+  "data": {
+    "url": "https://vega.github.io/editor/data/population.json"
+  },
+  "transform": [
+    {
+      "filter": "datum.year == 2000"
+    },
+    {
+      "calculate": "datum.sex == 2 ? 'Female' : 'Male'",
+      "as": "gender"
+    },
+    {
+      "calculate": "datum.sex == 2 ? -datum.people : datum.people",
+      "as": "signed_people"
+    }
+  ],
+  "width": 500,
+  "height": 400,
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "opacity": {
+          "value": 1
+        },
+        "y": {
+          "field": "age",
+          "type": "ordinal",
+          "axis": null,
+          "sort": "descending"
+        },
+        "x": {
+          "aggregate": "sum",
+          "field": "signed_people",
+          "type": "quantitative",
+          "axis": {
+            "title": "population",
+            "format": "s"
+          }
+        },
+        "color": {
+          "field": "gender",
+          "type": "nominal",
+          "scale": {
+            "range": [
+              "#675193",
+              "#ca8861"
+            ]
+          },
+          "legend": {
+            "orient": "top",
+            "title": null
+          }
+        }
+      }
+    }
+  ]
+}

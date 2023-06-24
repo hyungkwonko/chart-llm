@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Real GDP growth relative to Crypto usage 2022",
+    "subtitle": [
+      "This graph illustares Real GDP growth of 55 countries relative to",
+      "the pecenatge of that country that use/own Cyptocurrenies"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/Data/GDP_BY_CRYPTO.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "color": "#3662f1",
+    "opacity": 0.7
+  },
+  "height": 300,
+  "width": 290,
+  "encoding": {
+    "x": {
+      "field": "Percentage of Population who own/use crypto",
+      "scale": {
+        "zero": false
+      },
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      },
+      "title": "% of Population who use/own Crypto"
+    },
+    "y": {
+      "field": "Real GDP growth (Annual percent change)",
+      "scale": {
+        "zero": false
+      },
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      },
+      "title": "Real GDP growth (% change)"
+    },
+    "size": {
+      "field": "Population (2021)",
+      "type": "quantitative",
+      "title": "Prison Rate",
+      "scale": {
+        "range": [
+          10,
+          800
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Reigon",
+        "type": "ordinal",
+        "title": "Reigon"
+      },
+      {
+        "field": "Population (2021)",
+        "type": "quantitative"
+      }
+    ]
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "config": {
+    "view": {
+      "height": 400,
+      "width": 50
+    },
+    "padding": 50
+  },
+  "mark": {
+    "binSpacing": 1,
+    "type": "bar"
+  },
+  "data": {
+    "values": [
+      {
+        "candidate_party": "Democrat",
+        "all_spending": 50000,
+        "count": 62
+      },
+      {
+        "candidate_party": "Democrat",
+        "all_spending": 150000,
+        "count": 28
+      },
+      {
+        "candidate_party": "Democrat",
+        "all_spending": 250000,
+        "count": 19
+      },
+      {
+        "candidate_party": "Democrat",
+        "all_spending": 350000,
+        "count": 11
+      },
+      {
+        "candidate_party": "Democrat",
+        "all_spending": 450000,
+        "count": 17
+      },
+      {
+        "candidate_party": "Democrat",
+        "all_spending": 550000,
+        "count": 16
+      },
+      {
+        "candidate_party": "Democrat",
+        "all_spending": 650000,
+        "count": 13
+      },
+      {
+        "candidate_party": "Democrat",
+        "all_spending": 750000,
+        "count": 14
+      },
+      {
+        "candidate_party": "Democrat",
+        "all_spending": 850000,
+        "count": 17
+      },
+      {
+        "candidate_party": "Democrat",
+        "all_spending": 950000,
+        "count": 17
+      },
+      {
+        "candidate_party": "Republican",
+        "all_spending": 50000,
+        "count": 76
+      },
+      {
+        "candidate_party": "Republican",
+        "all_spending": 150000,
+        "count": 8
+      },
+      {
+        "candidate_party": "Republican",
+        "all_spending": 250000,
+        "count": 9
+      },
+      {
+        "candidate_party": "Republican",
+        "all_spending": 350000,
+        "count": 8
+      },
+      {
+        "candidate_party": "Republican",
+        "all_spending": 450000,
+        "count": 11
+      },
+      {
+        "candidate_party": "Republican",
+        "all_spending": 550000,
+        "count": 8
+      },
+      {
+        "candidate_party": "Republican",
+        "all_spending": 650000,
+        "count": 11
+      },
+      {
+        "candidate_party": "Republican",
+        "all_spending": 750000,
+        "count": 13
+      },
+      {
+        "candidate_party": "Republican",
+        "all_spending": 850000,
+        "count": 13
+      },
+      {
+        "candidate_party": "Republican",
+        "all_spending": 950000,
+        "count": 13
+      },
+      {
+        "candidate_party": "_AllOthers",
+        "all_spending": 50000,
+        "count": 24
+      },
+      {
+        "candidate_party": "_AllOthers",
+        "all_spending": 150000,
+        "count": 1
+      },
+      {
+        "candidate_party": "_AllOthers",
+        "all_spending": 250000,
+        "count": 2
+      },
+      {
+        "candidate_party": "_AllOthers",
+        "all_spending": 350000,
+        "count": 1
+      },
+      {
+        "candidate_party": "_AllOthers",
+        "all_spending": 450000,
+        "count": 0
+      },
+      {
+        "candidate_party": "_AllOthers",
+        "all_spending": 550000,
+        "count": 0
+      },
+      {
+        "candidate_party": "_AllOthers",
+        "all_spending": 650000,
+        "count": 1
+      },
+      {
+        "candidate_party": "_AllOthers",
+        "all_spending": 750000,
+        "count": 1
+      },
+      {
+        "candidate_party": "_AllOthers",
+        "all_spending": 850000,
+        "count": 1
+      },
+      {
+        "candidate_party": "_AllOthers",
+        "all_spending": 950000,
+        "count": 0
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Distribution of Spending By Party (< $1,000,000)",
+  "encoding": {
+    "color": {
+      "field": "candidate_party",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "candidate_party",
+      "type": "nominal",
+      "axis": {
+        "title": ""
+      }
+    },
+    "column": {
+      "field": "all_spending",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": {
+        "title": "# Candidates"
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "UK CPI data visualisation",
+  "title": {
+    "text": "This month - top risers",
+    "subtitle": "Hover for item detail. Bubble size based on median price",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/prices/8357f5fba93bec983b3e606cee4ae40ecb0b4433/dbLatestRelease.csv"
+  },
+  "height": 400,
+  "width": 300,
+  "selection": {
+    "paintbrush": {
+      "type": "multi",
+      "on": "mouseover",
+      "nearest": true
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.down_sh*(-1)",
+      "as": "down"
+    },
+    {
+      "filter": "datum.upRank>550"
+    }
+  ],
+  "mark": {
+    "type": "circle",
+    "opacity": 0.8,
+    "color": "#f4a245",
+    "size": 60
+  },
+  "encoding": {
+    "y": {
+      "field": "upRank",
+      "type": "quantitative",
+      "axis": {
+        "grid": false,
+        "labels": false
+      },
+      "scale": {
+        "zero": false
+      },
+      "title": null
+    },
+    "x": {
+      "field": "up_sh",
+      "type": "quantitative",
+      "axis": {
+        "grid": false,
+        "format": ",.0%"
+      },
+      "scale": {
+        "zero": true
+      },
+      "title": "Share of prices rising"
+    },
+    "size": {
+      "field": "p",
+      "type": "quantitative",
+      "title": "Price",
+      "legend": {
+        "orient": "bottom-left"
+      }
+    },
+    "color": {
+      "field": "name1",
+      "type": "ordinal",
+      "title": "Item type",
+      "legend": {
+        "orient": "top-left"
+      },
+      "scale": {
+        "scheme": "set1"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "item_desc",
+        "type": "nominal",
+        "title": "Description"
+      },
+      {
+        "field": "p",
+        "type": "quantitative",
+        "title": "Price (median)",
+        "format": ".0f"
+      },
+      {
+        "field": "up_sh",
+        "type": "quantitative",
+        "title": "Share rising",
+        "format": ",.2%"
+      },
+      {
+        "field": "down_sh",
+        "type": "quantitative",
+        "title": "Share falling",
+        "format": ",.2%"
+      }
+    ]
+  }
+}

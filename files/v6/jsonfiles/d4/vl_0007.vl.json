@@ -1,0 +1,74 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "hconcat": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv"
+      },
+      "mark": "rect",
+      "encoding": {
+        "color": {
+          "aggregate": "count",
+          "type": "quantitative"
+        },
+        "x": {
+          "bin": {
+            "maxbins": 10
+          },
+          "field": "Total Floors",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Agency Name",
+          "type": "ordinal"
+        }
+      },
+      "height": 400,
+      "selection": {
+        "selector002": {
+          "type": "interval",
+          "encodings": [
+            "x",
+            "y"
+          ]
+        }
+      },
+      "width": 300
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv"
+      },
+      "mark": "bar",
+      "encoding": {
+        "color": {
+          "value": "orange"
+        },
+        "x": {
+          "field": "Year Constructed",
+          "type": "ordinal"
+        },
+        "y": {
+          "aggregate": "count",
+          "field": "Year Constructed",
+          "type": "quantitative"
+        }
+      },
+      "height": 400,
+      "transform": [
+        {
+          "filter": {
+            "selection": "selector002"
+          }
+        }
+      ],
+      "width": 1500
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
+}

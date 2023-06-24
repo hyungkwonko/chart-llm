@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Google's stock price over time.",
+  "padding": 5,
+  "params": [
+    {
+      "name": "labels",
+      "value": {
+        "ref1": "My first cool Label",
+        "ref2": "My second cool label"
+      }
+    }
+  ],
+  "data": {
+    "values": [
+      {
+        "labelRef": "ref1",
+        "when": 1668726000,
+        "value": 100
+      },
+      {
+        "labelRef": "ref1",
+        "when": 1668727000,
+        "value": 200
+      },
+      {
+        "labelRef": "ref1",
+        "when": 1668725000,
+        "value": 80
+      },
+      {
+        "labelRef": "ref2",
+        "when": 1668726000,
+        "value": 70
+      },
+      {
+        "labelRef": "ref2",
+        "when": 1668727000,
+        "value": 80
+      },
+      {
+        "labelRef": "ref2",
+        "when": 1668725000,
+        "value": 110
+      }
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "interpolate": "monotone",
+    "point": {
+      "filled": false,
+      "fill": "white"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "when",
+      "type": "temporal",
+      "title": "T"
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "V"
+    },
+    "color": {
+      "field": "labelRef",
+      "type": "nominal",
+      "scale": {
+        "range": [
+          "green",
+          "blue"
+        ]
+      },
+      "legend": {
+        "title": "Test",
+        "labelExpr": "labels[datum.value]"
+      }
+    }
+  },
+  "title": "Foo Bar"
+}

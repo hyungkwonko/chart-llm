@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 400,
+  "autosize": {
+    "type": "fit",
+    "contains": "content",
+    "resize": true
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/nychealth/EHDP-data/production/neighborhood-reports/data/Active_Design_Physical_Activity_and_Health_data.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.data_field_name === 'obesityP'"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": false,
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "time",
+          "title": "Time Period",
+          "type": "ordinal",
+          "axis": {
+            "title": null,
+            "labelAngle": 45
+          }
+        },
+        "y": {
+          "field": "data_value",
+          "title": "Value",
+          "type": "quantitative",
+          "axis": {
+            "title": null
+          }
+        },
+        "detail": {
+          "field": "neighborhood",
+          "title": "Neighborhood",
+          "type": "nominal"
+        },
+        "color": {
+          "value": "lightgrey"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "point": true,
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "time",
+          "title": "Time Period",
+          "type": "ordinal",
+          "axis": {
+            "title": null,
+            "labelAngle": 45
+          }
+        },
+        "y": {
+          "field": "data_value",
+          "title": "Value",
+          "type": "quantitative",
+          "axis": {
+            "title": null
+          }
+        },
+        "detail": {
+          "field": "neighborhood",
+          "title": "Neighborhood",
+          "type": "nominal"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.neighborhood=='Canarsie - Flatlands'",
+            "value": "#1CA970"
+          },
+          "value": null
+        }
+      }
+    }
+  ]
+}

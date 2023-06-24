@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/COG-UK/UK-lineage-dynamics-analysis/2ca84630ab1fb80b949d25b05b6578fa9674f574/analyses/epidemiological/results/sim-study-3-reestimates.csv"
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "alpha",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "beta",
+      "type": "quantitative",
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "field": "exit_code",
+      "type": "nominal"
+    }
+  },
+  "config": {
+    "legend": {
+      "disable": true
+    }
+  }
+}

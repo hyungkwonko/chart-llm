@@ -1,0 +1,104 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/mleo0010/FIT3179-DataVis2-ML/main/data/tennis_handedness_data.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.winner_hand == 'Left-handed' || datum.winner_hand == 'Right-handed'"
+    },
+    {
+      "calculate": "datum.winner_hand",
+      "as": "Hand"
+    },
+    {
+      "calculate": "datum.percent",
+      "as": "Percentage"
+    }
+  ],
+  "encoding": {
+    "color": {
+      "field": "Hand",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Left-handed",
+          "Right-handed"
+        ],
+        "range": [
+          "#3cb5a3",
+          "#74aacc"
+        ]
+      }
+    },
+    "theta": {
+      "field": "Percentage",
+      "type": "quantitative",
+      "stack": true
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "outerRadius": 100
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "winner_hand",
+            "type": "nominal",
+            "title": "Hand"
+          },
+          {
+            "field": "Percentage",
+            "format": ".2%"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 130,
+        "fontSize": 12
+      },
+      "encoding": {
+        "text": {
+          "field": "winner_hand",
+          "type": "nominal",
+          "title": "Hand"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 60,
+        "fontSize": 12
+      },
+      "encoding": {
+        "angle": {
+          "value": 0
+        },
+        "theta": {
+          "field": "percent",
+          "type": "quantitative",
+          "stack": true
+        },
+        "text": {
+          "field": "percent",
+          "type": "nominal",
+          "format": ".2%"
+        },
+        "color": {
+          "value": "white"
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": "#fffcf9"
+  }
+}

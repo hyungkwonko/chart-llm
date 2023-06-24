@@ -1,0 +1,431 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "hconcat": [
+    {
+      "data": {
+        "name": "data-a35cd4f1cf3964de26f740fa89d58843"
+      },
+      "mark": {
+        "type": "circle",
+        "size": 100
+      },
+      "encoding": {
+        "color": {
+          "type": "ordinal",
+          "field": "year",
+          "legend": {
+            "columns": 3,
+            "symbolLimit": 0
+          },
+          "scale": {
+            "scheme": "plasma"
+          }
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "digital_humanities_counts"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "humanities_computing_counts"
+        }
+      },
+      "width": 250
+    },
+    {
+      "data": {
+        "name": "data-da521bd453e5e0e45ab1db34fdfb3de8"
+      },
+      "mark": "line",
+      "encoding": {
+        "color": {
+          "type": "nominal",
+          "field": "variable"
+        },
+        "x": {
+          "type": "temporal",
+          "field": "year"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "value"
+        }
+      },
+      "width": 250
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-a35cd4f1cf3964de26f740fa89d58843": [
+      {
+        "digital_humanities_counts": 0,
+        "humanities_computing_counts": 98,
+        "year": "1987"
+      },
+      {
+        "digital_humanities_counts": 0,
+        "humanities_computing_counts": 55,
+        "year": "1988"
+      },
+      {
+        "digital_humanities_counts": 0,
+        "humanities_computing_counts": 107,
+        "year": "1989"
+      },
+      {
+        "digital_humanities_counts": 0,
+        "humanities_computing_counts": 29,
+        "year": "1990"
+      },
+      {
+        "digital_humanities_counts": 0,
+        "humanities_computing_counts": 49,
+        "year": "1991"
+      },
+      {
+        "digital_humanities_counts": 0,
+        "humanities_computing_counts": 71,
+        "year": "1992"
+      },
+      {
+        "digital_humanities_counts": 0,
+        "humanities_computing_counts": 41,
+        "year": "1993"
+      },
+      {
+        "digital_humanities_counts": 0,
+        "humanities_computing_counts": 28,
+        "year": "1994"
+      },
+      {
+        "digital_humanities_counts": 0,
+        "humanities_computing_counts": 105,
+        "year": "1995"
+      },
+      {
+        "digital_humanities_counts": 0,
+        "humanities_computing_counts": 82,
+        "year": "1996"
+      },
+      {
+        "digital_humanities_counts": 1,
+        "humanities_computing_counts": 87,
+        "year": "1997"
+      },
+      {
+        "digital_humanities_counts": 0,
+        "humanities_computing_counts": 84,
+        "year": "1998"
+      },
+      {
+        "digital_humanities_counts": 0,
+        "humanities_computing_counts": 184,
+        "year": "1999"
+      },
+      {
+        "digital_humanities_counts": 3,
+        "humanities_computing_counts": 128,
+        "year": "2000"
+      },
+      {
+        "digital_humanities_counts": 1,
+        "humanities_computing_counts": 168,
+        "year": "2001"
+      },
+      {
+        "digital_humanities_counts": 2,
+        "humanities_computing_counts": 109,
+        "year": "2002"
+      },
+      {
+        "digital_humanities_counts": 2,
+        "humanities_computing_counts": 112,
+        "year": "2003"
+      },
+      {
+        "digital_humanities_counts": 6,
+        "humanities_computing_counts": 150,
+        "year": "2004"
+      },
+      {
+        "digital_humanities_counts": 35,
+        "humanities_computing_counts": 95,
+        "year": "2005"
+      },
+      {
+        "digital_humanities_counts": 81,
+        "humanities_computing_counts": 93,
+        "year": "2006"
+      },
+      {
+        "digital_humanities_counts": 74,
+        "humanities_computing_counts": 48,
+        "year": "2007"
+      }
+    ],
+    "data-da521bd453e5e0e45ab1db34fdfb3de8": [
+      {
+        "dates": "1987-1988",
+        "variable": "humanities_computing_counts",
+        "value": 98,
+        "year": "1987"
+      },
+      {
+        "dates": "1988-1989",
+        "variable": "humanities_computing_counts",
+        "value": 55,
+        "year": "1988"
+      },
+      {
+        "dates": "1989-1990",
+        "variable": "humanities_computing_counts",
+        "value": 107,
+        "year": "1989"
+      },
+      {
+        "dates": "1990-1991",
+        "variable": "humanities_computing_counts",
+        "value": 29,
+        "year": "1990"
+      },
+      {
+        "dates": "1991-1992",
+        "variable": "humanities_computing_counts",
+        "value": 49,
+        "year": "1991"
+      },
+      {
+        "dates": "1992-1993",
+        "variable": "humanities_computing_counts",
+        "value": 71,
+        "year": "1992"
+      },
+      {
+        "dates": "1993-1994",
+        "variable": "humanities_computing_counts",
+        "value": 41,
+        "year": "1993"
+      },
+      {
+        "dates": "1994-1995",
+        "variable": "humanities_computing_counts",
+        "value": 28,
+        "year": "1994"
+      },
+      {
+        "dates": "1995-1996",
+        "variable": "humanities_computing_counts",
+        "value": 105,
+        "year": "1995"
+      },
+      {
+        "dates": "1996-1997",
+        "variable": "humanities_computing_counts",
+        "value": 82,
+        "year": "1996"
+      },
+      {
+        "dates": "1997-1998",
+        "variable": "humanities_computing_counts",
+        "value": 87,
+        "year": "1997"
+      },
+      {
+        "dates": "1998-1999",
+        "variable": "humanities_computing_counts",
+        "value": 84,
+        "year": "1998"
+      },
+      {
+        "dates": "1999-2000",
+        "variable": "humanities_computing_counts",
+        "value": 184,
+        "year": "1999"
+      },
+      {
+        "dates": "2000-2001",
+        "variable": "humanities_computing_counts",
+        "value": 128,
+        "year": "2000"
+      },
+      {
+        "dates": "2001-2002",
+        "variable": "humanities_computing_counts",
+        "value": 168,
+        "year": "2001"
+      },
+      {
+        "dates": "2002-2003",
+        "variable": "humanities_computing_counts",
+        "value": 109,
+        "year": "2002"
+      },
+      {
+        "dates": "2003-2004",
+        "variable": "humanities_computing_counts",
+        "value": 112,
+        "year": "2003"
+      },
+      {
+        "dates": "2004-2005",
+        "variable": "humanities_computing_counts",
+        "value": 150,
+        "year": "2004"
+      },
+      {
+        "dates": "2005-2006",
+        "variable": "humanities_computing_counts",
+        "value": 95,
+        "year": "2005"
+      },
+      {
+        "dates": "2006-2007",
+        "variable": "humanities_computing_counts",
+        "value": 93,
+        "year": "2006"
+      },
+      {
+        "dates": "2007-2008",
+        "variable": "humanities_computing_counts",
+        "value": 48,
+        "year": "2007"
+      },
+      {
+        "dates": "1987-1988",
+        "variable": "digital_humanities_counts",
+        "value": 0,
+        "year": "1987"
+      },
+      {
+        "dates": "1988-1989",
+        "variable": "digital_humanities_counts",
+        "value": 0,
+        "year": "1988"
+      },
+      {
+        "dates": "1989-1990",
+        "variable": "digital_humanities_counts",
+        "value": 0,
+        "year": "1989"
+      },
+      {
+        "dates": "1990-1991",
+        "variable": "digital_humanities_counts",
+        "value": 0,
+        "year": "1990"
+      },
+      {
+        "dates": "1991-1992",
+        "variable": "digital_humanities_counts",
+        "value": 0,
+        "year": "1991"
+      },
+      {
+        "dates": "1992-1993",
+        "variable": "digital_humanities_counts",
+        "value": 0,
+        "year": "1992"
+      },
+      {
+        "dates": "1993-1994",
+        "variable": "digital_humanities_counts",
+        "value": 0,
+        "year": "1993"
+      },
+      {
+        "dates": "1994-1995",
+        "variable": "digital_humanities_counts",
+        "value": 0,
+        "year": "1994"
+      },
+      {
+        "dates": "1995-1996",
+        "variable": "digital_humanities_counts",
+        "value": 0,
+        "year": "1995"
+      },
+      {
+        "dates": "1996-1997",
+        "variable": "digital_humanities_counts",
+        "value": 0,
+        "year": "1996"
+      },
+      {
+        "dates": "1997-1998",
+        "variable": "digital_humanities_counts",
+        "value": 1,
+        "year": "1997"
+      },
+      {
+        "dates": "1998-1999",
+        "variable": "digital_humanities_counts",
+        "value": 0,
+        "year": "1998"
+      },
+      {
+        "dates": "1999-2000",
+        "variable": "digital_humanities_counts",
+        "value": 0,
+        "year": "1999"
+      },
+      {
+        "dates": "2000-2001",
+        "variable": "digital_humanities_counts",
+        "value": 3,
+        "year": "2000"
+      },
+      {
+        "dates": "2001-2002",
+        "variable": "digital_humanities_counts",
+        "value": 1,
+        "year": "2001"
+      },
+      {
+        "dates": "2002-2003",
+        "variable": "digital_humanities_counts",
+        "value": 2,
+        "year": "2002"
+      },
+      {
+        "dates": "2003-2004",
+        "variable": "digital_humanities_counts",
+        "value": 2,
+        "year": "2003"
+      },
+      {
+        "dates": "2004-2005",
+        "variable": "digital_humanities_counts",
+        "value": 6,
+        "year": "2004"
+      },
+      {
+        "dates": "2005-2006",
+        "variable": "digital_humanities_counts",
+        "value": 35,
+        "year": "2005"
+      },
+      {
+        "dates": "2006-2007",
+        "variable": "digital_humanities_counts",
+        "value": 81,
+        "year": "2006"
+      },
+      {
+        "dates": "2007-2008",
+        "variable": "digital_humanities_counts",
+        "value": 74,
+        "year": "2007"
+      }
+    ]
+  }
+}

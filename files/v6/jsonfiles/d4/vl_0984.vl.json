@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "CPI",
+    "subtitle": [
+      "CPIH index: all items 2015 = 100. Source: ONS"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 175,
+  "height": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/data_ONS-L522.json",
+    "format": {
+      "type": "json",
+      "property": "years"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "color": "#86d0bb",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "transform": [
+    {
+      "filter": "datum.year>minYear"
+    },
+    {
+      "filter": "datum.year<maxYear"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1988,
+      "bind": {
+        "input": "range",
+        "min": 1988,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1988,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Index",
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

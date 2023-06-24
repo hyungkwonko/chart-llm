@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jamesFKean/jamesFKean.github.io/8e86d8e18564d683ea958027f2639d2cc345aca4/coalbar.csv"
+  },
+  "background": "#fff0d8",
+  "vconcat": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "Country",
+          "sort": {
+            "field": "Total",
+            "order": "descending"
+          }
+        },
+        "y": {
+          "field": "Exajoules",
+          "aggregate": "sum"
+        },
+        "color": {
+          "field": "Fuel type",
+          "scale": {
+            "domain": [
+              "Coal",
+              "Oil",
+              "Renewables",
+              "Hydro electric",
+              "Nuclear energy",
+              "Natural Gas"
+            ],
+            "range": [
+              "darkred",
+              "Orange",
+              "darkorange",
+              "#7C521F",
+              "#997C2E",
+              "#B5A437",
+              "#A46C4C",
+              "#824d2f"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Fuel type",
+            "type": "nominal"
+          },
+          {
+            "field": "Exajoules",
+            "type": "quantitative",
+            "format": "0.2f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "Country",
+          "sort": {
+            "field": "Total",
+            "order": "descending"
+          }
+        },
+        "y": {
+          "field": "Percentages",
+          "aggregate": "sum",
+          "axis": {
+            "format": "%"
+          }
+        },
+        "color": {
+          "field": "Fuel type"
+        },
+        "tooltip": [
+          {
+            "field": "Fuel type",
+            "type": "nominal"
+          },
+          {
+            "field": "Percentages",
+            "type": "quantitative",
+            "format": "%"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "PL Team Expenditure, 2014-2022",
+    "fontSize": 18,
+    "subtitle": [
+      "Figure 2: hover over bars for team names.",
+      "Source: Transfermarkt"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "description": "Football Data",
+  "data": {
+    "url": "https://raw.githubusercontent.com/josh-shah/josh-shah.github.io/main/season_expenditure_final.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 300,
+  "width": "container",
+  "mark": {
+    "type": "bar"
+  },
+  "selection": {
+    "Team": {
+      "type": "single",
+      "fields": [
+        "Team"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Arsenal",
+          "Aston Villa",
+          "Bournemouth",
+          "Brentford FC",
+          "Brighton & Hove Albion",
+          "Burnley",
+          "Cardiff City",
+          "Chelsea FC",
+          "Crystal Palace",
+          "Everton FC",
+          "Fulham FC",
+          "Huddersfield Town",
+          "Hull City",
+          "Leeds United",
+          "Leicester City",
+          "Liverpool FC",
+          "Manchester City",
+          "Manchester United",
+          "Middlesbrough",
+          "Newcastle United",
+          "Norwich City",
+          "Nottingham Forest",
+          "Queens Park Rangers",
+          "Sheffield United",
+          "Southampton FC",
+          "Stoke City",
+          "Sunderland",
+          "Swansea City",
+          "Tottenham Hotspur",
+          "Watford",
+          "West Ham United",
+          "Wolverhampton Wanderers"
+        ],
+        "name": "Select a Team: "
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "Team"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "nominal",
+      "title": null,
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "Expenditure",
+      "type": "quantitative",
+      "title": "Expenditure (\u00a3 millions)",
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "Team",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "scheme": "plasma"
+      }
+    },
+    "order": {
+      "aggregate": "sum",
+      "field": "Expendtiure"
+    },
+    "tooltip": [
+      {
+        "field": "Team",
+        "type": "nominal",
+        "title": "Team"
+      },
+      {
+        "field": "Expenditure",
+        "type": "quantitative",
+        "title": "Total Expenditure (\u00a3M)"
+      }
+    ]
+  }
+}

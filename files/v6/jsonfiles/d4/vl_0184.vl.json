@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 350,
+  "width": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/T21_C3.csv"
+  },
+  "mark": {
+    "type": "line",
+    "color": "#e54753"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "date",
+        "type": "temporal",
+        "title": "Year",
+        "timeUnit": "yearmonth"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Irish punt to UK sterling exchange rate (%)"
+      }
+    ]
+  }
+}

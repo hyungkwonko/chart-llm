@@ -1,0 +1,177 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axisX": {
+      "domain": true,
+      "domainColor": "#023B7F",
+      "domainWidth": 1,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 12,
+      "tickColor": "#023B7F",
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 12,
+      "titlePadding": 10
+    },
+    "axisY": {
+      "domain": false,
+      "grid": true,
+      "gridColor": "#023B7F",
+      "gridWidth": 1,
+      "labelAngle": 0,
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 12,
+      "ticks": false,
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 12,
+      "titlePadding": 10
+    },
+    "mark": {
+      "color": "#4279C1",
+      "fill": "#7EB7FD"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#023B7F",
+      "font": "Helvetica Neue",
+      "fontSize": 18
+    },
+    "view": {
+      "height": 300,
+      "stroke": "#4279C1",
+      "width": 300
+    }
+  },
+  "data": {
+    "name": "data-a66e127ff94e8c6ac1ab87b62210f411"
+  },
+  "datasets": {
+    "data-a66e127ff94e8c6ac1ab87b62210f411": [
+      {
+        "team": "Virginia A",
+        "team_tournament": "2014 Virginia A",
+        "tournament": "ACF Nationals 2014",
+        "tupg": 15.0
+      },
+      {
+        "team": "Michigan A",
+        "team_tournament": "2016 Michigan A",
+        "tournament": "ACF Nationals 2016",
+        "tupg": 13.75
+      },
+      {
+        "team": "Chicago A",
+        "team_tournament": "2016 Chicago A",
+        "tournament": "ACF Nationals 2016",
+        "tupg": 13.65
+      },
+      {
+        "team": "Virginia A",
+        "team_tournament": "2015 Virginia A",
+        "tournament": "ACF Nationals 2015",
+        "tupg": 13.3
+      },
+      {
+        "team": "Stanford A",
+        "team_tournament": "2010 Stanford A",
+        "tournament": "ACF Nationals 2010",
+        "tupg": 13.26
+      },
+      {
+        "team": "Chicago A",
+        "team_tournament": "2007 Chicago A",
+        "tournament": "ACF Nationals 2007",
+        "tupg": 13.25
+      },
+      {
+        "team": "Penn A",
+        "team_tournament": "2014 Penn A",
+        "tournament": "ACF Nationals 2014",
+        "tupg": 12.95
+      },
+      {
+        "team": "Penn A",
+        "team_tournament": "2015 Penn A",
+        "tournament": "ACF Nationals 2015",
+        "tupg": 12.9
+      },
+      {
+        "team": "Minnesota A",
+        "team_tournament": "2010 Minnesota A",
+        "tournament": "ACF Nationals 2010",
+        "tupg": 12.79
+      },
+      {
+        "team": "Yale A",
+        "team_tournament": "2012 Yale A",
+        "tournament": "ACF Nationals 2012",
+        "tupg": 12.62
+      }
+    ]
+  },
+  "encoding": {
+    "fill": {
+      "field": "team",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Virginia A",
+          "Chicago A",
+          "Michigan A",
+          "Penn A",
+          "Yale A",
+          "Stanford A",
+          "Minnesota A"
+        ],
+        "range": [
+          "#F84C1E",
+          "#8B1F41",
+          "#FFCB05",
+          "#045ea7",
+          "#00356B",
+          "#B1040E",
+          "#7A0019"
+        ]
+      },
+      "title": "Team",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "team",
+        "type": "nominal"
+      },
+      {
+        "field": "tournament",
+        "type": "nominal"
+      },
+      {
+        "field": "tupg",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "labelAngle": 315
+      },
+      "field": "team_tournament",
+      "sort": [
+        "ppg"
+      ],
+      "title": "Team",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "tupg",
+      "title": "Tossups per game",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar",
+  "title": "Highest Tournament TU/G"
+}

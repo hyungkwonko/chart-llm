@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/RA_work/main/underemployment1.csv"
+  },
+  "title": {
+    "text": "Underemployed % of Labor Force",
+    "anchor": "start",
+    "subtitle": "Sources: FRED & ONS"
+  },
+  "width": 400,
+  "height": 300,
+  "params": [
+    {
+      "name": "View",
+      "select": {
+        "type": "point",
+        "fields": [
+          "cont"
+        ]
+      },
+      "bind": {
+        "input": "select",
+        "options": [
+          "UK",
+          "US"
+        ],
+        "name": "Country:"
+      },
+      "value": "US"
+    },
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": [
+          "type"
+        ],
+        "toggle": true,
+        "on": "mouseover"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": {
+        "param": "View"
+      }
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": false
+  },
+  "encoding": {
+    "x": {
+      "field": "DATE",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "underpct",
+      "type": "quantitative",
+      "title": "% of Workers Underemployed",
+      "axis": {
+        "format": "%"
+      }
+    },
+    "color": {
+      "field": "type",
+      "scale": {
+        "range": [
+          "#a12800",
+          "#290c03"
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "underpct",
+        "title": " Underemplyed workers %",
+        "format": "0.2f"
+      },
+      {
+        "field": "DATE",
+        "title": " Year",
+        "type": "temporal"
+      }
+    ]
+  }
+}

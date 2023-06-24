@@ -1,0 +1,87 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-bc668d3d2008cca2ba1033adfbcc2d7e"
+  },
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "condition": {
+        "field": "Decision Tree MAE",
+        "type": "quantitative",
+        "selection": "selector002"
+      },
+      "value": "grey"
+    },
+    "tooltip": [
+      {
+        "field": "Decision Tree MAE",
+        "type": "quantitative"
+      },
+      {
+        "field": "Crop",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "Decision Tree MAE",
+      "title": "MAE",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Crop",
+      "type": "nominal"
+    }
+  },
+  "selection": {
+    "selector002": {
+      "type": "single"
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-bc668d3d2008cca2ba1033adfbcc2d7e": [
+      {
+        "Crop": "Asparagus",
+        "Decision Tree MAE": 3.3333333333333335
+      },
+      {
+        "Crop": "Cabbage",
+        "Decision Tree MAE": 33.333333333333336
+      },
+      {
+        "Crop": "Carrots",
+        "Decision Tree MAE": 23.333333333333332
+      },
+      {
+        "Crop": "Cucumbers",
+        "Decision Tree MAE": 0.566666666666667
+      },
+      {
+        "Crop": "Onions",
+        "Decision Tree MAE": 73.33333333333333
+      },
+      {
+        "Crop": "Peppers",
+        "Decision Tree MAE": 11.666666666666666
+      },
+      {
+        "Crop": "Pumpkins",
+        "Decision Tree MAE": 18.333333333333332
+      },
+      {
+        "Crop": "Squash",
+        "Decision Tree MAE": 13.333333333333334
+      },
+      {
+        "Crop": "Tomatoes",
+        "Decision Tree MAE": 68.33333333333333
+      }
+    ]
+  }
+}

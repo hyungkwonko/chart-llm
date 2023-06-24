@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of four large companies as a small multiples of area charts.",
+  "title": {
+    "text": "Historical Volatilty of Bitcoin and FIAT currencies",
+    "subtitle": [
+      "Historical Volatility 30-day annualised, Source:Yahoo Finance. Calculations by author"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "width": 400,
+  "height": 50,
+  "data": {
+    "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/Data/BTC_Volatility.csv"
+  },
+  "mark": "line",
+  "transform": [
+    {
+      "calculate": "timeParse(datum.date, '%d/%m/%Y')",
+      "as": "date2"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date2",
+      "type": "temporal",
+      "title": "Time",
+      "timeUnit": "yearmonth",
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "price",
+      "type": "quantitative",
+      "title": "HV",
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "symbol",
+      "type": "nominal",
+      "legend": null
+    },
+    "row": {
+      "field": "symbol",
+      "type": "nominal",
+      "title": "Symbol"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Map of Europe",
+    "subtitleFontSize": 11,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 180,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Emilysquires02/Emilysquires02.github.io/main/europe%201",
+    "format": {
+      "type": "topojson",
+      "feature": "continent_Europe_subunits"
+    }
+  },
+  "projection": {
+    "type": "equalEarth"
+  },
+  "mark": "geoshape",
+  "transform": [
+    {
+      "lookup": "properties.geounit",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Emilysquires02/Emilysquires02.github.io/main/map_data1%20(3).csv",
+          "format": {
+            "type": "csv"
+          }
+        },
+        "key": "economy",
+        "fields": [
+          "Inflation"
+        ]
+      }
+    }
+  ],
+  "encoding": {
+    "color": {
+      "field": "Inflation",
+      "type": "quantitative"
+    }
+  }
+}

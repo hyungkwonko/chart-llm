@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Map of the Wards in Bristol",
+    "subtitle": "A map showing the crime rates per 1000 people in different areas in Bristol.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 250,
+  "height": 250,
+  "data": {
+    "url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/geoBristolnew.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "lookup": "properties.WD13NM",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/bristolcrimestats.csv"
+        },
+        "key": "Ward Name ",
+        "fields": [
+          "All Crimes (rate per 1000 ward population)",
+          "Burglary (rate per 1000 ward population)"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "darkgray",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "All Crimes (rate per 1000 ward population)",
+      "type": "quantitative",
+      "title": [
+        "All Crimes",
+        "(per 1000 people)"
+      ]
+    },
+    "tooltip": [
+      {
+        "field": "properties.WD13NM",
+        "type": "nominal",
+        "title": "Ward"
+      },
+      {
+        "field": "All Crimes (rate per 1000 ward population)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/EnergyCost.csv"
+  },
+  "title": {
+    "text": "Levelised cost of energy by technology",
+    "subtitle": [
+      "$ per kilowatt-hour",
+      "Source: IRENA"
+    ],
+    "fontSize": 15,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.Year)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    },
+    {
+      "filter": "datum.y1!=0"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 2010,
+      "bind": {
+        "input": "range",
+        "min": 1983,
+        "max": 2021,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1983,
+        "max": 2021,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "width": 300,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "Energy Source",
+          "type": "nominal",
+          "legend": {
+            "orient": "right"
+          },
+          "scale": {
+            "scheme": "set2"
+          }
+        },
+        "y": {
+          "field": "Cost",
+          "type": "quantitative",
+          "title": null
+        }
+      },
+      "layer": [
+        {
+          "mark": "line"
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            }
+          ],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "pivot": "Energy Source",
+          "value": "Cost",
+          "groupby": [
+            "Year"
+          ]
+        }
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0.3,
+            "param": "hover",
+            "empty": false
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Bioenergy ",
+            "type": "quantitative",
+            "format": ".4f"
+          },
+          {
+            "field": "Concentrated solar power ",
+            "type": "quantitative",
+            "format": ".4f"
+          },
+          {
+            "field": "Geothermal ",
+            "type": "quantitative",
+            "format": ".4f"
+          },
+          {
+            "field": "Hydropower ",
+            "type": "quantitative",
+            "format": ".4f"
+          },
+          {
+            "field": "Offshore wind ",
+            "type": "quantitative",
+            "format": ".4f"
+          },
+          {
+            "field": "Onshore wind ",
+            "type": "quantitative",
+            "format": ".4f"
+          },
+          {
+            "field": "Solar photovoltaic ",
+            "type": "quantitative",
+            "format": ".4f"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Year"
+            ],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ]
+}

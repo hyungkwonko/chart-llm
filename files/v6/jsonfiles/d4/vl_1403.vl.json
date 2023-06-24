@@ -1,0 +1,73 @@
+{
+  "config": {
+    "view": {
+      "height": 800,
+      "width": 800
+    },
+    "padding": 50
+  },
+  "mark": {
+    "binSpacing": 1,
+    "size": 70,
+    "type": "bar"
+  },
+  "data": {
+    "values": [
+      {
+        "Amount": 159.5,
+        "count": 48
+      },
+      {
+        "Amount": 458.5,
+        "count": 12
+      },
+      {
+        "Amount": 757.5,
+        "count": 3
+      },
+      {
+        "Amount": 1056.5,
+        "count": 7
+      },
+      {
+        "Amount": 1355.5,
+        "count": 1
+      },
+      {
+        "Amount": 1654.5,
+        "count": 0
+      },
+      {
+        "Amount": 1953.5,
+        "count": 0
+      },
+      {
+        "Amount": 2252.5,
+        "count": 0
+      },
+      {
+        "Amount": 2551.5,
+        "count": 0
+      },
+      {
+        "Amount": 2850.5,
+        "count": 2
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Angry Democrats Donations (<$3000)",
+  "encoding": {
+    "x": {
+      "field": "Amount",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": {
+        "title": "# Donations"
+      }
+    }
+  }
+}

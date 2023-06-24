@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A calculate that takes the messy names in the field, metric, and creates a new field, metricClean, where the names are nicer.",
+  "title": {
+    "text": "Productivity in 2020 - distribution",
+    "subtitle": [
+      "Estimated distribution, turnover \u00a3k per employee",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_modelPercentiles.csv"
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "circle",
+    "color": "rgb(0,29,159)",
+    "size": 90
+  },
+  "transform": [
+    {
+      "filter": "datum.modelValue<300"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Percentile",
+      "type": "quantitative",
+      "title": "Percentile",
+      "axis": {
+        "grid": false,
+        "format": "d"
+      }
+    },
+    "y": {
+      "field": "modelValue",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": [
+          0,
+          260
+        ]
+      },
+      "axis": {
+        "grid": false,
+        "format": "d"
+      }
+    }
+  }
+}

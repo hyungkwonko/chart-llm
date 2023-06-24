@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "England - Parliamentary Constituencies ",
+    "subtitle": [
+      "",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "width": 500,
+  "height": 500,
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ferguswalshe/ferguswalshe.github.io/main/EnglishConstituencies.json",
+    "format": {
+      "type": "topojson",
+      "feature": "wpc"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.PCON13NM",
+      "from": {
+        "key": "ConstituencyName",
+        "fields": [
+          "Population"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/ferguswalshe/ferguswalshe.github.io/main/populationconstituency.csv"
+        }
+      }
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0
+  },
+  "encoding": {
+    "color": {
+      "field": "Population",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "properties.PCON13NM",
+        "title": "Parliamentary Constituency"
+      },
+      {
+        "field": "Population",
+        "title": "Population"
+      }
+    ]
+  }
+}

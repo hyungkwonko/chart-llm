@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Has debt finally stopped rising?",
+    "subtitle": [
+      "Total debt outstanding, by sector. Source: IMF",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "view": {
+    "stroke": "transparent"
+  },
+  "width": 450,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/Global_IMF_Debt.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "hh",
+        "nfc",
+        "gov"
+      ],
+      "as": [
+        "var",
+        "val"
+      ]
+    }
+  ],
+  "mark": {
+    "type": "area",
+    "width": 5
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "val",
+      "title": null,
+      "type": "quantitative",
+      "axis": {
+        "format": ".0%",
+        "gridColor": "lightgray",
+        "zindex": 0,
+        "gridWidth": 0.5
+      }
+    },
+    "color": {
+      "field": "var",
+      "type": "nominal",
+      "legend": {
+        "orient": "top-left",
+        "columns": 3,
+        "labelExpr": "{'hh':'Households','gov':'Governments','nfc':'Companies'}[datum.label]"
+      },
+      "scale": {
+        "scheme": "inferno"
+      },
+      "title": null
+    }
+  }
+}

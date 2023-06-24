@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "view": {
+    "stroke": "transparent"
+  },
+  "title": {
+    "text": "Crime in the USA",
+    "fontSize": 12,
+    "subtitle": [
+      "Offences per 100k population. Source FBI, 2019",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoUSStates.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "albersUsa"
+  },
+  "mark": "geoshape",
+  "params": [
+    {
+      "name": "Select",
+      "value": "Violent Crime",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Violent Crime",
+          "Homocide",
+          "Rape",
+          "Robbery",
+          "Aggravated Assault",
+          "Property Crime",
+          "Burglary",
+          "Larceny",
+          "Motor Vehicle Theft",
+          "Arson"
+        ]
+      }
+    }
+  ],
+  "transform": [
+    {
+      "lookup": "properties.NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/USA_crime_databank_wide.csv"
+        },
+        "key": "State",
+        "fields": [
+          "Violent Crime",
+          "Homocide",
+          "Rape",
+          "Robbery",
+          "Aggravated Assault",
+          "Property Crime",
+          "Burglary",
+          "Larceny",
+          "Motor Vehicle Theft",
+          "Arson"
+        ]
+      }
+    },
+    {
+      "calculate": "datum[Select]",
+      "as": "varSelected"
+    }
+  ],
+  "encoding": {
+    "color": {
+      "field": "varSelected",
+      "legend": {
+        "title": null,
+        "orient": "right",
+        "direction": "vertical"
+      },
+      "type": "quantitative",
+      "scale": {
+        "scheme": "lightgreyred"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.NAME",
+        "title": "State"
+      },
+      {
+        "field": "varSelected",
+        "title": "Offending rate",
+        "format": ",d"
+      }
+    ]
+  }
+}

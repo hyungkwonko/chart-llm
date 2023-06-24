@@ -1,0 +1,119 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "High Giving Index \u2192": "A",
+        "High Religiosity \u2192": "A",
+        "color": "7",
+        "Meaning": "High WGI, Low Religiosity"
+      },
+      {
+        "High Giving Index \u2192": "A",
+        "High Religiosity \u2192": "B",
+        "color": "8",
+        "Meaning": "High WGI, Average Religiosity"
+      },
+      {
+        "High Giving Index \u2192": "A",
+        "High Religiosity \u2192": "C",
+        "color": "9",
+        "Meaning": "High WGI, High Religiosity"
+      },
+      {
+        "High Giving Index \u2192": "B",
+        "High Religiosity \u2192": "A",
+        "color": "5",
+        "Meaning": "Average WGI, Low Religiosity"
+      },
+      {
+        "High Giving Index \u2192": "B",
+        "High Religiosity \u2192": "B",
+        "color": "5",
+        "Meaning": "Average WGI, Average Religiosity"
+      },
+      {
+        "High Giving Index \u2192": "B",
+        "High Religiosity \u2192": "C",
+        "color": "6",
+        "Meaning": "Average WGI, High Religiosity"
+      },
+      {
+        "High Giving Index \u2192": "C",
+        "High Religiosity \u2192": "A",
+        "color": "1",
+        "Meaning": "Low WGI, Low Religiosity"
+      },
+      {
+        "High Giving Index \u2192": "C",
+        "High Religiosity \u2192": "B",
+        "color": "2",
+        "Meaning": "Low WGI, Average Religiosity"
+      },
+      {
+        "High Giving Index \u2192": "C",
+        "High Religiosity \u2192": "C",
+        "color": "3",
+        "Meaning": "Low WGI, High Religiosity"
+      }
+    ]
+  },
+  "mark": {
+    "type": "rect"
+  },
+  "config": {
+    "background": "transparent",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "height": 140,
+  "width": 140,
+  "encoding": {
+    "y": {
+      "field": "High Giving Index \u2192",
+      "type": "nominal",
+      "axis": {
+        "domainColor": "transparent",
+        "labels": false,
+        "ticks": false,
+        "titleColor": "black"
+      }
+    },
+    "x": {
+      "field": "High Religiosity \u2192",
+      "type": "nominal",
+      "axis": {
+        "domainColor": "transparent",
+        "labels": false,
+        "ticks": false,
+        "titleColor": "black"
+      }
+    },
+    "color": {
+      "legend": null,
+      "type": "nominal",
+      "field": "color",
+      "scale": {
+        "range": [
+          "#FCFBFD",
+          "#EFEDF5",
+          "#DADAEB",
+          "#BCBDDC",
+          "#9E9AC8",
+          "#807DBA",
+          "#6A51A3",
+          "#54278F",
+          "#3F007D"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Meaning",
+        "type": "nominal",
+        "title": "Classification"
+      }
+    ]
+  }
+}

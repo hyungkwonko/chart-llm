@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/COG-UK/UK-lineage-dynamics-analysis/2ca84630ab1fb80b949d25b05b6578fa9674f574/analyses/epidemiological/results/lag-estimation-llhds.csv"
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "alpha",
+      "type": "quantitative",
+      "title": "Alpha",
+      "scale": {
+        "zero": false
+      },
+      "axis": {
+        "grid": false,
+        "offset": 20
+      }
+    },
+    "y": {
+      "field": "beta",
+      "type": "quantitative",
+      "title": "Beta",
+      "scale": {
+        "zero": false
+      },
+      "axis": {
+        "grid": false,
+        "offset": 20
+      }
+    },
+    "size": {
+      "field": "llhd",
+      "type": "quantitative",
+      "title": "Log-likelihood",
+      "scale": {
+        "type": "threshold",
+        "domain": [
+          -5200,
+          -5000,
+          -4800
+        ],
+        "range": [
+          5,
+          25,
+          125,
+          625
+        ]
+      }
+    },
+    "color": {
+      "field": "llhd",
+      "type": "quantitative",
+      "title": "Log-likelihood",
+      "scale": {
+        "range": [
+          "green",
+          "yellow",
+          "orange",
+          "red"
+        ]
+      }
+    }
+  },
+  "view": {
+    "stroke": null
+  }
+}

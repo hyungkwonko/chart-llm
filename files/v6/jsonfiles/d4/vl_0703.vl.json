@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/matsim-scenarios/matsim-duesseldorf/b160620ef3d645969b5060b436391be3bc378cb6/src/main/simwrapper/overview/sim_srv.csv"
+  },
+  "mark": "bar",
+  "width": 220,
+  "height": 200,
+  "encoding": {
+    "column": {
+      "field": "source",
+      "title": "Mode-choice by distance classes"
+    },
+    "x": {
+      "field": "pct",
+      "type": "quantitative",
+      "title": "Share"
+    },
+    "y": {
+      "field": "dist_group",
+      "sort": [
+        "10000+",
+        "5000 - 10000",
+        "3000 - 5000",
+        "1000 - 3000",
+        "0 - 1000"
+      ],
+      "title": "Distance classes"
+    },
+    "color": {
+      "field": "main_mode",
+      "type": "nominal",
+      "title": "Main mode",
+      "scale": {
+        "domain": [
+          "bike",
+          "car",
+          "pt",
+          "walk"
+        ],
+        "range": [
+          "#0f5eca ",
+          "#fc8712",
+          "#37ab17",
+          "#d00000"
+        ]
+      }
+    }
+  }
+}

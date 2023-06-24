@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Full dataset contains 38 countries. To get to 20 countries, filter to ['Labour Force (000s)'] > 5000, or ['Output per worker ($)'] > 90000. 2021 data.",
+  "title": {
+    "text": "Output per worker",
+    "fontSize": 12,
+    "anchor": "start",
+    "subtitle": [
+      "GDP:  PPP (constant 2015 $), source: World Bank 2021",
+      "Labour force (active population), source: OECD",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 9
+  },
+  "height": 350,
+  "width": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/gdp_perWorker_2021.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum['Labour Force (000s)'] > 5000"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "rgb(128,0,0)"
+  },
+  "encoding": {
+    "y": {
+      "field": "Country",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x"
+    },
+    "x": {
+      "field": "Output per worker ($)",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "nominal"
+      },
+      {
+        "field": "Output per worker ($)",
+        "type": "quantitative",
+        "format": "$,d"
+      }
+    ]
+  }
+}

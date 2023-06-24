@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/data_ONS-agtd.json",
+    "format": {
+      "type": "json",
+      "property": "years"
+    }
+  },
+  "title": {
+    "text": "Econ. inactive females in FT educ aged 16-17",
+    "fontSize": 9,
+    "subtitle": "Seasonally Adjusted, Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 8,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 150,
+  "height": 150,
+  "mark": {
+    "type": "line",
+    "color": "rgb(8,123,102"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "grid": false
+      },
+      "title": ""
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      },
+      "title": "000's"
+    }
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "legend": {
+      "disable": true
+    },
+    "background": "#161a1d"
+  },
+  "params": [
+    {
+      "name": "var1",
+      "value": 1
+    }
+  ],
+  "width": 200,
+  "padding": 0,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JackECameron/FIT3179/main/D2_resources/data/stationData/stationData_long.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.stationNum == var1"
+    }
+  ],
+  "encoding": {
+    "theta": {
+      "field": "perc",
+      "type": "quantitative",
+      "stack": true
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "radius2": 80,
+        "radius": 140,
+        "stroke": "#161a1d",
+        "strokeWidth": 10,
+        "cornerRadius": 10,
+        "fillOpacity": 0.6
+      },
+      "transform": [
+        {
+          "filter": "datum.class == 'unit'"
+        },
+        {
+          "filter": "datum.perc != 0"
+        },
+        {
+          "calculate": "datum.perc + '%'",
+          "as": "perLabel1"
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "pod",
+              "appl"
+            ],
+            "range": [
+              "#9b9ece",
+              "#788bff"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "decrip",
+            "type": "nominal",
+            "title": "Equipment Class"
+          },
+          {
+            "field": "quant",
+            "type": "quantitative",
+            "title": "Total Number"
+          },
+          {
+            "field": "perLabel1",
+            "title": "Percent of Equipment"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 110,
+        "color": "white",
+        "opacity": 1,
+        "font": "hind",
+        "fontSize": 16
+      },
+      "transform": [
+        {
+          "filter": "datum.class == 'unit'"
+        },
+        {
+          "filter": "datum.perc != 0"
+        },
+        {
+          "calculate": "datum.perc/100",
+          "as": "perc2"
+        }
+      ],
+      "encoding": {
+        "text": {
+          "field": "perc2",
+          "aggregate": "sum",
+          "format": ".1%",
+          "formatType": "number"
+        },
+        "detail": {
+          "field": "type",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "arc",
+        "radius2": 140,
+        "radius": 200,
+        "stroke": "#161a1d",
+        "strokeWidth": 10,
+        "cornerRadius": 10,
+        "fillOpacity": 0.6
+      },
+      "transform": [
+        {
+          "filter": "datum.class == 'equipment'"
+        },
+        {
+          "filter": "datum.perc != 0"
+        },
+        {
+          "calculate": "datum.perc + '%'",
+          "as": "perLabel2"
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "pumper",
+              "spec",
+              "aerial"
+            ],
+            "range": [
+              "#b56576",
+              "#e56b6f",
+              "#f4acb7"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "decrip",
+            "type": "nominal",
+            "title": "Equipment Type"
+          },
+          {
+            "field": "quant",
+            "type": "quantitative",
+            "title": "Total Number"
+          },
+          {
+            "field": "perLabel2",
+            "title": "Percent of Equipment"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 170,
+        "color": "white",
+        "opacity": 1,
+        "font": "hind",
+        "fontSize": 16
+      },
+      "transform": [
+        {
+          "filter": "datum.class == 'equipment'"
+        },
+        {
+          "filter": "datum.perc != 0"
+        },
+        {
+          "calculate": "datum.perc/100",
+          "as": "perc2"
+        }
+      ],
+      "encoding": {
+        "text": {
+          "field": "perc2",
+          "aggregate": "sum",
+          "format": ".1%",
+          "formatType": "number"
+        },
+        "detail": {
+          "field": "type",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "view": {
+    "stroke": null
+  },
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  }
+}

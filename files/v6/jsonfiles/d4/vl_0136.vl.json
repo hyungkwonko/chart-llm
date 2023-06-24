@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Paired column",
+  "width": 190,
+  "data": {
+    "url": "https://raw.githubusercontent.com/traffordDataLab/interactive_graphics_companion/e70ef4d7c116ddee99d5b83fc0720079a3aba836/data/gapminder.csv"
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "pop",
+          "as": "total_pop"
+        }
+      ],
+      "groupby": [
+        "region",
+        "year"
+      ]
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "year",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "field": "total_pop",
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "grid": false
+      }
+    },
+    "x": {
+      "field": "region",
+      "type": "nominal",
+      "axis": {
+        "title": null
+      }
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Africa",
+          "Americas",
+          "Asia",
+          "Europe"
+        ],
+        "range": [
+          "#08C5ED",
+          "#80D322",
+          "#FF6973",
+          "#FFDC25"
+        ]
+      },
+      "legend": null
+    },
+    "opacity": {
+      "value": 0.8
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "ordinal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "region",
+        "type": "nominal",
+        "title": "Continent"
+      },
+      {
+        "field": "total_pop",
+        "type": "quantitative",
+        "title": "Total population",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

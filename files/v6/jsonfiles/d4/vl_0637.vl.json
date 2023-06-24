@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "title": {
+    "text": "GDP and Infant mortality",
+    "subtitle": [
+      "Infant Mortality: per 1,000 live births, source: UN Population prospects 2022",
+      "GDP: per capita PPP (international $) source: World Bank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 9,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/explainer_gdp_world.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "size": 150,
+    "opacity": 0.8
+  },
+  "height": 300,
+  "width": 500,
+  "view": {
+    "stroke": "aliceblue"
+  },
+  "encoding": {
+    "x": {
+      "field": "GDP per capita (PPP)",
+      "type": "quantitative",
+      "title": "GDP (log scale)",
+      "scale": {
+        "type": "log",
+        "domain": [
+          1000,
+          100000
+        ]
+      },
+      "axis": {
+        "values": [
+          1000,
+          2000,
+          5000,
+          10000,
+          20000,
+          40000,
+          100000
+        ],
+        "format": "$,",
+        "gridOpacity": 0.3
+      }
+    },
+    "y": {
+      "field": "Infant Mortality",
+      "type": "quantitative",
+      "title": "Infant Mortality",
+      "axis": {
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "legend": {
+        "orient": "top-right"
+      },
+      "title": null
+    },
+    "size": {
+      "field": "Population",
+      "type": "quantitative",
+      "scale": {
+        "range": [
+          10,
+          600
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Country"
+      },
+      {
+        "field": "Population",
+        "format": ",d"
+      },
+      {
+        "field": "GDP per capita (PPP)",
+        "title": "GDP per capita",
+        "format": "$,d"
+      },
+      {
+        "field": "Happiness score",
+        "format": ",.3"
+      }
+    ]
+  }
+}

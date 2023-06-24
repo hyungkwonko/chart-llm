@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Dollar value: up and up",
+    "subtitle": [
+      "British pounds bought with $1. Source: BoE, FRED",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "dx": 0,
+    "dy": 0,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 250,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/US_BoE_USDGBP_LongRun.csv"
+  },
+  "mark": {
+    "type": "line",
+    "color": "rgb(128,0,0)",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "transform": [
+    {
+      "calculate": "1/datum.usdGBP",
+      "as": "dollarValue"
+    },
+    {
+      "calculate": "year(datum.Year)",
+      "as": "time"
+    },
+    {
+      "filter": "datum.time>1940"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "dollarValue",
+      "type": "quantitative",
+      "title": null
+    }
+  }
+}

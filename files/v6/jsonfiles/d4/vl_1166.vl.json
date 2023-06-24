@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 420,
+  "height": 280,
+  "title": {
+    "text": "Happiness Around the World",
+    "subtitle": "Happiness index scored between 1 and 10. Source: World Happiness Report 2021",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ConorQuah/ConorQuah.github.io/main/worldblank.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "naturalEarth1"
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/ConorQuah/ConorQuah.github.io/main/happiness_by_country.csv"
+        },
+        "key": "country",
+        "fields": [
+          "happiness2020"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "lightgrey",
+    "strokeWidth": 1.5
+  },
+  "encoding": {
+    "color": {
+      "field": "happiness2020",
+      "title": "Happiness in 2020",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "yelloworangered"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.name",
+        "type": "nominal",
+        "title": "Country Name"
+      },
+      {
+        "field": "happiness2020",
+        "title": "Happiness in 2020"
+      }
+    ]
+  }
+}

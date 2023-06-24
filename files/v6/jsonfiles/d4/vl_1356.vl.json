@@ -1,0 +1,191 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JofreManchola/ccu2018_ODS1121/master/visor/widgets/Paraderos/distribucionupz.json",
+    "format": {
+      "type": "json"
+    }
+  },
+  "title": "Distribuci\u00f3n de g\u00e9nero por UPZ",
+  "hconcat": [
+    {
+      "vconcat": [
+        {
+          "mark": "tick",
+          "height": 1200,
+          "encoding": {
+            "y": {
+              "type": "nominal",
+              "field": "UPlNombre",
+              "axis": {
+                "title": "UPZ"
+              },
+              "sort": {
+                "op": "sum",
+                "field": "Cnt_UPlCod",
+                "order": "descending"
+              }
+            },
+            "color": {
+              "value": "grey"
+            },
+            "tooltip": [
+              {
+                "field": "UPlNombre",
+                "type": "nominal",
+                "title": "UPlNombre"
+              },
+              {
+                "field": "OBJECTID",
+                "type": "quantitative",
+                "title": "OBJECTID",
+                "format": ","
+              }
+            ]
+          },
+          "selection": {
+            "selupz": {
+              "type": "interval",
+              "empty": "none",
+              "encodings": [
+                "y"
+              ],
+              "on": "[mousedown, window:mouseup] > window:mousemove!",
+              "translate": "[mousedown, window:mouseup] > window:mousemove!",
+              "zoom": "wheel!",
+              "mark": {
+                "fill": "#333",
+                "fillOpacity": 0.125,
+                "stroke": "white"
+              },
+              "resolve": "global"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "vconcat": [
+        {
+          "layer": [
+            {
+              "mark": "bar",
+              "width": 1400,
+              "height": 400,
+              "encoding": {
+                "x": {
+                  "type": "ordinal",
+                  "field": "UPlCodigo",
+                  "axis": {
+                    "title": "UPZ"
+                  },
+                  "sort": {
+                    "op": "sum",
+                    "field": "Cnt_UPlCod",
+                    "order": "descending"
+                  }
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Cnt_UPlCod",
+                  "axis": {
+                    "title": "Paraderos"
+                  }
+                },
+                "color": {
+                  "condition": {
+                    "selection": "selupz",
+                    "value": "green"
+                  },
+                  "value": "gray"
+                }
+              }
+            },
+            {
+              "mark": "line",
+              "width": 1400,
+              "height": 400,
+              "encoding": {
+                "x": {
+                  "type": "ordinal",
+                  "field": "UPlCodigo",
+                  "axis": {
+                    "title": "UPZ"
+                  }
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Hombres_20",
+                  "axis": {
+                    "title": "Hombres [%]"
+                  }
+                }
+              }
+            },
+            {
+              "mark": "line",
+              "width": 1400,
+              "height": 400,
+              "encoding": {
+                "x": {
+                  "type": "ordinal",
+                  "field": "UPlCodigo",
+                  "axis": {
+                    "title": "UPZ"
+                  }
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Mujeres_20",
+                  "axis": {
+                    "title": "Mujeres [%]"
+                  }
+                },
+                "color": {
+                  "value": "pink"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "layer": [
+            {
+              "mark": "circle",
+              "width": 1400,
+              "height": 400,
+              "encoding": {
+                "x": {
+                  "type": "ordinal",
+                  "field": "UPlCodigo",
+                  "axis": {
+                    "title": "UPZ"
+                  },
+                  "sort": {
+                    "op": "sum",
+                    "field": "Cnt_UPlCod",
+                    "order": "descending"
+                  }
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Cnt_UPlCod",
+                  "axis": {
+                    "title": "Paraderos"
+                  }
+                },
+                "color": {
+                  "condition": {
+                    "selection": "selupz",
+                    "value": "green"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {}
+}

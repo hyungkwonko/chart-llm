@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Map of UK",
+  "title": {
+    "text": "United Kingdom",
+    "subtitle": [
+      "Estimated Homocide Rates Per Region in 2021",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/UK%20Map%20Data/ITL1_2021_20m.geojson",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "lookup": "properties.ITL121NM",
+      "from": {
+        "key": "Region",
+        "fields": [
+          "Estimated_homocide_rate"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/Jordanboi58/Jordanboi58.github.io/main/Homocide.data.csv"
+        }
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "black",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "Estimated_homocide_rate",
+      "type": "quantitative",
+      "title": "Est. number of Homocides"
+    },
+    "tooltip": [
+      {
+        "field": "properties.ITL121NM",
+        "type": "nominal",
+        "title": "Region"
+      },
+      {
+        "field": "Estimated_homocide_rate"
+      }
+    ]
+  }
+}

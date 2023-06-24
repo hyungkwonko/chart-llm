@@ -1,0 +1,3670 @@
+{
+  "height": 300,
+  "width": 300,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "meta": {
+    "axes": false,
+    "description": "Plot mean is_hit of each group, with errorbar"
+  },
+  "data": {
+    "values": [
+      {
+        "gemini_id": 1,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 2,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 3,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 4,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 5,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 6,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 7,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 8,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 9,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 10,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 11,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 12,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 13,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 14,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 15,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 16,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 17,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 18,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 19,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 20,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 21,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 22,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 23,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 24,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 25,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 26,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 27,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 28,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 29,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 30,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 31,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 32,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 33,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 34,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 35,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 36,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 37,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 38,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 39,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 40,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 41,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 42,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 43,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 44,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 45,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 46,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 47,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 48,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 49,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 50,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 51,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 52,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 53,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 54,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 55,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 56,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 57,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 58,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 59,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 60,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 61,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 62,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 63,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 64,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 65,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 66,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 67,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 68,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 69,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 70,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 71,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 72,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 73,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 74,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 75,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 76,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 77,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 78,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 79,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 80,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 81,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 82,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 83,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 84,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 85,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 86,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 87,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 88,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 89,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 90,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 91,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 92,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 93,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 94,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 95,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 96,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 97,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 98,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 99,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 100,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 101,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 102,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 103,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 104,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 105,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 106,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 107,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 108,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 109,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 110,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 111,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 112,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 113,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 114,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 115,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 116,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 117,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 118,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 119,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 120,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 121,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 122,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 123,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 124,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 125,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 126,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 127,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 128,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 129,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 130,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 131,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 132,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 133,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 134,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 135,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 136,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 137,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 138,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 139,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 140,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 141,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 142,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 143,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 144,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 145,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 146,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 147,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 148,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 149,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 150,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 151,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 152,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 153,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 154,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 155,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 156,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 157,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 158,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 159,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 160,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 161,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 162,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 163,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 1,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 164,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 165,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 166,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 167,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 168,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 169,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 170,
+        "player": "David Justice",
+        "datamations_x": 1,
+        "datamations_y": 0.276470588235294,
+        "datamations_y_tooltip": 0.276470588235294,
+        "datamations_y_raw": 0,
+        "Lower": 0.242066566687293,
+        "Upper": 0.310874609783295
+      },
+      {
+        "gemini_id": 171,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 172,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 173,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 174,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 175,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 176,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 177,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 178,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 179,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 180,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 181,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 182,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 183,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 184,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 185,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 186,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 187,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 188,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 189,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 190,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 191,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 192,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 193,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 194,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 195,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 196,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 197,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 198,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 199,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 200,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 201,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 202,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 203,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 204,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 205,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 206,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 207,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 208,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 209,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 210,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 211,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 212,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 213,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 214,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 215,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 216,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 217,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 218,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 219,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 220,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 221,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 222,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 223,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 224,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 225,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 226,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 227,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 228,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 229,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 230,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 231,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 232,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 233,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 234,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 235,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 236,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 237,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 238,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 239,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 240,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 241,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 242,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 243,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 244,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 245,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 246,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 247,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 248,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 249,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 250,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 251,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 252,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 253,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 254,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 255,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 256,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 257,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 258,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 259,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 260,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 261,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 262,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 263,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 264,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 265,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 266,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 267,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 268,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 269,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 270,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 271,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 272,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 273,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 274,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 275,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 276,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 277,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 278,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 279,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 280,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 281,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 282,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 283,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 284,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 285,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 286,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 287,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 288,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 289,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 290,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 291,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 292,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 293,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 294,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 295,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 296,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 297,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 298,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 299,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 300,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 301,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 302,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 303,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 304,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 305,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 306,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 307,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 308,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 309,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 310,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 311,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 312,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 313,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 314,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 315,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 316,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 317,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 318,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 319,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 320,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 321,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 322,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 323,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 324,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 325,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 326,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 327,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 328,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 329,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 330,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 331,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 332,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 333,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 334,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 335,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 336,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 337,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 338,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 339,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 340,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 341,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 342,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 343,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 344,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 345,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 346,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 347,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 348,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 349,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 350,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 351,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 352,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 0,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 353,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      },
+      {
+        "gemini_id": 354,
+        "player": "Derek Jeter",
+        "datamations_x": 2,
+        "datamations_y": 0.255434782608696,
+        "datamations_y_tooltip": 0.255434782608696,
+        "datamations_y_raw": 1,
+        "Lower": 0.223196949351363,
+        "Upper": 0.287672615866028
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "errorbar",
+      "encoding": {
+        "x": {
+          "field": "datamations_x",
+          "type": "quantitative",
+          "axis": {
+            "values": [
+              1,
+              2
+            ],
+            "labelExpr": "round(datum.label) == 1 ? 'David Justice' : 'Derek Jeter'",
+            "labelAngle": -90
+          },
+          "title": "player",
+          "scale": {
+            "domain": [
+              0.5,
+              2.5
+            ]
+          }
+        },
+        "y": {
+          "field": "datamations_y_raw",
+          "type": "quantitative",
+          "title": "mean(is_hit)",
+          "scale": {
+            "domain": [
+              0.223196949351363,
+              0.310874609783295
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "datamations_y_tooltip",
+            "type": "quantitative",
+            "title": "mean(is_hit)"
+          },
+          {
+            "field": "Upper",
+            "type": "nominal",
+            "title": "mean(is_hit) + standard error"
+          },
+          {
+            "field": "Lower",
+            "type": "nominal",
+            "title": "mean(is_hit) - standard error"
+          },
+          {
+            "field": "player",
+            "type": "nominal"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "datamations_x",
+          "type": "quantitative",
+          "axis": {
+            "values": [
+              1,
+              2
+            ],
+            "labelExpr": "round(datum.label) == 1 ? 'David Justice' : 'Derek Jeter'",
+            "labelAngle": -90
+          },
+          "title": "player",
+          "scale": {
+            "domain": [
+              0.5,
+              2.5
+            ]
+          }
+        },
+        "y": {
+          "field": "datamations_y",
+          "type": "quantitative",
+          "title": "mean(is_hit)",
+          "scale": {
+            "domain": [
+              0.223196949351363,
+              0.310874609783295
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "datamations_y_tooltip",
+            "type": "quantitative",
+            "title": "mean(is_hit)"
+          },
+          {
+            "field": "Upper",
+            "type": "nominal",
+            "title": "mean(is_hit) + standard error"
+          },
+          {
+            "field": "Lower",
+            "type": "nominal",
+            "title": "mean(is_hit) - standard error"
+          },
+          {
+            "field": "player",
+            "type": "nominal"
+          }
+        ]
+      }
+    }
+  ]
+}

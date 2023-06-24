@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Net Borrowing (including public sector banks)",
+    "subtitle": [
+      "\u00a3m. Source: ONS.",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#cbc7cf",
+    "subtitleColor": "#cbc7cf"
+  },
+  "width": 300,
+  "height": 200,
+  "config": {
+    "background": "#122b39",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/data_ONS--ANNX.json",
+    "format": {
+      "type": "json",
+      "property": "months"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "color": "#ff9a00",
+    "interpolate": "step",
+    "width": 10,
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "labelColor": "#cbc7cf"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "labelColor": "#cbc7cf"
+      }
+    }
+  }
+}

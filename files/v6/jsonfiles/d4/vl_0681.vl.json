@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Various US measures state by state",
+  "title": {
+    "text": "2020 Number of refugees and asylum seekers hosted, plotted against wealth of nation",
+    "subtitle": [
+      "Refugees and Asylum seekers (x), and GDP per capita (US$)",
+      "Source: UNHCR, World Bank API"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/2020_Refugees_gdp.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "size": 150,
+    "color": "rgb(0,67,167)",
+    "opacity": 0.6
+  },
+  "height": 400,
+  "width": 350,
+  "encoding": {
+    "x": {
+      "field": "refugees_asylum",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          2000000
+        ]
+      },
+      "title": "Refugees and Asylum Seekers"
+    },
+    "y": {
+      "field": "GDP_CAP",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          200000
+        ]
+      },
+      "title": "GDP per Capita, US$"
+    },
+    "color": {
+      "field": "continent",
+      "type": "ordinal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "legend": {
+        "orient": "right"
+      },
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "ordinal",
+        "title": "Country"
+      },
+      {
+        "field": "GDP_CAP",
+        "type": "quantitative",
+        "title": "GDP per Capita",
+        "format": ".0f"
+      },
+      {
+        "field": "refugees_asylum",
+        "type": "quantitative",
+        "title": "Refugees and Asylum seekers",
+        "format": ".2f"
+      }
+    ]
+  }
+}

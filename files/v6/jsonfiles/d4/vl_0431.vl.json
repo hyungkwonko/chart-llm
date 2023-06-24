@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 120,
+  "height": 120,
+  "title": {
+    "text": "The UK shopping basket, 1988-2022",
+    "subtitle": [
+      "Price distributions for items that have been present in the consumer basket since 1988",
+      ""
+    ],
+    "color": "whitesmoke",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "subtitleColor": "whitesmoke"
+  },
+  "config": {
+    "background": "#121212",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/db_percentilesPerennials.csv"
+  },
+  "mark": {
+    "type": "area",
+    "orient": "vertical",
+    "opacity": 0.7
+  },
+  "encoding": {
+    "facet": {
+      "field": "desc_short",
+      "columns": 6,
+      "title": null,
+      "align": "each",
+      "spacing": 5,
+      "header": {
+        "labelColor": "antiquewhite"
+      }
+    },
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelColor": "rgb(100,100,100)",
+        "tickColor": "rgb(100,100,100)"
+      }
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "price",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelColor": "rgb(100,100,100)",
+        "tickColor": "rgb(100,100,100)"
+      }
+    },
+    "color": {
+      "legend": null,
+      "field": "decile",
+      "scale": {
+        "range": [
+          null,
+          "#932667",
+          "#DD513A",
+          "#FCA50A",
+          "#FFFF00",
+          "#FFFF00",
+          "#FCA50A",
+          "#DD513A",
+          "#932667"
+        ]
+      }
+    },
+    "order": {
+      "field": "decile"
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent",
+      "x": "independent"
+    }
+  }
+}

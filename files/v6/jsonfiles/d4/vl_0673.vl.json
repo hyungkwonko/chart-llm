@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Various US measures state by state",
+  "title": {
+    "text": "Co2 emissions and Climate Risk, by country",
+    "subtitle": [
+      "CRI score (x), and Co2 Per Capita in (tons per year) (y)",
+      "Sources: Global Carbon Project and Germanwatch",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/CRI_CO2_final4.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "size": 150,
+    "color": "rgb(0,67,167)",
+    "opacity": 0.6
+  },
+  "height": 400,
+  "width": 500,
+  "encoding": {
+    "y": {
+      "field": "CO2 per cap",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          36
+        ]
+      },
+      "title": "Co2 per capita"
+    },
+    "x": {
+      "field": "CRI Score ",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          150
+        ]
+      },
+      "title": "Climate Risk Index Score"
+    },
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "legend": {
+        "orient": "bottom"
+      },
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "ordinal",
+        "title": "Country"
+      },
+      {
+        "field": "CRI Score ",
+        "type": "quantitative",
+        "title": "CRI",
+        "format": ".0f"
+      },
+      {
+        "field": "CO2 per cap",
+        "type": "quantitative",
+        "title": "Co2 per capita",
+        "format": ".2f"
+      },
+      {
+        "field": "Continent",
+        "type": "nominal",
+        "title": "Continent"
+      }
+    ]
+  }
+}

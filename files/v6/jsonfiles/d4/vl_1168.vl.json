@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 420,
+  "height": 280,
+  "title": {
+    "text": "GDP per Capita Around the World",
+    "subtitle": "Source: Wikipedia",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ConorQuah/ConorQuah.github.io/main/worldblank.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "naturalEarth1"
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/ConorQuah/ConorQuah.github.io/main/beep_bop.csv"
+        },
+        "key": "counntry_edit",
+        "fields": [
+          "gdppercapita"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "lightgrey",
+    "strokeWidth": 1.5
+  },
+  "encoding": {
+    "color": {
+      "field": "gdppercapita",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "yelloworangered"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.name",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "gdppercapita",
+        "title": "GDP per capita"
+      }
+    ]
+  }
+}

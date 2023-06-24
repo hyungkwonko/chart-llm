@@ -1,0 +1,962 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "SNP1": 55,
+        "SNP2": 55,
+        "Alt": 249,
+        "Ref": 156,
+        "Total": 442,
+        "PcentAlt": 56.0,
+        "PcentRef": 35.0
+      },
+      {
+        "SNP1": 55,
+        "SNP2": 56,
+        "Alt": 232,
+        "Ref": 133,
+        "Total": 442,
+        "PcentAlt": 52.0,
+        "PcentRef": 30.0
+      },
+      {
+        "SNP1": 55,
+        "SNP2": 84,
+        "Alt": 182,
+        "Ref": 121,
+        "Total": 442,
+        "PcentAlt": 41.0,
+        "PcentRef": 27.0
+      },
+      {
+        "SNP1": 55,
+        "SNP2": 90,
+        "Alt": 199,
+        "Ref": 124,
+        "Total": 442,
+        "PcentAlt": 45.0,
+        "PcentRef": 28.0
+      },
+      {
+        "SNP1": 55,
+        "SNP2": 111,
+        "Alt": 175,
+        "Ref": 85,
+        "Total": 442,
+        "PcentAlt": 40.0,
+        "PcentRef": 19.0
+      },
+      {
+        "SNP1": 55,
+        "SNP2": 428,
+        "Alt": 200,
+        "Ref": 7,
+        "Total": 442,
+        "PcentAlt": 45.0,
+        "PcentRef": 2.0
+      },
+      {
+        "SNP1": 55,
+        "SNP2": 519,
+        "Alt": 198,
+        "Ref": 114,
+        "Total": 442,
+        "PcentAlt": 45.0,
+        "PcentRef": 26.0
+      },
+      {
+        "SNP1": 55,
+        "SNP2": 624,
+        "Alt": 194,
+        "Ref": 140,
+        "Total": 442,
+        "PcentAlt": 44.0,
+        "PcentRef": 32.0
+      },
+      {
+        "SNP1": 55,
+        "SNP2": 656,
+        "Alt": 178,
+        "Ref": 128,
+        "Total": 442,
+        "PcentAlt": 40.0,
+        "PcentRef": 29.0
+      },
+      {
+        "SNP1": 55,
+        "SNP2": 741,
+        "Alt": 205,
+        "Ref": 94,
+        "Total": 442,
+        "PcentAlt": 46.0,
+        "PcentRef": 21.0
+      },
+      {
+        "SNP1": 56,
+        "SNP2": 55,
+        "Alt": 232,
+        "Ref": 133,
+        "Total": 466,
+        "PcentAlt": 50.0,
+        "PcentRef": 29.0
+      },
+      {
+        "SNP1": 56,
+        "SNP2": 56,
+        "Alt": 247,
+        "Ref": 187,
+        "Total": 466,
+        "PcentAlt": 53.0,
+        "PcentRef": 40.0
+      },
+      {
+        "SNP1": 56,
+        "SNP2": 84,
+        "Alt": 185,
+        "Ref": 141,
+        "Total": 466,
+        "PcentAlt": 40.0,
+        "PcentRef": 30.0
+      },
+      {
+        "SNP1": 56,
+        "SNP2": 90,
+        "Alt": 192,
+        "Ref": 147,
+        "Total": 466,
+        "PcentAlt": 41.0,
+        "PcentRef": 32.0
+      },
+      {
+        "SNP1": 56,
+        "SNP2": 111,
+        "Alt": 167,
+        "Ref": 92,
+        "Total": 466,
+        "PcentAlt": 36.0,
+        "PcentRef": 20.0
+      },
+      {
+        "SNP1": 56,
+        "SNP2": 428,
+        "Alt": 199,
+        "Ref": 7,
+        "Total": 466,
+        "PcentAlt": 43.0,
+        "PcentRef": 2.0
+      },
+      {
+        "SNP1": 56,
+        "SNP2": 519,
+        "Alt": 196,
+        "Ref": 131,
+        "Total": 466,
+        "PcentAlt": 42.0,
+        "PcentRef": 28.0
+      },
+      {
+        "SNP1": 56,
+        "SNP2": 624,
+        "Alt": 192,
+        "Ref": 156,
+        "Total": 466,
+        "PcentAlt": 41.0,
+        "PcentRef": 33.0
+      },
+      {
+        "SNP1": 56,
+        "SNP2": 656,
+        "Alt": 175,
+        "Ref": 147,
+        "Total": 466,
+        "PcentAlt": 38.0,
+        "PcentRef": 32.0
+      },
+      {
+        "SNP1": 56,
+        "SNP2": 741,
+        "Alt": 204,
+        "Ref": 109,
+        "Total": 466,
+        "PcentAlt": 44.0,
+        "PcentRef": 23.0
+      },
+      {
+        "SNP1": 84,
+        "SNP2": 55,
+        "Alt": 182,
+        "Ref": 121,
+        "Total": 532,
+        "PcentAlt": 34.0,
+        "PcentRef": 23.0
+      },
+      {
+        "SNP1": 84,
+        "SNP2": 56,
+        "Alt": 185,
+        "Ref": 141,
+        "Total": 532,
+        "PcentAlt": 35.0,
+        "PcentRef": 27.0
+      },
+      {
+        "SNP1": 84,
+        "SNP2": 84,
+        "Alt": 330,
+        "Ref": 194,
+        "Total": 532,
+        "PcentAlt": 62.0,
+        "PcentRef": 36.0
+      },
+      {
+        "SNP1": 84,
+        "SNP2": 90,
+        "Alt": 265,
+        "Ref": 153,
+        "Total": 532,
+        "PcentAlt": 50.0,
+        "PcentRef": 29.0
+      },
+      {
+        "SNP1": 84,
+        "SNP2": 111,
+        "Alt": 237,
+        "Ref": 93,
+        "Total": 532,
+        "PcentAlt": 45.0,
+        "PcentRef": 17.0
+      },
+      {
+        "SNP1": 84,
+        "SNP2": 428,
+        "Alt": 256,
+        "Ref": 6,
+        "Total": 532,
+        "PcentAlt": 48.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 84,
+        "SNP2": 519,
+        "Alt": 263,
+        "Ref": 133,
+        "Total": 532,
+        "PcentAlt": 49.0,
+        "PcentRef": 25.0
+      },
+      {
+        "SNP1": 84,
+        "SNP2": 624,
+        "Alt": 261,
+        "Ref": 169,
+        "Total": 532,
+        "PcentAlt": 49.0,
+        "PcentRef": 32.0
+      },
+      {
+        "SNP1": 84,
+        "SNP2": 656,
+        "Alt": 241,
+        "Ref": 154,
+        "Total": 532,
+        "PcentAlt": 45.0,
+        "PcentRef": 29.0
+      },
+      {
+        "SNP1": 84,
+        "SNP2": 741,
+        "Alt": 262,
+        "Ref": 116,
+        "Total": 532,
+        "PcentAlt": 49.0,
+        "PcentRef": 22.0
+      },
+      {
+        "SNP1": 90,
+        "SNP2": 55,
+        "Alt": 199,
+        "Ref": 124,
+        "Total": 570,
+        "PcentAlt": 35.0,
+        "PcentRef": 22.0
+      },
+      {
+        "SNP1": 90,
+        "SNP2": 56,
+        "Alt": 192,
+        "Ref": 147,
+        "Total": 570,
+        "PcentAlt": 34.0,
+        "PcentRef": 26.0
+      },
+      {
+        "SNP1": 90,
+        "SNP2": 84,
+        "Alt": 265,
+        "Ref": 153,
+        "Total": 570,
+        "PcentAlt": 46.0,
+        "PcentRef": 27.0
+      },
+      {
+        "SNP1": 90,
+        "SNP2": 90,
+        "Alt": 357,
+        "Ref": 196,
+        "Total": 570,
+        "PcentAlt": 63.0,
+        "PcentRef": 34.0
+      },
+      {
+        "SNP1": 90,
+        "SNP2": 111,
+        "Alt": 269,
+        "Ref": 103,
+        "Total": 570,
+        "PcentAlt": 47.0,
+        "PcentRef": 18.0
+      },
+      {
+        "SNP1": 90,
+        "SNP2": 428,
+        "Alt": 274,
+        "Ref": 7,
+        "Total": 570,
+        "PcentAlt": 48.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 90,
+        "SNP2": 519,
+        "Alt": 279,
+        "Ref": 142,
+        "Total": 570,
+        "PcentAlt": 49.0,
+        "PcentRef": 25.0
+      },
+      {
+        "SNP1": 90,
+        "SNP2": 624,
+        "Alt": 275,
+        "Ref": 170,
+        "Total": 570,
+        "PcentAlt": 48.0,
+        "PcentRef": 30.0
+      },
+      {
+        "SNP1": 90,
+        "SNP2": 656,
+        "Alt": 263,
+        "Ref": 163,
+        "Total": 570,
+        "PcentAlt": 46.0,
+        "PcentRef": 29.0
+      },
+      {
+        "SNP1": 90,
+        "SNP2": 741,
+        "Alt": 291,
+        "Ref": 115,
+        "Total": 570,
+        "PcentAlt": 51.0,
+        "PcentRef": 20.0
+      },
+      {
+        "SNP1": 111,
+        "SNP2": 55,
+        "Alt": 175,
+        "Ref": 85,
+        "Total": 505,
+        "PcentAlt": 35.0,
+        "PcentRef": 17.0
+      },
+      {
+        "SNP1": 111,
+        "SNP2": 56,
+        "Alt": 167,
+        "Ref": 92,
+        "Total": 505,
+        "PcentAlt": 33.0,
+        "PcentRef": 18.0
+      },
+      {
+        "SNP1": 111,
+        "SNP2": 84,
+        "Alt": 237,
+        "Ref": 93,
+        "Total": 505,
+        "PcentAlt": 47.0,
+        "PcentRef": 18.0
+      },
+      {
+        "SNP1": 111,
+        "SNP2": 90,
+        "Alt": 269,
+        "Ref": 103,
+        "Total": 505,
+        "PcentAlt": 53.0,
+        "PcentRef": 20.0
+      },
+      {
+        "SNP1": 111,
+        "SNP2": 111,
+        "Alt": 325,
+        "Ref": 125,
+        "Total": 505,
+        "PcentAlt": 64.0,
+        "PcentRef": 25.0
+      },
+      {
+        "SNP1": 111,
+        "SNP2": 428,
+        "Alt": 243,
+        "Ref": 6,
+        "Total": 505,
+        "PcentAlt": 48.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 111,
+        "SNP2": 519,
+        "Alt": 250,
+        "Ref": 94,
+        "Total": 505,
+        "PcentAlt": 50.0,
+        "PcentRef": 19.0
+      },
+      {
+        "SNP1": 111,
+        "SNP2": 624,
+        "Alt": 247,
+        "Ref": 108,
+        "Total": 505,
+        "PcentAlt": 49.0,
+        "PcentRef": 21.0
+      },
+      {
+        "SNP1": 111,
+        "SNP2": 656,
+        "Alt": 240,
+        "Ref": 106,
+        "Total": 505,
+        "PcentAlt": 48.0,
+        "PcentRef": 21.0
+      },
+      {
+        "SNP1": 111,
+        "SNP2": 741,
+        "Alt": 265,
+        "Ref": 82,
+        "Total": 505,
+        "PcentAlt": 52.0,
+        "PcentRef": 16.0
+      },
+      {
+        "SNP1": 428,
+        "SNP2": 55,
+        "Alt": 200,
+        "Ref": 7,
+        "Total": 512,
+        "PcentAlt": 39.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 428,
+        "SNP2": 56,
+        "Alt": 199,
+        "Ref": 7,
+        "Total": 512,
+        "PcentAlt": 39.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 428,
+        "SNP2": 84,
+        "Alt": 256,
+        "Ref": 6,
+        "Total": 512,
+        "PcentAlt": 50.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 428,
+        "SNP2": 90,
+        "Alt": 274,
+        "Ref": 7,
+        "Total": 512,
+        "PcentAlt": 54.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 428,
+        "SNP2": 111,
+        "Alt": 243,
+        "Ref": 6,
+        "Total": 512,
+        "PcentAlt": 47.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 428,
+        "SNP2": 428,
+        "Alt": 498,
+        "Ref": 7,
+        "Total": 512,
+        "PcentAlt": 97.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 428,
+        "SNP2": 519,
+        "Alt": 279,
+        "Ref": 6,
+        "Total": 512,
+        "PcentAlt": 54.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 428,
+        "SNP2": 624,
+        "Alt": 274,
+        "Ref": 6,
+        "Total": 512,
+        "PcentAlt": 54.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 428,
+        "SNP2": 656,
+        "Alt": 257,
+        "Ref": 7,
+        "Total": 512,
+        "PcentAlt": 50.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 428,
+        "SNP2": 741,
+        "Alt": 287,
+        "Ref": 6,
+        "Total": 512,
+        "PcentAlt": 56.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 519,
+        "SNP2": 55,
+        "Alt": 198,
+        "Ref": 114,
+        "Total": 547,
+        "PcentAlt": 36.0,
+        "PcentRef": 21.0
+      },
+      {
+        "SNP1": 519,
+        "SNP2": 56,
+        "Alt": 196,
+        "Ref": 131,
+        "Total": 547,
+        "PcentAlt": 36.0,
+        "PcentRef": 24.0
+      },
+      {
+        "SNP1": 519,
+        "SNP2": 84,
+        "Alt": 263,
+        "Ref": 133,
+        "Total": 547,
+        "PcentAlt": 48.0,
+        "PcentRef": 24.0
+      },
+      {
+        "SNP1": 519,
+        "SNP2": 90,
+        "Alt": 279,
+        "Ref": 142,
+        "Total": 547,
+        "PcentAlt": 51.0,
+        "PcentRef": 26.0
+      },
+      {
+        "SNP1": 519,
+        "SNP2": 111,
+        "Alt": 250,
+        "Ref": 94,
+        "Total": 547,
+        "PcentAlt": 46.0,
+        "PcentRef": 17.0
+      },
+      {
+        "SNP1": 519,
+        "SNP2": 428,
+        "Alt": 279,
+        "Ref": 6,
+        "Total": 547,
+        "PcentAlt": 51.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 519,
+        "SNP2": 519,
+        "Alt": 355,
+        "Ref": 190,
+        "Total": 547,
+        "PcentAlt": 65.0,
+        "PcentRef": 35.0
+      },
+      {
+        "SNP1": 519,
+        "SNP2": 624,
+        "Alt": 273,
+        "Ref": 156,
+        "Total": 547,
+        "PcentAlt": 50.0,
+        "PcentRef": 29.0
+      },
+      {
+        "SNP1": 519,
+        "SNP2": 656,
+        "Alt": 260,
+        "Ref": 143,
+        "Total": 547,
+        "PcentAlt": 48.0,
+        "PcentRef": 26.0
+      },
+      {
+        "SNP1": 519,
+        "SNP2": 741,
+        "Alt": 288,
+        "Ref": 105,
+        "Total": 547,
+        "PcentAlt": 53.0,
+        "PcentRef": 19.0
+      },
+      {
+        "SNP1": 624,
+        "SNP2": 55,
+        "Alt": 194,
+        "Ref": 140,
+        "Total": 592,
+        "PcentAlt": 33.0,
+        "PcentRef": 24.0
+      },
+      {
+        "SNP1": 624,
+        "SNP2": 56,
+        "Alt": 192,
+        "Ref": 156,
+        "Total": 592,
+        "PcentAlt": 32.0,
+        "PcentRef": 26.0
+      },
+      {
+        "SNP1": 624,
+        "SNP2": 84,
+        "Alt": 261,
+        "Ref": 169,
+        "Total": 592,
+        "PcentAlt": 44.0,
+        "PcentRef": 29.0
+      },
+      {
+        "SNP1": 624,
+        "SNP2": 90,
+        "Alt": 275,
+        "Ref": 170,
+        "Total": 592,
+        "PcentAlt": 46.0,
+        "PcentRef": 29.0
+      },
+      {
+        "SNP1": 624,
+        "SNP2": 111,
+        "Alt": 247,
+        "Ref": 108,
+        "Total": 592,
+        "PcentAlt": 42.0,
+        "PcentRef": 18.0
+      },
+      {
+        "SNP1": 624,
+        "SNP2": 428,
+        "Alt": 274,
+        "Ref": 6,
+        "Total": 592,
+        "PcentAlt": 46.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 624,
+        "SNP2": 519,
+        "Alt": 273,
+        "Ref": 156,
+        "Total": 592,
+        "PcentAlt": 46.0,
+        "PcentRef": 26.0
+      },
+      {
+        "SNP1": 624,
+        "SNP2": 624,
+        "Alt": 353,
+        "Ref": 234,
+        "Total": 592,
+        "PcentAlt": 60.0,
+        "PcentRef": 40.0
+      },
+      {
+        "SNP1": 624,
+        "SNP2": 656,
+        "Alt": 263,
+        "Ref": 178,
+        "Total": 592,
+        "PcentAlt": 44.0,
+        "PcentRef": 30.0
+      },
+      {
+        "SNP1": 624,
+        "SNP2": 741,
+        "Alt": 282,
+        "Ref": 131,
+        "Total": 592,
+        "PcentAlt": 48.0,
+        "PcentRef": 22.0
+      },
+      {
+        "SNP1": 656,
+        "SNP2": 55,
+        "Alt": 178,
+        "Ref": 128,
+        "Total": 570,
+        "PcentAlt": 31.0,
+        "PcentRef": 22.0
+      },
+      {
+        "SNP1": 656,
+        "SNP2": 56,
+        "Alt": 175,
+        "Ref": 147,
+        "Total": 570,
+        "PcentAlt": 31.0,
+        "PcentRef": 26.0
+      },
+      {
+        "SNP1": 656,
+        "SNP2": 84,
+        "Alt": 241,
+        "Ref": 154,
+        "Total": 570,
+        "PcentAlt": 42.0,
+        "PcentRef": 27.0
+      },
+      {
+        "SNP1": 656,
+        "SNP2": 90,
+        "Alt": 263,
+        "Ref": 163,
+        "Total": 570,
+        "PcentAlt": 46.0,
+        "PcentRef": 29.0
+      },
+      {
+        "SNP1": 656,
+        "SNP2": 111,
+        "Alt": 240,
+        "Ref": 106,
+        "Total": 570,
+        "PcentAlt": 42.0,
+        "PcentRef": 19.0
+      },
+      {
+        "SNP1": 656,
+        "SNP2": 428,
+        "Alt": 257,
+        "Ref": 7,
+        "Total": 570,
+        "PcentAlt": 45.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 656,
+        "SNP2": 519,
+        "Alt": 260,
+        "Ref": 143,
+        "Total": 570,
+        "PcentAlt": 46.0,
+        "PcentRef": 25.0
+      },
+      {
+        "SNP1": 656,
+        "SNP2": 624,
+        "Alt": 263,
+        "Ref": 178,
+        "Total": 570,
+        "PcentAlt": 46.0,
+        "PcentRef": 31.0
+      },
+      {
+        "SNP1": 656,
+        "SNP2": 656,
+        "Alt": 334,
+        "Ref": 234,
+        "Total": 570,
+        "PcentAlt": 59.0,
+        "PcentRef": 41.0
+      },
+      {
+        "SNP1": 656,
+        "SNP2": 741,
+        "Alt": 267,
+        "Ref": 127,
+        "Total": 570,
+        "PcentAlt": 47.0,
+        "PcentRef": 22.0
+      },
+      {
+        "SNP1": 741,
+        "SNP2": 55,
+        "Alt": 205,
+        "Ref": 94,
+        "Total": 519,
+        "PcentAlt": 39.0,
+        "PcentRef": 18.0
+      },
+      {
+        "SNP1": 741,
+        "SNP2": 56,
+        "Alt": 204,
+        "Ref": 109,
+        "Total": 519,
+        "PcentAlt": 39.0,
+        "PcentRef": 21.0
+      },
+      {
+        "SNP1": 741,
+        "SNP2": 84,
+        "Alt": 262,
+        "Ref": 116,
+        "Total": 519,
+        "PcentAlt": 50.0,
+        "PcentRef": 22.0
+      },
+      {
+        "SNP1": 741,
+        "SNP2": 90,
+        "Alt": 291,
+        "Ref": 115,
+        "Total": 519,
+        "PcentAlt": 56.0,
+        "PcentRef": 22.0
+      },
+      {
+        "SNP1": 741,
+        "SNP2": 111,
+        "Alt": 265,
+        "Ref": 82,
+        "Total": 519,
+        "PcentAlt": 51.0,
+        "PcentRef": 16.0
+      },
+      {
+        "SNP1": 741,
+        "SNP2": 428,
+        "Alt": 287,
+        "Ref": 6,
+        "Total": 519,
+        "PcentAlt": 55.0,
+        "PcentRef": 1.0
+      },
+      {
+        "SNP1": 741,
+        "SNP2": 519,
+        "Alt": 288,
+        "Ref": 105,
+        "Total": 519,
+        "PcentAlt": 55.0,
+        "PcentRef": 20.0
+      },
+      {
+        "SNP1": 741,
+        "SNP2": 624,
+        "Alt": 282,
+        "Ref": 131,
+        "Total": 519,
+        "PcentAlt": 54.0,
+        "PcentRef": 25.0
+      },
+      {
+        "SNP1": 741,
+        "SNP2": 656,
+        "Alt": 267,
+        "Ref": 127,
+        "Total": 519,
+        "PcentAlt": 51.0,
+        "PcentRef": 24.0
+      },
+      {
+        "SNP1": 741,
+        "SNP2": 741,
+        "Alt": 367,
+        "Ref": 147,
+        "Total": 519,
+        "PcentAlt": 71.0,
+        "PcentRef": 28.0
+      }
+    ]
+  },
+  "mark": "rect",
+  "width": 300,
+  "height": 300,
+  "title": {
+    "fontSize": 16
+  },
+  "encoding": {
+    "y": {
+      "field": "SNP1",
+      "type": "ordinal",
+      "title": "Variant site",
+      "axis": {
+        "labelFont": "Helvetica Neue",
+        "titleFontSize": 10,
+        "titleFontWeight": 400,
+        "labelFontWeight": 300,
+        "titleFont": "Helvetica Neue"
+      }
+    },
+    "x": {
+      "field": "SNP2",
+      "type": "ordinal",
+      "title": "Variant site",
+      "axis": {
+        "labelFont": "Helvetica Neue",
+        "titleFontSize": 10,
+        "titleFontWeight": 400,
+        "labelFontWeight": 300,
+        "titleFont": "Helvetica Neue"
+      }
+    },
+    "color": {
+      "type": "quantitative",
+      "field": "PcentRef",
+      "scale": {
+        "domain": [
+          0,
+          100
+        ],
+        "scheme": "yelloworangered"
+      }
+    }
+  },
+  "config": {
+    "legend": {
+      "labelFontSize": 8,
+      "titleFontWeight": 300,
+      "labelFontWeight": 300,
+      "titleFontSize": 10
+    },
+    "axis": {
+      "grid": true,
+      "tickBand": "extent"
+    }
+  }
+}

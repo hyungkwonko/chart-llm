@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Proportion of Spending Online",
+    "subtitle": [
+      "Retail Sales Data showing the proportion of online sales by different sectors",
+      "Source: ONS"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/propdata.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "color": "#557A95"
+  },
+  "height": 100,
+  "width": 150,
+  "encoding": {
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": [
+        "Proportion of",
+        "Online Spending"
+      ]
+    },
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "labelAngle": 45,
+        "tickCount": "year"
+      }
+    },
+    "facet": {
+      "field": "Category",
+      "title": null,
+      "columns": 2,
+      "spacing": 0.0001
+    },
+    "resolve": {
+      "scale": {
+        "y": "independent"
+      }
+    },
+    "tooltip": {
+      "field": "Value"
+    }
+  }
+}

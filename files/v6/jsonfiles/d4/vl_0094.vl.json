@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": "container",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nychealth/covid-maps/a9e419021db465e02f7fbdf8cd4614e8490734a1/main/MODZCTA_2010_WGS1984.topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "collection"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#ffffff",
+        "fill": "lightgray"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nychealth/covid-maps/a9e419021db465e02f7fbdf8cd4614e8490734a1/main/MODZCTA_2010_WGS1984.topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "collection"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.MODZCTA",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/totals/data-by-modzcta.csv"
+            },
+            "key": "MODIFIED_ZCTA",
+            "fields": [
+              "MODIFIED_ZCTA",
+              "NEIGHBORHOOD_NAME",
+              "BOROUGH_GROUP",
+              "COVID_CASE_COUNT",
+              "COVID_CASE_RATE",
+              "PERCENT_POSITIVE",
+              "COVID_DEATH_COUNT",
+              "COVID_DEATH_RATE",
+              "POP_DENOMINATOR"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#FFFFFF"
+      },
+      "encoding": {
+        "color": {
+          "bin": false,
+          "field": "COVID_CASE_RATE",
+          "type": "quantitative",
+          "scale": {
+            "scheme": {
+              "name": "redpurple",
+              "extent": [
+                0,
+                1.5
+              ]
+            }
+          },
+          "legend": {
+            "title": "Case Rate per 100k",
+            "titleFontSize": 10,
+            "orient": "top-left",
+            "gradientLength": 100
+          }
+        },
+        "strokeWidth": {
+          "value": 0.5
+        },
+        "tooltip": [
+          {
+            "field": "properties.label",
+            "type": "nominal",
+            "title": "ZIP Code"
+          },
+          {
+            "field": "NEIGHBORHOOD_NAME",
+            "type": "nominal",
+            "title": "Neighborhood"
+          },
+          {
+            "field": "COVID_CASE_COUNT",
+            "type": "quantitative",
+            "title": "Case Count"
+          },
+          {
+            "field": "COVID_CASE_RATE",
+            "type": "quantitative",
+            "title": "Rate per 100,000"
+          },
+          {
+            "field": "PERCENT_POSITIVE",
+            "type": "quantitative",
+            "title": "Percent of people tested who tested positive"
+          },
+          {
+            "field": "COVID_DEATH_COUNT",
+            "type": "quantitative",
+            "title": "Deaths"
+          },
+          {
+            "field": "COVID_DEATH_RATE",
+            "type": "quantitative",
+            "title": "Death rate per 100,000"
+          }
+        ]
+      }
+    }
+  ]
+}

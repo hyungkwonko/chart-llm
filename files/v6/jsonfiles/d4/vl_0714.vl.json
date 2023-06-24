@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Europe: Exports of goods and services (current US$billion)",
+    "subtitle": "Source: https://raw.githubusercontent.com/leakyMirror/map-of-europe/master/TopoJSON/europe.topojson",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/continents/europe.json",
+    "format": {
+      "type": "topojson",
+      "feature": "continent_Europe_subunits"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.geounit",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/Week7EuropeExportsdata_REAL_NEW.csv"
+        },
+        "key": "Country Name",
+        "fields": [
+          "Exports of goods and services (current US$billion)"
+        ]
+      }
+    }
+  ],
+  "projection": {
+    "type": "equalEarth"
+  },
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "Exports of goods and services (current US$billion)",
+      "title": "Exports - goods and services",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "viridis"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.geounit",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "Exports of goods and services (current US$billion)",
+        "type": "quantitative",
+        "title": "Exports of goods and services (current US$billion)",
+        "format": ".2f"
+      }
+    ]
+  }
+}

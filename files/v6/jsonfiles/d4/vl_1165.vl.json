@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ConorQuah/ConorQuah.github.io/main/happiness%26le.csv"
+  },
+  "height": 280,
+  "width": 280,
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "lifeexpectancy",
+          "title": "Life Expectancy",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              45,
+              90
+            ]
+          }
+        },
+        "y": {
+          "field": "happiness2020",
+          "title": "Happiness",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              2,
+              8
+            ]
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "happiness2020",
+          "on": "lifeexpectancy"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "lifeexpectancy",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "happiness2020",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "happiness2020",
+          "on": "lifeexpectancy",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ]
+}

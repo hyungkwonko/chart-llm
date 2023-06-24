@@ -1,0 +1,157 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": "container",
+  "data": {
+    "url": "https://raw.githubusercontent.com/nychealth/EHDP-data/production/neighborhood-reports/data/Active_Design_Physical_Activity_and_Health_data.csv"
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "lookup": "geo_join_id",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/nychealth/EHDP-data/production/geography/UHF42.topo.json",
+          "format": {
+            "type": "topojson",
+            "feature": "collection"
+          }
+        },
+        "key": "properties.GEOCODE"
+      },
+      "as": "geo"
+    },
+    {
+      "filter": "datum.data_field_name === 'obesityP'"
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nychealth/EHDP-data/production/geography/borough.topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "collection"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#fafafa",
+        "fill": "#C5C5C5",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "mark": {
+        "type": "geoshape",
+        "invalid": null
+      },
+      "params": [
+        {
+          "name": "highlight",
+          "select": {
+            "type": "point",
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "encoding": {
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        },
+        "color": {
+          "condition": {
+            "test": "isValid(datum.data_value)",
+            "bin": false,
+            "field": "data_value",
+            "type": "quantitative",
+            "scale": {
+              "scheme": {
+                "name": "greens",
+                "extent": [
+                  0,
+                  1
+                ]
+              }
+            },
+            "legend": {
+              "orient": "top-left",
+              "title": null
+            }
+          },
+          "value": "#808080"
+        },
+        "stroke": {
+          "condition": [
+            {
+              "param": "highlight",
+              "empty": false,
+              "value": "orange"
+            }
+          ],
+          "value": "#eaeaea"
+        },
+        "strokeWidth": {
+          "condition": [
+            {
+              "param": "highlight",
+              "empty": false,
+              "value": 1.25
+            }
+          ],
+          "value": 0.5
+        },
+        "order": {
+          "condition": [
+            {
+              "param": "highlight",
+              "empty": false,
+              "value": 1
+            }
+          ],
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "neighborhood",
+            "title": "Neighborhood",
+            "type": "nominal"
+          },
+          {
+            "field": "data_value",
+            "title": "Value",
+            "type": "quantitative"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "geoshape",
+        "invalid": null
+      },
+      "encoding": {
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        },
+        "fill": {
+          "value": null
+        },
+        "stroke": {
+          "condition": {
+            "test": "datum.neighborhood=='Bedford Stuyvesant - Crown Heights'",
+            "value": "#161616"
+          }
+        },
+        "strokeWidth": {
+          "value": 1.5
+        }
+      }
+    }
+  ]
+}

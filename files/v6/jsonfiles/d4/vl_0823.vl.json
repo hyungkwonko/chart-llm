@@ -1,0 +1,136 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": [
+      "Fantasy Premier League (FPL) 2021/22:",
+      "Value vs Ownership (%)"
+    ],
+    "subtitle": [
+      "Figure 7",
+      "Ownership (%) in FPL (x), FPL Points per Million per 90 (y). size by FPL Player Price",
+      "Select a team in the legend to focus",
+      "Source: Vaastav via Github"
+    ],
+    "subtitleFontStyle": "italic",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/josh-shah/josh-shah.github.io/main/FPL_21_22_project_final.csv"
+  },
+  "mark": {
+    "type": "circle",
+    "color": "#000080",
+    "opacity": 0.7
+  },
+  "height": 300,
+  "width": "container",
+  "selection": {
+    "Team": {
+      "type": "multi",
+      "fields": [
+        "Team"
+      ],
+      "bind": "legend"
+    },
+    "paintbrush": {
+      "type": "multi",
+      "on": "mouseover",
+      "nearest": true
+    }
+  },
+  "encoding": {
+    "y": {
+      "field": "Points_per_M_per_90",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          1.6
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": "Value"
+    },
+    "x": {
+      "field": "Selected_By_Percent",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          45
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": "Ownership (%)"
+    },
+    "size": {
+      "field": "Now_cost",
+      "type": "quantitative",
+      "title": [
+        "Non-Penalty",
+        "Expected Goals"
+      ],
+      "legend": false
+    },
+    "color": {
+      "field": "Team",
+      "type": "nominal",
+      "scale": {
+        "scheme": "turbo"
+      },
+      "title": "Team",
+      "legend": {
+        "orient": "bottom",
+        "columns": 1,
+        "fillColor": "#FfFfFf"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "Team",
+        "value": 1
+      },
+      "value": 0.05
+    },
+    "tooltip": [
+      {
+        "field": "First_Name",
+        "type": "ordinal",
+        "title": "First Name"
+      },
+      {
+        "field": "Surname",
+        "type": "ordinal",
+        "title": "Surname"
+      },
+      {
+        "field": "Now_cost",
+        "type": "ordinal",
+        "title": "Price (\u00a3M)"
+      },
+      {
+        "field": "Points_per_M_per_90",
+        "type": "quantitative",
+        "title": "Value"
+      },
+      {
+        "field": "Selected_By_Percent",
+        "type": "quantitative",
+        "title": "Ownership (%)"
+      }
+    ]
+  }
+}

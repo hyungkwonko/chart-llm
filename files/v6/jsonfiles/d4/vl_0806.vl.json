@@ -1,0 +1,157 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://gist.githubusercontent.com/khang-dao/f29ae5478564a307d9a24787e67701ee/raw/5e73dd387a9ebc89d049f58b0d652729df1f9a90/olympics-1986-2016-cleaned-3.csv"
+  },
+  "background": "rgba(255, 255, 255, 0)",
+  "spacing": 0,
+  "vconcat": [
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "Sex",
+            "equal": "M"
+          }
+        }
+      ],
+      "title": "Male",
+      "width": 950,
+      "mark": {
+        "type": "bar",
+        "width": {
+          "band": 0.7
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "Sport",
+          "title": null,
+          "axis": null,
+          "sort": "ascending"
+        },
+        "y": {
+          "aggregate": "average",
+          "field": "Age",
+          "title": "Age",
+          "axis": {
+            "format": "s"
+          },
+          "scale": {
+            "domain": [
+              0,
+              60
+            ]
+          }
+        },
+        "color": {
+          "field": "Sex",
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "Sport",
+            "type": "nominal"
+          },
+          {
+            "field": "Age",
+            "type": "ordinal"
+          }
+        ]
+      }
+    },
+    {
+      "view": {
+        "stroke": null
+      },
+      "width": 950,
+      "mark": {
+        "type": "text",
+        "angle": 270
+      },
+      "encoding": {
+        "x": {
+          "field": "Sport",
+          "type": "nominal",
+          "sort": "ascending",
+          "axis": null
+        },
+        "text": {
+          "field": "Sport",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "Sex",
+            "equal": "F"
+          }
+        }
+      ],
+      "title": {
+        "text": "Female",
+        "dy": 200
+      },
+      "width": 950,
+      "mark": {
+        "type": "bar",
+        "width": {
+          "band": 0.7
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "Sport",
+          "axis": null,
+          "sort": "ascending"
+        },
+        "y": {
+          "aggregate": "average",
+          "field": "Age",
+          "title": "Age",
+          "axis": {
+            "format": "s"
+          },
+          "scale": {
+            "domain": [
+              0,
+              60
+            ]
+          },
+          "sort": "descending"
+        },
+        "color": {
+          "field": "Sex",
+          "scale": {
+            "range": [
+              "lightpink",
+              "deepskyblue"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "Sport",
+            "type": "nominal"
+          },
+          {
+            "field": "Age",
+            "type": "ordinal"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "grid": false
+    }
+  }
+}

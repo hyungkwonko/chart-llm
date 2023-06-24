@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Covid Cases: English regions - click on legend",
+    "subtitle": "New cases by specimen date. Rolling weekly rate per 100k population.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "description": "Coronavirus cases",
+  "data": {
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesBySpecimenDateRollingRate&format=csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "area",
+    "point": false
+  },
+  "selection": {
+    "region": {
+      "type": "multi",
+      "fields": [
+        "areaName"
+      ],
+      "bind": "legend"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "newCasesBySpecimenDateRollingRate",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "areaName",
+      "type": "nominal",
+      "scale": {
+        "scheme": "inferno"
+      },
+      "title": null,
+      "legend": {
+        "orient": "bottom",
+        "columns": 2,
+        "fillColor": "#FcFdFd"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "region",
+        "value": 1
+      },
+      "value": 0.1
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Richard's line chart",
+  "title": {
+    "text": "Eldery workers - Japan",
+    "subtitle": [
+      "Share of workforce that is 65+",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "view": {
+    "stroke": "transparent"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch8_Trends/elderlyWorkersJapan.csv"
+  },
+  "height": 300,
+  "width": 350,
+  "mark": {
+    "type": "line",
+    "color": "rgb(128,0,0)",
+    "point": {
+      "color": "rgb(128,0,0)",
+      "size": 50
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": null
+      }
+    },
+    "y": {
+      "field": "ValuePCT",
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "format": "%"
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Size and Inflation Correlation",
+    "subtitle": [
+      "Regression of country GDP size vs GDP growth rate. Source: TheWorldBank"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "darkblue"
+  },
+  "height": 285,
+  "width": 230,
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/SamJones033/SamJones033.github.io/main/diffcountries.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "color": "blueviolet",
+        "opacity": 1,
+        "size": 100
+      },
+      "encoding": {
+        "x": {
+          "field": "total",
+          "type": "quantitative",
+          "title": "Total GDP"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Inflation rate (%)",
+          "scale": {
+            "domain": [
+              0,
+              20
+            ]
+          }
+        },
+        "color": {
+          "field": "continent",
+          "type": "nominal",
+          "title": "Continent:",
+          "scale": {
+            "scheme": "dark2"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "type": "ordinal",
+            "title": "Country"
+          },
+          {
+            "field": "total",
+            "type": "quantitative",
+            "title": "Total GDP",
+            "format": ".2f"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Inflation Rate"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "springgreen"
+      },
+      "transform": [
+        {
+          "regression": "value",
+          "on": "total",
+          "extent": [
+            1,
+            4940880000000
+          ]
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "total",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "value",
+          "on": "total",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -10
+      },
+      "encoding": {
+        "text": {
+          "type": "ordinal",
+          "field": "R2"
+        }
+      }
+    }
+  ]
+}

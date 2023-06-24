@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "type": "nominal",
+      "field": "preferred color"
+    },
+    "y": {
+      "aggregate": "sum",
+      "type": "quantitative",
+      "field": "COUNT"
+    },
+    "color": {
+      "type": "nominal",
+      "field": "gender"
+    }
+  },
+  "config": {
+    "line": {
+      "point": true
+    },
+    "scale": {
+      "useUnaggregatedDomain": true
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "preferred color",
+        "oneOf": [
+          "black",
+          "blue",
+          "gray",
+          "green",
+          "lavender",
+          "orange",
+          "purple",
+          "red",
+          "tan",
+          "white",
+          "yellow"
+        ]
+      }
+    }
+  ],
+  "description": "stackedBarChart",
+  "data": {
+    "url": "https://raw.githubusercontent.com/thomasxu2009/ChartStory/1888d7060e265cc2e1493f5555412997857945c5/savedFile_luma/customer2Data.json"
+  }
+}

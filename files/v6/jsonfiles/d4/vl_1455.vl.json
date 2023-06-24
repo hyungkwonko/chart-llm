@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 10000,
+  "height": 400,
+  "description": "Project MEs over time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/GraemeHawker/GBEnergyDataManager/20f06b76bfae3b354000dc3729656e9674c244cc/BMRA/static/BMRA/projected_MEs_2020.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.symbol === 'SE'"
+    }
+  ],
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "XYZtitle": {
+    "text": "Age, Size and Productivity",
+    "subtitle": [
+      "RLP for firms by age and size (n employees).",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_AgeSize.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "as": [
+        "size",
+        "value"
+      ]
+    },
+    {
+      "filter": "datum.value>0"
+    },
+    {
+      "filter": "datum.Measure=='RLP'"
+    }
+  ],
+  "height": 300,
+  "width": 450,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 1,
+    "point": true
+  },
+  "encoding": {
+    "x": {
+      "field": "Age",
+      "type": "quantitative",
+      "title": "Age",
+      "axis": {
+        "grid": false,
+        "format": ".2"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Productivity",
+      "axis": {
+        "grid": false,
+        "format": ".3"
+      }
+    },
+    "color": {
+      "field": "size",
+      "title": "Size",
+      "scale": {
+        "scheme": "viridis"
+      },
+      "legend": {
+        "orient": "top-left",
+        "columns": 1
+      }
+    }
+  }
+}

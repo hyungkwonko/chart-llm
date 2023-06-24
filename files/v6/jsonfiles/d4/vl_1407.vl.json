@@ -1,0 +1,23 @@
+{
+  "mark": "point",
+  "data": {
+    "url": "https://raw.githubusercontent.com/adamConnerSax/incarceration/3bcd9826c6eb62fa3e9ea06136531ea6fa624e18/data/kMeansCOMoneyBondRatevsPovertyRateByYearAndUrbanicity.csv"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "encoding": {
+    "size": {
+      "field": "total_pop",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "povertyR",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "moneyPct",
+      "type": "quantitative"
+    }
+  },
+  "background": "white",
+  "description": "Vega Lite Attempt"
+}

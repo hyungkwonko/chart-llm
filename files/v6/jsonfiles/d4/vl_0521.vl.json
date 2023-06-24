@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Creates year variable, then defined parameters on this and adds sliders.",
+  "title": {
+    "text": "Inflation - US",
+    "subtitle": "All items, FRED series: CPIAUCSL_PC1",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "mark": {
+    "type": "line",
+    "color": "rgb(0,112,192)",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/usa/data_FRED_CPIAUCSL.csv"
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.Date)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    },
+    {
+      "calculate": "datum.CPIAUCSL_PC1/100",
+      "as": "value"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1989,
+      "bind": {
+        "input": "range",
+        "min": 1963,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1963,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "format": "%"
+      }
+    }
+  }
+}

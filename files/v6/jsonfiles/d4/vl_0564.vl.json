@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple donut chart with embedded data.",
+  "height": 300,
+  "width": 300,
+  "view": {
+    "stroke": "transparent"
+  },
+  "title": {
+    "text": "Foreign entry to the US",
+    "subtitle": [
+      "FY 2022. Source: DHS",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch7_Trade/USmigrationByType.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.Type != 'Non-immigrant'"
+    }
+  ],
+  "mark": {
+    "type": "arc",
+    "innerRadius": 60,
+    "outerRadius": 120,
+    "cornerRadius": 0,
+    "padAngle": 0.0,
+    "thetaOffset": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "Number",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "legend": {
+        "title": null
+      },
+      "scale": {
+        "scheme": "set3"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Value",
+        "title": "USD billions",
+        "format": "$,"
+      },
+      {
+        "field": "Share",
+        "title": "Share",
+        "format": ".0%"
+      }
+    ]
+  }
+}

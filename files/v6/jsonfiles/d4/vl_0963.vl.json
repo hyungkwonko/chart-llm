@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/data-pps2.csv"
+  },
+  "title": {
+    "text": "PP score matrix",
+    "subtitle": [
+      "Predictive power score matrix"
+    ],
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "height": 125,
+  "width": 125,
+  "encoding": {
+    "y": {
+      "field": "x",
+      "type": "nominal",
+      "title": null,
+      "axis": {
+        "labelFontSize": 8
+      }
+    },
+    "x": {
+      "field": "y",
+      "type": "nominal",
+      "title": null,
+      "axis": {
+        "labelFontSize": 8
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": "rect",
+      "encoding": {
+        "color": {
+          "field": "ppscore",
+          "type": "quantitative",
+          "title": "PP Score",
+          "legend": {
+            "labelFontSize": 8,
+            "titleFontSize": 9
+          }
+        }
+      }
+    },
+    {
+      "mark": "text",
+      "encoding": {
+        "text": {
+          "field": "ppscore",
+          "type": "quantitative",
+          "format": ".2f"
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "grid": true,
+      "tickBand": "extent"
+    }
+  }
+}

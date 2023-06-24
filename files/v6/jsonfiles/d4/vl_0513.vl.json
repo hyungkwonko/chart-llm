@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Various US measures state by state",
+  "title": {
+    "text": "Gun deaths and income - US states",
+    "subtitle": [
+      "Median income (x), and firearm deaths per 100k population (y)",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/usa/data_USsocioEconomic.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "size": 150,
+    "color": "rgb(0,67,167)",
+    "opacity": 0.6
+  },
+  "height": 300,
+  "width": 250,
+  "encoding": {
+    "x": {
+      "field": "medIncome",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          40000,
+          80000
+        ]
+      },
+      "title": null
+    },
+    "y": {
+      "field": "FirearmDeaths",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "GeographicDivision",
+      "type": "ordinal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "legend": {
+        "orient": "bottom"
+      },
+      "title": null
+    },
+    "size": {
+      "field": "PrisonRate",
+      "type": "quantitative",
+      "title": "Prison Rate",
+      "scale": {
+        "range": [
+          5,
+          300
+        ]
+      }
+    }
+  }
+}

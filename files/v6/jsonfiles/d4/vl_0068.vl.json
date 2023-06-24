@@ -1,0 +1,87 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "hconcat": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "color": {
+          "value": "red"
+        },
+        "x": {
+          "field": "day",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "VIOLATIONS_r",
+          "type": "quantitative"
+        }
+      },
+      "title": "red light violations"
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "color": {
+          "value": "orange"
+        },
+        "x": {
+          "field": "day",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "VIOLATION_s",
+          "type": "quantitative"
+        }
+      },
+      "title": "Speed violation"
+    }
+  ],
+  "data": {
+    "name": "data-0bb7bebef1df33ea1a710c8b55eac852"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-0bb7bebef1df33ea1a710c8b55eac852": [
+      {
+        "day": "Friday",
+        "VIOLATIONS_r": 65.4901185770751,
+        "VIOLATION_s": 299.9431818181818
+      },
+      {
+        "day": "Monday",
+        "VIOLATIONS_r": 64.54174757281554,
+        "VIOLATION_s": 297.83752093802343
+      },
+      {
+        "day": "Saturday",
+        "VIOLATIONS_r": 66.48170731707317,
+        "VIOLATION_s": 326.88823529411764
+      },
+      {
+        "day": "Sunday",
+        "VIOLATIONS_r": 68.53291536050156,
+        "VIOLATION_s": 325.1568836712914
+      },
+      {
+        "day": "Thursday",
+        "VIOLATIONS_r": 64.19243421052632,
+        "VIOLATION_s": 294.24426229508197
+      },
+      {
+        "day": "Tuesday",
+        "VIOLATIONS_r": 63.59207920792079,
+        "VIOLATION_s": 292.3005272407733
+      },
+      {
+        "day": "Wednesday",
+        "VIOLATIONS_r": 64.44291338582677,
+        "VIOLATION_s": 295.7886323268206
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/series-060123.csv"
+  },
+  "title": {
+    "text": "CPI Inflation Rate (2015-2022)",
+    "subtitle": [
+      "Source: ONS"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "transform": [
+    {
+      "filter": {
+        "timeUnit": "year",
+        "field": "Date",
+        "gte": "2010"
+      }
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "y": {
+      "field": "Rate",
+      "type": "quantitative",
+      "scale": {
+        "zero": false
+      },
+      "title": null
+    }
+  }
+}

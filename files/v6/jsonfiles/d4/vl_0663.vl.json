@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 300,
+  "width": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoUSStates.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "albersUsa"
+  },
+  "transform": [
+    {
+      "lookup": "properties.NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/dataUSstatesCrimeWide.csv"
+        },
+        "key": "State",
+        "fields": [
+          "Motor Vehicle Theft",
+          "Robbery",
+          "Burglary"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.4
+  },
+  "encoding": {
+    "color": {
+      "field": "Burglary",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "properties.NAME",
+        "type": "nominal",
+        "title": "State"
+      },
+      {
+        "field": "Motor Vehicle Theft",
+        "title": "GTA"
+      },
+      {
+        "field": "Robbery",
+        "title": "Robbed"
+      },
+      {
+        "field": "Burglary",
+        "title": "Burglary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axisX": {
+      "domain": true,
+      "domainColor": "#023B7F",
+      "domainWidth": 1,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 12,
+      "tickColor": "#023B7F",
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 12,
+      "titlePadding": 10
+    },
+    "axisY": {
+      "domain": false,
+      "grid": true,
+      "gridColor": "#023B7F",
+      "gridWidth": 1,
+      "labelAngle": 0,
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 12,
+      "ticks": false,
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 12,
+      "titlePadding": 10
+    },
+    "legend": {
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 16,
+      "padding": 10,
+      "strokeColor": "white",
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 20
+    },
+    "mark": {
+      "color": "#4279C1",
+      "fill": "#7EB7FD"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#023B7F",
+      "font": "Helvetica Neue",
+      "fontSize": 18
+    },
+    "view": {
+      "height": 300,
+      "stroke": "#4279C1",
+      "width": 500
+    }
+  },
+  "data": {
+    "name": "data-b348b836ad407e1a645a2c0bf94fcff6"
+  },
+  "datasets": {
+    "data-b348b836ad407e1a645a2c0bf94fcff6": [
+      {
+        "PPB": 20.0,
+        "axis_label": "2017 Yale A (R14)",
+        "bhrd": 10.0,
+        "bpts": 200.0,
+        "game_id": 20171415.0,
+        "negs": 1.0,
+        "opponent": "Michigan A",
+        "pa": 310.0,
+        "packet": "Editors 5",
+        "pf": 295.0,
+        "result": "L",
+        "round": 14.0,
+        "status": "NA",
+        "team": "Yale A",
+        "tossups": 10.0,
+        "tournament": "ACF Nationals 2017"
+      },
+      {
+        "PPB": 23.33,
+        "axis_label": "2013 Penn A (R14)",
+        "bhrd": 9.0,
+        "bpts": 210.0,
+        "game_id": 20131402.0,
+        "negs": 1.0,
+        "opponent": "Yale A",
+        "pa": 310.0,
+        "packet": "Editors 2",
+        "pf": 295.0,
+        "result": "L",
+        "round": 14.0,
+        "status": "NA",
+        "team": "Penn A",
+        "tossups": 9.0,
+        "tournament": "ACF Nationals 2013"
+      },
+      {
+        "PPB": 20.0,
+        "axis_label": "2012 Penn A (R15)",
+        "bhrd": 10.0,
+        "bpts": 200.0,
+        "game_id": 20121507.0,
+        "negs": 2.0,
+        "opponent": "Yale A",
+        "pa": 330.0,
+        "packet": "NA",
+        "pf": 290.0,
+        "result": "L",
+        "round": 15.0,
+        "status": "NA",
+        "team": "Penn A",
+        "tossups": 10.0,
+        "tournament": "ACF Nationals 2012"
+      },
+      {
+        "PPB": 19.0,
+        "axis_label": "2019 Columbia A (R13)",
+        "bhrd": 10.0,
+        "bpts": 190.0,
+        "game_id": 20191306.0,
+        "negs": 1.0,
+        "opponent": "Minnesota A",
+        "pa": 295.0,
+        "packet": "Editors 4",
+        "pf": 285.0,
+        "result": "L",
+        "round": 13.0,
+        "status": "NA",
+        "team": "Columbia A",
+        "tossups": 10.0,
+        "tournament": "ACF Nationals 2019"
+      },
+      {
+        "PPB": 19.0,
+        "axis_label": "2010 Penn A (R18)",
+        "bhrd": 10.0,
+        "bpts": 190.0,
+        "game_id": 20101810.0,
+        "negs": 1.0,
+        "opponent": "Chicago A",
+        "pa": 290.0,
+        "packet": "NA",
+        "pf": 285.0,
+        "result": "L",
+        "round": 18.0,
+        "status": "NA",
+        "team": "Penn A",
+        "tossups": 10.0,
+        "tournament": "ACF Nationals 2010"
+      },
+      {
+        "PPB": 19.0,
+        "axis_label": "2016 MIT A (R15)",
+        "bhrd": 10.0,
+        "bpts": 190.0,
+        "game_id": 20161512.0,
+        "negs": 2.0,
+        "opponent": "Yale A",
+        "pa": 315.0,
+        "packet": "VCU + Virginia + Oxford",
+        "pf": 280.0,
+        "result": "L",
+        "round": 15.0,
+        "status": "NA",
+        "team": "MIT A",
+        "tossups": 10.0,
+        "tournament": "ACF Nationals 2016"
+      },
+      {
+        "PPB": 21.11,
+        "axis_label": "2014 Chicago A (R21)",
+        "bhrd": 9.0,
+        "bpts": 190.0,
+        "game_id": 20142103.0,
+        "negs": 0.0,
+        "opponent": "Yale A",
+        "pa": 305.0,
+        "packet": "NA",
+        "pf": 280.0,
+        "result": "L",
+        "round": 21.0,
+        "status": "NA",
+        "team": "Chicago A",
+        "tossups": 9.0,
+        "tournament": "ACF Nationals 2014"
+      },
+      {
+        "PPB": 18.0,
+        "axis_label": "2017 Stanford A (R15)",
+        "bhrd": 10.0,
+        "bpts": 180.0,
+        "game_id": 20171508.0,
+        "negs": 1.0,
+        "opponent": "Michigan A",
+        "pa": 350.0,
+        "packet": "Editors 6",
+        "pf": 275.0,
+        "result": "L",
+        "round": 15.0,
+        "status": "NA",
+        "team": "Stanford A",
+        "tossups": 10.0,
+        "tournament": "ACF Nationals 2017"
+      },
+      {
+        "PPB": 17.27,
+        "axis_label": "2017 Stanford A (R18)",
+        "bhrd": 11.0,
+        "bpts": 190.0,
+        "game_id": 20171805.0,
+        "negs": 5.0,
+        "opponent": "Chicago A",
+        "pa": 295.0,
+        "packet": "Illinois + Rutgers",
+        "pf": 275.0,
+        "result": "L",
+        "round": 18.0,
+        "status": "NA",
+        "team": "Stanford A",
+        "tossups": 11.0,
+        "tournament": "ACF Nationals 2017"
+      },
+      {
+        "PPB": 18.0,
+        "axis_label": "2016 Berkeley A (R9)",
+        "bhrd": 10.0,
+        "bpts": 180.0,
+        "game_id": 20160913.0,
+        "negs": 1.0,
+        "opponent": "Michigan A",
+        "pa": 315.0,
+        "packet": "MIT A",
+        "pf": 275.0,
+        "result": "L",
+        "round": 9.0,
+        "status": "UG",
+        "team": "Berkeley A",
+        "tossups": 10.0,
+        "tournament": "ACF Nationals 2016"
+      }
+    ]
+  },
+  "encoding": {
+    "fill": {
+      "field": "team",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Chicago A",
+          "Penn A",
+          "Yale A",
+          "Columbia A",
+          "MIT A",
+          "Stanford A",
+          "Berkeley A"
+        ],
+        "range": [
+          "#8B1F41",
+          "#045ea7",
+          "#00356B",
+          "#9BCBEB",
+          "#8A8B8C",
+          "#B1040E",
+          "#3B7EA1"
+        ]
+      },
+      "title": "Team",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "team",
+        "type": "nominal"
+      },
+      {
+        "field": "tournament",
+        "type": "nominal"
+      },
+      {
+        "field": "opponent",
+        "type": "nominal"
+      },
+      {
+        "field": "pf",
+        "type": "quantitative"
+      },
+      {
+        "field": "pa",
+        "type": "quantitative"
+      },
+      {
+        "field": "tossups",
+        "type": "quantitative"
+      },
+      {
+        "field": "negs",
+        "type": "quantitative"
+      },
+      {
+        "field": "PPB",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "labelAngle": 315
+      },
+      "field": "axis_label",
+      "sort": [
+        "pf"
+      ],
+      "title": "Team",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "pf",
+      "title": "Points scored",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar",
+  "title": "Most Points in a Loss"
+}

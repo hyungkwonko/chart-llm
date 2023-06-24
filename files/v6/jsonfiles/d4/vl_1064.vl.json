@@ -1,0 +1,259 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mode": "vega-lite",
+  "data": {
+    "values": [
+      {
+        "year": "2009",
+        "category": "Col1",
+        "value": 36200
+      },
+      {
+        "year": "2009",
+        "category": "Col2",
+        "value": 27200
+      },
+      {
+        "year": "2009",
+        "category": "Col3",
+        "value": 26200
+      },
+      {
+        "year": "2009",
+        "category": "Col4",
+        "value": 17200
+      },
+      {
+        "year": "2010",
+        "category": "Col1",
+        "value": 36600
+      },
+      {
+        "year": "2010",
+        "category": "Col2",
+        "value": 27800
+      },
+      {
+        "year": "2010",
+        "category": "Col3",
+        "value": 26600
+      },
+      {
+        "year": "2010",
+        "category": "Col4",
+        "value": 17800
+      },
+      {
+        "year": "2011",
+        "category": "Col1",
+        "value": 37500
+      },
+      {
+        "year": "2011",
+        "category": "Col2",
+        "value": 28500
+      },
+      {
+        "year": "2011",
+        "category": "Col3",
+        "value": 27500
+      },
+      {
+        "year": "2011",
+        "category": "Col4",
+        "value": 18500
+      },
+      {
+        "year": "2012",
+        "category": "Col1",
+        "value": 38700
+      },
+      {
+        "year": "2012",
+        "category": "Col2",
+        "value": 29400
+      },
+      {
+        "year": "2012",
+        "category": "Col3",
+        "value": 28700
+      },
+      {
+        "year": "2012",
+        "category": "Col4",
+        "value": 19400
+      },
+      {
+        "year": "2013",
+        "category": "Col1",
+        "value": 39600
+      },
+      {
+        "year": "2013",
+        "category": "Col2",
+        "value": 30200
+      },
+      {
+        "year": "2013",
+        "category": "Col3",
+        "value": 29600
+      },
+      {
+        "year": "2013",
+        "category": "Col4",
+        "value": 10200
+      },
+      {
+        "year": "2014",
+        "category": "Col1",
+        "value": 40500
+      },
+      {
+        "year": "2014",
+        "category": "Col2",
+        "value": 30900
+      },
+      {
+        "year": "2014",
+        "category": "Col3",
+        "value": 20500
+      },
+      {
+        "year": "2014",
+        "category": "Col4",
+        "value": 10900
+      },
+      {
+        "year": "2015",
+        "category": "Col1",
+        "value": 41200
+      },
+      {
+        "year": "2015",
+        "category": "Col2",
+        "value": 31500
+      },
+      {
+        "year": "2015",
+        "category": "Col3",
+        "value": 21200
+      },
+      {
+        "year": "2015",
+        "category": "Col4",
+        "value": 11500
+      },
+      {
+        "year": "2016",
+        "category": "Col1",
+        "value": 41803
+      },
+      {
+        "year": "2016",
+        "category": "Col2",
+        "value": 31931
+      },
+      {
+        "year": "2016",
+        "category": "Col3",
+        "value": 21803
+      },
+      {
+        "year": "2016",
+        "category": "Col4",
+        "value": 11931
+      },
+      {
+        "year": "2017",
+        "category": "Col1",
+        "value": 42600
+      },
+      {
+        "year": "2017",
+        "category": "Col2",
+        "value": 32600
+      },
+      {
+        "year": "2017",
+        "category": "Col3",
+        "value": 22600
+      },
+      {
+        "year": "2017",
+        "category": "Col4",
+        "value": 12600
+      }
+    ]
+  },
+  "padding": {
+    "left": 20,
+    "top": 5,
+    "right": 30,
+    "bottom": 5
+  },
+  "width": 200,
+  "height": 300,
+  "background": "#ffffff",
+  "mark": {
+    "type": "bar",
+    "cornerRadius": 1,
+    "tooltip": true,
+    "binSpacing": 1
+  },
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    },
+    "axis": {
+      "x": "independent",
+      "y": "shared"
+    }
+  },
+  "encoding": {
+    "facet": {
+      "field": "category",
+      "type": "nominal",
+      "columns": 2,
+      "spacing": 20
+    },
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "axis": {
+        "title": "year",
+        "orient": "bottom",
+        "format": "%Y"
+      }
+    },
+    "y": {
+      "type": "quantitative",
+      "field": "value",
+      "axis": {
+        "title": "value",
+        "orient": "left"
+      }
+    },
+    "opacity": {
+      "value": 1
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Col1",
+          "Col2",
+          "Col3",
+          "Col4"
+        ],
+        "range": [
+          "#1f77b4",
+          "#EDAD08",
+          "#73AF48",
+          "#94346E"
+        ]
+      },
+      "legend": null
+    }
+  }
+}

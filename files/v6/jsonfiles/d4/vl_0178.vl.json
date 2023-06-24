@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 1000,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/aezarebski/vegacookbook/565fc31e0ffbd4b59d3876539b868d7fef9e74fb/examples/us-map-jh/jhu-clean.json"
+  },
+  "transform": [
+    {
+      "filter": "datum.group == '200000+'"
+    },
+    {
+      "lookup": "id",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/aezarebski/vegacookbook/565fc31e0ffbd4b59d3876539b868d7fef9e74fb/examples/us-map-jh/us-10m.json",
+          "format": {
+            "type": "topojson",
+            "feature": "states"
+          }
+        },
+        "key": "id"
+      },
+      "as": "geo"
+    }
+  ],
+  "layer": [
+    {
+      "projection": {
+        "type": "albersUsa"
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "grey"
+      },
+      "encoding": {
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        },
+        "color": {
+          "field": "cases_per_million",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "range": [
+              "#bdd7e7",
+              "#08519c"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/aezarebski/vegacookbook/565fc31e0ffbd4b59d3876539b868d7fef9e74fb/examples/us-map-jh/us-state-capitals.json"
+      },
+      "transform": [
+        {
+          "filter": {
+            "field": "state",
+            "oneOf": [
+              "Montana",
+              "North Dakota",
+              "South Dakota",
+              "Wisconsin"
+            ]
+          }
+        }
+      ],
+      "projection": {
+        "type": "albersUsa"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "state",
+          "type": "nominal"
+        }
+      },
+      "mark": {
+        "type": "text",
+        "dy": 15,
+        "color": "white",
+        "size": 25,
+        "fontWeight": "bold"
+      }
+    }
+  ],
+  "title": {
+    "text": "Cases still high in several US states",
+    "subtitle": "Average daily cases in the last week per million people",
+    "align": "left",
+    "anchor": "start",
+    "fontSize": 45,
+    "subtitleFontSize": 35
+  },
+  "config": {
+    "legend": {
+      "orient": "top",
+      "labelFontSize": 20,
+      "gradientLength": 700,
+      "gradientThickness": 25,
+      "tickCount": 5
+    }
+  },
+  "view": {
+    "stroke": null
+  }
+}

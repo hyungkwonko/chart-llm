@@ -1,0 +1,2427 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-02da145805eae2d618c4a428fdf674a7"
+  },
+  "mark": {
+    "type": "bar",
+    "width": 1
+  },
+  "encoding": {
+    "color": {
+      "condition": {
+        "value": "darkred",
+        "test": "datum['Total Motor Gasoline'] < 0"
+      },
+      "value": "royalblue"
+    },
+    "tooltip": [
+      {
+        "field": "dt",
+        "title": "",
+        "type": "temporal"
+      },
+      {
+        "field": "Total Motor Gasoline",
+        "format": ",.02f",
+        "title": "YoY % Change",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "title": ""
+      },
+      "field": "dt",
+      "type": "temporal"
+    },
+    "y": {
+      "axis": {
+        "title": "Year-over-year Change [%]"
+      },
+      "field": "Total Motor Gasoline",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "title": "Year over Year change in Total Motor Gasoline stock",
+  "width": 750,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-02da145805eae2d618c4a428fdf674a7": [
+      {
+        "dt": "2012-01-01T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-01-08T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-01-15T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-01-22T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-01-29T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-02-05T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-02-12T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-02-19T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-02-26T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-03-04T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-03-11T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-03-18T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-03-25T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-04-01T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-04-08T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-04-15T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-04-22T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-04-29T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-05-06T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-05-13T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-05-20T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-05-27T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-06-03T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-06-10T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-06-17T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-06-24T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-07-01T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-07-08T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-07-15T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-07-22T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-07-29T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-08-05T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-08-12T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-08-19T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-08-26T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-09-02T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-09-09T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-09-16T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-09-23T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-09-30T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-10-07T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-10-14T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-10-21T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-10-28T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-11-04T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-11-11T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-11-18T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-11-25T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-12-02T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-12-09T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-12-16T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-12-23T00:00:00",
+        "Total Motor Gasoline": null
+      },
+      {
+        "dt": "2012-12-30T00:00:00",
+        "Total Motor Gasoline": 2.488725799639413
+      },
+      {
+        "dt": "2013-01-06T00:00:00",
+        "Total Motor Gasoline": 4.147397487969329
+      },
+      {
+        "dt": "2013-01-13T00:00:00",
+        "Total Motor Gasoline": 3.285425457102664
+      },
+      {
+        "dt": "2013-01-20T00:00:00",
+        "Total Motor Gasoline": 2.6975740765200484
+      },
+      {
+        "dt": "2013-01-27T00:00:00",
+        "Total Motor Gasoline": 0.9359235618974004
+      },
+      {
+        "dt": "2013-02-03T00:00:00",
+        "Total Motor Gasoline": 0.9763737401629058
+      },
+      {
+        "dt": "2013-02-10T00:00:00",
+        "Total Motor Gasoline": 0.4565502032940483
+      },
+      {
+        "dt": "2013-02-17T00:00:00",
+        "Total Motor Gasoline": -0.50750020515965
+      },
+      {
+        "dt": "2013-02-24T00:00:00",
+        "Total Motor Gasoline": -0.6228063689779795
+      },
+      {
+        "dt": "2013-03-03T00:00:00",
+        "Total Motor Gasoline": -0.7197284898336265
+      },
+      {
+        "dt": "2013-03-10T00:00:00",
+        "Total Motor Gasoline": -1.6714813629608916
+      },
+      {
+        "dt": "2013-03-17T00:00:00",
+        "Total Motor Gasoline": -1.79588994610127
+      },
+      {
+        "dt": "2013-03-24T00:00:00",
+        "Total Motor Gasoline": -0.9553655370013958
+      },
+      {
+        "dt": "2013-03-31T00:00:00",
+        "Total Motor Gasoline": -0.5628331823732791
+      },
+      {
+        "dt": "2013-04-07T00:00:00",
+        "Total Motor Gasoline": 2.171975224687084
+      },
+      {
+        "dt": "2013-04-14T00:00:00",
+        "Total Motor Gasoline": 3.6290982169981056
+      },
+      {
+        "dt": "2013-04-21T00:00:00",
+        "Total Motor Gasoline": 2.8678033344353704
+      },
+      {
+        "dt": "2013-04-28T00:00:00",
+        "Total Motor Gasoline": 2.9863485297132897
+      },
+      {
+        "dt": "2013-05-05T00:00:00",
+        "Total Motor Gasoline": 3.846302412267999
+      },
+      {
+        "dt": "2013-05-12T00:00:00",
+        "Total Motor Gasoline": 6.534645711684628
+      },
+      {
+        "dt": "2013-05-19T00:00:00",
+        "Total Motor Gasoline": 9.78299802996836
+      },
+      {
+        "dt": "2013-05-26T00:00:00",
+        "Total Motor Gasoline": 9.483512256530414
+      },
+      {
+        "dt": "2013-06-02T00:00:00",
+        "Total Motor Gasoline": 7.503746468492811
+      },
+      {
+        "dt": "2013-06-09T00:00:00",
+        "Total Motor Gasoline": 9.783896016372573
+      },
+      {
+        "dt": "2013-06-16T00:00:00",
+        "Total Motor Gasoline": 9.363532336345347
+      },
+      {
+        "dt": "2013-06-23T00:00:00",
+        "Total Motor Gasoline": 10.037495972112364
+      },
+      {
+        "dt": "2013-06-30T00:00:00",
+        "Total Motor Gasoline": 9.117786245017623
+      },
+      {
+        "dt": "2013-07-07T00:00:00",
+        "Total Motor Gasoline": 6.404140089060051
+      },
+      {
+        "dt": "2013-07-14T00:00:00",
+        "Total Motor Gasoline": 8.825700548783445
+      },
+      {
+        "dt": "2013-07-21T00:00:00",
+        "Total Motor Gasoline": 6.022547656681443
+      },
+      {
+        "dt": "2013-07-28T00:00:00",
+        "Total Motor Gasoline": 7.501804012122948
+      },
+      {
+        "dt": "2013-08-04T00:00:00",
+        "Total Motor Gasoline": 8.50685935293518
+      },
+      {
+        "dt": "2013-08-11T00:00:00",
+        "Total Motor Gasoline": 9.19596657797328
+      },
+      {
+        "dt": "2013-08-18T00:00:00",
+        "Total Motor Gasoline": 7.72679741141189
+      },
+      {
+        "dt": "2013-08-25T00:00:00",
+        "Total Motor Gasoline": 8.242929626739937
+      },
+      {
+        "dt": "2013-09-01T00:00:00",
+        "Total Motor Gasoline": 8.594570950209413
+      },
+      {
+        "dt": "2013-09-08T00:00:00",
+        "Total Motor Gasoline": 10.079609136336964
+      },
+      {
+        "dt": "2013-09-15T00:00:00",
+        "Total Motor Gasoline": 10.039784217738369
+      },
+      {
+        "dt": "2013-09-22T00:00:00",
+        "Total Motor Gasoline": 10.420879547357886
+      },
+      {
+        "dt": "2013-09-29T00:00:00",
+        "Total Motor Gasoline": 12.14032723969336
+      },
+      {
+        "dt": "2013-10-06T00:00:00",
+        "Total Motor Gasoline": 12.523028739867348
+      },
+      {
+        "dt": "2013-10-13T00:00:00",
+        "Total Motor Gasoline": 10.237510652976756
+      },
+      {
+        "dt": "2013-10-20T00:00:00",
+        "Total Motor Gasoline": 8.529614689248465
+      },
+      {
+        "dt": "2013-10-27T00:00:00",
+        "Total Motor Gasoline": 7.162334212188348
+      },
+      {
+        "dt": "2013-11-03T00:00:00",
+        "Total Motor Gasoline": 3.784520968291849
+      },
+      {
+        "dt": "2013-11-10T00:00:00",
+        "Total Motor Gasoline": 3.5956758791108046
+      },
+      {
+        "dt": "2013-11-17T00:00:00",
+        "Total Motor Gasoline": 4.223264633963786
+      },
+      {
+        "dt": "2013-11-24T00:00:00",
+        "Total Motor Gasoline": 3.1083694401605966
+      },
+      {
+        "dt": "2013-12-01T00:00:00",
+        "Total Motor Gasoline": 0.149447233811828
+      },
+      {
+        "dt": "2013-12-08T00:00:00",
+        "Total Motor Gasoline": 0.9368307118347463
+      },
+      {
+        "dt": "2013-12-15T00:00:00",
+        "Total Motor Gasoline": 0.5307265117042492
+      },
+      {
+        "dt": "2013-12-22T00:00:00",
+        "Total Motor Gasoline": -1.4486517498565665
+      },
+      {
+        "dt": "2013-12-29T00:00:00",
+        "Total Motor Gasoline": -2.19654101288147
+      },
+      {
+        "dt": "2014-01-05T00:00:00",
+        "Total Motor Gasoline": -2.6282257545530596
+      },
+      {
+        "dt": "2014-01-12T00:00:00",
+        "Total Motor Gasoline": -0.7885274154769251
+      },
+      {
+        "dt": "2014-01-19T00:00:00",
+        "Total Motor Gasoline": 0.860853050497945
+      },
+      {
+        "dt": "2014-01-26T00:00:00",
+        "Total Motor Gasoline": 0.9233709712829441
+      },
+      {
+        "dt": "2014-02-02T00:00:00",
+        "Total Motor Gasoline": 0.3896786433030375
+      },
+      {
+        "dt": "2014-02-09T00:00:00",
+        "Total Motor Gasoline": -0.059167538458893
+      },
+      {
+        "dt": "2014-02-16T00:00:00",
+        "Total Motor Gasoline": 1.3262311592692866
+      },
+      {
+        "dt": "2014-02-23T00:00:00",
+        "Total Motor Gasoline": 0.9212455414779219
+      },
+      {
+        "dt": "2014-03-02T00:00:00",
+        "Total Motor Gasoline": 0.4901724160629284
+      },
+      {
+        "dt": "2014-03-09T00:00:00",
+        "Total Motor Gasoline": -0.2416320416570028
+      },
+      {
+        "dt": "2014-03-16T00:00:00",
+        "Total Motor Gasoline": -0.23919365261720893
+      },
+      {
+        "dt": "2014-03-23T00:00:00",
+        "Total Motor Gasoline": -1.8252002386591637
+      },
+      {
+        "dt": "2014-03-30T00:00:00",
+        "Total Motor Gasoline": -2.284015516803828
+      },
+      {
+        "dt": "2014-04-06T00:00:00",
+        "Total Motor Gasoline": -5.3637520630680395
+      },
+      {
+        "dt": "2014-04-13T00:00:00",
+        "Total Motor Gasoline": -5.163036125016907
+      },
+      {
+        "dt": "2014-04-20T00:00:00",
+        "Total Motor Gasoline": -3.578479536459711
+      },
+      {
+        "dt": "2014-04-27T00:00:00",
+        "Total Motor Gasoline": -2.0427439069560682
+      },
+      {
+        "dt": "2014-05-04T00:00:00",
+        "Total Motor Gasoline": -0.8806271329867887
+      },
+      {
+        "dt": "2014-05-11T00:00:00",
+        "Total Motor Gasoline": -2.4138342935376977
+      },
+      {
+        "dt": "2014-05-18T00:00:00",
+        "Total Motor Gasoline": -3.307549042265401
+      },
+      {
+        "dt": "2014-05-25T00:00:00",
+        "Total Motor Gasoline": -3.462263246989694
+      },
+      {
+        "dt": "2014-06-01T00:00:00",
+        "Total Motor Gasoline": -3.2047971407286213
+      },
+      {
+        "dt": "2014-06-08T00:00:00",
+        "Total Motor Gasoline": -3.639441197047999
+      },
+      {
+        "dt": "2014-06-15T00:00:00",
+        "Total Motor Gasoline": -3.364933612353882
+      },
+      {
+        "dt": "2014-06-22T00:00:00",
+        "Total Motor Gasoline": -4.616183263007967
+      },
+      {
+        "dt": "2014-06-29T00:00:00",
+        "Total Motor Gasoline": -4.4352639250297425
+      },
+      {
+        "dt": "2014-07-06T00:00:00",
+        "Total Motor Gasoline": -3.0344571728468717
+      },
+      {
+        "dt": "2014-07-13T00:00:00",
+        "Total Motor Gasoline": -4.2801104947720265
+      },
+      {
+        "dt": "2014-07-20T00:00:00",
+        "Total Motor Gasoline": -2.1657521082741216
+      },
+      {
+        "dt": "2014-07-27T00:00:00",
+        "Total Motor Gasoline": -2.3395267246625884
+      },
+      {
+        "dt": "2014-08-03T00:00:00",
+        "Total Motor Gasoline": -4.360484617551952
+      },
+      {
+        "dt": "2014-08-10T00:00:00",
+        "Total Motor Gasoline": -4.3793553027918986
+      },
+      {
+        "dt": "2014-08-17T00:00:00",
+        "Total Motor Gasoline": -2.3475167238245276
+      },
+      {
+        "dt": "2014-08-24T00:00:00",
+        "Total Motor Gasoline": -2.525090214586756
+      },
+      {
+        "dt": "2014-08-31T00:00:00",
+        "Total Motor Gasoline": -2.7756300147694146
+      },
+      {
+        "dt": "2014-09-07T00:00:00",
+        "Total Motor Gasoline": -2.4222931838544515
+      },
+      {
+        "dt": "2014-09-14T00:00:00",
+        "Total Motor Gasoline": -2.444240757714633
+      },
+      {
+        "dt": "2014-09-21T00:00:00",
+        "Total Motor Gasoline": -2.7336000184983944
+      },
+      {
+        "dt": "2014-09-28T00:00:00",
+        "Total Motor Gasoline": -5.116279069767438
+      },
+      {
+        "dt": "2014-10-05T00:00:00",
+        "Total Motor Gasoline": -4.643917791148766
+      },
+      {
+        "dt": "2014-10-12T00:00:00",
+        "Total Motor Gasoline": -5.3545872467316125
+      },
+      {
+        "dt": "2014-10-19T00:00:00",
+        "Total Motor Gasoline": -5.164637315316655
+      },
+      {
+        "dt": "2014-10-26T00:00:00",
+        "Total Motor Gasoline": -4.982903864054144
+      },
+      {
+        "dt": "2014-11-02T00:00:00",
+        "Total Motor Gasoline": -3.940276904911544
+      },
+      {
+        "dt": "2014-11-09T00:00:00",
+        "Total Motor Gasoline": -2.692664365816122
+      },
+      {
+        "dt": "2014-11-16T00:00:00",
+        "Total Motor Gasoline": -2.0368393080300584
+      },
+      {
+        "dt": "2014-11-23T00:00:00",
+        "Total Motor Gasoline": -1.9847676207479514
+      },
+      {
+        "dt": "2014-11-30T00:00:00",
+        "Total Motor Gasoline": -1.8194057392483143
+      },
+      {
+        "dt": "2014-12-07T00:00:00",
+        "Total Motor Gasoline": -1.088300653893004
+      },
+      {
+        "dt": "2014-12-14T00:00:00",
+        "Total Motor Gasoline": 0.6930145224640194
+      },
+      {
+        "dt": "2014-12-21T00:00:00",
+        "Total Motor Gasoline": 2.8311926939310172
+      },
+      {
+        "dt": "2014-12-28T00:00:00",
+        "Total Motor Gasoline": 3.7749868609434634
+      },
+      {
+        "dt": "2015-01-04T00:00:00",
+        "Total Motor Gasoline": 4.495966231786364
+      },
+      {
+        "dt": "2015-01-11T00:00:00",
+        "Total Motor Gasoline": 3.0848152628012215
+      },
+      {
+        "dt": "2015-01-18T00:00:00",
+        "Total Motor Gasoline": 2.4045225596667663
+      },
+      {
+        "dt": "2015-01-25T00:00:00",
+        "Total Motor Gasoline": 1.6588041595932523
+      },
+      {
+        "dt": "2015-02-01T00:00:00",
+        "Total Motor Gasoline": 2.4341245621427365
+      },
+      {
+        "dt": "2015-02-08T00:00:00",
+        "Total Motor Gasoline": 4.096560245047143
+      },
+      {
+        "dt": "2015-02-15T00:00:00",
+        "Total Motor Gasoline": 4.166541706118498
+      },
+      {
+        "dt": "2015-02-22T00:00:00",
+        "Total Motor Gasoline": 4.082393755420655
+      },
+      {
+        "dt": "2015-03-01T00:00:00",
+        "Total Motor Gasoline": 4.831525441492435
+      },
+      {
+        "dt": "2015-03-08T00:00:00",
+        "Total Motor Gasoline": 7.198144490226399
+      },
+      {
+        "dt": "2015-03-15T00:00:00",
+        "Total Motor Gasoline": 5.893413825523286
+      },
+      {
+        "dt": "2015-03-22T00:00:00",
+        "Total Motor Gasoline": 7.453107303013828
+      },
+      {
+        "dt": "2015-03-29T00:00:00",
+        "Total Motor Gasoline": 6.262753682335909
+      },
+      {
+        "dt": "2015-04-05T00:00:00",
+        "Total Motor Gasoline": 9.2707521526735
+      },
+      {
+        "dt": "2015-04-12T00:00:00",
+        "Total Motor Gasoline": 8.365433085095253
+      },
+      {
+        "dt": "2015-04-19T00:00:00",
+        "Total Motor Gasoline": 7.490190849872391
+      },
+      {
+        "dt": "2015-04-26T00:00:00",
+        "Total Motor Gasoline": 7.505246440927915
+      },
+      {
+        "dt": "2015-05-03T00:00:00",
+        "Total Motor Gasoline": 6.882446758607741
+      },
+      {
+        "dt": "2015-05-10T00:00:00",
+        "Total Motor Gasoline": 6.733268050167607
+      },
+      {
+        "dt": "2015-05-17T00:00:00",
+        "Total Motor Gasoline": 4.948026506950121
+      },
+      {
+        "dt": "2015-05-24T00:00:00",
+        "Total Motor Gasoline": 4.27838827838829
+      },
+      {
+        "dt": "2015-05-31T00:00:00",
+        "Total Motor Gasoline": 4.017281677172613
+      },
+      {
+        "dt": "2015-06-07T00:00:00",
+        "Total Motor Gasoline": 1.8137360526882862
+      },
+      {
+        "dt": "2015-06-14T00:00:00",
+        "Total Motor Gasoline": 1.6554112392482168
+      },
+      {
+        "dt": "2015-06-21T00:00:00",
+        "Total Motor Gasoline": 1.6359889662615146
+      },
+      {
+        "dt": "2015-06-28T00:00:00",
+        "Total Motor Gasoline": 1.4012220340410497
+      },
+      {
+        "dt": "2015-07-05T00:00:00",
+        "Total Motor Gasoline": 1.6941876904269737
+      },
+      {
+        "dt": "2015-07-12T00:00:00",
+        "Total Motor Gasoline": 1.640154411353345
+      },
+      {
+        "dt": "2015-07-19T00:00:00",
+        "Total Motor Gasoline": -0.7279536973713863
+      },
+      {
+        "dt": "2015-07-26T00:00:00",
+        "Total Motor Gasoline": -1.060320020528227
+      },
+      {
+        "dt": "2015-08-02T00:00:00",
+        "Total Motor Gasoline": 1.3486151443308225
+      },
+      {
+        "dt": "2015-08-09T00:00:00",
+        "Total Motor Gasoline": 1.3131849790069205
+      },
+      {
+        "dt": "2015-08-16T00:00:00",
+        "Total Motor Gasoline": -0.23444020368165175
+      },
+      {
+        "dt": "2015-08-23T00:00:00",
+        "Total Motor Gasoline": 0.9985210584323223
+      },
+      {
+        "dt": "2015-08-30T00:00:00",
+        "Total Motor Gasoline": 1.9862661434721485
+      },
+      {
+        "dt": "2015-09-06T00:00:00",
+        "Total Motor Gasoline": 1.0236706172630283
+      },
+      {
+        "dt": "2015-09-13T00:00:00",
+        "Total Motor Gasoline": 3.155102544391619
+      },
+      {
+        "dt": "2015-09-20T00:00:00",
+        "Total Motor Gasoline": 4.009052699644355
+      },
+      {
+        "dt": "2015-09-27T00:00:00",
+        "Total Motor Gasoline": 6.485744982924668
+      },
+      {
+        "dt": "2015-10-04T00:00:00",
+        "Total Motor Gasoline": 6.797413053017132
+      },
+      {
+        "dt": "2015-10-11T00:00:00",
+        "Total Motor Gasoline": 7.598955623732806
+      },
+      {
+        "dt": "2015-10-18T00:00:00",
+        "Total Motor Gasoline": 7.540098055525646
+      },
+      {
+        "dt": "2015-10-25T00:00:00",
+        "Total Motor Gasoline": 7.634711378471781
+      },
+      {
+        "dt": "2015-11-01T00:00:00",
+        "Total Motor Gasoline": 6.734238699444894
+      },
+      {
+        "dt": "2015-11-08T00:00:00",
+        "Total Motor Gasoline": 4.755237884705132
+      },
+      {
+        "dt": "2015-11-15T00:00:00",
+        "Total Motor Gasoline": 4.718986896319133
+      },
+      {
+        "dt": "2015-11-22T00:00:00",
+        "Total Motor Gasoline": 4.993605394721534
+      },
+      {
+        "dt": "2015-11-29T00:00:00",
+        "Total Motor Gasoline": 3.9795365518034975
+      },
+      {
+        "dt": "2015-12-06T00:00:00",
+        "Total Motor Gasoline": 0.4101234522337682
+      },
+      {
+        "dt": "2015-12-13T00:00:00",
+        "Total Motor Gasoline": -1.1846099795508547
+      },
+      {
+        "dt": "2015-12-20T00:00:00",
+        "Total Motor Gasoline": -2.4776976253554905
+      },
+      {
+        "dt": "2015-12-27T00:00:00",
+        "Total Motor Gasoline": -3.330306311340858
+      },
+      {
+        "dt": "2016-01-03T00:00:00",
+        "Total Motor Gasoline": -2.178670365950841
+      },
+      {
+        "dt": "2016-01-10T00:00:00",
+        "Total Motor Gasoline": 0.04160876114074341
+      },
+      {
+        "dt": "2016-01-17T00:00:00",
+        "Total Motor Gasoline": 1.6914187994454766
+      },
+      {
+        "dt": "2016-01-24T00:00:00",
+        "Total Motor Gasoline": 4.24864161789078
+      },
+      {
+        "dt": "2016-01-31T00:00:00",
+        "Total Motor Gasoline": 5.704491627539787
+      },
+      {
+        "dt": "2016-02-07T00:00:00",
+        "Total Motor Gasoline": 5.361698269502613
+      },
+      {
+        "dt": "2016-02-14T00:00:00",
+        "Total Motor Gasoline": 6.400227037164985
+      },
+      {
+        "dt": "2016-02-21T00:00:00",
+        "Total Motor Gasoline": 6.8508503670619225
+      },
+      {
+        "dt": "2016-02-28T00:00:00",
+        "Total Motor Gasoline": 6.218861951178867
+      },
+      {
+        "dt": "2016-03-06T00:00:00",
+        "Total Motor Gasoline": 4.4148361841474415
+      },
+      {
+        "dt": "2016-03-13T00:00:00",
+        "Total Motor Gasoline": 6.081563296516568
+      },
+      {
+        "dt": "2016-03-20T00:00:00",
+        "Total Motor Gasoline": 5.008012477183721
+      },
+      {
+        "dt": "2016-03-27T00:00:00",
+        "Total Motor Gasoline": 5.862225480953875
+      },
+      {
+        "dt": "2016-04-03T00:00:00",
+        "Total Motor Gasoline": 6.111461436430443
+      },
+      {
+        "dt": "2016-04-10T00:00:00",
+        "Total Motor Gasoline": 5.216941015390164
+      },
+      {
+        "dt": "2016-04-17T00:00:00",
+        "Total Motor Gasoline": 6.16333980100825
+      },
+      {
+        "dt": "2016-04-24T00:00:00",
+        "Total Motor Gasoline": 6.070758097348428
+      },
+      {
+        "dt": "2016-05-01T00:00:00",
+        "Total Motor Gasoline": 6.119323069360805
+      },
+      {
+        "dt": "2016-05-08T00:00:00",
+        "Total Motor Gasoline": 6.11089056503904
+      },
+      {
+        "dt": "2016-05-15T00:00:00",
+        "Total Motor Gasoline": 6.310731637610756
+      },
+      {
+        "dt": "2016-05-22T00:00:00",
+        "Total Motor Gasoline": 8.831194731379188
+      },
+      {
+        "dt": "2016-05-29T00:00:00",
+        "Total Motor Gasoline": 8.318920710145129
+      },
+      {
+        "dt": "2016-06-05T00:00:00",
+        "Total Motor Gasoline": 10.248258601175952
+      },
+      {
+        "dt": "2016-06-12T00:00:00",
+        "Total Motor Gasoline": 8.810269312349073
+      },
+      {
+        "dt": "2016-06-19T00:00:00",
+        "Total Motor Gasoline": 8.75859291330654
+      },
+      {
+        "dt": "2016-06-26T00:00:00",
+        "Total Motor Gasoline": 10.27097357626985
+      },
+      {
+        "dt": "2016-07-03T00:00:00",
+        "Total Motor Gasoline": 9.60027896050506
+      },
+      {
+        "dt": "2016-07-10T00:00:00",
+        "Total Motor Gasoline": 10.127517086372183
+      },
+      {
+        "dt": "2016-07-17T00:00:00",
+        "Total Motor Gasoline": 11.427052268996917
+      },
+      {
+        "dt": "2016-07-24T00:00:00",
+        "Total Motor Gasoline": 11.823714118987416
+      },
+      {
+        "dt": "2016-07-31T00:00:00",
+        "Total Motor Gasoline": 9.900199784988907
+      },
+      {
+        "dt": "2016-08-07T00:00:00",
+        "Total Motor Gasoline": 9.235574201093378
+      },
+      {
+        "dt": "2016-08-14T00:00:00",
+        "Total Motor Gasoline": 9.345596736443351
+      },
+      {
+        "dt": "2016-08-21T00:00:00",
+        "Total Motor Gasoline": 8.515906992361288
+      },
+      {
+        "dt": "2016-08-28T00:00:00",
+        "Total Motor Gasoline": 8.330570640119905
+      },
+      {
+        "dt": "2016-09-04T00:00:00",
+        "Total Motor Gasoline": 6.1739385775611
+      },
+      {
+        "dt": "2016-09-11T00:00:00",
+        "Total Motor Gasoline": 5.047679944062899
+      },
+      {
+        "dt": "2016-09-18T00:00:00",
+        "Total Motor Gasoline": 2.9256340397520564
+      },
+      {
+        "dt": "2016-09-25T00:00:00",
+        "Total Motor Gasoline": 2.330075221836858
+      },
+      {
+        "dt": "2016-10-02T00:00:00",
+        "Total Motor Gasoline": 1.556359414076458
+      },
+      {
+        "dt": "2016-10-09T00:00:00",
+        "Total Motor Gasoline": 1.8969552918636001
+      },
+      {
+        "dt": "2016-10-16T00:00:00",
+        "Total Motor Gasoline": 3.7382157026899065
+      },
+      {
+        "dt": "2016-10-23T00:00:00",
+        "Total Motor Gasoline": 3.367985840189891
+      },
+      {
+        "dt": "2016-10-30T00:00:00",
+        "Total Motor Gasoline": 3.9271501344341875
+      },
+      {
+        "dt": "2016-11-06T00:00:00",
+        "Total Motor Gasoline": 3.6193111210110374
+      },
+      {
+        "dt": "2016-11-13T00:00:00",
+        "Total Motor Gasoline": 3.4795149682153026
+      },
+      {
+        "dt": "2016-11-20T00:00:00",
+        "Total Motor Gasoline": 3.3654467268331434
+      },
+      {
+        "dt": "2016-11-27T00:00:00",
+        "Total Motor Gasoline": 4.268053691894114
+      },
+      {
+        "dt": "2016-12-04T00:00:00",
+        "Total Motor Gasoline": 5.465121087235181
+      },
+      {
+        "dt": "2016-12-11T00:00:00",
+        "Total Motor Gasoline": 4.85951573496699
+      },
+      {
+        "dt": "2016-12-18T00:00:00",
+        "Total Motor Gasoline": 3.7374997165468438
+      },
+      {
+        "dt": "2016-12-25T00:00:00",
+        "Total Motor Gasoline": 2.584680697317321
+      },
+      {
+        "dt": "2017-01-01T00:00:00",
+        "Total Motor Gasoline": 1.4888187727374547
+      },
+      {
+        "dt": "2017-01-08T00:00:00",
+        "Total Motor Gasoline": 0.016220667626054563
+      },
+      {
+        "dt": "2017-01-15T00:00:00",
+        "Total Motor Gasoline": 0.5824561117074856
+      },
+      {
+        "dt": "2017-01-22T00:00:00",
+        "Total Motor Gasoline": 1.9153911479065089
+      },
+      {
+        "dt": "2017-01-29T00:00:00",
+        "Total Motor Gasoline": 1.0562148436118024
+      },
+      {
+        "dt": "2017-02-05T00:00:00",
+        "Total Motor Gasoline": 0.21904348404306884
+      },
+      {
+        "dt": "2017-02-12T00:00:00",
+        "Total Motor Gasoline": 0.14302667640795352
+      },
+      {
+        "dt": "2017-02-19T00:00:00",
+        "Total Motor Gasoline": -0.008578436151085445
+      },
+      {
+        "dt": "2017-02-26T00:00:00",
+        "Total Motor Gasoline": 0.35295640204087153
+      },
+      {
+        "dt": "2017-03-05T00:00:00",
+        "Total Motor Gasoline": -0.4507651828812964
+      },
+      {
+        "dt": "2017-03-12T00:00:00",
+        "Total Motor Gasoline": -1.3763635489916548
+      },
+      {
+        "dt": "2017-03-19T00:00:00",
+        "Total Motor Gasoline": -0.6553122730277527
+      },
+      {
+        "dt": "2017-03-26T00:00:00",
+        "Total Motor Gasoline": -1.170432058047488
+      },
+      {
+        "dt": "2017-04-02T00:00:00",
+        "Total Motor Gasoline": -2.006163984950693
+      },
+      {
+        "dt": "2017-04-09T00:00:00",
+        "Total Motor Gasoline": -1.5144247813447587
+      },
+      {
+        "dt": "2017-04-16T00:00:00",
+        "Total Motor Gasoline": -0.8257841611343242
+      },
+      {
+        "dt": "2017-04-23T00:00:00",
+        "Total Motor Gasoline": -0.09035932338274932
+      },
+      {
+        "dt": "2017-04-30T00:00:00",
+        "Total Motor Gasoline": -0.23284187017927893
+      },
+      {
+        "dt": "2017-05-07T00:00:00",
+        "Total Motor Gasoline": 0.2153273141450862
+      },
+      {
+        "dt": "2017-05-14T00:00:00",
+        "Total Motor Gasoline": 1.0925449871465265
+      },
+      {
+        "dt": "2017-05-21T00:00:00",
+        "Total Motor Gasoline": -0.09537255685910795
+      },
+      {
+        "dt": "2017-05-28T00:00:00",
+        "Total Motor Gasoline": -0.668429588591013
+      },
+      {
+        "dt": "2017-06-04T00:00:00",
+        "Total Motor Gasoline": 0.3000471562290219
+      },
+      {
+        "dt": "2017-06-11T00:00:00",
+        "Total Motor Gasoline": 2.295319910212479
+      },
+      {
+        "dt": "2017-06-18T00:00:00",
+        "Total Motor Gasoline": 1.782174884589982
+      },
+      {
+        "dt": "2017-06-25T00:00:00",
+        "Total Motor Gasoline": 0.8259483342957008
+      },
+      {
+        "dt": "2017-07-02T00:00:00",
+        "Total Motor Gasoline": -0.6585006446859443
+      },
+      {
+        "dt": "2017-07-09T00:00:00",
+        "Total Motor Gasoline": -1.8463986271757493
+      },
+      {
+        "dt": "2017-07-16T00:00:00",
+        "Total Motor Gasoline": -4.061825726141077
+      },
+      {
+        "dt": "2017-07-23T00:00:00",
+        "Total Motor Gasoline": -4.66179613339297
+      },
+      {
+        "dt": "2017-07-30T00:00:00",
+        "Total Motor Gasoline": -4.412863680255253
+      },
+      {
+        "dt": "2017-08-06T00:00:00",
+        "Total Motor Gasoline": -1.818313132214311
+      },
+      {
+        "dt": "2017-08-13T00:00:00",
+        "Total Motor Gasoline": -0.6593340468238895
+      },
+      {
+        "dt": "2017-08-20T00:00:00",
+        "Total Motor Gasoline": -1.2002836330819333
+      },
+      {
+        "dt": "2017-08-27T00:00:00",
+        "Total Motor Gasoline": -0.890932914949738
+      },
+      {
+        "dt": "2017-09-03T00:00:00",
+        "Total Motor Gasoline": -0.4631397804146786
+      },
+      {
+        "dt": "2017-09-10T00:00:00",
+        "Total Motor Gasoline": -4.400945874934314
+      },
+      {
+        "dt": "2017-09-17T00:00:00",
+        "Total Motor Gasoline": -3.9843486293947294
+      },
+      {
+        "dt": "2017-09-24T00:00:00",
+        "Total Motor Gasoline": -4.353758863999502
+      },
+      {
+        "dt": "2017-10-01T00:00:00",
+        "Total Motor Gasoline": -3.7241925199533843
+      },
+      {
+        "dt": "2017-10-08T00:00:00",
+        "Total Motor Gasoline": -1.8066518847006718
+      },
+      {
+        "dt": "2017-10-15T00:00:00",
+        "Total Motor Gasoline": -2.48508771929824
+      },
+      {
+        "dt": "2017-10-22T00:00:00",
+        "Total Motor Gasoline": -4.044935865953425
+      },
+      {
+        "dt": "2017-10-29T00:00:00",
+        "Total Motor Gasoline": -4.894908044538981
+      },
+      {
+        "dt": "2017-11-05T00:00:00",
+        "Total Motor Gasoline": -5.171001479885772
+      },
+      {
+        "dt": "2017-11-12T00:00:00",
+        "Total Motor Gasoline": -5.086848075630668
+      },
+      {
+        "dt": "2017-11-19T00:00:00",
+        "Total Motor Gasoline": -6.0488514725969385
+      },
+      {
+        "dt": "2017-11-26T00:00:00",
+        "Total Motor Gasoline": -5.316133254909927
+      },
+      {
+        "dt": "2017-12-03T00:00:00",
+        "Total Motor Gasoline": -3.7752452646069634
+      },
+      {
+        "dt": "2017-12-10T00:00:00",
+        "Total Motor Gasoline": -1.521006759547039
+      },
+      {
+        "dt": "2017-12-17T00:00:00",
+        "Total Motor Gasoline": -0.41663752098489715
+      },
+      {
+        "dt": "2017-12-24T00:00:00",
+        "Total Motor Gasoline": 0.5419493446859436
+      },
+      {
+        "dt": "2017-12-31T00:00:00",
+        "Total Motor Gasoline": -0.9611382459120743
+      },
+      {
+        "dt": "2018-01-07T00:00:00",
+        "Total Motor Gasoline": -1.3103342163153453
+      },
+      {
+        "dt": "2018-01-14T00:00:00",
+        "Total Motor Gasoline": -2.2246209784761217
+      },
+      {
+        "dt": "2018-01-21T00:00:00",
+        "Total Motor Gasoline": -3.62530605797331
+      },
+      {
+        "dt": "2018-01-28T00:00:00",
+        "Total Motor Gasoline": -5.844736780688176
+      },
+      {
+        "dt": "2018-02-04T00:00:00",
+        "Total Motor Gasoline": -4.192930211500401
+      },
+      {
+        "dt": "2018-02-11T00:00:00",
+        "Total Motor Gasoline": -3.856204861365764
+      },
+      {
+        "dt": "2018-02-18T00:00:00",
+        "Total Motor Gasoline": -2.769122779651767
+      },
+      {
+        "dt": "2018-02-25T00:00:00",
+        "Total Motor Gasoline": -1.59131498423144
+      },
+      {
+        "dt": "2018-03-04T00:00:00",
+        "Total Motor Gasoline": 0.679811016548082
+      },
+      {
+        "dt": "2018-03-11T00:00:00",
+        "Total Motor Gasoline": -0.6175922429439762
+      },
+      {
+        "dt": "2018-03-18T00:00:00",
+        "Total Motor Gasoline": -0.16552483283224229
+      },
+      {
+        "dt": "2018-03-25T00:00:00",
+        "Total Motor Gasoline": -0.05339540549222921
+      },
+      {
+        "dt": "2018-04-01T00:00:00",
+        "Total Motor Gasoline": -0.2618118551419246
+      },
+      {
+        "dt": "2018-04-08T00:00:00",
+        "Total Motor Gasoline": 1.1879049676025932
+      },
+      {
+        "dt": "2018-04-15T00:00:00",
+        "Total Motor Gasoline": -0.7173752061664707
+      },
+      {
+        "dt": "2018-04-22T00:00:00",
+        "Total Motor Gasoline": -1.7565476412726544
+      },
+      {
+        "dt": "2018-04-29T00:00:00",
+        "Total Motor Gasoline": -1.3489089341380822
+      },
+      {
+        "dt": "2018-05-06T00:00:00",
+        "Total Motor Gasoline": -2.1892965878829607
+      },
+      {
+        "dt": "2018-05-13T00:00:00",
+        "Total Motor Gasoline": -3.5962255213592087
+      },
+      {
+        "dt": "2018-05-20T00:00:00",
+        "Total Motor Gasoline": -2.4949766968759723
+      },
+      {
+        "dt": "2018-05-27T00:00:00",
+        "Total Motor Gasoline": -1.0939820440124204
+      },
+      {
+        "dt": "2018-06-03T00:00:00",
+        "Total Motor Gasoline": -0.5467072744520518
+      },
+      {
+        "dt": "2018-06-10T00:00:00",
+        "Total Motor Gasoline": -2.343221527445505
+      },
+      {
+        "dt": "2018-06-17T00:00:00",
+        "Total Motor Gasoline": -0.7549634921816262
+      },
+      {
+        "dt": "2018-06-24T00:00:00",
+        "Total Motor Gasoline": 0.09295685805819076
+      },
+      {
+        "dt": "2018-07-01T00:00:00",
+        "Total Motor Gasoline": 1.0063083905386794
+      },
+      {
+        "dt": "2018-07-08T00:00:00",
+        "Total Motor Gasoline": 1.4177445089452512
+      },
+      {
+        "dt": "2018-07-15T00:00:00",
+        "Total Motor Gasoline": 1.9986073326961007
+      },
+      {
+        "dt": "2018-07-22T00:00:00",
+        "Total Motor Gasoline": 1.4370362647482926
+      },
+      {
+        "dt": "2018-07-29T00:00:00",
+        "Total Motor Gasoline": 1.44457767295183
+      },
+      {
+        "dt": "2018-08-05T00:00:00",
+        "Total Motor Gasoline": 1.1964362210789004
+      },
+      {
+        "dt": "2018-08-12T00:00:00",
+        "Total Motor Gasoline": 0.8666306111411615
+      },
+      {
+        "dt": "2018-08-19T00:00:00",
+        "Total Motor Gasoline": 1.925168115109921
+      },
+      {
+        "dt": "2018-08-26T00:00:00",
+        "Total Motor Gasoline": 1.23381621922527
+      },
+      {
+        "dt": "2018-09-02T00:00:00",
+        "Total Motor Gasoline": 3.475817904365397
+      },
+      {
+        "dt": "2018-09-09T00:00:00",
+        "Total Motor Gasoline": 8.043149649580862
+      },
+      {
+        "dt": "2018-09-16T00:00:00",
+        "Total Motor Gasoline": 8.31001225801975
+      },
+      {
+        "dt": "2018-09-23T00:00:00",
+        "Total Motor Gasoline": 8.462345599469835
+      },
+      {
+        "dt": "2018-09-30T00:00:00",
+        "Total Motor Gasoline": 7.438246793583514
+      },
+      {
+        "dt": "2018-10-07T00:00:00",
+        "Total Motor Gasoline": 6.659561207807574
+      },
+      {
+        "dt": "2018-10-14T00:00:00",
+        "Total Motor Gasoline": 5.317225435605888
+      },
+      {
+        "dt": "2018-10-21T00:00:00",
+        "Total Motor Gasoline": 5.745865015285734
+      },
+      {
+        "dt": "2018-10-28T00:00:00",
+        "Total Motor Gasoline": 6.257957519180279
+      },
+      {
+        "dt": "2018-11-04T00:00:00",
+        "Total Motor Gasoline": 8.821353746593674
+      },
+      {
+        "dt": "2018-11-11T00:00:00",
+        "Total Motor Gasoline": 7.6885059710783965
+      },
+      {
+        "dt": "2018-11-18T00:00:00",
+        "Total Motor Gasoline": 7.050718612661844
+      },
+      {
+        "dt": "2018-11-25T00:00:00",
+        "Total Motor Gasoline": 4.880384115982084
+      },
+      {
+        "dt": "2018-12-02T00:00:00",
+        "Total Motor Gasoline": 2.430256879238679
+      },
+      {
+        "dt": "2018-12-09T00:00:00",
+        "Total Motor Gasoline": 0.7905679199809335
+      },
+      {
+        "dt": "2018-12-16T00:00:00",
+        "Total Motor Gasoline": 1.0185132340868375
+      },
+      {
+        "dt": "2018-12-23T00:00:00",
+        "Total Motor Gasoline": 2.0720397243118693
+      },
+      {
+        "dt": "2018-12-30T00:00:00",
+        "Total Motor Gasoline": 2.919974098041478
+      },
+      {
+        "dt": "2019-01-06T00:00:00",
+        "Total Motor Gasoline": 4.525497004070433
+      },
+      {
+        "dt": "2019-01-13T00:00:00",
+        "Total Motor Gasoline": 6.06909546695884
+      },
+      {
+        "dt": "2019-01-20T00:00:00",
+        "Total Motor Gasoline": 6.382150467136549
+      },
+      {
+        "dt": "2019-01-27T00:00:00",
+        "Total Motor Gasoline": 6.329009336528135
+      },
+      {
+        "dt": "2019-02-03T00:00:00",
+        "Total Motor Gasoline": 5.05919160481354
+      },
+      {
+        "dt": "2019-02-10T00:00:00",
+        "Total Motor Gasoline": 3.7049379097694235
+      },
+      {
+        "dt": "2019-02-17T00:00:00",
+        "Total Motor Gasoline": 3.0132272373603275
+      },
+      {
+        "dt": "2019-02-24T00:00:00",
+        "Total Motor Gasoline": 1.2405834395612603
+      },
+      {
+        "dt": "2019-03-03T00:00:00",
+        "Total Motor Gasoline": -0.12548350987335866
+      },
+      {
+        "dt": "2019-03-10T00:00:00",
+        "Total Motor Gasoline": 0.5442110165959857
+      },
+      {
+        "dt": "2019-03-17T00:00:00",
+        "Total Motor Gasoline": -0.6426264579433516
+      },
+      {
+        "dt": "2019-03-24T00:00:00",
+        "Total Motor Gasoline": -0.406105353662245
+      },
+      {
+        "dt": "2019-03-31T00:00:00",
+        "Total Motor Gasoline": -0.6868586907752161
+      },
+      {
+        "dt": "2019-04-07T00:00:00",
+        "Total Motor Gasoline": -4.104045033168024
+      },
+      {
+        "dt": "2019-04-14T00:00:00",
+        "Total Motor Gasoline": -3.395390033352119
+      },
+      {
+        "dt": "2019-04-21T00:00:00",
+        "Total Motor Gasoline": -4.63710954490365
+      },
+      {
+        "dt": "2019-04-28T00:00:00",
+        "Total Motor Gasoline": -4.721024632529058
+      },
+      {
+        "dt": "2019-05-05T00:00:00",
+        "Total Motor Gasoline": -4.0953503757357845
+      },
+      {
+        "dt": "2019-05-12T00:00:00",
+        "Total Motor Gasoline": -3.0127492306498804
+      },
+      {
+        "dt": "2019-05-19T00:00:00",
+        "Total Motor Gasoline": -2.204816650063912
+      },
+      {
+        "dt": "2019-05-26T00:00:00",
+        "Total Motor Gasoline": -1.4874312697552905
+      },
+      {
+        "dt": "2019-06-02T00:00:00",
+        "Total Motor Gasoline": -2.0436423270329684
+      },
+      {
+        "dt": "2019-06-09T00:00:00",
+        "Total Motor Gasoline": -0.7813720893889653
+      },
+      {
+        "dt": "2019-06-16T00:00:00",
+        "Total Motor Gasoline": -2.840776537243783
+      },
+      {
+        "dt": "2019-06-23T00:00:00",
+        "Total Motor Gasoline": -3.7193817476243396
+      },
+      {
+        "dt": "2019-06-30T00:00:00",
+        "Total Motor Gasoline": -4.382308889361719
+      },
+      {
+        "dt": "2019-07-07T00:00:00",
+        "Total Motor Gasoline": -4.104654033314226
+      },
+      {
+        "dt": "2019-07-14T00:00:00",
+        "Total Motor Gasoline": -1.3060144509650873
+      },
+      {
+        "dt": "2019-07-21T00:00:00",
+        "Total Motor Gasoline": -0.4188365081540302
+      },
+      {
+        "dt": "2019-07-28T00:00:00",
+        "Total Motor Gasoline": -0.10087977555330863
+      },
+      {
+        "dt": "2019-08-04T00:00:00",
+        "Total Motor Gasoline": 0.5575794892845654
+      },
+      {
+        "dt": "2019-08-11T00:00:00",
+        "Total Motor Gasoline": 0.2710957070793718
+      },
+      {
+        "dt": "2019-08-18T00:00:00",
+        "Total Motor Gasoline": -0.10924857464750248
+      },
+      {
+        "dt": "2019-08-25T00:00:00",
+        "Total Motor Gasoline": -0.3402441853471605
+      },
+      {
+        "dt": "2019-09-01T00:00:00",
+        "Total Motor Gasoline": -2.1451800578810687
+      },
+      {
+        "dt": "2019-09-08T00:00:00",
+        "Total Motor Gasoline": -2.9529103019048764
+      },
+      {
+        "dt": "2019-09-15T00:00:00",
+        "Total Motor Gasoline": -1.906897288063214
+      },
+      {
+        "dt": "2019-09-22T00:00:00",
+        "Total Motor Gasoline": -2.323489477257301
+      },
+      {
+        "dt": "2019-09-29T00:00:00",
+        "Total Motor Gasoline": -2.229817915917376
+      },
+      {
+        "dt": "2019-10-06T00:00:00",
+        "Total Motor Gasoline": -3.137120403773519
+      },
+      {
+        "dt": "2019-10-13T00:00:00",
+        "Total Motor Gasoline": -3.397307777720837
+      },
+      {
+        "dt": "2019-10-20T00:00:00",
+        "Total Motor Gasoline": -2.7192255701391055
+      },
+      {
+        "dt": "2019-10-27T00:00:00",
+        "Total Motor Gasoline": -2.702403954564958
+      },
+      {
+        "dt": "2019-11-03T00:00:00",
+        "Total Motor Gasoline": -4.732897408572001
+      },
+      {
+        "dt": "2019-11-10T00:00:00",
+        "Total Motor Gasoline": -3.318476677993032
+      },
+      {
+        "dt": "2019-11-17T00:00:00",
+        "Total Motor Gasoline": -1.9834453986640854
+      },
+      {
+        "dt": "2019-11-24T00:00:00",
+        "Total Motor Gasoline": 0.6354903785777077
+      },
+      {
+        "dt": "2019-12-01T00:00:00",
+        "Total Motor Gasoline": 1.3759116022099338
+      },
+      {
+        "dt": "2019-12-08T00:00:00",
+        "Total Motor Gasoline": 2.816451122682717
+      },
+      {
+        "dt": "2019-12-15T00:00:00",
+        "Total Motor Gasoline": 3.126425991838433
+      },
+      {
+        "dt": "2019-12-22T00:00:00",
+        "Total Motor Gasoline": 2.640000686383015
+      },
+      {
+        "dt": "2019-12-29T00:00:00",
+        "Total Motor Gasoline": 1.031683861397692
+      },
+      {
+        "dt": "2020-01-05T00:00:00",
+        "Total Motor Gasoline": 1.429884464367781
+      },
+      {
+        "dt": "2020-01-12T00:00:00",
+        "Total Motor Gasoline": 1.0650910727212137
+      },
+      {
+        "dt": "2020-01-19T00:00:00",
+        "Total Motor Gasoline": 0.16062246018140325
+      },
+      {
+        "dt": "2020-01-26T00:00:00",
+        "Total Motor Gasoline": 1.497785375709082
+      },
+      {
+        "dt": "2020-02-02T00:00:00",
+        "Total Motor Gasoline": 1.2606003264920007
+      },
+      {
+        "dt": "2020-02-09T00:00:00",
+        "Total Motor Gasoline": 1.0638750914630624
+      },
+      {
+        "dt": "2020-02-16T00:00:00",
+        "Total Motor Gasoline": 0.8686104957426055
+      },
+      {
+        "dt": "2020-02-23T00:00:00",
+        "Total Motor Gasoline": 0.5671900557383758
+      },
+      {
+        "dt": "2020-03-01T00:00:00",
+        "Total Motor Gasoline": 0.5320803784391703
+      },
+      {
+        "dt": "2020-03-08T00:00:00",
+        "Total Motor Gasoline": 0.36937705717419167
+      },
+      {
+        "dt": "2020-03-15T00:00:00",
+        "Total Motor Gasoline": -0.2832262953255227
+      },
+      {
+        "dt": "2020-03-22T00:00:00",
+        "Total Motor Gasoline": 0.27742854748136203
+      },
+      {
+        "dt": "2020-03-29T00:00:00",
+        "Total Motor Gasoline": 4.208344064955516
+      },
+      {
+        "dt": "2020-04-05T00:00:00",
+        "Total Motor Gasoline": 12.29613012757007
+      },
+      {
+        "dt": "2020-04-12T00:00:00",
+        "Total Motor Gasoline": 15.030159461297178
+      },
+      {
+        "dt": "2020-04-19T00:00:00",
+        "Total Motor Gasoline": 16.564965947233713
+      },
+      {
+        "dt": "2020-04-26T00:00:00",
+        "Total Motor Gasoline": 14.475419307321502
+      },
+      {
+        "dt": "2020-05-03T00:00:00",
+        "Total Motor Gasoline": 13.380677170159228
+      },
+      {
+        "dt": "2020-05-10T00:00:00",
+        "Total Motor Gasoline": 12.385345563139927
+      },
+      {
+        "dt": "2020-05-17T00:00:00",
+        "Total Motor Gasoline": 11.796799860103157
+      },
+      {
+        "dt": "2020-05-24T00:00:00",
+        "Total Motor Gasoline": 10.416377996397408
+      },
+      {
+        "dt": "2020-05-31T00:00:00",
+        "Total Motor Gasoline": 10.098697837701632
+      },
+      {
+        "dt": "2020-06-07T00:00:00",
+        "Total Motor Gasoline": 10.109274497367116
+      },
+      {
+        "dt": "2020-06-14T00:00:00",
+        "Total Motor Gasoline": 10.193764712440135
+      },
+      {
+        "dt": "2020-06-21T00:00:00",
+        "Total Motor Gasoline": 9.945957584239418
+      },
+      {
+        "dt": "2020-06-28T00:00:00",
+        "Total Motor Gasoline": 11.92650543006366
+      },
+      {
+        "dt": "2020-07-05T00:00:00",
+        "Total Motor Gasoline": 9.815129130360777
+      },
+      {
+        "dt": "2020-07-12T00:00:00",
+        "Total Motor Gasoline": 6.7810373272839675
+      },
+      {
+        "dt": "2020-07-19T00:00:00",
+        "Total Motor Gasoline": 6.109854381875568
+      },
+      {
+        "dt": "2020-07-26T00:00:00",
+        "Total Motor Gasoline": 7.216937179014882
+      },
+      {
+        "dt": "2020-08-02T00:00:00",
+        "Total Motor Gasoline": 5.372238191621448
+      },
+      {
+        "dt": "2020-08-09T00:00:00",
+        "Total Motor Gasoline": 5.699863107460645
+      },
+      {
+        "dt": "2020-08-16T00:00:00",
+        "Total Motor Gasoline": 4.139751871219111
+      },
+      {
+        "dt": "2020-08-23T00:00:00",
+        "Total Motor Gasoline": 3.1023958755420633
+      },
+      {
+        "dt": "2020-08-30T00:00:00",
+        "Total Motor Gasoline": 2.2967428327511197
+      },
+      {
+        "dt": "2020-09-06T00:00:00",
+        "Total Motor Gasoline": 1.3110299514206947
+      },
+      {
+        "dt": "2020-09-13T00:00:00",
+        "Total Motor Gasoline": 0.8006617759104939
+      },
+      {
+        "dt": "2020-09-20T00:00:00",
+        "Total Motor Gasoline": -1.17504474292367
+      },
+      {
+        "dt": "2020-09-27T00:00:00",
+        "Total Motor Gasoline": -0.7800813997982492
+      },
+      {
+        "dt": "2020-10-04T00:00:00",
+        "Total Motor Gasoline": -0.8812613927951629
+      },
+      {
+        "dt": "2020-10-11T00:00:00",
+        "Total Motor Gasoline": -0.47745147015264555
+      },
+      {
+        "dt": "2020-10-18T00:00:00",
+        "Total Motor Gasoline": 1.758003352846771
+      },
+      {
+        "dt": "2020-10-25T00:00:00",
+        "Total Motor Gasoline": 2.757012955734206
+      },
+      {
+        "dt": "2020-11-01T00:00:00",
+        "Total Motor Gasoline": 4.8041467759829315
+      },
+      {
+        "dt": "2020-11-08T00:00:00",
+        "Total Motor Gasoline": 2.8600118672691632
+      },
+      {
+        "dt": "2020-11-15T00:00:00",
+        "Total Motor Gasoline": 3.2244188257881
+      },
+      {
+        "dt": "2020-11-22T00:00:00",
+        "Total Motor Gasoline": 1.8448698545876052
+      },
+      {
+        "dt": "2020-11-29T00:00:00",
+        "Total Motor Gasoline": 1.8638577277067414
+      },
+      {
+        "dt": "2020-12-06T00:00:00",
+        "Total Motor Gasoline": 1.3166189599945533
+      },
+      {
+        "dt": "2020-12-13T00:00:00",
+        "Total Motor Gasoline": 0.6666750949232414
+      },
+      {
+        "dt": "2020-12-20T00:00:00",
+        "Total Motor Gasoline": -0.6294407757251541
+      },
+      {
+        "dt": "2020-12-27T00:00:00",
+        "Total Motor Gasoline": -2.437394833217854
+      },
+      {
+        "dt": "2021-01-03T00:00:00",
+        "Total Motor Gasoline": -4.184270038035209
+      },
+      {
+        "dt": "2021-01-10T00:00:00",
+        "Total Motor Gasoline": -4.959986371749247
+      },
+      {
+        "dt": "2021-01-17T00:00:00",
+        "Total Motor Gasoline": -5.697375707605201
+      },
+      {
+        "dt": "2021-01-24T00:00:00",
+        "Total Motor Gasoline": -5.1865178861944194
+      },
+      {
+        "dt": "2021-01-31T00:00:00",
+        "Total Motor Gasoline": -3.442928039702242
+      },
+      {
+        "dt": "2021-02-07T00:00:00",
+        "Total Motor Gasoline": -1.7762948718439864
+      },
+      {
+        "dt": "2021-02-14T00:00:00",
+        "Total Motor Gasoline": -0.7696523826801083
+      },
+      {
+        "dt": "2021-02-21T00:00:00",
+        "Total Motor Gasoline": 0.2765350817319101
+      },
+      {
+        "dt": "2021-02-28T00:00:00",
+        "Total Motor Gasoline": -3.4025265028883367
+      },
+      {
+        "dt": "2021-03-07T00:00:00",
+        "Total Motor Gasoline": -6.233223616289941
+      },
+      {
+        "dt": "2021-03-14T00:00:00",
+        "Total Motor Gasoline": -3.630942741228893
+      },
+      {
+        "dt": "2021-03-21T00:00:00",
+        "Total Motor Gasoline": -2.9266722946147294
+      },
+      {
+        "dt": "2021-03-28T00:00:00",
+        "Total Motor Gasoline": -6.588980818942813
+      },
+      {
+        "dt": "2021-04-04T00:00:00",
+        "Total Motor Gasoline": -8.82811315841634
+      },
+      {
+        "dt": "2021-04-11T00:00:00",
+        "Total Motor Gasoline": -10.41885156187432
+      },
+      {
+        "dt": "2021-04-18T00:00:00",
+        "Total Motor Gasoline": -10.732656115851292
+      },
+      {
+        "dt": "2021-04-25T00:00:00",
+        "Total Motor Gasoline": -9.435401537187216
+      },
+      {
+        "dt": "2021-05-02T00:00:00",
+        "Total Motor Gasoline": -8.03254201328356
+      },
+      {
+        "dt": "2021-05-09T00:00:00",
+        "Total Motor Gasoline": -6.605534334543329
+      },
+      {
+        "dt": "2021-05-16T00:00:00",
+        "Total Motor Gasoline": -8.406719744724779
+      },
+      {
+        "dt": "2021-05-23T00:00:00",
+        "Total Motor Gasoline": -8.830980392156862
+      },
+      {
+        "dt": "2021-05-30T00:00:00",
+        "Total Motor Gasoline": -9.237960394887423
+      },
+      {
+        "dt": "2021-06-06T00:00:00",
+        "Total Motor Gasoline": -6.817803998283467
+      },
+      {
+        "dt": "2021-06-13T00:00:00",
+        "Total Motor Gasoline": -5.453413490534842
+      },
+      {
+        "dt": "2021-06-20T00:00:00",
+        "Total Motor Gasoline": -5.981466540290292
+      },
+      {
+        "dt": "2021-06-27T00:00:00",
+        "Total Motor Gasoline": -5.827593062556291
+      },
+      {
+        "dt": "2021-07-04T00:00:00",
+        "Total Motor Gasoline": -6.430734021503315
+      },
+      {
+        "dt": "2021-07-11T00:00:00",
+        "Total Motor Gasoline": -4.82829380167783
+      },
+      {
+        "dt": "2021-07-18T00:00:00",
+        "Total Motor Gasoline": -4.182253691237092
+      },
+      {
+        "dt": "2021-07-25T00:00:00",
+        "Total Motor Gasoline": -5.346279311362356
+      },
+      {
+        "dt": "2021-08-01T00:00:00",
+        "Total Motor Gasoline": -7.641461465824073
+      },
+      {
+        "dt": "2021-08-08T00:00:00",
+        "Total Motor Gasoline": -7.938595781191826
+      },
+      {
+        "dt": "2021-08-15T00:00:00",
+        "Total Motor Gasoline": -6.398454229945605
+      },
+      {
+        "dt": "2021-08-22T00:00:00",
+        "Total Motor Gasoline": -5.541874495670607
+      },
+      {
+        "dt": "2021-08-29T00:00:00",
+        "Total Motor Gasoline": -3.2551445761073716
+      },
+      {
+        "dt": "2021-09-05T00:00:00",
+        "Total Motor Gasoline": -5.1339988357301465
+      },
+      {
+        "dt": "2021-09-12T00:00:00",
+        "Total Motor Gasoline": -5.77996233651803
+      },
+      {
+        "dt": "2021-09-19T00:00:00",
+        "Total Motor Gasoline": -2.585945432727166
+      },
+      {
+        "dt": "2021-09-26T00:00:00",
+        "Total Motor Gasoline": -2.792945981716344
+      },
+      {
+        "dt": "2021-10-03T00:00:00",
+        "Total Motor Gasoline": -0.7417959223275372
+      },
+      {
+        "dt": "2021-10-10T00:00:00",
+        "Total Motor Gasoline": -0.8946299989783357
+      },
+      {
+        "dt": "2021-10-17T00:00:00",
+        "Total Motor Gasoline": -4.086496106001336
+      },
+      {
+        "dt": "2021-10-24T00:00:00",
+        "Total Motor Gasoline": -4.589517256018816
+      },
+      {
+        "dt": "2021-10-31T00:00:00",
+        "Total Motor Gasoline": -5.888915731447519
+      },
+      {
+        "dt": "2021-11-07T00:00:00",
+        "Total Motor Gasoline": -5.614671896909773
+      },
+      {
+        "dt": "2021-11-14T00:00:00",
+        "Total Motor Gasoline": -7.005838564353617
+      },
+      {
+        "dt": "2021-11-21T00:00:00",
+        "Total Motor Gasoline": -8.148704958135443
+      },
+      {
+        "dt": "2021-11-28T00:00:00",
+        "Total Motor Gasoline": -7.796676910434098
+      },
+      {
+        "dt": "2021-12-05T00:00:00",
+        "Total Motor Gasoline": -7.8008399934415
+      },
+      {
+        "dt": "2021-12-12T00:00:00",
+        "Total Motor Gasoline": -8.495514465482524
+      },
+      {
+        "dt": "2021-12-19T00:00:00",
+        "Total Motor Gasoline": -5.735339889129099
+      },
+      {
+        "dt": "2021-12-26T00:00:00",
+        "Total Motor Gasoline": -5.877106213170336
+      },
+      {
+        "dt": "2022-01-02T00:00:00",
+        "Total Motor Gasoline": -3.440337479934119
+      },
+      {
+        "dt": "2022-01-09T00:00:00",
+        "Total Motor Gasoline": -1.9260538708468444
+      },
+      {
+        "dt": "2022-01-16T00:00:00",
+        "Total Motor Gasoline": 0.5725541051395222
+      },
+      {
+        "dt": "2022-01-23T00:00:00",
+        "Total Motor Gasoline": 0.09366698158150832
+      },
+      {
+        "dt": "2022-01-30T00:00:00",
+        "Total Motor Gasoline": -0.8391730417643184
+      },
+      {
+        "dt": "2022-02-06T00:00:00",
+        "Total Motor Gasoline": -3.1273887337565975
+      },
+      {
+        "dt": "2022-02-13T00:00:00",
+        "Total Motor Gasoline": -3.8987257083287985
+      },
+      {
+        "dt": "2022-02-20T00:00:00",
+        "Total Motor Gasoline": -4.1295858356411586
+      },
+      {
+        "dt": "2022-02-27T00:00:00",
+        "Total Motor Gasoline": 1.0428303870670952
+      },
+      {
+        "dt": "2022-03-06T00:00:00",
+        "Total Motor Gasoline": 5.614348691510895
+      },
+      {
+        "dt": "2022-03-13T00:00:00",
+        "Total Motor Gasoline": 3.8418614671981155
+      },
+      {
+        "dt": "2022-03-20T00:00:00",
+        "Total Motor Gasoline": 2.4814985427008107
+      },
+      {
+        "dt": "2022-03-27T00:00:00",
+        "Total Motor Gasoline": 3.59324033590116
+      },
+      {
+        "dt": "2022-04-03T00:00:00",
+        "Total Motor Gasoline": 0.9373881016931929
+      },
+      {
+        "dt": "2022-04-10T00:00:00",
+        "Total Motor Gasoline": -0.7484131342673561
+      },
+      {
+        "dt": "2022-04-17T00:00:00",
+        "Total Motor Gasoline": -1.1081699874884055
+      },
+      {
+        "dt": "2022-04-24T00:00:00",
+        "Total Motor Gasoline": -1.8160238903494275
+      },
+      {
+        "dt": "2022-05-01T00:00:00",
+        "Total Motor Gasoline": -3.0685591427032755
+      },
+      {
+        "dt": "2022-05-08T00:00:00",
+        "Total Motor Gasoline": -4.750856305755136
+      },
+      {
+        "dt": "2022-05-15T00:00:00",
+        "Total Motor Gasoline": -5.992929905305133
+      },
+      {
+        "dt": "2022-05-22T00:00:00",
+        "Total Motor Gasoline": -5.494642572941444
+      },
+      {
+        "dt": "2022-05-29T00:00:00",
+        "Total Motor Gasoline": -6.4039661509530665
+      },
+      {
+        "dt": "2022-06-05T00:00:00",
+        "Total Motor Gasoline": -9.476985885340172
+      },
+      {
+        "dt": "2022-06-12T00:00:00",
+        "Total Motor Gasoline": -10.49716026010371
+      },
+      {
+        "dt": "2022-06-19T00:00:00",
+        "Total Motor Gasoline": -7.682566132055824
+      },
+      {
+        "dt": "2022-06-26T00:00:00",
+        "Total Motor Gasoline": -8.26420280496084
+      },
+      {
+        "dt": "2022-07-03T00:00:00",
+        "Total Motor Gasoline": -6.957625787165023
+      },
+      {
+        "dt": "2022-07-10T00:00:00",
+        "Total Motor Gasoline": -4.903291267677079
+      },
+      {
+        "dt": "2022-07-17T00:00:00",
+        "Total Motor Gasoline": -3.3750116321368373
+      },
+      {
+        "dt": "2022-07-24T00:00:00",
+        "Total Motor Gasoline": -3.856321078232494
+      },
+      {
+        "dt": "2022-07-31T00:00:00",
+        "Total Motor Gasoline": -1.5624590378817693
+      },
+      {
+        "dt": "2022-08-07T00:00:00",
+        "Total Motor Gasoline": -3.1446043197094986
+      },
+      {
+        "dt": "2022-08-14T00:00:00",
+        "Total Motor Gasoline": -5.474546928757695
+      },
+      {
+        "dt": "2022-08-21T00:00:00",
+        "Total Motor Gasoline": -4.548874842867523
+      },
+      {
+        "dt": "2022-08-28T00:00:00",
+        "Total Motor Gasoline": -5.606608747700403
+      },
+      {
+        "dt": "2022-09-04T00:00:00",
+        "Total Motor Gasoline": -2.3595561798008147
+      },
+      {
+        "dt": "2022-09-11T00:00:00",
+        "Total Motor Gasoline": -2.338843505606447
+      },
+      {
+        "dt": "2022-09-18T00:00:00",
+        "Total Motor Gasoline": -3.1613240921233077
+      },
+      {
+        "dt": "2022-09-25T00:00:00",
+        "Total Motor Gasoline": -4.337515610277309
+      },
+      {
+        "dt": "2022-10-02T00:00:00",
+        "Total Motor Gasoline": -7.822184702197143
+      },
+      {
+        "dt": "2022-10-09T00:00:00",
+        "Total Motor Gasoline": -6.106935237352484
+      },
+      {
+        "dt": "2022-10-16T00:00:00",
+        "Total Motor Gasoline": -3.8445110889643197
+      },
+      {
+        "dt": "2022-10-23T00:00:00",
+        "Total Motor Gasoline": -3.6413189584048045
+      },
+      {
+        "dt": "2022-10-30T00:00:00",
+        "Total Motor Gasoline": -3.5587936039727763
+      },
+      {
+        "dt": "2022-11-06T00:00:00",
+        "Total Motor Gasoline": -3.276869625722245
+      },
+      {
+        "dt": "2022-11-13T00:00:00",
+        "Total Motor Gasoline": -1.9132436461065327
+      },
+      {
+        "dt": "2022-11-20T00:00:00",
+        "Total Motor Gasoline": -0.18685576154366945
+      },
+      {
+        "dt": "2022-11-27T00:00:00",
+        "Total Motor Gasoline": -0.7677953041007823
+      },
+      {
+        "dt": "2022-12-04T00:00:00",
+        "Total Motor Gasoline": -0.0989494035676608
+      },
+      {
+        "dt": "2022-12-11T00:00:00",
+        "Total Motor Gasoline": 2.286524692911218
+      },
+      {
+        "dt": "2022-12-18T00:00:00",
+        "Total Motor Gasoline": 0.8901560784943641
+      },
+      {
+        "dt": "2022-12-25T00:00:00",
+        "Total Motor Gasoline": 0.15674192374888207
+      },
+      {
+        "dt": "2023-01-01T00:00:00",
+        "Total Motor Gasoline": -4.349469686881136
+      },
+      {
+        "dt": "2023-01-08T00:00:00",
+        "Total Motor Gasoline": -5.803578845930179
+      },
+      {
+        "dt": "2023-01-15T00:00:00",
+        "Total Motor Gasoline": -6.63447151702411
+      },
+      {
+        "dt": "2023-01-22T00:00:00",
+        "Total Motor Gasoline": -6.411797449156587
+      },
+      {
+        "dt": "2023-01-29T00:00:00",
+        "Total Motor Gasoline": -6.174686146450325
+      },
+      {
+        "dt": "2023-02-05T00:00:00",
+        "Total Motor Gasoline": -3.5375393026373603
+      },
+      {
+        "dt": "2023-02-12T00:00:00",
+        "Total Motor Gasoline": -2.0800531042940884
+      },
+      {
+        "dt": "2023-02-19T00:00:00",
+        "Total Motor Gasoline": -2.601844376194329
+      },
+      {
+        "dt": "2023-02-26T00:00:00",
+        "Total Motor Gasoline": -2.7718272760161033
+      },
+      {
+        "dt": "2023-03-05T00:00:00",
+        "Total Motor Gasoline": -2.6769580468181453
+      },
+      {
+        "dt": "2023-03-12T00:00:00",
+        "Total Motor Gasoline": -2.072276558045738
+      },
+      {
+        "dt": "2023-03-19T00:00:00",
+        "Total Motor Gasoline": -3.5476783606323226
+      },
+      {
+        "dt": "2023-03-26T00:00:00",
+        "Total Motor Gasoline": -5.080643810608477
+      },
+      {
+        "dt": "2023-04-02T00:00:00",
+        "Total Motor Gasoline": -6.002018691904542
+      },
+      {
+        "dt": "2023-04-09T00:00:00",
+        "Total Motor Gasoline": -4.67274887513458
+      },
+      {
+        "dt": "2023-04-16T00:00:00",
+        "Total Motor Gasoline": -3.8015646920104174
+      },
+      {
+        "dt": "2023-04-23T00:00:00",
+        "Total Motor Gasoline": -4.189250666146749
+      },
+      {
+        "dt": "2023-04-30T00:00:00",
+        "Total Motor Gasoline": -2.492398556272557
+      }
+    ]
+  }
+}

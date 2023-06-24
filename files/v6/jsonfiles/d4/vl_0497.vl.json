@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "view": {
+    "stroke": "transparent"
+  },
+  "title": {
+    "text": "Car theft in the USA",
+    "fontSize": 12,
+    "subtitle": [
+      "Offences per 100k population. Source FBI, 2019",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoUSStates.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.NAME",
+      "from": {
+        "key": "State",
+        "fields": [
+          "Motor Vehicle Theft"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/USA_crime_databank_wide.csv"
+        }
+      }
+    }
+  ],
+  "projection": {
+    "type": "albersUsa"
+  },
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "Motor Vehicle Theft",
+      "legend": {
+        "title": null,
+        "orient": "right",
+        "direction": "vertical"
+      },
+      "type": "quantitative",
+      "scale": {
+        "scheme": "lightgreyred",
+        "reverse": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.NAME",
+        "title": "State"
+      },
+      {
+        "field": "Motor Vehicle Theft",
+        "title": "Offences:",
+        "format": ",d"
+      }
+    ]
+  }
+}

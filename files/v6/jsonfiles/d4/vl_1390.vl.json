@@ -1,0 +1,114 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "title": {
+    "text": "A fifth of Trafford's residents have no religion"
+  },
+  "data": {
+    "values": [
+      {
+        "religion": "Christian",
+        "count": 143639
+      },
+      {
+        "religion": "Buddhist",
+        "count": 768
+      },
+      {
+        "religion": "Hindu",
+        "count": 2271
+      },
+      {
+        "religion": "Jewish",
+        "count": 2413
+      },
+      {
+        "religion": "Muslim",
+        "count": 12994
+      },
+      {
+        "religion": "Sikh",
+        "count": 1652
+      },
+      {
+        "religion": "Other Religion",
+        "count": 566
+      },
+      {
+        "religion": "No Religion",
+        "count": 47968
+      },
+      {
+        "religion": "Not Stated",
+        "count": 14307
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": {
+        "title": "Residents"
+      }
+    },
+    "y": {
+      "field": "religion",
+      "type": "nominal",
+      "sort": {
+        "field": "count",
+        "op": "average",
+        "order": "descending"
+      },
+      "axis": {
+        "title": null,
+        "labelAlign": "left",
+        "labelPadding": 75
+      }
+    },
+    "color": {
+      "value": "#fc6721"
+    },
+    "opacity": {
+      "value": 0.8
+    },
+    "tooltip": [
+      {
+        "field": "religion",
+        "type": "nominal",
+        "title": "Religion"
+      },
+      {
+        "field": "count",
+        "type": "quantitative",
+        "title": "Residents",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "bar"
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 3,
+        "fontStyle": "bold"
+      },
+      "encoding": {
+        "text": {
+          "field": "count",
+          "type": "quantitative",
+          "format": ",.0f"
+        },
+        "color": {
+          "value": "#757575"
+        }
+      }
+    }
+  ]
+}

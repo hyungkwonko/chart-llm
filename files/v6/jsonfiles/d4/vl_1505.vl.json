@@ -1,0 +1,52 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-a8cdc013da4c3ac695b2bcdbe3fc4d38"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "type": "nominal",
+      "field": "repo",
+      "sort": [
+        "numpy-tutorials",
+        "numpydoc",
+        "numpy"
+      ]
+    },
+    "y": {
+      "type": "quantitative",
+      "field": "time_open",
+      "title": "Median Days Open"
+    }
+  },
+  "title": "Time to close for issues closed in the last 10 days",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-a8cdc013da4c3ac695b2bcdbe3fc4d38": [
+      {
+        "org": "numpy",
+        "repo": "numpy",
+        "time_open": 0.6368171296296297,
+        "org/repo": "numpy/numpy"
+      },
+      {
+        "org": "numpy",
+        "repo": "numpy-tutorials",
+        "time_open": 64.75004629629629,
+        "org/repo": "numpy/numpy-tutorials"
+      },
+      {
+        "org": "numpy",
+        "repo": "numpydoc",
+        "time_open": 2.403703703703704,
+        "org/repo": "numpy/numpydoc"
+      }
+    ]
+  }
+}

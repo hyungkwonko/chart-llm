@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "What percentage of workers are waged or salaried?"
+  },
+  "width": 340,
+  "height": 290,
+  "data": {
+    "url": "https://raw.githubusercontent.com/SamJones033/SamJones033.github.io/main/basic2.csv"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "title": "Year"
+    },
+    "y": {
+      "field": "wage",
+      "type": "quantitative",
+      "title": "Percentage of workers who are waged or salaried",
+      "scale": {
+        "domain": [
+          84,
+          90
+        ]
+      }
+    }
+  }
+}

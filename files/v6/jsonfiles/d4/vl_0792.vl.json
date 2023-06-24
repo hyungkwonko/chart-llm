@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Federal reserve Effective Funds Rate (2010-2022)",
+    "subtitle": [
+      "Source: FRED.",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black",
+    "subtitleColor": "black"
+  },
+  "width": "container",
+  "height": 300,
+  "config": {
+    "background": "#122b39",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/KrishnaSharan/KrishnaSharan.github.io/main/data_FRED-DFF.json",
+    "format": {
+      "type": "json",
+      "property": "observations"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.date)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year>2010"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 2010,
+      "bind": {
+        "input": "range",
+        "min": 2010,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 2010,
+        "max": 2023,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "color": "#023549",
+    "interpolate": "step",
+    "width": 10,
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Federal Reserve Effective Funds Rate(%)",
+      "axis": {
+        "grid": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Federal Reserve Effective Funds Rate(%)"
+      },
+      {
+        "field": "date",
+        "type": "nominal",
+        "timeUnit": "utcyearmonthdate",
+        "title": "Date"
+      },
+      {}
+    ]
+  },
+  "background": "#afd1e7"
+}

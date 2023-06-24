@@ -1,0 +1,105 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/infrahumano/elecciones2018/master/segunda_vuelta_presidencial/segunda_vuelta_presidencial.csv",
+    "format": {
+      "parse": {
+        "total_votantes": "number",
+        "votantes": "number"
+      },
+      "type": "csv"
+    }
+  },
+  "title": "Distribuci\u00f3n de total votantes",
+  "hconcat": [
+    {
+      "vconcat": [
+        {
+          "mark": "circle",
+          "transform": [
+            {
+              "aggregate": [
+                {
+                  "op": "sum",
+                  "field": "total_votantes",
+                  "as": "totalVotantesPorDepartamento"
+                },
+                {
+                  "op": "sum",
+                  "field": "votantes",
+                  "as": "votantesPorDepartamento"
+                },
+                {
+                  "op": "sum",
+                  "field": "votos_por_candidato",
+                  "as": "votosporcandidatoDepartamento"
+                }
+              ],
+              "groupby": [
+                "departamento"
+              ]
+            },
+            {
+              "filter": {
+                "field": "totalVotantesPorDepartamento",
+                "range": [
+                  1000000,
+                  2000000
+                ]
+              }
+            }
+          ],
+          "encoding": {
+            "x": {
+              "type": "ordinal",
+              "field": "departamento",
+              "sort": {
+                "field": "totalVotantesPorDepartamento",
+                "order": "descending",
+                "op": "max"
+              },
+              "axis": {
+                "title": "Departamento"
+              }
+            },
+            "y": {
+              "type": "quantitative",
+              "field": "totalVotantesPorDepartamento",
+              "axis": {
+                "title": "Total votantes"
+              }
+            },
+            "size": {
+              "type": "quantitative",
+              "field": "votantesPorDepartamento"
+            },
+            "color": {
+              "type": "quantitative",
+              "field": "votantesPorDepartamento"
+            },
+            "tooltip": [
+              {
+                "field": "departamento",
+                "type": "nominal",
+                "title": "Departamento"
+              },
+              {
+                "field": "totalVotantesPorDepartamento",
+                "type": "quantitative",
+                "title": "Total votantes",
+                "format": ","
+              },
+              {
+                "field": "votantesPorDepartamento",
+                "type": "quantitative",
+                "title": "Votantes",
+                "format": ","
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "config": {}
+}

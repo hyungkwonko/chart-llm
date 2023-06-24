@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A calculate that takes the messy names in the field, metric, and creates a new field, metricClean, where the names are nicer.",
+  "XYZtitle": {
+    "text": "Productivity distribution, by firm size",
+    "subtitle": [
+      "Estimates of porductivity distribution, firms with 1-25 employees",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_SizeRLP.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "rlp10",
+        "rlp25",
+        "rlp50",
+        "rlp75",
+        "rlp90"
+      ],
+      "as": [
+        "metric",
+        "value"
+      ]
+    },
+    {
+      "calculate": "{'rlp10':'10th', 'rlp25':'25th', 'rlp50':'50th', 'rlp75':'75th', 'rlp90':'90th'}[datum.metric]",
+      "as": "metricClean"
+    }
+  ],
+  "height": 300,
+  "width": 200,
+  "mark": {
+    "type": "point"
+  },
+  "encoding": {
+    "x": {
+      "field": "Size",
+      "type": "quantitative",
+      "title": "Employees",
+      "axis": {
+        "grid": false,
+        "format": "d"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "format": "d"
+      }
+    },
+    "facet": {
+      "field": "Year",
+      "type": "nominal",
+      "title": null,
+      "columns": 4
+    },
+    "color": {
+      "field": "metricClean",
+      "title": "Percentiles (estimated)",
+      "scale": {
+        "scheme": "inferno"
+      },
+      "legend": {
+        "orient": "bottom",
+        "columns": 5
+      }
+    }
+  }
+}

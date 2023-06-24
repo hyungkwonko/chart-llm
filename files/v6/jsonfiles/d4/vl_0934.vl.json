@@ -1,0 +1,218 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/mortgage_combined.csv"
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.Date)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1995,
+      "bind": {
+        "input": "range",
+        "min": 1995,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1995,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "title": {
+    "text": "Trends in Mortgage Rates",
+    "fontSize": 14,
+    "subtitlePadding": 5,
+    "fontWeight": 600,
+    "anchor": "start",
+    "subtitle": "",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11
+  },
+  "hconcat": [
+    {
+      "width": 250,
+      "height": 250,
+      "title": {
+        "text": "2 Year Fixed 75% Loan to Value",
+        "fontSize": 11
+      },
+      "mark": {
+        "type": "line",
+        "color": "darkorange",
+        "width": 10,
+        "strokeWidth": 2,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title": "Year",
+          "axis": {
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "Mortgage Rate",
+          "type": "quantitative",
+          "title": "Mortgage Rate",
+          "axis": {
+            "grid": true
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal",
+            "title": "Date"
+          },
+          {
+            "field": "Mortgage Rate",
+            "title": "Mortgage Rate"
+          }
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Regression of House Prices on mortgage rates",
+        "fontSize": 11
+      },
+      "height": 250,
+      "width": 250,
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "size": 100
+          },
+          "encoding": {
+            "x": {
+              "field": "Mortgage Rate",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  10
+                ]
+              },
+              "title": "Mortgage Rate (monthly)"
+            },
+            "y": {
+              "field": "House Price",
+              "type": "quantitative",
+              "title": "Average House Price (monthly)"
+            },
+            "color": {
+              "field": "Period",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "1995-1999",
+                  "2000-2004",
+                  "2005-2009",
+                  "2010-2014",
+                  "2015-2019",
+                  "2020-2022"
+                ],
+                "scheme": "magma",
+                "reverse": true
+              }
+            },
+            "tooltip": [
+              {
+                "field": "Date",
+                "type": "temporal",
+                "title": "Date"
+              },
+              {
+                "field": "Mortgage Rate",
+                "title": "Mortgage Rate"
+              },
+              {
+                "field": "House Price",
+                "title": "House Price"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "color": "black"
+          },
+          "transform": [
+            {
+              "regression": "House Price",
+              "on": "Mortgage Rate",
+              "extent": [
+                1,
+                9
+              ]
+            }
+          ],
+          "encoding": {
+            "x": {
+              "field": "Mortgage Rate",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "House Price",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "regression": "House Price",
+              "on": "Mortgage Rate",
+              "params": true
+            },
+            {
+              "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+              "as": "R2"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "color": "black",
+            "fontWeight": "bold",
+            "fontStyle": "normal",
+            "x": "width",
+            "align": "right",
+            "y": 20,
+            "size": 14
+          },
+          "encoding": {
+            "text": {
+              "type": "nominal",
+              "field": "R2"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

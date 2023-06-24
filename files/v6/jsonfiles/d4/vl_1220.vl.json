@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/wk8.data2.csv"
+  },
+  "title": {
+    "text": "Food Inflation Rate UK 1990-2022",
+    "subtitle": [
+      "Data source: ONS (2022)"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "mark": {
+    "type": "line",
+    "point": false,
+    "color": "#002FA7"
+  },
+  "width": 300,
+  "height": 270,
+  "encoding": {
+    "x": {
+      "field": "Time period",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "Percentage change",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Percentage change",
+        "type": "nominal",
+        "title": "Percentage change (%)"
+      },
+      {
+        "field": "Time period",
+        "type": "temporal",
+        "title": "Year"
+      }
+    ]
+  }
+}

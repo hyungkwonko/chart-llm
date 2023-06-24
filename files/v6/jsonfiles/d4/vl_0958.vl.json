@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Repeated bar charts showing levelized cost of energy for different sources",
+  "title": {
+    "text": "Levelized Cost of Energy",
+    "subtitle": [
+      "Repeated bar charts showing levelized cost of energy for different sources",
+      "Source URL: https://energyeducation.ca/encyclopedia/Levelized_cost_of_energy"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/data-project3.csv"
+  },
+  "repeat": [
+    "Plant Size (MW)",
+    "Capital (Investment)(\u20acm)  Cost",
+    "Initial Investment  per unit of Capacity ($m/MW)",
+    " Fixed Cost  FC ($/MWh)",
+    "Fuel Cost ($/MWh)",
+    "Operational and  Maintenance Cost ($/MWh)",
+    "Carbon Emission Cost ($/MWh)",
+    "Full Cost ($/MWh)"
+  ],
+  "columns": 2,
+  "spec": {
+    "height": 125,
+    "width": 125,
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "Type of  System",
+        "type": "nominal",
+        "title": null,
+        "axis": {
+          "labels": false,
+          "ticks": false
+        }
+      },
+      "y": {
+        "field": {
+          "repeat": "repeat"
+        },
+        "type": "quantitative",
+        "axis": {
+          "grid": false,
+          "titleFontSize": 8,
+          "titleFontWeight": "normal"
+        }
+      },
+      "color": {
+        "field": "Type of  System",
+        "scale": {
+          "scheme": "darkmulti"
+        },
+        "legend": {
+          "title": null,
+          "labelFontSize": 7
+        }
+      },
+      "tooltip": [
+        {
+          "field": "Type of  System",
+          "title": "System"
+        },
+        {
+          "field": {
+            "repeat": "repeat"
+          }
+        }
+      ]
+    }
+  }
+}

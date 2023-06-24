@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "UK CPI data visualisation",
+  "title": {
+    "text": "Explore the CPI data",
+    "subtitle": [
+      "Freqency and size of price rises",
+      "Size of circle in proportion to average long run annual price rise",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/db_priceChangesByProductAnnualLatestYear.csv"
+  },
+  "selection": {
+    "paintbrush": {
+      "type": "multi",
+      "on": "mouseover",
+      "nearest": true
+    },
+    "grid": {
+      "type": "interval",
+      "bind": "scales"
+    },
+    "divisionSelect": {
+      "type": "multi",
+      "fields": [
+        "division_sh"
+      ],
+      "bind": "legend"
+    }
+  },
+  "height": 300,
+  "width": 300,
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "up_sh12",
+      "type": "quantitative",
+      "title": "Share rising"
+    },
+    "y": {
+      "field": "up_ch12_median",
+      "type": "quantitative",
+      "title": "Median size of price rise"
+    },
+    "color": {
+      "field": "division_sh",
+      "type": "ordinal",
+      "title": null,
+      "scale": {
+        "scheme": "turbo"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "divisionSelect",
+        "value": 0.7
+      },
+      "value": 0
+    },
+    "size": {
+      "condition": {
+        "selection": "paintbrush",
+        "value": 800
+      },
+      "field": "up_ch12_longRunMean",
+      "type": "nominal",
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "description",
+        "type": "nominal",
+        "title": "Item"
+      },
+      {
+        "field": "spanYears",
+        "type": "quantitative",
+        "title": "Years present",
+        "format": ".0f"
+      },
+      {
+        "field": "up_ch12_median",
+        "type": "quantitative",
+        "title": "Median price rise (2022)",
+        "format": ".0%"
+      },
+      {
+        "field": "up_ch12_mean",
+        "type": "quantitative",
+        "title": "Mean price rise (2022)",
+        "format": ".0%"
+      },
+      {
+        "field": "up_ch12_longRunMean",
+        "type": "quantitative",
+        "title": "Mean price rise (long run)",
+        "format": ".0%"
+      }
+    ]
+  }
+}

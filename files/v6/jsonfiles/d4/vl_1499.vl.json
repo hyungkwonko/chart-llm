@@ -1,0 +1,46 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-f49d796d543ea7db9bf676fdb38e5682"
+  },
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "type": "nominal",
+      "field": "org"
+    },
+    "x": {
+      "type": "nominal",
+      "field": "repo",
+      "sort": [
+        "numpy",
+        "numpy-tutorials"
+      ]
+    },
+    "y": {
+      "type": "quantitative",
+      "field": "author"
+    }
+  },
+  "title": "Merged PRs in the last 10 days",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-f49d796d543ea7db9bf676fdb38e5682": [
+      {
+        "org": "numpy",
+        "repo": "numpy",
+        "author": 37
+      },
+      {
+        "org": "numpy",
+        "repo": "numpy-tutorials",
+        "author": 3
+      }
+    ]
+  }
+}

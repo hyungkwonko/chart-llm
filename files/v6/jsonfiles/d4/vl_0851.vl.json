@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "bar chart that shows the benchmark results",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JohT/convolution-benchmarks/114ed27dc55f15877f634d6232e493168279ef70/chart/GNU-Linux-x86_64SSE2/benchmark-report.json",
+    "format": {
+      "type": "json",
+      "property": "Catch2TestRun.TestCase[0].BenchmarkResults"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "split(split(datum.$.name, '((')[1],'))')[0]",
+      "as": "ParametrizedBenchmarkDescription"
+    },
+    {
+      "calculate": "replace(datum.$.name, '((' + datum.ParametrizedBenchmarkDescription + '))', '')",
+      "as": "Algorithm"
+    },
+    {
+      "calculate": "round(toNumber(datum.mean[0].$.value) / 1000)",
+      "as": "MeanExecutionTime"
+    }
+  ],
+  "facet": {
+    "column": {
+      "field": "ParametrizedBenchmarkDescription",
+      "title": "Convolution Benchmarks",
+      "header": {
+        "titleFontSize": 16,
+        "labelFontSize": 14
+      }
+    }
+  },
+  "resolve": {
+    "scale": {
+      "x": "independent",
+      "y": "independent"
+    }
+  },
+  "spec": {
+    "height": {
+      "step": 20
+    },
+    "encoding": {
+      "y": {
+        "field": "Algorithm",
+        "title": "algorithm",
+        "type": "nominal",
+        "sort": "x",
+        "axis": {
+          "labelFontSize": 10,
+          "labelLimit": 500,
+          "labelOverlap": false,
+          "titlePadding": 120
+        }
+      },
+      "x": {
+        "field": "MeanExecutionTime",
+        "title": "mean execution time in \u00b5s",
+        "type": "quantitative",
+        "stack": null
+      }
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "cornerRadiusEnd": 4,
+          "height": {
+            "band": 0.9
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "style": "label",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 4,
+          "size": 9
+        },
+        "encoding": {
+          "text": {
+            "field": "MeanExecutionTime",
+            "type": "quantitative"
+          }
+        }
+      }
+    ]
+  }
+}

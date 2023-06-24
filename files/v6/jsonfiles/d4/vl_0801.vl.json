@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 250,
+  "height": 250,
+  "title": {
+    "text": "Oceania",
+    "color": "#00A14E"
+  },
+  "background": "rgba(255, 255, 255, 0)",
+  "data": {
+    "url": "https://gist.githubusercontent.com/khang-dao/7ba7f3757f3ffdd17e0614cd8184c64f/raw/00c2213f0a1eb732a10da48792703161ee3f1f87/olympics-1986-2016-cleaned-4-oceania.csv"
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Height",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          250
+        ]
+      }
+    },
+    "y": {
+      "field": "Weight",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          250
+        ]
+      }
+    },
+    "color": {
+      "value": "#00A14E"
+    },
+    "tooltip": [
+      {
+        "field": "Height",
+        "type": "quantitative"
+      },
+      {
+        "field": "Weight",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "domainColor": "#00A14E",
+      "labelColor": "#00A14E",
+      "tickColor": "#00A14E",
+      "titleColor": "#00A14E",
+      "gridColor": "#b9d4c7"
+    }
+  }
+}

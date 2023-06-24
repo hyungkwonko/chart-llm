@@ -1,0 +1,939 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart with embedded data",
+  "title": {
+    "text": "Gross Savings (% of GDP)",
+    "subtitle": "in Canada, Saudi Arabia and Senegal",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 9,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1970",
+        "Gross savings (% of GDP)": 21.10273085
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1971",
+        "Gross savings (% of GDP)": 21.15135782
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1972",
+        "Gross savings (% of GDP)": 21.20652594
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1973",
+        "Gross savings (% of GDP)": 23.30275259
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1974",
+        "Gross savings (% of GDP)": 24.20514589
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1975",
+        "Gross savings (% of GDP)": 21.18136154
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1976",
+        "Gross savings (% of GDP)": 21.93687931
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1977",
+        "Gross savings (% of GDP)": 20.687403
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1978",
+        "Gross savings (% of GDP)": 20.39247923
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1979",
+        "Gross savings (% of GDP)": 22.15099231
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1980",
+        "Gross savings (% of GDP)": 22.26766568
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1981",
+        "Gross savings (% of GDP)": 22.56787418
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1982",
+        "Gross savings (% of GDP)": 19.97246332
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1983",
+        "Gross savings (% of GDP)": 20.1300743
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1984",
+        "Gross savings (% of GDP)": 20.99126374
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1985",
+        "Gross savings (% of GDP)": 20.61466726
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1986",
+        "Gross savings (% of GDP)": 19.04586143
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1987",
+        "Gross savings (% of GDP)": 20.25177182
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1988",
+        "Gross savings (% of GDP)": 21.0446828
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1989",
+        "Gross savings (% of GDP)": 20.21532395
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1990",
+        "Gross savings (% of GDP)": 17.82406242
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1991",
+        "Gross savings (% of GDP)": 15.19677807
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1992",
+        "Gross savings (% of GDP)": 14.10436831
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1993",
+        "Gross savings (% of GDP)": 14.93238077
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1994",
+        "Gross savings (% of GDP)": 17.0360145
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1995",
+        "Gross savings (% of GDP)": 19.01012577
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1996",
+        "Gross savings (% of GDP)": 19.52540072
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1997",
+        "Gross savings (% of GDP)": 20.19673402
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1998",
+        "Gross savings (% of GDP)": 19.77421428
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1999",
+        "Gross savings (% of GDP)": 21.09588678
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2000",
+        "Gross savings (% of GDP)": 23.77462807
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2001",
+        "Gross savings (% of GDP)": 22.63548905
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2002",
+        "Gross savings (% of GDP)": 21.7247372
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2003",
+        "Gross savings (% of GDP)": 21.94377715
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2004",
+        "Gross savings (% of GDP)": 23.66050407
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2005",
+        "Gross savings (% of GDP)": 24.45175414
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2006",
+        "Gross savings (% of GDP)": 24.61727708
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2007",
+        "Gross savings (% of GDP)": 24.40431956
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2008",
+        "Gross savings (% of GDP)": 24.24740931
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2009",
+        "Gross savings (% of GDP)": 18.52001347
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2010",
+        "Gross savings (% of GDP)": 19.3125301
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2011",
+        "Gross savings (% of GDP)": 20.85710941
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2012",
+        "Gross savings (% of GDP)": 20.91795123
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2013",
+        "Gross savings (% of GDP)": 21.5972984
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2014",
+        "Gross savings (% of GDP)": 22.14849389
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2015",
+        "Gross savings (% of GDP)": 19.56936363
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2016",
+        "Gross savings (% of GDP)": 19.14645457
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2017",
+        "Gross savings (% of GDP)": 19.84528099
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2018",
+        "Gross savings (% of GDP)": 19.64367359
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2019",
+        "Gross savings (% of GDP)": 20.01542161
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2020",
+        "Gross savings (% of GDP)": 18.88341052
+      },
+      {
+        "Country Name": "Canada",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2021",
+        "Gross savings (% of GDP)": 22.93142738
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1971",
+        "Gross savings (% of GDP)": 34.68385717
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1972",
+        "Gross savings (% of GDP)": 36.49825035
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1973",
+        "Gross savings (% of GDP)": 34.90497959
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1974",
+        "Gross savings (% of GDP)": 67.27726626
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1975",
+        "Gross savings (% of GDP)": 56.77732787
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1976",
+        "Gross savings (% of GDP)": 60.33235937
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1977",
+        "Gross savings (% of GDP)": 48.27789896
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1978",
+        "Gross savings (% of GDP)": 34.27582237
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1979",
+        "Gross savings (% of GDP)": 37.84670288
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1980",
+        "Gross savings (% of GDP)": 50.41309415
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1981",
+        "Gross savings (% of GDP)": 45.87320228
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1982",
+        "Gross savings (% of GDP)": 32.90690151
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1983",
+        "Gross savings (% of GDP)": 23.87115332
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1984",
+        "Gross savings (% of GDP)": 19.6712641
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1985",
+        "Gross savings (% of GDP)": 17.01319977
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1986",
+        "Gross savings (% of GDP)": 13.62286797
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1987",
+        "Gross savings (% of GDP)": 13.35777052
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1988",
+        "Gross savings (% of GDP)": 16.64880074
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1989",
+        "Gross savings (% of GDP)": 13.73645593
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1990",
+        "Gross savings (% of GDP)": 15.1923008
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1991",
+        "Gross savings (% of GDP)": 8.585122247
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1992",
+        "Gross savings (% of GDP)": 16.71914918
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1993",
+        "Gross savings (% of GDP)": 15.50817895
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1994",
+        "Gross savings (% of GDP)": 15.39678877
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1995",
+        "Gross savings (% of GDP)": 19.8025423
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1996",
+        "Gross savings (% of GDP)": 22.15460441
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1997",
+        "Gross savings (% of GDP)": 22.7627294
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1998",
+        "Gross savings (% of GDP)": 16.76813347
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1999",
+        "Gross savings (% of GDP)": 25.62125003
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2000",
+        "Gross savings (% of GDP)": 30.25821128
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2001",
+        "Gross savings (% of GDP)": 28.02757881
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2002",
+        "Gross savings (% of GDP)": 29.27031712
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2003",
+        "Gross savings (% of GDP)": 34.81638225
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2004",
+        "Gross savings (% of GDP)": 42.13973558
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2005",
+        "Gross savings (% of GDP)": 48.65310796
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2006",
+        "Gross savings (% of GDP)": 48.50552786
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2007",
+        "Gross savings (% of GDP)": 48.92772775
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2008",
+        "Gross savings (% of GDP)": 52.75226934
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2009",
+        "Gross savings (% of GDP)": 36.59862149
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2010",
+        "Gross savings (% of GDP)": 43.56365505
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2011",
+        "Gross savings (% of GDP)": 50.59068846
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2012",
+        "Gross savings (% of GDP)": 48.92873536
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2013",
+        "Gross savings (% of GDP)": 44.6088549
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2014",
+        "Gross savings (% of GDP)": 38.92448874
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2015",
+        "Gross savings (% of GDP)": 25.50283714
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2016",
+        "Gross savings (% of GDP)": 27.23567748
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2017",
+        "Gross savings (% of GDP)": 30.37145768
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2018",
+        "Gross savings (% of GDP)": 35.18997986
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2019",
+        "Gross savings (% of GDP)": 33.89475919
+      },
+      {
+        "Country Name": "Saudi Arabia",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2020",
+        "Gross savings (% of GDP)": 24.56037839
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1974",
+        "Gross savings (% of GDP)": 21.02824253
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1975",
+        "Gross savings (% of GDP)": 17.32097813
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1976",
+        "Gross savings (% of GDP)": 15.00643568
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1977",
+        "Gross savings (% of GDP)": 15.36490884
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1978",
+        "Gross savings (% of GDP)": 9.849616886
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1979",
+        "Gross savings (% of GDP)": 9.223271194
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1980",
+        "Gross savings (% of GDP)": 3.484703602
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1981",
+        "Gross savings (% of GDP)": 7.452038866
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1982",
+        "Gross savings (% of GDP)": 7.981479583
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1983",
+        "Gross savings (% of GDP)": 5.212881556
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1984",
+        "Gross savings (% of GDP)": 4.9588861
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1985",
+        "Gross savings (% of GDP)": 5.080017554
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1986",
+        "Gross savings (% of GDP)": 2.630968608
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1987",
+        "Gross savings (% of GDP)": 5.943214384
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1988",
+        "Gross savings (% of GDP)": 2.646399559
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1989",
+        "Gross savings (% of GDP)": 2.706923215
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1990",
+        "Gross savings (% of GDP)": 2.571674859
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1991",
+        "Gross savings (% of GDP)": 3.016926364
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1992",
+        "Gross savings (% of GDP)": 3.74821746
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1993",
+        "Gross savings (% of GDP)": 1.492260442
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1994",
+        "Gross savings (% of GDP)": 5.815936493
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1995",
+        "Gross savings (% of GDP)": 8.491258759
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1996",
+        "Gross savings (% of GDP)": 7.980345318
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1997",
+        "Gross savings (% of GDP)": 10.76193471
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1998",
+        "Gross savings (% of GDP)": 11.13823167
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "1999",
+        "Gross savings (% of GDP)": 11.54025288
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2000",
+        "Gross savings (% of GDP)": 11.27739515
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2001",
+        "Gross savings (% of GDP)": 14.67052206
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2002",
+        "Gross savings (% of GDP)": 13.03217307
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2003",
+        "Gross savings (% of GDP)": 14.52874888
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2004",
+        "Gross savings (% of GDP)": 13.56460928
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2005",
+        "Gross savings (% of GDP)": 15.31846417
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2006",
+        "Gross savings (% of GDP)": 13.40037849
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2007",
+        "Gross savings (% of GDP)": 15.15431727
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2008",
+        "Gross savings (% of GDP)": 14.90772893
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2009",
+        "Gross savings (% of GDP)": 14.98363362
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2010",
+        "Gross savings (% of GDP)": 16.28259487
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2011",
+        "Gross savings (% of GDP)": 14.38264462
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2012",
+        "Gross savings (% of GDP)": 15.84553068
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2013",
+        "Gross savings (% of GDP)": 16.28849893
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2014",
+        "Gross savings (% of GDP)": 18.95045331
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2015",
+        "Gross savings (% of GDP)": 20.14248361
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2016",
+        "Gross savings (% of GDP)": 21.15496587
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2017",
+        "Gross savings (% of GDP)": 22.54339558
+      },
+      {
+        "Country Name": "Senegal",
+        "Indicator Name": "Gross savings (% of GDP)",
+        "Year": "2018",
+        "Gross savings (% of GDP)": 23.06032511
+      }
+    ]
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "point": false
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Gross savings (% of GDP)",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false
+      },
+      "scale": {
+        "domain": [
+          0,
+          80
+        ]
+      }
+    },
+    "color": {
+      "field": "Country Name",
+      "type": "nominal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "title": null,
+      "legend": {
+        "orient": "bottom"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/wk5data_ONS-P46J.json",
+    "format": {
+      "type": "json",
+      "property": "years"
+    }
+  },
+  "title": {
+    "text": "Exports to EU: Textile yarn & thread",
+    "subtitle": "Data source: ONS (2022)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 155,
+  "height": 155,
+  "mark": {
+    "type": "line",
+    "color": "rgb(0,47,167)"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "grid": false
+      },
+      "title": ""
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      },
+      "title": ""
+    }
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    },
+    "axisY": {
+      "labelAlign": "left",
+      "labelPadding": 160,
+      "titleAngle": -90,
+      "titleX": -25
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-aca108cfab2cfcc7b15366d440573dde"
+      },
+      "mark": "bar",
+      "encoding": {
+        "color": {
+          "condition": {
+            "value": "#006600",
+            "test": "((datum.end - datum.start) >= 8)"
+          },
+          "value": "#BB0000"
+        },
+        "x": {
+          "field": "date",
+          "type": "nominal"
+        },
+        "y": {
+          "axis": {
+            "labels": false,
+            "tickCount": 19
+          },
+          "field": "start",
+          "type": "quantitative"
+        },
+        "y2": {
+          "field": "end"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-beeb4a58fd95803815144dd3f8396326"
+      },
+      "mark": {
+        "type": "text",
+        "align": "right"
+      },
+      "encoding": {
+        "text": {
+          "field": "hour_labels",
+          "type": "nominal"
+        },
+        "x": {
+          "value": -3
+        },
+        "y": {
+          "field": "y_labels",
+          "title": "sleep time",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-aca108cfab2cfcc7b15366d440573dde"
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "dy": -15
+      },
+      "encoding": {
+        "color": {
+          "value": "white"
+        },
+        "text": {
+          "field": "total_sleep_hours",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "date",
+          "type": "nominal"
+        },
+        "y": {
+          "axis": {
+            "labels": false,
+            "tickCount": 19
+          },
+          "field": "start",
+          "type": "quantitative"
+        },
+        "y2": {
+          "field": "end"
+        }
+      }
+    }
+  ],
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-aca108cfab2cfcc7b15366d440573dde": [
+      {
+        "date": "Today",
+        "start": 0,
+        "end": 0,
+        "total_sleep_hours": ""
+      },
+      {
+        "date": "08-07",
+        "start": 0,
+        "end": 0,
+        "total_sleep_hours": ""
+      },
+      {
+        "date": "08-06",
+        "start": 0,
+        "end": 0,
+        "total_sleep_hours": ""
+      },
+      {
+        "date": "08-05",
+        "start": 0,
+        "end": 0,
+        "total_sleep_hours": ""
+      },
+      {
+        "date": "08-04",
+        "start": 0,
+        "end": 0,
+        "total_sleep_hours": ""
+      },
+      {
+        "date": "08-03",
+        "start": 0,
+        "end": 0,
+        "total_sleep_hours": ""
+      },
+      {
+        "date": "08-02",
+        "start": 0,
+        "end": 0,
+        "total_sleep_hours": ""
+      },
+      {
+        "date": "08-01",
+        "start": 5.5,
+        "end": 15,
+        "total_sleep_hours": "9.5"
+      },
+      {
+        "date": "07-31",
+        "start": 6.5,
+        "end": 13,
+        "total_sleep_hours": "6.5"
+      },
+      {
+        "date": "07-30",
+        "start": 0,
+        "end": 0,
+        "total_sleep_hours": ""
+      },
+      {
+        "date": "07-29",
+        "start": 0,
+        "end": 0,
+        "total_sleep_hours": ""
+      },
+      {
+        "date": "07-28",
+        "start": 0,
+        "end": 0,
+        "total_sleep_hours": ""
+      },
+      {
+        "date": "07-27",
+        "start": 0,
+        "end": 0,
+        "total_sleep_hours": ""
+      },
+      {
+        "date": "07-26",
+        "start": 0,
+        "end": 0,
+        "total_sleep_hours": ""
+      }
+    ],
+    "data-beeb4a58fd95803815144dd3f8396326": [
+      {
+        "hour_labels": "8p",
+        "y_labels": 0
+      },
+      {
+        "hour_labels": "9p",
+        "y_labels": 1
+      },
+      {
+        "hour_labels": "10p",
+        "y_labels": 2
+      },
+      {
+        "hour_labels": "11p",
+        "y_labels": 3
+      },
+      {
+        "hour_labels": "12a",
+        "y_labels": 4
+      },
+      {
+        "hour_labels": "1a",
+        "y_labels": 5
+      },
+      {
+        "hour_labels": "2a",
+        "y_labels": 6
+      },
+      {
+        "hour_labels": "3a",
+        "y_labels": 7
+      },
+      {
+        "hour_labels": "4a",
+        "y_labels": 8
+      },
+      {
+        "hour_labels": "5a",
+        "y_labels": 9
+      },
+      {
+        "hour_labels": "6a",
+        "y_labels": 10
+      },
+      {
+        "hour_labels": "7a",
+        "y_labels": 11
+      },
+      {
+        "hour_labels": "8a",
+        "y_labels": 12
+      },
+      {
+        "hour_labels": "9a",
+        "y_labels": 13
+      },
+      {
+        "hour_labels": "10a",
+        "y_labels": 14
+      },
+      {
+        "hour_labels": "11a",
+        "y_labels": 15
+      },
+      {
+        "hour_labels": "12p",
+        "y_labels": 16
+      },
+      {
+        "hour_labels": "1p",
+        "y_labels": 17
+      },
+      {
+        "hour_labels": "2p",
+        "y_labels": 18
+      }
+    ]
+  }
+}

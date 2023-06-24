@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 400,
+  "mark": {
+    "type": "bar",
+    "interpolate": "basis"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/BraneShop/BraneShop.github.io/2d5cdeb6ec3b2c78016a4e4b773fdc12174cb255/src/data/holdout-accuracies.json"
+  },
+  "encoding": {
+    "y": {
+      "field": "Experiment",
+      "type": "nominal",
+      "sort": {
+        "field": "Accuracy",
+        "op": "average",
+        "order": "ascending"
+      }
+    },
+    "x": {
+      "field": "Accuracy",
+      "type": "quantitative",
+      "axis": {
+        "grid": true
+      },
+      "scale": {
+        "domain": [
+          0,
+          1
+        ]
+      }
+    },
+    "tooltip": {
+      "field": "Accuracy",
+      "type": "quantitative"
+    }
+  }
+}

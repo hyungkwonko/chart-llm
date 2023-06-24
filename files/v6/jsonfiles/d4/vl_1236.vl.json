@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Passenger count by major European airline and airline groups",
+    "subtitle": "Data spans between 2006-2021 and is presented in millions. Source: Wikipedia (2022)",
+    "fontSize": 13,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/wk4scrapingairline_IMPROVED%2BCATEGORY.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 340,
+  "width": 220,
+  "mark": {
+    "type": "bar"
+  },
+  "transform": [
+    {
+      "filter": "datum.Year==Year"
+    }
+  ],
+  "params": [
+    {
+      "name": "Year",
+      "value": 2019,
+      "bind": {
+        "input": "range",
+        "min": 2006,
+        "max": 2021,
+        "step": 1,
+        "name": "Select year:"
+      }
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "Airline",
+      "type": "nominal",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "labelFontSize": 11
+      },
+      "sort": "-x"
+    },
+    "x": {
+      "field": "Passengers",
+      "type": "quantitative",
+      "title": "Passengers (millions)",
+      "axis": {
+        "grid": false,
+        "titleColor": "black",
+        "titleFontSize": 13,
+        "titleFontWeight": "normal",
+        "labelFontSize": 11
+      }
+    },
+    "color": {
+      "field": "Category",
+      "type": "nominal",
+      "title": "Category",
+      "scale": {
+        "scheme": "set2"
+      },
+      "legend": "right"
+    },
+    "tooltip": [
+      {
+        "field": "Airline",
+        "type": "nominal",
+        "title": "Airline"
+      },
+      {
+        "field": "Category",
+        "type": "nominal",
+        "title": "Category"
+      },
+      {
+        "field": "Passengers",
+        "type": "quantitative",
+        "title": "Passengers (millions)"
+      }
+    ]
+  }
+}

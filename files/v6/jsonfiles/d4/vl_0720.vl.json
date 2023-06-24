@@ -1,0 +1,105 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/Transport%20Comms%20Cost%20CSV.csv"
+  },
+  "hconcat": [
+    {
+      "mark": {
+        "type": "line",
+        "point": "transparent"
+      },
+      "encoding": {
+        "color": {
+          "field": "Type",
+          "legend": {
+            "orient": "right",
+            "title": null,
+            "symbolSize": 25
+          },
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "International calling costs (relative to 1930) (OECD Economic Outlook (2007))",
+              "Passenger air transport cost (relative to 1930) (OECD Economic Outlook (2007))",
+              "Sea freight cost (relative to 1930) (OECD Economic Outlook (2007))"
+            ]
+          }
+        },
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "title": null,
+          "axis": {
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              110
+            ]
+          },
+          "sort": "ascending",
+          "title": "Cost relative to 1930, %"
+        },
+        "tooltip": [
+          {
+            "field": "Type"
+          },
+          {
+            "field": "Value",
+            "title": "Government Deficit (% of GDP)"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Value"
+            ],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "title": {
+        "text": "Decline in Transport and Communication costs relative to 1930",
+        "fontSize": 13,
+        "subtitle": [
+          "Source: Our World in Data",
+          ""
+        ],
+        "anchor": "start",
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 13,
+        "color": "black"
+      },
+      "selection": {
+        "countrysel": {
+          "type": "single",
+          "empty": "all",
+          "fields": [
+            "Type"
+          ]
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "selection": "countrysel"
+          }
+        }
+      ],
+      "width": 600,
+      "height": 500
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Histogram",
+  "width": "container",
+  "title": {
+    "text": "Distribution of income across countries, 2017"
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "year",
+        "equal": "2017"
+      }
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "gdpPercap",
+      "type": "quantitative",
+      "bin": {
+        "step": 5000
+      },
+      "axis": {
+        "grid": false,
+        "format": "$,.0f",
+        "ticks": false,
+        "title": "GDP per capita"
+      }
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "axis": {
+        "title": null
+      }
+    },
+    "color": {
+      "value": "#fc6721"
+    },
+    "opacity": {
+      "value": 0.7
+    }
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

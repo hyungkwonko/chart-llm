@@ -1,0 +1,123 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/US_prt_rtv4.csv"
+  },
+  "title": {
+    "text": "US Participation Rate 1960-2023",
+    "anchor": "start",
+    "subtitle": [
+      "Sources: Bureau of Labor Statistics & the OECD",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10
+  },
+  "width": 400,
+  "height": 300,
+  "params": [
+    {
+      "name": "View",
+      "select": {
+        "type": "point",
+        "fields": [
+          "dum"
+        ]
+      },
+      "bind": {
+        "input": "select",
+        "options": [
+          "All",
+          "Gender",
+          "Age"
+        ],
+        "name": "Demographic:"
+      },
+      "value": "All"
+    },
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": [
+          "Series ID"
+        ],
+        "toggle": true,
+        "on": "mouseover"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": {
+        "param": "View"
+      }
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": false
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "axis": {
+        "tickMinStep": 5,
+        "gridOpacity": 0.4
+      },
+      "type": "temporal"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "axis": {
+        "format": "%",
+        "gridOpacity": 0.4
+      },
+      "title": "Labor Force Participation Rate"
+    },
+    "color": {
+      "field": "Series ID",
+      "scale": {
+        "range": [
+          "rgb(128,0,0)",
+          "green",
+          "red",
+          "yellow",
+          "blue",
+          "grey"
+        ]
+      },
+      "legend": {
+        "title": "Demographic:"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "test": {
+          "param": "hover"
+        },
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {
+        "field": "Year",
+        "type": "temporal",
+        "format": "%Y"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "format": "%",
+        "title": "Labor Force Participation Rate"
+      },
+      {
+        "field": "Series ID",
+        "type": "nominal",
+        "title": "Group"
+      }
+    ]
+  }
+}

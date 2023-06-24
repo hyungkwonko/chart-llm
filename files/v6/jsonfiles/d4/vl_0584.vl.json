@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The Roaring Twenties",
+    "subtitle": [
+      "Dow Jones Industrial Average. Source: FRED",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "dx": 0,
+    "dy": 0,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 150,
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/US_FRED_DowJones.csv"
+  },
+  "mark": {
+    "type": "line",
+    "color": "rgb(128,0,0)",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "DATE",
+        "range": [
+          {
+            "year": 1914,
+            "month": 1,
+            "day": 1
+          },
+          {
+            "year": 1927,
+            "month": 10,
+            "day": 1
+          }
+        ]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "DATE",
+      "type": "temporal",
+      "title": null,
+      "scale": {
+        "domain": [
+          {
+            "year": 1914,
+            "month": 1,
+            "day": 1
+          },
+          {
+            "year": 1930,
+            "month": 10,
+            "day": 1
+          }
+        ]
+      }
+    },
+    "y": {
+      "field": "DJIA",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": [
+          0,
+          200
+        ]
+      }
+    }
+  }
+}

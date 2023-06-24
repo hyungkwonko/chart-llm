@@ -1,0 +1,981 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Urban Population in Argentina, US and UAE",
+    "subtitle": "From 1960-2022. Source: World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1960",
+        "Urban Population": 67926
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1961",
+        "Urban Population": 74979
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1962",
+        "Urban Population": 84362
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1963",
+        "Urban Population": 95215
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1964",
+        "Urban Population": 106186
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1965",
+        "Urban Population": 116472
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1966",
+        "Urban Population": 125596
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1967",
+        "Urban Population": 134578
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1968",
+        "Urban Population": 145731
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1969",
+        "Urban Population": 162076
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1970",
+        "Urban Population": 187141
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1971",
+        "Urban Population": 221415
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1972",
+        "Urban Population": 264112
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1973",
+        "Urban Population": 314911
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1974",
+        "Urban Population": 373031
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1975",
+        "Urban Population": 437539
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1976",
+        "Urban Population": 509722
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1977",
+        "Urban Population": 589057
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1978",
+        "Urban Population": 670980
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1979",
+        "Urban Population": 750154
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1980",
+        "Urban Population": 822844
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1981",
+        "Urban Population": 884771
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1982",
+        "Urban Population": 937281
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1983",
+        "Urban Population": 985800
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1984",
+        "Urban Population": 1035512
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1985",
+        "Urban Population": 1090254
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1986",
+        "Urban Population": 1151670
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1987",
+        "Urban Population": 1218877
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1988",
+        "Urban Population": 1290899
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1989",
+        "Urban Population": 1366666
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1990",
+        "Urban Population": 1445398
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1991",
+        "Urban Population": 1528535
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1992",
+        "Urban Population": 1616858
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1993",
+        "Urban Population": 1708388
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1994",
+        "Urban Population": 1800329
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1995",
+        "Urban Population": 1891481
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1996",
+        "Urban Population": 1993032
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1997",
+        "Urban Population": 2108719
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1998",
+        "Urban Population": 2233073
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "1999",
+        "Urban Population": 2367188
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2000",
+        "Urban Population": 2514650
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2001",
+        "Urban Population": 2663810
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2002",
+        "Urban Population": 2820134
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2003",
+        "Urban Population": 3024184
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2004",
+        "Urban Population": 3330985
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2005",
+        "Urban Population": 3774363
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2006",
+        "Urban Population": 4380486
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2007",
+        "Urban Population": 5121561
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2008",
+        "Urban Population": 5911710
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2009",
+        "Urban Population": 6630162
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2010",
+        "Urban Population": 7189437
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2011",
+        "Urban Population": 7553138
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2012",
+        "Urban Population": 7747413
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2013",
+        "Urban Population": 7824292
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2014",
+        "Urban Population": 7866608
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2015",
+        "Urban Population": 7935894
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2016",
+        "Urban Population": 8047162
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2017",
+        "Urban Population": 8182525
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2018",
+        "Urban Population": 8332904
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2019",
+        "Urban Population": 8479742
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2020",
+        "Urban Population": 8609395
+      },
+      {
+        "Country Name": "United Arab Emirates",
+        "Year": "2021",
+        "Urban Population": 8722116
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1960",
+        "Urban Population": 126462473
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1961",
+        "Urban Population": 129276215
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1962",
+        "Urban Population": 131988693
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1963",
+        "Urban Population": 134615404
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1964",
+        "Urban Population": 137215986
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1965",
+        "Urban Population": 139663053
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1966",
+        "Urban Population": 142008703
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1967",
+        "Urban Population": 144288757
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1968",
+        "Urban Population": 146463196
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1969",
+        "Urban Population": 148629124
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1970",
+        "Urban Population": 150922373
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1971",
+        "Urban Population": 152865492
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1972",
+        "Urban Population": 154531732
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1973",
+        "Urban Population": 156034954
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1974",
+        "Urban Population": 157488501
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1975",
+        "Urban Population": 159070594
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1976",
+        "Urban Population": 160611122
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1977",
+        "Urban Population": 162256678
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1978",
+        "Urban Population": 164005080
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1979",
+        "Urban Population": 165847531
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1980",
+        "Urban Population": 167551171
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1981",
+        "Urban Population": 169552427
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1982",
+        "Urban Population": 171528659
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1983",
+        "Urban Population": 173459636
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1984",
+        "Urban Population": 175321738
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1985",
+        "Urban Population": 177239105
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1986",
+        "Urban Population": 179244877
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1987",
+        "Urban Population": 181215212
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1988",
+        "Urban Population": 183232441
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1989",
+        "Urban Population": 185333919
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1990",
+        "Urban Population": 187966119
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1991",
+        "Urban Population": 191509147
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1992",
+        "Urban Population": 195199459
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1993",
+        "Urban Population": 198806845
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1994",
+        "Urban Population": 202278113
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1995",
+        "Urban Population": 205718394
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1996",
+        "Urban Population": 209146726
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1997",
+        "Urban Population": 212694273
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1998",
+        "Urban Population": 216206090
+      },
+      {
+        "Country Name": "United States",
+        "Year": "1999",
+        "Urban Population": 219721677
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2000",
+        "Urban Population": 223069137
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2001",
+        "Urban Population": 225792302
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2002",
+        "Urban Population": 228400290
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2003",
+        "Urban Population": 230876596
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2004",
+        "Urban Population": 233532722
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2005",
+        "Urban Population": 236200507
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2006",
+        "Urban Population": 238999326
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2007",
+        "Urban Population": 241795278
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2008",
+        "Urban Population": 244607104
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2009",
+        "Urban Population": 247276259
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2010",
+        "Urban Population": 249849720
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2011",
+        "Urban Population": 252208133
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2012",
+        "Urban Population": 254614421
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2013",
+        "Urban Population": 256953576
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2014",
+        "Urban Population": 259430732
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2015",
+        "Urban Population": 261950744
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2016",
+        "Urban Population": 264473000
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2017",
+        "Urban Population": 266788716
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2018",
+        "Urban Population": 268844029
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2019",
+        "Urban Population": 270737596
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2020",
+        "Urban Population": 274032053
+      },
+      {
+        "Country Name": "United States",
+        "Year": "2021",
+        "Urban Population": 275050303
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1960",
+        "Urban Population": 15076844
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1961",
+        "Urban Population": 15449953
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1962",
+        "Urban Population": 15815495
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1963",
+        "Urban Population": 16183088
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1964",
+        "Urban Population": 16552518
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1965",
+        "Urban Population": 16923099
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1966",
+        "Urban Population": 17295211
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1967",
+        "Urban Population": 17669090
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1968",
+        "Urban Population": 18048312
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1969",
+        "Urban Population": 18436398
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1970",
+        "Urban Population": 18836989
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1971",
+        "Urban Population": 19242929
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1972",
+        "Urban Population": 19659179
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1973",
+        "Urban Population": 20084769
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1974",
+        "Urban Population": 20514215
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1975",
+        "Urban Population": 20943259
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1976",
+        "Urban Population": 21370520
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1977",
+        "Urban Population": 21797025
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1978",
+        "Urban Population": 22227668
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1979",
+        "Urban Population": 22668008
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1980",
+        "Urban Population": 23122598
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1981",
+        "Urban Population": 23609666
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1982",
+        "Urban Population": 24118027
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1983",
+        "Urban Population": 24636890
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1984",
+        "Urban Population": 25163829
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1985",
+        "Urban Population": 25695324
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1986",
+        "Urban Population": 26230730
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1987",
+        "Urban Population": 26769634
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1988",
+        "Urban Population": 27309076
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1989",
+        "Urban Population": 27844466
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1990",
+        "Urban Population": 28373005
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1991",
+        "Urban Population": 28887231
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1992",
+        "Urban Population": 29352237
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1993",
+        "Urban Population": 29809445
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1994",
+        "Urban Population": 30260588
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1995",
+        "Urban Population": 30705906
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1996",
+        "Urban Population": 31145813
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1997",
+        "Urban Population": 31579653
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1998",
+        "Urban Population": 32009558
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "1999",
+        "Urban Population": 32438320
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2000",
+        "Urban Population": 32867365
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2001",
+        "Urban Population": 33297960
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2002",
+        "Urban Population": 33728928
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2003",
+        "Urban Population": 34159484
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2004",
+        "Urban Population": 34588884
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2005",
+        "Urban Population": 35015688
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2006",
+        "Urban Population": 35439468
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2007",
+        "Urban Population": 35861117
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2008",
+        "Urban Population": 36284568
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2009",
+        "Urban Population": 36714243
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2010",
+        "Urban Population": 37055902
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2011",
+        "Urban Population": 37543830
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2012",
+        "Urban Population": 38027774
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2013",
+        "Urban Population": 38509756
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2014",
+        "Urban Population": 38990109
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2015",
+        "Urban Population": 39467043
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2016",
+        "Urban Population": 39940546
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2017",
+        "Urban Population": 40410674
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2018",
+        "Urban Population": 40877099
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2019",
+        "Urban Population": 41339571
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2020",
+        "Urban Population": 41796990
+      },
+      {
+        "Country Name": "Argentina",
+        "Year": "2021",
+        "Urban Population": 42248949
+      }
+    ]
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "point": false
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Urban Population",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "Country Name",
+      "type": "nominal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "title": null,
+      "legend": {
+        "orient": "top-left"
+      }
+    }
+  },
+  "config": {}
+}

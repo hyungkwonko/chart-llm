@@ -1,0 +1,121 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Investment Grade Corporate Bonds Yields vs Fed Funds Rate",
+    "subtitle": [
+      "Relationship between Corporate Bond Yields and Fed Funds Rate",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 350,
+  "data": {
+    "url": "https://raw.githubusercontent.com/KrishnaSharan/KrishnaSharan.github.io/main/Project_Scatter_Plot.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "size": 60,
+        "color": "#1f11ddf4",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "Fed Funds Rate",
+          "type": "quantitative",
+          "title": "Monthly Fed Funds Rate",
+          "scale": {
+            "domain": [
+              0.0008,
+              0.04
+            ]
+          },
+          "axis": {
+            "format": "%"
+          }
+        },
+        "y": {
+          "field": "Corporate Yields",
+          "type": "quantitative",
+          "title": "Monthly IG Corporate Bond Yields",
+          "axis": {
+            "format": "%"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Corporate Yields",
+            "type": "nominal",
+            "title": "Monthly IG Corporate Bond Yield"
+          },
+          {
+            "field": "Fed Funds Rate",
+            "type": "quantitative",
+            "title": "Fed Funds Rate Change"
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#674439f2"
+      },
+      "transform": [
+        {
+          "regression": "Corporate Yields",
+          "on": "Fed Funds Rate"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Fed Funds Rate",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Corporate Yields",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Corporate Yields",
+          "on": "Fed Funds Rate",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "black",
+        "x": "width",
+        "align": "right",
+        "y": -6
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ],
+  "background": "white",
+  "autosize": {
+    "type": "pad",
+    "contains": "padding",
+    "resize": true
+  },
+  "config": {}
+}

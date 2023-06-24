@@ -1,0 +1,2654 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 500,
+  "data": {
+    "values": [
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Acinetobacter",
+        "TSNE 1": 18.419960022,
+        "TSNE 2": -7.0045485497
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Actinomyces",
+        "TSNE 1": 18.2789115906,
+        "TSNE 2": 3.1150007248
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Akkermansia",
+        "TSNE 1": -28.6494579315,
+        "TSNE 2": -8.2044992447
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Alistipes",
+        "TSNE 1": -5.3994007111,
+        "TSNE 2": 26.8193073273
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -28.2344856262,
+        "TSNE 2": -1.6000401974
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Atopobium",
+        "TSNE 1": 15.6390228271,
+        "TSNE 2": -16.5520496368
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Bacillus",
+        "TSNE 1": 23.005531311,
+        "TSNE 2": -4.7356939316
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Bacteroides",
+        "TSNE 1": -28.5949516296,
+        "TSNE 2": 32.0616378784
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Bifidobacterium",
+        "TSNE 1": -12.3578615189,
+        "TSNE 2": 24.7185382843
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Bilophila",
+        "TSNE 1": 22.9938392639,
+        "TSNE 2": -26.9536323547
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Blautia",
+        "TSNE 1": -29.5719795227,
+        "TSNE 2": 17.5581531525
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Butyricicoccus",
+        "TSNE 1": -8.6917276382,
+        "TSNE 2": -4.9501094818
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Butyricimonas",
+        "TSNE 1": 11.1030960083,
+        "TSNE 2": -5.2811141014
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Collinsella",
+        "TSNE 1": 13.1992340088,
+        "TSNE 2": 4.3187403679
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Desulfovibrio",
+        "TSNE 1": 7.3652896881,
+        "TSNE 2": -6.0225429535
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Dorea",
+        "TSNE 1": -6.9793248177,
+        "TSNE 2": 5.0521073341
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Enterococcus",
+        "TSNE 1": 20.960773468,
+        "TSNE 2": -2.9550373554
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": 17.0992794037,
+        "TSNE 2": -15.246465683
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -11.9325504303,
+        "TSNE 2": 0.7537255287
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Gemella",
+        "TSNE 1": 18.9403305054,
+        "TSNE 2": -20.053106308
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Haemophilus",
+        "TSNE 1": 14.3673124313,
+        "TSNE 2": 11.5812091827
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Lachnoclostridium",
+        "TSNE 1": 4.0051579475,
+        "TSNE 2": 12.8620223999
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Lachnospira",
+        "TSNE 1": 1.6264470816,
+        "TSNE 2": -2.8328328133
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Listeria",
+        "TSNE 1": 8.9538803101,
+        "TSNE 2": -10.8067083359
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Mogibacterium",
+        "TSNE 1": 20.6116333008,
+        "TSNE 2": -22.4098949432
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Neisseria",
+        "TSNE 1": 11.6467981339,
+        "TSNE 2": -9.2644081116
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Odoribacter",
+        "TSNE 1": 4.9176435471,
+        "TSNE 2": 7.3701281548
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Parabacteroides",
+        "TSNE 1": 7.0086531639,
+        "TSNE 2": 25.1441822052
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Parasutterella",
+        "TSNE 1": 27.9661045074,
+        "TSNE 2": -33.514591217
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Phascolarctobacterium",
+        "TSNE 1": 14.2711992264,
+        "TSNE 2": 28.998916626
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Pseudomonas",
+        "TSNE 1": 21.9917583466,
+        "TSNE 2": -5.3781652451
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Roseburia",
+        "TSNE 1": -20.4189052582,
+        "TSNE 2": -6.9906964302
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Staphylococcus",
+        "TSNE 1": 8.7707691193,
+        "TSNE 2": 13.1696529388
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Streptococcus",
+        "TSNE 1": -12.0856666565,
+        "TSNE 2": 17.7726306915
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Subdoligranulum",
+        "TSNE 1": -22.1314506531,
+        "TSNE 2": -10.5276079178
+      },
+      {
+        "sample_id": "Cancer1",
+        "taxon": "Veillonella",
+        "TSNE 1": 1.1635875702,
+        "TSNE 2": 18.9054145813
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Acinetobacter",
+        "TSNE 1": 19.1987304688,
+        "TSNE 2": -7.7885513306
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Actinomyces",
+        "TSNE 1": 18.6760349274,
+        "TSNE 2": 2.3961741924
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Alistipes",
+        "TSNE 1": -3.9174478054,
+        "TSNE 2": 26.1222991943
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -26.4301891327,
+        "TSNE 2": -0.357116878
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Bacteroides",
+        "TSNE 1": -23.2192573547,
+        "TSNE 2": 32.4349555969
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Bilophila",
+        "TSNE 1": 22.1486949921,
+        "TSNE 2": -25.4567070007
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Blautia",
+        "TSNE 1": -29.6074867249,
+        "TSNE 2": 20.4083938599
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Butyricicoccus",
+        "TSNE 1": -6.9918270111,
+        "TSNE 2": -6.9973311424
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Collinsella",
+        "TSNE 1": 13.2855710983,
+        "TSNE 2": 6.3840813637
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Dorea",
+        "TSNE 1": -13.3600435257,
+        "TSNE 2": 7.9517254829
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Enterococcus",
+        "TSNE 1": 20.9108848572,
+        "TSNE 2": -3.3562426567
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": 18.3680973053,
+        "TSNE 2": -17.1166629791
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -23.5220184326,
+        "TSNE 2": 9.3897504807
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Haemophilus",
+        "TSNE 1": 16.1690921783,
+        "TSNE 2": 13.5523014069
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Lachnoclostridium",
+        "TSNE 1": 3.8056066036,
+        "TSNE 2": 14.6884012222
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Lachnospira",
+        "TSNE 1": 2.4883394241,
+        "TSNE 2": -3.0122756958
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Lactobacillus",
+        "TSNE 1": 22.2022972107,
+        "TSNE 2": -14.1173458099
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Listeria",
+        "TSNE 1": 9.3489313126,
+        "TSNE 2": -11.2021350861
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Methanobrevibacter",
+        "TSNE 1": -33.2157058716,
+        "TSNE 2": 11.7965526581
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Neisseria",
+        "TSNE 1": 12.6006679535,
+        "TSNE 2": -10.0608415604
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Odoribacter",
+        "TSNE 1": 4.8208751678,
+        "TSNE 2": 7.8392472267
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Parabacteroides",
+        "TSNE 1": 5.6548395157,
+        "TSNE 2": 27.3948707581
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Phascolarctobacterium",
+        "TSNE 1": -5.3328032494,
+        "TSNE 2": -21.2218761444
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Porphyromonas",
+        "TSNE 1": 2.2958118916,
+        "TSNE 2": 6.9017767906
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Pseudomonas",
+        "TSNE 1": 21.1095981598,
+        "TSNE 2": -7.2890219688
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Roseburia",
+        "TSNE 1": -16.4583969116,
+        "TSNE 2": -6.470515728
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Staphylococcus",
+        "TSNE 1": 8.8229207993,
+        "TSNE 2": 13.0794372559
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Streptococcus",
+        "TSNE 1": -16.3289661407,
+        "TSNE 2": 20.0935630798
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Subdoligranulum",
+        "TSNE 1": -24.1160297394,
+        "TSNE 2": -12.8497629166
+      },
+      {
+        "sample_id": "Cancer2",
+        "taxon": "Veillonella",
+        "TSNE 1": 14.1565151215,
+        "TSNE 2": -1.2467941046
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Acidaminococcus",
+        "TSNE 1": 14.0094451904,
+        "TSNE 2": -9.7743873596
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Actinomyces",
+        "TSNE 1": 18.3261299133,
+        "TSNE 2": 1.0706022978
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Akkermansia",
+        "TSNE 1": -28.0264358521,
+        "TSNE 2": -8.2182092667
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Alistipes",
+        "TSNE 1": -2.9735331535,
+        "TSNE 2": 23.6579208374
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -29.8953666687,
+        "TSNE 2": 0.7615689635
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Bacteroides",
+        "TSNE 1": -19.4421787262,
+        "TSNE 2": 31.7056846619
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Barnesiella",
+        "TSNE 1": 23.9282455444,
+        "TSNE 2": -17.0645942688
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Bifidobacterium",
+        "TSNE 1": -14.2903060913,
+        "TSNE 2": 25.2967147827
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Blautia",
+        "TSNE 1": -33.0427970886,
+        "TSNE 2": 26.3412265778
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Butyricicoccus",
+        "TSNE 1": -10.5768957138,
+        "TSNE 2": -3.4800395966
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Collinsella",
+        "TSNE 1": -6.896900177,
+        "TSNE 2": 34.5212669373
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Dorea",
+        "TSNE 1": -12.8045368195,
+        "TSNE 2": 8.6032514572
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": 17.0483207703,
+        "TSNE 2": -13.5841169357
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -20.8228588104,
+        "TSNE 2": 11.5327806473
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Faecalitalea",
+        "TSNE 1": 7.6244735718,
+        "TSNE 2": -17.9638118744
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Fusobacterium",
+        "TSNE 1": 16.1234798431,
+        "TSNE 2": -4.010453701
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Haemophilus",
+        "TSNE 1": 20.3067245483,
+        "TSNE 2": -19.563659668
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Holdemanella",
+        "TSNE 1": -17.3277683258,
+        "TSNE 2": 2.8473844528
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Lachnoclostridium",
+        "TSNE 1": 2.8956401348,
+        "TSNE 2": 13.6504926682
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Lachnospira",
+        "TSNE 1": 28.5320606232,
+        "TSNE 2": -17.9078960419
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Lactobacillus",
+        "TSNE 1": 21.9478969574,
+        "TSNE 2": -14.4342823029
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Marvinbryantia",
+        "TSNE 1": -13.9425058365,
+        "TSNE 2": -17.0244541168
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Megamonas",
+        "TSNE 1": -1.0060266256,
+        "TSNE 2": 6.6741471291
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Megasphaera",
+        "TSNE 1": -5.5378160477,
+        "TSNE 2": 19.172328949
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Mogibacterium",
+        "TSNE 1": 24.6311302185,
+        "TSNE 2": -20.4011516571
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Parabacteroides",
+        "TSNE 1": 6.4711875916,
+        "TSNE 2": 24.1425037384
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Paraprevotella",
+        "TSNE 1": -2.8297333717,
+        "TSNE 2": 29.8947238922
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Phascolarctobacterium",
+        "TSNE 1": -6.3954138756,
+        "TSNE 2": -20.3146820068
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Pseudomonas",
+        "TSNE 1": 22.144405365,
+        "TSNE 2": -7.6610460281
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Roseburia",
+        "TSNE 1": -19.7730922699,
+        "TSNE 2": -4.2451572418
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Streptococcus",
+        "TSNE 1": -3.5249371529,
+        "TSNE 2": 13.4029722214
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Subdoligranulum",
+        "TSNE 1": -17.454668045,
+        "TSNE 2": -15.2778568268
+      },
+      {
+        "sample_id": "Cancer3",
+        "taxon": "Sutterella",
+        "TSNE 1": 25.3047523499,
+        "TSNE 2": -23.1866989136
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Acidaminococcus",
+        "TSNE 1": 22.3607749939,
+        "TSNE 2": 7.88910532
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Actinomyces",
+        "TSNE 1": 17.3500423431,
+        "TSNE 2": 2.3952333927
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Akkermansia",
+        "TSNE 1": 16.0283279419,
+        "TSNE 2": -25.0485687256
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Alistipes",
+        "TSNE 1": -6.2745485306,
+        "TSNE 2": 26.8753967285
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -33.2755088806,
+        "TSNE 2": -0.1205203086
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Bacteroides",
+        "TSNE 1": -19.1486263275,
+        "TSNE 2": 32.1167182922
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Bifidobacterium",
+        "TSNE 1": -15.2248106003,
+        "TSNE 2": 25.7049407959
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Bilophila",
+        "TSNE 1": 22.0741634369,
+        "TSNE 2": -26.4706058502
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Blautia",
+        "TSNE 1": -33.3110313416,
+        "TSNE 2": 26.3913059235
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Butyricicoccus",
+        "TSNE 1": -9.6807041168,
+        "TSNE 2": -3.2884149551
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Collinsella",
+        "TSNE 1": 42.6791954041,
+        "TSNE 2": -44.7242660522
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Desulfovibrio",
+        "TSNE 1": 7.3228559494,
+        "TSNE 2": -5.9492750168
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Dorea",
+        "TSNE 1": -4.1308383942,
+        "TSNE 2": 5.1969742775
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": 0.7091780305,
+        "TSNE 2": 11.2702875137
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Eubacterium",
+        "TSNE 1": 20.0179672241,
+        "TSNE 2": -12.8009929657
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -11.5601453781,
+        "TSNE 2": -0.2172639817
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Faecalitalea",
+        "TSNE 1": 5.5506749153,
+        "TSNE 2": -15.6709537506
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Flavonifractor",
+        "TSNE 1": 1.9509272575,
+        "TSNE 2": -12.7075386047
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Intestinibacter",
+        "TSNE 1": -2.9521942139,
+        "TSNE 2": -15.5115671158
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Lachnoclostridium",
+        "TSNE 1": -3.9013547897,
+        "TSNE 2": 17.2544078827
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Lachnospira",
+        "TSNE 1": 1.6364711523,
+        "TSNE 2": -3.8829295635
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Marvinbryantia",
+        "TSNE 1": -12.9116125107,
+        "TSNE 2": -18.453245163
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Methanobrevibacter",
+        "TSNE 1": -30.8652095795,
+        "TSNE 2": 10.9908132553
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Odoribacter",
+        "TSNE 1": 5.1001720428,
+        "TSNE 2": 2.0066494942
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Parabacteroides",
+        "TSNE 1": 3.9311261177,
+        "TSNE 2": 26.6047725677
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Phascolarctobacterium",
+        "TSNE 1": -4.6094546318,
+        "TSNE 2": -21.8028526306
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Roseburia",
+        "TSNE 1": -20.9068069458,
+        "TSNE 2": -3.1584787369
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Slackia",
+        "TSNE 1": 2.3423674107,
+        "TSNE 2": -23.3445167542
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Streptococcus",
+        "TSNE 1": -3.4843811989,
+        "TSNE 2": 12.7349538803
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Subdoligranulum",
+        "TSNE 1": -17.6862163544,
+        "TSNE 2": -15.17192173
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Terrisporobacter",
+        "TSNE 1": -13.9981451035,
+        "TSNE 2": 3.5878241062
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Tyzzerella",
+        "TSNE 1": 1.9406244755,
+        "TSNE 2": -17.6420917511
+      },
+      {
+        "sample_id": "Cancer4",
+        "taxon": "Veillonella",
+        "TSNE 1": 16.918422699,
+        "TSNE 2": -11.3535146713
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Akkermansia",
+        "TSNE 1": -11.6246862411,
+        "TSNE 2": -13.1470012665
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Alistipes",
+        "TSNE 1": -3.9916951656,
+        "TSNE 2": 24.5733337402
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -31.2669353485,
+        "TSNE 2": -0.9604545236
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Bacteroides",
+        "TSNE 1": -23.6948623657,
+        "TSNE 2": 33.792339325
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Bifidobacterium",
+        "TSNE 1": -16.0282344818,
+        "TSNE 2": 25.1188278198
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Bilophila",
+        "TSNE 1": 6.2733798027,
+        "TSNE 2": -32.066116333
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Blautia",
+        "TSNE 1": -30.6004943848,
+        "TSNE 2": 20.0606803894
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Butyricimonas",
+        "TSNE 1": 14.6343097687,
+        "TSNE 2": -13.15467453
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Collinsella",
+        "TSNE 1": -10.1215696335,
+        "TSNE 2": 33.8070983887
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Desulfovibrio",
+        "TSNE 1": -6.0348792076,
+        "TSNE 2": 10.5410385132
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -20.3274593353,
+        "TSNE 2": 8.4774723053
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Flavonifractor",
+        "TSNE 1": 10.1142454147,
+        "TSNE 2": -22.445350647
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Gemella",
+        "TSNE 1": 19.2264099121,
+        "TSNE 2": -20.7262744904
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Holdemania",
+        "TSNE 1": 17.7265605927,
+        "TSNE 2": -25.6117305756
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Lachnoclostridium",
+        "TSNE 1": 4.3549642563,
+        "TSNE 2": 12.0943365097
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Odoribacter",
+        "TSNE 1": 13.9488573074,
+        "TSNE 2": -14.8967542648
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Parabacteroides",
+        "TSNE 1": 4.3011193275,
+        "TSNE 2": 28.9597473145
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Paraprevotella",
+        "TSNE 1": -5.0261650085,
+        "TSNE 2": 30.0976638794
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Parasutterella",
+        "TSNE 1": 24.0988121033,
+        "TSNE 2": -31.8891582489
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Phascolarctobacterium",
+        "TSNE 1": 14.5546455383,
+        "TSNE 2": 30.8121986389
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Roseburia",
+        "TSNE 1": -20.2243270874,
+        "TSNE 2": -6.3975505829
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Slackia",
+        "TSNE 1": 11.9295921326,
+        "TSNE 2": -15.36028862
+      },
+      {
+        "sample_id": "Cancer5",
+        "taxon": "Sutterella",
+        "TSNE 1": 26.5627326965,
+        "TSNE 2": -23.3531951904
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Akkermansia",
+        "TSNE 1": -32.3952522278,
+        "TSNE 2": -8.1461544037
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Alistipes",
+        "TSNE 1": -6.6976847649,
+        "TSNE 2": 28.1635570526
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -6.2050352097,
+        "TSNE 2": -10.3144245148
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Bacteroides",
+        "TSNE 1": -21.7511806488,
+        "TSNE 2": 33.3282737732
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Barnesiella",
+        "TSNE 1": 27.2221450806,
+        "TSNE 2": -13.3135137558
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Bifidobacterium",
+        "TSNE 1": -11.5460891724,
+        "TSNE 2": 23.8938274384
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Bilophila",
+        "TSNE 1": 22.659696579,
+        "TSNE 2": -28.2000637054
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Blautia",
+        "TSNE 1": -28.4896354675,
+        "TSNE 2": 19.612953186
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Butyricimonas",
+        "TSNE 1": 9.1010074615,
+        "TSNE 2": 7.3064165115
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Catenibacterium",
+        "TSNE 1": 4.3715114594,
+        "TSNE 2": -18.6028690338
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Cloacibacillus",
+        "TSNE 1": 2.6778478622,
+        "TSNE 2": -10.2008047104
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Collinsella",
+        "TSNE 1": 14.6553182602,
+        "TSNE 2": -6.833729744
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Dorea",
+        "TSNE 1": -1.1226340532,
+        "TSNE 2": 3.6568446159
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -21.1077957153,
+        "TSNE 2": 8.5988426208
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Intestinibacter",
+        "TSNE 1": 15.1338529587,
+        "TSNE 2": -19.5896549225
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Lachnospira",
+        "TSNE 1": 0.777423799,
+        "TSNE 2": -3.4145517349
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Methanobrevibacter",
+        "TSNE 1": -33.185333252,
+        "TSNE 2": 11.7795534134
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Neisseria",
+        "TSNE 1": 16.9035816193,
+        "TSNE 2": -18.6727867126
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Odoribacter",
+        "TSNE 1": 4.9194040298,
+        "TSNE 2": 4.1336569786
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Parabacteroides",
+        "TSNE 1": 2.9141185284,
+        "TSNE 2": 27.6771965027
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Paraprevotella",
+        "TSNE 1": -2.7131831646,
+        "TSNE 2": 29.8991756439
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Phascolarctobacterium",
+        "TSNE 1": -7.1872458458,
+        "TSNE 2": -19.4940509796
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Roseburia",
+        "TSNE 1": -17.4139518738,
+        "TSNE 2": -6.8961629868
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Streptococcus",
+        "TSNE 1": -4.6805934906,
+        "TSNE 2": 13.432103157
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Subdoligranulum",
+        "TSNE 1": -20.5100631714,
+        "TSNE 2": -13.666062355
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Terrisporobacter",
+        "TSNE 1": 9.7940196991,
+        "TSNE 2": -17.1585102081
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Tyzzerella",
+        "TSNE 1": 17.6808071136,
+        "TSNE 2": -23.5280647278
+      },
+      {
+        "sample_id": "Cancer6",
+        "taxon": "Veillonella",
+        "TSNE 1": 16.2547664642,
+        "TSNE 2": -9.7110738754
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Akkermansia",
+        "TSNE 1": -10.3194475174,
+        "TSNE 2": -13.3070478439
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Alistipes",
+        "TSNE 1": 15.9427919388,
+        "TSNE 2": -14.2554302216
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -25.0744991302,
+        "TSNE 2": 0.6607513428
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Bacteroides",
+        "TSNE 1": 2.2761983871,
+        "TSNE 2": 23.8852310181
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Bifidobacterium",
+        "TSNE 1": -9.8941431046,
+        "TSNE 2": 23.1113586426
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Bilophila",
+        "TSNE 1": 6.4501667023,
+        "TSNE 2": -32.7367858887
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Blautia",
+        "TSNE 1": -24.7895889282,
+        "TSNE 2": 11.1074466705
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Butyricicoccus",
+        "TSNE 1": -6.015768528,
+        "TSNE 2": -8.1350450516
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Collinsella",
+        "TSNE 1": 1.6318033934,
+        "TSNE 2": 21.6798286438
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Dorea",
+        "TSNE 1": -1.6079603434,
+        "TSNE 2": 4.958527565
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": 17.2334403992,
+        "TSNE 2": -14.3887042999
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Faecalitalea",
+        "TSNE 1": 6.2893352509,
+        "TSNE 2": -16.5779151917
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Fusobacterium",
+        "TSNE 1": -31.430814743,
+        "TSNE 2": 27.8681755066
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Lachnoclostridium",
+        "TSNE 1": -2.8910541534,
+        "TSNE 2": 18.2260513306
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Parabacteroides",
+        "TSNE 1": 7.9582877159,
+        "TSNE 2": 21.0875205994
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Pseudomonas",
+        "TSNE 1": 20.5137729645,
+        "TSNE 2": -17.7737369537
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Streptococcus",
+        "TSNE 1": -13.8296146393,
+        "TSNE 2": 19.984998703
+      },
+      {
+        "sample_id": "Cancer7",
+        "taxon": "Tyzzerella",
+        "TSNE 1": 2.3360388279,
+        "TSNE 2": -17.809425354
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Acidaminococcus",
+        "TSNE 1": 21.7348365784,
+        "TSNE 2": 8.2775373459
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Actinomyces",
+        "TSNE 1": 17.5879669189,
+        "TSNE 2": 1.3650690317
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Akkermansia",
+        "TSNE 1": -10.8404273987,
+        "TSNE 2": -13.1241130829
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Alistipes",
+        "TSNE 1": 11.6950597763,
+        "TSNE 2": -3.664167881
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Anaerofustis",
+        "TSNE 1": 15.6059713364,
+        "TSNE 2": -22.1534347534
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -33.4933357239,
+        "TSNE 2": 0.900793612
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Bacteroides",
+        "TSNE 1": -18.3729419708,
+        "TSNE 2": 33.6170005798
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Bifidobacterium",
+        "TSNE 1": -21.541103363,
+        "TSNE 2": 23.19622612
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Blautia",
+        "TSNE 1": -29.7843799591,
+        "TSNE 2": 21.8971996307
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Butyricicoccus",
+        "TSNE 1": -4.6413955688,
+        "TSNE 2": -9.1970615387
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Catenibacterium",
+        "TSNE 1": -21.4657936096,
+        "TSNE 2": -4.8087134361
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Collinsella",
+        "TSNE 1": 42.6840858459,
+        "TSNE 2": -44.7243537903
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Desulfovibrio",
+        "TSNE 1": -6.9566473961,
+        "TSNE 2": 10.4999647141
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Dialister",
+        "TSNE 1": 15.3560142517,
+        "TSNE 2": 22.2517147064
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Dorea",
+        "TSNE 1": -14.6483163834,
+        "TSNE 2": 9.3421697617
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Eggerthella",
+        "TSNE 1": 17.6935062408,
+        "TSNE 2": -33.7279472351
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": 12.1734170914,
+        "TSNE 2": -2.2110991478
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -11.6196346283,
+        "TSNE 2": 1.7111113071
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Flavonifractor",
+        "TSNE 1": 2.4842939377,
+        "TSNE 2": -12.9465999603
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Fusobacterium",
+        "TSNE 1": 16.1339302063,
+        "TSNE 2": -4.1372308731
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Gordonibacter",
+        "TSNE 1": 20.5510501862,
+        "TSNE 2": -27.1322364807
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Holdemania",
+        "TSNE 1": 17.691411972,
+        "TSNE 2": -26.0881557465
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Hungatella",
+        "TSNE 1": 8.3108491898,
+        "TSNE 2": -22.1960811615
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Intestinibacter",
+        "TSNE 1": -2.3486447334,
+        "TSNE 2": -15.8109636307
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Lachnoclostridium",
+        "TSNE 1": -2.6186337471,
+        "TSNE 2": 17.3781833649
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Lactobacillus",
+        "TSNE 1": 24.5428447723,
+        "TSNE 2": -2.1020774841
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Marvinbryantia",
+        "TSNE 1": 13.2212209702,
+        "TSNE 2": -28.3614292145
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Megasphaera",
+        "TSNE 1": -6.2664461136,
+        "TSNE 2": 19.9143848419
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Odoribacter",
+        "TSNE 1": 5.0288066864,
+        "TSNE 2": 2.6107437611
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Parabacteroides",
+        "TSNE 1": 5.1683888435,
+        "TSNE 2": 25.6281433105
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Paraprevotella",
+        "TSNE 1": 20.4409427643,
+        "TSNE 2": -21.1182746887
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Roseburia",
+        "TSNE 1": -15.1894311905,
+        "TSNE 2": -8.0965089798
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Streptococcus",
+        "TSNE 1": -12.8050422668,
+        "TSNE 2": 18.2774047852
+      },
+      {
+        "sample_id": "Cancer8",
+        "taxon": "Subdoligranulum",
+        "TSNE 1": -16.2851142883,
+        "TSNE 2": -10.2220439911
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Akkermansia",
+        "TSNE 1": -33.1586532593,
+        "TSNE 2": -8.5649690628
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -26.9724559784,
+        "TSNE 2": -0.6666433811
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Bacteroides",
+        "TSNE 1": -26.7370052338,
+        "TSNE 2": 31.7251491547
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Blautia",
+        "TSNE 1": -28.1819610596,
+        "TSNE 2": 18.4206676483
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Butyricicoccus",
+        "TSNE 1": -9.5196914673,
+        "TSNE 2": -4.2227959633
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Dialister",
+        "TSNE 1": 15.3039798737,
+        "TSNE 2": 21.3735237122
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Dorea",
+        "TSNE 1": -5.0669212341,
+        "TSNE 2": 5.0064439774
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": 11.2383203506,
+        "TSNE 2": -1.3702411652
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -21.6168899536,
+        "TSNE 2": 9.3150415421
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Haemophilus",
+        "TSNE 1": 12.6667604446,
+        "TSNE 2": -18.0467891693
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Lachnoclostridium",
+        "TSNE 1": 19.0106678009,
+        "TSNE 2": -4.1310577393
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Lachnospira",
+        "TSNE 1": -1.5165822506,
+        "TSNE 2": -1.4877175093
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Marvinbryantia",
+        "TSNE 1": 13.8925380707,
+        "TSNE 2": -27.9316482544
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Roseburia",
+        "TSNE 1": -22.9613742828,
+        "TSNE 2": -8.7146244049
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Streptococcus",
+        "TSNE 1": -3.9372184277,
+        "TSNE 2": 14.3557538986
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Subdoligranulum",
+        "TSNE 1": -20.3232822418,
+        "TSNE 2": -13.295958519
+      },
+      {
+        "sample_id": "Healthy1",
+        "taxon": "Veillonella",
+        "TSNE 1": 1.7857553959,
+        "TSNE 2": 17.6251029968
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Akkermansia",
+        "TSNE 1": -31.8812160492,
+        "TSNE 2": -7.5908265114
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Alistipes",
+        "TSNE 1": 9.3116159439,
+        "TSNE 2": 2.6962196827
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -25.6625003815,
+        "TSNE 2": -0.8720319271
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Bacteroides",
+        "TSNE 1": -20.2796840668,
+        "TSNE 2": 34.099155426
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Blautia",
+        "TSNE 1": -27.1482753754,
+        "TSNE 2": 18.2884597778
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Dorea",
+        "TSNE 1": -4.9066462517,
+        "TSNE 2": 5.8523368835
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Enterococcus",
+        "TSNE 1": -18.4439411163,
+        "TSNE 2": 22.2964954376
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": 17.896987915,
+        "TSNE 2": -15.5630550385
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -21.9456634521,
+        "TSNE 2": 13.4202880859
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Flavonifractor",
+        "TSNE 1": 10.0620288849,
+        "TSNE 2": -22.3779754639
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Haemophilus",
+        "TSNE 1": 15.7352542877,
+        "TSNE 2": 12.9795570374
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Intestinibacter",
+        "TSNE 1": -16.0464229584,
+        "TSNE 2": -1.629503727
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Lachnospira",
+        "TSNE 1": -0.4560311437,
+        "TSNE 2": -2.3232316971
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Marvinbryantia",
+        "TSNE 1": -12.7573261261,
+        "TSNE 2": -18.6129074097
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Parabacteroides",
+        "TSNE 1": 6.3915944099,
+        "TSNE 2": 26.2686862946
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Parasutterella",
+        "TSNE 1": 28.3667793274,
+        "TSNE 2": -34.1042137146
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Roseburia",
+        "TSNE 1": -14.1802577972,
+        "TSNE 2": -6.8313450813
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Subdoligranulum",
+        "TSNE 1": -22.6162128448,
+        "TSNE 2": -13.837059021
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Terrisporobacter",
+        "TSNE 1": -24.508764267,
+        "TSNE 2": 8.5945968628
+      },
+      {
+        "sample_id": "Healthy2",
+        "taxon": "Veillonella",
+        "TSNE 1": -11.3906393051,
+        "TSNE 2": 32.3943710327
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Acidaminococcus",
+        "TSNE 1": 22.3896045685,
+        "TSNE 2": 7.4475870132
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Actinomyces",
+        "TSNE 1": 17.0858726501,
+        "TSNE 2": 3.6785230637
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Alistipes",
+        "TSNE 1": -2.2977409363,
+        "TSNE 2": 22.6681194305
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -30.3821430206,
+        "TSNE 2": 0.1013391539
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Bacteroides",
+        "TSNE 1": -20.3559169769,
+        "TSNE 2": 30.7763748169
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Barnesiella",
+        "TSNE 1": 26.2434768677,
+        "TSNE 2": -14.2612810135
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Bifidobacterium",
+        "TSNE 1": -13.5987691879,
+        "TSNE 2": 24.5044498444
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Bilophila",
+        "TSNE 1": 22.914018631,
+        "TSNE 2": -25.8366985321
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Blautia",
+        "TSNE 1": -31.9539833069,
+        "TSNE 2": 26.3311347961
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Butyricicoccus",
+        "TSNE 1": -10.6058425903,
+        "TSNE 2": -4.3692617416
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Collinsella",
+        "TSNE 1": -6.7959609032,
+        "TSNE 2": 34.5285568237
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Dialister",
+        "TSNE 1": 15.6574029922,
+        "TSNE 2": 23.4034061432
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Dorea",
+        "TSNE 1": -12.8932647705,
+        "TSNE 2": 9.0388851166
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": 11.5772609711,
+        "TSNE 2": -0.4731228352
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -21.1312026978,
+        "TSNE 2": 10.2583084106
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Haemophilus",
+        "TSNE 1": 14.4667263031,
+        "TSNE 2": 11.7425756454
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Holdemanella",
+        "TSNE 1": -17.5612430573,
+        "TSNE 2": 3.4800813198
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Lachnoclostridium",
+        "TSNE 1": 18.8584842682,
+        "TSNE 2": -3.0135858059
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Lachnospira",
+        "TSNE 1": 2.6247274876,
+        "TSNE 2": -3.9635260105
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Lactobacillus",
+        "TSNE 1": 24.6805801392,
+        "TSNE 2": -2.187702179
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Leuconostoc",
+        "TSNE 1": 8.768579483,
+        "TSNE 2": -2.2147922516
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Marvinbryantia",
+        "TSNE 1": 13.8711576462,
+        "TSNE 2": -28.7821331024
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Methanobrevibacter",
+        "TSNE 1": 19.9664382935,
+        "TSNE 2": -25.1302604675
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Odoribacter",
+        "TSNE 1": 12.7903366089,
+        "TSNE 2": -13.9357614517
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Parasutterella",
+        "TSNE 1": 24.0621986389,
+        "TSNE 2": -31.7756175995
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Roseburia",
+        "TSNE 1": -12.1504573822,
+        "TSNE 2": -10.5571308136
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Streptococcus",
+        "TSNE 1": -6.2731833458,
+        "TSNE 2": 15.1905632019
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Subdoligranulum",
+        "TSNE 1": -19.2566146851,
+        "TSNE 2": -14.4812574387
+      },
+      {
+        "sample_id": "Healthy3",
+        "taxon": "Veillonella",
+        "TSNE 1": 16.4932727814,
+        "TSNE 2": -10.3817901611
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Actinomyces",
+        "TSNE 1": 22.4201126099,
+        "TSNE 2": -11.0173273087
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Adlercreutzia",
+        "TSNE 1": 22.7996692657,
+        "TSNE 2": -30.28972435
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Akkermansia",
+        "TSNE 1": -26.8275032043,
+        "TSNE 2": -7.3159947395
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Alistipes",
+        "TSNE 1": 10.0664644241,
+        "TSNE 2": 2.3495368958
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Anaerococcus",
+        "TSNE 1": 18.5017280579,
+        "TSNE 2": -13.9573383331
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Anaerofustis",
+        "TSNE 1": 16.5832328796,
+        "TSNE 2": -21.9996185303
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -34.1788406372,
+        "TSNE 2": 0.9342680573
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Bacteroides",
+        "TSNE 1": -22.7332458496,
+        "TSNE 2": 31.8650608063
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Bifidobacterium",
+        "TSNE 1": -12.9570817947,
+        "TSNE 2": 25.7089157104
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Blautia",
+        "TSNE 1": -31.2904930115,
+        "TSNE 2": 21.1445999146
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Collinsella",
+        "TSNE 1": 14.5608434677,
+        "TSNE 2": -6.6448130608
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Dialister",
+        "TSNE 1": 15.269616127,
+        "TSNE 2": 20.8613739014
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Dorea",
+        "TSNE 1": -15.1789102554,
+        "TSNE 2": 10.4297847748
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": 1.0003416538,
+        "TSNE 2": 10.3780899048
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -21.204202652,
+        "TSNE 2": 11.96961689
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Holdemanella",
+        "TSNE 1": -17.7250747681,
+        "TSNE 2": 4.4977474213
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Intestinibacter",
+        "TSNE 1": -17.1518745422,
+        "TSNE 2": -1.6641464233
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Odoribacter",
+        "TSNE 1": 4.3391051292,
+        "TSNE 2": 9.0447530746
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Parabacteroides",
+        "TSNE 1": 7.2289795876,
+        "TSNE 2": 23.1010875702
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Parasutterella",
+        "TSNE 1": 27.5383167267,
+        "TSNE 2": -33.6878890991
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Phascolarctobacterium",
+        "TSNE 1": 17.9766635895,
+        "TSNE 2": -21.1282234192
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Pseudomonas",
+        "TSNE 1": 21.8334465027,
+        "TSNE 2": -7.9387507439
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Roseburia",
+        "TSNE 1": -17.259771347,
+        "TSNE 2": -5.9866046906
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Streptococcus",
+        "TSNE 1": -4.9781517982,
+        "TSNE 2": 14.2630214691
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Subdoligranulum",
+        "TSNE 1": -22.4370326996,
+        "TSNE 2": -12.87728405
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Veillonella",
+        "TSNE 1": 19.3808383942,
+        "TSNE 2": -16.0549030304
+      },
+      {
+        "sample_id": "Healthy4",
+        "taxon": "Weissella",
+        "TSNE 1": 18.4445495605,
+        "TSNE 2": -22.5435848236
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Alistipes",
+        "TSNE 1": -1.4806205034,
+        "TSNE 2": 23.7574901581
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Anaerofustis",
+        "TSNE 1": 14.3995351791,
+        "TSNE 2": -22.3315448761
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -30.3725967407,
+        "TSNE 2": 1.9972242117
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Bacteroides",
+        "TSNE 1": -18.9936733246,
+        "TSNE 2": 33.8313140869
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Barnesiella",
+        "TSNE 1": 25.4049243927,
+        "TSNE 2": -15.2578725815
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Bifidobacterium",
+        "TSNE 1": -21.1577739716,
+        "TSNE 2": 23.0837287903
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Bilophila",
+        "TSNE 1": 3.8687388897,
+        "TSNE 2": -33.2618904114
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Blautia",
+        "TSNE 1": -27.5664367676,
+        "TSNE 2": 19.3629150391
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Butyricicoccus",
+        "TSNE 1": -9.8874616623,
+        "TSNE 2": -5.4191288948
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Collinsella",
+        "TSNE 1": -10.1433191299,
+        "TSNE 2": 33.6550979614
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Dorea",
+        "TSNE 1": -5.9963026047,
+        "TSNE 2": 6.4971389771
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Eggerthella",
+        "TSNE 1": 18.615436554,
+        "TSNE 2": -32.6209602356
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": 12.2051124573,
+        "TSNE 2": -1.1428363323
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Eubacterium",
+        "TSNE 1": 3.3346846104,
+        "TSNE 2": 17.9087562561
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -22.4379692078,
+        "TSNE 2": 14.0406112671
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Faecalitalea",
+        "TSNE 1": 7.4282188416,
+        "TSNE 2": -17.7295017242
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Flavonifractor",
+        "TSNE 1": 0.6164448857,
+        "TSNE 2": -11.2449426651
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Holdemania",
+        "TSNE 1": 17.117767334,
+        "TSNE 2": -27.5091018677
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Lachnoclostridium",
+        "TSNE 1": 4.2092261314,
+        "TSNE 2": 13.5014867783
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Lachnospira",
+        "TSNE 1": 0.4417594671,
+        "TSNE 2": -2.0021440983
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Marvinbryantia",
+        "TSNE 1": 25.7603054047,
+        "TSNE 2": -28.2787284851
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Methanobrevibacter",
+        "TSNE 1": 20.5648155212,
+        "TSNE 2": -24.6120834351
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Parabacteroides",
+        "TSNE 1": 7.9515337944,
+        "TSNE 2": 21.0915737152
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Paraprevotella",
+        "TSNE 1": 6.5765190125,
+        "TSNE 2": 5.7057218552
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Phascolarctobacterium",
+        "TSNE 1": 14.7027816772,
+        "TSNE 2": 31.6744327545
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Roseburia",
+        "TSNE 1": -22.6249637604,
+        "TSNE 2": -6.1360697746
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Slackia",
+        "TSNE 1": 3.2867436409,
+        "TSNE 2": -23.1529064178
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Streptococcus",
+        "TSNE 1": -17.0891075134,
+        "TSNE 2": 20.4990844727
+      },
+      {
+        "sample_id": "Healthy5",
+        "taxon": "Veillonella",
+        "TSNE 1": 1.4738087654,
+        "TSNE 2": 20.086561203
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Actinomyces",
+        "TSNE 1": 22.3256626129,
+        "TSNE 2": -11.5040159225
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Alistipes",
+        "TSNE 1": -9.0710496902,
+        "TSNE 2": 29.1024093628
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -28.0604038239,
+        "TSNE 2": -2.3205223083
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Anaerotruncus",
+        "TSNE 1": 12.4881248474,
+        "TSNE 2": -26.8991374969
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Bacteroides",
+        "TSNE 1": -28.8378219604,
+        "TSNE 2": 32.1003189087
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Bifidobacterium",
+        "TSNE 1": 12.8639268875,
+        "TSNE 2": 0.8021341562
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Bilophila",
+        "TSNE 1": 4.9114699364,
+        "TSNE 2": -32.9105491638
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Blautia",
+        "TSNE 1": -0.2739771605,
+        "TSNE 2": 15.1423768997
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Butyricicoccus",
+        "TSNE 1": -5.0177927017,
+        "TSNE 2": -9.0668020248
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Butyricimonas",
+        "TSNE 1": 8.3169841766,
+        "TSNE 2": 9.5922574997
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Dorea",
+        "TSNE 1": -3.7909488678,
+        "TSNE 2": 3.8562073708
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Eggerthella",
+        "TSNE 1": 21.7721748352,
+        "TSNE 2": -23.3928642273
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": -10.2384529114,
+        "TSNE 2": 15.7330417633
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Eubacterium",
+        "TSNE 1": 20.0736942291,
+        "TSNE 2": -14.5685977936
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Flavonifractor",
+        "TSNE 1": 2.6279289722,
+        "TSNE 2": -12.1897563934
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Fusobacterium",
+        "TSNE 1": -10.1569271088,
+        "TSNE 2": 17.3373069763
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Holdemanella",
+        "TSNE 1": 19.4348602295,
+        "TSNE 2": -22.9768009186
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Hungatella",
+        "TSNE 1": 7.1563267708,
+        "TSNE 2": -22.1553459167
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Intestinibacter",
+        "TSNE 1": -3.821423769,
+        "TSNE 2": -15.0606851578
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Lachnoclostridium",
+        "TSNE 1": -8.3538417816,
+        "TSNE 2": 16.1818637848
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Lachnospira",
+        "TSNE 1": 29.1763820648,
+        "TSNE 2": -17.4241409302
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Odoribacter",
+        "TSNE 1": 5.1982903481,
+        "TSNE 2": 6.1046619415
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Parabacteroides",
+        "TSNE 1": 5.12931633,
+        "TSNE 2": 29.4089355469
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Phascolarctobacterium",
+        "TSNE 1": 14.1631631851,
+        "TSNE 2": 30.3201503754
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Streptococcus",
+        "TSNE 1": 7.3018846512,
+        "TSNE 2": -0.4904350936
+      },
+      {
+        "sample_id": "Healthy6",
+        "taxon": "Terrisporobacter",
+        "TSNE 1": -3.6788098812,
+        "TSNE 2": 1.6040022373
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Acinetobacter",
+        "TSNE 1": 10.1555175781,
+        "TSNE 2": 15.3967342377
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Actinomyces",
+        "TSNE 1": -0.9173408151,
+        "TSNE 2": 13.9775180817
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Alistipes",
+        "TSNE 1": 9.4461727142,
+        "TSNE 2": 3.359392643
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -35.2923240662,
+        "TSNE 2": 1.5860811472
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Bacillus",
+        "TSNE 1": 7.3958435059,
+        "TSNE 2": 16.6998195648
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Bacteroides",
+        "TSNE 1": -18.8205909729,
+        "TSNE 2": 30.749288559
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Blautia",
+        "TSNE 1": -32.0483856201,
+        "TSNE 2": 25.4736099243
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Dorea",
+        "TSNE 1": -11.4669485092,
+        "TSNE 2": 9.0208673477
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Eggerthella",
+        "TSNE 1": 18.5052547455,
+        "TSNE 2": -32.7455368042
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Enterococcus",
+        "TSNE 1": 5.4318995476,
+        "TSNE 2": 15.1684265137
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": -2.3807182312,
+        "TSNE 2": 20.7841892242
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -21.0049991608,
+        "TSNE 2": 7.0799908638
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Flavonifractor",
+        "TSNE 1": 1.3418376446,
+        "TSNE 2": -11.2112522125
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Granulicatella",
+        "TSNE 1": 1.0675421953,
+        "TSNE 2": 2.5005764961
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Lactobacillus",
+        "TSNE 1": 23.701084137,
+        "TSNE 2": -0.8279223442
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Lactococcus",
+        "TSNE 1": 18.8538360596,
+        "TSNE 2": -18.7847156525
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Listeria",
+        "TSNE 1": -1.7202628851,
+        "TSNE 2": 7.8864302635
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Methanobrevibacter",
+        "TSNE 1": 19.9382572174,
+        "TSNE 2": -24.2173290253
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Neisseria",
+        "TSNE 1": 11.5800952911,
+        "TSNE 2": 15.2041664124
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Phascolarctobacterium",
+        "TSNE 1": -4.4937720299,
+        "TSNE 2": -21.9411373138
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Porphyromonas",
+        "TSNE 1": 3.3221793175,
+        "TSNE 2": 6.6028370857
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Pseudomonas",
+        "TSNE 1": 7.0221128464,
+        "TSNE 2": 15.6090097427
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Roseburia",
+        "TSNE 1": -15.9357118607,
+        "TSNE 2": -7.3416824341
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Rothia",
+        "TSNE 1": 22.1358070374,
+        "TSNE 2": -20.7619895935
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Staphylococcus",
+        "TSNE 1": -14.7387866974,
+        "TSNE 2": 17.5975112915
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Streptococcus",
+        "TSNE 1": -14.3029785156,
+        "TSNE 2": 18.8109874725
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Subdoligranulum",
+        "TSNE 1": 11.8209934235,
+        "TSNE 2": -26.0312080383
+      },
+      {
+        "sample_id": "Healthy7",
+        "taxon": "Tyzzerella",
+        "TSNE 1": -11.7691888809,
+        "TSNE 2": -6.7303028107
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Akkermansia",
+        "TSNE 1": -30.4973278046,
+        "TSNE 2": -8.2564516068
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Alistipes",
+        "TSNE 1": -8.055809021,
+        "TSNE 2": 28.6230983734
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -29.3682117462,
+        "TSNE 2": -1.8123323917
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Bacteroides",
+        "TSNE 1": -26.9921684265,
+        "TSNE 2": 32.259727478
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Bifidobacterium",
+        "TSNE 1": -11.1233205795,
+        "TSNE 2": 23.6665534973
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Bilophila",
+        "TSNE 1": 6.92613554,
+        "TSNE 2": -32.5940093994
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Blautia",
+        "TSNE 1": -29.2543678284,
+        "TSNE 2": 17.3651847839
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Butyricimonas",
+        "TSNE 1": 9.1837892532,
+        "TSNE 2": 7.2361459732
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Collinsella",
+        "TSNE 1": 13.2026319504,
+        "TSNE 2": 5.3886098862
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Dorea",
+        "TSNE 1": -1.5562267303,
+        "TSNE 2": 3.9457793236
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Erysipelatoclostridium",
+        "TSNE 1": 10.652215004,
+        "TSNE 2": 0.2705285549
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -13.3087615967,
+        "TSNE 2": 2.7439334393
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Flavonifractor",
+        "TSNE 1": -0.4066785574,
+        "TSNE 2": -11.2343893051
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Intestinibacter",
+        "TSNE 1": 0.1255758554,
+        "TSNE 2": -16.8292789459
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Lachnoclostridium",
+        "TSNE 1": 18.9531078339,
+        "TSNE 2": -11.0529298782
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Lachnospira",
+        "TSNE 1": 28.1287193298,
+        "TSNE 2": -18.1552886963
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Parabacteroides",
+        "TSNE 1": 7.3260860443,
+        "TSNE 2": 24.6604804993
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Parasutterella",
+        "TSNE 1": 28.1328392029,
+        "TSNE 2": -35.4671516418
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Phascolarctobacterium",
+        "TSNE 1": 13.7100248337,
+        "TSNE 2": 32.0964698792
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Roseburia",
+        "TSNE 1": -12.9182834625,
+        "TSNE 2": -9.4793767929
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Streptococcus",
+        "TSNE 1": 7.4985551834,
+        "TSNE 2": -0.7558833957
+      },
+      {
+        "sample_id": "Healthy8",
+        "taxon": "Subdoligranulum",
+        "TSNE 1": -23.2876987457,
+        "TSNE 2": -10.5205841064
+      }
+    ]
+  },
+  "selection": {
+    "pts": {
+      "type": "single",
+      "fields": [
+        "taxon"
+      ]
+    }
+  },
+  "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 20,
+    "tooltip": {
+      "content": "data"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "TSNE 1",
+      "type": "quantitative",
+      "scale": {
+        "zero": false
+      }
+    },
+    "y": {
+      "field": "TSNE 2",
+      "type": "quantitative",
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "condition": {
+        "selection": "pts",
+        "field": "taxon",
+        "type": "nominal"
+      },
+      "value": "lightgrey"
+    },
+    "opacity": {
+      "condition": {
+        "selection": "pts",
+        "value": 0.8
+      },
+      "value": 0.2
+    }
+  }
+}

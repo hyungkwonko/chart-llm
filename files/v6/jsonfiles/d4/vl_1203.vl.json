@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "title": {
+    "text": "Access to Electricity (2020)",
+    "fontSize": 15,
+    "subtitle": [
+      "Source: World Bank",
+      "White = N/A"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/custom.geo%20(1).json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.name_en",
+      "from": {
+        "key": "Country",
+        "fields": [
+          "Value"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/AccessElectricity.csv"
+        }
+      }
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "slategrey"
+  },
+  "encoding": {
+    "color": {
+      "field": "Value",
+      "legend": {
+        "title": null,
+        "orient": "right",
+        "direction": "vertical"
+      },
+      "type": "quantitative",
+      "scale": {
+        "range": [
+          "red",
+          "orange",
+          "rgb(203,229,242)"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.name_en",
+        "title": "Country"
+      },
+      {
+        "field": "Value",
+        "title": "Access Percentage",
+        "format": ".0f"
+      }
+    ]
+  },
+  "config": {
+    "mark": {
+      "invalid": null
+    }
+  }
+}

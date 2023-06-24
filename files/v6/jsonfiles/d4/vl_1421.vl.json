@@ -1,0 +1,256 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "autosize": "fit",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400
+    }
+  },
+  "data": {
+    "name": "data-7da9222bd52e04cf08be65d5a5141499"
+  },
+  "datasets": {
+    "data-7da9222bd52e04cf08be65d5a5141499": [
+      {
+        "count": 338,
+        "value": "Albany"
+      },
+      {
+        "count": 338,
+        "value": "Atlanta"
+      },
+      {
+        "count": 338,
+        "value": "BaltimoreWashington"
+      },
+      {
+        "count": 338,
+        "value": "Boise"
+      },
+      {
+        "count": 338,
+        "value": "Boston"
+      },
+      {
+        "count": 338,
+        "value": "BuffaloRochester"
+      },
+      {
+        "count": 338,
+        "value": "California"
+      },
+      {
+        "count": 338,
+        "value": "Charlotte"
+      },
+      {
+        "count": 338,
+        "value": "Chicago"
+      },
+      {
+        "count": 338,
+        "value": "CincinnatiDayton"
+      },
+      {
+        "count": 338,
+        "value": "Columbus"
+      },
+      {
+        "count": 338,
+        "value": "DallasFtWorth"
+      },
+      {
+        "count": 338,
+        "value": "Denver"
+      },
+      {
+        "count": 338,
+        "value": "Detroit"
+      },
+      {
+        "count": 338,
+        "value": "GrandRapids"
+      },
+      {
+        "count": 338,
+        "value": "GreatLakes"
+      },
+      {
+        "count": 338,
+        "value": "HarrisburgScranton"
+      },
+      {
+        "count": 338,
+        "value": "HartfordSpringfield"
+      },
+      {
+        "count": 338,
+        "value": "Houston"
+      },
+      {
+        "count": 338,
+        "value": "Indianapolis"
+      },
+      {
+        "count": 338,
+        "value": "Jacksonville"
+      },
+      {
+        "count": 338,
+        "value": "LasVegas"
+      },
+      {
+        "count": 338,
+        "value": "LosAngeles"
+      },
+      {
+        "count": 338,
+        "value": "Louisville"
+      },
+      {
+        "count": 338,
+        "value": "MiamiFtLauderdale"
+      },
+      {
+        "count": 338,
+        "value": "Midsouth"
+      },
+      {
+        "count": 338,
+        "value": "Nashville"
+      },
+      {
+        "count": 338,
+        "value": "NewOrleansMobile"
+      },
+      {
+        "count": 338,
+        "value": "NewYork"
+      },
+      {
+        "count": 338,
+        "value": "Northeast"
+      },
+      {
+        "count": 338,
+        "value": "NorthernNewEngland"
+      },
+      {
+        "count": 338,
+        "value": "Orlando"
+      },
+      {
+        "count": 338,
+        "value": "Philadelphia"
+      },
+      {
+        "count": 338,
+        "value": "PhoenixTucson"
+      },
+      {
+        "count": 338,
+        "value": "Pittsburgh"
+      },
+      {
+        "count": 338,
+        "value": "Plains"
+      },
+      {
+        "count": 338,
+        "value": "Portland"
+      },
+      {
+        "count": 338,
+        "value": "RaleighGreensboro"
+      },
+      {
+        "count": 338,
+        "value": "RichmondNorfolk"
+      },
+      {
+        "count": 338,
+        "value": "Roanoke"
+      },
+      {
+        "count": 338,
+        "value": "Sacramento"
+      },
+      {
+        "count": 338,
+        "value": "SanDiego"
+      },
+      {
+        "count": 338,
+        "value": "SanFrancisco"
+      },
+      {
+        "count": 338,
+        "value": "Seattle"
+      },
+      {
+        "count": 338,
+        "value": "SouthCarolina"
+      },
+      {
+        "count": 338,
+        "value": "SouthCentral"
+      },
+      {
+        "count": 338,
+        "value": "Southeast"
+      },
+      {
+        "count": 338,
+        "value": "Spokane"
+      },
+      {
+        "count": 338,
+        "value": "StLouis"
+      },
+      {
+        "count": 338,
+        "value": "Syracuse"
+      },
+      {
+        "count": 338,
+        "value": "Tampa"
+      },
+      {
+        "count": 338,
+        "value": "TotalUS"
+      },
+      {
+        "count": 338,
+        "value": "West"
+      },
+      {
+        "count": 335,
+        "value": "WestTexNewMexico"
+      }
+    ]
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "value",
+        "type": "nominal"
+      },
+      {
+        "field": "count",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "value",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "mark": "bar",
+  "width": 450.0
+}

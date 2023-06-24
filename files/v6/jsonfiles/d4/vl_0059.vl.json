@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Circle timeline",
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder_dquakes.csv"
+  },
+  "width": "container",
+  "height": 300,
+  "title": "Earthquake deaths by region since 1970",
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "earthquakeDeaths",
+          "as": "total"
+        }
+      ],
+      "groupby": [
+        "region",
+        "year"
+      ]
+    }
+  ],
+  "mark": {
+    "type": "circle",
+    "opacity": 0.8,
+    "stroke": "black",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": {
+        "title": "",
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "axis": {
+        "grid": true,
+        "title": "",
+        "labelPadding": 20
+      }
+    },
+    "size": {
+      "field": "total",
+      "type": "quantitative",
+      "legend": null,
+      "scale": {
+        "range": [
+          0,
+          5000
+        ]
+      }
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "region",
+        "type": "nominal",
+        "title": "Region"
+      },
+      {
+        "field": "total",
+        "type": "quantitative",
+        "title": "Total deaths",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    },
+    "axis": {
+      "ticks": false,
+      "domainColor": null
+    }
+  }
+}

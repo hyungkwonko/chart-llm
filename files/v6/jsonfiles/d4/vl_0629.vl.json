@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "600 years of industrial output - UK",
+    "subtitle": [
+      "Industrial Production, UK 1270-1870",
+      "Source: Broadberry et al (2015), British Economic Growth, 1270-1870",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch2_Growth/ukIndsutriesLongRun.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Tin",
+        "Iron",
+        "Coal",
+        "Wool/Textiles",
+        "Leather",
+        "Foodstuffs",
+        "Construction",
+        "Printed books"
+      ],
+      "as": [
+        "country",
+        "GDP"
+      ]
+    }
+  ],
+  "height": 120,
+  "width": 120,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2,
+    "color": "rgb(128,0,0)"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "GDP",
+      "type": "quantitative",
+      "title": null
+    },
+    "facet": {
+      "field": "country",
+      "columns": 4,
+      "align": "each",
+      "spacing": 20,
+      "title": null
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

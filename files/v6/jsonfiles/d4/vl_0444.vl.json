@@ -1,0 +1,193 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Fish vs meat",
+    "subtitle": "Percentage 12-month change",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "field": "dateClean",
+      "type": "temporal",
+      "title": null
+    },
+    "color": {
+      "field": "name",
+      "type": "ordinal",
+      "title": null,
+      "legend": {
+        "orient": "bottom"
+      },
+      "scale": {
+        "range": [
+          "#00BFFF",
+          "#0276FD",
+          "#63D1F4"
+        ]
+      }
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7HI.json",
+        "format": {
+          "type": "json",
+          "property": "months"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.date, ' JAN', '-01')",
+          "as": "date1"
+        },
+        {
+          "calculate": "replace(datum.date1, ' FEB', '-02')",
+          "as": "date2"
+        },
+        {
+          "calculate": "replace(datum.date2, ' MAR', '-03')",
+          "as": "date3"
+        },
+        {
+          "calculate": "replace(datum.date3, ' APR', '-04')",
+          "as": "date4"
+        },
+        {
+          "calculate": "replace(datum.date4, ' MAY', '-05')",
+          "as": "date5"
+        },
+        {
+          "calculate": "replace(datum.date5, ' JUN', '-06')",
+          "as": "date6"
+        },
+        {
+          "calculate": "replace(datum.date6, ' JUL', '-07')",
+          "as": "date7"
+        },
+        {
+          "calculate": "replace(datum.date7, ' AUG', '-08')",
+          "as": "date8"
+        },
+        {
+          "calculate": "replace(datum.date8, ' SEP', '-09')",
+          "as": "date9"
+        },
+        {
+          "calculate": "replace(datum.date9, ' OCT', '-10')",
+          "as": "date10"
+        },
+        {
+          "calculate": "replace(datum.date10, ' NOV', '-11')",
+          "as": "date11"
+        },
+        {
+          "calculate": "replace(datum.date11, ' DEC', '-12')",
+          "as": "date12"
+        },
+        {
+          "calculate": "timeParse(datum.date12, '%Y-%m')",
+          "as": "dateClean"
+        },
+        {
+          "calculate": "replace(datum.quarter, '', 'Meat')",
+          "as": "name"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "color": "blue"
+      },
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7HJ.json",
+        "format": {
+          "type": "json",
+          "property": "months"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.date, ' JAN', '-01')",
+          "as": "date1"
+        },
+        {
+          "calculate": "replace(datum.date1, ' FEB', '-02')",
+          "as": "date2"
+        },
+        {
+          "calculate": "replace(datum.date2, ' MAR', '-03')",
+          "as": "date3"
+        },
+        {
+          "calculate": "replace(datum.date3, ' APR', '-04')",
+          "as": "date4"
+        },
+        {
+          "calculate": "replace(datum.date4, ' MAY', '-05')",
+          "as": "date5"
+        },
+        {
+          "calculate": "replace(datum.date5, ' JUN', '-06')",
+          "as": "date6"
+        },
+        {
+          "calculate": "replace(datum.date6, ' JUL', '-07')",
+          "as": "date7"
+        },
+        {
+          "calculate": "replace(datum.date7, ' AUG', '-08')",
+          "as": "date8"
+        },
+        {
+          "calculate": "replace(datum.date8, ' SEP', '-09')",
+          "as": "date9"
+        },
+        {
+          "calculate": "replace(datum.date9, ' OCT', '-10')",
+          "as": "date10"
+        },
+        {
+          "calculate": "replace(datum.date10, ' NOV', '-11')",
+          "as": "date11"
+        },
+        {
+          "calculate": "replace(datum.date11, ' DEC', '-12')",
+          "as": "date12"
+        },
+        {
+          "calculate": "timeParse(datum.date12, '%Y-%m')",
+          "as": "dateClean"
+        },
+        {
+          "calculate": "replace(datum.quarter, '', 'Fish')",
+          "as": "name"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "color": "#00BFFF"
+      },
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "UK Gini coefficient",
+    "subtitle": "Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/Gini%20%26%20Income.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 300,
+  "width": "container",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "tickCount": 30
+      }
+    }
+  },
+  "layer": [
+    {
+      "transform": [
+        {
+          "fold": [
+            "Final income"
+          ]
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "key",
+          "type": "nominal",
+          "legend": {
+            "orient": "bottom-right",
+            "labelFontSize": 9,
+            "offset": 5,
+            "labelExpr": "{'Final income': 'Gini coefficient after redistributions', 'Original income': 'Gini coefficient, Original income','All individuals': 'Median Income'}[datum.label]"
+          },
+          "title": null
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "orient": "left",
+            "grid": false
+          },
+          "scale": {
+            "domain": [
+              0,
+              60
+            ]
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": "line"
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "selection": "hover"
+              }
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "color": "FFBC00",
+            "filled": true,
+            "size": 200,
+            "stroke": "#DCDCDC",
+            "fillOpacity": 1,
+            "strokeOpacity": 0.8,
+            "strokeWidth": 5
+          }
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Year",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "Year"
+          },
+          {
+            "field": "Original income",
+            "type": "quantitative",
+            "format": ",",
+            "title": "Gini coefficent, original income"
+          },
+          {
+            "field": "Final income",
+            "type": "quantitative",
+            "format": ",",
+            "title": "Gini coefficent after redistributions"
+          },
+          {
+            "field": "All individuals",
+            "type": "quantitative",
+            "format": ",",
+            "title": "Median Income, \u00a3"
+          }
+        ]
+      },
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": [
+            "Year"
+          ],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "fold": [
+            "Original income"
+          ]
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "key",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Original income",
+              "Final income",
+              "All individuals"
+            ],
+            "range": [
+              "#023020",
+              "#228C22",
+              "#808080"
+            ]
+          },
+          "title": null
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "orient": "left",
+            "title": "Gini coefficient",
+            "grid": false
+          },
+          "scale": {
+            "domain": [
+              0,
+              60
+            ]
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": "line"
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "selection": "hover"
+              }
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "filled": true,
+            "size": 200,
+            "stroke": "#DCDCDC",
+            "fillOpacity": 1,
+            "strokeOpacity": 0.8,
+            "strokeWidth": 5
+          }
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "value": 0
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "fold": [
+            "All individuals"
+          ]
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "key",
+          "type": "nominal",
+          "legend": null,
+          "title": null
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "orient": "right",
+            "title": "Median Income",
+            "grid": false
+          },
+          "scale": {
+            "domain": [
+              12000,
+              32000
+            ]
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": "circle"
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "selection": "hover"
+              }
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "filled": true,
+            "size": 200,
+            "stroke": "#DCDCDC",
+            "fillOpacity": 1,
+            "strokeOpacity": 0.8,
+            "strokeWidth": 5
+          }
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "value": 0
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "config": {}
+}

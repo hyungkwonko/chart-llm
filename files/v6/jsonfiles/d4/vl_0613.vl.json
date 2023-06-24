@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Gross domestic expenditure on R&D (GERD) as a percentage of GDP. Data contains most recent available value for each country, along with the GDP per capita (PPP international $) and population values for that respective year, both from the World Bank",
+  "title": {
+    "text": "Research & Development",
+    "fontSize": 12,
+    "anchor": "start",
+    "subtitle": [
+      "Expenditure as a percentage of GDP, source: UNESCO UIS",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 9
+  },
+  "height": 350,
+  "width": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/growth-global_research_gdp.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum['R&D Expenditure (% of GDP)'] > 1.5"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "rgb(128,0,0)",
+    "height": 11
+  },
+  "encoding": {
+    "y": {
+      "field": "Country",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x"
+    },
+    "x": {
+      "field": "R&D Expenditure (% of GDP)",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "nominal"
+      },
+      {
+        "field": "Year",
+        "type": "nominal"
+      },
+      {
+        "field": "R&D Expenditure (% of GDP)",
+        "type": "quantitative",
+        "title": "Expenditure as % of GDP",
+        "format": ".3"
+      },
+      {
+        "field": "GDP per capita (PPP)",
+        "type": "quantitative",
+        "format": "$,d"
+      }
+    ]
+  }
+}

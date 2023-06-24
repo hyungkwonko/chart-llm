@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/mobility.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "bin": {
+        "maxbins": 15
+      },
+      "field": "Mobility",
+      "type": "quantitative",
+      "title": "Mobility Score"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "axis": {
+        "title": "Frequency"
+      }
+    }
+  },
+  "config": {}
+}

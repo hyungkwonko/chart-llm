@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bubbleplot showing horsepower on x, miles per gallons on y, and binned acceleration on size.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/dannysupple/dannysupple.github.io/main/europe_bubble(3).csv"
+  },
+  "height": 340,
+  "width": 340,
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Points",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "GDP(PPP, US$ billion)",
+      "type": "quantitative",
+      "title": "GDP (PPP, US$ billions)"
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "nominal"
+      },
+      {
+        "field": "GDP(PPP, US$ billion)",
+        "type": "quantitative"
+      },
+      {
+        "field": "Population (millions)",
+        "type": "quantitative"
+      }
+    ],
+    "size": {
+      "field": "Population (millions)",
+      "type": "quantitative"
+    }
+  },
+  "config": {}
+}

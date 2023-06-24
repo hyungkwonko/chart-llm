@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "2021 World Bank data, GDP per capita in current international $ and converted with purchasing power parity. .",
+  "width": 600,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/world_countries.geojson",
+    "format": {
+      "property": "features"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "padding": 0
+  },
+  "title": {
+    "text": "Global GDP",
+    "fontSize": 12,
+    "subtitle": [
+      "Per capita, PPP, current $. Source: World Bank"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 9,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "projection": {
+    "type": "naturalEarth1",
+    "translate": [
+      275,
+      175
+    ],
+    "scale": 120
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "transform": [
+    {
+      "lookup": "properties.ISO3",
+      "from": {
+        "key": "ISO3",
+        "fields": [
+          "GDP per capita (PPP)"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/world_GDPpc.csv"
+        }
+      }
+    },
+    {
+      "filter": "datum['properties.COUNTRY'] != 'Antarctica'"
+    }
+  ],
+  "encoding": {
+    "color": {
+      "condition": {
+        "test": "!datum['GDP per capita (PPP)']",
+        "value": "lightgrey"
+      },
+      "field": "GDP per capita (PPP)",
+      "legend": {
+        "title": "",
+        "orient": "bottom-left",
+        "direction": "vertical",
+        "format": "$,d",
+        "fillColor": null,
+        "offset": 0
+      },
+      "type": "quantitative",
+      "scale": {
+        "type": "log",
+        "scheme": "inferno",
+        "reverse": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.COUNTRY",
+        "title": "Country"
+      },
+      {
+        "field": "GDP per capita (PPP)",
+        "title": "",
+        "format": "$,d"
+      }
+    ]
+  }
+}

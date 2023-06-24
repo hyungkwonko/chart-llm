@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "title": {
+    "text": "Dimensionality Reduction for Indicators of Development",
+    "subtitle": [
+      "Grouping countries based on Development. Source: Gapminder"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/development_clean.csv"
+  },
+  "height": 250,
+  "width": 300,
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "Reduced Dimension 1",
+      "type": "quantitative",
+      "title": "Reduced Dimension 1"
+    },
+    "y": {
+      "field": "Reduced Dimension 2",
+      "type": "quantitative",
+      "title": "Reduced Dimnesion 2"
+    },
+    "color": {
+      "field": "Continent",
+      "type": "ordinal",
+      "title": null,
+      "scale": {
+        "scheme": "set1"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "ordinal",
+        "title": "Country"
+      },
+      {
+        "field": "Life Expectancy",
+        "type": "quantitative",
+        "title": "Life  Expectancy"
+      },
+      {
+        "field": "Infant Mortality",
+        "type": "quantitative",
+        "title": "Infant Mortality"
+      },
+      {
+        "field": "Fertility",
+        "type": "quantitative",
+        "title": "Fertility"
+      },
+      {
+        "field": "Gini Coefficient",
+        "type": "quantitative",
+        "title": "Gini Coefficient"
+      }
+    ]
+  }
+}

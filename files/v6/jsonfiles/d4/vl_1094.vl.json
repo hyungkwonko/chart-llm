@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Number of students at selected UK universities 2015-2021",
+    "subtitle": "per 1000 students. Source: HESA",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "params": [
+    {
+      "name": "selectedDate",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2021,
+        "step": 1,
+        "name": "Select year:"
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/Emilysquires02/Emilysquires02.github.io/main/UK%20universities.top.10.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "2020",
+        "2021",
+        "2019",
+        "2018",
+        "2017",
+        "2016",
+        "2015"
+      ],
+      "as": [
+        "year",
+        "value"
+      ]
+    },
+    {
+      "filter": "datum.year==selectedDate"
+    },
+    {
+      "calculate": "datum.value/1000",
+      "as": "per 1000"
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "bar",
+    "color": "#238a6d"
+  },
+  "encoding": {
+    "x": {
+      "field": "HE provider",
+      "type": "nominal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "per 1000",
+      "type": "quantitative",
+      "title": "Number of students (per 1000)",
+      "axis": {
+        "grid": false
+      }
+    }
+  },
+  "config": {}
+}

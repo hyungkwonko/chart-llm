@@ -1,0 +1,1059 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 450,
+  "height": 350,
+  "data": {
+    "values": [
+      {
+        "x": 1,
+        "y": "A",
+        "All": "Present",
+        "Barcode": "barcode01",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Present",
+        "Sabin3-related": "Present",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 2,
+        "y": "A",
+        "All": "Absent",
+        "Barcode": "barcode09",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 3,
+        "y": "A",
+        "All": "Absent",
+        "Barcode": "barcode17",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 4,
+        "y": "A",
+        "All": "Absent",
+        "Barcode": "barcode25",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 5,
+        "y": "A",
+        "All": "Absent",
+        "Barcode": "barcode33",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 6,
+        "y": "A",
+        "All": "Absent",
+        "Barcode": "barcode41",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 7,
+        "y": "A",
+        "All": "Absent",
+        "Barcode": "barcode49",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 8,
+        "y": "A",
+        "All": "Absent",
+        "Barcode": "barcode57",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 9,
+        "y": "A",
+        "All": "Absent",
+        "Barcode": "barcode65",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 10,
+        "y": "A",
+        "All": "Absent",
+        "Barcode": "barcode73",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 11,
+        "y": "A",
+        "All": "Absent",
+        "Barcode": "barcode81",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 12,
+        "y": "A",
+        "All": "Absent",
+        "Barcode": "barcode89",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 1,
+        "y": "B",
+        "All": "Present",
+        "Barcode": "barcode02",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Present",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 2,
+        "y": "B",
+        "All": "Absent",
+        "Barcode": "barcode10",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 3,
+        "y": "B",
+        "All": "Absent",
+        "Barcode": "barcode18",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 4,
+        "y": "B",
+        "All": "Absent",
+        "Barcode": "barcode26",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 5,
+        "y": "B",
+        "All": "Absent",
+        "Barcode": "barcode34",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 6,
+        "y": "B",
+        "All": "Absent",
+        "Barcode": "barcode42",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 7,
+        "y": "B",
+        "All": "Absent",
+        "Barcode": "barcode50",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 8,
+        "y": "B",
+        "All": "Absent",
+        "Barcode": "barcode58",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 9,
+        "y": "B",
+        "All": "Absent",
+        "Barcode": "barcode66",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 10,
+        "y": "B",
+        "All": "Absent",
+        "Barcode": "barcode74",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 11,
+        "y": "B",
+        "All": "Absent",
+        "Barcode": "barcode82",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 12,
+        "y": "B",
+        "All": "Absent",
+        "Barcode": "barcode90",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 1,
+        "y": "C",
+        "All": "Present",
+        "Barcode": "barcode03",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Present"
+      },
+      {
+        "x": 2,
+        "y": "C",
+        "All": "Absent",
+        "Barcode": "barcode11",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 3,
+        "y": "C",
+        "All": "Absent",
+        "Barcode": "barcode19",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 4,
+        "y": "C",
+        "All": "Absent",
+        "Barcode": "barcode27",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 5,
+        "y": "C",
+        "All": "Absent",
+        "Barcode": "barcode35",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 6,
+        "y": "C",
+        "All": "Absent",
+        "Barcode": "barcode43",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 7,
+        "y": "C",
+        "All": "Absent",
+        "Barcode": "barcode51",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 8,
+        "y": "C",
+        "All": "Absent",
+        "Barcode": "barcode59",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 9,
+        "y": "C",
+        "All": "Absent",
+        "Barcode": "barcode67",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 10,
+        "y": "C",
+        "All": "Absent",
+        "Barcode": "barcode75",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 11,
+        "y": "C",
+        "All": "Absent",
+        "Barcode": "barcode83",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 12,
+        "y": "C",
+        "All": "Absent",
+        "Barcode": "barcode91",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 1,
+        "y": "D",
+        "All": "Present",
+        "Barcode": "barcode04",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Present",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 2,
+        "y": "D",
+        "All": "Absent",
+        "Barcode": "barcode12",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 3,
+        "y": "D",
+        "All": "Absent",
+        "Barcode": "barcode20",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 4,
+        "y": "D",
+        "All": "Absent",
+        "Barcode": "barcode28",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 5,
+        "y": "D",
+        "All": "Absent",
+        "Barcode": "barcode36",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 6,
+        "y": "D",
+        "All": "Absent",
+        "Barcode": "barcode44",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 7,
+        "y": "D",
+        "All": "Absent",
+        "Barcode": "barcode52",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 8,
+        "y": "D",
+        "All": "Absent",
+        "Barcode": "barcode60",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 9,
+        "y": "D",
+        "All": "Absent",
+        "Barcode": "barcode68",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 10,
+        "y": "D",
+        "All": "Absent",
+        "Barcode": "barcode76",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 11,
+        "y": "D",
+        "All": "Absent",
+        "Barcode": "barcode84",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 12,
+        "y": "D",
+        "All": "Absent",
+        "Barcode": "barcode92",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 1,
+        "y": "E",
+        "All": "Absent",
+        "Barcode": "barcode05",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 2,
+        "y": "E",
+        "All": "Absent",
+        "Barcode": "barcode13",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 3,
+        "y": "E",
+        "All": "Absent",
+        "Barcode": "barcode21",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 4,
+        "y": "E",
+        "All": "Absent",
+        "Barcode": "barcode29",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 5,
+        "y": "E",
+        "All": "Absent",
+        "Barcode": "barcode37",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 6,
+        "y": "E",
+        "All": "Absent",
+        "Barcode": "barcode45",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 7,
+        "y": "E",
+        "All": "Absent",
+        "Barcode": "barcode53",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 8,
+        "y": "E",
+        "All": "Absent",
+        "Barcode": "barcode61",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 9,
+        "y": "E",
+        "All": "Absent",
+        "Barcode": "barcode69",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 10,
+        "y": "E",
+        "All": "Absent",
+        "Barcode": "barcode77",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 11,
+        "y": "E",
+        "All": "Absent",
+        "Barcode": "barcode85",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 12,
+        "y": "E",
+        "All": "Absent",
+        "Barcode": "barcode93",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 1,
+        "y": "F",
+        "All": "Absent",
+        "Barcode": "barcode06",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 2,
+        "y": "F",
+        "All": "Absent",
+        "Barcode": "barcode14",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 3,
+        "y": "F",
+        "All": "Absent",
+        "Barcode": "barcode22",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 4,
+        "y": "F",
+        "All": "Absent",
+        "Barcode": "barcode30",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 5,
+        "y": "F",
+        "All": "Absent",
+        "Barcode": "barcode38",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 6,
+        "y": "F",
+        "All": "Absent",
+        "Barcode": "barcode46",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 7,
+        "y": "F",
+        "All": "Absent",
+        "Barcode": "barcode54",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 8,
+        "y": "F",
+        "All": "Absent",
+        "Barcode": "barcode62",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 9,
+        "y": "F",
+        "All": "Absent",
+        "Barcode": "barcode70",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 10,
+        "y": "F",
+        "All": "Absent",
+        "Barcode": "barcode78",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 11,
+        "y": "F",
+        "All": "Absent",
+        "Barcode": "barcode86",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 12,
+        "y": "F",
+        "All": "Absent",
+        "Barcode": "barcode94",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 1,
+        "y": "G",
+        "All": "Present",
+        "Barcode": "barcode07",
+        "NonPolioEV": "Present",
+        "Sabin2-related": "Present",
+        "Sabin3-related": "Present",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 2,
+        "y": "G",
+        "All": "Absent",
+        "Barcode": "barcode15",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 3,
+        "y": "G",
+        "All": "Absent",
+        "Barcode": "barcode23",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 4,
+        "y": "G",
+        "All": "Absent",
+        "Barcode": "barcode31",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 5,
+        "y": "G",
+        "All": "Absent",
+        "Barcode": "barcode39",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 6,
+        "y": "G",
+        "All": "Absent",
+        "Barcode": "barcode47",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 7,
+        "y": "G",
+        "All": "Absent",
+        "Barcode": "barcode55",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 8,
+        "y": "G",
+        "All": "Absent",
+        "Barcode": "barcode63",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 9,
+        "y": "G",
+        "All": "Absent",
+        "Barcode": "barcode71",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 10,
+        "y": "G",
+        "All": "Absent",
+        "Barcode": "barcode79",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 11,
+        "y": "G",
+        "All": "Absent",
+        "Barcode": "barcode87",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 12,
+        "y": "G",
+        "All": "Absent",
+        "Barcode": "barcode95",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 1,
+        "y": "H",
+        "All": "Absent",
+        "Barcode": "barcode08",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 2,
+        "y": "H",
+        "All": "Absent",
+        "Barcode": "barcode16",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 3,
+        "y": "H",
+        "All": "Absent",
+        "Barcode": "barcode24",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 4,
+        "y": "H",
+        "All": "Absent",
+        "Barcode": "barcode32",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 5,
+        "y": "H",
+        "All": "Absent",
+        "Barcode": "barcode40",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 6,
+        "y": "H",
+        "All": "Absent",
+        "Barcode": "barcode48",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 7,
+        "y": "H",
+        "All": "Absent",
+        "Barcode": "barcode56",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 8,
+        "y": "H",
+        "All": "Absent",
+        "Barcode": "barcode64",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 9,
+        "y": "H",
+        "All": "Absent",
+        "Barcode": "barcode72",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 10,
+        "y": "H",
+        "All": "Absent",
+        "Barcode": "barcode80",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 11,
+        "y": "H",
+        "All": "Absent",
+        "Barcode": "barcode88",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      },
+      {
+        "x": 12,
+        "y": "H",
+        "All": "Absent",
+        "Barcode": "barcode96",
+        "NonPolioEV": "Absent",
+        "Sabin2-related": "Absent",
+        "Sabin3-related": "Absent",
+        "WPV1": "Absent"
+      }
+    ]
+  },
+  "params": [
+    {
+      "name": "filterBy",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All",
+          "NonPolioEV",
+          "Sabin2-related",
+          "Sabin3-related",
+          "WPV1"
+        ],
+        "labels": [
+          "All",
+          "NonPolioEV",
+          "Sabin2-related",
+          "Sabin3-related",
+          "WPV1"
+        ],
+        "name": "Filter by: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "transform": [
+        {
+          "calculate": "datum[filterBy]",
+          "as": "EV reads present"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 500
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "nominal",
+          "title": "",
+          "axis": {
+            "grid": false,
+            "labelFont": "Helvetica Neue",
+            "labelFontSize": 18,
+            "labelAngle": 0
+          }
+        },
+        "y": {
+          "field": "y",
+          "type": "ordinal",
+          "title": "",
+          "axis": {
+            "grid": false,
+            "labelFont": "Helvetica Neue",
+            "labelFontSize": 18
+          }
+        },
+        "fill": {
+          "field": "EV reads present"
+        },
+        "tooltip": [
+          {
+            "field": "Barcode",
+            "type": "nominal"
+          },
+          {
+            "field": "All",
+            "type": "nominal"
+          },
+          {
+            "field": "NonPolioEV",
+            "type": "nominal"
+          },
+          {
+            "field": "Sabin2-related",
+            "type": "nominal"
+          },
+          {
+            "field": "Sabin3-related",
+            "type": "nominal"
+          },
+          {
+            "field": "WPV1",
+            "type": "nominal"
+          }
+        ]
+      }
+    }
+  ]
+}

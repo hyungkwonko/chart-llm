@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/NTM%20CSV.csv"
+  },
+  "title": {
+    "fontSize": 13,
+    "text": "Barriers to trade",
+    "subtitle": [
+      "Data as of year-end 2021. Source: WTO",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "width": 500,
+  "height": 300,
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "y": {
+      "field": "Type2",
+      "sort": {
+        "op": "sum",
+        "order": "descending",
+        "field": "Value"
+      },
+      "axis": {
+        "title": null
+      }
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "Value",
+      "axis": {
+        "title": "Number of Measures"
+      }
+    },
+    "color": {
+      "field": "Type3",
+      "legend": {
+        "orient": "none",
+        "columns": 13,
+        "legendX": -100,
+        "legendY": -30,
+        "offset": 10,
+        "title": null
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Type1",
+        "title": "Type"
+      },
+      {
+        "field": "Value",
+        "title": "Number of Measures"
+      }
+    ]
+  }
+}

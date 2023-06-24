@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "height": "400",
+  "width": "1024",
+  "data": {
+    "url": "https://raw.githubusercontent.com/pkd2512/onion/998917fd760a8953801a91d6b3e603c6c25531e9/data/onion_q.csv"
+  },
+  "selection": {
+    "st": {
+      "type": "single",
+      "fields": [
+        "state"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          "AP",
+          "ASM",
+          "BHR",
+          "DEL",
+          "GUJ",
+          "HP",
+          "HR",
+          "JH",
+          "JK",
+          "KNT",
+          "KER",
+          "MH",
+          "MP",
+          "MS",
+          "OR",
+          "PB",
+          "RAJ",
+          "TN",
+          "UP",
+          "WB"
+        ]
+      },
+      "on": "mouseover"
+    }
+  },
+  "mark": {
+    "type": "area",
+    "interpolate": "monotone"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "timeUnit": "yearmonth",
+      "axis": {
+        "tickCount": 18
+      }
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "quantity",
+      "type": "quantitative",
+      "scale": {
+        "type": "linear"
+      },
+      "axis": {
+        "tickCount": 5
+      }
+    },
+    "color": {
+      "value": "#e8eaf6",
+      "condition": {
+        "selection": "st",
+        "field": "state",
+        "type": "nominal",
+        "scale": {
+          "scheme": "category20b"
+        }
+      }
+    }
+  },
+  "config": {
+    "area": {
+      "fillOpacity": "0.69"
+    }
+  }
+}

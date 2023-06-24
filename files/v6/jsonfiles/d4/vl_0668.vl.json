@@ -1,0 +1,1277 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "IMF Lending as a percentage of Global GDP",
+    "subtitle": [
+      "Loans dispersed, % of Global GDP Source: IMF (2022 data up to September 30).",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#020202",
+    "subtitleColor": "#000000"
+  },
+  "config": {
+    "background": "#fafbfb",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "Country ": "FRA",
+        "Year": 1960,
+        "ODA/GNI": 1.347577
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1961,
+        "ODA/GNI": 1.357895
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1962,
+        "ODA/GNI": 1.270943
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1963,
+        "ODA/GNI": 0.982504
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1964,
+        "ODA/GNI": 0.895351
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1965,
+        "ODA/GNI": 0.758113
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1966,
+        "ODA/GNI": 0.690525
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1967,
+        "ODA/GNI": 0.709071
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1968,
+        "ODA/GNI": 0.668756
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1969,
+        "ODA/GNI": 0.673815
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1970,
+        "ODA/GNI": 0.518786
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1971,
+        "ODA/GNI": 0.509937
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1972,
+        "ODA/GNI": 0.493438
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1973,
+        "ODA/GNI": 0.425464
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1974,
+        "ODA/GNI": 0.440743
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1975,
+        "ODA/GNI": 0.439572
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1976,
+        "ODA/GNI": 0.406385
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1977,
+        "ODA/GNI": 0.384413
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1978,
+        "ODA/GNI": 0.385027
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1979,
+        "ODA/GNI": 0.422784
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1980,
+        "ODA/GNI": 0.438015
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1981,
+        "ODA/GNI": 0.514642
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1982,
+        "ODA/GNI": 0.559691
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1983,
+        "ODA/GNI": 0.560813
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1984,
+        "ODA/GNI": 0.618352
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1985,
+        "ODA/GNI": 0.614054
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1986,
+        "ODA/GNI": 0.558151
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1987,
+        "ODA/GNI": 0.596677
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1988,
+        "ODA/GNI": 0.575126
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1989,
+        "ODA/GNI": 0.605522
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1990,
+        "ODA/GNI": 0.60166
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1991,
+        "ODA/GNI": 0.615681
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1992,
+        "ODA/GNI": 0.626557
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1993,
+        "ODA/GNI": 0.632265
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1994,
+        "ODA/GNI": 0.617061
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1995,
+        "ODA/GNI": 0.545846
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1996,
+        "ODA/GNI": 0.482145
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1997,
+        "ODA/GNI": 0.437353
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1998,
+        "ODA/GNI": 0.383767
+      },
+      {
+        "Country ": "FRA",
+        "Year": 1999,
+        "ODA/GNI": 0.381519
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2000,
+        "ODA/GNI": 0.304828
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2001,
+        "ODA/GNI": 0.309425
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2002,
+        "ODA/GNI": 0.374897
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2003,
+        "ODA/GNI": 0.403148
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2004,
+        "ODA/GNI": 0.411528
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2005,
+        "ODA/GNI": 0.47359
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2006,
+        "ODA/GNI": 0.467687
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2007,
+        "ODA/GNI": 0.379578
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2008,
+        "ODA/GNI": 0.385227
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2009,
+        "ODA/GNI": 0.470601
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2010,
+        "ODA/GNI": 0.495449
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2011,
+        "ODA/GNI": 0.45952
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2012,
+        "ODA/GNI": 0.452689
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2013,
+        "ODA/GNI": 0.405845
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2014,
+        "ODA/GNI": 0.368113
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2015,
+        "ODA/GNI": 0.367651
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2016,
+        "ODA/GNI": 0.38426
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2017,
+        "ODA/GNI": 0.428001
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2018,
+        "ODA/GNI": 0.42749
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2019,
+        "ODA/GNI": 0.441062
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2020,
+        "ODA/GNI": 0.52986
+      },
+      {
+        "Country ": "FRA",
+        "Year": 2021,
+        "ODA/GNI": 0.518069
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1960,
+        "ODA/GNI": 0.309801
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1961,
+        "ODA/GNI": 0.445561
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1962,
+        "ODA/GNI": 0.449487
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1963,
+        "ODA/GNI": 0.407119
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1964,
+        "ODA/GNI": 0.437464
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1965,
+        "ODA/GNI": 0.397992
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1966,
+        "ODA/GNI": 0.344112
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1967,
+        "ODA/GNI": 0.412234
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1968,
+        "ODA/GNI": 0.417388
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1969,
+        "ODA/GNI": 0.379934
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1970,
+        "ODA/GNI": 0.324428
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1971,
+        "ODA/GNI": 0.340932
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1972,
+        "ODA/GNI": 0.315689
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1973,
+        "ODA/GNI": 0.320083
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1974,
+        "ODA/GNI": 0.376625
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1975,
+        "ODA/GNI": 0.404081
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1976,
+        "ODA/GNI": 0.355998
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1977,
+        "ODA/GNI": 0.332341
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1978,
+        "ODA/GNI": 0.365018
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1979,
+        "ODA/GNI": 0.445314
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1980,
+        "ODA/GNI": 0.438322
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1981,
+        "ODA/GNI": 0.465312
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1982,
+        "ODA/GNI": 0.479266
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1983,
+        "ODA/GNI": 0.484326
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1984,
+        "ODA/GNI": 0.449001
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1985,
+        "ODA/GNI": 0.471881
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1986,
+        "ODA/GNI": 0.426802
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1987,
+        "ODA/GNI": 0.390826
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1988,
+        "ODA/GNI": 0.392115
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1989,
+        "ODA/GNI": 0.411824
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1990,
+        "ODA/GNI": 0.420973
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1991,
+        "ODA/GNI": 0.387238
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1992,
+        "ODA/GNI": 0.372983
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1993,
+        "ODA/GNI": 0.354107
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1994,
+        "ODA/GNI": 0.327095
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1995,
+        "ODA/GNI": 0.307751
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1996,
+        "ODA/GNI": 0.320294
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1997,
+        "ODA/GNI": 0.277599
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1998,
+        "ODA/GNI": 0.260538
+      },
+      {
+        "Country ": "DEU",
+        "Year": 1999,
+        "ODA/GNI": 0.26385
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2000,
+        "ODA/GNI": 0.270087
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2001,
+        "ODA/GNI": 0.271007
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2002,
+        "ODA/GNI": 0.267909
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2003,
+        "ODA/GNI": 0.284017
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2004,
+        "ODA/GNI": 0.276065
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2005,
+        "ODA/GNI": 0.360351
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2006,
+        "ODA/GNI": 0.356039
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2007,
+        "ODA/GNI": 0.366854
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2008,
+        "ODA/GNI": 0.382826
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2009,
+        "ODA/GNI": 0.354919
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2010,
+        "ODA/GNI": 0.386701
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2011,
+        "ODA/GNI": 0.386793
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2012,
+        "ODA/GNI": 0.37176
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2013,
+        "ODA/GNI": 0.380866
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2014,
+        "ODA/GNI": 0.418735
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2015,
+        "ODA/GNI": 0.523176
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2016,
+        "ODA/GNI": 0.699296
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2017,
+        "ODA/GNI": 0.667405
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2018,
+        "ODA/GNI": 0.611912
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2019,
+        "ODA/GNI": 0.61151
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2020,
+        "ODA/GNI": 0.734188
+      },
+      {
+        "Country ": "DEU",
+        "Year": 2021,
+        "ODA/GNI": 0.740933
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1960,
+        "ODA/GNI": 0.562811
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1961,
+        "ODA/GNI": 0.591633
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1962,
+        "ODA/GNI": 0.518856
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1963,
+        "ODA/GNI": 0.480246
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1964,
+        "ODA/GNI": 0.526636
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1965,
+        "ODA/GNI": 0.469278
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1966,
+        "ODA/GNI": 0.453358
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1967,
+        "ODA/GNI": 0.439878
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1968,
+        "ODA/GNI": 0.400962
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1969,
+        "ODA/GNI": 0.42802
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1970,
+        "ODA/GNI": 0.389096
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1971,
+        "ODA/GNI": 0.441316
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1972,
+        "ODA/GNI": 0.419159
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1973,
+        "ODA/GNI": 0.355067
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1974,
+        "ODA/GNI": 0.397471
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1975,
+        "ODA/GNI": 0.384105
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1976,
+        "ODA/GNI": 0.387564
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1977,
+        "ODA/GNI": 0.439564
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1978,
+        "ODA/GNI": 0.455306
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1979,
+        "ODA/GNI": 0.514652
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1980,
+        "ODA/GNI": 0.346844
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1981,
+        "ODA/GNI": 0.425645
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1982,
+        "ODA/GNI": 0.371469
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1983,
+        "ODA/GNI": 0.352266
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1984,
+        "ODA/GNI": 0.333952
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1985,
+        "ODA/GNI": 0.333931
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1986,
+        "ODA/GNI": 0.312754
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1987,
+        "ODA/GNI": 0.275401
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1988,
+        "ODA/GNI": 0.320623
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1989,
+        "ODA/GNI": 0.312002
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1990,
+        "ODA/GNI": 0.273745
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1991,
+        "ODA/GNI": 0.319234
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1992,
+        "ODA/GNI": 0.31174
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1993,
+        "ODA/GNI": 0.312221
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1994,
+        "ODA/GNI": 0.307459
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1995,
+        "ODA/GNI": 0.285885
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1996,
+        "ODA/GNI": 0.274189
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1997,
+        "ODA/GNI": 0.262489
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1998,
+        "ODA/GNI": 0.274387
+      },
+      {
+        "Country ": "GBR",
+        "Year": 1999,
+        "ODA/GNI": 0.236164
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2000,
+        "ODA/GNI": 0.317486
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2001,
+        "ODA/GNI": 0.319019
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2002,
+        "ODA/GNI": 0.309024
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2003,
+        "ODA/GNI": 0.342276
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2004,
+        "ODA/GNI": 0.362674
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2005,
+        "ODA/GNI": 0.472694
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2006,
+        "ODA/GNI": 0.514082
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2007,
+        "ODA/GNI": 0.355309
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2008,
+        "ODA/GNI": 0.430369
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2009,
+        "ODA/GNI": 0.50755
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2010,
+        "ODA/GNI": 0.572602
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2011,
+        "ODA/GNI": 0.562486
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2012,
+        "ODA/GNI": 0.561921
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2013,
+        "ODA/GNI": 0.704671
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2014,
+        "ODA/GNI": 0.700701
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2015,
+        "ODA/GNI": 0.704758
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2016,
+        "ODA/GNI": 0.700114
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2017,
+        "ODA/GNI": 0.698876
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2019,
+        "ODA/GNI": 0.69558
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2020,
+        "ODA/GNI": 0.698093
+      },
+      {
+        "Country ": "GBR",
+        "Year": 2021,
+        "ODA/GNI": 0.498731
+      },
+      {
+        "Country ": "USA",
+        "Year": 1960,
+        "ODA/GNI": 0.539666
+      },
+      {
+        "Country ": "USA",
+        "Year": 1961,
+        "ODA/GNI": 0.572474
+      },
+      {
+        "Country ": "USA",
+        "Year": 1962,
+        "ODA/GNI": 0.582865
+      },
+      {
+        "Country ": "USA",
+        "Year": 1963,
+        "ODA/GNI": 0.597015
+      },
+      {
+        "Country ": "USA",
+        "Year": 1964,
+        "ODA/GNI": 0.560295
+      },
+      {
+        "Country ": "USA",
+        "Year": 1965,
+        "ODA/GNI": 0.577767
+      },
+      {
+        "Country ": "USA",
+        "Year": 1966,
+        "ODA/GNI": 0.500813
+      },
+      {
+        "Country ": "USA",
+        "Year": 1967,
+        "ODA/GNI": 0.40786
+      },
+      {
+        "Country ": "USA",
+        "Year": 1968,
+        "ODA/GNI": 0.436321
+      },
+      {
+        "Country ": "USA",
+        "Year": 1969,
+        "ODA/GNI": 0.356543
+      },
+      {
+        "Country ": "USA",
+        "Year": 1970,
+        "ODA/GNI": 0.316305
+      },
+      {
+        "Country ": "USA",
+        "Year": 1971,
+        "ODA/GNI": 0.287274
+      },
+      {
+        "Country ": "USA",
+        "Year": 1972,
+        "ODA/GNI": 0.332035
+      },
+      {
+        "Country ": "USA",
+        "Year": 1973,
+        "ODA/GNI": 0.199187
+      },
+      {
+        "Country ": "USA",
+        "Year": 1974,
+        "ODA/GNI": 0.254545
+      },
+      {
+        "Country ": "USA",
+        "Year": 1975,
+        "ODA/GNI": 0.266812
+      },
+      {
+        "Country ": "USA",
+        "Year": 1976,
+        "ODA/GNI": 0.251979
+      },
+      {
+        "Country ": "USA",
+        "Year": 1977,
+        "ODA/GNI": 0.242476
+      },
+      {
+        "Country ": "USA",
+        "Year": 1978,
+        "ODA/GNI": 0.260355
+      },
+      {
+        "Country ": "USA",
+        "Year": 1979,
+        "ODA/GNI": 0.19268
+      },
+      {
+        "Country ": "USA",
+        "Year": 1980,
+        "ODA/GNI": 0.269162
+      },
+      {
+        "Country ": "USA",
+        "Year": 1981,
+        "ODA/GNI": 0.193691
+      },
+      {
+        "Country ": "USA",
+        "Year": 1982,
+        "ODA/GNI": 0.265159
+      },
+      {
+        "Country ": "USA",
+        "Year": 1983,
+        "ODA/GNI": 0.243109
+      },
+      {
+        "Country ": "USA",
+        "Year": 1984,
+        "ODA/GNI": 0.236841
+      },
+      {
+        "Country ": "USA",
+        "Year": 1985,
+        "ODA/GNI": 0.235782
+      },
+      {
+        "Country ": "USA",
+        "Year": 1986,
+        "ODA/GNI": 0.226689
+      },
+      {
+        "Country ": "USA",
+        "Year": 1987,
+        "ODA/GNI": 0.202448
+      },
+      {
+        "Country ": "USA",
+        "Year": 1988,
+        "ODA/GNI": 0.209045
+      },
+      {
+        "Country ": "USA",
+        "Year": 1989,
+        "ODA/GNI": 0.149591
+      },
+      {
+        "Country ": "USA",
+        "Year": 1990,
+        "ODA/GNI": 0.209414
+      },
+      {
+        "Country ": "USA",
+        "Year": 1991,
+        "ODA/GNI": 0.199769
+      },
+      {
+        "Country ": "USA",
+        "Year": 1992,
+        "ODA/GNI": 0.196104
+      },
+      {
+        "Country ": "USA",
+        "Year": 1993,
+        "ODA/GNI": 0.154314
+      },
+      {
+        "Country ": "USA",
+        "Year": 1994,
+        "ODA/GNI": 0.143404
+      },
+      {
+        "Country ": "USA",
+        "Year": 1995,
+        "ODA/GNI": 0.101789
+      },
+      {
+        "Country ": "USA",
+        "Year": 1996,
+        "ODA/GNI": 0.122773
+      },
+      {
+        "Country ": "USA",
+        "Year": 1997,
+        "ODA/GNI": 0.085334
+      },
+      {
+        "Country ": "USA",
+        "Year": 1998,
+        "ODA/GNI": 0.100411
+      },
+      {
+        "Country ": "USA",
+        "Year": 1999,
+        "ODA/GNI": 0.098345
+      },
+      {
+        "Country ": "USA",
+        "Year": 2000,
+        "ODA/GNI": 0.100266
+      },
+      {
+        "Country ": "USA",
+        "Year": 2001,
+        "ODA/GNI": 0.112506
+      },
+      {
+        "Country ": "USA",
+        "Year": 2002,
+        "ODA/GNI": 0.12669
+      },
+      {
+        "Country ": "USA",
+        "Year": 2003,
+        "ODA/GNI": 0.148618
+      },
+      {
+        "Country ": "USA",
+        "Year": 2004,
+        "ODA/GNI": 0.169052
+      },
+      {
+        "Country ": "USA",
+        "Year": 2005,
+        "ODA/GNI": 0.226033
+      },
+      {
+        "Country ": "USA",
+        "Year": 2006,
+        "ODA/GNI": 0.177468
+      },
+      {
+        "Country ": "USA",
+        "Year": 2007,
+        "ODA/GNI": 0.156453
+      },
+      {
+        "Country ": "USA",
+        "Year": 2008,
+        "ODA/GNI": 0.183458
+      },
+      {
+        "Country ": "USA",
+        "Year": 2009,
+        "ODA/GNI": 0.205776
+      },
+      {
+        "Country ": "USA",
+        "Year": 2010,
+        "ODA/GNI": 0.202632
+      },
+      {
+        "Country ": "USA",
+        "Year": 2011,
+        "ODA/GNI": 0.203574
+      },
+      {
+        "Country ": "USA",
+        "Year": 2012,
+        "ODA/GNI": 0.185609
+      },
+      {
+        "Country ": "USA",
+        "Year": 2013,
+        "ODA/GNI": 0.181737
+      },
+      {
+        "Country ": "USA",
+        "Year": 2014,
+        "ODA/GNI": 0.185688
+      },
+      {
+        "Country ": "USA",
+        "Year": 2015,
+        "ODA/GNI": 0.167526
+      },
+      {
+        "Country ": "USA",
+        "Year": 2016,
+        "ODA/GNI": 0.1861
+      },
+      {
+        "Country ": "USA",
+        "Year": 2017,
+        "ODA/GNI": 0.176803
+      },
+      {
+        "Country ": "USA",
+        "Year": 2018,
+        "ODA/GNI": 0.164168
+      },
+      {
+        "Country ": "USA",
+        "Year": 2019,
+        "ODA/GNI": 0.154414
+      },
+      {
+        "Country ": "USA",
+        "Year": 2020,
+        "ODA/GNI": 0.16713
+      },
+      {
+        "Country ": "USA",
+        "Year": 2021,
+        "ODA/GNI": 0.183982
+      }
+    ]
+  },
+  "height": 400,
+  "width": 900,
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "ODA/GNI",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Country ",
+      "type": "nominal"
+    }
+  }
+}

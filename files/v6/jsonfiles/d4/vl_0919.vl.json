@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Housebuilding over time",
+  "data": {
+    "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/new_housebuilding.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "title": {
+    "text": "Quarterly House Building in England",
+    "subtitle": [
+      "By Private Enterprise, Housing Associations and Local Authorites.",
+      "Source: Gov.uk (DLUHC)"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 250,
+  "height": 250,
+  "transform": [
+    {
+      "calculate": "timeParse(datum.Date, '%d/%m/%Y')",
+      "as": "date2"
+    },
+    {
+      "calculate": "year(datum.Date)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1980,
+      "bind": {
+        "input": "range",
+        "min": 1980,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1980,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "date2",
+      "type": "temporal",
+      "timeUnit": "yearquarter",
+      "title": "Year"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "House Build Completions"
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "All",
+          "Private Enterprise",
+          "Housing Associations",
+          "Local Authorities"
+        ],
+        "scheme": "inferno"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "date2",
+        "type": "temporal",
+        "timeUnit": "yearquarter",
+        "title": "Period"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Buildings Completed"
+      }
+    ]
+  }
+}

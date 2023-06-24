@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "center": true,
+  "config": {
+    "axis": {
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ghattab/CMANGOES/c492c918df3c0da3eaaf27d2b218b66c00610307/Data/Visualization_data/data/multiple_datasets/vis/mds_5_Time/elapsed_time_data.json"
+  },
+  "title": {
+    "anchor": "middle",
+    "text": [
+      "Total computation time per dataset (top), the number of sequences vs. computation",
+      "time (bottom-left), and mean sequence length per dataset vs. computation time (bottom-right).",
+      "Click on a field to enable filtering by datasets.",
+      ""
+    ]
+  },
+  "vconcat": [
+    {
+      "encoding": {
+        "color": {
+          "condition": {
+            "selection": "selector001",
+            "value": "#4C78A8"
+          },
+          "value": "lightgrey"
+        },
+        "tooltip": {
+          "field": "h",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "dataset",
+          "sort": "y",
+          "title": "Dataset",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "hours",
+          "title": "Computation time (h)",
+          "type": "quantitative"
+        }
+      },
+      "mark": "bar",
+      "selection": {
+        "selector001": {
+          "type": "single"
+        }
+      },
+      "transform": [
+        {
+          "as": "h",
+          "calculate": "format(datum.hours, '.2f') + 'h'"
+        }
+      ],
+      "width": 885
+    },
+    {
+      "hconcat": [
+        {
+          "encoding": {
+            "opacity": {
+              "condition": {
+                "selection": "selector001",
+                "value": 1.0
+              },
+              "value": 0.1
+            },
+            "tooltip": {
+              "field": "dataset",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "hours",
+              "title": "Computation time (h)",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "seq_size",
+              "sort": "-x",
+              "title": "# of sequences",
+              "type": "quantitative"
+            }
+          },
+          "mark": {
+            "filled": true,
+            "size": 60,
+            "type": "point"
+          },
+          "selection": {
+            "selector001": {
+              "type": "single"
+            }
+          }
+        },
+        {
+          "encoding": {
+            "opacity": {
+              "condition": {
+                "selection": "selector001",
+                "value": 1.0
+              },
+              "value": 0.1
+            },
+            "tooltip": {
+              "field": "dataset",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "hours",
+              "title": "Computation time (h)",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "mean_seq_len",
+              "sort": "-x",
+              "title": "Mean sequence length",
+              "type": "quantitative"
+            }
+          },
+          "mark": {
+            "filled": true,
+            "size": 60,
+            "type": "point"
+          },
+          "selection": {
+            "selector001": {
+              "type": "single"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

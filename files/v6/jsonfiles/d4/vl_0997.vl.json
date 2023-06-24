@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Renewable Energy Capacity",
+    "subtitle": [
+      "Installed renewable electricity capacity (MW) by energy type, Source: International Renewable Energy Agency (IRENA)"
+    ],
+    "subtitleFontSize": 8,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "height": 170,
+  "width": 170,
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/data-project-CAP2.csv"
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "mark": "circle",
+  "encoding": {
+    "row": {
+      "field": "Energy Source",
+      "title": null
+    },
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "scale": {
+        "zero": false
+      },
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Capacity",
+      "type": "quantitative",
+      "scale": {
+        "zero": false
+      },
+      "title": "Capacity (MW)",
+      "axis": {
+        "grid": false
+      }
+    },
+    "opacity": {
+      "value": 1
+    },
+    "color": {
+      "field": "Energy Source",
+      "scale": {
+        "scheme": "darkmulti"
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Capacity",
+        "title": "MW"
+      }
+    ]
+  }
+}

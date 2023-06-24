@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 800,
+  "data": {
+    "url": "https://raw.githubusercontent.com/GraemeHawker/GBEnergyDataManager/20f06b76bfae3b354000dc3729656e9674c244cc/BMRA/static/BMRA/DNO_min.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/GraemeHawker/GBEnergyDataManager/20f06b76bfae3b354000dc3729656e9674c244cc/BMRA/static/BMRA/dummy_MEs_2.csv"
+        },
+        "key": "id",
+        "fields": [
+          "value"
+        ]
+      }
+    },
+    {
+      "calculate": "datum.value",
+      "as": "gCO2/kWh"
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "#757575",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "fill": {
+      "field": "gCO2/kWh",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "yelloworangered",
+        "rangeMin": 0,
+        "rangeMax": 1000
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.gsp_group",
+        "type": "nominal",
+        "title": "GSP Group"
+      },
+      {
+        "field": "properties.gsp_desc",
+        "type": "nominal",
+        "title": "GSP Description"
+      }
+    ]
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "black"
+      }
+    }
+  }
+}

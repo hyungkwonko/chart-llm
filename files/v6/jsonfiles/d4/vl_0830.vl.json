@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/josh-shah/josh-shah.github.io/main/data_ONS-cznb.json",
+    "format": {
+      "type": "json",
+      "property": "months"
+    }
+  },
+  "title": {
+    "text": "RPI: Ave price - Cucumber, each",
+    "subtitle": "Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 180,
+  "mark": {
+    "type": "line",
+    "color": "rgb(0,47,167"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "grid": false
+      },
+      "title": ""
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      },
+      "title": "pence"
+    },
+    "tooltip": [
+      {
+        "field": "date",
+        "type": "temporal",
+        "title": "Year"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Pence"
+      }
+    ]
+  }
+}

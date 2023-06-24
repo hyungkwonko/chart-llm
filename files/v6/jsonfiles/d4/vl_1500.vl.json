@@ -1,0 +1,116 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-3641ca87e05f160fa17433dfbd92d697"
+  },
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "type": "nominal",
+      "field": "authorAssociation",
+      "scale": {
+        "domain": [
+          "MEMBER",
+          "CONTRIBUTOR",
+          "COLLABORATOR",
+          "NONE"
+        ],
+        "range": [
+          "rgb(211.82745098039214, 211.82745098039214, 211.82745098039214)",
+          "rgb(166.98562091503268, 229.89803921568628, 166.98562091503268)",
+          "rgb(96.37647058823529, 192.75294117647059, 96.37647058823529)",
+          "rgb(0.0, 100.3921568627451, 0.0)"
+        ]
+      }
+    },
+    "x": {
+      "type": "nominal",
+      "field": "username"
+    },
+    "y": {
+      "type": "quantitative",
+      "field": "authored"
+    }
+  },
+  "title": "PR authors for numpy in the last 10 days",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-3641ca87e05f160fa17433dfbd92d697": [
+      {
+        "username": "charris",
+        "authored": 21,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "username": "BvB93",
+        "authored": 3,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "username": "henryiii",
+        "authored": 3,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "username": "mattip",
+        "authored": 2,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "username": "melissawm",
+        "authored": 2,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "username": "Dbhasin1",
+        "authored": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "username": "HaoZeke",
+        "authored": 1,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "username": "abatomunkuev",
+        "authored": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "username": "evanmiller",
+        "authored": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "username": "h-vetinari",
+        "authored": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "username": "rgommers",
+        "authored": 1,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "username": "rk-mlu",
+        "authored": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "username": "serge-sans-paille",
+        "authored": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "username": "timhoffm",
+        "authored": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      }
+    ]
+  }
+}

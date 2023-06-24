@@ -1,0 +1,1025 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 640,
+  "height": 480,
+  "title": "New Widget",
+  "data": {
+    "values": [
+      {
+        "Timestamp": 1549152000000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "7f95c811-819f-4c5d-913b-4d58e6b7c140",
+        "Value": "22.5",
+        "Name": "HG1",
+        "Latitude": 51.599302,
+        "Longitude": -0.068218
+      },
+      {
+        "Timestamp": 1549152000000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "3004cb8a-2e0d-4d7c-b4ac-5985d83418c1",
+        "Value": "62.9",
+        "Name": "LB5",
+        "Latitude": 51.485486774,
+        "Longitude": -0.1245452348
+      },
+      {
+        "Timestamp": 1549152000000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "c212151b-09b0-4634-802b-131fb8777935",
+        "Value": "50.3",
+        "Name": "IS2",
+        "Latitude": 51.555378,
+        "Longitude": -0.116146
+      },
+      {
+        "Timestamp": 1549152000000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "d7ce4006-0a32-4734-bd55-fc19b225aa14",
+        "Value": "28.6",
+        "Name": "KC1",
+        "Latitude": 51.5210467476,
+        "Longitude": -0.2134921396
+      },
+      {
+        "Timestamp": 1549152000000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "53f43c22-962c-4385-8070-7ec664a33755",
+        "Value": "51.9",
+        "Name": "TH4",
+        "Latitude": 51.5150461674,
+        "Longitude": -0.0084184927
+      },
+      {
+        "Timestamp": 1549152000000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "a74808e6-c537-4a26-8133-d4407fb37a1e",
+        "Value": "17.6",
+        "Name": "RB4",
+        "Latitude": 51.57661,
+        "Longitude": 0.030858
+      },
+      {
+        "Timestamp": 1549152000000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "56c745cd-ad6d-4550-bd9d-556979b1fc05",
+        "Value": "39.8",
+        "Name": "ST4",
+        "Latitude": 51.3586596125,
+        "Longitude": -0.1497239466
+      },
+      {
+        "Timestamp": 1549152000000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "d36ee57b-a5cd-4dea-81e6-e9c0fb37bc76",
+        "Value": "42.7",
+        "Name": "SK5",
+        "Latitude": 51.4804994936,
+        "Longitude": -0.0595528933
+      },
+      {
+        "Timestamp": 1549152000000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "7475490b-3d67-4bcc-9cbe-75b6dd574f49",
+        "Value": "44",
+        "Name": "RI1",
+        "Latitude": 51.480189,
+        "Longitude": -0.237335
+      },
+      {
+        "Timestamp": 1549152000000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "77aca2bd-a825-476e-bc1d-9462b52b2924",
+        "Value": "31.5",
+        "Name": "RI2",
+        "Latitude": 51.476168,
+        "Longitude": -0.230427
+      },
+      {
+        "Timestamp": 1549152000000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "3704c8e1-d93b-4efa-9c69-d4fda8fc805e",
+        "Value": "27.8",
+        "Name": "ST5",
+        "Latitude": 51.3892869045,
+        "Longitude": -0.1416615248
+      },
+      {
+        "Timestamp": 1549152000000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "83c7f4f6-ca98-40b6-a091-c3b28b206626",
+        "Value": "58.9",
+        "Name": "TH2",
+        "Latitude": 51.5225294861,
+        "Longitude": -0.0421550992
+      },
+      {
+        "Timestamp": 1549152000000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "abf2dd0b-ad88-43ae-8c39-57fcf289d5b0",
+        "Value": "53.1",
+        "Name": "ST6",
+        "Latitude": 51.377923,
+        "Longitude": -0.240414
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "d36ee57b-a5cd-4dea-81e6-e9c0fb37bc76",
+        "Value": "6",
+        "Name": "SK5",
+        "Latitude": 51.4804994936,
+        "Longitude": -0.0595528933
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "53f43c22-962c-4385-8070-7ec664a33755",
+        "Value": "28.8",
+        "Name": "TH4",
+        "Latitude": 51.5150461674,
+        "Longitude": -0.0084184927
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "83c7f4f6-ca98-40b6-a091-c3b28b206626",
+        "Value": "16.7",
+        "Name": "TH2",
+        "Latitude": 51.5225294861,
+        "Longitude": -0.0421550992
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "3704c8e1-d93b-4efa-9c69-d4fda8fc805e",
+        "Value": "54.4",
+        "Name": "ST5",
+        "Latitude": 51.3892869045,
+        "Longitude": -0.1416615248
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "dab0f36f-a630-4095-a8e6-0fe4114dc053",
+        "Value": "21.2",
+        "Name": "BT4",
+        "Latitude": 51.552476,
+        "Longitude": -0.258089
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "d7ce4006-0a32-4734-bd55-fc19b225aa14",
+        "Value": "8.2",
+        "Name": "KC1",
+        "Latitude": 51.5210467476,
+        "Longitude": -0.2134921396
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "dd302595-54c8-424d-ac28-e15820612fb6",
+        "Value": "18.4",
+        "Name": "IS6",
+        "Latitude": 51.557895,
+        "Longitude": -0.106989
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "82cedcc6-ab40-495f-98fe-c7dfe1d397eb",
+        "Value": "24.1",
+        "Name": "EI1",
+        "Latitude": 51.5236078191,
+        "Longitude": -0.2655026318
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "77aca2bd-a825-476e-bc1d-9462b52b2924",
+        "Value": "5.7",
+        "Name": "RI2",
+        "Latitude": 51.476168,
+        "Longitude": -0.230427
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "8eaa7e71-8fb2-4463-bb60-6d2f5d0371fb",
+        "Value": "40.7",
+        "Name": "MY1",
+        "Latitude": 51.52254,
+        "Longitude": -0.15459
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "3004cb8a-2e0d-4d7c-b4ac-5985d83418c1",
+        "Value": "28",
+        "Name": "LB5",
+        "Latitude": 51.485486774,
+        "Longitude": -0.1245452348
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "95e12467-be3e-4bf2-92ea-29bd1bf5a698",
+        "Value": "8.9",
+        "Name": "LW2",
+        "Latitude": 51.474954,
+        "Longitude": -0.039641
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "88566b68-78ae-43f3-bb48-76801fb6b5b3",
+        "Value": "14.5",
+        "Name": "LB6",
+        "Latitude": 51.4282131429,
+        "Longitude": -0.1318686388
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "066a1847-2e01-4b36-959e-786ceff01173",
+        "Value": "14.7",
+        "Name": "LW1",
+        "Latitude": 51.445468,
+        "Longitude": -0.020266
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "7475490b-3d67-4bcc-9cbe-75b6dd574f49",
+        "Value": "17.3",
+        "Name": "RI1",
+        "Latitude": 51.480189,
+        "Longitude": -0.237335
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "a74808e6-c537-4a26-8133-d4407fb37a1e",
+        "Value": "15.3",
+        "Name": "RB4",
+        "Latitude": 51.57661,
+        "Longitude": 0.030858
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "56c745cd-ad6d-4550-bd9d-556979b1fc05",
+        "Value": "3.2",
+        "Name": "ST4",
+        "Latitude": 51.3586596125,
+        "Longitude": -0.1497239466
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "fd36e6dd-f8be-43ac-8ea2-48e6c756a612",
+        "Value": "29.2",
+        "Name": "EA6",
+        "Latitude": 51.53085,
+        "Longitude": -0.292488
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "4265769a-3c04-421d-b55f-8c474e4c41d5",
+        "Value": "5.9",
+        "Name": "BG2",
+        "Latitude": 51.529389,
+        "Longitude": 0.132857
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "60bd5e24-49f5-49b5-8dc2-be4932fba2cf",
+        "Value": "12.8",
+        "Name": "BT5",
+        "Latitude": 51.552656,
+        "Longitude": -0.248774
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "c0721c2b-8b49-44d0-b49e-665a317b27ff",
+        "Value": "6.4",
+        "Name": "BG1",
+        "Latitude": 51.563752,
+        "Longitude": 0.177891
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "32ff0ea1-0365-4c30-b96f-06bb1a55ed74",
+        "Value": "14.8",
+        "Name": "WM5",
+        "Latitude": 51.5119769826,
+        "Longitude": -0.1216272033
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "abf2dd0b-ad88-43ae-8c39-57fcf289d5b0",
+        "Value": "23.5",
+        "Name": "ST6",
+        "Latitude": 51.377923,
+        "Longitude": -0.240414
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "d33635e2-d1a5-48bb-b37f-8c6ea9b6786e",
+        "Value": "16.3",
+        "Name": "WA2",
+        "Latitude": 51.456962,
+        "Longitude": -0.191074
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "4760b3a5-59b1-4d51-aa84-f234124db81c",
+        "Value": "-0.5",
+        "Name": "CD1",
+        "Latitude": 51.544219,
+        "Longitude": -0.175284
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "e021b6ab-5eca-4490-b0c9-21d47d9b8957",
+        "Value": "20.3",
+        "Name": "BT6",
+        "Latitude": 51.537799,
+        "Longitude": -0.247793
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "95be4085-d732-4227-ab2b-e944ce7f6df0",
+        "Value": "46.7",
+        "Name": "CT6",
+        "Latitude": 51.510499,
+        "Longitude": -0.091634
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "9913f9d3-b6ec-4406-b652-37d0de9e70c3",
+        "Value": "3.8",
+        "Name": "BX1",
+        "Latitude": 51.4659832747,
+        "Longitude": 0.184877127
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "7fc6d044-350e-4353-959e-9be070424864",
+        "Value": "9.5",
+        "Name": "CR5",
+        "Latitude": 51.411349,
+        "Longitude": -0.12311
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "d3a7b126-e21f-4684-b8ad-1b3bb7e5fa4a",
+        "Value": "13",
+        "Name": "CT3",
+        "Latitude": 51.5138471784,
+        "Longitude": -0.0777656818
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "c212151b-09b0-4634-802b-131fb8777935",
+        "Value": "31.3",
+        "Name": "IS2",
+        "Latitude": 51.555378,
+        "Longitude": -0.116146
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "29b2881d-9930-4ff1-aa28-2f56bc1fa756",
+        "Value": "11.8",
+        "Name": "GR9",
+        "Latitude": 51.456357,
+        "Longitude": 0.040725
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "551dca00-cac3-4edc-8293-0a023a89518a",
+        "Value": "10.3",
+        "Name": "GN0",
+        "Latitude": 51.490532,
+        "Longitude": 0.074003
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "d7981b2e-4dec-420c-8bc7-40b7ddc5429e",
+        "Value": "14.9",
+        "Name": "EN4",
+        "Latitude": 51.614864007,
+        "Longitude": -0.0507658364
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "596f0ecf-a9ba-4c0d-9064-7e6a222fc56d",
+        "Value": "5.1",
+        "Name": "GB6",
+        "Latitude": 51.4563,
+        "Longitude": 0.085606
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "f5289022-ec7e-4ff8-9acd-4211e947b952",
+        "Value": "13.3",
+        "Name": "EN5",
+        "Latitude": 51.613865,
+        "Longitude": -0.125338
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "47f20356-7bf6-4ce0-b5d7-4123c44f8229",
+        "Value": "25.6",
+        "Name": "GR8",
+        "Latitude": 51.486884,
+        "Longitude": 0.017901
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "5876bb67-8750-4c9e-88ff-b22099eae25b",
+        "Value": "-3.4",
+        "Name": "GR4",
+        "Latitude": 51.45258,
+        "Longitude": 0.070766
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "14261bfc-2d11-4c35-9a27-a73c724e6904",
+        "Value": "7.9",
+        "Name": "GN3",
+        "Latitude": 51.486957,
+        "Longitude": 0.095111
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "0ce44b08-e28b-4ed6-8eca-cebfb6db0bde",
+        "Value": "18.9",
+        "Name": "GR7",
+        "Latitude": 51.472504,
+        "Longitude": -0.012381
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "56fd6318-7233-40e2-a6aa-39971baba22e",
+        "Value": "19.4",
+        "Name": "HV3",
+        "Latitude": 51.572976,
+        "Longitude": 0.179079
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "0c3ad903-1512-4775-bac9-d1ca91ebed51",
+        "Value": "26.4",
+        "Name": "HK6",
+        "Latitude": 51.526454,
+        "Longitude": -0.08491
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "7f95c811-819f-4c5d-913b-4d58e6b7c140",
+        "Value": "26.5",
+        "Name": "HG1",
+        "Latitude": 51.599302,
+        "Longitude": -0.068218
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "a6ad5d2e-a1fb-4d05-a9d5-9cb680cd5abc",
+        "Value": "14.9",
+        "Name": "HV1",
+        "Latitude": 51.5207874593,
+        "Longitude": 0.2054607057
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "7dac8e6e-d45b-4bb9-8512-06527d7229f1",
+        "Value": "9.9",
+        "Name": "HR1",
+        "Latitude": 51.617327,
+        "Longitude": -0.298775
+      },
+      {
+        "Timestamp": 1549238400000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "5c257148-13ca-410a-8e7c-c313b769ec75",
+        "Value": "16.9",
+        "Name": "HR2",
+        "Latitude": 51.588417,
+        "Longitude": -0.362989
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "066a1847-2e01-4b36-959e-786ceff01173",
+        "Value": "51.7",
+        "Name": "LW1",
+        "Latitude": 51.445468,
+        "Longitude": -0.020266
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "a74808e6-c537-4a26-8133-d4407fb37a1e",
+        "Value": "54.1",
+        "Name": "RB4",
+        "Latitude": 51.57661,
+        "Longitude": 0.030858
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "83c7f4f6-ca98-40b6-a091-c3b28b206626",
+        "Value": "57",
+        "Name": "TH2",
+        "Latitude": 51.5225294861,
+        "Longitude": -0.0421550992
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "7475490b-3d67-4bcc-9cbe-75b6dd574f49",
+        "Value": "45.8",
+        "Name": "RI1",
+        "Latitude": 51.480189,
+        "Longitude": -0.237335
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "3704c8e1-d93b-4efa-9c69-d4fda8fc805e",
+        "Value": "43.2",
+        "Name": "ST5",
+        "Latitude": 51.3892869045,
+        "Longitude": -0.1416615248
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "d36ee57b-a5cd-4dea-81e6-e9c0fb37bc76",
+        "Value": "43.9",
+        "Name": "SK5",
+        "Latitude": 51.4804994936,
+        "Longitude": -0.0595528933
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "d33635e2-d1a5-48bb-b37f-8c6ea9b6786e",
+        "Value": "65.2",
+        "Name": "WA2",
+        "Latitude": 51.456962,
+        "Longitude": -0.191074
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "95be4085-d732-4227-ab2b-e944ce7f6df0",
+        "Value": "82.2",
+        "Name": "CT6",
+        "Latitude": 51.510499,
+        "Longitude": -0.091634
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "95e12467-be3e-4bf2-92ea-29bd1bf5a698",
+        "Value": "43.5",
+        "Name": "LW2",
+        "Latitude": 51.474954,
+        "Longitude": -0.039641
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "c212151b-09b0-4634-802b-131fb8777935",
+        "Value": "68.3",
+        "Name": "IS2",
+        "Latitude": 51.555378,
+        "Longitude": -0.116146
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "dd302595-54c8-424d-ac28-e15820612fb6",
+        "Value": "56",
+        "Name": "IS6",
+        "Latitude": 51.557895,
+        "Longitude": -0.106989
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "14261bfc-2d11-4c35-9a27-a73c724e6904",
+        "Value": "58.4",
+        "Name": "GN3",
+        "Latitude": 51.486957,
+        "Longitude": 0.095111
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "0ce44b08-e28b-4ed6-8eca-cebfb6db0bde",
+        "Value": "53.3",
+        "Name": "GR7",
+        "Latitude": 51.472504,
+        "Longitude": -0.012381
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "0c3ad903-1512-4775-bac9-d1ca91ebed51",
+        "Value": "57.5",
+        "Name": "HK6",
+        "Latitude": 51.526454,
+        "Longitude": -0.08491
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "5876bb67-8750-4c9e-88ff-b22099eae25b",
+        "Value": "21.3",
+        "Name": "GR4",
+        "Latitude": 51.45258,
+        "Longitude": 0.070766
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "7fc6d044-350e-4353-959e-9be070424864",
+        "Value": "52.9",
+        "Name": "CR5",
+        "Latitude": 51.411349,
+        "Longitude": -0.12311
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "4760b3a5-59b1-4d51-aa84-f234124db81c",
+        "Value": "44.3",
+        "Name": "CD1",
+        "Latitude": 51.544219,
+        "Longitude": -0.175284
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "4ecc8379-5fe1-4a84-affa-6f9f4c6b8ea4",
+        "Value": "52.6",
+        "Name": "EA8",
+        "Latitude": 51.518948,
+        "Longitude": -0.265617
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "fd36e6dd-f8be-43ac-8ea2-48e6c756a612",
+        "Value": "85.1",
+        "Name": "EA6",
+        "Latitude": 51.53085,
+        "Longitude": -0.292488
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "47f20356-7bf6-4ce0-b5d7-4123c44f8229",
+        "Value": "75.7",
+        "Name": "GR8",
+        "Latitude": 51.486884,
+        "Longitude": 0.017901
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "551dca00-cac3-4edc-8293-0a023a89518a",
+        "Value": "50.1",
+        "Name": "GN0",
+        "Latitude": 51.490532,
+        "Longitude": 0.074003
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "3004cb8a-2e0d-4d7c-b4ac-5985d83418c1",
+        "Value": "65.5",
+        "Name": "LB5",
+        "Latitude": 51.485486774,
+        "Longitude": -0.1245452348
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "53f43c22-962c-4385-8070-7ec664a33755",
+        "Value": "70.3",
+        "Name": "TH4",
+        "Latitude": 51.5150461674,
+        "Longitude": -0.0084184927
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "77aca2bd-a825-476e-bc1d-9462b52b2924",
+        "Value": "32.1",
+        "Name": "RI2",
+        "Latitude": 51.476168,
+        "Longitude": -0.230427
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "56c745cd-ad6d-4550-bd9d-556979b1fc05",
+        "Value": "43.4",
+        "Name": "ST4",
+        "Latitude": 51.3586596125,
+        "Longitude": -0.1497239466
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "c0721c2b-8b49-44d0-b49e-665a317b27ff",
+        "Value": "45.7",
+        "Name": "BG1",
+        "Latitude": 51.563752,
+        "Longitude": 0.177891
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "8eaa7e71-8fb2-4463-bb60-6d2f5d0371fb",
+        "Value": "73.6",
+        "Name": "MY1",
+        "Latitude": 51.52254,
+        "Longitude": -0.15459
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "e021b6ab-5eca-4490-b0c9-21d47d9b8957",
+        "Value": "65.4",
+        "Name": "BT6",
+        "Latitude": 51.537799,
+        "Longitude": -0.247793
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "596f0ecf-a9ba-4c0d-9064-7e6a222fc56d",
+        "Value": "36.4",
+        "Name": "GB6",
+        "Latitude": 51.4563,
+        "Longitude": 0.085606
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "f5289022-ec7e-4ff8-9acd-4211e947b952",
+        "Value": "78.1",
+        "Name": "EN5",
+        "Latitude": 51.613865,
+        "Longitude": -0.125338
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "9913f9d3-b6ec-4406-b652-37d0de9e70c3",
+        "Value": "42.4",
+        "Name": "BX1",
+        "Latitude": 51.4659832747,
+        "Longitude": 0.184877127
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "29b2881d-9930-4ff1-aa28-2f56bc1fa756",
+        "Value": "51.6",
+        "Name": "GR9",
+        "Latitude": 51.456357,
+        "Longitude": 0.040725
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "56fd6318-7233-40e2-a6aa-39971baba22e",
+        "Value": "41.9",
+        "Name": "HV3",
+        "Latitude": 51.572976,
+        "Longitude": 0.179079
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "dab0f36f-a630-4095-a8e6-0fe4114dc053",
+        "Value": "82.3",
+        "Name": "BT4",
+        "Latitude": 51.552476,
+        "Longitude": -0.258089
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "32ff0ea1-0365-4c30-b96f-06bb1a55ed74",
+        "Value": "64.1",
+        "Name": "WM5",
+        "Latitude": 51.5119769826,
+        "Longitude": -0.1216272033
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "5c257148-13ca-410a-8e7c-c313b769ec75",
+        "Value": "59.2",
+        "Name": "HR2",
+        "Latitude": 51.588417,
+        "Longitude": -0.362989
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "60bd5e24-49f5-49b5-8dc2-be4932fba2cf",
+        "Value": "60.2",
+        "Name": "BT5",
+        "Latitude": 51.552656,
+        "Longitude": -0.248774
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "d7981b2e-4dec-420c-8bc7-40b7ddc5429e",
+        "Value": "48.3",
+        "Name": "EN4",
+        "Latitude": 51.614864007,
+        "Longitude": -0.0507658364
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "1f43b87d-002e-45b0-a6a4-5f5aeaf70f52",
+        "Value": "34.6",
+        "Name": "BQ7",
+        "Latitude": 51.4946486813,
+        "Longitude": 0.1372791112
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "d7ce4006-0a32-4734-bd55-fc19b225aa14",
+        "Value": "48.5",
+        "Name": "KC1",
+        "Latitude": 51.5210467476,
+        "Longitude": -0.2134921396
+      },
+      {
+        "Timestamp": 1549324800000,
+        "Attribute_Name": "NO2",
+        "Attribute_Table": "NO2_33f935da_323d_45f8_87cb_ba58f75b4482",
+        "Sensor_id": "7f95c811-819f-4c5d-913b-4d58e6b7c140",
+        "Value": "54.1",
+        "Name": "HG1",
+        "Latitude": 51.599302,
+        "Longitude": -0.068218
+      }
+    ]
+  },
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Timestamp",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative"
+    }
+  }
+}

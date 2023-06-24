@@ -1,0 +1,375 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "background": "white",
+    "concat": {
+      "spacing": 10
+    }
+  },
+  "hconcat": [
+    {
+      "title": {
+        "text": "Mapping the garment supply chain",
+        "subtitle": [
+          "25 Largest Shoe Factories"
+        ],
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "anchor": "start",
+        "color": "black"
+      },
+      "width": 300,
+      "height": 300,
+      "layer": [
+        {
+          "data": {
+            "name": "map",
+            "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/world_countries.geojson",
+            "format": {
+              "property": "features"
+            }
+          },
+          "transform": [
+            {
+              "filter": "datum['properties']['ISO3'] != 'AQ'"
+            }
+          ],
+          "projection": {
+            "type": "naturalEarth1",
+            "translate": [
+              -630,
+              220
+            ],
+            "scale": 480
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "lightgray",
+            "stroke": "white",
+            "strokeWidth": 0.5
+          },
+          "encoding": {
+            "tooltip": {
+              "field": "properties.COUNTRY"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "locations",
+            "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/Global_WageIndicator_shoeFactories.csv"
+          },
+          "projection": {
+            "type": "naturalEarth1",
+            "translate": [
+              275,
+              175
+            ],
+            "scale": 300
+          },
+          "mark": {
+            "type": "circle"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "Longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "Latitude",
+              "type": "quantitative"
+            },
+            "size": {
+              "field": "number",
+              "type": "quantitative",
+              "legend": null,
+              "scale": {
+                "range": [
+                  10,
+                  100
+                ]
+              }
+            },
+            "color": {
+              "field": "brand",
+              "type": "nominal",
+              "legend": {
+                "orient": "bottom",
+                "title": null,
+                "labelFontSize": 12,
+                "offset": -20
+              },
+              "scale": {
+                "range": [
+                  "#c41e3a",
+                  "#005147"
+                ]
+              }
+            },
+            "tooltip": [
+              {
+                "field": "country",
+                "title": "Country"
+              },
+              {
+                "field": "location2",
+                "title": "Region"
+              },
+              {
+                "field": "number",
+                "format": ",",
+                "title": "Workers"
+              },
+              {
+                "field": "brand",
+                "title": "Brand"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "vconcat": [
+        {
+          "width": 200,
+          "height": 160,
+          "title": {
+            "text": "Vietnam",
+            "fontSize": 12,
+            "fontWeight": 400
+          },
+          "projection": {
+            "type": "mercator",
+            "center": [
+              104,
+              14.5
+            ],
+            "scale": 1800
+          },
+          "layer": [
+            {
+              "data": {
+                "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/map_VNM_regions.geojson",
+                "format": {
+                  "property": "features"
+                }
+              },
+              "mark": {
+                "type": "geoshape",
+                "fill": "slategrey",
+                "fillOpacity": 0.6,
+                "stroke": "white",
+                "strokeWidth": 0.5
+              },
+              "encoding": {
+                "tooltip": [
+                  {
+                    "field": "properties.Name",
+                    "title": "Province"
+                  }
+                ]
+              }
+            },
+            {
+              "data": {
+                "name": "map",
+                "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/world_countries.geojson",
+                "format": {
+                  "property": "features"
+                }
+              },
+              "transform": [
+                {
+                  "filter": {
+                    "field": "properties.ISO3",
+                    "oneOf": [
+                      "LAO",
+                      "KHM",
+                      "THA"
+                    ]
+                  }
+                }
+              ],
+              "mark": {
+                "type": "geoshape",
+                "fill": "lightgray",
+                "stroke": "white",
+                "strokeWidth": 0.5
+              },
+              "encoding": {
+                "tooltip": {
+                  "field": "properties.COUNTRY"
+                }
+              }
+            },
+            {
+              "data": {
+                "name": "locations"
+              },
+              "transform": [
+                {
+                  "filter": "datum.ISO3 == 'VNM'"
+                }
+              ],
+              "mark": {
+                "type": "circle",
+                "fillOpacity": 1
+              },
+              "encoding": {
+                "longitude": {
+                  "field": "Longitude",
+                  "type": "quantitative"
+                },
+                "latitude": {
+                  "field": "Latitude",
+                  "type": "quantitative"
+                },
+                "size": {
+                  "field": "number",
+                  "type": "quantitative",
+                  "legend": null,
+                  "scale": {
+                    "range": [
+                      10,
+                      100
+                    ]
+                  }
+                },
+                "color": {
+                  "field": "brand",
+                  "type": "nominal"
+                },
+                "tooltip": [
+                  {
+                    "field": "country",
+                    "title": "Country"
+                  },
+                  {
+                    "field": "location2",
+                    "title": "Region"
+                  },
+                  {
+                    "field": "number",
+                    "format": ",",
+                    "title": "Workers"
+                  },
+                  {
+                    "field": "brand",
+                    "title": "Brand"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "width": 200,
+          "height": 120,
+          "title": {
+            "text": "Indonesia",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "offset": -5
+          },
+          "layer": [
+            {
+              "data": {
+                "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/map_IDN_regions.geojson",
+                "format": {
+                  "property": "features"
+                }
+              },
+              "projection": {
+                "type": "identity",
+                "reflectY": true,
+                "translate": [
+                  -5580,
+                  -300
+                ],
+                "scale": 53
+              },
+              "mark": {
+                "type": "geoshape",
+                "fill": "slategray",
+                "fillOpacity": 0.6,
+                "stroke": "white",
+                "strokeWidth": 0.5
+              },
+              "encoding": {
+                "tooltip": [
+                  {
+                    "field": "properties.Propinsi",
+                    "title": "Province"
+                  }
+                ]
+              }
+            },
+            {
+              "data": {
+                "name": "locations"
+              },
+              "transform": [
+                {
+                  "filter": "datum.ISO3 == 'IDN'"
+                }
+              ],
+              "projection": {
+                "type": "identity",
+                "reflectY": true,
+                "scale": 100
+              },
+              "mark": {
+                "type": "circle"
+              },
+              "encoding": {
+                "longitude": {
+                  "field": "Longitude",
+                  "type": "quantitative"
+                },
+                "latitude": {
+                  "field": "Latitude",
+                  "type": "quantitative"
+                },
+                "size": {
+                  "field": "number",
+                  "type": "quantitative",
+                  "legend": null,
+                  "scale": {
+                    "range": [
+                      10,
+                      100
+                    ]
+                  }
+                },
+                "color": {
+                  "field": "brand",
+                  "type": "nominal"
+                },
+                "tooltip": [
+                  {
+                    "field": "country",
+                    "title": "Country"
+                  },
+                  {
+                    "field": "location2",
+                    "title": "Region"
+                  },
+                  {
+                    "field": "number",
+                    "format": ",",
+                    "title": "Workers"
+                  },
+                  {
+                    "field": "brand",
+                    "title": "Brand"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

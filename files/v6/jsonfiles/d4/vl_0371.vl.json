@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Back from the brink",
+    "subtitle": [
+      "Proportion of firms deemed 'At Risk' of failure",
+      "Source: ONS (2021), Van Reenen and Lambert (2021)",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/atRiskFirmsBySizeLong.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 300,
+  "width": 280,
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "selection": {
+    "firmSize": {
+      "type": "multi",
+      "fields": [
+        "employees"
+      ],
+      "bind": "legend"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "dateUTC",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": true,
+        "format": "%"
+      }
+    },
+    "color": {
+      "field": "employees",
+      "type": "nominal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "title": "Employees:",
+      "legend": {
+        "orient": "none",
+        "legendX": 200,
+        "legendY": 10,
+        "columns": 1,
+        "fillColor": "white",
+        "cornerRadius": 10,
+        "padding": 5,
+        "strokeColor": "greenyellow"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "firmSize",
+        "value": 1
+      },
+      "value": 0.1
+    }
+  }
+}

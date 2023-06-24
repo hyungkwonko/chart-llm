@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Tufte inspired chart, with white grid lines over the bars",
+  "title": {
+    "text": "US: top trade partners - goods",
+    "subtitle": [
+      "Total trade (imports plus exports). Annual to 2023. Million USD.",
+      "Source: Census Bureau",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "view": {
+    "stroke": "transparent"
+  },
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch7_Trade/UStradePartnersGoods.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.tradePartner<21"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "rgb(128,0,0)"
+  },
+  "encoding": {
+    "x": {
+      "field": "tradeTotal",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "zindex": 1,
+        "gridColor": "white",
+        "gridWidth": 0.5,
+        "labelAngle": 0,
+        "format": "f"
+      }
+    },
+    "y": {
+      "field": "Country",
+      "title": null,
+      "type": "nominal",
+      "sort": "-x"
+    }
+  }
+}

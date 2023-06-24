@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/hbhungg/tinygrid/main/website/forecast/data/final_forecast_building03.csv"
+  },
+  "width": "container",
+  "title": "Buildings 0, 1 and 3 from 1st October to 30th November 2020",
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "timestamp",
+          "type": "temporal",
+          "title": "Timestamp"
+        },
+        "y": {
+          "field": "energyDemand",
+          "type": "quantitative",
+          "title": "Energy Demand"
+        },
+        "color": {
+          "field": "building",
+          "type": "nominal",
+          "title": "Building"
+        }
+      },
+      "layer": [
+        {
+          "mark": "line"
+        },
+        {
+          "params": [
+            {
+              "name": "label",
+              "select": {
+                "type": "point",
+                "encodings": [
+                  "x"
+                ],
+                "nearest": true,
+                "on": "mouseover"
+              }
+            }
+          ],
+          "mark": "point",
+          "encoding": {
+            "opacity": {
+              "condition": {
+                "param": "label",
+                "empty": false,
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "param": "label",
+            "empty": false
+          }
+        }
+      ],
+      "layer": [
+        {
+          "encoding": {
+            "text": {
+              "type": "quantitative",
+              "field": "energyDemand"
+            },
+            "x": {
+              "type": "temporal",
+              "field": "timestamp"
+            },
+            "y": {
+              "type": "quantitative",
+              "field": "energyDemand"
+            }
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "stroke": "white",
+                "strokeWidth": 2,
+                "align": "left",
+                "dx": 5,
+                "dy": -5
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 5,
+                "dy": -5
+              },
+              "encoding": {
+                "color": {
+                  "type": "nominal",
+                  "field": "building"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {}
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 150,
+  "height": 150,
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  },
+  "title": {
+    "text": "Clay",
+    "fontSize": 14
+  },
+  "data": {
+    "values": [
+      {
+        "Surface": "Clay",
+        "Percentage": "0.3653"
+      },
+      {
+        "Surface": "Other",
+        "Percentage": "0.6347"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "innerRadius": 50
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": "36.53%",
+        "fontSize": 25
+      },
+      "encoding": {
+        "color": {
+          "value": "black"
+        }
+      }
+    }
+  ],
+  "encoding": {
+    "theta": {
+      "field": "Percentage",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Surface",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Clay",
+          "Other"
+        ],
+        "range": [
+          "#c9532e",
+          "#95A5A6"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Surface",
+        "type": "nominal"
+      },
+      {
+        "field": "Percentage",
+        "type": "quantitative",
+        "title": "Percentage of games played on this surface",
+        "format": ".2%"
+      }
+    ]
+  },
+  "background": "#fffcf9"
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Poverty trap",
+    "subtitle": [
+      "Saving, depreciation, and capital assumulation",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch2_Growth/solowModel.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "s2",
+        "d"
+      ],
+      "as": [
+        "variable",
+        "value"
+      ]
+    }
+  ],
+  "vconcat": [
+    {
+      "height": 150,
+      "width": 400,
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "k",
+          "type": "quantitative",
+          "title": null,
+          "axis": {
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Saving and depreciation"
+        },
+        "color": {
+          "field": "variable",
+          "title": null,
+          "scale": {
+            "range": [
+              "red",
+              "green",
+              "rgb(128,0,0)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "height": 150,
+      "width": 400,
+      "mark": {
+        "type": "bar",
+        "color": "rgb(128,0,0)",
+        "size": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "k",
+          "type": "quantitative",
+          "title": "Capital"
+        },
+        "y": {
+          "field": "a2",
+          "type": "quantitative",
+          "title": "Capital Accumluation"
+        }
+      }
+    }
+  ]
+}

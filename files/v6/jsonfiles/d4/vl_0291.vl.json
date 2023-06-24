@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The total consumption of G7 Countries since 1972 (Last 50 years)",
+    "font": "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif",
+    "subtitle": "Source: World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "darkblue"
+  },
+  "height": 400,
+  "width": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/SamJones033/SamJones033.github.io/main/consumption.csv"
+  },
+  "mark": {
+    "type": "line",
+    "opacity": 1,
+    "size": 2.5
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Year",
+      "scale": {
+        "domain": [
+          "1972",
+          "2021"
+        ]
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Total accumulated spending in US$ "
+    },
+    "color": {
+      "field": "country",
+      "type": "nominal",
+      "title": "G7 Countries",
+      "scale": {
+        "scheme": "set1"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "date",
+        "type": "temporal",
+        "title": "Date"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "The total consumption of G7 Countries over the last 30 years"
+      }
+    ]
+  },
+  "config": {}
+}

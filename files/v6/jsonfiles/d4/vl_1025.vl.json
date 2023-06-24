@@ -1,0 +1,120 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Median House Prices vs Unemployment Rate",
+    "subtitle": "By English Constituency (2022).  Source:ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "#FeFeF8",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ferguswalshe/ferguswalshe.github.io/main/unemployvsmedianhouseprice.csv"
+  },
+  "height": 500,
+  "width": 550,
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "color": "rgb(0,47,167)",
+        "size": 100
+      },
+      "encoding": {
+        "x": {
+          "field": "MedianHPrice",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1400000
+            ]
+          },
+          "title": "MedianHPrice"
+        },
+        "y": {
+          "field": "UnempConstRate",
+          "type": "quantitative",
+          "title": "UnempConstRate"
+        },
+        "tooltip": [
+          {
+            "field": "ConstituencyName",
+            "type": "ordinal",
+            "title": "ConstituencyName"
+          },
+          {
+            "field": "UnempConstRate",
+            "type": "quantitative",
+            "title": "UnempConstRate",
+            "format": ".2f"
+          },
+          {
+            "field": "MedianHPrice",
+            "type": "quantitative",
+            "title": "MedianHPrice",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "grey"
+      },
+      "transform": [
+        {
+          "regression": "UnempConstRate",
+          "on": "MedianHPrice",
+          "extent": [
+            0,
+            1400000
+          ]
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "MedianHPrice",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "UnempConstRate",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "UnempConstRate",
+          "on": "MedianHPrice",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "grey",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ]
+}

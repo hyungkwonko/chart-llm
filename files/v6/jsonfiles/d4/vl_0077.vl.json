@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 100,
+  "data": {
+    "url": "https://raw.githubusercontent.com/COG-UK/UK-lineage-dynamics-analysis/2ca84630ab1fb80b949d25b05b6578fa9674f574/analyses/epidemiological/parameter-estimate-asymptomatic-ratio.json"
+  },
+  "encoding": {
+    "y": {
+      "field": "title",
+      "type": "ordinal",
+      "title": null
+    },
+    "color": {
+      "value": "black"
+    },
+    "tooltip": [
+      {
+        "field": "pointEstimate"
+      },
+      {
+        "field": "title"
+      }
+    ],
+    "href": {
+      "field": "doi",
+      "type": "nominal"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "shape": "square",
+        "size": 70
+      },
+      "encoding": {
+        "x": {
+          "field": "pointEstimate",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "title": "Asymptomatic ratio (as a percentage)"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule"
+      },
+      "encoding": {
+        "x": {
+          "field": "lowerBound",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "upperBound",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

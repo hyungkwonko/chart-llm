@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Yearly Terrorist Attacks in World Regions",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "type": "nominal",
+      "field": "iyear",
+      "axis": {
+        "title": "Year"
+      }
+    },
+    "y": {
+      "aggregate": "sum",
+      "type": "quantitative",
+      "field": "Attack Count"
+    },
+    "color": {
+      "type": "nominal",
+      "field": "region_txt",
+      "scale": {
+        "scheme": "category20"
+      },
+      "legend": {
+        "title": "Region"
+      }
+    }
+  },
+  "description": "multiSeriesLineChart",
+  "width": 1272,
+  "height": 505.5,
+  "data": {
+    "url": "https://raw.githubusercontent.com/thomasxu2009/ChartStory/1888d7060e265cc2e1493f5555412997857945c5/savedFile_globalTerr/Ewen2Data.json",
+    "format": {
+      "parse": {
+        "iyear": "number",
+        "Attack Count": "number"
+      }
+    }
+  }
+}

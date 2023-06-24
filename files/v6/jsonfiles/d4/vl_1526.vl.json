@@ -1,0 +1,2835 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-b0239460d902047d4e406bbb54adf010"
+  },
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "type": "nominal",
+      "field": "db_name"
+    },
+    "tooltip": [
+      {
+        "type": "nominal",
+        "field": "country"
+      },
+      {
+        "type": "nominal",
+        "field": "db_name"
+      },
+      {
+        "type": "quantitative",
+        "field": "num_sequences"
+      }
+    ],
+    "x": {
+      "type": "nominal",
+      "field": "country",
+      "sort": "-y"
+    },
+    "y": {
+      "type": "quantitative",
+      "field": "num_sequences",
+      "scale": {
+        "type": "symlog"
+      }
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-b0239460d902047d4e406bbb54adf010": [
+      {
+        "country": "Afghanistan",
+        "continent": "Asia",
+        "iso_2_code": "AF",
+        "db_name": "GISAID sequences",
+        "num_sequences": 108
+      },
+      {
+        "country": "Albania",
+        "continent": "Europe",
+        "iso_2_code": "AL",
+        "db_name": "GISAID sequences",
+        "num_sequences": 59
+      },
+      {
+        "country": "Algeria",
+        "continent": "Africa",
+        "iso_2_code": "DZ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 329
+      },
+      {
+        "country": "Andorra",
+        "continent": "Europe",
+        "iso_2_code": "AD",
+        "db_name": "GISAID sequences",
+        "num_sequences": 273
+      },
+      {
+        "country": "Angola",
+        "continent": "Africa",
+        "iso_2_code": "AO",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1282
+      },
+      {
+        "country": "Antigua and Barbuda",
+        "continent": "North America",
+        "iso_2_code": "AG",
+        "db_name": "GISAID sequences",
+        "num_sequences": 219
+      },
+      {
+        "country": "Argentina",
+        "continent": "South America",
+        "iso_2_code": "AR",
+        "db_name": "GISAID sequences",
+        "num_sequences": 20165
+      },
+      {
+        "country": "Armenia",
+        "continent": "Europe",
+        "iso_2_code": "AM",
+        "db_name": "GISAID sequences",
+        "num_sequences": 195
+      },
+      {
+        "country": "Aruba",
+        "continent": "North America",
+        "iso_2_code": "AW",
+        "db_name": "GISAID sequences",
+        "num_sequences": 3456
+      },
+      {
+        "country": "Australia",
+        "continent": "Oceania",
+        "iso_2_code": "AU",
+        "db_name": "GISAID sequences",
+        "num_sequences": 136022
+      },
+      {
+        "country": "Austria",
+        "continent": "Europe",
+        "iso_2_code": "AT",
+        "db_name": "GISAID sequences",
+        "num_sequences": 154737
+      },
+      {
+        "country": "Azerbaijan",
+        "continent": "Europe",
+        "iso_2_code": "AZ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 155
+      },
+      {
+        "country": "Bahamas",
+        "continent": "North America",
+        "iso_2_code": "BS",
+        "db_name": "GISAID sequences",
+        "num_sequences": 263
+      },
+      {
+        "country": "Bahrain",
+        "continent": "Asia",
+        "iso_2_code": "BH",
+        "db_name": "GISAID sequences",
+        "num_sequences": 7908
+      },
+      {
+        "country": "Bangladesh",
+        "continent": "Asia",
+        "iso_2_code": "BD",
+        "db_name": "GISAID sequences",
+        "num_sequences": 7220
+      },
+      {
+        "country": "Barbados",
+        "continent": "North America",
+        "iso_2_code": "BB",
+        "db_name": "GISAID sequences",
+        "num_sequences": 159
+      },
+      {
+        "country": "Belarus",
+        "continent": "Europe",
+        "iso_2_code": "BY",
+        "db_name": "GISAID sequences",
+        "num_sequences": 526
+      },
+      {
+        "country": "Belgium",
+        "continent": "Europe",
+        "iso_2_code": "BE",
+        "db_name": "GISAID sequences",
+        "num_sequences": 140801
+      },
+      {
+        "country": "Belize",
+        "continent": "North America",
+        "iso_2_code": "BZ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 879
+      },
+      {
+        "country": "Benin",
+        "continent": "Africa",
+        "iso_2_code": "BJ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 880
+      },
+      {
+        "country": "Bermuda",
+        "continent": "North America",
+        "iso_2_code": "BM",
+        "db_name": "GISAID sequences",
+        "num_sequences": 134
+      },
+      {
+        "country": "Bolivia",
+        "continent": "South America",
+        "iso_2_code": "BO",
+        "db_name": "GISAID sequences",
+        "num_sequences": 345
+      },
+      {
+        "country": "Bonaire",
+        "continent": "North America",
+        "iso_2_code": "BQ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1662
+      },
+      {
+        "country": "Bosnia and Herzegovina",
+        "continent": "Europe",
+        "iso_2_code": "BA",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1513
+      },
+      {
+        "country": "Botswana",
+        "continent": "Africa",
+        "iso_2_code": "BW",
+        "db_name": "GISAID sequences",
+        "num_sequences": 4360
+      },
+      {
+        "country": "Brazil",
+        "continent": "South America",
+        "iso_2_code": "BR",
+        "db_name": "GISAID sequences",
+        "num_sequences": 169292
+      },
+      {
+        "country": "Brunei",
+        "continent": "Asia",
+        "iso_2_code": "BN",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2681
+      },
+      {
+        "country": "Bulgaria",
+        "continent": "Europe",
+        "iso_2_code": "BG",
+        "db_name": "GISAID sequences",
+        "num_sequences": 18271
+      },
+      {
+        "country": "Burkina Faso",
+        "continent": "Africa",
+        "iso_2_code": "BF",
+        "db_name": "GISAID sequences",
+        "num_sequences": 672
+      },
+      {
+        "country": "Burundi",
+        "continent": "Africa",
+        "iso_2_code": "BI",
+        "db_name": "GISAID sequences",
+        "num_sequences": 158
+      },
+      {
+        "country": "C\u00f4te d'Ivoire",
+        "continent": "Africa",
+        "iso_2_code": "CI",
+        "db_name": "GISAID sequences",
+        "num_sequences": 758
+      },
+      {
+        "country": "Cabo Verde",
+        "continent": "Africa",
+        "iso_2_code": "CV",
+        "db_name": "GISAID sequences",
+        "num_sequences": 584
+      },
+      {
+        "country": "Cambodia",
+        "continent": "Asia",
+        "iso_2_code": "KH",
+        "db_name": "GISAID sequences",
+        "num_sequences": 3309
+      },
+      {
+        "country": "Cameroon",
+        "continent": "Africa",
+        "iso_2_code": "CM",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1332
+      },
+      {
+        "country": "Canada",
+        "continent": "North America",
+        "iso_2_code": "CA",
+        "db_name": "GISAID sequences",
+        "num_sequences": 408981
+      },
+      {
+        "country": "Central African Republic",
+        "continent": "Africa",
+        "iso_2_code": "CF",
+        "db_name": "GISAID sequences",
+        "num_sequences": 174
+      },
+      {
+        "country": "Chad",
+        "continent": "Africa",
+        "iso_2_code": "TD",
+        "db_name": "GISAID sequences",
+        "num_sequences": 58
+      },
+      {
+        "country": "Chile",
+        "continent": "South America",
+        "iso_2_code": "CL",
+        "db_name": "GISAID sequences",
+        "num_sequences": 31679
+      },
+      {
+        "country": "China",
+        "continent": "Asia",
+        "iso_2_code": "CN",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2615
+      },
+      {
+        "country": "Colombia",
+        "continent": "South America",
+        "iso_2_code": "CO",
+        "db_name": "GISAID sequences",
+        "num_sequences": 21705
+      },
+      {
+        "country": "Costa Rica",
+        "continent": "North America",
+        "iso_2_code": "CR",
+        "db_name": "GISAID sequences",
+        "num_sequences": 5996
+      },
+      {
+        "country": "Croatia",
+        "continent": "Europe",
+        "iso_2_code": "HR",
+        "db_name": "GISAID sequences",
+        "num_sequences": 35347
+      },
+      {
+        "country": "Cuba",
+        "continent": "North America",
+        "iso_2_code": "CU",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1521
+      },
+      {
+        "country": "Curacao",
+        "continent": "North America",
+        "iso_2_code": "CW",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1921
+      },
+      {
+        "country": "Cyprus",
+        "continent": "Europe",
+        "iso_2_code": "CY",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1416
+      },
+      {
+        "country": "Czech Republic",
+        "continent": "Europe",
+        "iso_2_code": "CZ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 46487
+      },
+      {
+        "country": "Democratic Republic of the Congo",
+        "continent": "Africa",
+        "iso_2_code": "CD",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1771
+      },
+      {
+        "country": "Denmark",
+        "continent": "Europe",
+        "iso_2_code": "DK",
+        "db_name": "GISAID sequences",
+        "num_sequences": 548413
+      },
+      {
+        "country": "Djibouti",
+        "continent": "Africa",
+        "iso_2_code": "DJ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 716
+      },
+      {
+        "country": "Dominica",
+        "continent": "North America",
+        "iso_2_code": "DM",
+        "db_name": "GISAID sequences",
+        "num_sequences": 39
+      },
+      {
+        "country": "Dominican Republic",
+        "continent": "North America",
+        "iso_2_code": "DO",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1425
+      },
+      {
+        "country": "Ecuador",
+        "continent": "South America",
+        "iso_2_code": "EC",
+        "db_name": "GISAID sequences",
+        "num_sequences": 6830
+      },
+      {
+        "country": "Egypt",
+        "continent": "Africa",
+        "iso_2_code": "EG",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2386
+      },
+      {
+        "country": "El Salvador",
+        "continent": "North America",
+        "iso_2_code": "SV",
+        "db_name": "GISAID sequences",
+        "num_sequences": 522
+      },
+      {
+        "country": "Equatorial Guinea",
+        "continent": "Africa",
+        "iso_2_code": "GQ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 213
+      },
+      {
+        "country": "Estonia",
+        "continent": "Europe",
+        "iso_2_code": "EE",
+        "db_name": "GISAID sequences",
+        "num_sequences": 13022
+      },
+      {
+        "country": "Eswatini",
+        "continent": "Africa",
+        "iso_2_code": "SZ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 977
+      },
+      {
+        "country": "Ethiopia",
+        "continent": "Africa",
+        "iso_2_code": "ET",
+        "db_name": "GISAID sequences",
+        "num_sequences": 628
+      },
+      {
+        "country": "Fiji",
+        "continent": "Oceania",
+        "iso_2_code": "FJ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 531
+      },
+      {
+        "country": "Finland",
+        "continent": "Europe",
+        "iso_2_code": "FI",
+        "db_name": "GISAID sequences",
+        "num_sequences": 35160
+      },
+      {
+        "country": "France",
+        "continent": "Europe",
+        "iso_2_code": "FR",
+        "db_name": "GISAID sequences",
+        "num_sequences": 429814
+      },
+      {
+        "country": "French Guiana",
+        "continent": "South America",
+        "iso_2_code": "GF",
+        "db_name": "GISAID sequences",
+        "num_sequences": 17
+      },
+      {
+        "country": "French Polynesia",
+        "continent": "Oceania",
+        "iso_2_code": "PF",
+        "db_name": "GISAID sequences",
+        "num_sequences": 112
+      },
+      {
+        "country": "Gabon",
+        "continent": "Africa",
+        "iso_2_code": "GA",
+        "db_name": "GISAID sequences",
+        "num_sequences": 968
+      },
+      {
+        "country": "Gambia",
+        "continent": "Africa",
+        "iso_2_code": "GM",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1352
+      },
+      {
+        "country": "Georgia",
+        "continent": "Europe",
+        "iso_2_code": "GE",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2020
+      },
+      {
+        "country": "Germany",
+        "continent": "Europe",
+        "iso_2_code": "DE",
+        "db_name": "GISAID sequences",
+        "num_sequences": 717509
+      },
+      {
+        "country": "Ghana",
+        "continent": "Africa",
+        "iso_2_code": "GH",
+        "db_name": "GISAID sequences",
+        "num_sequences": 3936
+      },
+      {
+        "country": "Greece",
+        "continent": "Europe",
+        "iso_2_code": "GR",
+        "db_name": "GISAID sequences",
+        "num_sequences": 19084
+      },
+      {
+        "country": "Grenada",
+        "continent": "North America",
+        "iso_2_code": "GD",
+        "db_name": "GISAID sequences",
+        "num_sequences": 58
+      },
+      {
+        "country": "Guadeloupe",
+        "continent": "North America",
+        "iso_2_code": "GP",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1061
+      },
+      {
+        "country": "Guatemala",
+        "continent": "North America",
+        "iso_2_code": "GT",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2276
+      },
+      {
+        "country": "Guinea",
+        "continent": "Africa",
+        "iso_2_code": "GN",
+        "db_name": "GISAID sequences",
+        "num_sequences": 698
+      },
+      {
+        "country": "Guinea-Bissau",
+        "continent": "Africa",
+        "iso_2_code": "GW",
+        "db_name": "GISAID sequences",
+        "num_sequences": 112
+      },
+      {
+        "country": "Guyana",
+        "continent": "South America",
+        "iso_2_code": "GY",
+        "db_name": "GISAID sequences",
+        "num_sequences": 145
+      },
+      {
+        "country": "Haiti",
+        "continent": "North America",
+        "iso_2_code": "HT",
+        "db_name": "GISAID sequences",
+        "num_sequences": 381
+      },
+      {
+        "country": "Honduras",
+        "continent": "North America",
+        "iso_2_code": "HN",
+        "db_name": "GISAID sequences",
+        "num_sequences": 231
+      },
+      {
+        "country": "Hong Kong",
+        "continent": "Asia",
+        "iso_2_code": "HK",
+        "db_name": "GISAID sequences",
+        "num_sequences": 11538
+      },
+      {
+        "country": "Hungary",
+        "continent": "Europe",
+        "iso_2_code": "HU",
+        "db_name": "GISAID sequences",
+        "num_sequences": 549
+      },
+      {
+        "country": "Iceland",
+        "continent": "Europe",
+        "iso_2_code": "IS",
+        "db_name": "GISAID sequences",
+        "num_sequences": 10495
+      },
+      {
+        "country": "India",
+        "continent": "Asia",
+        "iso_2_code": "IN",
+        "db_name": "GISAID sequences",
+        "num_sequences": 225008
+      },
+      {
+        "country": "Indonesia",
+        "continent": "Asia",
+        "iso_2_code": "ID",
+        "db_name": "GISAID sequences",
+        "num_sequences": 30348
+      },
+      {
+        "country": "Iran",
+        "continent": "Asia",
+        "iso_2_code": "IR",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2868
+      },
+      {
+        "country": "Iraq",
+        "continent": "Asia",
+        "iso_2_code": "IQ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1102
+      },
+      {
+        "country": "Ireland",
+        "continent": "Europe",
+        "iso_2_code": "IE",
+        "db_name": "GISAID sequences",
+        "num_sequences": 84074
+      },
+      {
+        "country": "Israel",
+        "continent": "Asia",
+        "iso_2_code": "IL",
+        "db_name": "GISAID sequences",
+        "num_sequences": 121950
+      },
+      {
+        "country": "Italy",
+        "continent": "Europe",
+        "iso_2_code": "IT",
+        "db_name": "GISAID sequences",
+        "num_sequences": 144635
+      },
+      {
+        "country": "Jamaica",
+        "continent": "North America",
+        "iso_2_code": "JM",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1960
+      },
+      {
+        "country": "Japan",
+        "continent": "Asia",
+        "iso_2_code": "JP",
+        "db_name": "GISAID sequences",
+        "num_sequences": 349007
+      },
+      {
+        "country": "Jordan",
+        "continent": "Asia",
+        "iso_2_code": "JO",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1531
+      },
+      {
+        "country": "Kazakhstan",
+        "continent": "Europe",
+        "iso_2_code": "KZ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1329
+      },
+      {
+        "country": "Kenya",
+        "continent": "Africa",
+        "iso_2_code": "KE",
+        "db_name": "GISAID sequences",
+        "num_sequences": 11062
+      },
+      {
+        "country": "Kiribati",
+        "continent": "Oceania",
+        "iso_2_code": "KI",
+        "db_name": "GISAID sequences",
+        "num_sequences": 30
+      },
+      {
+        "country": "Kosovo",
+        "continent": "Europe",
+        "iso_2_code": "XK",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1456
+      },
+      {
+        "country": "Kuwait",
+        "continent": "Asia",
+        "iso_2_code": "KW",
+        "db_name": "GISAID sequences",
+        "num_sequences": 925
+      },
+      {
+        "country": "Kyrgyzstan",
+        "continent": "Asia",
+        "iso_2_code": "KG",
+        "db_name": "GISAID sequences",
+        "num_sequences": 339
+      },
+      {
+        "country": "Laos",
+        "continent": "Asia",
+        "iso_2_code": "LA",
+        "db_name": "GISAID sequences",
+        "num_sequences": 460
+      },
+      {
+        "country": "Latvia",
+        "continent": "Europe",
+        "iso_2_code": "LV",
+        "db_name": "GISAID sequences",
+        "num_sequences": 18483
+      },
+      {
+        "country": "Lebanon",
+        "continent": "Asia",
+        "iso_2_code": "LB",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2330
+      },
+      {
+        "country": "Lesotho",
+        "continent": "Africa",
+        "iso_2_code": "LS",
+        "db_name": "GISAID sequences",
+        "num_sequences": 219
+      },
+      {
+        "country": "Liberia",
+        "continent": "Africa",
+        "iso_2_code": "LR",
+        "db_name": "GISAID sequences",
+        "num_sequences": 110
+      },
+      {
+        "country": "Libya",
+        "continent": "Africa",
+        "iso_2_code": "LY",
+        "db_name": "GISAID sequences",
+        "num_sequences": 69
+      },
+      {
+        "country": "Liechtenstein",
+        "continent": "Europe",
+        "iso_2_code": "LI",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1445
+      },
+      {
+        "country": "Lithuania",
+        "continent": "Europe",
+        "iso_2_code": "LT",
+        "db_name": "GISAID sequences",
+        "num_sequences": 40534
+      },
+      {
+        "country": "Luxembourg",
+        "continent": "Europe",
+        "iso_2_code": "LU",
+        "db_name": "GISAID sequences",
+        "num_sequences": 41457
+      },
+      {
+        "country": "Madagascar",
+        "continent": "Africa",
+        "iso_2_code": "MG",
+        "db_name": "GISAID sequences",
+        "num_sequences": 880
+      },
+      {
+        "country": "Malawi",
+        "continent": "Africa",
+        "iso_2_code": "MW",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1204
+      },
+      {
+        "country": "Malaysia",
+        "continent": "Asia",
+        "iso_2_code": "MY",
+        "db_name": "GISAID sequences",
+        "num_sequences": 22878
+      },
+      {
+        "country": "Maldives",
+        "continent": "Asia",
+        "iso_2_code": "MV",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1294
+      },
+      {
+        "country": "Mali",
+        "continent": "Africa",
+        "iso_2_code": "ML",
+        "db_name": "GISAID sequences",
+        "num_sequences": 74
+      },
+      {
+        "country": "Malta",
+        "continent": "Europe",
+        "iso_2_code": "MT",
+        "db_name": "GISAID sequences",
+        "num_sequences": 936
+      },
+      {
+        "country": "Marshall Islands",
+        "continent": "Oceania",
+        "iso_2_code": "MH",
+        "db_name": "GISAID sequences",
+        "num_sequences": 3
+      },
+      {
+        "country": "Martinique",
+        "continent": "North America",
+        "iso_2_code": "MQ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 215
+      },
+      {
+        "country": "Mauritania",
+        "continent": "Africa",
+        "iso_2_code": "MR",
+        "db_name": "GISAID sequences",
+        "num_sequences": 58
+      },
+      {
+        "country": "Mauritius",
+        "continent": "Africa",
+        "iso_2_code": "MU",
+        "db_name": "GISAID sequences",
+        "num_sequences": 3144
+      },
+      {
+        "country": "Mexico",
+        "continent": "North America",
+        "iso_2_code": "MX",
+        "db_name": "GISAID sequences",
+        "num_sequences": 70664
+      },
+      {
+        "country": "Micronesia",
+        "continent": "Oceania",
+        "iso_2_code": "FM",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2
+      },
+      {
+        "country": "Moldova",
+        "continent": "Europe",
+        "iso_2_code": "MD",
+        "db_name": "GISAID sequences",
+        "num_sequences": 605
+      },
+      {
+        "country": "Monaco",
+        "continent": "Europe",
+        "iso_2_code": "MC",
+        "db_name": "GISAID sequences",
+        "num_sequences": 97
+      },
+      {
+        "country": "Mongolia",
+        "continent": "Asia",
+        "iso_2_code": "MN",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1071
+      },
+      {
+        "country": "Montenegro",
+        "continent": "Europe",
+        "iso_2_code": "ME",
+        "db_name": "GISAID sequences",
+        "num_sequences": 750
+      },
+      {
+        "country": "Morocco",
+        "continent": "Africa",
+        "iso_2_code": "MA",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1048
+      },
+      {
+        "country": "Mozambique",
+        "continent": "Africa",
+        "iso_2_code": "MZ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1193
+      },
+      {
+        "country": "Myanmar",
+        "continent": "Asia",
+        "iso_2_code": "MM",
+        "db_name": "GISAID sequences",
+        "num_sequences": 150
+      },
+      {
+        "country": "Namibia",
+        "continent": "Africa",
+        "iso_2_code": null,
+        "db_name": "GISAID sequences",
+        "num_sequences": 1696
+      },
+      {
+        "country": "Nepal",
+        "continent": "Asia",
+        "iso_2_code": "NP",
+        "db_name": "GISAID sequences",
+        "num_sequences": 3306
+      },
+      {
+        "country": "Netherlands",
+        "continent": "Europe",
+        "iso_2_code": "NL",
+        "db_name": "GISAID sequences",
+        "num_sequences": 133856
+      },
+      {
+        "country": "New Zealand",
+        "continent": "Oceania",
+        "iso_2_code": "NZ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 16948
+      },
+      {
+        "country": "Nicaragua",
+        "continent": "North America",
+        "iso_2_code": "NI",
+        "db_name": "GISAID sequences",
+        "num_sequences": 566
+      },
+      {
+        "country": "Niger",
+        "continent": "Africa",
+        "iso_2_code": "NE",
+        "db_name": "GISAID sequences",
+        "num_sequences": 350
+      },
+      {
+        "country": "Nigeria",
+        "continent": "Africa",
+        "iso_2_code": "NG",
+        "db_name": "GISAID sequences",
+        "num_sequences": 7014
+      },
+      {
+        "country": "North Macedonia",
+        "continent": "Europe",
+        "iso_2_code": "MK",
+        "db_name": "GISAID sequences",
+        "num_sequences": 928
+      },
+      {
+        "country": "Norway",
+        "continent": "Europe",
+        "iso_2_code": "NO",
+        "db_name": "GISAID sequences",
+        "num_sequences": 69561
+      },
+      {
+        "country": "Oman",
+        "continent": "Asia",
+        "iso_2_code": "OM",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1034
+      },
+      {
+        "country": "Pakistan",
+        "continent": "Asia",
+        "iso_2_code": "PK",
+        "db_name": "GISAID sequences",
+        "num_sequences": 3631
+      },
+      {
+        "country": "Palau",
+        "continent": "Oceania",
+        "iso_2_code": "PW",
+        "db_name": "GISAID sequences",
+        "num_sequences": 35
+      },
+      {
+        "country": "Palestine",
+        "continent": "Asia",
+        "iso_2_code": "PS",
+        "db_name": "GISAID sequences",
+        "num_sequences": 718
+      },
+      {
+        "country": "Panama",
+        "continent": "North America",
+        "iso_2_code": "PA",
+        "db_name": "GISAID sequences",
+        "num_sequences": 5109
+      },
+      {
+        "country": "Papua New Guinea",
+        "continent": "Oceania",
+        "iso_2_code": "PG",
+        "db_name": "GISAID sequences",
+        "num_sequences": 4609
+      },
+      {
+        "country": "Paraguay",
+        "continent": "South America",
+        "iso_2_code": "PY",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2103
+      },
+      {
+        "country": "Peru",
+        "continent": "South America",
+        "iso_2_code": "PE",
+        "db_name": "GISAID sequences",
+        "num_sequences": 27089
+      },
+      {
+        "country": "Philippines",
+        "continent": "Asia",
+        "iso_2_code": "PH",
+        "db_name": "GISAID sequences",
+        "num_sequences": 21246
+      },
+      {
+        "country": "Poland",
+        "continent": "Europe",
+        "iso_2_code": "PL",
+        "db_name": "GISAID sequences",
+        "num_sequences": 84267
+      },
+      {
+        "country": "Portugal",
+        "continent": "Europe",
+        "iso_2_code": "PT",
+        "db_name": "GISAID sequences",
+        "num_sequences": 39860
+      },
+      {
+        "country": "Qatar",
+        "continent": "Asia",
+        "iso_2_code": "QA",
+        "db_name": "GISAID sequences",
+        "num_sequences": 4983
+      },
+      {
+        "country": "Republic of the Congo",
+        "continent": "Africa",
+        "iso_2_code": "CG",
+        "db_name": "GISAID sequences",
+        "num_sequences": 625
+      },
+      {
+        "country": "Reunion",
+        "continent": "Africa",
+        "iso_2_code": "RE",
+        "db_name": "GISAID sequences",
+        "num_sequences": 28
+      },
+      {
+        "country": "Romania",
+        "continent": "Europe",
+        "iso_2_code": "RO",
+        "db_name": "GISAID sequences",
+        "num_sequences": 15496
+      },
+      {
+        "country": "Russia",
+        "continent": "Europe",
+        "iso_2_code": "RU",
+        "db_name": "GISAID sequences",
+        "num_sequences": 19834
+      },
+      {
+        "country": "Rwanda",
+        "continent": "Africa",
+        "iso_2_code": "RW",
+        "db_name": "GISAID sequences",
+        "num_sequences": 917
+      },
+      {
+        "country": "Saint Barth\u00e9lemy",
+        "continent": "North America",
+        "iso_2_code": "BL",
+        "db_name": "GISAID sequences",
+        "num_sequences": 14
+      },
+      {
+        "country": "Saint Kitts and Nevis",
+        "continent": "North America",
+        "iso_2_code": "KN",
+        "db_name": "GISAID sequences",
+        "num_sequences": 74
+      },
+      {
+        "country": "Saint Lucia",
+        "continent": "North America",
+        "iso_2_code": "LC",
+        "db_name": "GISAID sequences",
+        "num_sequences": 184
+      },
+      {
+        "country": "Saint Martin",
+        "continent": "North America",
+        "iso_2_code": "MF",
+        "db_name": "GISAID sequences",
+        "num_sequences": 327
+      },
+      {
+        "country": "Saint Vincent and the Grenadines",
+        "continent": "North America",
+        "iso_2_code": "VC",
+        "db_name": "GISAID sequences",
+        "num_sequences": 217
+      },
+      {
+        "country": "Sao Tome and Principe",
+        "continent": "Africa",
+        "iso_2_code": "ST",
+        "db_name": "GISAID sequences",
+        "num_sequences": 10
+      },
+      {
+        "country": "Saudi Arabia",
+        "continent": "Asia",
+        "iso_2_code": "SA",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1344
+      },
+      {
+        "country": "Senegal",
+        "continent": "Africa",
+        "iso_2_code": "SN",
+        "db_name": "GISAID sequences",
+        "num_sequences": 4157
+      },
+      {
+        "country": "Serbia",
+        "continent": "Europe",
+        "iso_2_code": "RS",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1387
+      },
+      {
+        "country": "Seychelles",
+        "continent": "Africa",
+        "iso_2_code": "SC",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1413
+      },
+      {
+        "country": "Sierra Leone",
+        "continent": "Africa",
+        "iso_2_code": "SL",
+        "db_name": "GISAID sequences",
+        "num_sequences": 61
+      },
+      {
+        "country": "Singapore",
+        "continent": "Asia",
+        "iso_2_code": "SG",
+        "db_name": "GISAID sequences",
+        "num_sequences": 20950
+      },
+      {
+        "country": "Sint Eustatius",
+        "continent": "North America",
+        "iso_2_code": "BQ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 4
+      },
+      {
+        "country": "Sint Maarten",
+        "continent": "North America",
+        "iso_2_code": "SX",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2586
+      },
+      {
+        "country": "Slovakia",
+        "continent": "Europe",
+        "iso_2_code": "SK",
+        "db_name": "GISAID sequences",
+        "num_sequences": 39189
+      },
+      {
+        "country": "Slovenia",
+        "continent": "Europe",
+        "iso_2_code": "SI",
+        "db_name": "GISAID sequences",
+        "num_sequences": 71347
+      },
+      {
+        "country": "Solomon Islands",
+        "continent": "Oceania",
+        "iso_2_code": "SB",
+        "db_name": "GISAID sequences",
+        "num_sequences": 246
+      },
+      {
+        "country": "Somalia",
+        "continent": "Africa",
+        "iso_2_code": "SO",
+        "db_name": "GISAID sequences",
+        "num_sequences": 47
+      },
+      {
+        "country": "South Africa",
+        "continent": "Africa",
+        "iso_2_code": "ZA",
+        "db_name": "GISAID sequences",
+        "num_sequences": 44451
+      },
+      {
+        "country": "South Korea",
+        "continent": "Asia",
+        "iso_2_code": "KR",
+        "db_name": "GISAID sequences",
+        "num_sequences": 68878
+      },
+      {
+        "country": "South Sudan",
+        "continent": "Africa",
+        "iso_2_code": "SS",
+        "db_name": "GISAID sequences",
+        "num_sequences": 174
+      },
+      {
+        "country": "Spain",
+        "continent": "Europe",
+        "iso_2_code": "ES",
+        "db_name": "GISAID sequences",
+        "num_sequences": 155202
+      },
+      {
+        "country": "Sri Lanka",
+        "continent": "Asia",
+        "iso_2_code": "LK",
+        "db_name": "GISAID sequences",
+        "num_sequences": 3505
+      },
+      {
+        "country": "Sudan",
+        "continent": "Africa",
+        "iso_2_code": "SD",
+        "db_name": "GISAID sequences",
+        "num_sequences": 204
+      },
+      {
+        "country": "Suriname",
+        "continent": "South America",
+        "iso_2_code": "SR",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1124
+      },
+      {
+        "country": "Sweden",
+        "continent": "Europe",
+        "iso_2_code": "SE",
+        "db_name": "GISAID sequences",
+        "num_sequences": 203345
+      },
+      {
+        "country": "Switzerland",
+        "continent": "Europe",
+        "iso_2_code": "CH",
+        "db_name": "GISAID sequences",
+        "num_sequences": 145730
+      },
+      {
+        "country": "Syria",
+        "continent": "Asia",
+        "iso_2_code": "SY",
+        "db_name": "GISAID sequences",
+        "num_sequences": 89
+      },
+      {
+        "country": "Taiwan",
+        "continent": "Asia",
+        "iso_2_code": "TW",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2504
+      },
+      {
+        "country": "Tanzania",
+        "continent": "Africa",
+        "iso_2_code": "TZ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 11
+      },
+      {
+        "country": "Thailand",
+        "continent": "Asia",
+        "iso_2_code": "TH",
+        "db_name": "GISAID sequences",
+        "num_sequences": 27916
+      },
+      {
+        "country": "Timor-Leste",
+        "continent": "Asia",
+        "iso_2_code": "TL",
+        "db_name": "GISAID sequences",
+        "num_sequences": 356
+      },
+      {
+        "country": "Togo",
+        "continent": "Africa",
+        "iso_2_code": "TG",
+        "db_name": "GISAID sequences",
+        "num_sequences": 815
+      },
+      {
+        "country": "Trinidad and Tobago",
+        "continent": "North America",
+        "iso_2_code": "TT",
+        "db_name": "GISAID sequences",
+        "num_sequences": 3242
+      },
+      {
+        "country": "Tunisia",
+        "continent": "Africa",
+        "iso_2_code": "TN",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1250
+      },
+      {
+        "country": "Turkey",
+        "continent": "Europe",
+        "iso_2_code": "TR",
+        "db_name": "GISAID sequences",
+        "num_sequences": 94648
+      },
+      {
+        "country": "Uganda",
+        "continent": "Africa",
+        "iso_2_code": "UG",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1321
+      },
+      {
+        "country": "Ukraine",
+        "continent": "Europe",
+        "iso_2_code": "UA",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1084
+      },
+      {
+        "country": "Union of the Comoros",
+        "continent": "Africa",
+        "iso_2_code": "KM",
+        "db_name": "GISAID sequences",
+        "num_sequences": 34
+      },
+      {
+        "country": "United Arab Emirates",
+        "continent": "Asia",
+        "iso_2_code": "AE",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2628
+      },
+      {
+        "country": "United Kingdom",
+        "continent": "Europe",
+        "iso_2_code": "GB",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2893046
+      },
+      {
+        "country": "Uruguay",
+        "continent": "South America",
+        "iso_2_code": "UY",
+        "db_name": "GISAID sequences",
+        "num_sequences": 943
+      },
+      {
+        "country": "USA",
+        "continent": "North America",
+        "iso_2_code": "US",
+        "db_name": "GISAID sequences",
+        "num_sequences": 3814515
+      },
+      {
+        "country": "Uzbekistan",
+        "continent": "Asia",
+        "iso_2_code": "UZ",
+        "db_name": "GISAID sequences",
+        "num_sequences": 90
+      },
+      {
+        "country": "Vanuatu",
+        "continent": "Oceania",
+        "iso_2_code": "VU",
+        "db_name": "GISAID sequences",
+        "num_sequences": 2
+      },
+      {
+        "country": "Venezuela",
+        "continent": "South America",
+        "iso_2_code": "VE",
+        "db_name": "GISAID sequences",
+        "num_sequences": 592
+      },
+      {
+        "country": "Vietnam",
+        "continent": "Asia",
+        "iso_2_code": "VN",
+        "db_name": "GISAID sequences",
+        "num_sequences": 5697
+      },
+      {
+        "country": "Zambia",
+        "continent": "Africa",
+        "iso_2_code": "ZM",
+        "db_name": "GISAID sequences",
+        "num_sequences": 1830
+      },
+      {
+        "country": "Zimbabwe",
+        "continent": "Africa",
+        "iso_2_code": "ZW",
+        "db_name": "GISAID sequences",
+        "num_sequences": 933
+      },
+      {
+        "country": "Afghanistan",
+        "continent": "Asia",
+        "iso_2_code": "AF",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Albania",
+        "continent": "Europe",
+        "iso_2_code": "AL",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Algeria",
+        "continent": "Africa",
+        "iso_2_code": "DZ",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Andorra",
+        "continent": "Europe",
+        "iso_2_code": "AD",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Angola",
+        "continent": "Africa",
+        "iso_2_code": "AO",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Antigua and Barbuda",
+        "continent": "North America",
+        "iso_2_code": "AG",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Argentina",
+        "continent": "South America",
+        "iso_2_code": "AR",
+        "db_name": "Open sequences",
+        "num_sequences": 117
+      },
+      {
+        "country": "Armenia",
+        "continent": "Europe",
+        "iso_2_code": "AM",
+        "db_name": "Open sequences",
+        "num_sequences": 48
+      },
+      {
+        "country": "Aruba",
+        "continent": "North America",
+        "iso_2_code": "AW",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Australia",
+        "continent": "Oceania",
+        "iso_2_code": "AU",
+        "db_name": "Open sequences",
+        "num_sequences": 13342
+      },
+      {
+        "country": "Austria",
+        "continent": "Europe",
+        "iso_2_code": "AT",
+        "db_name": "Open sequences",
+        "num_sequences": 297
+      },
+      {
+        "country": "Azerbaijan",
+        "continent": "Europe",
+        "iso_2_code": "AZ",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Bahamas",
+        "continent": "North America",
+        "iso_2_code": "BS",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Bahrain",
+        "continent": "Asia",
+        "iso_2_code": "BH",
+        "db_name": "Open sequences",
+        "num_sequences": 9706
+      },
+      {
+        "country": "Bangladesh",
+        "continent": "Asia",
+        "iso_2_code": "BD",
+        "db_name": "Open sequences",
+        "num_sequences": 1662
+      },
+      {
+        "country": "Barbados",
+        "continent": "North America",
+        "iso_2_code": "BB",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Belarus",
+        "continent": "Europe",
+        "iso_2_code": "BY",
+        "db_name": "Open sequences",
+        "num_sequences": 1
+      },
+      {
+        "country": "Belgium",
+        "continent": "Europe",
+        "iso_2_code": "BE",
+        "db_name": "Open sequences",
+        "num_sequences": 23
+      },
+      {
+        "country": "Belize",
+        "continent": "North America",
+        "iso_2_code": "BZ",
+        "db_name": "Open sequences",
+        "num_sequences": 4
+      },
+      {
+        "country": "Benin",
+        "continent": "Africa",
+        "iso_2_code": "BJ",
+        "db_name": "Open sequences",
+        "num_sequences": 12
+      },
+      {
+        "country": "Bermuda",
+        "continent": "North America",
+        "iso_2_code": "BM",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Bolivia",
+        "continent": "South America",
+        "iso_2_code": "BO",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Bonaire",
+        "continent": "North America",
+        "iso_2_code": "BQ",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Bosnia and Herzegovina",
+        "continent": "Europe",
+        "iso_2_code": "BA",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Botswana",
+        "continent": "Africa",
+        "iso_2_code": "BW",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Brazil",
+        "continent": "South America",
+        "iso_2_code": "BR",
+        "db_name": "Open sequences",
+        "num_sequences": 9825
+      },
+      {
+        "country": "Brunei",
+        "continent": "Asia",
+        "iso_2_code": "BN",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Bulgaria",
+        "continent": "Europe",
+        "iso_2_code": "BG",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Burkina Faso",
+        "continent": "Africa",
+        "iso_2_code": "BF",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Burundi",
+        "continent": "Africa",
+        "iso_2_code": "BI",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "C\u00f4te d'Ivoire",
+        "continent": "Africa",
+        "iso_2_code": "CI",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Cabo Verde",
+        "continent": "Africa",
+        "iso_2_code": "CV",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Cambodia",
+        "continent": "Asia",
+        "iso_2_code": "KH",
+        "db_name": "Open sequences",
+        "num_sequences": 2
+      },
+      {
+        "country": "Cameroon",
+        "continent": "Africa",
+        "iso_2_code": "CM",
+        "db_name": "Open sequences",
+        "num_sequences": 1
+      },
+      {
+        "country": "Canada",
+        "continent": "North America",
+        "iso_2_code": "CA",
+        "db_name": "Open sequences",
+        "num_sequences": 86
+      },
+      {
+        "country": "Central African Republic",
+        "continent": "Africa",
+        "iso_2_code": "CF",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Chad",
+        "continent": "Africa",
+        "iso_2_code": "TD",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Chile",
+        "continent": "South America",
+        "iso_2_code": "CL",
+        "db_name": "Open sequences",
+        "num_sequences": 795
+      },
+      {
+        "country": "China",
+        "continent": "Asia",
+        "iso_2_code": "CN",
+        "db_name": "Open sequences",
+        "num_sequences": 409
+      },
+      {
+        "country": "Colombia",
+        "continent": "South America",
+        "iso_2_code": "CO",
+        "db_name": "Open sequences",
+        "num_sequences": 72
+      },
+      {
+        "country": "Costa Rica",
+        "continent": "North America",
+        "iso_2_code": "CR",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Croatia",
+        "continent": "Europe",
+        "iso_2_code": "HR",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Cuba",
+        "continent": "North America",
+        "iso_2_code": "CU",
+        "db_name": "Open sequences",
+        "num_sequences": 2
+      },
+      {
+        "country": "Curacao",
+        "continent": "North America",
+        "iso_2_code": "CW",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Cyprus",
+        "continent": "Europe",
+        "iso_2_code": "CY",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Czech Republic",
+        "continent": "Europe",
+        "iso_2_code": "CZ",
+        "db_name": "Open sequences",
+        "num_sequences": 29
+      },
+      {
+        "country": "Democratic Republic of the Congo",
+        "continent": "Africa",
+        "iso_2_code": "CD",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Denmark",
+        "continent": "Europe",
+        "iso_2_code": "DK",
+        "db_name": "Open sequences",
+        "num_sequences": 453165
+      },
+      {
+        "country": "Djibouti",
+        "continent": "Africa",
+        "iso_2_code": "DJ",
+        "db_name": "Open sequences",
+        "num_sequences": 692
+      },
+      {
+        "country": "Dominica",
+        "continent": "North America",
+        "iso_2_code": "DM",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Dominican Republic",
+        "continent": "North America",
+        "iso_2_code": "DO",
+        "db_name": "Open sequences",
+        "num_sequences": 385
+      },
+      {
+        "country": "Ecuador",
+        "continent": "South America",
+        "iso_2_code": "EC",
+        "db_name": "Open sequences",
+        "num_sequences": 7
+      },
+      {
+        "country": "Egypt",
+        "continent": "Africa",
+        "iso_2_code": "EG",
+        "db_name": "Open sequences",
+        "num_sequences": 1053
+      },
+      {
+        "country": "El Salvador",
+        "continent": "North America",
+        "iso_2_code": "SV",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Equatorial Guinea",
+        "continent": "Africa",
+        "iso_2_code": "GQ",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Estonia",
+        "continent": "Europe",
+        "iso_2_code": "EE",
+        "db_name": "Open sequences",
+        "num_sequences": 1681
+      },
+      {
+        "country": "Eswatini",
+        "continent": "Africa",
+        "iso_2_code": "SZ",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Ethiopia",
+        "continent": "Africa",
+        "iso_2_code": "ET",
+        "db_name": "Open sequences",
+        "num_sequences": 22
+      },
+      {
+        "country": "Fiji",
+        "continent": "Oceania",
+        "iso_2_code": "FJ",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Finland",
+        "continent": "Europe",
+        "iso_2_code": "FI",
+        "db_name": "Open sequences",
+        "num_sequences": 42
+      },
+      {
+        "country": "France",
+        "continent": "Europe",
+        "iso_2_code": "FR",
+        "db_name": "Open sequences",
+        "num_sequences": 45991
+      },
+      {
+        "country": "French Guiana",
+        "continent": "South America",
+        "iso_2_code": "GF",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "French Polynesia",
+        "continent": "Oceania",
+        "iso_2_code": "PF",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Gabon",
+        "continent": "Africa",
+        "iso_2_code": "GA",
+        "db_name": "Open sequences",
+        "num_sequences": 283
+      },
+      {
+        "country": "Gambia",
+        "continent": "Africa",
+        "iso_2_code": "GM",
+        "db_name": "Open sequences",
+        "num_sequences": 6
+      },
+      {
+        "country": "Georgia",
+        "continent": "Europe",
+        "iso_2_code": "GE",
+        "db_name": "Open sequences",
+        "num_sequences": 21
+      },
+      {
+        "country": "Germany",
+        "continent": "Europe",
+        "iso_2_code": "DE",
+        "db_name": "Open sequences",
+        "num_sequences": 508092
+      },
+      {
+        "country": "Ghana",
+        "continent": "Africa",
+        "iso_2_code": "GH",
+        "db_name": "Open sequences",
+        "num_sequences": 297
+      },
+      {
+        "country": "Greece",
+        "continent": "Europe",
+        "iso_2_code": "GR",
+        "db_name": "Open sequences",
+        "num_sequences": 98
+      },
+      {
+        "country": "Grenada",
+        "continent": "North America",
+        "iso_2_code": "GD",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Guadeloupe",
+        "continent": "North America",
+        "iso_2_code": "GP",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Guatemala",
+        "continent": "North America",
+        "iso_2_code": "GT",
+        "db_name": "Open sequences",
+        "num_sequences": 10
+      },
+      {
+        "country": "Guinea",
+        "continent": "Africa",
+        "iso_2_code": "GN",
+        "db_name": "Open sequences",
+        "num_sequences": 3
+      },
+      {
+        "country": "Guinea-Bissau",
+        "continent": "Africa",
+        "iso_2_code": "GW",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Guyana",
+        "continent": "South America",
+        "iso_2_code": "GY",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Haiti",
+        "continent": "North America",
+        "iso_2_code": "HT",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Honduras",
+        "continent": "North America",
+        "iso_2_code": "HN",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Hong Kong",
+        "continent": "Asia",
+        "iso_2_code": "HK",
+        "db_name": "Open sequences",
+        "num_sequences": 2431
+      },
+      {
+        "country": "Hungary",
+        "continent": "Europe",
+        "iso_2_code": "HU",
+        "db_name": "Open sequences",
+        "num_sequences": 1
+      },
+      {
+        "country": "Iceland",
+        "continent": "Europe",
+        "iso_2_code": "IS",
+        "db_name": "Open sequences",
+        "num_sequences": 5363
+      },
+      {
+        "country": "India",
+        "continent": "Asia",
+        "iso_2_code": "IN",
+        "db_name": "Open sequences",
+        "num_sequences": 2371
+      },
+      {
+        "country": "Indonesia",
+        "continent": "Asia",
+        "iso_2_code": "ID",
+        "db_name": "Open sequences",
+        "num_sequences": 9
+      },
+      {
+        "country": "Iran",
+        "continent": "Asia",
+        "iso_2_code": "IR",
+        "db_name": "Open sequences",
+        "num_sequences": 16
+      },
+      {
+        "country": "Iraq",
+        "continent": "Asia",
+        "iso_2_code": "IQ",
+        "db_name": "Open sequences",
+        "num_sequences": 123
+      },
+      {
+        "country": "Ireland",
+        "continent": "Europe",
+        "iso_2_code": "IE",
+        "db_name": "Open sequences",
+        "num_sequences": 18
+      },
+      {
+        "country": "Israel",
+        "continent": "Asia",
+        "iso_2_code": "IL",
+        "db_name": "Open sequences",
+        "num_sequences": 125
+      },
+      {
+        "country": "Italy",
+        "continent": "Europe",
+        "iso_2_code": "IT",
+        "db_name": "Open sequences",
+        "num_sequences": 934
+      },
+      {
+        "country": "Jamaica",
+        "continent": "North America",
+        "iso_2_code": "JM",
+        "db_name": "Open sequences",
+        "num_sequences": 438
+      },
+      {
+        "country": "Japan",
+        "continent": "Asia",
+        "iso_2_code": "JP",
+        "db_name": "Open sequences",
+        "num_sequences": 5164
+      },
+      {
+        "country": "Jordan",
+        "continent": "Asia",
+        "iso_2_code": "JO",
+        "db_name": "Open sequences",
+        "num_sequences": 28
+      },
+      {
+        "country": "Kazakhstan",
+        "continent": "Europe",
+        "iso_2_code": "KZ",
+        "db_name": "Open sequences",
+        "num_sequences": 6
+      },
+      {
+        "country": "Kenya",
+        "continent": "Africa",
+        "iso_2_code": "KE",
+        "db_name": "Open sequences",
+        "num_sequences": 7153
+      },
+      {
+        "country": "Kiribati",
+        "continent": "Oceania",
+        "iso_2_code": "KI",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Kosovo",
+        "continent": "Europe",
+        "iso_2_code": "XK",
+        "db_name": "Open sequences",
+        "num_sequences": 4
+      },
+      {
+        "country": "Kuwait",
+        "continent": "Asia",
+        "iso_2_code": "KW",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Kyrgyzstan",
+        "continent": "Asia",
+        "iso_2_code": "KG",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Laos",
+        "continent": "Asia",
+        "iso_2_code": "LA",
+        "db_name": "Open sequences",
+        "num_sequences": 405
+      },
+      {
+        "country": "Latvia",
+        "continent": "Europe",
+        "iso_2_code": "LV",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Lebanon",
+        "continent": "Asia",
+        "iso_2_code": "LB",
+        "db_name": "Open sequences",
+        "num_sequences": 921
+      },
+      {
+        "country": "Lesotho",
+        "continent": "Africa",
+        "iso_2_code": "LS",
+        "db_name": "Open sequences",
+        "num_sequences": 5
+      },
+      {
+        "country": "Liberia",
+        "continent": "Africa",
+        "iso_2_code": "LR",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Libya",
+        "continent": "Africa",
+        "iso_2_code": "LY",
+        "db_name": "Open sequences",
+        "num_sequences": 46
+      },
+      {
+        "country": "Liechtenstein",
+        "continent": "Europe",
+        "iso_2_code": "LI",
+        "db_name": "Open sequences",
+        "num_sequences": 1311
+      },
+      {
+        "country": "Lithuania",
+        "continent": "Europe",
+        "iso_2_code": "LT",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Luxembourg",
+        "continent": "Europe",
+        "iso_2_code": "LU",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Madagascar",
+        "continent": "Africa",
+        "iso_2_code": "MG",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Malawi",
+        "continent": "Africa",
+        "iso_2_code": "MW",
+        "db_name": "Open sequences",
+        "num_sequences": 289
+      },
+      {
+        "country": "Malaysia",
+        "continent": "Asia",
+        "iso_2_code": "MY",
+        "db_name": "Open sequences",
+        "num_sequences": 426
+      },
+      {
+        "country": "Maldives",
+        "continent": "Asia",
+        "iso_2_code": "MV",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Mali",
+        "continent": "Africa",
+        "iso_2_code": "ML",
+        "db_name": "Open sequences",
+        "num_sequences": 41
+      },
+      {
+        "country": "Malta",
+        "continent": "Europe",
+        "iso_2_code": "MT",
+        "db_name": "Open sequences",
+        "num_sequences": 12
+      },
+      {
+        "country": "Marshall Islands",
+        "continent": "Oceania",
+        "iso_2_code": "MH",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Martinique",
+        "continent": "North America",
+        "iso_2_code": "MQ",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Mauritania",
+        "continent": "Africa",
+        "iso_2_code": "MR",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Mauritius",
+        "continent": "Africa",
+        "iso_2_code": "MU",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Mexico",
+        "continent": "North America",
+        "iso_2_code": "MX",
+        "db_name": "Open sequences",
+        "num_sequences": 9596
+      },
+      {
+        "country": "Micronesia",
+        "continent": "Oceania",
+        "iso_2_code": "FM",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Moldova",
+        "continent": "Europe",
+        "iso_2_code": "MD",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Monaco",
+        "continent": "Europe",
+        "iso_2_code": "MC",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Mongolia",
+        "continent": "Asia",
+        "iso_2_code": "MN",
+        "db_name": "Open sequences",
+        "num_sequences": 560
+      },
+      {
+        "country": "Montenegro",
+        "continent": "Europe",
+        "iso_2_code": "ME",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Morocco",
+        "continent": "Africa",
+        "iso_2_code": "MA",
+        "db_name": "Open sequences",
+        "num_sequences": 19
+      },
+      {
+        "country": "Mozambique",
+        "continent": "Africa",
+        "iso_2_code": "MZ",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Myanmar",
+        "continent": "Asia",
+        "iso_2_code": "MM",
+        "db_name": "Open sequences",
+        "num_sequences": 101
+      },
+      {
+        "country": "Namibia",
+        "continent": "Africa",
+        "iso_2_code": null,
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Nepal",
+        "continent": "Asia",
+        "iso_2_code": "NP",
+        "db_name": "Open sequences",
+        "num_sequences": 19
+      },
+      {
+        "country": "Netherlands",
+        "continent": "Europe",
+        "iso_2_code": "NL",
+        "db_name": "Open sequences",
+        "num_sequences": 1573
+      },
+      {
+        "country": "New Zealand",
+        "continent": "Oceania",
+        "iso_2_code": "NZ",
+        "db_name": "Open sequences",
+        "num_sequences": 5270
+      },
+      {
+        "country": "Nicaragua",
+        "continent": "North America",
+        "iso_2_code": "NI",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Niger",
+        "continent": "Africa",
+        "iso_2_code": "NE",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Nigeria",
+        "continent": "Africa",
+        "iso_2_code": "NG",
+        "db_name": "Open sequences",
+        "num_sequences": 411
+      },
+      {
+        "country": "North Macedonia",
+        "continent": "Europe",
+        "iso_2_code": "MK",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Norway",
+        "continent": "Europe",
+        "iso_2_code": "NO",
+        "db_name": "Open sequences",
+        "num_sequences": 5
+      },
+      {
+        "country": "Oman",
+        "continent": "Asia",
+        "iso_2_code": "OM",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Pakistan",
+        "continent": "Asia",
+        "iso_2_code": "PK",
+        "db_name": "Open sequences",
+        "num_sequences": 1066
+      },
+      {
+        "country": "Palau",
+        "continent": "Oceania",
+        "iso_2_code": "PW",
+        "db_name": "Open sequences",
+        "num_sequences": 12
+      },
+      {
+        "country": "Palestine",
+        "continent": "Asia",
+        "iso_2_code": "PS",
+        "db_name": "Open sequences",
+        "num_sequences": 101
+      },
+      {
+        "country": "Panama",
+        "continent": "North America",
+        "iso_2_code": "PA",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Papua New Guinea",
+        "continent": "Oceania",
+        "iso_2_code": "PG",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Paraguay",
+        "continent": "South America",
+        "iso_2_code": "PY",
+        "db_name": "Open sequences",
+        "num_sequences": 297
+      },
+      {
+        "country": "Peru",
+        "continent": "South America",
+        "iso_2_code": "PE",
+        "db_name": "Open sequences",
+        "num_sequences": 476
+      },
+      {
+        "country": "Philippines",
+        "continent": "Asia",
+        "iso_2_code": "PH",
+        "db_name": "Open sequences",
+        "num_sequences": 84
+      },
+      {
+        "country": "Poland",
+        "continent": "Europe",
+        "iso_2_code": "PL",
+        "db_name": "Open sequences",
+        "num_sequences": 1215
+      },
+      {
+        "country": "Portugal",
+        "continent": "Europe",
+        "iso_2_code": "PT",
+        "db_name": "Open sequences",
+        "num_sequences": 33
+      },
+      {
+        "country": "Qatar",
+        "continent": "Asia",
+        "iso_2_code": "QA",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Republic of the Congo",
+        "continent": "Africa",
+        "iso_2_code": "CG",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Reunion",
+        "continent": "Africa",
+        "iso_2_code": "RE",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Romania",
+        "continent": "Europe",
+        "iso_2_code": "RO",
+        "db_name": "Open sequences",
+        "num_sequences": 109
+      },
+      {
+        "country": "Russia",
+        "continent": "Europe",
+        "iso_2_code": "RU",
+        "db_name": "Open sequences",
+        "num_sequences": 70
+      },
+      {
+        "country": "Rwanda",
+        "continent": "Africa",
+        "iso_2_code": "RW",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Saint Barth\u00e9lemy",
+        "continent": "North America",
+        "iso_2_code": "BL",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Saint Kitts and Nevis",
+        "continent": "North America",
+        "iso_2_code": "KN",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Saint Lucia",
+        "continent": "North America",
+        "iso_2_code": "LC",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Saint Martin",
+        "continent": "North America",
+        "iso_2_code": "MF",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Saint Vincent and the Grenadines",
+        "continent": "North America",
+        "iso_2_code": "VC",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Sao Tome and Principe",
+        "continent": "Africa",
+        "iso_2_code": "ST",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Saudi Arabia",
+        "continent": "Asia",
+        "iso_2_code": "SA",
+        "db_name": "Open sequences",
+        "num_sequences": 1092
+      },
+      {
+        "country": "Senegal",
+        "continent": "Africa",
+        "iso_2_code": "SN",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Serbia",
+        "continent": "Europe",
+        "iso_2_code": "RS",
+        "db_name": "Open sequences",
+        "num_sequences": 145
+      },
+      {
+        "country": "Seychelles",
+        "continent": "Africa",
+        "iso_2_code": "SC",
+        "db_name": "Open sequences",
+        "num_sequences": 949
+      },
+      {
+        "country": "Sierra Leone",
+        "continent": "Africa",
+        "iso_2_code": "SL",
+        "db_name": "Open sequences",
+        "num_sequences": 99
+      },
+      {
+        "country": "Singapore",
+        "continent": "Asia",
+        "iso_2_code": "SG",
+        "db_name": "Open sequences",
+        "num_sequences": 8
+      },
+      {
+        "country": "Sint Eustatius",
+        "continent": "North America",
+        "iso_2_code": "BQ",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Sint Maarten",
+        "continent": "North America",
+        "iso_2_code": "SX",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Slovakia",
+        "continent": "Europe",
+        "iso_2_code": "SK",
+        "db_name": "Open sequences",
+        "num_sequences": 29645
+      },
+      {
+        "country": "Slovenia",
+        "continent": "Europe",
+        "iso_2_code": "SI",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Solomon Islands",
+        "continent": "Oceania",
+        "iso_2_code": "SB",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Somalia",
+        "continent": "Africa",
+        "iso_2_code": "SO",
+        "db_name": "Open sequences",
+        "num_sequences": 10
+      },
+      {
+        "country": "South Africa",
+        "continent": "Africa",
+        "iso_2_code": "ZA",
+        "db_name": "Open sequences",
+        "num_sequences": 4531
+      },
+      {
+        "country": "South Korea",
+        "continent": "Asia",
+        "iso_2_code": "KR",
+        "db_name": "Open sequences",
+        "num_sequences": 46
+      },
+      {
+        "country": "South Sudan",
+        "continent": "Africa",
+        "iso_2_code": "SS",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Spain",
+        "continent": "Europe",
+        "iso_2_code": "ES",
+        "db_name": "Open sequences",
+        "num_sequences": 1180
+      },
+      {
+        "country": "Sri Lanka",
+        "continent": "Asia",
+        "iso_2_code": "LK",
+        "db_name": "Open sequences",
+        "num_sequences": 6
+      },
+      {
+        "country": "Sudan",
+        "continent": "Africa",
+        "iso_2_code": "SD",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Suriname",
+        "continent": "South America",
+        "iso_2_code": "SR",
+        "db_name": "Open sequences",
+        "num_sequences": 1
+      },
+      {
+        "country": "Sweden",
+        "continent": "Europe",
+        "iso_2_code": "SE",
+        "db_name": "Open sequences",
+        "num_sequences": 78
+      },
+      {
+        "country": "Switzerland",
+        "continent": "Europe",
+        "iso_2_code": "CH",
+        "db_name": "Open sequences",
+        "num_sequences": 136599
+      },
+      {
+        "country": "Syria",
+        "continent": "Asia",
+        "iso_2_code": "SY",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Taiwan",
+        "continent": "Asia",
+        "iso_2_code": "TW",
+        "db_name": "Open sequences",
+        "num_sequences": 110
+      },
+      {
+        "country": "Tanzania",
+        "continent": "Africa",
+        "iso_2_code": "TZ",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Thailand",
+        "continent": "Asia",
+        "iso_2_code": "TH",
+        "db_name": "Open sequences",
+        "num_sequences": 3227
+      },
+      {
+        "country": "Timor-Leste",
+        "continent": "Asia",
+        "iso_2_code": "TL",
+        "db_name": "Open sequences",
+        "num_sequences": 16
+      },
+      {
+        "country": "Togo",
+        "continent": "Africa",
+        "iso_2_code": "TG",
+        "db_name": "Open sequences",
+        "num_sequences": 11
+      },
+      {
+        "country": "Trinidad and Tobago",
+        "continent": "North America",
+        "iso_2_code": "TT",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Tunisia",
+        "continent": "Africa",
+        "iso_2_code": "TN",
+        "db_name": "Open sequences",
+        "num_sequences": 71
+      },
+      {
+        "country": "Turkey",
+        "continent": "Europe",
+        "iso_2_code": "TR",
+        "db_name": "Open sequences",
+        "num_sequences": 81
+      },
+      {
+        "country": "Uganda",
+        "continent": "Africa",
+        "iso_2_code": "UG",
+        "db_name": "Open sequences",
+        "num_sequences": 111
+      },
+      {
+        "country": "Ukraine",
+        "continent": "Europe",
+        "iso_2_code": "UA",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Union of the Comoros",
+        "continent": "Africa",
+        "iso_2_code": "KM",
+        "db_name": "Open sequences",
+        "num_sequences": 17
+      },
+      {
+        "country": "United Arab Emirates",
+        "continent": "Asia",
+        "iso_2_code": "AE",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "United Kingdom",
+        "continent": "Europe",
+        "iso_2_code": "GB",
+        "db_name": "Open sequences",
+        "num_sequences": 2133124
+      },
+      {
+        "country": "Uruguay",
+        "continent": "South America",
+        "iso_2_code": "UY",
+        "db_name": "Open sequences",
+        "num_sequences": 34
+      },
+      {
+        "country": "USA",
+        "continent": "North America",
+        "iso_2_code": "US",
+        "db_name": "Open sequences",
+        "num_sequences": 2639924
+      },
+      {
+        "country": "Uzbekistan",
+        "continent": "Asia",
+        "iso_2_code": "UZ",
+        "db_name": "Open sequences",
+        "num_sequences": 56
+      },
+      {
+        "country": "Vanuatu",
+        "continent": "Oceania",
+        "iso_2_code": "VU",
+        "db_name": "Open sequences",
+        "num_sequences": 0
+      },
+      {
+        "country": "Venezuela",
+        "continent": "South America",
+        "iso_2_code": "VE",
+        "db_name": "Open sequences",
+        "num_sequences": 27
+      },
+      {
+        "country": "Vietnam",
+        "continent": "Asia",
+        "iso_2_code": "VN",
+        "db_name": "Open sequences",
+        "num_sequences": 1804
+      },
+      {
+        "country": "Zambia",
+        "continent": "Africa",
+        "iso_2_code": "ZM",
+        "db_name": "Open sequences",
+        "num_sequences": 1
+      },
+      {
+        "country": "Zimbabwe",
+        "continent": "Africa",
+        "iso_2_code": "ZW",
+        "db_name": "Open sequences",
+        "num_sequences": 98
+      }
+    ]
+  }
+}

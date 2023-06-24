@@ -1,0 +1,271 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "width": 2000,
+  "data": {
+    "values": [
+      {
+        " Inflation Rate": 1.0036,
+        "Year": 1960.0
+      },
+      {
+        " Inflation Rate": 3.4475,
+        "Year": 1961.0
+      },
+      {
+        " Inflation Rate": 4.1965,
+        "Year": 1962.0
+      },
+      {
+        " Inflation Rate": 2.0185,
+        "Year": 1963.0
+      },
+      {
+        " Inflation Rate": 3.2816,
+        "Year": 1964.0
+      },
+      {
+        " Inflation Rate": 4.7738,
+        "Year": 1965.0
+      },
+      {
+        " Inflation Rate": 3.9096,
+        "Year": 1966.0
+      },
+      {
+        " Inflation Rate": 2.4821,
+        "Year": 1967.0
+      },
+      {
+        " Inflation Rate": 4.6974,
+        "Year": 1968.0
+      },
+      {
+        " Inflation Rate": 5.4467,
+        "Year": 1969.0
+      },
+      {
+        " Inflation Rate": 6.3666,
+        "Year": 1970.0
+      },
+      {
+        " Inflation Rate": 9.4448,
+        "Year": 1971.0
+      },
+      {
+        " Inflation Rate": 7.0711,
+        "Year": 1972.0
+      },
+      {
+        " Inflation Rate": 9.196,
+        "Year": 1973.0
+      },
+      {
+        " Inflation Rate": 16.044,
+        "Year": 1974.0
+      },
+      {
+        " Inflation Rate": 24.2073,
+        "Year": 1975.0
+      },
+      {
+        " Inflation Rate": 16.5595,
+        "Year": 1976.0
+      },
+      {
+        " Inflation Rate": 15.8403,
+        "Year": 1977.0
+      },
+      {
+        " Inflation Rate": 8.2631,
+        "Year": 1978.0
+      },
+      {
+        " Inflation Rate": 13.4213,
+        "Year": 1979.0
+      },
+      {
+        " Inflation Rate": 17.9659,
+        "Year": 1980.0
+      },
+      {
+        " Inflation Rate": 11.8766,
+        "Year": 1981.0
+      },
+      {
+        " Inflation Rate": 8.5989,
+        "Year": 1982.0
+      },
+      {
+        " Inflation Rate": 4.6093,
+        "Year": 1983.0
+      },
+      {
+        " Inflation Rate": 4.9607,
+        "Year": 1984.0
+      },
+      {
+        " Inflation Rate": 6.0714,
+        "Year": 1985.0
+      },
+      {
+        " Inflation Rate": 3.4276,
+        "Year": 1986.0
+      },
+      {
+        " Inflation Rate": 4.1489,
+        "Year": 1987.0
+      },
+      {
+        " Inflation Rate": 4.1554,
+        "Year": 1988.0
+      },
+      {
+        " Inflation Rate": 5.7602,
+        "Year": 1989.0
+      },
+      {
+        " Inflation Rate": 8.0635,
+        "Year": 1990.0
+      },
+      {
+        " Inflation Rate": 7.4618,
+        "Year": 1991.0
+      },
+      {
+        " Inflation Rate": 4.5915,
+        "Year": 1992.0
+      },
+      {
+        " Inflation Rate": 2.5586,
+        "Year": 1993.0
+      },
+      {
+        " Inflation Rate": 2.219,
+        "Year": 1994.0
+      },
+      {
+        " Inflation Rate": 2.6975,
+        "Year": 1995.0
+      },
+      {
+        " Inflation Rate": 2.8518,
+        "Year": 1996.0
+      },
+      {
+        " Inflation Rate": 2.2011,
+        "Year": 1997.0
+      },
+      {
+        " Inflation Rate": 1.8206,
+        "Year": 1998.0
+      },
+      {
+        " Inflation Rate": 1.753,
+        "Year": 1999.0
+      },
+      {
+        " Inflation Rate": 1.183,
+        "Year": 2000.0
+      },
+      {
+        " Inflation Rate": 1.5323,
+        "Year": 2001.0
+      },
+      {
+        " Inflation Rate": 1.5204,
+        "Year": 2002.0
+      },
+      {
+        " Inflation Rate": 1.3765,
+        "Year": 2003.0
+      },
+      {
+        " Inflation Rate": 1.3904,
+        "Year": 2004.0
+      },
+      {
+        " Inflation Rate": 2.0891,
+        "Year": 2005.0
+      },
+      {
+        " Inflation Rate": 2.4557,
+        "Year": 2006.0
+      },
+      {
+        " Inflation Rate": 2.3866,
+        "Year": 2007.0
+      },
+      {
+        " Inflation Rate": 3.5214,
+        "Year": 2008.0
+      },
+      {
+        " Inflation Rate": 1.9617,
+        "Year": 2009.0
+      },
+      {
+        " Inflation Rate": 2.4927,
+        "Year": 2010.0
+      },
+      {
+        " Inflation Rate": 3.8561,
+        "Year": 2011.0
+      },
+      {
+        " Inflation Rate": 2.5732,
+        "Year": 2012.0
+      },
+      {
+        " Inflation Rate": 2.2917,
+        "Year": 2013.0
+      },
+      {
+        " Inflation Rate": 1.4511,
+        "Year": 2014.0
+      },
+      {
+        " Inflation Rate": 0.368,
+        "Year": 2015.0
+      },
+      {
+        " Inflation Rate": 1.0084,
+        "Year": 2016.0
+      },
+      {
+        " Inflation Rate": 2.5578,
+        "Year": 2017.0
+      },
+      {
+        " Inflation Rate": 2.2928,
+        "Year": 2018.0
+      },
+      {
+        " Inflation Rate": 1.7381,
+        "Year": 2019.0
+      },
+      {
+        " Inflation Rate": 0.9895,
+        "Year": 2020.0
+      },
+      {
+        " Inflation Rate": 2.5184,
+        "Year": 2021.0
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "nominal",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": " Inflation Rate",
+      "type": "quantitative"
+    }
+  }
+}

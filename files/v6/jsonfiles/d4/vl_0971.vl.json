@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Forest area",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/chartENV14.csv"
+  },
+  "title": {
+    "text": "Forest area - by country",
+    "subtitle": [
+      "% change square km (Base year = 1990)",
+      "Source: World Bank"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 175,
+  "width": 175,
+  "mark": {
+    "type": "line",
+    "size": 1.5
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "y": {
+      "field": "Value 2",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": [
+          -40,
+          5
+        ]
+      },
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "Country",
+      "type": "nominal",
+      "legend": {
+        "orient": "bottom-left",
+        "title": null
+      },
+      "scale": {
+        "scheme": "yellowgreenblue"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Year",
+        "type": "temporal",
+        "title": "Date",
+        "timeUnit": "year"
+      },
+      {
+        "field": "Value 2",
+        "type": "quantitative",
+        "title": "Reduction of forest area (%)"
+      },
+      {
+        "field": "Value 1",
+        "type": "quantitative",
+        "title": "Forest area (million square km)"
+      },
+      {
+        "field": "Country"
+      }
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Major US Housing Market Indicators Rebased",
+    "subtitle": [
+      "Quarterly Data. Source: Federal Reserve Bank of Dallas. 2005:Q1=100"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/Data/HPI_Rebasing%20(1).csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.HPI/96.96273758*100",
+      "as": "House Price"
+    },
+    {
+      "calculate": "datum.HPI_Rent/96.5745256*100",
+      "as": "House Price/Rent"
+    },
+    {
+      "calculate": "datum.HPI_Income/97.65085836*100",
+      "as": "House Price/Income"
+    }
+  ],
+  "repeat": {
+    "layer": [
+      "House Price",
+      "House Price/Rent",
+      "House Price/Income"
+    ]
+  },
+  "height": 300,
+  "width": 600,
+  "layer": [
+    {
+      "mark": {
+        "type": "rect"
+      },
+      "data": {
+        "values": [
+          {
+            "x": "1998/03",
+            "y": 130,
+            "x2": "1999/12",
+            "y2": 130,
+            "c": "rgba(224, 224, 224, 0.79)"
+          },
+          {
+            "x": "1999/12",
+            "y": 130,
+            "x2": "2001/09",
+            "y2": 130,
+            "c": "rgba(189, 189, 189, 0.8)"
+          },
+          {
+            "x": "2001/09",
+            "y": 130,
+            "x2": "2007/03",
+            "y2": 130,
+            "c": "rgba(158, 158, 158, 0.76)"
+          },
+          {
+            "x": "2007/03",
+            "y": 130,
+            "x2": "2007/09",
+            "y2": 130,
+            "c": "rgba(189, 189, 189, 0.8)"
+          },
+          {
+            "x": "2007/09",
+            "y": 130,
+            "x2": "2007/12",
+            "y2": 130,
+            "c": "rgba(224, 224, 224, 0.79)"
+          },
+          {
+            "x": "2020/06",
+            "y": 130,
+            "x2": "2020/09",
+            "y2": 130,
+            "c": "rgba(224, 224, 224, 0.79)"
+          },
+          {
+            "x": "2020/09",
+            "y": 130,
+            "x2": "2022/03",
+            "y2": 130,
+            "c": "rgba(189, 189, 189, 0.8)"
+          },
+          {
+            "x": "2022/03",
+            "y": 130,
+            "x2": "2022/06",
+            "y2": 130,
+            "c": "rgba(158, 158, 158, 0.76)"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "x"
+        },
+        "y": {
+          "field": "y"
+        },
+        "x2": {
+          "field": "x2"
+        },
+        "y2": {
+          "field": "y2"
+        },
+        "color": {
+          "field": "c",
+          "scale": null
+        }
+      }
+    }
+  ],
+  "spec": {
+    "mark": {
+      "type": "line",
+      "strokeWidth": 2
+    },
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "title": "Year"
+      },
+      "y": {
+        "field": {
+          "repeat": "layer"
+        },
+        "type": "quantitative",
+        "title": "Index, 2005=100",
+        "scale": {
+          "domain": [
+            50,
+            135
+          ]
+        }
+      },
+      "color": {
+        "datum": {
+          "repeat": "layer"
+        },
+        "scale": {
+          "range": [
+            "#9DD8B8",
+            "#34A4C1",
+            "#1C3185"
+          ]
+        },
+        "legend": {
+          "orient": "top-left",
+          "fillColor": "white"
+        }
+      }
+    }
+  },
+  "config": {}
+}

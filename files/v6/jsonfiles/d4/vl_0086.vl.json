@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Basic choropleth (rate/ratio)",
+  "width": "container",
+  "height": 400,
+  "title": "Income by country, 2017",
+  "offset": 10,
+  "layer": [
+    {
+      "data": {
+        "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/countries.geojson",
+        "format": {
+          "property": "features"
+        }
+      },
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgray",
+        "stroke": "white"
+      }
+    },
+    {
+      "data": {
+        "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/countries_centroids.geojson",
+        "format": {
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.country_code",
+          "from": {
+            "data": {
+              "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+            },
+            "key": "country_code",
+            "fields": [
+              "country",
+              "region",
+              "gdpPercap"
+            ]
+          }
+        }
+      ],
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": {
+        "type": "circle",
+        "opacity": 0.8,
+        "stroke": "#757575",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "longitude": {
+          "field": "properties.lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "properties.lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "gdpPercap",
+          "type": "quantitative",
+          "legend": null
+        },
+        "color": {
+          "field": "region",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Africa",
+              "Americas",
+              "Asia",
+              "Europe"
+            ],
+            "range": [
+              "#08C5ED",
+              "#80D322",
+              "#FF6973",
+              "#FFDC25"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "gdpPercap",
+            "type": "quantitative",
+            "title": "GDP per capita",
+            "format": "$,.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

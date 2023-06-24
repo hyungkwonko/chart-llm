@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/EnergySourceClean%20(1).csv",
+    "format": {
+      "parse": {
+        "date": "date"
+      }
+    }
+  },
+  "title": {
+    "text": "Change in Energy Sources (%)",
+    "subtitle": "Source: Our World in Data",
+    "fontSize": 15,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 400,
+  "height": 400,
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "index",
+          "value": [
+            {
+              "x": {
+                "year": 2010
+              }
+            }
+          ],
+          "select": {
+            "type": "point",
+            "encodings": [
+              "x"
+            ],
+            "on": "mouseover",
+            "nearest": true
+          }
+        }
+      ],
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title": null
+        },
+        "opacity": {
+          "value": 0
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "lookup": "Energy Source",
+          "from": {
+            "param": "index",
+            "key": "Energy Source"
+          }
+        },
+        {
+          "calculate": "datum.index && datum.index.EnergyConsumption > 0 ? (datum.EnergyConsumption - datum.index.EnergyConsumption)/datum.index.EnergyConsumption : 0",
+          "as": "indexed_EnergyConsumption"
+        }
+      ],
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": null
+        },
+        "y": {
+          "field": "indexed_EnergyConsumption",
+          "type": "quantitative",
+          "axis": {
+            "format": "%",
+            "labelFontSize": 10,
+            "labelAlign": "left",
+            "labelPadding": 40
+          },
+          "title": "Indexed Energy Consumption"
+        },
+        "color": {
+          "field": "Energy Source",
+          "type": "nominal",
+          "scale": {
+            "scheme": "dark2"
+          },
+          "legend": {
+            "orient": "top-left",
+            "fillColor": "white"
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "param": "index"
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": null
+        },
+        "color": {
+          "value": "firebrick"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "strokeWidth": 0.5
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontWeight": 100
+          },
+          "encoding": {
+            "text": {
+              "field": "Date",
+              "timeUnit": "year"
+            },
+            "y": {
+              "value": 310
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

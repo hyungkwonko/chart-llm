@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://vega.github.io/editor/data/us-10m.json",
+    "format": {
+      "type": "topojson",
+      "feature": "states"
+    }
+  },
+  "projection": {
+    "type": "albersUsa"
+  },
+  "layer": [
+    {
+      "mark": "geoshape",
+      "encoding": {}
+    },
+    {
+      "mark": {
+        "type": "point",
+        "color": "red",
+        "tooltip": {
+          "content": "data"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "geoCentroid('projection', datum)",
+          "as": "center"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "center[0]",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "center[1]",
+          "type": "quantitative",
+          "scale": {
+            "reverse": true
+          }
+        }
+      }
+    }
+  ],
+  "config": {}
+}

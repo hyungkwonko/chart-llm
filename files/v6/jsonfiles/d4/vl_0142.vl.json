@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Real price of tampons (UK)",
+  "height": 400,
+  "width": 400,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "title": {
+    "text": "CO\u2082 Emissions per capita by region",
+    "subtitle": "Million tonnes. Source: Authors' calculations",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/ECO2.TENREYO.C2.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "quantitative",
+          "title": "Year",
+          "axis": {
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "Value1",
+          "type": "quantitative",
+          "axis": {
+            "grid": false
+          },
+          "title": null
+        },
+        "color": {
+          "field": "Region",
+          "title": null,
+          "legend": {
+            "orient": "top-left"
+          },
+          "type": "nominal",
+          "sort": [],
+          "scale": {
+            "scheme": "yellowgreenblue"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#e54753",
+        "size": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "x": 1997
+          },
+          {
+            "x": 2009
+          },
+          {
+            "x": 2015
+          }
+        ]
+      }
+    }
+  ]
+}

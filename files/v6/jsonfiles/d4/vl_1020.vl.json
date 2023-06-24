@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/data_ONS-MGVF.json",
+    "format": {
+      "type": "json",
+      "property": "years"
+    }
+  },
+  "title": {
+    "text": "Number of Unemployed(16-24)",
+    "subtitle": "United Kingdom (thousands), seasonally adjusted",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 180,
+  "height": 180,
+  "mark": {
+    "type": "line",
+    "color": "#3662f1",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null
+    }
+  }
+}

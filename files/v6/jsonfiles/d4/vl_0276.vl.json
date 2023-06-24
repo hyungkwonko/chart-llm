@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/Datasets/migrant_cause_of_deaths.csv"
+  },
+  "vconcat": [
+    {
+      "width": 700,
+      "height": 350,
+      "mark": {
+        "type": "circle",
+        "opacity": 0.8,
+        "stroke": "black",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": {
+            "grid": false,
+            "title": ""
+          },
+          "scale": {
+            "domain": {
+              "param": "time_brush"
+            }
+          }
+        },
+        "y": {
+          "field": "Cause of Death",
+          "type": "nominal",
+          "axis": {
+            "title": "",
+            "labelFontWeight": "bold"
+          }
+        },
+        "size": {
+          "field": "Number of Dead",
+          "type": "quantitative",
+          "title": "Number of Deaths",
+          "scale": {
+            "type": "threshold",
+            "domain": [
+              5,
+              10,
+              50,
+              100,
+              200,
+              600
+            ],
+            "range": [
+              10,
+              50,
+              150,
+              300,
+              750,
+              1500,
+              3000
+            ]
+          }
+        },
+        "color": {
+          "field": "Sig Region",
+          "type": "nominal",
+          "legend": {
+            "title": "Significant Region"
+          },
+          "scale": {
+            "domain": [
+              "Africa",
+              "Americas",
+              "Asia",
+              "Caribbean",
+              "Europe",
+              "Mediterranean"
+            ],
+            "range": [
+              "#e76f51",
+              "#f4a261",
+              "#e9c46a",
+              "#756bb1",
+              "#2a9d8f",
+              "#1f78b4"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Sig Region",
+            "type": "nominal",
+            "title": "Prominent Region"
+          },
+          {
+            "field": "Date",
+            "type": "temporal",
+            "timeUnit": "yearmonth",
+            "title": "Date"
+          },
+          {
+            "field": "Number of Dead",
+            "type": "quantitative",
+            "title": "Death Count"
+          }
+        ]
+      }
+    },
+    {
+      "width": 700,
+      "height": 100,
+      "mark": "line",
+      "title": "Use this line chart to filter out the data based on time",
+      "params": [
+        {
+          "name": "time_brush",
+          "select": {
+            "type": "interval",
+            "encodings": [
+              "x"
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "timeUnit": "yeardayofyear",
+          "axis": {
+            "title": "Year",
+            "format": "%Y"
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "Number of Dead",
+          "axis": {
+            "tickCount": 3,
+            "grid": false
+          },
+          "title": "Total Deaths"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "#ff000000"
+  }
+}

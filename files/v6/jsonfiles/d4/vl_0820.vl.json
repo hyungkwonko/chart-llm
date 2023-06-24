@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Manchester United Stock Price vs Points",
+    "subtitle": [
+      "Figure 8: Stock price of MANU, 2014-2022",
+      "Source: Yahoo Finance"
+    ],
+    "subtitleFontStyle": "italic",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/josh-shah/josh-shah.github.io/main/ManUnitedStock_Points_update.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 300,
+  "width": "container",
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#d21200"
+      },
+      "encoding": {
+        "x": {
+          "field": "stock",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              10,
+              20
+            ]
+          },
+          "title": "Stock Price"
+        },
+        "y": {
+          "field": "points",
+          "type": "quantitative",
+          "title": "Points Scored"
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year"
+          },
+          {
+            "field": "points",
+            "type": "quantitative",
+            "title": "Total Points"
+          },
+          {
+            "field": "stock",
+            "type": "quantitative",
+            "title": "Average Stock Price"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "black"
+      },
+      "transform": [
+        {
+          "regression": "stock",
+          "on": "points"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "stock",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "points",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "stock",
+          "on": "points",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ]
+}

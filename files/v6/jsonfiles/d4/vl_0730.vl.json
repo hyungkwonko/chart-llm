@@ -1,0 +1,121 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/Revenues%20and%20Outlays%20share%20of%20GDP%20CSV.csv"
+  },
+  "title": {
+    "text": "USA: Surplus or Shortfall?",
+    "anchor": "start",
+    "subtitle": [
+      "Revenues and Outlays held by the public since 1962, as a share of GDP",
+      "Sources: Congressional Budget Office and Office of Management and Budget",
+      ""
+    ]
+  },
+  "height": 300,
+  "width": 500,
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "gridOpacity": 0
+      },
+      "title": ""
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "Category",
+          "type": "nominal",
+          "legend": {
+            "title": ""
+          },
+          "scale": {
+            "range": [
+              "#ff0303",
+              "#880000"
+            ]
+          }
+        },
+        "y": {
+          "field": "OutlayRevenue",
+          "type": "quantitative",
+          "axis": {
+            "gridOpacity": 1
+          },
+          "title": "Percentage of GDP"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "monotone"
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            }
+          ],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "pivot": "Category",
+          "value": "OutlayRevenue",
+          "groupby": [
+            "Year"
+          ]
+        }
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 1,
+            "param": "hover",
+            "empty": false
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Revenues",
+            "title": "Revenues (% of GDP)",
+            "type": "quantitative"
+          },
+          {
+            "field": "Outlays",
+            "title": "Outlays (% of GDP)",
+            "type": "quantitative"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "fields": [
+              "Year"
+            ],
+            "type": "point",
+            "on": "mouseover",
+            "clear": "mouseout",
+            "nearest": true
+          }
+        }
+      ]
+    }
+  ]
+}

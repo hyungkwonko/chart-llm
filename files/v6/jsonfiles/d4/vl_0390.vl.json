@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "XYZtitle": {
+    "text": "Hiring and Firing, by Age and Size",
+    "subtitle": [
+      "Job creation and destruction per firm, age-size brackets.",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_AgeSize.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "as": [
+        "size",
+        "value"
+      ]
+    },
+    {
+      "filter": "datum.value>0"
+    },
+    {
+      "filter": "datum.Measure!='RLP'"
+    },
+    {
+      "filter": "datum.Measure!='JobCreationperJob'"
+    },
+    {
+      "calculate": "{'JobCreationPerFirm':'A. Hires', 'JobDestructionPerFirm':'B. Fires'}[datum.Measure]",
+      "as": "name"
+    }
+  ],
+  "height": 300,
+  "width": 225,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 1,
+    "point": true
+  },
+  "encoding": {
+    "x": {
+      "field": "Age",
+      "type": "quantitative",
+      "title": "Age",
+      "axis": {
+        "grid": false,
+        "format": ".2"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": [
+          0,
+          3
+        ]
+      },
+      "axis": {
+        "grid": false,
+        "format": ".3"
+      }
+    },
+    "color": {
+      "field": "size",
+      "title": "Size",
+      "scale": {
+        "scheme": "inferno"
+      },
+      "legend": {
+        "orient": "bottom",
+        "columns": 9
+      }
+    },
+    "facet": {
+      "field": "name",
+      "columns": 2,
+      "title": null
+    }
+  }
+}

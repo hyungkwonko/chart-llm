@@ -1,0 +1,156 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-5457b9d8f23139bf209ebad0b5702cf0"
+  },
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "type": "nominal",
+      "field": "authorAssociation",
+      "scale": {
+        "domain": [
+          "MEMBER",
+          "CONTRIBUTOR",
+          "COLLABORATOR",
+          "NONE"
+        ],
+        "range": [
+          "rgb(211.82745098039214, 211.82745098039214, 211.82745098039214)",
+          "rgb(166.98562091503268, 229.89803921568628, 166.98562091503268)",
+          "rgb(96.37647058823529, 192.75294117647059, 96.37647058823529)",
+          "rgb(0.0, 100.3921568627451, 0.0)"
+        ]
+      }
+    },
+    "x": {
+      "type": "nominal",
+      "field": "author"
+    },
+    "y": {
+      "type": "quantitative",
+      "field": "n_first_responses"
+    }
+  },
+  "title": "Top 50 first responders for numpy in the last 10 days",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-5457b9d8f23139bf209ebad0b5702cf0": [
+      {
+        "author": "charris",
+        "n_first_responses": 15,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "mattip",
+        "n_first_responses": 10,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "melissawm",
+        "n_first_responses": 6,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "seberg",
+        "n_first_responses": 5,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "WarrenWeckesser",
+        "n_first_responses": 4,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "bashtage",
+        "n_first_responses": 4,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "HaoZeke",
+        "n_first_responses": 3,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "rgommers",
+        "n_first_responses": 3,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "BvB93",
+        "n_first_responses": 2,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "ma-sadeghi",
+        "n_first_responses": 2,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "henryiii",
+        "n_first_responses": 2,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "Mukulikaa",
+        "n_first_responses": 2,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "Firestar-Reimu",
+        "n_first_responses": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "jamiecook",
+        "n_first_responses": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "grlee77",
+        "n_first_responses": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "fangq",
+        "n_first_responses": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "Yutaro-Sanada",
+        "n_first_responses": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "r-devulap",
+        "n_first_responses": 1,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "rossbar",
+        "n_first_responses": 1,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "Lioscro",
+        "n_first_responses": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "serge-sans-paille",
+        "n_first_responses": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "stefanv",
+        "n_first_responses": 1,
+        "authorAssociation": "MEMBER"
+      }
+    ]
+  }
+}

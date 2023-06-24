@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/COG-UK/UK-lineage-dynamics-analysis/2ca84630ab1fb80b949d25b05b6578fa9674f574/analyses/epidemiological/results/lag-estimation-tmrca-replicates.csv"
+  },
+  "facet": {
+    "field": "id"
+  },
+  "spec": {
+    "height": 100,
+    "width": 100,
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "bin": {
+          "step": 10
+        },
+        "field": "tmrca"
+      },
+      "y": {
+        "aggregate": "count"
+      },
+      "color": {
+        "field": "model",
+        "type": "ordinal"
+      }
+    }
+  },
+  "columns": 5
+}

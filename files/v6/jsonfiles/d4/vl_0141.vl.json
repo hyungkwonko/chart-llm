@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "y": {
+      "field": "Goals",
+      "type": "quantitative",
+      "aggregate": null,
+      "axis": {
+        "format": "s"
+      }
+    },
+    "x": {
+      "field": "Name",
+      "type": "nominal",
+      "aggregate": null,
+      "sort": "-y"
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Country",
+        "oneOf": [
+          "France"
+        ]
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/nl4dv/nl4dv/master/examples/assets/data/euro.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "ignore-orientation": "True",
+  "config": {}
+}

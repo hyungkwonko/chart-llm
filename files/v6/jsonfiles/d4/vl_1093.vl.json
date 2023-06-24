@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Inflation Europe 2021",
+    "subtitleFontSize": 11,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Emilysquires02/Emilysquires02.github.io/main/europe%201",
+    "format": {
+      "type": "topojson",
+      "feature": "continent_Europe_subunits"
+    }
+  },
+  "projection": {
+    "type": "equalEarth"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "black",
+    "strokeWidth": "0.5"
+  },
+  "transform": [
+    {
+      "lookup": "properties.geounit",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Emilysquires02/Emilysquires02.github.io/main/map_data2%20(1).csv",
+          "format": {
+            "type": "csv"
+          }
+        },
+        "key": "economy",
+        "fields": [
+          "Inflation"
+        ]
+      }
+    },
+    {
+      "type": "filter",
+      "expr": "datum.Date == 2021"
+    }
+  ],
+  "encoding": {
+    "color": {
+      "field": "Inflation",
+      "type": "quantitative"
+    },
+    "tooltip": {
+      "field": "properties.geounit",
+      "type": "nominal",
+      "title": "Country"
+    }
+  },
+  "config": {}
+}

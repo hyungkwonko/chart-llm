@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ConorQuah/ConorQuah.github.io/main/apple_R%26D_csv.csv"
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "profits (millions USD)",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Investment into R&D (millions USD)",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "Year",
+        "type": "temporal",
+        "title": "Date"
+      }
+    ]
+  }
+}

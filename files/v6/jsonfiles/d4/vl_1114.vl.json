@@ -1,0 +1,328 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Tax revenue & GDP per capita vs Human Capital Index (HCI)",
+    "subtitle": [
+      "Size of points based on popluation",
+      "Source: World Bank. 2020 data"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/World%20bank%20data.json",
+    "format": {
+      "type": "json"
+    }
+  },
+  "height": 300,
+  "width": "container",
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "color": "#228B22",
+        "opacity": 0.6
+      },
+      "encoding": {
+        "x": {
+          "field": "Human Capital Index (HCI)",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0.25,
+              1
+            ]
+          },
+          "axis": {
+            "grid": false
+          },
+          "title": "Human Capital Index (HCI)"
+        },
+        "y": {
+          "field": "Total tax revenue per capita",
+          "type": "quantitative",
+          "scale": {
+            "domainMax": 100000,
+            "type": "log"
+          },
+          "axis": {
+            "grid": false
+          }
+        },
+        "size": {
+          "field": "Population",
+          "type": "quantitative",
+          "scale": {
+            "range": [
+              40,
+              1500
+            ]
+          },
+          "title": "Population",
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "Country Name",
+            "type": "ordinal",
+            "title": "Country"
+          },
+          {
+            "field": "Total tax revenue per capita",
+            "type": "quantitative",
+            "title": "Tax revenue per capita, $",
+            "format": ".2f"
+          },
+          {
+            "field": "Human Capital Index (HCI)",
+            "type": "quantitative",
+            "title": "HCI",
+            "format": ".2f"
+          },
+          {
+            "field": "Population",
+            "type": "quantitative",
+            "title": "Population",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "color": "#ad0000",
+        "opacity": 0.6
+      },
+      "encoding": {
+        "x": {
+          "field": "Human Capital Index (HCI)",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0.25,
+              1
+            ]
+          },
+          "axis": {
+            "grid": false
+          },
+          "title": "Human Capital Index (HCI)"
+        },
+        "y": {
+          "field": "GDP per capita",
+          "type": "quantitative",
+          "scale": {
+            "domainMax": 100000,
+            "type": "log"
+          },
+          "axis": {
+            "grid": false
+          },
+          "title": "Total tax revenue per capita / GDP per capita (log scale)"
+        },
+        "size": {
+          "field": "Population",
+          "type": "quantitative",
+          "scale": {
+            "range": [
+              40,
+              1500
+            ]
+          },
+          "title": "Population",
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "Country Name",
+            "type": "ordinal",
+            "title": "Country"
+          },
+          {
+            "field": "GDP per capita",
+            "type": "quantitative",
+            "title": "GDP per capita, $",
+            "format": ".2f"
+          },
+          {
+            "field": "Human Capital Index (HCI)",
+            "type": "quantitative",
+            "title": "HCI",
+            "format": ".2f"
+          },
+          {
+            "field": "Population",
+            "type": "quantitative",
+            "title": "Population",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#000000"
+      },
+      "transform": [
+        {
+          "regression": "GDP per capita",
+          "method": "pow",
+          "on": "Human Capital Index (HCI)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Human Capital Index (HCI)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "GDP per capita",
+          "type": "quantitative",
+          "scale": {
+            "type": "log"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#000000"
+      },
+      "transform": [
+        {
+          "regression": "Total tax revenue per capita",
+          "method": "pow",
+          "on": "Human Capital Index (HCI)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Human Capital Index (HCI)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Total tax revenue per capita",
+          "type": "quantitative",
+          "scale": {
+            "type": "log"
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "GDP per capita",
+          "on": "Human Capital Index (HCI)",
+          "method": "pow",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "#ad0000",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Total tax revenue per capita",
+          "on": "Human Capital Index (HCI)",
+          "method": "pow",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "#228B22",
+        "x": "width",
+        "align": "right",
+        "y": 60
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "text": [
+          "GDP per capita",
+          "",
+          "Tax revenue per capita"
+        ],
+        "x": 25,
+        "y": 13
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "circle",
+        "size": 200,
+        "opacity": 0.65,
+        "y": 8,
+        "x": 15,
+        "fill": "#ad0000"
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "circle",
+        "size": 200,
+        "opacity": 0.65,
+        "y": 33,
+        "x": 15,
+        "fill": "#228B22"
+      }
+    }
+  ]
+}

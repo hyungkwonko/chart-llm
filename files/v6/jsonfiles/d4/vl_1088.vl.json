@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Removing a time trend from indexed rental data",
+    "subtitle": "Error values calculated from Index of Private Housing Rental Prices data.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Emilysquires02/Emilysquires02.github.io/main/regressed.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "london_error",
+        "northwest_error",
+        "england_error",
+        "northeast_error",
+        "southeast_error",
+        "southwest_error",
+        "yorkshireandthehumbe_error",
+        "eastmidlands_error",
+        "westmidlands_error",
+        "east_error"
+      ],
+      "as": [
+        "error",
+        "value"
+      ]
+    },
+    {
+      "filter": "datum.error==Select"
+    }
+  ],
+  "params": [
+    {
+      "name": "Select",
+      "value": "london_error",
+      "bind": {
+        "input": "select",
+        "options": [
+          "london_error",
+          "northwest_error",
+          "england_error",
+          "northeast_error",
+          "southeast_error",
+          "southwest_error",
+          "yorkshireandthehumber_error",
+          "eastmidlands_error",
+          "westmidlands_error",
+          "east_error"
+        ],
+        "step": 1,
+        "name": "Area:"
+      }
+    }
+  ],
+  "repeat": {
+    "layer": [
+      "england",
+      "england_pred"
+    ]
+  },
+  "spec": {
+    "height": 300,
+    "width": 300,
+    "mark": {
+      "type": "line",
+      "strokeWidth": 2
+    },
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal"
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Index level (January 2015 = 100)"
+      }
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,154 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/FRED_UNEMPLOY.csv"
+  },
+  "width": 500,
+  "height": 350,
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "title": {
+    "text": "Unemployment, US",
+    "subtitle": "Monthly rate, 16+ yrs, seasonally adjusted, source: FRED",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    }
+  },
+  "transform": [
+    {
+      "pivot": "Metric",
+      "value": "Value",
+      "groupby": [
+        "Date"
+      ]
+    },
+    {
+      "calculate": "year(datum.Date)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1948,
+      "bind": {
+        "input": "range",
+        "min": 1948,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 1949,
+        "max": 2023,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "layer": [
+    {
+      "encoding": {
+        "y": {
+          "field": "Unemployment",
+          "type": "quantitative",
+          "title": null,
+          "axis": {
+            "gridOpacity": 0.6,
+            "format": "%"
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "color": "rgb(128,0,0)"
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            }
+          ],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0.3,
+            "param": "hover",
+            "empty": false
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal",
+            "format": "%b %Y"
+          },
+          {
+            "field": "Unemployment",
+            "type": "quantitative",
+            "format": ".1%",
+            "title": "Unemployment"
+          },
+          {
+            "field": "Persons Unemployed",
+            "type": "quantitative",
+            "format": ",",
+            "title": "Unemployed ('000s)"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Date"
+            ],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ]
+}

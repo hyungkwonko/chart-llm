@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/declann/calculang-miscellaneous-models/080fc8d460470bcac643876d21e354ca8f4438c9/models/hearts/rotation-data.json"
+  },
+  "encoding": {
+    "x": {
+      "field": "x1",
+      "type": "quantitative",
+      "axis": {
+        "tickOpacity": 0.2,
+        "tickCount": 3,
+        "gridOpacity": 0.2,
+        "labelOpacity": 0.2
+      },
+      "scale": {
+        "domain": [
+          -12,
+          11
+        ]
+      }
+    },
+    "y": {
+      "axis": {
+        "tickOpacity": 0.2,
+        "tickCount": 3,
+        "gridOpacity": 0.2,
+        "labelOpacity": 0.2
+      },
+      "scale": {
+        "domain": [
+          -12,
+          11
+        ]
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "tooltip": true
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "color": {
+          "value": "red"
+        }
+      }
+    }
+  ]
+}

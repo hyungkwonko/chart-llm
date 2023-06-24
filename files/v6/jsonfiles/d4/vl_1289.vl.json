@@ -1,0 +1,206 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axisX": {
+      "domain": true,
+      "domainColor": "#023B7F",
+      "domainWidth": 1,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 12,
+      "tickColor": "#023B7F",
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 12,
+      "titlePadding": 10
+    },
+    "axisY": {
+      "domain": false,
+      "grid": true,
+      "gridColor": "#023B7F",
+      "gridWidth": 1,
+      "labelAngle": 0,
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 12,
+      "ticks": false,
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 12,
+      "titlePadding": 10
+    },
+    "mark": {
+      "color": "#4279C1",
+      "fill": "#7EB7FD"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#023B7F",
+      "font": "Helvetica Neue",
+      "fontSize": 18
+    },
+    "view": {
+      "height": 300,
+      "stroke": "#4279C1",
+      "width": 300
+    }
+  },
+  "data": {
+    "name": "data-d3a0498fd9d3742ac46686e002c2f8b0"
+  },
+  "datasets": {
+    "data-d3a0498fd9d3742ac46686e002c2f8b0": [
+      {
+        "PPG": 93.6842105263158,
+        "player": "Andrew Yaphe",
+        "ppg": 93.68,
+        "team": "Stanford A",
+        "team_tournament": "2010 Andrew Yaphe",
+        "tournament": "ACF Nationals 2010"
+      },
+      {
+        "PPG": 83.25,
+        "player": "Auroni Gupta",
+        "ppg": 83.25,
+        "team": "UCSD A",
+        "team_tournament": "2015 Auroni Gupta",
+        "tournament": "ACF Nationals 2015"
+      },
+      {
+        "PPG": 97.0,
+        "player": "Jerry Vinokurov",
+        "ppg": 97.0,
+        "team": "Brown A",
+        "team_tournament": "2006 Jerry Vinokurov",
+        "tournament": "ACF Nationals 2006"
+      },
+      {
+        "PPG": 91.47058823529412,
+        "player": "John Lawrence",
+        "ppg": 91.47,
+        "team": "London",
+        "team_tournament": "2013 John Lawrence",
+        "tournament": "ACF Nationals 2013"
+      },
+      {
+        "PPG": 85.26315789473684,
+        "player": "Jordan Brownstein",
+        "ppg": 85.26,
+        "team": "Maryland A",
+        "team_tournament": "2016 Jordan Brownstein",
+        "tournament": "ACF Nationals 2016"
+      },
+      {
+        "PPG": 87.33333333333333,
+        "player": "Jordan Brownstein",
+        "ppg": 87.33,
+        "team": "Maryland A",
+        "team_tournament": "2017 Jordan Brownstein",
+        "tournament": "ACF Nationals 2017"
+      },
+      {
+        "PPG": 87.10526315789474,
+        "player": "Matt Bollinger",
+        "ppg": 87.11,
+        "team": "Virginia A",
+        "team_tournament": "2014 Matt Bollinger",
+        "tournament": "ACF Nationals 2014"
+      },
+      {
+        "PPG": 91.66666666666667,
+        "player": "Matt Weiner",
+        "ppg": 91.67,
+        "team": "VCU A",
+        "team_tournament": "2007 Matt Weiner",
+        "tournament": "ACF Nationals 2007"
+      },
+      {
+        "PPG": 83.33333333333333,
+        "player": "Ryan Westbrook",
+        "ppg": 83.33,
+        "team": "Wayne State",
+        "team_tournament": "2007 Ryan Westbrook",
+        "tournament": "ACF Nationals 2007"
+      },
+      {
+        "PPG": 85.0,
+        "player": "Seth Kendall",
+        "ppg": 85.0,
+        "team": "Kentucky",
+        "team_tournament": "2007 Seth Kendall",
+        "tournament": "ACF Nationals 2007"
+      }
+    ]
+  },
+  "encoding": {
+    "fill": {
+      "field": "team",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Virginia A",
+          "Stanford A",
+          "Maryland A",
+          "VCU A",
+          "Kentucky",
+          "Brown A",
+          "London",
+          "Wayne State",
+          "UCSD A"
+        ],
+        "range": [
+          "#F84C1E",
+          "#B1040E",
+          "#E03A3E",
+          "#000000",
+          "#0033A0",
+          "#4E3629",
+          "#EB302D",
+          "#00594f",
+          "#C69214"
+        ]
+      },
+      "title": "Team",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "player",
+        "type": "nominal"
+      },
+      {
+        "field": "team",
+        "type": "nominal"
+      },
+      {
+        "field": "tournament",
+        "type": "nominal"
+      },
+      {
+        "field": "ppg",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "labelAngle": 315
+      },
+      "field": "team_tournament",
+      "sort": {
+        "field": "ppg",
+        "order": "descending"
+      },
+      "title": "Team",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "ppg",
+      "title": "Points per game",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar",
+  "title": "Highest Tournament PPG"
+}

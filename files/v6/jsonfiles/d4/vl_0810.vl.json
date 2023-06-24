@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Goals Scored vs xG",
+    "subtitle": [
+      "Premier League Players Goals Scored vs Expected Goals",
+      "2021/22 season. Source: Fbref"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/josh-shah/josh-shah.github.io/main/xgVSg.csv"
+  },
+  "height": 300,
+  "width": "container",
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "xG",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Goals",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "Rk",
+            "type": "nominal",
+            "title": "Rank"
+          },
+          {
+            "field": "Player",
+            "type": "nominal",
+            "title": "Player"
+          },
+          {
+            "field": "Team",
+            "type": "nominal",
+            "title": "Team"
+          },
+          {
+            "field": "Goals",
+            "type": "quantitative",
+            "title": "Goals (actual)"
+          },
+          {
+            "field": "xG",
+            "type": "quantitative",
+            "title": "Goals (expected)"
+          }
+        ],
+        "color": {
+          "field": "Team",
+          "scale": {
+            "range": [
+              "#EF0107",
+              "#034694",
+              "#00B2A9",
+              "#4fc3f7",
+              "#FBE122",
+              "orange",
+              "purple",
+              "pink",
+              "black"
+            ]
+          },
+          "title": "Team",
+          "legend": {
+            "orient": "bottom",
+            "columns": 1,
+            "fillColor": "#FfFfFf"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "Goals",
+          "on": "xG",
+          "extent": [
+            0,
+            24
+          ]
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "xG",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Goals",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Goals",
+          "on": "xG",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ]
+}

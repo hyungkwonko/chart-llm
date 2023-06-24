@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bubble plot - Gross GDP - foreign popuation.",
+  "width": 400,
+  "height": 300,
+  "title": {
+    "text": "GDP & Immigration",
+    "subtitle": "GDP (USD, constant prices), Source:OECD, World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/sadieward/sadieward.github.io/main/grossgdp_imm.csv"
+  },
+  "mark": "circle",
+  "encoding": {
+    "y": {
+      "field": "GDP(bns)",
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      }
+    },
+    "x": {
+      "field": "foreign born (mns)",
+      "type": "quantitative",
+      "axis": {
+        "grid": false,
+        "title": "Foreign born population (mns)"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "LOCATION",
+        "title": "Country"
+      }
+    ],
+    "size": {
+      "field": "population",
+      "type": "quantitative",
+      "title": "Total Population"
+    },
+    "color": {
+      "value": "#6DE18E"
+    }
+  }
+}

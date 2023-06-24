@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A calculate that takes the messy names in the field, metric, and creates a new field, metricClean, where the names are nicer.",
+  "title": {
+    "text": "Productivity spread / shocks",
+    "subtitle": [
+      "Standard deviation of firm-level productivity",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_IndustriesRLP.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "lRLP"
+      ],
+      "as": [
+        "metric",
+        "value"
+      ]
+    },
+    {
+      "calculate": "{'entryRate':'Entry', 'exitRate': 'Exit'}[datum.metric]",
+      "as": "metricClean"
+    }
+  ],
+  "height": 75,
+  "width": 75,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 1,
+    "point": false
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "format": "d"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "format": "2"
+      }
+    },
+    "facet": {
+      "field": "Industry",
+      "type": "nominal",
+      "title": null,
+      "columns": 4
+    },
+    "color": {
+      "field": "metricClean",
+      "title": null,
+      "scale": {
+        "range": [
+          "green"
+        ]
+      },
+      "legend": null
+    }
+  }
+}

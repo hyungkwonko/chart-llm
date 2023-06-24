@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Share of global GDP by Country Trellis Chart: China an Increasingly Large Player",
+    "subtitle": "Source: World Bank",
+    "anchor": "start",
+    "subtitleFontSize": 10,
+    "fontWeight": "bold"
+  },
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 1989,
+      "bind": {
+        "input": "range",
+        "min": 1989,
+        "max": 2021,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "background": "#fff0d8",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/globalgdppercentagev3.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "vconcat": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/gdpstackv3.csv",
+        "format": {
+          "type": "csv"
+        }
+      },
+      "width": 340,
+      "height": 340,
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "percentage",
+          "type": "quantitative",
+          "axis": {
+            "format": "%"
+          },
+          "title": "Share of Global GDP"
+        },
+        "color": {
+          "field": "Original Name",
+          "scale": {
+            "range": [
+              "darkred",
+              "black",
+              "red",
+              "orange",
+              "darkorange",
+              "brown",
+              "green",
+              "darkred"
+            ],
+            "domain": [
+              "China",
+              "Germany",
+              "Japan",
+              "Rest of the World",
+              "United Kingdom",
+              "United States of America"
+            ]
+          },
+          "legend": {
+            "labelFont": "10",
+            "title": "Country"
+          }
+        }
+      }
+    },
+    {
+      "width": 540,
+      "height": 340,
+      "transform": [
+        {
+          "filter": "datum.Year == yearSelector"
+        },
+        {
+          "lookup": "Original Name",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json",
+              "format": {
+                "property": "features"
+              }
+            },
+            "key": "properties.name",
+            "fields": [
+              "properties",
+              "type",
+              "geometry",
+              "id"
+            ]
+          }
+        }
+      ],
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "black",
+        "strokeWidth": 0.2
+      },
+      "encoding": {
+        "color": {
+          "legend": {
+            "title": "Share of global GDP",
+            "titleFontSize": 9.4,
+            "orient": "bottom",
+            "format": "%"
+          },
+          "field": "Share",
+          "type": "quantitative",
+          "scale": {
+            "range": [
+              "brown",
+              "Orange",
+              "lightred",
+              "red"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.name",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "Share",
+            "type": "quantitative",
+            "format": "%",
+            "title": "Share of global GDP"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mark": {
+    "type": "arc",
+    "tooltip": true
+  },
+  "encoding": {
+    "theta": {
+      "field": "Production Budget",
+      "type": "quantitative",
+      "aggregate": "sum"
+    },
+    "color": {
+      "field": "Genre",
+      "type": "nominal",
+      "aggregate": null
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/nl4dv/nl4dv/master/examples/assets/data/movies-w-year.csv",
+    "format": {
+      "type": "csv"
+    }
+  }
+}

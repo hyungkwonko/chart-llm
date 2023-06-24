@@ -1,0 +1,88 @@
+{
+  "transform": [
+    {
+      "as": "estLo",
+      "calculate": "datum.Estimate - datum.Confidence/2"
+    },
+    {
+      "as": "estHi",
+      "calculate": "datum.Estimate + datum.Confidence/2"
+    }
+  ],
+  "config": {
+    "view": {
+      "height": 400,
+      "width": 800
+    },
+    "padding": 50
+  },
+  "data": {
+    "values": [
+      {
+        "Confidence": 3.2243994020504236,
+        "Key": "",
+        "Estimate": 2.2700977263666573,
+        "Parameter": "intercept"
+      },
+      {
+        "Confidence": 0.05134931141554224,
+        "Key": "",
+        "Estimate": -0.0434785965726042,
+        "Parameter": "differential spend"
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Parameters",
+  "layer": [
+    {
+      "mark": "point",
+      "encoding": {
+        "color": {
+          "field": "Key",
+          "type": "nominal",
+          "legend": null
+        },
+        "x": {
+          "field": "Estimate",
+          "type": "quantitative",
+          "axis": {
+            "title": "Estimate (with 95% confidence error bars)"
+          }
+        },
+        "y": {
+          "field": "Parameter",
+          "type": "ordinal"
+        }
+      }
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x2": {
+          "field": "estHi",
+          "type": "quantitative",
+          "axis": {
+            "title": ""
+          }
+        },
+        "color": {
+          "field": "Key",
+          "type": "nominal",
+          "legend": null
+        },
+        "x": {
+          "field": "estLo",
+          "type": "quantitative",
+          "axis": {
+            "title": ""
+          }
+        },
+        "y": {
+          "field": "Parameter",
+          "type": "ordinal"
+        }
+      }
+    }
+  ]
+}

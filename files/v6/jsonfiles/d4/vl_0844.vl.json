@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Top Premier League Goal Scorers",
+    "subtitle": "",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jordanboi58/Jordanboi58.github.io/main/df4.csv"
+  },
+  "height": 400,
+  "width": 300,
+  "mark": {
+    "type": "bar",
+    "color": "green"
+  },
+  "encoding": {
+    "x": {
+      "field": "Player",
+      "type": "nominal",
+      "axis": {
+        "title": "Goal scorers",
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "Goals",
+      "scale": {
+        "domain": [
+          0,
+          300
+        ]
+      },
+      "type": "quantitative",
+      "title": "Goals",
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

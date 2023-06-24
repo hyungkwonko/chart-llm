@@ -1,0 +1,51 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-9a6e796b677f3fe1c38df5c60de8641b"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "type": "nominal",
+      "field": "repo",
+      "sort": [
+        "numpy",
+        "numpydoc",
+        "numpy.org"
+      ]
+    },
+    "y": {
+      "type": "quantitative",
+      "field": "number"
+    }
+  },
+  "title": "Issues created in the last 10 days",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-9a6e796b677f3fe1c38df5c60de8641b": [
+      {
+        "org": "numpy",
+        "repo": "numpy",
+        "number": 17,
+        "org/repo": "numpy/numpy"
+      },
+      {
+        "org": "numpy",
+        "repo": "numpy.org",
+        "number": 1,
+        "org/repo": "numpy/numpy.org"
+      },
+      {
+        "org": "numpy",
+        "repo": "numpydoc",
+        "number": 2,
+        "org/repo": "numpy/numpydoc"
+      }
+    ]
+  }
+}

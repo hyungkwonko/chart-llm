@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Top 10 ICC Test Points 2022",
+    "subtitle": "Source: espncricinfo.com",
+    "subtitleFontStyle": "Arial",
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {
+        "Team": "Australia",
+        "Points": 2703
+      },
+      {
+        "Team": "India",
+        "Points": 3318
+      },
+      {
+        "Team": "South Africa",
+        "Points": 2606
+      },
+      {
+        "Team": "England",
+        "Points": 4449
+      },
+      {
+        "Team": "New Zealand",
+        "Points": 2704
+      },
+      {
+        "Team": "Pakistan",
+        "Points": 2126
+      },
+      {
+        "Team": "Sri Lanka",
+        "Points": 2282
+      },
+      {
+        "Team": "West Indies",
+        "Points": 1988
+      },
+      {
+        "Team": "Bangladesh",
+        "Points": 1047
+      },
+      {
+        "Team": "Zimbabwe",
+        "Points": 148
+      }
+    ]
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "bar",
+    "color": "#5d71a4"
+  },
+  "encoding": {
+    "x": {
+      "field": "Team",
+      "type": "nominal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "Points",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

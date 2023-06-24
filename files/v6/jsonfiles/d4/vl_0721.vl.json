@@ -1,0 +1,133 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/Trade%20Globalisation%20History%20CSV.csv"
+  },
+  "title": {
+    "text": "Trade Openness Index",
+    "anchor": "start",
+    "subtitle": [
+      "History of Globalisation",
+      "Source: Our World in Data",
+      ""
+    ]
+  },
+  "height": 300,
+  "width": 500,
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "gridOpacity": 0
+      },
+      "title": ""
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "Type",
+          "type": "nominal",
+          "legend": {
+            "title": ""
+          },
+          "scale": {
+            "range": [
+              "#880000",
+              "#ee9719",
+              "#0d9719",
+              "#ff0303"
+            ]
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "axis": {
+            "gridOpacity": 1
+          },
+          "title": "Trade Openness Index, %"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "monotone"
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": true
+              }
+            }
+          ],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "pivot": "Type",
+          "value": "Value",
+          "groupby": [
+            "Year"
+          ]
+        }
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0.7,
+            "param": "hover",
+            "empty": false
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Trade openness (share of exports and imports in GDP)",
+            "title": "Trade openness (share of exports and imports in GDP)",
+            "type": "quantitative"
+          },
+          {
+            "field": "World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)) ",
+            "title": "World trade (% of GDP)",
+            "type": "quantitative"
+          },
+          {
+            "field": "World trade - lower bound (% of GDP) (Estevadeordal, Frantz, and Taylor (2003))",
+            "title": "World trade - lower bound (% of GDP)",
+            "type": "quantitative"
+          },
+          {
+            "field": "World trade - upper bound (% of GDP) (Estevadeordal, Frantz, and Taylor (2003))",
+            "title": "World trade - upper bound (% of GDP)",
+            "type": "quantitative"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "fields": [
+              "Year"
+            ],
+            "type": "point",
+            "on": "mouseover",
+            "clear": "mouseout",
+            "nearest": true
+          }
+        }
+      ]
+    }
+  ]
+}

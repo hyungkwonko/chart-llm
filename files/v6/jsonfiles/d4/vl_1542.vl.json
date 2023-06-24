@@ -1,0 +1,389 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/rambaut/B117_figures/1f2a7fd684f9d7e8eb293f0add1ce2175c1c3894/docs/skygrids.csv"
+  },
+  "vconcat": [
+    {
+      "width": 640,
+      "height": 320,
+      "view": {
+        "stroke": ""
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "errorband",
+            "clip": true,
+            "color": "goldenrod"
+          },
+          "encoding": {
+            "y": {
+              "field": "SG_lower",
+              "type": "quantitative",
+              "title": ""
+            },
+            "y2": {
+              "field": "SG_upper",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime2",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "clip": true,
+            "color": "goldenrod"
+          },
+          "encoding": {
+            "y": {
+              "field": "SG_mean",
+              "type": "quantitative",
+              "scale": {
+                "type": "log",
+                "domain": [
+                  0.001,
+                  100
+                ]
+              },
+              "axis": {
+                "offset": 10,
+                "grid": false
+              },
+              "title": ""
+            },
+            "x": {
+              "field": "datetime2",
+              "type": "temporal",
+              "scale": {
+                "domain": [
+                  "2020-09-01",
+                  "2020-12-06"
+                ]
+              },
+              "axis": {
+                "offset": 10,
+                "grid": false
+              },
+              "title": ""
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "errorband",
+            "clip": true,
+            "color": "darkred"
+          },
+          "encoding": {
+            "y": {
+              "field": "LGC_lower",
+              "type": "quantitative",
+              "title": ""
+            },
+            "y2": {
+              "field": "LGC_upper",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "clip": true,
+            "color": "darkred"
+          },
+          "encoding": {
+            "y": {
+              "field": "LGC_mean",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime",
+              "type": "temporal"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 640,
+      "height": 320,
+      "view": {
+        "stroke": ""
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "errorband",
+            "clip": true,
+            "color": "goldenrod"
+          },
+          "encoding": {
+            "y": {
+              "field": "SG_lower",
+              "type": "quantitative"
+            },
+            "y2": {
+              "field": "SG_upper",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime2",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "clip": true,
+            "color": "goldenrod"
+          },
+          "encoding": {
+            "y": {
+              "field": "SG_mean",
+              "type": "quantitative",
+              "scale": {
+                "type": "log",
+                "domain": [
+                  0.001,
+                  100
+                ]
+              },
+              "axis": {
+                "offset": 10,
+                "grid": false
+              },
+              "title": ""
+            },
+            "x": {
+              "field": "datetime2",
+              "type": "temporal",
+              "scale": {
+                "domain": [
+                  "2020-09-01",
+                  "2020-12-06"
+                ]
+              },
+              "axis": {
+                "offset": 10,
+                "grid": false
+              },
+              "title": ""
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "errorband",
+            "clip": true,
+            "color": "steelblue"
+          },
+          "encoding": {
+            "y": {
+              "field": "EGC_lower",
+              "type": "quantitative"
+            },
+            "y2": {
+              "field": "EGC_upper",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "clip": true,
+            "color": "steelblue"
+          },
+          "encoding": {
+            "y": {
+              "field": "EGC_mean",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime",
+              "type": "temporal"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 640,
+      "height": 320,
+      "view": {
+        "stroke": ""
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "errorband",
+            "clip": true,
+            "color": "goldenrod"
+          },
+          "encoding": {
+            "y": {
+              "field": "SG_lower",
+              "type": "quantitative"
+            },
+            "y2": {
+              "field": "SG_upper",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime2",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "clip": true,
+            "color": "goldenrod"
+          },
+          "encoding": {
+            "y": {
+              "field": "SG_mean",
+              "type": "quantitative",
+              "scale": {
+                "type": "log",
+                "domain": [
+                  0.001,
+                  100
+                ]
+              },
+              "axis": {
+                "offset": 10,
+                "grid": false
+              },
+              "title": ""
+            },
+            "x": {
+              "field": "datetime2",
+              "type": "temporal",
+              "scale": {
+                "domain": [
+                  "2020-09-01",
+                  "2020-12-06"
+                ]
+              },
+              "axis": {
+                "offset": 10,
+                "grid": false
+              },
+              "title": ""
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "errorband",
+            "clip": true,
+            "color": "green"
+          },
+          "encoding": {
+            "y": {
+              "field": "3EC_lower",
+              "type": "quantitative"
+            },
+            "y2": {
+              "field": "3EC_upper",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "clip": true,
+            "color": "green"
+          },
+          "encoding": {
+            "y": {
+              "field": "3EC_mean",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "datetime",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "clip": true,
+            "color": "black"
+          },
+          "encoding": {
+            "y": {
+              "value": "100",
+              "type": "quantitative"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 640,
+      "height": 320,
+      "view": {
+        "stroke": ""
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "clip": true,
+            "color": "green"
+          },
+          "encoding": {
+            "y": {
+              "field": "3EC_tmrca",
+              "type": "quantitative",
+              "axis": {
+                "offset": 10,
+                "grid": false
+              },
+              "title": ""
+            },
+            "x": {
+              "field": "datetime3",
+              "type": "temporal",
+              "scale": {
+                "domain": [
+                  "2020-09-01",
+                  "2020-12-06"
+                ]
+              },
+              "axis": {
+                "offset": 10,
+                "grid": false
+              },
+              "title": ""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

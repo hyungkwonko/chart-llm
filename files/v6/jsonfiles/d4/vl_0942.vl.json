@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/hp_income_heat%20map.csv"
+  },
+  "title": {
+    "text": "House Prices and Real Incomes- heat map",
+    "subtitle": [
+      "12 month growth rate, by quarter. Source: ONS,"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "mark": "rect",
+  "width": 300,
+  "height": 300,
+  "transform": [
+    {
+      "filter": "datum.hp_growth<0.25"
+    },
+    {
+      "filter": "datum.rrp_growth<0.25"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "bin": {
+        "maxbins": 10
+      },
+      "field": "rrp_growth",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0.005,
+          0.035
+        ]
+      },
+      "title": "Real Income Growth",
+      "axis": {
+        "format": "00%"
+      }
+    },
+    "y": {
+      "bin": {
+        "maxbins": 20
+      },
+      "field": "hp_growth",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -0.08,
+          0.25
+        ]
+      },
+      "title": "House Price Growth ",
+      "axis": {
+        "format": ".0%"
+      }
+    },
+    "color": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "legend": null,
+      "scale": {
+        "scheme": "magma",
+        "reverse": true
+      }
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

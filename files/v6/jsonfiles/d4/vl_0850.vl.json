@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Proportion of crimes involving Anti-social-behaviour UK",
+    "subtitle": "In Percentile brackets, (2007-2022 Annual data)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jordanboi58/Jordanboi58.github.io/main/Histogramproject.csv"
+  },
+  "height": 400,
+  "width": 300,
+  "mark": {
+    "type": "bar",
+    "color": "green"
+  },
+  "encoding": {
+    "x": {
+      "field": "Percent",
+      "type": "nominal",
+      "axis": {
+        "title": "Proportion of ASB as total crimes",
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "Count",
+      "scale": {
+        "domain": [
+          0,
+          7
+        ]
+      },
+      "type": "quantitative",
+      "title": "Year Count",
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

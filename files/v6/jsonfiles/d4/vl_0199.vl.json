@@ -1,0 +1,121 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Diverging bar chart",
+  "width": "container",
+  "height": 450,
+  "title": {
+    "text": "Income per person, 2017",
+    "offset": 10
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "year",
+        "equal": "2017"
+      }
+    },
+    {
+      "filter": {
+        "field": "region",
+        "equal": "Europe"
+      }
+    },
+    {
+      "window": [
+        {
+          "op": "median",
+          "field": "gdpPercap",
+          "as": "median"
+        }
+      ],
+      "frame": [
+        null,
+        null
+      ]
+    },
+    {
+      "calculate": "datum.gdpPercap - datum.median",
+      "as": "diff"
+    },
+    {
+      "calculate": "if(datum.gdpPercap < datum.median, 'Below median', 'Above median')",
+      "as": "type"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "country",
+      "type": "nominal",
+      "sort": {
+        "op": "mean",
+        "field": "diff",
+        "order": "descending"
+      },
+      "axis": {
+        "grid": false,
+        "ticks": false,
+        "title": ""
+      }
+    },
+    "x": {
+      "field": "diff",
+      "type": "quantitative",
+      "axis": {
+        "ticks": false,
+        "title": "Income per person",
+        "format": "$,.0f"
+      }
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "scale": {
+        "range": [
+          "#91cf60",
+          "#fc8d59"
+        ]
+      },
+      "legend": {
+        "orient": "top",
+        "direction": "horizontal",
+        "title": null
+      }
+    },
+    "opacity": {
+      "value": 0.7
+    },
+    "tooltip": [
+      {
+        "field": "country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "gdpPercap",
+        "type": "quantitative",
+        "title": "GDP per capita",
+        "format": "$,.0f"
+      },
+      {
+        "field": "diff",
+        "type": "quantitative",
+        "title": "Difference from median",
+        "format": "$,.0f"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "domainColor": "none"
+    },
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

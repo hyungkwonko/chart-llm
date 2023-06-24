@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Employment rate:  Aged 65+",
+    "subtitle": " Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black",
+    "subtitleColor": "black"
+  },
+  "config": {
+    "background": "whitesmoke",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 150,
+  "height": 150,
+  "data": {
+    "url": "https://raw.githubusercontent.com/sadieward/sadieward.github.io/main/data_ONS-LFK6.json",
+    "format": {
+      "type": "json",
+      "property": "months"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "point": false,
+    "color": "#314686"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "domainColor": "dimgrey",
+        "labelColor": "black",
+        "tickColor": "pink",
+        "gridColor": "dimgrey"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": ""
+    }
+  }
+}

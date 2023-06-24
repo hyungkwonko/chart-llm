@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "IMF Leading Outstanding",
+    "subtitle": "Credit outstanding to all members as a percentage of world GDP, Source:IMF",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/data_IMF_creditoutstandingGDPadj.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.GDP1*100",
+      "as": "percentage"
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "bar",
+    "color": "rgb(0,47,167"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "percentage",
+      "type": "quantitative",
+      "title": "Credit oustanding as a percentage of world GDP",
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Total IMF outstanding debt overtime ",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/KrishnaSharan/KrishnaSharan.github.io/main/data_IMF_creditOutstanding.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.Totals/1000000000",
+      "as": "billions"
+    }
+  ],
+  "height": 300,
+  "width": 260,
+  "mark": {
+    "type": "bar",
+    "color": "#86d0bb"
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "billions",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

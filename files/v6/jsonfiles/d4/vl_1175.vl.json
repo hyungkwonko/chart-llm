@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/cns-iu/xmacroscope/3fcd51292a91bec3d5d483b57053f4adcdd62e83/packages/site-visualizations/src/assets/generated/combined-data.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "Time (seconds)": "number",
+        "Age Group": null
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.Height < 100"
+    }
+  ],
+  "mark": "rect",
+  "height": 660,
+  "width": 950,
+  "encoding": {
+    "y": {
+      "title": "Height (inches)",
+      "bin": {
+        "maxbins": 40
+      },
+      "field": "Height",
+      "type": "quantitative"
+    },
+    "x": {
+      "bin": {
+        "maxbins": 60,
+        "minstep": 1
+      },
+      "field": "Time (seconds)",
+      "title": "Time (seconds)",
+      "type": "quantitative"
+    },
+    "color": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "legend": {
+        "title": "Count"
+      }
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 450,
+  "height": 250,
+  "title": "Global Forcibly Displaced Population",
+  "description": "Rank of countries based on average rejection rate",
+  "data": {
+    "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/Datasets/Displaced%20People%202010-2021%20transformed.csv"
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": "Year"
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "DP type",
+          "type": "nominal",
+          "legend": {
+            "orient": "top-left",
+            "labelFontWeight": "bold"
+          },
+          "title": null
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "axis": {
+            "tickCount": 8
+          }
+        },
+        "opacity": {
+          "value": 1
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "natural"
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "point",
+            "size": 100,
+            "filled": true
+          }
+        }
+      ]
+    },
+    {
+      "encoding": {
+        "color": {
+          "field": "DP type",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "title": ""
+        },
+        "opacity": {
+          "value": 1
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "natural"
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "point",
+            "size": 500,
+            "filled": false
+          }
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "pivot": "DP type",
+          "value": "Value",
+          "groupby": [
+            "year"
+          ]
+        }
+      ],
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "year"
+            ],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "rule"
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0.5,
+            "param": "hover",
+            "empty": false
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Internally Displaced People",
+            "type": "quantitative",
+            "title": "Internally Displaced People",
+            "format": ","
+          },
+          {
+            "field": "Refugees",
+            "type": "quantitative",
+            "format": ","
+          },
+          {
+            "field": "Asylum Seekers",
+            "type": "quantitative",
+            "format": ","
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "#ff000000",
+    "axis": {
+      "gridColor": "#6e564b71"
+    }
+  }
+}

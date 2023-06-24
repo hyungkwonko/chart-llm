@@ -1,0 +1,260 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "hconcat": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "color": {
+          "type": "nominal",
+          "field": "authorAssociation",
+          "scale": {
+            "domain": [
+              "MEMBER",
+              "CONTRIBUTOR",
+              "COLLABORATOR",
+              "NONE"
+            ],
+            "range": [
+              "rgb(211.82745098039214, 211.82745098039214, 211.82745098039214)",
+              "rgb(166.98562091503268, 229.89803921568628, 166.98562091503268)",
+              "rgb(96.37647058823529, 192.75294117647059, 96.37647058823529)",
+              "rgb(0.0, 100.3921568627451, 0.0)"
+            ]
+          }
+        },
+        "x": {
+          "type": "nominal",
+          "field": "author"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "count"
+        }
+      },
+      "title": "Top 50 commentors for numpy in the last 10 days"
+    }
+  ],
+  "data": {
+    "name": "data-a8222457b2c262828db506539ecdf90f"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-a8222457b2c262828db506539ecdf90f": [
+      {
+        "author": "charris",
+        "count": 26,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "mattip",
+        "count": 20,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "seberg",
+        "count": 19,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "melissawm",
+        "count": 10,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "bashtage",
+        "count": 9,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "WarrenWeckesser",
+        "count": 7,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "HaoZeke",
+        "count": 6,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "henryiii",
+        "count": 6,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "rgommers",
+        "count": 6,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "jocelynbaduria",
+        "count": 5,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "grlee77",
+        "count": 5,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "evanmiller",
+        "count": 4,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "BvB93",
+        "count": 3,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "rossbar",
+        "count": 3,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "isuruf",
+        "count": 3,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "fangq",
+        "count": 3,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "h-vetinari",
+        "count": 2,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "mjvbz",
+        "count": 2,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "ma-sadeghi",
+        "count": 2,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "NickleDave",
+        "count": 2,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "FrozenBob",
+        "count": 2,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "mlazzarin",
+        "count": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "ogrisel",
+        "count": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "r-devulap",
+        "count": 1,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "rkern",
+        "count": 1,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "serge-sans-paille",
+        "count": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "stefanv",
+        "count": 1,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "Bhavay192",
+        "count": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "hay",
+        "count": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "matteobe",
+        "count": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "jbrockmendel",
+        "count": 1,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "jamiecook",
+        "count": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "gwerbin",
+        "count": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "erip",
+        "count": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "bilderbuchi",
+        "count": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "adeak",
+        "count": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "abatomunkuev",
+        "count": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "Yutaro-Sanada",
+        "count": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "NeilGirdhar",
+        "count": 1,
+        "authorAssociation": "CONTRIBUTOR"
+      },
+      {
+        "author": "Mukulikaa",
+        "count": 1,
+        "authorAssociation": "MEMBER"
+      },
+      {
+        "author": "Firestar-Reimu",
+        "count": 1,
+        "authorAssociation": "NONE"
+      },
+      {
+        "author": "tlkahn",
+        "count": 1,
+        "authorAssociation": "NONE"
+      }
+    ]
+  }
+}

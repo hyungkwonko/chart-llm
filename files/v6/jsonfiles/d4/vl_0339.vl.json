@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "US 10y bond yield",
+  "title": {
+    "text": "Real GDP - per capita",
+    "subtitle": "Chained 2012 Dollars, Seasonally Adjusted Annual Rate (BEA via FRED)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/usa/data_FRED-A939RX0Q048SBEA.json",
+    "format": {
+      "type": "json",
+      "property": "observations"
+    }
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "point": false,
+    "interpolate": "monotone",
+    "color": "blue"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "GDP per capita & Immigration",
+    "subtitle": "GDP per capita (USD) regressed on foregin born population (%) for OECD countries, 2019. source:OECD",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/sadieward/sadieward.github.io/main/OECDimm_gdp_conts.csv"
+  },
+  "width": 400,
+  "height": 300,
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#162a2c"
+      },
+      "encoding": {
+        "x": {
+          "field": "foreign population %",
+          "type": "quantitative",
+          "title": "Foreign born population (%)"
+        },
+        "y": {
+          "field": "GDP 000s",
+          "type": "quantitative",
+          "title": "GDP per capita (000s)"
+        },
+        "tooltip": [
+          {
+            "field": "Country ",
+            "type": "nominal",
+            "title": "Country"
+          }
+        ],
+        "color": {
+          "field": "Continent",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "GDP 000s",
+          "on": "foreign population %",
+          "extent": [
+            0,
+            40
+          ]
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "foreign population %",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "GDP 000s",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "GDP 000s",
+          "on": "foreign population %",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "#8B2323",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ]
+}

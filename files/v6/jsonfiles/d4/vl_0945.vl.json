@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Are houses becoming too expensive?",
+    "subtitle": [
+      "Array of Affordability Metrics. Source: ONS."
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/affordability_clean.csv"
+  },
+  "height": 200,
+  "width": 200,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "labelAngle": 60
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": null
+    },
+    "facet": {
+      "field": "Series",
+      "columns": 1,
+      "title": "h",
+      "header": {
+        "titleColor": "white",
+        "labelColor": "black",
+        "titleFontSize": 5
+      }
+    },
+    "color": {
+      "value": "purple",
+      "condition": [
+        {
+          "test": "datum.Series =='Advance/Income'",
+          "value": "darkred"
+        },
+        {
+          "test": "datum.Series =='Price/Income'",
+          "value": "orange"
+        }
+      ]
+    },
+    "tooltip": [
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Ratio"
+      },
+      {
+        "field": "Year",
+        "type": "temporal",
+        "title": "Year"
+      }
+    ]
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "House supply Vs. House price Growth",
+    "subtitle": [
+      "Total supply of new Houses (Months), % change in S&P/Case-Shiller U.S. National Home Price Index.",
+      "Source: FRED API"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 320,
+  "width": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/Data/chart6.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "color": "rgb(0,47,167)",
+        "size": 50
+      },
+      "encoding": {
+        "x": {
+          "field": "supply",
+          "type": "quantitative",
+          "title": "Home Supply (Months)"
+        },
+        "y": {
+          "field": "price",
+          "type": "quantitative",
+          "title": "House Price Index (% change)"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "color": "red",
+        "size": 80
+      },
+      "transform": [
+        {
+          "filter": {
+            "field": "date",
+            "oneOf": [
+              {
+                "year": 2008
+              },
+              {
+                "year": 2022
+              }
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "supply",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "price",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Date"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "supply",
+          "on": "price"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "supply",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "price",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "supply",
+          "on": "price",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ],
+  "config": {}
+}

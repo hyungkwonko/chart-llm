@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/Budget%20Outlook%20CSV%202.csv"
+  },
+  "title": {
+    "fontSize": 13,
+    "subtitleFontSize": 13,
+    "text": "US Government expenditure: past, present and future",
+    "subtitle": [
+      "Historic, 2022, and 2033 Outlays",
+      "Source: Congressional Budget Office",
+      ""
+    ],
+    "anchor": "start"
+  },
+  "width": 500,
+  "height": 300,
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "y": {
+      "field": "Type3",
+      "sort": {
+        "op": "sum",
+        "order": "ascending",
+        "field": "Value"
+      },
+      "axis": {
+        "title": null
+      }
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "Value",
+      "axis": {
+        "title": "% of GDP"
+      }
+    },
+    "color": {
+      "field": "Type2",
+      "legend": {
+        "orient": "none",
+        "columns": 13,
+        "legendX": -100,
+        "legendY": -30,
+        "offset": 10,
+        "title": null
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Type1",
+        "title": "Mandatory, Discretionary or Net Interest?"
+      },
+      {
+        "field": "Value",
+        "title": "% of GDP"
+      }
+    ]
+  }
+}

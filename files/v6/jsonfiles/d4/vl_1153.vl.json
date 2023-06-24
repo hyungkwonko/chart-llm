@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Emissions data using satellite imagary",
+  "data": {
+    "url": "https://api.v2.emissions-api.org/api/v2/carbonmonoxide/average.json?country=gb&begin=2010-02-01&end=2022-07-01"
+  },
+  "mark": {
+    "type": "circle",
+    "color": "red",
+    "opacity": 0.5
+  },
+  "width": 500,
+  "encoding": {
+    "x": {
+      "field": "end",
+      "type": "temporal",
+      "timeUnit": "yearmonthdate",
+      "title": null
+    },
+    "y": {
+      "field": "average",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0.02,
+          0.045
+        ]
+      },
+      "title": null
+    },
+    "color": {
+      "field": "end",
+      "timeUnit": "year",
+      "scale": {
+        "scheme": "inferno"
+      }
+    }
+  }
+}

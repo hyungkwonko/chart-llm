@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 450,
+  "width": 350,
+  "data": {
+    "values": [
+      {
+        "key": "Continuous (Square)",
+        "midmean": 0.3958333333333333,
+        "ci1": 0.2604166666666667,
+        "ci2": 0.53125
+      },
+      {
+        "key": "Continuous (Wedge)",
+        "midmean": 0.4270833333333333,
+        "ci1": 0.30182291666666666,
+        "ci2": 0.5625
+      },
+      {
+        "key": "Juxtaposed (Continuous)",
+        "midmean": 0.5,
+        "ci1": 0.3541666666666667,
+        "ci2": 0.6458333333333334
+      },
+      {
+        "key": "Juxtaposed (Discrete)",
+        "midmean": 0.5625,
+        "ci1": 0.43723958333333335,
+        "ci2": 0.7083333333333334
+      },
+      {
+        "key": "Traditional (Square)",
+        "midmean": 0.7604166666666666,
+        "ci1": 0.6145833333333334,
+        "ci2": 0.8958333333333334
+      },
+      {
+        "key": "Traditional (Wedge)",
+        "midmean": 0.7916666666666666,
+        "ci1": 0.65625,
+        "ci2": 0.9270833333333334
+      },
+      {
+        "key": "VSUP (Square)",
+        "midmean": 0.8645833333333334,
+        "ci1": 0.7395833333333334,
+        "ci2": 0.9895833333333334
+      },
+      {
+        "key": "VSUP (Wedge)",
+        "midmean": 0.8125,
+        "ci1": 0.6770833333333334,
+        "ci2": 0.9479166666666666
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "rule",
+      "encoding": {
+        "y": {
+          "field": "key",
+          "type": "ordinal",
+          "axis": {
+            "title": "Chart Type (Legend Type)",
+            "titlePadding": 10
+          },
+          "domain": [
+            "Continuous (Square)",
+            "Continuous (Wedge)",
+            "Juxtaposed (Continuous)",
+            "Juxtaposed (Discrete)",
+            "Traditional (Square)",
+            "Traditional (Wedge)",
+            "VSUP (Wedge)",
+            "VSUP (Square)"
+          ]
+        },
+        "x": {
+          "field": "ci1",
+          "type": "quantitative",
+          "axis": {
+            "title": "Accuracy"
+          }
+        },
+        "x2": {
+          "field": "ci2",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": "circle",
+      "encoding": {
+        "y": {
+          "field": "key",
+          "type": "ordinal",
+          "domain": [
+            "Continuous (Square)",
+            "Continuous (Wedge)",
+            "Juxtaposed (Continuous)",
+            "Juxtaposed (Discrete)",
+            "Traditional (Square)",
+            "Traditional (Wedge)",
+            "VSUP (Wedge)",
+            "VSUP (Square)"
+          ]
+        },
+        "x": {
+          "field": "midmean",
+          "key": "quantitative"
+        },
+        "opacity": {
+          "value": 1
+        },
+        "size": {
+          "value": 50
+        }
+      }
+    }
+  ]
+}

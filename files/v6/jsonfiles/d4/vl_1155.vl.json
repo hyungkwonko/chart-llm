@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {
+        "Weeks": 683,
+        "Player": "Tiger Woods"
+      },
+      {
+        "Weeks": 331,
+        "Player": "Greg Norman"
+      },
+      {
+        "Weeks": 135,
+        "Player": "Dustin Johnson"
+      },
+      {
+        "Weeks": 106,
+        "Player": "Rory McIlroy"
+      },
+      {
+        "Weeks": 97,
+        "Player": "Nick Faldo"
+      },
+      {
+        "Weeks": 61,
+        "Player": "Seve Ballesteros"
+      },
+      {
+        "Weeks": 56,
+        "Player": "Luke Donald"
+      },
+      {
+        "Weeks": 51,
+        "Player": "Jason Day"
+      },
+      {
+        "Weeks": 50,
+        "Player": "Ian Woosnam"
+      }
+    ]
+  },
+  "height": 300,
+  "width": 300,
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Player",
+      "type": "nominal",
+      "axis": {
+        "labelAngle": -90
+      }
+    },
+    "y": {
+      "field": "Weeks",
+      "type": "quantitative"
+    }
+  }
+}

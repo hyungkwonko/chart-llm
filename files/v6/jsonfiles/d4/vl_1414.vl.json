@@ -1,0 +1,242 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "step": "502",
+        "loss": "349.1343078613281",
+        "rev": "workspace"
+      },
+      {
+        "step": "1005",
+        "loss": "348.7154541015625",
+        "rev": "workspace"
+      },
+      {
+        "step": "1508",
+        "loss": "320.3437805175781",
+        "rev": "workspace"
+      },
+      {
+        "step": "2011",
+        "loss": "314.54571533203125",
+        "rev": "workspace"
+      },
+      {
+        "step": "2514",
+        "loss": "315.0047912597656",
+        "rev": "workspace"
+      },
+      {
+        "step": "3017",
+        "loss": "368.1565246582031",
+        "rev": "workspace"
+      },
+      {
+        "step": "3520",
+        "loss": "334.61566162109375",
+        "rev": "workspace"
+      },
+      {
+        "step": "4023",
+        "loss": "377.665283203125",
+        "rev": "workspace"
+      },
+      {
+        "step": "4526",
+        "loss": "383.80322265625",
+        "rev": "workspace"
+      },
+      {
+        "step": "5029",
+        "loss": "354.4990234375",
+        "rev": "workspace"
+      },
+      {
+        "step": "5532",
+        "loss": "363.71893310546875",
+        "rev": "workspace"
+      },
+      {
+        "step": "6035",
+        "loss": "351.9649658203125",
+        "rev": "workspace"
+      },
+      {
+        "step": "6538",
+        "loss": "350.0374450683594",
+        "rev": "workspace"
+      },
+      {
+        "step": "7041",
+        "loss": "389.85205078125",
+        "rev": "workspace"
+      },
+      {
+        "step": "7544",
+        "loss": "320.78009033203125",
+        "rev": "workspace"
+      },
+      {
+        "step": "8047",
+        "loss": "373.5292663574219",
+        "rev": "workspace"
+      },
+      {
+        "step": "8550",
+        "loss": "364.2698059082031",
+        "rev": "workspace"
+      },
+      {
+        "step": "9053",
+        "loss": "329.1676940917969",
+        "rev": "workspace"
+      },
+      {
+        "step": "9556",
+        "loss": "324.6686096191406",
+        "rev": "workspace"
+      },
+      {
+        "step": "10059",
+        "loss": "328.12872314453125",
+        "rev": "workspace"
+      }
+    ]
+  },
+  "title": "val/loss",
+  "width": 300,
+  "height": 300,
+  "params": [
+    {
+      "name": "smooth",
+      "value": 0.001,
+      "bind": {
+        "input": "range",
+        "min": 0.001,
+        "max": 1,
+        "step": 0.001
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "step",
+          "type": "quantitative",
+          "title": "step"
+        },
+        "y": {
+          "field": "loss",
+          "type": "quantitative",
+          "title": "loss",
+          "scale": {
+            "zero": false
+          }
+        },
+        "color": {
+          "field": "rev",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "step",
+            "title": "step",
+            "type": "quantitative"
+          },
+          {
+            "field": "loss",
+            "title": "loss",
+            "type": "quantitative"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "loess": "loss",
+          "on": "step",
+          "groupby": [
+            "rev",
+            "filename",
+            "field",
+            "filename::field"
+          ],
+          "bandwidth": {
+            "signal": "smooth"
+          }
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "line",
+        "opacity": 0.2
+      },
+      "encoding": {
+        "x": {
+          "field": "step",
+          "type": "quantitative",
+          "title": "step"
+        },
+        "y": {
+          "field": "loss",
+          "type": "quantitative",
+          "title": "loss",
+          "scale": {
+            "zero": false
+          }
+        },
+        "color": {
+          "field": "rev",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "step",
+            "title": "step",
+            "type": "quantitative"
+          },
+          {
+            "field": "loss",
+            "title": "loss",
+            "type": "quantitative"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 10,
+        "tooltip": {
+          "content": "encoding"
+        }
+      },
+      "encoding": {
+        "x": {
+          "aggregate": "max",
+          "field": "step",
+          "type": "quantitative",
+          "title": "step"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "step"
+          },
+          "field": "loss",
+          "type": "quantitative",
+          "title": "loss",
+          "scale": {
+            "zero": false
+          }
+        },
+        "color": {
+          "field": "rev",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

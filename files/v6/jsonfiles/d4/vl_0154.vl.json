@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ConorQuah/ConorQuah.github.io/main/Happiness%26liberties_s%26e.csv"
+  },
+  "title": {
+    "text": "Happiness and Liberty",
+    "subtitle": "view the happiness of different countries. Notice how the colour of the bar changes!",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "height": 235,
+  "width": 235,
+  "transform": [
+    {
+      "filter": {
+        "selection": "Region"
+      }
+    }
+  ],
+  "selection": {
+    "Region": {
+      "type": "single",
+      "empty": "none",
+      "fields": [
+        "Country"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          "null",
+          "Finland",
+          "Sweden",
+          "New Zealand",
+          "United Kingdom",
+          "Serbia",
+          "Zimbabwe",
+          "Afghanistan"
+        ],
+        "name": "Select a country"
+      }
+    }
+  },
+  "mark": {
+    "type": "bar",
+    "width": 50
+  },
+  "encoding": {
+    "color": {
+      "field": "Civil liberties",
+      "title": "Civil liberties",
+      "scale": {
+        "scheme": "redyellowgreen",
+        "domain": [
+          0,
+          60
+        ]
+      },
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Happiness",
+      "scale": {
+        "domain": [
+          0,
+          10
+        ]
+      },
+      "type": "quantitative",
+      "title": "Happiness"
+    }
+  }
+}

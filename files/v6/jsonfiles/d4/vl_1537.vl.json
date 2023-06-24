@@ -1,0 +1,576 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-9e870c5d3c77196924ce7cbf40a7ab0b"
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "background": "white",
+  "encoding": {
+    "color": {
+      "type": "nominal",
+      "field": "Year",
+      "title": "Year"
+    },
+    "order": {
+      "type": "quantitative",
+      "field": "order"
+    },
+    "x": {
+      "type": "ordinal",
+      "axis": {
+        "labelAngle": 0,
+        "title": ""
+      },
+      "field": "Month",
+      "sort": null
+    },
+    "y": {
+      "type": "quantitative",
+      "axis": {
+        "title": "Freight Index"
+      },
+      "field": "value"
+    }
+  },
+  "height": 450,
+  "title": "Comparison of Annual Freight Index Trends",
+  "width": 800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-9e870c5d3c77196924ce7cbf40a7ab0b": [
+      {
+        "Month": "Jan",
+        "Year": 2007,
+        "order": 0,
+        "variable": "Index",
+        "value": 1.171
+      },
+      {
+        "Month": "Feb",
+        "Year": 2007,
+        "order": 1,
+        "variable": "Index",
+        "value": 1.196
+      },
+      {
+        "Month": "Mar",
+        "Year": 2007,
+        "order": 2,
+        "variable": "Index",
+        "value": 1.258
+      },
+      {
+        "Month": "Apr",
+        "Year": 2007,
+        "order": 3,
+        "variable": "Index",
+        "value": 1.259
+      },
+      {
+        "Month": "May",
+        "Year": 2007,
+        "order": 4,
+        "variable": "Index",
+        "value": 1.278
+      },
+      {
+        "Month": "Jun",
+        "Year": 2007,
+        "order": 5,
+        "variable": "Index",
+        "value": 1.31
+      },
+      {
+        "Month": "Jul",
+        "Year": 2007,
+        "order": 6,
+        "variable": "Index",
+        "value": 1.259
+      },
+      {
+        "Month": "Aug",
+        "Year": 2007,
+        "order": 7,
+        "variable": "Index",
+        "value": 1.271
+      },
+      {
+        "Month": "Sep",
+        "Year": 2007,
+        "order": 8,
+        "variable": "Index",
+        "value": 1.295
+      },
+      {
+        "Month": "Oct",
+        "Year": 2007,
+        "order": 9,
+        "variable": "Index",
+        "value": 1.264
+      },
+      {
+        "Month": "Nov",
+        "Year": 2007,
+        "order": 10,
+        "variable": "Index",
+        "value": 1.256
+      },
+      {
+        "Month": "Dec",
+        "Year": 2007,
+        "order": 11,
+        "variable": "Index",
+        "value": 1.173
+      },
+      {
+        "Month": "Jan",
+        "Year": 2008,
+        "order": 0,
+        "variable": "Index",
+        "value": 1.129
+      },
+      {
+        "Month": "Feb",
+        "Year": 2008,
+        "order": 1,
+        "variable": "Index",
+        "value": 1.134
+      },
+      {
+        "Month": "Mar",
+        "Year": 2008,
+        "order": 2,
+        "variable": "Index",
+        "value": 1.16
+      },
+      {
+        "Month": "Apr",
+        "Year": 2008,
+        "order": 3,
+        "variable": "Index",
+        "value": 1.171
+      },
+      {
+        "Month": "May",
+        "Year": 2008,
+        "order": 4,
+        "variable": "Index",
+        "value": 1.162
+      },
+      {
+        "Month": "Jun",
+        "Year": 2008,
+        "order": 5,
+        "variable": "Index",
+        "value": 1.166
+      },
+      {
+        "Month": "Jul",
+        "Year": 2008,
+        "order": 6,
+        "variable": "Index",
+        "value": 1.096
+      },
+      {
+        "Month": "Aug",
+        "Year": 2008,
+        "order": 7,
+        "variable": "Index",
+        "value": 1.127
+      },
+      {
+        "Month": "Sep",
+        "Year": 2008,
+        "order": 8,
+        "variable": "Index",
+        "value": 1.08
+      },
+      {
+        "Month": "Oct",
+        "Year": 2008,
+        "order": 9,
+        "variable": "Index",
+        "value": 1.05
+      },
+      {
+        "Month": "Nov",
+        "Year": 2008,
+        "order": 10,
+        "variable": "Index",
+        "value": 1.028
+      },
+      {
+        "Month": "Dec",
+        "Year": 2008,
+        "order": 11,
+        "variable": "Index",
+        "value": 0.902
+      },
+      {
+        "Month": "Jan",
+        "Year": 2009,
+        "order": 0,
+        "variable": "Index",
+        "value": 0.851
+      },
+      {
+        "Month": "Feb",
+        "Year": 2009,
+        "order": 1,
+        "variable": "Index",
+        "value": 0.938
+      },
+      {
+        "Month": "Mar",
+        "Year": 2009,
+        "order": 2,
+        "variable": "Index",
+        "value": 0.905
+      },
+      {
+        "Month": "Apr",
+        "Year": 2009,
+        "order": 3,
+        "variable": "Index",
+        "value": 0.878
+      },
+      {
+        "Month": "May",
+        "Year": 2009,
+        "order": 4,
+        "variable": "Index",
+        "value": 0.913
+      },
+      {
+        "Month": "Jun",
+        "Year": 2009,
+        "order": 5,
+        "variable": "Index",
+        "value": 0.933
+      },
+      {
+        "Month": "Jul",
+        "Year": 2009,
+        "order": 6,
+        "variable": "Index",
+        "value": 0.928
+      },
+      {
+        "Month": "Aug",
+        "Year": 2009,
+        "order": 7,
+        "variable": "Index",
+        "value": 0.94
+      },
+      {
+        "Month": "Sep",
+        "Year": 2009,
+        "order": 8,
+        "variable": "Index",
+        "value": 0.966
+      },
+      {
+        "Month": "Oct",
+        "Year": 2009,
+        "order": 9,
+        "variable": "Index",
+        "value": 0.921
+      },
+      {
+        "Month": "Nov",
+        "Year": 2009,
+        "order": 10,
+        "variable": "Index",
+        "value": 0.947
+      },
+      {
+        "Month": "Dec",
+        "Year": 2009,
+        "order": 11,
+        "variable": "Index",
+        "value": 0.919
+      },
+      {
+        "Month": "Jan",
+        "Year": 2019,
+        "order": 0,
+        "variable": "Index",
+        "value": 1.128
+      },
+      {
+        "Month": "Feb",
+        "Year": 2019,
+        "order": 1,
+        "variable": "Index",
+        "value": 1.173
+      },
+      {
+        "Month": "Mar",
+        "Year": 2019,
+        "order": 2,
+        "variable": "Index",
+        "value": 1.197
+      },
+      {
+        "Month": "Apr",
+        "Year": 2019,
+        "order": 3,
+        "variable": "Index",
+        "value": 1.194
+      },
+      {
+        "Month": "May",
+        "Year": 2019,
+        "order": 4,
+        "variable": "Index",
+        "value": 1.228
+      },
+      {
+        "Month": "Jun",
+        "Year": 2019,
+        "order": 5,
+        "variable": "Index",
+        "value": 1.181
+      },
+      {
+        "Month": "Jul",
+        "Year": 2019,
+        "order": 6,
+        "variable": "Index",
+        "value": 1.171
+      },
+      {
+        "Month": "Aug",
+        "Year": 2019,
+        "order": 7,
+        "variable": "Index",
+        "value": 1.19
+      },
+      {
+        "Month": "Sep",
+        "Year": 2019,
+        "order": 8,
+        "variable": "Index",
+        "value": 1.199
+      },
+      {
+        "Month": "Oct",
+        "Year": 2019,
+        "order": 9,
+        "variable": "Index",
+        "value": 1.152
+      },
+      {
+        "Month": "Nov",
+        "Year": 2019,
+        "order": 10,
+        "variable": "Index",
+        "value": 1.124
+      },
+      {
+        "Month": "Dec",
+        "Year": 2019,
+        "order": 11,
+        "variable": "Index",
+        "value": 1.052
+      },
+      {
+        "Month": "Jan",
+        "Year": 2020,
+        "order": 0,
+        "variable": "Index",
+        "value": 1.022
+      },
+      {
+        "Month": "Feb",
+        "Year": 2020,
+        "order": 1,
+        "variable": "Index",
+        "value": 1.085
+      },
+      {
+        "Month": "Mar",
+        "Year": 2020,
+        "order": 2,
+        "variable": "Index",
+        "value": 1.087
+      },
+      {
+        "Month": "Apr",
+        "Year": 2020,
+        "order": 3,
+        "variable": "Index",
+        "value": 0.923
+      },
+      {
+        "Month": "May",
+        "Year": 2020,
+        "order": 4,
+        "variable": "Index",
+        "value": 0.938
+      },
+      {
+        "Month": "Jun",
+        "Year": 2020,
+        "order": 5,
+        "variable": "Index",
+        "value": 0.971
+      },
+      {
+        "Month": "Jul",
+        "Year": 2020,
+        "order": 6,
+        "variable": "Index",
+        "value": 1.018
+      },
+      {
+        "Month": "Aug",
+        "Year": 2020,
+        "order": 7,
+        "variable": "Index",
+        "value": 1.099
+      },
+      {
+        "Month": "Sep",
+        "Year": 2020,
+        "order": 8,
+        "variable": "Index",
+        "value": 1.177
+      },
+      {
+        "Month": "Oct",
+        "Year": 2020,
+        "order": 9,
+        "variable": "Index",
+        "value": 1.18
+      },
+      {
+        "Month": "Nov",
+        "Year": 2020,
+        "order": 10,
+        "variable": "Index",
+        "value": 1.154
+      },
+      {
+        "Month": "Dec",
+        "Year": 2020,
+        "order": 11,
+        "variable": "Index",
+        "value": 1.122
+      },
+      {
+        "Month": "Jan",
+        "Year": 2021,
+        "order": 0,
+        "variable": "Index",
+        "value": 1.11
+      },
+      {
+        "Month": "Feb",
+        "Year": 2021,
+        "order": 1,
+        "variable": "Index",
+        "value": 1.13
+      },
+      {
+        "Month": "Mar",
+        "Year": 2021,
+        "order": 2,
+        "variable": "Index",
+        "value": 1.196
+      },
+      {
+        "Month": "Apr",
+        "Year": 2021,
+        "order": 3,
+        "variable": "Index",
+        "value": 1.178
+      },
+      {
+        "Month": "May",
+        "Year": 2021,
+        "order": 4,
+        "variable": "Index",
+        "value": 1.269
+      },
+      {
+        "Month": "Jun",
+        "Year": 2021,
+        "order": 5,
+        "variable": "Index",
+        "value": 1.231
+      },
+      {
+        "Month": "Jul",
+        "Year": 2021,
+        "order": 6,
+        "variable": "Index",
+        "value": 1.177
+      },
+      {
+        "Month": "Aug",
+        "Year": 2021,
+        "order": 7,
+        "variable": "Index",
+        "value": 1.234
+      },
+      {
+        "Month": "Sep",
+        "Year": 2021,
+        "order": 8,
+        "variable": "Index",
+        "value": 1.184
+      },
+      {
+        "Month": "Oct",
+        "Year": 2021,
+        "order": 9,
+        "variable": "Index",
+        "value": 1.189
+      },
+      {
+        "Month": "Nov",
+        "Year": 2021,
+        "order": 10,
+        "variable": "Index",
+        "value": 1.206
+      },
+      {
+        "Month": "Dec",
+        "Year": 2021,
+        "order": 11,
+        "variable": "Index",
+        "value": 1.208
+      },
+      {
+        "Month": "Jan",
+        "Year": 2022,
+        "order": 0,
+        "variable": "Index",
+        "value": 1.078
+      },
+      {
+        "Month": "Feb",
+        "Year": 2022,
+        "order": 1,
+        "variable": "Index",
+        "value": 1.171
+      },
+      {
+        "Month": "Mar",
+        "Year": 2022,
+        "order": 2,
+        "variable": "Index",
+        "value": 1.203
+      }
+    ]
+  }
+}

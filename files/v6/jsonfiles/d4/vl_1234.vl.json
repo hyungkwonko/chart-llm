@@ -1,0 +1,108 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Europe's 13 largest airlines by fleet size",
+    "subtitle": "Source: InformationDesign (2021)",
+    "fontSize": 13,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/project.scrapingFLEET.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "bar"
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "category"
+      }
+    }
+  ],
+  "selection": {
+    "category": {
+      "type": "single",
+      "fields": [
+        "Category"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "FSC",
+          "LCC",
+          "Hybrid"
+        ],
+        "name": "Carrier type:"
+      }
+    }
+  },
+  "encoding": {
+    "y": {
+      "field": "Airline",
+      "type": "nominal",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "labelFontSize": 11
+      },
+      "sort": "-x"
+    },
+    "x": {
+      "field": "Fleet Size",
+      "type": "quantitative",
+      "title": "Fleet Size",
+      "axis": {
+        "grid": false,
+        "titleColor": "black",
+        "titleFontSize": 13,
+        "titleFontWeight": "normal",
+        "labelFontSize": 11
+      }
+    },
+    "color": {
+      "field": "Category",
+      "type": "nominal",
+      "legend": "right",
+      "scale": {
+        "domain": [
+          "FSC",
+          "LCC",
+          "Hybrid"
+        ],
+        "range": [
+          "#66c2a5",
+          "#8da0cb",
+          "#f28c61"
+        ]
+      },
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "Airline",
+        "type": "nominal",
+        "title": "Airline"
+      },
+      {
+        "field": "Category",
+        "type": "nominal",
+        "title": "Category"
+      },
+      {
+        "field": "Fleet Size",
+        "type": "quantitative",
+        "title": "Fleet Size"
+      }
+    ]
+  }
+}

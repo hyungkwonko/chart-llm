@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "IMF Lending in absolute value ($)",
+    "subtitle": [
+      "Loans dispersed, $bn Source: IMF (2022 data up to September 30).",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#cbc7cf",
+    "subtitleColor": "#cbc7cf"
+  },
+  "config": {
+    "background": "#122b39",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/IMF%20credit%20outstanding.csv"
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.Date)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    },
+    {
+      "filter": "datum.y1!=0"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1984,
+      "bind": {
+        "input": "range",
+        "min": 1984,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1984,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "height": 300,
+  "width": 450,
+  "mark": {
+    "type": "bar",
+    "width": 8,
+    "color": "#ff9a00"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelColor": "#cbc7cf",
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "Total ($)",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": false,
+        "labelColor": "#cbc7cf"
+      }
+    }
+  }
+}

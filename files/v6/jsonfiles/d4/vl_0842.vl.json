@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jordanboi58/Jordanboi58.github.io/main/data_ONS-DIW9.json",
+    "format": {
+      "type": "json",
+      "property": "years"
+    }
+  },
+  "title": {
+    "text": "Whole Economy index of LFS Employment: SA % change on Y",
+    "subtitle": " ",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 200,
+  "height": 200,
+  "mark": {
+    "type": "line",
+    "color": "seagreen",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "scale": {
+        "domain": [
+          -5,
+          5
+        ]
+      },
+      "field": "value",
+      "type": "quantitative",
+      "title": "Percentage change in Y"
+    }
+  }
+}

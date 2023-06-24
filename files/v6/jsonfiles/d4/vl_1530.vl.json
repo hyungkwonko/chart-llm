@@ -1,0 +1,228 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "mark": "point",
+      "encoding": {
+        "color": {
+          "field": "decade",
+          "title": "Decade",
+          "type": "nominal"
+        },
+        "x": {
+          "axis": {
+            "grid": false,
+            "title": "GDP [USD]"
+          },
+          "field": "GDP",
+          "scale": {
+            "padding": 35,
+            "zero": false
+          },
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "grid": false,
+            "title": "Consumption [Megawatt-hours]"
+          },
+          "field": "Megawatt-hours",
+          "scale": {
+            "padding": 35,
+            "zero": false
+          },
+          "type": "quantitative"
+        }
+      },
+      "height": 500,
+      "title": "Total Electricity Consumption vs U.S. Real Gross Domestic Product",
+      "width": 1000
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 7,
+        "size": 10
+      },
+      "encoding": {
+        "color": {
+          "field": "decade",
+          "title": "Decade",
+          "type": "nominal"
+        },
+        "text": {
+          "field": "year",
+          "type": "nominal"
+        },
+        "x": {
+          "axis": {
+            "grid": false,
+            "title": "GDP [USD]"
+          },
+          "field": "GDP",
+          "scale": {
+            "padding": 35,
+            "zero": false
+          },
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "grid": false,
+            "title": "Consumption [Megawatt-hours]"
+          },
+          "field": "Megawatt-hours",
+          "scale": {
+            "padding": 35,
+            "zero": false
+          },
+          "type": "quantitative"
+        }
+      },
+      "height": 500,
+      "title": "Total Electricity Consumption vs U.S. Real Gross Domestic Product",
+      "width": 1000
+    }
+  ],
+  "data": {
+    "name": "data-9e714a0071c8ce734ac1899aece42c2d"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-9e714a0071c8ce734ac1899aece42c2d": [
+      {
+        "Year": "2010-12-31T00:00:00",
+        "Megawatt-hours": 3754841377,
+        "GDP": 15807.995,
+        "rt_start": "2021-07-29",
+        "rt_end": "2021-07-28",
+        "year": 2010,
+        "decade": "2010's"
+      },
+      {
+        "Year": "2011-12-31T00:00:00",
+        "Megawatt-hours": 3749846184,
+        "GDP": 16048.702,
+        "rt_start": "2021-07-29",
+        "rt_end": "2021-07-28",
+        "year": 2011,
+        "decade": "2010's"
+      },
+      {
+        "Year": "2012-12-31T00:00:00",
+        "Megawatt-hours": 3694649791,
+        "GDP": 16300.035,
+        "rt_start": "2021-07-29",
+        "rt_end": "2021-07-28",
+        "year": 2012,
+        "decade": "2010's"
+      },
+      {
+        "Year": "2013-12-31T00:00:00",
+        "Megawatt-hours": 3724867829.370001,
+        "GDP": 16712.76,
+        "rt_start": "2021-07-29",
+        "rt_end": "2021-07-28",
+        "year": 2013,
+        "decade": "2010's"
+      },
+      {
+        "Year": "2014-12-31T00:00:00",
+        "Megawatt-hours": 3764700270.750001,
+        "GDP": 17141.235,
+        "rt_start": "2021-07-29",
+        "rt_end": "2021-07-28",
+        "year": 2014,
+        "decade": "2010's"
+      },
+      {
+        "Year": "2015-12-31T00:00:00",
+        "Megawatt-hours": 3758992392.5399966,
+        "GDP": 17462.579,
+        "rt_start": "2021-07-29",
+        "rt_end": "2021-07-28",
+        "year": 2015,
+        "decade": "2010's"
+      },
+      {
+        "Year": "2016-12-31T00:00:00",
+        "Megawatt-hours": 3762461627.649998,
+        "GDP": 17812.56,
+        "rt_start": "2021-07-29",
+        "rt_end": "2021-07-28",
+        "year": 2016,
+        "decade": "2010's"
+      },
+      {
+        "Year": "2017-12-31T00:00:00",
+        "Megawatt-hours": 3723355980.0500045,
+        "GDP": 18310.3,
+        "rt_start": "2022-09-29",
+        "rt_end": "2022-09-28",
+        "year": 2017,
+        "decade": "2010's"
+      },
+      {
+        "Year": "2018-12-31T00:00:00",
+        "Megawatt-hours": 3860118799.6400013,
+        "GDP": 18733.741,
+        "rt_start": "2022-09-29",
+        "rt_end": "2022-09-28",
+        "year": 2018,
+        "decade": "2010's"
+      },
+      {
+        "Year": "2019-12-31T00:00:00",
+        "Megawatt-hours": 3811150469.4899983,
+        "GDP": 19215.691,
+        "rt_start": "2022-09-29",
+        "rt_end": "2022-09-28",
+        "year": 2019,
+        "decade": "2010's"
+      },
+      {
+        "Year": "2020-12-31T00:00:00",
+        "Megawatt-hours": 3717674484.46,
+        "GDP": 18924.262,
+        "rt_start": "2022-09-29",
+        "rt_end": "2022-09-28",
+        "year": 2020,
+        "decade": "2020's"
+      },
+      {
+        "Year": "2021-12-31T00:00:00",
+        "Megawatt-hours": 3805874258.939997,
+        "GDP": 20006.181,
+        "rt_start": "2022-09-29",
+        "rt_end": "2022-09-28",
+        "year": 2021,
+        "decade": "2020's"
+      },
+      {
+        "Year": "2022-12-31T00:00:00",
+        "Megawatt-hours": 3909052880.910002,
+        "GDP": 20182.491,
+        "rt_start": "2023-03-30",
+        "rt_end": "2023-03-29",
+        "year": 2022,
+        "decade": "2020's"
+      },
+      {
+        "Year": "2023-12-31T00:00:00",
+        "Megawatt-hours": 613467866.7600002,
+        "GDP": 20235.878,
+        "rt_start": "2023-04-27",
+        "rt_end": null,
+        "year": 2023,
+        "decade": "2020's"
+      }
+    ]
+  }
+}

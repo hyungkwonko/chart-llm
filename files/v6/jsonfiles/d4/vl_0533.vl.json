@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/festivalTickets2022.csv"
+  },
+  "title": {
+    "text": "Festival of Economics",
+    "subtitle": "Ticket sales",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 22
+  },
+  "transform": [
+    {
+      "calculate": "datum.Sold/datum.Total",
+      "as": "Gone"
+    },
+    {
+      "calculate": "1 - datum.Gone",
+      "as": "Remaining"
+    },
+    {
+      "fold": [
+        "Gone",
+        "Remaining"
+      ],
+      "as": [
+        "status",
+        "value"
+      ]
+    }
+  ],
+  "height": 30,
+  "width": 30,
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "facet": {
+      "field": "Title",
+      "title": null,
+      "type": "nominal",
+      "columns": 5
+    },
+    "color": {
+      "field": "status",
+      "title": null,
+      "type": "nominal",
+      "scale": {
+        "range": [
+          "green",
+          "orange"
+        ]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    }
+  }
+}

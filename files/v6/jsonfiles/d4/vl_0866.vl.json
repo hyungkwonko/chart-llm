@@ -1,0 +1,286 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Japan Population",
+  "title": {
+    "text": "Japan Population",
+    "subtitle": [
+      "Population change from 1960 to 2021, Source:World Bank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 280,
+  "data": {
+    "values": [
+      {
+        "Year": 1960,
+        "Population": 93216000
+      },
+      {
+        "Year": 1961,
+        "Population": 94055000
+      },
+      {
+        "Year": 1962,
+        "Population": 94933000
+      },
+      {
+        "Year": 1963,
+        "Population": 95900000
+      },
+      {
+        "Year": 1964,
+        "Population": 96903000
+      },
+      {
+        "Year": 1965,
+        "Population": 97952000
+      },
+      {
+        "Year": 1966,
+        "Population": 98851000
+      },
+      {
+        "Year": 1967,
+        "Population": 99879000
+      },
+      {
+        "Year": 1968,
+        "Population": 101011000
+      },
+      {
+        "Year": 1969,
+        "Population": 102219000
+      },
+      {
+        "Year": 1970,
+        "Population": 103403000
+      },
+      {
+        "Year": 1971,
+        "Population": 105697000
+      },
+      {
+        "Year": 1972,
+        "Population": 107188000
+      },
+      {
+        "Year": 1973,
+        "Population": 108707000
+      },
+      {
+        "Year": 1974,
+        "Population": 110162000
+      },
+      {
+        "Year": 1975,
+        "Population": 111573000
+      },
+      {
+        "Year": 1976,
+        "Population": 112775000
+      },
+      {
+        "Year": 1977,
+        "Population": 113872000
+      },
+      {
+        "Year": 1978,
+        "Population": 114913000
+      },
+      {
+        "Year": 1979,
+        "Population": 115890000
+      },
+      {
+        "Year": 1980,
+        "Population": 116807000
+      },
+      {
+        "Year": 1981,
+        "Population": 117661000
+      },
+      {
+        "Year": 1982,
+        "Population": 118480000
+      },
+      {
+        "Year": 1983,
+        "Population": 119307000
+      },
+      {
+        "Year": 1984,
+        "Population": 120083000
+      },
+      {
+        "Year": 1985,
+        "Population": 120837000
+      },
+      {
+        "Year": 1986,
+        "Population": 121482000
+      },
+      {
+        "Year": 1987,
+        "Population": 122069000
+      },
+      {
+        "Year": 1988,
+        "Population": 122578000
+      },
+      {
+        "Year": 1989,
+        "Population": 123069000
+      },
+      {
+        "Year": 1990,
+        "Population": 123478000
+      },
+      {
+        "Year": 1991,
+        "Population": 123964000
+      },
+      {
+        "Year": 1992,
+        "Population": 124425000
+      },
+      {
+        "Year": 1993,
+        "Population": 124829000
+      },
+      {
+        "Year": 1994,
+        "Population": 125178000
+      },
+      {
+        "Year": 1995,
+        "Population": 125472000
+      },
+      {
+        "Year": 1996,
+        "Population": 125757000
+      },
+      {
+        "Year": 1997,
+        "Population": 126057000
+      },
+      {
+        "Year": 1998,
+        "Population": 126400000
+      },
+      {
+        "Year": 1999,
+        "Population": 126631000
+      },
+      {
+        "Year": 2000,
+        "Population": 126843000
+      },
+      {
+        "Year": 2001,
+        "Population": 127149000
+      },
+      {
+        "Year": 2002,
+        "Population": 127445000
+      },
+      {
+        "Year": 2003,
+        "Population": 127718000
+      },
+      {
+        "Year": 2004,
+        "Population": 127761000
+      },
+      {
+        "Year": 2005,
+        "Population": 127773000
+      },
+      {
+        "Year": 2006,
+        "Population": 127854000
+      },
+      {
+        "Year": 2007,
+        "Population": 128001000
+      },
+      {
+        "Year": 2008,
+        "Population": 128063000
+      },
+      {
+        "Year": 2009,
+        "Population": 128047000
+      },
+      {
+        "Year": 2010,
+        "Population": 128070000
+      },
+      {
+        "Year": 2011,
+        "Population": 127833000
+      },
+      {
+        "Year": 2012,
+        "Population": 127629000
+      },
+      {
+        "Year": 2013,
+        "Population": 127445000
+      },
+      {
+        "Year": 2014,
+        "Population": 127276000
+      },
+      {
+        "Year": 2015,
+        "Population": 127141000
+      },
+      {
+        "Year": 2016,
+        "Population": 127076000
+      },
+      {
+        "Year": 2017,
+        "Population": 126972000
+      },
+      {
+        "Year": 2018,
+        "Population": 126811000
+      },
+      {
+        "Year": 2019,
+        "Population": 126633000
+      },
+      {
+        "Year": 2020,
+        "Population": 126261000
+      },
+      {
+        "Year": 2021,
+        "Population": 125681593
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "Population",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "WIPO data, filtered to countries with over 5 million inhabitants and over 100 patent applications, * countries may have incomplete data due to local patent offices not reporting resident applications, 2020 data",
+  "title": {
+    "text": "Patents vs GDP",
+    "subtitle": [
+      "Equivalent applications by origin (per 1m inhabitants), source: WIPO",
+      "GDP: per capita PPP (international $), source: World Bank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 9,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/growth-patents_equivalent_applications_2021.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "size": 150,
+    "opacity": 0.7,
+    "color": "rgb(128,0,0)"
+  },
+  "height": 300,
+  "width": 500,
+  "view": {
+    "stroke": "aliceblue"
+  },
+  "encoding": {
+    "y": {
+      "field": "GDP per capita",
+      "type": "quantitative",
+      "title": "GDP (log scale)",
+      "scale": {
+        "type": "log",
+        "domain": [
+          2000,
+          120000
+        ]
+      },
+      "axis": {
+        "values": [
+          1000,
+          2000,
+          5000,
+          10000,
+          20000,
+          40000,
+          100000
+        ],
+        "format": "$,",
+        "gridOpacity": 0.3
+      }
+    },
+    "x": {
+      "field": "Application Rate",
+      "type": "quantitative",
+      "title": "Application Rate (log scale)",
+      "scale": {
+        "type": "log"
+      },
+      "axis": {
+        "grid": false,
+        "tickCount": 10
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Country"
+      },
+      {
+        "field": "Application Rate",
+        "type": "quantitative",
+        "format": ".3",
+        "title": "Applications per 1m inhabitants"
+      },
+      {
+        "field": "Population",
+        "format": ",d"
+      },
+      {
+        "field": "GDP per capita",
+        "title": "GDP per capita",
+        "format": "$,d"
+      }
+    ]
+  }
+}

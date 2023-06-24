@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Comparing four economies",
+    "subtitle": [
+      "GDP, constant prices. National currencies. Source: IMF.",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/fourCountriesGDP.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Kenya",
+        "Congo_DR",
+        "UK",
+        "Japan"
+      ],
+      "as": [
+        "country",
+        "GDP"
+      ]
+    }
+  ],
+  "height": 120,
+  "width": 120,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "GDP",
+      "type": "quantitative",
+      "title": null
+    },
+    "facet": {
+      "field": "country",
+      "columns": 2,
+      "title": null
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

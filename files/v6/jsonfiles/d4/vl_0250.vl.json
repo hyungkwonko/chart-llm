@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": [
+      "Principle Component Analysis on Football Players",
+      "in Europe's Top 5 Leagues"
+    ],
+    "subtitle": [
+      "Component 1 (x), Component 2 (y). Min 1500 mins played, data: FBRef."
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/vikrajendran/vikrajendran.github.io/main/Week10.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "color": "#5b92e5",
+    "opacity": 0.7
+  },
+  "height": 400,
+  "width": 400,
+  "encoding": {
+    "x": {
+      "field": "Component 1",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -5,
+          6
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "y": {
+      "field": "Component 2",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -6,
+          6
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "color": {
+      "field": "Pos",
+      "type": "ordinal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "legend": {
+        "orient": "bottom"
+      },
+      "title": "Position"
+    },
+    "tooltip": [
+      {
+        "field": "Player",
+        "type": "ordinal",
+        "title": "Player"
+      },
+      {
+        "field": "Pos",
+        "type": "ordinal",
+        "title": "Position"
+      }
+    ]
+  }
+}

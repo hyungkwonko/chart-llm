@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Comparing Tourism across Host Nations",
+    "subtitle": [
+      "Innternational Tourism, (Number of arrivals).  Source: OCED.",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/Data/WC_Tourism.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Brazil",
+        "South_Africa",
+        "Germany",
+        "Russia"
+      ],
+      "as": [
+        "country",
+        "GDP"
+      ]
+    }
+  ],
+  "height": 120,
+  "width": 120,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "GDP",
+      "type": "quantitative",
+      "title": null
+    },
+    "facet": {
+      "field": "country",
+      "columns": 2,
+      "title": null
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

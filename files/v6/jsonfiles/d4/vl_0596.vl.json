@@ -1,0 +1,633 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "Year": 946684800000,
+        "Value": 0.8186581284,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 27484,
+        "pct_tote": 0.0081865813
+      },
+      {
+        "Year": 978307200000,
+        "Value": 0.6351039261,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 27712,
+        "pct_tote": 0.0063510393
+      },
+      {
+        "Year": 1009843200000,
+        "Value": 0.5582593759,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 27944,
+        "pct_tote": 0.0055825938
+      },
+      {
+        "Year": 1041379200000,
+        "Value": 0.4393891074,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 28221,
+        "pct_tote": 0.0043938911
+      },
+      {
+        "Year": 1072915200000,
+        "Value": 0.3785488959,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 28530,
+        "pct_tote": 0.003785489
+      },
+      {
+        "Year": 1104537600000,
+        "Value": 0.4124783362,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 28850,
+        "pct_tote": 0.0041247834
+      },
+      {
+        "Year": 1136073600000,
+        "Value": 0.5044958473,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 29138,
+        "pct_tote": 0.0050449585
+      },
+      {
+        "Year": 1167609600000,
+        "Value": 0.5650486759,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 29378,
+        "pct_tote": 0.0056504868
+      },
+      {
+        "Year": 1199145600000,
+        "Value": 0.4826515458,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 29628,
+        "pct_tote": 0.0048265155
+      },
+      {
+        "Year": 1230768000000,
+        "Value": 0.6482370696,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 29156,
+        "pct_tote": 0.0064823707
+      },
+      {
+        "Year": 1262304000000,
+        "Value": 0.574791296,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 29228,
+        "pct_tote": 0.005747913
+      },
+      {
+        "Year": 1293840000000,
+        "Value": 0.6467424603,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 29378,
+        "pct_tote": 0.0064674246
+      },
+      {
+        "Year": 1325376000000,
+        "Value": 0.8485705627,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 29697,
+        "pct_tote": 0.0084857056
+      },
+      {
+        "Year": 1356998400000,
+        "Value": 1.9472090004,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 30043,
+        "pct_tote": 0.01947209
+      },
+      {
+        "Year": 1388534400000,
+        "Value": 2.0290043572,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 30754,
+        "pct_tote": 0.0202900436
+      },
+      {
+        "Year": 1420070400000,
+        "Value": 2.3845293272,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 31285,
+        "pct_tote": 0.0238452933
+      },
+      {
+        "Year": 1451606400000,
+        "Value": 2.8477822581,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 31744,
+        "pct_tote": 0.0284778226
+      },
+      {
+        "Year": 1483228800000,
+        "Value": 2.7544686028,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 32057,
+        "pct_tote": 0.027544686
+      },
+      {
+        "Year": 1514764800000,
+        "Value": 2.4075957952,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 32439,
+        "pct_tote": 0.024075958
+      },
+      {
+        "Year": 1546300800000,
+        "Value": 2.7317906034,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 32799,
+        "pct_tote": 0.027317906
+      },
+      {
+        "Year": 1577836800000,
+        "Value": 3.2883201575,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 32509,
+        "pct_tote": 0.0328832016
+      },
+      {
+        "Year": 1609459200000,
+        "Value": 2.8358070787,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 32407,
+        "pct_tote": 0.0283580708
+      },
+      {
+        "Year": 1640995200000,
+        "Value": 3.151722453,
+        "type": "zh",
+        "datype": "Percentage",
+        "Val2": 32744,
+        "pct_tote": 0.0315172245
+      },
+      {
+        "Year": 946684800000,
+        "Value": 27484,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 27484,
+        "pct_tote": 1
+      },
+      {
+        "Year": 978307200000,
+        "Value": 27712,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 27712,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1009843200000,
+        "Value": 27944,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 27944,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1041379200000,
+        "Value": 28221,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 28221,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1072915200000,
+        "Value": 28530,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 28530,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1104537600000,
+        "Value": 28850,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 28850,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1136073600000,
+        "Value": 29138,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 29138,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1167609600000,
+        "Value": 29378,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 29378,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1199145600000,
+        "Value": 29628,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 29628,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1230768000000,
+        "Value": 29156,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 29156,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1262304000000,
+        "Value": 29228,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 29228,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1293840000000,
+        "Value": 29378,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 29378,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1325376000000,
+        "Value": 29697,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 29697,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1356998400000,
+        "Value": 30043,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 30043,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1388534400000,
+        "Value": 30754,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 30754,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1420070400000,
+        "Value": 31285,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 31285,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1451606400000,
+        "Value": 31744,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 31744,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1483228800000,
+        "Value": 32057,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 32057,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1514764800000,
+        "Value": 32439,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 32439,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1546300800000,
+        "Value": 32799,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 32799,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1577836800000,
+        "Value": 32509,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 32509,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1609459200000,
+        "Value": 32407,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 32407,
+        "pct_tote": 1
+      },
+      {
+        "Year": 1640995200000,
+        "Value": 32744,
+        "type": "total",
+        "datype": "Total",
+        "Val2": 32744,
+        "pct_tote": 1
+      },
+      {
+        "Year": 946684800000,
+        "Value": 225,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 27484,
+        "pct_tote": 0.0081865813
+      },
+      {
+        "Year": 978307200000,
+        "Value": 176,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 27712,
+        "pct_tote": 0.0063510393
+      },
+      {
+        "Year": 1009843200000,
+        "Value": 156,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 27944,
+        "pct_tote": 0.0055825938
+      },
+      {
+        "Year": 1041379200000,
+        "Value": 124,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 28221,
+        "pct_tote": 0.0043938911
+      },
+      {
+        "Year": 1072915200000,
+        "Value": 108,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 28530,
+        "pct_tote": 0.003785489
+      },
+      {
+        "Year": 1104537600000,
+        "Value": 119,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 28850,
+        "pct_tote": 0.0041247834
+      },
+      {
+        "Year": 1136073600000,
+        "Value": 147,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 29138,
+        "pct_tote": 0.0050449585
+      },
+      {
+        "Year": 1167609600000,
+        "Value": 166,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 29378,
+        "pct_tote": 0.0056504868
+      },
+      {
+        "Year": 1199145600000,
+        "Value": 143,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 29628,
+        "pct_tote": 0.0048265155
+      },
+      {
+        "Year": 1230768000000,
+        "Value": 189,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 29156,
+        "pct_tote": 0.0064823707
+      },
+      {
+        "Year": 1262304000000,
+        "Value": 168,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 29228,
+        "pct_tote": 0.005747913
+      },
+      {
+        "Year": 1293840000000,
+        "Value": 190,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 29378,
+        "pct_tote": 0.0064674246
+      },
+      {
+        "Year": 1325376000000,
+        "Value": 252,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 29697,
+        "pct_tote": 0.0084857056
+      },
+      {
+        "Year": 1356998400000,
+        "Value": 585,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 30043,
+        "pct_tote": 0.01947209
+      },
+      {
+        "Year": 1388534400000,
+        "Value": 624,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 30754,
+        "pct_tote": 0.0202900436
+      },
+      {
+        "Year": 1420070400000,
+        "Value": 746,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 31285,
+        "pct_tote": 0.0238452933
+      },
+      {
+        "Year": 1451606400000,
+        "Value": 904,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 31744,
+        "pct_tote": 0.0284778226
+      },
+      {
+        "Year": 1483228800000,
+        "Value": 883,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 32057,
+        "pct_tote": 0.027544686
+      },
+      {
+        "Year": 1514764800000,
+        "Value": 781,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 32439,
+        "pct_tote": 0.024075958
+      },
+      {
+        "Year": 1546300800000,
+        "Value": 896,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 32799,
+        "pct_tote": 0.027317906
+      },
+      {
+        "Year": 1577836800000,
+        "Value": 1069,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 32509,
+        "pct_tote": 0.0328832016
+      },
+      {
+        "Year": 1609459200000,
+        "Value": 919,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 32407,
+        "pct_tote": 0.0283580708
+      },
+      {
+        "Year": 1640995200000,
+        "Value": 1032,
+        "type": "zh",
+        "datype": "Total",
+        "Val2": 32744,
+        "pct_tote": 0.0315172245
+      }
+    ]
+  },
+  "title": {
+    "text": "Zero Hours Contracts",
+    "anchor": "start",
+    "subtitle": [
+      "Thousands. Source: ONS",
+      ""
+    ]
+  },
+  "width": 400,
+  "height": 300,
+  "params": [
+    {
+      "name": "View",
+      "select": {
+        "type": "point",
+        "fields": [
+          "datype"
+        ]
+      },
+      "bind": {
+        "input": "select",
+        "options": [
+          "Percentage",
+          "Total"
+        ],
+        "name": "Type:"
+      },
+      "value": "Total"
+    }
+  ],
+  "transform": [
+    {
+      "filter": {
+        "param": "View"
+      }
+    },
+    {
+      "filter": "datum.type!='total'"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": false
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Zero Hour Contracts",
+      "axis": {
+        "format": {
+          "value": "quantitative",
+          "condition": {
+            "test": "datum.datype==Percentage",
+            "value": "%"
+          }
+        }
+      }
+    },
+    "color": {
+      "field": "type",
+      "legend": null,
+      "scale": {
+        "range": [
+          "#a12800"
+        ]
+      }
+    }
+  }
+}

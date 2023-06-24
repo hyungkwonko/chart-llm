@@ -1,0 +1,126 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/RA_work/main/chart1_2v2.csv"
+  },
+  "height": 350,
+  "width": 350,
+  "title": {
+    "text": "Spending Growth",
+    "anchor": "start",
+    "subtitle": [
+      "Source: CBO",
+      ""
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "gridOpacity": 0.2
+      },
+      "title": ""
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "Type",
+          "type": "nominal",
+          "legend": {
+            "title": ""
+          },
+          "scale": {
+            "range": [
+              "#880000",
+              "#ff0303",
+              "#000"
+            ]
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "axis": {
+            "gridOpacity": 0.2
+          },
+          "title": "% of GDP"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "monotone"
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            }
+          ],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "pivot": "Type",
+          "value": "Value",
+          "groupby": [
+            "Year"
+          ]
+        }
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0.5,
+            "param": "hover",
+            "empty": false
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Social Security",
+            "type": "quantitative",
+            "title": "% of GDP spent on social security"
+          },
+          {
+            "field": "Income Security",
+            "type": "quantitative",
+            "title": "% of GDP spent on income security"
+          },
+          {
+            "field": "Major Health Care Programs",
+            "type": "quantitative",
+            "title": "% of GDP spent on major health care programs"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Year"
+            ],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ]
+}

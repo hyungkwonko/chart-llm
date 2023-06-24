@@ -1,0 +1,95 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Number of privately rented houses in Bristol",
+    "subtitle": "Highlighted red if the area is over 3 miles from University of Bristol or University of West England",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/hyungkwonko/tmp-data/main/housing-tenure-2011-census-by-2016-ward.json",
+    "format": {
+      "type": "json",
+      "property": "private_and_other_rented"
+    }
+  },
+  "height": 300,
+  "width": 350,
+  "mark": {
+    "type": "bar",
+    "color": "#3f0abb"
+  },
+  "transform": [
+    {
+      "sort": [
+        {
+          "field": "private_and_other_rented"
+        }
+      ],
+      "window": [
+        {
+          "op": "sum",
+          "field": "private_and_other_rented",
+          "as": "Cumulative Count"
+        }
+      ],
+      "frame": [
+        null,
+        0
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "2016_ward_name",
+      "type": "nominal",
+      "sort": "y",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "private_and_other_rented",
+      "type": "quantitative",
+      "title": "Number of rented properties",
+      "axis": {
+        "grid": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "private_and_other_rented",
+        "title": "Number of rented houses"
+      },
+      {
+        "field": "2016_ward_name",
+        "title": "Area"
+      }
+    ],
+    "color": {
+      "condition": [
+        {
+          "value": "red",
+          "test": {
+            "field": "2016_ward_name",
+            "oneOf": [
+              "Bishopsworth",
+              "Henbury & Brentry",
+              "Stockwood",
+              "Hartcliffe & Withywood",
+              "Hengrove & Whitchurch Park",
+              "Brislington East",
+              "Westbury-on-Trym & Henleaze",
+              "Avonmouth & Lawrence Weston"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "config": {}
+}

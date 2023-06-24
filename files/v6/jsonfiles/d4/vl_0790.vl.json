@@ -1,0 +1,119 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {
+        "Country": "Argentina",
+        "Corporate Tax Rate": 25.0
+      },
+      {
+        "Country": "Australia",
+        "Corporate Tax Rate": 30.0
+      },
+      {
+        "Country": "Brazil",
+        "Corporate Tax Rate": 34.0
+      },
+      {
+        "Country": "Canada",
+        "Corporate Tax Rate": 26.5
+      },
+      {
+        "Country": "China",
+        "Corporate Tax Rate": 25.0
+      },
+      {
+        "Country": "France",
+        "Corporate Tax Rate": 26.5
+      },
+      {
+        "Country": "Germany",
+        "Corporate Tax Rate": 30.0
+      },
+      {
+        "Country": "India",
+        "Corporate Tax Rate": 34.94
+      },
+      {
+        "Country": "Indonesia",
+        "Corporate Tax Rate": 22.0
+      },
+      {
+        "Country": "Italy",
+        "Corporate Tax Rate": 24.0
+      },
+      {
+        "Country": "Japan",
+        "Corporate Tax Rate": 30.62
+      },
+      {
+        "Country": "Mexico",
+        "Corporate Tax Rate": 30.0
+      },
+      {
+        "Country": "Netherlands",
+        "Corporate Tax Rate": 25.8
+      },
+      {
+        "Country": "Russia",
+        "Corporate Tax Rate": 20.0
+      },
+      {
+        "Country": "Saudi Arabia",
+        "Corporate Tax Rate": 20.0
+      },
+      {
+        "Country": "Singapore",
+        "Corporate Tax Rate": 17.0
+      },
+      {
+        "Country": "South Africa",
+        "Corporate Tax Rate": 28.0
+      },
+      {
+        "Country": "South Korea",
+        "Corporate Tax Rate": 27.5
+      },
+      {
+        "Country": "Spain",
+        "Corporate Tax Rate": 25.0
+      },
+      {
+        "Country": "Switzerland",
+        "Corporate Tax Rate": 14.93
+      },
+      {
+        "Country": "Turkey",
+        "Corporate Tax Rate": 23.0
+      },
+      {
+        "Country": "United Kingdom",
+        "Corporate Tax Rate": 19.0
+      },
+      {
+        "Country": "United States",
+        "Corporate Tax Rate": 21.0
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "color": "#8268ca",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "height": 300,
+  "width": 250,
+  "encoding": {
+    "x": {
+      "field": "Corporate Tax Rate",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Country",
+      "type": "ordinal",
+      "title": "G20 Corporate Tax Rate"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Borrowing costs - UK government (1979-2022)",
+    "subtitle": [
+      "Spot Curve, Nominal, Source:BoE",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#cbc7cf",
+    "subtitleColor": "#cbc7cf"
+  },
+  "config": {
+    "background": "#122b39",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/ukYieldCurve.csv"
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.Date)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    },
+    {
+      "filter": "datum.y1!=0"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 2005,
+      "bind": {
+        "input": "range",
+        "min": 1979,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1979,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "repeat": {
+    "layer": [
+      "y1",
+      "y10"
+    ]
+  },
+  "spec": {
+    "height": 300,
+    "width": 450,
+    "mark": {
+      "type": "line",
+      "strokeWidth": 2
+    },
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "title": null,
+        "axis": {
+          "grid": false,
+          "labelColor": "#cbc7cf"
+        }
+      },
+      "y": {
+        "field": {
+          "repeat": "layer"
+        },
+        "type": "quantitative",
+        "title": null,
+        "axis": {
+          "grid": false,
+          "labelColor": "#cbc7cf"
+        }
+      },
+      "color": {
+        "datum": {
+          "repeat": "layer"
+        },
+        "scale": {
+          "range": [
+            "red",
+            "orange"
+          ]
+        },
+        "legend": {
+          "labelExpr": "{'y1': '1-year', 'y10': '10-year'}[datum.label]",
+          "orient": "top-right",
+          "labelColor": "#cbc7cf",
+          "title": "Maturity",
+          "titleColor": "#cbc7cf"
+        }
+      }
+    }
+  }
+}

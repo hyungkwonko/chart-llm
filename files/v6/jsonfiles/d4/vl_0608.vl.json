@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Tufte inspired chart, with white grid lines over the bars",
+  "title": {
+    "text": "Millions without work",
+    "subtitle": [
+      "Youth Unemployment (15-24 year olds). World's 21 most populous countries",
+      "Source: World Bank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "view": {
+    "stroke": "transparent"
+  },
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/Global_WB_YouthUnemployment.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.p21==1"
+    },
+    {
+      "calculate": "datum.value2021/100",
+      "as": "unempPercent"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "rgb(128,0,0)"
+  },
+  "encoding": {
+    "x": {
+      "field": "unempPercent",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "zindex": 1,
+        "gridColor": "white",
+        "gridWidth": 0.5,
+        "labelAngle": 0,
+        "format": ".0%"
+      }
+    },
+    "y": {
+      "field": "nameSimple",
+      "title": null,
+      "type": "nominal",
+      "sort": "-x"
+    }
+  }
+}

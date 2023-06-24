@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Aceh - growth rates",
+    "subtitle": [
+      "Annual average, 4 year periods, non-oil GDP",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#179fdb",
+    "subtitleColor": "#179fdb"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/extreme/acehGDP.csv"
+  },
+  "config": {
+    "background": "#122b39",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "nominal",
+      "title": null,
+      "axis": {
+        "labelAngle": 0,
+        "domainColor": "dimgrey",
+        "labelColor": "#00a767",
+        "tickColor": "whitesmoke"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "orange",
+        "strokeWidth": 2,
+        "opacity": 1
+      },
+      "encoding": {
+        "y": {
+          "field": "growth",
+          "type": "quantitative",
+          "title": null,
+          "axis": {
+            "format": "%",
+            "grid": false,
+            "domainColor": "dimgrey",
+            "labelColor": "#00a767",
+            "tickColor": "whitesmoke"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "y": 0.06,
+        "color": "whitesmoke"
+      },
+      "encoding": {
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
+}

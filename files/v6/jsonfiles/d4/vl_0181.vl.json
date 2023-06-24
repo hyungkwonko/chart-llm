@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart (vertical)",
+  "width": "container",
+  "title": {
+    "text": "Afghanistan's population, 1952-2017"
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "country",
+        "equal": "Afghanistan"
+      }
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "timeUnit": "year",
+      "axis": {
+        "title": null
+      }
+    },
+    "y": {
+      "field": "pop",
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "value": "#fc6721"
+    },
+    "opacity": {
+      "value": 0.7
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "pop",
+        "type": "quantitative",
+        "title": "Population",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "grid": false
+    }
+  }
+}

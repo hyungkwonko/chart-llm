@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A map showing deforestation in South America",
+  "title": {
+    "text": "Deforestation in South America",
+    "subtitle": [
+      "Deforestation 2010-2015 (1000 hectares per year),",
+      "Source: Food and Agriculture Organization of",
+      "the United Nations"
+    ],
+    "subtitleFontSize": 8,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "width": 175,
+  "height": 175,
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/map-south-america.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/data-map.csv"
+        },
+        "key": "Country",
+        "fields": [
+          "Deforestation 2010-2015 (1000 ha/year)"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "darkgrey",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "properties.name",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "Deforestation 2010-2015 (1000 ha/year)",
+        "title": "Deforestation (1000 ha/yr)",
+        "type": "quantitative"
+      }
+    ],
+    "color": {
+      "field": "Deforestation 2010-2015 (1000 ha/year)",
+      "type": "quantitative",
+      "title": "1000 ha/year",
+      "legend": {
+        "orient": "right",
+        "gradientThickness": 15,
+        "gradientLength": 100,
+        "titleFontSize": 8
+      }
+    }
+  }
+}

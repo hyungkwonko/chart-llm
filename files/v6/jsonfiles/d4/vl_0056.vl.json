@@ -1,0 +1,318 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "stroke": null
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "basis"
+      },
+      "encoding": {
+        "color": {
+          "type": "nominal",
+          "field": "year",
+          "legend": null,
+          "scale": {
+            "range": [
+              "#36B7B4",
+              "#0063AF",
+              "#179FDB",
+              "#00A767",
+              "#676A86"
+            ]
+          }
+        },
+        "x": {
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#676A86",
+            "format": ".1f",
+            "grid": false,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 3,
+            "title": "Pollution",
+            "titleAlign": "right",
+            "titleAnchor": "end",
+            "titleColor": "#676A86",
+            "titleFontSize": 10,
+            "titleFontWeight": "normal",
+            "titleY": -15
+          },
+          "field": "x"
+        },
+        "y": {
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#676A86",
+            "format": ".1f",
+            "grid": true,
+            "labelAlign": "left",
+            "labelBaseline": "middle",
+            "labelColor": "#676A86",
+            "labelOffset": -10,
+            "labelPadding": -5,
+            "tickColor": "#676A86",
+            "tickCount": 4,
+            "ticks": false,
+            "title": "Share of low-skilled workers (standardised)",
+            "titleAlign": "left",
+            "titleAnchor": "start",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleFontSize": 10,
+            "titleFontWeight": "normal",
+            "titleX": 25,
+            "titleY": 25
+          },
+          "field": "y",
+          "scale": {
+            "domain": [
+              -0.5,
+              0.5
+            ]
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5
+      },
+      "encoding": {
+        "color": {
+          "type": "nominal",
+          "field": "year",
+          "legend": null,
+          "scale": {
+            "range": [
+              "#36B7B4",
+              "#0063AF",
+              "#179FDB",
+              "#00A767",
+              "#676A86"
+            ]
+          }
+        },
+        "text": {
+          "type": "nominal",
+          "field": "year"
+        },
+        "x": {
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#676A86",
+            "format": ".1f",
+            "grid": false,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 3,
+            "title": "Pollution",
+            "titleAlign": "right",
+            "titleAnchor": "end",
+            "titleColor": "#676A86",
+            "titleFontSize": 10,
+            "titleFontWeight": "normal",
+            "titleY": -15
+          },
+          "field": "x"
+        },
+        "y": {
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#676A86",
+            "format": ".1f",
+            "grid": true,
+            "labelAlign": "left",
+            "labelBaseline": "middle",
+            "labelColor": "#676A86",
+            "labelOffset": -10,
+            "labelPadding": -5,
+            "tickColor": "#676A86",
+            "tickCount": 4,
+            "ticks": false,
+            "title": "Share of low-skilled workers (standardised)",
+            "titleAlign": "left",
+            "titleAnchor": "start",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleFontSize": 10,
+            "titleFontWeight": "normal",
+            "titleX": 25,
+            "titleY": 25
+          },
+          "field": "y",
+          "scale": {
+            "domain": [
+              -0.5,
+              0.5
+            ]
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.x>1.35"
+        },
+        {
+          "filter": "datum.year!=2011"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 20
+      },
+      "encoding": {
+        "color": {
+          "type": "nominal",
+          "field": "year",
+          "legend": null,
+          "scale": {
+            "range": [
+              "#36B7B4",
+              "#0063AF",
+              "#179FDB",
+              "#00A767",
+              "#676A86"
+            ]
+          }
+        },
+        "text": {
+          "type": "nominal",
+          "field": "year"
+        },
+        "x": {
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#676A86",
+            "format": ".1f",
+            "grid": false,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 3,
+            "title": "Pollution",
+            "titleAlign": "right",
+            "titleAnchor": "end",
+            "titleColor": "#676A86",
+            "titleFontSize": 10,
+            "titleFontWeight": "normal",
+            "titleY": -15
+          },
+          "field": "x"
+        },
+        "y": {
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#676A86",
+            "format": ".1f",
+            "grid": true,
+            "labelAlign": "left",
+            "labelBaseline": "middle",
+            "labelColor": "#676A86",
+            "labelOffset": -10,
+            "labelPadding": -5,
+            "tickColor": "#676A86",
+            "tickCount": 4,
+            "ticks": false,
+            "title": "Share of low-skilled workers (standardised)",
+            "titleAlign": "left",
+            "titleAnchor": "start",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleFontSize": 10,
+            "titleFontWeight": "normal",
+            "titleX": 25,
+            "titleY": 25
+          },
+          "field": "y",
+          "scale": {
+            "domain": [
+              -0.5,
+              0.5
+            ]
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.x<-1.35"
+        },
+        {
+          "filter": "datum.year!=2011"
+        },
+        {
+          "filter": "datum.year!=1991"
+        }
+      ]
+    },
+    {
+      "data": {
+        "name": "data-e267e27f1d9cbced71b251fd7cb2277f"
+      },
+      "mark": {
+        "type": "text",
+        "color": "#676A86"
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "t"
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "x"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "y"
+        }
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/articles/what-are-the-long-term-economic-effects-of-air-pollution/data/fig3_pollution.csv"
+  },
+  "height": 300,
+  "title": {
+    "text": "Pollution and shares of low-skilled workers across neighbourhoods and time",
+    "align": "left",
+    "anchor": "start",
+    "dx": 5,
+    "fontSize": 12,
+    "subtitle": [
+      "Source: Heblich et al. (2021)"
+    ],
+    "subtitleFontSize": 11,
+    "subtitleFontStyle": "italic"
+  },
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-e267e27f1d9cbced71b251fd7cb2277f": [
+      {
+        "x": 0.95,
+        "y": 0.11,
+        "t": "2021"
+      }
+    ]
+  }
+}

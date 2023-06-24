@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/trade/data_tradeUKFrance.json",
+    "format": {
+      "type": "json",
+      "property": "dataset"
+    }
+  },
+  "title": {
+    "text": "Trade: UK and France",
+    "subtitle": [
+      "Value of trade, all commodities, $ billions. Source: UN Comtrade"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 270,
+  "height": 270,
+  "mark": {
+    "type": "line",
+    "color": "seagreen",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "transform": [
+    {
+      "calculate": "datum.TradeValue/1000000000",
+      "as": "tradeValBillions"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "periodDesc",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "tradeValBillions",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "rgDesc",
+      "type": "nominal",
+      "title": null
+    }
+  }
+}

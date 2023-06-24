@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A calculate that takes the messy names in the field, metric, and creates a new field, metricClean, where the names are nicer.",
+  "title": {
+    "text": "Productivity: median firm, by size",
+    "subtitle": [
+      "Estimated median, turnover \u00a3k per employee",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_SizeRLP.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "rlp50"
+      ],
+      "as": [
+        "metric",
+        "value"
+      ]
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "point"
+  },
+  "encoding": {
+    "x": {
+      "field": "Size",
+      "type": "quantitative",
+      "title": "Employees",
+      "axis": {
+        "grid": false,
+        "format": "d"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "format": "d"
+      }
+    },
+    "color": {
+      "field": "Year",
+      "title": null,
+      "scale": {
+        "scheme": "inferno"
+      },
+      "legend": {
+        "orient": "bottom-right",
+        "columns": 5
+      }
+    }
+  }
+}

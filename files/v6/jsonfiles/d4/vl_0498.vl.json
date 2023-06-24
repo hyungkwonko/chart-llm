@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 350,
+  "height": 400,
+  "title": {
+    "text": "UK Airport Map",
+    "subtitle": [
+      "Passenger & aircaft movements. Source: CAA 2021",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/UK%20Map%20Data/ITL1_2021_20m.geojson",
+        "format": {
+          "property": "features"
+        }
+      },
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgray",
+        "stroke": "white",
+        "strokeWidth": 0.1
+      },
+      "encoding": {
+        "tooltip": {
+          "field": "properties.ITL121NM"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/point_maps/UK_airports2.csv"
+      },
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": "circle",
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "Aircraft Movements",
+          "type": "quantitative"
+        },
+        "color": {
+          "value": "#D35400"
+        },
+        "tooltip": [
+          {
+            "field": "Airport"
+          },
+          {
+            "field": "Passengers",
+            "format": ","
+          },
+          {
+            "field": "Aircraft Movements",
+            "format": ","
+          }
+        ]
+      }
+    }
+  ]
+}

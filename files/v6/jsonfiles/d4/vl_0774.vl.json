@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Population Change",
+    "subtitle": "Cumulative % change in population in seven countries. Source: UN.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/demographicsUNPopChange.csv"
+  },
+  "repeat": {
+    "layer": [
+      "S Korea",
+      "Japan",
+      "UK",
+      "Italy",
+      "Spain",
+      "France",
+      "US"
+    ]
+  },
+  "spec": {
+    "height": 300,
+    "width": 300,
+    "mark": {
+      "type": "line",
+      "strokeWidth": 2
+    },
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal"
+      },
+      "y": {
+        "field": {
+          "repeat": "layer"
+        },
+        "type": "quantitative",
+        "title": null
+      },
+      "color": {
+        "datum": {
+          "repeat": "layer"
+        },
+        "scale": {
+          "range": [
+            "black",
+            "yellow",
+            "orange",
+            "lightgrey",
+            "lightblue",
+            "pink",
+            "lightgreen"
+          ]
+        }
+      }
+    }
+  }
+}

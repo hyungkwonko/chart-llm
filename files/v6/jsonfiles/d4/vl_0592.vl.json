@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Dollar value: down and down",
+    "subtitle": [
+      "$100 / Consumer Prices Index. Source: Minneapolis Fed",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "dx": 0,
+    "dy": 0,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 250,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/US_MineapolisFed_CPI_longRun.csv"
+  },
+  "mark": {
+    "type": "line",
+    "color": "rgb(128,0,0)",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "transform": [
+    {
+      "calculate": "100/datum.index",
+      "as": "dollarValue"
+    },
+    {
+      "calculate": "year(datum.year)",
+      "as": "time"
+    },
+    {
+      "filter": "datum.time>1940"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "dollarValue",
+      "type": "quantitative",
+      "title": null
+    }
+  }
+}

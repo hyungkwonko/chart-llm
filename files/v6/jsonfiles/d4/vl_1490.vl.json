@@ -1,0 +1,2491 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "range": {
+      "category": [
+        "rgba(113,182,160,1)",
+        "rgba(232,149,117,1)",
+        "rgba(148,163,195,1)",
+        "rgba(219,149,192,1)",
+        "rgba(162,199,100,1)",
+        "rgba(229,200,72,1)",
+        "rgba(218,194,158,1)",
+        "rgba(179,179,179,1)"
+      ]
+    },
+    "view": {
+      "height": 300,
+      "width": 400
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "column": "sepal_length",
+        "value": 5.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.9
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.6
+      },
+      {
+        "column": "sepal_length",
+        "value": 5
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.6
+      },
+      {
+        "column": "sepal_length",
+        "value": 5
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.9
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.3
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.6
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 5
+      },
+      {
+        "column": "sepal_length",
+        "value": 5
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.2
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.2
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.2
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.5
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.9
+      },
+      {
+        "column": "sepal_length",
+        "value": 5
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.5
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.9
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 5
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.5
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 5
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.6
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.3
+      },
+      {
+        "column": "sepal_length",
+        "value": 5
+      },
+      {
+        "column": "sepal_length",
+        "value": 7
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.9
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.5
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.5
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.3
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.9
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.6
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.2
+      },
+      {
+        "column": "sepal_length",
+        "value": 5
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.9
+      },
+      {
+        "column": "sepal_length",
+        "value": 6
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.6
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.6
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.2
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.6
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.9
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.3
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.6
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 6
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.5
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.5
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 6
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 6
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.3
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.6
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.5
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.5
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 5
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.6
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.2
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.3
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 7.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.3
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.5
+      },
+      {
+        "column": "sepal_length",
+        "value": 7.6
+      },
+      {
+        "column": "sepal_length",
+        "value": 4.9
+      },
+      {
+        "column": "sepal_length",
+        "value": 7.3
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 7.2
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.5
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.5
+      },
+      {
+        "column": "sepal_length",
+        "value": 7.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 7.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 6
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.9
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.6
+      },
+      {
+        "column": "sepal_length",
+        "value": 7.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.3
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 7.2
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.2
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 7.2
+      },
+      {
+        "column": "sepal_length",
+        "value": 7.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 7.9
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.3
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.1
+      },
+      {
+        "column": "sepal_length",
+        "value": 7.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.3
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.4
+      },
+      {
+        "column": "sepal_length",
+        "value": 6
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.9
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.9
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.8
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.7
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.3
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.5
+      },
+      {
+        "column": "sepal_length",
+        "value": 6.2
+      },
+      {
+        "column": "sepal_length",
+        "value": 5.9
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.1
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.6
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.9
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.9
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.1
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.7
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 4
+      },
+      {
+        "column": "sepal_width",
+        "value": 4.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.9
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.7
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.6
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.1
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 4.1
+      },
+      {
+        "column": "sepal_width",
+        "value": 4.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.1
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.6
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.7
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.1
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.9
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.7
+      },
+      {
+        "column": "sepal_width",
+        "value": 2
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.9
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.9
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.1
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.7
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.9
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.9
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.6
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.7
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.7
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.1
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.6
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.6
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.7
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.9
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.9
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.7
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.9
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.9
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.6
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.7
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.6
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.7
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.8
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.6
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.1
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.1
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.1
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.1
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.7
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.2
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 2.5
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "sepal_width",
+        "value": 3.4
+      },
+      {
+        "column": "sepal_width",
+        "value": 3
+      },
+      {
+        "column": "petal_length",
+        "value": 1.4
+      },
+      {
+        "column": "petal_length",
+        "value": 1.4
+      },
+      {
+        "column": "petal_length",
+        "value": 1.3
+      },
+      {
+        "column": "petal_length",
+        "value": 1.5
+      },
+      {
+        "column": "petal_length",
+        "value": 1.4
+      },
+      {
+        "column": "petal_length",
+        "value": 1.7
+      },
+      {
+        "column": "petal_length",
+        "value": 1.4
+      },
+      {
+        "column": "petal_length",
+        "value": 1.5
+      },
+      {
+        "column": "petal_length",
+        "value": 1.4
+      },
+      {
+        "column": "petal_length",
+        "value": 1.5
+      },
+      {
+        "column": "petal_length",
+        "value": 1.5
+      },
+      {
+        "column": "petal_length",
+        "value": 1.6
+      },
+      {
+        "column": "petal_length",
+        "value": 1.4
+      },
+      {
+        "column": "petal_length",
+        "value": 1.1
+      },
+      {
+        "column": "petal_length",
+        "value": 1.2
+      },
+      {
+        "column": "petal_length",
+        "value": 1.5
+      },
+      {
+        "column": "petal_length",
+        "value": 1.3
+      },
+      {
+        "column": "petal_length",
+        "value": 1.4
+      },
+      {
+        "column": "petal_length",
+        "value": 1.7
+      },
+      {
+        "column": "petal_length",
+        "value": 1.5
+      },
+      {
+        "column": "petal_length",
+        "value": 1.7
+      },
+      {
+        "column": "petal_length",
+        "value": 1.5
+      },
+      {
+        "column": "petal_length",
+        "value": 1
+      },
+      {
+        "column": "petal_length",
+        "value": 1.7
+      },
+      {
+        "column": "petal_length",
+        "value": 1.9
+      },
+      {
+        "column": "petal_length",
+        "value": 1.6
+      },
+      {
+        "column": "petal_length",
+        "value": 1.6
+      },
+      {
+        "column": "petal_length",
+        "value": 1.5
+      },
+      {
+        "column": "petal_length",
+        "value": 1.4
+      },
+      {
+        "column": "petal_length",
+        "value": 1.6
+      },
+      {
+        "column": "petal_length",
+        "value": 1.6
+      },
+      {
+        "column": "petal_length",
+        "value": 1.5
+      },
+      {
+        "column": "petal_length",
+        "value": 1.5
+      },
+      {
+        "column": "petal_length",
+        "value": 1.4
+      },
+      {
+        "column": "petal_length",
+        "value": 1.5
+      },
+      {
+        "column": "petal_length",
+        "value": 1.2
+      },
+      {
+        "column": "petal_length",
+        "value": 1.3
+      },
+      {
+        "column": "petal_length",
+        "value": 1.4
+      },
+      {
+        "column": "petal_length",
+        "value": 1.3
+      },
+      {
+        "column": "petal_length",
+        "value": 1.5
+      },
+      {
+        "column": "petal_length",
+        "value": 1.3
+      },
+      {
+        "column": "petal_length",
+        "value": 1.3
+      },
+      {
+        "column": "petal_length",
+        "value": 1.3
+      },
+      {
+        "column": "petal_length",
+        "value": 1.6
+      },
+      {
+        "column": "petal_length",
+        "value": 1.9
+      },
+      {
+        "column": "petal_length",
+        "value": 1.4
+      },
+      {
+        "column": "petal_length",
+        "value": 1.6
+      },
+      {
+        "column": "petal_length",
+        "value": 1.4
+      },
+      {
+        "column": "petal_length",
+        "value": 1.5
+      },
+      {
+        "column": "petal_length",
+        "value": 1.4
+      },
+      {
+        "column": "petal_length",
+        "value": 4.7
+      },
+      {
+        "column": "petal_length",
+        "value": 4.5
+      },
+      {
+        "column": "petal_length",
+        "value": 4.9
+      },
+      {
+        "column": "petal_length",
+        "value": 4
+      },
+      {
+        "column": "petal_length",
+        "value": 4.6
+      },
+      {
+        "column": "petal_length",
+        "value": 4.5
+      },
+      {
+        "column": "petal_length",
+        "value": 4.7
+      },
+      {
+        "column": "petal_length",
+        "value": 3.3
+      },
+      {
+        "column": "petal_length",
+        "value": 4.6
+      },
+      {
+        "column": "petal_length",
+        "value": 3.9
+      },
+      {
+        "column": "petal_length",
+        "value": 3.5
+      },
+      {
+        "column": "petal_length",
+        "value": 4.2
+      },
+      {
+        "column": "petal_length",
+        "value": 4
+      },
+      {
+        "column": "petal_length",
+        "value": 4.7
+      },
+      {
+        "column": "petal_length",
+        "value": 3.6
+      },
+      {
+        "column": "petal_length",
+        "value": 4.4
+      },
+      {
+        "column": "petal_length",
+        "value": 4.5
+      },
+      {
+        "column": "petal_length",
+        "value": 4.1
+      },
+      {
+        "column": "petal_length",
+        "value": 4.5
+      },
+      {
+        "column": "petal_length",
+        "value": 3.9
+      },
+      {
+        "column": "petal_length",
+        "value": 4.8
+      },
+      {
+        "column": "petal_length",
+        "value": 4
+      },
+      {
+        "column": "petal_length",
+        "value": 4.9
+      },
+      {
+        "column": "petal_length",
+        "value": 4.7
+      },
+      {
+        "column": "petal_length",
+        "value": 4.3
+      },
+      {
+        "column": "petal_length",
+        "value": 4.4
+      },
+      {
+        "column": "petal_length",
+        "value": 4.8
+      },
+      {
+        "column": "petal_length",
+        "value": 5
+      },
+      {
+        "column": "petal_length",
+        "value": 4.5
+      },
+      {
+        "column": "petal_length",
+        "value": 3.5
+      },
+      {
+        "column": "petal_length",
+        "value": 3.8
+      },
+      {
+        "column": "petal_length",
+        "value": 3.7
+      },
+      {
+        "column": "petal_length",
+        "value": 3.9
+      },
+      {
+        "column": "petal_length",
+        "value": 5.1
+      },
+      {
+        "column": "petal_length",
+        "value": 4.5
+      },
+      {
+        "column": "petal_length",
+        "value": 4.5
+      },
+      {
+        "column": "petal_length",
+        "value": 4.7
+      },
+      {
+        "column": "petal_length",
+        "value": 4.4
+      },
+      {
+        "column": "petal_length",
+        "value": 4.1
+      },
+      {
+        "column": "petal_length",
+        "value": 4
+      },
+      {
+        "column": "petal_length",
+        "value": 4.4
+      },
+      {
+        "column": "petal_length",
+        "value": 4.6
+      },
+      {
+        "column": "petal_length",
+        "value": 4
+      },
+      {
+        "column": "petal_length",
+        "value": 3.3
+      },
+      {
+        "column": "petal_length",
+        "value": 4.2
+      },
+      {
+        "column": "petal_length",
+        "value": 4.2
+      },
+      {
+        "column": "petal_length",
+        "value": 4.2
+      },
+      {
+        "column": "petal_length",
+        "value": 4.3
+      },
+      {
+        "column": "petal_length",
+        "value": 3
+      },
+      {
+        "column": "petal_length",
+        "value": 4.1
+      },
+      {
+        "column": "petal_length",
+        "value": 6
+      },
+      {
+        "column": "petal_length",
+        "value": 5.1
+      },
+      {
+        "column": "petal_length",
+        "value": 5.9
+      },
+      {
+        "column": "petal_length",
+        "value": 5.6
+      },
+      {
+        "column": "petal_length",
+        "value": 5.8
+      },
+      {
+        "column": "petal_length",
+        "value": 6.6
+      },
+      {
+        "column": "petal_length",
+        "value": 4.5
+      },
+      {
+        "column": "petal_length",
+        "value": 6.3
+      },
+      {
+        "column": "petal_length",
+        "value": 5.8
+      },
+      {
+        "column": "petal_length",
+        "value": 6.1
+      },
+      {
+        "column": "petal_length",
+        "value": 5.1
+      },
+      {
+        "column": "petal_length",
+        "value": 5.3
+      },
+      {
+        "column": "petal_length",
+        "value": 5.5
+      },
+      {
+        "column": "petal_length",
+        "value": 5
+      },
+      {
+        "column": "petal_length",
+        "value": 5.1
+      },
+      {
+        "column": "petal_length",
+        "value": 5.3
+      },
+      {
+        "column": "petal_length",
+        "value": 5.5
+      },
+      {
+        "column": "petal_length",
+        "value": 6.7
+      },
+      {
+        "column": "petal_length",
+        "value": 6.9
+      },
+      {
+        "column": "petal_length",
+        "value": 5
+      },
+      {
+        "column": "petal_length",
+        "value": 5.7
+      },
+      {
+        "column": "petal_length",
+        "value": 4.9
+      },
+      {
+        "column": "petal_length",
+        "value": 6.7
+      },
+      {
+        "column": "petal_length",
+        "value": 4.9
+      },
+      {
+        "column": "petal_length",
+        "value": 5.7
+      },
+      {
+        "column": "petal_length",
+        "value": 6
+      },
+      {
+        "column": "petal_length",
+        "value": 4.8
+      },
+      {
+        "column": "petal_length",
+        "value": 4.9
+      },
+      {
+        "column": "petal_length",
+        "value": 5.6
+      },
+      {
+        "column": "petal_length",
+        "value": 5.8
+      },
+      {
+        "column": "petal_length",
+        "value": 6.1
+      },
+      {
+        "column": "petal_length",
+        "value": 6.4
+      },
+      {
+        "column": "petal_length",
+        "value": 5.6
+      },
+      {
+        "column": "petal_length",
+        "value": 5.1
+      },
+      {
+        "column": "petal_length",
+        "value": 5.6
+      },
+      {
+        "column": "petal_length",
+        "value": 6.1
+      },
+      {
+        "column": "petal_length",
+        "value": 5.6
+      },
+      {
+        "column": "petal_length",
+        "value": 5.5
+      },
+      {
+        "column": "petal_length",
+        "value": 4.8
+      },
+      {
+        "column": "petal_length",
+        "value": 5.4
+      },
+      {
+        "column": "petal_length",
+        "value": 5.6
+      },
+      {
+        "column": "petal_length",
+        "value": 5.1
+      },
+      {
+        "column": "petal_length",
+        "value": 5.1
+      },
+      {
+        "column": "petal_length",
+        "value": 5.9
+      },
+      {
+        "column": "petal_length",
+        "value": 5.7
+      },
+      {
+        "column": "petal_length",
+        "value": 5.2
+      },
+      {
+        "column": "petal_length",
+        "value": 5
+      },
+      {
+        "column": "petal_length",
+        "value": 5.2
+      },
+      {
+        "column": "petal_length",
+        "value": 5.4
+      },
+      {
+        "column": "petal_length",
+        "value": 5.1
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.4
+      },
+      {
+        "column": "petal_width",
+        "value": 0.3
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.1
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.1
+      },
+      {
+        "column": "petal_width",
+        "value": 0.1
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.4
+      },
+      {
+        "column": "petal_width",
+        "value": 0.4
+      },
+      {
+        "column": "petal_width",
+        "value": 0.3
+      },
+      {
+        "column": "petal_width",
+        "value": 0.3
+      },
+      {
+        "column": "petal_width",
+        "value": 0.3
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.4
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.5
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.4
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.4
+      },
+      {
+        "column": "petal_width",
+        "value": 0.1
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.1
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.3
+      },
+      {
+        "column": "petal_width",
+        "value": 0.3
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.6
+      },
+      {
+        "column": "petal_width",
+        "value": 0.4
+      },
+      {
+        "column": "petal_width",
+        "value": 0.3
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 0.2
+      },
+      {
+        "column": "petal_width",
+        "value": 1.4
+      },
+      {
+        "column": "petal_width",
+        "value": 1.5
+      },
+      {
+        "column": "petal_width",
+        "value": 1.5
+      },
+      {
+        "column": "petal_width",
+        "value": 1.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.5
+      },
+      {
+        "column": "petal_width",
+        "value": 1.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.6
+      },
+      {
+        "column": "petal_width",
+        "value": 1
+      },
+      {
+        "column": "petal_width",
+        "value": 1.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.4
+      },
+      {
+        "column": "petal_width",
+        "value": 1
+      },
+      {
+        "column": "petal_width",
+        "value": 1.5
+      },
+      {
+        "column": "petal_width",
+        "value": 1
+      },
+      {
+        "column": "petal_width",
+        "value": 1.4
+      },
+      {
+        "column": "petal_width",
+        "value": 1.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.4
+      },
+      {
+        "column": "petal_width",
+        "value": 1.5
+      },
+      {
+        "column": "petal_width",
+        "value": 1
+      },
+      {
+        "column": "petal_width",
+        "value": 1.5
+      },
+      {
+        "column": "petal_width",
+        "value": 1.1
+      },
+      {
+        "column": "petal_width",
+        "value": 1.8
+      },
+      {
+        "column": "petal_width",
+        "value": 1.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.5
+      },
+      {
+        "column": "petal_width",
+        "value": 1.2
+      },
+      {
+        "column": "petal_width",
+        "value": 1.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.4
+      },
+      {
+        "column": "petal_width",
+        "value": 1.4
+      },
+      {
+        "column": "petal_width",
+        "value": 1.7
+      },
+      {
+        "column": "petal_width",
+        "value": 1.5
+      },
+      {
+        "column": "petal_width",
+        "value": 1
+      },
+      {
+        "column": "petal_width",
+        "value": 1.1
+      },
+      {
+        "column": "petal_width",
+        "value": 1
+      },
+      {
+        "column": "petal_width",
+        "value": 1.2
+      },
+      {
+        "column": "petal_width",
+        "value": 1.6
+      },
+      {
+        "column": "petal_width",
+        "value": 1.5
+      },
+      {
+        "column": "petal_width",
+        "value": 1.6
+      },
+      {
+        "column": "petal_width",
+        "value": 1.5
+      },
+      {
+        "column": "petal_width",
+        "value": 1.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.2
+      },
+      {
+        "column": "petal_width",
+        "value": 1.4
+      },
+      {
+        "column": "petal_width",
+        "value": 1.2
+      },
+      {
+        "column": "petal_width",
+        "value": 1
+      },
+      {
+        "column": "petal_width",
+        "value": 1.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.2
+      },
+      {
+        "column": "petal_width",
+        "value": 1.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.1
+      },
+      {
+        "column": "petal_width",
+        "value": 1.3
+      },
+      {
+        "column": "petal_width",
+        "value": 2.5
+      },
+      {
+        "column": "petal_width",
+        "value": 1.9
+      },
+      {
+        "column": "petal_width",
+        "value": 2.1
+      },
+      {
+        "column": "petal_width",
+        "value": 1.8
+      },
+      {
+        "column": "petal_width",
+        "value": 2.2
+      },
+      {
+        "column": "petal_width",
+        "value": 2.1
+      },
+      {
+        "column": "petal_width",
+        "value": 1.7
+      },
+      {
+        "column": "petal_width",
+        "value": 1.8
+      },
+      {
+        "column": "petal_width",
+        "value": 1.8
+      },
+      {
+        "column": "petal_width",
+        "value": 2.5
+      },
+      {
+        "column": "petal_width",
+        "value": 2
+      },
+      {
+        "column": "petal_width",
+        "value": 1.9
+      },
+      {
+        "column": "petal_width",
+        "value": 2.1
+      },
+      {
+        "column": "petal_width",
+        "value": 2
+      },
+      {
+        "column": "petal_width",
+        "value": 2.4
+      },
+      {
+        "column": "petal_width",
+        "value": 2.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.8
+      },
+      {
+        "column": "petal_width",
+        "value": 2.2
+      },
+      {
+        "column": "petal_width",
+        "value": 2.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.5
+      },
+      {
+        "column": "petal_width",
+        "value": 2.3
+      },
+      {
+        "column": "petal_width",
+        "value": 2
+      },
+      {
+        "column": "petal_width",
+        "value": 2
+      },
+      {
+        "column": "petal_width",
+        "value": 1.8
+      },
+      {
+        "column": "petal_width",
+        "value": 2.1
+      },
+      {
+        "column": "petal_width",
+        "value": 1.8
+      },
+      {
+        "column": "petal_width",
+        "value": 1.8
+      },
+      {
+        "column": "petal_width",
+        "value": 1.8
+      },
+      {
+        "column": "petal_width",
+        "value": 2.1
+      },
+      {
+        "column": "petal_width",
+        "value": 1.6
+      },
+      {
+        "column": "petal_width",
+        "value": 1.9
+      },
+      {
+        "column": "petal_width",
+        "value": 2
+      },
+      {
+        "column": "petal_width",
+        "value": 2.2
+      },
+      {
+        "column": "petal_width",
+        "value": 1.5
+      },
+      {
+        "column": "petal_width",
+        "value": 1.4
+      },
+      {
+        "column": "petal_width",
+        "value": 2.3
+      },
+      {
+        "column": "petal_width",
+        "value": 2.4
+      },
+      {
+        "column": "petal_width",
+        "value": 1.8
+      },
+      {
+        "column": "petal_width",
+        "value": 1.8
+      },
+      {
+        "column": "petal_width",
+        "value": 2.1
+      },
+      {
+        "column": "petal_width",
+        "value": 2.4
+      },
+      {
+        "column": "petal_width",
+        "value": 2.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.9
+      },
+      {
+        "column": "petal_width",
+        "value": 2.3
+      },
+      {
+        "column": "petal_width",
+        "value": 2.5
+      },
+      {
+        "column": "petal_width",
+        "value": 2.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.9
+      },
+      {
+        "column": "petal_width",
+        "value": 2
+      },
+      {
+        "column": "petal_width",
+        "value": 2.3
+      },
+      {
+        "column": "petal_width",
+        "value": 1.8
+      }
+    ]
+  },
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "aggregate": "min",
+          "field": "value",
+          "type": "quantitative"
+        },
+        "x2": {
+          "aggregate": "max",
+          "field": "value",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "column",
+          "type": "nominal"
+        }
+      },
+      "mark": "rule"
+    },
+    {
+      "encoding": {
+        "color": {
+          "field": "column",
+          "legend": null,
+          "type": "nominal"
+        },
+        "x": {
+          "aggregate": "q1",
+          "axis": {
+            "title": "value"
+          },
+          "field": "value",
+          "type": "quantitative"
+        },
+        "x2": {
+          "aggregate": "q3",
+          "field": "value",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "column",
+          "type": "nominal"
+        }
+      },
+      "mark": "bar"
+    },
+    {
+      "encoding": {
+        "x": {
+          "aggregate": "median",
+          "field": "value",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "column",
+          "type": "nominal"
+        }
+      },
+      "mark": {
+        "color": "black",
+        "size": 18,
+        "type": "tick"
+      }
+    }
+  ]
+}

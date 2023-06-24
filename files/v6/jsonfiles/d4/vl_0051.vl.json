@@ -1,0 +1,381 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "width": 600
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ghattab/CMANGOES/c492c918df3c0da3eaaf27d2b218b66c00610307/Data/Visualization_data/data/multiple_datasets/vis/mds_2_Ranks/hm_ran_data.json"
+  },
+  "title": {
+    "anchor": "middle",
+    "text": [
+      "Performance of encoding groups. Color coding corresponds to the ranks of encodings across",
+      "datasets. The x-axis is organized by sequence- and structure-based encodings and the y-axis",
+      "is sorted by class balance (cut-off 0.35). Groups are separated by grey bars.",
+      ""
+    ]
+  },
+  "vconcat": [
+    {
+      "layer": [
+        {
+          "encoding": {
+            "color": {
+              "condition": {
+                "test": "(datum.rank === 4)",
+                "value": "white"
+              },
+              "field": "rank",
+              "legend": {
+                "symbolStrokeWidth": 0.2
+              },
+              "scale": {
+                "domain": [
+                  "1",
+                  "2",
+                  "3",
+                  ">3"
+                ],
+                "range": [
+                  "#023858",
+                  "#0570b0",
+                  "#74a9cf",
+                  "white"
+                ]
+              },
+              "title": "Rank",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "Encoding",
+                "type": "nominal"
+              },
+              {
+                "field": "Dataset",
+                "type": "nominal"
+              },
+              {
+                "field": "F1",
+                "type": "quantitative"
+              },
+              {
+                "field": "is_imbalanced",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "axis": {
+                "labelAngle": -45
+              },
+              "field": "Encoding",
+              "sort": [
+                "seqbinary_shifted_levels_1_and_2_encoding",
+                "seqdiscretized_centered_levels_1_and_2_encoding",
+                "seqdiscretized_shifted_levels_1_and_2_encoding",
+                "seqbinary_centered_levels_1_and_2_encoding",
+                "strbinary_centered_levels_1_and_2_encoding",
+                "strbinary_shifted_levels_1_and_2_encoding",
+                "strdiscretized_centered_levels_1_and_2_encoding",
+                "strdiscretized_shifted_levels_1_and_2_encoding"
+              ],
+              "type": "nominal"
+            },
+            "y": {
+              "axis": {
+                "tickCount": 240
+              },
+              "field": "Dataset",
+              "sort": [
+                "cpp_sanders",
+                "cpp_mixed",
+                "avp_avppred",
+                "cpp_kelmcpp",
+                "amp_antibp2",
+                "cpp_cellppdmod",
+                "amp_antibp",
+                "afp_antifp",
+                "atb_antitbp",
+                "afp_amppred",
+                "atb_iantitb",
+                "cpp_cppredfl",
+                "cpp_cellppd",
+                "avp_amppred",
+                "cpp_mlcppue",
+                "acp_anticp",
+                "amp_csamp",
+                "amp_fernandes",
+                "amp_modlamp",
+                "hem_hemopi",
+                "bce_ibce",
+                "ace_vaxinpad",
+                "aip_antiinflam",
+                "acp_iacp",
+                "aip_aippred",
+                "cpp_mlcpp",
+                "",
+                "acp_mlacp",
+                "amp_iamp2l",
+                "amp_gonzales"
+              ],
+              "type": "nominal"
+            }
+          },
+          "mark": {
+            "size": 13,
+            "stroke": "black",
+            "strokeWidth": 0.2,
+            "type": "rect"
+          }
+        },
+        {
+          "encoding": {
+            "color": {
+              "field": "F1_new",
+              "scale": {
+                "domain": [
+                  "NA"
+                ],
+                "range": [
+                  "#a6611a"
+                ]
+              },
+              "title": "Value",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "labelAngle": -45
+              },
+              "field": "Encoding",
+              "sort": [
+                "seqbinary_shifted_levels_1_and_2_encoding",
+                "seqdiscretized_centered_levels_1_and_2_encoding",
+                "seqdiscretized_shifted_levels_1_and_2_encoding",
+                "seqbinary_centered_levels_1_and_2_encoding",
+                "strbinary_centered_levels_1_and_2_encoding",
+                "strbinary_shifted_levels_1_and_2_encoding",
+                "strdiscretized_centered_levels_1_and_2_encoding",
+                "strdiscretized_shifted_levels_1_and_2_encoding"
+              ],
+              "type": "nominal"
+            },
+            "y": {
+              "axis": {
+                "tickCount": 240
+              },
+              "field": "Dataset",
+              "sort": [
+                "cpp_sanders",
+                "cpp_mixed",
+                "avp_avppred",
+                "cpp_kelmcpp",
+                "amp_antibp2",
+                "cpp_cellppdmod",
+                "amp_antibp",
+                "afp_antifp",
+                "atb_antitbp",
+                "afp_amppred",
+                "atb_iantitb",
+                "cpp_cppredfl",
+                "cpp_cellppd",
+                "avp_amppred",
+                "cpp_mlcppue",
+                "acp_anticp",
+                "amp_csamp",
+                "amp_fernandes",
+                "amp_modlamp",
+                "hem_hemopi",
+                "bce_ibce",
+                "ace_vaxinpad",
+                "aip_antiinflam",
+                "acp_iacp",
+                "aip_aippred",
+                "cpp_mlcpp",
+                "",
+                "acp_mlacp",
+                "amp_iamp2l",
+                "amp_gonzales"
+              ],
+              "type": "nominal"
+            }
+          },
+          "height": {
+            "step": 13
+          },
+          "mark": {
+            "size": 13,
+            "type": "rect"
+          },
+          "transform": [
+            {
+              "as": "F1_new",
+              "calculate": "datum.F1 == null ? 'NA' : 'NA'"
+            },
+            {
+              "filter": "(datum.F1 === null)"
+            }
+          ],
+          "width": {
+            "step": 13
+          }
+        },
+        {
+          "encoding": {
+            "color": {
+              "value": "#f0f0f0"
+            },
+            "x": {
+              "axis": {
+                "labelAngle": -45
+              },
+              "field": "Encoding",
+              "sort": [
+                "seqbinary_shifted_levels_1_and_2_encoding",
+                "seqdiscretized_centered_levels_1_and_2_encoding",
+                "seqdiscretized_shifted_levels_1_and_2_encoding",
+                "seqbinary_centered_levels_1_and_2_encoding",
+                "strbinary_centered_levels_1_and_2_encoding",
+                "strbinary_shifted_levels_1_and_2_encoding",
+                "strdiscretized_centered_levels_1_and_2_encoding",
+                "strdiscretized_shifted_levels_1_and_2_encoding"
+              ],
+              "type": "nominal"
+            },
+            "y": {
+              "field": "Dataset",
+              "sort": [
+                "cpp_sanders",
+                "cpp_mixed",
+                "avp_avppred",
+                "cpp_kelmcpp",
+                "amp_antibp2",
+                "cpp_cellppdmod",
+                "amp_antibp",
+                "afp_antifp",
+                "atb_antitbp",
+                "afp_amppred",
+                "atb_iantitb",
+                "cpp_cppredfl",
+                "cpp_cellppd",
+                "avp_amppred",
+                "cpp_mlcppue",
+                "acp_anticp",
+                "amp_csamp",
+                "amp_fernandes",
+                "amp_modlamp",
+                "hem_hemopi",
+                "bce_ibce",
+                "ace_vaxinpad",
+                "aip_antiinflam",
+                "acp_iacp",
+                "aip_aippred",
+                "cpp_mlcpp",
+                "",
+                "acp_mlacp",
+                "amp_iamp2l",
+                "amp_gonzales"
+              ],
+              "type": "nominal"
+            }
+          },
+          "mark": {
+            "strokeOpacity": 1.0,
+            "type": "rect"
+          },
+          "transform": [
+            {
+              "filter": "(datum.Dataset === '')"
+            }
+          ]
+        },
+        {
+          "encoding": {
+            "color": {
+              "value": "#f0f0f0"
+            },
+            "x": {
+              "axis": {
+                "labelAngle": -45
+              },
+              "field": "Encoding",
+              "sort": [
+                "seqbinary_shifted_levels_1_and_2_encoding",
+                "seqdiscretized_centered_levels_1_and_2_encoding",
+                "seqdiscretized_shifted_levels_1_and_2_encoding",
+                "seqbinary_centered_levels_1_and_2_encoding",
+                "strbinary_centered_levels_1_and_2_encoding",
+                "strbinary_shifted_levels_1_and_2_encoding",
+                "strdiscretized_centered_levels_1_and_2_encoding",
+                "strdiscretized_shifted_levels_1_and_2_encoding"
+              ],
+              "type": "nominal"
+            },
+            "y": {
+              "field": "Dataset",
+              "sort": [
+                "cpp_sanders",
+                "cpp_mixed",
+                "avp_avppred",
+                "cpp_kelmcpp",
+                "amp_antibp2",
+                "cpp_cellppdmod",
+                "amp_antibp",
+                "afp_antifp",
+                "atb_antitbp",
+                "afp_amppred",
+                "atb_iantitb",
+                "cpp_cppredfl",
+                "cpp_cellppd",
+                "avp_amppred",
+                "cpp_mlcppue",
+                "acp_anticp",
+                "amp_csamp",
+                "amp_fernandes",
+                "amp_modlamp",
+                "hem_hemopi",
+                "bce_ibce",
+                "ace_vaxinpad",
+                "aip_antiinflam",
+                "acp_iacp",
+                "aip_aippred",
+                "cpp_mlcpp",
+                "",
+                "acp_mlacp",
+                "amp_iamp2l",
+                "amp_gonzales"
+              ],
+              "type": "nominal"
+            }
+          },
+          "mark": {
+            "strokeOpacity": 1.0,
+            "type": "rect"
+          },
+          "transform": [
+            {
+              "filter": "(datum.Encoding === '')"
+            }
+          ]
+        }
+      ],
+      "resolve": {
+        "scale": {
+          "color": "independent"
+        }
+      }
+    }
+  ]
+}

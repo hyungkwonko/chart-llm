@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 350,
+  "height": 400,
+  "title": {
+    "text": "Number of private renters in the UK ",
+    "subtitle": [
+      "Source: ONS census data 2021",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoEngWards.json",
+        "format": {
+          "type": "topojson",
+          "feature": "wards"
+        }
+      },
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgray",
+        "stroke": "lightgrey",
+        "strokeWidth": 0.1
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Emilysquires02/Emilysquires02.github.io/main/rent%20cleaned%20(1).csv"
+      },
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": {
+        "type": "circle",
+        "opacity": 0.5,
+        "stroke": "black",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "Longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "Observation",
+          "type": "quantitative",
+          "scale": {
+            "range": [
+              150,
+              1000
+            ]
+          }
+        },
+        "color": {
+          "field": [
+            "Observation"
+          ],
+          "type": "quantitative",
+          "scale": {
+            "scheme": "Oranges"
+          },
+          "legend": {
+            "orient": "bottom"
+          },
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "Observation",
+            "type": "quantitative",
+            "title": "Private renters"
+          },
+          {
+            "field": "Upper Tier Local Authorities",
+            "type": "nominal",
+            "title": "Area"
+          }
+        ]
+      }
+    }
+  ]
+}

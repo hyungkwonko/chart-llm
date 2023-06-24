@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Rate of Change in Per Capita Energy Consumption",
+    "subtitle": "Source: World Bank",
+    "anchor": "start",
+    "subtitleFontSize": 10
+  },
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 1980,
+      "bind": {
+        "input": "range",
+        "min": 1980,
+        "max": 2014,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "width": 540,
+  "height": 340,
+  "background": "#fff0d8",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/Percap_eng_corrected1.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.Year == yearSelector"
+    },
+    {
+      "lookup": "Country",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json",
+          "format": {
+            "property": "features"
+          }
+        },
+        "key": "properties.name",
+        "fields": [
+          "properties",
+          "type",
+          "geometry",
+          "id"
+        ]
+      }
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "black",
+    "strokeWidth": 0.2
+  },
+  "encoding": {
+    "color": {
+      "legend": {
+        "title": "Rate of Change in Per Capita Energy Consumption",
+        "titleFontSize": 9.4,
+        "orient": "bottom",
+        "format": "%"
+      },
+      "field": "Pct_change",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "goldred"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.name",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "Pct_change",
+        "type": "quantitative",
+        "format": "%",
+        "title": "% Change in energy consumption per capita"
+      }
+    ]
+  }
+}

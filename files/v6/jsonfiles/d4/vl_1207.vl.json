@@ -1,0 +1,112 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Comparing four economies",
+    "subtitle": [
+      "GDP, constant prices. Rebased, 1980=100. Source: IMF.",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/EnergyIndex.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "timeUnit": "year",
+        "field": "Year",
+        "gte": "2006"
+      }
+    },
+    {
+      "calculate": "datum.GeoBiomass/3.770404816*100",
+      "as": "Geo Biomass"
+    },
+    {
+      "calculate": "datum.Solar/0.107861668*100",
+      "as": "Solar"
+    },
+    {
+      "calculate": "datum.Wind/2.425894022*100",
+      "as": "Wind"
+    },
+    {
+      "calculate": "datum.Hydro/261.9176636*100",
+      "as": "Hydro"
+    },
+    {
+      "calculate": "datum.Nuclear/27.37537956*100",
+      "as": "Nuclear"
+    },
+    {
+      "calculate": "datum.Gas/843.4420776*100",
+      "as": "Gas"
+    },
+    {
+      "calculate": "datum.Coal/1054.097046*100",
+      "as": "Coal"
+    },
+    {
+      "calculate": "datum.Oil/1673.716797*100",
+      "as": "Oil"
+    }
+  ],
+  "repeat": {
+    "layer": [
+      "Geo Biomass",
+      "Solar",
+      "Wind",
+      "Hydro",
+      "Nuclear",
+      "Gas",
+      "Coal",
+      "Oil"
+    ]
+  },
+  "height": 300,
+  "width": 300,
+  "spec": {
+    "mark": {
+      "type": "line",
+      "strokeWidth": 2
+    },
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": null,
+        "axis": {
+          "grid": false
+        }
+      },
+      "y": {
+        "field": {
+          "repeat": "layer"
+        },
+        "type": "quantitative",
+        "title": null
+      },
+      "color": {
+        "datum": {
+          "repeat": "layer"
+        },
+        "scale": {
+          "scheme": "set1"
+        },
+        "tooltip": {
+          "field": {
+            "repeat": "layer"
+          }
+        },
+        "legend": {
+          "orient": "top-left",
+          "fillColor": "white"
+        }
+      }
+    }
+  }
+}

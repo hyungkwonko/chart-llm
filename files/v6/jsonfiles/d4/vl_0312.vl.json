@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": {
+    "text": "Shortest Serving UK Prime Ministers ",
+    "subtitle": "Measured in days",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 300,
+  "data": {
+    "values": [
+      {
+        "Prime Minister": "Sir Alec Douglas-Home",
+        "Tenure length": "363\u00a0days",
+        "Length": 363
+      },
+      {
+        "Prime Minister": "The Earl of Bute",
+        "Tenure length": "317\u00a0days",
+        "Length": 317
+      },
+      {
+        "Prime Minister": "The Earl of Shelburne",
+        "Tenure length": "266\u00a0days",
+        "Length": 266
+      },
+      {
+        "Prime Minister": "The Duke of Devonshire",
+        "Tenure length": "225\u00a0days",
+        "Length": 225
+      },
+      {
+        "Prime Minister": "Bonar Law",
+        "Tenure length": "211\u00a0days",
+        "Length": 211
+      },
+      {
+        "Prime Minister": "The Viscount Goderich",
+        "Tenure length": "144\u00a0days",
+        "Length": 144
+      },
+      {
+        "Prime Minister": "George Canning",
+        "Tenure length": "119\u00a0days",
+        "Length": 119
+      },
+      {
+        "Prime Minister": "Liz Truss",
+        "Tenure length": "48\u00a0days",
+        "Length": 48
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "color": "#78969d"
+  },
+  "encoding": {
+    "y": {
+      "field": "Prime Minister",
+      "type": "nominal",
+      "sort": "-x",
+      "axis": {
+        "labelAngle": 0,
+        "title": null
+      }
+    },
+    "x": {
+      "field": "Length",
+      "type": "quantitative",
+      "title": "Length"
+    }
+  }
+}

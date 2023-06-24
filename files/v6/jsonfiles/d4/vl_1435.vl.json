@@ -1,0 +1,198 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    },
+    "axis": {
+      "labelLimit": 500
+    }
+  },
+  "data": {
+    "name": "data-07ff90416a61c19b0b313fec57dbf355"
+  },
+  "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 50
+  },
+  "encoding": {
+    "color": {
+      "field": "fraction_type",
+      "scale": {
+        "domain": [
+          "counts",
+          "variants"
+        ]
+      },
+      "title": null,
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "library",
+        "type": "nominal"
+      },
+      {
+        "field": "pre_sample",
+        "type": "nominal"
+      },
+      {
+        "field": "counts",
+        "format": ".2g",
+        "type": "quantitative"
+      },
+      {
+        "field": "variants",
+        "format": ".2g",
+        "type": "quantitative"
+      },
+      {
+        "field": "virus_batch",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "fraction",
+      "scale": {
+        "domain": [
+          0,
+          1
+        ]
+      },
+      "title": "fraction above threshold",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "library_sample",
+      "title": null,
+      "type": "nominal"
+    }
+  },
+  "height": {
+    "step": 14
+  },
+  "params": [
+    {
+      "name": "parameter003",
+      "select": {
+        "type": "point",
+        "fields": [
+          "fraction_type"
+        ]
+      },
+      "bind": "legend"
+    },
+    {
+      "name": "parameter001",
+      "select": {
+        "type": "point",
+        "fields": [
+          "library"
+        ]
+      },
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Lib-1",
+          "Lib-2",
+          "Lib-3"
+        ],
+        "labels": [
+          "all",
+          "Lib-1",
+          "Lib-2",
+          "Lib-3"
+        ],
+        "name": "library"
+      }
+    },
+    {
+      "name": "parameter002",
+      "select": {
+        "type": "point",
+        "fields": [
+          "virus_batch"
+        ]
+      },
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "thaw-1"
+        ],
+        "labels": [
+          "all",
+          "thaw-1"
+        ],
+        "name": "virus_batch"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "fold": [
+        "counts",
+        "variants"
+      ],
+      "as": [
+        "fraction_type",
+        "fraction"
+      ]
+    },
+    {
+      "filter": {
+        "param": "parameter003"
+      }
+    },
+    {
+      "filter": {
+        "param": "parameter001"
+      }
+    },
+    {
+      "filter": {
+        "param": "parameter002"
+      }
+    }
+  ],
+  "width": 200,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-07ff90416a61c19b0b313fec57dbf355": [
+      {
+        "library": "Lib-1",
+        "pre_sample": "2022-03-25_thaw-1_VSVG_control_1",
+        "library_sample": "Lib-1 2022-03-25_thaw-1_VSVG_control_1",
+        "counts": 0.9983648590126066,
+        "variants": 0.9612706286368407,
+        "virus_batch": "thaw-1"
+      },
+      {
+        "library": "Lib-1",
+        "pre_sample": "2022-03-25_thaw-1_VSVG_control_2",
+        "library_sample": "Lib-1 2022-03-25_thaw-1_VSVG_control_2",
+        "counts": 0.9983300834890584,
+        "variants": 0.9607618684218894,
+        "virus_batch": "thaw-1"
+      },
+      {
+        "library": "Lib-2",
+        "pre_sample": "2022-06-22_thaw-1_VSVG_control_1",
+        "library_sample": "Lib-2 2022-06-22_thaw-1_VSVG_control_1",
+        "counts": 0.9967152162769597,
+        "variants": 0.9523403226609216,
+        "virus_batch": "thaw-1"
+      },
+      {
+        "library": "Lib-3",
+        "pre_sample": "2022-06-22_thaw-1_VSVG_control_1",
+        "library_sample": "Lib-3 2022-06-22_thaw-1_VSVG_control_1",
+        "counts": 0.9967466457208356,
+        "variants": 0.9477171194066828,
+        "virus_batch": "thaw-1"
+      }
+    ]
+  }
+}

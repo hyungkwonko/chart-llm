@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mode": "vega-lite",
+  "description": "A simple pie chart with embedded data.",
+  "width": 500,
+  "height": 300,
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "category": 1,
+        "value": 4,
+        "gender": "male"
+      },
+      {
+        "category": 2,
+        "value": 6,
+        "gender": "male"
+      },
+      {
+        "category": 3,
+        "value": 10,
+        "gender": "male"
+      },
+      {
+        "category": 4,
+        "value": 3,
+        "gender": "male"
+      },
+      {
+        "category": 5,
+        "value": 7,
+        "gender": "male"
+      },
+      {
+        "category": 6,
+        "value": 8,
+        "gender": "male"
+      },
+      {
+        "category": 1,
+        "value": 4,
+        "gender": "female"
+      },
+      {
+        "category": 2,
+        "value": 6,
+        "gender": "female"
+      },
+      {
+        "category": 3,
+        "value": 10,
+        "gender": "female"
+      },
+      {
+        "category": 4,
+        "value": 3,
+        "gender": "female"
+      },
+      {
+        "category": 5,
+        "value": 7,
+        "gender": "female"
+      },
+      {
+        "category": 6,
+        "value": 8,
+        "gender": "female"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0,
+    "cornerRadius": 0,
+    "padAngle": 0,
+    "outerRadius": 150,
+    "tooltip": true
+  },
+  "encoding": {
+    "row": {
+      "field": "gender"
+    },
+    "theta": {
+      "field": "value",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "scale": {
+        "range": [
+          "#1f77b4",
+          "#ff7f0e",
+          "#2ca02c",
+          "#d62728",
+          "#9467bd",
+          "#8c564b",
+          "#e377c2",
+          "#7f7f7f",
+          "#bcbd22",
+          "#17becf"
+        ]
+      },
+      "legend": {
+        "title": "Category",
+        "orient": "right",
+        "symbolType": "circle",
+        "fillColor": "#ffffff"
+      }
+    }
+  }
+}

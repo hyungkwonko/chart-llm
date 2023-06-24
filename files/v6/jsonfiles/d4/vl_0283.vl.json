@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/bfro_reports_fall2022.csv"
+  },
+  "mark": "rect",
+  "width": 400,
+  "height": 450,
+  "encoding": {
+    "x": {
+      "bin": {
+        "maxbins": 30
+      },
+      "field": "moon_phase",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "state",
+      "type": "ordinal"
+    },
+    "color": {
+      "aggregate": "count",
+      "type": "quantitative"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

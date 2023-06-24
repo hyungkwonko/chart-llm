@@ -1,0 +1,187 @@
+{
+  "config": {
+    "view": {
+      "width": 400,
+      "height": 300
+    },
+    "mark": {
+      "tooltip": null
+    },
+    "axis": {
+      "labelFontSize": 24,
+      "titleFontSize": 18
+    },
+    "header": {
+      "labelFontSize": 24,
+      "titleFontSize": 36
+    }
+  },
+  "data": {
+    "name": "data-15438e8fdb25ef7003001cc1ded0d727"
+  },
+  "facet": {
+    "row": {
+      "type": "nominal",
+      "field": "field_name"
+    }
+  },
+  "spec": {
+    "mark": "bar",
+    "encoding": {
+      "fill": {
+        "type": "nominal",
+        "field": "response",
+        "scale": {
+          "scheme": "dark2"
+        }
+      },
+      "x": {
+        "type": "quantitative",
+        "field": "count"
+      },
+      "y": {
+        "type": "nominal",
+        "field": "response"
+      }
+    },
+    "height": 250,
+    "width": 400
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-15438e8fdb25ef7003001cc1ded0d727": [
+      {
+        "Unnamed: 0": 0,
+        "field_name": "Baggage handling",
+        "response": 1,
+        "count": 7975,
+        "freq": 0.061402833384662764,
+        "end_percent": 0.061402833384662764,
+        "start_percent": 0.0,
+        "negative": true,
+        "end_percent2": -0.10341854019094547,
+        "start_percent2": -0.16482137357560825
+      },
+      {
+        "Unnamed: 0": 1,
+        "field_name": "Baggage handling",
+        "response": 2,
+        "count": 13432,
+        "freq": 0.10341854019094547,
+        "end_percent": 0.16482137357560825,
+        "start_percent": 0.061402833384662764,
+        "negative": true,
+        "end_percent2": 0.0,
+        "start_percent2": -0.10341854019094547
+      },
+      {
+        "Unnamed: 0": 2,
+        "field_name": "Baggage handling",
+        "response": 3,
+        "count": 24485,
+        "freq": 0.1885201724668925,
+        "end_percent": 0.3533415460425008,
+        "start_percent": 0.16482137357560825,
+        "negative": false,
+        "end_percent2": 0.18852017246689254,
+        "start_percent2": 0.0
+      },
+      {
+        "Unnamed: 0": 3,
+        "field_name": "Baggage handling",
+        "response": 4,
+        "count": 48240,
+        "freq": 0.3714197720973206,
+        "end_percent": 0.7247613181398214,
+        "start_percent": 0.3533415460425008,
+        "negative": false,
+        "end_percent2": 0.5599399445642131,
+        "start_percent2": 0.18852017246689254
+      },
+      {
+        "Unnamed: 0": 4,
+        "field_name": "Baggage handling",
+        "response": 5,
+        "count": 35748,
+        "freq": 0.27523868186017864,
+        "end_percent": 1.0,
+        "start_percent": 0.7247613181398214,
+        "negative": false,
+        "end_percent2": 0.8351786264243918,
+        "start_percent2": 0.5599399445642131
+      },
+      {
+        "Unnamed: 0": 5,
+        "field_name": "Seat comfort",
+        "response": 0,
+        "count": 4797,
+        "freq": 0.03693409300893132,
+        "end_percent": 0.03693409300893132,
+        "start_percent": 0.0,
+        "negative": true,
+        "end_percent2": -0.3824684323991377,
+        "start_percent2": -0.419402525408069
+      },
+      {
+        "Unnamed: 0": 6,
+        "field_name": "Seat comfort",
+        "response": 1,
+        "count": 20949,
+        "freq": 0.16129504157684016,
+        "end_percent": 0.1982291345857715,
+        "start_percent": 0.03693409300893132,
+        "negative": true,
+        "end_percent2": -0.2211733908222975,
+        "start_percent2": -0.3824684323991377
+      },
+      {
+        "Unnamed: 0": 7,
+        "field_name": "Seat comfort",
+        "response": 2,
+        "count": 28726,
+        "freq": 0.2211733908222975,
+        "end_percent": 0.419402525408069,
+        "start_percent": 0.1982291345857715,
+        "negative": true,
+        "end_percent2": 0.0,
+        "start_percent2": -0.2211733908222975
+      },
+      {
+        "Unnamed: 0": 8,
+        "field_name": "Seat comfort",
+        "response": 3,
+        "count": 29183,
+        "freq": 0.22469202340622116,
+        "end_percent": 0.6440945488142902,
+        "start_percent": 0.419402525408069,
+        "negative": false,
+        "end_percent2": 0.2246920234062212,
+        "start_percent2": 0.0
+      },
+      {
+        "Unnamed: 0": 9,
+        "field_name": "Seat comfort",
+        "response": 4,
+        "count": 28398,
+        "freq": 0.21864798275331074,
+        "end_percent": 0.862742531567601,
+        "start_percent": 0.6440945488142902,
+        "negative": false,
+        "end_percent2": 0.443340006159532,
+        "start_percent2": 0.2246920234062212
+      },
+      {
+        "Unnamed: 0": 10,
+        "field_name": "Seat comfort",
+        "response": 5,
+        "count": 17827,
+        "freq": 0.13725746843239914,
+        "end_percent": 1.0,
+        "start_percent": 0.862742531567601,
+        "negative": false,
+        "end_percent2": 0.580597474591931,
+        "start_percent2": 0.443340006159532
+      }
+    ]
+  }
+}

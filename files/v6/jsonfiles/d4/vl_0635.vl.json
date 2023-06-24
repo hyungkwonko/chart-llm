@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "What went so right?",
+    "subtitle": [
+      "GDP per capita, rebased 1960=1. Source: World Bank.",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/Global_WB_GDPperCapita.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "THA",
+        "BWA",
+        "SGP",
+        "KOR",
+        "CHN",
+        "WLD"
+      ],
+      "as": [
+        "country",
+        "GDPpc"
+      ]
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "GDPpc",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "country",
+      "scale": {
+        "range": [
+          "green",
+          "orange",
+          "red",
+          "blue",
+          "pink",
+          "black"
+        ]
+      },
+      "legend": {
+        "labelExpr": "{'BWA':'Botswana','THA':'Thailand','SGP':'Singapore','KOR':'S Korea','CHN':'China', 'WLD':'World'}[datum.label]",
+        "orient": "top-left"
+      },
+      "title": null
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Basic choropleth (rate/ratio)",
+  "width": "container",
+  "height": 300,
+  "title": "Life expectancy, 2017",
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/countries.geojson",
+    "format": {
+      "property": "features"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.country_code",
+      "from": {
+        "data": {
+          "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+        },
+        "key": "country_code",
+        "fields": [
+          "country",
+          "region",
+          "lifeExp"
+        ]
+      }
+    }
+  ],
+  "projection": {
+    "type": "equirectangular"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "country_code",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "country",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "lifeExp",
+      "scale": {
+        "scheme": "viridis"
+      },
+      "type": "quantitative",
+      "legend": {
+        "title": null,
+        "direction": "horizontal",
+        "orient": "bottom-left"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "region",
+        "type": "nominal",
+        "title": "Region"
+      },
+      {
+        "field": "lifeExp",
+        "type": "quantitative",
+        "title": "Age (years)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

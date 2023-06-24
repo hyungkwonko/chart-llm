@@ -1,0 +1,1078 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "vconcat": [
+    {
+      "layer": [
+        {
+          "mark": "area",
+          "encoding": {
+            "x": {
+              "field": "t_0",
+              "title": null,
+              "type": "temporal"
+            },
+            "y": {
+              "axis": {
+                "format": "s"
+              },
+              "field": "density",
+              "type": "quantitative"
+            }
+          },
+          "selection": {
+            "selector017": {
+              "type": "single",
+              "fields": [
+                "care_site_level"
+              ],
+              "bind": {
+                "input": "select",
+                "options": [
+                  "H\u00f4pital"
+                ],
+                "name": "care_site_level"
+              },
+              "init": {
+                "care_site_level": "H\u00f4pital"
+              }
+            },
+            "selector018": {
+              "type": "single",
+              "fields": [
+                "stay_type"
+              ],
+              "bind": {
+                "input": "select",
+                "options": [
+                  "All",
+                  "Urg_Hospit"
+                ],
+                "name": "stay_type"
+              },
+              "init": {
+                "stay_type": "All"
+              }
+            }
+          },
+          "transform": [
+            {
+              "field": "t_0",
+              "timeUnit": "yearmonth",
+              "as": "estimate"
+            },
+            {
+              "density": "t_0",
+              "groupby": [
+                "care_site_level",
+                "stay_type"
+              ],
+              "as": [
+                "t_0",
+                "density"
+              ]
+            }
+          ]
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "color": "red"
+          },
+          "encoding": {
+            "x": {
+              "aggregate": "median",
+              "field": "t_0",
+              "type": "temporal"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mark": "boxplot",
+      "encoding": {
+        "x": {
+          "field": "t_0",
+          "type": "temporal"
+        }
+      },
+      "selection": {
+        "selector017": {
+          "type": "single",
+          "fields": [
+            "care_site_level"
+          ],
+          "bind": {
+            "input": "select",
+            "options": [
+              "H\u00f4pital"
+            ],
+            "name": "care_site_level"
+          },
+          "init": {
+            "care_site_level": "H\u00f4pital"
+          }
+        },
+        "selector018": {
+          "type": "single",
+          "fields": [
+            "stay_type"
+          ],
+          "bind": {
+            "input": "select",
+            "options": [
+              "All",
+              "Urg_Hospit"
+            ],
+            "name": "stay_type"
+          },
+          "init": {
+            "stay_type": "All"
+          }
+        }
+      }
+    },
+    {
+      "vconcat": [
+        {
+          "layer": [
+            {
+              "mark": "area",
+              "encoding": {
+                "x": {
+                  "field": "c_0",
+                  "title": null,
+                  "type": "quantitative"
+                },
+                "y": {
+                  "field": "density",
+                  "type": "quantitative"
+                }
+              },
+              "selection": {
+                "selector017": {
+                  "type": "single",
+                  "fields": [
+                    "care_site_level"
+                  ],
+                  "bind": {
+                    "input": "select",
+                    "options": [
+                      "H\u00f4pital"
+                    ],
+                    "name": "care_site_level"
+                  },
+                  "init": {
+                    "care_site_level": "H\u00f4pital"
+                  }
+                },
+                "selector018": {
+                  "type": "single",
+                  "fields": [
+                    "stay_type"
+                  ],
+                  "bind": {
+                    "input": "select",
+                    "options": [
+                      "All",
+                      "Urg_Hospit"
+                    ],
+                    "name": "stay_type"
+                  },
+                  "init": {
+                    "stay_type": "All"
+                  }
+                }
+              },
+              "transform": [
+                {
+                  "density": "c_0",
+                  "extent": [
+                    0.05756237240980625,
+                    0.8907923167518287
+                  ],
+                  "groupby": [
+                    "care_site_level",
+                    "stay_type"
+                  ],
+                  "as": [
+                    "c_0",
+                    "density"
+                  ]
+                }
+              ]
+            },
+            {
+              "mark": {
+                "type": "rule",
+                "color": "red"
+              },
+              "encoding": {
+                "x": {
+                  "aggregate": "median",
+                  "field": "c_0",
+                  "type": "quantitative"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "mark": "boxplot",
+          "encoding": {
+            "x": {
+              "field": "c_0",
+              "type": "quantitative"
+            }
+          },
+          "selection": {
+            "selector017": {
+              "type": "single",
+              "fields": [
+                "care_site_level"
+              ],
+              "bind": {
+                "input": "select",
+                "options": [
+                  "H\u00f4pital"
+                ],
+                "name": "care_site_level"
+              },
+              "init": {
+                "care_site_level": "H\u00f4pital"
+              }
+            },
+            "selector018": {
+              "type": "single",
+              "fields": [
+                "stay_type"
+              ],
+              "bind": {
+                "input": "select",
+                "options": [
+                  "All",
+                  "Urg_Hospit"
+                ],
+                "name": "stay_type"
+              },
+              "init": {
+                "stay_type": "All"
+              }
+            }
+          }
+        }
+      ],
+      "resolve": {
+        "scale": {
+          "x": "shared"
+        }
+      }
+    },
+    {
+      "vconcat": [
+        {
+          "layer": [
+            {
+              "mark": "area",
+              "encoding": {
+                "x": {
+                  "field": "error",
+                  "title": null,
+                  "type": "quantitative"
+                },
+                "y": {
+                  "field": "density",
+                  "type": "quantitative"
+                }
+              },
+              "selection": {
+                "selector017": {
+                  "type": "single",
+                  "fields": [
+                    "care_site_level"
+                  ],
+                  "bind": {
+                    "input": "select",
+                    "options": [
+                      "H\u00f4pital"
+                    ],
+                    "name": "care_site_level"
+                  },
+                  "init": {
+                    "care_site_level": "H\u00f4pital"
+                  }
+                },
+                "selector018": {
+                  "type": "single",
+                  "fields": [
+                    "stay_type"
+                  ],
+                  "bind": {
+                    "input": "select",
+                    "options": [
+                      "All",
+                      "Urg_Hospit"
+                    ],
+                    "name": "stay_type"
+                  },
+                  "init": {
+                    "stay_type": "All"
+                  }
+                }
+              },
+              "transform": [
+                {
+                  "density": "error",
+                  "extent": [
+                    0.011536724728807093,
+                    0.1103795792452725
+                  ],
+                  "groupby": [
+                    "care_site_level",
+                    "stay_type"
+                  ],
+                  "as": [
+                    "error",
+                    "density"
+                  ]
+                }
+              ]
+            },
+            {
+              "mark": {
+                "type": "rule",
+                "color": "red"
+              },
+              "encoding": {
+                "x": {
+                  "aggregate": "median",
+                  "field": "error",
+                  "type": "quantitative"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "mark": "boxplot",
+          "encoding": {
+            "x": {
+              "field": "error",
+              "type": "quantitative"
+            }
+          },
+          "selection": {
+            "selector017": {
+              "type": "single",
+              "fields": [
+                "care_site_level"
+              ],
+              "bind": {
+                "input": "select",
+                "options": [
+                  "H\u00f4pital"
+                ],
+                "name": "care_site_level"
+              },
+              "init": {
+                "care_site_level": "H\u00f4pital"
+              }
+            },
+            "selector018": {
+              "type": "single",
+              "fields": [
+                "stay_type"
+              ],
+              "bind": {
+                "input": "select",
+                "options": [
+                  "All",
+                  "Urg_Hospit"
+                ],
+                "name": "stay_type"
+              },
+              "init": {
+                "stay_type": "All"
+              }
+            }
+          }
+        }
+      ],
+      "resolve": {
+        "scale": {
+          "x": "shared"
+        }
+      }
+    }
+  ],
+  "data": {
+    "name": "data-30e940cb7f217a5378ee938a10a475bd"
+  },
+  "resolve": {
+    "scale": {
+      "x": "shared"
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "selector017"
+      }
+    },
+    {
+      "filter": {
+        "selection": "selector018"
+      }
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-30e940cb7f217a5378ee938a10a475bd": [
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312083245,
+        "t_0": "2017-07-01T00:00:00",
+        "c_0": 0.058,
+        "error": 0.04
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312021707,
+        "t_0": "2014-10-01T00:00:00",
+        "c_0": 0.73,
+        "error": 0.021
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312021707,
+        "t_0": "2014-10-01T00:00:00",
+        "c_0": 0.862,
+        "error": 0.014
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312006940,
+        "t_0": "2015-02-01T00:00:00",
+        "c_0": 0.776,
+        "error": 0.023
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312006940,
+        "t_0": "2014-10-01T00:00:00",
+        "c_0": 0.625,
+        "error": 0.023
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312077037,
+        "t_0": "2012-05-01T00:00:00",
+        "c_0": 0.746,
+        "error": 0.018
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312077037,
+        "t_0": "2012-05-01T00:00:00",
+        "c_0": 0.549,
+        "error": 0.034
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312052888,
+        "t_0": "2016-06-01T00:00:00",
+        "c_0": 0.7,
+        "error": 0.023
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312052888,
+        "t_0": "2016-06-01T00:00:00",
+        "c_0": 0.856,
+        "error": 0.017
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312035257,
+        "t_0": "2016-12-01T00:00:00",
+        "c_0": 0.871,
+        "error": 0.021
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312035257,
+        "t_0": "2016-11-01T00:00:00",
+        "c_0": 0.684,
+        "error": 0.029
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312037868,
+        "t_0": "2015-03-01T00:00:00",
+        "c_0": 0.622,
+        "error": 0.033
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312037868,
+        "t_0": "2010-01-01T00:00:00",
+        "c_0": 0.716,
+        "error": 0.03
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312063103,
+        "t_0": "2014-06-01T00:00:00",
+        "c_0": 0.785,
+        "error": 0.024
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312063103,
+        "t_0": "2014-06-01T00:00:00",
+        "c_0": 0.691,
+        "error": 0.025
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312040352,
+        "t_0": "2011-03-01T00:00:00",
+        "c_0": 0.686,
+        "error": 0.021
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312040352,
+        "t_0": "2011-03-01T00:00:00",
+        "c_0": 0.624,
+        "error": 0.023
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312025702,
+        "t_0": "2017-01-01T00:00:00",
+        "c_0": 0.658,
+        "error": 0.034
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312025702,
+        "t_0": "2017-02-01T00:00:00",
+        "c_0": 0.87,
+        "error": 0.019
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312002245,
+        "t_0": "2010-10-01T00:00:00",
+        "c_0": 0.8,
+        "error": 0.014
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312002245,
+        "t_0": "2010-09-01T00:00:00",
+        "c_0": 0.702,
+        "error": 0.018
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312008714,
+        "t_0": "2013-12-01T00:00:00",
+        "c_0": 0.724,
+        "error": 0.015
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312008714,
+        "t_0": "2014-02-01T00:00:00",
+        "c_0": 0.788,
+        "error": 0.015
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312039899,
+        "t_0": "2015-03-01T00:00:00",
+        "c_0": 0.871,
+        "error": 0.012
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312039899,
+        "t_0": "2015-03-01T00:00:00",
+        "c_0": 0.681,
+        "error": 0.02
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312053895,
+        "t_0": "2016-10-01T00:00:00",
+        "c_0": 0.89,
+        "error": 0.014
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312053895,
+        "t_0": "2016-01-01T00:00:00",
+        "c_0": 0.655,
+        "error": 0.028
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312006712,
+        "t_0": "2014-12-01T00:00:00",
+        "c_0": 0.868,
+        "error": 0.013
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312006712,
+        "t_0": "2014-12-01T00:00:00",
+        "c_0": 0.66,
+        "error": 0.017
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312044183,
+        "t_0": "2010-11-01T00:00:00",
+        "c_0": 0.778,
+        "error": 0.014
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312044183,
+        "t_0": "2015-12-01T00:00:00",
+        "c_0": 0.564,
+        "error": 0.043
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312026114,
+        "t_0": "2014-10-01T00:00:00",
+        "c_0": 0.749,
+        "error": 0.037
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312026114,
+        "t_0": "2014-10-01T00:00:00",
+        "c_0": 0.61,
+        "error": 0.035
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312082307,
+        "t_0": "2012-10-01T00:00:00",
+        "c_0": 0.843,
+        "error": 0.013
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312082307,
+        "t_0": "2017-10-01T00:00:00",
+        "c_0": 0.518,
+        "error": 0.029
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312022130,
+        "t_0": "2012-10-01T00:00:00",
+        "c_0": 0.703,
+        "error": 0.013
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312022130,
+        "t_0": "2012-10-01T00:00:00",
+        "c_0": 0.835,
+        "error": 0.012
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312035911,
+        "t_0": "2013-09-01T00:00:00",
+        "c_0": 0.537,
+        "error": 0.046
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312035911,
+        "t_0": "2013-09-01T00:00:00",
+        "c_0": 0.539,
+        "error": 0.046
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312068639,
+        "t_0": "2015-03-01T00:00:00",
+        "c_0": 0.487,
+        "error": 0.088
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312068639,
+        "t_0": "2015-03-01T00:00:00",
+        "c_0": 0.53,
+        "error": 0.11
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312037370,
+        "t_0": "2010-09-01T00:00:00",
+        "c_0": 0.556,
+        "error": 0.039
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312037370,
+        "t_0": "2010-09-01T00:00:00",
+        "c_0": 0.756,
+        "error": 0.019
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312016350,
+        "t_0": "2017-09-01T00:00:00",
+        "c_0": 0.418,
+        "error": 0.072
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312047779,
+        "t_0": "2011-01-01T00:00:00",
+        "c_0": 0.706,
+        "error": 0.031
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312047779,
+        "t_0": "2011-01-01T00:00:00",
+        "c_0": 0.582,
+        "error": 0.023
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312041542,
+        "t_0": "2014-12-01T00:00:00",
+        "c_0": 0.69,
+        "error": 0.031
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312041542,
+        "t_0": "2015-11-01T00:00:00",
+        "c_0": 0.78,
+        "error": 0.022
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312060176,
+        "t_0": "2014-01-01T00:00:00",
+        "c_0": 0.773,
+        "error": 0.02
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312060176,
+        "t_0": "2014-04-01T00:00:00",
+        "c_0": 0.773,
+        "error": 0.017
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312034421,
+        "t_0": "2014-11-01T00:00:00",
+        "c_0": 0.66,
+        "error": 0.032
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312034421,
+        "t_0": "2014-11-01T00:00:00",
+        "c_0": 0.678,
+        "error": 0.033
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312041317,
+        "t_0": "2011-02-01T00:00:00",
+        "c_0": 0.739,
+        "error": 0.029
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312041317,
+        "t_0": "2011-02-01T00:00:00",
+        "c_0": 0.757,
+        "error": 0.032
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312007309,
+        "t_0": "2014-01-01T00:00:00",
+        "c_0": 0.44,
+        "error": 0.033
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312007309,
+        "t_0": "2010-01-01T00:00:00",
+        "c_0": 0.799,
+        "error": 0.016
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312076198,
+        "t_0": "2015-04-01T00:00:00",
+        "c_0": 0.781,
+        "error": 0.021
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312076198,
+        "t_0": "2015-04-01T00:00:00",
+        "c_0": 0.657,
+        "error": 0.024
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312016826,
+        "t_0": "2018-11-01T00:00:00",
+        "c_0": 0.691,
+        "error": 0.033
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312043156,
+        "t_0": "2010-01-01T00:00:00",
+        "c_0": 0.365,
+        "error": 0.032
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312043156,
+        "t_0": "2010-01-01T00:00:00",
+        "c_0": 0.698,
+        "error": 0.031
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312081159,
+        "t_0": "2019-10-01T00:00:00",
+        "c_0": 0.726,
+        "error": 0.038
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312081159,
+        "t_0": "2019-10-01T00:00:00",
+        "c_0": 0.613,
+        "error": 0.033
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312038102,
+        "t_0": "2010-06-01T00:00:00",
+        "c_0": 0.745,
+        "error": 0.02
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312038102,
+        "t_0": "2015-05-01T00:00:00",
+        "c_0": 0.666,
+        "error": 0.045
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312013804,
+        "t_0": "2013-12-01T00:00:00",
+        "c_0": 0.884,
+        "error": 0.014
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312013804,
+        "t_0": "2013-09-01T00:00:00",
+        "c_0": 0.629,
+        "error": 0.015
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312068568,
+        "t_0": "2017-06-01T00:00:00",
+        "c_0": 0.579,
+        "error": 0.031
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312068568,
+        "t_0": "2012-05-01T00:00:00",
+        "c_0": 0.615,
+        "error": 0.063
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312050230,
+        "t_0": "2014-05-01T00:00:00",
+        "c_0": 0.352,
+        "error": 0.049
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312050230,
+        "t_0": "2014-05-01T00:00:00",
+        "c_0": 0.395,
+        "error": 0.068
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312046965,
+        "t_0": "2015-10-01T00:00:00",
+        "c_0": 0.609,
+        "error": 0.033
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312046965,
+        "t_0": "2013-10-01T00:00:00",
+        "c_0": 0.75,
+        "error": 0.03
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312019560,
+        "t_0": "2013-01-01T00:00:00",
+        "c_0": 0.891,
+        "error": 0.012
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312019560,
+        "t_0": "2013-01-01T00:00:00",
+        "c_0": 0.734,
+        "error": 0.025
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312076082,
+        "t_0": "2014-11-01T00:00:00",
+        "c_0": 0.834,
+        "error": 0.014
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312076082,
+        "t_0": "2014-11-01T00:00:00",
+        "c_0": 0.836,
+        "error": 0.014
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 8312042848,
+        "t_0": "2016-04-01T00:00:00",
+        "c_0": 0.452,
+        "error": 0.026
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "Urg_Hospit",
+        "care_site_id": 8312042848,
+        "t_0": "2016-04-01T00:00:00",
+        "c_0": 0.491,
+        "error": 0.046
+      },
+      {
+        "care_site_level": "H\u00f4pital",
+        "stay_type": "All",
+        "care_site_id": 17497666687,
+        "t_0": "2021-09-01T00:00:00",
+        "c_0": 0.564,
+        "error": 0.07
+      }
+    ]
+  }
+}

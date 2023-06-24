@@ -1,0 +1,176 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Graph showing countries among the Top 15 most charitable across 2013-2017 (according to the 2018 edition of CAF WGI. The graphs are connected and horizontally concatenated, and share a common legend",
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/_CAF_2018-22_WGI_withrank_nona_SHIFTED.csv"
+  },
+  "hconcat": [
+    {
+      "mark": {
+        "type": "line",
+        "point": "transparent"
+      },
+      "encoding": {
+        "color": {
+          "field": "Country",
+          "legend": {
+            "orient": "right",
+            "title": null,
+            "symbolSize": 25
+          },
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Indonesia",
+              "Australia",
+              "New Zealand",
+              "Ireland",
+              "United Kingdom of Great Britain and Northern Ireland",
+              "Kenya",
+              "Myanmar",
+              "Netherlands",
+              "United Arab Emirates",
+              "Canada"
+            ],
+            "range": [
+              "#876100",
+              "#E65322",
+              "#01B8F7",
+              "#2C6F65",
+              "#B4C26F",
+              "#AB558D",
+              "#E6A804",
+              "#111111",
+              "#521806",
+              "#329100"
+            ]
+          }
+        },
+        "x": {
+          "field": "year",
+          "type": "temporal",
+          "title": null
+        },
+        "y": {
+          "field": "Rank",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              1,
+              40
+            ]
+          },
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "Country"
+          },
+          {
+            "field": "Rank"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Rank"
+            ],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "title": {
+        "text": "Change in WGI Ranking of most charitable countries",
+        "fontSize": 12,
+        "subtitle": [
+          "Source: CAF"
+        ],
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "color": "black"
+      },
+      "height": 300,
+      "selection": {
+        "countrysel": {
+          "type": "single",
+          "empty": "all",
+          "fields": [
+            "Country"
+          ]
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "selection": "countrysel"
+          }
+        }
+      ],
+      "width": 320
+    },
+    {
+      "title": {
+        "text": "Year-on-Year Change in Rank",
+        "subtitle": "Source: CAF",
+        "fontSize": 12,
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10
+      },
+      "mark": {
+        "type": "circle",
+        "size": 40
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "field": "Country",
+            "legend": null,
+            "type": "ordinal",
+            "selection": "countrysel"
+          },
+          "value": "#bbb"
+        },
+        "x": {
+          "field": "year",
+          "timeUnit": "year",
+          "type": "ordinal",
+          "title": null,
+          "axis": {
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "YoY_Change",
+          "type": "quantitative",
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "Country"
+          },
+          {
+            "field": "YoY_Change",
+            "title": "YoY Change in Rank"
+          }
+        ]
+      },
+      "height": 300,
+      "selection": {
+        "countrysel": {
+          "type": "single",
+          "empty": "all",
+          "fields": [
+            "Country"
+          ]
+        }
+      },
+      "width": 400
+    }
+  ]
+}

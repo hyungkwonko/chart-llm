@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple donut chart with embedded data.",
+  "height": 300,
+  "width": 250,
+  "view": {
+    "stroke": "transparent"
+  },
+  "title": {
+    "text": "US GDP - expenditure",
+    "subtitle": [
+      "2022 Q3, Source: BEA",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDPsimple.csv"
+  },
+  "mark": {
+    "type": "bar",
+    "color": "rgb(128,0,0)"
+  },
+  "encoding": {
+    "x": {
+      "field": "Value",
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Item",
+      "type": "nominal",
+      "axis": {
+        "title": null,
+        "grid": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Value",
+        "title": "USD billions",
+        "format": "$,"
+      },
+      {
+        "field": "Share",
+        "title": "Share",
+        "format": "%"
+      }
+    ]
+  }
+}

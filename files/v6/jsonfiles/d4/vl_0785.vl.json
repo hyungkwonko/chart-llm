@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 400,
+  "width": 600,
+  "title": {
+    "text": "Impact of Federal Funds Rate hikes on Investment Grade Corporate Yields",
+    "subtitle": "Source: FRED; S&P Dow Jone Indices",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/KrishnaSharan/KrishnaSharan.github.io/main/Daily%20Yield%20Change.csv"
+      },
+      "transform": [
+        {
+          "filter": {
+            "selection": "Region"
+          }
+        }
+      ],
+      "selection": {
+        "Region": {
+          "type": "single",
+          "fields": [
+            "Index Identifier"
+          ],
+          "bind": {
+            "input": "select",
+            "options": [
+              null,
+              "Daily Change in Fin",
+              "Daily Change in Cons",
+              "Daily Change in Eng ",
+              "Daily Change in Tel ",
+              "Daily Change in Ind"
+            ],
+            "name": "Sector"
+          }
+        }
+      },
+      "mark": {
+        "type": "line"
+      },
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "scale": {
+            "domain": [
+              "2022-01-01",
+              "2023-01-01"
+            ]
+          },
+          "axis": {
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "Yield Change",
+          "type": "quantitative",
+          "axis": {
+            "format": "%",
+            "grid": false
+          },
+          "title": "Daily Yield Change",
+          "scale": {
+            "domain": [
+              "-0.07",
+              "0.07"
+            ]
+          }
+        },
+        "color": {
+          "field": "Index Identifier"
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal",
+            "title": "Date"
+          },
+          {
+            "field": "Index Identifier",
+            "type": "nominal",
+            "title": "Index Name"
+          },
+          {
+            "field": "Yield Change",
+            "type": "quantitative",
+            "title": "Daily Yield Change",
+            "format": "%"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/KrishnaSharan/KrishnaSharan.github.io/main/Project_Lines.csv"
+      },
+      "mark": {
+        "type": "rule",
+        "color": "black",
+        "strokeDash": [
+          8,
+          8
+        ],
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "Rate Hike",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/KrishnaSharan/KrishnaSharan.github.io/main/Project%20Lines%202.csv"
+      },
+      "mark": {
+        "type": "rule",
+        "color": "black",
+        "strokeDash": [
+          8,
+          8
+        ],
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "Rate Hike",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "autosize": {
+    "type": "pad",
+    "contains": "padding",
+    "resize": true
+  },
+  "background": "#afd1e7"
+}

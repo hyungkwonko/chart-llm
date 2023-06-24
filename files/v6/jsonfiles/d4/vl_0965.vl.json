@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatterplot showing the percentage of renewable energy used in different entities.",
+  "title": {
+    "text": "Share of primary energy from renewable sources",
+    "subtitle": [
+      "Share of primary energy consumption that came from renewable",
+      "technologies, Source: Our World in Data"
+    ],
+    "subtitleFontSize": 8,
+    "subtitleFontStyle": "italic",
+    "anchor": "start",
+    "fontSize": 11
+  },
+  "height": 175,
+  "width": 175,
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/share-renewable-w9.csv"
+  },
+  "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 6
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "ticks": false,
+        "grid": false
+      },
+      "title": null
+    },
+    "y": {
+      "field": "Renewables (% equivalent primary energy)",
+      "type": "quantitative",
+      "axis": {
+        "ticks": false,
+        "grid": false,
+        "titleFontSize": 8
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Entity"
+      },
+      {
+        "field": "Renewables (% equivalent primary energy)",
+        "title": "Renewables %"
+      }
+    ],
+    "color": {
+      "type": "quantitative",
+      "scale": {
+        "range": [
+          "red",
+          "orange",
+          "lightgreen",
+          "green"
+        ]
+      },
+      "field": "Renewables (% equivalent primary energy)",
+      "title": "Renewable consumption %",
+      "legend": {
+        "title": "%",
+        "gradientThickness": 10
+      }
+    }
+  }
+}

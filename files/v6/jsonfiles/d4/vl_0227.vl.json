@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Commodity Markets Outlook",
+    "subtitle": "commodity price index, a weighted average of selected commodity prices based on spot or futures prices",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": "container",
+  "height": 300,
+  "encoding": {
+    "x": {
+      "field": "commodity",
+      "type": "ordinal",
+      "title": "commodity type"
+    },
+    "y": {
+      "field": "commodity_price_indices",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          200
+        ]
+      },
+      "title": "index",
+      "axis": {
+        "format": "r"
+      },
+      "stack": true
+    },
+    "color": {
+      "field": "selectedDate",
+      "type": "ordinal",
+      "title": null,
+      "legend": null,
+      "scale": {
+        "scheme": "yellowgreenblue"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "commodity",
+        "title": "commodity name"
+      },
+      {
+        "field": "commodity_price_indices",
+        "title": "index",
+        "format": "r"
+      }
+    ]
+  },
+  "params": [
+    {
+      "name": "selectedDate",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1960,
+        "max": 2021,
+        "step": 1,
+        "name": "Select year:"
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/homework3_version4.json",
+        "format": {
+          "type": "json"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.date==selectedDate"
+        }
+      ],
+      "mark": {
+        "type": "bar"
+      }
+    }
+  ]
+}

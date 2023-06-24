@@ -1,0 +1,769 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": {
+    "text": "Access to Electricity in East Africa",
+    "subtitle": "Access to Electricity (% of population) from 2000-2020, Source: World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 300,
+  "data": {
+    "values": [
+      {
+        "Year": 2000,
+        "Access to electricity (% of population)": 8.916726112,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2001,
+        "Access to electricity (% of population)": 9.861008644,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2002,
+        "Access to electricity (% of population)": 10.7977066,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2003,
+        "Access to electricity (% of population)": 11.10000038,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2004,
+        "Access to electricity (% of population)": 11.39999962,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2005,
+        "Access to electricity (% of population)": 13.58578587,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2006,
+        "Access to electricity (% of population)": 14.51569843,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2007,
+        "Access to electricity (% of population)": 15.45013237,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2008,
+        "Access to electricity (% of population)": 11.5,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2009,
+        "Access to electricity (% of population)": 11.19999981,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2010,
+        "Access to electricity (% of population)": 14.80000019,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2011,
+        "Access to electricity (% of population)": 14.19999981,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2012,
+        "Access to electricity (% of population)": 15.30000019,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2013,
+        "Access to electricity (% of population)": 16.39999962,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2014,
+        "Access to electricity (% of population)": 23.5,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2015,
+        "Access to electricity (% of population)": 26.17063713,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2016,
+        "Access to electricity (% of population)": 32.79999924,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2017,
+        "Access to electricity (% of population)": 32.25117493,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2018,
+        "Access to electricity (% of population)": 35.04802322,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2019,
+        "Access to electricity (% of population)": 37.65968704,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2020,
+        "Access to electricity (% of population)": 39.90000153,
+        "Country": "Tanzania"
+      },
+      {
+        "Year": 2000,
+        "Access to electricity (% of population)": 1.892501235,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2001,
+        "Access to electricity (% of population)": 4.504615784,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2002,
+        "Access to electricity (% of population)": 7.400000095,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2003,
+        "Access to electricity (% of population)": 9.708440781,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2004,
+        "Access to electricity (% of population)": 12.30484962,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2005,
+        "Access to electricity (% of population)": 14.90072155,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2006,
+        "Access to electricity (% of population)": 15.23378563,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2007,
+        "Access to electricity (% of population)": 20.1007328,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2008,
+        "Access to electricity (% of population)": 22.71022987,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2009,
+        "Access to electricity (% of population)": 25.32966614,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2010,
+        "Access to electricity (% of population)": 52.16334534,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2011,
+        "Access to electricity (% of population)": 51.96811295,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2012,
+        "Access to electricity (% of population)": 51.76191711,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2013,
+        "Access to electricity (% of population)": 51.53379059,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2014,
+        "Access to electricity (% of population)": 51.29363632,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2015,
+        "Access to electricity (% of population)": 51.13486099,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2016,
+        "Access to electricity (% of population)": 51.11323547,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2017,
+        "Access to electricity (% of population)": 52.09999847,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2018,
+        "Access to electricity (% of population)": 50.7649765,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2019,
+        "Access to electricity (% of population)": 49.20000076,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2020,
+        "Access to electricity (% of population)": 49.73086929,
+        "Country": "Somalia"
+      },
+      {
+        "Year": 2000,
+        "Access to electricity (% of population)": 7.351130486,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2001,
+        "Access to electricity (% of population)": 8.600000381,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2002,
+        "Access to electricity (% of population)": 7.800000191,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2003,
+        "Access to electricity (% of population)": 10.56355381,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2004,
+        "Access to electricity (% of population)": 11.62545681,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2005,
+        "Access to electricity (% of population)": 8.899999619,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2006,
+        "Access to electricity (% of population)": 9,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2007,
+        "Access to electricity (% of population)": 14.81782246,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2008,
+        "Access to electricity (% of population)": 15.89281368,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2009,
+        "Access to electricity (% of population)": 10,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2010,
+        "Access to electricity (% of population)": 12.10000038,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2011,
+        "Access to electricity (% of population)": 14.60000038,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2012,
+        "Access to electricity (% of population)": 20.31927109,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2013,
+        "Access to electricity (% of population)": 13.89999962,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2014,
+        "Access to electricity (% of population)": 20.39999962,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2015,
+        "Access to electricity (% of population)": 18.5,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2016,
+        "Access to electricity (% of population)": 26.70000076,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2017,
+        "Access to electricity (% of population)": 32.5211525,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2018,
+        "Access to electricity (% of population)": 41.91999817,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2019,
+        "Access to electricity (% of population)": 41.29999924,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2020,
+        "Access to electricity (% of population)": 42.07441711,
+        "Country": "Uganda"
+      },
+      {
+        "Year": 2000,
+        "Access to electricity (% of population)": 15.13117123,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2001,
+        "Access to electricity (% of population)": 17.03308487,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2002,
+        "Access to electricity (% of population)": 18.92741394,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2003,
+        "Access to electricity (% of population)": 16,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2004,
+        "Access to electricity (% of population)": 22.70271492,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2005,
+        "Access to electricity (% of population)": 24.58838654,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2006,
+        "Access to electricity (% of population)": 26.47592926,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2007,
+        "Access to electricity (% of population)": 28.36799431,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2008,
+        "Access to electricity (% of population)": 30.26729012,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2009,
+        "Access to electricity (% of population)": 23,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2010,
+        "Access to electricity (% of population)": 19.20000076,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2011,
+        "Access to electricity (% of population)": 36.03565598,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2012,
+        "Access to electricity (% of population)": 37.9909668,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2013,
+        "Access to electricity (% of population)": 39.96610641,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2014,
+        "Access to electricity (% of population)": 36,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2015,
+        "Access to electricity (% of population)": 41.59999847,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2016,
+        "Access to electricity (% of population)": 53.09999847,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2017,
+        "Access to electricity (% of population)": 55.97640991,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2018,
+        "Access to electricity (% of population)": 61.2845726,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2019,
+        "Access to electricity (% of population)": 69.69999695,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2020,
+        "Access to electricity (% of population)": 71.4379425,
+        "Country": "Kenya"
+      },
+      {
+        "Year": 2000,
+        "Access to electricity (% of population)": 6.199999809,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2001,
+        "Access to electricity (% of population)": 4.57231617,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2002,
+        "Access to electricity (% of population)": 5.93285799,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2003,
+        "Access to electricity (% of population)": 7.288164616,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2004,
+        "Access to electricity (% of population)": 8.640584946,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2005,
+        "Access to electricity (% of population)": 4.800000191,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2006,
+        "Access to electricity (% of population)": 11.34622574,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2007,
+        "Access to electricity (% of population)": 12.70450306,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2008,
+        "Access to electricity (% of population)": 6,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2009,
+        "Access to electricity (% of population)": 15.44546127,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2010,
+        "Access to electricity (% of population)": 9.699999809,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2011,
+        "Access to electricity (% of population)": 10.80000019,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2012,
+        "Access to electricity (% of population)": 17.5,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2013,
+        "Access to electricity (% of population)": 15.19999981,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2014,
+        "Access to electricity (% of population)": 19.79999924,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2015,
+        "Access to electricity (% of population)": 22.79999924,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2016,
+        "Access to electricity (% of population)": 29.37000084,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2017,
+        "Access to electricity (% of population)": 34.09999847,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2018,
+        "Access to electricity (% of population)": 36.96815109,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2019,
+        "Access to electricity (% of population)": 40.36860657,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2020,
+        "Access to electricity (% of population)": 46.59999847,
+        "Country": "Rwanda"
+      },
+      {
+        "Year": 2000,
+        "Access to electricity (% of population)": 12.69999981,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2001,
+        "Access to electricity (% of population)": 10.16249084,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2002,
+        "Access to electricity (% of population)": 11.8548336,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2003,
+        "Access to electricity (% of population)": 13.54194069,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2004,
+        "Access to electricity (% of population)": 15.22616196,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2005,
+        "Access to electricity (% of population)": 14,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2006,
+        "Access to electricity (% of population)": 18.59540367,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2007,
+        "Access to electricity (% of population)": 20.2854805,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2008,
+        "Access to electricity (% of population)": 21.98278999,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2009,
+        "Access to electricity (% of population)": 23.69003868,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2010,
+        "Access to electricity (% of population)": 25.4099369,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2011,
+        "Access to electricity (% of population)": 23,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2012,
+        "Access to electricity (% of population)": 28.89851952,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2013,
+        "Access to electricity (% of population)": 30.67167282,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2014,
+        "Access to electricity (% of population)": 27.20000076,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2015,
+        "Access to electricity (% of population)": 29,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2016,
+        "Access to electricity (% of population)": 42.90000153,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2017,
+        "Access to electricity (% of population)": 44.29999924,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2018,
+        "Access to electricity (% of population)": 44.94060135,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2019,
+        "Access to electricity (% of population)": 48.063591,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2020,
+        "Access to electricity (% of population)": 51.0939827,
+        "Country": "Ethiopia"
+      },
+      {
+        "Year": 2000,
+        "Access to electricity (% of population)": 2.463236809,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2001,
+        "Access to electricity (% of population)": 2.797420025,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2002,
+        "Access to electricity (% of population)": 3.124018431,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2003,
+        "Access to electricity (% of population)": 3.445381641,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2004,
+        "Access to electricity (% of population)": 3.763858795,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2005,
+        "Access to electricity (% of population)": 3.207317114,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2006,
+        "Access to electricity (% of population)": 2.660000086,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2007,
+        "Access to electricity (% of population)": 4.725946426,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2008,
+        "Access to electricity (% of population)": 4.800000191,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2009,
+        "Access to electricity (% of population)": 5.399016857,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2010,
+        "Access to electricity (% of population)": 5.300000191,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2011,
+        "Access to electricity (% of population)": 6.122684002,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2012,
+        "Access to electricity (% of population)": 6.5,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2013,
+        "Access to electricity (% of population)": 6.900000095,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2014,
+        "Access to electricity (% of population)": 7,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2015,
+        "Access to electricity (% of population)": 8.427652359,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2016,
+        "Access to electricity (% of population)": 9.348409653,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2017,
+        "Access to electricity (% of population)": 9.300000191,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2018,
+        "Access to electricity (% of population)": 10.88490868,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2019,
+        "Access to electricity (% of population)": 11.35652828,
+        "Country": "Burundi"
+      },
+      {
+        "Year": 2020,
+        "Access to electricity (% of population)": 11.73555565,
+        "Country": "Burundi"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "Access to electricity (% of population)",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Country",
+      "type": "nominal"
+    }
+  },
+  "config": {}
+}

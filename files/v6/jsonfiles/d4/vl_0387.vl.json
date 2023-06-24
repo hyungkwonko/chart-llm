@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Filter that gets rid of a value for IT that looks like an outlier.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_Industries.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "entryRate"
+      ],
+      "as": [
+        "metric",
+        "value"
+      ]
+    },
+    {
+      "calculate": "{'entryRate':'Entry'}[datum.metric]",
+      "as": "metricClean"
+    },
+    {
+      "filter": "datum.value<.2"
+    }
+  ],
+  "height": 75,
+  "width": 100,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 1,
+    "point": false
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "format": "d"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": [
+          0,
+          0.2
+        ]
+      },
+      "axis": {
+        "grid": false,
+        "format": "%"
+      }
+    },
+    "facet": {
+      "field": "Industry",
+      "type": "nominal",
+      "title": null,
+      "columns": 4
+    },
+    "color": {
+      "field": "metricClean",
+      "title": null,
+      "scale": {
+        "range": [
+          "blue",
+          "orange"
+        ]
+      },
+      "legend": null
+    }
+  }
+}

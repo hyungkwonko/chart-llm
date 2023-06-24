@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Demographics - Japan",
+    "subtitle": [
+      "Four key demographic measures. Source: UN",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch8_Trends/demographicsJapan.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "A Population",
+        "B Median Age",
+        "D Fertility Rate",
+        "C Life Expectancy"
+      ],
+      "as": [
+        "var",
+        "val"
+      ]
+    }
+  ],
+  "height": 130,
+  "width": 200,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2,
+    "color": "rgb(128,0,0)"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "val",
+      "type": "quantitative",
+      "title": null
+    },
+    "facet": {
+      "field": "var",
+      "columns": 2,
+      "title": null,
+      "align": "each"
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

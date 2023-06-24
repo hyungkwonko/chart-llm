@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/kate-lucas/kate-lucas.github.io/main/finalfishdata.csv"
+  },
+  "title": {
+    "text": "Fish caught - by source",
+    "subtitle": "World fisheries and aquaculture production, tonnes (m). Source: FAO",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "Date",
+      "axis": {
+        "format": "%Y",
+        "grid": false
+      },
+      "title": ""
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Value",
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "color": {
+      "field": "Type",
+      "scale": {
+        "scheme": "yellowgreenblue"
+      },
+      "title": null,
+      "legend": {
+        "orient": "top-left"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Date",
+        "type": "nominal",
+        "title": "Year",
+        "timeUnit": "year"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Tonnes of fish (m)"
+      },
+      {
+        "field": "Type",
+        "type": "nominal",
+        "title": "Type of production"
+      }
+    ]
+  }
+}

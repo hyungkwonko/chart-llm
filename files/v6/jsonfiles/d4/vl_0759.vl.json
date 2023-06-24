@@ -1,0 +1,532 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "params": [
+    {
+      "name": "slider_1",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 2017,
+        "max": 2021,
+        "step": 1,
+        "name": "Year (Map 1):"
+      }
+    },
+    {
+      "name": "slider_2",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 2017,
+        "max": 2021,
+        "step": 1,
+        "name": "Year (Map 2):"
+      }
+    },
+    {
+      "name": "slider_3",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 2017,
+        "max": 2021,
+        "step": 1,
+        "name": "Year (Map 3):"
+      }
+    },
+    {
+      "name": "slider_4",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 2017,
+        "max": 2021,
+        "step": 1,
+        "name": "Year (Map 4):"
+      }
+    }
+  ],
+  "vconcat": [
+    {
+      "title": {
+        "text": "Map 1 - World Giving Index Overall Score, 2017-2021",
+        "subtitle": [
+          "Source: CAF",
+          ""
+        ],
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "color": "black"
+      },
+      "width": 400,
+      "height": 150,
+      "data": {
+        "url": "https://unpkg.com/world-atlas@1.1.4/world/110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "parseInt(datum.id)",
+          "as": "id_N"
+        },
+        {
+          "lookup": "id_N",
+          "from": {
+            "key": "id",
+            "fields": [
+              "name"
+            ],
+            "data": {
+              "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWorldCountryNamesIDs.json"
+            }
+          }
+        },
+        {
+          "lookup": "name",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/_CAF_2018-22_WGI.csv"
+            },
+            "key": "Country",
+            "fields": [
+              "2017",
+              "2018",
+              "2020",
+              "2021"
+            ]
+          }
+        },
+        {
+          "fold": [
+            "2017",
+            "2018",
+            "2020",
+            "2021"
+          ],
+          "as": [
+            "Year",
+            "Value"
+          ]
+        },
+        {
+          "calculate": "toNumber(datum.Value)",
+          "as": "Value_N"
+        },
+        {
+          "filter": "datum.Year==slider_1"
+        }
+      ],
+      "projection": {
+        "type": "naturalEarth1"
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "gbp(25, 25, 25)",
+        "strokeWidth": 0.2
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "Country"
+          },
+          {
+            "field": "Value_N",
+            "title": "WGI Score",
+            "type": "quantitative"
+          },
+          {
+            "field": "Value_N",
+            "title": "WGI Score",
+            "type": "quantitative"
+          },
+          {
+            "field": "Value_N",
+            "title": "WGI Score",
+            "type": "quantitative"
+          },
+          {
+            "field": "Value_N",
+            "title": "WGI Score",
+            "type": "quantitative"
+          }
+        ],
+        "color": {
+          "field": "Value_N",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "oranges"
+          },
+          "title": "Score out of 100",
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal"
+          }
+        }
+      }
+    },
+    {
+      "title": {
+        "text": "Map 2 - 'Helping a Stranger' Score, 2017-2021",
+        "subtitle": [
+          "Source: CAF",
+          ""
+        ],
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "color": "black"
+      },
+      "width": 400,
+      "height": 150,
+      "data": {
+        "url": "https://unpkg.com/world-atlas@1.1.4/world/110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "parseInt(datum.id)",
+          "as": "id_N"
+        },
+        {
+          "lookup": "id_N",
+          "from": {
+            "key": "id",
+            "fields": [
+              "name"
+            ],
+            "data": {
+              "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWorldCountryNamesIDs.json"
+            }
+          }
+        },
+        {
+          "lookup": "name",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/_CAF_2018-22_HAS.csv"
+            },
+            "key": "Country",
+            "fields": [
+              "2017",
+              "2018",
+              "2020",
+              "2021"
+            ]
+          }
+        },
+        {
+          "fold": [
+            "2017",
+            "2018",
+            "2020",
+            "2021"
+          ],
+          "as": [
+            "Year",
+            "Value"
+          ]
+        },
+        {
+          "calculate": "toNumber(datum.Value)",
+          "as": "Value_N"
+        },
+        {
+          "filter": "datum.Year==slider_2"
+        }
+      ],
+      "projection": {
+        "type": "naturalEarth1"
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "gbp(25, 25, 25)",
+        "strokeWidth": 0.2
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "Country"
+          },
+          {
+            "field": "Value_N",
+            "title": "HAS Score",
+            "type": "quantitative"
+          },
+          {
+            "field": "Value_N",
+            "title": "HAS Score",
+            "type": "quantitative"
+          },
+          {
+            "field": "Value_N",
+            "title": "HAS Score",
+            "type": "quantitative"
+          },
+          {
+            "field": "Value_N",
+            "title": "HAS Score",
+            "type": "quantitative"
+          }
+        ],
+        "color": {
+          "field": "Value_N",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "oranges"
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal"
+          }
+        }
+      }
+    },
+    {
+      "title": {
+        "text": "Map 3 - 'Donating Money' Score, 2017-2021",
+        "subtitle": [
+          "Source: CAF",
+          ""
+        ],
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "color": "black"
+      },
+      "width": 400,
+      "height": 150,
+      "data": {
+        "url": "https://unpkg.com/world-atlas@1.1.4/world/110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "parseInt(datum.id)",
+          "as": "id_N"
+        },
+        {
+          "lookup": "id_N",
+          "from": {
+            "key": "id",
+            "fields": [
+              "name"
+            ],
+            "data": {
+              "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWorldCountryNamesIDs.json"
+            }
+          }
+        },
+        {
+          "lookup": "name",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/_CAF_2018-22_DM.csv"
+            },
+            "key": "Country",
+            "fields": [
+              "2017",
+              "2018",
+              "2020",
+              "2021"
+            ]
+          }
+        },
+        {
+          "fold": [
+            "2017",
+            "2018",
+            "2020",
+            "2021"
+          ],
+          "as": [
+            "Year",
+            "Value"
+          ]
+        },
+        {
+          "calculate": "toNumber(datum.Value)",
+          "as": "Value_N"
+        },
+        {
+          "filter": "datum.Year==slider_3"
+        }
+      ],
+      "projection": {
+        "type": "naturalEarth1"
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "gbp(25, 25, 25)",
+        "strokeWidth": 0.2
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "Country"
+          },
+          {
+            "field": "Value_N",
+            "title": "DM Score",
+            "type": "quantitative"
+          },
+          {
+            "field": "Value_N",
+            "title": "DM Score",
+            "type": "quantitative"
+          },
+          {
+            "field": "Value_N",
+            "title": "DM Score",
+            "type": "quantitative"
+          },
+          {
+            "field": "Value_N",
+            "title": "DM Score",
+            "type": "quantitative"
+          }
+        ],
+        "color": {
+          "field": "Value_N",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "oranges"
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal"
+          }
+        }
+      }
+    },
+    {
+      "title": {
+        "text": "Map 4 - 'Volunteering Time' Score, 2017-2021",
+        "subtitle": [
+          "Source: CAF",
+          ""
+        ],
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "color": "black"
+      },
+      "width": 400,
+      "height": 150,
+      "data": {
+        "url": "https://unpkg.com/world-atlas@1.1.4/world/110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "parseInt(datum.id)",
+          "as": "id_N"
+        },
+        {
+          "lookup": "id_N",
+          "from": {
+            "key": "id",
+            "fields": [
+              "name"
+            ],
+            "data": {
+              "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWorldCountryNamesIDs.json"
+            }
+          }
+        },
+        {
+          "lookup": "name",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/_CAF_2018-22_VT.csv"
+            },
+            "key": "Country",
+            "fields": [
+              "2017",
+              "2018",
+              "2020",
+              "2021"
+            ]
+          }
+        },
+        {
+          "fold": [
+            "2017",
+            "2018",
+            "2020",
+            "2021"
+          ],
+          "as": [
+            "Year",
+            "Value"
+          ]
+        },
+        {
+          "calculate": "toNumber(datum.Value)",
+          "as": "Value_N"
+        },
+        {
+          "filter": "datum.Year==slider_4"
+        }
+      ],
+      "projection": {
+        "type": "naturalEarth1"
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "gbp(25, 25, 25)",
+        "strokeWidth": 0.2
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "Country"
+          },
+          {
+            "field": "Value_N",
+            "title": "VT Score",
+            "type": "quantitative"
+          },
+          {
+            "field": "Value_N",
+            "title": "VT Score",
+            "type": "quantitative"
+          },
+          {
+            "field": "Value_N",
+            "title": "VT Score",
+            "type": "quantitative"
+          },
+          {
+            "field": "Value_N",
+            "title": "VT Score",
+            "type": "quantitative"
+          }
+        ],
+        "color": {
+          "field": "Value_N",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "oranges"
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Is there a correlation between the size of a countries economy and it's growth rate?",
+    "subtitle": "Regression of country GDP size vs GDP growth rate. Source: TheWorldBank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/SamJones033/SamJones033.github.io/main/diffcountries.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 355,
+  "width": 390,
+  "background": "WHITE",
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "cont",
+          "select": {
+            "type": "point",
+            "fields": [
+              "continent"
+            ]
+          },
+          "bind": "legend"
+        }
+      ],
+      "mark": {
+        "type": "point"
+      },
+      "encoding": {
+        "x": {
+          "field": "total",
+          "type": "quantitative",
+          "title": "Total GDP in US$",
+          "axis": {
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Inflation rate (%)",
+          "axis": {
+            "grid": false
+          }
+        },
+        "color": {
+          "field": "continent",
+          "scale": {
+            "scheme": "dark2"
+          },
+          "type": "nominal",
+          "title": "Continent"
+        },
+        "opacity": {
+          "condition": {
+            "param": "cont",
+            "value": 1
+          },
+          "value": 0.2
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "total",
+            "type": "quantitative",
+            "title": "Total GDP"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "The change in GDP"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "black"
+      },
+      "transform": [
+        {
+          "regression": "value",
+          "on": "total"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "total",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "value",
+          "on": "total",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -10
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ],
+  "config": {}
+}

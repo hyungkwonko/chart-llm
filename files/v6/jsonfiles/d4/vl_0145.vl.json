@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar",
+  "width": "container",
+  "title": {
+    "text": "Countries with the lowest life expectancy, 2017",
+    "offset": 10
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "timeUnit": "year",
+        "field": "year",
+        "equal": 2017
+      }
+    },
+    {
+      "filter": {
+        "field": "lifeExp",
+        "valid": true
+      }
+    },
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "lifeExp",
+          "order": "ascending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.rank <= 10"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "lifeExp",
+      "type": "quantitative",
+      "axis": {
+        "ticks": false,
+        "title": "Life expectancy",
+        "format": ".0f"
+      }
+    },
+    "y": {
+      "field": "country",
+      "type": "nominal",
+      "sort": {
+        "field": "lifeExp",
+        "op": "average",
+        "order": "descending"
+      },
+      "axis": {
+        "grid": false,
+        "title": null
+      }
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Africa",
+          "Americas",
+          "Asia",
+          "Europe"
+        ],
+        "range": [
+          "#08C5ED",
+          "#80D322",
+          "#FF6973",
+          "#FFDC25"
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "country",
+        "type": "ordinal",
+        "title": "Country"
+      },
+      {
+        "field": "region",
+        "type": "ordinal",
+        "title": "Region"
+      },
+      {
+        "field": "lifeExp",
+        "type": "quantitative",
+        "title": "Age (years)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "autosize": "none",
+  "data": {
+    "values": [
+      {
+        "date": "2001-01-01",
+        "valA": 10,
+        "valB": 0,
+        "valC": 9,
+        "valD": "B"
+      },
+      {
+        "date": "2001-01-02",
+        "valA": 28,
+        "valB": 8,
+        "valC": 2,
+        "valD": "C"
+      },
+      {
+        "date": "2001-01-03",
+        "valA": 38,
+        "valB": 1,
+        "valC": 1,
+        "valD": "A"
+      },
+      {
+        "date": "2001-01-04",
+        "valA": 12,
+        "valB": 4,
+        "valC": 1,
+        "valD": "B"
+      },
+      {
+        "date": "2001-01-05",
+        "valA": 14,
+        "valB": 6,
+        "valC": 4,
+        "valD": "D"
+      },
+      {
+        "date": "2001-01-06",
+        "valA": 16,
+        "valB": 5,
+        "valC": 6,
+        "valD": "B"
+      },
+      {
+        "date": "2001-01-07",
+        "valA": 33,
+        "valB": 5,
+        "valC": 2,
+        "valD": "D"
+      },
+      {
+        "date": "2001-01-08",
+        "valA": 14,
+        "valB": 1,
+        "valC": 3,
+        "valD": "A"
+      }
+    ]
+  },
+  "mark": {
+    "type": "point",
+    "filled": true
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "valA",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "valB",
+      "type": "nominal"
+    },
+    "size": {
+      "field": "valC",
+      "type": "quantitative"
+    },
+    "shape": {
+      "field": "valD",
+      "type": "ordinal"
+    }
+  }
+}

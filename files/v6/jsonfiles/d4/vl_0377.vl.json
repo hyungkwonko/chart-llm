@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Productivity, OECD countries",
+    "subtitle": [
+      "GDP per hour worked. US dollars, 1970-2020. Source: OECD",
+      "Legend: UK = black, Ireland = green",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/data_GDPperHourOECD_All.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "point": false
+  },
+  "encoding": {
+    "x": {
+      "field": "TIME",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "LOCATION",
+      "type": "nominal",
+      "scale": {
+        "range": [
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "black",
+          "lightgrey",
+          "lightgrey",
+          "green",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey"
+        ]
+      },
+      "title": null,
+      "legend": null
+    }
+  }
+}

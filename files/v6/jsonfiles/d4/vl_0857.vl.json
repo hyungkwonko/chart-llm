@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Store Closures",
+    "subtitle": "Net Changes in Store opening and closures",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/Storesdatabar.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "bar",
+    "fill": "#557A95"
+  },
+  "transform": [
+    {
+      "filter": "datum.Year==Year"
+    }
+  ],
+  "width": 250,
+  "height": 250,
+  "encoding": {
+    "x": {
+      "field": "Name",
+      "type": "ordinal",
+      "title": null
+    },
+    "y": {
+      "field": "Net Change",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -1200,
+          200
+        ]
+      }
+    },
+    "color": {
+      "field": "Year",
+      "type": "nominal",
+      "title": null,
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Name",
+        "title": "Area"
+      },
+      {
+        "field": "Closures",
+        "title": "Closures",
+        "type": "nominal"
+      },
+      {
+        "field": "Openings",
+        "title": "Openings",
+        "type": "nominal"
+      }
+    ]
+  },
+  "params": [
+    {
+      "name": "Year",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 2016,
+        "max": 2022,
+        "step": 1,
+        "name": "Select Year:"
+      }
+    }
+  ]
+}

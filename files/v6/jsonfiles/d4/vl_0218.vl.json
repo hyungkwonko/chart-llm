@@ -1,0 +1,87 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-d34ce068d6814da6c4325f665bad2d5b"
+  },
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "condition": {
+        "field": "Linear Regression MAE",
+        "type": "quantitative",
+        "selection": "selector002"
+      },
+      "value": "grey"
+    },
+    "tooltip": [
+      {
+        "field": "Linear Regression MAE",
+        "type": "quantitative"
+      },
+      {
+        "field": "Crop",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "Linear Regression MAE",
+      "title": "MAE",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Crop",
+      "type": "nominal"
+    }
+  },
+  "selection": {
+    "selector002": {
+      "type": "single"
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-d34ce068d6814da6c4325f665bad2d5b": [
+      {
+        "Crop": "Asparagus",
+        "Linear Regression MAE": 2.2899743370853805
+      },
+      {
+        "Crop": "Cabbage",
+        "Linear Regression MAE": 55.178398753473125
+      },
+      {
+        "Crop": "Carrots",
+        "Linear Regression MAE": 52.91779777128801
+      },
+      {
+        "Crop": "Cucumbers",
+        "Linear Regression MAE": 0.8703669214707125
+      },
+      {
+        "Crop": "Onions",
+        "Linear Regression MAE": 60.85323768932992
+      },
+      {
+        "Crop": "Peppers",
+        "Linear Regression MAE": 8.672056289972536
+      },
+      {
+        "Crop": "Pumpkins",
+        "Linear Regression MAE": 16.970185732528023
+      },
+      {
+        "Crop": "Squash",
+        "Linear Regression MAE": 28.487855311775103
+      },
+      {
+        "Crop": "Tomatoes",
+        "Linear Regression MAE": 34.72785565716669
+      }
+    ]
+  }
+}

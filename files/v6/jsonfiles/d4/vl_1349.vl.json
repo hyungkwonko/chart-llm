@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/dsaidgovsg/datavis-examples/cf6e7faa54f7392edd956bf4884f0d286405c5f3/data/burtin-tidy.csv"
+  },
+  "vconcat": [
+    {
+      "mark": "point",
+      "transform": [
+        {
+          "filter": "datum['Gram Staining']=='negative'"
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "Antibiotic",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "Bacteria",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "MIC",
+          "type": "quantitative",
+          "aggregate": "sum",
+          "scale": {
+            "type": "log",
+            "domain": [
+              10000,
+              0.0001
+            ]
+          },
+          "axis": {
+            "title": "MIC for gram-negative bacteria",
+            "orient": "top"
+          }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "transform": [
+        {
+          "filter": "datum['Gram Staining']=='positive'"
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "Antibiotic",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "Bacteria",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "MIC",
+          "type": "quantitative",
+          "aggregate": "sum",
+          "scale": {
+            "type": "log",
+            "domain": [
+              10000,
+              0.0001
+            ]
+          },
+          "axis": {
+            "title": "MIC for gram-positive bacteria",
+            "orient": "top"
+          }
+        }
+      }
+    }
+  ],
+  "config": {}
+}

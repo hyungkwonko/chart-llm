@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Price to earnings ratio - long run",
+    "subtitle": [
+      "Cyclically adjusted PE (P/E10). Source: Rober Shiller",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/US_Shiller_CAPE.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Date",
+        "range": [
+          {
+            "year": 1900,
+            "month": 1,
+            "day": 1
+          },
+          {
+            "year": 2023,
+            "month": 11,
+            "day": 1
+          }
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": false,
+    "strokeWidth": 2,
+    "color": "rgb(0,67,127)"
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "title": null,
+      "type": "temporal"
+    },
+    "y": {
+      "field": "CAPE",
+      "title": null,
+      "type": "quantitative"
+    }
+  }
+}

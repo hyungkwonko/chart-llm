@@ -1,0 +1,103 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/dsaidgovsg/datavis-examples/cf6e7faa54f7392edd956bf4884f0d286405c5f3/data/burtin-tidy.csv"
+  },
+  "vconcat": [
+    {
+      "mark": "circle",
+      "transform": [
+        {
+          "filter": "datum['Gram Staining']=='negative'"
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "MIC",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              1000,
+              0.001
+            ]
+          },
+          "legend": {
+            "offset": 100
+          }
+        },
+        "size": {
+          "field": "MIC",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              1000,
+              0.001
+            ]
+          }
+        },
+        "y": {
+          "field": "Bacteria",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "Antibiotic",
+          "type": "nominal",
+          "axis": {
+            "title": "MIC for gram-positive bacteria",
+            "orient": "top"
+          }
+        }
+      }
+    },
+    {
+      "mark": "circle",
+      "transform": [
+        {
+          "filter": "datum['Gram Staining']=='positive'"
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "MIC",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              1000,
+              0.001
+            ]
+          },
+          "legend": {
+            "offset": 100
+          }
+        },
+        "size": {
+          "field": "MIC",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              1000,
+              0.001
+            ]
+          }
+        },
+        "y": {
+          "field": "Bacteria",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "Antibiotic",
+          "type": "nominal",
+          "axis": {
+            "title": "MIC for gram-positive bacteria",
+            "orient": "top"
+          }
+        }
+      }
+    }
+  ],
+  "config": {}
+}

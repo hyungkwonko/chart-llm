@@ -1,0 +1,1154 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "GDP per capita growth (annual %)",
+    "subtitle": "Annual percentage changes in Scandinavian countries",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1961",
+        "GDP growth (annual %)": 5.638743553
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1962",
+        "GDP growth (annual %)": 4.847446966
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1963",
+        "GDP growth (annual %)": -0.152610055
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1964",
+        "GDP growth (annual %)": 8.400119265
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1965",
+        "GDP growth (annual %)": 3.743684868
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1966",
+        "GDP growth (annual %)": 1.919198017
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1967",
+        "GDP growth (annual %)": 4.70161895
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1968",
+        "GDP growth (annual %)": 4.912387623
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1969",
+        "GDP growth (annual %)": 5.921884888
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1970",
+        "GDP growth (annual %)": 0.836281146
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1971",
+        "GDP growth (annual %)": 2.291699419
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1972",
+        "GDP growth (annual %)": 3.336615093
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1973",
+        "GDP growth (annual %)": 3.465614309
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1974",
+        "GDP growth (annual %)": -1.581692398
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1975",
+        "GDP growth (annual %)": -1.74030563
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1976",
+        "GDP growth (annual %)": 5.658698172
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1977",
+        "GDP growth (annual %)": 1.553514127
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1978",
+        "GDP growth (annual %)": 1.909290198
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1979",
+        "GDP growth (annual %)": 3.614290364
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1980",
+        "GDP growth (annual %)": -0.603929078
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1981",
+        "GDP growth (annual %)": -0.63790415
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1982",
+        "GDP growth (annual %)": 3.760789428
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1983",
+        "GDP growth (annual %)": 2.666544948
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1984",
+        "GDP growth (annual %)": 4.220711027
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1985",
+        "GDP growth (annual %)": 3.96161087
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1986",
+        "GDP growth (annual %)": 4.763986084
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1987",
+        "GDP growth (annual %)": 0.127360299
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1988",
+        "GDP growth (annual %)": -0.062176179
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1989",
+        "GDP growth (annual %)": 0.584830839
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1990",
+        "GDP growth (annual %)": 1.310525163
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1991",
+        "GDP growth (annual %)": 1.130840198
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1992",
+        "GDP growth (annual %)": 1.620420852
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1993",
+        "GDP growth (annual %)": -0.32195993
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1994",
+        "GDP growth (annual %)": 4.977347179
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1995",
+        "GDP growth (annual %)": 2.492248169
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1996",
+        "GDP growth (annual %)": 2.319405698
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1997",
+        "GDP growth (annual %)": 2.832664465
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1998",
+        "GDP growth (annual %)": 1.847613945
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1999",
+        "GDP growth (annual %)": 2.60794426
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2000",
+        "GDP growth (annual %)": 3.400684546
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2001",
+        "GDP growth (annual %)": 0.462534295
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2002",
+        "GDP growth (annual %)": 0.145880727
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2003",
+        "GDP growth (annual %)": 0.117358167
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2004",
+        "GDP growth (annual %)": 2.403233997
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2005",
+        "GDP growth (annual %)": 2.055110516
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2006",
+        "GDP growth (annual %)": 3.572063464
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2007",
+        "GDP growth (annual %)": 0.462731494
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2008",
+        "GDP growth (annual %)": -1.094842128
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2009",
+        "GDP growth (annual %)": -5.414013999
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2010",
+        "GDP growth (annual %)": 1.419486631
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2011",
+        "GDP growth (annual %)": 0.920393685
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2012",
+        "GDP growth (annual %)": -0.149916088
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2013",
+        "GDP growth (annual %)": 0.513424428
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2014",
+        "GDP growth (annual %)": 1.105433466
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2015",
+        "GDP growth (annual %)": 1.622166258
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2016",
+        "GDP growth (annual %)": 2.443368874
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2017",
+        "GDP growth (annual %)": 2.162355113
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2018",
+        "GDP growth (annual %)": 1.485085157
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2019",
+        "GDP growth (annual %)": 1.749614095
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2020",
+        "GDP growth (annual %)": -2.347336032
+      },
+      {
+        "Country Name": "Denmark",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2021",
+        "GDP growth (annual %)": 4.240658413
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1961",
+        "GDP growth (annual %)": 5.432493155
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1962",
+        "GDP growth (annual %)": 1.991245519
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1963",
+        "GDP growth (annual %)": 3.003259317
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1964",
+        "GDP growth (annual %)": 4.219393699
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1965",
+        "GDP growth (annual %)": 4.470367905
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1966",
+        "GDP growth (annual %)": 2.961201558
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1967",
+        "GDP growth (annual %)": 5.370915608
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1968",
+        "GDP growth (annual %)": 1.403879661
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1969",
+        "GDP growth (annual %)": 3.656641879
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1970",
+        "GDP growth (annual %)": 1.205350007
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1971",
+        "GDP growth (annual %)": 4.933926362
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1972",
+        "GDP growth (annual %)": 4.528126807
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1973",
+        "GDP growth (annual %)": 3.804257512
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1974",
+        "GDP growth (annual %)": 3.28031994
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1975",
+        "GDP growth (annual %)": 4.374523921
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1976",
+        "GDP growth (annual %)": 5.330219758
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1977",
+        "GDP growth (annual %)": 3.721429201
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1978",
+        "GDP growth (annual %)": 3.473600767
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1979",
+        "GDP growth (annual %)": 4.017607859
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1980",
+        "GDP growth (annual %)": 4.229298865
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1981",
+        "GDP growth (annual %)": 1.249296097
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1982",
+        "GDP growth (annual %)": -0.13211298
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1983",
+        "GDP growth (annual %)": 3.629165276
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1984",
+        "GDP growth (annual %)": 5.753542344
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1985",
+        "GDP growth (annual %)": 5.237729582
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1986",
+        "GDP growth (annual %)": 3.671806783
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1987",
+        "GDP growth (annual %)": 1.278257279
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1988",
+        "GDP growth (annual %)": -0.79045592
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1989",
+        "GDP growth (annual %)": 0.622056009
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1990",
+        "GDP growth (annual %)": 1.582220916
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1991",
+        "GDP growth (annual %)": 2.594687444
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1992",
+        "GDP growth (annual %)": 2.978306474
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1993",
+        "GDP growth (annual %)": 2.234977116
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1994",
+        "GDP growth (annual %)": 4.458953888
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1995",
+        "GDP growth (annual %)": 3.616194623
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1996",
+        "GDP growth (annual %)": 4.496926706
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1997",
+        "GDP growth (annual %)": 4.715263835
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1998",
+        "GDP growth (annual %)": 2.015205256
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1999",
+        "GDP growth (annual %)": 1.316706803
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2000",
+        "GDP growth (annual %)": 2.537301756
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2001",
+        "GDP growth (annual %)": 1.559548852
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2002",
+        "GDP growth (annual %)": 0.900636375
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2003",
+        "GDP growth (annual %)": 0.319967274
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2004",
+        "GDP growth (annual %)": 3.356838854
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2005",
+        "GDP growth (annual %)": 1.928840748
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2006",
+        "GDP growth (annual %)": 1.578419866
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2007",
+        "GDP growth (annual %)": 1.934064976
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2008",
+        "GDP growth (annual %)": -0.76815344
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2009",
+        "GDP growth (annual %)": -2.958585549
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2010",
+        "GDP growth (annual %)": -0.54479433
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2011",
+        "GDP growth (annual %)": -0.320026519
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2012",
+        "GDP growth (annual %)": 1.362984873
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2013",
+        "GDP growth (annual %)": -0.180216051
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2014",
+        "GDP growth (annual %)": 0.826056236
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2015",
+        "GDP growth (annual %)": 0.957500763
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2016",
+        "GDP growth (annual %)": 0.18505968
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2017",
+        "GDP growth (annual %)": 1.500180926
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2018",
+        "GDP growth (annual %)": 0.453550486
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2019",
+        "GDP growth (annual %)": 0.067992626
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2020",
+        "GDP growth (annual %)": -1.300000154
+      },
+      {
+        "Country Name": "Norway",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2021",
+        "GDP growth (annual %)": 3.368398954
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1961",
+        "GDP growth (annual %)": 5.184618708
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1962",
+        "GDP growth (annual %)": 3.685605013
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1963",
+        "GDP growth (annual %)": 4.735939875
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1964",
+        "GDP growth (annual %)": 6.026059128
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1965",
+        "GDP growth (annual %)": 2.848259778
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1966",
+        "GDP growth (annual %)": 1.123989568
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1967",
+        "GDP growth (annual %)": 2.575374756
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1968",
+        "GDP growth (annual %)": 3.057694231
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1969",
+        "GDP growth (annual %)": 4.27371522
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1970",
+        "GDP growth (annual %)": 6.292337745
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1971",
+        "GDP growth (annual %)": 0.252434855
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1972",
+        "GDP growth (annual %)": 1.986921339
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1973",
+        "GDP growth (annual %)": 3.788932053
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1974",
+        "GDP growth (annual %)": 2.899184813
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1975",
+        "GDP growth (annual %)": 2.146253219
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1976",
+        "GDP growth (annual %)": 0.691238123
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1977",
+        "GDP growth (annual %)": -1.945127147
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1978",
+        "GDP growth (annual %)": 1.455733753
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1979",
+        "GDP growth (annual %)": 3.613647519
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1980",
+        "GDP growth (annual %)": 1.493733159
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1981",
+        "GDP growth (annual %)": 0.334436786
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1982",
+        "GDP growth (annual %)": 1.19077538
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1983",
+        "GDP growth (annual %)": 1.85451508
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1984",
+        "GDP growth (annual %)": 4.134865287
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1985",
+        "GDP growth (annual %)": 1.991774101
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1986",
+        "GDP growth (annual %)": 2.452772613
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1987",
+        "GDP growth (annual %)": 3.009547766
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1988",
+        "GDP growth (annual %)": 2.088760519
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1989",
+        "GDP growth (annual %)": 1.972191268
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1990",
+        "GDP growth (annual %)": -0.020759176
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1991",
+        "GDP growth (annual %)": -1.817515173
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1992",
+        "GDP growth (annual %)": -1.736630357
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1993",
+        "GDP growth (annual %)": -2.632808452
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1994",
+        "GDP growth (annual %)": 3.1939554
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1995",
+        "GDP growth (annual %)": 3.391269115
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1996",
+        "GDP growth (annual %)": 1.417924238
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1997",
+        "GDP growth (annual %)": 3.011523033
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1998",
+        "GDP growth (annual %)": 4.253946709
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "1999",
+        "GDP growth (annual %)": 4.165978928
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2000",
+        "GDP growth (annual %)": 4.598254794
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2001",
+        "GDP growth (annual %)": 1.177501892
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2002",
+        "GDP growth (annual %)": 1.864873974
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2003",
+        "GDP growth (annual %)": 1.929830384
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2004",
+        "GDP growth (annual %)": 3.927306257
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2005",
+        "GDP growth (annual %)": 2.44824844
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2006",
+        "GDP growth (annual %)": 4.075714897
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2007",
+        "GDP growth (annual %)": 2.675002671
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2008",
+        "GDP growth (annual %)": -1.223069578
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2009",
+        "GDP growth (annual %)": -5.151262729
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2010",
+        "GDP growth (annual %)": 5.052678573
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2011",
+        "GDP growth (annual %)": 2.418988511
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2012",
+        "GDP growth (annual %)": -1.321002324
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2013",
+        "GDP growth (annual %)": 0.333984863
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2014",
+        "GDP growth (annual %)": 1.644244006
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2015",
+        "GDP growth (annual %)": 3.390176296
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2016",
+        "GDP growth (annual %)": 0.7961463
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2017",
+        "GDP growth (annual %)": 1.195147571
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2018",
+        "GDP growth (annual %)": 0.772577449
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2019",
+        "GDP growth (annual %)": 0.957561656
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2020",
+        "GDP growth (annual %)": -3.643079592
+      },
+      {
+        "Country Name": "Sweden",
+        "Indicator Name": "GDP per capita growth (annual %)",
+        "Year": "2021",
+        "GDP growth (annual %)": 4.173074337
+      }
+    ]
+  },
+  "mark": "bar",
+  "width": 275,
+  "height": 280,
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "sort": "-x",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "GDP growth (annual %)",
+      "title": null,
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -15,
+          20
+        ]
+      }
+    },
+    "color": {
+      "field": "Country Name",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Sweden",
+          "Denmark",
+          "Norway"
+        ],
+        "range": [
+          "#f4c245",
+          "#00a767",
+          "#179fdb",
+          "#36b7b4",
+          "#122b39"
+        ]
+      },
+      "title": null
+    }
+  }
+}

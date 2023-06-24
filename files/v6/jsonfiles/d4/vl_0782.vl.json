@@ -1,0 +1,1855 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "Years": "01/01/1975",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 180405
+      },
+      {
+        "Years": "01/01/1975",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 237727
+      },
+      {
+        "Years": "01/04/1975",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 177442.3
+      },
+      {
+        "Years": "01/04/1975",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 237076
+      },
+      {
+        "Years": "01/07/1975",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 176835.5
+      },
+      {
+        "Years": "01/07/1975",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 237162
+      },
+      {
+        "Years": "01/10/1975",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 178863.1
+      },
+      {
+        "Years": "01/10/1975",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 242059
+      },
+      {
+        "Years": "01/01/1976",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 181693.7
+      },
+      {
+        "Years": "01/01/1976",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 244436
+      },
+      {
+        "Years": "01/04/1976",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 181393.5
+      },
+      {
+        "Years": "01/04/1976",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 247810
+      },
+      {
+        "Years": "01/07/1976",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 183664.4
+      },
+      {
+        "Years": "01/07/1976",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 250549
+      },
+      {
+        "Years": "01/10/1976",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 187560.4
+      },
+      {
+        "Years": "01/10/1976",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 252236
+      },
+      {
+        "Years": "01/01/1977",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 187613.7
+      },
+      {
+        "Years": "01/01/1977",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 255139
+      },
+      {
+        "Years": "01/04/1977",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 186310.5
+      },
+      {
+        "Years": "01/04/1977",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 255962
+      },
+      {
+        "Years": "01/07/1977",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 187608.3
+      },
+      {
+        "Years": "01/07/1977",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 258288
+      },
+      {
+        "Years": "01/10/1977",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 190827
+      },
+      {
+        "Years": "01/10/1977",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 260391
+      },
+      {
+        "Years": "01/01/1978",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 192529
+      },
+      {
+        "Years": "01/01/1978",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 263824
+      },
+      {
+        "Years": "01/04/1978",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 194771.8
+      },
+      {
+        "Years": "01/04/1978",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 266635
+      },
+      {
+        "Years": "01/07/1978",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 197449.6
+      },
+      {
+        "Years": "01/07/1978",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 268767
+      },
+      {
+        "Years": "01/10/1978",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 199240.3
+      },
+      {
+        "Years": "01/10/1978",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 271679
+      },
+      {
+        "Years": "01/01/1979",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 198533.1
+      },
+      {
+        "Years": "01/01/1979",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 274054
+      },
+      {
+        "Years": "01/04/1979",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 207302.7
+      },
+      {
+        "Years": "01/04/1979",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 275524
+      },
+      {
+        "Years": "01/07/1979",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 202701.3
+      },
+      {
+        "Years": "01/07/1979",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 279153
+      },
+      {
+        "Years": "01/10/1979",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 204845.6
+      },
+      {
+        "Years": "01/10/1979",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 279886
+      },
+      {
+        "Years": "01/01/1980",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 202901.2
+      },
+      {
+        "Years": "01/01/1980",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 281259.2
+      },
+      {
+        "Years": "01/04/1980",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 198842.4
+      },
+      {
+        "Years": "01/04/1980",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 279211.8
+      },
+      {
+        "Years": "01/07/1980",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 198646.1
+      },
+      {
+        "Years": "01/07/1980",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 279652.1
+      },
+      {
+        "Years": "01/10/1980",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 196470.2
+      },
+      {
+        "Years": "01/10/1980",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 279103.4
+      },
+      {
+        "Years": "01/01/1981",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 196223.3
+      },
+      {
+        "Years": "01/01/1981",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 279999.5
+      },
+      {
+        "Years": "01/04/1981",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 196624.9
+      },
+      {
+        "Years": "01/04/1981",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 281938.1
+      },
+      {
+        "Years": "01/07/1981",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 198742.9
+      },
+      {
+        "Years": "01/07/1981",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 283796.3
+      },
+      {
+        "Years": "01/10/1981",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 198991.6
+      },
+      {
+        "Years": "01/10/1981",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 285466.4
+      },
+      {
+        "Years": "01/01/1982",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 199378.6
+      },
+      {
+        "Years": "01/01/1982",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 287853.3
+      },
+      {
+        "Years": "01/04/1982",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 201503.9
+      },
+      {
+        "Years": "01/04/1982",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 289804.5
+      },
+      {
+        "Years": "01/07/1982",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 202025.7
+      },
+      {
+        "Years": "01/07/1982",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 289779.2
+      },
+      {
+        "Years": "01/10/1982",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 203445.6
+      },
+      {
+        "Years": "01/10/1982",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 291504.1
+      },
+      {
+        "Years": "01/01/1983",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 207170.7
+      },
+      {
+        "Years": "01/01/1983",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 292717.5
+      },
+      {
+        "Years": "01/04/1983",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 208942.3
+      },
+      {
+        "Years": "01/04/1983",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 292775.8
+      },
+      {
+        "Years": "01/07/1983",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 211229.5
+      },
+      {
+        "Years": "01/07/1983",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 293078.1
+      },
+      {
+        "Years": "01/10/1983",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 213054.5
+      },
+      {
+        "Years": "01/10/1983",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 294870
+      },
+      {
+        "Years": "01/01/1984",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 214529.5
+      },
+      {
+        "Years": "01/01/1984",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 296076.5
+      },
+      {
+        "Years": "01/04/1984",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 212651.1
+      },
+      {
+        "Years": "01/04/1984",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 297305
+      },
+      {
+        "Years": "01/07/1984",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 214026.7
+      },
+      {
+        "Years": "01/07/1984",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 299405.9
+      },
+      {
+        "Years": "01/10/1984",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 218259.1
+      },
+      {
+        "Years": "01/10/1984",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 299190.2
+      },
+      {
+        "Years": "01/01/1985",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 220048.9
+      },
+      {
+        "Years": "01/01/1985",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 299983.1
+      },
+      {
+        "Years": "01/04/1985",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 224709.1
+      },
+      {
+        "Years": "01/04/1985",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 302685.2
+      },
+      {
+        "Years": "01/07/1985",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 224905.3
+      },
+      {
+        "Years": "01/07/1985",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 304258.1
+      },
+      {
+        "Years": "01/10/1985",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 225448.8
+      },
+      {
+        "Years": "01/10/1985",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 305570.2
+      },
+      {
+        "Years": "01/01/1986",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 228005.5
+      },
+      {
+        "Years": "01/01/1986",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 306644.5
+      },
+      {
+        "Years": "01/04/1986",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 229697.6
+      },
+      {
+        "Years": "01/04/1986",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 310048
+      },
+      {
+        "Years": "01/07/1986",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 230743
+      },
+      {
+        "Years": "01/07/1986",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 311542.6
+      },
+      {
+        "Years": "01/10/1986",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 234865.1
+      },
+      {
+        "Years": "01/10/1986",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 311871.7
+      },
+      {
+        "Years": "01/01/1987",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 237048.3
+      },
+      {
+        "Years": "01/01/1987",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 312336.7
+      },
+      {
+        "Years": "01/04/1987",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 240525.6
+      },
+      {
+        "Years": "01/04/1987",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 316889.2
+      },
+      {
+        "Years": "01/07/1987",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 246369.6
+      },
+      {
+        "Years": "01/07/1987",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 319127
+      },
+      {
+        "Years": "01/10/1987",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 249159.6
+      },
+      {
+        "Years": "01/10/1987",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 323713
+      },
+      {
+        "Years": "01/01/1988",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 253600
+      },
+      {
+        "Years": "01/01/1988",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 327662.7
+      },
+      {
+        "Years": "01/04/1988",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 255094.9
+      },
+      {
+        "Years": "01/04/1988",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 330445
+      },
+      {
+        "Years": "01/07/1988",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 258980.1
+      },
+      {
+        "Years": "01/07/1988",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 334706.3
+      },
+      {
+        "Years": "01/10/1988",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 261210.3
+      },
+      {
+        "Years": "01/10/1988",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 337622.3
+      },
+      {
+        "Years": "01/01/1989",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 262361.5
+      },
+      {
+        "Years": "01/01/1989",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 341618.1
+      },
+      {
+        "Years": "01/04/1989",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 264088.9
+      },
+      {
+        "Years": "01/04/1989",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 345651.5
+      },
+      {
+        "Years": "01/07/1989",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 264352
+      },
+      {
+        "Years": "01/07/1989",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 349400.2
+      },
+      {
+        "Years": "01/10/1989",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 264603.4
+      },
+      {
+        "Years": "01/10/1989",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 353989.3
+      },
+      {
+        "Years": "01/01/1990",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 266386.8
+      },
+      {
+        "Years": "01/01/1990",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 355487
+      },
+      {
+        "Years": "01/04/1990",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 267755.2
+      },
+      {
+        "Years": "01/04/1990",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 357298.2
+      },
+      {
+        "Years": "01/07/1990",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 264959.8
+      },
+      {
+        "Years": "01/07/1990",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 359102.2
+      },
+      {
+        "Years": "01/10/1990",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 264048.2
+      },
+      {
+        "Years": "01/10/1990",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 359066.8
+      },
+      {
+        "Years": "01/01/1991",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 263277.6
+      },
+      {
+        "Years": "01/01/1991",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 359535.8
+      },
+      {
+        "Years": "01/04/1991",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 262945.7
+      },
+      {
+        "Years": "01/04/1991",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 360972.1
+      },
+      {
+        "Years": "01/07/1991",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 262371.5
+      },
+      {
+        "Years": "01/07/1991",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 361758
+      },
+      {
+        "Years": "01/10/1991",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 262827.3
+      },
+      {
+        "Years": "01/10/1991",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 364257.4
+      },
+      {
+        "Years": "01/01/1992",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 262846.3
+      },
+      {
+        "Years": "01/01/1992",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 367085.9
+      },
+      {
+        "Years": "01/04/1992",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 262536.1
+      },
+      {
+        "Years": "01/04/1992",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 367366.9
+      },
+      {
+        "Years": "01/07/1992",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 264208.2
+      },
+      {
+        "Years": "01/07/1992",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 367201
+      },
+      {
+        "Years": "01/10/1992",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 266048.6
+      },
+      {
+        "Years": "01/10/1992",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 366494.8
+      },
+      {
+        "Years": "01/01/1993",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 267973.1
+      },
+      {
+        "Years": "01/01/1993",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 364094.5
+      },
+      {
+        "Years": "01/04/1993",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 269301.6
+      },
+      {
+        "Years": "01/04/1993",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 363978.1
+      },
+      {
+        "Years": "01/07/1993",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 271423.3
+      },
+      {
+        "Years": "01/07/1993",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 364631.5
+      },
+      {
+        "Years": "01/10/1993",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 273224.8
+      },
+      {
+        "Years": "01/10/1993",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 365457.3
+      },
+      {
+        "Years": "01/01/1994",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 276437.1
+      },
+      {
+        "Years": "01/01/1994",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 367899.4
+      },
+      {
+        "Years": "01/04/1994",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 279663
+      },
+      {
+        "Years": "01/04/1994",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 371630.1
+      },
+      {
+        "Years": "01/07/1994",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 282859
+      },
+      {
+        "Years": "01/07/1994",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 374799.2
+      },
+      {
+        "Years": "01/10/1994",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 284574.6
+      },
+      {
+        "Years": "01/10/1994",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 378272.7
+      },
+      {
+        "Years": "01/01/1995",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 284908.8
+      },
+      {
+        "Years": "01/01/1995",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 379493.5
+      },
+      {
+        "Years": "01/04/1995",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 285982.3
+      },
+      {
+        "Years": "01/04/1995",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 381870.2
+      },
+      {
+        "Years": "01/07/1995",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 288712.8
+      },
+      {
+        "Years": "01/07/1995",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 382505.9
+      },
+      {
+        "Years": "01/10/1995",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 289250.3
+      },
+      {
+        "Years": "01/10/1995",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 382517.9
+      },
+      {
+        "Years": "01/01/1996",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 290923.9
+      },
+      {
+        "Years": "01/01/1996",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 385206.7
+      },
+      {
+        "Years": "01/04/1996",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 291933.9
+      },
+      {
+        "Years": "01/04/1996",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 385630.4
+      },
+      {
+        "Years": "01/07/1996",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 295311.4
+      },
+      {
+        "Years": "01/07/1996",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 387611.7
+      },
+      {
+        "Years": "01/10/1996",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 299309
+      },
+      {
+        "Years": "01/10/1996",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 388614.9
+      },
+      {
+        "Years": "01/01/1997",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 305004.5
+      },
+      {
+        "Years": "01/01/1997",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 389965.2
+      },
+      {
+        "Years": "01/04/1997",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 307689
+      },
+      {
+        "Years": "01/04/1997",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 393864.6
+      },
+      {
+        "Years": "01/07/1997",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 309854.9
+      },
+      {
+        "Years": "01/07/1997",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 397717.8
+      },
+      {
+        "Years": "01/10/1997",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 313513.8
+      },
+      {
+        "Years": "01/10/1997",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 401666.8
+      },
+      {
+        "Years": "01/01/1998",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 316365
+      },
+      {
+        "Years": "01/01/1998",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 405422.2
+      },
+      {
+        "Years": "01/04/1998",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 319304
+      },
+      {
+        "Years": "01/04/1998",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 408672.2
+      },
+      {
+        "Years": "01/07/1998",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 321564.6
+      },
+      {
+        "Years": "01/07/1998",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 411710.9
+      },
+      {
+        "Years": "01/10/1998",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 324659
+      },
+      {
+        "Years": "01/10/1998",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 414413.6
+      },
+      {
+        "Years": "01/01/1999",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 326569.6
+      },
+      {
+        "Years": "01/01/1999",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 418851.7
+      },
+      {
+        "Years": "01/04/1999",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 327139.4
+      },
+      {
+        "Years": "01/04/1999",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 420021.2
+      },
+      {
+        "Years": "01/07/1999",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 332754.9
+      },
+      {
+        "Years": "01/07/1999",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 424614.1
+      },
+      {
+        "Years": "01/10/1999",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 337668.8
+      },
+      {
+        "Years": "01/10/1999",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 430694.2
+      },
+      {
+        "Years": "01/01/2000",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 340388
+      },
+      {
+        "Years": "01/01/2000",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 435215.6
+      },
+      {
+        "Years": "01/04/2000",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 342450.6
+      },
+      {
+        "Years": "01/04/2000",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 439682.9
+      },
+      {
+        "Years": "01/07/2000",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 343455.4
+      },
+      {
+        "Years": "01/07/2000",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 442679.6
+      },
+      {
+        "Years": "01/10/2000",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 344266.6
+      },
+      {
+        "Years": "01/10/2000",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 446332
+      },
+      {
+        "Years": "01/01/2001",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 348277.2
+      },
+      {
+        "Years": "01/01/2001",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 448613.8
+      },
+      {
+        "Years": "01/04/2001",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 350966.9
+      },
+      {
+        "Years": "01/04/2001",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 449130.4
+      },
+      {
+        "Years": "01/07/2001",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 353674.8
+      },
+      {
+        "Years": "01/07/2001",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 450292.2
+      },
+      {
+        "Years": "01/10/2001",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 355061.7
+      },
+      {
+        "Years": "01/10/2001",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 450005.6
+      },
+      {
+        "Years": "01/01/2002",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 356452.2
+      },
+      {
+        "Years": "01/01/2002",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 452584.3
+      },
+      {
+        "Years": "01/04/2002",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 358198.7
+      },
+      {
+        "Years": "01/04/2002",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 454463.4
+      },
+      {
+        "Years": "01/07/2002",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 360580
+      },
+      {
+        "Years": "01/07/2002",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 455520.9
+      },
+      {
+        "Years": "01/10/2002",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 363426.9
+      },
+      {
+        "Years": "01/10/2002",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 456588.7
+      },
+      {
+        "Years": "01/01/2003",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 366132.2
+      },
+      {
+        "Years": "01/01/2003",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 457075.7
+      },
+      {
+        "Years": "01/04/2003",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 369474.1
+      },
+      {
+        "Years": "01/04/2003",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 456074.3
+      },
+      {
+        "Years": "01/07/2003",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 373682.7
+      },
+      {
+        "Years": "01/07/2003",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 459100
+      },
+      {
+        "Years": "01/10/2003",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 377159.2
+      },
+      {
+        "Years": "01/10/2003",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 462236.8
+      },
+      {
+        "Years": "01/01/2004",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 378483.7
+      },
+      {
+        "Years": "01/01/2004",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 466775
+      },
+      {
+        "Years": "01/04/2004",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 379876.7
+      },
+      {
+        "Years": "01/04/2004",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 469499.3
+      },
+      {
+        "Years": "01/07/2004",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 380558.5
+      },
+      {
+        "Years": "01/07/2004",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 470771.1
+      },
+      {
+        "Years": "01/10/2004",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 381513.8
+      },
+      {
+        "Years": "01/10/2004",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 474298.9
+      },
+      {
+        "Years": "01/01/2005",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 384555.2
+      },
+      {
+        "Years": "01/01/2005",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 475419.7
+      },
+      {
+        "Years": "01/04/2005",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 389073.9
+      },
+      {
+        "Years": "01/04/2005",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 476732.3
+      },
+      {
+        "Years": "01/07/2005",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 393177.4
+      },
+      {
+        "Years": "01/07/2005",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 479291
+      },
+      {
+        "Years": "01/10/2005",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 398565.4
+      },
+      {
+        "Years": "01/10/2005",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 482515.3
+      },
+      {
+        "Years": "01/01/2006",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 400418.8
+      },
+      {
+        "Years": "01/01/2006",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 486293
+      },
+      {
+        "Years": "01/04/2006",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 401500.9
+      },
+      {
+        "Years": "01/04/2006",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 491325
+      },
+      {
+        "Years": "01/07/2006",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 401873.5
+      },
+      {
+        "Years": "01/07/2006",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 491622
+      },
+      {
+        "Years": "01/10/2006",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 403746.8
+      },
+      {
+        "Years": "01/10/2006",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 495252.4
+      },
+      {
+        "Years": "01/01/2007",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 407553.3
+      },
+      {
+        "Years": "01/01/2007",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 498883.6
+      },
+      {
+        "Years": "01/04/2007",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 409851.3
+      },
+      {
+        "Years": "01/04/2007",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 502257.9
+      },
+      {
+        "Years": "01/07/2007",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 412986.5
+      },
+      {
+        "Years": "01/07/2007",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 504572.3
+      },
+      {
+        "Years": "01/10/2007",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 415095.1
+      },
+      {
+        "Years": "01/10/2007",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 505542.3
+      },
+      {
+        "Years": "01/01/2008",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 417322.8
+      },
+      {
+        "Years": "01/01/2008",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 508065.8
+      },
+      {
+        "Years": "01/04/2008",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 414987.5
+      },
+      {
+        "Years": "01/04/2008",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 505292.8
+      },
+      {
+        "Years": "01/07/2008",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 408503.4
+      },
+      {
+        "Years": "01/07/2008",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 504303.1
+      },
+      {
+        "Years": "01/10/2008",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 400086.1
+      },
+      {
+        "Years": "01/10/2008",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 496749.5
+      },
+      {
+        "Years": "01/01/2009",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 393329.4
+      },
+      {
+        "Years": "01/01/2009",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 488349.8
+      },
+      {
+        "Years": "01/04/2009",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 392582.5
+      },
+      {
+        "Years": "01/04/2009",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 488286.6
+      },
+      {
+        "Years": "01/07/2009",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 393068
+      },
+      {
+        "Years": "01/07/2009",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 489091.4
+      },
+      {
+        "Years": "01/10/2009",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 394414.1
+      },
+      {
+        "Years": "01/10/2009",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 492549.9
+      },
+      {
+        "Years": "01/01/2010",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 396944
+      },
+      {
+        "Years": "01/01/2010",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 494326.5
+      },
+      {
+        "Years": "01/04/2010",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 401031.9
+      },
+      {
+        "Years": "01/04/2010",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 496702
+      },
+      {
+        "Years": "01/07/2010",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 403957.8
+      },
+      {
+        "Years": "01/07/2010",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 499767.2
+      },
+      {
+        "Years": "01/10/2010",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 404093.3
+      },
+      {
+        "Years": "01/10/2010",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 503145.1
+      },
+      {
+        "Years": "01/01/2011",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 405552.3
+      },
+      {
+        "Years": "01/01/2011",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 508401.1
+      },
+      {
+        "Years": "01/04/2011",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 405899.7
+      },
+      {
+        "Years": "01/04/2011",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 507914.2
+      },
+      {
+        "Years": "01/07/2011",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 407265
+      },
+      {
+        "Years": "01/07/2011",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 510374.2
+      },
+      {
+        "Years": "01/10/2011",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 407798.2
+      },
+      {
+        "Years": "01/10/2011",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 511357.2
+      },
+      {
+        "Years": "01/01/2012",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 410623.4
+      },
+      {
+        "Years": "01/01/2012",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 511501.1
+      },
+      {
+        "Years": "01/04/2012",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 410019.8
+      },
+      {
+        "Years": "01/04/2012",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 510730.2
+      },
+      {
+        "Years": "01/07/2012",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 415017.9
+      },
+      {
+        "Years": "01/07/2012",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 511882
+      },
+      {
+        "Years": "01/10/2012",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 414119
+      },
+      {
+        "Years": "01/10/2012",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 511337.7
+      },
+      {
+        "Years": "01/01/2013",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 416310.1
+      },
+      {
+        "Years": "01/01/2013",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 511695.3
+      },
+      {
+        "Years": "01/04/2013",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 419657.3
+      },
+      {
+        "Years": "01/04/2013",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 515132.3
+      },
+      {
+        "Years": "01/07/2013",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 423580.2
+      },
+      {
+        "Years": "01/07/2013",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 514571.3
+      },
+      {
+        "Years": "01/10/2013",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 426299.4
+      },
+      {
+        "Years": "01/10/2013",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 517998.2
+      },
+      {
+        "Years": "01/01/2014",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 429573.5
+      },
+      {
+        "Years": "01/01/2014",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 518038.5
+      },
+      {
+        "Years": "01/04/2014",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 432370
+      },
+      {
+        "Years": "01/04/2014",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 518505.9
+      },
+      {
+        "Years": "01/07/2014",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 434809.6
+      },
+      {
+        "Years": "01/07/2014",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 521435.1
+      },
+      {
+        "Years": "01/10/2014",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 437355.1
+      },
+      {
+        "Years": "01/10/2014",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 521256.2
+      },
+      {
+        "Years": "01/01/2015",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 439721.7
+      },
+      {
+        "Years": "01/01/2015",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 524008.4
+      },
+      {
+        "Years": "01/04/2015",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 443005.4
+      },
+      {
+        "Years": "01/04/2015",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 524633.7
+      },
+      {
+        "Years": "01/07/2015",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 444720.6
+      },
+      {
+        "Years": "01/07/2015",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 525785
+      },
+      {
+        "Years": "01/10/2015",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 447638.7
+      },
+      {
+        "Years": "01/10/2015",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 526831.6
+      },
+      {
+        "Years": "01/01/2016",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 448529.7
+      },
+      {
+        "Years": "01/01/2016",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 530132.4
+      },
+      {
+        "Years": "01/04/2016",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 450560.2
+      },
+      {
+        "Years": "01/04/2016",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 528570.8
+      },
+      {
+        "Years": "01/07/2016",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 451936.8
+      },
+      {
+        "Years": "01/07/2016",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 530031
+      },
+      {
+        "Years": "01/10/2016",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 454633.4
+      },
+      {
+        "Years": "01/10/2016",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 533176.7
+      },
+      {
+        "Years": "01/01/2017",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 456888.8
+      },
+      {
+        "Years": "01/01/2017",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 537153.9
+      },
+      {
+        "Years": "01/04/2017",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 458227.1
+      },
+      {
+        "Years": "01/04/2017",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 541370.3
+      },
+      {
+        "Years": "01/07/2017",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 460167.3
+      },
+      {
+        "Years": "01/07/2017",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 545975.7
+      },
+      {
+        "Years": "01/10/2017",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 461800.9
+      },
+      {
+        "Years": "01/10/2017",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 549354.3
+      },
+      {
+        "Years": "01/01/2018",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 462119.7
+      },
+      {
+        "Years": "01/01/2018",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 549706.1
+      },
+      {
+        "Years": "01/04/2018",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 463887.9
+      },
+      {
+        "Years": "01/04/2018",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 552047.6
+      },
+      {
+        "Years": "01/07/2018",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 466654.8
+      },
+      {
+        "Years": "01/07/2018",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 554151.7
+      },
+      {
+        "Years": "01/10/2018",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 467433
+      },
+      {
+        "Years": "01/10/2018",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 557571.8
+      },
+      {
+        "Years": "01/01/2019",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 470015
+      },
+      {
+        "Years": "01/01/2019",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 561330.2
+      },
+      {
+        "Years": "01/04/2019",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 470665.5
+      },
+      {
+        "Years": "01/04/2019",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 565101.9
+      },
+      {
+        "Years": "01/07/2019",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 473006
+      },
+      {
+        "Years": "01/07/2019",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 565142
+      },
+      {
+        "Years": "01/10/2019",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 473087.6
+      },
+      {
+        "Years": "01/10/2019",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 563596.9
+      },
+      {
+        "Years": "01/01/2020",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 458804.7
+      },
+      {
+        "Years": "01/01/2020",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 532097.9
+      },
+      {
+        "Years": "01/04/2020",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 372766.5
+      },
+      {
+        "Years": "01/04/2020",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 460029.2
+      },
+      {
+        "Years": "01/07/2020",
+        "Country Identifier": "UK Real GDP Data",
+        "Real GDP Data": 432422.1
+      },
+      {
+        "Years": "01/07/2020",
+        "Country Identifier": "France Real GDP Data",
+        "Real GDP Data": 544862.1
+      }
+    ]
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "Years",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "Real GDP Data",
+      "type": "quantitative"
+    },
+    "xOffset": {
+      "field": "Country Identifier"
+    },
+    "color": {
+      "field": "Country Identifier"
+    }
+  },
+  "config": {}
+}

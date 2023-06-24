@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Does Data Sharing Provide Benefits to the UK Economy?",
+    "subtitle": [
+      "A survey showing responce in percentages of whether they believe data",
+      "sharing benefits the UK Economy.",
+      "Source: Delta Poll Survey Results"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 200,
+  "height": 200,
+  "data": {
+    "values": [
+      {
+        "Responce": "It could definitely be used",
+        "value": 15
+      },
+      {
+        "Responce": "It could probably be used",
+        "value": 49
+      },
+      {
+        "Responce": "It could probably not be used",
+        "value": 15
+      },
+      {
+        "Responce": "It could definitely not be used",
+        "value": 4
+      },
+      {
+        "Responce": "Don\u2019t know",
+        "value": 16
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 50
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Responce",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "Responce",
+        "title": "Responce"
+      },
+      {
+        "field": "value",
+        "title": "Percent"
+      }
+    ]
+  }
+}

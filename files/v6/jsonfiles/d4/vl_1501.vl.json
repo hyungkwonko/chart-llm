@@ -1,0 +1,63 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-f2c3a6b8a9c2f9aab0b98db23c713996"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "type": "nominal",
+      "field": "username"
+    },
+    "y": {
+      "type": "quantitative",
+      "field": "closed"
+    }
+  },
+  "title": "Merges for numpy in the last 10 days",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-f2c3a6b8a9c2f9aab0b98db23c713996": [
+      {
+        "repo": "numpy",
+        "username": "WarrenWeckesser",
+        "closed": 1
+      },
+      {
+        "repo": "numpy",
+        "username": "charris",
+        "closed": 25
+      },
+      {
+        "repo": "numpy",
+        "username": "mattip",
+        "closed": 3
+      },
+      {
+        "repo": "numpy",
+        "username": "melissawm",
+        "closed": 3
+      },
+      {
+        "repo": "numpy",
+        "username": "rgommers",
+        "closed": 5
+      },
+      {
+        "repo": "numpy-tutorials",
+        "username": "melissawm",
+        "closed": 1
+      },
+      {
+        "repo": "numpy-tutorials",
+        "username": "rossbar",
+        "closed": 2
+      }
+    ]
+  }
+}

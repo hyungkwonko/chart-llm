@@ -1,0 +1,4196 @@
+{
+  "config": {
+    "view": {
+      "height": 400,
+      "width": 800
+    },
+    "padding": 50
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Differential Spending vs Change in Voteshare (8/1/208-11/6/2018)",
+  "layer": [
+    {
+      "transform": [
+        {
+          "as": "yLo",
+          "calculate": "datum.result_vs_forecast - (datum.yError)/2"
+        },
+        {
+          "as": "yHi",
+          "calculate": "datum.result_vs_forecast + (datum.yError)/2"
+        },
+        {
+          "as": "fyLo",
+          "calculate": "datum.yFit - (datum.yFitError)/2"
+        },
+        {
+          "as": "fyHi",
+          "calculate": "datum.yFit + (datum.yFitError)/2"
+        },
+        {
+          "as": "fitLabel",
+          "calculate": "\"regression\""
+        }
+      ],
+      "config": {
+        "view": {
+          "height": 400,
+          "width": 800
+        },
+        "padding": 50
+      },
+      "data": {
+        "values": [
+          {
+            "candidate_diff_spend": 90.47078126972106,
+            "yError": 0,
+            "result_vs_forecast": -1.3499999999999943,
+            "yFitError": 12.409304690587007,
+            "yFit": -0.8633158794391731
+          },
+          {
+            "candidate_diff_spend": 21.750860358210456,
+            "yError": 0,
+            "result_vs_forecast": 2.1699999999999946,
+            "yFitError": 12.403743904361374,
+            "yFit": 0.7948741834155107
+          },
+          {
+            "candidate_diff_spend": 87.98490978759543,
+            "yError": 0,
+            "result_vs_forecast": -0.03999999999999915,
+            "yFitError": 12.407675643953121,
+            "yFit": -0.8033325829726001
+          },
+          {
+            "candidate_diff_spend": 99.15212068920364,
+            "yError": 0,
+            "result_vs_forecast": -2.9099999999999966,
+            "yFitError": 12.41583238715843,
+            "yFit": -1.072793867287722
+          },
+          {
+            "candidate_diff_spend": 91.08645905092207,
+            "yError": 0,
+            "result_vs_forecast": 6,
+            "yFitError": 12.409724683827456,
+            "yFit": -0.8781719905226324
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 2.0799999999999983,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": -2.540000000000001,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 6.587793667303926,
+            "yError": 0,
+            "result_vs_forecast": 2.720000000000006,
+            "yFitError": 12.413547753730185,
+            "yFit": 1.160754210280509
+          },
+          {
+            "candidate_diff_spend": 86.93212973159137,
+            "yError": 0,
+            "result_vs_forecast": -2.9200000000000017,
+            "yFitError": 12.407017982023179,
+            "yFit": -0.7779293315706459
+          },
+          {
+            "candidate_diff_spend": 85.14561011700874,
+            "yError": 0,
+            "result_vs_forecast": 2.1000000000000014,
+            "yFitError": 12.405945880116732,
+            "yFit": -0.7348211755555871
+          },
+          {
+            "candidate_diff_spend": 84.52744077242392,
+            "yError": 0,
+            "result_vs_forecast": -2.6199999999999903,
+            "yFitError": 12.405587785893514,
+            "yFit": -0.7199049438318652
+          },
+          {
+            "candidate_diff_spend": 97.7901186608278,
+            "yError": 0,
+            "result_vs_forecast": 1.309999999999988,
+            "yFitError": 12.414722081722902,
+            "yFit": -1.0399291870162046
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 2.3499999999999943,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 3.7623519408834984,
+            "yError": 0,
+            "result_vs_forecast": 4.439999999999998,
+            "yFitError": 12.415814251072272,
+            "yFit": 1.228931229866406
+          },
+          {
+            "candidate_diff_spend": 89.77515044430606,
+            "yError": 0,
+            "result_vs_forecast": -3.3500000000000014,
+            "yFitError": 12.4088380498792,
+            "yFit": -0.8465305265630563
+          },
+          {
+            "candidate_diff_spend": 38.55082357504381,
+            "yError": 0,
+            "result_vs_forecast": 2.4200000000000017,
+            "yFitError": 12.397534580647077,
+            "yFit": 0.3894963585727128
+          },
+          {
+            "candidate_diff_spend": 86.42051725156067,
+            "yError": 0,
+            "result_vs_forecast": 3.760000000000005,
+            "yFitError": 12.40670531202176,
+            "yFit": -0.7655842834511675
+          },
+          {
+            "candidate_diff_spend": 55.657864731767674,
+            "yError": 0,
+            "result_vs_forecast": -1.2100000000000009,
+            "yFitError": 12.396245030885499,
+            "yFit": -0.023291160310682457
+          },
+          {
+            "candidate_diff_spend": 10.224849555693941,
+            "yError": 0,
+            "result_vs_forecast": 3.3500000000000014,
+            "yFitError": 12.410833396720665,
+            "yFit": 1.0729931964117452
+          },
+          {
+            "candidate_diff_spend": 52.90972017043874,
+            "yError": 0,
+            "result_vs_forecast": 4.239999999999995,
+            "yFitError": 12.39610964136626,
+            "yFit": 0.0430207030098777
+          },
+          {
+            "candidate_diff_spend": 99.88091714214751,
+            "yError": 0,
+            "result_vs_forecast": -3.6899999999999977,
+            "yFitError": 12.416439668414181,
+            "yFit": -1.090379496317642
+          },
+          {
+            "candidate_diff_spend": 44.342135268232326,
+            "yError": 0,
+            "result_vs_forecast": 3.3299999999999983,
+            "yFitError": 12.396529169350613,
+            "yFit": 0.24975383015937158
+          },
+          {
+            "candidate_diff_spend": 61.80501811816952,
+            "yError": 0,
+            "result_vs_forecast": -3.980000000000004,
+            "yFitError": 12.397022537068292,
+            "yFit": -0.17162003678451576
+          },
+          {
+            "candidate_diff_spend": 61.83587182982756,
+            "yError": 0,
+            "result_vs_forecast": 2.6599999999999966,
+            "yFitError": 12.397028094028236,
+            "yFit": -0.17236452713600237
+          },
+          {
+            "candidate_diff_spend": 95.43311329651084,
+            "yError": 0,
+            "result_vs_forecast": 0,
+            "yFitError": 12.412876408069916,
+            "yFit": -0.983055389413348
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 5.610000000000003,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 66.7922377261031,
+            "yError": 0,
+            "result_vs_forecast": 0.4399999999999977,
+            "yFitError": 12.398135288544704,
+            "yFit": -0.2919600762586343
+          },
+          {
+            "candidate_diff_spend": 27.103858143619863,
+            "yError": 0,
+            "result_vs_forecast": -0.4100000000000037,
+            "yFitError": 12.401234043026793,
+            "yFit": 0.6657080316430306
+          },
+          {
+            "candidate_diff_spend": 74.32339199003492,
+            "yError": 0,
+            "result_vs_forecast": -0.4399999999999977,
+            "yFitError": 12.400633625146206,
+            "yFit": -0.4736844583102102
+          },
+          {
+            "candidate_diff_spend": 59.468831678694436,
+            "yError": 0,
+            "result_vs_forecast": -2.769999999999996,
+            "yFitError": 12.39664977056974,
+            "yFit": -0.115248593285596
+          },
+          {
+            "candidate_diff_spend": 34.43576663707061,
+            "yError": 0,
+            "result_vs_forecast": -3.5999999999999943,
+            "yFitError": 12.39860275727718,
+            "yFit": 0.48879138732303606
+          },
+          {
+            "candidate_diff_spend": 57.261580331070164,
+            "yError": 0,
+            "result_vs_forecast": -1.25,
+            "yFitError": 12.396384624484325,
+            "yFit": -0.06198831297232066
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 0.37000000000000455,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 70.75445135225553,
+            "yError": 0,
+            "result_vs_forecast": -4.359999999999999,
+            "yFitError": 12.399327023369064,
+            "yFit": -0.387567044000253
+          },
+          {
+            "candidate_diff_spend": 76.91476558788133,
+            "yError": 0,
+            "result_vs_forecast": -1.259999999999998,
+            "yFitError": 12.401720771377395,
+            "yFit": -0.5362134876236471
+          },
+          {
+            "candidate_diff_spend": 56.37227851061821,
+            "yError": 0,
+            "result_vs_forecast": 1.220000000000006,
+            "yFitError": 12.39630170109685,
+            "yFit": -0.04052973994149789
+          },
+          {
+            "candidate_diff_spend": 9.345193371425037,
+            "yError": 0,
+            "result_vs_forecast": 5.210000000000001,
+            "yFitError": 12.411468913267555,
+            "yFit": 1.094219023277315
+          },
+          {
+            "candidate_diff_spend": 2.420983905386634,
+            "yError": 0,
+            "result_vs_forecast": 7.879999999999999,
+            "yFitError": 12.416938557220151,
+            "yFit": 1.2612980183840459
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": -5.539999999999999,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 51.44438853153985,
+            "yError": 0,
+            "result_vs_forecast": 1.3100000000000023,
+            "yFitError": 12.396091048997313,
+            "yFit": 0.07837869426160671
+          },
+          {
+            "candidate_diff_spend": 3.0392108508014797,
+            "yError": 0,
+            "result_vs_forecast": -0.2699999999999996,
+            "yFitError": 12.416416510493766,
+            "yFit": 1.2463803967704243
+          },
+          {
+            "candidate_diff_spend": 47.13706547264071,
+            "yError": 0,
+            "result_vs_forecast": -3.240000000000002,
+            "yFitError": 12.396252250816318,
+            "yFit": 0.18231304399650372
+          },
+          {
+            "candidate_diff_spend": 98.29634979835342,
+            "yError": 0,
+            "result_vs_forecast": -1.309999999999988,
+            "yFitError": 12.415131018378718,
+            "yFit": -1.052144385034746
+          },
+          {
+            "candidate_diff_spend": 94.95721554941801,
+            "yError": 0,
+            "result_vs_forecast": -3.260000000000005,
+            "yFitError": 12.412515407128934,
+            "yFit": -0.9715721265588928
+          },
+          {
+            "candidate_diff_spend": 14.239672122336925,
+            "yError": 0,
+            "result_vs_forecast": -2.950000000000003,
+            "yFitError": 12.408102859380968,
+            "yFit": 0.9761167914940989
+          },
+          {
+            "candidate_diff_spend": 98.99327766949567,
+            "yError": 0,
+            "result_vs_forecast": -1.6300000000000026,
+            "yFitError": 12.415701246812235,
+            "yFit": -1.0689610352160326
+          },
+          {
+            "candidate_diff_spend": 48.31654205828479,
+            "yError": 0,
+            "result_vs_forecast": 2.75,
+            "yFitError": 12.396176082493808,
+            "yFit": 0.1538526452104918
+          },
+          {
+            "candidate_diff_spend": 0.3422736917571013,
+            "yError": 0,
+            "result_vs_forecast": -0.07000000000000028,
+            "yFitError": 12.418742291970595,
+            "yFit": 1.3114566415907507
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -3.2900000000000063,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 75.58920482866608,
+            "yError": 0,
+            "result_vs_forecast": 1.8999999999999986,
+            "yFitError": 12.401150116982729,
+            "yFit": -0.504228123707539
+          },
+          {
+            "candidate_diff_spend": 50.89086143324079,
+            "yError": 0,
+            "result_vs_forecast": -1.3200000000000003,
+            "yFitError": 12.396093726911108,
+            "yFit": 0.09173512892779612
+          },
+          {
+            "candidate_diff_spend": 0.8478720802900307,
+            "yError": 0,
+            "result_vs_forecast": -1.6099999999999994,
+            "yFitError": 12.418296706800682,
+            "yFit": 1.2992567116062532
+          },
+          {
+            "candidate_diff_spend": 43.109428298540045,
+            "yError": 0,
+            "result_vs_forecast": 1.3900000000000006,
+            "yFitError": 12.396694401757253,
+            "yFit": 0.2794986613588655
+          },
+          {
+            "candidate_diff_spend": 70.18445063300416,
+            "yError": 0,
+            "result_vs_forecast": -3.8400000000000034,
+            "yFitError": 12.399138806968146,
+            "yFit": -0.3738131060453518
+          },
+          {
+            "candidate_diff_spend": 96.81727726391959,
+            "yError": 0,
+            "result_vs_forecast": 1.8199999999999932,
+            "yFitError": 12.413948650002498,
+            "yFit": -1.0164548302985348
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -1.2999999999999972,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 76.90506861959487,
+            "yError": 0,
+            "result_vs_forecast": 1.0700000000000003,
+            "yFitError": 12.401716486203622,
+            "yFit": -0.5359795028308949
+          },
+          {
+            "candidate_diff_spend": 49.65996272693138,
+            "yError": 0,
+            "result_vs_forecast": 2.4000000000000057,
+            "yFitError": 12.396118749620806,
+            "yFit": 0.12143632730098952
+          },
+          {
+            "candidate_diff_spend": 18.287298891997214,
+            "yError": 0,
+            "result_vs_forecast": -1.6700000000000017,
+            "yFitError": 12.405632488266244,
+            "yFit": 0.8784488314823597
+          },
+          {
+            "candidate_diff_spend": 88.32640644414928,
+            "yError": 0,
+            "result_vs_forecast": -2.519999999999996,
+            "yFitError": 12.407893095792605,
+            "yFit": -0.8115727898134213
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -3.25,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 93.51812689005877,
+            "yError": 0,
+            "result_vs_forecast": -1.1099999999999994,
+            "yFitError": 12.411447590553523,
+            "yFit": -0.9368473701438043
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 1.7800000000000011,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 99.94238813037644,
+            "yError": 0,
+            "result_vs_forecast": 0.37999999999999545,
+            "yFitError": 12.416491309762423,
+            "yFit": -1.0918627719163774
+          },
+          {
+            "candidate_diff_spend": 8.861074358295845,
+            "yError": 0,
+            "result_vs_forecast": -2.030000000000001,
+            "yFitError": 12.411824380394235,
+            "yFit": 1.1059006626936865
+          },
+          {
+            "candidate_diff_spend": 33.06570317266626,
+            "yError": 0,
+            "result_vs_forecast": 2.8799999999999955,
+            "yFitError": 12.399023598169297,
+            "yFit": 0.5218505875086844
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 1.5899999999999999,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 55.408447906487126,
+            "yError": 0,
+            "result_vs_forecast": -0.47000000000000597,
+            "yFitError": 12.396227332961166,
+            "yFit": -0.01727281081750509
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -0.07000000000000739,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 47.399422683620784,
+            "yError": 0,
+            "result_vs_forecast": -1.1400000000000006,
+            "yFitError": 12.396233219553727,
+            "yFit": 0.17598244706922217
+          },
+          {
+            "candidate_diff_spend": 33.46968910722729,
+            "yError": 0,
+            "result_vs_forecast": -2.789999999999999,
+            "yFitError": 12.398896120397238,
+            "yFit": 0.5121025340572731
+          },
+          {
+            "candidate_diff_spend": 2.9548013632894268,
+            "yError": 0,
+            "result_vs_forecast": -1.3200000000000003,
+            "yFitError": 12.416487398803765,
+            "yFit": 1.2484171711372543
+          },
+          {
+            "candidate_diff_spend": 58.38224877166228,
+            "yError": 0,
+            "result_vs_forecast": -4.18,
+            "yFitError": 12.396508674788597,
+            "yFit": -0.08902968972736058
+          },
+          {
+            "candidate_diff_spend": 93.58973310990314,
+            "yError": 0,
+            "result_vs_forecast": -1.1300000000000097,
+            "yFitError": 12.411499876168653,
+            "yFit": -0.9385752056914818
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -2.7399999999999984,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 4.566886703489155,
+            "yError": 0,
+            "result_vs_forecast": 0.269999999999996,
+            "yFitError": 12.415154822958204,
+            "yFit": 1.2095180592620376
+          },
+          {
+            "candidate_diff_spend": 38.78103649848085,
+            "yError": 0,
+            "result_vs_forecast": -1.3900000000000006,
+            "yFitError": 12.397483502948429,
+            "yFit": 0.3839413931868302
+          },
+          {
+            "candidate_diff_spend": 34.73987958480132,
+            "yError": 0,
+            "result_vs_forecast": 0.5399999999999991,
+            "yFitError": 12.398513760363148,
+            "yFit": 0.4814532376100603
+          },
+          {
+            "candidate_diff_spend": 85.8558909627849,
+            "yError": 0,
+            "result_vs_forecast": 2.8299999999999983,
+            "yFitError": 12.406365504638382,
+            "yFit": -0.7519600288121073
+          },
+          {
+            "candidate_diff_spend": 81.81450040901132,
+            "yError": 0,
+            "result_vs_forecast": 2.6299999999999955,
+            "yFitError": 12.404094509166887,
+            "yFit": -0.654442546726943
+          },
+          {
+            "candidate_diff_spend": 51.62622309518232,
+            "yError": 0,
+            "result_vs_forecast": 2.299999999999997,
+            "yFitError": 12.396091330095377,
+            "yFit": 0.07399108347108041
+          },
+          {
+            "candidate_diff_spend": 98.49638160604462,
+            "yError": 0,
+            "result_vs_forecast": -5.609999999999999,
+            "yFitError": 12.41529382613997,
+            "yFit": -1.056971089596812
+          },
+          {
+            "candidate_diff_spend": 3.8727605153068034,
+            "yError": 0,
+            "result_vs_forecast": 6.630000000000003,
+            "yFitError": 12.415723093713805,
+            "yFit": 1.2262671057152965
+          },
+          {
+            "candidate_diff_spend": 99.92934526613283,
+            "yError": 0,
+            "result_vs_forecast": -3.1999999999999957,
+            "yFitError": 12.416480347086749,
+            "yFit": -1.091548051707258
+          },
+          {
+            "candidate_diff_spend": 16.504035180019656,
+            "yError": 0,
+            "result_vs_forecast": 7.41,
+            "yFitError": 12.406685896507804,
+            "yFit": 0.9214784235923129
+          },
+          {
+            "candidate_diff_spend": 39.44290385098214,
+            "yError": 0,
+            "result_vs_forecast": -0.30000000000000426,
+            "yFitError": 12.39734177743112,
+            "yFit": 0.3679707422854881
+          },
+          {
+            "candidate_diff_spend": 93.89478335487135,
+            "yError": 0,
+            "result_vs_forecast": 0.39000000000000057,
+            "yFitError": 12.411723612283387,
+            "yFit": -0.9459359720917959
+          },
+          {
+            "candidate_diff_spend": 2.2272602989427632,
+            "yError": 0,
+            "result_vs_forecast": 4.200000000000003,
+            "yFitError": 12.417103501084831,
+            "yFit": 1.2659725080354416
+          },
+          {
+            "candidate_diff_spend": 39.4883341807294,
+            "yError": 0,
+            "result_vs_forecast": -1.3900000000000006,
+            "yFitError": 12.39733232830725,
+            "yFit": 0.3668745227273177
+          },
+          {
+            "candidate_diff_spend": 65.56423336292939,
+            "yError": 0,
+            "result_vs_forecast": 3.6000000000000014,
+            "yFitError": 12.397821235156341,
+            "yFit": -0.2623287174743467
+          },
+          {
+            "candidate_diff_spend": 24.361177367617277,
+            "yError": 0,
+            "result_vs_forecast": 4.6200000000000045,
+            "yFitError": 12.402457949014646,
+            "yFit": 0.7318880555433243
+          },
+          {
+            "candidate_diff_spend": 9.529218730278934,
+            "yError": 0,
+            "result_vs_forecast": 1.3500000000000014,
+            "yFitError": 12.411334855023684,
+            "yFit": 1.0897785492878622
+          },
+          {
+            "candidate_diff_spend": 65.88168438394445,
+            "yError": 0,
+            "result_vs_forecast": 1.1900000000000048,
+            "yFitError": 12.397899912778616,
+            "yFit": -0.26998871069768104
+          },
+          {
+            "candidate_diff_spend": 75.89827969855264,
+            "yError": 0,
+            "result_vs_forecast": 0.37999999999999545,
+            "yFitError": 12.401280449947475,
+            "yFit": -0.511686003040432
+          },
+          {
+            "candidate_diff_spend": 42.738419668929836,
+            "yError": 0,
+            "result_vs_forecast": 1.25,
+            "yFitError": 12.396749296397017,
+            "yFit": 0.2884509828210098
+          },
+          {
+            "candidate_diff_spend": 20.252168953198645,
+            "yError": 0,
+            "result_vs_forecast": 1.4099999999999966,
+            "yFitError": 12.404535588118769,
+            "yFit": 0.8310371353239734
+          },
+          {
+            "candidate_diff_spend": 87.12564446755592,
+            "yError": 0,
+            "result_vs_forecast": -3.6400000000000006,
+            "yFitError": 12.407137429271366,
+            "yFit": -0.7825987812431152
+          },
+          {
+            "candidate_diff_spend": 71.45684460098828,
+            "yError": 0,
+            "result_vs_forecast": 0.6899999999999977,
+            "yFitError": 12.399566708739595,
+            "yFit": -0.40451557202263855
+          },
+          {
+            "candidate_diff_spend": 40.531168321305564,
+            "yError": 0,
+            "result_vs_forecast": 4.630000000000003,
+            "yFitError": 12.397125276935078,
+            "yFit": 0.34171126313428535
+          },
+          {
+            "candidate_diff_spend": 51.132815921792606,
+            "yError": 0,
+            "result_vs_forecast": -3.8000000000000043,
+            "yFitError": 12.396091901914298,
+            "yFit": 0.0858968432712055
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": -3.129999999999999,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 3.7559101000936765,
+            "yError": 0,
+            "result_vs_forecast": 0.259999999999998,
+            "yFitError": 12.415819576195265,
+            "yFit": 1.229086669457175
+          },
+          {
+            "candidate_diff_spend": 38.32871279918403,
+            "yError": 0,
+            "result_vs_forecast": 1.3200000000000003,
+            "yFitError": 12.397584732568687,
+            "yFit": 0.39485582168760613
+          },
+          {
+            "candidate_diff_spend": 4.477618536244758,
+            "yError": 0,
+            "result_vs_forecast": 0.060000000000002274,
+            "yFitError": 12.415227438918278,
+            "yFit": 1.2116720720415999
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 3.7200000000000024,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 17.04564123555177,
+            "yError": 0,
+            "result_vs_forecast": 0.8200000000000003,
+            "yFitError": 12.40636013566085,
+            "yFit": 0.9084096399360901
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 3.41,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 59.57957321073282,
+            "yError": 0,
+            "result_vs_forecast": -1.9000000000000057,
+            "yFitError": 12.396665301587943,
+            "yFit": -0.11792075159916293
+          },
+          {
+            "candidate_diff_spend": 47.35977215237,
+            "yError": 0,
+            "result_vs_forecast": -0.4200000000000017,
+            "yFitError": 12.396236019127807,
+            "yFit": 0.1769392019087923
+          },
+          {
+            "candidate_diff_spend": 23.32837340632721,
+            "yError": 0,
+            "result_vs_forecast": 3.469999999999999,
+            "yFitError": 12.402952632882947,
+            "yFit": 0.7568092900670573
+          },
+          {
+            "candidate_diff_spend": 59.25984342318739,
+            "yError": 0,
+            "result_vs_forecast": -0.5400000000000063,
+            "yFitError": 12.396621040872802,
+            "yFit": -0.1102057724566643
+          },
+          {
+            "candidate_diff_spend": 78.1417817731516,
+            "yError": 0,
+            "result_vs_forecast": -1.9299999999999997,
+            "yFitError": 12.402276155294677,
+            "yFit": -0.5658210019861414
+          },
+          {
+            "candidate_diff_spend": 42.53816674303135,
+            "yError": 0,
+            "result_vs_forecast": -0.8599999999999994,
+            "yFitError": 12.396779918872937,
+            "yFit": 0.29328302289582364
+          },
+          {
+            "candidate_diff_spend": 60.5116658192706,
+            "yError": 0,
+            "result_vs_forecast": 1.3900000000000006,
+            "yFitError": 12.396804460535188,
+            "yFit": -0.14041185287862845
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 2.8299999999999983,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 8.377424356946381,
+            "yError": 0,
+            "result_vs_forecast": 1.7899999999999991,
+            "yFitError": 12.412183551041368,
+            "yFit": 1.117570985003429
+          },
+          {
+            "candidate_diff_spend": 61.34952285530063,
+            "yError": 0,
+            "result_vs_forecast": -0.8900000000000006,
+            "yFitError": 12.396942422041107,
+            "yFit": -0.1606290794529559
+          },
+          {
+            "candidate_diff_spend": 29.323565728990484,
+            "yError": 0,
+            "result_vs_forecast": -0.6000000000000014,
+            "yFitError": 12.400339013755028,
+            "yFit": 0.6121471862333816
+          },
+          {
+            "candidate_diff_spend": 23.726999974419037,
+            "yError": 0,
+            "result_vs_forecast": -2.3200000000000003,
+            "yFitError": 12.402759510953548,
+            "yFit": 0.747190556441754
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -5.060000000000002,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 5.539999999999992,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 70.67643427100951,
+            "yError": 0,
+            "result_vs_forecast": 0.6000000000000085,
+            "yFitError": 12.399300928876771,
+            "yFit": -0.38568451638469226
+          },
+          {
+            "candidate_diff_spend": 34.118315616055554,
+            "yError": 0,
+            "result_vs_forecast": 0.020000000000003126,
+            "yFitError": 12.398697369398096,
+            "yFit": 0.4964513805463703
+          },
+          {
+            "candidate_diff_spend": 13.359060863004656,
+            "yError": 0,
+            "result_vs_forecast": -2.639999999999997,
+            "yFitError": 12.408677891007235,
+            "yFit": 0.9973656640203497
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 3.1299999999999955,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 44.5055427279007,
+            "yError": 0,
+            "result_vs_forecast": -1.7900000000000063,
+            "yFitError": 12.396509246420742,
+            "yFit": 0.2458108595880384
+          },
+          {
+            "candidate_diff_spend": 94.1862743921705,
+            "yError": 0,
+            "result_vs_forecast": 0.7600000000000051,
+            "yFitError": 12.411938907374706,
+            "yFit": -0.9529695590786473
+          },
+          {
+            "candidate_diff_spend": 95.35486412853419,
+            "yError": 0,
+            "result_vs_forecast": -6.590000000000003,
+            "yFitError": 12.412816781696593,
+            "yFit": -0.9811672616180238
+          },
+          {
+            "candidate_diff_spend": 11.673593555850722,
+            "yError": 0,
+            "result_vs_forecast": 2.5199999999999996,
+            "yFitError": 12.409815917462028,
+            "yFit": 1.0380354596621104
+          },
+          {
+            "candidate_diff_spend": 12.87435553244408,
+            "yError": 0,
+            "result_vs_forecast": 3.6400000000000006,
+            "yFitError": 12.409000127101478,
+            "yFit": 1.0090614510918043
+          },
+          {
+            "candidate_diff_spend": 7.842695570494303,
+            "yError": 0,
+            "result_vs_forecast": 2.440000000000005,
+            "yFitError": 12.412585363094394,
+            "yFit": 1.1304738223212853
+          },
+          {
+            "candidate_diff_spend": 2.817116192064089,
+            "yError": 0,
+            "result_vs_forecast": -3.719999999999999,
+            "yFitError": 12.416603292960588,
+            "yFit": 1.2517394709842273
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -4.25,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 20.82657109460663,
+            "yError": 0,
+            "result_vs_forecast": -1.5399999999999991,
+            "yFitError": 12.404227560215055,
+            "yFit": 0.8171769924377257
+          },
+          {
+            "candidate_diff_spend": 49.10913856675921,
+            "yError": 0,
+            "result_vs_forecast": 1.3200000000000003,
+            "yFitError": 12.396138467028827,
+            "yFit": 0.13472754092089323
+          },
+          {
+            "candidate_diff_spend": 75.63882263238273,
+            "yError": 0,
+            "result_vs_forecast": -3.780000000000001,
+            "yFitError": 12.40117092856241,
+            "yFit": -0.5054253856946351
+          },
+          {
+            "candidate_diff_spend": 89.5887096677888,
+            "yError": 0,
+            "result_vs_forecast": 0.9699999999999918,
+            "yFitError": 12.408714405532889,
+            "yFit": -0.8420317693056094
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 0.16000000000000014,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 72.89614185638014,
+            "yError": 0,
+            "result_vs_forecast": 0.4100000000000037,
+            "yFitError": 12.400084592906033,
+            "yFit": -0.4392453617943415
+          },
+          {
+            "candidate_diff_spend": 97.18288380793591,
+            "yError": 0,
+            "result_vs_forecast": 3.719999999999999,
+            "yFitError": 12.41423739694507,
+            "yFit": -1.0252768011355378
+          },
+          {
+            "candidate_diff_spend": 61.37887893844503,
+            "yError": 0,
+            "result_vs_forecast": 0.01999999999999602,
+            "yFitError": 12.396947476774882,
+            "yFit": -0.1613374324997685
+          },
+          {
+            "candidate_diff_spend": 0.05761186962354984,
+            "yError": 0,
+            "result_vs_forecast": -0.379999999999999,
+            "yFitError": 12.418995107428323,
+            "yFit": 1.3183254417650667
+          },
+          {
+            "candidate_diff_spend": 61.44917642495619,
+            "yError": 0,
+            "result_vs_forecast": -1.3399999999999963,
+            "yFitError": 12.396959641885616,
+            "yFit": -0.16303368872402357
+          },
+          {
+            "candidate_diff_spend": 45.61261766780832,
+            "yError": 0,
+            "result_vs_forecast": -3.019999999999996,
+            "yFitError": 12.39638647898674,
+            "yFit": 0.2190974897261302
+          },
+          {
+            "candidate_diff_spend": 24.101720301447354,
+            "yError": 0,
+            "result_vs_forecast": 0.6700000000000017,
+            "yFitError": 12.402580482491508,
+            "yFit": 0.7381486728891212
+          },
+          {
+            "candidate_diff_spend": 0.8577351705932695,
+            "yError": 0,
+            "result_vs_forecast": 0.8000000000000007,
+            "yFitError": 12.418288058331276,
+            "yFit": 1.299018718341521
+          },
+          {
+            "candidate_diff_spend": 66.93429682733374,
+            "yError": 0,
+            "result_vs_forecast": -2.8800000000000026,
+            "yFitError": 12.398173307971858,
+            "yFit": -0.29538791765999517
+          },
+          {
+            "candidate_diff_spend": 57.36065013697881,
+            "yError": 0,
+            "result_vs_forecast": 4.650000000000006,
+            "yFitError": 12.396394712284463,
+            "yFit": -0.06437883620790763
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -0.7700000000000102,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 34.423024766446744,
+            "yError": 0,
+            "result_vs_forecast": 0.4200000000000017,
+            "yFitError": 12.3986065211404,
+            "yFit": 0.48909884465084463
+          },
+          {
+            "candidate_diff_spend": 61.21896350151915,
+            "yError": 0,
+            "result_vs_forecast": 1.3900000000000006,
+            "yFitError": 12.396920122639692,
+            "yFit": -0.15747872333814095
+          },
+          {
+            "candidate_diff_spend": 58.35976465316999,
+            "yError": 0,
+            "result_vs_forecast": -6.459999999999994,
+            "yFitError": 12.396505971617149,
+            "yFit": -0.08848715502473814
+          },
+          {
+            "candidate_diff_spend": 10.497725143504884,
+            "yError": 0,
+            "result_vs_forecast": 2.7900000000000063,
+            "yFitError": 12.410638975379685,
+            "yFit": 1.0664087943620633
+          },
+          {
+            "candidate_diff_spend": 98.91070171197966,
+            "yError": 0,
+            "result_vs_forecast": -3.3799999999999955,
+            "yFitError": 12.41563324457938,
+            "yFit": -1.0669685033509264
+          },
+          {
+            "candidate_diff_spend": 57.46183325696865,
+            "yError": 0,
+            "result_vs_forecast": 0.8599999999999994,
+            "yFitError": 12.396405191160262,
+            "yFit": -0.0668203530471343
+          },
+          {
+            "candidate_diff_spend": 49.96602944220344,
+            "yError": 0,
+            "result_vs_forecast": 2.559999999999995,
+            "yFitError": 12.396110070358107,
+            "yFit": 0.11405103379216519
+          },
+          {
+            "candidate_diff_spend": 92.57120652439183,
+            "yError": 0,
+            "result_vs_forecast": -2.6199999999999974,
+            "yFitError": 12.410764507859941,
+            "yFit": -0.913998479751664
+          },
+          {
+            "candidate_diff_spend": 47.09027982956126,
+            "yError": 0,
+            "result_vs_forecast": -4.239999999999995,
+            "yFitError": 12.39625577017888,
+            "yFit": 0.18344196683881164
+          },
+          {
+            "candidate_diff_spend": 12.027237318301308,
+            "yError": 0,
+            "result_vs_forecast": -3.030000000000001,
+            "yFitError": 12.40957306175239,
+            "yFit": 1.0295021469791517
+          },
+          {
+            "candidate_diff_spend": 41.84405265496476,
+            "yError": 0,
+            "result_vs_forecast": -1.490000000000002,
+            "yFitError": 12.39689145038442,
+            "yFit": 0.31003177737709753
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -1.769999999999996,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 31.878875918151508,
+            "yError": 0,
+            "result_vs_forecast": -1.8299999999999983,
+            "yFitError": 12.399414479829494,
+            "yFit": 0.550488355621014
+          },
+          {
+            "candidate_diff_spend": 58.443018107698876,
+            "yError": 0,
+            "result_vs_forecast": 1.0600000000000023,
+            "yFitError": 12.396516024747386,
+            "yFit": -0.09049603467953116
+          },
+          {
+            "candidate_diff_spend": 85.71460851881143,
+            "yError": 0,
+            "result_vs_forecast": 0.5900000000000034,
+            "yFitError": 12.406281340668809,
+            "yFit": -0.748550927905919
+          },
+          {
+            "candidate_diff_spend": 31.31373741372192,
+            "yError": 0,
+            "result_vs_forecast": 1.3299999999999983,
+            "yFitError": 12.399609196747718,
+            "yFit": 0.5641249698625873
+          },
+          {
+            "candidate_diff_spend": 97.71472721809675,
+            "yError": 0,
+            "result_vs_forecast": -2.6599999999999966,
+            "yFitError": 12.414661558989959,
+            "yFit": -1.0381100152316232
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 4.219999999999999,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 2,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 69.59073198773633,
+            "yError": 0,
+            "result_vs_forecast": 1.230000000000004,
+            "yFitError": 12.398948752418983,
+            "yFit": -0.3594868620005953
+          },
+          {
+            "candidate_diff_spend": 48.55561146846015,
+            "yError": 0,
+            "result_vs_forecast": -1.3100000000000023,
+            "yFitError": 12.396163587836714,
+            "yFit": 0.14808397558708264
+          },
+          {
+            "candidate_diff_spend": 19.282943458328436,
+            "yError": 0,
+            "result_vs_forecast": -1.9500000000000028,
+            "yFitError": 12.405068304701508,
+            "yFit": 0.8544242414635264
+          },
+          {
+            "candidate_diff_spend": 7.428793475608167,
+            "yError": 0,
+            "result_vs_forecast": 2.6200000000000045,
+            "yFitError": 12.412899777202655,
+            "yFit": 1.1404611496003534
+          },
+          {
+            "candidate_diff_spend": 6.481873109941237,
+            "yError": 0,
+            "result_vs_forecast": 1.1099999999999994,
+            "yFitError": 12.413630230858292,
+            "yFit": 1.1633100399924932
+          },
+          {
+            "candidate_diff_spend": 13.579482748439332,
+            "yError": 0,
+            "result_vs_forecast": -3.760000000000005,
+            "yFitError": 12.408532697879382,
+            "yFit": 0.9920469532998567
+          },
+          {
+            "candidate_diff_spend": 54.44233870868755,
+            "yError": 0,
+            "result_vs_forecast": 4.07,
+            "yFitError": 12.396168974822805,
+            "yFit": 0.006039100054549218
+          },
+          {
+            "candidate_diff_spend": 97.04519863671057,
+            "yError": 0,
+            "result_vs_forecast": 1.3200000000000074,
+            "yFitError": 12.414128385382623,
+            "yFit": -1.021954501288565
+          },
+          {
+            "candidate_diff_spend": 99.9764708228233,
+            "yError": 0,
+            "result_vs_forecast": -10.049999999999997,
+            "yFitError": 12.41651997052767,
+            "yFit": -1.0926851765580166
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 3.8699999999999903,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 3.3299999999999983,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 64.78804082999675,
+            "yError": 0,
+            "result_vs_forecast": 3.3599999999999994,
+            "yFitError": 12.397636228473091,
+            "yFit": -0.24359943595162403
+          },
+          {
+            "candidate_diff_spend": 61.74109885481393,
+            "yError": 0,
+            "result_vs_forecast": 2.460000000000001,
+            "yFitError": 12.397011077358417,
+            "yFit": -0.17007768507753807
+          },
+          {
+            "candidate_diff_spend": 36.535876705665146,
+            "yError": 0,
+            "result_vs_forecast": 4.899999999999999,
+            "yFitError": 12.398020897618036,
+            "yFit": 0.43811639235136357
+          },
+          {
+            "candidate_diff_spend": 89.68969596314895,
+            "yError": 0,
+            "result_vs_forecast": -1.2199999999999989,
+            "yFitError": 12.40878130323658,
+            "yFit": -0.8444685368284697
+          },
+          {
+            "candidate_diff_spend": 44.992423113230984,
+            "yError": 0,
+            "result_vs_forecast": 0.1700000000000017,
+            "yFitError": 12.396452633393675,
+            "yFit": 0.23406258912956202
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 3.34,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 89.84549125438788,
+            "yError": 0,
+            "result_vs_forecast": -3.989999999999995,
+            "yFitError": 12.408884855025681,
+            "yFit": -0.8482278281714355
+          },
+          {
+            "candidate_diff_spend": 42.63934986302119,
+            "yError": 0,
+            "result_vs_forecast": -4.650000000000006,
+            "yFitError": 12.396764359044374,
+            "yFit": 0.29084150605659675
+          },
+          {
+            "candidate_diff_spend": 46.81430004024042,
+            "yError": 0,
+            "result_vs_forecast": 2.3599999999999994,
+            "yFitError": 12.396277303502343,
+            "yFit": 0.1901012722939186
+          },
+          {
+            "candidate_diff_spend": 73.3785441165861,
+            "yError": 0,
+            "result_vs_forecast": -7.840000000000003,
+            "yFitError": 12.400266209813323,
+            "yFit": -0.4508855765030022
+          },
+          {
+            "candidate_diff_spend": 5.042784450581997,
+            "yError": 0,
+            "result_vs_forecast": 3.260000000000005,
+            "yFitError": 12.414770024054686,
+            "yFit": 1.198034796407582
+          },
+          {
+            "candidate_diff_spend": 79.17342890539337,
+            "yError": 0,
+            "result_vs_forecast": 1.5399999999999991,
+            "yFitError": 12.402763307677532,
+            "yFit": -0.5907143225890363
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 2.799999999999997,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 16.92179766813284,
+            "yError": 0,
+            "result_vs_forecast": -0.1700000000000017,
+            "yFitError": 12.406434176080724,
+            "yFit": 0.9113979462396871
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 1.8599999999999994,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 27.854556747877115,
+            "yError": 0,
+            "result_vs_forecast": -0.39000000000000057,
+            "yFitError": 12.400921784248824,
+            "yFit": 0.6475939105953483
+          },
+          {
+            "candidate_diff_spend": 87.20294373179333,
+            "yError": 0,
+            "result_vs_forecast": -4.520000000000003,
+            "yFitError": 12.407185323598611,
+            "yFit": -0.7844639881601823
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": -1.8599999999999994,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 43.9873433182186,
+            "yError": 0,
+            "result_vs_forecast": -2.6599999999999966,
+            "yFitError": 12.396574022109185,
+            "yFit": 0.2583148482468509
+          },
+          {
+            "candidate_diff_spend": 91.88631339719291,
+            "yError": 0,
+            "result_vs_forecast": -2.0600000000000023,
+            "yFitError": 12.410280112241393,
+            "yFit": -0.8974722241539439
+          },
+          {
+            "candidate_diff_spend": 86.64093913699534,
+            "yError": 0,
+            "result_vs_forecast": 2.6400000000000006,
+            "yFitError": 12.406839466259106,
+            "yFit": -0.7709029941716605
+          },
+          {
+            "candidate_diff_spend": 9.983275691298488,
+            "yError": 0,
+            "result_vs_forecast": 1.2899999999999991,
+            "yFitError": 12.41100659091024,
+            "yFit": 1.0788222977272395
+          },
+          {
+            "candidate_diff_spend": 1.5036183939553804,
+            "yError": 0,
+            "result_vs_forecast": 5.609999999999999,
+            "yFitError": 12.417725371676546,
+            "yFit": 1.2834337594455014
+          },
+          {
+            "candidate_diff_spend": 45.95147887927313,
+            "yError": 0,
+            "result_vs_forecast": 1.9500000000000028,
+            "yFitError": 12.396353154677048,
+            "yFit": 0.21092087534583448
+          },
+          {
+            "candidate_diff_spend": 61.64195603948064,
+            "yError": 0,
+            "result_vs_forecast": 1.9299999999999997,
+            "yFitError": 12.396993442937081,
+            "yFit": -0.16768540014751343
+          },
+          {
+            "candidate_diff_spend": 21.858218226848397,
+            "yError": 0,
+            "result_vs_forecast": 1.9299999999999997,
+            "yFitError": 12.403688686536675,
+            "yFit": 0.7922836718348306
+          },
+          {
+            "candidate_diff_spend": 82.92694799550307,
+            "yError": 0,
+            "result_vs_forecast": -2.700000000000003,
+            "yFitError": 12.404691406736854,
+            "yFit": -0.6812855568599527
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 7.079999999999998,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 96.20438293319376,
+            "yError": 0,
+            "result_vs_forecast": -13.200000000000003,
+            "yFitError": 12.41346978522927,
+            "yFit": -1.001665882998985
+          },
+          {
+            "candidate_diff_spend": 27.37433827768751,
+            "yError": 0,
+            "result_vs_forecast": 0.120000000000001,
+            "yFitError": 12.401120408531982,
+            "yFit": 0.6591814311382351
+          },
+          {
+            "candidate_diff_spend": 6.105216645128647,
+            "yError": 0,
+            "result_vs_forecast": -0.39000000000000057,
+            "yFitError": 12.413925093069095,
+            "yFit": 1.1723986419404853
+          },
+          {
+            "candidate_diff_spend": 49.97640590333162,
+            "yError": 0,
+            "result_vs_forecast": 0.759999999999998,
+            "yFitError": 12.396109804613472,
+            "yFit": 0.11380065305100429
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 0,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 65.13767186678436,
+            "yError": 0,
+            "result_vs_forecast": -1.5700000000000003,
+            "yFitError": 12.397718269375543,
+            "yFit": -0.2520359228272906
+          },
+          {
+            "candidate_diff_spend": 56.890571701459955,
+            "yError": 0,
+            "result_vs_forecast": -1.3900000000000006,
+            "yFitError": 12.396348360387966,
+            "yFit": -0.05303599151017613
+          },
+          {
+            "candidate_diff_spend": 81.29281095024713,
+            "yError": 0,
+            "result_vs_forecast": 1.9099999999999966,
+            "yFitError": 12.403821976517833,
+            "yFit": -0.6418543442822293
+          },
+          {
+            "candidate_diff_spend": 45.42409268410046,
+            "yError": 0,
+            "result_vs_forecast": 4.310000000000002,
+            "yFitError": 12.396405881992191,
+            "yFit": 0.223646538247108
+          },
+          {
+            "candidate_diff_spend": 76.27300002558096,
+            "yError": 0,
+            "result_vs_forecast": 2.3200000000000003,
+            "yFitError": 12.401440686371865,
+            "yFit": -0.5207278865930647
+          },
+          {
+            "candidate_diff_spend": 99.6862048269637,
+            "yError": 0,
+            "result_vs_forecast": 5.460000000000008,
+            "yFitError": 12.41627652287051,
+            "yFit": -1.0856811494355352
+          },
+          {
+            "candidate_diff_spend": 30.383504175406657,
+            "yError": 0,
+            "result_vs_forecast": 3.700000000000003,
+            "yFitError": 12.39994177156292,
+            "yFit": 0.5865712051237972
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 4.200000000000003,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 1.5757314244766183,
+            "yError": 0,
+            "result_vs_forecast": 5.25,
+            "yFitError": 12.41766299468615,
+            "yFit": 1.2816936947157032
+          },
+          {
+            "candidate_diff_spend": 65.57697523355326,
+            "yError": 0,
+            "result_vs_forecast": -0.4200000000000017,
+            "yFitError": 12.397824359433157,
+            "yFit": -0.2626361748021555
+          },
+          {
+            "candidate_diff_spend": 5.137377481994213,
+            "yError": 0,
+            "result_vs_forecast": 1.5399999999999991,
+            "yFitError": 12.414694004870015,
+            "yFit": 1.1957522963315848
+          },
+          {
+            "candidate_diff_spend": 93.86343146818007,
+            "yError": 0,
+            "result_vs_forecast": -2.069999999999993,
+            "yFitError": 12.41170054333588,
+            "yFit": -0.9451794609335513
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -3.0400000000000063,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 92.83974274890996,
+            "yError": 0,
+            "result_vs_forecast": 4.310000000000002,
+            "yFitError": 12.410956646871913,
+            "yFit": -0.9204781743308508
+          },
+          {
+            "candidate_diff_spend": 45.4375963456948,
+            "yError": 0,
+            "result_vs_forecast": 1.6299999999999955,
+            "yFitError": 12.3964044716785,
+            "yFit": 0.22332069914294617
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -3.719999999999999,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 29.509411782190703,
+            "yError": 0,
+            "result_vs_forecast": -0.8599999999999994,
+            "yFitError": 12.400267953807177,
+            "yFit": 0.6076627794623932
+          },
+          {
+            "candidate_diff_spend": 10.310304036851052,
+            "yError": 0,
+            "result_vs_forecast": 2.3000000000000043,
+            "yFitError": 12.41077237264497,
+            "yFit": 1.0709312066771588
+          },
+          {
+            "candidate_diff_spend": 97.33647429126758,
+            "yError": 0,
+            "result_vs_forecast": -1.5200000000000031,
+            "yFitError": 12.414359388131345,
+            "yFit": -1.0289828911576375
+          },
+          {
+            "candidate_diff_spend": 99.19528242368058,
+            "yError": 0,
+            "result_vs_forecast": -3.259999999999998,
+            "yFitError": 12.415868096694167,
+            "yFit": -1.0738353463560317
+          },
+          {
+            "candidate_diff_spend": 83.69725641618867,
+            "yError": 0,
+            "result_vs_forecast": 1.3499999999999943,
+            "yFitError": 12.405117289648922,
+            "yFit": -0.6998728566061052
+          },
+          {
+            "candidate_diff_spend": 95.07276595253575,
+            "yError": 0,
+            "result_vs_forecast": -3.4299999999999926,
+            "yFitError": 12.412602699977233,
+            "yFit": -0.974360321418072
+          },
+          {
+            "candidate_diff_spend": 4.547112859709679,
+            "yError": 0,
+            "result_vs_forecast": 5,
+            "yFitError": 12.415170896287396,
+            "yFit": 1.209995195888865
+          },
+          {
+            "candidate_diff_spend": 2.958703171229737,
+            "yError": 0,
+            "result_vs_forecast": -0.23000000000000043,
+            "yFitError": 12.41648411929537,
+            "yFit": 1.2483230217397001
+          },
+          {
+            "candidate_diff_spend": 6.074767672666576,
+            "yError": 0,
+            "result_vs_forecast": 5.479999999999997,
+            "yFitError": 12.413949036930871,
+            "yFit": 1.1731333660625598
+          },
+          {
+            "candidate_diff_spend": 99.61293671571725,
+            "yError": 0,
+            "result_vs_forecast": 0.6200000000000045,
+            "yFitError": 12.416215302608238,
+            "yFit": -1.0839132129713849
+          },
+          {
+            "candidate_diff_spend": 24.507326388184456,
+            "yError": 0,
+            "result_vs_forecast": -7.009999999999998,
+            "yFitError": 12.402389441209284,
+            "yFit": 0.7283615256756241
+          },
+          {
+            "candidate_diff_spend": 66.5303108927727,
+            "yError": 0,
+            "result_vs_forecast": -2.3800000000000026,
+            "yFitError": 12.39806610693532,
+            "yFit": -0.2856398642085838
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -3.4099999999999966,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 61.67631427864838,
+            "yError": 0,
+            "result_vs_forecast": 4.75,
+            "yFitError": 12.396999534879486,
+            "yFit": -0.16851445364480266
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": -1.1399999999999997,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 33.20776227389691,
+            "yError": 0,
+            "result_vs_forecast": -0.4399999999999977,
+            "yFitError": 12.398978448621925,
+            "yFit": 0.5184227461073233
+          },
+          {
+            "candidate_diff_spend": 21.618048167557603,
+            "yError": 0,
+            "result_vs_forecast": -0.9299999999999997,
+            "yFitError": 12.403812490610358,
+            "yFit": 0.7980788997749796
+          },
+          {
+            "candidate_diff_spend": 11.713924186275667,
+            "yError": 0,
+            "result_vs_forecast": -3.1599999999999966,
+            "yFitError": 12.409788112109144,
+            "yFit": 1.0370622942435204
+          },
+          {
+            "candidate_diff_spend": 45.116585187954385,
+            "yError": 0,
+            "result_vs_forecast": -0.6400000000000006,
+            "yFitError": 12.39643885475762,
+            "yFit": 0.2310665973449546
+          },
+          {
+            "candidate_diff_spend": 82.72893836208387,
+            "yError": 0,
+            "result_vs_forecast": -2.6799999999999997,
+            "yFitError": 12.404583593505627,
+            "yFit": -0.6765076467266156
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 1.1799999999999997,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 96.85589994308431,
+            "yError": 0,
+            "result_vs_forecast": -0.9400000000000048,
+            "yFitError": 12.413979044073201,
+            "yFit": -1.017386783390772
+          },
+          {
+            "candidate_diff_spend": 1.169265640153868,
+            "yError": 0,
+            "result_vs_forecast": 4.43,
+            "yFitError": 12.418015756808837,
+            "yFit": 1.2915015861613628
+          },
+          {
+            "candidate_diff_spend": 1.0067223305043376,
+            "yError": 0,
+            "result_vs_forecast": 1.6300000000000026,
+            "yFitError": 12.418157623014784,
+            "yFit": 1.2954237050647217
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 4.6200000000000045,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 52.86293452735929,
+            "yError": 0,
+            "result_vs_forecast": 3.240000000000002,
+            "yFitError": 12.39610847159436,
+            "yFit": 0.044149625852185626
+          },
+          {
+            "candidate_diff_spend": 6.136568531819928,
+            "yError": 0,
+            "result_vs_forecast": 2.0700000000000003,
+            "yFitError": 12.413900455939498,
+            "yFit": 1.1716421307822409
+          },
+          {
+            "candidate_diff_spend": 4.768114522464888,
+            "yError": 0,
+            "result_vs_forecast": 2.0700000000000003,
+            "yFitError": 12.414991637590203,
+            "yFit": 1.2046624953241054
+          },
+          {
+            "candidate_diff_spend": 82.31864862559765,
+            "yError": 0,
+            "result_vs_forecast": 1.0799999999999983,
+            "yFitError": 12.404362359203738,
+            "yFit": -0.6666074845187928
+          },
+          {
+            "candidate_diff_spend": 0.06250535148557239,
+            "yError": 0,
+            "result_vs_forecast": -0.480000000000004,
+            "yFitError": 12.418990749582196,
+            "yFit": 1.3182073635878986
+          },
+          {
+            "candidate_diff_spend": 91.97898774762396,
+            "yError": 0,
+            "result_vs_forecast": -7.380000000000003,
+            "yFitError": 12.410345182045768,
+            "yFit": -0.8997084270617468
+          },
+          {
+            "candidate_diff_spend": 65.49436490739889,
+            "yError": 0,
+            "result_vs_forecast": -1.5,
+            "yFitError": 12.397804153660408,
+            "yFit": -0.26064281363262287
+          },
+          {
+            "candidate_diff_spend": 2.471092993117679,
+            "yError": 0,
+            "result_vs_forecast": -4.07,
+            "yFitError": 12.416895997914938,
+            "yFit": 1.2600889018683077
+          },
+          {
+            "candidate_diff_spend": 17.271061637916134,
+            "yError": 0,
+            "result_vs_forecast": 2.6799999999999997,
+            "yFitError": 12.40622604887251,
+            "yFit": 0.9029703165753049
+          },
+          {
+            "candidate_diff_spend": 70.47137237709927,
+            "yError": 0,
+            "result_vs_forecast": 0.28999999999999915,
+            "yFitError": 12.399232845053966,
+            "yFit": -0.3807364374253177
+          },
+          {
+            "candidate_diff_spend": 99.9452949372174,
+            "yError": 0,
+            "result_vs_forecast": 1.4599999999999937,
+            "yFitError": 12.416493753367117,
+            "yFit": -1.0919329122505683
+          },
+          {
+            "candidate_diff_spend": 75.83241959064327,
+            "yError": 0,
+            "result_vs_forecast": 3.6299999999999955,
+            "yFitError": 12.401252538688905,
+            "yFit": -0.5100968193652282
+          },
+          {
+            "candidate_diff_spend": 48.867184078207394,
+            "yError": 0,
+            "result_vs_forecast": 3.8000000000000043,
+            "yFitError": 12.396148793253877,
+            "yFit": 0.14056582657748384
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": -0.5,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 0.28999999999999204,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 63.464123294334854,
+            "yError": 0,
+            "result_vs_forecast": -4.899999999999999,
+            "yFitError": 12.397344798830499,
+            "yFit": -0.21165372250267422
+          },
+          {
+            "candidate_diff_spend": 40.74015657681261,
+            "yError": 0,
+            "result_vs_forecast": 0.5400000000000063,
+            "yFitError": 12.397086053527685,
+            "yFit": 0.3366684423053534
+          },
+          {
+            "candidate_diff_spend": 69.61649582459334,
+            "yError": 0,
+            "result_vs_forecast": -3.6999999999999957,
+            "yFitError": 12.39895687270999,
+            "yFit": -0.3601085352751079
+          },
+          {
+            "candidate_diff_spend": 75.49267361181555,
+            "yError": 0,
+            "result_vs_forecast": 7.009999999999998,
+            "yFitError": 12.401109750470864,
+            "yFit": -0.5018988558269348
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -5.009999999999998,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 34.274331147097456,
+            "yError": 0,
+            "result_vs_forecast": 4.350000000000001,
+            "yFitError": 12.398650652498755,
+            "yFit": 0.49268677488627644
+          },
+          {
+            "candidate_diff_spend": 52.90127077223851,
+            "yError": 0,
+            "result_vs_forecast": -8.86,
+            "yFitError": 12.396109427295697,
+            "yFit": 0.04322458432910614
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 4.990000000000009,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": -2.08,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 2.2378650740128427,
+            "yError": 0,
+            "result_vs_forecast": 1.5200000000000031,
+            "yFitError": 12.417094454990975,
+            "yFit": 1.2657166181507216
+          },
+          {
+            "candidate_diff_spend": 38.19498188183048,
+            "yError": 0,
+            "result_vs_forecast": 3.980000000000004,
+            "yFitError": 12.397615341556603,
+            "yFit": 0.398082706633205
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -0.11999999999999034,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 94.94412327207144,
+            "yError": 0,
+            "result_vs_forecast": -0.4299999999999926,
+            "yFitError": 12.412505531097462,
+            "yFit": -0.9712562140271515
+          },
+          {
+            "candidate_diff_spend": 97.45586345230349,
+            "yError": 0,
+            "result_vs_forecast": -3.8300000000000054,
+            "yFitError": 12.414454496164549,
+            "yFit": -1.031863714037181
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": -0.28999999999999915,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -2.259999999999998,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 64.58931937172775,
+            "yError": 0,
+            "result_vs_forecast": 5.460000000000001,
+            "yFitError": 12.397590544121554,
+            "yFit": -0.2388043497086998
+          },
+          {
+            "candidate_diff_spend": 41.64023534683001,
+            "yError": 0,
+            "result_vs_forecast": 4.010000000000002,
+            "yFitError": 12.396925788599782,
+            "yFit": 0.31494982487342726
+          },
+          {
+            "candidate_diff_spend": 85.85255750001232,
+            "yError": 0,
+            "result_vs_forecast": -2.010000000000005,
+            "yFitError": 12.406363514864863,
+            "yFit": -0.751879593404571
+          },
+          {
+            "candidate_diff_spend": 54.57590731589954,
+            "yError": 0,
+            "result_vs_forecast": -4.310000000000002,
+            "yFitError": 12.396176077741911,
+            "yFit": 0.0028161316015811177
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -2.9299999999999926,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 15.472559227576085,
+            "yError": 0,
+            "result_vs_forecast": 2.6200000000000045,
+            "yFitError": 12.407320350013906,
+            "yFit": 0.9463676136805543
+          },
+          {
+            "candidate_diff_spend": 58.91123620669622,
+            "yError": 0,
+            "result_vs_forecast": 0.6099999999999994,
+            "yFitError": 12.396574804953156,
+            "yFit": -0.10179399004251621
+          },
+          {
+            "candidate_diff_spend": 38.67201341492877,
+            "yError": 0,
+            "result_vs_forecast": -2.1799999999999997,
+            "yFitError": 12.39750757740848,
+            "yFit": 0.38657208587928293
+          },
+          {
+            "candidate_diff_spend": 0.38706328428274805,
+            "yError": 0,
+            "result_vs_forecast": -0.620000000000001,
+            "yFitError": 12.418702640583545,
+            "yFit": 1.310375882820074
+          },
+          {
+            "candidate_diff_spend": 43.62772148938179,
+            "yError": 0,
+            "result_vs_forecast": -0.6700000000000017,
+            "yFitError": 12.396621715558835,
+            "yFit": 0.266992409790187
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 3.3999999999999986,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 96.12723948469319,
+            "yError": 0,
+            "result_vs_forecast": -6.6299999999999955,
+            "yFitError": 12.413409971902059,
+            "yFit": -0.9998044358666074
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 0.2700000000000031,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 7.494474877310484,
+            "yError": 0,
+            "result_vs_forecast": 4.509999999999998,
+            "yFitError": 12.412849685622996,
+            "yFit": 1.1388762780496804
+          },
+          {
+            "candidate_diff_spend": 91.13892564170415,
+            "yError": 0,
+            "result_vs_forecast": 2.030000000000001,
+            "yFitError": 12.409760777977464,
+            "yFit": -0.8794379928449971
+          },
+          {
+            "candidate_diff_spend": 38.65047714469937,
+            "yError": 0,
+            "result_vs_forecast": 0.8900000000000006,
+            "yFitError": 12.397512357445354,
+            "yFit": 0.38709174930164514
+          },
+          {
+            "candidate_diff_spend": 99.93749464851443,
+            "yError": 0,
+            "result_vs_forecast": 0.480000000000004,
+            "yFitError": 12.416487196390793,
+            "yFit": -1.0917446937392095
+          },
+          {
+            "candidate_diff_spend": 97.04129682877026,
+            "yError": 0,
+            "result_vs_forecast": 3.8500000000000014,
+            "yFitError": 12.41412530092019,
+            "yFit": -1.0218603518910108
+          },
+          {
+            "candidate_diff_spend": 2.2098813391721994,
+            "yError": 0,
+            "result_vs_forecast": -1.1000000000000014,
+            "yFitError": 12.417118329899736,
+            "yFit": 1.266391856864894
+          },
+          {
+            "candidate_diff_spend": 99.14226482940673,
+            "yError": 0,
+            "result_vs_forecast": 1.0999999999999943,
+            "yFitError": 12.415824237501704,
+            "yFit": -1.0725560484928316
+          },
+          {
+            "candidate_diff_spend": 90.01672430870151,
+            "yError": 0,
+            "result_vs_forecast": -0.5099999999999909,
+            "yFitError": 12.408999152393646,
+            "yFit": -0.8523596278785504
+          },
+          {
+            "candidate_diff_spend": 97.3929755321943,
+            "yError": 0,
+            "result_vs_forecast": 3.1200000000000045,
+            "yFitError": 12.414404367553294,
+            "yFit": -1.030346248318137
+          },
+          {
+            "candidate_diff_spend": 0.20945010472505235,
+            "yError": 0,
+            "result_vs_forecast": 1.2200000000000024,
+            "yFitError": 12.418860081883349,
+            "yFit": 1.3146616329412628
+          },
+          {
+            "candidate_diff_spend": 0.8478793107963583,
+            "yError": 0,
+            "result_vs_forecast": 2.91,
+            "yFitError": 12.418296700459985,
+            "yFit": 1.299256537136411
+          },
+          {
+            "candidate_diff_spend": 1.0892982880203461,
+            "yError": 0,
+            "result_vs_forecast": 3.3800000000000026,
+            "yFitError": 12.418085494508123,
+            "yFit": 1.2934311731996155
+          },
+          {
+            "candidate_diff_spend": 65.72566885290254,
+            "yError": 0,
+            "result_vs_forecast": -4.350000000000001,
+            "yFitError": 12.397861027059044,
+            "yFit": -0.2662241050375871
+          },
+          {
+            "candidate_diff_spend": 92.50552512268952,
+            "yError": 0,
+            "result_vs_forecast": -2.8799999999999955,
+            "yFitError": 12.410717702379426,
+            "yFit": -0.9124136082009913
+          },
+          {
+            "candidate_diff_spend": 54.883414812045615,
+            "yError": 0,
+            "result_vs_forecast": 0.6400000000000006,
+            "yFitError": 12.396193607833629,
+            "yFit": -0.004603927496265259
+          },
+          {
+            "candidate_diff_spend": 30.40926801226367,
+            "yError": 0,
+            "result_vs_forecast": -1.2300000000000004,
+            "yFitError": 12.399932358424728,
+            "yFit": 0.5859495318492846
+          },
+          {
+            "candidate_diff_spend": 3.795617066806247,
+            "yError": 0,
+            "result_vs_forecast": 13.2,
+            "yFitError": 12.415786763995516,
+            "yFit": 1.2281285528476744
+          },
+          {
+            "candidate_diff_spend": 60.55709614901786,
+            "yError": 0,
+            "result_vs_forecast": 2.789999999999999,
+            "yFitError": 12.396811628624588,
+            "yFit": -0.14150807243679897
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 1.1400000000000006,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 0.5,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 2.5199999999999996,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 19.981800517248455,
+            "yError": 0,
+            "result_vs_forecast": 2.7099999999999973,
+            "yFitError": 12.404682554186616,
+            "yFit": 0.8375610405883502
+          },
+          {
+            "candidate_diff_spend": 80.01819948275154,
+            "yError": 0,
+            "result_vs_forecast": -2.710000000000008,
+            "yFitError": 12.403175954203688,
+            "yFit": -0.6110983707396609
+          },
+          {
+            "candidate_diff_spend": 99.58934374392571,
+            "yError": 0,
+            "result_vs_forecast": 3.719999999999999,
+            "yFitError": 12.416195608891273,
+            "yFit": -1.083343921987649
+          },
+          {
+            "candidate_diff_spend": 90.65480662857496,
+            "yError": 0,
+            "result_vs_forecast": -5.210000000000001,
+            "yFitError": 12.409429538709494,
+            "yFit": -0.8677563534286254
+          },
+          {
+            "candidate_diff_spend": 8.649097051295346,
+            "yError": 0,
+            "result_vs_forecast": 2.039999999999999,
+            "yFitError": 12.411981302053837,
+            "yFit": 1.1110156083943887
+          },
+          {
+            "candidate_diff_spend": 5.813725607829491,
+            "yError": 0,
+            "result_vs_forecast": -0.7600000000000051,
+            "yFitError": 12.414154967743123,
+            "yFit": 1.1794322289273367
+          },
+          {
+            "candidate_diff_spend": 44.532370042842885,
+            "yError": 0,
+            "result_vs_forecast": 0.8999999999999986,
+            "yFitError": 12.396506019886278,
+            "yFit": 0.24516352492204718
+          },
+          {
+            "candidate_diff_spend": 2.507605627185272,
+            "yError": 0,
+            "result_vs_forecast": 12.25,
+            "yFitError": 12.416865013846358,
+            "yFit": 1.2592078635001538
+          },
+          {
+            "candidate_diff_spend": 18.47546249487826,
+            "yError": 0,
+            "result_vs_forecast": 0.6400000000000006,
+            "yFitError": 12.405524549026854,
+            "yFit": 0.8739085029669929
+          },
+          {
+            "candidate_diff_spend": 41.556981892301124,
+            "yError": 0,
+            "result_vs_forecast": -1.0600000000000023,
+            "yFitError": 12.396940022199619,
+            "yFit": 0.3169587045282203
+          },
+          {
+            "candidate_diff_spend": 97.11226137626565,
+            "yError": 0,
+            "result_vs_forecast": -0.8400000000000034,
+            "yFitError": 12.414181441043661,
+            "yFit": -1.0235727040868663
+          },
+          {
+            "candidate_diff_spend": 33.17755773426951,
+            "yError": 0,
+            "result_vs_forecast": -6.390000000000001,
+            "yFitError": 12.39898801898866,
+            "yFit": 0.5191515721420294
+          },
+          {
+            "candidate_diff_spend": 64.61601339854909,
+            "yError": 0,
+            "result_vs_forecast": -2.1300000000000026,
+            "yFitError": 12.397596640998112,
+            "yFit": -0.23944846817428567
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -0.269999999999996,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 96.2376480591165,
+            "yError": 0,
+            "result_vs_forecast": -4.439999999999998,
+            "yFitError": 12.413495609161467,
+            "yFit": -1.0024685600177166
+          },
+          {
+            "candidate_diff_spend": 50.86335418996902,
+            "yError": 0,
+            "result_vs_forecast": -1.0600000000000023,
+            "yFitError": 12.396093998736951,
+            "yFit": 0.09239887005038128
+          },
+          {
+            "candidate_diff_spend": 35.41068062827225,
+            "yError": 0,
+            "result_vs_forecast": -5.460000000000001,
+            "yFitError": 12.398323128259237,
+            "yFit": 0.4652670195573888
+          },
+          {
+            "candidate_diff_spend": 72.33359850950869,
+            "yError": 0,
+            "result_vs_forecast": 2.509999999999998,
+            "yFitError": 12.39987790225172,
+            "yFit": -0.42567136788785254
+          },
+          {
+            "candidate_diff_spend": 63.058700595225744,
+            "yError": 0,
+            "result_vs_forecast": 1.7000000000000028,
+            "yFitError": 12.397261639010262,
+            "yFit": -0.20187100037492156
+          },
+          {
+            "candidate_diff_spend": 28.543155399011727,
+            "yError": 0,
+            "result_vs_forecast": -0.6899999999999977,
+            "yFitError": 12.400643950252377,
+            "yFit": 0.6309782418713278
+          },
+          {
+            "candidate_diff_spend": 35.383986601450914,
+            "yError": 0,
+            "result_vs_forecast": 2.1300000000000026,
+            "yFitError": 12.398330565141858,
+            "yFit": 0.4659111380229749
+          },
+          {
+            "candidate_diff_spend": 91.35090294870466,
+            "yError": 0,
+            "result_vs_forecast": -2.039999999999999,
+            "yFitError": 12.409907091814334,
+            "yFit": -0.8845529385456996
+          },
+          {
+            "candidate_diff_spend": 50.34003727306862,
+            "yError": 0,
+            "result_vs_forecast": -2.4000000000000057,
+            "yFitError": 12.396101672537565,
+            "yFit": 0.1050263425476996
+          },
+          {
+            "candidate_diff_spend": 10.411290332211195,
+            "yError": 0,
+            "result_vs_forecast": -0.9699999999999989,
+            "yFitError": 12.410700419983204,
+            "yFit": 1.0684944391542985
+          },
+          {
+            "candidate_diff_spend": 77.21100463098202,
+            "yError": 0,
+            "result_vs_forecast": 5.270000000000003,
+            "yFitError": 12.401852467659372,
+            "yFit": -0.5433616424961136
+          },
+          {
+            "candidate_diff_spend": 0.3137951730362991,
+            "yError": 0,
+            "result_vs_forecast": -5.459999999999997,
+            "yFitError": 12.418767521484583,
+            "yFit": 1.3121438192842243
+          },
+          {
+            "candidate_diff_spend": 51.28819297837162,
+            "yError": 0,
+            "result_vs_forecast": 3.289999999999999,
+            "yFitError": 12.396091265890687,
+            "yFit": 0.08214764379894923
+          },
+          {
+            "candidate_diff_spend": 93.92523232733342,
+            "yError": 0,
+            "result_vs_forecast": -7.3799999999999955,
+            "yFitError": 12.411746033134369,
+            "yFit": -0.9466706962138702
+          },
+          {
+            "candidate_diff_spend": 2.6070244678057057,
+            "yError": 0,
+            "result_vs_forecast": -3.1199999999999974,
+            "yFitError": 12.416780765254563,
+            "yFit": 1.2568089181668258
+          },
+          {
+            "candidate_diff_spend": 84.31917236056569,
+            "yError": 0,
+            "result_vs_forecast": -1.8100000000000023,
+            "yFitError": 12.405468630557877,
+            "yFit": -0.7148794926036173
+          },
+          {
+            "candidate_diff_spend": 98.72411236108738,
+            "yError": 0,
+            "result_vs_forecast": -0.37999999999999545,
+            "yFitError": 12.415480020089161,
+            "yFit": -1.0624661610405726
+          },
+          {
+            "candidate_diff_spend": 68.12112408184849,
+            "yError": 0,
+            "result_vs_forecast": 1.8299999999999983,
+            "yFitError": 12.398504624192022,
+            "yFit": -0.3240256857723247
+          },
+          {
+            "candidate_diff_spend": 29.029773640064107,
+            "yError": 0,
+            "result_vs_forecast": 3.8799999999999955,
+            "yFitError": 12.40045256990104,
+            "yFit": 0.6192362968717705
+          },
+          {
+            "candidate_diff_spend": 4.4700096787379096,
+            "yError": 0,
+            "result_vs_forecast": -0.3299999999999983,
+            "yFitError": 12.415233634778593,
+            "yFit": 1.211855671378447
+          },
+          {
+            "candidate_diff_spend": 60.2530552476082,
+            "yError": 0,
+            "result_vs_forecast": 0.46999999999999886,
+            "yFitError": 12.396764338905408,
+            "yFit": -0.13417166117887458
+          },
+          {
+            "candidate_diff_spend": 95.1206997145298,
+            "yError": 0,
+            "result_vs_forecast": -5.519999999999996,
+            "yFitError": 12.41263897941911,
+            "yFit": -0.9755169480084334
+          },
+          {
+            "candidate_diff_spend": 91.62257564305362,
+            "yError": 0,
+            "result_vs_forecast": -1.7899999999999991,
+            "yFitError": 12.410095746257385,
+            "yFit": -0.8911083151547396
+          },
+          {
+            "candidate_diff_spend": 83.09887469426242,
+            "yError": 0,
+            "result_vs_forecast": 4.010000000000005,
+            "yFitError": 12.404785569200266,
+            "yFit": -0.6854340939892265
+          },
+          {
+            "candidate_diff_spend": 52.600577316379216,
+            "yError": 0,
+            "result_vs_forecast": 1.1400000000000006,
+            "yFitError": 12.396102616022647,
+            "yFit": 0.050480222779467177
+          },
+          {
+            "candidate_diff_spend": 78.64391830505011,
+            "yError": 0,
+            "result_vs_forecast": 5.090000000000003,
+            "yFitError": 12.402510963728934,
+            "yFit": -0.5779373984596266
+          },
+          {
+            "candidate_diff_spend": 25.676608009965083,
+            "yError": 0,
+            "result_vs_forecast": 0.4399999999999977,
+            "yFitError": 12.401854669614806,
+            "yFit": 0.7001471281588993
+          },
+          {
+            "candidate_diff_spend": 8.822325128790254,
+            "yError": 0,
+            "result_vs_forecast": -4.02,
+            "yFitError": 12.411853007459243,
+            "yFit": 1.1068356694058186
+          },
+          {
+            "candidate_diff_spend": 3.030741956476946,
+            "yError": 0,
+            "result_vs_forecast": -4.25,
+            "yFitError": 12.416423617238118,
+            "yFit": 1.2465847485249963
+          },
+          {
+            "candidate_diff_spend": 18.707189049752866,
+            "yError": 0,
+            "result_vs_forecast": -1.1799999999999997,
+            "yFitError": 12.40539246284068,
+            "yFit": 0.8683170141309186
+          },
+          {
+            "candidate_diff_spend": 40.57886933505207,
+            "yError": 0,
+            "result_vs_forecast": -0.8499999999999943,
+            "yFitError": 12.397116257523814,
+            "yFit": 0.34056025268588275
+          },
+          {
+            "candidate_diff_spend": 50.03397055779656,
+            "yError": 0,
+            "result_vs_forecast": -2.559999999999995,
+            "yFitError": 12.396108364315458,
+            "yFit": 0.11241163605652416
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -2.7099999999999937,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 3,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 48.37377690481768,
+            "yError": 0,
+            "result_vs_forecast": -2.299999999999997,
+            "yFitError": 12.396173000842015,
+            "yFit": 0.15247158637760894
+          },
+          {
+            "candidate_diff_spend": 41.61775122833772,
+            "yError": 0,
+            "result_vs_forecast": 4.18,
+            "yFitError": 12.396929620784741,
+            "yFit": 0.3154923595760497
+          },
+          {
+            "candidate_diff_spend": 58.55012789319359,
+            "yError": 0,
+            "result_vs_forecast": 3.4899999999999984,
+            "yFitError": 12.396529135597618,
+            "yFit": -0.09308056009204635
+          },
+          {
+            "candidate_diff_spend": 45.914147211196685,
+            "yError": 0,
+            "result_vs_forecast": 4.1200000000000045,
+            "yFitError": 12.396356728236068,
+            "yFit": 0.21182167674684105
+          },
+          {
+            "candidate_diff_spend": 72.62566172231249,
+            "yError": 0,
+            "result_vs_forecast": -1.6599999999999966,
+            "yFitError": 12.39998452748035,
+            "yFit": -0.4327187612895458
+          },
+          {
+            "candidate_diff_spend": 6.410266890096866,
+            "yError": 0,
+            "result_vs_forecast": 1.4699999999999989,
+            "yFitError": 12.413686098340197,
+            "yFit": 1.1650378755401711
+          },
+          {
+            "candidate_diff_spend": 80.26371812457789,
+            "yError": 0,
+            "result_vs_forecast": -1.8299999999999983,
+            "yFitError": 12.403298203023175,
+            "yFit": -0.617022658292993
+          },
+          {
+            "candidate_diff_spend": 61.32798658507123,
+            "yError": 0,
+            "result_vs_forecast": 2.1799999999999997,
+            "yFitError": 12.396938723289786,
+            "yFit": -0.1601094160305936
+          },
+          {
+            "candidate_diff_spend": 34.50563509260111,
+            "yError": 0,
+            "result_vs_forecast": 1.5,
+            "yFitError": 12.39858216867966,
+            "yFit": 0.4871054834813121
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 0.39000000000000057,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 66.82244226573049,
+            "yError": 0,
+            "result_vs_forecast": 6.390000000000001,
+            "yFitError": 12.398143342902614,
+            "yFit": -0.2926889022933401
+          },
+          {
+            "candidate_diff_spend": 52.64022784763,
+            "yError": 0,
+            "result_vs_forecast": 0.4200000000000017,
+            "yFitError": 12.396103424327642,
+            "yFit": 0.04952346793989704
+          },
+          {
+            "candidate_diff_spend": 29.43729768651563,
+            "yError": 0,
+            "result_vs_forecast": -1.8299999999999983,
+            "yFitError": 12.400295456167184,
+            "yFit": 0.6094028698940184
+          },
+          {
+            "candidate_diff_spend": 2.6635257087324176,
+            "yError": 0,
+            "result_vs_forecast": 4.609999999999999,
+            "yFitError": 12.416732961593583,
+            "yFit": 1.2554455610063269
+          },
+          {
+            "candidate_diff_spend": 14.849679976202129,
+            "yError": 0,
+            "result_vs_forecast": -0.2700000000000031,
+            "yFitError": 12.407712400158816,
+            "yFit": 0.9613974939727136
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": -0.21999999999999886,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 99.15212791970997,
+            "yError": 0,
+            "result_vs_forecast": 1.6099999999999994,
+            "yFitError": 12.415832393137839,
+            "yFit": -1.072794041757564
+          },
+          {
+            "candidate_diff_spend": 89.04306901258657,
+            "yError": 0,
+            "result_vs_forecast": -1.8800000000000097,
+            "yFitError": 12.408356003169127,
+            "yFit": -0.8288656320291867
+          },
+          {
+            "candidate_diff_spend": 43.82744093687171,
+            "yError": 0,
+            "result_vs_forecast": 6.829999999999998,
+            "yFitError": 12.396594951337043,
+            "yFit": 0.26217324238146644
+          },
+          {
+            "candidate_diff_spend": 79.74783104680135,
+            "yError": 0,
+            "result_vs_forecast": -1.4099999999999966,
+            "yFitError": 12.40304254093203,
+            "yFit": -0.604574465475284
+          },
+          {
+            "candidate_diff_spend": 4.879300285470192,
+            "yError": 0,
+            "result_vs_forecast": 7.030000000000001,
+            "yFitError": 12.41490177185122,
+            "yFit": 1.201979617857123
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -3.4000000000000057,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 81.52453750512174,
+            "yError": 0,
+            "result_vs_forecast": 2.3500000000000085,
+            "yFitError": 12.403942449193528,
+            "yFit": -0.6474458331183037
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 3.849999999999998,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 3.25,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 93.41220633269607,
+            "yError": 0,
+            "result_vs_forecast": -2.719999999999999,
+            "yFitError": 12.411370411840352,
+            "yFit": -0.9342915404318197
+          },
+          {
+            "candidate_diff_spend": 53.080314632994856,
+            "yError": 0,
+            "result_vs_forecast": 0.9100000000000037,
+            "yFitError": 12.396114228634957,
+            "yFit": 0.03890431232088298
+          },
+          {
+            "candidate_diff_spend": 0.05470506278260721,
+            "yError": 0,
+            "result_vs_forecast": -1.459999999999999,
+            "yFitError": 12.418997696254685,
+            "yFit": 1.3183955820992574
+          },
+          {
+            "candidate_diff_spend": 78.3819518324424,
+            "yError": 0,
+            "result_vs_forecast": -0.7000000000000028,
+            "yFitError": 12.402387917948769,
+            "yFit": -0.5716162299262904
+          },
+          {
+            "candidate_diff_spend": 8.021012252376044,
+            "yError": 0,
+            "result_vs_forecast": 7.380000000000003,
+            "yFitError": 12.412450820769866,
+            "yFit": 1.126171096910436
+          },
+          {
+            "candidate_diff_spend": 33.45129818437584,
+            "yError": 0,
+            "result_vs_forecast": 2.729999999999997,
+            "yFitError": 12.398901862133684,
+            "yFit": 0.5125463012373646
+          },
+          {
+            "candidate_diff_spend": 56.17255906312829,
+            "yError": 0,
+            "result_vs_forecast": -6.829999999999998,
+            "yFitError": 12.396284966199067,
+            "yFit": -0.03571057253277732
+          },
+          {
+            "candidate_diff_spend": 63.782658376703445,
+            "yError": 0,
+            "result_vs_forecast": -2.730000000000004,
+            "yFitError": 12.39741213769464,
+            "yFit": -0.21933987378527453
+          },
+          {
+            "candidate_diff_spend": 41.08876379330378,
+            "yError": 0,
+            "result_vs_forecast": -0.6099999999999994,
+            "yFitError": 12.397022313166643,
+            "yFit": 0.32825665989120545
+          },
+          {
+            "candidate_diff_spend": 95.23188547753512,
+            "yError": 0,
+            "result_vs_forecast": -2.0700000000000074,
+            "yFitError": 12.412723285131408,
+            "yFit": -0.9781998254754161
+          },
+          {
+            "candidate_diff_spend": 56.0126566817814,
+            "yError": 0,
+            "result_vs_forecast": 1.4299999999999997,
+            "yFitError": 12.396272066836637,
+            "yFit": -0.03185217839816179
+          },
+          {
+            "candidate_diff_spend": 54.5624036543052,
+            "yError": 0,
+            "result_vs_forecast": -1.6299999999999955,
+            "yFitError": 12.39617534556875,
+            "yFit": 0.00314197070574318
+          },
+          {
+            "candidate_diff_spend": 38.83059556147814,
+            "yError": 0,
+            "result_vs_forecast": -1.6799999999999926,
+            "yFitError": 12.39747262752793,
+            "yFit": 0.38274554859480403
+          },
+          {
+            "candidate_diff_spend": 70.4905882178093,
+            "yError": 0,
+            "result_vs_forecast": 0.8599999999999994,
+            "yFitError": 12.399239194041488,
+            "yFit": -0.3812001096137041
+          },
+          {
+            "candidate_diff_spend": 51.68345794171521,
+            "yError": 0,
+            "result_vs_forecast": -2.75,
+            "yFitError": 12.396091537360238,
+            "yFit": 0.07261002463819755
+          },
+          {
+            "candidate_diff_spend": 55.007576886769016,
+            "yError": 0,
+            "result_vs_forecast": 0.07000000000000028,
+            "yFitError": 12.396201151219985,
+            "yFit": -0.007599919280872891
+          },
+          {
+            "candidate_diff_spend": 54.68196821567775,
+            "yError": 0,
+            "result_vs_forecast": 2.4299999999999997,
+            "yFitError": 12.396181938485123,
+            "yFit": 0.0002569154712814825
+          },
+          {
+            "candidate_diff_spend": 5.055876727928556,
+            "yError": 0,
+            "result_vs_forecast": 0.4299999999999997,
+            "yFitError": 12.414759493294492,
+            "yFit": 1.1977188838758408
+          },
+          {
+            "candidate_diff_spend": 38.25890114518607,
+            "yError": 0,
+            "result_vs_forecast": -1.9200000000000017,
+            "yFitError": 12.397600672678289,
+            "yFit": 0.3965403549262274
+          },
+          {
+            "candidate_diff_spend": 38.32368572135162,
+            "yError": 0,
+            "result_vs_forecast": -4.25,
+            "yFitError": 12.397585877576185,
+            "yFit": 0.3949771234934919
+          },
+          {
+            "candidate_diff_spend": 85.76032787766307,
+            "yError": 0,
+            "result_vs_forecast": 2.950000000000003,
+            "yFitError": 12.406308538508721,
+            "yFit": -0.7496541216454098
+          },
+          {
+            "candidate_diff_spend": 87.9727626816987,
+            "yError": 0,
+            "result_vs_forecast": 3.030000000000001,
+            "yFitError": 12.407667946333927,
+            "yFit": -0.8030394771304628
+          },
+          {
+            "candidate_diff_spend": 20.31956895143664,
+            "yError": 0,
+            "result_vs_forecast": 0.4199999999999946,
+            "yFitError": 12.404499148255985,
+            "yFit": 0.8294107945798013
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 1.8599999999999994,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 70.56270231348437,
+            "yError": 0,
+            "result_vs_forecast": 1.8299999999999983,
+            "yFitError": 12.399263077947658,
+            "yFit": -0.382940200045329
+          },
+          {
+            "candidate_diff_spend": 78.24913964178954,
+            "yError": 0,
+            "result_vs_forecast": -2.1699999999999946,
+            "yFitError": 12.402325990469565,
+            "yFit": -0.5684115135668215
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -0.9399999999999977,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 88.28607581372434,
+            "yError": 0,
+            "result_vs_forecast": 5.959999999999994,
+            "yFitError": 12.40786730966478,
+            "yFit": -0.8105996243948312
+          },
+          {
+            "candidate_diff_spend": 36.941299404774256,
+            "yError": 0,
+            "result_vs_forecast": -1.7000000000000028,
+            "yFitError": 12.397917384498923,
+            "yFit": 0.4283336702236109
+          },
+          {
+            "candidate_diff_spend": 26.774284858428214,
+            "yError": 0,
+            "result_vs_forecast": -1.9499999999999957,
+            "yFitError": 12.401374218485476,
+            "yFit": 0.6736605312856143
+          },
+          {
+            "candidate_diff_spend": 29.245548647744474,
+            "yError": 0,
+            "result_vs_forecast": 4.359999999999999,
+            "yFitError": 12.400369022830025,
+            "yFit": 0.6140297138489422
+          },
+          {
+            "candidate_diff_spend": 30.651268458917077,
+            "yError": 0,
+            "result_vs_forecast": -0.030000000000001137,
+            "yFitError": 12.399844502565674,
+            "yFit": 0.5801101372381674
+          },
+          {
+            "candidate_diff_spend": 41.44987210680641,
+            "yError": 0,
+            "result_vs_forecast": -3.490000000000009,
+            "yFitError": 12.396958511417532,
+            "yFit": 0.3195432299407355
+          },
+          {
+            "candidate_diff_spend": 45.31803178432225,
+            "yError": 0,
+            "result_vs_forecast": -2.4299999999999997,
+            "yFitError": 12.396417069002752,
+            "yFit": 0.22620575437740764
+          },
+          {
+            "candidate_diff_spend": 99.99922776941195,
+            "yError": 0,
+            "result_vs_forecast": -4.340000000000003,
+            "yFitError": 12.416539118437912,
+            "yFit": -1.0932342945167348
+          },
+          {
+            "candidate_diff_spend": 17.68135137440235,
+            "yError": 0,
+            "result_vs_forecast": -1.0799999999999983,
+            "yFitError": 12.40598425503032,
+            "yFit": 0.893070154367482
+          },
+          {
+            "candidate_diff_spend": 81.71270110800279,
+            "yError": 0,
+            "result_vs_forecast": 1.6700000000000017,
+            "yFitError": 12.40404095844196,
+            "yFit": -0.6519861616336706
+          },
+          {
+            "candidate_diff_spend": 18.316253345755143,
+            "yError": 0,
+            "result_vs_forecast": 5.600000000000001,
+            "yFitError": 12.405615838741927,
+            "yFit": 0.877750169626235
+          },
+          {
+            "candidate_diff_spend": 29.815549366995842,
+            "yError": 0,
+            "result_vs_forecast": 3.8400000000000034,
+            "yFitError": 12.400152205483485,
+            "yFit": 0.6002757758940409
+          },
+          {
+            "candidate_diff_spend": 14.535499425429801,
+            "yError": 0,
+            "result_vs_forecast": 3.009999999999998,
+            "yFitError": 12.40791269907084,
+            "yFit": 0.9689785717784307
+          },
+          {
+            "candidate_diff_spend": 90.65737251586836,
+            "yError": 0,
+            "result_vs_forecast": 7.390000000000001,
+            "yFitError": 12.409431283624562,
+            "yFit": -0.8678182674814341
+          },
+          {
+            "candidate_diff_spend": 97.77273970105723,
+            "yError": 0,
+            "result_vs_forecast": -4.199999999999989,
+            "yFitError": 12.41470812153071,
+            "yFit": -1.0395098381867522
+          },
+          {
+            "candidate_diff_spend": 61.16940443852186,
+            "yError": 0,
+            "result_vs_forecast": 1.6799999999999997,
+            "yFitError": 12.396911735480389,
+            "yFit": -0.1562828787461148
+          },
+          {
+            "candidate_diff_spend": 7.559599314097783,
+            "yError": 0,
+            "result_vs_forecast": 0.75,
+            "yFitError": 12.412800092462634,
+            "yFit": 1.1373048458871091
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 4.25,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 92.1573044295057,
+            "yError": 0,
+            "result_vs_forecast": -2.440000000000005,
+            "yFitError": 12.410470802283776,
+            "yFit": -0.904011152472596
+          },
+          {
+            "candidate_diff_spend": 75.46312132181122,
+            "yError": 0,
+            "result_vs_forecast": -0.6000000000000014,
+            "yFitError": 12.401097424880804,
+            "yFit": -0.501185768370346
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -2.8000000000000114,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 2.2852727819032492,
+            "yError": 0,
+            "result_vs_forecast": 3.8199999999999967,
+            "yFitError": 12.417054038983867,
+            "yFit": 1.2645726850803123
+          },
+          {
+            "candidate_diff_spend": 95.52999032126209,
+            "yError": 0,
+            "result_vs_forecast": -0.9500000000000028,
+            "yFitError": 12.412950375676424,
+            "yFit": -0.9853930015297578
+          },
+          {
+            "candidate_diff_spend": 8.913540949077923,
+            "yError": 0,
+            "result_vs_forecast": -6,
+            "yFitError": 12.411785660637698,
+            "yFit": 1.1046346603713215
+          },
+          {
+            "candidate_diff_spend": 16.30274358381134,
+            "yError": 0,
+            "result_vs_forecast": -1.3500000000000014,
+            "yFitError": 12.406808262629927,
+            "yFit": 0.9263355264547943
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": -2.3500000000000014,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 36.217341623296555,
+            "yError": 0,
+            "result_vs_forecast": 2.729999999999997,
+            "yFitError": 12.398104227464675,
+            "yFit": 0.4458025436339639
+          },
+          {
+            "candidate_diff_spend": 62.67307012853824,
+            "yError": 0,
+            "result_vs_forecast": -4.329999999999998,
+            "yFitError": 12.397185186429615,
+            "yFit": -0.1925658585861434
+          },
+          {
+            "candidate_diff_spend": 54.085852788803315,
+            "yError": 0,
+            "result_vs_forecast": -1.3900000000000006,
+            "yFitError": 12.396151534148174,
+            "yFit": 0.014640993101848077
+          },
+          {
+            "candidate_diff_spend": 36.61216087167525,
+            "yError": 0,
+            "result_vs_forecast": -3.520000000000003,
+            "yFitError": 12.398001202764629,
+            "yFit": 0.43627567943503187
+          },
+          {
+            "candidate_diff_spend": 72.73207844674175,
+            "yError": 0,
+            "result_vs_forecast": 2.5799999999999983,
+            "yFitError": 12.4000237454379,
+            "yFit": -0.43528656335668403
+          },
+          {
+            "candidate_diff_spend": 38.28530705486021,
+            "yError": 0,
+            "result_vs_forecast": -5.090000000000003,
+            "yFitError": 12.397594633464914,
+            "yFit": 0.3959031886367219
+          },
+          {
+            "candidate_diff_spend": 73.22571514157178,
+            "yError": 0,
+            "result_vs_forecast": 1.9499999999999957,
+            "yFitError": 12.400208235270304,
+            "yFit": -0.44719786143692497
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -3.8500000000000085,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 97.57901609461337,
+            "yError": 0,
+            "result_vs_forecast": -7.810000000000002,
+            "yFitError": 12.414552860424754,
+            "yFit": -1.0348353485353567
+          },
+          {
+            "candidate_diff_spend": 14.14744249998768,
+            "yError": 0,
+            "result_vs_forecast": 0.5399999999999991,
+            "yFitError": 12.408162455172135,
+            "yFit": 0.9783422632532601
+          },
+          {
+            "candidate_diff_spend": 96.24408989990633,
+            "yError": 0,
+            "result_vs_forecast": -0.2600000000000051,
+            "yFitError": 12.413500612215298,
+            "yFit": -1.002623999608486
+          },
+          {
+            "candidate_diff_spend": 97.76213492598716,
+            "yError": 0,
+            "result_vs_forecast": -1.519999999999996,
+            "yFitError": 12.414699605478607,
+            "yFit": -1.0392539483020324
+          },
+          {
+            "candidate_diff_spend": 97.52890700688232,
+            "yError": 0,
+            "result_vs_forecast": 3.719999999999999,
+            "yFitError": 12.414512805749803,
+            "yFit": -1.0336262320196181
+          },
+          {
+            "candidate_diff_spend": 21.356081694949893,
+            "yError": 0,
+            "result_vs_forecast": -5.090000000000003,
+            "yFitError": 12.403948670225185,
+            "yFit": 0.8044000683083159
+          },
+          {
+            "candidate_diff_spend": 81.68374665424486,
+            "yError": 0,
+            "result_vs_forecast": -5.600000000000001,
+            "yFitError": 12.404025759981224,
+            "yFit": -0.6512874997775457
+          },
+          {
+            "candidate_diff_spend": 70.9702263599359,
+            "yError": 0,
+            "result_vs_forecast": -3.8799999999999955,
+            "yFitError": 12.39939974385875,
+            "yFit": -0.3927736270230813
+          },
+          {
+            "candidate_diff_spend": 44.404343650906476,
+            "yError": 0,
+            "result_vs_forecast": 1.620000000000001,
+            "yFitError": 12.396521530147167,
+            "yFit": 0.24825276146475872
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 0.07000000000000028,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 26.621455883413894,
+            "yError": 0,
+            "result_vs_forecast": 7.840000000000003,
+            "yFitError": 12.401439859537597,
+            "yFit": 0.6773482463516916
+          },
+          {
+            "candidate_diff_spend": 72.14544325212289,
+            "yError": 0,
+            "result_vs_forecast": 0.39000000000000057,
+            "yFitError": 12.399809994982292,
+            "yFit": -0.4211312407466592
+          },
+          {
+            "candidate_diff_spend": 12.797056268206674,
+            "yError": 0,
+            "result_vs_forecast": 4.52,
+            "yFitError": 12.409051892253883,
+            "yFit": 1.0109266580088714
+          },
+          {
+            "candidate_diff_spend": 65.26012041519868,
+            "yError": 0,
+            "result_vs_forecast": -0.5399999999999991,
+            "yFitError": 12.39774750354473,
+            "yFit": -0.2549905677613713
+          },
+          {
+            "candidate_diff_spend": 83.07820233186716,
+            "yError": 0,
+            "result_vs_forecast": 0.1700000000000017,
+            "yFitError": 12.404774220075165,
+            "yFit": -0.6849352763909979
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -5.680000000000007,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 99.8935535742596,
+            "yError": 0,
+            "result_vs_forecast": -4.320000000000007,
+            "yFitError": 12.416450278861827,
+            "yFit": -1.0906844094473467
+          },
+          {
+            "candidate_diff_spend": 96.96925804352306,
+            "yError": 0,
+            "result_vs_forecast": -0.3999999999999986,
+            "yFitError": 12.414068400008691,
+            "yFit": -1.020122078676307
+          },
+          {
+            "candidate_diff_spend": 14.1441090372151,
+            "yError": 0,
+            "result_vs_forecast": -2.8299999999999983,
+            "yFitError": 12.408164611905075,
+            "yFit": 0.9784226986607965
+          },
+          {
+            "candidate_diff_spend": 91.17767487120975,
+            "yError": 0,
+            "result_vs_forecast": 4.02000000000001,
+            "yFitError": 12.409787465914576,
+            "yFit": -0.8803729995571294
+          },
+          {
+            "candidate_diff_spend": 72.2482215800771,
+            "yError": 0,
+            "result_vs_forecast": -4.079999999999998,
+            "yFitError": 12.399847012686228,
+            "yFit": -0.42361124945199435
+          },
+          {
+            "candidate_diff_spend": 5.73905276193183,
+            "yError": 0,
+            "result_vs_forecast": 0.14999999999999858,
+            "yFitError": 12.414214092323654,
+            "yFit": 1.1812340611964982
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -0.1600000000000108,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 24.410795171333913,
+            "yError": 0,
+            "result_vs_forecast": -1.8999999999999986,
+            "yFitError": 12.402434648999428,
+            "yFit": 0.7306907935562282
+          },
+          {
+            "candidate_diff_spend": 8.113686602807098,
+            "yError": 0,
+            "result_vs_forecast": 2.0599999999999987,
+            "yFitError": 12.412381113887841,
+            "yFit": 1.1239348940026332
+          },
+          {
+            "candidate_diff_spend": 14.854389882991258,
+            "yError": 0,
+            "result_vs_forecast": -2.0999999999999943,
+            "yFitError": 12.407709410463001,
+            "yFit": 0.9612838454042765
+          },
+          {
+            "candidate_diff_spend": 0.10644642574040661,
+            "yError": 0,
+            "result_vs_forecast": 4.32,
+            "yFitError": 12.418951636780555,
+            "yFit": 1.317147079296036
+          },
+          {
+            "candidate_diff_spend": 0.804717576319415,
+            "yError": 0,
+            "result_vs_forecast": 3.259999999999998,
+            "yFitError": 12.418334566664894,
+            "yFit": 1.3002980162047209
+          },
+          {
+            "candidate_diff_spend": 2.88773862373435,
+            "yError": 0,
+            "result_vs_forecast": 0.8399999999999999,
+            "yFitError": 12.41654380681456,
+            "yFit": 1.2500353739355554
+          },
+          {
+            "candidate_diff_spend": 87.53970112843422,
+            "yError": 0,
+            "result_vs_forecast": -2.509999999999998,
+            "yFitError": 12.40739518440339,
+            "yFit": -0.7925898381509264
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -5.609999999999999,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 39.7469447523918,
+            "yError": 0,
+            "result_vs_forecast": -0.46999999999999886,
+            "yFitError": 12.39727922188153,
+            "yFit": 0.3606343310275638
+          },
+          {
+            "candidate_diff_spend": 10.154508745612118,
+            "yError": 0,
+            "result_vs_forecast": 3.9899999999999984,
+            "yFitError": 12.410883722738085,
+            "yFit": 1.0746904980201248
+          },
+          {
+            "candidate_diff_spend": 95.52238146375524,
+            "yError": 0,
+            "result_vs_forecast": 6.160000000000004,
+            "yFitError": 12.41294456028423,
+            "yFit": -0.9852094021929108
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 3.039999999999999,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 2.710000000000001,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 46.919685367005144,
+            "yError": 0,
+            "result_vs_forecast": -0.9100000000000037,
+            "yFitError": 12.396268924747071,
+            "yFit": 0.18755835752780614
+          },
+          {
+            "candidate_diff_spend": 55.467629957157115,
+            "yError": 0,
+            "result_vs_forecast": -0.8999999999999986,
+            "yFitError": 12.39623143462133,
+            "yFit": -0.018700855073357836
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 5.009999999999998,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 98.42426857552339,
+            "yError": 0,
+            "result_vs_forecast": -5.249999999999993,
+            "yFitError": 12.415235052958252,
+            "yFit": -1.0552310248670138
+          },
+          {
+            "candidate_diff_spend": 23.094931380405125,
+            "yError": 0,
+            "result_vs_forecast": -1.0700000000000003,
+            "yFitError": 12.403067006944775,
+            "yFit": 0.7624421726795841
+          },
+          {
+            "candidate_diff_spend": 12.015090212404568,
+            "yError": 0,
+            "result_vs_forecast": 0.03999999999999915,
+            "yFitError": 12.409581367569992,
+            "yFit": 1.0297952528212897
+          },
+          {
+            "candidate_diff_spend": 54.04852112072687,
+            "yError": 0,
+            "result_vs_forecast": -1.9500000000000028,
+            "yFitError": 12.396149835365689,
+            "yFit": 0.015541794502854867
+          },
+          {
+            "candidate_diff_spend": 92.44040068590222,
+            "yError": 0,
+            "result_vs_forecast": -0.75,
+            "yFitError": 12.410671367490718,
+            "yFit": -0.91084217603842
+          },
+          {
+            "candidate_diff_spend": 35.211959170003254,
+            "yError": 0,
+            "result_vs_forecast": -3.3599999999999994,
+            "yFitError": 12.3983787881214,
+            "yFit": 0.4700621058003134
+          },
+          {
+            "candidate_diff_spend": 58.15594734503524,
+            "yError": 0,
+            "result_vs_forecast": 0.9600000000000009,
+            "yFitError": 12.396481867888033,
+            "yFit": -0.08356910752840818
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": -3,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 44.591552093512874,
+            "yError": 0,
+            "result_vs_forecast": 0.47000000000000597,
+            "yFitError": 12.39649894621634,
+            "yFit": 0.24373548066619444
+          },
+          {
+            "candidate_diff_spend": 61.71469294513979,
+            "yError": 0,
+            "result_vs_forecast": 5.090000000000003,
+            "yFitError": 12.397006363898758,
+            "yFit": -0.1694405187880328
+          },
+          {
+            "candidate_diff_spend": 37.32692987146176,
+            "yError": 0,
+            "result_vs_forecast": 4.329999999999998,
+            "yFitError": 12.397821571821881,
+            "yFit": 0.4190285284348326
+          },
+          {
+            "candidate_diff_spend": 95.45288714029031,
+            "yError": 0,
+            "result_vs_forecast": -5,
+            "yFitError": 12.412891492625636,
+            "yFit": -0.9835325260401757
+          },
+          {
+            "candidate_diff_spend": 3.14410005691569,
+            "yError": 0,
+            "result_vs_forecast": 3.1600000000000037,
+            "yFitError": 12.416328594542922,
+            "yFit": 1.243849453239461
+          },
+          {
+            "candidate_diff_spend": 3.1827227360804033,
+            "yError": 0,
+            "result_vs_forecast": -1.8200000000000038,
+            "yFitError": 12.416296269699673,
+            "yFit": 1.2429175001472244
+          },
+          {
+            "candidate_diff_spend": 63.38783912832475,
+            "yError": 0,
+            "result_vs_forecast": 4.659999999999997,
+            "yFitError": 12.397328933610101,
+            "yFit": -0.20981300958634264
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": 0.0799999999999983,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 79.68043104856336,
+            "yError": 0,
+            "result_vs_forecast": -0.4199999999999946,
+            "yFitError": 12.403009479709727,
+            "yFit": -0.6029481247311121
+          },
+          {
+            "candidate_diff_spend": 80.71705654167157,
+            "yError": 0,
+            "result_vs_forecast": -1.75,
+            "yFitError": 12.403526675162293,
+            "yFit": -0.6279615716148372
+          },
+          {
+            "candidate_diff_spend": 50.02359409666838,
+            "yError": 0,
+            "result_vs_forecast": -0.759999999999998,
+            "yFitError": 12.396108619689295,
+            "yFit": 0.11266201679768484
+          },
+          {
+            "candidate_diff_spend": 7.160257251090043,
+            "yError": 0,
+            "result_vs_forecast": -3.230000000000004,
+            "yFitError": 12.413105350920368,
+            "yFit": 1.1469408441795403
+          },
+          {
+            "candidate_diff_spend": 27.666401490491314,
+            "yError": 0,
+            "result_vs_forecast": -2.509999999999998,
+            "yFitError": 12.400999131093117,
+            "yFit": 0.6521340377365415
+          },
+          {
+            "candidate_diff_spend": 22.78899536901798,
+            "yError": 0,
+            "result_vs_forecast": -5.270000000000003,
+            "yFitError": 12.403218329275159,
+            "yFit": 0.769824312344803
+          },
+          {
+            "candidate_diff_spend": 12.460298871565788,
+            "yError": 0,
+            "result_vs_forecast": 2.509999999999998,
+            "yFitError": 12.409278615920366,
+            "yFit": 1.0190525079996153
+          },
+          {
+            "candidate_diff_spend": 61.67128720081597,
+            "yError": 0,
+            "result_vs_forecast": -0.4299999999999997,
+            "yFitError": 12.396998642265672,
+            "yFit": -0.1683931518389168
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -0.5100000000000016,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 10.95693098741343,
+            "yError": 0,
+            "result_vs_forecast": 1.8800000000000026,
+            "yFitError": 12.410314703634947,
+            "yFit": 1.0553283018778759
+          },
+          {
+            "candidate_diff_spend": 17.073052004496933,
+            "yError": 0,
+            "result_vs_forecast": 2.700000000000003,
+            "yFitError": 12.406343783915133,
+            "yFit": 0.9077482267086419
+          },
+          {
+            "candidate_diff_spend": 69.34873154108293,
+            "yError": 0,
+            "result_vs_forecast": 0.030000000000001137,
+            "yFitError": 12.398873040443288,
+            "yFit": -0.3536474673894783
+          },
+          {
+            "candidate_diff_spend": 23.08523441211867,
+            "yError": 0,
+            "result_vs_forecast": 1.259999999999998,
+            "yFitError": 12.403071778372103,
+            "yFit": 0.7626761574723362
+          },
+          {
+            "candidate_diff_spend": 89.50227485649512,
+            "yError": 0,
+            "result_vs_forecast": -2.7900000000000063,
+            "yFitError": 12.408657287567383,
+            "yFit": -0.8399461245133741
+          },
+          {
+            "candidate_diff_spend": 55.4944572720993,
+            "yError": 0,
+            "result_vs_forecast": 1.6999999999999957,
+            "yFitError": 12.396233313940506,
+            "yFit": -0.019348189739349264
+          },
+          {
+            "candidate_diff_spend": 98.83073435984613,
+            "yError": 0,
+            "result_vs_forecast": -4.43,
+            "yFitError": 12.415567502869886,
+            "yFit": -1.0650389163126737
+          },
+          {
+            "candidate_diff_spend": 99.79054989527495,
+            "yError": 0,
+            "result_vs_forecast": -1.1799999999999926,
+            "yFitError": 12.416363870052546,
+            "yFit": -1.0881989630925735
+          },
+          {
+            "candidate_diff_spend": 54.38738233219168,
+            "yError": 0,
+            "result_vs_forecast": 3.019999999999996,
+            "yFitError": 12.396166142290422,
+            "yFit": 0.007365180122558934
+          },
+          {
+            "candidate_diff_spend": 2.5441365476965103,
+            "yError": 0,
+            "result_vs_forecast": 3.8299999999999983,
+            "yFitError": 12.416834037308528,
+            "yFit": 1.2583263838858703
+          },
+          {
+            "candidate_diff_spend": 66.54870181562416,
+            "yError": 0,
+            "result_vs_forecast": -2.729999999999997,
+            "yFitError": 12.398070925587863,
+            "yFit": -0.2860836313886752
+          },
+          {
+            "candidate_diff_spend": 1.2758876389126206,
+            "yError": 0,
+            "result_vs_forecast": 0.37999999999999545,
+            "yFitError": 12.417922945996926,
+            "yFit": 1.2889288308892617
+          },
+          {
+            "candidate_diff_spend": 49.13664581003098,
+            "yError": 0,
+            "result_vs_forecast": 1.8299999999999983,
+            "yFitError": 12.396137357409756,
+            "yFit": 0.13406379979830807
+          },
+          {
+            "candidate_diff_spend": 85.4645005745702,
+            "yError": 0,
+            "result_vs_forecast": -3.010000000000005,
+            "yFitError": 12.406133195506387,
+            "yFit": -0.7425159019297412
+          },
+          {
+            "candidate_diff_spend": 48.71180702162838,
+            "yError": 0,
+            "result_vs_forecast": -3.2900000000000063,
+            "yFitError": 12.396155960430603,
+            "yFit": 0.1443150260497401
+          },
+          {
+            "candidate_diff_spend": 87.4732037895028,
+            "yError": 0,
+            "result_vs_forecast": -1.9399999999999977,
+            "yFitError": 12.407353588934821,
+            "yFit": -0.7909852782917213
+          },
+          {
+            "candidate_diff_spend": 14.285391481188567,
+            "yError": 0,
+            "result_vs_forecast": -0.5899999999999999,
+            "yFitError": 12.408073371606559,
+            "yFit": 0.9750135977546082
+          },
+          {
+            "candidate_diff_spend": 76.6716265936728,
+            "yError": 0,
+            "result_vs_forecast": -3.469999999999999,
+            "yFitError": 12.401613818230306,
+            "yFit": -0.5303466202183682
+          },
+          {
+            "candidate_diff_spend": 45.55766129131245,
+            "yError": 0,
+            "result_vs_forecast": -2.3900000000000006,
+            "yFitError": 12.396392071382046,
+            "yFit": 0.2204235697941399
+          },
+          {
+            "candidate_diff_spend": 55.595656349093524,
+            "yError": 0,
+            "result_vs_forecast": 2.1600000000000037,
+            "yFitError": 12.396240515654743,
+            "yFit": -0.021790091616069596
+          },
+          {
+            "candidate_diff_spend": 15.680827639434318,
+            "yError": 0,
+            "result_vs_forecast": 1.8100000000000023,
+            "yFitError": 12.407190761171234,
+            "yFit": 0.9413421624523064
+          },
+          {
+            "candidate_diff_spend": 83.49596481998034,
+            "yError": 0,
+            "result_vs_forecast": -7.409999999999997,
+            "yFitError": 12.405005008709638,
+            "yFit": -0.6950157537436237
+          },
+          {
+            "candidate_diff_spend": 34.86232813321564,
+            "yError": 0,
+            "result_vs_forecast": 1.5700000000000003,
+            "yFitError": 12.398478379662574,
+            "yFit": 0.47849859267597983
+          },
+          {
+            "candidate_diff_spend": 24.167580409356724,
+            "yError": 0,
+            "result_vs_forecast": -3.6300000000000026,
+            "yFitError": 12.402549268301929,
+            "yFit": 0.7365594892139177
+          },
+          {
+            "candidate_diff_spend": 40.42042678926718,
+            "yError": 0,
+            "result_vs_forecast": 4.100000000000001,
+            "yFitError": 12.397146368467697,
+            "yFit": 0.34438342144785217
+          },
+          {
+            "candidate_diff_spend": 94.8626225180058,
+            "yError": 0,
+            "result_vs_forecast": -1.5399999999999991,
+            "yFitError": 12.412444118461966,
+            "yFit": -0.9692896264828956
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 0.5100000000000051,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": -1.8599999999999994,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 38.16412817017244,
+            "yError": 0,
+            "result_vs_forecast": -1.3499999999999943,
+            "yFitError": 12.397622447572655,
+            "yFit": 0.3988271969846917
+          },
+          {
+            "candidate_diff_spend": 59.42113066494793,
+            "yError": 0,
+            "result_vs_forecast": 1.9600000000000009,
+            "yFitError": 12.396643146312377,
+            "yFit": -0.11409758283719351
+          },
+          {
+            "candidate_diff_spend": 85.15032002379787,
+            "yError": 0,
+            "result_vs_forecast": 0.269999999999996,
+            "yFitError": 12.405948633887911,
+            "yFit": -0.7349348241240246
+          },
+          {
+            "candidate_diff_spend": 29.528627622900732,
+            "yError": 0,
+            "result_vs_forecast": -0.28999999999999915,
+            "yFitError": 12.400260640626657,
+            "yFit": 0.6071991072740069
+          },
+          {
+            "candidate_diff_spend": 83.46446694426741,
+            "yError": 0,
+            "result_vs_forecast": -3.8200000000000003,
+            "yFitError": 12.404987502634452,
+            "yFit": -0.6942557199162351
+          },
+          {
+            "candidate_diff_spend": 53.18569995975958,
+            "yError": 0,
+            "result_vs_forecast": -2.3599999999999994,
+            "yFitError": 12.396117314920344,
+            "yFit": 0.036361397554770525
+          },
+          {
+            "candidate_diff_spend": 64.91994616529814,
+            "yError": 0,
+            "result_vs_forecast": -2.6099999999999994,
+            "yFitError": 12.397666930831324,
+            "yFit": -0.2467822701768838
+          },
+          {
+            "candidate_diff_spend": 94.26094723806817,
+            "yError": 0,
+            "result_vs_forecast": -0.14999999999999858,
+            "yFitError": 12.41199429715057,
+            "yFit": -0.9547713913478089
+          },
+          {
+            "candidate_diff_spend": 99.6577263082429,
+            "yError": 0,
+            "result_vs_forecast": 0.06999999999999318,
+            "yFitError": 12.416252716200411,
+            "yFit": -1.0849939717420618
+          },
+          {
+            "candidate_diff_spend": 4.9272340474642515,
+            "yError": 0,
+            "result_vs_forecast": 3.429999999999996,
+            "yFitError": 12.414863095366778,
+            "yFit": 1.2008229912667614
+          },
+          {
+            "candidate_diff_spend": 35.08005383470186,
+            "yError": 0,
+            "result_vs_forecast": 2.6099999999999994,
+            "yFitError": 12.398416111856074,
+            "yFit": 0.47324494002557294
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 3.3299999999999983,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 19.736281875422105,
+            "yError": 0,
+            "result_vs_forecast": 1.8299999999999983,
+            "yFitError": 12.404817109753417,
+            "yFit": 0.8434853281416823
+          },
+          {
+            "candidate_diff_spend": 100,
+            "yError": 0,
+            "result_vs_forecast": -1.5899999999999892,
+            "yFitError": 12.416539768356996,
+            "yFit": -1.0932529281977748
+          },
+          {
+            "candidate_diff_spend": 13.267065913656522,
+            "yError": 0,
+            "result_vs_forecast": -0.5500000000000043,
+            "yFitError": 12.408738737341643,
+            "yFit": 0.9995854731938544
+          },
+          {
+            "candidate_diff_spend": 27.7517784199229,
+            "yError": 0,
+            "result_vs_forecast": 4.079999999999998,
+            "yFitError": 12.400963958266768,
+            "yFit": 0.6500739193006837
+          },
+          {
+            "candidate_diff_spend": 38.62112106155497,
+            "yError": 0,
+            "result_vs_forecast": -0.01999999999999602,
+            "yFitError": 12.397518886077332,
+            "yFit": 0.38780010234845763
+          },
+          {
+            "candidate_diff_spend": 82.95435876444823,
+            "yError": 0,
+            "result_vs_forecast": -0.8200000000000003,
+            "yFitError": 12.40470638501277,
+            "yFit": -0.681946970087401
+          },
+          {
+            "candidate_diff_spend": 13.067870268408626,
+            "yError": 0,
+            "result_vs_forecast": 2.9200000000000017,
+            "yFitError": 12.40887098923732,
+            "yFit": 1.0043920014193353
+          },
+          {
+            "candidate_diff_spend": 86.73293408634348,
+            "yError": 0,
+            "result_vs_forecast": 0.5499999999999972,
+            "yFitError": 12.4068957055291,
+            "yFit": -0.7731228033451649
+          },
+          {
+            "candidate_diff_spend": 0.11908285785249377,
+            "yError": 0,
+            "result_vs_forecast": 3.6900000000000013,
+            "yFitError": 12.418940395019757,
+            "yFit": 1.316842166166331
+          },
+          {
+            "candidate_diff_spend": 4.645135871465813,
+            "yError": 0,
+            "result_vs_forecast": 6.590000000000003,
+            "yFitError": 12.41509128376834,
+            "yFit": 1.2076299314667127
+          },
+          {
+            "candidate_diff_spend": 16.535533055732582,
+            "yError": 0,
+            "result_vs_forecast": 3.8200000000000003,
+            "yFitError": 12.406666812289037,
+            "yFit": 0.9207183897649245
+          },
+          {
+            "candidate_diff_spend": 0,
+            "yError": 0,
+            "result_vs_forecast": 1.129999999999999,
+            "yFitError": 12.419046444247725,
+            "yFit": 1.3197155980464639
+          },
+          {
+            "candidate_diff_spend": 27.267921553258248,
+            "yError": 0,
+            "result_vs_forecast": -2.5799999999999983,
+            "yFitError": 12.401164965096788,
+            "yFit": 0.6617492332053733
+          },
+          {
+            "candidate_diff_spend": 16.901125305737576,
+            "yError": 0,
+            "result_vs_forecast": -4.009999999999998,
+            "yFitError": 12.406446561013468,
+            "yFit": 0.9118967638379158
+          },
+          {
+            "candidate_diff_spend": 0.0706547338671691,
+            "yError": 0,
+            "result_vs_forecast": 3.1999999999999957,
+            "yFitError": 12.41898349314087,
+            "yFit": 1.3180107215559476
+          },
+          {
+            "candidate_diff_spend": 63.38160213307377,
+            "yError": 0,
+            "result_vs_forecast": 3.1999999999999957,
+            "yFitError": 12.397327640936023,
+            "yFit": -0.2096625128539531
+          },
+          {
+            "candidate_diff_spend": 38.35804396051936,
+            "yError": 0,
+            "result_vs_forecast": -1.9299999999999997,
+            "yFitError": 12.39757806061398,
+            "yFit": 0.3941480699962028
+          },
+          {
+            "candidate_diff_spend": 36.61839786692623,
+            "yError": 0,
+            "result_vs_forecast": -3.1999999999999957,
+            "yFitError": 12.397999596978936,
+            "yFit": 0.43612518270264233
+          },
+          {
+            "candidate_diff_spend": 12.5267962104972,
+            "yError": 0,
+            "result_vs_forecast": 1.9399999999999977,
+            "yFitError": 12.409233690720445,
+            "yFit": 1.0174479481404104
+          },
+          {
+            "candidate_diff_spend": 97.49239437281473,
+            "yError": 0,
+            "result_vs_forecast": -12.25,
+            "yFitError": 12.41448364672815,
+            "yFit": -1.0327451936514644
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": "point",
+          "selection": {
+            "scalesSregression": {
+              "bind": "scales",
+              "type": "interval"
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "candidate_diff_spend",
+              "type": "quantitative",
+              "axis": {
+                "title": "candidate_diff_spend"
+              }
+            },
+            "y": {
+              "field": "result_vs_forecast",
+              "type": "quantitative",
+              "axis": {
+                "title": "result_vs_forecast"
+              }
+            }
+          }
+        },
+        {
+          "mark": "rule",
+          "selection": {
+            "scalesSEregression": {
+              "bind": "scales",
+              "type": "interval"
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "candidate_diff_spend",
+              "type": "quantitative",
+              "axis": {
+                "title": "candidate_diff_spend"
+              }
+            },
+            "y2": {
+              "field": "yHi",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "yLo",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "line",
+          "selection": {
+            "scalesFregression": {
+              "bind": "scales",
+              "type": "interval"
+            }
+          },
+          "encoding": {
+            "color": {
+              "field": "fitLabel",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "candidate_diff_spend",
+              "type": "quantitative",
+              "axis": {
+                "title": "candidate_diff_spend"
+              }
+            },
+            "y": {
+              "field": "yFit",
+              "type": "quantitative",
+              "axis": {
+                "title": "regression"
+              }
+            }
+          }
+        },
+        {
+          "mark": {
+            "opacity": 0.5,
+            "type": "area",
+            "fillOpacity": 0.3
+          },
+          "selection": {
+            "scalesFEregression": {
+              "bind": "scales",
+              "type": "interval"
+            }
+          },
+          "encoding": {
+            "color": {
+              "field": "fitLabel",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "candidate_diff_spend",
+              "type": "quantitative",
+              "axis": {
+                "title": "candidate_diff_spend"
+              }
+            },
+            "y2": {
+              "field": "fyHi",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "fyLo",
+              "type": "quantitative"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

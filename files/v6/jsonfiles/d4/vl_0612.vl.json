@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "https://www.worldbank.org/en/publication/human-capital. ",
+  "title": {
+    "text": "Human Capital Index",
+    "subtitle": [
+      "Distance to optimal education and full health, source: World Bank",
+      "GDP: per capita PPP (international $) source: World Bank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 9,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/growth-human_capital_2020.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum['Human Capital Index'] > 0"
+    },
+    {
+      "filter": "datum['GDP per capita (PPP)'] > 1000"
+    }
+  ],
+  "mark": {
+    "type": "circle",
+    "size": 150,
+    "opacity": 0.8
+  },
+  "height": 300,
+  "width": 500,
+  "view": {
+    "stroke": "aliceblue"
+  },
+  "encoding": {
+    "y": {
+      "field": "GDP per capita (PPP)",
+      "type": "quantitative",
+      "title": "GDP (log scale)",
+      "scale": {
+        "type": "log",
+        "domain": [
+          1000,
+          100000
+        ]
+      },
+      "axis": {
+        "values": [
+          1000,
+          2000,
+          5000,
+          10000,
+          20000,
+          40000,
+          100000
+        ],
+        "format": "$,",
+        "gridOpacity": 0.3
+      }
+    },
+    "x": {
+      "field": "Human Capital Index",
+      "type": "quantitative",
+      "title": "Human Capital Index",
+      "scale": {
+        "domain": [
+          0.25,
+          0.9
+        ]
+      },
+      "axis": {
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "legend": {
+        "orient": "top"
+      },
+      "title": null
+    },
+    "size": {
+      "field": "Population",
+      "type": "quantitative",
+      "scale": {
+        "range": [
+          12,
+          600
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Country"
+      },
+      {
+        "field": "Human Capital Index",
+        "type": "quantitative",
+        "format": ".3"
+      },
+      {
+        "field": "Population",
+        "format": ",d"
+      },
+      {
+        "field": "GDP per capita (PPP)",
+        "title": "GDP per capita",
+        "format": "$,d"
+      }
+    ]
+  }
+}

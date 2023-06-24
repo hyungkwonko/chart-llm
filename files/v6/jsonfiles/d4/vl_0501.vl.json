@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Names of countries imperfectly matched. US vs USA for example",
+  "title": {
+    "text": "World Map",
+    "subtitle": [
+      "GDP per capita",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 600,
+  "height": 300,
+  "data": {
+    "url": "https://unpkg.com/world-atlas@1.1.4/world/110m.json",
+    "format": {
+      "type": "topojson",
+      "feature": "countries"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "parseInt(datum.id)",
+      "as": "id_N"
+    },
+    {
+      "lookup": "id_N",
+      "from": {
+        "key": "id",
+        "fields": [
+          "alpha3",
+          "name"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWorldCountryNamesIDs.json"
+        }
+      }
+    },
+    {
+      "lookup": "alpha3",
+      "from": {
+        "key": "country2",
+        "fields": [
+          "BCA",
+          "NGDPDPC"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWEOallWideCountryCodes.csv"
+        }
+      }
+    }
+  ],
+  "projection": {
+    "type": "naturalEarth1"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.1
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "name",
+        "title": "Country"
+      },
+      {
+        "field": "NGDPDPC",
+        "title": "GDP per capita",
+        "type": "quantitative",
+        "format": "$,.0f"
+      }
+    ],
+    "color": {
+      "field": "NGDPDPC",
+      "title": "US Dollars",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "turbo",
+        "domain": [
+          0,
+          80000
+        ]
+      },
+      "legend": {
+        "orient": "bottom",
+        "direction": "horizontal"
+      }
+    }
+  }
+}

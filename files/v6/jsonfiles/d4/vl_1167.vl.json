@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300,
+  "height": 250,
+  "data": {
+    "url": "https://raw.githubusercontent.com/ConorQuah/ConorQuah.github.io/main/gdpdata.csv"
+  },
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "gdpPerCapitaPPP",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          80000
+        ]
+      },
+      "title": "GDP per Capita (PPP)"
+    },
+    "y": {
+      "field": "medianIncome",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          25000
+        ]
+      },
+      "title": "Median Income"
+    },
+    "size": {
+      "field": "pop2022",
+      "type": "quantitative",
+      "title": "Population"
+    },
+    "tooltip": [
+      {
+        "field": "country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "pop2022",
+        "title": "Population"
+      },
+      {
+        "field": "gdpPerCapitaPPP",
+        "title": "GDP per Capita (PPP)"
+      },
+      {
+        "field": "medianIncome",
+        "title": "Median Income"
+      }
+    ]
+  }
+}

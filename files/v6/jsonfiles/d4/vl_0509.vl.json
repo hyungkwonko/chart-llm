@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "England - population",
+    "subtitle": [
+      "Population by electoral ward. Source: ONS",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoEngWards.json",
+    "format": {
+      "type": "topojson",
+      "feature": "wards"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.WD13NM",
+      "from": {
+        "key": "wardName",
+        "fields": [
+          "Population",
+          "Lacode"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataUKPopWards.csv"
+        }
+      }
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0
+  },
+  "encoding": {
+    "color": {
+      "field": "Population",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "lightmulti"
+      },
+      "legend": {
+        "orient": "top-left",
+        "direction": "vertical"
+      }
+    },
+    "tooltip": {
+      "field": "properties.WD13NM"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Leading Points Scorers in Gallager Premiership",
+    "subtitle": [
+      "This graph shows the leading points scorers in the Gallager Premiership since 1987,",
+      "displaying points scored against games played"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/cd63734f49744fc7f84e49edbb289beb63d26ef1/Premiership.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "pivot": "variable",
+      "value": "value",
+      "groupby": [
+        "Season",
+        "Player"
+      ]
+    }
+  ],
+  "mark": {
+    "type": "circle",
+    "color": "red",
+    "opacity": 0.7
+  },
+  "height": 300,
+  "width": 290,
+  "encoding": {
+    "x": {
+      "field": "Points",
+      "scale": {
+        "zero": false
+      },
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      },
+      "title": "Points"
+    },
+    "y": {
+      "field": "Games",
+      "scale": {
+        "zero": false
+      },
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      },
+      "title": "Games"
+    },
+    "tooltip": [
+      {
+        "field": "Player",
+        "type": "ordinal",
+        "title": "Name"
+      },
+      {
+        "field": "Points",
+        "type": "quantitative",
+        "title": "Premiership Points",
+        "format": ".0f"
+      },
+      {
+        "field": "Games",
+        "type": "quantitative",
+        "title": "Games Played",
+        "format": ".2f"
+      },
+      {
+        "field": "Season",
+        "type": "ordinal",
+        "title": "Season"
+      }
+    ]
+  }
+}

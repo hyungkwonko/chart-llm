@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Ratio of rents; oil:gas",
+  "title": {
+    "text": "Ratio of rents",
+    "subtitle": "Rent % of GDP ratio (oil:gas) , Source: World Bank",
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/data-week8_2.csv"
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "ticks": false,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Ratio",
+      "type": "quantitative",
+      "axis": {
+        "ticks": false,
+        "grid": false
+      },
+      "title": "Ratio (oil:gas)",
+      "scale": {
+        "domain": [
+          2,
+          4
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Ratio",
+        "title": "Ratio",
+        "type": "quantitative"
+      }
+    ]
+  }
+}
