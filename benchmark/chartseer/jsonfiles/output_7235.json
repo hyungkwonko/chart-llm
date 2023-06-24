@@ -1,0 +1,19 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "shape": {
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

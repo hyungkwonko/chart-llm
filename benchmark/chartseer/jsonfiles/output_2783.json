@@ -1,0 +1,23 @@
+{
+  "mark": "line",
+  "encoding": {
+    "detail": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "size": {
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    },
+    "detail": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

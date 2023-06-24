@@ -1,0 +1,24 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "nominal"
+    },
+    "shape": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

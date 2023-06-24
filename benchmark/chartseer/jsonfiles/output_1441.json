@@ -1,0 +1,15 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

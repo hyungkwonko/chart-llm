@@ -1,0 +1,19 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "size": {
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "shape": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "day"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

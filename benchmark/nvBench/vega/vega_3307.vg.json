@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Mount Cameroon", "y_data": 12}, {"x_data": "Ighil Mgoun", "y_data": 14}, {"x_data": "Taska n\u2019Zat", "y_data": 20}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "name", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "id"}}}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Dutch", "y_data": 3}, {"x_data": "Papiamento", "y_data": 1}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Language", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(Language)"}}}

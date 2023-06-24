@@ -1,0 +1,23 @@
+{
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "size": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "year"
+    }
+  }
+}

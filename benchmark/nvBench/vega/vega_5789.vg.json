@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "broadway", "y_data": 5000}, {"x_data": "downtown", "y_data": 3000}, {"x_data": "morningside", "y_data": 2050}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "bname", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "sum(amount)"}}}

@@ -1,0 +1,25 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "detail": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "y": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

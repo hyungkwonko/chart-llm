@@ -1,0 +1,25 @@
+{
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "nominal"
+    },
+    "shape": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

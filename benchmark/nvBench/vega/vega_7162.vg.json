@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Lukas", "y_data": 3}, {"x_data": "Kenya", "y_data": 13}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "customer_name", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "customer_id"}}}

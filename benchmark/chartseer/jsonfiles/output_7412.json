@@ -1,0 +1,19 @@
+{
+  "mark": "line",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "size": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

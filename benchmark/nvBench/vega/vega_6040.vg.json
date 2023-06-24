@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Smithson", "y_data": 1}, {"x_data": "Bowser", "y_data": 3}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "STU_LNAME", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(STU_LNAME)"}}}

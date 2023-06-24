@@ -1,0 +1,23 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "shape": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "size": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

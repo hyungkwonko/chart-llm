@@ -1,0 +1,25 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    },
+    "detail": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "year"
+    }
+  }
+}

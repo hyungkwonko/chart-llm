@@ -1,0 +1,24 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "detail": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

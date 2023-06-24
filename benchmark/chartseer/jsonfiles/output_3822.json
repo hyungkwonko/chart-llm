@@ -1,0 +1,25 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "size": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "month"
+    }
+  }
+}

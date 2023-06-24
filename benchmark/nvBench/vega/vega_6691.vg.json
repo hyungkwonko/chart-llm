@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Defender", "y_data": 7}, {"x_data": "Midfielder", "y_data": 6}, {"x_data": "Forward", "y_data": 3}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Position", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(*)"}}}

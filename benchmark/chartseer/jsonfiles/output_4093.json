@@ -1,0 +1,24 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "temporal"
+    },
+    "shape": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

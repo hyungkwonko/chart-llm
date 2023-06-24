@@ -1,0 +1,14 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

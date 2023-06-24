@@ -1,0 +1,24 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "field": "str",
+      "type": "ordinal"
+    },
+    "size": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "day"
+    }
+  }
+}

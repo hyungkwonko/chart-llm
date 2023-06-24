@@ -1,0 +1,23 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "detail": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "day"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "2017", "y_data": 1}, {"x_data": "2016", "y_data": 6}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "booking_start_date", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(booking_start_date)"}}}

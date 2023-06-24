@@ -1,0 +1,24 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "size": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "day"
+    }
+  }
+}

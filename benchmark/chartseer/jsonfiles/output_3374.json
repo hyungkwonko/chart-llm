@@ -1,0 +1,19 @@
+{
+  "mark": "area",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "size": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

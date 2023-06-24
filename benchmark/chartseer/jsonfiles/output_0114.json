@@ -1,0 +1,23 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "size": {
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

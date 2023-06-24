@@ -1,0 +1,19 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "detail": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

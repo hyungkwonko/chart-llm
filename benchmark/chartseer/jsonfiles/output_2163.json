@@ -1,0 +1,25 @@
+{
+  "mark": "line",
+  "encoding": {
+    "detail": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    },
+    "size": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

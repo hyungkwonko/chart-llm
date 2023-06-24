@@ -1,0 +1,24 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "shape": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

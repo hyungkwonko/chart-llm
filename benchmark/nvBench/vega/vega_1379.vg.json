@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "MW", "y_data": 5}, {"x_data": "PW", "y_data": 7}, {"x_data": "TW", "y_data": 3}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "fault_short_name", "sort": "ascending"}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(fault_short_name)"}}}

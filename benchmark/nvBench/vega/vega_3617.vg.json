@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Anglican", "y_data": 3}, {"x_data": "Catholic", "y_data": 2}, {"x_data": "Uniting Church", "y_data": 1}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Denomination", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(*)"}}}

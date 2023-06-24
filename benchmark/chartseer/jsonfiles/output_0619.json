@@ -1,0 +1,22 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "shape": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

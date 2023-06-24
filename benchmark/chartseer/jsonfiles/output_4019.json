@@ -1,0 +1,25 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "shape": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

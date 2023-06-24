@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Rafael van der Vaart", "y_data": 25}, {"x_data": "Arjen Robben", "y_data": 27}, {"x_data": "Fernando Gago", "y_data": 36}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Name", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "Age"}}}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "mp4", "y_data": 4}, {"x_data": "mp3", "y_data": 2}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "formats", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "count(*)"}}}

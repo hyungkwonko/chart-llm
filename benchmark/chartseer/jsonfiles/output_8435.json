@@ -1,0 +1,23 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "shape": {
+      "field": "str",
+      "type": "ordinal"
+    },
+    "y": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    },
+    "size": {
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "size": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

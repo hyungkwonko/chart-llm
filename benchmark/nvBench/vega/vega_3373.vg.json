@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Direct Debit", "y_data": 5}, {"x_data": "Credit Card", "y_data": 10}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "payment_method_code", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "count(*)"}}}

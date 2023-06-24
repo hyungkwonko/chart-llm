@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "China", "y_data": 2}, {"x_data": "India", "y_data": 1}, {"x_data": "Japan", "y_data": 1}, {"x_data": "South Korea", "y_data": 1}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "COUNT(*)"}, "color": {"field": "x_data", "type": "nominal", "title": "Country"}}}

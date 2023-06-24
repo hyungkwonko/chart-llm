@@ -1,0 +1,25 @@
+{
+  "mark": "point",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "shape": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

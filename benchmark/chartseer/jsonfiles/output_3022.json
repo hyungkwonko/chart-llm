@@ -1,0 +1,25 @@
+{
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "temporal"
+    },
+    "detail": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

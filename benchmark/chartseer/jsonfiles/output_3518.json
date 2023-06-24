@@ -1,0 +1,24 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    },
+    "detail": {
+      "field": "str",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "year"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

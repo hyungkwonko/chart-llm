@@ -1,0 +1,52 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "4:57.03",
+                "y_data": 1
+            },
+            {
+                "x_data": "4:56.96",
+                "y_data": 2
+            },
+            {
+                "x_data": "4:56.15",
+                "y_data": 6
+            },
+            {
+                "x_data": "4:55.08",
+                "y_data": 4
+            },
+            {
+                "x_data": "4:54.48",
+                "y_data": 5
+            },
+            {
+                "x_data": "4:54.21",
+                "y_data": 7
+            },
+            {
+                "x_data": "4:54.19",
+                "y_data": 3
+            },
+            {
+                "x_data": "4:52.85",
+                "y_data": 8
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "meter_500",
+            "sort": "descending"
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "ID"
+        }
+    }
+}

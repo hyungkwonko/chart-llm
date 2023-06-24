@@ -1,0 +1,25 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "detail": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "day"
+    }
+  }
+}

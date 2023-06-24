@@ -1,0 +1,23 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "detail": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

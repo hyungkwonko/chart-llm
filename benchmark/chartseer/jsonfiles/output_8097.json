@@ -1,0 +1,24 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "detail": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

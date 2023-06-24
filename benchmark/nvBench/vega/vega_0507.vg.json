@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Black Widow\n", "y_data": 23}, {"x_data": "Tyler Swift", "y_data": 10}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "name", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "partitionid"}}}

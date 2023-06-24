@@ -1,0 +1,23 @@
+{
+  "mark": "line",
+  "encoding": {
+    "shape": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "year"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "ordinal"
+    },
+    "size": {
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

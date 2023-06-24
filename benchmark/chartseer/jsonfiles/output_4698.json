@@ -1,0 +1,20 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "day"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "detail": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "day"
+    }
+  }
+}

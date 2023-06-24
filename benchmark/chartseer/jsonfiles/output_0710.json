@@ -1,0 +1,20 @@
+{
+  "mark": "line",
+  "encoding": {
+    "y": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "detail": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "year"
+    }
+  }
+}

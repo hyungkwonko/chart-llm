@@ -1,0 +1,25 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "shape": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

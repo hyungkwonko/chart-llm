@@ -1,0 +1,23 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "size": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

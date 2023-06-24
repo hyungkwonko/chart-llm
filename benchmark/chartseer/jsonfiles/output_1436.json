@@ -1,0 +1,20 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "y": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "size": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

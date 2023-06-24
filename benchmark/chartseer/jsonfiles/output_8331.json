@@ -1,0 +1,20 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "temporal"
+    },
+    "detail": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "year"
+    }
+  }
+}

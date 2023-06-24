@@ -1,0 +1,24 @@
+{
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "day"
+    },
+    "y": {
+      "bin": true,
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "str",
+      "type": "quantitative"
+    },
+    "size": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

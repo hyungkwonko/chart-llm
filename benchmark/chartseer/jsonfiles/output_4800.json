@@ -1,0 +1,24 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    },
+    "size": {
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

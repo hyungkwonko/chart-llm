@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "middle", "y_data": 5}, {"x_data": "package", "y_data": 6}, {"x_data": "top", "y_data": 4}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "part_name", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "count(*)"}}}

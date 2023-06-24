@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "student", "y_data": 25}, {"x_data": "engineer", "y_data": 35}, {"x_data": "doctor", "y_data": 45}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "job", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "min(age)"}}}

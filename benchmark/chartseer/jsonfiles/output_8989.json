@@ -1,0 +1,24 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "size": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

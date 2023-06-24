@@ -1,0 +1,24 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "color": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "temporal"
+    },
+    "detail": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

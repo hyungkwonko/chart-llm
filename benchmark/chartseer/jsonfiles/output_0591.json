@@ -1,0 +1,18 @@
+{
+  "mark": "area",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "ordinal"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    },
+    "detail": {
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

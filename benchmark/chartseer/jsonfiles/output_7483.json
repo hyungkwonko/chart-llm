@@ -1,0 +1,19 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "ordinal"
+    },
+    "shape": {
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

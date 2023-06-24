@@ -1,0 +1,20 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "shape": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "month"
+    }
+  }
+}

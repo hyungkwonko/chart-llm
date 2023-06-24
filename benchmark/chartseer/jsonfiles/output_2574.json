@@ -1,0 +1,15 @@
+{
+  "mark": "area",
+  "encoding": {
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

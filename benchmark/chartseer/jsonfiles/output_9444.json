@@ -1,0 +1,23 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "temporal"
+    },
+    "shape": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    }
+  }
+}

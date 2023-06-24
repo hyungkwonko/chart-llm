@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Private", "y_data": 7}, {"x_data": "Public", "y_data": 3}, {"x_data": "Tribal", "y_data": 1}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "count(*)"}, "color": {"field": "x_data", "type": "nominal", "title": "Type"}}}

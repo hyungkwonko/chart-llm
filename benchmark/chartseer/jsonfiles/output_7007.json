@@ -1,0 +1,20 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

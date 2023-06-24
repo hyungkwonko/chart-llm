@@ -1,0 +1,23 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "detail": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

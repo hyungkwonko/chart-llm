@@ -1,0 +1,19 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

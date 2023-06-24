@@ -1,0 +1,23 @@
+{
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "temporal"
+    },
+    "detail": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

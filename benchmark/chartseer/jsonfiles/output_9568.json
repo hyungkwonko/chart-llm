@@ -1,0 +1,20 @@
+{
+  "mark": "line",
+  "encoding": {
+    "y": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "day"
+    },
+    "size": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

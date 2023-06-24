@@ -1,0 +1,18 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

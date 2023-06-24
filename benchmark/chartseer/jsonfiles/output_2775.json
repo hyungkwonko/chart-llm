@@ -1,0 +1,24 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "detail": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "shape": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "mark": "point",
+  "encoding": {
+    "y": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "detail": {
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

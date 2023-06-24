@@ -1,0 +1,24 @@
+{
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "detail": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "year"
+    }
+  }
+}

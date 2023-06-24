@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "15\u20131", "y_data": 2}, {"x_data": "14\u20132", "y_data": 4}, {"x_data": "14\u20133", "y_data": 4}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "All_Home", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "SUM(Team_ID)"}}}

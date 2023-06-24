@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc4.json", 
+  "encoding": {
+    "color": {
+      "field": "major", 
+      "type": "nominal",
+      "scale": {
+        "domain": ["Business", "Engineering", "Env Design", "Chemistry", "Social Sciences", "Arts Humanities", "Nat Resources", "Math Phys Sci", "LS Undergrad", "Bio Sciences", "LS Programs"],
+        "range": ["#393d77","#bc9d42","#043c30","#ab4a4c","#64783c", "#7a4372", "#532f0b", "#d4626d", "#e6b95b", "#6c71cc", "#b5cd71"]
+      }
+    }, 
+    "x": {
+      "field": "percent", 
+      "type": "quantitative"
+    }, 
+    "y": {
+      "field": "major", 
+      "type": "nominal",
+      "sort": null
+    }
+  }, 
+  "data": {
+    "url": "data/d3/data/7920_0.csv"
+  }, 
+  "mark": "bar"
+}

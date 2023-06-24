@@ -1,0 +1,23 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "detail": {
+      "field": "str",
+      "type": "ordinal"
+    },
+    "y": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "ordinal"
+    },
+    "size": {
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

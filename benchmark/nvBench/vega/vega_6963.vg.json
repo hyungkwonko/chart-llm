@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Sales Manager", "y_data": 5}, {"x_data": "Sales Representative", "y_data": 29}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "JOB_TITLE", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(JOB_TITLE)"}}}

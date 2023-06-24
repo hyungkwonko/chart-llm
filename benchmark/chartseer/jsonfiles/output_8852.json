@@ -1,0 +1,25 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    },
+    "detail": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

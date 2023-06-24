@@ -1,0 +1,19 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "year"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

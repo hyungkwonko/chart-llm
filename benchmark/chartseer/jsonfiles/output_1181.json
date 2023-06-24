@@ -1,0 +1,23 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "shape": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "size": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

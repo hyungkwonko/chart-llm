@@ -1,0 +1,23 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "shape": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

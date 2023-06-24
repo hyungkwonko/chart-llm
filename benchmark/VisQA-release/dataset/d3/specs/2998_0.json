@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc4.json", 
+  "encoding": {
+    "y": {
+      "field": "transportation", 
+      "type": "nominal",
+      "sort": null
+    }, 
+    "x": {
+      "field": "ridership", 
+      "type": "quantitative"
+    }
+  }, 
+  "data": {
+    "url": "data/d3/data/2998_0.csv"
+  }, 
+  "mark": "bar"
+}

@@ -1,0 +1,25 @@
+{
+  "mark": "line",
+  "encoding": {
+    "detail": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "size": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "detail": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "shape": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

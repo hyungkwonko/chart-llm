@@ -1,0 +1,24 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "detail": {
+      "field": "str",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "x": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "size": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

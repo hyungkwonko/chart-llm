@@ -1,0 +1,19 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "detail": {
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Luis", "y_data": 5}, {"x_data": "Diego", "y_data": 4}, {"x_data": "Puja", "y_data": 3}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "FirstName", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "SupportRepId"}}}

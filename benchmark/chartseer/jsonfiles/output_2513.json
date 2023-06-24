@@ -1,0 +1,23 @@
+{
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "month"
+    },
+    "shape": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

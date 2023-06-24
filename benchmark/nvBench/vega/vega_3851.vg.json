@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Village", "y_data": 1009.75}, {"x_data": "Town", "y_data": 5706}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Status", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "avg(Population)"}}}

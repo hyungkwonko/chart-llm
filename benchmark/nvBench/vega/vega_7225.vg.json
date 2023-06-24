@@ -1,0 +1,27 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "Clothes",
+                "y_data": 408.82
+            },
+            {
+                "x_data": "Hardware",
+                "y_data": 612.46
+            }
+        ]
+    },
+    "mark": "arc",
+    "encoding": {
+        "theta": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "min(product_price)"
+        },
+        "color": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "product_type_code"
+        }
+    }
+}

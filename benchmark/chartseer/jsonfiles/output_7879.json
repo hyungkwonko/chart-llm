@@ -1,0 +1,24 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    },
+    "detail": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "year"
+    }
+  }
+}

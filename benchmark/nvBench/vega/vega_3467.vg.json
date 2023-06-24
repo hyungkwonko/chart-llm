@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "2014", "y_data": 8}, {"x_data": "2015", "y_data": 0}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "date", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "AVG(cloud_cover)"}}}

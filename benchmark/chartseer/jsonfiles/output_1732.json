@@ -1,0 +1,19 @@
+{
+  "mark": "area",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "quantitative"
+    },
+    "size": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

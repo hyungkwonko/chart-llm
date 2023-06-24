@@ -1,0 +1,19 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

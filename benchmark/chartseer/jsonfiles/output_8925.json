@@ -1,0 +1,23 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "nominal"
+    },
+    "shape": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

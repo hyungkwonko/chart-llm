@@ -1,0 +1,19 @@
+{
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

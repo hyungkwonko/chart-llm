@@ -1,0 +1,25 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "year"
+    },
+    "shape": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "year"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

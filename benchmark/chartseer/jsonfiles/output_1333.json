@@ -1,0 +1,14 @@
+{
+  "mark": "area",
+  "encoding": {
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

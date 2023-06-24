@@ -1,0 +1,23 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "detail": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "year"
+    }
+  }
+}

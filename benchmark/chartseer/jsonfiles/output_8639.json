@@ -1,0 +1,18 @@
+{
+  "mark": "line",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "detail": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    }
+  }
+}

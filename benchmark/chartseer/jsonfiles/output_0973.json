@@ -1,0 +1,25 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "detail": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

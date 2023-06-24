@@ -1,0 +1,25 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "shape": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

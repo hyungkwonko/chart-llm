@@ -1,0 +1,25 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "detail": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "shape": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

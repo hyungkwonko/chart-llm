@@ -1,0 +1,20 @@
+{
+  "mark": "line",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "day"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "shape": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

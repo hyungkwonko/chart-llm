@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Firefox", "y_data": 2}, {"x_data": "Internet Explorer", "y_data": 3}, {"x_data": "Opera", "y_data": 2}, {"x_data": "Safari", "y_data": 2}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "COUNT(name)"}, "color": {"field": "x_data", "type": "nominal", "title": "name"}}}

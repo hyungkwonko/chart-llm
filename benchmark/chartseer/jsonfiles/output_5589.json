@@ -1,0 +1,24 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "detail": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

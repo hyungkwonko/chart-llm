@@ -1,0 +1,23 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "shape": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "size": {
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

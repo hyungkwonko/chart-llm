@@ -1,0 +1,20 @@
+{
+  "mark": "area",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "day"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "size": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

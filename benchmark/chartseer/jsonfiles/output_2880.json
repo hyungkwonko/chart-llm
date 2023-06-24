@@ -1,0 +1,15 @@
+{
+  "mark": "area",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

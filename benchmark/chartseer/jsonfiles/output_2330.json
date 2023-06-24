@@ -1,0 +1,25 @@
+{
+  "mark": "area",
+  "encoding": {
+    "detail": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "shape": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "year"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "year"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "bin": true,
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

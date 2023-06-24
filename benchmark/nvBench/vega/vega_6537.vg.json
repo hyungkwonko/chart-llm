@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "SML", "y_data": 2}, {"x_data": "LGE", "y_data": 4}, {"x_data": "MED", "y_data": 9}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "size_code", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(size_code)"}}}

@@ -1,0 +1,25 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "detail": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "nominal"
+    },
+    "size": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

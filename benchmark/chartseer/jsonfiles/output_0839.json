@@ -1,0 +1,15 @@
+{
+  "mark": "point",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "CACHEbox",
+                "y_data": 2
+            },
+            {
+                "x_data": "CProxy",
+                "y_data": 2
+            },
+            {
+                "x_data": "Fasterfox",
+                "y_data": 3
+            },
+            {
+                "x_data": "Nitro",
+                "y_data": 1
+            },
+            {
+                "x_data": "fasTun",
+                "y_data": 1
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "name",
+            "sort": "descending"
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "COUNT(name)"
+        }
+    }
+}

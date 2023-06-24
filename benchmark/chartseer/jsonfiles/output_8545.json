@@ -1,0 +1,25 @@
+{
+  "mark": "point",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "size": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "day"
+    }
+  }
+}

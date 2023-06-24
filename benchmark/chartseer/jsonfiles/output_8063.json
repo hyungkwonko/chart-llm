@@ -1,0 +1,23 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "quantitative"
+    },
+    "shape": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

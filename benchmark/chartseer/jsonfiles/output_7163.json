@@ -1,0 +1,19 @@
+{
+  "mark": "line",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "day"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "quantitative"
+    },
+    "size": {
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

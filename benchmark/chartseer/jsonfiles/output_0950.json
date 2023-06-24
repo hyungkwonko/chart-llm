@@ -1,0 +1,24 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "shape": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

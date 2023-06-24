@@ -1,0 +1,15 @@
+{
+  "mark": "area",
+  "encoding": {
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "day"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "shape": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "mark": "line",
+  "encoding": {
+    "y": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

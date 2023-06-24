@@ -1,0 +1,23 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "shape": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "size": {
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

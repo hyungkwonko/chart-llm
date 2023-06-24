@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Chicagoland Speedway", "y_data": 75000}, {"x_data": "Kansas Speedway", "y_data": 81687}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Name", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "Seating"}}}

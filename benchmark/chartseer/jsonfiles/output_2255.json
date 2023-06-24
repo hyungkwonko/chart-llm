@@ -1,0 +1,24 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    },
+    "size": {
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

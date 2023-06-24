@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Bell Mobility", "y_data": 3}, {"x_data": "Vodafone AU", "y_data": 5}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Carrier", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(Carrier)"}}}

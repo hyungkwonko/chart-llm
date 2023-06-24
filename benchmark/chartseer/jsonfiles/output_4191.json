@@ -1,0 +1,15 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "day"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "detail": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

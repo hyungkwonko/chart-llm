@@ -1,0 +1,23 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "quantitative"
+    },
+    "detail": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "year"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

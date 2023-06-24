@@ -1,0 +1,36 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "Evangeline",
+                "y_data": 1
+            },
+            {
+                "x_data": "Lyric",
+                "y_data": 4
+            },
+            {
+                "x_data": "Kacey",
+                "y_data": 6
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "name",
+            "sort": {
+                "op": "sum",
+                "field": "y_data",
+                "order": "ascending"
+            }
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "age"
+        }
+    }
+}

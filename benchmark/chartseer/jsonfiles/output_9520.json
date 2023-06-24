@@ -1,0 +1,25 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "temporal"
+    },
+    "detail": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

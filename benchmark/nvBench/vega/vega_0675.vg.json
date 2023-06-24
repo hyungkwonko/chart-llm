@@ -1,0 +1,36 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "Noon",
+                "y_data": 2
+            },
+            {
+                "x_data": "Morning",
+                "y_data": 4
+            },
+            {
+                "x_data": "Night",
+                "y_data": 5
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "Time_of_day",
+            "sort": {
+                "op": "sum",
+                "field": "y_data",
+                "order": "ascending"
+            }
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "count(*)"
+        }
+    }
+}

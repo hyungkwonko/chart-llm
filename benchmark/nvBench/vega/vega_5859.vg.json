@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "2018-03-25", "y_data": 6}, {"x_data": "2018-03-24", "y_data": 3}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "date_departed", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(date_departed)"}}}

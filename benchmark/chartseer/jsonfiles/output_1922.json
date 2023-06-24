@@ -1,0 +1,15 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

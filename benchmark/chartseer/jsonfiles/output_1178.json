@@ -1,0 +1,25 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "nominal"
+    },
+    "detail": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "day"
+    }
+  }
+}

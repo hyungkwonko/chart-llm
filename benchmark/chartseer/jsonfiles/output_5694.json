@@ -1,0 +1,23 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "nominal"
+    },
+    "size": {
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

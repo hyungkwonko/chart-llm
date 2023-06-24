@@ -1,0 +1,18 @@
+{
+  "mark": "line",
+  "encoding": {
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "size": {
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

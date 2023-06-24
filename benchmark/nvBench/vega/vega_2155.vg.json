@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "2013-10-14", "y_data": 49}, {"x_data": "2013-10-31", "y_data": 54}, {"x_data": "2013-08-31", "y_data": 72}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "date", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "mean_humidity"}}}

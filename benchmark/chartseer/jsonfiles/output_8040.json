@@ -1,0 +1,24 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "detail": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "day"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "day"
+    },
+    "size": {
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

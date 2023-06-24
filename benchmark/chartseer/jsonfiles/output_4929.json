@@ -1,0 +1,25 @@
+{
+  "mark": "area",
+  "encoding": {
+    "detail": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "shape": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "day"
+    }
+  }
+}

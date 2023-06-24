@@ -1,0 +1,19 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "quantitative"
+    },
+    "detail": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

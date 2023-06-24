@@ -1,0 +1,25 @@
+{
+  "mark": "area",
+  "encoding": {
+    "shape": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    },
+    "size": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "day"
+    }
+  }
+}

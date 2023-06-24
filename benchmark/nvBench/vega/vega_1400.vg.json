@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "February 2", "y_data": 2}, {"x_data": "February 5", "y_data": 1}, {"x_data": "February 11", "y_data": 1}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Date", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(Date)"}}}

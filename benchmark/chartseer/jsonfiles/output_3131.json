@@ -1,0 +1,19 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

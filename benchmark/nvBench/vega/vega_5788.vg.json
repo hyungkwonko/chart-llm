@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "h", "y_data": 1}, {"x_data": "m", "y_data": 2}, {"x_data": "s", "y_data": 1}, {"x_data": "z", "y_data": 1}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "COUNT(lot_details)"}, "color": {"field": "x_data", "type": "nominal", "title": "lot_details"}}}

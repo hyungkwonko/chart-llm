@@ -1,0 +1,22 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "shape": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "size": {
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

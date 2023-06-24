@@ -1,0 +1,24 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "day"
+    },
+    "x": {
+      "field": "str",
+      "type": "quantitative"
+    },
+    "size": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "day"
+    }
+  }
+}

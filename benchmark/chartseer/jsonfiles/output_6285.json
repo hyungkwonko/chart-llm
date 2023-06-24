@@ -1,0 +1,25 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "day"
+    },
+    "size": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "day"
+    }
+  }
+}

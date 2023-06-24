@@ -1,0 +1,25 @@
+{
+  "mark": "line",
+  "encoding": {
+    "detail": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "size": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

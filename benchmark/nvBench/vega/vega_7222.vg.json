@@ -1,0 +1,48 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "Tokyo",
+                "y_data": 1
+            },
+            {
+                "x_data": "Austin",
+                "y_data": 2
+            },
+            {
+                "x_data": "Los Angeles",
+                "y_data": 3
+            },
+            {
+                "x_data": "Beijing",
+                "y_data": 4
+            },
+            {
+                "x_data": "Taiwan",
+                "y_data": 5
+            },
+            {
+                "x_data": "Paris",
+                "y_data": 6
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "Headquarter",
+            "sort": {
+                "op": "sum",
+                "field": "y_data",
+                "order": "ascending"
+            }
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "AVG(Manufacturer)"
+        }
+    }
+}

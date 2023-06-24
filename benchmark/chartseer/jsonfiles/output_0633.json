@@ -1,0 +1,25 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "shape": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

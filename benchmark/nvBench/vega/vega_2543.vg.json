@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Open Project", "y_data": 20316}, {"x_data": "Private Project", "y_data": 21335}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Statement_Details", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "SUM(Account_Details)"}}}

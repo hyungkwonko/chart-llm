@@ -1,0 +1,25 @@
+{
+  "mark": "area",
+  "encoding": {
+    "detail": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "nominal"
+    },
+    "shape": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

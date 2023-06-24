@@ -1,0 +1,25 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "year"
+    },
+    "size": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

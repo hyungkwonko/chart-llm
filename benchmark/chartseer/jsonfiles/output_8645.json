@@ -1,0 +1,23 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "shape": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "size": {
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

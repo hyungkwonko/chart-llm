@@ -1,0 +1,23 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "quantitative"
+    },
+    "detail": {
+      "field": "str",
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

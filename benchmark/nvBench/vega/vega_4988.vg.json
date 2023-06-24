@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Clothes", "y_data": 715.5366666666665}, {"x_data": "Hardware", "y_data": 796.0416666666665}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "product_type_code", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "avg(product_price)"}}}

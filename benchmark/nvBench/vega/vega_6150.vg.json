@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "M", "y_data": 1366}, {"x_data": "F", "y_data": 395}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Sex", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "SUM(Height)"}}}

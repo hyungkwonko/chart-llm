@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Organizer", "y_data": 1.5}, {"x_data": "Participant", "y_data": 2}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Participant_Type_Code", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "AVG(count(*))"}}}

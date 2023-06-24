@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "failed parts", "y_data": 6}, {"x_data": "system error", "y_data": 9}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "COUNT(fault_description)"}, "color": {"field": "x_data", "type": "nominal", "title": "fault_description"}}}

@@ -1,0 +1,25 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "shape": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

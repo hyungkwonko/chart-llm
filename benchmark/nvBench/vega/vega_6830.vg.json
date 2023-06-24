@@ -1,0 +1,104 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "Stabler",
+                "y_data": 113
+            },
+            {
+                "x_data": "Painter",
+                "y_data": 97
+            },
+            {
+                "x_data": "Taylor",
+                "y_data": 93
+            },
+            {
+                "x_data": "Nassa",
+                "y_data": 92
+            },
+            {
+                "x_data": "Whitman",
+                "y_data": 76
+            },
+            {
+                "x_data": "Rathbone",
+                "y_data": 60
+            },
+            {
+                "x_data": "Garfield",
+                "y_data": 59
+            },
+            {
+                "x_data": "Lambea",
+                "y_data": 51
+            },
+            {
+                "x_data": "Saucon",
+                "y_data": 49.33333333333334
+            },
+            {
+                "x_data": "Gates",
+                "y_data": 37.5
+            },
+            {
+                "x_data": "Alumni",
+                "y_data": 36.5
+            },
+            {
+                "x_data": "Grace",
+                "y_data": 34
+            },
+            {
+                "x_data": "Polya",
+                "y_data": 28
+            },
+            {
+                "x_data": "Fairchild",
+                "y_data": 27
+            },
+            {
+                "x_data": "Main",
+                "y_data": 26
+            },
+            {
+                "x_data": "Drown",
+                "y_data": 18
+            },
+            {
+                "x_data": "Bronfman",
+                "y_data": 12
+            },
+            {
+                "x_data": "Power",
+                "y_data": 11
+            },
+            {
+                "x_data": "Chandler",
+                "y_data": 10.5
+            },
+            {
+                "x_data": "Lamberton",
+                "y_data": 10
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "building",
+            "sort": {
+                "op": "sum",
+                "field": "y_data",
+                "order": "descending"
+            }
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "avg(capacity)"
+        }
+    }
+}

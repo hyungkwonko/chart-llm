@@ -1,0 +1,20 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "year"
+    },
+    "size": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

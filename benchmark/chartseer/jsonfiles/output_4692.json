@@ -1,0 +1,22 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "size": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

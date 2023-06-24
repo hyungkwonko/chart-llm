@@ -1,0 +1,19 @@
+{
+  "mark": "point",
+  "encoding": {
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "detail": {
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

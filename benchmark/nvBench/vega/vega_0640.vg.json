@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Treasury", "y_data": 231794}, {"x_data": "Homeland Security", "y_data": 208000}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Name", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "SUM(Num_Employees)"}}}

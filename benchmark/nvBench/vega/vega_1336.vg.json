@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "CA", "y_data": 3}, {"x_data": "NY", "y_data": 3}, {"x_data": "NJ\n", "y_data": 5}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "state", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "SUM(vote_id)"}}}

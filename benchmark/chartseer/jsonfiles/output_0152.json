@@ -1,0 +1,23 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "nominal"
+    },
+    "size": {
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "shape": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "year"
+    },
+    "size": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "year"
+    }
+  }
+}

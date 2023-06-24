@@ -1,0 +1,25 @@
+{
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "shape": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "y": {
+      "bin": true,
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

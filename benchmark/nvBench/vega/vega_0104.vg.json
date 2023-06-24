@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Research Patent", "y_data": 5}, {"x_data": "Published Research Paper", "y_data": 10}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "outcome_description", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(outcome_description)"}}}

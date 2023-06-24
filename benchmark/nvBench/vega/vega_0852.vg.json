@@ -1,0 +1,127 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "1958",
+                "y_data": 1,
+                "classify": "Dr. Kwame Nkrumah (MP)"
+            },
+            {
+                "x_data": "1960",
+                "y_data": 1,
+                "classify": "Dr. Kwame Nkrumah (MP)"
+            },
+            {
+                "x_data": "1959",
+                "y_data": 1,
+                "classify": "Dr. Kwame Nkrumah (MP)"
+            },
+            {
+                "x_data": "1961",
+                "y_data": 1,
+                "classify": "Dr. Kwame Nkrumah (MP)"
+            },
+            {
+                "x_data": "1957",
+                "y_data": 2,
+                "classify": "Dr. Kwame Nkrumah (MP)"
+            },
+            {
+                "x_data": "1958",
+                "y_data": 1,
+                "classify": "Ebenezer Ako-Adjei (MP)"
+            },
+            {
+                "x_data": "1960",
+                "y_data": 1,
+                "classify": "Ebenezer Ako-Adjei (MP)"
+            },
+            {
+                "x_data": "1959",
+                "y_data": 2,
+                "classify": "Ebenezer Ako-Adjei (MP)"
+            },
+            {
+                "x_data": "1961",
+                "y_data": 2,
+                "classify": "Ebenezer Ako-Adjei (MP)"
+            },
+            {
+                "x_data": "1957",
+                "y_data": 2,
+                "classify": "Ebenezer Ako-Adjei (MP)"
+            },
+            {
+                "x_data": "1958",
+                "y_data": 1,
+                "classify": "Imoru Egala (MP)"
+            },
+            {
+                "x_data": "1960",
+                "y_data": 2,
+                "classify": "Imoru Egala (MP)"
+            },
+            {
+                "x_data": "1959",
+                "y_data": 2,
+                "classify": "Imoru Egala (MP)"
+            },
+            {
+                "x_data": "1961",
+                "y_data": 2,
+                "classify": "Imoru Egala (MP)"
+            },
+            {
+                "x_data": "1957",
+                "y_data": 2,
+                "classify": "Imoru Egala (MP)"
+            },
+            {
+                "x_data": "1958",
+                "y_data": 2,
+                "classify": "Kojo Botsio (MP)"
+            },
+            {
+                "x_data": "1960",
+                "y_data": 2,
+                "classify": "Kojo Botsio (MP)"
+            },
+            {
+                "x_data": "1959",
+                "y_data": 2,
+                "classify": "Kojo Botsio (MP)"
+            },
+            {
+                "x_data": "1961",
+                "y_data": 2,
+                "classify": "Kojo Botsio (MP)"
+            },
+            {
+                "x_data": "1957",
+                "y_data": 2,
+                "classify": "Kojo Botsio (MP)"
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "Took_office",
+            "sort": {
+                "op": "sum",
+                "field": "y_data",
+                "order": "ascending"
+            }
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "COUNT(Took_office)"
+        },
+        "color": {
+            "field": "classify"
+        }
+    }
+}

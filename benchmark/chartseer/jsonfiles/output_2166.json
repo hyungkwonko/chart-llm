@@ -1,0 +1,24 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    },
+    "shape": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "year"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Credit", "y_data": 21491532119475148}, {"x_data": "Debit", "y_data": 10744938002896200}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "card_type_code", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "SUM(card_number)"}}}

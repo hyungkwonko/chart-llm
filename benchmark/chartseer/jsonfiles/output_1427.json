@@ -1,0 +1,18 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "y": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "shape": {
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "shape": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    },
+    "size": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "quantitative"
+    },
+    "detail": {
+      "field": "str",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "day"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

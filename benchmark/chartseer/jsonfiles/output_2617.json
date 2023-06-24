@@ -1,0 +1,20 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

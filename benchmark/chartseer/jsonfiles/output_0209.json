@@ -1,0 +1,24 @@
+{
+  "mark": "point",
+  "encoding": {
+    "detail": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "year"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "nominal"
+    },
+    "size": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

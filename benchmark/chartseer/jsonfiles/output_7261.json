@@ -1,0 +1,15 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "y": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

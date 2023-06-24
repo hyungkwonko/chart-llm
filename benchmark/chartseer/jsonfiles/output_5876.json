@@ -1,0 +1,25 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "detail": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "year"
+    },
+    "shape": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "year"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "shape": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "size": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

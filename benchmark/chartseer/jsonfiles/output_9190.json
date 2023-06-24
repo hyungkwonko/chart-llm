@@ -1,0 +1,19 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

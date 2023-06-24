@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Bridgeport", "y_data": 1}, {"x_data": "Cheshire", "y_data": 2}, {"x_data": "Hartford", "y_data": 3}, {"x_data": "Waterbury", "y_data": 4}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "count(*)"}, "color": {"field": "x_data", "type": "nominal", "title": "Address"}}}

@@ -1,0 +1,25 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "detail": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "temporal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "size": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "month"
+    }
+  }
+}

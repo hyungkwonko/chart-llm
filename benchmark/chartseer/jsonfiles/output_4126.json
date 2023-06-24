@@ -1,0 +1,24 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "shape": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

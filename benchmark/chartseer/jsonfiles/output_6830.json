@@ -1,0 +1,19 @@
+{
+  "mark": "line",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "nominal"
+    },
+    "size": {
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "size": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

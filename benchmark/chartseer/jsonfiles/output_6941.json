@@ -1,0 +1,20 @@
+{
+  "mark": "area",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "temporal"
+    },
+    "size": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "size": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

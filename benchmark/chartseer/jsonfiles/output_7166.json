@@ -1,0 +1,23 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "nominal"
+    },
+    "detail": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "day"
+    }
+  }
+}

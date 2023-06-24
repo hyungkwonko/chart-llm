@@ -1,0 +1,19 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "detail": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

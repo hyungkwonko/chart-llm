@@ -1,0 +1,19 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

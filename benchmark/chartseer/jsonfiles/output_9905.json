@@ -1,0 +1,25 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "detail": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "shape": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "year"
+    },
+    "x": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "year"
+    }
+  }
+}

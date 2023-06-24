@@ -1,0 +1,25 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "num",
+      "type": "ordinal"
+    },
+    "shape": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

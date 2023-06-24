@@ -1,0 +1,23 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc4.json",
+    "encoding": {
+        "y": {
+            "field": "Country",
+            "type": "nominal",
+            "sort":null
+
+        },
+        "color": {
+            "field": "opinion",
+            "type": "nominal"
+        },
+        "x": {
+            "field": "percentage",
+            "type": "quantitative"
+        }
+    },
+    "data": {
+        "url": "data/kong/data/27.csv"
+    },
+    "mark": "bar"
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc4.json",
+  "data": {
+    "url": "data/wikitables-202/data/59.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Central Division", "type": "nominal"},
+    "y": {"field": "L", "type": "quantitative"}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "mark": "area",
+  "encoding": {
+    "shape": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "year"
+    },
+    "size": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "year"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "food", "y_data": 7}, {"x_data": "animal", "y_data": 4}, {"x_data": "environmental", "y_data": 3}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "AllergyType", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(AllergyType)"}}}

@@ -1,0 +1,24 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "detail": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

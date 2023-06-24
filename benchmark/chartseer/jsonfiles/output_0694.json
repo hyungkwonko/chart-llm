@@ -1,0 +1,15 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

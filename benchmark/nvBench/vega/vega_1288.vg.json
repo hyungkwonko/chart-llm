@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "AZ", "y_data": 12000}, {"x_data": "FL", "y_data": 19000}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "state", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "enr"}}}

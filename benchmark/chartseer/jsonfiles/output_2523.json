@@ -1,0 +1,24 @@
+{
+  "mark": "line",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "year"
+    },
+    "shape": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

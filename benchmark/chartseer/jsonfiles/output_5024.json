@@ -1,0 +1,25 @@
+{
+  "mark": "area",
+  "encoding": {
+    "shape": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "temporal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "temporal"
+    },
+    "size": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

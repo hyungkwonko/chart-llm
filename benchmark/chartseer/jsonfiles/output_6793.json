@@ -1,0 +1,23 @@
+{
+  "mark": "point",
+  "encoding": {
+    "detail": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "temporal"
+    },
+    "size": {
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

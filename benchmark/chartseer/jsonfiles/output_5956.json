@@ -1,0 +1,20 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "month"
+    }
+  }
+}

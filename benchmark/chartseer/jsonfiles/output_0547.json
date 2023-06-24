@@ -1,0 +1,24 @@
+{
+  "mark": "area",
+  "encoding": {
+    "detail": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "size": {
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

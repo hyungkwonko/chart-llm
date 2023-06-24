@@ -1,0 +1,24 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "nominal"
+    },
+    "detail": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

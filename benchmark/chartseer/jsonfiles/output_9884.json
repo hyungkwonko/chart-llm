@@ -1,0 +1,25 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "shape": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "y": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "month"
+    }
+  }
+}

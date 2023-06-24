@@ -1,0 +1,14 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

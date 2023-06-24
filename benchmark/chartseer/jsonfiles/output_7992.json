@@ -1,0 +1,24 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "detail": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "nominal"
+    },
+    "shape": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "month"
+    }
+  }
+}

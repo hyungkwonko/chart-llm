@@ -1,0 +1,20 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "month"
+    }
+  }
+}

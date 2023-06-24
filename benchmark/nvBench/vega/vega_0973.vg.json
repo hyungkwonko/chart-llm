@@ -1,0 +1,52 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "Sun",
+                "y_data": 0
+            },
+            {
+                "x_data": "Sat",
+                "y_data": 1
+            },
+            {
+                "x_data": "Fri",
+                "y_data": 2
+            },
+            {
+                "x_data": "Mon",
+                "y_data": 2
+            },
+            {
+                "x_data": "Thur",
+                "y_data": 2
+            },
+            {
+                "x_data": "Tue",
+                "y_data": 3
+            },
+            {
+                "x_data": "Wed",
+                "y_data": 3
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "year",
+            "sort": {
+                "op": "sum",
+                "field": "y_data",
+                "order": "ascending"
+            }
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "COUNT(year)"
+        }
+    }
+}

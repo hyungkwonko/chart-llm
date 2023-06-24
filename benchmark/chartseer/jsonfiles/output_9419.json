@@ -1,0 +1,14 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

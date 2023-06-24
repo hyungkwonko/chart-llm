@@ -1,0 +1,20 @@
+{
+  "mark": "point",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "temporal"
+    },
+    "shape": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "day"
+    }
+  }
+}

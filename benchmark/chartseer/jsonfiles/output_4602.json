@@ -1,0 +1,19 @@
+{
+  "mark": "line",
+  "encoding": {
+    "y": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    },
+    "size": {
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

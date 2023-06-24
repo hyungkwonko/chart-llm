@@ -1,0 +1,25 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "day"
+    },
+    "shape": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

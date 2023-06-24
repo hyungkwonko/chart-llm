@@ -1,0 +1,20 @@
+{
+  "mark": "point",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "detail": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    }
+  }
+}

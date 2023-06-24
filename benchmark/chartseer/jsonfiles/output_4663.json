@@ -1,0 +1,25 @@
+{
+  "mark": "point",
+  "encoding": {
+    "detail": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "nominal"
+    },
+    "shape": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "nominal"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "day"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "Charlie Hollocher",
+                "y_data": 1
+            },
+            {
+                "x_data": "Eddie Collins",
+                "y_data": 2
+            },
+            {
+                "x_data": "Joe Cochrane",
+                "y_data": 1
+            },
+            {
+                "x_data": "Lou Boudrea",
+                "y_data": 1
+            },
+            {
+                "x_data": "Mark Sewell",
+                "y_data": 1
+            },
+            {
+                "x_data": "Mickey Cochrane",
+                "y_data": 1
+            },
+            {
+                "x_data": "Tony Sewell",
+                "y_data": 1
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "Name",
+            "sort": "ascending"
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "COUNT(Name)"
+        }
+    }
+}

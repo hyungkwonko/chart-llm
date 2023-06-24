@@ -1,0 +1,25 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "shape": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "size": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

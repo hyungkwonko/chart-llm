@@ -1,0 +1,24 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "detail": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "year"
+    },
+    "y": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "year"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "shape": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

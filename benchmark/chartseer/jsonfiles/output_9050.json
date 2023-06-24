@@ -1,0 +1,25 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "year"
+    },
+    "shape": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "nominal"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

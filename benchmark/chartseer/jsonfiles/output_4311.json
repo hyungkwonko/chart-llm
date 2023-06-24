@@ -1,0 +1,23 @@
+{
+  "mark": "area",
+  "encoding": {
+    "shape": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "str",
+      "type": "quantitative"
+    },
+    "size": {
+      "field": "str",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "field": "str",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "str",
+      "type": "ordinal"
+    },
+    "size": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "day"
+    }
+  }
+}

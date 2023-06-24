@@ -1,0 +1,18 @@
+{
+  "mark": "area",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "shape": {
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

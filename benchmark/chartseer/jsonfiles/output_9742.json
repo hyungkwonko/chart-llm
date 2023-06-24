@@ -1,0 +1,24 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "shape": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "month"
+    },
+    "size": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

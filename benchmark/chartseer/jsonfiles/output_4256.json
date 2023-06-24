@@ -1,0 +1,19 @@
+{
+  "mark": "area",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "year"
+    },
+    "x": {
+      "field": "str",
+      "type": "ordinal"
+    },
+    "size": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

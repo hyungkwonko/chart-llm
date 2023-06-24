@@ -1,0 +1,15 @@
+{
+  "mark": "point",
+  "encoding": {
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "year"
+    }
+  }
+}

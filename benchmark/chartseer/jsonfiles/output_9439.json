@@ -1,0 +1,24 @@
+{
+  "mark": "line",
+  "encoding": {
+    "detail": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "nominal"
+    },
+    "shape": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "year"
+    }
+  }
+}

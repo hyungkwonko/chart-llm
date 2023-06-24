@@ -1,0 +1,15 @@
+{
+  "mark": "point",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

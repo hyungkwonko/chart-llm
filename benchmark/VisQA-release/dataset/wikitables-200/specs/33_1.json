@@ -1,0 +1,16 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc4.json",
+  "data": {
+    "url": "data/wikitables-200/data/33.csv"
+  },
+  "transform": [
+    {"calculate": "replace(datum.Population, /,/g, '')", "as": "Population"},
+    {"filter": "datum.District != '(Share in %)'"},
+    {"filter": "datum.District != 'Total Prefecture'"}
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "District", "type": "ordinal"},
+    "y": {"field": "Population", "type": "quantitative"}
+  }
+}

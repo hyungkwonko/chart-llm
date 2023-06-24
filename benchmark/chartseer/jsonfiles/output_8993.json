@@ -1,0 +1,23 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "day"
+    },
+    "y": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "size": {
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

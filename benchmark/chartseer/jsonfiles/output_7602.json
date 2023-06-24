@@ -1,0 +1,25 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "shape": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "temporal"
+    },
+    "size": {
+      "field": "str",
+      "type": "temporal",
+      "timeUnit": "month"
+    }
+  }
+}

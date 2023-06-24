@@ -1,0 +1,20 @@
+{
+  "mark": "area",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    },
+    "detail": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "month"
+    }
+  }
+}

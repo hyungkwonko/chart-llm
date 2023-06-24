@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Aerodynamics and Gas Mileage", "y_data": 1}, {"x_data": "Build Your Own Telescope", "y_data": 2}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Name", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(Name)"}}}

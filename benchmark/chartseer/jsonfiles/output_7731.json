@@ -1,0 +1,23 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "detail": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "size": {
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

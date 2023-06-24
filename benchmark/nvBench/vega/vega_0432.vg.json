@@ -1,0 +1,48 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "KGRANT",
+                "y_data": 0
+            },
+            {
+                "x_data": "MHARTSTE",
+                "y_data": 20
+            },
+            {
+                "x_data": "PFAY",
+                "y_data": 20
+            },
+            {
+                "x_data": "SMAVRIS",
+                "y_data": 40
+            },
+            {
+                "x_data": "HBAER",
+                "y_data": 70
+            },
+            {
+                "x_data": "SHIGGINS",
+                "y_data": 110
+            },
+            {
+                "x_data": "WGIETZ",
+                "y_data": 110
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "EMAIL",
+            "sort": "ascending"
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "DEPARTMENT_ID"
+        }
+    }
+}

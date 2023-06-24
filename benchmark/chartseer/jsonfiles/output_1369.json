@@ -1,0 +1,22 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "shape": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

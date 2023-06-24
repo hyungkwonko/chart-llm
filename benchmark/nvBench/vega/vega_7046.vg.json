@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "USA", "y_data": 91}, {"x_data": "Canada", "y_data": 56}, {"x_data": "Brazil", "y_data": 35}, {"x_data": "France", "y_data": 35}, {"x_data": "Germany", "y_data": 28}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "COUNT(*)"}, "color": {"field": "x_data", "type": "nominal", "title": "billing_country"}}}

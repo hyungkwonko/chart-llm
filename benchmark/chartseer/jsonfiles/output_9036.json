@@ -1,0 +1,15 @@
+{
+  "mark": "line",
+  "encoding": {
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "ordinal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "detail": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "field": "str",
+      "type": "ordinal"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    },
+    "size": {
+      "field": "str",
+      "type": "ordinal"
+    }
+  }
+}

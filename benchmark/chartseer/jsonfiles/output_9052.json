@@ -1,0 +1,20 @@
+{
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

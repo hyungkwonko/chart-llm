@@ -1,0 +1,23 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "bin": true,
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "size": {
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

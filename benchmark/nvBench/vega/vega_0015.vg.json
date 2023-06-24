@@ -1,0 +1,67 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "1903~1913",
+                "y_data": 2
+            },
+            {
+                "x_data": "1914~1924",
+                "y_data": 3
+            },
+            {
+                "x_data": "1925~1935",
+                "y_data": 0
+            },
+            {
+                "x_data": "1936~1946",
+                "y_data": 0
+            },
+            {
+                "x_data": "1947~1957",
+                "y_data": 0
+            },
+            {
+                "x_data": "1958~1968",
+                "y_data": 0
+            },
+            {
+                "x_data": "1969~1979",
+                "y_data": 1
+            },
+            {
+                "x_data": "1980~1990",
+                "y_data": 1
+            },
+            {
+                "x_data": "1991~2001",
+                "y_data": 1
+            },
+            {
+                "x_data": "2002~2012",
+                "y_data": 4
+            },
+            {
+                "x_data": "2013",
+                "y_data": 1
+            }
+        ]
+    },
+    "mark": {
+        "type": "line",
+        "interpolate": "monotone"
+    },
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "year",
+            "sort": "ascending"
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "COUNT(year)"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "month"
+    },
+    "size": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "month"
+    }
+  }
+}

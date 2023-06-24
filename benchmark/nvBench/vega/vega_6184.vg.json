@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Billing", "y_data": 8}, {"x_data": "Shipping", "y_data": 7}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "address_type_code", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(address_type_code)"}}}

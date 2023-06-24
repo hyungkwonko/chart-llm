@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Fiji", "y_data": 45}, {"x_data": "Zimbabwe", "y_data": 48}, {"x_data": "United States", "y_data": 49.6}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Country", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "AVG(Age)"}}}

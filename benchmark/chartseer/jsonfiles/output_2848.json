@@ -1,0 +1,19 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "bin": true,
+      "field": "num",
+      "type": "temporal"
+    },
+    "detail": {
+      "aggregate": "count",
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

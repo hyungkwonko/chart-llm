@@ -1,0 +1,53 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": 3,
+                "y_data": 4,
+                "classify": "14\u20132"
+            },
+            {
+                "x_data": 1,
+                "y_data": 1,
+                "classify": "14\u20132"
+            },
+            {
+                "x_data": 4,
+                "y_data": 5,
+                "classify": "14\u20133"
+            },
+            {
+                "x_data": 2,
+                "y_data": 2,
+                "classify": "15\u20131"
+            }
+        ]
+    },
+    "mark": "point",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "quantitative",
+            "title": "Team_ID",
+            "scale": {
+                "zero": "false"
+            }
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "School_ID",
+            "scale": {
+                "zero": "false"
+            }
+        },
+        "color": {
+            "field": "classify",
+            "type": "nominal"
+        },
+        "shape": {
+            "field": "classify",
+            "type": "nominal"
+        }
+    }
+}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Bednar Film", "y_data": 1}, {"x_data": "Kling Workshop", "y_data": 1}, {"x_data": "Queen Art", "y_data": 1}, {"x_data": "Warino Photo", "y_data": 2}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "COUNT(Store_Name)"}, "color": {"field": "x_data", "type": "nominal", "title": "Store_Name"}}}

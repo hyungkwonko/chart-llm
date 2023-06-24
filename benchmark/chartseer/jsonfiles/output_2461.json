@@ -1,0 +1,18 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

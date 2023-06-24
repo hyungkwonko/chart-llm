@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "RBG", "y_data": 8}, {"x_data": "Black/White", "y_data": 2}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "color", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(color)"}}}

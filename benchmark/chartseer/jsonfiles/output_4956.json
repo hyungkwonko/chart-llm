@@ -1,0 +1,23 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "detail": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

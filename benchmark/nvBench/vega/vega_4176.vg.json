@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "book", "y_data": 1}, {"x_data": "clothes", "y_data": 1}, {"x_data": "food", "y_data": 3}, {"x_data": "music", "y_data": 2}, {"x_data": "phone", "y_data": 2}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "COUNT(product_name)"}, "color": {"field": "x_data", "type": "nominal", "title": "product_name"}}}

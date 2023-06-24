@@ -1,0 +1,24 @@
+{
+  "mark": "area",
+  "encoding": {
+    "shape": {
+      "field": "str",
+      "type": "quantitative"
+    },
+    "y": {
+      "bin": true,
+      "field": "str",
+      "type": "quantitative"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "quantitative"
+    },
+    "size": {
+      "field": "str",
+      "type": "quantitative",
+      "timeUnit": "year"
+    }
+  }
+}

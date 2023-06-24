@@ -1,0 +1,14 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

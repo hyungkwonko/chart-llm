@@ -1,0 +1,31 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "Trystan",
+                "y_data": 3
+            },
+            {
+                "x_data": "Citlalli",
+                "y_data": 6
+            },
+            {
+                "x_data": "Woodrow",
+                "y_data": 9
+            }
+        ]
+    },
+    "mark": "arc",
+    "encoding": {
+        "theta": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "teacher_id"
+        },
+        "color": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "first_name"
+        }
+    }
+}

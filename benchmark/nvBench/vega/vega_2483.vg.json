@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Sept", "y_data": 9083.333333333334}, {"x_data": "Oct", "y_data": 8300}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "HIRE_DATE", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "AVG(SALARY)"}}}

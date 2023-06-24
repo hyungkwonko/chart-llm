@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Baltimore County", "y_data": 2}, {"x_data": "Colony", "y_data": 2}, {"x_data": "Howard", "y_data": 3}, {"x_data": "Mansfield", "y_data": 1}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "COUNT(County_name)"}, "color": {"field": "x_data", "type": "nominal", "title": "County_name"}}}

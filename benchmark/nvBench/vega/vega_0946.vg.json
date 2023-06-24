@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Credit", "y_data": 7}, {"x_data": "Debit", "y_data": 8}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "COUNT(card_type_code)"}, "color": {"field": "x_data", "type": "nominal", "title": "card_type_code"}}}

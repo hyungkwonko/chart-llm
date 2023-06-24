@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "modern", "y_data": 75}, {"x_data": "rustic", "y_data": 150}, {"x_data": "traditional", "y_data": 150}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "decor", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "min(basePrice)"}}}

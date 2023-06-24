@@ -1,0 +1,25 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "year"
+    },
+    "detail": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "year"
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

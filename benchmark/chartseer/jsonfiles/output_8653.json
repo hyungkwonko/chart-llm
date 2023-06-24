@@ -1,0 +1,23 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "year"
+    },
+    "shape": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative"
+    }
+  }
+}

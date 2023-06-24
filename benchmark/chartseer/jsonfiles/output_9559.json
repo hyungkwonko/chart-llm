@@ -1,0 +1,20 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "day"
+    },
+    "detail": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "day"
+    }
+  }
+}

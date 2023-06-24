@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "A&SCI", "y_data": 12}, {"x_data": "BUS", "y_data": 10}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "SCHOOL_CODE", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "count(*)"}}}

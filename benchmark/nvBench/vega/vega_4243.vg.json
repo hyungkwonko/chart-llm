@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Ukraine", "y_data": 1}, {"x_data": "Korea", "y_data": 2}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Paragraph_Text", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(Paragraph_Text)"}}}

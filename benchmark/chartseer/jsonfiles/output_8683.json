@@ -1,0 +1,19 @@
+{
+  "mark": "area",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "year"
+    },
+    "shape": {
+      "field": "num",
+      "type": "quantitative",
+      "timeUnit": "year"
+    }
+  }
+}

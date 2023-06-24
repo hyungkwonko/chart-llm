@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "2002", "y_data": 1}, {"x_data": "2000", "y_data": 1}, {"x_data": "2001", "y_data": 0}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "First_year", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(First_year)"}}}

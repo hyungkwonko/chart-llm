@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Friendly", "y_data": 8}, {"x_data": "Tournament", "y_data": 3}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Competition_type", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(Competition_type)"}}}

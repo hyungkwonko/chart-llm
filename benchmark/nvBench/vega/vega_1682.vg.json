@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Success", "y_data": 41.5}, {"x_data": "Fail", "y_data": 23.333333333333332}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Event_Details", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "AVG(Event_ID)"}}}

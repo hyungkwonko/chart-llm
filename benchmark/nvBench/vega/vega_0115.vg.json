@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "europe", "y_data": 11}, {"x_data": "asia", "y_data": 7}, {"x_data": "america", "y_data": 4}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Continent", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "count(*)"}}}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "2002-01-01", "y_data": 13.4}, {"x_data": "2001-01-01", "y_data": 12}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "PetID", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "weight"}}}

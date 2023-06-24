@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "america", "y_data": 3}, {"x_data": "europe", "y_data": 6}, {"x_data": "asia", "y_data": 2}, {"x_data": "africa", "y_data": 2}, {"x_data": "australia", "y_data": 2}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "count(*)"}, "color": {"field": "x_data", "type": "nominal", "title": "Continent"}}}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "TMobile", "y_data": 208}, {"x_data": "Sprint", "y_data": 160}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Carrier", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "SUM(Memory_in_G)"}}}

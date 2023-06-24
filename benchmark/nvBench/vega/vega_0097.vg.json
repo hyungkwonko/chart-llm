@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Office", "y_data": 7}, {"x_data": "Warehouse", "y_data": 4}, {"x_data": "Residence", "y_data": 4}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "premises_type", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "count(*)"}}}

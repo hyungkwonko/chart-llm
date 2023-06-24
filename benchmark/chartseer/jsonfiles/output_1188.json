@@ -1,0 +1,15 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "bin": true,
+      "field": "str",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "str",
+      "type": "ordinal",
+      "timeUnit": "day"
+    }
+  }
+}

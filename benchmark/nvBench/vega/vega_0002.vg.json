@@ -1,0 +1,39 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "The Case of the Mystery Weekend",
+                "y_data": 15.99
+            },
+            {
+                "x_data": "The Case of the Smart Dummy",
+                "y_data": 12.99
+            },
+            {
+                "x_data": "The Case: Off the Record",
+                "y_data": 8.99
+            },
+            {
+                "x_data": "The Case of the Bermuda Triangle",
+                "y_data": 9.99
+            },
+            {
+                "x_data": "The Case of the Piggy Banker",
+                "y_data": 12.99
+            }
+        ]
+    },
+    "mark": "arc",
+    "encoding": {
+        "theta": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "max(T1.price)"
+        },
+        "color": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "Title"
+        }
+    }
+}

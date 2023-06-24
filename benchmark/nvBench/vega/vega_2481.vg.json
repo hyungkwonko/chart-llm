@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Bill Schreiner", "y_data": 4}, {"x_data": "Jesus Salvador Trevi\u00f1o", "y_data": 1}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Directed_by", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "count(*)"}}}

@@ -1,0 +1,78 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": 3,
+                "y_data": 200,
+                "classify": "F"
+            },
+            {
+                "x_data": 5,
+                "y_data": 195,
+                "classify": "F"
+            },
+            {
+                "x_data": 1,
+                "y_data": 188,
+                "classify": "M"
+            },
+            {
+                "x_data": 2,
+                "y_data": 197,
+                "classify": "M"
+            },
+            {
+                "x_data": 4,
+                "y_data": 202,
+                "classify": "M"
+            },
+            {
+                "x_data": 6,
+                "y_data": 196,
+                "classify": "M"
+            },
+            {
+                "x_data": 7,
+                "y_data": 193,
+                "classify": "M"
+            },
+            {
+                "x_data": 8,
+                "y_data": 194,
+                "classify": "M"
+            },
+            {
+                "x_data": 9,
+                "y_data": 196,
+                "classify": "M"
+            }
+        ]
+    },
+    "mark": "point",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "quantitative",
+            "title": "People_ID",
+            "scale": {
+                "zero": "false"
+            }
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "Height",
+            "scale": {
+                "zero": "false"
+            }
+        },
+        "color": {
+            "field": "classify",
+            "type": "nominal"
+        },
+        "shape": {
+            "field": "classify",
+            "type": "nominal"
+        }
+    }
+}

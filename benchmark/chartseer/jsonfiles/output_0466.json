@@ -1,0 +1,23 @@
+{
+  "mark": "circle",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "month"
+    },
+    "size": {
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

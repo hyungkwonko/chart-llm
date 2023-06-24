@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "On Road", "y_data": 1}, {"x_data": "Packing", "y_data": 2}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "order_status", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(order_status)"}}}

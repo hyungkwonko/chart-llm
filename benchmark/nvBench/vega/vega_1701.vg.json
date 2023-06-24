@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "KLR 211, Box 52", "y_data": 3}, {"x_data": "KLR 333, Box 56", "y_data": 2}, {"x_data": "AAK 230, Box 415", "y_data": 1}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "count(*)"}, "color": {"field": "x_data", "type": "nominal", "title": "DEPT_ADDRESS"}}}

@@ -1,0 +1,20 @@
+{
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "month"
+    },
+    "x": {
+      "field": "num",
+      "type": "nominal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "bin": true,
+      "field": "num",
+      "type": "nominal"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Physical examination", "y_data": 2429}, {"x_data": "Take for a Walk", "y_data": 2392}, {"x_data": "Vaccination", "y_data": 2540}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "SUM(cost_of_treatment)"}, "color": {"field": "x_data", "type": "nominal", "title": "treatment_type_description"}}}

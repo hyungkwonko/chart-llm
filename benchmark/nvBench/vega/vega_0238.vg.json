@@ -1,0 +1,48 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": 7,
+                "y_data": 90,
+                "classify": "CD drive"
+            },
+            {
+                "x_data": 2,
+                "y_data": 120,
+                "classify": "Memory"
+            },
+            {
+                "x_data": 9,
+                "y_data": 66,
+                "classify": "Toner cartridge"
+            }
+        ]
+    },
+    "mark": "point",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "quantitative",
+            "title": "Code",
+            "scale": {
+                "zero": "false"
+            }
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "Price",
+            "scale": {
+                "zero": "false"
+            }
+        },
+        "color": {
+            "field": "classify",
+            "type": "nominal"
+        },
+        "shape": {
+            "field": "classify",
+            "type": "nominal"
+        }
+    }
+}

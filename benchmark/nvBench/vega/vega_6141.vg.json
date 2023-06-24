@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Pass", "y_data": 8}, {"x_data": "Fail", "y_data": 7}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "test_result", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(*)"}}}

@@ -1,0 +1,23 @@
+{
+  "mark": "area",
+  "encoding": {
+    "detail": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "num",
+      "type": "ordinal"
+    },
+    "size": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "ordinal"
+    }
+  }
+}

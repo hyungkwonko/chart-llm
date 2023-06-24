@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Italian", "y_data": 12}, {"x_data": "English", "y_data": 3}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Language", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "count(*)"}}}

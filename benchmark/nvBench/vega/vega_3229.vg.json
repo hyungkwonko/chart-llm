@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "T", "y_data": 19}, {"x_data": "F", "y_data": 9}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Is_full_time", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "SUM(Employee_ID)"}}}

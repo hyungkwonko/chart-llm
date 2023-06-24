@@ -1,0 +1,24 @@
+{
+  "mark": "area",
+  "encoding": {
+    "detail": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "year"
+    },
+    "y": {
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "nominal"
+    },
+    "size": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "year"
+    }
+  }
+}

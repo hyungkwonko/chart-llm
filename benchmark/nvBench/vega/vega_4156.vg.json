@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "bangla", "y_data": 7.5}, {"x_data": "english", "y_data": 7}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "languages", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "avg(rating)"}}}

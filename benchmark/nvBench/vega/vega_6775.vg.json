@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "shuttle", "y_data": 4}, {"x_data": "walk", "y_data": 5}, {"x_data": "bus", "y_data": 6}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "How_to_Get_There", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(*)"}}}

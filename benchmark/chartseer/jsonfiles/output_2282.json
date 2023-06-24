@@ -1,0 +1,23 @@
+{
+  "mark": "line",
+  "encoding": {
+    "shape": {
+      "aggregate": "sum",
+      "field": "str",
+      "type": "temporal"
+    },
+    "y": {
+      "bin": true,
+      "field": "str",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "str",
+      "type": "temporal"
+    },
+    "size": {
+      "field": "str",
+      "type": "temporal"
+    }
+  }
+}

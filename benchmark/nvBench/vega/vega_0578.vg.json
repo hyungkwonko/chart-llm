@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "dog", "y_data": 1.5}, {"x_data": "cat", "y_data": 3}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "PetType", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "avg(pet_age)"}}}

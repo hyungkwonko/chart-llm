@@ -1,0 +1,14 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc4.json",
+  "data": {
+    "url": "data/wikitables-200/data/25.csv"
+  },
+  "transform": [
+  	{"filter": "datum.Service != 'Total'"}
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Service", "type": "ordinal"},
+    "y": {"field": "2012/13 Total Cost\\\n(£million)", "type": "quantitative"}
+  }
+}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Business Policy", "y_data": 1}, {"x_data": "Business Policy B", "y_data": 1}, {"x_data": "Dinning", "y_data": 2}, {"x_data": "Men suits", "y_data": 1}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "COUNT(Product_Name)"}, "color": {"field": "x_data", "type": "nominal", "title": "Product_Name"}}}

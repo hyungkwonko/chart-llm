@@ -1,0 +1,25 @@
+{
+  "mark": "tick",
+  "encoding": {
+    "shape": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "str",
+      "type": "nominal"
+    },
+    "x": {
+      "bin": true,
+      "field": "str",
+      "type": "nominal"
+    },
+    "size": {
+      "field": "str",
+      "type": "nominal",
+      "timeUnit": "month"
+    }
+  }
+}

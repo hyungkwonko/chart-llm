@@ -1,0 +1,52 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "SA_REP",
+                "y_data": 0
+            },
+            {
+                "x_data": "MK_MAN",
+                "y_data": 20
+            },
+            {
+                "x_data": "MK_REP",
+                "y_data": 20
+            },
+            {
+                "x_data": "HR_REP",
+                "y_data": 40
+            },
+            {
+                "x_data": "PR_REP",
+                "y_data": 70
+            },
+            {
+                "x_data": "AC_MGR",
+                "y_data": 110
+            },
+            {
+                "x_data": "AC_ACCOUNT",
+                "y_data": 110
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "JOB_ID",
+            "sort": {
+                "op": "sum",
+                "field": "y_data",
+                "order": "descending"
+            }
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "DEPARTMENT_ID"
+        }
+    }
+}

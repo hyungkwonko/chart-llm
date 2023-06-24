@@ -1,0 +1,14 @@
+{
+  "mark": "point",
+  "encoding": {
+    "y": {
+      "aggregate": "mean",
+      "field": "num",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "str",
+      "type": "nominal"
+    }
+  }
+}

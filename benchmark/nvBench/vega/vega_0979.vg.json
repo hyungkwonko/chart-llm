@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Mar", "y_data": 13}, {"x_data": "Feb", "y_data": 1}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "payment_date", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(payment_date)"}}}

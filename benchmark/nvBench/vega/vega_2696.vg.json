@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Battle ship", "y_data": 4845}, {"x_data": "Cargo ship", "y_data": 3932.2}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Type", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "avg(Tonnage)"}}}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "American E", "y_data": 4}, {"x_data": "MasterCard", "y_data": 6}, {"x_data": "Visa", "y_data": 5}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "count(*)"}, "color": {"field": "x_data", "type": "nominal", "title": "payment_method_code"}}}

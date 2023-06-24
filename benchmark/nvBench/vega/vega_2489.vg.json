@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Quruvchi", "y_data": 3}, {"x_data": "Bunyodkor", "y_data": 7}, {"x_data": "Pakhtakor", "y_data": 10}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Away_team", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(Away_team)"}}}

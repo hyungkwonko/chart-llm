@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Paper", "y_data": 5}, {"x_data": "Film", "y_data": 1}, {"x_data": "CV", "y_data": 3}, {"x_data": "Book", "y_data": 6}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Document_Type_Name", "sort": "descending"}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(Document_Type_Name)"}}}

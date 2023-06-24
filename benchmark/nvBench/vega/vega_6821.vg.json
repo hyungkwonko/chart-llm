@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Herbs", "y_data": 2}, {"x_data": "Seeds", "y_data": 3}, {"x_data": "Spices", "y_data": 1}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "COUNT(product_category_description)"}, "color": {"field": "x_data", "type": "nominal", "title": "product_category_description"}}}

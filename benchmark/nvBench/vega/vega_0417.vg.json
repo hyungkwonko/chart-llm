@@ -1,0 +1,44 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "Avatar",
+                "y_data": 2
+            },
+            {
+                "x_data": "E.T.",
+                "y_data": 1
+            },
+            {
+                "x_data": "Gone with the Wind",
+                "y_data": 2
+            },
+            {
+                "x_data": "Raiders of the Lost Ark",
+                "y_data": 2
+            },
+            {
+                "x_data": "Snow White",
+                "y_data": 2
+            },
+            {
+                "x_data": "The Sound of Music",
+                "y_data": 1
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "title",
+            "sort": "ascending"
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "COUNT(title)"
+        }
+    }
+}

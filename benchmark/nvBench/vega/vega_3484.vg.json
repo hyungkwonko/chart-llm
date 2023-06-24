@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "FI_MGR", "y_data": 1}, {"x_data": "FI_ACCOUNT", "y_data": 5}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "JOB_ID", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(JOB_ID)"}}}

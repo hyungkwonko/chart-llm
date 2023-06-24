@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "GV", "y_data": 6}, {"x_data": "SF", "y_data": 2}, {"x_data": "ORG", "y_data": 2}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Budget_Type_Code", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "count(*)"}}}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc4.json",
+  "data": {
+    "url": "data/wikitables-202/data/271.csv"
+  },
+  "transform": [
+    {"filter": "datum.Party != 'Turnout'"}
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Candidate", "type": "nominal"},
+    "y": {"field": "percent", "type": "quantitative", "sort":null}
+  }
+}

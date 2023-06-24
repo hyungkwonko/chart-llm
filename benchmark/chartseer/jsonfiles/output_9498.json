@@ -1,0 +1,18 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "num",
+      "type": "temporal"
+    },
+    "x": {
+      "field": "num",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "shape": {
+      "field": "num",
+      "type": "temporal"
+    }
+  }
+}

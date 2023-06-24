@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Canada", "y_data": 4}, {"x_data": "United States", "y_data": 6}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Country", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(Country)"}}}

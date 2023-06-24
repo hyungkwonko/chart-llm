@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "L", "y_data": 487}, {"x_data": "", "y_data": 954}, {"x_data": "R", "y_data": 5028}, {"x_data": "U", "y_data": 14193}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "hand", "sort": {"op": "sum", "field": "y_data", "order": "ascending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "count(*)"}}}

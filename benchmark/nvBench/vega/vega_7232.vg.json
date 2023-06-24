@@ -1,0 +1,32 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "Payment",
+                "y_data": 8743.15
+            },
+            {
+                "x_data": "Refund",
+                "y_data": 11192.69
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "transaction_type",
+            "sort": {
+                "op": "sum",
+                "field": "y_data",
+                "order": "ascending"
+            }
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "sum(transaction_amount)"
+        }
+    }
+}

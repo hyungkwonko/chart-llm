@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Apple", "y_data": 23}, {"x_data": "gucci", "y_data": 21}, {"x_data": "jcrew", "y_data": 40}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "SUM(sum(T2.order_quantity))"}, "color": {"field": "x_data", "type": "nominal", "title": "product_name"}}}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Studio", "y_data": 4}, {"x_data": "Duplex", "y_data": 5}, {"x_data": "Flat", "y_data": 6}]}, "mark": "arc", "encoding": {"theta": {"field": "y_data", "type": "quantitative", "title": "COUNT(*)"}, "color": {"field": "x_data", "type": "nominal", "title": "apt_type_code"}}}

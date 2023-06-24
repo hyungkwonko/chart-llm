@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Provisional", "y_data": 8}, {"x_data": "Confirmed", "y_data": 7}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "booking_status_code", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(*)"}}}

@@ -1,0 +1,1 @@
+{"data": {"values": [{"x_data": "Best Song", "y_data": 5}, {"x_data": "Best Lyrics", "y_data": 3}, {"x_data": "Best Sound Song", "y_data": 1}]}, "mark": "bar", "encoding": {"x": {"field": "x_data", "type": "nominal", "title": "Category", "sort": {"op": "sum", "field": "y_data", "order": "descending"}}, "y": {"field": "y_data", "type": "quantitative", "title": "COUNT(*)"}}}

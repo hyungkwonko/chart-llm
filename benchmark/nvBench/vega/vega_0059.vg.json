@@ -1,0 +1,67 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "2003",
+                "y_data": 2
+            },
+            {
+                "x_data": "2004",
+                "y_data": 0
+            },
+            {
+                "x_data": "2005",
+                "y_data": 0
+            },
+            {
+                "x_data": "2006",
+                "y_data": 0
+            },
+            {
+                "x_data": "2007",
+                "y_data": 0
+            },
+            {
+                "x_data": "2008",
+                "y_data": 7
+            },
+            {
+                "x_data": "2009",
+                "y_data": 1
+            },
+            {
+                "x_data": "2010",
+                "y_data": 6
+            },
+            {
+                "x_data": "2011",
+                "y_data": 3
+            },
+            {
+                "x_data": "2012",
+                "y_data": 4
+            },
+            {
+                "x_data": "2013",
+                "y_data": 5
+            }
+        ]
+    },
+    "mark": {
+        "type": "line",
+        "interpolate": "monotone"
+    },
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "Start_from",
+            "sort": "ascending"
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "SUM(Employee_ID)"
+        }
+    }
+}

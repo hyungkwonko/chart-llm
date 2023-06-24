@@ -1,0 +1,40 @@
+{
+    "data": {
+        "values": [
+            {
+                "x_data": "One",
+                "y_data": 2
+            },
+            {
+                "x_data": "Three",
+                "y_data": 1
+            },
+            {
+                "x_data": "Four",
+                "y_data": 1
+            },
+            {
+                "x_data": "Five",
+                "y_data": 2
+            }
+        ]
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "x_data",
+            "type": "nominal",
+            "title": "Name",
+            "sort": {
+                "op": "sum",
+                "field": "y_data",
+                "order": "descending"
+            }
+        },
+        "y": {
+            "field": "y_data",
+            "type": "quantitative",
+            "title": "count(*)"
+        }
+    }
+}
