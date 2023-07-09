@@ -1,0 +1,120 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "matchday": 1,
+        "point": 3,
+        "team": "Man Utd"
+      },
+      {
+        "matchday": 1,
+        "point": 1,
+        "team": "Chelsea"
+      },
+      {
+        "matchday": 1,
+        "point": 1,
+        "team": "Man City"
+      },
+      {
+        "matchday": 1,
+        "point": 0,
+        "team": "Spurs"
+      },
+      {
+        "matchday": 2,
+        "point": 6,
+        "team": "Man Utd"
+      },
+      {
+        "matchday": 2,
+        "point": 1,
+        "team": "Chelsea"
+      },
+      {
+        "matchday": 2,
+        "point": 0,
+        "team": "Man City"
+      },
+      {
+        "matchday": 2,
+        "point": 3,
+        "team": "Spurs"
+      },
+      {
+        "matchday": 3,
+        "point": 9,
+        "team": "Man Utd"
+      },
+      {
+        "matchday": 3,
+        "point": 1,
+        "team": "Chelsea"
+      },
+      {
+        "matchday": 3,
+        "point": 0,
+        "team": "Man City"
+      },
+      {
+        "matchday": 3,
+        "point": 6,
+        "team": "Spurs"
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "team",
+      "scale": {
+        "domain": [
+          "Man Utd",
+          "Chelsea",
+          "Man City",
+          "Spurs"
+        ],
+        "range": [
+          "#cc2613",
+          "#125dc7",
+          "#8bcdfc",
+          "#d1d1d1"
+        ]
+      },
+      "type": "nominal"
+    },
+    "x": {
+      "field": "matchday",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "rank",
+      "type": "ordinal"
+    }
+  },
+  "height": 400,
+  "mark": {
+    "orient": "vertical",
+    "type": "line"
+  },
+  "transform": [
+    {
+      "groupby": [
+        "matchday"
+      ],
+      "sort": [
+        {
+          "field": "point",
+          "order": "descending"
+        }
+      ],
+      "window": [
+        {
+          "as": "rank",
+          "op": "rank"
+        }
+      ]
+    }
+  ],
+  "width": 400
+}

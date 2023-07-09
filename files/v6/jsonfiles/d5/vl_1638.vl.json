@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "x": 1,
+        "y": 95
+      },
+      {
+        "x": 2,
+        "y": 97
+      },
+      {
+        "x": 3,
+        "y": 100
+      },
+      {
+        "x": 4,
+        "y": 105
+      }
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "scale": {
+        "zero": false
+      },
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "point": true,
+    "type": "line"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "Activity": "Sleeping",
+        "Time": 8
+      },
+      {
+        "Activity": "Eating",
+        "Time": 2
+      },
+      {
+        "Activity": "TV",
+        "Time": 4
+      },
+      {
+        "Activity": "Work",
+        "Time": 8
+      },
+      {
+        "Activity": "Exercise",
+        "Time": 2
+      }
+    ]
+  },
+  "description": "Calculation of percentage of total",
+  "encoding": {
+    "x": {
+      "axis": {
+        "title": "% of total time"
+      },
+      "field": "PercentOfTotal",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Activity",
+      "type": "nominal"
+    }
+  },
+  "height": {
+    "step": 12
+  },
+  "mark": "bar",
+  "transform": [
+    {
+      "frame": [
+        null,
+        null
+      ],
+      "window": [
+        {
+          "as": "TotalTime",
+          "field": "Time",
+          "op": "sum"
+        }
+      ]
+    },
+    {
+      "as": "PercentOfTotal",
+      "calculate": "datum.Time/datum.TotalTime * 100"
+    }
+  ]
+}

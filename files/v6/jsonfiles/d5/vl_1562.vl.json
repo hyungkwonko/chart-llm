@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://uiuc-ischool-dataviz.github.io/classwork/files/data/building_inventory.csv"
+  },
+  "mark": "line",
+  "params": [
+    {
+      "name": "agency",
+      "select": {
+        "type": "point",
+        "fields": [
+          "Agency Name"
+        ]
+      },
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Department of Natural Resources",
+          "Department of Transportation"
+        ]
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": {
+        "param": "agency"
+      }
+    },
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "Square Footage",
+          "as": "total_sq_foot"
+        }
+      ],
+      "frame": [
+        null,
+        0
+      ],
+      "sort": [
+        {
+          "field": "Year Acquired",
+          "order": "ascending"
+        }
+      ]
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "total_sq_foot",
+      "type": "quantitative",
+      "scale": {
+        "type": "log"
+      }
+    },
+    "x": {
+      "field": "Year Acquired",
+      "type": "temporal",
+      "axis": {
+        "minExtent": 20
+      }
+    }
+  }
+}

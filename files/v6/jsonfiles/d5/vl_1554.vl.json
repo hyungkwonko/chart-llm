@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "repeat": {
+    "row": [
+      "y"
+    ],
+    "column": [
+      "x"
+    ]
+  },
+  "spec": {
+    "data": {
+      "url": "https://raw.githubusercontent.com/CGI-FR/SIGO/1f53123c58d9d565ec37b0b64206156cd41ff9bf/examples/simple/simple_sigo.json"
+    },
+    "mark": "point",
+    "params": [
+      {
+        "name": "brush",
+        "select": {
+          "type": "interval",
+          "resolve": "union",
+          "on": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
+          "translate": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
+          "zoom": "wheel![event.shiftKey]"
+        }
+      },
+      {
+        "name": "grid",
+        "select": {
+          "type": "interval",
+          "resolve": "global",
+          "translate": "[mousedown[!event.shiftKey], window:mouseup] > window:mousemove!",
+          "zoom": "wheel![!event.shiftKey]"
+        },
+        "bind": "scales"
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": {
+          "repeat": "column"
+        },
+        "type": "quantitative"
+      },
+      "y": {
+        "field": {
+          "repeat": "row"
+        },
+        "type": "quantitative",
+        "axis": {
+          "minExtent": 30
+        }
+      },
+      "color": {
+        "field": "group",
+        "type": "nominal"
+      }
+    }
+  }
+}

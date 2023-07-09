@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/unemployment-across-industries.json"
+  },
+  "description": "Area chart with rectangular brush",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "timeUnit": "yearmonth",
+      "type": "temporal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "count",
+      "type": "quantitative"
+    }
+  },
+  "layer": [
+    {
+      "mark": "area",
+      "selection": {
+        "myBrush": {
+          "encodings": [
+            "x"
+          ],
+          "type": "interval"
+        }
+      }
+    },
+    {
+      "mark": {
+        "color": "goldenrod",
+        "type": "area"
+      },
+      "transform": [
+        {
+          "filter": {
+            "selection": "myBrush"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/cars.json"
+  },
+  "description": "Custom shape sets encoding origin.",
+  "encoding": {
+    "opacity": {
+      "value": 0.6
+    },
+    "shape": {
+      "field": "Origin",
+      "scale": {
+        "domain": [
+          "Europe",
+          "Japan",
+          "USA"
+        ],
+        "range": [
+          "M -1.5 -1.5 h 3 v 3 h -3z",
+          "M -1.5 -1.5 m1 0 h 1 v 1 h 1 v 1 h -1 v 1 h -1  v -1 h -1 v -1 h 1z",
+          "M -1.5 -1.5 h 3 l -1.5 3z"
+        ]
+      },
+      "type": "nominal"
+    },
+    "x": {
+      "field": "Horsepower",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Miles_per_Gallon",
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "filled": true,
+    "type": "point"
+  },
+  "transform": [
+    {
+      "as": "YearOfManufacture",
+      "calculate": "year(datum.Year)"
+    },
+    {
+      "filter": "datum.YearOfManufacture == 1970"
+    }
+  ]
+}

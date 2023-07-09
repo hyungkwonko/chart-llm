@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "variety": "Glabron",
+        "yield": 32.4,
+        "yieldError": 7.55,
+        "yieldError2": -10.55
+      },
+      {
+        "variety": "Manchuria",
+        "yield": 30.97,
+        "yieldError": 6.98,
+        "yieldError2": -3.98
+      },
+      {
+        "variety": "No. 457",
+        "yield": 33.96,
+        "yieldError": 3.92,
+        "yieldError2": -0.92
+      },
+      {
+        "variety": "No. 462",
+        "yield": 30.45,
+        "yieldError": 11.97,
+        "yieldError2": -15.97
+      }
+    ]
+  },
+  "description": "Symetric error bars encoded with yError channel",
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "variety",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "yield",
+          "scale": {
+            "zero": false
+          },
+          "type": "quantitative"
+        },
+        "yError": {
+          "field": "yieldError"
+        }
+      },
+      "mark": {
+        "ticks": true,
+        "type": "errorbar"
+      }
+    },
+    {
+      "encoding": {
+        "x": {
+          "field": "variety",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "yield",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "color": "black",
+        "filled": true,
+        "type": "point"
+      }
+    }
+  ]
+}

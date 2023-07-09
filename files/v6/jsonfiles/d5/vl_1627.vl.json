@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "value": 10
+      },
+      {
+        "value": 20
+      },
+      {
+        "value": 30
+      },
+      {
+        "value": 40
+      },
+      {
+        "value": 50
+      },
+      {
+        "value": 60
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "condition": [
+        {
+          "test": "datum.value < 40",
+          "value": "blue"
+        },
+        {
+          "test": "datum.value < 50",
+          "value": "red"
+        },
+        {
+          "test": "datum.value < 60",
+          "value": "yellow"
+        }
+      ],
+      "value": "black"
+    },
+    "x": {
+      "field": "value",
+      "type": "ordinal"
+    }
+  },
+  "mark": {
+    "size": 800,
+    "type": "circle"
+  },
+  "width": 400
+}

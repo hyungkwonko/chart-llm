@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "LINK FOR THE DATASET: https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/timeseries/lzvb/prdy",
+  "title": {
+    "text": "Productivity - workers",
+    "subtitle": [
+      "Output per worker, whole economy",
+      "Index, 2019=100; ONS-series: PRDY-A4YM",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://api.ons.gov.uk/timeseries/a4ym/dataset/prdy/data",
+    "format": {
+      "type": "json",
+      "property": "quarters"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "substring(datum.quarter,1)*3-1",
+      "as": "quarter_n"
+    },
+    {
+      "calculate": "join([datum.year, datum.quarter_n],['-'])",
+      "as": "date2"
+    },
+    {
+      "calculate": "timeParse(datum.date2, '%Y-%m')",
+      "as": "date3"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date3",
+      "type": "temporal",
+      "title": null
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "color": "red"
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "selection": "hover"
+              }
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "size": 150,
+            "color": "red"
+          }
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0.3,
+            "selection": "hover"
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "date3",
+            "type": "temporal",
+            "format": "%b-%Y",
+            "title": "Date"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "format": ",.0f",
+            "title": "Index"
+          }
+        ]
+      },
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": [
+            "date3"
+          ],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
+    }
+  ]
+}

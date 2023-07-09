@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "Horsepower": 1,
+        "Weight_in_lbs": 19
+      },
+      {
+        "Horsepower": 5,
+        "Weight_in_lbs": 21
+      },
+      {
+        "Horsepower": 2,
+        "Weight_in_lbs": 58
+      },
+      {
+        "Horsepower": 3,
+        "Weight_in_lbs": 12
+      },
+      {
+        "Horsepower": 4,
+        "Weight_in_lbs": 13
+      }
+    ]
+  },
+  "encoding": {
+    "order": {
+      "field": "Horsepower",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "Horsepower",
+      "sort": "descending",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Horsepower",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "mark": {
+    "strokeWidth": 0.5,
+    "type": "line"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "format": {
+      "feature": "counties",
+      "type": "topojson"
+    },
+    "url": "https://vega.github.io/vega-lite/data/us-10m.json"
+  },
+  "encoding": {
+    "color": {
+      "field": "rate",
+      "scale": {
+        "scheme": {
+          "count": 10,
+          "name": "category10"
+        },
+        "type": "quantize"
+      },
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "mark": "geoshape",
+  "projection": {
+    "type": "albersUsa"
+  },
+  "transform": [
+    {
+      "as": "countyID",
+      "calculate": "datum.id"
+    },
+    {
+      "from": {
+        "data": {
+          "url": "https://vega.github.io/vega-lite/data/unemployment.tsv"
+        },
+        "fields": [
+          "rate"
+        ],
+        "key": "id"
+      },
+      "lookup": "countyID"
+    }
+  ],
+  "width": 500
+}

@@ -1,0 +1,125 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Comparison of instore shopping and online shopping",
+  "title": {
+    "text": "Comparison of Online and Instore shopping",
+    "subtitle": [
+      "Index 2019=100",
+      "Source: ONS - Retail Sales Index"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 300,
+  "layer": [
+    {
+      "data": {
+        "url": "https://api.ons.gov.uk/timeseries/J5BI/dataset/DRSI/data",
+        "format": {
+          "property": "quarters"
+        },
+        "name": "Online"
+      },
+      "transform": [
+        {
+          "calculate": "substring(datum.quarter,1)*3-1",
+          "as": "quarter_n"
+        },
+        {
+          "calculate": "join([datum.year, datum.quarter_n],['-'])",
+          "as": "date2"
+        },
+        {
+          "calculate": "timeParse(datum.date2, '%Y-%m')",
+          "as": "date3"
+        },
+        {
+          "calculate": "'Online'",
+          "as": "mycolor"
+        },
+        {
+          "filter": {
+            "field": "date3",
+            "range": [
+              {
+                "year": 2016
+              },
+              {
+                "year": 2024
+              }
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "url": "https://api.ons.gov.uk/timeseries/EAQY/dataset/DRSI/data",
+        "format": {
+          "property": "quarters"
+        },
+        "name": "Instore"
+      },
+      "transform": [
+        {
+          "calculate": "substring(datum.quarter,1)*3-1",
+          "as": "quarter_n"
+        },
+        {
+          "calculate": "join([datum.year, datum.quarter_n],['-'])",
+          "as": "date2"
+        },
+        {
+          "calculate": "timeParse(datum.date2, '%Y-%m')",
+          "as": "date3"
+        },
+        {
+          "calculate": "'Instore'",
+          "as": "mycolor"
+        },
+        {
+          "filter": {
+            "field": "date3",
+            "range": [
+              {
+                "year": 2016
+              },
+              {
+                "year": 2024
+              }
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date3",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "mycolor",
+      "type": "nominal",
+      "title": null,
+      "legend": {
+        "orient": "top-left"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "cat": "a",
+        "val": 10
+      },
+      {
+        "cat": "b",
+        "val": 18
+      },
+      {
+        "cat": "c",
+        "val": 12
+      }
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "cat",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "val",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar"
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/cars.json"
+  },
+  "description": "Sized, shaped and coloured by number of cylinders (should have two sets of legend items)",
+  "encoding": {
+    "color": {
+      "field": "Origin",
+      "type": "nominal"
+    },
+    "opacity": {
+      "value": 0.6
+    },
+    "shape": {
+      "field": "Cylinders",
+      "type": "ordinal"
+    },
+    "size": {
+      "field": "Cylinders",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "Horsepower",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Miles_per_Gallon",
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "filled": true,
+    "type": "point"
+  },
+  "transform": [
+    {
+      "as": "YearOfManufacture",
+      "calculate": "year(datum.Year)"
+    },
+    {
+      "filter": "datum.YearOfManufacture == 1970"
+    }
+  ]
+}

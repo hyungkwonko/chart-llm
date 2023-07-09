@@ -1,0 +1,140 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "diff": -1,
+        "matchday": 1,
+        "point": 0,
+        "team": "Germany"
+      },
+      {
+        "diff": 1,
+        "matchday": 1,
+        "point": 3,
+        "team": "Mexico"
+      },
+      {
+        "diff": -1,
+        "matchday": 1,
+        "point": 0,
+        "team": "South Korea"
+      },
+      {
+        "diff": 1,
+        "matchday": 1,
+        "point": 3,
+        "team": "Sweden"
+      },
+      {
+        "diff": 0,
+        "matchday": 2,
+        "point": 3,
+        "team": "Germany"
+      },
+      {
+        "diff": 2,
+        "matchday": 2,
+        "point": 6,
+        "team": "Mexico"
+      },
+      {
+        "diff": -2,
+        "matchday": 2,
+        "point": 0,
+        "team": "South Korea"
+      },
+      {
+        "diff": 0,
+        "matchday": 2,
+        "point": 3,
+        "team": "Sweden"
+      },
+      {
+        "diff": -2,
+        "matchday": 3,
+        "point": 3,
+        "team": "Germany"
+      },
+      {
+        "diff": -1,
+        "matchday": 3,
+        "point": 6,
+        "team": "Mexico"
+      },
+      {
+        "diff": 0,
+        "matchday": 3,
+        "point": 3,
+        "team": "South Korea"
+      },
+      {
+        "diff": 3,
+        "matchday": 3,
+        "point": 6,
+        "team": "Sweden"
+      }
+    ]
+  },
+  "description": "Line chart showing ranks over time for thw World Cup 2018 Group F teams",
+  "encoding": {
+    "color": {
+      "field": "team",
+      "scale": {
+        "domain": [
+          "Germany",
+          "Mexico",
+          "South Korea",
+          "Sweden"
+        ],
+        "range": [
+          "black",
+          "#127153",
+          "#c91a3c",
+          "#0c71ab"
+        ]
+      },
+      "type": "nominal"
+    },
+    "x": {
+      "field": "matchday",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "rank",
+      "type": "ordinal"
+    }
+  },
+  "mark": {
+    "orient": "vertical",
+    "type": "line"
+  },
+  "title": {
+    "fontStyle": "italic",
+    "frame": "bounds",
+    "text": "World Cup 2018: Group F Rankings"
+  },
+  "transform": [
+    {
+      "groupby": [
+        "matchday"
+      ],
+      "sort": [
+        {
+          "field": "point",
+          "order": "descending"
+        },
+        {
+          "field": "diff",
+          "order": "descending"
+        }
+      ],
+      "window": [
+        {
+          "as": "rank",
+          "op": "rank"
+        }
+      ]
+    }
+  ]
+}

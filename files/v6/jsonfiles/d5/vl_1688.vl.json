@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "domainWidth": 1
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/population.json"
+  },
+  "description": "Grouped bar chart showing population structure by age and gender.",
+  "encoding": {
+    "color": {
+      "field": "gender",
+      "scale": {
+        "range": [
+          "#EA98D2",
+          "#659CCA"
+        ]
+      },
+      "type": "nominal"
+    },
+    "column": {
+      "field": "age",
+      "type": "ordinal"
+    },
+    "x": {
+      "axis": {
+        "title": null
+      },
+      "field": "gender",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "axis": {
+        "grid": false,
+        "title": "population"
+      },
+      "field": "people",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar",
+  "transform": [
+    {
+      "filter": "datum.year == 2000"
+    },
+    {
+      "as": "gender",
+      "calculate": "datum.sex == 2 ? 'Female' : 'Male'"
+    }
+  ],
+  "width": {
+    "step": 12
+  }
+}

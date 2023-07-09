@@ -1,0 +1,134 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  },
+  "height": 700,
+  "layer": [
+    {
+      "data": {
+        "format": {
+          "feature": "boroughs",
+          "type": "topojson"
+        },
+        "url": "https://vega.github.io/vega-lite/data/londonBoroughs.json"
+      },
+      "encoding": {
+        "color": {
+          "field": "id",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Kingston upon Thames",
+              "Croydon",
+              "Bromley",
+              "Hounslow",
+              "Ealing",
+              "Havering",
+              "Hillingdon",
+              "Harrow",
+              "Brent",
+              "Barnet",
+              "Lambeth",
+              "Southwark",
+              "Lewisham",
+              "Greenwich",
+              "Bexley",
+              "Enfield",
+              "Waltham Forest",
+              "Redbridge",
+              "Sutton",
+              "Richmond upon Thames",
+              "Merton",
+              "Wandsworth",
+              "Hammersmith and Fulham",
+              "Kensington and Chelsea",
+              "Westminster",
+              "Camden",
+              "Tower Hamlets",
+              "Islington",
+              "Hackney",
+              "Haringey",
+              "Newham",
+              "Barking and Dagenham",
+              "City of London"
+            ],
+            "range": [
+              "#9db7b1",
+              "#d4b4e5",
+              "#afb9cb",
+              "#b2add6",
+              "#e2f8ca",
+              "#a1bde6",
+              "#e8aa95",
+              "#8bd0eb",
+              "#dfb89b",
+              "#a2e7ed",
+              "#e3aba7",
+              "#86cbd1",
+              "#ecb1c2",
+              "#acd8ba",
+              "#e4bad9",
+              "#9bd6ca",
+              "#cec9f3",
+              "#c9d2a8",
+              "#d1c1d9",
+              "#ddcba2",
+              "#a2acbd",
+              "#deefd6",
+              "#b5d7a7",
+              "#f6d4c9",
+              "#add4e0",
+              "#d9b9ad",
+              "#c6e1db",
+              "#e0c7ce",
+              "#a6b79f",
+              "#cbd5e7",
+              "#c2d2ba",
+              "#ebe2cf",
+              "#c7bfad"
+            ]
+          },
+          "type": "nominal"
+        },
+        "opacity": {
+          "value": 1
+        }
+      },
+      "mark": {
+        "stroke": "rgb(251,247,238)",
+        "strokeWidth": 2,
+        "type": "geoshape"
+      }
+    },
+    {
+      "data": {
+        "url": "https://vega.github.io/vega-lite/data/londonCentroids.json"
+      },
+      "encoding": {
+        "latitude": {
+          "field": "cy",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "cx",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "bLabel",
+          "type": "nominal"
+        }
+      },
+      "mark": "text",
+      "transform": [
+        {
+          "as": "bLabel",
+          "calculate": "indexof (datum.name,' ') > 0  ? substring(datum.name,0,indexof(datum.name, ' ')) : datum.name"
+        }
+      ]
+    }
+  ],
+  "width": 1200
+}

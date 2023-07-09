@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://gicentre.github.io/data/westMidlands/westMidsCrimesAggregated.tsv"
+  },
+  "encoding": {
+    "color": {
+      "field": "crimeType",
+      "legend": null,
+      "type": "nominal"
+    },
+    "column": {
+      "field": "month",
+      "header": {
+        "format": "%b %y",
+        "formatType": "time"
+      },
+      "type": "temporal"
+    },
+    "x": {
+      "axis": {
+        "title": ""
+      },
+      "field": "crimeType",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "reportedCrimes",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar",
+  "transform": [
+    {
+      "filter": "datum.month >= '2016'"
+    }
+  ],
+  "width": 100
+}

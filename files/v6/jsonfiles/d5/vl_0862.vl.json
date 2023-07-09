@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": [
+      "Employment Rate in UK",
+      "(Aged 65+)"
+    ],
+    "fontSize": 11,
+    "subtitle": "Source: ONS",
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://api.ons.gov.uk/timeseries/LFK6/dataset/LMS/data",
+    "format": {
+      "property": "quarters"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "substring(datum.quarter,1)*3-1",
+      "as": "quarter_n"
+    },
+    {
+      "calculate": "join([datum.year, datum.quarter_n],['-'])",
+      "as": "date2"
+    },
+    {
+      "calculate": "timeParse(datum.date2, '%Y-%m')",
+      "as": "date3"
+    }
+  ],
+  "height": 100,
+  "width": 100,
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "date3",
+      "type": "temporal",
+      "axis": {
+        "labelAngle": 0
+      },
+      "title": ""
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Employment Rate (%)"
+    }
+  }
+}

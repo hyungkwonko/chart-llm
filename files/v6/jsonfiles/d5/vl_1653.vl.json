@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "a": "A",
+        "b": 28,
+        "predicted": false
+      },
+      {
+        "a": "B",
+        "b": 55,
+        "predicted": false
+      },
+      {
+        "a": "D",
+        "b": 91,
+        "predicted": false
+      },
+      {
+        "a": "E",
+        "b": 81,
+        "predicted": false
+      },
+      {
+        "a": "E",
+        "b": 81,
+        "predicted": true
+      },
+      {
+        "a": "G",
+        "b": 19,
+        "predicted": true
+      },
+      {
+        "a": "H",
+        "b": 87,
+        "predicted": true
+      }
+    ]
+  },
+  "encoding": {
+    "strokeDash": {
+      "field": "predicted",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "a",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "b",
+      "type": "quantitative"
+    }
+  },
+  "mark": "line"
+}

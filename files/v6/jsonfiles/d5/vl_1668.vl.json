@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "sequence": {
+      "as": "x0",
+      "start": 0,
+      "step": 0.1,
+      "stop": 100
+    }
+  },
+  "encoding": {
+    "strokeDash": {
+      "field": "cat",
+      "scale": {
+        "domain": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "range": [
+          [
+            0.2,
+            0
+          ],
+          [
+            3.2,
+            0.8
+          ],
+          [
+            2,
+            0.8
+          ],
+          [
+            1.6,
+            0.8
+          ],
+          [
+            1.6,
+            0.8,
+            0.8,
+            0.8
+          ],
+          [
+            1.2000000000000002,
+            0.8
+          ],
+          [
+            1,
+            0.8
+          ],
+          [
+            0.8,
+            1.2000000000000002
+          ],
+          [
+            0.4,
+            0.8
+          ],
+          [
+            0.2,
+            0.6000000000000001
+          ]
+        ]
+      },
+      "type": "ordinal"
+    },
+    "x": {
+      "axis": {
+        "grid": false
+      },
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "axis": {
+        "grid": false
+      },
+      "field": "y",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "mark": "line",
+  "title": "Dash scale 0.2",
+  "transform": [
+    {
+      "as": "y0",
+      "calculate": "abs(sin(datum.x0+random()))"
+    },
+    {
+      "as": "x",
+      "calculate": "datum.x0 %10"
+    },
+    {
+      "as": "cat",
+      "calculate": "floor(datum.x0 / 10)"
+    },
+    {
+      "as": "y",
+      "calculate": "datum.y0 + datum.cat"
+    }
+  ],
+  "width": 300
+}

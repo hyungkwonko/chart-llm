@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "legend": {
+      "padding": 30,
+      "rowPadding": 15,
+      "strokeColor": "lightgrey",
+      "strokeDash": [
+        4,
+        2,
+        6,
+        1
+      ],
+      "strokeWidth": 5,
+      "symbolStrokeColor": "black",
+      "symbolStrokeWidth": 3,
+      "titlePadding": 20
+    }
+  },
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/cars.json"
+  },
+  "encoding": {
+    "color": {
+      "field": "Origin",
+      "type": "nominal"
+    },
+    "opacity": {
+      "field": "Weight_in_lbs",
+      "type": "quantitative"
+    },
+    "size": {
+      "field": "Horsepower",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "Horsepower",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Miles_per_Gallon",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "mark": "circle",
+  "width": 300
+}

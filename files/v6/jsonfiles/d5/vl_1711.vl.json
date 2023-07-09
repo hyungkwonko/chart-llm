@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://gicentre.github.io/data/westMidlands/westMidsCrimesAggregated.tsv"
+  },
+  "encoding": {
+    "color": {
+      "condition": {
+        "field": "crimeType",
+        "scale": {
+          "domain": [
+            "Anti-social behaviour",
+            "Burglary",
+            "Criminal damage and arson",
+            "Drugs",
+            "Robbery",
+            "Vehicle crime"
+          ],
+          "range": [
+            "rgb(59,118,175)",
+            "rgb(81,157,62)",
+            "rgb(141,106,184)",
+            "rgb(239,133,55)",
+            "rgb(132,88,78)",
+            "rgb(213,126,190)"
+          ]
+        },
+        "selection": "mySelection",
+        "type": "nominal"
+      },
+      "value": "black"
+    },
+    "opacity": {
+      "condition": {
+        "selection": "mySelection",
+        "value": 1
+      },
+      "value": 0.1
+    },
+    "x": {
+      "field": "month",
+      "title": null,
+      "type": "temporal"
+    },
+    "y": {
+      "field": "reportedCrimes",
+      "title": "Reported crimes",
+      "type": "quantitative"
+    }
+  },
+  "mark": "circle",
+  "selection": {
+    "mySelection": {
+      "encodings": [
+        "x"
+      ],
+      "init": {
+        "x": [
+          {
+            "year": 2013
+          },
+          {
+            "year": 2015
+          }
+        ]
+      },
+      "type": "interval"
+    }
+  },
+  "width": 540
+}

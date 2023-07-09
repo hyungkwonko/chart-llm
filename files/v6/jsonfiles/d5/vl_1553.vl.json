@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "repeat": {
+    "row": [
+      "Miles_per_Gallon",
+      "Cylinders",
+      "Displacement",
+      "Horsepower",
+      "Weight_in_lbs",
+      "Acceleration"
+    ],
+    "column": [
+      "Acceleration",
+      "Weight_in_lbs",
+      "Horsepower",
+      "Displacement",
+      "Cylinders",
+      "Miles_per_Gallon"
+    ]
+  },
+  "spec": {
+    "data": {
+      "url": "https://raw.githubusercontent.com/CGI-FR/SIGO/1f53123c58d9d565ec37b0b64206156cd41ff9bf/examples/cars/micro-aggregation/carsn.json"
+    },
+    "mark": "point",
+    "params": [
+      {
+        "name": "brush",
+        "select": {
+          "type": "interval",
+          "resolve": "union",
+          "on": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
+          "translate": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
+          "zoom": "wheel![event.shiftKey]"
+        }
+      },
+      {
+        "name": "grid",
+        "select": {
+          "type": "interval",
+          "resolve": "global",
+          "translate": "[mousedown[!event.shiftKey], window:mouseup] > window:mousemove!",
+          "zoom": "wheel![!event.shiftKey]"
+        },
+        "bind": "scales"
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": {
+          "repeat": "column"
+        },
+        "type": "quantitative"
+      },
+      "y": {
+        "field": {
+          "repeat": "row"
+        },
+        "type": "quantitative",
+        "axis": {
+          "minExtent": 30
+        }
+      },
+      "color": {
+        "field": "Origin",
+        "type": "nominal"
+      },
+      "shape": {
+        "field": "Origin",
+        "type": "nominal"
+      }
+    }
+  }
+}

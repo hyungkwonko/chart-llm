@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "format": {
+      "feature": "countries1",
+      "type": "topojson"
+    },
+    "url": "https://gicentre.github.io/data/geoTutorials/world-110m.json"
+  },
+  "height": 300,
+  "mark": {
+    "fill": "rgb(149,181,146)",
+    "type": "geoshape"
+  },
+  "projection": {
+    "type": "orthographic"
+  },
+  "width": 300
+}

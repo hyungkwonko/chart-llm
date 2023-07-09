@@ -1,0 +1,235 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Unemployment rate (16+) - By place of birth, Source:ONS",
+    "subtitle": "By place of birth, United Kingdom seasonally adjusted",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 400,
+  "height": 300,
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1997,
+      "bind": {
+        "input": "range",
+        "min": 1997,
+        "max": 2022,
+        "step": 1,
+        "name": "Start Year"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1997,
+        "max": 2022,
+        "step": 1,
+        "name": "End Year"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "dateCLEAN",
+      "type": "temporal",
+      "title": null
+    },
+    "color": {
+      "field": "name",
+      "type": "ordinal",
+      "title": null,
+      "scale": {
+        "range": [
+          "#000080",
+          "#00BFFF",
+          "#0276FD"
+        ]
+      },
+      "legend": {
+        "orient": "top-right"
+      }
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://api.ons.gov.uk/timeseries/DT2W/dataset/lms/data",
+        "format": {
+          "type": "json",
+          "property": "quarters"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "substring(datum.quarter,1)*3-1",
+          "as": "quarter_n"
+        },
+        {
+          "calculate": "join([datum.year, datum.quarter_n],['-'])",
+          "as": "date2"
+        },
+        {
+          "calculate": "timeParse(datum.date2, '%Y-%m')",
+          "as": "dateCLEAN"
+        },
+        {
+          "calculate": "replace(datum.month, '', 'UK')",
+          "as": "name"
+        },
+        {
+          "filter": "datum.year>=minYear"
+        },
+        {
+          "filter": "datum.year<=maxYear"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "opacity": 1
+      },
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "dateCLEAN",
+            "type": "temporal",
+            "title": "Year",
+            "timeUnit": "year"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "UK born adults (%)"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://api.ons.gov.uk/timeseries/DTJG/dataset/lms/data",
+        "format": {
+          "type": "json",
+          "property": "quarters"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "substring(datum.quarter,1)*3-1",
+          "as": "quarter_n"
+        },
+        {
+          "calculate": "join([datum.year, datum.quarter_n],['-'])",
+          "as": "date2"
+        },
+        {
+          "calculate": "timeParse(datum.date2, '%Y-%m')",
+          "as": "dateCLEAN"
+        },
+        {
+          "calculate": "replace(datum.month, '', 'EU')",
+          "as": "name"
+        },
+        {
+          "filter": "datum.year>=minYear"
+        },
+        {
+          "filter": "datum.year<=maxYear"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "opacity": 1
+      },
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "dateCLEAN",
+            "type": "temporal",
+            "title": "Year",
+            "timeUnit": "year"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "EU born adults (%)"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://api.ons.gov.uk/timeseries/DTKD/dataset/lms/data",
+        "format": {
+          "type": "json",
+          "property": "quarters"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "substring(datum.quarter,1)*3-1",
+          "as": "quarter_n"
+        },
+        {
+          "calculate": "join([datum.year, datum.quarter_n],['-'])",
+          "as": "date2"
+        },
+        {
+          "calculate": "timeParse(datum.date2, '%Y-%m')",
+          "as": "dateCLEAN"
+        },
+        {
+          "calculate": "replace(datum.month, '', 'Non-EU')",
+          "as": "name"
+        },
+        {
+          "filter": "datum.year>=minYear"
+        },
+        {
+          "filter": "datum.year<=maxYear"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "opacity": 1
+      },
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "dateCLEAN",
+            "type": "temporal",
+            "title": "Year",
+            "timeUnit": "year"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Non-EU born adults (%)"
+          }
+        ]
+      }
+    }
+  ]
+}

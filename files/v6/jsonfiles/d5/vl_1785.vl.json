@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/cars.json"
+  },
+  "height": 400,
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "timeUnit": "year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "Miles_per_Gallon",
+          "type": "quantitative"
+        }
+      },
+      "mark": "circle"
+    },
+    {
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "timeUnit": "year",
+          "type": "temporal"
+        },
+        "y": {
+          "axis": {
+            "title": "Miles per gallon"
+          },
+          "field": "Average_MPG",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "color": "red",
+        "type": "line"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.Miles_per_Gallon !== null"
+    },
+    {
+      "as": "year",
+      "field": "Year",
+      "timeUnit": "year"
+    },
+    {
+      "frame": [
+        null,
+        0
+      ],
+      "ignorePeers": false,
+      "sort": [
+        {
+          "field": "year",
+          "order": "ascending"
+        }
+      ],
+      "window": [
+        {
+          "as": "Average_MPG",
+          "field": "Miles_per_Gallon",
+          "op": "mean"
+        }
+      ]
+    }
+  ],
+  "width": 500
+}

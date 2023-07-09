@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/population.json"
+  },
+  "encoding": {
+    "x": {
+      "field": "age",
+      "type": "ordinal"
+    },
+    "y": {
+      "axis": {
+        "title": "Population"
+      },
+      "field": "people",
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "extent": 2,
+    "type": "boxplot"
+  }
+}

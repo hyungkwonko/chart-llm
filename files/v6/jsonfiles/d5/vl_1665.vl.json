@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/stocks.csv"
+  },
+  "encoding": {
+    "strokeDash": {
+      "field": "symbol",
+      "scale": {
+        "domain": [
+          "AAPL",
+          "AMZN",
+          "GOOG",
+          "IBM",
+          "MSFT"
+        ],
+        "range": [
+          [
+            1,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      "type": "nominal"
+    },
+    "x": {
+      "field": "date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "price",
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "opacity": 0.6,
+    "strokeWidth": 1,
+    "type": "line"
+  },
+  "width": 350
+}
