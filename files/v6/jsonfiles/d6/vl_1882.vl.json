@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": "container",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nychealth/EHDP-data/production/geography/NTA_2010.topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "collection"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#ffffff",
+        "fill": "lightgray"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nychealth/EHDP-data/production/geography/NTA_2010.topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "collection"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.NTACode",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/nychealth/EHDP-data/production/key-topics/air-quality-explorer/aqe-nta.csv"
+            },
+            "key": "NTACode",
+            "fields": [
+              "NTACode",
+              "GEONAME",
+              "GEOCODE",
+              "tertile_buildingemissions",
+              "tertile_buildingdensity",
+              "tertile_industrial",
+              "tertile_trafficdensity"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#000000"
+      },
+      "encoding": {
+        "color": {
+          "bin": false,
+          "field": "tertile_buildingemissions",
+          "type": "ordinal",
+          "scale": {
+            "scheme": {
+              "name": "purples",
+              "extent": [
+                -0.5,
+                1
+              ]
+            }
+          },
+          "legend": null
+        },
+        "strokeWidth": {
+          "value": 0.5
+        },
+        "tooltip": [
+          {
+            "field": "GEONAME",
+            "type": "nominal",
+            "title": "Neighborhood"
+          },
+          {
+            "field": "tertile_buildingemissions",
+            "type": "nominal",
+            "title": "Building emissions"
+          },
+          {
+            "field": "tertile_buildingdensity",
+            "type": "nominal",
+            "title": "Building density"
+          },
+          {
+            "field": "tertile_industrial",
+            "type": "nominal",
+            "title": "Industrial area"
+          },
+          {
+            "field": "tertile_trafficdensity",
+            "type": "nominal",
+            "title": "Traffic"
+          }
+        ]
+      }
+    }
+  ]
+}

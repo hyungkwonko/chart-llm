@@ -1,0 +1,274 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "stroke": ""
+    }
+  },
+  "background": "black",
+  "title": {
+    "text": "otherMiddle",
+    "color": "white",
+    "offset": -40,
+    "anchor": "start",
+    "fontsize": 20
+  },
+  "width": 500,
+  "height": 500,
+  "data": {
+    "url": "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+    "format": {
+      "parse": {
+        "g79x": "number",
+        "g79y": "number"
+      }
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "g79X",
+          "type": "quantitative",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "g79Y",
+          "type": "quantitative",
+          "sort": "descending",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        }
+      },
+      "mark": {
+        "type": "square",
+        "stroke": "black",
+        "strokeWidth": 2,
+        "fill": "#333",
+        "size": 6944.444444444444
+      }
+    },
+    {
+      "data": {
+        "url": "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv"
+      },
+      "transform": [
+        {
+          "lookup": "source",
+          "from": {
+            "data": {
+              "url": "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+              "format": {
+                "parse": {
+                  "g79x": "number",
+                  "g79y": "number"
+                }
+              }
+            },
+            "key": "regionCode",
+            "fields": [
+              "g79X",
+              "g79Y"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.g79X",
+          "as": "oCol"
+        },
+        {
+          "calculate": "datum.g79Y",
+          "as": "oRow"
+        },
+        {
+          "calculate": "datum.oCol-0",
+          "as": "oX"
+        },
+        {
+          "calculate": "datum.oRow-0",
+          "as": "oY"
+        },
+        {
+          "lookup": "dest",
+          "from": {
+            "data": {
+              "url": "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+              "format": {
+                "parse": {
+                  "g79x": "number",
+                  "g79y": "number"
+                }
+              }
+            },
+            "key": "regionCode",
+            "fields": [
+              "g79X",
+              "g79Y"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.g79X",
+          "as": "dCol"
+        },
+        {
+          "calculate": "datum.g79Y",
+          "as": "dRow"
+        },
+        {
+          "calculate": "datum.dCol+0",
+          "as": "dX"
+        },
+        {
+          "calculate": "datum.dRow+0",
+          "as": "dY"
+        },
+        {
+          "filter": "datum.oCol != datum.dCol || datum.oRow != datum.dRow"
+        },
+        {
+          "calculate": "datum.otherMiddle- datum.likelyOperating",
+          "as": "diff"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "oX",
+          "type": "quantitative",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "oY",
+          "type": "quantitative",
+          "sort": "descending",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "x2": {
+          "field": "dX"
+        },
+        "y2": {
+          "field": "dY"
+        },
+        "strokeWidth": {
+          "field": "total",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "range": [
+              0.001,
+              31.25
+            ]
+          },
+          "legend": null
+        },
+        "color": {
+          "field": "diff",
+          "type": "quantitative",
+          "scale": {
+            "scheme": {
+              "name": "redYellowBlue",
+              "extent": [
+                1,
+                0
+              ]
+            },
+            "domainMid": 0,
+            "domain": [
+              -7000,
+              7000
+            ]
+          },
+          "legend": {
+            "title": "Difference from likely operating",
+            "titlecolor": "white",
+            "labelcolor": "white",
+            "titlefontsize": 10,
+            "labelfontsize": 10,
+            "direction": "horizontal",
+            "orient": "none",
+            "legendx": -40,
+            "legendy": 10,
+            "gradientLength": 150,
+            "gradientThickness": 15
+          }
+        },
+        "order": {
+          "field": "likelyOperating",
+          "type": "quantitative",
+          "sort": "descending"
+        }
+      },
+      "mark": {
+        "type": "rule",
+        "opacity": 0.8,
+        "strokeCap": "round"
+      }
+    },
+    {
+      "encoding": {
+        "x": {
+          "field": "g79X",
+          "type": "quantitative",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "g79Y",
+          "type": "quantitative",
+          "sort": "descending",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "regionName",
+          "type": "nominal"
+        }
+      },
+      "mark": {
+        "type": "text",
+        "color": "white",
+        "fontsize": 8,
+        "dy": 15
+      }
+    }
+  ]
+}

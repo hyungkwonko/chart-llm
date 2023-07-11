@@ -1,0 +1,96 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Gini Coefficient, 2021",
+    "subtitle": [
+      "Source: WID"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/WID%20New%201980-2021%20final%202.csv"
+  },
+  "height": 2100,
+  "width": 200,
+  "encoding": {
+    "x": {
+      "field": "2021",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          1
+        ]
+      },
+      "title": "Gini Coefficient"
+    },
+    "y": {
+      "field": "Country",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "op": "sum",
+        "field": "2021"
+      },
+      "axis": {
+        "offset": 0,
+        "ticks": true,
+        "domain": false,
+        "labelAngle": 0,
+        "labelFontSize": 10
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "detail": {
+          "field": "Country",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "Continent"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": false,
+        "stroke": "transparent"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "2021",
+            "type": "quantitative",
+            "title": "Gini"
+          }
+        ],
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "title": "Continent",
+          "scale": {
+            "scheme": "inferno"
+          }
+        },
+        "size": {
+          "value": 50
+        },
+        "opacity": {
+          "value": 1
+        }
+      }
+    }
+  ]
+}

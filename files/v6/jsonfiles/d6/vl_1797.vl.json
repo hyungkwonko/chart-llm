@@ -1,0 +1,215 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "autosize": {
+    "resize": true
+  },
+  "background": "#FFFFFF",
+  "config": {
+    "axis": {
+      "gridColor": "#f2f2f2",
+      "labelBound": true
+    },
+    "mark": {
+      "tooltip": null
+    },
+    "view": {
+      "height": 300,
+      "width": 400
+    }
+  },
+  "data": {
+    "name": "data-ceb3e53dd82dc2b785cc2ba76931c96b"
+  },
+  "datasets": {
+    "data-ceb3e53dd82dc2b785cc2ba76931c96b": [
+      {
+        "Feature ID": "Taxon1",
+        "FeatureMetadata1": null,
+        "FeatureMetadata2": null,
+        "Intercept": 5.0,
+        "Rank 1": 6.0,
+        "Rank 2": 7.0,
+        "Rank 3": 0.0,
+        "Rank 4": 4.0,
+        "qurro_classification": "None",
+        "qurro_spc": 5.0
+      },
+      {
+        "Feature ID": "Taxon2",
+        "FeatureMetadata1": null,
+        "FeatureMetadata2": null,
+        "Intercept": 1.0,
+        "Rank 1": 2.0,
+        "Rank 2": 3.0,
+        "Rank 3": 0.0,
+        "Rank 4": 4.0,
+        "qurro_classification": "None",
+        "qurro_spc": 5.0
+      },
+      {
+        "Feature ID": "Taxon3",
+        "FeatureMetadata1": "Yeet",
+        "FeatureMetadata2": "100",
+        "Intercept": 4.0,
+        "Rank 1": 5.0,
+        "Rank 2": 6.0,
+        "Rank 3": 0.0,
+        "Rank 4": 4.0,
+        "qurro_classification": "None",
+        "qurro_spc": 6.0
+      },
+      {
+        "Feature ID": "Taxon4",
+        "FeatureMetadata1": null,
+        "FeatureMetadata2": null,
+        "Intercept": 9.0,
+        "Rank 1": 8.0,
+        "Rank 2": 7.0,
+        "Rank 3": 0.0,
+        "Rank 4": 4.0,
+        "qurro_classification": "None",
+        "qurro_spc": 6.0
+      },
+      {
+        "Feature ID": "Taxon5",
+        "FeatureMetadata1": "null",
+        "FeatureMetadata2": "lol",
+        "Intercept": 6.0,
+        "Rank 1": 5.0,
+        "Rank 2": 4.0,
+        "Rank 3": 0.0,
+        "Rank 4": 4.0,
+        "qurro_classification": "None",
+        "qurro_spc": 2.0
+      }
+    ],
+    "qurro_feature_metadata_ordering": [
+      "FeatureMetadata1",
+      "FeatureMetadata2"
+    ],
+    "qurro_rank_ordering": [
+      "Intercept",
+      "Rank 1",
+      "Rank 2",
+      "Rank 3",
+      "Rank 4"
+    ],
+    "qurro_rank_type": "Differential"
+  },
+  "encoding": {
+    "color": {
+      "field": "qurro_classification",
+      "scale": {
+        "domain": [
+          "None",
+          "Numerator",
+          "Denominator",
+          "Both"
+        ],
+        "range": [
+          "#e0e0e0",
+          "#f00",
+          "#00f",
+          "#949"
+        ]
+      },
+      "title": "Log-Ratio Classification",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "qurro_x",
+        "title": "Current Ranking",
+        "type": "quantitative"
+      },
+      {
+        "field": "qurro_classification",
+        "title": "Log-Ratio Classification",
+        "type": "nominal"
+      },
+      {
+        "field": "qurro_spc",
+        "title": "Sample Presence Count",
+        "type": "quantitative"
+      },
+      {
+        "field": "Feature ID",
+        "type": "nominal"
+      },
+      {
+        "field": "FeatureMetadata1",
+        "type": "nominal"
+      },
+      {
+        "field": "FeatureMetadata2",
+        "type": "nominal"
+      },
+      {
+        "field": "Intercept",
+        "type": "quantitative"
+      },
+      {
+        "field": "Rank 1",
+        "type": "quantitative"
+      },
+      {
+        "field": "Rank 2",
+        "type": "quantitative"
+      },
+      {
+        "field": "Rank 3",
+        "type": "quantitative"
+      },
+      {
+        "field": "Rank 4",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "labelAngle": 0,
+        "ticks": false
+      },
+      "field": "qurro_x",
+      "scale": {
+        "paddingInner": 0,
+        "paddingOuter": 1,
+        "rangeStep": 1
+      },
+      "title": "Feature Rankings",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Intercept",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar",
+  "selection": {
+    "selector005": {
+      "bind": "scales",
+      "encodings": [
+        "x",
+        "y"
+      ],
+      "type": "interval"
+    }
+  },
+  "title": "Features",
+  "transform": [
+    {
+      "sort": [
+        {
+          "field": "Intercept",
+          "order": "ascending"
+        }
+      ],
+      "window": [
+        {
+          "as": "qurro_x",
+          "op": "row_number"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "fontSize": 24
+    }
+  },
+  "data": {
+    "name": "data-5abe50cfeee292670916facf15d2772b"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "percent",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "year_month type",
+      "sort": "-x",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "params": [
+    {
+      "name": "param_8",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales"
+    }
+  ],
+  "title": "Year and Month Of Update (Sidewalks)",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-5abe50cfeee292670916facf15d2772b": [
+      {
+        "year_month type": "2022_12",
+        "count": 5741,
+        "percent": "73.96%"
+      },
+      {
+        "year_month type": "2022_06",
+        "count": 780,
+        "percent": "10.05%"
+      },
+      {
+        "year_month type": "2022_10",
+        "count": 406,
+        "percent": "5.23%"
+      },
+      {
+        "year_month type": "2022_03",
+        "count": 123,
+        "percent": "1.58%"
+      },
+      {
+        "year_month type": "2021_06",
+        "count": 78,
+        "percent": "1.0%"
+      },
+      {
+        "year_month type": "2022_04",
+        "count": 78,
+        "percent": "1.0%"
+      },
+      {
+        "year_month type": "2018_02",
+        "count": 74,
+        "percent": "0.95%"
+      },
+      {
+        "year_month type": "2022_01",
+        "count": 52,
+        "percent": "0.67%"
+      },
+      {
+        "year_month type": "2021_07",
+        "count": 45,
+        "percent": "0.58%"
+      },
+      {
+        "year_month type": "2021_08",
+        "count": 39,
+        "percent": "0.5%"
+      },
+      {
+        "year_month type": "2019_06",
+        "count": 38,
+        "percent": "0.49%"
+      },
+      {
+        "year_month type": "2021_09",
+        "count": 32,
+        "percent": "0.41%"
+      },
+      {
+        "year_month type": "2021_12",
+        "count": 32,
+        "percent": "0.41%"
+      },
+      {
+        "year_month type": "2022_11",
+        "count": 30,
+        "percent": "0.39%"
+      },
+      {
+        "year_month type": "2022_05",
+        "count": 17,
+        "percent": "0.22%"
+      },
+      {
+        "year_month type": "2021_03",
+        "count": 16,
+        "percent": "0.21%"
+      },
+      {
+        "year_month type": "2023_01",
+        "count": 15,
+        "percent": "0.19%"
+      },
+      {
+        "year_month type": "2018_01",
+        "count": 13,
+        "percent": "0.17%"
+      },
+      {
+        "year_month type": "2019_07",
+        "count": 13,
+        "percent": "0.17%"
+      },
+      {
+        "year_month type": "2019_12",
+        "count": 13,
+        "percent": "0.17%"
+      },
+      {
+        "year_month type": "2020_01",
+        "count": 13,
+        "percent": "0.17%"
+      },
+      {
+        "year_month type": "2022_07",
+        "count": 12,
+        "percent": "0.15%"
+      },
+      {
+        "year_month type": "2022_08",
+        "count": 10,
+        "percent": "0.13%"
+      },
+      {
+        "year_month type": "2019_08",
+        "count": 10,
+        "percent": "0.13%"
+      },
+      {
+        "year_month type": "2018_04",
+        "count": 8,
+        "percent": "0.1%"
+      },
+      {
+        "year_month type": "2019_10",
+        "count": 6,
+        "percent": "0.08%"
+      },
+      {
+        "year_month type": "2017_12",
+        "count": 6,
+        "percent": "0.08%"
+      },
+      {
+        "year_month type": "2019_04",
+        "count": 6,
+        "percent": "0.08%"
+      },
+      {
+        "year_month type": "2022_09",
+        "count": 6,
+        "percent": "0.08%"
+      },
+      {
+        "year_month type": "2019_05",
+        "count": 6,
+        "percent": "0.08%"
+      },
+      {
+        "year_month type": "2020_03",
+        "count": 4,
+        "percent": "0.05%"
+      },
+      {
+        "year_month type": "2021_10",
+        "count": 4,
+        "percent": "0.05%"
+      },
+      {
+        "year_month type": "2019_01",
+        "count": 4,
+        "percent": "0.05%"
+      },
+      {
+        "year_month type": "2020_10",
+        "count": 3,
+        "percent": "0.04%"
+      },
+      {
+        "year_month type": "2020_02",
+        "count": 3,
+        "percent": "0.04%"
+      },
+      {
+        "year_month type": "2018_08",
+        "count": 3,
+        "percent": "0.04%"
+      },
+      {
+        "year_month type": "2021_04",
+        "count": 2,
+        "percent": "0.03%"
+      },
+      {
+        "year_month type": "2017_04",
+        "count": 2,
+        "percent": "0.03%"
+      },
+      {
+        "year_month type": "2019_09",
+        "count": 2,
+        "percent": "0.03%"
+      },
+      {
+        "year_month type": "2016_12",
+        "count": 2,
+        "percent": "0.03%"
+      },
+      {
+        "year_month type": "2021_05",
+        "count": 2,
+        "percent": "0.03%"
+      },
+      {
+        "year_month type": "2016_11",
+        "count": 2,
+        "percent": "0.03%"
+      },
+      {
+        "year_month type": "2022_02",
+        "count": 2,
+        "percent": "0.03%"
+      },
+      {
+        "year_month type": "2021_02",
+        "count": 1,
+        "percent": "0.01%"
+      },
+      {
+        "year_month type": "2020_08",
+        "count": 1,
+        "percent": "0.01%"
+      },
+      {
+        "year_month type": "2020_04",
+        "count": 1,
+        "percent": "0.01%"
+      },
+      {
+        "year_month type": "2019_11",
+        "count": 1,
+        "percent": "0.01%"
+      },
+      {
+        "year_month type": "2018_12",
+        "count": 1,
+        "percent": "0.01%"
+      },
+      {
+        "year_month type": "2018_09",
+        "count": 1,
+        "percent": "0.01%"
+      },
+      {
+        "year_month type": "2018_05",
+        "count": 1,
+        "percent": "0.01%"
+      },
+      {
+        "year_month type": "2018_03",
+        "count": 1,
+        "percent": "0.01%"
+      },
+      {
+        "year_month type": "2020_05",
+        "count": 1,
+        "percent": "0.01%"
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "fontSize": 24
+    }
+  },
+  "data": {
+    "name": "data-319e8fd2a40444defdc2124e77ad7648"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "percent",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "Year of Survey type",
+      "sort": "-y",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "params": [
+    {
+      "name": "param_11",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales"
+    }
+  ],
+  "title": "Year of Survey Image (crossings)",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-319e8fd2a40444defdc2124e77ad7648": [
+      {
+        "Year of Survey type": "?",
+        "count": 1581,
+        "percent": "98.38%"
+      },
+      {
+        "Year of Survey type": "2019",
+        "count": 26,
+        "percent": "1.62%"
+      }
+    ]
+  }
+}

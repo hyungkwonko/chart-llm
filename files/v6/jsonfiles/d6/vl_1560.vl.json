@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://uiuc-ischool-dataviz.github.io/fall2019/data/voters.json"
+  },
+  "transform": [
+    {
+      "fold": [
+        "dem",
+        "rep",
+        "decline",
+        "other"
+      ],
+      "as": [
+        "party",
+        "percentage"
+      ]
+    },
+    {
+      "calculate": "datum.registered * datum.percentage",
+      "as": "total_people"
+    }
+  ],
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "total_people",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "party",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "dem",
+          "rep",
+          "other",
+          "decline"
+        ],
+        "range": [
+          "#0000DDAA",
+          "#DD0000AA",
+          "#00DD00AA",
+          "#000000AA"
+        ]
+      }
+    }
+  }
+}

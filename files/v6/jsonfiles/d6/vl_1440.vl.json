@@ -1,0 +1,152 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-e55d461d88da9ee39d1c5b6f17c2154c"
+  },
+  "mark": "bar",
+  "encoding": {
+    "facet": {
+      "columns": 2,
+      "field": "pacbioRun",
+      "title": null,
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "type": "nominal"
+      },
+      {
+        "field": "count",
+        "type": "quantitative"
+      },
+      {
+        "field": "pacbioRun",
+        "type": "nominal"
+      },
+      {
+        "field": "library",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "count",
+      "type": "quantitative"
+    },
+    "y": {
+      "axis": {
+        "title": null
+      },
+      "field": "category",
+      "type": "nominal"
+    }
+  },
+  "height": 75,
+  "resolve": {
+    "scale": {
+      "x": "independent",
+      "y": "independent"
+    }
+  },
+  "width": 250,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-e55d461d88da9ee39d1c5b6f17c2154c": [
+      {
+        "category": "aligned PacBio_amplicon",
+        "count": 607452,
+        "pacbioRun": "Lib-1_220531",
+        "library": "Lib-1"
+      },
+      {
+        "category": "filtered PacBio_amplicon",
+        "count": 117813,
+        "pacbioRun": "Lib-1_220531",
+        "library": "Lib-1"
+      },
+      {
+        "category": "unmapped",
+        "count": 4685,
+        "pacbioRun": "Lib-1_220531",
+        "library": "Lib-1"
+      },
+      {
+        "category": "aligned PacBio_amplicon",
+        "count": 926231,
+        "pacbioRun": "Lib-1_220710",
+        "library": "Lib-1"
+      },
+      {
+        "category": "filtered PacBio_amplicon",
+        "count": 80145,
+        "pacbioRun": "Lib-1_220710",
+        "library": "Lib-1"
+      },
+      {
+        "category": "unmapped",
+        "count": 101,
+        "pacbioRun": "Lib-1_220710",
+        "library": "Lib-1"
+      },
+      {
+        "category": "aligned PacBio_amplicon",
+        "count": 871600,
+        "pacbioRun": "Lib-1_220711",
+        "library": "Lib-1"
+      },
+      {
+        "category": "filtered PacBio_amplicon",
+        "count": 75799,
+        "pacbioRun": "Lib-1_220711",
+        "library": "Lib-1"
+      },
+      {
+        "category": "unmapped",
+        "count": 124,
+        "pacbioRun": "Lib-1_220711",
+        "library": "Lib-1"
+      },
+      {
+        "category": "aligned PacBio_amplicon",
+        "count": 2939400,
+        "pacbioRun": "Lib-2_220629",
+        "library": "Lib-2"
+      },
+      {
+        "category": "filtered PacBio_amplicon",
+        "count": 237599,
+        "pacbioRun": "Lib-2_220629",
+        "library": "Lib-2"
+      },
+      {
+        "category": "unmapped",
+        "count": 29811,
+        "pacbioRun": "Lib-2_220629",
+        "library": "Lib-2"
+      },
+      {
+        "category": "aligned PacBio_amplicon",
+        "count": 2991633,
+        "pacbioRun": "Lib-3_220629",
+        "library": "Lib-3"
+      },
+      {
+        "category": "filtered PacBio_amplicon",
+        "count": 236980,
+        "pacbioRun": "Lib-3_220629",
+        "library": "Lib-3"
+      },
+      {
+        "category": "unmapped",
+        "count": 21441,
+        "pacbioRun": "Lib-3_220629",
+        "library": "Lib-3"
+      }
+    ]
+  }
+}

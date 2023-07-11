@@ -1,0 +1,72 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "fontSize": 24
+    }
+  },
+  "data": {
+    "name": "data-deedaed0c490ff255dbd3fa4dac5c559"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "color": {
+      "field": "feature count",
+      "type": "quantitative"
+    },
+    "tooltip": {
+      "field": "length(km)",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "tactile_paving type",
+      "sort": "-y",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "length(km)",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "params": [
+    {
+      "name": "param_4",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales"
+    }
+  ],
+  "title": "Sidewalks Tactile Paving Presence",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-deedaed0c490ff255dbd3fa4dac5c559": [
+      {
+        "tactile_paving type": "?",
+        "feature count": 6682,
+        "length(km)": 254.95338706382927
+      },
+      {
+        "tactile_paving type": "no",
+        "feature count": 1069,
+        "length(km)": 31.750998571677524
+      },
+      {
+        "tactile_paving type": "yes",
+        "feature count": 11,
+        "length(km)": 0.3342733270694504
+      }
+    ]
+  }
+}

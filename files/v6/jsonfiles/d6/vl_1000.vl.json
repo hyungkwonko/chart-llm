@@ -1,0 +1,120 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/Data/cleaned_real_estate_data.csv"
+  },
+  "width": 500,
+  "height": 300,
+  "title": {
+    "text": "Metro Areas - Median Price and Affordability Index",
+    "subtitle": [
+      "Cities represent metropolitan statistical areas as defined by the U.S. Census. Affordability Index 0-20, 1 most affordable. Source: Kiplinger"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "Metro Area",
+          "type": "nominal",
+          "title": "City",
+          "scale": {
+            "domain": [
+              "San Francisco Calif.",
+              "Los Angeles Calif.",
+              "Oxnard Calif.",
+              "San Diego Calif.",
+              "Honolulu Hi.",
+              "Seattle Wash.",
+              "Bridgeport Conn.",
+              "New York N.Y.-N.J.",
+              "Sacramento Calif.",
+              "Boston Mass.",
+              "Denver Colo.",
+              "Washington D.C.-No. Va.",
+              "Portland Ore.",
+              "Stockton Calif.",
+              "Riverside-San Bernardino Calif.",
+              "Provo Utah",
+              "Colorado Springs Colo.",
+              "Modesto Calif.",
+              "Austin Texas",
+              "Phoenix Ariz.",
+              "Las Vegas Nev.",
+              "Miami Fla.",
+              "Fresno Calif.",
+              "Nashville Tenn.",
+              "Raleigh N.C.",
+              "Boise City Idaho",
+              "Portland Me.",
+              "Providence R.I.",
+              "Ogden Utah",
+              "Baltimore Md.",
+              "Minneapolis-St. Paul Minn.",
+              "Madison Wis.",
+              "North Port-Sarasota Fla.",
+              "Charleston S.C.",
+              "Durham N.C.",
+              "Orlando Fla.",
+              "Worcester Mass.",
+              "Richmond Va.",
+              "Charlotte N.C.",
+              "Chicago Ill.",
+              "Atlanta Ga.",
+              "Virginia Beach Va.",
+              "Jacksonville Fla.",
+              "Bakersfield Calif.",
+              "Philadelphia Pa.",
+              "Hartford Conn.",
+              "New Haven Conn.",
+              "Tampa Fla.",
+              "Tucson Ariz.",
+              "McAllen Texas"
+            ]
+          }
+        },
+        "y": {
+          "field": "Median Price",
+          "type": "quantitative",
+          "title": "Median Price $ Dollars",
+          "axis": {
+            "grid": true
+          }
+        },
+        "color": {
+          "field": "Affordability Index",
+          "type": "quantitative",
+          "title": "Affordability Index",
+          "scale": {
+            "scheme": "yellowgreenblue"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "Metro Area",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "Affordability Index",
+          "type": "quantitative",
+          "title": ""
+        }
+      }
+    }
+  ],
+  "config": {}
+}

@@ -1,0 +1,217 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "stroke": ""
+    }
+  },
+  "background": "#f9f9fc",
+  "title": {
+    "text": "otherClosed",
+    "offset": -40,
+    "anchor": "start",
+    "fontsize": 18
+  },
+  "width": 500,
+  "height": 500,
+  "data": {
+    "url": "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+    "format": {
+      "parse": {
+        "g79x": "number",
+        "g79y": "number"
+      }
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "g79X",
+          "type": "quantitative",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "g79Y",
+          "type": "quantitative",
+          "sort": "descending",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        }
+      },
+      "mark": {
+        "type": "square",
+        "stroke": "white",
+        "strokeWidth": 2,
+        "fill": "#ddd",
+        "size": 6944.444444444444
+      }
+    },
+    {
+      "encoding": {
+        "x": {
+          "field": "g79X",
+          "type": "quantitative",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "g79Y",
+          "type": "quantitative",
+          "sort": "descending",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "regionName",
+          "type": "nominal"
+        }
+      },
+      "mark": {
+        "type": "text",
+        "fontsize": 8,
+        "dy": 15
+      }
+    },
+    {
+      "data": {
+        "url": "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv"
+      },
+      "transform": [
+        {
+          "lookup": "source",
+          "from": {
+            "data": {
+              "url": "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+              "format": {
+                "parse": {
+                  "g79x": "number",
+                  "g79y": "number"
+                }
+              }
+            },
+            "key": "regionCode",
+            "fields": [
+              "g79X",
+              "g79Y"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.g79X",
+          "as": "oCol"
+        },
+        {
+          "calculate": "datum.g79Y",
+          "as": "oRow"
+        },
+        {
+          "lookup": "dest",
+          "from": {
+            "data": {
+              "url": "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+              "format": {
+                "parse": {
+                  "g79x": "number",
+                  "g79y": "number"
+                }
+              }
+            },
+            "key": "regionCode",
+            "fields": [
+              "g79X",
+              "g79Y"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.g79X",
+          "as": "dCol"
+        },
+        {
+          "calculate": "datum.g79Y",
+          "as": "dRow"
+        },
+        {
+          "filter": "datum.oCol != datum.dCol || datum.oRow != datum.dRow"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "oCol",
+          "type": "quantitative",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "oRow",
+          "type": "quantitative",
+          "sort": "descending",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "x2": {
+          "field": "dCol"
+        },
+        "y2": {
+          "field": "dRow"
+        },
+        "strokeWidth": {
+          "field": "otherClosed",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "range": [
+              0.2,
+              30
+            ]
+          },
+          "legend": null
+        }
+      },
+      "mark": {
+        "type": "rule",
+        "color": "brown",
+        "opacity": 0.3,
+        "strokeCap": "round"
+      }
+    }
+  ]
+}

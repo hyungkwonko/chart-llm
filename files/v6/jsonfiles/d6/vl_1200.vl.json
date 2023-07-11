@@ -1,0 +1,180 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/ProjectRegress3.csv"
+  },
+  "title": {
+    "text": [
+      "Relationship between GDP per Capita and",
+      "Energy Consumption per Capita"
+    ],
+    "subtitle": "Source: World Bank, Our World in Data",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "fontSize": 15,
+    "anchor": "middle"
+  },
+  "height": 300,
+  "width": 300,
+  "layer": [
+    {
+      "selection": {
+        "picked": {
+          "empty": "none",
+          "bind": {
+            "Region": {
+              "input": "select",
+              "options": [
+                "No region selected",
+                "East Asia & Pacific",
+                "Europe & Central Asia",
+                "Latin America & Carribean",
+                "Middle East & North Africa",
+                "South Asia",
+                "Sub-Saharan Africa"
+              ],
+              "name": "Select a region:"
+            }
+          },
+          "type": "single",
+          "fields": [
+            "Region"
+          ]
+        },
+        "grid": {
+          "type": "interval",
+          "bind": "scales",
+          "on": "[mousedown, window:mouseup] > window:mousemove!",
+          "translate": "[mousedown, window:mouseup] > window:mousemove!",
+          "zoom": "wheel!",
+          "resolve": "global"
+        }
+      },
+      "mark": {
+        "type": "circle",
+        "filled": true,
+        "size": 50
+      },
+      "encoding": {
+        "color": {
+          "value": "grey",
+          "scale": {
+            "range": [
+              "#4c78a8",
+              "orange",
+              "#e45756",
+              "teal",
+              "#eeca3b",
+              "green",
+              "#b279a2",
+              "#ff9da6"
+            ]
+          },
+          "legend": {
+            "orient": "right"
+          },
+          "condition": {
+            "field": "Region",
+            "selection": "picked",
+            "type": "nominal",
+            "legend": null
+          }
+        },
+        "size": {
+          "value": 60,
+          "condition": {
+            "value": 120,
+            "selection": "picked"
+          }
+        },
+        "opacity": {
+          "value": 0.4,
+          "condition": {
+            "value": 1,
+            "selection": "picked"
+          }
+        },
+        "x": {
+          "field": "GDP per capita, PPP (constant 2017 international $)",
+          "type": "quantitative",
+          "title": "GDP per capita (PPP 2017, USD)",
+          "axis": {
+            "labelFontSize": 10,
+            "grid": true,
+            "titleFontSize": 12
+          }
+        },
+        "y": {
+          "field": "Primary energy consumption per capita (kWh/person)",
+          "type": "quantitative",
+          "title": "Energy Consumption per capita (kWh)",
+          "axis": {
+            "labelFontSize": 10,
+            "grid": true,
+            "titleFontSize": 12
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "GDP per capita, PPP (constant 2017 international $)",
+            "type": "quantitative",
+            "title": "GDP per Capita",
+            "format": "$,.0f"
+          },
+          {
+            "field": "Primary energy consumption per capita (kWh/person)",
+            "type": "quantitative",
+            "title": "Energy Consumption per capita",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "Primary energy consumption per capita (kWh/person)",
+          "on": "GDP per capita, PPP (constant 2017 international $)",
+          "extent": [
+            4000,
+            26000
+          ]
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "GDP per capita, PPP (constant 2017 international $)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Primary energy consumption per capita (kWh/person)",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": 80,
+        "align": "right",
+        "y": 15,
+        "size": 20,
+        "text": "R2: 0.77"
+      }
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Tick chart",
+  "width": "container",
+  "height": 40,
+  "config": {
+    "background": "#FFFFFF",
+    "axisX": {
+      "domain": true,
+      "labels": true,
+      "grid": false,
+      "labelFontSize": 8,
+      "tickColor": "#000000",
+      "tickSize": 2,
+      "titleFontSize": 12
+    },
+    "axisY": {
+      "domain": false,
+      "labels": false,
+      "grid": false,
+      "ticks": false
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "tick": {
+      "thickness": 0.65,
+      "bandSize": 40
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/last7days-by-modzcta.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "tick",
+        "tooltip": true,
+        "color": "darkgrey"
+      },
+      "encoding": {
+        "x": {
+          "field": "median_daily_test_rate",
+          "type": "quantitative",
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "modzcta",
+            "title": "ZIP"
+          },
+          {
+            "field": "median_daily_test_rate",
+            "type": "quantitative",
+            "title": "Daily test rate (per 100,000)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "tick",
+        "thickness": 4,
+        "tooltip": true,
+        "color": "#DB00A8"
+      },
+      "transform": [
+        {
+          "filter": "datum.modzcta == 11226"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "median_daily_test_rate",
+          "type": "quantitative",
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "modzcta",
+            "title": "ZIP"
+          },
+          {
+            "field": "median_daily_test_rate",
+            "type": "quantitative",
+            "title": "Daily test rate positive"
+          }
+        ]
+      }
+    }
+  ]
+}

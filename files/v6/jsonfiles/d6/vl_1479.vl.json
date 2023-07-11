@@ -1,0 +1,102 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "fontSize": 24
+    }
+  },
+  "data": {
+    "name": "data-9cc2111661b6ef9ed0fa1780f46d25dc"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "color": {
+      "field": "feature count",
+      "type": "quantitative"
+    },
+    "tooltip": {
+      "field": "length(km)",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "smoothness type",
+      "sort": "-y",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "length(km)",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "params": [
+    {
+      "name": "param_3",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales"
+    }
+  ],
+  "title": "Sidewalks Smoothness Condition",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-9cc2111661b6ef9ed0fa1780f46d25dc": [
+      {
+        "smoothness type": "?",
+        "feature count": 6573,
+        "length(km)": 250.68409987254645
+      },
+      {
+        "smoothness type": "bad",
+        "feature count": 193,
+        "length(km)": 4.688843528927151
+      },
+      {
+        "smoothness type": "excellent",
+        "feature count": 120,
+        "length(km)": 4.6097502157252555
+      },
+      {
+        "smoothness type": "good",
+        "feature count": 492,
+        "length(km)": 16.13526659175111
+      },
+      {
+        "smoothness type": "horrible",
+        "feature count": 4,
+        "length(km)": 0.0826631821806614
+      },
+      {
+        "smoothness type": "impassable",
+        "feature count": 4,
+        "length(km)": 0.11098495976963954
+      },
+      {
+        "smoothness type": "intermediate",
+        "feature count": 352,
+        "length(km)": 9.927933198113841
+      },
+      {
+        "smoothness type": "very_bad",
+        "feature count": 18,
+        "length(km)": 0.5631161308690301
+      },
+      {
+        "smoothness type": "very_horrible",
+        "feature count": 6,
+        "length(km)": 0.23600128269308998
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "fontSize": 24
+    }
+  },
+  "data": {
+    "name": "data-9a24462f5d3deb2fc5793fccd075361b"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "percent",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "year_month type",
+      "sort": "-x",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "params": [
+    {
+      "name": "param_16",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales"
+    }
+  ],
+  "title": "Year and Month Of Update (Kerbs)",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-9a24462f5d3deb2fc5793fccd075361b": [
+      {
+        "year_month type": "2022_12",
+        "count": 1842,
+        "percent": "79.02%"
+      },
+      {
+        "year_month type": "2022_10",
+        "count": 124,
+        "percent": "5.32%"
+      },
+      {
+        "year_month type": "2022_06",
+        "count": 102,
+        "percent": "4.38%"
+      },
+      {
+        "year_month type": "2021_07",
+        "count": 97,
+        "percent": "4.16%"
+      },
+      {
+        "year_month type": "2022_09",
+        "count": 42,
+        "percent": "1.8%"
+      },
+      {
+        "year_month type": "2022_05",
+        "count": 32,
+        "percent": "1.37%"
+      },
+      {
+        "year_month type": "2021_06",
+        "count": 26,
+        "percent": "1.12%"
+      },
+      {
+        "year_month type": "2021_10",
+        "count": 17,
+        "percent": "0.73%"
+      },
+      {
+        "year_month type": "2022_03",
+        "count": 15,
+        "percent": "0.64%"
+      },
+      {
+        "year_month type": "2022_01",
+        "count": 11,
+        "percent": "0.47%"
+      },
+      {
+        "year_month type": "2021_09",
+        "count": 9,
+        "percent": "0.39%"
+      },
+      {
+        "year_month type": "2021_11",
+        "count": 8,
+        "percent": "0.34%"
+      },
+      {
+        "year_month type": "2020_11",
+        "count": 3,
+        "percent": "0.13%"
+      },
+      {
+        "year_month type": "2016_11",
+        "count": 1,
+        "percent": "0.04%"
+      },
+      {
+        "year_month type": "2018_10",
+        "count": 1,
+        "percent": "0.04%"
+      },
+      {
+        "year_month type": "2022_11",
+        "count": 1,
+        "percent": "0.04%"
+      }
+    ]
+  }
+}

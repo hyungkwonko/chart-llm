@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Two vertically concatenated charts that show a histogram of precipitation in Seattle and the relationship between min and max temperature.",
+  "title": {
+    "text": "Situa\u00e7\u00e3o acad\u00eamica entre homens e mulheres",
+    "fontSize": 15,
+    "anchor": "middle"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/5688192f0ef41ffc80f848db51de0d0c7e513ce4/data/dados-processados/situacao_academica.csv"
+  },
+  "vconcat": [
+    {
+      "mark": "bar",
+      "width": 500,
+      "height": 250,
+      "encoding": {
+        "y": {
+          "field": "forma_saida",
+          "title": "Situa\u00e7\u00e3o acad\u00eamica"
+        },
+        "x": {
+          "field": "count",
+          "type": "quantitative",
+          "title": "Quantidade de estudantes"
+        },
+        "tooltip": [
+          {
+            "field": "sexo",
+            "type": "ordinal",
+            "title": "Sexo"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Quantidade"
+          }
+        ],
+        "color": {
+          "field": "sexo",
+          "title": "G\u00eanero",
+          "scale": {
+            "domain": [
+              "Masculino",
+              "Feminino"
+            ],
+            "scheme": "set2"
+          }
+        }
+      }
+    }
+  ]
+}

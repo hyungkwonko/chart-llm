@@ -1,0 +1,205 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "fontSize": 24
+    }
+  },
+  "data": {
+    "name": "data-790255cfbf32940a9dbcf333528a2e50"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "percent",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "year_month type",
+      "sort": "-x",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "params": [
+    {
+      "name": "param_12",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales"
+    }
+  ],
+  "title": "Year and Month Of Update (Crossings)",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-790255cfbf32940a9dbcf333528a2e50": [
+      {
+        "year_month type": "2022_12",
+        "count": 953,
+        "percent": "59.3%"
+      },
+      {
+        "year_month type": "2022_10",
+        "count": 212,
+        "percent": "13.19%"
+      },
+      {
+        "year_month type": "2021_06",
+        "count": 147,
+        "percent": "9.15%"
+      },
+      {
+        "year_month type": "2022_06",
+        "count": 64,
+        "percent": "3.98%"
+      },
+      {
+        "year_month type": "2021_07",
+        "count": 56,
+        "percent": "3.48%"
+      },
+      {
+        "year_month type": "2022_03",
+        "count": 51,
+        "percent": "3.17%"
+      },
+      {
+        "year_month type": "2021_09",
+        "count": 27,
+        "percent": "1.68%"
+      },
+      {
+        "year_month type": "2021_10",
+        "count": 25,
+        "percent": "1.56%"
+      },
+      {
+        "year_month type": "2022_05",
+        "count": 13,
+        "percent": "0.81%"
+      },
+      {
+        "year_month type": "2022_11",
+        "count": 13,
+        "percent": "0.81%"
+      },
+      {
+        "year_month type": "2022_04",
+        "count": 10,
+        "percent": "0.62%"
+      },
+      {
+        "year_month type": "2021_03",
+        "count": 6,
+        "percent": "0.37%"
+      },
+      {
+        "year_month type": "2022_01",
+        "count": 4,
+        "percent": "0.25%"
+      },
+      {
+        "year_month type": "2019_04",
+        "count": 3,
+        "percent": "0.19%"
+      },
+      {
+        "year_month type": "2019_07",
+        "count": 3,
+        "percent": "0.19%"
+      },
+      {
+        "year_month type": "2019_05",
+        "count": 2,
+        "percent": "0.12%"
+      },
+      {
+        "year_month type": "2018_12",
+        "count": 2,
+        "percent": "0.12%"
+      },
+      {
+        "year_month type": "2023_01",
+        "count": 2,
+        "percent": "0.12%"
+      },
+      {
+        "year_month type": "2020_01",
+        "count": 2,
+        "percent": "0.12%"
+      },
+      {
+        "year_month type": "2018_11",
+        "count": 2,
+        "percent": "0.12%"
+      },
+      {
+        "year_month type": "2020_02",
+        "count": 1,
+        "percent": "0.06%"
+      },
+      {
+        "year_month type": "2019_12",
+        "count": 1,
+        "percent": "0.06%"
+      },
+      {
+        "year_month type": "2019_11",
+        "count": 1,
+        "percent": "0.06%"
+      },
+      {
+        "year_month type": "2019_09",
+        "count": 1,
+        "percent": "0.06%"
+      },
+      {
+        "year_month type": "2019_08",
+        "count": 1,
+        "percent": "0.06%"
+      },
+      {
+        "year_month type": "2019_06",
+        "count": 1,
+        "percent": "0.06%"
+      },
+      {
+        "year_month type": "2022_09",
+        "count": 1,
+        "percent": "0.06%"
+      },
+      {
+        "year_month type": "2019_03",
+        "count": 1,
+        "percent": "0.06%"
+      },
+      {
+        "year_month type": "2019_02",
+        "count": 1,
+        "percent": "0.06%"
+      },
+      {
+        "year_month type": "2017_09",
+        "count": 1,
+        "percent": "0.06%"
+      }
+    ]
+  }
+}

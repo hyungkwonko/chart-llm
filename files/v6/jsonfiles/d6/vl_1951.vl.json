@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://api.ons.gov.uk/timeseries/JW2V/dataset/PUSF/data",
+    "format": {
+      "type": "json",
+      "property": "years"
+    }
+  },
+  "height": 300,
+  "width": 260,
+  "mark": {
+    "type": "line",
+    "color": "rgb(0,47,167"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "embedOptions": {
+      "actions": false
+    }
+  },
+  "description": "",
+  "data": {
+    "url": "https://osm.codes/_sql/stats_donors_prospection"
+  },
+  "transform": [
+    {
+      "filter": "datum.donor_status > 0"
+    }
+  ],
+  "background": "transparent",
+  "encoding": {
+    "y": {
+      "field": "donor_status",
+      "type": "nominal",
+      "title": "donor_status"
+    },
+    "x": {
+      "field": "accumulated_amount",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          150
+        ]
+      },
+      "title": "number of donors"
+    },
+    "tooltip": [
+      {
+        "field": "accumulated_amount",
+        "type": "quantitative"
+      }
+    ],
+    "color": {
+      "value": "#ff9900"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 3
+      },
+      "encoding": {
+        "text": {
+          "field": "accumulated_amount",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

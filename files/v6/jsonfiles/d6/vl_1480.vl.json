@@ -1,0 +1,182 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "fontSize": 24
+    }
+  },
+  "data": {
+    "name": "data-5dab8abaf7591df680d5df4d0f14a17e"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "color": {
+      "field": "feature count",
+      "type": "quantitative"
+    },
+    "tooltip": {
+      "field": "length(km)",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "surface type",
+      "sort": "-y",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "length(km)",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "params": [
+    {
+      "name": "param_2",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales"
+    }
+  ],
+  "title": "Sidewalks Surface Type",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-5dab8abaf7591df680d5df4d0f14a17e": [
+      {
+        "surface type": "?",
+        "feature count": 6390,
+        "length(km)": 228.71919408678804
+      },
+      {
+        "surface type": "asphalt",
+        "feature count": 101,
+        "length(km)": 7.827370181561455
+      },
+      {
+        "surface type": "ceramic:tiles",
+        "feature count": 1,
+        "length(km)": 0.0028251675297381973
+      },
+      {
+        "surface type": "cobblestone",
+        "feature count": 5,
+        "length(km)": 0.21796381242371396
+      },
+      {
+        "surface type": "compacted",
+        "feature count": 4,
+        "length(km)": 0.048263406242890605
+      },
+      {
+        "surface type": "concrete",
+        "feature count": 255,
+        "length(km)": 15.520414787359332
+      },
+      {
+        "surface type": "concrete:lanes",
+        "feature count": 15,
+        "length(km)": 0.3590123191818605
+      },
+      {
+        "surface type": "concrete:plates",
+        "feature count": 278,
+        "length(km)": 9.984708000633628
+      },
+      {
+        "surface type": "dirt",
+        "feature count": 1,
+        "length(km)": 0.006993839731948775
+      },
+      {
+        "surface type": "earth",
+        "feature count": 1,
+        "length(km)": 0.012021530059569623
+      },
+      {
+        "surface type": "fine_gravel",
+        "feature count": 4,
+        "length(km)": 0.05910484884181714
+      },
+      {
+        "surface type": "grass",
+        "feature count": 84,
+        "length(km)": 2.337659931047661
+      },
+      {
+        "surface type": "grass_paver",
+        "feature count": 4,
+        "length(km)": 0.3463421123566373
+      },
+      {
+        "surface type": "gravel",
+        "feature count": 3,
+        "length(km)": 0.06980482154077244
+      },
+      {
+        "surface type": "ground",
+        "feature count": 8,
+        "length(km)": 0.5751238742224918
+      },
+      {
+        "surface type": "paved",
+        "feature count": 27,
+        "length(km)": 2.201059499801602
+      },
+      {
+        "surface type": "paver",
+        "feature count": 1,
+        "length(km)": 0.05801894954862625
+      },
+      {
+        "surface type": "paving_stones",
+        "feature count": 332,
+        "length(km)": 11.336155227386692
+      },
+      {
+        "surface type": "pebblestone",
+        "feature count": 2,
+        "length(km)": 0.06488003820724146
+      },
+      {
+        "surface type": "rock",
+        "feature count": 1,
+        "length(km)": 0.06065703038889007
+      },
+      {
+        "surface type": "sett",
+        "feature count": 219,
+        "length(km)": 6.526505447657001
+      },
+      {
+        "surface type": "stepping_stones",
+        "feature count": 6,
+        "length(km)": 0.22006597186387933
+      },
+      {
+        "surface type": "unhewn_cobblestone",
+        "feature count": 2,
+        "length(km)": 0.058285668214987735
+      },
+      {
+        "surface type": "unpaved",
+        "feature count": 2,
+        "length(km)": 0.052936495249131035
+      },
+      {
+        "surface type": "wood",
+        "feature count": 16,
+        "length(km)": 0.3732919147366342
+      }
+    ]
+  }
+}

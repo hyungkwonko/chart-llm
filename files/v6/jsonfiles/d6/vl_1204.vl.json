@@ -1,0 +1,203 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": [
+      "Development in different regions",
+      "(1990-Present)"
+    ],
+    "fontSize": 15,
+    "subtitle": [
+      "Source: World Bank"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "vconcat": [
+    {
+      "mark": "line",
+      "height": 150,
+      "width": 150,
+      "transform": [
+        {
+          "filter": {
+            "timeUnit": "year",
+            "field": "date",
+            "gte": "1990"
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": [
+            "Poverty Gap (%)",
+            "(at $2.15 a day)"
+          ]
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "Region",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Poverty Gap (%)"
+          }
+        ],
+        "color": {
+          "field": "Region",
+          "type": "nominal",
+          "scale": {
+            "range": [
+              "#4c78a8",
+              "#f58518",
+              "#e45756",
+              "#72b7b2",
+              "#eeca3b",
+              "#b279a2",
+              "#ff9da6"
+            ]
+          }
+        }
+      },
+      "data": {
+        "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/Projectchart1extension1%20(1).csv"
+      }
+    },
+    {
+      "mark": "line",
+      "height": 150,
+      "width": 150,
+      "transform": [
+        {
+          "filter": {
+            "timeUnit": "year",
+            "field": "date",
+            "gte": "1990"
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": [
+            "GDP per Capita",
+            "(PPP 2017, $)"
+          ]
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "Region",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "GDP per Capita",
+            "format": "$,.0f"
+          }
+        ],
+        "color": {
+          "field": "Region",
+          "type": "nominal",
+          "scale": {
+            "range": [
+              "#4c78a8",
+              "#f58518",
+              "#e45756",
+              "#72b7b2",
+              "#eeca3b",
+              "#b279a2",
+              "#ff9da6"
+            ]
+          }
+        }
+      },
+      "data": {
+        "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/Projectchart1extension2.csv"
+      }
+    },
+    {
+      "mark": "line",
+      "height": 150,
+      "width": 150,
+      "transform": [
+        {
+          "filter": {
+            "timeUnit": "year",
+            "field": "date",
+            "gte": "1990"
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": [
+            "Primary Completion Rate",
+            "(% of relevant age group)"
+          ]
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "zero": false
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Region",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Primary Completion Rate",
+            "format": ".1f"
+          }
+        ],
+        "color": {
+          "field": "Region",
+          "type": "nominal",
+          "legend": {
+            "orient": "right"
+          },
+          "scale": {
+            "range": [
+              "#4c78a8",
+              "#f58518",
+              "#e45756",
+              "#72b7b2",
+              "#eeca3b",
+              "#b279a2",
+              "#ff9da6"
+            ]
+          }
+        }
+      },
+      "data": {
+        "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/Projectchart1extension3.csv"
+      }
+    }
+  ]
+}

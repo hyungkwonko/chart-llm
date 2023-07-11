@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": "container",
+  "title": "Cumulative COVID-19 Cases by LGA in South Western Sydney",
+  "selection": {
+    "date": {
+      "type": "interval",
+      "bind": "scales",
+      "encodings": [
+        "x"
+      ]
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "data": {
+    "url": "https://swsphn.github.io/nsw-covid-19-data/confirmed_cases_table1_location_agg.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "and": [
+          {
+            "field": "lhd_2010_name",
+            "equal": "South Western Sydney"
+          },
+          {
+            "not": {
+              "field": "lga_name19",
+              "equal": "Penrith"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "confirmed_cases_count",
+          "as": "date_lga_count"
+        }
+      ],
+      "groupby": [
+        "notification_date",
+        "lga_name19"
+      ]
+    },
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "date_lga_count",
+          "as": "cum_date_lga_count"
+        }
+      ],
+      "groupby": [
+        "lga_name19"
+      ],
+      "frame": [
+        null,
+        0
+      ]
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": "transparent",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "timeUnit": "yearmonthdate",
+      "field": "notification_date",
+      "title": "Date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "cum_date_lga_count",
+      "title": "Cumulative Cases",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "lga_name19",
+      "type": "nominal",
+      "title": "LGA",
+      "legend": {
+        "orient": "top",
+        "columns": 4
+      }
+    }
+  }
+}

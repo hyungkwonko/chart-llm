@@ -1,0 +1,90 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "fontSize": 24
+    }
+  },
+  "data": {
+    "name": "data-7e72eb48227b5ebb59fdc3606713f009"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "percent",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "n_revs type",
+      "sort": "-x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "params": [
+    {
+      "name": "param_13",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales"
+    }
+  ],
+  "title": "Year and Month Of Update (crossings)",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-7e72eb48227b5ebb59fdc3606713f009": [
+      {
+        "n_revs type": 1,
+        "count": 1159,
+        "percent": "72.12%"
+      },
+      {
+        "n_revs type": 3,
+        "count": 257,
+        "percent": "15.99%"
+      },
+      {
+        "n_revs type": 2,
+        "count": 83,
+        "percent": "5.16%"
+      },
+      {
+        "n_revs type": 4,
+        "count": 78,
+        "percent": "4.85%"
+      },
+      {
+        "n_revs type": 5,
+        "count": 19,
+        "percent": "1.18%"
+      },
+      {
+        "n_revs type": 6,
+        "count": 10,
+        "percent": "0.62%"
+      },
+      {
+        "n_revs type": 13,
+        "count": 1,
+        "percent": "0.06%"
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/thu-ml/tianshou/f8808d236f53d86583c74f459365c9cc4184256c/examples/mujoco/benchmark/Swimmer-v3/result.json"
+  },
+  "mark": "line",
+  "height": 400,
+  "width": 800,
+  "params": [
+    {
+      "name": "Range",
+      "value": 1000000,
+      "bind": {
+        "input": "range",
+        "min": 10000,
+        "max": 10000000
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "datum.rew - datum.rew_std",
+      "as": "rew_std0"
+    },
+    {
+      "calculate": "datum.rew + datum.rew_std",
+      "as": "rew_std1"
+    },
+    {
+      "calculate": "datum.rew + ' \u00b1 ' + datum.rew_std",
+      "as": "tooltip_str"
+    },
+    {
+      "filter": "datum.env_step <= Range"
+    }
+  ],
+  "encoding": {
+    "color": {
+      "field": "Agent",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "env_step",
+      "type": "quantitative",
+      "title": "Env step"
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "opacity": {
+          "value": 0.3
+        },
+        "y": {
+          "title": "Return",
+          "field": "rew_std0",
+          "type": "quantitative"
+        },
+        "y2": {
+          "field": "rew_std1"
+        },
+        "tooltip": [
+          {
+            "field": "env_step",
+            "type": "quantitative",
+            "title": "Env step"
+          },
+          {
+            "field": "Agent",
+            "type": "nominal"
+          },
+          {
+            "field": "tooltip_str",
+            "type": "nominal",
+            "title": "Return"
+          }
+        ]
+      },
+      "mark": "area"
+    },
+    {
+      "encoding": {
+        "y": {
+          "field": "rew",
+          "type": "quantitative"
+        }
+      },
+      "mark": "line"
+    }
+  ]
+}

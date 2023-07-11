@@ -1,0 +1,233 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Energy costs index",
+  "height": 300,
+  "width": 300,
+  "title": {
+    "text": "Stock Price and Percentage of Price Change amoung 3 Companies",
+    "subtitle": [
+      "compare nintendo's stock prices / percentage of price changes to figures for sony and microsoft.",
+      "source:https://seekingalpha.com/symbol/NTDOY/historical-price-quotes"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "locale": {
+      "number": {
+        "decimal": ".",
+        "thousands": ",",
+        "grouping": [
+          3
+        ],
+        "currency": [
+          "",
+          " %"
+        ]
+      }
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/pjch6.csv"
+  },
+  "vconcat": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "#122b39",
+        "point": "transparent"
+      },
+      "height": 300,
+      "width": 400,
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "timeUnit": "yearmonth",
+          "title": null,
+          "axis": {
+            "grid": false,
+            "gridOpacity": 0.6,
+            "ticks": false,
+            "labelPadding": 5,
+            "offset": 0,
+            "domain": false,
+            "labelAngle": -35,
+            "labelOffset": 7
+          }
+        },
+        "y": {
+          "field": "closing price_$",
+          "type": "quantitative",
+          "axis": {
+            "grid": true,
+            "gridOpacity": 0.6,
+            "ticks": false,
+            "labelPadding": 5
+          },
+          "title": "stock_price($)",
+          "scale": {
+            "domain": [
+              0,
+              350
+            ]
+          }
+        },
+        "color": {
+          "field": "company",
+          "title": null,
+          "scale": {
+            "scheme": "set3",
+            "reverse": true
+          },
+          "legend": {
+            "orient": "top-left",
+            "symbolStrokeWidth": 5,
+            "labelFontSize": 10
+          }
+        },
+        "tooltip": [
+          {
+            "field": "company"
+          },
+          {
+            "field": "date",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "Year"
+          },
+          {
+            "field": "closing price_$",
+            "type": "quantitative",
+            "title": "stock closing price($)"
+          }
+        ]
+      },
+      "autosize": {
+        "type": "pad",
+        "contains": "padding",
+        "resize": true
+      }
+    },
+    {
+      "mark": {
+        "type": "area",
+        "line": true,
+        "size": 3,
+        "color": "rgb(0,67,167)",
+        "opacity": 1
+      },
+      "height": 300,
+      "width": 400,
+      "transform": [
+        {
+          "filter": {
+            "selection": "SectorSelector"
+          }
+        },
+        {
+          "filter": {
+            "field": "company",
+            "oneOf": [
+              "microsoft",
+              "sony",
+              "nintendo"
+            ]
+          }
+        }
+      ],
+      "selection": {
+        "SectorSelector": {
+          "type": "single",
+          "fields": [
+            "company"
+          ],
+          "bind": {
+            "input": "select",
+            "options": [
+              null,
+              "microsoft",
+              "sony",
+              "nintendo"
+            ],
+            "name": "company name"
+          }
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "timeUnit": "yearmonth",
+          "title": null,
+          "axis": {
+            "grid": false,
+            "gridOpacity": 0.6,
+            "ticks": false,
+            "labelPadding": 5,
+            "offset": 0,
+            "domain": false,
+            "labelAngle": -35,
+            "labelOffset": 7
+          }
+        },
+        "y": {
+          "field": "percentage of change",
+          "type": "quantitative",
+          "axis": {
+            "grid": true,
+            "gridOpacity": 0.6,
+            "ticks": false,
+            "labelPadding": 5
+          },
+          "title": "pric change",
+          "scale": {
+            "domain": [
+              -0.4,
+              0.5
+            ]
+          }
+        },
+        "color": {
+          "field": "company",
+          "title": null,
+          "scale": {
+            "scheme": "set2",
+            "reverse": true
+          },
+          "legend": {
+            "orient": "top-left",
+            "symbolStrokeWidth": 5,
+            "labelFontSize": 10
+          }
+        },
+        "tooltip": [
+          {
+            "field": "company"
+          },
+          {
+            "field": "date",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "Year"
+          },
+          {
+            "field": "percentage of change",
+            "type": "quantitative",
+            "title": " price change"
+          }
+        ]
+      },
+      "autosize": {
+        "type": "pad",
+        "contains": "padding",
+        "resize": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "stroke": ""
+    }
+  },
+  "background": "#f9f9f9",
+  "width": 500,
+  "height": 500,
+  "data": {
+    "url": "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv"
+  },
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "g79X",
+          "type": "quantitative",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "g79Y",
+          "type": "quantitative",
+          "sort": "descending",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "color": {
+          "field": "regionName",
+          "type": "nominal",
+          "scale": {
+            "scheme": "tableau20"
+          },
+          "legend": null
+        },
+        "tooltip": {
+          "field": "regionName",
+          "type": "nominal"
+        }
+      },
+      "mark": {
+        "type": "square",
+        "stroke": "white",
+        "strokeWidth": 2,
+        "opacity": 1,
+        "size": 6944.444444444444
+      }
+    },
+    {
+      "encoding": {
+        "x": {
+          "field": "g79X",
+          "type": "quantitative",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "g79Y",
+          "type": "quantitative",
+          "sort": "descending",
+          "scale": {
+            "nice": false,
+            "domain": [
+              0,
+              6
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "regionName",
+          "type": "nominal"
+        }
+      },
+      "mark": {
+        "type": "text",
+        "fontsize": 7.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": "container",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": "#FFFFFF",
+    "axisX": {
+      "grid": false
+    },
+    "axisY": {
+      "domain": false,
+      "ticks": false,
+      "gridDash": [
+        2
+      ],
+      "gridWidth": 1
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://nychealth.github.io/covid-maps/nr/js/MODZCTA_2010_RI99999_WGS1984_1_topoms.json",
+        "format": {
+          "type": "topojson",
+          "feature": "collection"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#ffffff",
+        "fill": "lightgray"
+      }
+    },
+    {
+      "data": {
+        "url": "https://nychealth.github.io/covid-maps/nr/js/zcta_points.csv"
+      },
+      "transform": [
+        {
+          "lookup": "MODZCTA",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/last7days-by-modzcta.csv"
+            },
+            "key": "modzcta",
+            "fields": [
+              "modzcta",
+              "modzcta_name",
+              "percentpositivity_7day",
+              "people_tested",
+              "people_positive",
+              "daterange",
+              "median_daily_test_rate"
+            ]
+          },
+          "default": "no data"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "stroke": "#8A2BE2",
+        "fill": "red",
+        "fillOpacity": 0.5
+      },
+      "encoding": {
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "size": {
+          "bin": false,
+          "field": "people_positive",
+          "type": "quantitative",
+          "scale": {
+            "range": [
+              0,
+              400
+            ]
+          },
+          "legend": {
+            "title": "New cases (reported so far)",
+            "titleFontSize": 10,
+            "orient": "top-left",
+            "symbolLimit": 5,
+            "symbolOpacity": 0.5,
+            "values": [
+              10,
+              50,
+              100
+            ]
+          }
+        },
+        "strokeWidth": {
+          "value": 0.5
+        },
+        "tooltip": [
+          {
+            "field": "modzcta",
+            "type": "nominal",
+            "title": "ZIP code"
+          },
+          {
+            "field": "modzcta_name",
+            "type": "nominal",
+            "title": "Neighborhood"
+          },
+          {
+            "field": "median_daily_test_rate",
+            "type": "quantitative",
+            "title": "Daily test rate (per 100,000)"
+          },
+          {
+            "field": "percentpositivity_7day",
+            "type": "quantitative",
+            "title": "Percent positive"
+          },
+          {
+            "field": "people_positive",
+            "type": "quantitative",
+            "title": "People positive (reported to date)"
+          },
+          {
+            "field": "daterange",
+            "type": "nominal",
+            "title": "Dates"
+          }
+        ]
+      }
+    }
+  ]
+}

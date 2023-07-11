@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A basic bar chart example, with value labels shown upon mouse hover.",
+  "width": 440,
+  "height": 224,
+  "padding": 5,
+  "title": "Actions (Timeline)",
+  "data": {
+    "values": [
+      {
+        "date": "2020-09-20",
+        "count": 1
+      },
+      {
+        "date": "2020-09-21",
+        "count": 0
+      },
+      {
+        "date": "2020-09-22",
+        "count": 0
+      },
+      {
+        "date": "2020-09-23",
+        "count": 2
+      },
+      {
+        "date": "2020-09-24",
+        "count": 3
+      },
+      {
+        "date": "2020-09-25",
+        "count": 3
+      },
+      {
+        "date": "2020-09-26",
+        "count": 6
+      }
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "ordinal",
+      "axis": {
+        "labelAngle": -300
+      },
+      "timeUnit": "yearmonthdate"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "action",
+      "type": "nominal",
+      "scale": {
+        "range": [
+          "#4C66D6",
+          "#38C396"
+        ]
+      }
+    },
+    "strokeWidth": {
+      "value": 2
+    }
+  },
+  "mark": "bar",
+  "config": {
+    "title": {
+      "color": "rgba(0, 0, 0, 0.75)",
+      "fontSize": 25,
+      "font": "Inter",
+      "fontWeight": 600,
+      "align": "left",
+      "anchor": "start",
+      "dy": -40
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "selection": {
+      "symbol": {
+        "type": "multi",
+        "fields": [
+          "action"
+        ],
+        "bind": "legend",
+        "toggle": "true"
+      }
+    },
+    "mark": {
+      "cornerRadiusTopLeft": 2,
+      "cornerRadiusTopRight": 2
+    },
+    "legend": {
+      "title": null,
+      "orient": "bottom",
+      "columns": 2,
+      "labelColor": "rgba(0, 0, 0, 0.75)",
+      "labelFont": "Inter",
+      "labelFontSize": 14,
+      "labelFontWeight": 600,
+      "rowPadding": 20,
+      "columnPadding": 50,
+      "symbolStrokeWidth": 12,
+      "symbolSize": 150,
+      "symbolType": "circle",
+      "offset": 30
+    },
+    "axisX": {
+      "labelAngle": 0,
+      "tickOffset": 0,
+      "format": "%b %d %a",
+      "labelColor": "rgba(0, 0, 0, 0.4)",
+      "labelFont": "Inter",
+      "labelFontWeight": 500,
+      "labelFontSize": 12,
+      "labelPadding": 45,
+      "tickCount": 5,
+      "labelAlign": "center",
+      "labelBaseline": "middle",
+      "gridColor": "#C8C8C8",
+      "labelExpr": "substring(datum.label, 0, 9)",
+      "gridWidth": 2,
+      "title": null,
+      "grid": false,
+      "ticks": false
+    },
+    "axisY": {
+      "labelColor": "rgba(0, 0, 0, 0.4)",
+      "labelFont": "Inter",
+      "labelFontWeight": 500,
+      "labelFontSize": 12,
+      "labelPadding": 10,
+      "tickCount": 6,
+      "gridColor": "#C8C8C8",
+      "gridWidth": 2,
+      "title": "Units",
+      "grid": false,
+      "ticks": false
+    }
+  }
+}

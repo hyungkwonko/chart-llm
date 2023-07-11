@@ -1,0 +1,115 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "fontSize": 24
+    }
+  },
+  "data": {
+    "name": "data-672d5f3b91220cb87f3f762d2e5f29f7"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "percent",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "n_revs type",
+      "sort": "-x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "params": [
+    {
+      "name": "param_9",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales"
+    }
+  ],
+  "title": "Year and Month Of Update (Sidewalks)",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-672d5f3b91220cb87f3f762d2e5f29f7": [
+      {
+        "n_revs type": 1,
+        "count": 5962,
+        "percent": "76.81%"
+      },
+      {
+        "n_revs type": 4,
+        "count": 568,
+        "percent": "7.32%"
+      },
+      {
+        "n_revs type": 2,
+        "count": 523,
+        "percent": "6.74%"
+      },
+      {
+        "n_revs type": 3,
+        "count": 452,
+        "percent": "5.82%"
+      },
+      {
+        "n_revs type": 5,
+        "count": 169,
+        "percent": "2.18%"
+      },
+      {
+        "n_revs type": 6,
+        "count": 47,
+        "percent": "0.61%"
+      },
+      {
+        "n_revs type": 7,
+        "count": 21,
+        "percent": "0.27%"
+      },
+      {
+        "n_revs type": 8,
+        "count": 11,
+        "percent": "0.14%"
+      },
+      {
+        "n_revs type": 9,
+        "count": 5,
+        "percent": "0.06%"
+      },
+      {
+        "n_revs type": 11,
+        "count": 2,
+        "percent": "0.03%"
+      },
+      {
+        "n_revs type": 17,
+        "count": 1,
+        "percent": "0.01%"
+      },
+      {
+        "n_revs type": 10,
+        "count": 1,
+        "percent": "0.01%"
+      }
+    ]
+  }
+}

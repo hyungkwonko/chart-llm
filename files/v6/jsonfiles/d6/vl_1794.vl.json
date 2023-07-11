@@ -1,0 +1,391 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A basic line chart example.",
+  "width": 440,
+  "height": 224,
+  "padding": 5,
+  "title": "Emotions",
+  "data": {
+    "values": [
+      {
+        "value": 1,
+        "date": "2020-09-20",
+        "symbol": "Compassion"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-20",
+        "symbol": "Self respect"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-20",
+        "symbol": "Irritability"
+      },
+      {
+        "value": 3,
+        "date": "2020-09-20",
+        "symbol": "Pride"
+      },
+      {
+        "value": 2,
+        "date": "2020-09-20",
+        "symbol": "Boredom"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-20",
+        "symbol": "Worthlessness"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-20",
+        "symbol": "Social Anxiety"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-20",
+        "symbol": "Emptiness"
+      },
+      {
+        "value": 2,
+        "date": "2020-09-21",
+        "symbol": "Compassion"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-21",
+        "symbol": "Self respect"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-21",
+        "symbol": "Irritability"
+      },
+      {
+        "value": 3,
+        "date": "2020-09-21",
+        "symbol": "Pride"
+      },
+      {
+        "value": 4,
+        "date": "2020-09-21",
+        "symbol": "Boredom"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-21",
+        "symbol": "Worthlessness"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-21",
+        "symbol": "Social Anxiety"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-21",
+        "symbol": "Emptiness"
+      },
+      {
+        "value": 2,
+        "date": "2020-09-22",
+        "symbol": "Compassion"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-22",
+        "symbol": "Self respect"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-22",
+        "symbol": "Irritability"
+      },
+      {
+        "value": 2,
+        "date": "2020-09-22",
+        "symbol": "Pride"
+      },
+      {
+        "value": 3,
+        "date": "2020-09-22",
+        "symbol": "Boredom"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-22",
+        "symbol": "Worthlessness"
+      },
+      {
+        "value": 1,
+        "date": "2020-09-22",
+        "symbol": "Social Anxiety"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-22",
+        "symbol": "Emptiness"
+      },
+      {
+        "value": 3,
+        "date": "2020-09-23",
+        "symbol": "Compassion"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-23",
+        "symbol": "Self respect"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-23",
+        "symbol": "Irritability"
+      },
+      {
+        "value": 1,
+        "date": "2020-09-23",
+        "symbol": "Pride"
+      },
+      {
+        "value": 5,
+        "date": "2020-09-23",
+        "symbol": "Boredom"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-23",
+        "symbol": "Worthlessness"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-23",
+        "symbol": "Social Anxiety"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-23",
+        "symbol": "Emptiness"
+      },
+      {
+        "value": 1,
+        "date": "2020-09-24",
+        "symbol": "Compassion"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-24",
+        "symbol": "Self respect"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-24",
+        "symbol": "Irritability"
+      },
+      {
+        "value": 1,
+        "date": "2020-09-24",
+        "symbol": "Pride"
+      },
+      {
+        "value": 4,
+        "date": "2020-09-24",
+        "symbol": "Boredom"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-24",
+        "symbol": "Worthlessness"
+      },
+      {
+        "value": 1,
+        "date": "2020-09-24",
+        "symbol": "Social Anxiety"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-24",
+        "symbol": "Emptiness"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-25",
+        "symbol": "Compassion"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-25",
+        "symbol": "Self respect"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-25",
+        "symbol": "Irritability"
+      },
+      {
+        "value": 1,
+        "date": "2020-09-25",
+        "symbol": "Pride"
+      },
+      {
+        "value": 3,
+        "date": "2020-09-25",
+        "symbol": "Boredom"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-25",
+        "symbol": "Worthlessness"
+      },
+      {
+        "value": 1,
+        "date": "2020-09-25",
+        "symbol": "Social Anxiety"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-25",
+        "symbol": "Emptiness"
+      },
+      {
+        "value": 1,
+        "date": "2020-09-26",
+        "symbol": "Compassion"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-26",
+        "symbol": "Self respect"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-26",
+        "symbol": "Irritability"
+      },
+      {
+        "value": 2,
+        "date": "2020-09-26",
+        "symbol": "Pride"
+      },
+      {
+        "value": 4,
+        "date": "2020-09-26",
+        "symbol": "Boredom"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-26",
+        "symbol": "Worthlessness"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-26",
+        "symbol": "Social Anxiety"
+      },
+      {
+        "value": 0,
+        "date": "2020-09-26",
+        "symbol": "Emptiness"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "title": {
+      "color": "rgba(0, 0, 0, 0.75)",
+      "fontSize": 25,
+      "font": "Inter",
+      "fontWeight": 600,
+      "align": "left",
+      "anchor": "start",
+      "dy": -40
+    },
+    "legend": {
+      "title": null,
+      "orient": "bottom",
+      "columns": 2,
+      "labelColor": "rgba(0, 0, 0, 0.75)",
+      "labelFont": "Inter",
+      "labelFontSize": 14,
+      "labelFontWeight": 600,
+      "rowPadding": 20,
+      "columnPadding": 50,
+      "symbolStrokeWidth": 12,
+      "symbolSize": 150,
+      "symbolType": "circle",
+      "offset": 30
+    },
+    "axisX": {
+      "orient": "bottom",
+      "format": "%b %d %a",
+      "labelColor": "rgba(0, 0, 0, 0.4)",
+      "labelFont": "Inter",
+      "labelFontWeight": 500,
+      "labelFontSize": 12,
+      "ticks": false,
+      "labelExpr": "substring(datum.label, 0, 9)",
+      "labelPadding": 32,
+      "title": "date",
+      "grid": false
+    },
+    "axisY": {
+      "orient": "left",
+      "tickCount": 5,
+      "labelColor": "rgba(0, 0, 0, 0.4)",
+      "labelFont": "Inter",
+      "labelFontWeight": 500,
+      "labelFontSize": 12,
+      "ticks": false,
+      "labelPadding": 10,
+      "title": null,
+      "grid": false
+    }
+  },
+  "mark": {
+    "type": "line",
+    "point": true,
+    "interpolate": "cardinal",
+    "tension": 0.9
+  },
+  "selection": {
+    "symbol": {
+      "type": "multi",
+      "fields": [
+        "symbol"
+      ],
+      "bind": "legend",
+      "toggle": "true"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "axis": {
+        "labelAngle": 65
+      },
+      "type": "ordinal",
+      "timeUnit": "yearmonthdate"
+    },
+    "y": {
+      "field": "value",
+      "title": "Intensity",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "symbol",
+      "type": "nominal"
+    },
+    "strokeWidth": {
+      "value": 2.7
+    },
+    "opacity": {
+      "condition": {
+        "selection": "symbol",
+        "value": 1
+      },
+      "value": 0
+    }
+  }
+}

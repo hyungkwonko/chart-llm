@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Tick chart",
+  "width": "container",
+  "height": "container",
+  "config": {
+    "background": "#FFFFFF",
+    "axisX": {
+      "domain": true,
+      "labels": false,
+      "grid": false,
+      "labelFontSize": 8,
+      "tickColor": "#000000",
+      "tickSize": 2,
+      "titleFontSize": 12
+    },
+    "axisY": {
+      "domain": false,
+      "labels": false,
+      "grid": false,
+      "ticks": false
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "tick": {
+      "thickness": 0.65,
+      "bandSize": 40
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/nychealth/covid-vaccine-data/main/people/coverage-by-modzcta-allages.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "tooltip": true,
+        "color": "darkgrey"
+      },
+      "encoding": {
+        "y": {
+          "field": "PERC_1PLUS",
+          "type": "quantitative",
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "Label",
+            "title": "ZIP"
+          },
+          {
+            "field": "NEIGHBORHOOD_NAME",
+            "title": "Neighborhood"
+          },
+          {
+            "field": "PERC_1PLUS",
+            "type": "quantitative",
+            "title": "Percent with at least 1 dose"
+          }
+        ],
+        "x": {
+          "field": "MODZCTA",
+          "sort": {
+            "field": "PERC_FULLY"
+          },
+          "axis": null
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "tooltip": true,
+        "color": "#DB00A8"
+      },
+      "encoding": {
+        "y": {
+          "field": "PERC_1PLUS",
+          "type": "quantitative",
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "Label",
+            "title": "ZIP"
+          },
+          {
+            "field": "NEIGHBORHOOD_NAME",
+            "title": "Neighborhood"
+          },
+          {
+            "field": "PERC_1PLUS",
+            "type": "quantitative",
+            "title": "Percent with at least 1 dose"
+          }
+        ],
+        "x": {
+          "field": "MODZCTA",
+          "sort": {
+            "field": "PERC_FULLY"
+          },
+          "axis": null
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.MODZCTA == 11226"
+        }
+      ]
+    }
+  ]
+}
