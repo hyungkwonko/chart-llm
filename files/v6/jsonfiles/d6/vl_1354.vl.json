@@ -9,7 +9,7 @@
       }
     }
   },
-  "title": "Distribuci\u00f3n de total votantes",
+  "title": "Distribution of total voters",
   "hconcat": [
     {
       "vconcat": [
@@ -34,7 +34,7 @@
               "type": "quantitative",
               "field": "votantesPorDepartamento",
               "axis": {
-                "title": "Por departamento"
+                "title": "By department"
               }
             },
             "color": {
@@ -48,12 +48,12 @@
               {
                 "field": "departamento",
                 "type": "nominal",
-                "title": "Departamento"
+                "title": "Department"
               },
               {
                 "field": "votantesPorDepartamento",
                 "type": "quantitative",
-                "title": "Total votantes",
+                "title": "Total voters",
                 "format": ","
               }
             ]
@@ -73,19 +73,19 @@
               "type": "quantitative",
               "field": "total_votantes",
               "axis": {
-                "title": "Por municipio"
+                "title": "By municipality"
               }
             },
             "tooltip": [
               {
                 "field": "municipio",
                 "type": "nominal",
-                "title": "Municipio"
+                "title": "Municipality"
               },
               {
                 "field": "total_votantes",
                 "type": "quantitative",
-                "title": "Total votantes",
+                "title": "Total voters",
                 "format": ","
               }
             ],
@@ -132,7 +132,7 @@
                 "step": 500000
               },
               "axis": {
-                "title": "Total votantes por departamento"
+                "title": "Total voters by department"
               }
             },
             "y": {
@@ -140,14 +140,14 @@
               "type": "quantitative",
               "aggregate": "count",
               "axis": {
-                "title": "Conteo de departamentos"
+                "title": "Department count"
               }
             },
             "fill": {
               "bin": true,
               "field": "abstencion2",
               "type": "quantitative",
-              "title": "Abstenci\u00f3n %"
+              "title": "Abstention %"
             },
             "stroke": {
               "condition": {
@@ -160,24 +160,24 @@
               {
                 "field": "departamento",
                 "type": "nominal",
-                "title": "Departamento"
+                "title": "Department"
               },
               {
                 "field": "totalVotantesPorDepartamento",
                 "type": "quantitative",
-                "title": "Total votantes",
+                "title": "Total voters",
                 "format": ","
               },
               {
                 "field": "votantesPorDepartamento",
                 "type": "quantitative",
-                "title": "Votantes",
+                "title": "Voters",
                 "format": ","
               },
               {
                 "field": "abstencion2",
                 "type": "quantitative",
-                "title": "Abstenci\u00f3n",
+                "title": "Abstention",
                 "format": ".1%"
               }
             ]
@@ -186,7 +186,7 @@
       ]
     },
     {
-      "title": "Votantes por departamento",
+      "title": "Voters by department",
       "layer": [
         {
           "mark": "bar",
@@ -196,7 +196,7 @@
               "type": "quantitative",
               "field": "total_votantes",
               "axis": {
-                "title": "Cantidad total de votantes"
+                "title": "Total number of voters"
               }
             },
             "color": {
@@ -228,7 +228,7 @@
               "type": "quantitative",
               "field": "votantes",
               "axis": {
-                "title": "Cantidad de votantes"
+                "title": "Number of voters"
               }
             },
             "color": {
@@ -250,7 +250,7 @@
             "order": "descending"
           },
           "axis": {
-            "title": "Departamentos de Colombia"
+            "title": "Departments of Colombia"
           }
         }
       }
