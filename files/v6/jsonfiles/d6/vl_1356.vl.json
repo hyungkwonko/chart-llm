@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/JofreManchola/ccu2018_ODS1121/master/visor/widgets/Paraderos/distribucionupz.json",
+    "url": "https://raw.githubusercontent.com/hyungkwonko/tmp-data/main/distributionpz.json",
     "format": {
       "type": "json"
     }
@@ -16,7 +16,7 @@
           "encoding": {
             "y": {
               "type": "nominal",
-              "field": "UPlNombre",
+              "field": "UPlName",
               "axis": {
                 "title": "UPZ"
               },
@@ -31,9 +31,9 @@
             },
             "tooltip": [
               {
-                "field": "UPlNombre",
+                "field": "UPlName",
                 "type": "nominal",
-                "title": "UPlNombre"
+                "title": "UPlName"
               },
               {
                 "field": "OBJECTID",
@@ -75,7 +75,7 @@
               "encoding": {
                 "x": {
                   "type": "ordinal",
-                  "field": "UPlCodigo",
+                  "field": "UPlCode",
                   "axis": {
                     "title": "UPZ"
                   },
@@ -108,14 +108,14 @@
               "encoding": {
                 "x": {
                   "type": "ordinal",
-                  "field": "UPlCodigo",
+                  "field": "UPlCode",
                   "axis": {
                     "title": "UPZ"
                   }
                 },
                 "y": {
                   "type": "quantitative",
-                  "field": "Hombres_20",
+                  "field": "Men_20",
                   "axis": {
                     "title": "Men [%]"
                   }
@@ -129,14 +129,14 @@
               "encoding": {
                 "x": {
                   "type": "ordinal",
-                  "field": "UPlCodigo",
+                  "field": "UPlCode",
                   "axis": {
                     "title": "UPZ"
                   }
                 },
                 "y": {
                   "type": "quantitative",
-                  "field": "Mujeres_20",
+                  "field": "Women_20",
                   "axis": {
                     "title": "Women [%]"
                   }
@@ -157,7 +157,7 @@
               "encoding": {
                 "x": {
                   "type": "ordinal",
-                  "field": "UPlCodigo",
+                  "field": "UPlCode",
                   "axis": {
                     "title": "UPZ"
                   },
