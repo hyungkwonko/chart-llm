@@ -65,7 +65,7 @@
     function updateChart() {
       document.querySelector('#chart-title').textContent = `Vega-Lite CHART ${currentChart.toString().padStart(4, '0')} (total_num: ${totalCharts})`;
 
-      const yourVlSpec = `../chart/vl_${currentChart.toString().padStart(4, '0')}.vl.json`;
+      const yourVlSpec = `../../data/vl_${currentChart.toString().padStart(4, '0')}.vl.json`;
       vegaEmbed('#vis', yourVlSpec);
     }
 
