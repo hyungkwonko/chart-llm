@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vega-Lite Preview</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.9.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.1"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    #chart-title {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #vis {
+      margin: 0 auto;
+      text-align: center;
+      /* max-width: 1000px;
+      max-height: 1000px; */
+      width: 100%;
+      height: 100%;
+    }
+
+    .container {
+      /* display: flex; */
+      align-items: center;
+    }
+
+    .container h3 {
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1 id="chart-title">Vega-Lite CHART 0000 (total_num: 1981)</h1>
+  <div class="container">
+    <h3>
+      Type chart number (0-1980) and enter:
+      <input type="number" id="chart-number" min="0" max="${totalCharts - 1}" value="${currentChart}">
+      </h4>
+      <div id="vis"></div>
+  </div>
+
+
+  <script type="text/javascript">
+    let currentChart = 0;
+    const totalCharts = 1981;
+
+    const input = document.querySelector("#chart-number");
+    input.addEventListener("change", () => {
+      if (input.value < 0 || input.value > 1980) {
+        alert("The value should be between 0 and 1980");
+      }
+    });
+
+
+    function updateChart() {
+      document.querySelector('#chart-title').textContent = `Vega-Lite CHART ${currentChart.toString().padStart(4, '0')} (total_num: ${totalCharts})`;
+
+      const yourVlSpec = `../chart/vl_${currentChart.toString().padStart(4, '0')}.vl.json`;
+      vegaEmbed('#vis', yourVlSpec);
+    }
+
+    document.querySelector('#chart-number').addEventListener('change', (event) => {
+      const newChart = parseInt(event.target.value);
+      if (newChart >= 0 && newChart < totalCharts) {
+        currentChart = newChart;
+        updateChart();
+      }
+    });
+
+    updateChart();
+  </script>
+</body>
+
+</html>
