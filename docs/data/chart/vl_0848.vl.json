@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "IMF Lending  outstanding as a % of World GDP",
+    "subtitle": "Credit outstanding for all members, SDR as percentage",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jordanboi58/Jordanboi58.github.io/main/excel%20data%20for%20adjusting%20IMF%20lending%20chart_working.csv"
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "bar",
+    "color": "green"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": "Year",
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "Growth in Lending Relative to World GDP",
+      "type": "quantitative",
+      "title": "loans disbursed as % of world GDP",
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

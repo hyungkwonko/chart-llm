@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Share of World GDP weighted by Population Represented by 4 Main Regimes",
+    "subtitle": [
+      "Source: The Economist",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {
+        "Regime": "Flawed Democracy",
+        "value": 17459076495061.5
+      },
+      {
+        "Regime": "Authoritarian Regime",
+        "value": 9068625060485.1
+      },
+      {
+        "Regime": "Hybrid Regime",
+        "value": 876894343461.828
+      },
+      {
+        "Regime": "Full Democracy",
+        "value": 803035329695.793
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 40
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Regime",
+      "type": "nominal",
+      "sort": {
+        "field": "value",
+        "order": "descending"
+      },
+      "scale": {
+        "range": [
+          "#700",
+          "#880",
+          "#175930",
+          "#935909"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "value",
+        "format": ",.0f",
+        "title": "GDP in $"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "repeat": [
+    "gold",
+    "silver"
+  ],
+  "spec": {
+    "data": {
+      "values": [
+        {
+          "count": 10,
+          "country": "USA",
+          "medalType": "gold"
+        },
+        {
+          "count": 20,
+          "country": "USA",
+          "medalType": "silver"
+        },
+        {
+          "count": 7,
+          "country": "Canada",
+          "medalType": "gold"
+        },
+        {
+          "count": 26,
+          "country": "Canada",
+          "medalType": "silver"
+        }
+      ]
+    },
+    "encoding": {
+      "color": {
+        "field": "country",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "country",
+        "type": "nominal"
+      },
+      "y": {
+        "field": {
+          "repeat": "repeat"
+        },
+        "type": "quantitative"
+      }
+    },
+    "mark": "bar",
+    "transform": [
+      {
+        "groupby": [
+          "country"
+        ],
+        "pivot": "medalType",
+        "value": "count"
+      }
+    ]
+  }
+}

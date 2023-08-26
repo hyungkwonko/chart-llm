@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "House Prices: New York and Las Vegas",
+    "subtitle": [
+      "All transactions house price index. Rebased to 2005. Source: FRED.",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/US_FRED_HousePrices_NYC_LV.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum['New York']/567.14",
+      "as": "New York index"
+    },
+    {
+      "calculate": "datum['Las Vegas']/219.34",
+      "as": "Las Vegas index"
+    },
+    {
+      "calculate": "year(datum.Date)",
+      "as": "year"
+    },
+    {
+      "fold": [
+        "New York index",
+        "Las Vegas index"
+      ],
+      "as": [
+        "city",
+        "housePrice"
+      ]
+    },
+    {
+      "filter": {
+        "field": "year",
+        "gt": 2004
+      }
+    }
+  ],
+  "height": 400,
+  "width": 250,
+  "mark": {
+    "type": "line",
+    "color": "rgb(128, 0, 0)",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "housePrice",
+      "type": "quantitative",
+      "title": null
+    },
+    "facet": {
+      "field": "city",
+      "columns": 2,
+      "title": null
+    }
+  }
+}

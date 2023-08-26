@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Single line chart",
+  "width": "container",
+  "title": {
+    "text": "Global average life expectancy, 1800-2018"
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder_ilex.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "lifeExp",
+        "valid": true
+      }
+    },
+    {
+      "aggregate": [
+        {
+          "op": "mean",
+          "field": "lifeExp",
+          "as": "average"
+        }
+      ],
+      "groupby": [
+        "year"
+      ]
+    }
+  ],
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "timeUnit": "year",
+      "axis": {
+        "title": null,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "average",
+      "type": "quantitative",
+      "axis": {
+        "title": null
+      }
+    },
+    "color": {
+      "value": "#fc6721"
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "average",
+        "type": "quantitative",
+        "title": "Age (years)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

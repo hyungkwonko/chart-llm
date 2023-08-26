@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": "container",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nychealth/covid-maps/a9e419021db465e02f7fbdf8cd4614e8490734a1/main/MODZCTA_2010_WGS1984.topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "collection"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#ffffff",
+        "fill": "lightgray"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nychealth/covid-maps/a9e419021db465e02f7fbdf8cd4614e8490734a1/main/MODZCTA_2010_WGS1984.topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "collection"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.MODZCTA",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/nychealth/covid-maps/a9e419021db465e02f7fbdf8cd4614e8490734a1/recent/4-WEEK.csv"
+            },
+            "key": "MODIFIED_ZCTA",
+            "fields": [
+              "MODIFIED_ZCTA",
+              "COVID_CASE_RATE_4WEEK",
+              "NEIGHBORHOOD_NAME"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#FFFFFF"
+      },
+      "encoding": {
+        "color": {
+          "bin": false,
+          "field": "COVID_CASE_RATE_4WEEK",
+          "type": "quantitative",
+          "scale": {
+            "scheme": {
+              "name": "redpurple",
+              "extent": [
+                0.2,
+                1.25
+              ]
+            }
+          },
+          "legend": {
+            "title": "4-week cases per 100k",
+            "titleFontSize": 10,
+            "orient": "top-left",
+            "gradientLength": 100
+          }
+        },
+        "strokeWidth": {
+          "condition": [],
+          "value": 0.5
+        },
+        "tooltip": [
+          {
+            "field": "properties.label",
+            "type": "nominal",
+            "title": "ZIP Code"
+          },
+          {
+            "field": "NEIGHBORHOOD_NAME",
+            "type": "nominal",
+            "title": "Neighborhood"
+          },
+          {
+            "field": "COVID_CASE_RATE_4WEEK",
+            "type": "quantitative",
+            "title": "Cases per 100,000"
+          }
+        ]
+      }
+    }
+  ]
+}

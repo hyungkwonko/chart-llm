@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/sadieward/sadieward.github.io/main/OECDimm_prod.csv"
+  },
+  "title": {
+    "text": "Productivity & Immigration",
+    "subtitle": "GDP per hour worked (USD, indexed 2015=100) regressed on foregin born population (%), 2019, source:OECD",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 400,
+  "height": 300,
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#162a2c"
+      },
+      "encoding": {
+        "x": {
+          "field": "foreign population %",
+          "type": "quantitative",
+          "title": "Foreign Population (%)"
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "title": "Productivity",
+          "scale": {
+            "domainMin": 90
+          }
+        },
+        "tooltip": [
+          {
+            "field": "LOCATION",
+            "type": "nominal",
+            "title": "Immigrants"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "Value",
+          "on": "foreign population %",
+          "extent": [
+            0,
+            20
+          ]
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "foreign population %",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Value",
+          "on": "foreign population %",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ]
+}

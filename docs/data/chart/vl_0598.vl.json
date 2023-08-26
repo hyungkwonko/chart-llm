@@ -1,0 +1,133 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Benefit replacement rate, 2022, OECD data. 'Proportion of previous in-work household income maintained after 2, 6, 12, 24 and 60 months of unemployment. Calculations refer to a single person without children whose previous in-work earnings were 67% of the average wage.'",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/OECD_benefit_replacement2022.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "height": 400,
+  "width": 300,
+  "title": {
+    "text": "Benefit replacement rate",
+    "subtitle": [
+      "Long and short-term replacement of previous income, source: OECD",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "UE Duration",
+        "oneOf": [
+          "2-month",
+          "2-year"
+        ]
+      }
+    },
+    {
+      "calculate": "datum['Replacement Rate'] / 100",
+      "as": "Replacement Rate"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "ISO3",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "order": "descending",
+        "op": "average",
+        "field": "Rank"
+      },
+      "axis": {
+        "labelAngle": 0,
+        "labelOffset": 0,
+        "labelPadding": 0,
+        "tickOpacity": 0.6
+      }
+    },
+    "x": {
+      "field": "Replacement Rate",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "gridOpacity": 0.6,
+        "tickOpacity": 0.6,
+        "format": "%"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "title": "Country"
+      },
+      {
+        "field": "UE Duration",
+        "title": "Duration"
+      },
+      {
+        "field": "Replacement Rate",
+        "title": "Replacement Rate",
+        "format": "~%"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "detail": {
+          "field": "ISO3",
+          "type": "nominal"
+        },
+        "color": {
+          "value": "grey"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "color": {
+          "field": "UE Duration",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "2-month",
+              "2-year"
+            ],
+            "range": [
+              "#911a24",
+              "#e6959c"
+            ]
+          },
+          "legend": {
+            "orient": "top-right",
+            "title": null,
+            "labelFontSize": 12
+          }
+        },
+        "size": {
+          "value": 100
+        },
+        "opacity": {
+          "value": 1
+        }
+      }
+    }
+  ]
+}

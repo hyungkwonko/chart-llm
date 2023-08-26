@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "England: house prices",
+    "subtitle": [
+      "Median price, by electoral ward, Source: ONS",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 300,
+  "height": 300,
+  "params": [
+    {
+      "name": "Select",
+      "value": "HP_1995",
+      "bind": {
+        "input": "select",
+        "options": [
+          "HP_1995",
+          "HP_2000",
+          "HP_2010",
+          "HP_2022"
+        ]
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoEngWards.json",
+    "format": {
+      "type": "topojson",
+      "feature": "wards"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.WD13NM",
+      "from": {
+        "key": "WardName",
+        "fields": [
+          "y1995",
+          "y2000",
+          "y2010",
+          "y2022"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataUKHousePrices.csv"
+        }
+      }
+    },
+    {
+      "calculate": "parseInt(datum.y1995)",
+      "as": "HP_1995"
+    },
+    {
+      "calculate": "parseInt(datum.y2000)",
+      "as": "HP_2000"
+    },
+    {
+      "calculate": "parseInt(datum.y2010)",
+      "as": "HP_2010"
+    },
+    {
+      "calculate": "parseInt(datum.y2022)",
+      "as": "HP_2022"
+    },
+    {
+      "calculate": "datum[Select]",
+      "as": "yearSelected"
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0
+  },
+  "encoding": {
+    "color": {
+      "field": "yearSelected",
+      "legend": {
+        "title": "Price",
+        "orient": "top-left",
+        "direction": "vertical"
+      },
+      "type": "quantitative",
+      "scale": {
+        "scheme": "lightmulti",
+        "domain": [
+          0,
+          1000
+        ]
+      }
+    }
+  }
+}

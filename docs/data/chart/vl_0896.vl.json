@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "IMF Lending outsanding GDP Adjusted",
+    "subtitle": "Inflation adjusted  credit outstanding to all members of the IMF in USD: source (IMF)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/imfoutstanding.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.Total/1000000000",
+      "as": "billions"
+    }
+  ],
+  "height": 350,
+  "width": 350,
+  "background": "#fff0d8",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "title": "Year",
+        "grid": false,
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "billions",
+      "type": "quantitative",
+      "title": "Billions Of USD",
+      "axis": {
+        "grid": false,
+        "ticks": false
+      }
+    },
+    "color": {
+      "value": "#fe921f"
+    }
+  }
+}

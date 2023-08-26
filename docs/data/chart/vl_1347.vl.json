@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ConorQuah/ConorQuah.github.io/main/happiness%26democracy_for_vega.csv"
+  },
+  "height": 280,
+  "width": 280,
+  "layer": [
+    {
+      "mark": {
+        "opacity": 0.5,
+        "type": "point"
+      },
+      "encoding": {
+        "x": {
+          "field": "democracy_edited",
+          "title": "Democratic Quality",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Average_happiness",
+          "title": "Average Happiness",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal",
+            "title": "Country"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "edit_l_dq",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "line_ah",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

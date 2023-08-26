@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/COG-UK/UK-lineage-dynamics-analysis/2ca84630ab1fb80b949d25b05b6578fa9674f574/analyses/epidemiological/results/lag-estimate-llhd-profiles.csv"
+  },
+  "hconcat": [
+    {
+      "layer": [
+        {
+          "transform": [
+            {
+              "filter": "datum.param == 'alpha'"
+            }
+          ],
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "value",
+              "type": "quantitative",
+              "title": "Alpha"
+            },
+            "y": {
+              "field": "llhd",
+              "type": "quantitative",
+              "title": "Log-likelihood cross section",
+              "scale": {
+                "zero": false
+              }
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "value": 0.719
+              }
+            ]
+          },
+          "mark": "rule",
+          "encoding": {
+            "x": {
+              "field": "value",
+              "type": "quantitative"
+            },
+            "color": {
+              "value": "red"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "layer": [
+        {
+          "transform": [
+            {
+              "filter": "datum.param == 'beta'"
+            }
+          ],
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "value",
+              "type": "quantitative",
+              "title": "Beta"
+            },
+            "y": {
+              "field": "llhd",
+              "type": "quantitative",
+              "title": "Log-likelihood cross section",
+              "scale": {
+                "zero": false
+              }
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "value": 28.9
+              }
+            ]
+          },
+          "mark": "rule",
+          "encoding": {
+            "x": {
+              "field": "value",
+              "type": "quantitative"
+            },
+            "color": {
+              "value": "red"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

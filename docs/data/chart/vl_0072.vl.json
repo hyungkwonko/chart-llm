@@ -1,0 +1,172 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "width": 600
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ghattab/CMANGOES/c492c918df3c0da3eaaf27d2b218b66c00610307/Data/Visualization_data/data/multiple_datasets/vis/mds_4_Embedding/tsne_data.json"
+  },
+  "title": {
+    "anchor": "middle",
+    "text": [
+      "tSNE-based embedding of sequences part of the positive class. The ordering of",
+      "datasets corresponds to the respective cluster area. Click on the button below,",
+      "in order to display further datasets.",
+      "",
+      ""
+    ]
+  },
+  "vconcat": [
+    {
+      "columns": 4,
+      "facet": {
+        "field": "dataset",
+        "sort": {
+          "field": "area"
+        },
+        "title": null,
+        "type": "nominal"
+      },
+      "spec": {
+        "height": 130,
+        "layer": [
+          {
+            "encoding": {
+              "x": {
+                "axis": {
+                  "grid": false,
+                  "titleFontWeight": "normal"
+                },
+                "field": "x",
+                "scale": {
+                  "domain": [
+                    -101.87739,
+                    93.7376
+                  ]
+                },
+                "title": "tSNE-1",
+                "type": "quantitative"
+              },
+              "y": {
+                "axis": {
+                  "grid": false,
+                  "titleFontWeight": "normal"
+                },
+                "field": "y",
+                "scale": {
+                  "domain": [
+                    -101.35973,
+                    97.40183
+                  ]
+                },
+                "title": "tSNE-2",
+                "type": "quantitative"
+              }
+            },
+            "mark": {
+              "color": "#fdc086",
+              "size": 3,
+              "type": "circle"
+            },
+            "selection": {
+              "selector001": {
+                "bind": {
+                  "input": "select",
+                  "name": " ",
+                  "options": [
+                    "1-12",
+                    "13-24",
+                    "25-36"
+                  ]
+                },
+                "fields": [
+                  "range_batch"
+                ],
+                "init": {
+                  "range_batch": "1-12"
+                },
+                "type": "single"
+              }
+            }
+          },
+          {
+            "encoding": {
+              "order": {
+                "field": "order",
+                "type": "ordinal"
+              },
+              "x": {
+                "field": "x",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "y",
+                "type": "quantitative"
+              }
+            },
+            "mark": {
+              "color": "#386cb0",
+              "strokeDash": [
+                5,
+                3
+              ],
+              "strokeWidth": 1,
+              "type": "line"
+            },
+            "transform": [
+              {
+                "filter": "(datum.hull_vertex === true)"
+              }
+            ]
+          },
+          {
+            "encoding": {
+              "text": {
+                "field": "text",
+                "type": "nominal"
+              },
+              "x": {
+                "field": "x",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "y",
+                "type": "quantitative"
+              }
+            },
+            "mark": "text",
+            "transform": [
+              {
+                "as": "text",
+                "calculate": "join(['area=', round(datum.area)], '')"
+              },
+              {
+                "filter": "(datum.y === 0)"
+              }
+            ]
+          }
+        ],
+        "width": 130
+      },
+      "transform": [
+        {
+          "filter": {
+            "selection": "selector001"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "url": "https://walterra.github.io/jupyter2kibana/data/iris_classification.json",
+    "format": {
+      "property": "hits.hits",
+      "type": "json"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "size": 30
+  },
+  "encoding": {
+    "color": {
+      "field": "species",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "species",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "petalLength",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "petalWidth",
+      "type": "quantitative"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum._source.ml.species_prediction",
+      "as": "species_prediction"
+    },
+    {
+      "calculate": "datum._source.species",
+      "as": "species"
+    },
+    {
+      "calculate": "datum._source.petalLength",
+      "as": "petalLength"
+    },
+    {
+      "calculate": "datum._source.petalWidth",
+      "as": "petalWidth"
+    },
+    {
+      "calculate": "datum._source.sepalLength",
+      "as": "sepalLength"
+    },
+    {
+      "calculate": "datum._source.sepalWidth",
+      "as": "sepalWidth"
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
+}

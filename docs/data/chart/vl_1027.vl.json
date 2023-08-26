@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "England - Median House Prices",
+    "subtitle": [
+      "By Parliamentary Constituency",
+      "Source: ONS"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "width": 500,
+  "height": 500,
+  "config": {
+    "background": "#FeFeF8",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ferguswalshe/ferguswalshe.github.io/main/Constituencyhouseprices.csv"
+  },
+  "transform": [
+    {
+      "lookup": "ConstituencyName",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/ferguswalshe/ferguswalshe.github.io/main/EnglishConstituencies.json",
+          "format": {
+            "type": "topojson",
+            "feature": "wpc"
+          }
+        },
+        "key": "properties.PCON13NM",
+        "fields": [
+          "properties",
+          "type",
+          "geometry"
+        ]
+      }
+    },
+    {
+      "filter": "datum.Year==year"
+    }
+  ],
+  "params": [
+    {
+      "name": "year",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1996,
+        "max": 2022,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "HouseConstMedianPrice",
+      "type": "quantitative",
+      "scale": {
+        "domainMin": 0,
+        "domainMax": 1400000
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.PCON13NM",
+        "title": "Country"
+      },
+      {
+        "field": "HouseConstMedianPrice"
+      }
+    ]
+  }
+}

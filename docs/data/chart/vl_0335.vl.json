@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {
+        "Model name": "Model 1",
+        "Runtime (minutes)": 6.78
+      },
+      {
+        "Model name": "Model 2",
+        "Runtime (minutes)": 6.74
+      },
+      {
+        "Model name": "Model 3",
+        "Runtime (minutes)": 6.81
+      },
+      {
+        "Model name": "Model 4",
+        "Runtime (minutes)": 7.33
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "Model name",
+      "type": "nominal",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "x": {
+      "field": "Runtime (minutes)",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Various US measures state by state",
+  "title": {
+    "text": "Gun deaths and income - US states",
+    "subtitle": "Median income (x), and firearm deaths per 100k population",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/vega/master/US%20states2.csv"
+  },
+  "mark": {
+    "type": "circle",
+    "size": 300
+  },
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "Med income",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          40000,
+          80000
+        ]
+      },
+      "title": null
+    },
+    "y": {
+      "field": "Firearm deaths",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "Division",
+      "type": "ordinal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "legend": {
+        "orient": "bottom"
+      },
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "State",
+        "type": "ordinal",
+        "title": "State"
+      }
+    ]
+  }
+}

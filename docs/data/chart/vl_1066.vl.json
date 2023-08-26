@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mode": "vega-lite",
+  "data": {
+    "values": [
+      {
+        "a": "A",
+        "b": 28
+      },
+      {
+        "a": "B",
+        "b": 55
+      },
+      {
+        "a": "C",
+        "b": 43
+      },
+      {
+        "a": "D",
+        "b": 91
+      },
+      {
+        "a": "E",
+        "b": 81
+      },
+      {
+        "a": "F",
+        "b": 53
+      },
+      {
+        "a": "G",
+        "b": 19
+      },
+      {
+        "a": "H",
+        "b": 87
+      },
+      {
+        "a": "I",
+        "b": 52
+      }
+    ]
+  },
+  "padding": {
+    "left": 20,
+    "top": 5,
+    "right": 30,
+    "bottom": 5
+  },
+  "width": 500,
+  "height": 500,
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "background": "#ffffff",
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadius": 1,
+        "tooltip": true,
+        "binSpacing": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "a",
+          "type": "ordinal",
+          "axis": {
+            "title": "category",
+            "orient": "bottom"
+          }
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "b",
+          "axis": {
+            "title": "Count",
+            "orient": "left"
+          }
+        },
+        "opacity": {
+          "value": 1
+        },
+        "color": {
+          "value": "#1f77b4"
+        }
+      }
+    }
+  ]
+}

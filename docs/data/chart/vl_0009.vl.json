@@ -1,0 +1,3370 @@
+{
+  "title": {
+    "text": "Seasonally Adjusted Total Pay",
+    "subtitle": "Excluding Arrears, Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
+    {
+      "calculate": "replace(datum.Date, ' JAN', '-01')",
+      "as": "Date1"
+    },
+    {
+      "calculate": "replace(datum.Date1, ' FEB', '-02')",
+      "as": "Date2"
+    },
+    {
+      "calculate": "replace(datum.Date2, ' MAR', '-03')",
+      "as": "Date3"
+    },
+    {
+      "calculate": "replace(datum.Date3, ' APR', '-04')",
+      "as": "Date4"
+    },
+    {
+      "calculate": "replace(datum.Date4, ' MAY', '-05')",
+      "as": "Date5"
+    },
+    {
+      "calculate": "replace(datum.Date5, ' JUN', '-06')",
+      "as": "Date6"
+    },
+    {
+      "calculate": "replace(datum.Date6, ' JUL', '-07')",
+      "as": "Date7"
+    },
+    {
+      "calculate": "replace(datum.Date7, ' AUG', '-08')",
+      "as": "Date8"
+    },
+    {
+      "calculate": "replace(datum.Date8, ' SEP', '-09')",
+      "as": "Date9"
+    },
+    {
+      "calculate": "replace(datum.Date9, ' OCT', '-10')",
+      "as": "Date10"
+    },
+    {
+      "calculate": "replace(datum.Date10, ' NOV', '-11')",
+      "as": "Date11"
+    },
+    {
+      "calculate": "replace(datum.Date11, ' DEC', '-12')",
+      "as": "Date12"
+    },
+    {
+      "calculate": "timeParse(datum.Date12, '%Y-%m')",
+      "as": "DateClean"
+    },
+    {
+      "filter": "datum.Year>=minYear"
+    },
+    {
+      "filter": "datum.Year<=maxYear"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 2001,
+      "bind": {
+        "input": "range",
+        "min": 2001,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 2001,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "basis"
+      },
+      "encoding": {
+        "color": {
+          "field": "Type",
+          "legend": {
+            "orient": "bottom-right",
+            "columns": 1,
+            "title": null,
+            "symbolStrokeWidth": 4,
+            "labelFontSize": 12.5
+          },
+          "scale": {
+            "scheme": "darkmulti"
+          }
+        },
+        "x": {
+          "field": "DateClean",
+          "type": "temporal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "title": "Average wage, \u00a3",
+          "scale": {
+            "domain": [
+              300,
+              650
+            ]
+          }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "opacity": {
+          "value": 0
+        },
+        "x": {
+          "field": "DateClean",
+          "type": "temporal"
+        }
+      },
+      "selection": {
+        "selector040": {
+          "type": "single",
+          "nearest": true,
+          "on": "mouseover",
+          "fields": [
+            "DateClean"
+          ],
+          "empty": "none"
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "color": {
+          "field": "Type",
+          "type": "nominal"
+        },
+        "opacity": {
+          "condition": {
+            "value": 1,
+            "selection": "selector040"
+          },
+          "value": 0
+        },
+        "x": {
+          "field": "DateClean",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "gray"
+      },
+      "encoding": {
+        "x": {
+          "field": "DateClean",
+          "type": "temporal"
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "selection": "selector040"
+          }
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": 5,
+        "dy": -30,
+        "fontSize": 15,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "color": {
+          "field": "Type",
+          "type": "nominal"
+        },
+        "text": {
+          "condition": {
+            "field": "Value",
+            "type": "quantitative",
+            "selection": "selector040"
+          },
+          "value": " "
+        },
+        "x": {
+          "field": "DateClean",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "height": 260,
+  "width": "container",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "Date": "2001 JAN",
+        "Value": 324,
+        "Type": "Private Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 FEB",
+        "Value": 326,
+        "Type": "Private Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 MAR",
+        "Value": 321,
+        "Type": "Private Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 APR",
+        "Value": 327,
+        "Type": "Private Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 MAY",
+        "Value": 326,
+        "Type": "Private Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 JUN",
+        "Value": 328,
+        "Type": "Private Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 JUL",
+        "Value": 328,
+        "Type": "Private Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 AUG",
+        "Value": 330,
+        "Type": "Private Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 SEP",
+        "Value": 330,
+        "Type": "Private Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 OCT",
+        "Value": 332,
+        "Type": "Private Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 NOV",
+        "Value": 333,
+        "Type": "Private Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 DEC",
+        "Value": 335,
+        "Type": "Private Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2002 JAN",
+        "Value": 335,
+        "Type": "Private Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 FEB",
+        "Value": 334,
+        "Type": "Private Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 MAR",
+        "Value": 330,
+        "Type": "Private Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 APR",
+        "Value": 337,
+        "Type": "Private Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 MAY",
+        "Value": 338,
+        "Type": "Private Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 JUN",
+        "Value": 340,
+        "Type": "Private Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 JUL",
+        "Value": 340,
+        "Type": "Private Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 AUG",
+        "Value": 341,
+        "Type": "Private Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 SEP",
+        "Value": 341,
+        "Type": "Private Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 OCT",
+        "Value": 340,
+        "Type": "Private Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 NOV",
+        "Value": 341,
+        "Type": "Private Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 DEC",
+        "Value": 341,
+        "Type": "Private Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2003 JAN",
+        "Value": 341,
+        "Type": "Private Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 FEB",
+        "Value": 340,
+        "Type": "Private Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 MAR",
+        "Value": 344,
+        "Type": "Private Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 APR",
+        "Value": 346,
+        "Type": "Private Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 MAY",
+        "Value": 347,
+        "Type": "Private Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 JUN",
+        "Value": 347,
+        "Type": "Private Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 JUL",
+        "Value": 348,
+        "Type": "Private Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 AUG",
+        "Value": 349,
+        "Type": "Private Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 SEP",
+        "Value": 351,
+        "Type": "Private Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 OCT",
+        "Value": 353,
+        "Type": "Private Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 NOV",
+        "Value": 353,
+        "Type": "Private Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 DEC",
+        "Value": 354,
+        "Type": "Private Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2004 JAN",
+        "Value": 356,
+        "Type": "Private Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 FEB",
+        "Value": 350,
+        "Type": "Private Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 MAR",
+        "Value": 357,
+        "Type": "Private Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 APR",
+        "Value": 360,
+        "Type": "Private Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 MAY",
+        "Value": 362,
+        "Type": "Private Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 JUN",
+        "Value": 362,
+        "Type": "Private Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 JUL",
+        "Value": 364,
+        "Type": "Private Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 AUG",
+        "Value": 365,
+        "Type": "Private Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 SEP",
+        "Value": 367,
+        "Type": "Private Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 OCT",
+        "Value": 370,
+        "Type": "Private Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 NOV",
+        "Value": 370,
+        "Type": "Private Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 DEC",
+        "Value": 371,
+        "Type": "Private Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2005 JAN",
+        "Value": 372,
+        "Type": "Private Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 FEB",
+        "Value": 370,
+        "Type": "Private Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 MAR",
+        "Value": 372,
+        "Type": "Private Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 APR",
+        "Value": 374,
+        "Type": "Private Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 MAY",
+        "Value": 375,
+        "Type": "Private Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 JUN",
+        "Value": 377,
+        "Type": "Private Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 JUL",
+        "Value": 380,
+        "Type": "Private Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 AUG",
+        "Value": 383,
+        "Type": "Private Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 SEP",
+        "Value": 384,
+        "Type": "Private Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 OCT",
+        "Value": 385,
+        "Type": "Private Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 NOV",
+        "Value": 387,
+        "Type": "Private Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 DEC",
+        "Value": 387,
+        "Type": "Private Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2006 JAN",
+        "Value": 384,
+        "Type": "Private Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 FEB",
+        "Value": 391,
+        "Type": "Private Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 MAR",
+        "Value": 394,
+        "Type": "Private Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 APR",
+        "Value": 394,
+        "Type": "Private Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 MAY",
+        "Value": 395,
+        "Type": "Private Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 JUN",
+        "Value": 399,
+        "Type": "Private Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 JUL",
+        "Value": 398,
+        "Type": "Private Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 AUG",
+        "Value": 399,
+        "Type": "Private Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 SEP",
+        "Value": 400,
+        "Type": "Private Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 OCT",
+        "Value": 403,
+        "Type": "Private Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 NOV",
+        "Value": 405,
+        "Type": "Private Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 DEC",
+        "Value": 412,
+        "Type": "Private Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2007 JAN",
+        "Value": 412,
+        "Type": "Private Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 FEB",
+        "Value": 423,
+        "Type": "Private Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 MAR",
+        "Value": 411,
+        "Type": "Private Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 APR",
+        "Value": 412,
+        "Type": "Private Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 MAY",
+        "Value": 414,
+        "Type": "Private Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 JUN",
+        "Value": 417,
+        "Type": "Private Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 JUL",
+        "Value": 420,
+        "Type": "Private Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 AUG",
+        "Value": 421,
+        "Type": "Private Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 SEP",
+        "Value": 424,
+        "Type": "Private Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 OCT",
+        "Value": 422,
+        "Type": "Private Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 NOV",
+        "Value": 426,
+        "Type": "Private Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 DEC",
+        "Value": 425,
+        "Type": "Private Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2008 JAN",
+        "Value": 428,
+        "Type": "Private Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 FEB",
+        "Value": 440,
+        "Type": "Private Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 MAR",
+        "Value": 433,
+        "Type": "Private Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 APR",
+        "Value": 432,
+        "Type": "Private Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 MAY",
+        "Value": 433,
+        "Type": "Private Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 JUN",
+        "Value": 433,
+        "Type": "Private Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 JUL",
+        "Value": 433,
+        "Type": "Private Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 AUG",
+        "Value": 433,
+        "Type": "Private Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 SEP",
+        "Value": 434,
+        "Type": "Private Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 OCT",
+        "Value": 436,
+        "Type": "Private Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 NOV",
+        "Value": 435,
+        "Type": "Private Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 DEC",
+        "Value": 435,
+        "Type": "Private Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2009 JAN",
+        "Value": 433,
+        "Type": "Private Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 FEB",
+        "Value": 417,
+        "Type": "Private Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 MAR",
+        "Value": 406,
+        "Type": "Private Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 APR",
+        "Value": 435,
+        "Type": "Private Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 MAY",
+        "Value": 433,
+        "Type": "Private Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 JUN",
+        "Value": 433,
+        "Type": "Private Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 JUL",
+        "Value": 431,
+        "Type": "Private Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 AUG",
+        "Value": 432,
+        "Type": "Private Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 SEP",
+        "Value": 432,
+        "Type": "Private Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 OCT",
+        "Value": 432,
+        "Type": "Private Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 NOV",
+        "Value": 432,
+        "Type": "Private Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 DEC",
+        "Value": 434,
+        "Type": "Private Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2010 JAN",
+        "Value": 433,
+        "Type": "Private Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 FEB",
+        "Value": 442,
+        "Type": "Private Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 MAR",
+        "Value": 435,
+        "Type": "Private Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 APR",
+        "Value": 434,
+        "Type": "Private Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 MAY",
+        "Value": 437,
+        "Type": "Private Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 JUN",
+        "Value": 433,
+        "Type": "Private Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 JUL",
+        "Value": 437,
+        "Type": "Private Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 AUG",
+        "Value": 439,
+        "Type": "Private Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 SEP",
+        "Value": 440,
+        "Type": "Private Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 OCT",
+        "Value": 440,
+        "Type": "Private Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 NOV",
+        "Value": 441,
+        "Type": "Private Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 DEC",
+        "Value": 438,
+        "Type": "Private Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2011 JAN",
+        "Value": 453,
+        "Type": "Private Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 FEB",
+        "Value": 447,
+        "Type": "Private Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 MAR",
+        "Value": 446,
+        "Type": "Private Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 APR",
+        "Value": 443,
+        "Type": "Private Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 MAY",
+        "Value": 446,
+        "Type": "Private Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 JUN",
+        "Value": 447,
+        "Type": "Private Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 JUL",
+        "Value": 448,
+        "Type": "Private Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 AUG",
+        "Value": 447,
+        "Type": "Private Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 SEP",
+        "Value": 448,
+        "Type": "Private Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 OCT",
+        "Value": 449,
+        "Type": "Private Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 NOV",
+        "Value": 450,
+        "Type": "Private Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 DEC",
+        "Value": 449,
+        "Type": "Private Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2012 JAN",
+        "Value": 451,
+        "Type": "Private Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 FEB",
+        "Value": 450,
+        "Type": "Private Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 MAR",
+        "Value": 450,
+        "Type": "Private Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 APR",
+        "Value": 453,
+        "Type": "Private Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 MAY",
+        "Value": 453,
+        "Type": "Private Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 JUN",
+        "Value": 455,
+        "Type": "Private Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 JUL",
+        "Value": 456,
+        "Type": "Private Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 AUG",
+        "Value": 456,
+        "Type": "Private Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 SEP",
+        "Value": 455,
+        "Type": "Private Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 OCT",
+        "Value": 454,
+        "Type": "Private Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 NOV",
+        "Value": 456,
+        "Type": "Private Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 DEC",
+        "Value": 453,
+        "Type": "Private Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2013 JAN",
+        "Value": 455,
+        "Type": "Private Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 FEB",
+        "Value": 456,
+        "Type": "Private Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 MAR",
+        "Value": 447,
+        "Type": "Private Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 APR",
+        "Value": 472,
+        "Type": "Private Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 MAY",
+        "Value": 462,
+        "Type": "Private Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 JUN",
+        "Value": 460,
+        "Type": "Private Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 JUL",
+        "Value": 460,
+        "Type": "Private Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 AUG",
+        "Value": 461,
+        "Type": "Private Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 SEP",
+        "Value": 460,
+        "Type": "Private Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 OCT",
+        "Value": 460,
+        "Type": "Private Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 NOV",
+        "Value": 460,
+        "Type": "Private Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 DEC",
+        "Value": 462,
+        "Type": "Private Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2014 JAN",
+        "Value": 464,
+        "Type": "Private Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 FEB",
+        "Value": 467,
+        "Type": "Private Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 MAR",
+        "Value": 453,
+        "Type": "Private Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 APR",
+        "Value": 464,
+        "Type": "Private Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 MAY",
+        "Value": 465,
+        "Type": "Private Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 JUN",
+        "Value": 468,
+        "Type": "Private Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 JUL",
+        "Value": 461,
+        "Type": "Private Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 AUG",
+        "Value": 465,
+        "Type": "Private Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 SEP",
+        "Value": 469,
+        "Type": "Private Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 OCT",
+        "Value": 471,
+        "Type": "Private Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 NOV",
+        "Value": 471,
+        "Type": "Private Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 DEC",
+        "Value": 475,
+        "Type": "Private Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2015 JAN",
+        "Value": 471,
+        "Type": "Private Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 FEB",
+        "Value": 475,
+        "Type": "Private Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 MAR",
+        "Value": 476,
+        "Type": "Private Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 APR",
+        "Value": 478,
+        "Type": "Private Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 MAY",
+        "Value": 479,
+        "Type": "Private Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 JUN",
+        "Value": 479,
+        "Type": "Private Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 JUL",
+        "Value": 481,
+        "Type": "Private Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 AUG",
+        "Value": 482,
+        "Type": "Private Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 SEP",
+        "Value": 479,
+        "Type": "Private Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 OCT",
+        "Value": 480,
+        "Type": "Private Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 NOV",
+        "Value": 481,
+        "Type": "Private Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 DEC",
+        "Value": 484,
+        "Type": "Private Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2016 JAN",
+        "Value": 486,
+        "Type": "Private Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 FEB",
+        "Value": 482,
+        "Type": "Private Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 MAR",
+        "Value": 489,
+        "Type": "Private Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 APR",
+        "Value": 491,
+        "Type": "Private Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 MAY",
+        "Value": 491,
+        "Type": "Private Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 JUN",
+        "Value": 491,
+        "Type": "Private Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 JUL",
+        "Value": 494,
+        "Type": "Private Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 AUG",
+        "Value": 492,
+        "Type": "Private Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 SEP",
+        "Value": 492,
+        "Type": "Private Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 OCT",
+        "Value": 495,
+        "Type": "Private Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 NOV",
+        "Value": 496,
+        "Type": "Private Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 DEC",
+        "Value": 493,
+        "Type": "Private Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2017 JAN",
+        "Value": 495,
+        "Type": "Private Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 FEB",
+        "Value": 497,
+        "Type": "Private Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 MAR",
+        "Value": 501,
+        "Type": "Private Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 APR",
+        "Value": 501,
+        "Type": "Private Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 MAY",
+        "Value": 501,
+        "Type": "Private Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 JUN",
+        "Value": 507,
+        "Type": "Private Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 JUL",
+        "Value": 502,
+        "Type": "Private Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 AUG",
+        "Value": 505,
+        "Type": "Private Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 SEP",
+        "Value": 507,
+        "Type": "Private Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 OCT",
+        "Value": 506,
+        "Type": "Private Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 NOV",
+        "Value": 508,
+        "Type": "Private Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 DEC",
+        "Value": 510,
+        "Type": "Private Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2018 JAN",
+        "Value": 508,
+        "Type": "Private Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 FEB",
+        "Value": 511,
+        "Type": "Private Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 MAR",
+        "Value": 518,
+        "Type": "Private Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 APR",
+        "Value": 512,
+        "Type": "Private Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 MAY",
+        "Value": 514,
+        "Type": "Private Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 JUN",
+        "Value": 517,
+        "Type": "Private Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 JUL",
+        "Value": 519,
+        "Type": "Private Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 AUG",
+        "Value": 522,
+        "Type": "Private Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 SEP",
+        "Value": 522,
+        "Type": "Private Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 OCT",
+        "Value": 529,
+        "Type": "Private Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 NOV",
+        "Value": 524,
+        "Type": "Private Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 DEC",
+        "Value": 527,
+        "Type": "Private Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2019 JAN",
+        "Value": 528,
+        "Type": "Private Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 FEB",
+        "Value": 530,
+        "Type": "Private Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 MAR",
+        "Value": 532,
+        "Type": "Private Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 APR",
+        "Value": 531,
+        "Type": "Private Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 MAY",
+        "Value": 534,
+        "Type": "Private Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 JUN",
+        "Value": 537,
+        "Type": "Private Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 JUL",
+        "Value": 540,
+        "Type": "Private Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 AUG",
+        "Value": 541,
+        "Type": "Private Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 SEP",
+        "Value": 543,
+        "Type": "Private Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 OCT",
+        "Value": 540,
+        "Type": "Private Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 NOV",
+        "Value": 540,
+        "Type": "Private Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 DEC",
+        "Value": 540,
+        "Type": "Private Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2020 JAN",
+        "Value": 544,
+        "Type": "Private Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 FEB",
+        "Value": 544,
+        "Type": "Private Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 MAR",
+        "Value": 538,
+        "Type": "Private Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 APR",
+        "Value": 520,
+        "Type": "Private Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 MAY",
+        "Value": 520,
+        "Type": "Private Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 JUN",
+        "Value": 522,
+        "Type": "Private Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 JUL",
+        "Value": 535,
+        "Type": "Private Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 AUG",
+        "Value": 549,
+        "Type": "Private Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 SEP",
+        "Value": 554,
+        "Type": "Private Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 OCT",
+        "Value": 560,
+        "Type": "Private Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 NOV",
+        "Value": 569,
+        "Type": "Private Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 DEC",
+        "Value": 565,
+        "Type": "Private Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2021 JAN",
+        "Value": 568,
+        "Type": "Private Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 FEB",
+        "Value": 565,
+        "Type": "Private Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 MAR",
+        "Value": 555,
+        "Type": "Private Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 APR",
+        "Value": 573,
+        "Type": "Private Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 MAY",
+        "Value": 578,
+        "Type": "Private Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 JUN",
+        "Value": 575,
+        "Type": "Private Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 JUL",
+        "Value": 580,
+        "Type": "Private Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 AUG",
+        "Value": 584,
+        "Type": "Private Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 SEP",
+        "Value": 585,
+        "Type": "Private Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 OCT",
+        "Value": 586,
+        "Type": "Private Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 NOV",
+        "Value": 590,
+        "Type": "Private Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 DEC",
+        "Value": 602,
+        "Type": "Private Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2022 JAN",
+        "Value": 602,
+        "Type": "Private Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 FEB",
+        "Value": 604,
+        "Type": "Private Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 MAR",
+        "Value": 618,
+        "Type": "Private Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 APR",
+        "Value": 607,
+        "Type": "Private Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 MAY",
+        "Value": 607,
+        "Type": "Private Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 JUN",
+        "Value": 617,
+        "Type": "Private Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 JUL",
+        "Value": 619,
+        "Type": "Private Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 AUG",
+        "Value": 624,
+        "Type": "Private Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 SEP",
+        "Value": 626,
+        "Type": "Private Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2001 JAN",
+        "Value": 322,
+        "Type": "Public Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 FEB",
+        "Value": 324,
+        "Type": "Public Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 MAR",
+        "Value": 325,
+        "Type": "Public Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 APR",
+        "Value": 328,
+        "Type": "Public Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 MAY",
+        "Value": 329,
+        "Type": "Public Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 JUN",
+        "Value": 330,
+        "Type": "Public Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 JUL",
+        "Value": 332,
+        "Type": "Public Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 AUG",
+        "Value": 333,
+        "Type": "Public Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 SEP",
+        "Value": 334,
+        "Type": "Public Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 OCT",
+        "Value": 335,
+        "Type": "Public Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 NOV",
+        "Value": 335,
+        "Type": "Public Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2001 DEC",
+        "Value": 336,
+        "Type": "Public Sector",
+        "Year": 2001
+      },
+      {
+        "Date": "2002 JAN",
+        "Value": 337,
+        "Type": "Public Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 FEB",
+        "Value": 338,
+        "Type": "Public Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 MAR",
+        "Value": 340,
+        "Type": "Public Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 APR",
+        "Value": 340,
+        "Type": "Public Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 MAY",
+        "Value": 342,
+        "Type": "Public Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 JUN",
+        "Value": 342,
+        "Type": "Public Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 JUL",
+        "Value": 345,
+        "Type": "Public Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 AUG",
+        "Value": 341,
+        "Type": "Public Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 SEP",
+        "Value": 345,
+        "Type": "Public Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 OCT",
+        "Value": 347,
+        "Type": "Public Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 NOV",
+        "Value": 349,
+        "Type": "Public Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2002 DEC",
+        "Value": 353,
+        "Type": "Public Sector",
+        "Year": 2002
+      },
+      {
+        "Date": "2003 JAN",
+        "Value": 351,
+        "Type": "Public Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 FEB",
+        "Value": 353,
+        "Type": "Public Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 MAR",
+        "Value": 354,
+        "Type": "Public Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 APR",
+        "Value": 355,
+        "Type": "Public Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 MAY",
+        "Value": 355,
+        "Type": "Public Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 JUN",
+        "Value": 359,
+        "Type": "Public Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 JUL",
+        "Value": 361,
+        "Type": "Public Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 AUG",
+        "Value": 362,
+        "Type": "Public Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 SEP",
+        "Value": 364,
+        "Type": "Public Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 OCT",
+        "Value": 364,
+        "Type": "Public Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 NOV",
+        "Value": 366,
+        "Type": "Public Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2003 DEC",
+        "Value": 369,
+        "Type": "Public Sector",
+        "Year": 2003
+      },
+      {
+        "Date": "2004 JAN",
+        "Value": 367,
+        "Type": "Public Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 FEB",
+        "Value": 369,
+        "Type": "Public Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 MAR",
+        "Value": 370,
+        "Type": "Public Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 APR",
+        "Value": 372,
+        "Type": "Public Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 MAY",
+        "Value": 372,
+        "Type": "Public Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 JUN",
+        "Value": 374,
+        "Type": "Public Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 JUL",
+        "Value": 375,
+        "Type": "Public Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 AUG",
+        "Value": 375,
+        "Type": "Public Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 SEP",
+        "Value": 379,
+        "Type": "Public Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 OCT",
+        "Value": 381,
+        "Type": "Public Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 NOV",
+        "Value": 382,
+        "Type": "Public Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2004 DEC",
+        "Value": 385,
+        "Type": "Public Sector",
+        "Year": 2004
+      },
+      {
+        "Date": "2005 JAN",
+        "Value": 385,
+        "Type": "Public Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 FEB",
+        "Value": 385,
+        "Type": "Public Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 MAR",
+        "Value": 390,
+        "Type": "Public Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 APR",
+        "Value": 391,
+        "Type": "Public Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 MAY",
+        "Value": 393,
+        "Type": "Public Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 JUN",
+        "Value": 394,
+        "Type": "Public Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 JUL",
+        "Value": 396,
+        "Type": "Public Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 AUG",
+        "Value": 398,
+        "Type": "Public Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 SEP",
+        "Value": 399,
+        "Type": "Public Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 OCT",
+        "Value": 401,
+        "Type": "Public Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 NOV",
+        "Value": 402,
+        "Type": "Public Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2005 DEC",
+        "Value": 402,
+        "Type": "Public Sector",
+        "Year": 2005
+      },
+      {
+        "Date": "2006 JAN",
+        "Value": 403,
+        "Type": "Public Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 FEB",
+        "Value": 406,
+        "Type": "Public Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 MAR",
+        "Value": 403,
+        "Type": "Public Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 APR",
+        "Value": 406,
+        "Type": "Public Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 MAY",
+        "Value": 407,
+        "Type": "Public Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 JUN",
+        "Value": 408,
+        "Type": "Public Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 JUL",
+        "Value": 410,
+        "Type": "Public Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 AUG",
+        "Value": 410,
+        "Type": "Public Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 SEP",
+        "Value": 410,
+        "Type": "Public Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 OCT",
+        "Value": 412,
+        "Type": "Public Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 NOV",
+        "Value": 413,
+        "Type": "Public Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2006 DEC",
+        "Value": 415,
+        "Type": "Public Sector",
+        "Year": 2006
+      },
+      {
+        "Date": "2007 JAN",
+        "Value": 418,
+        "Type": "Public Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 FEB",
+        "Value": 417,
+        "Type": "Public Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 MAR",
+        "Value": 418,
+        "Type": "Public Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 APR",
+        "Value": 419,
+        "Type": "Public Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 MAY",
+        "Value": 422,
+        "Type": "Public Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 JUN",
+        "Value": 422,
+        "Type": "Public Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 JUL",
+        "Value": 421,
+        "Type": "Public Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 AUG",
+        "Value": 423,
+        "Type": "Public Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 SEP",
+        "Value": 424,
+        "Type": "Public Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 OCT",
+        "Value": 425,
+        "Type": "Public Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 NOV",
+        "Value": 427,
+        "Type": "Public Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2007 DEC",
+        "Value": 429,
+        "Type": "Public Sector",
+        "Year": 2007
+      },
+      {
+        "Date": "2008 JAN",
+        "Value": 430,
+        "Type": "Public Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 FEB",
+        "Value": 432,
+        "Type": "Public Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 MAR",
+        "Value": 433,
+        "Type": "Public Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 APR",
+        "Value": 437,
+        "Type": "Public Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 MAY",
+        "Value": 435,
+        "Type": "Public Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 JUN",
+        "Value": 434,
+        "Type": "Public Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 JUL",
+        "Value": 439,
+        "Type": "Public Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 AUG",
+        "Value": 439,
+        "Type": "Public Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 SEP",
+        "Value": 440,
+        "Type": "Public Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 OCT",
+        "Value": 441,
+        "Type": "Public Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 NOV",
+        "Value": 442,
+        "Type": "Public Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2008 DEC",
+        "Value": 442,
+        "Type": "Public Sector",
+        "Year": 2008
+      },
+      {
+        "Date": "2009 JAN",
+        "Value": 443,
+        "Type": "Public Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 FEB",
+        "Value": 446,
+        "Type": "Public Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 MAR",
+        "Value": 442,
+        "Type": "Public Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 APR",
+        "Value": 450,
+        "Type": "Public Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 MAY",
+        "Value": 447,
+        "Type": "Public Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 JUN",
+        "Value": 451,
+        "Type": "Public Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 JUL",
+        "Value": 453,
+        "Type": "Public Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 AUG",
+        "Value": 455,
+        "Type": "Public Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 SEP",
+        "Value": 457,
+        "Type": "Public Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 OCT",
+        "Value": 457,
+        "Type": "Public Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 NOV",
+        "Value": 459,
+        "Type": "Public Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2009 DEC",
+        "Value": 457,
+        "Type": "Public Sector",
+        "Year": 2009
+      },
+      {
+        "Date": "2010 JAN",
+        "Value": 461,
+        "Type": "Public Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 FEB",
+        "Value": 463,
+        "Type": "Public Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 MAR",
+        "Value": 467,
+        "Type": "Public Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 APR",
+        "Value": 465,
+        "Type": "Public Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 MAY",
+        "Value": 467,
+        "Type": "Public Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 JUN",
+        "Value": 466,
+        "Type": "Public Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 JUL",
+        "Value": 466,
+        "Type": "Public Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 AUG",
+        "Value": 467,
+        "Type": "Public Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 SEP",
+        "Value": 469,
+        "Type": "Public Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 OCT",
+        "Value": 471,
+        "Type": "Public Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 NOV",
+        "Value": 472,
+        "Type": "Public Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2010 DEC",
+        "Value": 474,
+        "Type": "Public Sector",
+        "Year": 2010
+      },
+      {
+        "Date": "2011 JAN",
+        "Value": 478,
+        "Type": "Public Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 FEB",
+        "Value": 476,
+        "Type": "Public Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 MAR",
+        "Value": 479,
+        "Type": "Public Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 APR",
+        "Value": 478,
+        "Type": "Public Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 MAY",
+        "Value": 477,
+        "Type": "Public Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 JUN",
+        "Value": 482,
+        "Type": "Public Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 JUL",
+        "Value": 482,
+        "Type": "Public Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 AUG",
+        "Value": 478,
+        "Type": "Public Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 SEP",
+        "Value": 479,
+        "Type": "Public Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 OCT",
+        "Value": 480,
+        "Type": "Public Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 NOV",
+        "Value": 480,
+        "Type": "Public Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2011 DEC",
+        "Value": 480,
+        "Type": "Public Sector",
+        "Year": 2011
+      },
+      {
+        "Date": "2012 JAN",
+        "Value": 481,
+        "Type": "Public Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 FEB",
+        "Value": 482,
+        "Type": "Public Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 MAR",
+        "Value": 484,
+        "Type": "Public Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 APR",
+        "Value": 484,
+        "Type": "Public Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 MAY",
+        "Value": 485,
+        "Type": "Public Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 JUN",
+        "Value": 486,
+        "Type": "Public Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 JUL",
+        "Value": 487,
+        "Type": "Public Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 AUG",
+        "Value": 495,
+        "Type": "Public Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 SEP",
+        "Value": 490,
+        "Type": "Public Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 OCT",
+        "Value": 489,
+        "Type": "Public Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 NOV",
+        "Value": 489,
+        "Type": "Public Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2012 DEC",
+        "Value": 490,
+        "Type": "Public Sector",
+        "Year": 2012
+      },
+      {
+        "Date": "2013 JAN",
+        "Value": 490,
+        "Type": "Public Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 FEB",
+        "Value": 487,
+        "Type": "Public Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 MAR",
+        "Value": 490,
+        "Type": "Public Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 APR",
+        "Value": 491,
+        "Type": "Public Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 MAY",
+        "Value": 492,
+        "Type": "Public Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 JUN",
+        "Value": 486,
+        "Type": "Public Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 JUL",
+        "Value": 488,
+        "Type": "Public Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 AUG",
+        "Value": 488,
+        "Type": "Public Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 SEP",
+        "Value": 487,
+        "Type": "Public Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 OCT",
+        "Value": 489,
+        "Type": "Public Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 NOV",
+        "Value": 489,
+        "Type": "Public Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2013 DEC",
+        "Value": 489,
+        "Type": "Public Sector",
+        "Year": 2013
+      },
+      {
+        "Date": "2014 JAN",
+        "Value": 490,
+        "Type": "Public Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 FEB",
+        "Value": 490,
+        "Type": "Public Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 MAR",
+        "Value": 499,
+        "Type": "Public Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 APR",
+        "Value": 491,
+        "Type": "Public Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 MAY",
+        "Value": 491,
+        "Type": "Public Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 JUN",
+        "Value": 492,
+        "Type": "Public Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 JUL",
+        "Value": 492,
+        "Type": "Public Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 AUG",
+        "Value": 491,
+        "Type": "Public Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 SEP",
+        "Value": 492,
+        "Type": "Public Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 OCT",
+        "Value": 492,
+        "Type": "Public Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 NOV",
+        "Value": 492,
+        "Type": "Public Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2014 DEC",
+        "Value": 494,
+        "Type": "Public Sector",
+        "Year": 2014
+      },
+      {
+        "Date": "2015 JAN",
+        "Value": 493,
+        "Type": "Public Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 FEB",
+        "Value": 495,
+        "Type": "Public Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 MAR",
+        "Value": 495,
+        "Type": "Public Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 APR",
+        "Value": 495,
+        "Type": "Public Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 MAY",
+        "Value": 497,
+        "Type": "Public Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 JUN",
+        "Value": 496,
+        "Type": "Public Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 JUL",
+        "Value": 496,
+        "Type": "Public Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 AUG",
+        "Value": 497,
+        "Type": "Public Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 SEP",
+        "Value": 501,
+        "Type": "Public Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 OCT",
+        "Value": 498,
+        "Type": "Public Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 NOV",
+        "Value": 500,
+        "Type": "Public Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2015 DEC",
+        "Value": 499,
+        "Type": "Public Sector",
+        "Year": 2015
+      },
+      {
+        "Date": "2016 JAN",
+        "Value": 501,
+        "Type": "Public Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 FEB",
+        "Value": 502,
+        "Type": "Public Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 MAR",
+        "Value": 502,
+        "Type": "Public Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 APR",
+        "Value": 505,
+        "Type": "Public Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 MAY",
+        "Value": 504,
+        "Type": "Public Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 JUN",
+        "Value": 506,
+        "Type": "Public Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 JUL",
+        "Value": 503,
+        "Type": "Public Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 AUG",
+        "Value": 507,
+        "Type": "Public Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 SEP",
+        "Value": 506,
+        "Type": "Public Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 OCT",
+        "Value": 505,
+        "Type": "Public Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 NOV",
+        "Value": 507,
+        "Type": "Public Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2016 DEC",
+        "Value": 507,
+        "Type": "Public Sector",
+        "Year": 2016
+      },
+      {
+        "Date": "2017 JAN",
+        "Value": 507,
+        "Type": "Public Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 FEB",
+        "Value": 508,
+        "Type": "Public Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 MAR",
+        "Value": 509,
+        "Type": "Public Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 APR",
+        "Value": 509,
+        "Type": "Public Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 MAY",
+        "Value": 514,
+        "Type": "Public Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 JUN",
+        "Value": 511,
+        "Type": "Public Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 JUL",
+        "Value": 512,
+        "Type": "Public Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 AUG",
+        "Value": 515,
+        "Type": "Public Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 SEP",
+        "Value": 514,
+        "Type": "Public Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 OCT",
+        "Value": 516,
+        "Type": "Public Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 NOV",
+        "Value": 516,
+        "Type": "Public Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2017 DEC",
+        "Value": 517,
+        "Type": "Public Sector",
+        "Year": 2017
+      },
+      {
+        "Date": "2018 JAN",
+        "Value": 519,
+        "Type": "Public Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 FEB",
+        "Value": 521,
+        "Type": "Public Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 MAR",
+        "Value": 520,
+        "Type": "Public Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 APR",
+        "Value": 521,
+        "Type": "Public Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 MAY",
+        "Value": 523,
+        "Type": "Public Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 JUN",
+        "Value": 524,
+        "Type": "Public Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 JUL",
+        "Value": 527,
+        "Type": "Public Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 AUG",
+        "Value": 530,
+        "Type": "Public Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 SEP",
+        "Value": 528,
+        "Type": "Public Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 OCT",
+        "Value": 530,
+        "Type": "Public Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 NOV",
+        "Value": 531,
+        "Type": "Public Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2018 DEC",
+        "Value": 532,
+        "Type": "Public Sector",
+        "Year": 2018
+      },
+      {
+        "Date": "2019 JAN",
+        "Value": 533,
+        "Type": "Public Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 FEB",
+        "Value": 532,
+        "Type": "Public Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 MAR",
+        "Value": 534,
+        "Type": "Public Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 APR",
+        "Value": 544,
+        "Type": "Public Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 MAY",
+        "Value": 542,
+        "Type": "Public Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 JUN",
+        "Value": 544,
+        "Type": "Public Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 JUL",
+        "Value": 547,
+        "Type": "Public Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 AUG",
+        "Value": 545,
+        "Type": "Public Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 SEP",
+        "Value": 546,
+        "Type": "Public Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 OCT",
+        "Value": 547,
+        "Type": "Public Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 NOV",
+        "Value": 548,
+        "Type": "Public Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2019 DEC",
+        "Value": 549,
+        "Type": "Public Sector",
+        "Year": 2019
+      },
+      {
+        "Date": "2020 JAN",
+        "Value": 549,
+        "Type": "Public Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 FEB",
+        "Value": 551,
+        "Type": "Public Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 MAR",
+        "Value": 552,
+        "Type": "Public Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 APR",
+        "Value": 560,
+        "Type": "Public Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 MAY",
+        "Value": 568,
+        "Type": "Public Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 JUN",
+        "Value": 569,
+        "Type": "Public Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 JUL",
+        "Value": 564,
+        "Type": "Public Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 AUG",
+        "Value": 566,
+        "Type": "Public Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 SEP",
+        "Value": 570,
+        "Type": "Public Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 OCT",
+        "Value": 569,
+        "Type": "Public Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 NOV",
+        "Value": 573,
+        "Type": "Public Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2020 DEC",
+        "Value": 574,
+        "Type": "Public Sector",
+        "Year": 2020
+      },
+      {
+        "Date": "2021 JAN",
+        "Value": 578,
+        "Type": "Public Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 FEB",
+        "Value": 583,
+        "Type": "Public Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 MAR",
+        "Value": 581,
+        "Type": "Public Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 APR",
+        "Value": 581,
+        "Type": "Public Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 MAY",
+        "Value": 583,
+        "Type": "Public Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 JUN",
+        "Value": 581,
+        "Type": "Public Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 JUL",
+        "Value": 581,
+        "Type": "Public Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 AUG",
+        "Value": 582,
+        "Type": "Public Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 SEP",
+        "Value": 584,
+        "Type": "Public Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 OCT",
+        "Value": 586,
+        "Type": "Public Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 NOV",
+        "Value": 587,
+        "Type": "Public Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2021 DEC",
+        "Value": 589,
+        "Type": "Public Sector",
+        "Year": 2021
+      },
+      {
+        "Date": "2022 JAN",
+        "Value": 589,
+        "Type": "Public Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 FEB",
+        "Value": 590,
+        "Type": "Public Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 MAR",
+        "Value": 590,
+        "Type": "Public Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 APR",
+        "Value": 590,
+        "Type": "Public Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 MAY",
+        "Value": 591,
+        "Type": "Public Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 JUN",
+        "Value": 594,
+        "Type": "Public Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 JUL",
+        "Value": 594,
+        "Type": "Public Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 AUG",
+        "Value": 597,
+        "Type": "Public Sector",
+        "Year": 2022
+      },
+      {
+        "Date": "2022 SEP",
+        "Value": 597,
+        "Type": "Public Sector",
+        "Year": 2022
+      }
+    ]
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 450,
+  "height": 250,
+  "title": "",
+  "description": "",
+  "params": [
+    {
+      "name": "year_selection",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 2010,
+        "max": 2021,
+        "step": 1,
+        "name": "Year selection:"
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/Datasets/acceptance%20rate%20of%20refugees%20by%20countries.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.Year == year_selection"
+    },
+    {
+      "filter": "datum['Complementary protection'] > 0"
+    },
+    {
+      "filter": "datum['Total decisions']>0"
+    },
+    {
+      "calculate": "datum['Complementary protection']/datum.Population * 100000",
+      "as": "Protection per 100,000 Population"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Total decisions",
+      "type": "quantitative",
+      "title": "Number of applications",
+      "axis": {
+        "tickCount": 5
+      },
+      "scale": {
+        "type": "log",
+        "domain": [
+          1,
+          1000000
+        ]
+      }
+    },
+    "y": {
+      "field": "Complementary protection",
+      "type": "quantitative",
+      "title": "Refugees Granted Protection",
+      "axis": {
+        "tickCount": 5
+      },
+      "scale": {
+        "type": "log",
+        "domain": [
+          1,
+          1000000
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Country of asylum",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "Total decisions",
+        "type": "quantitative",
+        "title": "Number of applications",
+        "format": ","
+      },
+      {
+        "field": "Complementary protection",
+        "title": "People Granted Protection",
+        "type": "quantitative",
+        "format": ","
+      },
+      {
+        "field": "Acceptance Rate",
+        "type": "quantitative",
+        "format": ".2%"
+      },
+      {
+        "field": "Protection per 100,000 Population",
+        "type": "quantitative",
+        "format": ".2f"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "continent_selection",
+          "select": {
+            "type": "point",
+            "fields": [
+              "continent"
+            ]
+          },
+          "bind": "legend"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "stroke": "black",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "size": {
+          "field": "Population",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [
+              1000000,
+              10000000,
+              50000000,
+              100000000,
+              500000000
+            ],
+            "range": [
+              25,
+              50,
+              150,
+              200,
+              500,
+              1000
+            ]
+          },
+          "legend": {
+            "format": ".1s",
+            "orient": "bottom"
+          }
+        },
+        "color": {
+          "field": "continent",
+          "title": "Continent",
+          "scale": {
+            "domain": [
+              "Oceania",
+              "Europe",
+              "Asia",
+              "Americas",
+              "Africa"
+            ],
+            "range": [
+              "#264653",
+              "#2a9d8f",
+              "#e9c46a",
+              "#f4a261",
+              "#e76f51"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top",
+            "symbolSize": 200,
+            "symbolStrokeWidth": 0,
+            "labelFontSize": 14
+          }
+        },
+        "opacity": {
+          "condition": {
+            "selection": "continent_selection",
+            "value": 0.8
+          },
+          "value": 0.1
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "fontWeight": "bold"
+      },
+      "transform": [
+        {
+          "filter": "datum['Country of asylum'] == 'Germany' || datum['Country of asylum'] == 'China' || datum['Country of asylum'] == 'Mexico' || datum['Country of asylum'] == 'Japan' || datum['Country of asylum'] == 'Chad' || datum['Country of asylum'] == 'New Zealand' || datum['Country of asylum'] == 'Russian Federation'"
+        }
+      ],
+      "encoding": {
+        "text": {
+          "field": "Country of asylum",
+          "type": "nominal"
+        },
+        "color": {
+          "value": "black"
+        },
+        "opacity": {
+          "condition": {
+            "selection": "continent_selection",
+            "value": 1
+          },
+          "value": 0.1
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.Year == 2021"
+        },
+        {
+          "filter": "datum.continent == 'Asia'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "dx": 0,
+        "dy": -280,
+        "fill": "black"
+      },
+      "encoding": {
+        "x": {
+          "value": "width"
+        },
+        "y": {
+          "value": "height"
+        },
+        "text": {
+          "value": "select legend to filter"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "#ff000000",
+    "axis": {
+      "gridColor": "#6e564b71"
+    }
+  }
+}

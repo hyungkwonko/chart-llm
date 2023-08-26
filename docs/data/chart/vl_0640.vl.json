@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "US GDP - interactive",
+    "subtitle": [
+      "GDP, USD billions. Source: BEA (via FRED)",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 500,
+  "height": 300,
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDP_timeSeries.csv"
+  },
+  "mark": {
+    "type": "line",
+    "color": "rgb(128,0,0)",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.DATE)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>minYear"
+    },
+    {
+      "filter": "datum.year<maxYear"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1947,
+      "bind": {
+        "input": "range",
+        "min": 1947,
+        "max": 2020,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1949,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "DATE",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "GDP",
+      "type": "quantitative",
+      "title": null
+    }
+  }
+}

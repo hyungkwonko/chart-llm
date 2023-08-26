@@ -1,0 +1,539 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-194e1fe9e7d882837db17b6196d9a5a2"
+      },
+      "mark": "circle",
+      "encoding": {
+        "color": {
+          "type": "nominal",
+          "field": "High Income",
+          "scale": {
+            "scheme": "set1"
+          }
+        },
+        "size": {
+          "value": 40
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "Age",
+          "scale": {
+            "domain": [
+              15,
+              60
+            ]
+          }
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "Years of Education",
+          "scale": {
+            "domain": [
+              4,
+              16
+            ]
+          }
+        }
+      },
+      "selection": {
+        "Max": {
+          "type": "single",
+          "fields": [
+            "Depth"
+          ],
+          "bind": {
+            "input": "select",
+            "options": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "init": {
+            "Depth": 1
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-bc9953c9636a481bff52d26011eacf6f"
+      },
+      "mark": "line",
+      "encoding": {
+        "color": {
+          "value": "grey"
+        },
+        "size": {
+          "value": 1
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "Age"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "Years of Education"
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "selection": "Max"
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "name": "data-2ff2aa998f5841659dd2c5f6d9ea26e9"
+      },
+      "mark": "line",
+      "encoding": {
+        "color": {
+          "value": "grey"
+        },
+        "size": {
+          "value": 1
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "Age"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "Years of Education"
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "selection": "Max"
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "name": "data-e5ffb9d86a2e418cb10836bd0a8507b8"
+      },
+      "mark": "line",
+      "encoding": {
+        "color": {
+          "value": "grey"
+        },
+        "size": {
+          "value": 1
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "Age"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "Years of Education"
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "selection": "Max"
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "name": "data-2da81f8e7919fd100421d78f5aaec773"
+      },
+      "mark": "line",
+      "encoding": {
+        "color": {
+          "value": "grey"
+        },
+        "size": {
+          "value": 1
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "Age"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "Years of Education"
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "selection": "Max"
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "name": "data-50f6676429df012474ec81ae6fb139ef"
+      },
+      "mark": {
+        "type": "text",
+        "align": "left"
+      },
+      "encoding": {
+        "text": {
+          "type": "ordinal",
+          "field": "Depth"
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "Age"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "Years of Education"
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "selection": "Max"
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-194e1fe9e7d882837db17b6196d9a5a2": [
+      {
+        "Age": 38,
+        "Years of Education": 8,
+        "High Income": false
+      },
+      {
+        "Age": 59,
+        "Years of Education": 13,
+        "High Income": true
+      },
+      {
+        "Age": 26,
+        "Years of Education": 13,
+        "High Income": false
+      },
+      {
+        "Age": 51,
+        "Years of Education": 13,
+        "High Income": true
+      },
+      {
+        "Age": 34,
+        "Years of Education": 11,
+        "High Income": false
+      },
+      {
+        "Age": 50,
+        "Years of Education": 15,
+        "High Income": true
+      },
+      {
+        "Age": 45,
+        "Years of Education": 13,
+        "High Income": true
+      },
+      {
+        "Age": 57,
+        "Years of Education": 10,
+        "High Income": true
+      },
+      {
+        "Age": 23,
+        "Years of Education": 10,
+        "High Income": false
+      },
+      {
+        "Age": 19,
+        "Years of Education": 6,
+        "High Income": false
+      },
+      {
+        "Age": 49,
+        "Years of Education": 13,
+        "High Income": true
+      },
+      {
+        "Age": 31,
+        "Years of Education": 13,
+        "High Income": false
+      },
+      {
+        "Age": 51,
+        "Years of Education": 10,
+        "High Income": true
+      },
+      {
+        "Age": 33,
+        "Years of Education": 13,
+        "High Income": false
+      },
+      {
+        "Age": 40,
+        "Years of Education": 9,
+        "High Income": false
+      },
+      {
+        "Age": 20,
+        "Years of Education": 9,
+        "High Income": false
+      },
+      {
+        "Age": 42,
+        "Years of Education": 13,
+        "High Income": true
+      },
+      {
+        "Age": 36,
+        "Years of Education": 7,
+        "High Income": false
+      },
+      {
+        "Age": 25,
+        "Years of Education": 9,
+        "High Income": false
+      },
+      {
+        "Age": 44,
+        "Years of Education": 8,
+        "High Income": false
+      },
+      {
+        "Age": 38,
+        "Years of Education": 13,
+        "High Income": false
+      },
+      {
+        "Age": 47,
+        "Years of Education": 9,
+        "High Income": false
+      },
+      {
+        "Age": 32,
+        "Years of Education": 9,
+        "High Income": true
+      },
+      {
+        "Age": 25,
+        "Years of Education": 7,
+        "High Income": false
+      },
+      {
+        "Age": 30,
+        "Years of Education": 5,
+        "High Income": false
+      },
+      {
+        "Age": 55,
+        "Years of Education": 13,
+        "High Income": true
+      },
+      {
+        "Age": 53,
+        "Years of Education": 12,
+        "High Income": true
+      },
+      {
+        "Age": 47,
+        "Years of Education": 12,
+        "High Income": true
+      },
+      {
+        "Age": 55,
+        "Years of Education": 14,
+        "High Income": true
+      },
+      {
+        "Age": 60,
+        "Years of Education": 11,
+        "High Income": true
+      },
+      {
+        "Age": 53,
+        "Years of Education": 14,
+        "High Income": true
+      },
+      {
+        "Age": 41,
+        "Years of Education": 14,
+        "High Income": true
+      }
+    ],
+    "data-bc9953c9636a481bff52d26011eacf6f": [
+      {
+        "Age": 40,
+        "Years of Education": 16,
+        "High Income": false,
+        "Depth": 1
+      },
+      {
+        "Age": 40,
+        "Years of Education": 4,
+        "High Income": true,
+        "Depth": 1
+      },
+      {
+        "Age": 15,
+        "Years of Education": 10,
+        "High Income": false,
+        "Depth": 2
+      },
+      {
+        "Age": 60,
+        "Years of Education": 10,
+        "High Income": true,
+        "Depth": 2
+      },
+      {
+        "Age": 25,
+        "Years of Education": 4,
+        "High Income": false,
+        "Depth": 3
+      },
+      {
+        "Age": 25,
+        "Years of Education": 10,
+        "High Income": true,
+        "Depth": 3
+      },
+      {
+        "Age": 25,
+        "Years of Education": 8,
+        "High Income": false,
+        "Depth": 4
+      },
+      {
+        "Age": 40,
+        "Years of Education": 8,
+        "High Income": true,
+        "Depth": 4
+      }
+    ],
+    "data-2ff2aa998f5841659dd2c5f6d9ea26e9": [
+      {
+        "Age": 40,
+        "Years of Education": 16,
+        "High Income": false,
+        "Depth": 2
+      },
+      {
+        "Age": 40,
+        "Years of Education": 4,
+        "High Income": true,
+        "Depth": 2
+      },
+      {
+        "Age": 15,
+        "Years of Education": 10,
+        "High Income": false,
+        "Depth": 3
+      },
+      {
+        "Age": 60,
+        "Years of Education": 10,
+        "High Income": true,
+        "Depth": 3
+      },
+      {
+        "Age": 25,
+        "Years of Education": 4,
+        "High Income": false,
+        "Depth": 4
+      },
+      {
+        "Age": 25,
+        "Years of Education": 10,
+        "High Income": true,
+        "Depth": 4
+      }
+    ],
+    "data-e5ffb9d86a2e418cb10836bd0a8507b8": [
+      {
+        "Age": 40,
+        "Years of Education": 16,
+        "High Income": false,
+        "Depth": 3
+      },
+      {
+        "Age": 40,
+        "Years of Education": 4,
+        "High Income": true,
+        "Depth": 3
+      },
+      {
+        "Age": 15,
+        "Years of Education": 10,
+        "High Income": false,
+        "Depth": 4
+      },
+      {
+        "Age": 60,
+        "Years of Education": 10,
+        "High Income": true,
+        "Depth": 4
+      }
+    ],
+    "data-2da81f8e7919fd100421d78f5aaec773": [
+      {
+        "Age": 40,
+        "Years of Education": 16,
+        "High Income": false,
+        "Depth": 4
+      },
+      {
+        "Age": 40,
+        "Years of Education": 4,
+        "High Income": true,
+        "Depth": 4
+      }
+    ],
+    "data-50f6676429df012474ec81ae6fb139ef": [
+      {
+        "Age": 39,
+        "Years of Education": 15.5,
+        "High Income": false,
+        "Depth": 1
+      },
+      {
+        "Age": 16,
+        "Years of Education": 10.3,
+        "High Income": true,
+        "Depth": 2
+      },
+      {
+        "Age": 41,
+        "Years of Education": 10.3,
+        "High Income": false,
+        "Depth": 2
+      },
+      {
+        "Age": 25.5,
+        "Years of Education": 9.7,
+        "High Income": true,
+        "Depth": 3
+      },
+      {
+        "Age": 25.5,
+        "Years of Education": 8.3,
+        "High Income": false,
+        "Depth": 4
+      }
+    ]
+  }
+}

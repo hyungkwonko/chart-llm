@@ -1,0 +1,173 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "legend": {
+      "disable": true
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/JackECameron/FIT3179/main/D2_resources/data/stationData/stationData_long.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.stationNum == 10"
+    }
+  ],
+  "encoding": {
+    "theta": {
+      "field": "perc",
+      "type": "quantitative",
+      "stack": true
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "radius2": 90,
+        "radius": 140,
+        "stroke": "white",
+        "strokeWidth": 4,
+        "cornerRadius": 10
+      },
+      "transform": [
+        {
+          "filter": "datum.class == 'unit'"
+        },
+        {
+          "filter": "datum.perc != 0"
+        },
+        {
+          "calculate": "datum.perc + '%'",
+          "as": "perLabel1"
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "scale": {
+            "scheme": "greys",
+            "type": "ordinal"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "decrip",
+            "type": "nominal",
+            "title": "Equipment Class"
+          },
+          {
+            "field": "quant",
+            "type": "quantitative",
+            "title": "Total Number"
+          },
+          {
+            "field": "perLabel1",
+            "title": "Percent of Equipment"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 115,
+        "color": "white",
+        "opacity": 0
+      },
+      "transform": [
+        {
+          "filter": "datum.class == 'unit'"
+        },
+        {
+          "filter": "datum.perc != 0"
+        },
+        {
+          "calculate": "datum.perc + '%'",
+          "as": "perLabel2"
+        }
+      ],
+      "encoding": {
+        "text": {
+          "field": "perLabel2"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "arc",
+        "radius2": 140,
+        "radius": 190,
+        "stroke": "white",
+        "strokeWidth": 4,
+        "cornerRadius": 10
+      },
+      "transform": [
+        {
+          "filter": "datum.class == 'equipment'"
+        },
+        {
+          "filter": "datum.perc != 0"
+        },
+        {
+          "calculate": "datum.perc + '%'",
+          "as": "perLabel2"
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "type",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "decrip",
+            "type": "nominal",
+            "title": "Equipment Type"
+          },
+          {
+            "field": "quant",
+            "type": "quantitative",
+            "title": "Total Number"
+          },
+          {
+            "field": "perLabel2",
+            "title": "Percent of Equipment"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 165,
+        "color": "white",
+        "opacity": 0
+      },
+      "transform": [
+        {
+          "filter": "datum.class == 'equipment'"
+        },
+        {
+          "filter": "datum.perc != 0"
+        },
+        {
+          "calculate": "datum.perc + '%'",
+          "as": "perLabel2"
+        }
+      ],
+      "encoding": {
+        "text": {
+          "field": "perLabel2"
+        }
+      }
+    }
+  ],
+  "view": {
+    "stroke": null
+  }
+}

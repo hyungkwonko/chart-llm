@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "lineBreak": "X"
+  },
+  "data": {
+    "values": [
+      {
+        "l": "xXx",
+        "x": 5,
+        "y": 10
+      },
+      {
+        "l": "x x",
+        "x": 10,
+        "y": 5
+      },
+      {
+        "l": "xxXxXxx",
+        "x": 15,
+        "y": 30
+      }
+    ]
+  },
+  "encoding": {
+    "text": {
+      "field": "l",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative"
+    }
+  },
+  "mark": "text"
+}

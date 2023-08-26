@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/tableau/Visualization-Linting/e36a78027ee5ba556f361bff1df3a9ca2bfb4546/example-data/real/mens-100m-dash.json"
+  },
+  "height": 200,
+  "width": 200,
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "Time",
+      "type": "quantitative"
+    }
+  }
+}

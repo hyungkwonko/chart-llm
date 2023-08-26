@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://gicentre.github.io/data/westMidlands/westMidsCrimesAggregated.tsv"
+  },
+  "encoding": {
+    "color": {
+      "field": "crimeType",
+      "scale": {
+        "domain": [
+          "Anti-social behaviour",
+          "Burglary",
+          "Criminal damage and arson",
+          "Drugs",
+          "Robbery",
+          "Vehicle crime"
+        ],
+        "range": [
+          "rgb(59,118,175)",
+          "rgb(81,157,62)",
+          "rgb(141,106,184)",
+          "rgb(239,133,55)",
+          "rgb(132,88,78)",
+          "rgb(213,126,190)"
+        ]
+      },
+      "type": "nominal"
+    },
+    "x": {
+      "field": "month",
+      "title": null,
+      "type": "temporal"
+    },
+    "y": {
+      "field": "reportedCrimes",
+      "title": "Reported crimes",
+      "type": "quantitative"
+    }
+  },
+  "mark": "circle",
+  "selection": {
+    "maxSlider": {
+      "bind": {
+        "maxReported": {
+          "input": "range",
+          "max": 14000,
+          "min": 400,
+          "name": "Max"
+        }
+      },
+      "init": {
+        "maxReported": 14000
+      },
+      "type": "single"
+    },
+    "minSlider": {
+      "bind": {
+        "minReported": {
+          "input": "range",
+          "max": 12800,
+          "name": "Min"
+        }
+      },
+      "init": {
+        "minReported": 0
+      },
+      "type": "single"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.reportedCrimes >= minSlider_minReported && maxSlider_maxReported >= datum.reportedCrimes"
+    }
+  ],
+  "width": 540
+}

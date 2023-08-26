@@ -1,0 +1,181 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 450,
+  "height": 250,
+  "title": "",
+  "description": "Rank of countries based on average rejection rate",
+  "data": {
+    "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/Datasets/rejection_rank_countries.csv"
+  },
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "continent_selection",
+          "select": {
+            "type": "point",
+            "fields": [
+              "continent"
+            ]
+          },
+          "bind": "legend"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "interpolate": "monotone",
+        "point": {
+          "filled": false,
+          "size": 250
+        },
+        "font": "sans-serif",
+        "size": 5,
+        "strokeCap": "round"
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "selection": "continent_selection",
+            "value": 1
+          },
+          "value": 0.1
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 500
+      },
+      "encoding": {
+        "color": {
+          "field": "continent"
+        },
+        "opacity": {
+          "condition": {
+            "selection": "continent_selection",
+            "value": 0.5
+          },
+          "value": 0.1
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.Year == 2021"
+        },
+        {
+          "filter": "datum.continent == 'Asia'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "dx": 0,
+        "dy": -280,
+        "fill": "black"
+      },
+      "encoding": {
+        "x": {
+          "value": "width"
+        },
+        "y": {
+          "value": "height"
+        },
+        "text": {
+          "value": "select legend to filter"
+        }
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "axis": {
+        "labelAngle": 0,
+        "tickCount": 11,
+        "format": "",
+        "offset": 10,
+        "domain": false
+      }
+    },
+    "y": {
+      "field": "Reject Rank",
+      "title": null,
+      "type": "quantitative",
+      "sort": "descending",
+      "axis": {
+        "grid": false,
+        "tickCount": 5,
+        "offset": 10,
+        "domain": false,
+        "labelFontSize": 12,
+        "labelFont": "sans-serif",
+        "labelFontWeight": "bold"
+      },
+      "scale": {
+        "domain": [
+          1,
+          5
+        ]
+      }
+    },
+    "color": {
+      "field": "continent",
+      "title": null,
+      "sort": "descending",
+      "scale": {
+        "domain": [
+          "Oceania",
+          "Europe",
+          "Asia",
+          "Americas",
+          "Africa"
+        ],
+        "range": [
+          "#264653",
+          "#2a9d8f",
+          "#e9c46a",
+          "#f4a261",
+          "#e76f51"
+        ]
+      },
+      "legend": {
+        "orient": "top",
+        "labelFontSize": 14,
+        "symbolSize": 200
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Rejection Rate",
+        "title": "Average Rejection Rate",
+        "type": "quantitative",
+        "format": ".2%"
+      },
+      {
+        "field": "Rejected decisions",
+        "type": "quantitative",
+        "format": ",",
+        "title": "Total Asylum Seekers Rejected"
+      },
+      {
+        "field": "Total decisions",
+        "type": "quantitative",
+        "format": ",",
+        "title": "Number of Applications"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "#ff000000",
+    "axis": {
+      "gridColor": "#6e564b71"
+    }
+  }
+}

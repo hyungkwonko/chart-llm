@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "% of Energy Coming from Renewable ",
+    "anchor": "start",
+    "subtitle": "Source: SP Global"
+  },
+  "width": 500,
+  "height": 340,
+  "config": {
+    "background": "#fff0d8"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/jamesFKean/jamesFKean.github.io/main/Chinageoshape.json",
+    "format": {
+      "property": "features",
+      "type": "json"
+    }
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "black",
+    "strokeWidth": 0.2
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "properties.NAME_1",
+        "title": "Province"
+      },
+      {
+        "field": "% Renwables",
+        "title": "% Energy Coming from Renewable ",
+        "type": "quantitative",
+        "format": "%"
+      }
+    ],
+    "color": {
+      "field": "% Renwables",
+      "type": "quantitative",
+      "scale": {
+        "range": [
+          "black",
+          "darkorange",
+          "orange",
+          "gold",
+          "goldred",
+          "red"
+        ]
+      }
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.NAME_1",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/jamesFKean/jamesFKean.github.io/46577c0717d92ca7e222ebc07c9ddf00841c959a/Renewabledtaforvis.csv"
+        },
+        "key": "Province",
+        "fields": [
+          "% Renwables",
+          "Available?"
+        ]
+      }
+    }
+  ]
+}

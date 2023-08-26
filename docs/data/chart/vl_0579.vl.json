@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The Great Crash - stock prices and earnings",
+    "subtitle": [
+      "Source: Rober Shiller",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/US_Shiller_CAPE.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Date",
+        "range": [
+          {
+            "year": 1900,
+            "month": 1,
+            "day": 1
+          },
+          {
+            "year": 1930,
+            "month": 11,
+            "day": 1
+          }
+        ]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "title": null,
+      "type": "temporal"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": false,
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "y": {
+          "field": "PriceReal",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "grid": false,
+            "labelColor": "rgb(128,0,0)",
+            "format": ",.5"
+          }
+        },
+        "color": {
+          "datum": "PriceReal",
+          "scale": {
+            "range": [
+              "rgb(128,0,0)",
+              "rgba(0,128,0,0.4)"
+            ]
+          },
+          "legend": {
+            "orient": "top-left"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "point": true,
+        "strokeWidth": 0
+      },
+      "encoding": {
+        "y": {
+          "field": "EarningsReal",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "grid": false,
+            "labelColor": "green",
+            "format": ",.5"
+          }
+        },
+        "color": {
+          "datum": "EarningsReal",
+          "legend": {
+            "orient": "top-left"
+          }
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

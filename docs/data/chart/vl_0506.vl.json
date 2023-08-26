@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "description": "Police stop and search incidents within London borough boundary. Overlayed on Vega-lite example London GeoJSON. Metadata available to add filter - eg see tooltip",
+  "title": {
+    "text": "London stop and search hotspots",
+    "fontSize": 12,
+    "subtitle": [
+      "All incidences, September 2022. Source: Police Crime API",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/londonBoroughs.json",
+        "format": {
+          "type": "topojson",
+          "feature": "boroughs"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "color": {
+          "value": "#eee"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/point_maps/stop_search_London.csv"
+      },
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": "circle",
+      "encoding": {
+        "longitude": {
+          "field": "Longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "size": {
+          "value": 5
+        },
+        "color": {
+          "field": "Officer Defined Ethnicity"
+        },
+        "tooltip": [
+          {
+            "field": "Age Range"
+          },
+          {
+            "field": "Gender"
+          },
+          {
+            "field": "Officer Defined Ethnicity"
+          },
+          {
+            "field": "Object of Search"
+          },
+          {
+            "field": "Location"
+          }
+        ]
+      }
+    }
+  ]
+}

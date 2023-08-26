@@ -1,0 +1,513 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "",
+    "align": "center"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/JackECameron/FIT3179/main/D2_resources/data/responseTimes/FRV_total_combined.csv"
+  },
+  "config": {
+    "legend": {
+      "disable": true
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "params": [
+    {
+      "name": "qSelect",
+      "value": 1,
+      "bind": {
+        "input": "select",
+        "options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "labels": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "name": "Quarter Selection: "
+      }
+    }
+  ],
+  "hconcat": [
+    {
+      "width": "container",
+      "height": 400,
+      "projection": {
+        "type": "equirectangular"
+      },
+      "layer": [
+        {
+          "title": {
+            "text": [
+              "Percentage Responses Above 7.7 Minute Standard",
+              ""
+            ],
+            "font": "Calibri Light",
+            "color": "#444444",
+            "fontSize": 24
+          },
+          "data": {
+            "url": "https://raw.githubusercontent.com/JackECameron/FIT3179/main/Week10Homework/js/LOCALITY_POLYGON.json",
+            "format": {
+              "type": "topojson",
+              "feature": "LOCALITY_POLYGON"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#faf6f6",
+            "stroke": "black",
+            "strokeWidth": 0.25,
+            "opacity": 0.5
+          }
+        },
+        {
+          "params": [
+            {
+              "name": "loc_select",
+              "value": "CENTRAL",
+              "select": {
+                "type": "point",
+                "encodings": [
+                  "description"
+                ],
+                "on": "click",
+                "clear": false,
+                "toggle": false
+              }
+            }
+          ],
+          "transform": [
+            {
+              "lookup": "dis",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/JackECameron/FIT3179/main/Week10Homework/js/finalSimplified.json",
+                  "format": {
+                    "type": "topojson",
+                    "feature": "FRV_DISTRICT"
+                  }
+                },
+                "key": "properties.DISTRICT"
+              },
+              "as": "geo"
+            },
+            {
+              "filter": "datum.q == qSelect"
+            },
+            {
+              "filter": "datum.sTag == 'agr'"
+            }
+          ],
+          "mark": {
+            "type": "geoshape",
+            "opacity": 0.65,
+            "stroke": "black",
+            "strokeWidth": 1.25
+          },
+          "encoding": {
+            "shape": {
+              "field": "geo",
+              "type": "geojson"
+            },
+            "description": {
+              "field": "dis"
+            },
+            "color": {
+              "field": "perMet",
+              "scale": {
+                "type": "linear",
+                "scheme": "goldred",
+                "domain": [
+                  77,
+                  93
+                ]
+              },
+              "legend": {
+                "title": "% Above Standard",
+                "titleColor": "#696969",
+                "orient": "none",
+                "legendX": 2.5,
+                "legendY": 360,
+                "direction": "horizontal",
+                "labelColor": "#696969"
+              }
+            },
+            "tooltip": [
+              {
+                "field": "dis",
+                "type": "nominal",
+                "title": "FRV District"
+              },
+              {
+                "field": "perMet",
+                "type": "quantitative",
+                "title": "% Responses Above 7.7 Min"
+              },
+              {
+                "field": "sNumber",
+                "type": "quantitative",
+                "title": "Number of Stations"
+              },
+              {
+                "field": "totInc",
+                "type": "quantitative",
+                "title": "Number of Incidences"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": "container",
+      "height": 400,
+      "title": {
+        "text": "Station Rankings",
+        "font": "Calibri Light",
+        "color": "#444444",
+        "fontSize": 24
+      },
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "s_select",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "servArea"
+                ]
+              },
+              "bind": "legend"
+            }
+          ],
+          "transform": [
+            {
+              "filter": "datum.sTag != 'agr'"
+            },
+            {
+              "filter": {
+                "param": "loc_select"
+              }
+            },
+            {
+              "sort": [
+                {
+                  "field": "perMet",
+                  "order": "descending"
+                }
+              ],
+              "window": [
+                {
+                  "op": "rank",
+                  "as": "rank1"
+                }
+              ],
+              "groupby": [
+                "q"
+              ]
+            }
+          ],
+          "mark": {
+            "type": "line",
+            "orient": "vertical",
+            "opacity": 0.75,
+            "strokeWidth": 5
+          },
+          "encoding": {
+            "x": {
+              "field": "q",
+              "type": "ordinal",
+              "axis": {
+                "title": "Financial Quarter",
+                "titleFontSize": 20,
+                "titleColor": "#444444",
+                "titleFont": "Calibri Light",
+                "domain": false,
+                "labelAngle": 0,
+                "labelFontSize": 18,
+                "labelFont": "Calibri Light",
+                "labelColor": "#444444"
+              }
+            },
+            "y": {
+              "field": "rank1",
+              "type": "ordinal",
+              "axis": {
+                "title": "",
+                "labels": false,
+                "ticks": false,
+                "domain": false
+              }
+            },
+            "color": {
+              "condition": {
+                "param": "s_select",
+                "value": "green",
+                "empty": false
+              },
+              "field": "servArea",
+              "type": "nominal",
+              "scale": {
+                "scheme": "greys",
+                "type": "ordinal"
+              }
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.sTag != 'agr'"
+            },
+            {
+              "filter": {
+                "param": "loc_select"
+              }
+            },
+            {
+              "sort": [
+                {
+                  "field": "perMet",
+                  "order": "descending"
+                }
+              ],
+              "window": [
+                {
+                  "op": "rank",
+                  "as": "rank1"
+                }
+              ],
+              "groupby": [
+                "q"
+              ]
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "opacity": 0.75,
+            "strokeWidth": 5,
+            "filled": true,
+            "size": 150
+          },
+          "encoding": {
+            "x": {
+              "field": "q",
+              "type": "ordinal",
+              "axis": {
+                "grid": true
+              }
+            },
+            "y": {
+              "field": "rank1",
+              "type": "ordinal",
+              "axis": {
+                "grid": true
+              }
+            },
+            "color": {
+              "condition": {
+                "param": "s_select",
+                "empty": false,
+                "value": "green"
+              },
+              "field": "servArea",
+              "scale": {
+                "scheme": "greys",
+                "type": "ordinal"
+              }
+            },
+            "tooltip": [
+              {
+                "field": "q",
+                "type": "nominal",
+                "title": "Quarter"
+              },
+              {
+                "field": "rank1",
+                "type": "quantitative",
+                "title": "Quarter Ranking"
+              },
+              {
+                "field": "90Avg",
+                "type": "quantitative",
+                "title": "90% Response Time (m)"
+              },
+              {
+                "field": "perMet",
+                "type": "quantitative",
+                "title": "% Above Standard"
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.sTag != 'agr'"
+            },
+            {
+              "filter": {
+                "param": "loc_select"
+              }
+            },
+            {
+              "filter": "datum.q==4"
+            },
+            {
+              "sort": [
+                {
+                  "field": "perMet",
+                  "order": "descending"
+                }
+              ],
+              "window": [
+                {
+                  "op": "rank",
+                  "as": "rank1"
+                }
+              ],
+              "groupby": [
+                "q"
+              ]
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "opacity": 0.75,
+            "strokeWidth": 5,
+            "filled": true,
+            "size": 16,
+            "dx": 50,
+            "align": "left",
+            "fontStyle": "italic"
+          },
+          "encoding": {
+            "x": {
+              "field": "q",
+              "type": "ordinal",
+              "axis": {}
+            },
+            "y": {
+              "field": "rank1",
+              "type": "ordinal",
+              "axis": {}
+            },
+            "color": {
+              "value": "black"
+            },
+            "text": {
+              "field": "servArea"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "bottom",
+            "x": "width",
+            "y": 0,
+            "font": "Calibri Light",
+            "color": "#444444",
+            "fontSize": 20
+          },
+          "encoding": {
+            "text": {
+              "value": "Stations"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "bottom",
+            "y": 0,
+            "font": "Calibri Light",
+            "color": "#444444",
+            "fontSize": 14
+          },
+          "encoding": {
+            "text": {
+              "value": {
+                "expr": "loc_select.dis"
+              }
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.sTag != 'agr'"
+            },
+            {
+              "filter": {
+                "param": "loc_select"
+              }
+            },
+            {
+              "filter": "datum.q==1"
+            },
+            {
+              "sort": [
+                {
+                  "field": "perMet",
+                  "order": "descending"
+                }
+              ],
+              "window": [
+                {
+                  "op": "rank",
+                  "as": "rank1"
+                }
+              ],
+              "groupby": [
+                "q"
+              ]
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "opacity": 0.75,
+            "strokeWidth": 5,
+            "filled": true,
+            "size": 20,
+            "dx": -30,
+            "align": "center",
+            "fontStyle": "bold",
+            "font": "Calibri Light"
+          },
+          "encoding": {
+            "x": {
+              "field": "q",
+              "type": "ordinal",
+              "axis": {}
+            },
+            "y": {
+              "field": "rank1",
+              "type": "ordinal",
+              "axis": {}
+            },
+            "color": {
+              "value": "#444444"
+            },
+            "text": {
+              "field": "rank1"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

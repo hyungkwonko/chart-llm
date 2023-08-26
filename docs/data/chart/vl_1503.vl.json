@@ -1,0 +1,51 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-43e73232475a138cf0a167f9db8f8cab"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "type": "nominal",
+      "field": "repo",
+      "sort": [
+        "numpy",
+        "numpydoc",
+        "numpy-tutorials"
+      ]
+    },
+    "y": {
+      "type": "quantitative",
+      "field": "number"
+    }
+  },
+  "title": "Issues closed in the last 10 days",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-43e73232475a138cf0a167f9db8f8cab": [
+      {
+        "org": "numpy",
+        "repo": "numpy",
+        "number": 19,
+        "org/repo": "numpy/numpy"
+      },
+      {
+        "org": "numpy",
+        "repo": "numpy-tutorials",
+        "number": 1,
+        "org/repo": "numpy/numpy-tutorials"
+      },
+      {
+        "org": "numpy",
+        "repo": "numpydoc",
+        "number": 2,
+        "org/repo": "numpy/numpydoc"
+      }
+    ]
+  }
+}

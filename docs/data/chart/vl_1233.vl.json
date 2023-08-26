@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatterplot showing PAX count in millions and bailouts in millions.",
+  "width": 300,
+  "height": 300,
+  "title": {
+    "text": "European Airline Groups: Passenger Count (2019) and Bailouts (2021)",
+    "fontSize": 12,
+    "subtitle": [
+      "Sources: Statista (2021) & Wikipedia (2022)"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/project.scatter1.csv"
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "PAX count 2019",
+      "type": "quantitative",
+      "title": "Passenger count (millions)",
+      "scale": {
+        "zero": false
+      }
+    },
+    "y": {
+      "field": "Bailout 2021",
+      "type": "quantitative",
+      "title": "Bailout (billions \u20ac)",
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "field": "Indicator",
+      "type": "nominal",
+      "title": "Carrier type"
+    },
+    "shape": {
+      "field": "Indicator",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "Airline",
+        "type": "nominal",
+        "title": "Airline Group"
+      },
+      {
+        "field": "PAX count 2019",
+        "type": "nominal",
+        "title": "PAX count (millions)"
+      },
+      {
+        "field": "Bailout 2021",
+        "type": "nominal",
+        "title": "Bailout (in billion \u20ac)"
+      }
+    ]
+  }
+}

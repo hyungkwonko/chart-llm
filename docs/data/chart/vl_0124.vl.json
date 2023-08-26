@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 800,
+  "title": {
+    "text": "2x^3 - 4x^2 + 6",
+    "fontSize": 20,
+    "fontWeight": "normal"
+  },
+  "layer": [
+    {
+      "data": {
+        "sequence": {
+          "start": -4,
+          "stop": 4,
+          "step": 0.1,
+          "as": "x"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "2 * datum.x * datum.x * datum.x - 4 * datum.x * datum.x + 6",
+          "as": "y"
+        }
+      ],
+      "mark": "line",
+      "selection": {
+        "grid": {
+          "type": "interval",
+          "bind": "scales"
+        }
+      },
+      "encoding": {
+        "x": {
+          "type": "quantitative",
+          "field": "x",
+          "axis": {
+            "tickCount": 9,
+            "titleFontSize": 20
+          }
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {
+            "domainMin": -1.0,
+            "domainMax": 7.0
+          },
+          "axis": {
+            "tickCount": 9,
+            "titleFontSize": 20
+          }
+        },
+        "color": {
+          "value": "#f00"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": -1
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "strokeDash": [
+              4,
+              8
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "bottom",
+            "dx": -4,
+            "dy": 10,
+            "x": "width",
+            "fontSize": 20,
+            "text": "root = -1.0"
+          }
+        }
+      ]
+    }
+  ]
+}

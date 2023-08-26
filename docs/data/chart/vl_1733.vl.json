@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "category": "A",
+        "value": -28.6
+      },
+      {
+        "category": "B",
+        "value": -1.6
+      },
+      {
+        "category": "C",
+        "value": -13.6
+      },
+      {
+        "category": "D",
+        "value": 34.4
+      },
+      {
+        "category": "E",
+        "value": 24.4
+      },
+      {
+        "category": "F",
+        "value": -3.6
+      },
+      {
+        "category": "G",
+        "value": -57.6
+      },
+      {
+        "category": "H",
+        "value": 30.4
+      },
+      {
+        "category": "I",
+        "value": -4.6
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "value",
+      "scale": {
+        "scheme": "redblue"
+      },
+      "type": "quantitative"
+    },
+    "x": {
+      "axis": {
+        "domain": false,
+        "labelAngle": 0,
+        "orient": "top"
+      },
+      "field": "category",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar"
+}

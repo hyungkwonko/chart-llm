@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Women's Team Performance vs Economic Development",
+    "subtitle": [
+      "Human Development Index (x), FIFA ranking points (y). 2021 data",
+      "Size of points based on popluation",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/vikrajendran/vikrajendran.github.io/main/HDIPoints.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "color": "#3D76E0",
+    "opacity": 0.8
+  },
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "Value",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0.3,
+          1
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": [
+        "\u27f5                                                                   \u27f6",
+        "Less Developed                                            More Developed"
+      ]
+    },
+    "y": {
+      "field": "Womens Points",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          300,
+          2200
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": [
+        "Worse Team                                                   Better Team",
+        "\u27f5                                                                     \u27f6"
+      ]
+    },
+    "size": {
+      "field": "Population",
+      "type": "quantitative",
+      "title": "Population",
+      "scale": {
+        "range": [
+          10,
+          800
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Country Name",
+        "type": "ordinal",
+        "title": "Country"
+      },
+      {
+        "field": "Womens Points",
+        "type": "quantitative",
+        "title": "FIFA Ranking Points",
+        "format": ".0f"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "HDI",
+        "format": ".2f"
+      },
+      {
+        "field": "Population",
+        "type": "quantitative",
+        "title": "Population",
+        "format": ","
+      }
+    ]
+  }
+}

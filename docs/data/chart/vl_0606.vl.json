@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch3_Work/chicagoSalaries.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "title": {
+    "text": "Chicago Salaries - Lorenz curve and equality line",
+    "subtitle": "Public Sector Salary Workers",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
+    {
+      "fold": [
+        "cumShareIncome",
+        "cumSharePeople"
+      ],
+      "as": [
+        "var",
+        "val"
+      ]
+    }
+  ],
+  "width": 400,
+  "height": 400,
+  "mark": {
+    "type": "line",
+    "color": "seagreen",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "cumSharePeople",
+      "type": "quantitative",
+      "title": null
+    },
+    "y": {
+      "field": "val",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "var",
+      "scale": {
+        "range": [
+          "seagreen",
+          "grey"
+        ]
+      },
+      "legend": null
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mode": "vega-lite",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "url": "https://vega.github.io/editor/data/unemployment-across-industries.json"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area"
+      },
+      "encoding": {
+        "opacity": {
+          "value": 1
+        },
+        "x": {
+          "timeUnit": "yearmonth",
+          "field": "date",
+          "type": "temporal",
+          "axis": {
+            "format": "%Y"
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "count",
+          "type": "quantitative",
+          "axis": {
+            "orient": "left"
+          }
+        },
+        "color": {
+          "legend": {
+            "title": "Series",
+            "orient": "right",
+            "symbolType": "circle",
+            "fillColor": "#ffffff"
+          },
+          "field": "series",
+          "type": "ordinal",
+          "scale": {
+            "range": [
+              "#393b79",
+              "#5254a3",
+              "#6b6ecf",
+              "#9c9ede",
+              "#637939",
+              "#8ca252",
+              "#b5cf6b",
+              "#cedb9c",
+              "#8c6d31",
+              "#bd9e39",
+              "#e7ba52",
+              "#e7cb94",
+              "#843c39",
+              "#ad494a",
+              "#d6616b",
+              "#e7969c",
+              "#7b4173",
+              "#a55194",
+              "#ce6dbd",
+              "#de9ed6"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

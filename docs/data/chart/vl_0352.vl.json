@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "UK and US borrowing - premium over Germany",
+    "subtitle": [
+      "10y bonds yields (%), vs German. FRED, BoE, Bundesbank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#cbc7cf",
+    "subtitleColor": "#cbc7cf"
+  },
+  "config": {
+    "background": "#122b39",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/ukYieldCurve.csv"
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.Date)",
+      "as": "year"
+    },
+    {
+      "calculate": "month(datum.Date)",
+      "as": "month"
+    },
+    {
+      "calculate": "datum.us10y-datum.german10y",
+      "as": "US_Germany"
+    },
+    {
+      "calculate": "datum.y10-datum.german10y",
+      "as": "UK_Germany"
+    },
+    {
+      "filter": "datum.year>2021"
+    },
+    {
+      "filter": "datum.month>4"
+    },
+    {
+      "filter": "datum.y1!=0"
+    }
+  ],
+  "repeat": {
+    "layer": [
+      "US_Germany",
+      "UK_Germany"
+    ]
+  },
+  "spec": {
+    "height": 300,
+    "width": 300,
+    "mark": {
+      "type": "line",
+      "strokeWidth": 2
+    },
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "title": null,
+        "axis": {
+          "grid": false,
+          "labelColor": "#cbc7cf"
+        }
+      },
+      "y": {
+        "field": {
+          "repeat": "layer"
+        },
+        "type": "quantitative",
+        "title": null,
+        "axis": {
+          "grid": false,
+          "labelColor": "#cbc7cf"
+        }
+      },
+      "color": {
+        "datum": {
+          "repeat": "layer"
+        },
+        "scale": {
+          "range": [
+            "red",
+            "orange",
+            "blue"
+          ]
+        },
+        "legend": {
+          "labelExpr": "{'US_Germany': 'US', 'UK_Germany': 'UK'}[datum.label]",
+          "orient": "bottom-right",
+          "labelColor": "#cbc7cf",
+          "title": "Country",
+          "titleColor": "#cbc7cf"
+        }
+      }
+    }
+  }
+}

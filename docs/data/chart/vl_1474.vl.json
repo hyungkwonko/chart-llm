@@ -1,0 +1,120 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "fontSize": 24
+    }
+  },
+  "data": {
+    "name": "data-2f8a20c5a32e2e0b9d251f00b2a9e0c6"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "percent",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "n_revs type",
+      "sort": "-x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "params": [
+    {
+      "name": "param_17",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales"
+    }
+  ],
+  "title": "Year and Month Of Update (Kerbs)",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-2f8a20c5a32e2e0b9d251f00b2a9e0c6": [
+      {
+        "n_revs type": 1,
+        "count": 1820,
+        "percent": "78.08%"
+      },
+      {
+        "n_revs type": 2,
+        "count": 218,
+        "percent": "9.35%"
+      },
+      {
+        "n_revs type": 3,
+        "count": 127,
+        "percent": "5.45%"
+      },
+      {
+        "n_revs type": 4,
+        "count": 89,
+        "percent": "3.82%"
+      },
+      {
+        "n_revs type": 5,
+        "count": 34,
+        "percent": "1.46%"
+      },
+      {
+        "n_revs type": 6,
+        "count": 21,
+        "percent": "0.9%"
+      },
+      {
+        "n_revs type": 7,
+        "count": 16,
+        "percent": "0.69%"
+      },
+      {
+        "n_revs type": 8,
+        "count": 1,
+        "percent": "0.04%"
+      },
+      {
+        "n_revs type": 11,
+        "count": 1,
+        "percent": "0.04%"
+      },
+      {
+        "n_revs type": 16,
+        "count": 1,
+        "percent": "0.04%"
+      },
+      {
+        "n_revs type": 23,
+        "count": 1,
+        "percent": "0.04%"
+      },
+      {
+        "n_revs type": 17,
+        "count": 1,
+        "percent": "0.04%"
+      },
+      {
+        "n_revs type": 15,
+        "count": 1,
+        "percent": "0.04%"
+      }
+    ]
+  }
+}

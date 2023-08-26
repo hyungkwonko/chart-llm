@@ -1,0 +1,126 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar",
+  "width": "container",
+  "title": {
+    "text": "Countries in Europe with the highest life expectancy, 2017",
+    "offset": 10
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "timeUnit": "year",
+        "field": "year",
+        "equal": 2017
+      }
+    },
+    {
+      "filter": {
+        "field": "region",
+        "equal": "Europe"
+      }
+    },
+    {
+      "filter": {
+        "field": "lifeExp",
+        "valid": true
+      }
+    },
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "lifeExp",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.rank <= 10"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "country",
+      "type": "nominal",
+      "sort": {
+        "op": "mean",
+        "field": "lifeExp",
+        "order": "descending"
+      },
+      "axis": {
+        "title": null,
+        "ticks": false,
+        "labelPadding": 5
+      }
+    },
+    "x": {
+      "field": "lifeExp",
+      "type": "quantitative",
+      "axis": {
+        "grid": false,
+        "title": null,
+        "ticks": false,
+        "labels": false
+      }
+    },
+    "color": {
+      "value": "#FFDC25"
+    },
+    "tooltip": [
+      {
+        "field": "country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "lifeExp",
+        "type": "quantitative",
+        "title": "Age (years)",
+        "format": ",.1f"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "bar"
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 3,
+        "fontStyle": "bold"
+      },
+      "encoding": {
+        "text": {
+          "field": "lifeExp",
+          "type": "quantitative"
+        },
+        "color": {
+          "value": "#757575"
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "grid": false,
+      "domainColor": "none"
+    },
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

@@ -1,0 +1,1000 @@
+{
+  "config": {
+    "background": "#FFFFFF",
+    "title": {
+      "anchor": "start",
+      "fontSize": 32,
+      "font": "Lato"
+    },
+    "axisX": {
+      "domain": true,
+      "domainColor": "#000000",
+      "domainWidth": 1,
+      "grid": false,
+      "labelFontSize": 12,
+      "labelFont": "Roboto",
+      "labelAngle": 0,
+      "tickColor": "#000000",
+      "tickSize": 5,
+      "titleFontSize": 12,
+      "titlePadding": 10,
+      "titleFont": "Roboto"
+    },
+    "axisY": {
+      "domain": false,
+      "domainWidth": 1,
+      "grid": true,
+      "gridColor": "#DEDDDD",
+      "gridWidth": 1,
+      "labelFontSize": 12,
+      "labelFont": "Roboto",
+      "labelPadding": 8,
+      "ticks": false,
+      "titleFontSize": 12,
+      "titlePadding": 10,
+      "titleFont": "Roboto",
+      "titleAngle": 0,
+      "titleY": -10,
+      "titleX": 18
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "labelFont": "Roboto",
+      "symbolSize": 100,
+      "titleFontSize": 12,
+      "titlePadding": 10,
+      "titleFont": "Roboto",
+      "orient": "right",
+      "offset": 10
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "range": {
+      "category": [
+        "#1696d2",
+        "#ec008b",
+        "#fdbf11",
+        "#000000",
+        "#d2d2d2",
+        "#55b748"
+      ],
+      "diverging": [
+        "#ca5800",
+        "#fdbf11",
+        "#fdd870",
+        "#fff2cf",
+        "#cfe8f3",
+        "#73bfe2",
+        "#1696d2",
+        "#0a4c6a"
+      ],
+      "heatmap": [
+        "#ca5800",
+        "#fdbf11",
+        "#fdd870",
+        "#fff2cf",
+        "#cfe8f3",
+        "#73bfe2",
+        "#1696d2",
+        "#0a4c6a"
+      ],
+      "ordinal": [
+        "#cfe8f3",
+        "#a2d4ec",
+        "#73bfe2",
+        "#46abdb",
+        "#1696d2",
+        "#12719e"
+      ],
+      "ramp": [
+        "#CFE8F3",
+        "#A2D4EC",
+        "#73BFE2",
+        "#46ABDB",
+        "#1696D2",
+        "#12719E",
+        "#0A4C6A",
+        "#062635"
+      ]
+    },
+    "area": {
+      "fill": "#1696d2"
+    },
+    "rect": {
+      "fill": "#1696d2"
+    },
+    "line": {
+      "color": "#1696d2",
+      "stroke": "#1696d2",
+      "strokeWidth": 5
+    },
+    "trail": {
+      "color": "#1696d2",
+      "stroke": "#1696d2",
+      "strokeWidth": 0,
+      "size": 1
+    },
+    "path": {
+      "stroke": "#1696d2",
+      "strokeWidth": 0.5
+    },
+    "point": {
+      "filled": true
+    },
+    "text": {
+      "font": "Lato",
+      "color": "#1696d2",
+      "fontSize": 11,
+      "align": "center",
+      "fontWeight": 400,
+      "size": 11
+    },
+    "style": {
+      "bar": {
+        "fill": "#1696d2",
+        "stroke": null
+      }
+    },
+    "arc": {
+      "fill": "#1696d2"
+    },
+    "shape": {
+      "stroke": "#1696d2"
+    },
+    "symbol": {
+      "fill": "#1696d2",
+      "size": 30
+    }
+  },
+  "vconcat": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#1e88e5"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "value": "#1e88e5",
+            "selection": {
+              "not": "selector037"
+            }
+          },
+          "value": "#b1010f"
+        },
+        "size": {
+          "condition": {
+            "value": 3,
+            "selection": {
+              "not": "selector037"
+            }
+          },
+          "value": 6
+        },
+        "tooltip": [
+          {
+            "type": "nominal",
+            "field": "area_name",
+            "title": "Area Name"
+          },
+          {
+            "type": "temporal",
+            "field": "date",
+            "title": "Date"
+          },
+          {
+            "type": "quantitative",
+            "field": "new_cases",
+            "title": "Daily cases  "
+          },
+          {
+            "type": "quantitative",
+            "field": "total_cases",
+            "title": "Total cases"
+          }
+        ],
+        "x": {
+          "type": "temporal",
+          "axis": {
+            "labels": false,
+            "title": " "
+          },
+          "field": "date",
+          "scale": {
+            "domain": {
+              "selection": "selector036"
+            }
+          }
+        },
+        "y": {
+          "type": "quantitative",
+          "axis": {
+            "title": "Daily number of lab-confirmed cases"
+          },
+          "field": "new_cases"
+        }
+      },
+      "height": 250,
+      "selection": {
+        "selector037": {
+          "type": "single",
+          "on": "mouseover",
+          "fields": [
+            "date"
+          ],
+          "nearest": true
+        }
+      },
+      "title": "COVID-19 impact in London Area",
+      "width": "container"
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#1e88e5"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "value": "#1e88e5",
+            "selection": "selector036"
+          },
+          "value": "lightgray"
+        },
+        "x": {
+          "type": "temporal",
+          "axis": {
+            "title": " "
+          },
+          "field": "date"
+        },
+        "y": {
+          "type": "quantitative",
+          "axis": {
+            "title": " "
+          },
+          "field": "new_cases"
+        }
+      },
+      "height": 60,
+      "selection": {
+        "selector036": {
+          "type": "interval",
+          "encodings": [
+            "x"
+          ]
+        }
+      },
+      "width": "container"
+    }
+  ],
+  "data": {
+    "name": "data-5a487dcb07092a17a4c462339895b844"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-5a487dcb07092a17a4c462339895b844": [
+      {
+        "date": "2020-01-30T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 0
+      },
+      {
+        "date": "2020-01-31T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 0
+      },
+      {
+        "date": "2020-02-01T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 0
+      },
+      {
+        "date": "2020-02-02T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 0
+      },
+      {
+        "date": "2020-02-03T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 0
+      },
+      {
+        "date": "2020-02-04T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 0
+      },
+      {
+        "date": "2020-02-05T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 0
+      },
+      {
+        "date": "2020-02-06T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 0
+      },
+      {
+        "date": "2020-02-07T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 0
+      },
+      {
+        "date": "2020-02-08T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 0
+      },
+      {
+        "date": "2020-02-09T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 0
+      },
+      {
+        "date": "2020-02-10T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 0
+      },
+      {
+        "date": "2020-02-11T00:00:00",
+        "area_name": "London",
+        "new_cases": 1,
+        "total_cases": 1
+      },
+      {
+        "date": "2020-02-12T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 1
+      },
+      {
+        "date": "2020-02-13T00:00:00",
+        "area_name": "London",
+        "new_cases": 1,
+        "total_cases": 2
+      },
+      {
+        "date": "2020-02-14T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 2
+      },
+      {
+        "date": "2020-02-15T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 2
+      },
+      {
+        "date": "2020-02-16T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 2
+      },
+      {
+        "date": "2020-02-17T00:00:00",
+        "area_name": "London",
+        "new_cases": 1,
+        "total_cases": 3
+      },
+      {
+        "date": "2020-02-18T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 3
+      },
+      {
+        "date": "2020-02-19T00:00:00",
+        "area_name": "London",
+        "new_cases": 1,
+        "total_cases": 4
+      },
+      {
+        "date": "2020-02-20T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 4
+      },
+      {
+        "date": "2020-02-21T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 4
+      },
+      {
+        "date": "2020-02-22T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 4
+      },
+      {
+        "date": "2020-02-23T00:00:00",
+        "area_name": "London",
+        "new_cases": 2,
+        "total_cases": 6
+      },
+      {
+        "date": "2020-02-24T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 6
+      },
+      {
+        "date": "2020-02-25T00:00:00",
+        "area_name": "London",
+        "new_cases": 2,
+        "total_cases": 8
+      },
+      {
+        "date": "2020-02-26T00:00:00",
+        "area_name": "London",
+        "new_cases": 0,
+        "total_cases": 8
+      },
+      {
+        "date": "2020-02-27T00:00:00",
+        "area_name": "London",
+        "new_cases": 1,
+        "total_cases": 9
+      },
+      {
+        "date": "2020-02-28T00:00:00",
+        "area_name": "London",
+        "new_cases": 5,
+        "total_cases": 14
+      },
+      {
+        "date": "2020-02-29T00:00:00",
+        "area_name": "London",
+        "new_cases": 1,
+        "total_cases": 15
+      },
+      {
+        "date": "2020-03-01T00:00:00",
+        "area_name": "London",
+        "new_cases": 8,
+        "total_cases": 23
+      },
+      {
+        "date": "2020-03-02T00:00:00",
+        "area_name": "London",
+        "new_cases": 12,
+        "total_cases": 35
+      },
+      {
+        "date": "2020-03-03T00:00:00",
+        "area_name": "London",
+        "new_cases": 6,
+        "total_cases": 41
+      },
+      {
+        "date": "2020-03-04T00:00:00",
+        "area_name": "London",
+        "new_cases": 18,
+        "total_cases": 59
+      },
+      {
+        "date": "2020-03-05T00:00:00",
+        "area_name": "London",
+        "new_cases": 14,
+        "total_cases": 73
+      },
+      {
+        "date": "2020-03-06T00:00:00",
+        "area_name": "London",
+        "new_cases": 23,
+        "total_cases": 96
+      },
+      {
+        "date": "2020-03-07T00:00:00",
+        "area_name": "London",
+        "new_cases": 14,
+        "total_cases": 110
+      },
+      {
+        "date": "2020-03-08T00:00:00",
+        "area_name": "London",
+        "new_cases": 22,
+        "total_cases": 132
+      },
+      {
+        "date": "2020-03-09T00:00:00",
+        "area_name": "London",
+        "new_cases": 54,
+        "total_cases": 186
+      },
+      {
+        "date": "2020-03-10T00:00:00",
+        "area_name": "London",
+        "new_cases": 91,
+        "total_cases": 277
+      },
+      {
+        "date": "2020-03-11T00:00:00",
+        "area_name": "London",
+        "new_cases": 183,
+        "total_cases": 460
+      },
+      {
+        "date": "2020-03-12T00:00:00",
+        "area_name": "London",
+        "new_cases": 165,
+        "total_cases": 625
+      },
+      {
+        "date": "2020-03-13T00:00:00",
+        "area_name": "London",
+        "new_cases": 136,
+        "total_cases": 761
+      },
+      {
+        "date": "2020-03-14T00:00:00",
+        "area_name": "London",
+        "new_cases": 148,
+        "total_cases": 909
+      },
+      {
+        "date": "2020-03-15T00:00:00",
+        "area_name": "London",
+        "new_cases": 165,
+        "total_cases": 1074
+      },
+      {
+        "date": "2020-03-16T00:00:00",
+        "area_name": "London",
+        "new_cases": 234,
+        "total_cases": 1308
+      },
+      {
+        "date": "2020-03-17T00:00:00",
+        "area_name": "London",
+        "new_cases": 310,
+        "total_cases": 1618
+      },
+      {
+        "date": "2020-03-18T00:00:00",
+        "area_name": "London",
+        "new_cases": 356,
+        "total_cases": 1974
+      },
+      {
+        "date": "2020-03-19T00:00:00",
+        "area_name": "London",
+        "new_cases": 333,
+        "total_cases": 2307
+      },
+      {
+        "date": "2020-03-20T00:00:00",
+        "area_name": "London",
+        "new_cases": 426,
+        "total_cases": 2733
+      },
+      {
+        "date": "2020-03-21T00:00:00",
+        "area_name": "London",
+        "new_cases": 350,
+        "total_cases": 3083
+      },
+      {
+        "date": "2020-03-22T00:00:00",
+        "area_name": "London",
+        "new_cases": 436,
+        "total_cases": 3519
+      },
+      {
+        "date": "2020-03-23T00:00:00",
+        "area_name": "London",
+        "new_cases": 687,
+        "total_cases": 4206
+      },
+      {
+        "date": "2020-03-24T00:00:00",
+        "area_name": "London",
+        "new_cases": 636,
+        "total_cases": 4842
+      },
+      {
+        "date": "2020-03-25T00:00:00",
+        "area_name": "London",
+        "new_cases": 755,
+        "total_cases": 5597
+      },
+      {
+        "date": "2020-03-26T00:00:00",
+        "area_name": "London",
+        "new_cases": 764,
+        "total_cases": 6361
+      },
+      {
+        "date": "2020-03-27T00:00:00",
+        "area_name": "London",
+        "new_cases": 819,
+        "total_cases": 7180
+      },
+      {
+        "date": "2020-03-28T00:00:00",
+        "area_name": "London",
+        "new_cases": 577,
+        "total_cases": 7757
+      },
+      {
+        "date": "2020-03-29T00:00:00",
+        "area_name": "London",
+        "new_cases": 592,
+        "total_cases": 8349
+      },
+      {
+        "date": "2020-03-30T00:00:00",
+        "area_name": "London",
+        "new_cases": 844,
+        "total_cases": 9193
+      },
+      {
+        "date": "2020-03-31T00:00:00",
+        "area_name": "London",
+        "new_cases": 913,
+        "total_cases": 10106
+      },
+      {
+        "date": "2020-04-01T00:00:00",
+        "area_name": "London",
+        "new_cases": 962,
+        "total_cases": 11068
+      },
+      {
+        "date": "2020-04-02T00:00:00",
+        "area_name": "London",
+        "new_cases": 1022,
+        "total_cases": 12090
+      },
+      {
+        "date": "2020-04-03T00:00:00",
+        "area_name": "London",
+        "new_cases": 936,
+        "total_cases": 13026
+      },
+      {
+        "date": "2020-04-04T00:00:00",
+        "area_name": "London",
+        "new_cases": 717,
+        "total_cases": 13743
+      },
+      {
+        "date": "2020-04-05T00:00:00",
+        "area_name": "London",
+        "new_cases": 603,
+        "total_cases": 14346
+      },
+      {
+        "date": "2020-04-06T00:00:00",
+        "area_name": "London",
+        "new_cases": 834,
+        "total_cases": 15180
+      },
+      {
+        "date": "2020-04-07T00:00:00",
+        "area_name": "London",
+        "new_cases": 905,
+        "total_cases": 16085
+      },
+      {
+        "date": "2020-04-08T00:00:00",
+        "area_name": "London",
+        "new_cases": 831,
+        "total_cases": 16916
+      },
+      {
+        "date": "2020-04-09T00:00:00",
+        "area_name": "London",
+        "new_cases": 768,
+        "total_cases": 17684
+      },
+      {
+        "date": "2020-04-10T00:00:00",
+        "area_name": "London",
+        "new_cases": 573,
+        "total_cases": 18257
+      },
+      {
+        "date": "2020-04-11T00:00:00",
+        "area_name": "London",
+        "new_cases": 493,
+        "total_cases": 18750
+      },
+      {
+        "date": "2020-04-12T00:00:00",
+        "area_name": "London",
+        "new_cases": 413,
+        "total_cases": 19163
+      },
+      {
+        "date": "2020-04-13T00:00:00",
+        "area_name": "London",
+        "new_cases": 566,
+        "total_cases": 19729
+      },
+      {
+        "date": "2020-04-14T00:00:00",
+        "area_name": "London",
+        "new_cases": 555,
+        "total_cases": 20284
+      },
+      {
+        "date": "2020-04-15T00:00:00",
+        "area_name": "London",
+        "new_cases": 554,
+        "total_cases": 20838
+      },
+      {
+        "date": "2020-04-16T00:00:00",
+        "area_name": "London",
+        "new_cases": 489,
+        "total_cases": 21327
+      },
+      {
+        "date": "2020-04-17T00:00:00",
+        "area_name": "London",
+        "new_cases": 425,
+        "total_cases": 21752
+      },
+      {
+        "date": "2020-04-18T00:00:00",
+        "area_name": "London",
+        "new_cases": 306,
+        "total_cases": 22058
+      },
+      {
+        "date": "2020-04-19T00:00:00",
+        "area_name": "London",
+        "new_cases": 246,
+        "total_cases": 22304
+      },
+      {
+        "date": "2020-04-20T00:00:00",
+        "area_name": "London",
+        "new_cases": 375,
+        "total_cases": 22679
+      },
+      {
+        "date": "2020-04-21T00:00:00",
+        "area_name": "London",
+        "new_cases": 340,
+        "total_cases": 23019
+      },
+      {
+        "date": "2020-04-22T00:00:00",
+        "area_name": "London",
+        "new_cases": 275,
+        "total_cases": 23294
+      },
+      {
+        "date": "2020-04-23T00:00:00",
+        "area_name": "London",
+        "new_cases": 315,
+        "total_cases": 23609
+      },
+      {
+        "date": "2020-04-24T00:00:00",
+        "area_name": "London",
+        "new_cases": 247,
+        "total_cases": 23856
+      },
+      {
+        "date": "2020-04-25T00:00:00",
+        "area_name": "London",
+        "new_cases": 160,
+        "total_cases": 24016
+      },
+      {
+        "date": "2020-04-26T00:00:00",
+        "area_name": "London",
+        "new_cases": 91,
+        "total_cases": 24107
+      },
+      {
+        "date": "2020-04-27T00:00:00",
+        "area_name": "London",
+        "new_cases": 190,
+        "total_cases": 24297
+      },
+      {
+        "date": "2020-04-28T00:00:00",
+        "area_name": "London",
+        "new_cases": 180,
+        "total_cases": 24477
+      },
+      {
+        "date": "2020-04-29T00:00:00",
+        "area_name": "London",
+        "new_cases": 250,
+        "total_cases": 24727
+      },
+      {
+        "date": "2020-04-30T00:00:00",
+        "area_name": "London",
+        "new_cases": 255,
+        "total_cases": 24982
+      },
+      {
+        "date": "2020-05-01T00:00:00",
+        "area_name": "London",
+        "new_cases": 196,
+        "total_cases": 25178
+      },
+      {
+        "date": "2020-05-02T00:00:00",
+        "area_name": "London",
+        "new_cases": 127,
+        "total_cases": 25305
+      },
+      {
+        "date": "2020-05-03T00:00:00",
+        "area_name": "London",
+        "new_cases": 64,
+        "total_cases": 25369
+      },
+      {
+        "date": "2020-05-04T00:00:00",
+        "area_name": "London",
+        "new_cases": 149,
+        "total_cases": 25518
+      },
+      {
+        "date": "2020-05-05T00:00:00",
+        "area_name": "London",
+        "new_cases": 134,
+        "total_cases": 25652
+      },
+      {
+        "date": "2020-05-06T00:00:00",
+        "area_name": "London",
+        "new_cases": 143,
+        "total_cases": 25795
+      },
+      {
+        "date": "2020-05-07T00:00:00",
+        "area_name": "London",
+        "new_cases": 144,
+        "total_cases": 25939
+      },
+      {
+        "date": "2020-05-08T00:00:00",
+        "area_name": "London",
+        "new_cases": 94,
+        "total_cases": 26033
+      },
+      {
+        "date": "2020-05-09T00:00:00",
+        "area_name": "London",
+        "new_cases": 62,
+        "total_cases": 26095
+      },
+      {
+        "date": "2020-05-10T00:00:00",
+        "area_name": "London",
+        "new_cases": 38,
+        "total_cases": 26133
+      },
+      {
+        "date": "2020-05-11T00:00:00",
+        "area_name": "London",
+        "new_cases": 75,
+        "total_cases": 26208
+      },
+      {
+        "date": "2020-05-12T00:00:00",
+        "area_name": "London",
+        "new_cases": 80,
+        "total_cases": 26288
+      },
+      {
+        "date": "2020-05-13T00:00:00",
+        "area_name": "London",
+        "new_cases": 87,
+        "total_cases": 26375
+      },
+      {
+        "date": "2020-05-14T00:00:00",
+        "area_name": "London",
+        "new_cases": 87,
+        "total_cases": 26462
+      },
+      {
+        "date": "2020-05-15T00:00:00",
+        "area_name": "London",
+        "new_cases": 60,
+        "total_cases": 26522
+      },
+      {
+        "date": "2020-05-16T00:00:00",
+        "area_name": "London",
+        "new_cases": 24,
+        "total_cases": 26546
+      },
+      {
+        "date": "2020-05-17T00:00:00",
+        "area_name": "London",
+        "new_cases": 33,
+        "total_cases": 26579
+      },
+      {
+        "date": "2020-05-18T00:00:00",
+        "area_name": "London",
+        "new_cases": 54,
+        "total_cases": 26633
+      },
+      {
+        "date": "2020-05-19T00:00:00",
+        "area_name": "London",
+        "new_cases": 48,
+        "total_cases": 26681
+      },
+      {
+        "date": "2020-05-20T00:00:00",
+        "area_name": "London",
+        "new_cases": 58,
+        "total_cases": 26739
+      },
+      {
+        "date": "2020-05-21T00:00:00",
+        "area_name": "London",
+        "new_cases": 49,
+        "total_cases": 26788
+      },
+      {
+        "date": "2020-05-22T00:00:00",
+        "area_name": "London",
+        "new_cases": 40,
+        "total_cases": 26828
+      },
+      {
+        "date": "2020-05-23T00:00:00",
+        "area_name": "London",
+        "new_cases": 10,
+        "total_cases": 26838
+      },
+      {
+        "date": "2020-05-24T00:00:00",
+        "area_name": "London",
+        "new_cases": 17,
+        "total_cases": 26855
+      },
+      {
+        "date": "2020-05-25T00:00:00",
+        "area_name": "London",
+        "new_cases": 15,
+        "total_cases": 26870
+      },
+      {
+        "date": "2020-05-26T00:00:00",
+        "area_name": "London",
+        "new_cases": 28,
+        "total_cases": 26898
+      },
+      {
+        "date": "2020-05-27T00:00:00",
+        "area_name": "London",
+        "new_cases": 14,
+        "total_cases": 26912
+      },
+      {
+        "date": "2020-05-28T00:00:00",
+        "area_name": "London",
+        "new_cases": 1,
+        "total_cases": 26913
+      }
+    ]
+  }
+}

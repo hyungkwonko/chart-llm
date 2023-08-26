@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bubble",
+  "width": "container",
+  "title": {
+    "text": "Relationship between life expectancy and income, 2017",
+    "offset": 10
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "timeUnit": "year",
+        "field": "year",
+        "equal": 2017
+      }
+    }
+  ],
+  "mark": {
+    "type": "circle",
+    "opacity": 0.8,
+    "stroke": "#000000",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "y": {
+      "field": "lifeExp",
+      "type": "quantitative",
+      "scale": {
+        "zero": false
+      },
+      "axis": {
+        "title": "Life expectancy"
+      }
+    },
+    "x": {
+      "field": "gdpPercap",
+      "type": "quantitative",
+      "scale": {
+        "type": "log"
+      },
+      "axis": {
+        "grid": false,
+        "title": "Income per person",
+        "format": "$,.0f"
+      }
+    },
+    "size": {
+      "field": "pop",
+      "type": "quantitative",
+      "scale": {
+        "range": [
+          0,
+          1000
+        ]
+      },
+      "legend": false
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Africa",
+          "Americas",
+          "Asia",
+          "Europe"
+        ],
+        "range": [
+          "#08C5ED",
+          "#80D322",
+          "#FF6973",
+          "#FFDC25"
+        ]
+      },
+      "legend": false
+    },
+    "tooltip": [
+      {
+        "field": "country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "region",
+        "type": "nominal",
+        "title": "Region"
+      },
+      {
+        "field": "lifeExp",
+        "type": "quantitative",
+        "title": "Age (years)",
+        "format": ".1f"
+      },
+      {
+        "field": "gdpPercap",
+        "type": "quantitative",
+        "title": "GDP per capita",
+        "format": "$,.0f"
+      },
+      {
+        "field": "pop",
+        "type": "quantitative",
+        "title": "Population",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

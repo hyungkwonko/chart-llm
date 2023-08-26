@@ -1,0 +1,103 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "bits": 8,
+        "AutoTrack": 58.5,
+        "ECO_HC": 59.0,
+        "Staple": 56.4,
+        "CN": 41.9,
+        "KCF": 40.7
+      },
+      {
+        "bits": 7,
+        "AutoTrack": 59.0,
+        "ECO_HC": 57.0,
+        "Staple": 56.6,
+        "CN": 41.8,
+        "KCF": 40.2
+      },
+      {
+        "bits": 6,
+        "AutoTrack": 58.7,
+        "ECO_HC": 58.9,
+        "Staple": 56.4,
+        "CN": 41.9,
+        "KCF": 41.7
+      },
+      {
+        "bits": 5,
+        "AutoTrack": 59.2,
+        "ECO_HC": 57.7,
+        "Staple": 56.3,
+        "CN": 41.8,
+        "KCF": 41.3
+      },
+      {
+        "bits": 4,
+        "AutoTrack": 58.7,
+        "ECO_HC": 58.2,
+        "Staple": 55.5,
+        "CN": 41.9,
+        "KCF": 40.3
+      },
+      {
+        "bits": 3,
+        "AutoTrack": 57.2,
+        "ECO_HC": 61.2,
+        "Staple": 59.1,
+        "CN": 42.5,
+        "KCF": 40.7
+      },
+      {
+        "bits": 2,
+        "AutoTrack": 55.5,
+        "ECO_HC": 58.3,
+        "Staple": 54.7,
+        "CN": 39.2,
+        "KCF": 39.6
+      },
+      {
+        "bits": 1,
+        "AutoTrack": 45.6,
+        "ECO_HC": 47.3,
+        "Staple": 44.3,
+        "CN": 33.7,
+        "KCF": 35.5
+      }
+    ]
+  },
+  "repeat": {
+    "layer": [
+      "CN",
+      "KCF",
+      "Staple",
+      "ECO_HC",
+      "AutoTrack"
+    ]
+  },
+  "spec": {
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "sort": "descending",
+        "field": "bits",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": {
+          "repeat": "layer"
+        },
+        "type": "quantitative",
+        "title": "AUC"
+      },
+      "color": {
+        "datum": {
+          "repeat": "layer"
+        },
+        "type": "nominal"
+      }
+    }
+  }
+}

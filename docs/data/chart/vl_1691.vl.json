@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/population.json"
+  },
+  "description": "Population structure as a normalised stacked bar chart.",
+  "encoding": {
+    "color": {
+      "field": "gender",
+      "scale": {
+        "range": [
+          "#EA98D2",
+          "#659CCA"
+        ]
+      },
+      "type": "nominal"
+    },
+    "x": {
+      "field": "age",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "axis": {
+        "title": "Population"
+      },
+      "field": "people",
+      "stack": "normalize",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar",
+  "transform": [
+    {
+      "filter": "datum.year == 2000"
+    },
+    {
+      "as": "gender",
+      "calculate": "datum.sex == 2 ? 'Female' : 'Male'"
+    }
+  ],
+  "width": {
+    "step": 17
+  }
+}

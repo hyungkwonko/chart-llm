@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Error value for Experimental Index of Private Housing Rental Prices",
+    "subtitle": "Index level (January 2015 = 100), Source: Own calculations",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 40,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Emilysquires02/Emilysquires02.github.io/main/error.csv"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "format": "%Y",
+        "title": "Time",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "title": "Index",
+        "grid": true,
+        "tickCount": 2
+      }
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": null
+    },
+    "row": {
+      "field": "area",
+      "type": "nominal",
+      "header": {
+        "title": ""
+      }
+    }
+  },
+  "config": {}
+}

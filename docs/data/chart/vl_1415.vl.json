@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/BraneShop/BraneShop.github.io/2d5cdeb6ec3b2c78016a4e4b773fdc12174cb255/src/data/train-val-curves-1.json"
+  },
+  "hconcat": [
+    {
+      "title": "Train (solid) / Validation (dashed) Curves For Experiments",
+      "width": 700,
+      "height": 400,
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "basis"
+          },
+          "encoding": {
+            "x": {
+              "field": "step",
+              "type": "quantitative",
+              "axis": {
+                "title": "Step"
+              }
+            },
+            "y": {
+              "field": "loss_train",
+              "type": "quantitative",
+              "axis": {
+                "title": "Value"
+              }
+            },
+            "color": {
+              "field": "Experiment",
+              "type": "nominal",
+              "legend": null
+            },
+            "tooltip": {
+              "field": "loss_train",
+              "type": "nominal"
+            }
+          },
+          "transform": [
+            {
+              "filter": {
+                "selection": "legend"
+              }
+            }
+          ]
+        },
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "basis",
+            "strokeDash": [
+              4,
+              4
+            ]
+          },
+          "encoding": {
+            "x": {
+              "field": "step",
+              "type": "quantitative",
+              "axis": {
+                "title": "Step"
+              }
+            },
+            "y": {
+              "field": "loss_val",
+              "type": "quantitative",
+              "axis": {
+                "title": "Value"
+              }
+            },
+            "color": {
+              "field": "Experiment",
+              "type": "nominal",
+              "legend": null
+            },
+            "tooltip": {
+              "field": "loss_val",
+              "type": "nominal"
+            }
+          },
+          "transform": [
+            {
+              "filter": {
+                "selection": "legend"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 200,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "y": {
+          "type": "nominal",
+          "field": "Experiment",
+          "title": "Experiments"
+        },
+        "color": {
+          "condition": {
+            "type": "nominal",
+            "field": "Experiment",
+            "legend": null,
+            "selection": "legend"
+          },
+          "value": "lightgray"
+        }
+      },
+      "selection": {
+        "legend": {
+          "type": "multi",
+          "encodings": [
+            "color"
+          ],
+          "on": "click",
+          "toggle": "event.shiftKey",
+          "resolve": "global",
+          "empty": "all"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bubbleplot showing Top Goalscorers in Premier League in 2016.",
+  "title": {
+    "text": "Top Goalscorers in Premier League in 2016",
+    "subtitle": [
+      "A Bubble plot showing the relationship between",
+      "Goals, Matches Played and Average Shots per Match",
+      "Source:Opta"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 200,
+  "height": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/goalscorersdata.csv"
+  },
+  "mark": {
+    "type": "circle",
+    "opacity": 0.8,
+    "stroke": "black",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "Matches_Played",
+      "type": "quantitative",
+      "title": "Matchs Played"
+    },
+    "y": {
+      "field": "Goals",
+      "type": "quantitative",
+      "title": "Goals Scored"
+    },
+    "size": {
+      "field": "Shots Per Avg Match",
+      "type": "quantitative",
+      "title": [
+        "Average Shots",
+        "Per Match"
+      ]
+    },
+    "tooltip": [
+      {
+        "field": "Player Names",
+        "type": "nominal",
+        "title": "Player"
+      },
+      {
+        "field": "Matches_Played",
+        "type": "quantitative",
+        "title": "Games Played"
+      },
+      {
+        "field": "Goals",
+        "type": "quantitative",
+        "title": "Goals Scored"
+      },
+      {
+        "field": "Shots Per Avg Match",
+        "type": "quantitative",
+        "title": "Average Shots Per Match"
+      }
+    ]
+  }
+}

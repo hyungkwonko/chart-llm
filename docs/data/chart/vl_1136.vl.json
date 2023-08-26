@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/dannysupple/dannysupple.github.io/main/custom.geo.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "background": "cyan",
+  "transform": [
+    {
+      "lookup": "properties.brk_name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/dannysupple/dannysupple.github.io/main/wc_apps(5).csv"
+        },
+        "key": "Team",
+        "fields": [
+          "Appearances"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "darkgray",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "scale": {
+        "scheme": "Oranges"
+      },
+      "field": "Appearances",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "properties.brk_name",
+        "type": "nominal"
+      },
+      {
+        "field": "Appearances",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "config": {}
+}

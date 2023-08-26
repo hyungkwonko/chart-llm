@@ -1,0 +1,43 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    },
+    "axis": {
+      "labelFontSize": 20,
+      "titleFontSize": 20
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "Year Constructed",
+        "type": "temporal"
+      },
+      {
+        "field": "Total Floors",
+        "type": "quantitative"
+      },
+      {
+        "field": "Square Footage",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "Year Constructed",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "Total Floors",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "width": "container",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
+}

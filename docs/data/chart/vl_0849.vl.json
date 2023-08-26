@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "IMF Lending  outstanding ",
+    "subtitle": "Credit outstanding for all members, SDR",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jordanboi58/Jordanboi58.github.io/main/DATA%20IMF%20outstanding%20credit%20yh.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.Totals/1000000000",
+      "as": "billions"
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "bar",
+    "color": "RGB(189,44,0"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": "Year",
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "billions",
+      "type": "quantitative",
+      "title": "loans disbursed \u00a3bn's",
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

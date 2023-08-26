@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/DATA_BP_C2_formatted.csv"
+  },
+  "width": {
+    "step": 15
+  },
+  "height": 275,
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "Quarter",
+      "type": "ordinal",
+      "spacing": 0,
+      "title": null
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Value",
+      "title": "GDP growth versus 2019Q4 (%)",
+      "scale": {
+        "domain": [
+          -25,
+          15
+        ]
+      }
+    },
+    "x": {
+      "field": "Nation",
+      "axis": {
+        "title": "",
+        "labelColor": "white",
+        "ticks": false
+      },
+      "sort": "-y"
+    },
+    "color": {
+      "field": "Nation",
+      "scale": {
+        "range": [
+          "#122b39",
+          "#00a767",
+          "#179fdb",
+          "#e6224b"
+        ]
+      },
+      "legend": {
+        "orient": "top-left"
+      }
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "domainWidth": 1
+    }
+  }
+}

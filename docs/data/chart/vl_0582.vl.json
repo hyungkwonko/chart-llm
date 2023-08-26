@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "US inflation",
+    "subtitle": [
+      "CPI - annual change. Source: Minneapolis Fed",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "dx": 0,
+    "dy": 0,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 450,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/US_MineapolisFed_CPI_longRun.csv"
+  },
+  "mark": {
+    "type": "bar",
+    "color": "rgb(128,0,0)",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "change",
+      "type": "quantitative",
+      "title": null
+    }
+  }
+}

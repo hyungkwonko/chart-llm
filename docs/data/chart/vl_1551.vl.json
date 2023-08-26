@@ -1,0 +1,840 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "concat": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "tooltip": [
+          {
+            "bin": true,
+            "field": "value",
+            "title": "x",
+            "type": "quantitative"
+          },
+          {
+            "aggregate": "count",
+            "title": "y",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "bin": true,
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "height": 100,
+      "title": "actual",
+      "transform": [
+        {
+          "calculate": "datum._source.anomaly_score",
+          "as": "anomaly_score"
+        },
+        {
+          "calculate": "datum._source.actual",
+          "as": "actual"
+        },
+        {
+          "calculate": "datum._source.typical",
+          "as": "typical"
+        },
+        {
+          "calculate": "datum._source.event_count",
+          "as": "event_count"
+        },
+        {
+          "calculate": "datum._source.model_lower",
+          "as": "model_lower"
+        },
+        {
+          "calculate": "datum._source.model_median",
+          "as": "model_median"
+        },
+        {
+          "calculate": "datum._source.model_upper",
+          "as": "model_upper"
+        },
+        {
+          "calculate": "datum._source.timestamp",
+          "as": "timestamp"
+        },
+        {
+          "calculate": "datum._source.result_type",
+          "as": "result_type"
+        },
+        {
+          "fold": [
+            "anomaly_score",
+            "actual",
+            "typical",
+            "event_count",
+            "model_lower",
+            "model_median",
+            "model_upper",
+            "timestamp",
+            "result_type"
+          ],
+          "as": [
+            "attribute",
+            "value"
+          ]
+        },
+        {
+          "filter": "(datum.attribute === 'actual')"
+        }
+      ],
+      "width": 100
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "tooltip": [
+          {
+            "bin": true,
+            "field": "value",
+            "title": "x",
+            "type": "quantitative"
+          },
+          {
+            "aggregate": "count",
+            "title": "y",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "bin": true,
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "height": 100,
+      "title": "anomaly_score",
+      "transform": [
+        {
+          "calculate": "datum._source.anomaly_score",
+          "as": "anomaly_score"
+        },
+        {
+          "calculate": "datum._source.actual",
+          "as": "actual"
+        },
+        {
+          "calculate": "datum._source.typical",
+          "as": "typical"
+        },
+        {
+          "calculate": "datum._source.event_count",
+          "as": "event_count"
+        },
+        {
+          "calculate": "datum._source.model_lower",
+          "as": "model_lower"
+        },
+        {
+          "calculate": "datum._source.model_median",
+          "as": "model_median"
+        },
+        {
+          "calculate": "datum._source.model_upper",
+          "as": "model_upper"
+        },
+        {
+          "calculate": "datum._source.timestamp",
+          "as": "timestamp"
+        },
+        {
+          "calculate": "datum._source.result_type",
+          "as": "result_type"
+        },
+        {
+          "fold": [
+            "anomaly_score",
+            "actual",
+            "typical",
+            "event_count",
+            "model_lower",
+            "model_median",
+            "model_upper",
+            "timestamp",
+            "result_type"
+          ],
+          "as": [
+            "attribute",
+            "value"
+          ]
+        },
+        {
+          "filter": "(datum.attribute === 'anomaly_score')"
+        }
+      ],
+      "width": 100
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "tooltip": [
+          {
+            "bin": true,
+            "field": "value",
+            "title": "x",
+            "type": "quantitative"
+          },
+          {
+            "aggregate": "count",
+            "title": "y",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "bin": true,
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "height": 100,
+      "title": "event_count",
+      "transform": [
+        {
+          "calculate": "datum._source.anomaly_score",
+          "as": "anomaly_score"
+        },
+        {
+          "calculate": "datum._source.actual",
+          "as": "actual"
+        },
+        {
+          "calculate": "datum._source.typical",
+          "as": "typical"
+        },
+        {
+          "calculate": "datum._source.event_count",
+          "as": "event_count"
+        },
+        {
+          "calculate": "datum._source.model_lower",
+          "as": "model_lower"
+        },
+        {
+          "calculate": "datum._source.model_median",
+          "as": "model_median"
+        },
+        {
+          "calculate": "datum._source.model_upper",
+          "as": "model_upper"
+        },
+        {
+          "calculate": "datum._source.timestamp",
+          "as": "timestamp"
+        },
+        {
+          "calculate": "datum._source.result_type",
+          "as": "result_type"
+        },
+        {
+          "fold": [
+            "anomaly_score",
+            "actual",
+            "typical",
+            "event_count",
+            "model_lower",
+            "model_median",
+            "model_upper",
+            "timestamp",
+            "result_type"
+          ],
+          "as": [
+            "attribute",
+            "value"
+          ]
+        },
+        {
+          "filter": "(datum.attribute === 'event_count')"
+        }
+      ],
+      "width": 100
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "tooltip": [
+          {
+            "bin": true,
+            "field": "value",
+            "title": "x",
+            "type": "quantitative"
+          },
+          {
+            "aggregate": "count",
+            "title": "y",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "bin": true,
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "height": 100,
+      "title": "model_lower",
+      "transform": [
+        {
+          "calculate": "datum._source.anomaly_score",
+          "as": "anomaly_score"
+        },
+        {
+          "calculate": "datum._source.actual",
+          "as": "actual"
+        },
+        {
+          "calculate": "datum._source.typical",
+          "as": "typical"
+        },
+        {
+          "calculate": "datum._source.event_count",
+          "as": "event_count"
+        },
+        {
+          "calculate": "datum._source.model_lower",
+          "as": "model_lower"
+        },
+        {
+          "calculate": "datum._source.model_median",
+          "as": "model_median"
+        },
+        {
+          "calculate": "datum._source.model_upper",
+          "as": "model_upper"
+        },
+        {
+          "calculate": "datum._source.timestamp",
+          "as": "timestamp"
+        },
+        {
+          "calculate": "datum._source.result_type",
+          "as": "result_type"
+        },
+        {
+          "fold": [
+            "anomaly_score",
+            "actual",
+            "typical",
+            "event_count",
+            "model_lower",
+            "model_median",
+            "model_upper",
+            "timestamp",
+            "result_type"
+          ],
+          "as": [
+            "attribute",
+            "value"
+          ]
+        },
+        {
+          "filter": "(datum.attribute === 'model_lower')"
+        }
+      ],
+      "width": 100
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "tooltip": [
+          {
+            "bin": true,
+            "field": "value",
+            "title": "x",
+            "type": "quantitative"
+          },
+          {
+            "aggregate": "count",
+            "title": "y",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "bin": true,
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "height": 100,
+      "title": "model_median",
+      "transform": [
+        {
+          "calculate": "datum._source.anomaly_score",
+          "as": "anomaly_score"
+        },
+        {
+          "calculate": "datum._source.actual",
+          "as": "actual"
+        },
+        {
+          "calculate": "datum._source.typical",
+          "as": "typical"
+        },
+        {
+          "calculate": "datum._source.event_count",
+          "as": "event_count"
+        },
+        {
+          "calculate": "datum._source.model_lower",
+          "as": "model_lower"
+        },
+        {
+          "calculate": "datum._source.model_median",
+          "as": "model_median"
+        },
+        {
+          "calculate": "datum._source.model_upper",
+          "as": "model_upper"
+        },
+        {
+          "calculate": "datum._source.timestamp",
+          "as": "timestamp"
+        },
+        {
+          "calculate": "datum._source.result_type",
+          "as": "result_type"
+        },
+        {
+          "fold": [
+            "anomaly_score",
+            "actual",
+            "typical",
+            "event_count",
+            "model_lower",
+            "model_median",
+            "model_upper",
+            "timestamp",
+            "result_type"
+          ],
+          "as": [
+            "attribute",
+            "value"
+          ]
+        },
+        {
+          "filter": "(datum.attribute === 'model_median')"
+        }
+      ],
+      "width": 100
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "tooltip": [
+          {
+            "bin": true,
+            "field": "value",
+            "title": "x",
+            "type": "quantitative"
+          },
+          {
+            "aggregate": "count",
+            "title": "y",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "bin": true,
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "height": 100,
+      "title": "model_upper",
+      "transform": [
+        {
+          "calculate": "datum._source.anomaly_score",
+          "as": "anomaly_score"
+        },
+        {
+          "calculate": "datum._source.actual",
+          "as": "actual"
+        },
+        {
+          "calculate": "datum._source.typical",
+          "as": "typical"
+        },
+        {
+          "calculate": "datum._source.event_count",
+          "as": "event_count"
+        },
+        {
+          "calculate": "datum._source.model_lower",
+          "as": "model_lower"
+        },
+        {
+          "calculate": "datum._source.model_median",
+          "as": "model_median"
+        },
+        {
+          "calculate": "datum._source.model_upper",
+          "as": "model_upper"
+        },
+        {
+          "calculate": "datum._source.timestamp",
+          "as": "timestamp"
+        },
+        {
+          "calculate": "datum._source.result_type",
+          "as": "result_type"
+        },
+        {
+          "fold": [
+            "anomaly_score",
+            "actual",
+            "typical",
+            "event_count",
+            "model_lower",
+            "model_median",
+            "model_upper",
+            "timestamp",
+            "result_type"
+          ],
+          "as": [
+            "attribute",
+            "value"
+          ]
+        },
+        {
+          "filter": "(datum.attribute === 'model_upper')"
+        }
+      ],
+      "width": 100
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "tooltip": [
+          {
+            "bin": true,
+            "field": "value",
+            "title": "x",
+            "type": "quantitative"
+          },
+          {
+            "aggregate": "count",
+            "title": "y",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "bin": true,
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "height": 100,
+      "title": "result_type",
+      "transform": [
+        {
+          "calculate": "datum._source.anomaly_score",
+          "as": "anomaly_score"
+        },
+        {
+          "calculate": "datum._source.actual",
+          "as": "actual"
+        },
+        {
+          "calculate": "datum._source.typical",
+          "as": "typical"
+        },
+        {
+          "calculate": "datum._source.event_count",
+          "as": "event_count"
+        },
+        {
+          "calculate": "datum._source.model_lower",
+          "as": "model_lower"
+        },
+        {
+          "calculate": "datum._source.model_median",
+          "as": "model_median"
+        },
+        {
+          "calculate": "datum._source.model_upper",
+          "as": "model_upper"
+        },
+        {
+          "calculate": "datum._source.timestamp",
+          "as": "timestamp"
+        },
+        {
+          "calculate": "datum._source.result_type",
+          "as": "result_type"
+        },
+        {
+          "fold": [
+            "anomaly_score",
+            "actual",
+            "typical",
+            "event_count",
+            "model_lower",
+            "model_median",
+            "model_upper",
+            "timestamp",
+            "result_type"
+          ],
+          "as": [
+            "attribute",
+            "value"
+          ]
+        },
+        {
+          "filter": "(datum.attribute === 'result_type')"
+        }
+      ],
+      "width": 100
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "tooltip": [
+          {
+            "bin": true,
+            "field": "value",
+            "title": "x",
+            "type": "quantitative"
+          },
+          {
+            "aggregate": "count",
+            "title": "y",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "bin": true,
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "height": 100,
+      "title": "timestamp",
+      "transform": [
+        {
+          "calculate": "datum._source.anomaly_score",
+          "as": "anomaly_score"
+        },
+        {
+          "calculate": "datum._source.actual",
+          "as": "actual"
+        },
+        {
+          "calculate": "datum._source.typical",
+          "as": "typical"
+        },
+        {
+          "calculate": "datum._source.event_count",
+          "as": "event_count"
+        },
+        {
+          "calculate": "datum._source.model_lower",
+          "as": "model_lower"
+        },
+        {
+          "calculate": "datum._source.model_median",
+          "as": "model_median"
+        },
+        {
+          "calculate": "datum._source.model_upper",
+          "as": "model_upper"
+        },
+        {
+          "calculate": "datum._source.timestamp",
+          "as": "timestamp"
+        },
+        {
+          "calculate": "datum._source.result_type",
+          "as": "result_type"
+        },
+        {
+          "fold": [
+            "anomaly_score",
+            "actual",
+            "typical",
+            "event_count",
+            "model_lower",
+            "model_median",
+            "model_upper",
+            "timestamp",
+            "result_type"
+          ],
+          "as": [
+            "attribute",
+            "value"
+          ]
+        },
+        {
+          "filter": "(datum.attribute === 'timestamp')"
+        }
+      ],
+      "width": 100
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "tooltip": [
+          {
+            "bin": true,
+            "field": "value",
+            "title": "x",
+            "type": "quantitative"
+          },
+          {
+            "aggregate": "count",
+            "title": "y",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "bin": true,
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "height": 100,
+      "title": "typical",
+      "transform": [
+        {
+          "calculate": "datum._source.anomaly_score",
+          "as": "anomaly_score"
+        },
+        {
+          "calculate": "datum._source.actual",
+          "as": "actual"
+        },
+        {
+          "calculate": "datum._source.typical",
+          "as": "typical"
+        },
+        {
+          "calculate": "datum._source.event_count",
+          "as": "event_count"
+        },
+        {
+          "calculate": "datum._source.model_lower",
+          "as": "model_lower"
+        },
+        {
+          "calculate": "datum._source.model_median",
+          "as": "model_median"
+        },
+        {
+          "calculate": "datum._source.model_upper",
+          "as": "model_upper"
+        },
+        {
+          "calculate": "datum._source.timestamp",
+          "as": "timestamp"
+        },
+        {
+          "calculate": "datum._source.result_type",
+          "as": "result_type"
+        },
+        {
+          "fold": [
+            "anomaly_score",
+            "actual",
+            "typical",
+            "event_count",
+            "model_lower",
+            "model_median",
+            "model_upper",
+            "timestamp",
+            "result_type"
+          ],
+          "as": [
+            "attribute",
+            "value"
+          ]
+        },
+        {
+          "filter": "(datum.attribute === 'typical')"
+        }
+      ],
+      "width": 100
+    }
+  ],
+  "columns": 4,
+  "data": {
+    "url": "https://walterra.github.io/jupyter2kibana/data/fq_single_count_15m.json",
+    "format": {
+      "property": "hits.hits",
+      "type": "json"
+    },
+    "name": "ml-anomalies"
+  },
+  "resolve": {
+    "axis": {
+      "x": "independent",
+      "y": "independent"
+    },
+    "scale": {
+      "x": "independent",
+      "y": "independent"
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
+}

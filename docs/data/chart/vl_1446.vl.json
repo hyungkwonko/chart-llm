@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "repeat": {
+    "row": [
+      "BECNURBPTCH",
+      "BECPTCHDENS",
+      "BECAWMNSHPINDX",
+      "BECAWMNNNGH",
+      "BECEFFMESHSIZE"
+    ],
+    "column": [
+      "BECEFFMESHSIZE",
+      "BECAWMNNNGH",
+      "BECAWMNSHPINDX",
+      "BECPTCHDENS",
+      "BECNURBPTCH"
+    ]
+  },
+  "spec": {
+    "data": {
+      "url": "https://raw.githubusercontent.com/fabiancpl/salurbal/737072fc71a45a5f62d1b63051ef9decc23592b3/data/l2.csv"
+    },
+    "mark": {
+      "type": "circle",
+      "size": 10
+    },
+    "selection": {
+      "brush": {
+        "type": "interval",
+        "resolve": "global"
+      },
+      "grid": {
+        "type": "interval",
+        "resolve": "global"
+      },
+      "filter": {
+        "type": "single",
+        "fields": [
+          "COUNTRY"
+        ],
+        "bind": {
+          "input": "select",
+          "options": [
+            "Argentina",
+            "Brasil",
+            "Chile",
+            "Colombia",
+            "Costa Rica",
+            "El Salvador",
+            "Guatemala",
+            "Mexico",
+            "Nicaragua",
+            "Peru"
+          ]
+        }
+      }
+    },
+    "encoding": {
+      "x": {
+        "field": {
+          "repeat": "column"
+        },
+        "type": "quantitative"
+      },
+      "y": {
+        "field": {
+          "repeat": "row"
+        },
+        "type": "quantitative"
+      },
+      "size": {
+        "condition": {
+          "selection": "filter",
+          "value": 45
+        },
+        "value": 0
+      },
+      "color": {
+        "condition": {
+          "selection": "brush",
+          "field": "URBAN_PROF",
+          "type": "nominal",
+          "scheme": "category10",
+          "title": "Urban Landscape profiles"
+        },
+        "value": "lightgrey"
+      },
+      "tooltip": [
+        {
+          "field": "COUNTRY"
+        },
+        {
+          "field": "L1"
+        }
+      ]
+    }
+  }
+}

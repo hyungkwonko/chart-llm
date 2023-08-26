@@ -1,0 +1,136 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-b003f2c0191bd5299e109b939127dda8"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "facet": {
+      "columns": 2,
+      "field": "pacbioRun",
+      "title": null,
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "type": "nominal"
+      },
+      {
+        "field": "count",
+        "type": "quantitative"
+      },
+      {
+        "field": "pacbioRun",
+        "type": "nominal"
+      },
+      {
+        "field": "library",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "count",
+      "type": "quantitative"
+    },
+    "y": {
+      "axis": {
+        "title": null
+      },
+      "field": "category",
+      "type": "nominal"
+    }
+  },
+  "height": 75,
+  "resolve": {
+    "scale": {
+      "x": "independent",
+      "y": "independent"
+    }
+  },
+  "width": 250,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-b003f2c0191bd5299e109b939127dda8": [
+      {
+        "category": "aligned PacBio_amplicon",
+        "count": 27382,
+        "pacbioRun": "LibA_211105",
+        "library": "LibA"
+      },
+      {
+        "category": "filtered PacBio_amplicon",
+        "count": 5263,
+        "pacbioRun": "LibA_211105",
+        "library": "LibA"
+      },
+      {
+        "category": "unmapped",
+        "count": 560,
+        "pacbioRun": "LibA_211105",
+        "library": "LibA"
+      },
+      {
+        "category": "aligned PacBio_amplicon",
+        "count": 28415,
+        "pacbioRun": "LibB_211105",
+        "library": "LibB"
+      },
+      {
+        "category": "filtered PacBio_amplicon",
+        "count": 4334,
+        "pacbioRun": "LibB_211105",
+        "library": "LibB"
+      },
+      {
+        "category": "unmapped",
+        "count": 456,
+        "pacbioRun": "LibB_211105",
+        "library": "LibB"
+      },
+      {
+        "category": "aligned PacBio_amplicon",
+        "count": 26910,
+        "pacbioRun": "LibA_220124",
+        "library": "LibA"
+      },
+      {
+        "category": "filtered PacBio_amplicon",
+        "count": 5649,
+        "pacbioRun": "LibA_220124",
+        "library": "LibA"
+      },
+      {
+        "category": "unmapped",
+        "count": 646,
+        "pacbioRun": "LibA_220124",
+        "library": "LibA"
+      },
+      {
+        "category": "aligned PacBio_amplicon",
+        "count": 28150,
+        "pacbioRun": "LibB_220124",
+        "library": "LibB"
+      },
+      {
+        "category": "filtered PacBio_amplicon",
+        "count": 4519,
+        "pacbioRun": "LibB_220124",
+        "library": "LibB"
+      },
+      {
+        "category": "unmapped",
+        "count": 536,
+        "pacbioRun": "LibB_220124",
+        "library": "LibB"
+      }
+    ]
+  }
+}

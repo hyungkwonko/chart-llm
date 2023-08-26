@@ -1,0 +1,126 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "name": "characters",
+    "values": [
+      {
+        "name": "Bilbo",
+        "constitution": 10,
+        "agility": 15,
+        "dexterity": 18,
+        "wisdom": 6,
+        "intelligence": 10,
+        "strength": 9,
+        "maxhitpoints": 20,
+        "hitpoints": 15
+      },
+      {
+        "name": "Gandalf",
+        "constitution": 9,
+        "agility": 12,
+        "dexterity": 18,
+        "wisdom": 18,
+        "intelligence": 18,
+        "strength": 5,
+        "maxhitpoints": 35,
+        "hitpoints": 30
+      },
+      {
+        "name": "Galadriel",
+        "constitution": 18,
+        "agility": 18,
+        "dexterity": 18,
+        "wisdom": 18,
+        "intelligence": 18,
+        "strength": 9,
+        "maxhitpoints": 35,
+        "hitpoints": 34
+      },
+      {
+        "name": "Elrond",
+        "constitution": 5,
+        "agility": 4,
+        "dexterity": 1,
+        "wisdom": 18,
+        "intelligence": 1,
+        "strength": 4,
+        "maxhitpoints": 40,
+        "hitpoints": 10
+      }
+    ]
+  },
+  "vconcat": [
+    {
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "name",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "maxhitpoints",
+              "type": "quantitative"
+            },
+            "color": {
+              "value": "#FF0000"
+            },
+            "opacity": {
+              "value": 1.0
+            }
+          }
+        },
+        {
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "name",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "hitpoints",
+              "type": "quantitative"
+            },
+            "color": {
+              "value": "#00FF00"
+            },
+            "opacity": {
+              "value": 0.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "fold": [
+            "strength",
+            "agility",
+            "intelligence",
+            "constitution",
+            "wisdom",
+            "dexterity"
+          ]
+        }
+      ],
+      "title": "row",
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "key",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "name",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "value",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

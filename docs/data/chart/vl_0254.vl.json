@@ -1,0 +1,96 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": [
+      "Teams points and expected goal difference",
+      "in Europe's Top 5 Leagues 2022-23"
+    ],
+    "subtitle": [
+      "Expected Goal Difference (x), Points (y).",
+      "Data from Fbref, all stats normalised per game."
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/vikrajendran/vikrajendran.github.io/main/EUTableClean.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "color": "#5b92e5",
+    "opacity": 0.7
+  },
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "Expected Goal Difference per Game",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -1.8,
+          1.8
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "y": {
+      "field": "Points per Game",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0.2,
+          3
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "color": {
+      "field": "Country",
+      "type": "ordinal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "legend": {
+        "orient": "right"
+      },
+      "title": "League"
+    },
+    "tooltip": [
+      {
+        "field": "Team",
+        "type": "ordinal",
+        "title": "Team"
+      },
+      {
+        "field": "Points per Game",
+        "type": "quantitative",
+        "title": "Points",
+        "format": ".2f"
+      },
+      {
+        "field": "Expected Goal Difference per Game",
+        "type": "quantitative",
+        "title": "Expected Goal Difference",
+        "format": ".2f"
+      }
+    ]
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 150,
+  "width": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/articles/how-did-levels-of-uk-hate-crime-change-during-and-after-covid-19/data/f4b.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.action+datum.group+datum.gender",
+      "as": "groupaction"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "size": 50,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": {
+            "title": null
+          }
+        },
+        "y": {
+          "field": "groupaction",
+          "type": "nominal",
+          "axis": {
+            "title": null,
+            "labels": false,
+            "ticks": false
+          }
+        },
+        "color": {
+          "field": "gender",
+          "type": "nominal",
+          "scale": {
+            "range": [
+              "#50AB84",
+              "#C47DCB"
+            ]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule"
+      },
+      "encoding": {
+        "x": {
+          "field": "min",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "max",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "groupaction",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "gender",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": -0.139
+          },
+          {
+            "x": 0.039
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "opacity": 0.2,
+        "strokeDash": [
+          5,
+          5
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": -0.139
+          },
+          {
+            "x": -0.1
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "opacity": 0.2,
+        "yOffset": -37,
+        "strokeDash": [
+          5,
+          5
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": -0.139
+          },
+          {
+            "x": -0.1
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "opacity": 0.2,
+        "yOffset": 37,
+        "strokeDash": [
+          5,
+          5
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 0.033,
+            "t": "Men"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "yOffset": -65
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "t",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 0.031,
+            "t": "Women"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "yOffset": -46
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "t",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": -0.136,
+            "t": "Ethnic minority"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "yOffset": -58,
+        "color": "gray",
+        "align": "left"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": -0.136,
+            "t": "White majority"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "yOffset": -18,
+        "color": "gray",
+        "align": "left"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": -0.136,
+            "t": "Ethnic minority"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "yOffset": 18,
+        "color": "gray",
+        "align": "left"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": -0.136,
+            "t": "White majority"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "yOffset": 58,
+        "color": "gray",
+        "align": "left"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": -0.136,
+            "t": "Felt unsafe"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "yOffset": -37,
+        "xOffset": -15,
+        "color": "gray",
+        "align": "right"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": -0.136,
+            "t": "Physically and"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "yOffset": 30,
+        "xOffset": -22,
+        "color": "gray",
+        "align": "right"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": -0.136,
+            "t": "verbally attacked"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "yOffset": 44,
+        "xOffset": -15,
+        "color": "gray",
+        "align": "right"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/mleo0010/FIT3179-DataVis2-ML/main/data/finals_tennis_data_complete.csv"
+  },
+  "spacing": 25,
+  "bounds": "flush",
+  "vconcat": [
+    {
+      "mark": "bar",
+      "height": 100,
+      "width": 250,
+      "encoding": {
+        "x": {
+          "bin": true,
+          "field": "winner_age",
+          "axis": null
+        },
+        "y": {
+          "aggregate": "count",
+          "scale": {
+            "domain": [
+              0,
+              2000
+            ]
+          },
+          "title": "",
+          "axis": {
+            "labelFontSize": 11,
+            "titleFontSize": 14
+          }
+        },
+        "tooltip": [
+          {
+            "field": "winner_age",
+            "bin": true,
+            "title": "Age range"
+          },
+          {
+            "aggregate": "count",
+            "type": "quantitative",
+            "title": "Number of people who fall in this age range"
+          }
+        ]
+      }
+    },
+    {
+      "spacing": 25,
+      "bounds": "flush",
+      "hconcat": [
+        {
+          "height": 250,
+          "width": 250,
+          "mark": "rect",
+          "encoding": {
+            "x": {
+              "bin": true,
+              "field": "winner_age",
+              "title": "Age",
+              "axis": {
+                "labelFontSize": 11,
+                "titleFontSize": 14
+              }
+            },
+            "y": {
+              "bin": true,
+              "field": "winner_ht",
+              "title": "Height (cm)",
+              "axis": {
+                "labelFontSize": 11,
+                "titleFontSize": 14
+              }
+            },
+            "color": {
+              "aggregate": "count",
+              "legend": {
+                "title": [
+                  "No. of players",
+                  "within the age",
+                  "and height range"
+                ]
+              }
+            },
+            "tooltip": [
+              {
+                "field": "winner_age",
+                "bin": true,
+                "title": "Age range"
+              },
+              {
+                "field": "winner_ht",
+                "bin": true,
+                "title": "Height range (cm)"
+              },
+              {
+                "aggregate": "count",
+                "type": "quantitative",
+                "title": "Number of people who fall within both ranges"
+              }
+            ]
+          }
+        },
+        {
+          "mark": "bar",
+          "width": 100,
+          "height": 250,
+          "encoding": {
+            "y": {
+              "bin": true,
+              "field": "winner_ht",
+              "axis": null
+            },
+            "x": {
+              "aggregate": "count",
+              "scale": {
+                "domain": [
+                  0,
+                  1500
+                ]
+              },
+              "title": "",
+              "axis": {
+                "labelFontSize": 11,
+                "titleFontSize": 14
+              }
+            },
+            "tooltip": [
+              {
+                "field": "winner_ht",
+                "bin": true,
+                "title": "Height range (cm)"
+              },
+              {
+                "aggregate": "count",
+                "type": "quantitative",
+                "title": "Number of people who fall in this height range"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "background": "#fffcf9"
+  }
+}

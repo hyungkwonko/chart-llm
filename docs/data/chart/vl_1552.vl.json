@@ -1,0 +1,498 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "strokeWidth": 0
+    },
+    "axis": {
+      "domainColor": "#ddd",
+      "grid": true,
+      "gridColor": "#eee",
+      "labelBound": true,
+      "labelColor": "gray",
+      "tickColor": "#ddd"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "gray",
+      "fontSize": 14,
+      "fontWeight": "bold"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://walterra.github.io/jupyter2kibana/data/fq_single_count_15m_annotations.json",
+        "format": {
+          "property": "hits.hits",
+          "type": "json"
+        },
+        "name": "ml-annotations"
+      },
+      "mark": {
+        "type": "rect",
+        "color": "#369",
+        "opacity": 0.15
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "annotation",
+            "type": "nominal"
+          }
+        ],
+        "x": {
+          "field": "timestamp",
+          "type": "temporal"
+        },
+        "x2": {
+          "field": "end_timestamp"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "y2": {
+          "field": "y2"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum._source.annotation",
+          "as": "annotation"
+        },
+        {
+          "calculate": "datum._source.timestamp",
+          "as": "timestamp"
+        },
+        {
+          "calculate": "datum._source.end_timestamp",
+          "as": "end_timestamp"
+        },
+        {
+          "calculate": "datum._source.job_id",
+          "as": "job_id"
+        },
+        {
+          "filter": "(datum.job_id === 'fq_single_count_15m')"
+        },
+        {
+          "calculate": "350",
+          "as": "y"
+        },
+        {
+          "calculate": "0",
+          "as": "y2"
+        }
+      ]
+    },
+    {
+      "layer": [
+        {
+          "mark": {
+            "type": "area",
+            "color": "lightgray",
+            "opacity": 0.5
+          },
+          "encoding": {
+            "x": {
+              "axis": {
+                "grid": false
+              },
+              "field": "timestamp",
+              "scale": {
+                "nice": false,
+                "zero": false
+              },
+              "title": "",
+              "type": "temporal"
+            },
+            "y": {
+              "aggregate": "mean",
+              "field": "model_upper",
+              "type": "quantitative"
+            },
+            "y2": {
+              "aggregate": "mean",
+              "field": "model_lower"
+            }
+          },
+          "height": 300,
+          "transform": [
+            {
+              "calculate": "datum._source.anomaly_score",
+              "as": "anomaly_score"
+            },
+            {
+              "calculate": "datum._source.actual",
+              "as": "actual"
+            },
+            {
+              "calculate": "datum._source.typical",
+              "as": "typical"
+            },
+            {
+              "calculate": "datum._source.event_count",
+              "as": "event_count"
+            },
+            {
+              "calculate": "datum._source.model_lower",
+              "as": "model_lower"
+            },
+            {
+              "calculate": "datum._source.model_median",
+              "as": "model_median"
+            },
+            {
+              "calculate": "datum._source.model_upper",
+              "as": "model_upper"
+            },
+            {
+              "calculate": "datum._source.timestamp",
+              "as": "timestamp"
+            },
+            {
+              "calculate": "datum._source.result_type",
+              "as": "result_type"
+            },
+            {
+              "filter": "(datum.result_type === 'model_plot')"
+            }
+          ],
+          "width": 800
+        },
+        {
+          "mark": {
+            "type": "line",
+            "color": "gray",
+            "opacity": 0.5,
+            "strokeJoin": "round"
+          },
+          "encoding": {
+            "x": {
+              "axis": {
+                "grid": false
+              },
+              "field": "timestamp",
+              "scale": {
+                "nice": false,
+                "zero": false
+              },
+              "title": "",
+              "type": "temporal"
+            },
+            "y": {
+              "aggregate": "mean",
+              "field": "model_median",
+              "title": "",
+              "type": "quantitative"
+            }
+          },
+          "height": 300,
+          "transform": [
+            {
+              "calculate": "datum._source.anomaly_score",
+              "as": "anomaly_score"
+            },
+            {
+              "calculate": "datum._source.actual",
+              "as": "actual"
+            },
+            {
+              "calculate": "datum._source.typical",
+              "as": "typical"
+            },
+            {
+              "calculate": "datum._source.event_count",
+              "as": "event_count"
+            },
+            {
+              "calculate": "datum._source.model_lower",
+              "as": "model_lower"
+            },
+            {
+              "calculate": "datum._source.model_median",
+              "as": "model_median"
+            },
+            {
+              "calculate": "datum._source.model_upper",
+              "as": "model_upper"
+            },
+            {
+              "calculate": "datum._source.timestamp",
+              "as": "timestamp"
+            },
+            {
+              "calculate": "datum._source.result_type",
+              "as": "result_type"
+            },
+            {
+              "filter": "(datum.result_type === 'model_plot')"
+            }
+          ],
+          "width": 800
+        },
+        {
+          "mark": {
+            "type": "line",
+            "color": "#1f77b4",
+            "strokeJoin": "round"
+          },
+          "encoding": {
+            "x": {
+              "axis": {
+                "grid": false
+              },
+              "field": "timestamp",
+              "scale": {
+                "nice": false,
+                "zero": false
+              },
+              "title": "",
+              "type": "temporal"
+            },
+            "y": {
+              "aggregate": "mean",
+              "field": "actual",
+              "type": "quantitative"
+            }
+          },
+          "height": 300,
+          "transform": [
+            {
+              "calculate": "datum._source.anomaly_score",
+              "as": "anomaly_score"
+            },
+            {
+              "calculate": "datum._source.actual",
+              "as": "actual"
+            },
+            {
+              "calculate": "datum._source.typical",
+              "as": "typical"
+            },
+            {
+              "calculate": "datum._source.event_count",
+              "as": "event_count"
+            },
+            {
+              "calculate": "datum._source.model_lower",
+              "as": "model_lower"
+            },
+            {
+              "calculate": "datum._source.model_median",
+              "as": "model_median"
+            },
+            {
+              "calculate": "datum._source.model_upper",
+              "as": "model_upper"
+            },
+            {
+              "calculate": "datum._source.timestamp",
+              "as": "timestamp"
+            },
+            {
+              "calculate": "datum._source.result_type",
+              "as": "result_type"
+            },
+            {
+              "filter": "(datum.result_type === 'model_plot')"
+            }
+          ],
+          "width": 800
+        },
+        {
+          "mark": {
+            "type": "point",
+            "color": "red",
+            "size": 60
+          },
+          "encoding": {
+            "x": {
+              "axis": {
+                "grid": false
+              },
+              "field": "timestamp",
+              "scale": {
+                "nice": false,
+                "zero": false
+              },
+              "title": "",
+              "type": "temporal"
+            },
+            "y": {
+              "field": "mean_actual",
+              "type": "quantitative"
+            }
+          },
+          "height": 300,
+          "transform": [
+            {
+              "calculate": "datum._source.anomaly_score",
+              "as": "anomaly_score"
+            },
+            {
+              "calculate": "datum._source.actual",
+              "as": "actual"
+            },
+            {
+              "calculate": "datum._source.typical",
+              "as": "typical"
+            },
+            {
+              "calculate": "datum._source.event_count",
+              "as": "event_count"
+            },
+            {
+              "calculate": "datum._source.model_lower",
+              "as": "model_lower"
+            },
+            {
+              "calculate": "datum._source.model_median",
+              "as": "model_median"
+            },
+            {
+              "calculate": "datum._source.model_upper",
+              "as": "model_upper"
+            },
+            {
+              "calculate": "datum._source.timestamp",
+              "as": "timestamp"
+            },
+            {
+              "calculate": "datum._source.result_type",
+              "as": "result_type"
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "mean",
+                  "field": "actual",
+                  "as": "mean_actual"
+                },
+                {
+                  "op": "mean",
+                  "field": "anomaly_score",
+                  "as": "mean_anomaly_score"
+                }
+              ],
+              "groupby": [
+                "timestamp"
+              ]
+            },
+            {
+              "filter": "(datum.mean_anomaly_score > 0)"
+            }
+          ],
+          "width": 800
+        },
+        {
+          "mark": {
+            "type": "circle",
+            "opacity": 0,
+            "size": 100
+          },
+          "encoding": {
+            "tooltip": [
+              {
+                "field": "mean_actual",
+                "type": "quantitative"
+              },
+              {
+                "field": "mean_anomaly_score",
+                "type": "quantitative"
+              },
+              {
+                "field": "timestamp",
+                "type": "temporal"
+              }
+            ],
+            "x": {
+              "axis": {
+                "grid": false
+              },
+              "field": "timestamp",
+              "scale": {
+                "nice": false,
+                "zero": false
+              },
+              "title": "",
+              "type": "temporal"
+            },
+            "y": {
+              "field": "mean_actual",
+              "type": "quantitative"
+            }
+          },
+          "height": 300,
+          "transform": [
+            {
+              "calculate": "datum._source.anomaly_score",
+              "as": "anomaly_score"
+            },
+            {
+              "calculate": "datum._source.actual",
+              "as": "actual"
+            },
+            {
+              "calculate": "datum._source.typical",
+              "as": "typical"
+            },
+            {
+              "calculate": "datum._source.event_count",
+              "as": "event_count"
+            },
+            {
+              "calculate": "datum._source.model_lower",
+              "as": "model_lower"
+            },
+            {
+              "calculate": "datum._source.model_median",
+              "as": "model_median"
+            },
+            {
+              "calculate": "datum._source.model_upper",
+              "as": "model_upper"
+            },
+            {
+              "calculate": "datum._source.timestamp",
+              "as": "timestamp"
+            },
+            {
+              "calculate": "datum._source.result_type",
+              "as": "result_type"
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "mean",
+                  "field": "actual",
+                  "as": "mean_actual"
+                },
+                {
+                  "op": "mean",
+                  "field": "anomaly_score",
+                  "as": "mean_anomaly_score"
+                }
+              ],
+              "groupby": [
+                "timestamp"
+              ]
+            }
+          ],
+          "width": 800
+        }
+      ],
+      "data": {
+        "url": "https://walterra.github.io/jupyter2kibana/data/fq_single_count_15m.json",
+        "format": {
+          "property": "hits.hits",
+          "type": "json"
+        },
+        "name": "ml-anomalies"
+      }
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
+}

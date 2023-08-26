@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "fill": "black",
+      "step": 10
+    }
+  },
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/windvectors.csv"
+  },
+  "encoding": {
+    "angle": {
+      "field": "dir",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ],
+        "range": [
+          180,
+          540
+        ]
+      },
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "dir",
+      "legend": null,
+      "scale": {
+        "domain": [
+          0,
+          360
+        ],
+        "scheme": "rainbow"
+      },
+      "type": "quantitative"
+    },
+    "size": {
+      "field": "speed",
+      "type": "quantitative"
+    },
+    "x": {
+      "axis": null,
+      "field": "longitude",
+      "type": "ordinal"
+    },
+    "y": {
+      "axis": null,
+      "field": "latitude",
+      "type": "ordinal"
+    }
+  },
+  "mark": {
+    "shape": "wedge",
+    "type": "point"
+  }
+}

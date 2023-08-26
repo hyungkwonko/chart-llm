@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/population.json"
+  },
+  "encoding": {
+    "x": {
+      "field": "age",
+      "type": "ordinal"
+    },
+    "y": {
+      "axis": {
+        "title": "Population"
+      },
+      "field": "people",
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "box": {
+      "color": "firebrick"
+    },
+    "extent": 0.5,
+    "median": {
+      "fill": "black",
+      "size": 18,
+      "strokeWidth": 0
+    },
+    "outliers": {
+      "color": "black",
+      "size": 10,
+      "strokeWidth": 0.3
+    },
+    "rule": {
+      "strokeWidth": 0.4
+    },
+    "ticks": {
+      "size": 8
+    },
+    "type": "boxplot"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Renewables LCOE",
+    "subtitle": [
+      "LCOE estimates the average cost per unit of energy generated",
+      "across the lifetime of a power plant, Source: Our World in Data"
+    ],
+    "subtitleFontSize": 8,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "height": 80,
+  "width": 80,
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/data-project-CAP2%20(1).csv"
+  },
+  "mark": {
+    "type": "circle",
+    "size": 10
+  },
+  "encoding": {
+    "row": {
+      "field": "Energy Cost"
+    },
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "grid": false
+      },
+      "title": null,
+      "scale": {
+        "zero": false
+      }
+    },
+    "y": {
+      "field": "Cost",
+      "type": "quantitative",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": "LCOE $/kWh"
+    },
+    "opacity": {
+      "value": 1
+    },
+    "color": {
+      "field": "Energy Cost",
+      "scale": {
+        "scheme": "darkmulti"
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Cost",
+        "type": "quantitative",
+        "title": "$/kWh"
+      }
+    ]
+  }
+}

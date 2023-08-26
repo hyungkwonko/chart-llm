@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Graph showing mean CAF World Giving Index Scores for countries grouped by main religion, 2022",
+  "title": {
+    "text": "Mean CAF World Giving Index scores for countries grouped by main religion, 2022",
+    "subtitle": [
+      "Sources: CAF and Everycountryintheworld.com",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/d6e2042524ef9af26d87ab975b2cfefa1a3fa10c/MainReligion%2BCAF_output_nona%3D.csv"
+  },
+  "height": 300,
+  "width": 400,
+  "mark": {
+    "size": 80,
+    "type": "circle",
+    "color": "darkred"
+  },
+  "encoding": {
+    "x": {
+      "aggregate": "mean",
+      "axis": {
+        "labelExpr": "datum.label == 19 ? 'Bottom' : datum.label == 39 ? 'Median' : 'Top'",
+        "labelFlush": false,
+        "values": [
+          19,
+          39,
+          43
+        ]
+      },
+      "field": "CAF_2022",
+      "scale": {
+        "domain": [
+          19,
+          43
+        ]
+      },
+      "title": "Mean WGI Score"
+    },
+    "y": {
+      "field": "2022",
+      "sort": "x",
+      "title": "Religion"
+    }
+  }
+}

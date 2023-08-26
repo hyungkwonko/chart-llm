@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Total Government Gross Debt",
+    "anchor": "start",
+    "subtitle": "Source: ONS",
+    "subtitleFontSize": 10
+  },
+  "config": {
+    "background": "#fff0d8"
+  },
+  "height": 150,
+  "width": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/data_ons-BKPW.json",
+    "format": {
+      "type": "json",
+      "property": "years"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "color": "#fe921f"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "labelSeparation": 10,
+        "domainColor": "#fffff",
+        "gridColor": "#00000017"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Debt Billions \u00a3",
+      "axis": {
+        "gridColor": "#00000017"
+      }
+    }
+  }
+}

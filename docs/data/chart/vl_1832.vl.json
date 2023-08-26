@@ -1,0 +1,237 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "choice": "1",
+        "confidenceDegree": "Strongly disagree",
+        "percentage": 0.137
+      },
+      {
+        "choice": "1",
+        "confidenceDegree": "Disagree",
+        "percentage": 0.05
+      },
+      {
+        "choice": "1",
+        "confidenceDegree": "Not agree and not disagree",
+        "percentage": 0.05
+      },
+      {
+        "choice": "1",
+        "confidenceDegree": "Agree",
+        "percentage": 0.6
+      },
+      {
+        "choice": "1",
+        "confidenceDegree": "Strongly agree",
+        "percentage": 0.163
+      },
+      {
+        "choice": "2",
+        "confidenceDegree": "Strongly disagree",
+        "percentage": 0.182
+      },
+      {
+        "choice": "2",
+        "confidenceDegree": "Disagree",
+        "percentage": 0.18
+      },
+      {
+        "choice": "2",
+        "confidenceDegree": "Not agree and not disagree",
+        "percentage": 0.05
+      },
+      {
+        "choice": "2",
+        "confidenceDegree": "Agree",
+        "percentage": 0.51
+      },
+      {
+        "choice": "2",
+        "confidenceDegree": "Strongly agree",
+        "percentage": 0.078
+      },
+      {
+        "choice": "3",
+        "confidenceDegree": "Strongly disagree",
+        "percentage": 0.2
+      },
+      {
+        "choice": "3",
+        "confidenceDegree": "Disagree",
+        "percentage": 0.1
+      },
+      {
+        "choice": "3",
+        "confidenceDegree": "Not agree and not disagree",
+        "percentage": 0.3
+      },
+      {
+        "choice": "3",
+        "confidenceDegree": "Agree",
+        "percentage": 0.1
+      },
+      {
+        "choice": "3",
+        "confidenceDegree": "Strongly agree",
+        "percentage": 0.3
+      },
+      {
+        "choice": "4",
+        "confidenceDegree": "Strongly disagree",
+        "percentage": 0.162
+      },
+      {
+        "choice": "4",
+        "confidenceDegree": "Disagree",
+        "percentage": 0.125
+      },
+      {
+        "choice": "4",
+        "confidenceDegree": "Not agree and not disagree",
+        "percentage": 0.2
+      },
+      {
+        "choice": "4",
+        "confidenceDegree": "Agree",
+        "percentage": 0.4
+      },
+      {
+        "choice": "4",
+        "confidenceDegree": "Strongly agree",
+        "percentage": 0.113
+      }
+    ]
+  },
+  "params": [
+    {
+      "name": "highlight",
+      "select": {
+        "type": "point",
+        "on": "mouseover"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "if(datum.confidenceDegree === 'Strongly disagree',-2,0) + if(datum.confidenceDegree==='Disagree',-1,0) + if(datum.confidenceDegree ==='Not agree and not disagree',0,0) + if(datum.confidenceDegree ==='Agree',1,0) + if(datum.confidenceDegree ==='Strongly agree',2,0)",
+      "as": "q_order"
+    },
+    {
+      "calculate": "if(datum.confidenceDegree === 'Disagree' || datum.confidenceDegree === 'Strongly disagree', datum.percentage,0) + if(datum.confidenceDegree === 'Not agree and not disagree', datum.percentage / 2,0)",
+      "as": "signed_percentage"
+    },
+    {
+      "stack": "percentage",
+      "as": [
+        "v1",
+        "v2"
+      ],
+      "groupby": [
+        "choice"
+      ]
+    },
+    {
+      "joinaggregate": [
+        {
+          "field": "signed_percentage",
+          "op": "sum",
+          "as": "offset"
+        }
+      ],
+      "groupby": [
+        "choice"
+      ]
+    },
+    {
+      "calculate": "datum.v1 - datum.offset",
+      "as": "ny"
+    },
+    {
+      "calculate": "datum.v2 - datum.offset",
+      "as": "ny2"
+    }
+  ],
+  "width": 350,
+  "mark": {
+    "type": "bar",
+    "opacity": 1,
+    "width": 43
+  },
+  "encoding": {
+    "y": {
+      "field": "ny",
+      "type": "quantitative",
+      "title": "percentage of voters",
+      "axis": {
+        "labelExpr": "(isNaN(toNumber(datum.label[0]))? '-' + (slice(datum.label, 1)) : datum.label) *100 + '%'"
+      }
+    },
+    "tooltip": {
+      "field": "percentage",
+      "type": "nominal",
+      "format": ".1%"
+    },
+    "y2": {
+      "field": "ny2"
+    },
+    "x": {
+      "field": "choice",
+      "type": "nominal",
+      "title": "Choice",
+      "axis": {
+        "labelAngle": 0,
+        "offset": 5,
+        "ticks": false,
+        "domain": false,
+        "labelColor": {
+          "condition": {
+            "test": {
+              "field": "value",
+              "oneOf": [
+                "2"
+              ]
+            },
+            "value": "#016936"
+          },
+          "value": "#b03060"
+        },
+        "labelFontWeight": "bolder",
+        "labelFontSize": 12
+      }
+    },
+    "color": {
+      "field": "confidenceDegree",
+      "type": "nominal",
+      "title": "Confidence degree",
+      "scale": {
+        "domain": [
+          "Strongly disagree",
+          "Disagree",
+          "Not agree and not disagree",
+          "Agree",
+          "Strongly agree"
+        ],
+        "range": [
+          "#1770ab",
+          "#94c6da",
+          "#cccccc",
+          "#f3a583",
+          "#c30d24"
+        ],
+        "type": "ordinal"
+      }
+    },
+    "opacity": {
+      "condition": [
+        {
+          "param": "highlight",
+          "empty": false,
+          "value": 0.7
+        }
+      ],
+      "value": 1
+    }
+  }
+}

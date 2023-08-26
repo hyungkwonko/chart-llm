@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Great depressions",
+    "subtitle": [
+      "GDP, real terms. Rebased=100; US: 1929, Congo:1991; Greece:2007",
+      "Sources: World Bank, FRED",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch2_Growth/depressions_US_Congo_Greece.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Congo",
+        "US",
+        "Greece"
+      ],
+      "as": [
+        "country",
+        "GDP"
+      ]
+    },
+    {
+      "filter": "datum.GDP>0"
+    },
+    {
+      "filter": "datum.GDP<130"
+    }
+  ],
+  "height": 300,
+  "width": 450,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 1,
+    "point": true
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "title": "Years since peak",
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "GDP",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "country",
+      "title": null,
+      "legend": {
+        "orient": "bottom-right"
+      }
+    }
+  }
+}

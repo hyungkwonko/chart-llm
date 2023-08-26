@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Russian oil rents as a % of GDP",
+  "title": {
+    "text": "Russian oil rents",
+    "subtitle": "Oil rents as a % of GDP, Source: World Bank",
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/data-week8_2.csv"
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "ticks": false,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Oil rents (% of GDP)",
+      "type": "quantitative",
+      "axis": {
+        "ticks": false,
+        "grid": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Oil rents (% of GDP)",
+        "title": "% of GDP",
+        "type": "quantitative"
+      }
+    ]
+  }
+}

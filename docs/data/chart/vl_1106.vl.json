@@ -1,0 +1,95 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 250,
+  "width": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/articles/how-did-levels-of-uk-hate-crime-change-during-and-after-covid-19/data/f5.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.action+datum.group+datum.model",
+      "as": "groupaction"
+    },
+    {
+      "filter": "datum.gender=='Women'"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "size": 50,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": {
+            "title": null
+          }
+        },
+        "shape": {
+          "field": "model",
+          "type": "nominal",
+          "legend": {
+            "labelColor": "grey",
+            "symbolFillColor": "grey",
+            "title": "Model",
+            "titleColor": "grey"
+          }
+        },
+        "y": {
+          "field": "groupaction",
+          "type": "nominal",
+          "axis": {
+            "title": null,
+            "labels": false,
+            "ticks": false
+          }
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "scheme": "dark2"
+          }
+        },
+        "fill": {
+          "field": "group",
+          "type": "nominal",
+          "scale": {
+            "scheme": "dark2"
+          },
+          "legend": {
+            "title": "Ethnic group"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule"
+      },
+      "encoding": {
+        "x": {
+          "field": "min",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "max",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "groupaction",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/FRED_employRate.csv"
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 400,
+  "height": 300,
+  "title": {
+    "text": "Employment by gender, US",
+    "subtitle": [
+      "Prime working age (25-54 yrs), seasonally adjusted, source: FRED"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "Gender",
+          "type": "nominal",
+          "legend": {
+            "orient": "bottom-right",
+            "title": null,
+            "labelFontSize": 12
+          },
+          "scale": {
+            "range": [
+              "rgb(128,0,0)",
+              "#008080"
+            ]
+          }
+        },
+        "y": {
+          "field": "Employment",
+          "type": "quantitative",
+          "title": null,
+          "axis": {
+            "gridOpacity": 0.6,
+            "format": "%"
+          },
+          "scale": {
+            "domain": [
+              0.4,
+              1
+            ]
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": "line"
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            }
+          ],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "pivot": "Gender",
+          "value": "Employment",
+          "groupby": [
+            "Date"
+          ]
+        }
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0.3,
+            "param": "hover",
+            "empty": false
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal",
+            "format": "%b %Y"
+          },
+          {
+            "field": "Female",
+            "type": "quantitative",
+            "format": ".2%"
+          },
+          {
+            "field": "Male",
+            "type": "quantitative",
+            "format": ".2%"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Date"
+            ],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ]
+}

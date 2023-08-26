@@ -1,0 +1,222 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "sales": "Email",
+        "weekday": "Mon",
+        "total": 120
+      },
+      {
+        "sales": "Email",
+        "weekday": "Tue",
+        "total": 132
+      },
+      {
+        "sales": "Email",
+        "weekday": "Wed",
+        "total": 101
+      },
+      {
+        "sales": "Email",
+        "weekday": "Thu",
+        "total": 134
+      },
+      {
+        "sales": "Email",
+        "weekday": "Fri",
+        "total": 90
+      },
+      {
+        "sales": "Email",
+        "weekday": "Sat",
+        "total": 230
+      },
+      {
+        "sales": "Email",
+        "weekday": "Sun",
+        "total": 210
+      },
+      {
+        "sales": "Union Ads",
+        "weekday": "Mon",
+        "total": 220
+      },
+      {
+        "sales": "Union Ads",
+        "weekday": "Tue",
+        "total": 182
+      },
+      {
+        "sales": "Union Ads",
+        "weekday": "Wed",
+        "total": 191
+      },
+      {
+        "sales": "Union Ads",
+        "weekday": "Thu",
+        "total": 234
+      },
+      {
+        "sales": "Union Ads",
+        "weekday": "Fri",
+        "total": 290
+      },
+      {
+        "sales": "Union Ads",
+        "weekday": "Sat",
+        "total": 330
+      },
+      {
+        "sales": "Union Ads",
+        "weekday": "Sun",
+        "total": 310
+      },
+      {
+        "sales": "Video Ads",
+        "weekday": "Mon",
+        "total": 150
+      },
+      {
+        "sales": "Video Ads",
+        "weekday": "Tue",
+        "total": 232
+      },
+      {
+        "sales": "Video Ads",
+        "weekday": "Wed",
+        "total": 201
+      },
+      {
+        "sales": "Video Ads",
+        "weekday": "Thu",
+        "total": 154
+      },
+      {
+        "sales": "Video Ads",
+        "weekday": "Fri",
+        "total": 190
+      },
+      {
+        "sales": "Video Ads",
+        "weekday": "Sat",
+        "total": 330
+      },
+      {
+        "sales": "Video Ads",
+        "weekday": "Sun",
+        "total": 410
+      },
+      {
+        "sales": "Direct",
+        "weekday": "Mon",
+        "total": 320
+      },
+      {
+        "sales": "Direct",
+        "weekday": "Tue",
+        "total": 332
+      },
+      {
+        "sales": "Direct",
+        "weekday": "Wed",
+        "total": 301
+      },
+      {
+        "sales": "Direct",
+        "weekday": "Thu",
+        "total": 334
+      },
+      {
+        "sales": "Direct",
+        "weekday": "Fri",
+        "total": 390
+      },
+      {
+        "sales": "Direct",
+        "weekday": "Sat",
+        "total": 330
+      },
+      {
+        "sales": "Direct",
+        "weekday": "Sun",
+        "total": 320
+      },
+      {
+        "sales": "Search Engine",
+        "weekday": "Mon",
+        "total": 820
+      },
+      {
+        "sales": "Search Engine",
+        "weekday": "Tue",
+        "total": 932
+      },
+      {
+        "sales": "Search Engine",
+        "weekday": "Wed",
+        "total": 901
+      },
+      {
+        "sales": "Search Engine",
+        "weekday": "Thu",
+        "total": 934
+      },
+      {
+        "sales": "Search Engine",
+        "weekday": "Fri",
+        "total": 1290
+      },
+      {
+        "sales": "Search Engine",
+        "weekday": "Sat",
+        "total": 1330
+      },
+      {
+        "sales": "Search Engine",
+        "weekday": "Sun",
+        "total": 1320
+      }
+    ]
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "weekday",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labelAngle": 0
+      },
+      "sort": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ]
+    },
+    "y": {
+      "field": "total",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "sales",
+      "type": "nominal",
+      "title": "Sales",
+      "legend": {
+        "orient": "top"
+      },
+      "sort": [
+        "Email",
+        "Union Ads",
+        "Video Ads",
+        "Direct",
+        "Search Engine"
+      ]
+    }
+  }
+}

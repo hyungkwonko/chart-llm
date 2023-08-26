@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "stroke": ""
+    }
+  },
+  "background": "#f9f9fc",
+  "title": {
+    "text": "otherClosed",
+    "fontsize": 18
+  },
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv"
+  },
+  "transform": [
+    {
+      "lookup": "source",
+      "from": {
+        "data": {
+          "url": "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv"
+        },
+        "key": "lad17cd",
+        "fields": [
+          "lad17nm"
+        ]
+      },
+      "as": [
+        "srcName"
+      ]
+    },
+    {
+      "lookup": "dest",
+      "from": {
+        "data": {
+          "url": "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv"
+        },
+        "key": "lad17cd",
+        "fields": [
+          "lad17nm"
+        ]
+      },
+      "as": [
+        "dstName"
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "srcName",
+      "type": "ordinal",
+      "title": "Origin"
+    },
+    "y": {
+      "field": "dstName",
+      "type": "ordinal",
+      "title": "Destination"
+    },
+    "color": {
+      "field": "otherClosed",
+      "type": "quantitative",
+      "scale": {
+        "type": "symlog",
+        "domain": [
+          0,
+          60000
+        ],
+        "scheme": "yelloworangebrown"
+      },
+      "legend": {
+        "tickCount": 5,
+        "gradientLength": 400,
+        "title": null
+      }
+    },
+    "tooltip": [
+      {
+        "field": "srcName",
+        "type": "nominal",
+        "title": "origin"
+      },
+      {
+        "field": "dstName",
+        "type": "nominal",
+        "title": "destination"
+      },
+      {
+        "field": "otherClosed",
+        "type": "nominal"
+      }
+    ]
+  },
+  "mark": {
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 2
+  }
+}

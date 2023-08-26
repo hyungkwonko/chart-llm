@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/population.json"
+  },
+  "description": "Layered bar chart showing the US population distribution of age groups and gender in 2000.",
+  "encoding": {
+    "color": {
+      "field": "gender",
+      "scale": {
+        "range": [
+          "#e377c2",
+          "#1f77b4"
+        ]
+      },
+      "type": "nominal"
+    },
+    "opacity": {
+      "value": 0.7
+    },
+    "x": {
+      "field": "age",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "axis": {
+        "title": "Population"
+      },
+      "field": "people",
+      "stack": null,
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar",
+  "transform": [
+    {
+      "filter": "datum.year == 2000"
+    },
+    {
+      "as": "gender",
+      "calculate": "datum.sex == 2 ? 'Female' : 'Male'"
+    }
+  ],
+  "width": {
+    "step": 17
+  }
+}

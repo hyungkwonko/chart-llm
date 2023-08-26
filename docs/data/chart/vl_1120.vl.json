@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "House price to earnings ratio",
+    "subtitle": "by London borough (workplace based)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": "container",
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/London_boroughs_data.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/London-ratio-house-price-earnings-workplace-based.csv"
+        },
+        "key": "Area",
+        "fields": [
+          "Value"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "darkgrey",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "color": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Ratio",
+      "scale": {
+        "scheme": "reds"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.name",
+        "title": "Borough name"
+      },
+      {
+        "field": "Value",
+        "title": "Ratio"
+      }
+    ]
+  }
+}

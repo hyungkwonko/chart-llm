@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Market Value vs Weekly Wage",
+    "subtitle": [
+      "Figure 3: Click on the icons in the legend to focus in on one club",
+      "Season: 22/23",
+      "Sources: Capology + Transfermarkt"
+    ],
+    "fontSize": 18,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/josh-shah/josh-shah.github.io/main/MKT_VALUEvsWAGES_final.csv"
+  },
+  "height": 300,
+  "width": "container",
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "selection": {
+        "club": {
+          "type": "multi",
+          "fields": [
+            "club"
+          ],
+          "bind": "legend"
+        },
+        "paintbrush": {
+          "type": "multi",
+          "on": "mouseover",
+          "nearest": true
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "weeklywage_000s",
+          "type": "quantitative",
+          "title": "Weekly Wage (\u00a3 000's)",
+          "aggregate": "median"
+        },
+        "y": {
+          "field": "Market_Value_GBPMILLIONS",
+          "type": "quantitative",
+          "title": "Market Value (\u00a3 Millions)"
+        },
+        "tooltip": [
+          {
+            "field": "Player_name",
+            "type": "ordinal",
+            "title": "Player Name"
+          },
+          {
+            "field": "main_position",
+            "type": "ordinal",
+            "title": "Position"
+          },
+          {
+            "field": "Team",
+            "type": "nominal",
+            "title": "Team"
+          },
+          {
+            "field": "Age",
+            "type": "nominal",
+            "title": "Age"
+          },
+          {
+            "field": "Market_Value_GBPMILLIONS",
+            "type": "quantitative",
+            "title": "Market Value (\u00a3 Millions)"
+          },
+          {
+            "field": "weeklywage_000s",
+            "type": "quantitative",
+            "title": "Weekly Wage (\u00a3 000's)"
+          }
+        ],
+        "color": {
+          "field": "club",
+          "scale": {
+            "scheme": "turbo"
+          },
+          "title": "Club",
+          "legend": {
+            "orient": "bottom",
+            "columns": 1,
+            "fillColor": "#FfFfFf"
+          }
+        },
+        "opacity": {
+          "condition": {
+            "selection": "club",
+            "value": 1
+          },
+          "value": 0.05
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "Market_Value_GBPMILLIONS",
+          "on": "weeklywage_000s",
+          "extent": [
+            0,
+            550
+          ]
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "weeklywage_000s",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Market_Value_GBPMILLIONS",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Market_Value_GBPMILLIONS",
+          "on": "weeklywage_000s",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ]
+}

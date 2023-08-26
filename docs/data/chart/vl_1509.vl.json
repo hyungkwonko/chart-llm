@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "real": "colorectal cancer",
+        "predicted": "colorectal cancer"
+      },
+      {
+        "real": "colorectal cancer",
+        "predicted": "colorectal cancer"
+      },
+      {
+        "real": "colorectal cancer",
+        "predicted": "healthy"
+      },
+      {
+        "real": "colorectal cancer",
+        "predicted": "colorectal cancer"
+      },
+      {
+        "real": "colorectal cancer",
+        "predicted": "colorectal cancer"
+      },
+      {
+        "real": "colorectal cancer",
+        "predicted": "colorectal cancer"
+      },
+      {
+        "real": "colorectal cancer",
+        "predicted": "colorectal cancer"
+      },
+      {
+        "real": "colorectal cancer",
+        "predicted": "colorectal cancer"
+      },
+      {
+        "real": "healthy",
+        "predicted": "healthy"
+      },
+      {
+        "real": "healthy",
+        "predicted": "healthy"
+      },
+      {
+        "real": "healthy",
+        "predicted": "healthy"
+      },
+      {
+        "real": "healthy",
+        "predicted": "colorectal cancer"
+      },
+      {
+        "real": "healthy",
+        "predicted": "colorectal cancer"
+      },
+      {
+        "real": "healthy",
+        "predicted": "healthy"
+      },
+      {
+        "real": "healthy",
+        "predicted": "colorectal cancer"
+      },
+      {
+        "real": "healthy",
+        "predicted": "healthy"
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "color": {
+      "field": "predicted",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "real",
+      "type": "nominal",
+      "axis": {
+        "title": "real value"
+      }
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "predicted",
+      "type": "quantitative",
+      "axis": {
+        "title": "count"
+      }
+    }
+  }
+}

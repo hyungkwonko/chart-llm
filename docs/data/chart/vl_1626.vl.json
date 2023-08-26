@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/cars.json"
+  },
+  "encoding": {
+    "x": {
+      "axis": {
+        "gridWidth": {
+          "condition": {
+            "test": {
+              "equal": {
+                "date": 1,
+                "month": "Jan"
+              },
+              "field": "value",
+              "timeUnit": "monthdate"
+            },
+            "value": 4
+          },
+          "value": 1
+        }
+      },
+      "field": "Year",
+      "timeUnit": "year",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "Miles_per_Gallon",
+      "scale": {
+        "zero": false
+      },
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "borders": true,
+    "extent": "iqr",
+    "interpolate": "monotone",
+    "type": "errorband"
+  },
+  "width": 600
+}

@@ -1,0 +1,551 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
+  },
+  "transform": [
+    {
+      "calculate": "if(toBoolean(datum.Survived), 'Survived', 'Died')",
+      "as": "Survived"
+    },
+    {
+      "calculate": "'Class ' + datum.Pclass",
+      "as": "Pclass"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "count",
+          "as": "count"
+        }
+      ],
+      "groupby": [
+        "Sex",
+        "Survived",
+        "Pclass",
+        "Embarked"
+      ]
+    }
+  ],
+  "hconcat": [
+    {
+      "width": 200,
+      "height": 500,
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "count",
+              "as": "count"
+            }
+          ],
+          "groupby": [
+            "Sex",
+            "Survived"
+          ]
+        }
+      ],
+      "layer": [
+        {
+          "transform": [
+            {
+              "aggregate": [
+                {
+                  "op": "sum",
+                  "field": "count",
+                  "as": "c"
+                }
+              ],
+              "groupby": [
+                "Sex"
+              ]
+            },
+            {
+              "stack": "c",
+              "offset": "zero",
+              "sort": [
+                {
+                  "field": "Sex"
+                }
+              ],
+              "as": [
+                "s",
+                "s_end"
+              ],
+              "groupby": []
+            }
+          ],
+          "mark": {
+            "x": -5,
+            "type": "bar",
+            "width": 10,
+            "tooltip": true
+          },
+          "encoding": {
+            "y": {
+              "field": "s",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y2": {
+              "field": "s_end"
+            },
+            "color": {
+              "field": "Sex",
+              "type": "nominal",
+              "legend": {
+                "offset": 40
+              }
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "aggregate": [
+                {
+                  "op": "sum",
+                  "field": "count",
+                  "as": "c"
+                }
+              ],
+              "groupby": [
+                "Survived"
+              ]
+            },
+            {
+              "stack": "c",
+              "offset": "zero",
+              "sort": [
+                {
+                  "field": "Survived"
+                }
+              ],
+              "as": [
+                "s",
+                "s_end"
+              ],
+              "groupby": []
+            }
+          ],
+          "mark": {
+            "x": {
+              "expr": "childWidth + 5"
+            },
+            "type": "bar",
+            "width": 10,
+            "tooltip": true
+          },
+          "encoding": {
+            "y": {
+              "field": "s",
+              "type": "quantitative"
+            },
+            "y2": {
+              "field": "s_end"
+            },
+            "color": {
+              "field": "Survived",
+              "type": "nominal",
+              "legend": {
+                "offset": 40
+              }
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "calculate": "datum.Sex + ' and ' + datum.Survived",
+              "as": "g"
+            },
+            {
+              "stack": "count",
+              "as": [
+                "l_start",
+                "l_end"
+              ],
+              "sort": [
+                {
+                  "field": "Sex"
+                },
+                {
+                  "field": "Survived"
+                }
+              ],
+              "groupby": []
+            },
+            {
+              "stack": "count",
+              "as": [
+                "r_start",
+                "r_end"
+              ],
+              "sort": [
+                {
+                  "field": "Survived"
+                },
+                {
+                  "field": "Sex"
+                }
+              ],
+              "groupby": []
+            },
+            {
+              "calculate": "[0, 0.1, 0.9, 1]",
+              "as": "x"
+            },
+            {
+              "calculate": "[datum.l_start, datum.l_start, datum.r_start, datum.r_start]",
+              "as": "y"
+            },
+            {
+              "calculate": "[datum.l_end, datum.l_end, datum.r_end, datum.r_end]",
+              "as": "y2"
+            },
+            {
+              "flatten": [
+                "x",
+                "y",
+                "y2"
+              ]
+            }
+          ],
+          "mark": "area",
+          "encoding": {
+            "x": {
+              "field": "x",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y": {
+              "field": "y",
+              "type": "quantitative"
+            },
+            "y2": {
+              "field": "y2"
+            },
+            "detail": {
+              "field": "g"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 200,
+      "height": 500,
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "count",
+              "as": "count"
+            }
+          ],
+          "groupby": [
+            "Survived",
+            "Pclass"
+          ]
+        }
+      ],
+      "layer": [
+        {
+          "transform": [
+            {
+              "aggregate": [
+                {
+                  "op": "sum",
+                  "field": "count",
+                  "as": "c"
+                }
+              ],
+              "groupby": [
+                "Pclass"
+              ]
+            },
+            {
+              "stack": "c",
+              "sort": [
+                {
+                  "field": "Pclass"
+                }
+              ],
+              "as": "s",
+              "groupby": []
+            }
+          ],
+          "mark": {
+            "x": {
+              "expr": "childWidth + 5"
+            },
+            "type": "bar",
+            "width": 10,
+            "tooltip": true
+          },
+          "encoding": {
+            "y": {
+              "field": "s",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y2": {
+              "field": "s_end"
+            },
+            "color": {
+              "field": "Pclass",
+              "type": "nominal",
+              "legend": {
+                "offset": 40
+              }
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "calculate": "datum.Survived + ' and ' + datum.Pclass",
+              "as": "g"
+            },
+            {
+              "stack": "count",
+              "as": [
+                "l_start",
+                "l_end"
+              ],
+              "sort": [
+                {
+                  "field": "Survived"
+                },
+                {
+                  "field": "Pclass"
+                }
+              ],
+              "groupby": []
+            },
+            {
+              "stack": "count",
+              "as": [
+                "r_start",
+                "r_end"
+              ],
+              "sort": [
+                {
+                  "field": "Pclass"
+                },
+                {
+                  "field": "Survived"
+                }
+              ],
+              "groupby": []
+            },
+            {
+              "calculate": "[0, 0.1, 0.9, 1]",
+              "as": "x"
+            },
+            {
+              "calculate": "[datum.l_start, datum.l_start, datum.r_start, datum.r_start]",
+              "as": "y"
+            },
+            {
+              "calculate": "[datum.l_end, datum.l_end, datum.r_end, datum.r_end]",
+              "as": "y2"
+            },
+            {
+              "flatten": [
+                "x",
+                "y",
+                "y2"
+              ]
+            }
+          ],
+          "mark": "area",
+          "encoding": {
+            "x": {
+              "field": "x",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y": {
+              "field": "y",
+              "type": "quantitative"
+            },
+            "y2": {
+              "field": "y2"
+            },
+            "detail": {
+              "field": "g"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 200,
+      "height": 500,
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "count",
+              "as": "count"
+            }
+          ],
+          "groupby": [
+            "Pclass",
+            "Embarked"
+          ]
+        }
+      ],
+      "layer": [
+        {
+          "transform": [
+            {
+              "aggregate": [
+                {
+                  "op": "sum",
+                  "field": "count",
+                  "as": "c"
+                }
+              ],
+              "groupby": [
+                "Embarked"
+              ]
+            },
+            {
+              "stack": "c",
+              "sort": [
+                {
+                  "field": "Embarked"
+                }
+              ],
+              "as": "s",
+              "groupby": []
+            }
+          ],
+          "mark": {
+            "x": {
+              "expr": "childWidth + 5"
+            },
+            "type": "bar",
+            "width": 10,
+            "tooltip": true
+          },
+          "encoding": {
+            "y": {
+              "field": "s",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y2": {
+              "field": "s_end"
+            },
+            "color": {
+              "field": "Embarked",
+              "type": "nominal",
+              "legend": {
+                "offset": 40
+              }
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "calculate": "datum.Pclass + ' and ' + datum.Embarked",
+              "as": "g"
+            },
+            {
+              "stack": "count",
+              "as": [
+                "l_start",
+                "l_end"
+              ],
+              "sort": [
+                {
+                  "field": "Pclass"
+                },
+                {
+                  "field": "Embarked"
+                }
+              ],
+              "groupby": []
+            },
+            {
+              "stack": "count",
+              "as": [
+                "r_start",
+                "r_end"
+              ],
+              "sort": [
+                {
+                  "field": "Embarked"
+                },
+                {
+                  "field": "Pclass"
+                }
+              ],
+              "groupby": []
+            },
+            {
+              "calculate": "[0, 0.1, 0.9, 1]",
+              "as": "x"
+            },
+            {
+              "calculate": "[datum.l_start, datum.l_start, datum.r_start, datum.r_start]",
+              "as": "y"
+            },
+            {
+              "calculate": "[datum.l_end, datum.l_end, datum.r_end, datum.r_end]",
+              "as": "y2"
+            },
+            {
+              "flatten": [
+                "x",
+                "y",
+                "y2"
+              ]
+            }
+          ],
+          "mark": "area",
+          "encoding": {
+            "x": {
+              "field": "x",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y": {
+              "field": "y",
+              "type": "quantitative"
+            },
+            "y2": {
+              "field": "y2"
+            },
+            "detail": {
+              "field": "g"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "concat": {
+      "spacing": 0
+    },
+    "area": {
+      "interpolate": "basis",
+      "tooltip": true,
+      "fillOpacity": 0.25,
+      "stroke": "grey",
+      "fill": "lightgrey",
+      "strokeWidth": 0.5
+    }
+  }
+}

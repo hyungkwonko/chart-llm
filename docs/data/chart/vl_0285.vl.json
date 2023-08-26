@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Adding a slider to this choropleth map was the bane of my existence in this project. I was able to get a map showing data from a single year, but I struggled filtering this by year. Credit to 'wahab memon' on Stack Overflow who managed to point me in the right direction. The issue was that I had not provided the necessary fields in my lookup transform, and inverting my main and lookup data helped me bring all the years for my countries. I used the help I got on a European countries topojson to make a world map topojson, which had different keys and a different json structure. The underlying data is from ourworldindata.org - https://ourworldindata.org/renewable-energy, and the topojson is from deldersveld.",
+  "title": {
+    "text": [
+      "The changes in world GDP between the years 1950 and 2018"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 400,
+  "width": 630,
+  "background": "white",
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/SamJones033/SamJones033.github.io/main/countrygdp.csv"
+  },
+  "transform": [
+    {
+      "lookup": "Entity",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries-sans-antarctica.json",
+          "format": {
+            "type": "topojson",
+            "feature": "countries1"
+          }
+        },
+        "key": "properties.name",
+        "fields": [
+          "properties",
+          "type",
+          "geometry"
+        ]
+      }
+    },
+    {
+      "filter": "datum.Year==year"
+    }
+  ],
+  "params": [
+    {
+      "name": "year",
+      "value": 2018,
+      "bind": {
+        "input": "range",
+        "min": 1950,
+        "max": 2018,
+        "step": 1,
+        "name": "Select the year:"
+      }
+    }
+  ],
+  "projection": {
+    "type": "equalEarth"
+  },
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "GDP",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "properties.name",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "GDP",
+        "type": "quantitative"
+      }
+    ]
+  }
+}

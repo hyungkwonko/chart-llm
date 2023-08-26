@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Thomas Malthus: Assessing his Prediction",
+    "subtitle": [
+      "Population, GDP and GDP per capita. Real terms. Rebased 1270 = 1.",
+      "Source: Bank of England 'Millennium of Macro Data'",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch2_Growth/ukLongRunPopGDP.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "B GDP",
+        "C GDP per capita",
+        "A Population"
+      ],
+      "as": [
+        "country",
+        "GDP"
+      ]
+    }
+  ],
+  "height": 200,
+  "width": 150,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 3,
+    "color": "rgb(128,0,0)"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "GDP",
+      "type": "quantitative",
+      "title": null
+    },
+    "facet": {
+      "field": "country",
+      "columns": 4,
+      "align": "each",
+      "spacing": 20,
+      "title": null
+    },
+    "color": {
+      "field": "country",
+      "legend": null
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

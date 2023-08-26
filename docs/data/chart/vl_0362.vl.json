@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart of UK debt outstanding. Demo of string and date functions",
+  "title": {
+    "text": "UK debt - by duration at issue",
+    "subtitle": [
+      "\u00a3 millions. Source: DMO",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 290,
+  "transform": [
+    {
+      "calculate": "slice(datum.issueDate, -4)",
+      "as": "issue"
+    },
+    {
+      "calculate": "slice(datum.redemptionDate, -4)",
+      "as": "redemption"
+    },
+    {
+      "calculate": "datum.redemption - datum.issue",
+      "as": "duration"
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/GiltsInIssueClean.csv"
+  },
+  "mark": {
+    "type": "bar",
+    "color": "red"
+  },
+  "encoding": {
+    "x": {
+      "field": "duration",
+      "type": "ordinal",
+      "title": null
+    },
+    "y": {
+      "field": "issueAmount",
+      "type": "quantitative",
+      "aggregate": "sum",
+      "title": null
+    }
+  }
+}

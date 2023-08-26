@@ -1,0 +1,1764 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "height": 300,
+      "width": 400
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 53837,
+        "vol_left_over": 4600000
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 286329,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 3530225,
+        "vol_left_over": 800000
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 997066,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 8912845,
+        "vol_left_over": 272000
+      },
+      {
+        "Title": "HURRICANE RITA",
+        "totApproved": 2874,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "TROPICAL STORM FRANCES",
+        "totApproved": 17532,
+        "vol_left_over": 747000
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 30320,
+        "vol_left_over": 799504
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 1180350,
+        "vol_left_over": 587746
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 405428,
+        "vol_left_over": 394797
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 178623,
+        "vol_left_over": 136350
+      },
+      {
+        "Title": "HURRICANE ISAAC",
+        "totApproved": 3100,
+        "vol_left_over": 230000
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 5308,
+        "vol_left_over": 136350
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 34640,
+        "vol_left_over": 587746
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 125643,
+        "vol_left_over": 96000
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 811917,
+        "vol_left_over": 530729
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 178623,
+        "vol_left_over": 180420
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 21383,
+        "vol_left_over": 800000
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 15483,
+        "vol_left_over": 130000
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 17482,
+        "vol_left_over": 799504
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 961158,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 36417,
+        "vol_left_over": 1003000
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 325,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 4567667,
+        "vol_left_over": 800000
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 5308,
+        "vol_left_over": 180420
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 121956,
+        "vol_left_over": 10000
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 393460,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 16460,
+        "vol_left_over": 175000
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 10293,
+        "vol_left_over": 272000
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 1512,
+        "vol_left_over": 96000
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 43631,
+        "vol_left_over": 587746
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 86425,
+        "vol_left_over": 10000
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 405428,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 694289,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 27182,
+        "vol_left_over": 1250000
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 9945562,
+        "vol_left_over": 1325000
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 59364,
+        "vol_left_over": 450000
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 674309,
+        "vol_left_over": 96000
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 107829,
+        "vol_left_over": 509504
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 107749,
+        "vol_left_over": 390095
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 2434,
+        "vol_left_over": 606814
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 38817,
+        "vol_left_over": 502789
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 15483,
+        "vol_left_over": 1083597
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 11154,
+        "vol_left_over": 1040253
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 7898,
+        "vol_left_over": 118762
+      },
+      {
+        "Title": "TROPICAL DEPRESSION IVAN",
+        "totApproved": 921,
+        "vol_left_over": 1126941
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 2532,
+        "vol_left_over": 441414
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 628,
+        "vol_left_over": 509504
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 530433,
+        "vol_left_over": 3682757
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 2446456,
+        "vol_left_over": 606814
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 928109,
+        "vol_left_over": 260063
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 882533,
+        "vol_left_over": 3682757
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 46208,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 8273,
+        "vol_left_over": 151703
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 3741577,
+        "vol_left_over": 151703
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 53207,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 1284576,
+        "vol_left_over": 8668
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 10577,
+        "vol_left_over": 606814
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 544291,
+        "vol_left_over": 280868
+      },
+      {
+        "Title": "HURRICANE RITA",
+        "totApproved": 9200,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 21383,
+        "vol_left_over": 1213629
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 122,
+        "vol_left_over": 280868
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 111833,
+        "vol_left_over": 606814
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 9945562,
+        "vol_left_over": 869478
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 4692,
+        "vol_left_over": 693502
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 3148810,
+        "vol_left_over": 8668
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 48286,
+        "vol_left_over": 402231
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 1939794,
+        "vol_left_over": 693072
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 1394,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 365204,
+        "vol_left_over": 280868
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 522,
+        "vol_left_over": 402231
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 3357,
+        "vol_left_over": 280868
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 151470,
+        "vol_left_over": 1040253
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 109664,
+        "vol_left_over": 1040253
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 3532370,
+        "vol_left_over": 693502
+      },
+      {
+        "Title": "HURRICANE RITA",
+        "totApproved": 2465,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 29863,
+        "vol_left_over": 693502
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 125643,
+        "vol_left_over": 348685
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 11666,
+        "vol_left_over": 392660
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 87812,
+        "vol_left_over": 901772
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 64805,
+        "vol_left_over": 864198
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 69627,
+        "vol_left_over": 864198
+      },
+      {
+        "Title": "HURRICANE RITA",
+        "totApproved": 26200,
+        "vol_left_over": 1277511
+      },
+      {
+        "Title": "HURRICANE DENNIS",
+        "totApproved": 54957,
+        "vol_left_over": 3192500
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 21241,
+        "vol_left_over": 422037
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 103737,
+        "vol_left_over": 864198
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 107749,
+        "vol_left_over": 375738
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 17455,
+        "vol_left_over": 225443
+      },
+      {
+        "Title": "HURRICANE ISAAC",
+        "totApproved": 7500,
+        "vol_left_over": 217928
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 151580,
+        "vol_left_over": 976920
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 15265,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE DENNIS",
+        "totApproved": 1852,
+        "vol_left_over": 526034
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 405428,
+        "vol_left_over": 526034
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 1512,
+        "vol_left_over": 348685
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 8912845,
+        "vol_left_over": 102952
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 412,
+        "vol_left_over": 526034
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 3962657,
+        "vol_left_over": 1502
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 967,
+        "vol_left_over": 1127215
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 29863,
+        "vol_left_over": 1052068
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 48071,
+        "vol_left_over": 526034
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 292487,
+        "vol_left_over": 2254431
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 5910,
+        "vol_left_over": 71390
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 5910,
+        "vol_left_over": 69887
+      },
+      {
+        "Title": "HURRICANE RITA",
+        "totApproved": 9200,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 357265,
+        "vol_left_over": 864198
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 28208,
+        "vol_left_over": 601181
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 544291,
+        "vol_left_over": 939346
+      },
+      {
+        "Title": "HURRICANE RITA",
+        "totApproved": 64765,
+        "vol_left_over": 1277511
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 2980,
+        "vol_left_over": 225443
+      },
+      {
+        "Title": "HURRICANE ISAAC",
+        "totApproved": 75999,
+        "vol_left_over": 217928
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 24494,
+        "vol_left_over": 45088
+      },
+      {
+        "Title": "HURRICANE DENNIS",
+        "totApproved": 18729,
+        "vol_left_over": 526034
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 3357,
+        "vol_left_over": 939346
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 4692,
+        "vol_left_over": 1052068
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 93591,
+        "vol_left_over": 526034
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 48286,
+        "vol_left_over": 891552
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 100228,
+        "vol_left_over": 864198
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 10293,
+        "vol_left_over": 102952
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 355102,
+        "vol_left_over": 526034
+      },
+      {
+        "Title": "HURRICANE ISAAC",
+        "totApproved": 215559,
+        "vol_left_over": 338164
+      },
+      {
+        "Title": "HURRICANE DENNIS",
+        "totApproved": 47152,
+        "vol_left_over": 3192500
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 3532370,
+        "vol_left_over": 1052068
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 365204,
+        "vol_left_over": 939346
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 122,
+        "vol_left_over": 939346
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 7898,
+        "vol_left_over": 214171
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 674309,
+        "vol_left_over": 348685
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 497237,
+        "vol_left_over": 864198
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 4580,
+        "vol_left_over": 520336
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 326541,
+        "vol_left_over": 864198
+      },
+      {
+        "Title": "HURRICANE ISAAC",
+        "totApproved": 292411,
+        "vol_left_over": 217928
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 199056,
+        "vol_left_over": 864198
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 28208,
+        "vol_left_over": 120236
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 173858,
+        "vol_left_over": 864198
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 522,
+        "vol_left_over": 891552
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 40543,
+        "vol_left_over": 16532
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 145748,
+        "vol_left_over": 864198
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 117507,
+        "vol_left_over": 651439
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 811917,
+        "vol_left_over": 136377
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 21383,
+        "vol_left_over": 586832
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 10577,
+        "vol_left_over": 1172590
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 2434,
+        "vol_left_over": 1172590
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 125643,
+        "vol_left_over": 772867
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 1512,
+        "vol_left_over": 772867
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 2316,
+        "vol_left_over": 15699
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 325,
+        "vol_left_over": 749154
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 3530225,
+        "vol_left_over": 39086
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 405428,
+        "vol_left_over": 116064
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 405428,
+        "vol_left_over": 141121
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 59364,
+        "vol_left_over": 580432
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 42065,
+        "vol_left_over": 195431
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 27536,
+        "vol_left_over": 65143
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 15483,
+        "vol_left_over": 107487
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 15483,
+        "vol_left_over": 368714
+      },
+      {
+        "Title": "HURRICANE IKE",
+        "totApproved": 234496,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 196358,
+        "vol_left_over": 674239
+      },
+      {
+        "Title": "HURRICANE DOLLY",
+        "totApproved": 110958,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 38817,
+        "vol_left_over": 208245
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 9179,
+        "vol_left_over": 320367
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 1036853,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 8912845,
+        "vol_left_over": 185660
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 4950990,
+        "vol_left_over": 456007
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 875331,
+        "vol_left_over": 164445
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 2446456,
+        "vol_left_over": 1172590
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 289764,
+        "vol_left_over": 164445
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 10293,
+        "vol_left_over": 185660
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 111833,
+        "vol_left_over": 1172590
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 997066,
+        "vol_left_over": 749154
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 961158,
+        "vol_left_over": 749154
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 694289,
+        "vol_left_over": 749154
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 674309,
+        "vol_left_over": 772867
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 393460,
+        "vol_left_over": 749154
+      },
+      {
+        "Title": "HURRICANE RITA",
+        "totApproved": 313361,
+        "vol_left_over": 14331
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 286329,
+        "vol_left_over": 749154
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 140092,
+        "vol_left_over": 651439
+      },
+      {
+        "Title": "HURRICANE RITA",
+        "totApproved": 29421,
+        "vol_left_over": 748251
+      },
+      {
+        "Title": "HURRICANE RITA",
+        "totApproved": 29421,
+        "vol_left_over": 756722
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 29863,
+        "vol_left_over": 508712
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 23311,
+        "vol_left_over": 564718
+      },
+      {
+        "Title": "HURRICANE DENNIS",
+        "totApproved": 18729,
+        "vol_left_over": 1016492
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 107749,
+        "vol_left_over": 127061
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 5308,
+        "vol_left_over": 13609
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 4692,
+        "vol_left_over": 508712
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 2532,
+        "vol_left_over": 87531
+      },
+      {
+        "Title": "HURRICANE DENNIS",
+        "totApproved": 1852,
+        "vol_left_over": 1016492
+      },
+      {
+        "Title": "HURRICANE RITA",
+        "totApproved": 725,
+        "vol_left_over": 82448
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 20209440,
+        "vol_left_over": 56471
+      },
+      {
+        "Title": "HURRICANE RITA",
+        "totApproved": 593,
+        "vol_left_over": 82448
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 412,
+        "vol_left_over": 1016492
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 559012,
+        "vol_left_over": 169415
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 27536,
+        "vol_left_over": 33883
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 178623,
+        "vol_left_over": 13609
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 7478,
+        "vol_left_over": 56471
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 10527,
+        "vol_left_over": 56471
+      },
+      {
+        "Title": "HURRICANE RITA",
+        "totApproved": 9200,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 5910,
+        "vol_left_over": 14117
+      },
+      {
+        "Title": "HURRICANE IKE",
+        "totApproved": 155362,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE IKE",
+        "totApproved": 15957,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 355102,
+        "vol_left_over": 1016492
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 7898,
+        "vol_left_over": 146826
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 3532370,
+        "vol_left_over": 508712
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 66210,
+        "vol_left_over": 349560
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 62695,
+        "vol_left_over": 640390
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 48071,
+        "vol_left_over": 1016492
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 46906,
+        "vol_left_over": 640390
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 116299,
+        "vol_left_over": 4797508
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 19490,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 19072,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 16460,
+        "vol_left_over": 328971
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 8264,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 2777,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 2532,
+        "vol_left_over": 23497
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 2532,
+        "vol_left_over": 219804
+      },
+      {
+        "Title": "HURRICANE IKE",
+        "totApproved": 840,
+        "vol_left_over": 832220
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 20209440,
+        "vol_left_over": 29372
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 69003,
+        "vol_left_over": 4797508
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 951847,
+        "vol_left_over": 146862
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 928109,
+        "vol_left_over": 430796
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 51771,
+        "vol_left_over": 4797508
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 388,
+        "vol_left_over": 146862
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 27536,
+        "vol_left_over": 48954
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 27536,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE DOLLY",
+        "totApproved": 110958,
+        "vol_left_over": 170360
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 10527,
+        "vol_left_over": 29372
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 35022,
+        "vol_left_over": 2251891
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 40543,
+        "vol_left_over": 19581
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 7478,
+        "vol_left_over": 29372
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 11666,
+        "vol_left_over": 391390
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 5910,
+        "vol_left_over": 15665
+      },
+      {
+        "Title": "HURRICANE ALEX",
+        "totApproved": 1937,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE IKE",
+        "totApproved": 155362,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 8912845,
+        "vol_left_over": 127280
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 38499,
+        "vol_left_over": 1076991
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 10293,
+        "vol_left_over": 127280
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 128003,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 56756,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 14948,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 14542,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 12330,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 29136,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 24424,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 38499,
+        "vol_left_over": 236800
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 11810,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 22175,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 9230,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 30320,
+        "vol_left_over": 1014251
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 17590,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 21241,
+        "vol_left_over": 331944
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 5617,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 17482,
+        "vol_left_over": 1014251
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 15483,
+        "vol_left_over": 37769
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 7582,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 12454,
+        "vol_left_over": 398862
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 6716,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 5910,
+        "vol_left_over": 59412
+      },
+      {
+        "Title": "HURRICANE JEANNE",
+        "totApproved": 5101,
+        "vol_left_over": 398862
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 3430,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "HURRICANE DENNIS",
+        "totApproved": 11013,
+        "vol_left_over": 4158853
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 20209440,
+        "vol_left_over": 42437
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 20209440,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 836,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "HURRICANE DENNIS",
+        "totApproved": 43397,
+        "vol_left_over": 4158853
+      },
+      {
+        "Title": "TROPICAL STORM FRANCES",
+        "totApproved": 36235,
+        "vol_left_over": 954803
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 27536,
+        "vol_left_over": 25462
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 3741577,
+        "vol_left_over": 285178
+      },
+      {
+        "Title": "TROPICAL STORM FRANCES",
+        "totApproved": 18165,
+        "vol_left_over": 954803
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 10527,
+        "vol_left_over": 42437
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 8273,
+        "vol_left_over": 285178
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 10527,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 28208,
+        "vol_left_over": 216090
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 7478,
+        "vol_left_over": 42437
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 7478,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "TROPICAL STORM FRANCES",
+        "totApproved": 597,
+        "vol_left_over": 954803
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 25345993,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE IKE",
+        "totApproved": 697207,
+        "vol_left_over": 9336
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 23967843,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 19001829,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 56764,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "HURRICANE FRANCES",
+        "totApproved": 1086,
+        "vol_left_over": 235526
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 7898,
+        "vol_left_over": 93362
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 35743,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 4580,
+        "vol_left_over": 267354
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 25420,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 87071,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 21489,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 20286,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 19476,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "HURRICANE DENNIS",
+        "totApproved": 25213,
+        "vol_left_over": 4158853
+      },
+      {
+        "Title": "HURRICANE RITA",
+        "totApproved": 313361,
+        "vol_left_over": 16974
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 18785,
+        "vol_left_over": 6584
+      },
+      {
+        "Title": "HURRICANE IKE",
+        "totApproved": 32337,
+        "vol_left_over": 53710
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 39368,
+        "vol_left_over": 345764
+      },
+      {
+        "Title": "TROPICAL STORM FRANCES",
+        "totApproved": 36235,
+        "vol_left_over": 964912
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 4455,
+        "vol_left_over": 3678
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 6578,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 21383,
+        "vol_left_over": 22808
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 21383,
+        "vol_left_over": 588607
+      },
+      {
+        "Title": "TROPICAL STORM FRANCES",
+        "totApproved": 18165,
+        "vol_left_over": 964912
+      },
+      {
+        "Title": "HURRICANE IKE",
+        "totApproved": 8164,
+        "vol_left_over": 53710
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 15483,
+        "vol_left_over": 32741
+      },
+      {
+        "Title": "TROPICAL STORM FRANCES",
+        "totApproved": 8802,
+        "vol_left_over": 964912
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 5910,
+        "vol_left_over": 36787
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 107749,
+        "vol_left_over": 20969
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 5910,
+        "vol_left_over": 70632
+      },
+      {
+        "Title": "TROPICAL STORM FRANCES",
+        "totApproved": 597,
+        "vol_left_over": 964912
+      },
+      {
+        "Title": "TROPICAL STORM BONNIE AND HURRICANE CHARLEY",
+        "totApproved": 2316,
+        "vol_left_over": 29430
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 20209440,
+        "vol_left_over": 22072
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 1864205,
+        "vol_left_over": 551074
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 675239,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 550953,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 292487,
+        "vol_left_over": 5886
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 147639,
+        "vol_left_over": 551074
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 428645,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 130473,
+        "vol_left_over": 551074
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 418295,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 391908,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 361964,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 303356,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE IVAN",
+        "totApproved": 27536,
+        "vol_left_over": 36787
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 196358,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 209393,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 22830,
+        "vol_left_over": 551074
+      },
+      {
+        "Title": "HURRICANE IKE",
+        "totApproved": 155362,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE DOLLY",
+        "totApproved": 110958,
+        "vol_left_over": 0
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 10527,
+        "vol_left_over": 22072
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 176387,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 151404,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 7478,
+        "vol_left_over": 22072
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 150738,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE MATTHEW",
+        "totApproved": 6657,
+        "vol_left_over": 551074
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 134817,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE ALEX",
+        "totApproved": 1937,
+        "vol_left_over": 128022
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 133851,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 8912845,
+        "vol_left_over": 80933
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 125296,
+        "vol_left_over": 5708
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 875331,
+        "vol_left_over": 105856
+      },
+      {
+        "Title": "HURRICANE KATRINA",
+        "totApproved": 289764,
+        "vol_left_over": 105856
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 36417,
+        "vol_left_over": 1471517
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 10293,
+        "vol_left_over": 80933
+      },
+      {
+        "Title": "HURRICANE IKE",
+        "totApproved": 134975,
+        "vol_left_over": 487440
+      },
+      {
+        "Title": "HURRICANE IKE",
+        "totApproved": 134975,
+        "vol_left_over": 492958
+      },
+      {
+        "Title": "HURRICANE IRENE",
+        "totApproved": 7898,
+        "vol_left_over": 368423
+      },
+      {
+        "Title": "HURRICANE IKE",
+        "totApproved": 131568,
+        "vol_left_over": 53710
+      },
+      {
+        "Title": "HURRICANE WILMA",
+        "totApproved": 32112,
+        "vol_left_over": 204173
+      },
+      {
+        "Title": "HURRICANE SANDY",
+        "totApproved": 1939794,
+        "vol_left_over": 879231
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "Title",
+      "type": "nominal"
+    },
+    "x": {
+      "axis": {
+        "title": "Volume Nour Sand Remaining (cubic yds)"
+      },
+      "field": "vol_left_over",
+      "type": "quantitative"
+    },
+    "y": {
+      "axis": {
+        "title": "Total FEMA Damage Payout ($)"
+      },
+      "field": "totApproved",
+      "type": "quantitative"
+    }
+  },
+  "mark": "point",
+  "selection": {
+    "selector004": {
+      "bind": "scales",
+      "encodings": [
+        "x",
+        "y"
+      ],
+      "type": "interval"
+    }
+  }
+}

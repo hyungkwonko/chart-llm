@@ -1,0 +1,665 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Gender pay gap",
+  "title": {
+    "text": "Gender Pay Gap",
+    "subtitle": "Percentage difference in median earnings of men and women (full-time employees), source OECD",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "LOCATION": "GBR",
+        "TIME": 1970,
+        "Value": 47.57803918,
+        "Year": "1970"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1971,
+        "Value": 45.52742185,
+        "Year": "1971"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1972,
+        "Value": 45.67779473,
+        "Year": "1972"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1973,
+        "Value": 46.37872641,
+        "Year": "1973"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1974,
+        "Value": 44.42223433,
+        "Year": "1974"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1975,
+        "Value": 39.85541472,
+        "Year": "1975"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1976,
+        "Value": 36.55030194,
+        "Year": "1976"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1977,
+        "Value": 35.78836762,
+        "Year": "1977"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1978,
+        "Value": 37.47486876,
+        "Year": "1978"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1979,
+        "Value": 38.29523952,
+        "Year": "1979"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1980,
+        "Value": 36.68858597,
+        "Year": "1980"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1981,
+        "Value": 35.4268123,
+        "Year": "1981"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1982,
+        "Value": 35.65961949,
+        "Year": "1982"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1983,
+        "Value": 34.56728192,
+        "Year": "1983"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1984,
+        "Value": 35.08152659,
+        "Year": "1984"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1985,
+        "Value": 35.12011437,
+        "Year": "1985"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1986,
+        "Value": 34.93850632,
+        "Year": "1986"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1987,
+        "Value": 34.51295439,
+        "Year": "1987"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1988,
+        "Value": 34.04572949,
+        "Year": "1988"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1989,
+        "Value": 33.73065917,
+        "Year": "1989"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1990,
+        "Value": 32.74495595,
+        "Year": "1990"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1991,
+        "Value": 31.07547805,
+        "Year": "1991"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1992,
+        "Value": 29.9466794,
+        "Year": "1992"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1993,
+        "Value": 28.71901926,
+        "Year": "1993"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1994,
+        "Value": 28.07971854,
+        "Year": "1994"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1995,
+        "Value": 28.19283491,
+        "Year": "1995"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1996,
+        "Value": 27.21841089,
+        "Year": "1996"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1997,
+        "Value": 26.91907015,
+        "Year": "1997"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1998,
+        "Value": 27.03529422,
+        "Year": "1998"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 1999,
+        "Value": 26.08972842,
+        "Year": "1999"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2000,
+        "Value": 26.28031383,
+        "Year": "2000"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2001,
+        "Value": 25.6396459,
+        "Year": "2001"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2002,
+        "Value": 24.37909944,
+        "Year": "2002"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2003,
+        "Value": 24.12446709,
+        "Year": "2003"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2004,
+        "Value": 23.35874097,
+        "Year": "2004"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2005,
+        "Value": 22.0639582,
+        "Year": "2005"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2006,
+        "Value": 21.71808402,
+        "Year": "2006"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2007,
+        "Value": 21.63478071,
+        "Year": "2007"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2008,
+        "Value": 21.85786911,
+        "Year": "2008"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2009,
+        "Value": 20.68629595,
+        "Year": "2009"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2010,
+        "Value": 19.23143692,
+        "Year": "2010"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2011,
+        "Value": 18.2460052,
+        "Year": "2011"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2012,
+        "Value": 17.78388278,
+        "Year": "2012"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2013,
+        "Value": 17.48201439,
+        "Year": "2013"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2014,
+        "Value": 17.38274257,
+        "Year": "2014"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2015,
+        "Value": 17.10155148,
+        "Year": "2015"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2016,
+        "Value": 16.7965368,
+        "Year": "2016"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2017,
+        "Value": 16.53410053,
+        "Year": "2017"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2018,
+        "Value": 16.3104242,
+        "Year": "2018"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2019,
+        "Value": 16.09980928,
+        "Year": "2019"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2020,
+        "Value": 11.98380567,
+        "Year": "2020"
+      },
+      {
+        "LOCATION": "GBR",
+        "TIME": 2021,
+        "Value": 14.34929405,
+        "Year": "2021"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1973,
+        "Value": 38.1104034,
+        "Year": "1973"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1974,
+        "Value": 39.10068426,
+        "Year": "1974"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1975,
+        "Value": 37.63003166,
+        "Year": "1975"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1976,
+        "Value": 37.7559727,
+        "Year": "1976"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1977,
+        "Value": 38.22485207,
+        "Year": "1977"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1978,
+        "Value": 38.97247706,
+        "Year": "1978"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1979,
+        "Value": 37.64195057,
+        "Year": "1979"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1980,
+        "Value": 36.55215104,
+        "Year": "1980"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1981,
+        "Value": 35.17400058,
+        "Year": "1981"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1982,
+        "Value": 34.72409152,
+        "Year": "1982"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1983,
+        "Value": 34.28645028,
+        "Year": "1983"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1984,
+        "Value": 33.43217198,
+        "Year": "1984"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1985,
+        "Value": 32.9782197,
+        "Year": "1985"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1986,
+        "Value": 32.19021491,
+        "Year": "1986"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1987,
+        "Value": 31.02222222,
+        "Year": "1987"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1988,
+        "Value": 30.06917423,
+        "Year": "1988"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1989,
+        "Value": 29.36357908,
+        "Year": "1989"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1990,
+        "Value": 28.45544956,
+        "Year": "1990"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1991,
+        "Value": 26.57109191,
+        "Year": "1991"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1992,
+        "Value": 25.05773672,
+        "Year": "1992"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1993,
+        "Value": 23.87640449,
+        "Year": "1993"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1994,
+        "Value": 23.88451444,
+        "Year": "1994"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1995,
+        "Value": 24.57998539,
+        "Year": "1995"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1996,
+        "Value": 23.82394868,
+        "Year": "1996"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1997,
+        "Value": 23.78649162,
+        "Year": "1997"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1998,
+        "Value": 23.7458194,
+        "Year": "1998"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 1999,
+        "Value": 23.46278317,
+        "Year": "1999"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2000,
+        "Value": 23.08892356,
+        "Year": "2000"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2001,
+        "Value": 23.58208955,
+        "Year": "2001"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2002,
+        "Value": 22.09131075,
+        "Year": "2002"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2003,
+        "Value": 20.57553957,
+        "Year": "2003"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2004,
+        "Value": 19.63534362,
+        "Year": "2004"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2005,
+        "Value": 18.97506925,
+        "Year": "2005"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2006,
+        "Value": 19.24629879,
+        "Year": "2006"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2007,
+        "Value": 19.84334204,
+        "Year": "2007"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2008,
+        "Value": 20.05012531,
+        "Year": "2008"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2009,
+        "Value": 19.78021978,
+        "Year": "2009"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2010,
+        "Value": 18.81067961,
+        "Year": "2010"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2011,
+        "Value": 17.78846154,
+        "Year": "2011"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2012,
+        "Value": 19.08665105,
+        "Year": "2012"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2013,
+        "Value": 17.90697674,
+        "Year": "2013"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2014,
+        "Value": 17.45120551,
+        "Year": "2014"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2015,
+        "Value": 18.88268156,
+        "Year": "2015"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2016,
+        "Value": 18.1420765,
+        "Year": "2016"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2017,
+        "Value": 18.17215728,
+        "Year": "2017"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2018,
+        "Value": 18.91058582,
+        "Year": "2018"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2019,
+        "Value": 18.47070507,
+        "Year": "2019"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2020,
+        "Value": 17.65249538,
+        "Year": "2020"
+      },
+      {
+        "LOCATION": "USA",
+        "TIME": 2021,
+        "Value": 16.86417502,
+        "Year": "2021"
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "",
+      "stack": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "xOffset": {
+      "field": "LOCATION"
+    },
+    "opacity": {
+      "value": 0.9
+    },
+    "color": {
+      "field": "LOCATION",
+      "type": "nominal",
+      "title": "Country",
+      "scale": {
+        "range": [
+          "#033542",
+          "#78969d"
+        ]
+      }
+    }
+  }
+}

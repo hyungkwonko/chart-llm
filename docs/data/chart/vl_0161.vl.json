@@ -1,0 +1,417 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "stroke": null
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "#36B7B4"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "type": "quantitative",
+            "field": "Year"
+          },
+          {
+            "type": "quantitative",
+            "field": "Spending"
+          },
+          {
+            "type": "quantitative",
+            "field": "Caseload"
+          }
+        ],
+        "x": {
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#676A86",
+            "format": ".0f",
+            "grid": false,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 6,
+            "title": "",
+            "titleAlign": "right",
+            "titleAnchor": "end",
+            "titleColor": "#676A86",
+            "titleY": -15
+          },
+          "field": "Year"
+        },
+        "y": {
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#36B7B4",
+            "grid": false,
+            "labelColor": "#36B7B4",
+            "tickColor": "#36B7B4",
+            "title": "Spending (% of GDP)",
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#36B7B4",
+            "titleX": -5,
+            "titleY": -5
+          },
+          "field": "Spending",
+          "scale": {
+            "domain": [
+              1,
+              2
+            ]
+          },
+          "sort": []
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#F4134D"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "type": "quantitative",
+            "field": "Year"
+          },
+          {
+            "type": "quantitative",
+            "field": "Spending"
+          },
+          {
+            "type": "quantitative",
+            "field": "Caseload"
+          }
+        ],
+        "x": {
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#676A86",
+            "format": ".0f",
+            "grid": false,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 6,
+            "title": "",
+            "titleAlign": "right",
+            "titleAnchor": "end",
+            "titleColor": "#676A86",
+            "titleY": -15
+          },
+          "field": "Year"
+        },
+        "y": {
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#F4134D",
+            "grid": false,
+            "labelColor": "#F4134D",
+            "tickColor": "#F4134D",
+            "title": "Caseload (% of adult population)",
+            "titleAlign": "right",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#F4134D",
+            "titleX": 5,
+            "titleY": -5
+          },
+          "field": "Caseload",
+          "scale": {
+            "domain": [
+              1.5,
+              3
+            ]
+          },
+          "sort": []
+        }
+      }
+    }
+  ],
+  "data": {
+    "name": "data-c3250d39e9ec28670336048f0ba15d43"
+  },
+  "height": 300,
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "title": "",
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-c3250d39e9ec28670336048f0ba15d43": [
+      {
+        "Year": "2017",
+        "Spending": 1.0880755767860704,
+        "Caseload": 1.550470556547592
+      },
+      {
+        "Year": "2018",
+        "Spending": 1.1649258241672142,
+        "Caseload": 1.571808439229093
+      },
+      {
+        "Year": "2019",
+        "Spending": 1.193050117263984,
+        "Caseload": 1.594029984975503
+      },
+      {
+        "Year": "2020",
+        "Spending": 1.182043734634279,
+        "Caseload": 1.6173808223292254
+      },
+      {
+        "Year": "2021",
+        "Spending": 1.20813683418206,
+        "Caseload": 1.641975297755555
+      },
+      {
+        "Year": "2022",
+        "Spending": 1.2347233898983123,
+        "Caseload": 1.6685651892363258
+      },
+      {
+        "Year": "2023",
+        "Spending": 1.2593550301905936,
+        "Caseload": 1.7142024306330685
+      },
+      {
+        "Year": "2024",
+        "Spending": 1.2807793293704854,
+        "Caseload": 1.7490909171684221
+      },
+      {
+        "Year": "2025",
+        "Spending": 1.2996600553368185,
+        "Caseload": 1.7724155554460541
+      },
+      {
+        "Year": "2026",
+        "Spending": 1.315732784671207,
+        "Caseload": 1.7885181509276236
+      },
+      {
+        "Year": "2027",
+        "Spending": 1.3394100244594416,
+        "Caseload": 1.816683125435958
+      },
+      {
+        "Year": "2028",
+        "Spending": 1.36034242169676,
+        "Caseload": 1.8457056971549177
+      },
+      {
+        "Year": "2029",
+        "Spending": 1.378652224033181,
+        "Caseload": 1.874991259670189
+      },
+      {
+        "Year": "2030",
+        "Spending": 1.3951091562871958,
+        "Caseload": 1.9044491508991401
+      },
+      {
+        "Year": "2031",
+        "Spending": 1.4090830875655527,
+        "Caseload": 1.933994704302021
+      },
+      {
+        "Year": "2032",
+        "Spending": 1.4400643212630089,
+        "Caseload": 1.9711977986018148
+      },
+      {
+        "Year": "2033",
+        "Spending": 1.4692552207545753,
+        "Caseload": 2.010022855375027
+      },
+      {
+        "Year": "2034",
+        "Spending": 1.4968374001972962,
+        "Caseload": 2.050095960826345
+      },
+      {
+        "Year": "2035",
+        "Spending": 1.5224921397504072,
+        "Caseload": 2.0912368766522116
+      },
+      {
+        "Year": "2036",
+        "Spending": 1.5459728880082966,
+        "Caseload": 2.1343790888473726
+      },
+      {
+        "Year": "2037",
+        "Spending": 1.567973847130702,
+        "Caseload": 2.1585947757194552
+      },
+      {
+        "Year": "2038",
+        "Spending": 1.5880616904605929,
+        "Caseload": 2.1834928828784825
+      },
+      {
+        "Year": "2039",
+        "Spending": 1.6064438043153875,
+        "Caseload": 2.2090931572116737
+      },
+      {
+        "Year": "2040",
+        "Spending": 1.6234508074733038,
+        "Caseload": 2.23541774568746
+      },
+      {
+        "Year": "2041",
+        "Spending": 1.6392607617492287,
+        "Caseload": 2.26245178426704
+      },
+      {
+        "Year": "2042",
+        "Spending": 1.6613399590593507,
+        "Caseload": 2.288746411601797
+      },
+      {
+        "Year": "2043",
+        "Spending": 1.6816502842262595,
+        "Caseload": 2.3157014207016524
+      },
+      {
+        "Year": "2044",
+        "Spending": 1.70049686077251,
+        "Caseload": 2.343333538858987
+      },
+      {
+        "Year": "2045",
+        "Spending": 1.7181140523248846,
+        "Caseload": 2.3716496278095422
+      },
+      {
+        "Year": "2046",
+        "Spending": 1.734399482655074,
+        "Caseload": 2.400668106635948
+      },
+      {
+        "Year": "2047",
+        "Spending": 1.756294994724436,
+        "Caseload": 2.427585522383956
+      },
+      {
+        "Year": "2048",
+        "Spending": 1.7768924812532063,
+        "Caseload": 2.455152734042299
+      },
+      {
+        "Year": "2049",
+        "Spending": 1.7961288476532027,
+        "Caseload": 2.4833495176063027
+      },
+      {
+        "Year": "2050",
+        "Spending": 1.813840999285368,
+        "Caseload": 2.5121571302588417
+      },
+      {
+        "Year": "2051",
+        "Spending": 1.8297935975863875,
+        "Caseload": 2.54155070097316
+      },
+      {
+        "Year": "2052",
+        "Spending": 1.8444238689663612,
+        "Caseload": 2.560583669359885
+      },
+      {
+        "Year": "2053",
+        "Spending": 1.857532391940444,
+        "Caseload": 2.5799136896692385
+      },
+      {
+        "Year": "2054",
+        "Spending": 1.8692927230491445,
+        "Caseload": 2.599485934959504
+      },
+      {
+        "Year": "2055",
+        "Spending": 1.8800756795457751,
+        "Caseload": 2.619242026100811
+      },
+      {
+        "Year": "2056",
+        "Spending": 1.8901543412907504,
+        "Caseload": 2.6391264114661803
+      },
+      {
+        "Year": "2057",
+        "Spending": 1.8984590188674733,
+        "Caseload": 2.648249150457194
+      },
+      {
+        "Year": "2058",
+        "Spending": 1.9055918679953332,
+        "Caseload": 2.657255919869097
+      },
+      {
+        "Year": "2059",
+        "Spending": 1.9114881091818727,
+        "Caseload": 2.66608159271944
+      },
+      {
+        "Year": "2060",
+        "Spending": 1.9163298327304767,
+        "Caseload": 2.674722896781892
+      },
+      {
+        "Year": "2061",
+        "Spending": 1.9198885024495673,
+        "Caseload": 2.6832321140205444
+      },
+      {
+        "Year": "2062",
+        "Spending": 1.9247684976938648,
+        "Caseload": 2.689030282101832
+      },
+      {
+        "Year": "2063",
+        "Spending": 1.928260556743743,
+        "Caseload": 2.694698858439865
+      },
+      {
+        "Year": "2064",
+        "Spending": 1.9303496007515386,
+        "Caseload": 2.7002591270863814
+      },
+      {
+        "Year": "2065",
+        "Spending": 1.9308662629434943,
+        "Caseload": 2.705734703359174
+      },
+      {
+        "Year": "2066",
+        "Spending": 1.9290342074463058,
+        "Caseload": 2.711153552040837
+      },
+      {
+        "Year": "2067",
+        "Spending": 1.931916379727491,
+        "Caseload": 2.722664794355959
+      },
+      {
+        "Year": "2068",
+        "Spending": 1.9336945059614132,
+        "Caseload": 2.733035674690106
+      }
+    ]
+  }
+}

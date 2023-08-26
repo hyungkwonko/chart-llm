@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Barcode chart",
+  "width": "container",
+  "height": 125,
+  "title": {
+    "text": "Life expectancy by continent, 2017",
+    "offset": 20
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "timeUnit": "year",
+        "field": "year",
+        "equal": 2017
+      }
+    }
+  ],
+  "mark": "tick",
+  "encoding": {
+    "x": {
+      "field": "lifeExp",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          35,
+          85
+        ]
+      },
+      "axis": {
+        "title": "Age (years)",
+        "titlePadding": 10
+      }
+    },
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "title": null
+    },
+    "color": {
+      "field": "lifeExp",
+      "type": "quantitative",
+      "legend": null,
+      "scale": {
+        "scheme": "viridis",
+        "domain": [
+          35,
+          85
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "lifeExp",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Age (years)"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "grid": false,
+      "domainColor": "none",
+      "ticks": null
+    },
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

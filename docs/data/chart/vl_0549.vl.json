@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart that uses repeated layers to make multiple calls to an API",
+  "title": {
+    "text": "Unemployment: US and UK",
+    "subtitle": "From the ECO API",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 450,
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://api.economicsobservatory.com/gbr/unem",
+        "format": {
+          "type": "json",
+          "property": "raw.years"
+        }
+      },
+      "mark": {
+        "type": "line",
+        "color": "red"
+      }
+    },
+    {
+      "data": {
+        "url": "https://api.economicsobservatory.com/usa/unem",
+        "format": {
+          "type": "json",
+          "property": "raw.observations"
+        }
+      },
+      "mark": {
+        "type": "line",
+        "color": "blue"
+      }
+    }
+  ]
+}

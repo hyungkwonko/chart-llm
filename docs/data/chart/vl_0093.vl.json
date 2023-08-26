@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "y": {
+      "field": "Profit",
+      "type": "quantitative",
+      "aggregate": "mean",
+      "axis": {
+        "format": "s"
+      }
+    },
+    "x": {
+      "field": "State",
+      "type": "nominal",
+      "aggregate": null
+    }
+  },
+  "transform": [],
+  "data": {
+    "url": "https://raw.githubusercontent.com/nl4dv/nl4dv/master/examples/assets/data/superstore.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "ignore_orientation": "True"
+}

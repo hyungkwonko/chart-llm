@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 250,
+  "height": 250,
+  "title": {
+    "text": "Asia",
+    "color": "#F4AB2F"
+  },
+  "background": "rgba(255, 255, 255, 0)",
+  "data": {
+    "url": "https://gist.githubusercontent.com/khang-dao/3b0a43624567269b2020da66a43f86d4/raw/870ce69ae1457127f554911309b62e705c78b880/olympics-1986-2016-cleaned-4-asia.csv"
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Height",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          250
+        ]
+      }
+    },
+    "y": {
+      "field": "Weight",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          250
+        ]
+      }
+    },
+    "color": {
+      "value": "#F4AB2F"
+    },
+    "tooltip": [
+      {
+        "field": "Height",
+        "type": "quantitative"
+      },
+      {
+        "field": "Weight",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "domainColor": "#F4AB2F",
+      "labelColor": "#F4AB2F",
+      "tickColor": "#F4AB2F",
+      "titleColor": "#F4AB2F",
+      "gridColor": "#eadac1"
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "High Giving Index \u2192": "A",
+        "High GDP per capita \u2192": "A",
+        "color": "7",
+        "Meaning": "High WGI, Low GDP per capita"
+      },
+      {
+        "High Giving Index \u2192": "A",
+        "High GDP per capita \u2192": "B",
+        "color": "8",
+        "Meaning": "High WGI, Average GDP per capita"
+      },
+      {
+        "High Giving Index \u2192": "A",
+        "High GDP per capita \u2192": "C",
+        "color": "9",
+        "Meaning": "High WGI, High GDP per capita"
+      },
+      {
+        "High Giving Index \u2192": "B",
+        "High GDP per capita \u2192": "A",
+        "color": "4",
+        "Meaning": "Average WGI, Low GDP per capita"
+      },
+      {
+        "High Giving Index \u2192": "B",
+        "High GDP per capita \u2192": "B",
+        "color": "5",
+        "Meaning": "Average WGI, Average GDP per capita"
+      },
+      {
+        "High Giving Index \u2192": "B",
+        "High GDP per capita \u2192": "C",
+        "color": "6",
+        "Meaning": "Average WGI, High GDP per capita"
+      },
+      {
+        "High Giving Index \u2192": "C",
+        "High GDP per capita \u2192": "A",
+        "color": "1",
+        "Meaning": "Low WGI, Low GDP per capita"
+      },
+      {
+        "High Giving Index \u2192": "C",
+        "High GDP per capita \u2192": "B",
+        "color": "2",
+        "Meaning": "Low WGI, Average GDP per capita"
+      },
+      {
+        "High Giving Index \u2192": "C",
+        "High GDP per capita \u2192": "C",
+        "color": "3",
+        "Meaning": "Low WGI, High GDP per capita"
+      }
+    ]
+  },
+  "mark": {
+    "type": "rect"
+  },
+  "config": {
+    "background": "transparent",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "height": 140,
+  "width": 140,
+  "encoding": {
+    "y": {
+      "field": "High Giving Index \u2192",
+      "type": "nominal",
+      "axis": {
+        "domainColor": "transparent",
+        "labels": false,
+        "ticks": false,
+        "titleColor": "black"
+      }
+    },
+    "x": {
+      "field": "High GDP per capita \u2192",
+      "type": "nominal",
+      "axis": {
+        "domainColor": "transparent",
+        "labels": false,
+        "ticks": false,
+        "titleColor": "black"
+      }
+    },
+    "color": {
+      "legend": null,
+      "type": "nominal",
+      "field": "color",
+      "scale": {
+        "range": [
+          "#F7FCFD",
+          "#E5F5F9",
+          "#CCECE6",
+          "#99D8C9",
+          "#66C2A4",
+          "#41AE76",
+          "#238B45",
+          "#006D2C",
+          "#00441B"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Meaning",
+        "type": "nominal",
+        "title": "Classification"
+      }
+    ]
+  }
+}

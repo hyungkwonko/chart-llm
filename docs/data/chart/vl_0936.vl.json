@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "London 2012 Medal Table",
+    "subtitle": "Composition of medals for the top 10 countries. Source: ESPN",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/data_medals.csv"
+  },
+  "height": 200,
+  "width": 300,
+  "mark": {
+    "type": "bar",
+    "color": "darkgreen"
+  },
+  "encoding": {
+    "x": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Medals",
+      "axis": {
+        "grid": false
+      },
+      "aggregate": "sum"
+    },
+    "y": {
+      "field": "Country",
+      "type": "nominal",
+      "axis": {
+        "title": "",
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 0
+      },
+      "sort": "-x"
+    },
+    "color": {
+      "field": "Medal Type",
+      "legend": {
+        "orient": "bottom-right"
+      },
+      "scale": {
+        "domain": [
+          "Gold",
+          "Silver",
+          "Bronze"
+        ],
+        "range": [
+          "#D4AF37",
+          "#C0C0C0",
+          "#9F7A34"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Medal Type",
+        "type": "ordinal",
+        "title": "Medal"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Count"
+      },
+      {
+        "field": "Total",
+        "type": "quantitative",
+        "title": "Total"
+      }
+    ],
+    "order": {
+      "aggregate": "count"
+    }
+  }
+}

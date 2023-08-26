@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Boxplot",
+  "width": "container",
+  "title": {
+    "text": "Income distributions by region, 2017"
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "year",
+        "equal": "2017"
+      }
+    }
+  ],
+  "mark": {
+    "type": "boxplot",
+    "extent": "min-max"
+  },
+  "encoding": {
+    "x": {
+      "field": "region",
+      "type": "nominal",
+      "axis": {
+        "labelAngle": 0,
+        "title": null
+      }
+    },
+    "y": {
+      "field": "gdpPercap",
+      "type": "quantitative",
+      "axis": {
+        "title": "GDP per capita",
+        "format": "$,.0f"
+      }
+    },
+    "size": {
+      "value": 80
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Africa",
+          "Americas",
+          "Asia",
+          "Europe"
+        ],
+        "range": [
+          "#08C5ED",
+          "#80D322",
+          "#FF6973",
+          "#FFDC25"
+        ]
+      },
+      "legend": null
+    }
+  },
+  "config": {
+    "axis": {
+      "domainColor": "none"
+    },
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

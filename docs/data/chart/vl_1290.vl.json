@@ -1,0 +1,177 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axisX": {
+      "domain": true,
+      "domainColor": "#023B7F",
+      "domainWidth": 1,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 12,
+      "tickColor": "#023B7F",
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 12,
+      "titlePadding": 10
+    },
+    "axisY": {
+      "domain": false,
+      "grid": true,
+      "gridColor": "#023B7F",
+      "gridWidth": 1,
+      "labelAngle": 0,
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 12,
+      "ticks": false,
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 12,
+      "titlePadding": 10
+    },
+    "mark": {
+      "color": "#4279C1",
+      "fill": "#7EB7FD"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#023B7F",
+      "font": "Helvetica Neue",
+      "fontSize": 18
+    },
+    "view": {
+      "height": 300,
+      "stroke": "#4279C1",
+      "width": 300
+    }
+  },
+  "data": {
+    "name": "data-ca298b893e57d2b21af84841fba3a0ac"
+  },
+  "datasets": {
+    "data-ca298b893e57d2b21af84841fba3a0ac": [
+      {
+        "ppg": 484.55,
+        "team": "Virginia A",
+        "team_tournament": "2014 Virginia A",
+        "tournament": "ACF Nationals 2014"
+      },
+      {
+        "ppg": 458.0,
+        "team": "Chicago A",
+        "team_tournament": "2016 Chicago A",
+        "tournament": "ACF Nationals 2016"
+      },
+      {
+        "ppg": 441.82,
+        "team": "Virginia A",
+        "team_tournament": "2015 Virginia A",
+        "tournament": "ACF Nationals 2015"
+      },
+      {
+        "ppg": 435.0,
+        "team": "Penn A",
+        "team_tournament": "2014 Penn A",
+        "tournament": "ACF Nationals 2014"
+      },
+      {
+        "ppg": 429.09,
+        "team": "Penn A",
+        "team_tournament": "2015 Penn A",
+        "tournament": "ACF Nationals 2015"
+      },
+      {
+        "ppg": 428.0,
+        "team": "Michigan A",
+        "team_tournament": "2016 Michigan A",
+        "tournament": "ACF Nationals 2016"
+      },
+      {
+        "ppg": 427.5,
+        "team": "Yale A",
+        "team_tournament": "2012 Yale A",
+        "tournament": "ACF Nationals 2012"
+      },
+      {
+        "ppg": 408.33,
+        "team": "Maryland A",
+        "team_tournament": "2017 Maryland A",
+        "tournament": "ACF Nationals 2017"
+      },
+      {
+        "ppg": 399.38,
+        "team": "Virginia A",
+        "team_tournament": "2013 Virginia A",
+        "tournament": "ACF Nationals 2013"
+      },
+      {
+        "ppg": 396.25,
+        "team": "Illinois A",
+        "team_tournament": "2013 Illinois A",
+        "tournament": "ACF Nationals 2013"
+      }
+    ]
+  },
+  "encoding": {
+    "fill": {
+      "field": "team",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Virginia A",
+          "Chicago A",
+          "Michigan A",
+          "Penn A",
+          "Yale A",
+          "Maryland A",
+          "Illinois A"
+        ],
+        "range": [
+          "#F84C1E",
+          "#8B1F41",
+          "#FFCB05",
+          "#045ea7",
+          "#00356B",
+          "#E03A3E",
+          "#13294B"
+        ]
+      },
+      "title": "Team",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "team",
+        "type": "nominal"
+      },
+      {
+        "field": "tournament",
+        "type": "nominal"
+      },
+      {
+        "field": "ppg",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "labelAngle": 315
+      },
+      "field": "team_tournament",
+      "sort": [
+        "ppg"
+      ],
+      "title": "Team",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "ppg",
+      "title": "Points per game",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar",
+  "title": "Highest Prelims PPG"
+}

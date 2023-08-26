@@ -1,0 +1,447 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "Year": 1918,
+        "Party": "Conservative",
+        "seats": 382
+      },
+      {
+        "Year": 1922,
+        "Party": "Conservative",
+        "seats": 344
+      },
+      {
+        "Year": 1923,
+        "Party": "Conservative",
+        "seats": 258
+      },
+      {
+        "Year": 1924,
+        "Party": "Conservative",
+        "seats": 412
+      },
+      {
+        "Year": 1929,
+        "Party": "Conservative",
+        "seats": 260
+      },
+      {
+        "Year": 1931,
+        "Party": "Conservative",
+        "seats": 522
+      },
+      {
+        "Year": 1935,
+        "Party": "Conservative",
+        "seats": 429
+      },
+      {
+        "Year": 1945,
+        "Party": "Conservative",
+        "seats": 210
+      },
+      {
+        "Year": 1950,
+        "Party": "Conservative",
+        "seats": 298
+      },
+      {
+        "Year": 1951,
+        "Party": "Conservative",
+        "seats": 321
+      },
+      {
+        "Year": 1955,
+        "Party": "Conservative",
+        "seats": 345
+      },
+      {
+        "Year": 1959,
+        "Party": "Conservative",
+        "seats": 365
+      },
+      {
+        "Year": 1964,
+        "Party": "Conservative",
+        "seats": 304
+      },
+      {
+        "Year": 1966,
+        "Party": "Conservative",
+        "seats": 253
+      },
+      {
+        "Year": 1970,
+        "Party": "Conservative",
+        "seats": 330
+      },
+      {
+        "Year": 1974,
+        "Party": "Conservative",
+        "seats": 277
+      },
+      {
+        "Year": 1979,
+        "Party": "Conservative",
+        "seats": 339
+      },
+      {
+        "Year": 1983,
+        "Party": "Conservative",
+        "seats": 397
+      },
+      {
+        "Year": 1987,
+        "Party": "Conservative",
+        "seats": 376
+      },
+      {
+        "Year": 1992,
+        "Party": "Conservative",
+        "seats": 336
+      },
+      {
+        "Year": 1997,
+        "Party": "Conservative",
+        "seats": 165
+      },
+      {
+        "Year": 2001,
+        "Party": "Conservative",
+        "seats": 166
+      },
+      {
+        "Year": 2005,
+        "Party": "Conservative",
+        "seats": 198
+      },
+      {
+        "Year": 2010,
+        "Party": "Conservative",
+        "seats": 306
+      },
+      {
+        "Year": 2015,
+        "Party": "Conservative",
+        "seats": 330
+      },
+      {
+        "Year": 2017,
+        "Party": "Conservative",
+        "seats": 317
+      },
+      {
+        "Year": 2019,
+        "Party": "Conservative",
+        "seats": 365
+      },
+      {
+        "Year": 1918,
+        "Party": "Labour",
+        "seats": 57
+      },
+      {
+        "Year": 1922,
+        "Party": "Labour",
+        "seats": 142
+      },
+      {
+        "Year": 1923,
+        "Party": "Labour",
+        "seats": 191
+      },
+      {
+        "Year": 1924,
+        "Party": "Labour",
+        "seats": 151
+      },
+      {
+        "Year": 1929,
+        "Party": "Labour",
+        "seats": 287
+      },
+      {
+        "Year": 1931,
+        "Party": "Labour",
+        "seats": 52
+      },
+      {
+        "Year": 1935,
+        "Party": "Labour",
+        "seats": 154
+      },
+      {
+        "Year": 1945,
+        "Party": "Labour",
+        "seats": 393
+      },
+      {
+        "Year": 1950,
+        "Party": "Labour",
+        "seats": 315
+      },
+      {
+        "Year": 1951,
+        "Party": "Labour",
+        "seats": 295
+      },
+      {
+        "Year": 1955,
+        "Party": "Labour",
+        "seats": 277
+      },
+      {
+        "Year": 1959,
+        "Party": "Labour",
+        "seats": 258
+      },
+      {
+        "Year": 1964,
+        "Party": "Labour",
+        "seats": 317
+      },
+      {
+        "Year": 1966,
+        "Party": "Labour",
+        "seats": 364
+      },
+      {
+        "Year": 1970,
+        "Party": "Labour",
+        "seats": 288
+      },
+      {
+        "Year": 1974,
+        "Party": "Labour",
+        "seats": 319
+      },
+      {
+        "Year": 1979,
+        "Party": "Labour",
+        "seats": 269
+      },
+      {
+        "Year": 1983,
+        "Party": "Labour",
+        "seats": 209
+      },
+      {
+        "Year": 1987,
+        "Party": "Labour",
+        "seats": 229
+      },
+      {
+        "Year": 1992,
+        "Party": "Labour",
+        "seats": 271
+      },
+      {
+        "Year": 1997,
+        "Party": "Labour",
+        "seats": 418
+      },
+      {
+        "Year": 2001,
+        "Party": "Labour",
+        "seats": 412
+      },
+      {
+        "Year": 2005,
+        "Party": "Labour",
+        "seats": 355
+      },
+      {
+        "Year": 2010,
+        "Party": "Labour",
+        "seats": 258
+      },
+      {
+        "Year": 2015,
+        "Party": "Labour",
+        "seats": 232
+      },
+      {
+        "Year": 2017,
+        "Party": "Labour",
+        "seats": 262
+      },
+      {
+        "Year": 2019,
+        "Party": "Labour",
+        "seats": 203
+      },
+      {
+        "Year": 1918,
+        "Party": "Liberal Democrats",
+        "seats": 163
+      },
+      {
+        "Year": 1922,
+        "Party": "Liberal Democrats",
+        "seats": 115
+      },
+      {
+        "Year": 1923,
+        "Party": "Liberal Democrats",
+        "seats": 158
+      },
+      {
+        "Year": 1924,
+        "Party": "Liberal Democrats",
+        "seats": 40
+      },
+      {
+        "Year": 1929,
+        "Party": "Liberal Democrats",
+        "seats": 59
+      },
+      {
+        "Year": 1931,
+        "Party": "Liberal Democrats",
+        "seats": 36
+      },
+      {
+        "Year": 1935,
+        "Party": "Liberal Democrats",
+        "seats": 21
+      },
+      {
+        "Year": 1945,
+        "Party": "Liberal Democrats",
+        "seats": 12
+      },
+      {
+        "Year": 1950,
+        "Party": "Liberal Democrats",
+        "seats": 9
+      },
+      {
+        "Year": 1951,
+        "Party": "Liberal Democrats",
+        "seats": 6
+      },
+      {
+        "Year": 1955,
+        "Party": "Liberal Democrats",
+        "seats": 6
+      },
+      {
+        "Year": 1959,
+        "Party": "Liberal Democrats",
+        "seats": 6
+      },
+      {
+        "Year": 1964,
+        "Party": "Liberal Democrats",
+        "seats": 9
+      },
+      {
+        "Year": 1966,
+        "Party": "Liberal Democrats",
+        "seats": 12
+      },
+      {
+        "Year": 1970,
+        "Party": "Liberal Democrats",
+        "seats": 6
+      },
+      {
+        "Year": 1974,
+        "Party": "Liberal Democrats",
+        "seats": 13
+      },
+      {
+        "Year": 1979,
+        "Party": "Liberal Democrats",
+        "seats": 11
+      },
+      {
+        "Year": 1983,
+        "Party": "Liberal Democrats",
+        "seats": 23
+      },
+      {
+        "Year": 1987,
+        "Party": "Liberal Democrats",
+        "seats": 22
+      },
+      {
+        "Year": 1992,
+        "Party": "Liberal Democrats",
+        "seats": 20
+      },
+      {
+        "Year": 1997,
+        "Party": "Liberal Democrats",
+        "seats": 46
+      },
+      {
+        "Year": 2001,
+        "Party": "Liberal Democrats",
+        "seats": 52
+      },
+      {
+        "Year": 2005,
+        "Party": "Liberal Democrats",
+        "seats": 62
+      },
+      {
+        "Year": 2010,
+        "Party": "Liberal Democrats",
+        "seats": 57
+      },
+      {
+        "Year": 2015,
+        "Party": "Liberal Democrats",
+        "seats": 8
+      },
+      {
+        "Year": 2017,
+        "Party": "Liberal Democrats",
+        "seats": 12
+      },
+      {
+        "Year": 2019,
+        "Party": "Liberal Democrats",
+        "seats": 11
+      }
+    ]
+  },
+  "height": 340,
+  "width": 340,
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "seats",
+      "type": "quantitative",
+      "title": "Number of Seats"
+    },
+    "color": {
+      "field": "Party",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Conservative",
+          "Labour",
+          "Liberal Democrats"
+        ],
+        "range": [
+          "#e7ba52",
+          "#c7c7c7",
+          "#aec7e8",
+          "#1f77b4",
+          "#9467bd"
+        ]
+      },
+      "title": "Weather type"
+    }
+  },
+  "config": {}
+}

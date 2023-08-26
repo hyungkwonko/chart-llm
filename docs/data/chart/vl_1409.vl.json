@@ -1,0 +1,140 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/antoniolch/KickstarterProjectDetails/master/data/whole_kickstarter_projects_filtered_vis1.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "title": {
+    "text": "Number, Backers and Money Pledged (USD) of Successful Projects per Category",
+    "anchor": "middle",
+    "fontSize": 15
+  },
+  "hconcat": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "main_category",
+          "type": "nominal",
+          "title": "Main Category",
+          "sort": {
+            "op": "count",
+            "field": "name",
+            "order": "descending"
+          }
+        },
+        "x": {
+          "field": "ID",
+          "title": "Number of Successful Projects",
+          "aggregate": "count",
+          "type": "quantitative"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.main_category == 'Music'",
+            "value": "red"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "main_category",
+            "type": "nominal",
+            "title": "Main Category"
+          },
+          {
+            "field": "name",
+            "type": "quantitative",
+            "aggregate": "count",
+            "title": "Number of Successful Project"
+          }
+        ]
+      }
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "main_category",
+          "type": "nominal",
+          "title": "Main Category",
+          "sort": {
+            "op": "sum",
+            "field": "backers",
+            "order": "descending"
+          }
+        },
+        "x": {
+          "field": "backers",
+          "title": "Number of Backers",
+          "aggregate": "sum",
+          "type": "quantitative"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.main_category == 'Music'",
+            "value": "red"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "main_category",
+            "type": "nominal",
+            "title": "Main Category"
+          },
+          {
+            "field": "backers",
+            "type": "quantitative",
+            "aggregate": "sum",
+            "title": "Number of Backers"
+          }
+        ]
+      }
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "main_category",
+          "type": "nominal",
+          "title": "Main Category",
+          "sort": {
+            "op": "sum",
+            "field": "usd_pledged_real",
+            "order": "descending"
+          }
+        },
+        "x": {
+          "field": "usd_pledged_real",
+          "title": "Money Pledged (USD)",
+          "aggregate": "sum",
+          "type": "quantitative",
+          "axis": {
+            "labelOverlap": "greedy",
+            "labelSeparation": 2
+          }
+        },
+        "color": {
+          "condition": {
+            "test": "datum.main_category == 'Music'",
+            "value": "red"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "main_category",
+            "type": "nominal",
+            "title": "Main Category"
+          },
+          {
+            "field": "usd_pledged_real",
+            "type": "quantitative",
+            "aggregate": "sum",
+            "title": "Money Pledged (USD)"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 300,
+  "width": 300,
+  "title": {
+    "text": "UK government - annual borrowing",
+    "subtitle": [
+      "PSNB, \u00a3 billions. Actual and forecast. Source: ONS and IFS",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#cbc7cf",
+    "subtitleColor": "#cbc7cf"
+  },
+  "config": {
+    "background": "#122b39",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/DATA.Crisis_C4b.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "size": 8,
+        "color": "rgba(255,255,200, 0.8)"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": null,
+          "axis": {
+            "grid": false,
+            "labelColor": "#cbc7cf"
+          }
+        },
+        "y": {
+          "field": "value1",
+          "type": "quantitative",
+          "axis": {
+            "grid": true,
+            "gridColor": "aliceblue",
+            "gridWidth": 0.5,
+            "gridDash": [
+              1,
+              1
+            ],
+            "labelColor": "#cbc7cf"
+          },
+          "title": null
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "size": 8,
+        "color": "orange"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": null,
+          "axis": {
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "value2",
+          "type": "quantitative",
+          "axis": {
+            "grid": true
+          },
+          "title": null
+        }
+      }
+    }
+  ]
+}

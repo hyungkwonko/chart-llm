@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/bfro_reports_fall2022.csv"
+  },
+  "hconcat": [
+    {
+      "params": [
+        {
+          "name": "brush",
+          "select": "interval"
+        }
+      ],
+      "mark": "rect",
+      "height": 400,
+      "width": 300,
+      "encoding": {
+        "x": {
+          "bin": {
+            "maxbins": 10
+          },
+          "field": "pressure",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "state",
+          "type": "ordinal"
+        },
+        "color": {
+          "aggregate": "count",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "param": "brush"
+          }
+        }
+      ],
+      "mark": "bar",
+      "height": 400,
+      "encoding": {
+        "x": {
+          "bin": {
+            "maxbins": 15
+          },
+          "field": "wind_speed",
+          "type": "quantitative",
+          "title": "wind_speed"
+        },
+        "y": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "axis": {
+            "title": "Frequency"
+          }
+        }
+      }
+    }
+  ],
+  "config": {}
+}

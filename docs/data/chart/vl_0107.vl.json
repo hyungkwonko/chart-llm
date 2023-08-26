@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "2019 Indices of Deprivation for Trafford and its statistical neighbours",
+  "width": 300,
+  "height": 150,
+  "autosize": {
+    "type": "fit-y"
+  },
+  "title": {
+    "text": "2019 Indices of Deprivation for Trafford and its CIPFA Nearest Neighbours ",
+    "fontSize": 20,
+    "color": "#757575",
+    "fontWeight": "normal",
+    "anchor": "end",
+    "offset": 0
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/traffordDataLab/analysis/159de7ef18e84bccfe9ac5bbfe949536da2b2a0b/IoD2019/nearest_neighbours/nearest_neighbours.csv"
+  },
+  "selection": {
+    "select": {
+      "type": "single",
+      "init": {
+        "index_domain": "Index of Multiple Deprivation"
+      },
+      "fields": [
+        "index_domain"
+      ],
+      "bind": {
+        "input": "select",
+        "name": " ",
+        "options": [
+          "Index of Multiple Deprivation",
+          "Income",
+          "Employment",
+          "Education, Skills and Training",
+          "Health and Disability",
+          "Crime",
+          "Barriers to Housing and Services",
+          "Living Environment",
+          "Income Deprivation Affecting Children",
+          "Income Deprivation Affecting Older People"
+        ]
+      },
+      "empty": "none",
+      "clear": false,
+      "on": "click[event.shiftKey&!event.shiftKey]"
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "select"
+      }
+    }
+  ],
+  "mark": "tick",
+  "encoding": {
+    "x": {
+      "field": "rank_average_score",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          1,
+          317
+        ]
+      },
+      "axis": {
+        "title": "Rank of average score",
+        "titleFontSize": 14,
+        "titlePadding": 10,
+        "orient": "bottom"
+      }
+    },
+    "y": {
+      "field": "index_domain",
+      "type": "nominal",
+      "sort": "-x",
+      "axis": {
+        "title": null,
+        "labelLimit": 0
+      }
+    },
+    "color": {
+      "condition": {
+        "test": "datum['lad19nm'] == 'Trafford'",
+        "value": "#fc6721"
+      },
+      "value": "#bdbdbd"
+    },
+    "tooltip": [
+      {
+        "field": "lad19nm",
+        "type": "nominal",
+        "title": "Local authority"
+      },
+      {
+        "field": "index_domain",
+        "type": "nominal",
+        "title": "Domain"
+      },
+      {
+        "field": "rank_average_score",
+        "type": "quantitative",
+        "title": "Rank of average score"
+      },
+      {
+        "field": "percent_bottom_decile",
+        "type": "quantitative",
+        "title": "LSOAs in bottom decile",
+        "format": ".01%"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "grid": false,
+      "domainColor": "none",
+      "ticks": null,
+      "labelFontSize": 14
+    },
+    "tick": {
+      "thickness": 2,
+      "bandSize": 35
+    },
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

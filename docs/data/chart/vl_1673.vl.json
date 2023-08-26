@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "domainColor": "#ddd",
+      "tickColor": "#ddd"
+    },
+    "lineBreak": " "
+  },
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/stocks.csv"
+  },
+  "encoding": {
+    "x": {
+      "axis": {
+        "format": "%m %Y"
+      },
+      "field": "date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "price",
+      "type": "quantitative"
+    }
+  },
+  "mark": "line",
+  "transform": [
+    {
+      "filter": "datum.symbol === 'GOOG'"
+    },
+    {
+      "filter": {
+        "field": "date",
+        "range": [
+          {
+            "year": 2006
+          },
+          {
+            "year": 2007
+          }
+        ]
+      }
+    }
+  ],
+  "width": 400
+}

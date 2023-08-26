@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Terrorist Attacks with Explosives in Iraq by Primary Target",
+  "mark": {
+    "type": "bar",
+    "color": "#fdb462"
+  },
+  "encoding": {
+    "x": {
+      "type": "ordinal",
+      "field": "targtype1_txt",
+      "axis": {
+        "title": "Target Type"
+      }
+    },
+    "y": {
+      "type": "quantitative",
+      "field": "Attack Count"
+    }
+  },
+  "description": "simpleBarChart",
+  "width": 900,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/thomasxu2009/ChartStory/1888d7060e265cc2e1493f5555412997857945c5/savedFile_globalTerr/Ewen5Data.json",
+    "format": {
+      "parse": {
+        "Attack Count": "number"
+      }
+    }
+  }
+}

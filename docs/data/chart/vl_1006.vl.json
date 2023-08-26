@@ -1,0 +1,166 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Changes in Mortgage rates vs House prices",
+    "subtitle": [
+      "1992-22 - USA, Source : Federal Reserve, Federal housing Finance Agency. Mortgage rate data based on 30-year fixed rate mortgage",
+      "average not seasonally adjusted. FHFA House Price index not seasonally adjusted. Monthly data. Calculations by author."
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 9,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/Data/Chart2_HPI%3AMR.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Mortgage Rate Annual % Change",
+      "scale": {
+        "zero": false
+      },
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      },
+      "title": "Mortgage Rate Annual % Change"
+    },
+    "y": {
+      "field": "House Price Annual % Change",
+      "scale": {
+        "zero": false
+      },
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      },
+      "title": "House Price Annual % Change"
+    },
+    "tooltip": [
+      {
+        "field": "Date",
+        "type": "temporal",
+        "title": "Date"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect"
+      },
+      "data": {
+        "values": [
+          {
+            "x": 0,
+            "y": 0,
+            "x2": -29.9,
+            "y2": -15,
+            "c": "rgba(77, 171, 174, 0.39)"
+          },
+          {
+            "x": -29.9,
+            "y": 0,
+            "x2": 0,
+            "y2": 20,
+            "c": "rgba(71, 178, 74, 0.38)"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "x2": 90,
+            "y2": -15,
+            "c": "rgba(71, 178, 74, 0.38)"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "x2": 90,
+            "y2": 20,
+            "c": "rgba(77, 171, 174, 0.39)"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "x"
+        },
+        "y": {
+          "field": "y"
+        },
+        "x2": {
+          "field": "x2"
+        },
+        "y2": {
+          "field": "y2"
+        },
+        "color": {
+          "field": "c",
+          "scale": null
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 80,
+        "color": "blue",
+        "opacity": 0.6
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "color": "black",
+        "width": 3
+      },
+      "transform": [
+        {
+          "filter": {
+            "field": "Date",
+            "oneOf": [
+              {
+                "year": 2022,
+                "month": "jan",
+                "date": 5
+              },
+              {
+                "year": 2008,
+                "month": "jan",
+                "date": 5
+              },
+              {
+                "year": 2022,
+                "month": "jan",
+                "date": 6
+              },
+              {
+                "year": 2009,
+                "month": "jan",
+                "date": 5
+              }
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "text": {
+          "field": "Date",
+          "type": "temporal"
+        }
+      }
+    }
+  ],
+  "height": 300,
+  "width": 500
+}

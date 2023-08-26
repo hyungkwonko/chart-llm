@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "US inflation",
+    "subtitle": "PCE, rate of change on a year ago",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/hyungkwonko/tmp-data/main/observation.json",
+    "format": {
+      "type": "json",
+      "property": "observations"
+    }
+  },
+  "transform": [
+    {
+      "window": [
+        {
+          "op": "lag",
+          "param": 12,
+          "field": "value",
+          "as": "laggedValue"
+        }
+      ]
+    },
+    {
+      "filter": "isValid(datum.laggedValue)"
+    },
+    {
+      "calculate": "datum.value/datum.laggedValue-1",
+      "as": "data"
+    }
+  ],
+  "height": 300,
+  "width": 290,
+  "padding": {
+    "left": 20,
+    "top": 5,
+    "right": 5,
+    "bottom": 20
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "y": {
+          "field": "data",
+          "type": "quantitative",
+          "title": null
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "align": false,
+            "interpolate": "step",
+            "color": "red"
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "selection": "hover"
+              }
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "filled": true,
+            "size": 200,
+            "stroke": "#DCDCDC",
+            "fillOpacity": 1,
+            "strokeOpacity": 0.8,
+            "color": "red",
+            "strokeWidth": 5
+          }
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0,
+            "selection": "hover"
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "format": "%b-%Y",
+            "title": "Date"
+          },
+          {
+            "field": "data",
+            "type": "quantitative",
+            "format": ".2%",
+            "title": "Inflation"
+          }
+        ]
+      },
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": [
+            "date"
+          ],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
+    }
+  ]
+}

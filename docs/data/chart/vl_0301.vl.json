@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "What % of energy has the UK imported in the last 60 years?"
+  },
+  "description": "What % of energy has the UK imported in the last 60 years?",
+  "data": {
+    "url": "https://raw.githubusercontent.com/SamJones033/SamJones033.github.io/main/imports.csv"
+  },
+  "height": 290,
+  "width": 300,
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "imports",
+      "type": "quantitative",
+      "title": "% of energy imported",
+      "scale": {
+        "zero": true
+      }
+    }
+  }
+}

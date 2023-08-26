@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "GDP - different perspectives",
+    "subtitle": [
+      "US nominal GDP, log, growth rate. Source: FRED",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "description": "CPI contribution",
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDP_timeSeries.csv"
+  },
+  "height": 300,
+  "width": 500,
+  "mark": {
+    "type": "line",
+    "color": "rgb(128,0,0)"
+  },
+  "transform": [
+    {
+      "fold": [
+        "GDP",
+        "lnGDP",
+        "gGDP",
+        "gGDP_5y"
+      ],
+      "as": [
+        "measure",
+        "value"
+      ]
+    },
+    {
+      "filter": {
+        "selection": "pickSeries"
+      }
+    }
+  ],
+  "selection": {
+    "pickSeries": {
+      "type": "single",
+      "init": {
+        "measure": "GDP"
+      },
+      "fields": [
+        "measure"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          "GDP",
+          "lnGDP",
+          "gGDP",
+          "gGDP_5y"
+        ],
+        "name": "Pick a series:"
+      }
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "DATE",
+      "type": "temporal",
+      "title": ""
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": ""
+    }
+  }
+}

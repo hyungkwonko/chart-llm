@@ -1,0 +1,518 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 500,
+  "data": {
+    "values": [
+      {
+        "sample_id": "chepang1",
+        "taxon": "Catenibacterium",
+        "TSNE 1": 13.4146986008,
+        "TSNE 2": -6.234266758
+      },
+      {
+        "sample_id": "chepang1",
+        "taxon": "Phascolarctobacterium",
+        "TSNE 1": -2.6052286625,
+        "TSNE 2": 18.3274898529
+      },
+      {
+        "sample_id": "chepang1",
+        "taxon": "Prevotella",
+        "TSNE 1": -32.4132385254,
+        "TSNE 2": 20.8175582886
+      },
+      {
+        "sample_id": "chepang1",
+        "taxon": "Succinivibrio",
+        "TSNE 1": 2.6342918873,
+        "TSNE 2": 21.3403778076
+      },
+      {
+        "sample_id": "chepang2",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": 18.2911834717,
+        "TSNE 2": -10.23848629
+      },
+      {
+        "sample_id": "chepang2",
+        "taxon": "Prevotella",
+        "TSNE 1": -32.8959159851,
+        "TSNE 2": 20.0635967255
+      },
+      {
+        "sample_id": "chepang2",
+        "taxon": "Roseburia",
+        "TSNE 1": 38.5032730103,
+        "TSNE 2": -3.7860336304
+      },
+      {
+        "sample_id": "chepang2",
+        "taxon": "Succinivibrio",
+        "TSNE 1": 1.7814667225,
+        "TSNE 2": 21.1946659088
+      },
+      {
+        "sample_id": "chepang3",
+        "taxon": "Bacteroides",
+        "TSNE 1": 35.1690864563,
+        "TSNE 2": -8.6732769012
+      },
+      {
+        "sample_id": "chepang3",
+        "taxon": "Clostridium",
+        "TSNE 1": 30.9089012146,
+        "TSNE 2": -18.5617733002
+      },
+      {
+        "sample_id": "chepang3",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": 13.8356266022,
+        "TSNE 2": -9.3089151382
+      },
+      {
+        "sample_id": "chepang3",
+        "taxon": "Holdemanella",
+        "TSNE 1": -1.3971928358,
+        "TSNE 2": -1.6690751314
+      },
+      {
+        "sample_id": "chepang3",
+        "taxon": "Phocaeicola",
+        "TSNE 1": 17.3012504578,
+        "TSNE 2": -7.1303086281
+      },
+      {
+        "sample_id": "chepang3",
+        "taxon": "Prevotella",
+        "TSNE 1": -2.6297533512,
+        "TSNE 2": 10.0322036743
+      },
+      {
+        "sample_id": "chepang3",
+        "taxon": "Roseburia",
+        "TSNE 1": 28.9104061127,
+        "TSNE 2": -11.8465137482
+      },
+      {
+        "sample_id": "chepang3",
+        "taxon": "Ruminococcus",
+        "TSNE 1": 8.7286396027,
+        "TSNE 2": -25.7835426331
+      },
+      {
+        "sample_id": "hadza1",
+        "taxon": "Anaerobutyricum",
+        "TSNE 1": -5.7571773529,
+        "TSNE 2": 9.6128807068
+      },
+      {
+        "sample_id": "hadza1",
+        "taxon": "Blautia",
+        "TSNE 1": -10.6580944061,
+        "TSNE 2": 1.984038353
+      },
+      {
+        "sample_id": "hadza1",
+        "taxon": "Bulleidia",
+        "TSNE 1": -30.8506259918,
+        "TSNE 2": 13.6282215118
+      },
+      {
+        "sample_id": "hadza1",
+        "taxon": "Clostridium",
+        "TSNE 1": -31.1968975067,
+        "TSNE 2": 22.4600772858
+      },
+      {
+        "sample_id": "hadza1",
+        "taxon": "Dorea",
+        "TSNE 1": -5.9706468582,
+        "TSNE 2": 5.9250950813
+      },
+      {
+        "sample_id": "hadza1",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -16.1888141632,
+        "TSNE 2": -4.4753036499
+      },
+      {
+        "sample_id": "hadza1",
+        "taxon": "Holdemanella",
+        "TSNE 1": 3.9047195911,
+        "TSNE 2": -6.3813323975
+      },
+      {
+        "sample_id": "hadza1",
+        "taxon": "Mediterraneibacter",
+        "TSNE 1": -16.7189865112,
+        "TSNE 2": -3.8135340214
+      },
+      {
+        "sample_id": "hadza1",
+        "taxon": "Prevotella",
+        "TSNE 1": 31.5690479279,
+        "TSNE 2": -8.6525096893
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Anaerobutyricum",
+        "TSNE 1": -26.2183418274,
+        "TSNE 2": 12.0444374084
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Anaerostipes",
+        "TSNE 1": -3.6471705437,
+        "TSNE 2": -5.0761213303
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Blautia",
+        "TSNE 1": -26.9637737274,
+        "TSNE 2": 9.0193719864
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Catenibacterium",
+        "TSNE 1": -0.2746160626,
+        "TSNE 2": -6.1234540939
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Clostridium",
+        "TSNE 1": 30.4783287048,
+        "TSNE 2": -16.0524940491
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Collinsella",
+        "TSNE 1": 32.0947914124,
+        "TSNE 2": -11.5048999786
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Dorea",
+        "TSNE 1": -6.1469435692,
+        "TSNE 2": 4.0418958664
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -36.0856933594,
+        "TSNE 2": 14.1261701584
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Holdemanella",
+        "TSNE 1": 0.5657349825,
+        "TSNE 2": -2.6478028297
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Intestinibacter",
+        "TSNE 1": -5.5134143829,
+        "TSNE 2": 12.6206922531
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Lachnospira",
+        "TSNE 1": -24.7462863922,
+        "TSNE 2": 11.0280542374
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Mediterraneibacter",
+        "TSNE 1": -13.4887514114,
+        "TSNE 2": 6.1291007996
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Prevotella",
+        "TSNE 1": -9.4874105453,
+        "TSNE 2": -12.3080348969
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Roseburia",
+        "TSNE 1": 30.6214847565,
+        "TSNE 2": -10.6548624039
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Ruminococcus",
+        "TSNE 1": 36.3807640076,
+        "TSNE 2": -6.9002389908
+      },
+      {
+        "sample_id": "hadza2",
+        "taxon": "Terrisporobacter",
+        "TSNE 1": -23.3736534119,
+        "TSNE 2": 10.8350334167
+      },
+      {
+        "sample_id": "hadza3",
+        "taxon": "Anaerobutyricum",
+        "TSNE 1": -26.0970840454,
+        "TSNE 2": 13.2561941147
+      },
+      {
+        "sample_id": "hadza3",
+        "taxon": "Blautia",
+        "TSNE 1": -28.5634002686,
+        "TSNE 2": 7.9836668968
+      },
+      {
+        "sample_id": "hadza3",
+        "taxon": "Bulleidia",
+        "TSNE 1": -31.875459671,
+        "TSNE 2": 13.7251567841
+      },
+      {
+        "sample_id": "hadza3",
+        "taxon": "Butyrivibrio",
+        "TSNE 1": -7.3074808121,
+        "TSNE 2": 8.1356163025
+      },
+      {
+        "sample_id": "hadza3",
+        "taxon": "Clostridium",
+        "TSNE 1": -22.4853610992,
+        "TSNE 2": 21.8166255951
+      },
+      {
+        "sample_id": "hadza3",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -37.1740493774,
+        "TSNE 2": 14.9449214935
+      },
+      {
+        "sample_id": "hadza3",
+        "taxon": "Holdemanella",
+        "TSNE 1": 2.5915446281,
+        "TSNE 2": -5.0945119858
+      },
+      {
+        "sample_id": "hadza3",
+        "taxon": "Mediterraneibacter",
+        "TSNE 1": -20.4526672363,
+        "TSNE 2": 10.0822610855
+      },
+      {
+        "sample_id": "hadza3",
+        "taxon": "Prevotella",
+        "TSNE 1": -19.9625873566,
+        "TSNE 2": 12.9273042679
+      },
+      {
+        "sample_id": "hadza3",
+        "taxon": "Roseburia",
+        "TSNE 1": -8.6217184067,
+        "TSNE 2": -12.3658838272
+      },
+      {
+        "sample_id": "hadza3",
+        "taxon": "Ruminococcus",
+        "TSNE 1": 39.5741348267,
+        "TSNE 2": -4.324701786
+      },
+      {
+        "sample_id": "mephaa1",
+        "taxon": "Blautia",
+        "TSNE 1": -10.3162488937,
+        "TSNE 2": 3.7065346241
+      },
+      {
+        "sample_id": "mephaa1",
+        "taxon": "Catenibacterium",
+        "TSNE 1": -1.6207842827,
+        "TSNE 2": -4.6314725876
+      },
+      {
+        "sample_id": "mephaa1",
+        "taxon": "Clostridium",
+        "TSNE 1": -21.6433963776,
+        "TSNE 2": 22.0570240021
+      },
+      {
+        "sample_id": "mephaa1",
+        "taxon": "Dialister",
+        "TSNE 1": 0.4726665318,
+        "TSNE 2": 7.276992321
+      },
+      {
+        "sample_id": "mephaa1",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": -34.8741722107,
+        "TSNE 2": 13.4338331223
+      },
+      {
+        "sample_id": "mephaa1",
+        "taxon": "Holdemanella",
+        "TSNE 1": -0.7461584806,
+        "TSNE 2": -2.7865667343
+      },
+      {
+        "sample_id": "mephaa1",
+        "taxon": "Mediterraneibacter",
+        "TSNE 1": -12.1456680298,
+        "TSNE 2": 5.2805862427
+      },
+      {
+        "sample_id": "mephaa1",
+        "taxon": "Methanobrevibacter",
+        "TSNE 1": -6.7900114059,
+        "TSNE 2": 14.259926796
+      },
+      {
+        "sample_id": "mephaa1",
+        "taxon": "Phascolarctobacterium",
+        "TSNE 1": -2.7490928173,
+        "TSNE 2": 17.3361740112
+      },
+      {
+        "sample_id": "mephaa1",
+        "taxon": "Prevotella",
+        "TSNE 1": -17.6881523132,
+        "TSNE 2": 14.4533863068
+      },
+      {
+        "sample_id": "mephaa1",
+        "taxon": "Streptococcus",
+        "TSNE 1": 36.8626785278,
+        "TSNE 2": -6.0233435631
+      },
+      {
+        "sample_id": "mephaa2",
+        "taxon": "Dialister",
+        "TSNE 1": -0.6874821782,
+        "TSNE 2": 5.5607151985
+      },
+      {
+        "sample_id": "mephaa2",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": 16.4714736938,
+        "TSNE 2": -9.059709549
+      },
+      {
+        "sample_id": "mephaa2",
+        "taxon": "Haemophilus",
+        "TSNE 1": 7.6659340858,
+        "TSNE 2": -25.3543357849
+      },
+      {
+        "sample_id": "mephaa2",
+        "taxon": "Prevotella",
+        "TSNE 1": -13.177031517,
+        "TSNE 2": 15.248090744
+      },
+      {
+        "sample_id": "mephaa2",
+        "taxon": "Roseburia",
+        "TSNE 1": 30.5023555756,
+        "TSNE 2": -12.5589036942
+      },
+      {
+        "sample_id": "mephaa2",
+        "taxon": "Streptococcus",
+        "TSNE 1": 10.9654541016,
+        "TSNE 2": -26.0003814697
+      },
+      {
+        "sample_id": "mephaa2",
+        "taxon": "Succinivibrio",
+        "TSNE 1": -5.2990221977,
+        "TSNE 2": 7.504878521
+      },
+      {
+        "sample_id": "mephaa3",
+        "taxon": "Clostridium",
+        "TSNE 1": 31.5142631531,
+        "TSNE 2": -19.6478118896
+      },
+      {
+        "sample_id": "mephaa3",
+        "taxon": "Dialister",
+        "TSNE 1": 0.0381179042,
+        "TSNE 2": 3.9585952759
+      },
+      {
+        "sample_id": "mephaa3",
+        "taxon": "Faecalibacterium",
+        "TSNE 1": 15.2045965195,
+        "TSNE 2": -8.4697761536
+      },
+      {
+        "sample_id": "mephaa3",
+        "taxon": "Prevotella",
+        "TSNE 1": -14.0482378006,
+        "TSNE 2": 15.1860074997
+      },
+      {
+        "sample_id": "mephaa3",
+        "taxon": "Roseburia",
+        "TSNE 1": 29.5951347351,
+        "TSNE 2": -13.4013118744
+      },
+      {
+        "sample_id": "mephaa3",
+        "taxon": "Streptococcus",
+        "TSNE 1": 10.5812625885,
+        "TSNE 2": -26.9542198181
+      },
+      {
+        "sample_id": "mephaa3",
+        "taxon": "Succinivibrio",
+        "TSNE 1": -4.6515250206,
+        "TSNE 2": 8.4908571243
+      }
+    ]
+  },
+  "selection": {
+    "pts": {
+      "type": "single",
+      "fields": [
+        "taxon"
+      ]
+    }
+  },
+  "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 20,
+    "tooltip": {
+      "content": "data"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "TSNE 1",
+      "type": "quantitative",
+      "scale": {
+        "zero": false
+      }
+    },
+    "y": {
+      "field": "TSNE 2",
+      "type": "quantitative",
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "condition": {
+        "selection": "pts",
+        "field": "taxon",
+        "type": "nominal"
+      },
+      "value": "lightgrey"
+    },
+    "opacity": {
+      "condition": {
+        "selection": "pts",
+        "value": 0.8
+      },
+      "value": 0.2
+    }
+  }
+}

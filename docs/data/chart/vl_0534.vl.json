@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "SAS litter",
+  "title": {
+    "text": "Pay in US prisons",
+    "subtitle": [
+      "Hourly pay (\u00a2) Source: PrisonPolicy.org",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/extreme/data_USstatesPrisonPay.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.RegularJobLow*100",
+      "as": "regularLowCents"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "rgb(0,47,167)",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "height": 450,
+  "width": 350,
+  "encoding": {
+    "y": {
+      "field": "State",
+      "type": "ordinal",
+      "sort": "x",
+      "title": null
+    },
+    "x": {
+      "field": "regularLowCents",
+      "type": "quantitative",
+      "title": null
+    }
+  }
+}

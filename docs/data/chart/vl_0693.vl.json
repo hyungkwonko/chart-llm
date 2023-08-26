@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 450,
+  "title": {
+    "text": "How many wins have the top 5 players of all time won over the years?",
+    "fontSize": 16
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/mleo0010/FIT3179-DataVis2-ML/main/data/best_players_wins.csv"
+  },
+  "params": [
+    {
+      "name": "Tourney_level_selection",
+      "value": "Total",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Total",
+          "Grand",
+          "Masters",
+          "Tour",
+          "Other"
+        ],
+        "labels": [
+          "All Tourneys",
+          "Grand Slams",
+          "Masters",
+          "Tour Finals",
+          "Other"
+        ],
+        "name": "Tourney Level: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.tourney_level == Tourney_level_selection"
+    },
+    {
+      "calculate": "datum.winner_name",
+      "as": "Player Name"
+    }
+  ],
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "year",
+          "timeUnit": "year",
+          "axis": {
+            "labelFontSize": 12,
+            "tickCount": 20,
+            "titleFontSize": 14
+          },
+          "title": "Year"
+        },
+        "y": {
+          "field": "Wins",
+          "type": "quantitative",
+          "axis": {
+            "labelFontSize": 12,
+            "titleFontSize": 14
+          },
+          "title": "Wins"
+        },
+        "color": {
+          "field": "Player Name",
+          "type": "nominal",
+          "legend": {
+            "labelFontSize": 14,
+            "titleFontSize": 14
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Player Name",
+            "type": "nominal"
+          },
+          {
+            "field": "year",
+            "title": "Year",
+            "timeUnit": "year"
+          },
+          {
+            "field": "Wins",
+            "type": "quantitative",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "xOffset": -6,
+        "yOffset": -17,
+        "fontSize": 12
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "timeUnit": "year"
+        },
+        "y": {
+          "field": "Wins",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "Wins",
+          "type": "nominal"
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum['Wins'] >= 12",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Player Name",
+            "type": "nominal"
+          },
+          {
+            "field": "year",
+            "title": "Year",
+            "timeUnit": "year"
+          },
+          {
+            "field": "Wins",
+            "type": "quantitative"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {}
+}

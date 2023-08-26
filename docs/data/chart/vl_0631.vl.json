@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Tufte inspired chart, with white grid lines over the bars",
+  "title": {
+    "text": "Growth rates - 21 countries",
+    "subtitle": [
+      "Growth rate of GDP per capita, 2022 vs 2021. World's 21 most populous countries",
+      "Source: World Bank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "view": {
+    "stroke": "transparent"
+  },
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch2_Growth/globalGDP.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.p21==1"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "rgb(128,0,0)"
+  },
+  "encoding": {
+    "x": {
+      "field": "GrowthLatest",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "zindex": 0,
+        "gridColor": "white",
+        "gridWidth": 0.5,
+        "labelAngle": 0,
+        "format": ".0%"
+      }
+    },
+    "y": {
+      "field": "ISO",
+      "title": null,
+      "type": "nominal",
+      "sort": "-x"
+    }
+  }
+}

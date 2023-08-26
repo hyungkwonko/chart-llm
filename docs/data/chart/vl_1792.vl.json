@@ -1,0 +1,157 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A basic bar chart example, with value labels shown upon mouse hover.",
+  "width": 440,
+  "padding": 5,
+  "title": "Actions (Summary)",
+  "data": {
+    "values": [
+      {
+        "action": "Self-care",
+        "count": 9
+      },
+      {
+        "action": "Punching self",
+        "count": 3
+      },
+      {
+        "action": "Binging",
+        "count": 20
+      },
+      {
+        "action": "Violence towards others",
+        "count": 1
+      },
+      {
+        "action": "Substance abuse",
+        "count": 5
+      },
+      {
+        "action": "Mastery",
+        "count": 25
+      },
+      {
+        "action": "Self-harm / cutting",
+        "count": 2
+      },
+      {
+        "action": "Verbal assualts to others",
+        "count": 1
+      },
+      {
+        "action": "Compare self to others",
+        "count": 10
+      }
+    ]
+  },
+  "selection": {
+    "action": {
+      "type": "multi",
+      "fields": [
+        "action"
+      ],
+      "bind": "legend",
+      "toggle": true
+    }
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "action",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labelAngle": -90,
+        "tickOffset": 0,
+        "labelAlign": "right",
+        "labelBaseline": "middle",
+        "labelColor": "rgba(0, 0, 0, 0.4)",
+        "labelFont": "Inter",
+        "labelFontWeight": 500,
+        "labelFontSize": 12,
+        "ticks": false,
+        "labelPadding": 12,
+        "gridColor": "#C8C8C8",
+        "gridWidth": 2,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Units",
+      "axis": {
+        "labelColor": "rgba(0, 0, 0, 0.4)",
+        "labelFont": "Inter",
+        "labelFontWeight": 500,
+        "labelFontSize": 12,
+        "ticks": false,
+        "labelPadding": 10,
+        "tickCount": 6,
+        "gridColor": "#C8C8C8",
+        "gridWidth": 2,
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "action",
+      "type": "ordinal",
+      "scale": {
+        "range": [
+          "#4C66D6",
+          "#65DEB4",
+          "#F1BD39",
+          "#E46759",
+          "rgba(0, 0, 0, 0.25)",
+          "#7DB2FF",
+          "#FE8470",
+          "#FFD645",
+          "#2F9D7E"
+        ]
+      }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "action",
+        "value": 1
+      },
+      "value": 0
+    },
+    "strokeWidth": {
+      "value": 2
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "mark": {
+      "cornerRadiusTopLeft": 2,
+      "cornerRadiusTopRight": 2
+    },
+    "title": {
+      "color": "rgba(0, 0, 0, 0.75)",
+      "fontSize": 25,
+      "font": "Inter",
+      "fontWeight": 600,
+      "align": "left",
+      "anchor": "start",
+      "dy": -40
+    },
+    "legend": {
+      "title": null,
+      "orient": "bottom",
+      "columns": 2,
+      "labelColor": "rgba(0, 0, 0, 0.75)",
+      "labelFont": "Inter",
+      "labelFontSize": 14,
+      "labelFontWeight": 600,
+      "rowPadding": 20,
+      "columnPadding": 30,
+      "symbolStrokeWidth": 15,
+      "symbolSize": 500,
+      "symbolType": "circle",
+      "offset": 30
+    }
+  }
+}

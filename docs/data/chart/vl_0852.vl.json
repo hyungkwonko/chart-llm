@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Z-scores for online vs in-store stocks",
+    "subtitle": "Weekly data of z-score for selceted firms",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/stockz.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 250,
+  "width": 400,
+  "mark": {
+    "type": "line",
+    "point": false,
+    "strokeWidth": 2
+  },
+  "selection": {
+    "Stock": {
+      "type": "single",
+      "fields": [
+        "Stock"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Alibaba",
+          "Amazon",
+          "Costco",
+          "Ebay",
+          "Etsy",
+          "GAP",
+          "T K Maxx"
+        ],
+        "name": "Stock"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "Stock"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Z-Score",
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "Stock",
+      "type": "nominal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "title": null,
+      "legend": {
+        "orient": "top-left"
+      }
+    }
+  }
+}

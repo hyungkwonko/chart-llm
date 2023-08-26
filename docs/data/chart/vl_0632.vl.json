@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The Great Depression",
+    "subtitle": [
+      "GDP and prices",
+      "Source: FRED",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/US_FRED_GDP_LongRun.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "GDPA",
+        "CPI_index"
+      ],
+      "as": [
+        "var",
+        "val"
+      ]
+    },
+    {
+      "calculate": "year(datum.DATE)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year<1945"
+    }
+  ],
+  "height": 200,
+  "width": 200,
+  "mark": {
+    "type": "line",
+    "color": "rgb(128,0,0)",
+    "strokeWidth": 2,
+    "point": false
+  },
+  "encoding": {
+    "x": {
+      "field": "DATE",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "val",
+      "type": "quantitative",
+      "title": null
+    },
+    "facet": {
+      "field": "var",
+      "title": null,
+      "columns": 1
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

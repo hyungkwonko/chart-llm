@@ -1,0 +1,836 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-f563dec5a74c106ef4c1e0a132f17428"
+      },
+      "mark": {
+        "type": "rect",
+        "color": "#169cf5",
+        "opacity": 0.25
+      },
+      "encoding": {
+        "x": {
+          "type": "ordinal",
+          "field": "position"
+        }
+      },
+      "width": {
+        "step": 5
+      }
+    },
+    {
+      "data": {
+        "name": "data-9db29cdd31d04bcd1ea4c7acab41e620"
+      },
+      "mark": {
+        "type": "rect",
+        "color": "#f5e216",
+        "opacity": 0.25
+      },
+      "encoding": {
+        "x": {
+          "type": "ordinal",
+          "field": "position"
+        }
+      },
+      "width": {
+        "step": 5
+      }
+    },
+    {
+      "data": {
+        "name": "data-47de4e39b95ed82910ece2c629405cfd"
+      },
+      "mark": {
+        "type": "tick",
+        "opacity": 1,
+        "thickness": 2
+      },
+      "encoding": {
+        "color": {
+          "type": "nominal",
+          "field": "real_mut",
+          "legend": null,
+          "scale": {
+            "domain": [
+              true,
+              false
+            ],
+            "range": [
+              "black",
+              "transparent"
+            ]
+          }
+        },
+        "x": {
+          "type": "ordinal",
+          "axis": {
+            "grid": false,
+            "labelFontSize": 12,
+            "labelOverlap": "parity",
+            "labelSeparation": 10
+          },
+          "field": "position",
+          "title": "Amino acid position"
+        },
+        "y": {
+          "type": "nominal",
+          "axis": {
+            "grid": true,
+            "labels": true,
+            "orient": "left",
+            "title": "mAb"
+          },
+          "field": "seq_id",
+          "sort": [
+            "seq1",
+            "seq2",
+            "seq3",
+            "seq4"
+          ],
+          "title": "sequence"
+        }
+      },
+      "title": "lineage 2 heavy chain",
+      "width": {
+        "step": 5
+      }
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-f563dec5a74c106ef4c1e0a132f17428": [
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 0,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 5,
+        "mut_from": "T",
+        "mut_to": "T",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 10,
+        "mut_from": "C",
+        "mut_to": "C",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 11,
+        "mut_from": "G",
+        "mut_to": "G",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      }
+    ],
+    "data-9db29cdd31d04bcd1ea4c7acab41e620": [
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 1,
+        "mut_from": "T",
+        "mut_to": "T",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 2,
+        "mut_from": "C",
+        "mut_to": "C",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 3,
+        "mut_from": "G",
+        "mut_to": "G",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 4,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 6,
+        "mut_from": "C",
+        "mut_to": "C",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 7,
+        "mut_from": "G",
+        "mut_to": "G",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 8,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 9,
+        "mut_from": "T",
+        "mut_to": "T",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      }
+    ],
+    "data-47de4e39b95ed82910ece2c629405cfd": [
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 0,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 1,
+        "mut_from": "T",
+        "mut_to": "T",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 2,
+        "mut_from": "C",
+        "mut_to": "C",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 3,
+        "mut_from": "G",
+        "mut_to": "G",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 4,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 5,
+        "mut_from": "T",
+        "mut_to": "T",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 6,
+        "mut_from": "C",
+        "mut_to": "C",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 7,
+        "mut_from": "G",
+        "mut_to": "G",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 8,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 9,
+        "mut_from": "T",
+        "mut_to": "T",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 10,
+        "mut_from": "C",
+        "mut_to": "C",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "naive",
+        "index": 0,
+        "seq_id": "seq1",
+        "position": 11,
+        "mut_from": "G",
+        "mut_to": "G",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 1,
+        "seq_id": " seq2",
+        "position": 0,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 1,
+        "seq_id": " seq2",
+        "position": 1,
+        "mut_from": "T",
+        "mut_to": "T",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 1,
+        "seq_id": " seq2",
+        "position": 2,
+        "mut_from": "C",
+        "mut_to": "C",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 1,
+        "seq_id": " seq2",
+        "position": 3,
+        "mut_from": "G",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": true
+      },
+      {
+        "type": "lineage_member",
+        "index": 1,
+        "seq_id": " seq2",
+        "position": 4,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 1,
+        "seq_id": " seq2",
+        "position": 5,
+        "mut_from": "T",
+        "mut_to": "A",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": true
+      },
+      {
+        "type": "lineage_member",
+        "index": 1,
+        "seq_id": " seq2",
+        "position": 6,
+        "mut_from": "C",
+        "mut_to": "C",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 1,
+        "seq_id": " seq2",
+        "position": 7,
+        "mut_from": "G",
+        "mut_to": "G",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 1,
+        "seq_id": " seq2",
+        "position": 8,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 1,
+        "seq_id": " seq2",
+        "position": 9,
+        "mut_from": "T",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": true
+      },
+      {
+        "type": "lineage_member",
+        "index": 1,
+        "seq_id": " seq2",
+        "position": 10,
+        "mut_from": "C",
+        "mut_to": "C",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 1,
+        "seq_id": " seq2",
+        "position": 11,
+        "mut_from": "G",
+        "mut_to": "G",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 2,
+        "seq_id": "  seq3",
+        "position": 0,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 2,
+        "seq_id": "  seq3",
+        "position": 1,
+        "mut_from": "T",
+        "mut_to": "T",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 2,
+        "seq_id": "  seq3",
+        "position": 2,
+        "mut_from": "C",
+        "mut_to": "C",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 2,
+        "seq_id": "  seq3",
+        "position": 3,
+        "mut_from": "G",
+        "mut_to": "G",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 2,
+        "seq_id": "  seq3",
+        "position": 4,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 2,
+        "seq_id": "  seq3",
+        "position": 5,
+        "mut_from": "T",
+        "mut_to": "T",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 2,
+        "seq_id": "  seq3",
+        "position": 6,
+        "mut_from": "C",
+        "mut_to": "C",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 2,
+        "seq_id": "  seq3",
+        "position": 7,
+        "mut_from": "G",
+        "mut_to": "G",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 2,
+        "seq_id": "  seq3",
+        "position": 8,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 2,
+        "seq_id": "  seq3",
+        "position": 9,
+        "mut_from": "T",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": true
+      },
+      {
+        "type": "lineage_member",
+        "index": 2,
+        "seq_id": "  seq3",
+        "position": 10,
+        "mut_from": "C",
+        "mut_to": "A",
+        "region": "Framework",
+        "framework": true,
+        "radical": true,
+        "real_mut": true
+      },
+      {
+        "type": "lineage_member",
+        "index": 2,
+        "seq_id": "  seq3",
+        "position": 11,
+        "mut_from": "G",
+        "mut_to": "A",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": true
+      },
+      {
+        "type": "lineage_member",
+        "index": 3,
+        "seq_id": "   seq4",
+        "position": 0,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 3,
+        "seq_id": "   seq4",
+        "position": 1,
+        "mut_from": "T",
+        "mut_to": "T",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 3,
+        "seq_id": "   seq4",
+        "position": 2,
+        "mut_from": "C",
+        "mut_to": "C",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 3,
+        "seq_id": "   seq4",
+        "position": 3,
+        "mut_from": "G",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": true
+      },
+      {
+        "type": "lineage_member",
+        "index": 3,
+        "seq_id": "   seq4",
+        "position": 4,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 3,
+        "seq_id": "   seq4",
+        "position": 5,
+        "mut_from": "T",
+        "mut_to": "A",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": true
+      },
+      {
+        "type": "lineage_member",
+        "index": 3,
+        "seq_id": "   seq4",
+        "position": 6,
+        "mut_from": "C",
+        "mut_to": "C",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 3,
+        "seq_id": "   seq4",
+        "position": 7,
+        "mut_from": "G",
+        "mut_to": "G",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 3,
+        "seq_id": "   seq4",
+        "position": 8,
+        "mut_from": "A",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": false
+      },
+      {
+        "type": "lineage_member",
+        "index": 3,
+        "seq_id": "   seq4",
+        "position": 9,
+        "mut_from": "T",
+        "mut_to": "A",
+        "region": "CDR",
+        "framework": false,
+        "radical": false,
+        "real_mut": true
+      },
+      {
+        "type": "lineage_member",
+        "index": 3,
+        "seq_id": "   seq4",
+        "position": 10,
+        "mut_from": "C",
+        "mut_to": "A",
+        "region": "Framework",
+        "framework": true,
+        "radical": true,
+        "real_mut": true
+      },
+      {
+        "type": "lineage_member",
+        "index": 3,
+        "seq_id": "   seq4",
+        "position": 11,
+        "mut_from": "G",
+        "mut_to": "A",
+        "region": "Framework",
+        "framework": true,
+        "radical": false,
+        "real_mut": true
+      }
+    ]
+  }
+}

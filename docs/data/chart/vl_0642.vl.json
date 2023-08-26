@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple donut chart with embedded data.",
+  "height": 300,
+  "width": 300,
+  "view": {
+    "stroke": "transparent"
+  },
+  "title": {
+    "text": "US GVA by sector",
+    "subtitle": [
+      "2022 Q3, Source: BEA",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDP_GVAbyIndustry.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Number",
+        "oneOf": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "rgb(128,0,0)"
+  },
+  "encoding": {
+    "x": {
+      "field": "Value",
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "shortName",
+      "type": "nominal",
+      "sort": {
+        "field": "Number",
+        "order": "ascending"
+      },
+      "axis": {
+        "title": null,
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "privatePublic",
+      "legend": {
+        "title": null
+      },
+      "sort": {
+        "field": "Number",
+        "order": "ascending"
+      },
+      "scale": {
+        "range": [
+          "rgb(118,118,118)",
+          "rgb(128,0,0)"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Item",
+        "title": "Industry",
+        "type": "nominal"
+      },
+      {
+        "field": "Value",
+        "title": "USD billions",
+        "format": "$,"
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 380,
+  "title": {
+    "text": "Number of passengers carried between 1996-2020",
+    "subtitle": "Source: World Bank Data (2022)",
+    "fontSize": "15",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 2003,
+      "bind": {
+        "input": "range",
+        "min": 1996,
+        "max": 2020,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/leakyMirror/map-of-europe/master/GeoJSON/europe.geojson",
+        "format": {
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#C5C5C5",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/projectMAP_python_cleaned.csv",
+        "format": {
+          "type": "csv"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.Year == yearSelector"
+        },
+        {
+          "lookup": "Country Name",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/leakyMirror/map-of-europe/master/GeoJSON/europe.geojson",
+              "format": {
+                "property": "features"
+              }
+            },
+            "key": "properties.NAME",
+            "fields": [
+              "properties",
+              "type",
+              "geometry"
+            ]
+          }
+        }
+      ],
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 0.3
+      },
+      "encoding": {
+        "color": {
+          "field": "Number of passengers carried",
+          "legend": {
+            "title": null,
+            "orient": "bottom",
+            "direction": "horizontal"
+          },
+          "type": "quantitative",
+          "scale": {
+            "scheme": "yelloworangered"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.NAME",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "Number of passengers carried",
+            "title": "Passengers carried (mil.)"
+          }
+        ]
+      }
+    }
+  ]
+}

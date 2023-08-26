@@ -1,0 +1,153 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "FTSE 100 vs S&P 500 Daily Change",
+    "subtitle": [
+      "Source: Investing.com, Past 10 years"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/Daily%20Stock%20Data.json",
+    "format": {
+      "type": "json"
+    }
+  },
+  "height": 318,
+  "width": "container",
+  "transform": [
+    {
+      "filter": "datum.SP_500_Change<5"
+    },
+    {
+      "filter": "datum.FTSE100_Change<5"
+    },
+    {
+      "filter": "datum.SP_500_Change>-5"
+    },
+    {
+      "filter": "datum.FTSE100_Change>-5"
+    }
+  ],
+  "layer": [
+    {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "bin": {
+            "maxbins": 50
+          },
+          "field": "SP_500_Change",
+          "type": "quantitative",
+          "title": "S&P 500 Daily Change, %",
+          "axis": {
+            "values": [
+              -5,
+              -4,
+              -3,
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        "y": {
+          "bin": {
+            "maxbins": 50
+          },
+          "field": "FTSE100_Change",
+          "type": "quantitative",
+          "title": "FTSE100 Daily Change, %",
+          "axis": {
+            "values": [
+              -5,
+              -4,
+              -3,
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        "color": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "title": "Frequency",
+          "legend": {
+            "orient": "top-left"
+          }
+        },
+        "tooltip": [
+          {
+            "aggregate": "count",
+            "type": "quantitative",
+            "title": "Frequency"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          8,
+          5
+        ],
+        "size": 2,
+        "color": "black",
+        "opacity": 0.4
+      },
+      "encoding": {
+        "y": {
+          "datum": 0
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          8,
+          5
+        ],
+        "size": 2,
+        "color": "black",
+        "opacity": 0.4
+      },
+      "encoding": {
+        "x": {
+          "datum": 0
+        }
+      }
+    }
+  ]
+}

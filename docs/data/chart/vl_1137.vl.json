@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/dannysupple/dannysupple.github.io/main/custom.geo.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "background": "cyan",
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "lookup": "properties.brk_name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/dannysupple/dannysupple.github.io/main/spa_por(4).csv"
+        },
+        "key": "Country",
+        "fields": [
+          "Both"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "darkgray",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "Both",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "Oranges"
+      }
+    },
+    "key": null,
+    "tooltip": {
+      "field": "properties.brk_name",
+      "type": "nominal"
+    }
+  },
+  "config": {
+    "legend": {
+      "disable": true
+    }
+  }
+}

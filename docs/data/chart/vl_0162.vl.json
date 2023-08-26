@@ -1,0 +1,1807 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "columns": 5,
+  "config": {
+    "axis": {
+      "domainColor": "#ddd",
+      "grid": true,
+      "gridColor": "#eee",
+      "labelBound": true,
+      "labelColor": "gray",
+      "tickColor": "#ddd"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "gray",
+      "fontSize": 14,
+      "fontWeight": "bold"
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "strokeWidth": 0
+    }
+  },
+  "data": {
+    "name": "data-74176ce0595893ae5b87bae467f02d33"
+  },
+  "datasets": {
+    "data-74176ce0595893ae5b87bae467f02d33": [
+      {
+        "count": 22,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 1,
+        "year": 2017
+      },
+      {
+        "count": 21,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 2,
+        "year": 2017
+      },
+      {
+        "count": 22,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 3,
+        "year": 2017
+      },
+      {
+        "count": 19,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 4,
+        "year": 2017
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 5,
+        "year": 2017
+      },
+      {
+        "count": 23,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 6,
+        "year": 2017
+      },
+      {
+        "count": 17,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 7,
+        "year": 2017
+      },
+      {
+        "count": 4,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 8,
+        "year": 2017
+      },
+      {
+        "count": 22,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 9,
+        "year": 2017
+      },
+      {
+        "count": 15,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 10,
+        "year": 2017
+      },
+      {
+        "count": 7,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 11,
+        "year": 2017
+      },
+      {
+        "count": 8,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 12,
+        "year": 2017
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 13,
+        "year": 2017
+      },
+      {
+        "count": 16,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 14,
+        "year": 2017
+      },
+      {
+        "count": 9,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 15,
+        "year": 2017
+      },
+      {
+        "count": 16,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 16,
+        "year": 2017
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 17,
+        "year": 2017
+      },
+      {
+        "count": 8,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 18,
+        "year": 2017
+      },
+      {
+        "count": 6,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 19,
+        "year": 2017
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 20,
+        "year": 2017
+      },
+      {
+        "count": 9,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 21,
+        "year": 2017
+      },
+      {
+        "count": 1,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 22,
+        "year": 2017
+      },
+      {
+        "count": 3,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 23,
+        "year": 2017
+      },
+      {
+        "count": 10,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 24,
+        "year": 2017
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 25,
+        "year": 2017
+      },
+      {
+        "count": 7,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 26,
+        "year": 2017
+      },
+      {
+        "count": 8,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 27,
+        "year": 2017
+      },
+      {
+        "count": 5,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 28,
+        "year": 2017
+      },
+      {
+        "count": 8,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 29,
+        "year": 2017
+      },
+      {
+        "count": 12,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 30,
+        "year": 2017
+      },
+      {
+        "count": 8,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 31,
+        "year": 2017
+      },
+      {
+        "count": 5,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 32,
+        "year": 2017
+      },
+      {
+        "count": 2,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 33,
+        "year": 2017
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 34,
+        "year": 2017
+      },
+      {
+        "count": 15,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 35,
+        "year": 2017
+      },
+      {
+        "count": 5,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 36,
+        "year": 2017
+      },
+      {
+        "count": 10,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 37,
+        "year": 2017
+      },
+      {
+        "count": 12,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 38,
+        "year": 2017
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 39,
+        "year": 2017
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 40,
+        "year": 2017
+      },
+      {
+        "count": 6,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 41,
+        "year": 2017
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 42,
+        "year": 2017
+      },
+      {
+        "count": 7,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 43,
+        "year": 2017
+      },
+      {
+        "count": 5,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 44,
+        "year": 2017
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 45,
+        "year": 2017
+      },
+      {
+        "count": 15,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 46,
+        "year": 2017
+      },
+      {
+        "count": 6,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 47,
+        "year": 2017
+      },
+      {
+        "count": 16,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 48,
+        "year": 2017
+      },
+      {
+        "count": 10,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 49,
+        "year": 2017
+      },
+      {
+        "count": 10,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 50,
+        "year": 2017
+      },
+      {
+        "count": 6,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 51,
+        "year": 2017
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 52,
+        "year": 2017
+      },
+      {
+        "count": 22,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 1,
+        "year": 2018
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 2,
+        "year": 2018
+      },
+      {
+        "count": 22,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 3,
+        "year": 2018
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 4,
+        "year": 2018
+      },
+      {
+        "count": 12,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 5,
+        "year": 2018
+      },
+      {
+        "count": 7,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 6,
+        "year": 2018
+      },
+      {
+        "count": 21,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 7,
+        "year": 2018
+      },
+      {
+        "count": 27,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 8,
+        "year": 2018
+      },
+      {
+        "count": 17,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 9,
+        "year": 2018
+      },
+      {
+        "count": 9,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 10,
+        "year": 2018
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 11,
+        "year": 2018
+      },
+      {
+        "count": 15,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 12,
+        "year": 2018
+      },
+      {
+        "count": 6,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 13,
+        "year": 2018
+      },
+      {
+        "count": 22,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 14,
+        "year": 2018
+      },
+      {
+        "count": 24,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 15,
+        "year": 2018
+      },
+      {
+        "count": 9,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 16,
+        "year": 2018
+      },
+      {
+        "count": 8,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 17,
+        "year": 2018
+      },
+      {
+        "count": 12,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 18,
+        "year": 2018
+      },
+      {
+        "count": 15,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 19,
+        "year": 2018
+      },
+      {
+        "count": 9,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 20,
+        "year": 2018
+      },
+      {
+        "count": 4,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 21,
+        "year": 2018
+      },
+      {
+        "count": 5,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 22,
+        "year": 2018
+      },
+      {
+        "count": 7,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 23,
+        "year": 2018
+      },
+      {
+        "count": 7,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 24,
+        "year": 2018
+      },
+      {
+        "count": 12,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 25,
+        "year": 2018
+      },
+      {
+        "count": 9,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 26,
+        "year": 2018
+      },
+      {
+        "count": 10,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 27,
+        "year": 2018
+      },
+      {
+        "count": 8,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 28,
+        "year": 2018
+      },
+      {
+        "count": 12,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 29,
+        "year": 2018
+      },
+      {
+        "count": 8,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 30,
+        "year": 2018
+      },
+      {
+        "count": 14,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 31,
+        "year": 2018
+      },
+      {
+        "count": 21,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 32,
+        "year": 2018
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 33,
+        "year": 2018
+      },
+      {
+        "count": 6,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 34,
+        "year": 2018
+      },
+      {
+        "count": 9,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 35,
+        "year": 2018
+      },
+      {
+        "count": 9,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 36,
+        "year": 2018
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 37,
+        "year": 2018
+      },
+      {
+        "count": 3,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 38,
+        "year": 2018
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 39,
+        "year": 2018
+      },
+      {
+        "count": 15,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 40,
+        "year": 2018
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 41,
+        "year": 2018
+      },
+      {
+        "count": 23,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 42,
+        "year": 2018
+      },
+      {
+        "count": 5,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 43,
+        "year": 2018
+      },
+      {
+        "count": 7,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 44,
+        "year": 2018
+      },
+      {
+        "count": 5,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 45,
+        "year": 2018
+      },
+      {
+        "count": 4,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 46,
+        "year": 2018
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 47,
+        "year": 2018
+      },
+      {
+        "count": 7,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 48,
+        "year": 2018
+      },
+      {
+        "count": 14,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 49,
+        "year": 2018
+      },
+      {
+        "count": 14,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 50,
+        "year": 2018
+      },
+      {
+        "count": 21,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 51,
+        "year": 2018
+      },
+      {
+        "count": 26,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 52,
+        "year": 2018
+      },
+      {
+        "count": 10,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 1,
+        "year": 2019
+      },
+      {
+        "count": 15,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 2,
+        "year": 2019
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 3,
+        "year": 2019
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 4,
+        "year": 2019
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 5,
+        "year": 2019
+      },
+      {
+        "count": 8,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 6,
+        "year": 2019
+      },
+      {
+        "count": 14,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 7,
+        "year": 2019
+      },
+      {
+        "count": 10,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 8,
+        "year": 2019
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 9,
+        "year": 2019
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 10,
+        "year": 2019
+      },
+      {
+        "count": 19,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 11,
+        "year": 2019
+      },
+      {
+        "count": 6,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 12,
+        "year": 2019
+      },
+      {
+        "count": 17,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 13,
+        "year": 2019
+      },
+      {
+        "count": 12,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 14,
+        "year": 2019
+      },
+      {
+        "count": 14,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 15,
+        "year": 2019
+      },
+      {
+        "count": 16,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 16,
+        "year": 2019
+      },
+      {
+        "count": 12,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 17,
+        "year": 2019
+      },
+      {
+        "count": 14,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 18,
+        "year": 2019
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 19,
+        "year": 2019
+      },
+      {
+        "count": 23,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 20,
+        "year": 2019
+      },
+      {
+        "count": 10,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 21,
+        "year": 2019
+      },
+      {
+        "count": 23,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 22,
+        "year": 2019
+      },
+      {
+        "count": 12,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 23,
+        "year": 2019
+      },
+      {
+        "count": 20,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 24,
+        "year": 2019
+      },
+      {
+        "count": 22,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 25,
+        "year": 2019
+      },
+      {
+        "count": 19,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 26,
+        "year": 2019
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 27,
+        "year": 2019
+      },
+      {
+        "count": 17,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 28,
+        "year": 2019
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 29,
+        "year": 2019
+      },
+      {
+        "count": 15,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 30,
+        "year": 2019
+      },
+      {
+        "count": 16,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 31,
+        "year": 2019
+      },
+      {
+        "count": 16,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 32,
+        "year": 2019
+      },
+      {
+        "count": 9,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 33,
+        "year": 2019
+      },
+      {
+        "count": 17,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 34,
+        "year": 2019
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 35,
+        "year": 2019
+      },
+      {
+        "count": 6,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 36,
+        "year": 2019
+      },
+      {
+        "count": 10,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 37,
+        "year": 2019
+      },
+      {
+        "count": 14,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 38,
+        "year": 2019
+      },
+      {
+        "count": 9,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 39,
+        "year": 2019
+      },
+      {
+        "count": 22,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 40,
+        "year": 2019
+      },
+      {
+        "count": 26,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 41,
+        "year": 2019
+      },
+      {
+        "count": 14,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 42,
+        "year": 2019
+      },
+      {
+        "count": 20,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 43,
+        "year": 2019
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 44,
+        "year": 2019
+      },
+      {
+        "count": 14,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 45,
+        "year": 2019
+      },
+      {
+        "count": 23,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 46,
+        "year": 2019
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 47,
+        "year": 2019
+      },
+      {
+        "count": 19,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 48,
+        "year": 2019
+      },
+      {
+        "count": 19,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 49,
+        "year": 2019
+      },
+      {
+        "count": 16,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 50,
+        "year": 2019
+      },
+      {
+        "count": 19,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 51,
+        "year": 2019
+      },
+      {
+        "count": 26,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 52,
+        "year": 2019
+      },
+      {
+        "count": 20,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 1,
+        "year": 2020
+      },
+      {
+        "count": 23,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 2,
+        "year": 2020
+      },
+      {
+        "count": 30,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 3,
+        "year": 2020
+      },
+      {
+        "count": 27,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 4,
+        "year": 2020
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 5,
+        "year": 2020
+      },
+      {
+        "count": 26,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 6,
+        "year": 2020
+      },
+      {
+        "count": 18,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 7,
+        "year": 2020
+      },
+      {
+        "count": 23,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 8,
+        "year": 2020
+      },
+      {
+        "count": 14,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 9,
+        "year": 2020
+      },
+      {
+        "count": 18,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 10,
+        "year": 2020
+      },
+      {
+        "count": 17,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 11,
+        "year": 2020
+      },
+      {
+        "count": 16,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 12,
+        "year": 2020
+      },
+      {
+        "count": 7,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 13,
+        "year": 2020
+      },
+      {
+        "count": 12,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 14,
+        "year": 2020
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 15,
+        "year": 2020
+      },
+      {
+        "count": 19,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 16,
+        "year": 2020
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 17,
+        "year": 2020
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 18,
+        "year": 2020
+      },
+      {
+        "count": 12,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 19,
+        "year": 2020
+      },
+      {
+        "count": 5,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 20,
+        "year": 2020
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 21,
+        "year": 2020
+      },
+      {
+        "count": 8,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 22,
+        "year": 2020
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 23,
+        "year": 2020
+      },
+      {
+        "count": 17,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 24,
+        "year": 2020
+      },
+      {
+        "count": 8,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 25,
+        "year": 2020
+      },
+      {
+        "count": 14,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 26,
+        "year": 2020
+      },
+      {
+        "count": 15,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 27,
+        "year": 2020
+      },
+      {
+        "count": 8,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 28,
+        "year": 2020
+      },
+      {
+        "count": 9,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 29,
+        "year": 2020
+      },
+      {
+        "count": 12,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 30,
+        "year": 2020
+      },
+      {
+        "count": 15,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 31,
+        "year": 2020
+      },
+      {
+        "count": 15,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 32,
+        "year": 2020
+      },
+      {
+        "count": 16,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 33,
+        "year": 2020
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 34,
+        "year": 2020
+      },
+      {
+        "count": 7,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 35,
+        "year": 2020
+      },
+      {
+        "count": 20,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 36,
+        "year": 2020
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 37,
+        "year": 2020
+      },
+      {
+        "count": 8,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 38,
+        "year": 2020
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 39,
+        "year": 2020
+      },
+      {
+        "count": 18,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 40,
+        "year": 2020
+      },
+      {
+        "count": 9,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 41,
+        "year": 2020
+      },
+      {
+        "count": 16,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 42,
+        "year": 2020
+      },
+      {
+        "count": 13,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 43,
+        "year": 2020
+      },
+      {
+        "count": 23,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 44,
+        "year": 2020
+      },
+      {
+        "count": 15,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 45,
+        "year": 2020
+      },
+      {
+        "count": 18,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 46,
+        "year": 2020
+      },
+      {
+        "count": 16,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 47,
+        "year": 2020
+      },
+      {
+        "count": 7,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 48,
+        "year": 2020
+      },
+      {
+        "count": 4,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 49,
+        "year": 2020
+      },
+      {
+        "count": 9,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 50,
+        "year": 2020
+      },
+      {
+        "count": 11,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 51,
+        "year": 2020
+      },
+      {
+        "count": 1,
+        "district": "Innsbruck-Stadt",
+        "municipaly": "Innsbruck",
+        "week": 52,
+        "year": 2020
+      }
+    ]
+  },
+  "facet": {
+    "field": "municipaly",
+    "header": {
+      "labelAnchor": "start",
+      "labelOrient": "bottom",
+      "labelPadding": 0
+    },
+    "title": null,
+    "type": "nominal"
+  },
+  "padding": 0,
+  "spec": {
+    "layer": [
+      {
+        "encoding": {
+          "x": {
+            "axis": {
+              "grid": false
+            },
+            "field": "week",
+            "scale": {
+              "domain": [
+                1,
+                52
+              ],
+              "nice": false,
+              "zero": false
+            },
+            "title": "",
+            "type": "quantitative"
+          },
+          "y": {
+            "aggregate": "max",
+            "field": "week_count",
+            "title": "",
+            "type": "quantitative"
+          },
+          "y2": {
+            "aggregate": "min",
+            "field": "week_count",
+            "title": ""
+          }
+        },
+        "height": 60,
+        "mark": {
+          "fill": "lightgray",
+          "opacity": 0.35,
+          "stroke": "lightgray",
+          "strokeJoin": "round",
+          "strokeOpacity": 0.35,
+          "strokeWidth": 1,
+          "type": "area"
+        },
+        "transform": [
+          {
+            "filter": "datum.year!=2021 && datum.year!=2020 && datum.year!=2016"
+          },
+          {
+            "groupby": [
+              "week",
+              "year"
+            ],
+            "joinaggregate": [
+              {
+                "as": "week_count",
+                "field": "count",
+                "op": "sum"
+              }
+            ]
+          },
+          {
+            "as": "week_count_min",
+            "calculate": "min(datum.week_count)"
+          },
+          {
+            "as": "week_count_max",
+            "calculate": "max(datum.week_count)"
+          }
+        ],
+        "width": 150
+      },
+      {
+        "encoding": {
+          "x": {
+            "axis": {
+              "grid": false
+            },
+            "field": "week",
+            "scale": {
+              "domain": [
+                1,
+                52
+              ],
+              "nice": false,
+              "zero": false
+            },
+            "title": "",
+            "type": "quantitative"
+          },
+          "y": {
+            "aggregate": "mean",
+            "field": "week_count",
+            "title": "",
+            "type": "quantitative"
+          }
+        },
+        "height": 60,
+        "mark": {
+          "color": "gray",
+          "opacity": 0.25,
+          "strokeJoin": "round",
+          "type": "line"
+        },
+        "transform": [
+          {
+            "filter": "datum.year!=2021 && datum.year!=2020 && datum.year!=2016"
+          },
+          {
+            "groupby": [
+              "week",
+              "year"
+            ],
+            "joinaggregate": [
+              {
+                "as": "week_count",
+                "field": "count",
+                "op": "sum"
+              }
+            ]
+          }
+        ],
+        "width": 150
+      },
+      {
+        "encoding": {
+          "x": {
+            "axis": {
+              "grid": false
+            },
+            "field": "week",
+            "scale": {
+              "domain": [
+                1,
+                52
+              ],
+              "nice": false,
+              "zero": false
+            },
+            "title": "",
+            "type": "quantitative"
+          },
+          "y": {
+            "axis": {
+              "domainOpacity": 0,
+              "ticks": false
+            },
+            "field": "week_count",
+            "title": "",
+            "type": "quantitative"
+          }
+        },
+        "height": 60,
+        "mark": {
+          "strokeJoin": "round",
+          "type": "line"
+        },
+        "transform": [
+          {
+            "filter": "datum.year==2020 & datum.week<53"
+          },
+          {
+            "groupby": [
+              "week",
+              "year"
+            ],
+            "joinaggregate": [
+              {
+                "as": "week_count",
+                "field": "count",
+                "op": "sum"
+              }
+            ]
+          }
+        ],
+        "width": 150
+      },
+      {
+        "encoding": {
+          "x": {
+            "axis": {
+              "grid": false
+            },
+            "field": "week",
+            "scale": {
+              "domain": [
+                1,
+                52
+              ],
+              "nice": false,
+              "zero": false
+            },
+            "title": "",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "week_count",
+            "scale": {
+              "zero": true
+            },
+            "title": "",
+            "type": "quantitative"
+          }
+        },
+        "height": 60,
+        "mark": {
+          "color": "red",
+          "opacity": 0.4,
+          "size": 60,
+          "strokeWidth": 3,
+          "type": "point"
+        },
+        "transform": [
+          {
+            "filter": "datum.year==2020 & datum.week<53 & datum.outlier_score>=0.5"
+          },
+          {
+            "groupby": [
+              "week",
+              "year"
+            ],
+            "joinaggregate": [
+              {
+                "as": "week_count",
+                "field": "count",
+                "op": "sum"
+              },
+              {
+                "as": "outlier_score_max",
+                "field": "outlier_score",
+                "op": "max"
+              }
+            ]
+          }
+        ],
+        "width": 150
+      },
+      {
+        "encoding": {
+          "tooltip": [
+            {
+              "field": "week",
+              "title": "Kalenderwoche",
+              "type": "ordinal"
+            },
+            {
+              "aggregate": "sum",
+              "field": "count",
+              "title": "Todesanzeigen",
+              "type": "quantitative"
+            },
+            {
+              "field": "outlier_score",
+              "format": ".2%",
+              "title": "Outlier-Score",
+              "type": "quantitative"
+            }
+          ],
+          "x": {
+            "axis": {
+              "grid": false
+            },
+            "field": "week",
+            "scale": {
+              "domain": [
+                1,
+                52
+              ],
+              "nice": false,
+              "zero": false
+            },
+            "title": "",
+            "type": "quantitative"
+          },
+          "y": {
+            "aggregate": "sum",
+            "field": "count",
+            "scale": {
+              "zero": true
+            },
+            "title": "",
+            "type": "quantitative"
+          }
+        },
+        "height": 60,
+        "mark": {
+          "color": "gray",
+          "opacity": 0,
+          "size": 150,
+          "type": "circle"
+        },
+        "transform": [
+          {
+            "filter": "datum.year==2020 & datum.week<53"
+          }
+        ],
+        "width": 150
+      }
+    ]
+  },
+  "title": {
+    "color": "black",
+    "subtitle": [
+      "Quelle: https://github.com/walterra/covid-19-tirol-ds"
+    ],
+    "subtitleColor": "gray",
+    "text": [
+      "Todesanzeigen im Bezirk Innsbruck-Stadt pro Gemeinde pro Woche im Jahresverlauf"
+    ]
+  }
+}

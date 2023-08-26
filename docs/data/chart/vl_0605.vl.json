@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch3_Work/chicagoSalaries.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "title": {
+    "text": "Chicago Salaries - Distribution",
+    "subtitle": "Public Sector Salary Workers",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 400,
+  "height": 400,
+  "mark": {
+    "type": "bar",
+    "color": "rgb(128,0,0)"
+  },
+  "encoding": {
+    "x": {
+      "bin": {
+        "step": 5000
+      },
+      "field": "Annual Salary"
+    },
+    "y": {
+      "aggregate": "count"
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A vertical box plot showing median, min, and max block hours.",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "cyl": 6,
+        "qsec": 16.46
+      },
+      {
+        "cyl": 6,
+        "qsec": 17.02
+      },
+      {
+        "cyl": 4,
+        "qsec": 18.61
+      },
+      {
+        "cyl": 6,
+        "qsec": 19.44
+      },
+      {
+        "cyl": 8,
+        "qsec": 17.02
+      },
+      {
+        "cyl": 6,
+        "qsec": 20.22
+      },
+      {
+        "cyl": 8,
+        "qsec": 15.84
+      },
+      {
+        "cyl": 4,
+        "qsec": 20
+      },
+      {
+        "cyl": 4,
+        "qsec": 22.9
+      },
+      {
+        "cyl": 6,
+        "qsec": 18.3
+      },
+      {
+        "cyl": 6,
+        "qsec": 18.9
+      },
+      {
+        "cyl": 8,
+        "qsec": 17.4
+      },
+      {
+        "cyl": 8,
+        "qsec": 17.6
+      },
+      {
+        "cyl": 8,
+        "qsec": 18
+      },
+      {
+        "cyl": 8,
+        "qsec": 17.98
+      },
+      {
+        "cyl": 8,
+        "qsec": 17.82
+      },
+      {
+        "cyl": 8,
+        "qsec": 17.42
+      },
+      {
+        "cyl": 4,
+        "qsec": 19.47
+      },
+      {
+        "cyl": 4,
+        "qsec": 18.52
+      },
+      {
+        "cyl": 4,
+        "qsec": 19.9
+      },
+      {
+        "cyl": 4,
+        "qsec": 20.01
+      },
+      {
+        "cyl": 8,
+        "qsec": 16.87
+      },
+      {
+        "cyl": 8,
+        "qsec": 17.3
+      },
+      {
+        "cyl": 8,
+        "qsec": 15.41
+      },
+      {
+        "cyl": 8,
+        "qsec": 17.05
+      },
+      {
+        "cyl": 4,
+        "qsec": 18.9
+      },
+      {
+        "cyl": 4,
+        "qsec": 16.7
+      },
+      {
+        "cyl": 4,
+        "qsec": 16.9
+      },
+      {
+        "cyl": 8,
+        "qsec": 14.5
+      },
+      {
+        "cyl": 6,
+        "qsec": 15.5
+      },
+      {
+        "cyl": 8,
+        "qsec": 14.6
+      },
+      {
+        "cyl": 4,
+        "qsec": 18.6
+      }
+    ]
+  },
+  "mark": {
+    "type": "boxplot",
+    "extent": "min-max"
+  },
+  "encoding": {
+    "x": {
+      "field": "cyl",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "cyl",
+      "type": "nominal",
+      "legend": null
+    },
+    "y": {
+      "field": "qsec",
+      "type": "quantitative",
+      "scale": {
+        "zero": false
+      }
+    },
+    "size": {
+      "value": 90
+    }
+  }
+}

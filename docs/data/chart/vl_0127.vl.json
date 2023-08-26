@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A parallel coordinates plot",
+  "data": {
+    "url": "https://vega.github.io/editor/data/cars.json"
+  },
+  "width": 500,
+  "height": 500,
+  "layer": [
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {
+          "value": 0
+        },
+        "opacity": {
+          "value": 0
+        },
+        "y": {
+          "field": "Miles_per_Gallon",
+          "type": "quantitative",
+          "axis": {
+            "grid": false,
+            "title": null
+          }
+        },
+        "detail": {
+          "field": "Name"
+        }
+      }
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {
+          "value": 0
+        },
+        "opacity": {
+          "value": 0
+        },
+        "y": {
+          "field": "Displacement",
+          "type": "quantitative",
+          "axis": {
+            "grid": false,
+            "title": null,
+            "orient": "right",
+            "offset": {
+              "expr": "-width / 2"
+            }
+          }
+        },
+        "detail": {
+          "field": "Name"
+        }
+      }
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {
+          "value": 0
+        },
+        "opacity": {
+          "value": 0
+        },
+        "y": {
+          "field": "Horsepower",
+          "type": "quantitative",
+          "axis": {
+            "grid": false,
+            "title": null,
+            "orient": "right",
+            "offset": 0
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "calculate": "['Miles_per_Gallon', 'Displacement', 'Horsepower']",
+          "as": "x"
+        },
+        {
+          "calculate": "[height - scale('layer_0_y', datum.Miles_per_Gallon), height - scale('layer_1_y', datum.Displacement), height - scale('layer_2_y', datum.Horsepower)]",
+          "as": "y"
+        },
+        {
+          "flatten": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "selection": {
+        "hover": {
+          "type": "single",
+          "on": "mouseover",
+          "clear": "mouseout",
+          "empty": "none"
+        }
+      },
+      "mark": {
+        "type": "line",
+        "point": true,
+        "tooltip": {
+          "content": "data"
+        }
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "selection": "hover",
+            "value": 1
+          },
+          "value": 0.05
+        },
+        "x": {
+          "field": "x",
+          "sort": null,
+          "type": "ordinal",
+          "scale": {
+            "type": "point",
+            "padding": 0
+          },
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false
+          }
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "axis": null
+        },
+        "detail": {
+          "field": "Name"
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "config": {
+    "padding": 0,
+    "view": {
+      "stroke": null
+    }
+  }
+}

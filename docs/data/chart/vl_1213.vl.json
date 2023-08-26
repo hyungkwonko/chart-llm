@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/Emissions.csv"
+  },
+  "mark": "bar",
+  "height": 300,
+  "width": 300,
+  "transform": [
+    {
+      "calculate": "year(datum.Period)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=Year"
+    },
+    {
+      "calculate": "year(datum.Period)",
+      "as": "value"
+    }
+  ],
+  "params": [
+    {
+      "name": "Year",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1963,
+        "max": 2021,
+        "step": 1,
+        "name": "Start year:"
+      }
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "Region",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "Value",
+      "type": "quantitative"
+    }
+  }
+}

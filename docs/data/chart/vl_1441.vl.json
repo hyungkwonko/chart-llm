@@ -1,0 +1,534 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-c8a74fb79497353455f0d858d69d4cb4"
+  },
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "is_aligned",
+      "type": "nominal"
+    },
+    "facet": {
+      "columns": 2,
+      "field": "pacbioRun",
+      "title": null,
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "pacbioRun",
+        "type": "nominal"
+      },
+      {
+        "field": "filter_reason",
+        "type": "nominal"
+      },
+      {
+        "field": "count",
+        "type": "quantitative"
+      },
+      {
+        "field": "total_counts",
+        "type": "quantitative"
+      },
+      {
+        "field": "frac_counts",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "count",
+      "type": "quantitative"
+    },
+    "y": {
+      "axis": {
+        "title": null
+      },
+      "field": "filter_reason",
+      "type": "nominal"
+    }
+  },
+  "height": 75,
+  "resolve": {
+    "scale": {
+      "x": "independent",
+      "y": "independent"
+    }
+  },
+  "transform": [
+    {
+      "filter": "(datum.frac_counts > 0.01)"
+    },
+    {
+      "calculate": "(datum.filter_reason === 'aligned')",
+      "as": "is_aligned"
+    }
+  ],
+  "width": 250,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-c8a74fb79497353455f0d858d69d4cb4": [
+      {
+        "pacbioRun": "Lib-1_220531",
+        "filter_reason": "barcode clip3",
+        "count": 1005,
+        "total_counts": 725265,
+        "frac_counts": 0.0013857003991644434
+      },
+      {
+        "pacbioRun": "Lib-1_220531",
+        "filter_reason": "barcode mutation_nt_count",
+        "count": 27767,
+        "total_counts": 725265,
+        "frac_counts": 0.03828531640159114
+      },
+      {
+        "pacbioRun": "Lib-1_220531",
+        "filter_reason": "gene clip3",
+        "count": 12099,
+        "total_counts": 725265,
+        "frac_counts": 0.016682178238299105
+      },
+      {
+        "pacbioRun": "Lib-1_220531",
+        "filter_reason": "gene mutation_nt_count",
+        "count": 16703,
+        "total_counts": 725265,
+        "frac_counts": 0.023030202753476316
+      },
+      {
+        "pacbioRun": "Lib-1_220531",
+        "filter_reason": "query_clip3",
+        "count": 9682,
+        "total_counts": 725265,
+        "frac_counts": 0.013349603248467802
+      },
+      {
+        "pacbioRun": "Lib-1_220531",
+        "filter_reason": "query_clip5",
+        "count": 11684,
+        "total_counts": 725265,
+        "frac_counts": 0.016109973595858067
+      },
+      {
+        "pacbioRun": "Lib-1_220531",
+        "filter_reason": "termini3 clip3",
+        "count": 3431,
+        "total_counts": 725265,
+        "frac_counts": 0.004730684646301697
+      },
+      {
+        "pacbioRun": "Lib-1_220531",
+        "filter_reason": "termini3 mutation_nt_count",
+        "count": 4992,
+        "total_counts": 725265,
+        "frac_counts": 0.006883001385700399
+      },
+      {
+        "pacbioRun": "Lib-1_220531",
+        "filter_reason": "termini5 clip5",
+        "count": 20247,
+        "total_counts": 725265,
+        "frac_counts": 0.027916692519286055
+      },
+      {
+        "pacbioRun": "Lib-1_220531",
+        "filter_reason": "termini5 mutation_nt_count",
+        "count": 3702,
+        "total_counts": 725265,
+        "frac_counts": 0.005104341171847532
+      },
+      {
+        "pacbioRun": "Lib-1_220531",
+        "filter_reason": "variant_tag3 mutation_nt_count",
+        "count": 4155,
+        "total_counts": 725265,
+        "frac_counts": 0.005728940456247027
+      },
+      {
+        "pacbioRun": "Lib-1_220531",
+        "filter_reason": "variant_tag5 mutation_nt_count",
+        "count": 2346,
+        "total_counts": 725265,
+        "frac_counts": 0.003234679737751029
+      },
+      {
+        "pacbioRun": "Lib-1_220710",
+        "filter_reason": "barcode clip3",
+        "count": 578,
+        "total_counts": 1006376,
+        "frac_counts": 0.0005743380207795098
+      },
+      {
+        "pacbioRun": "Lib-1_220710",
+        "filter_reason": "barcode mutation_nt_count",
+        "count": 17868,
+        "total_counts": 1006376,
+        "frac_counts": 0.01775479542437419
+      },
+      {
+        "pacbioRun": "Lib-1_220710",
+        "filter_reason": "gene clip3",
+        "count": 5644,
+        "total_counts": 1006376,
+        "frac_counts": 0.0056082418499646255
+      },
+      {
+        "pacbioRun": "Lib-1_220710",
+        "filter_reason": "gene mutation_nt_count",
+        "count": 21677,
+        "total_counts": 1006376,
+        "frac_counts": 0.021539663108023244
+      },
+      {
+        "pacbioRun": "Lib-1_220710",
+        "filter_reason": "query_clip3",
+        "count": 3932,
+        "total_counts": 1006376,
+        "frac_counts": 0.003907088404333967
+      },
+      {
+        "pacbioRun": "Lib-1_220710",
+        "filter_reason": "query_clip5",
+        "count": 4542,
+        "total_counts": 1006376,
+        "frac_counts": 0.00451322368577947
+      },
+      {
+        "pacbioRun": "Lib-1_220710",
+        "filter_reason": "termini3 clip3",
+        "count": 2442,
+        "total_counts": 1006376,
+        "frac_counts": 0.0024265284545736386
+      },
+      {
+        "pacbioRun": "Lib-1_220710",
+        "filter_reason": "termini3 mutation_nt_count",
+        "count": 5755,
+        "total_counts": 1006376,
+        "frac_counts": 0.005718538597899791
+      },
+      {
+        "pacbioRun": "Lib-1_220710",
+        "filter_reason": "termini5 clip5",
+        "count": 7677,
+        "total_counts": 1006376,
+        "frac_counts": 0.007628361566651033
+      },
+      {
+        "pacbioRun": "Lib-1_220710",
+        "filter_reason": "termini5 mutation_nt_count",
+        "count": 4473,
+        "total_counts": 1006376,
+        "frac_counts": 0.004444660842468421
+      },
+      {
+        "pacbioRun": "Lib-1_220710",
+        "filter_reason": "variant_tag3 mutation_nt_count",
+        "count": 4014,
+        "total_counts": 1006376,
+        "frac_counts": 0.0039885688847905755
+      },
+      {
+        "pacbioRun": "Lib-1_220710",
+        "filter_reason": "variant_tag5 mutation_nt_count",
+        "count": 1543,
+        "total_counts": 1006376,
+        "frac_counts": 0.0015332241627383802
+      },
+      {
+        "pacbioRun": "Lib-1_220711",
+        "filter_reason": "barcode clip3",
+        "count": 470,
+        "total_counts": 947399,
+        "frac_counts": 0.0004960950982637727
+      },
+      {
+        "pacbioRun": "Lib-1_220711",
+        "filter_reason": "barcode mutation_nt_count",
+        "count": 17120,
+        "total_counts": 947399,
+        "frac_counts": 0.018070527834629337
+      },
+      {
+        "pacbioRun": "Lib-1_220711",
+        "filter_reason": "gene clip3",
+        "count": 5380,
+        "total_counts": 947399,
+        "frac_counts": 0.005678705592891696
+      },
+      {
+        "pacbioRun": "Lib-1_220711",
+        "filter_reason": "gene mutation_nt_count",
+        "count": 20333,
+        "total_counts": 947399,
+        "frac_counts": 0.02146191836807934
+      },
+      {
+        "pacbioRun": "Lib-1_220711",
+        "filter_reason": "query_clip3",
+        "count": 3484,
+        "total_counts": 947399,
+        "frac_counts": 0.0036774368560659235
+      },
+      {
+        "pacbioRun": "Lib-1_220711",
+        "filter_reason": "query_clip5",
+        "count": 3954,
+        "total_counts": 947399,
+        "frac_counts": 0.004173531954329696
+      },
+      {
+        "pacbioRun": "Lib-1_220711",
+        "filter_reason": "termini3 clip3",
+        "count": 2318,
+        "total_counts": 947399,
+        "frac_counts": 0.0024466988037775005
+      },
+      {
+        "pacbioRun": "Lib-1_220711",
+        "filter_reason": "termini3 mutation_nt_count",
+        "count": 5680,
+        "total_counts": 947399,
+        "frac_counts": 0.005995362038591977
+      },
+      {
+        "pacbioRun": "Lib-1_220711",
+        "filter_reason": "termini5 clip5",
+        "count": 7126,
+        "total_counts": 947399,
+        "frac_counts": 0.007521646106867328
+      },
+      {
+        "pacbioRun": "Lib-1_220711",
+        "filter_reason": "termini5 mutation_nt_count",
+        "count": 4385,
+        "total_counts": 947399,
+        "frac_counts": 0.004628461714652432
+      },
+      {
+        "pacbioRun": "Lib-1_220711",
+        "filter_reason": "variant_tag3 mutation_nt_count",
+        "count": 3941,
+        "total_counts": 947399,
+        "frac_counts": 0.004159810175016017
+      },
+      {
+        "pacbioRun": "Lib-1_220711",
+        "filter_reason": "variant_tag5 mutation_nt_count",
+        "count": 1608,
+        "total_counts": 947399,
+        "frac_counts": 0.0016972785489535033
+      },
+      {
+        "pacbioRun": "Lib-2_220629",
+        "filter_reason": "barcode clip3",
+        "count": 1702,
+        "total_counts": 3176999,
+        "frac_counts": 0.000535725695853225
+      },
+      {
+        "pacbioRun": "Lib-2_220629",
+        "filter_reason": "barcode mutation_nt_count",
+        "count": 37748,
+        "total_counts": 3176999,
+        "frac_counts": 0.011881653094634275
+      },
+      {
+        "pacbioRun": "Lib-2_220629",
+        "filter_reason": "gene clip3",
+        "count": 17387,
+        "total_counts": 3176999,
+        "frac_counts": 0.005472774778965936
+      },
+      {
+        "pacbioRun": "Lib-2_220629",
+        "filter_reason": "gene mutation_nt_count",
+        "count": 68220,
+        "total_counts": 3176999,
+        "frac_counts": 0.02147309457761869
+      },
+      {
+        "pacbioRun": "Lib-2_220629",
+        "filter_reason": "query_clip3",
+        "count": 16597,
+        "total_counts": 3176999,
+        "frac_counts": 0.005224112440702688
+      },
+      {
+        "pacbioRun": "Lib-2_220629",
+        "filter_reason": "query_clip5",
+        "count": 18192,
+        "total_counts": 3176999,
+        "frac_counts": 0.005726158554031651
+      },
+      {
+        "pacbioRun": "Lib-2_220629",
+        "filter_reason": "termini3 clip3",
+        "count": 5098,
+        "total_counts": 3176999,
+        "frac_counts": 0.0016046589879316927
+      },
+      {
+        "pacbioRun": "Lib-2_220629",
+        "filter_reason": "termini3 mutation_nt_count",
+        "count": 18710,
+        "total_counts": 3176999,
+        "frac_counts": 0.005889205504943502
+      },
+      {
+        "pacbioRun": "Lib-2_220629",
+        "filter_reason": "termini5 clip5",
+        "count": 23667,
+        "total_counts": 3176999,
+        "frac_counts": 0.007449482986932007
+      },
+      {
+        "pacbioRun": "Lib-2_220629",
+        "filter_reason": "termini5 mutation_nt_count",
+        "count": 16067,
+        "total_counts": 3176999,
+        "frac_counts": 0.005057288340348864
+      },
+      {
+        "pacbioRun": "Lib-2_220629",
+        "filter_reason": "variant_tag3 mutation_nt_count",
+        "count": 9914,
+        "total_counts": 3176999,
+        "frac_counts": 0.003120554963977011
+      },
+      {
+        "pacbioRun": "Lib-2_220629",
+        "filter_reason": "variant_tag5 mutation_nt_count",
+        "count": 4297,
+        "total_counts": 3176999,
+        "frac_counts": 0.0013525342626799694
+      },
+      {
+        "pacbioRun": "Lib-3_220629",
+        "filter_reason": "barcode clip3",
+        "count": 1559,
+        "total_counts": 3228613,
+        "frac_counts": 0.000482869888710725
+      },
+      {
+        "pacbioRun": "Lib-3_220629",
+        "filter_reason": "barcode mutation_nt_count",
+        "count": 44417,
+        "total_counts": 3228613,
+        "frac_counts": 0.01375730073564097
+      },
+      {
+        "pacbioRun": "Lib-3_220629",
+        "filter_reason": "gene clip3",
+        "count": 14789,
+        "total_counts": 3228613,
+        "frac_counts": 0.004580604736461137
+      },
+      {
+        "pacbioRun": "Lib-3_220629",
+        "filter_reason": "gene mutation_nt_count",
+        "count": 70697,
+        "total_counts": 3228613,
+        "frac_counts": 0.02189701893661458
+      },
+      {
+        "pacbioRun": "Lib-3_220629",
+        "filter_reason": "query_clip3",
+        "count": 14531,
+        "total_counts": 3228613,
+        "frac_counts": 0.004500694260972126
+      },
+      {
+        "pacbioRun": "Lib-3_220629",
+        "filter_reason": "query_clip5",
+        "count": 17614,
+        "total_counts": 3228613,
+        "frac_counts": 0.005455593470013284
+      },
+      {
+        "pacbioRun": "Lib-3_220629",
+        "filter_reason": "termini3 clip3",
+        "count": 4698,
+        "total_counts": 3228613,
+        "frac_counts": 0.0014551140071603502
+      },
+      {
+        "pacbioRun": "Lib-3_220629",
+        "filter_reason": "termini3 mutation_nt_count",
+        "count": 13716,
+        "total_counts": 3228613,
+        "frac_counts": 0.004248263882973897
+      },
+      {
+        "pacbioRun": "Lib-3_220629",
+        "filter_reason": "termini5 clip5",
+        "count": 23455,
+        "total_counts": 3228613,
+        "frac_counts": 0.007264729467421459
+      },
+      {
+        "pacbioRun": "Lib-3_220629",
+        "filter_reason": "termini5 mutation_nt_count",
+        "count": 16135,
+        "total_counts": 3228613,
+        "frac_counts": 0.004997502023314656
+      },
+      {
+        "pacbioRun": "Lib-3_220629",
+        "filter_reason": "variant_tag3 mutation_nt_count",
+        "count": 13159,
+        "total_counts": 3228613,
+        "frac_counts": 0.004075743980464676
+      },
+      {
+        "pacbioRun": "Lib-3_220629",
+        "filter_reason": "variant_tag5 mutation_nt_count",
+        "count": 2210,
+        "total_counts": 3228613,
+        "frac_counts": 0.000684504460584158
+      },
+      {
+        "pacbioRun": "Lib-1_220531",
+        "filter_reason": "aligned",
+        "count": 607452,
+        "total_counts": 725265,
+        "frac_counts": 0.8375586854460094
+      },
+      {
+        "pacbioRun": "Lib-1_220710",
+        "filter_reason": "aligned",
+        "count": 926231,
+        "total_counts": 1006376,
+        "frac_counts": 0.9203627669976232
+      },
+      {
+        "pacbioRun": "Lib-1_220711",
+        "filter_reason": "aligned",
+        "count": 871600,
+        "total_counts": 947399,
+        "frac_counts": 0.9199925269078815
+      },
+      {
+        "pacbioRun": "Lib-2_220629",
+        "filter_reason": "aligned",
+        "count": 2939400,
+        "total_counts": 3176999,
+        "frac_counts": 0.9252127558113805
+      },
+      {
+        "pacbioRun": "Lib-3_220629",
+        "filter_reason": "aligned",
+        "count": 2991633,
+        "total_counts": 3228613,
+        "frac_counts": 0.926600060149668
+      }
+    ]
+  }
+}

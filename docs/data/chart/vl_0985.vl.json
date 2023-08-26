@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "CPI",
+    "subtitle": [
+      "CPIH Monthly rate:Tea 2015 = 100. Source: ONS"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 175,
+  "height": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/data_ONS-J3VI.json",
+    "format": {
+      "type": "json",
+      "property": "months"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "color": "#86d0bb",
+    "strokeWidth": 1.5,
+    "opacity": 1
+  },
+  "transform": [
+    {
+      "filter": "datum.year>minYear"
+    },
+    {
+      "filter": "datum.year<maxYear"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 2015,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Monthly rate %",
+      "axis": {
+        "grid": false
+      },
+      "scale": {
+        "domain": [
+          -10,
+          10
+        ]
+      }
+    }
+  }
+}

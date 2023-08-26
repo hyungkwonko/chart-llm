@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch3_Work/IGMresponsesMinWage.csv"
+  },
+  "title": {
+    "text": [
+      "Raising the federal minimum wage to $9 per hour would make it noticeably",
+      "harder for low-skilled workers to find employment."
+    ],
+    "fontSize": 12,
+    "anchor": "start",
+    "subtitle": [
+      "Source: IGN",
+      ""
+    ],
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic"
+  },
+  "width": 350,
+  "height": 300,
+  "mark": {
+    "type": "bar",
+    "width": {
+      "band": 0.8
+    }
+  },
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": [
+          "Uni2"
+        ],
+        "toggle": true,
+        "on": "mouseover"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Confidence Numeric",
+      "type": "ordinal",
+      "axis": {
+        "labelExpr": "{'0': 'Uncertain', '1': 'Disagree', '2': 'Agree'}[datum.label]",
+        "labelAngle": 0
+      },
+      "scale": {
+        "paddingOuter": 0.6
+      },
+      "title": "Response"
+    },
+    "y": {
+      "field": "uni_employment_pct",
+      "aggregate": "ci0",
+      "axis": {
+        "format": "%"
+      },
+      "title": "Portion of Response"
+    },
+    "color": {
+      "field": "Uni2",
+      "legend": {
+        "title": null
+      }
+    },
+    "opacity": {
+      "condition": {
+        "test": {
+          "param": "hover"
+        },
+        "value": 1
+      },
+      "value": 0.5
+    },
+    "tooltip": [
+      {
+        "field": "Uni",
+        "title": "University"
+      },
+      {
+        "field": "uni_employment_pct",
+        "format": "%"
+      }
+    ]
+  }
+}

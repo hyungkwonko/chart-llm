@@ -1,0 +1,628 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Energy Usage per Capita and GDP per Capita",
+  "title": {
+    "text": "Energy Usage per Capita and GDP per Capita",
+    "anchor": "start",
+    "subtitle": [
+      "Source: World Bank",
+      "In PPP (constant 2017 international $) and KWH/person. Size of Bubble Indicates Population"
+    ],
+    "subtitleFontSize": 10
+  },
+  "config": {
+    "background": "#fff0d8",
+    "legend": {
+      "disable": true
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "Entity": "Algeria",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "14923.5556640625",
+        "GDP per capita, PPP (constant 2017 international $)": 10735.4,
+        "Population (historical estimates)": 43451668
+      },
+      {
+        "Entity": "Argentina",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "19489.865234375",
+        "GDP per capita, PPP (constant 2017 international $)": 19690.7,
+        "Population (historical estimates)": 45036032
+      },
+      {
+        "Entity": "Australia",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "62494.203125",
+        "GDP per capita, PPP (constant 2017 international $)": 48678.7,
+        "Population (historical estimates)": 25670052
+      },
+      {
+        "Entity": "Austria",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "44448.46484375",
+        "GDP per capita, PPP (constant 2017 international $)": 51857.7,
+        "Population (historical estimates)": 8907780
+      },
+      {
+        "Entity": "Azerbaijan",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "17494.951171875",
+        "GDP per capita, PPP (constant 2017 international $)": 13726.8,
+        "Population (historical estimates)": 10284952
+      },
+      {
+        "Entity": "Bangladesh",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "2664.44775390625",
+        "GDP per capita, PPP (constant 2017 international $)": 4871.4,
+        "Population (historical estimates)": 167420944
+      },
+      {
+        "Entity": "Belarus",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "30349.560546875",
+        "GDP per capita, PPP (constant 2017 international $)": 19186.8,
+        "Population (historical estimates)": 9633745
+      },
+      {
+        "Entity": "Belgium",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "58385.23046875",
+        "GDP per capita, PPP (constant 2017 international $)": 48769.7,
+        "Population (historical estimates)": 11561716
+      },
+      {
+        "Entity": "Brazil",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "15683.080078125",
+        "GDP per capita, PPP (constant 2017 international $)": 14064,
+        "Population (historical estimates)": 213196304
+      },
+      {
+        "Entity": "Bulgaria",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "27898.556640625",
+        "GDP per capita, PPP (constant 2017 international $)": 22379.1,
+        "Population (historical estimates)": 6979181
+      },
+      {
+        "Entity": "Canada",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "101731.53125",
+        "GDP per capita, PPP (constant 2017 international $)": 46064.3,
+        "Population (historical estimates)": 37888704
+      },
+      {
+        "Entity": "Chile",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "23537.9453125",
+        "GDP per capita, PPP (constant 2017 international $)": 23324.5,
+        "Population (historical estimates)": 19300318
+      },
+      {
+        "Entity": "China",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "28481.830078125",
+        "GDP per capita, PPP (constant 2017 international $)": 16315.8,
+        "Population (historical estimates)": 1424929792
+      },
+      {
+        "Entity": "Colombia",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "9463.1806640625",
+        "GDP per capita, PPP (constant 2017 international $)": 13448.9,
+        "Population (historical estimates)": 50930656
+      },
+      {
+        "Entity": "Croatia",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "22258.83203125",
+        "GDP per capita, PPP (constant 2017 international $)": 27077,
+        "Population (historical estimates)": 4096872
+      },
+      {
+        "Entity": "Cyprus",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "23424.076171875",
+        "GDP per capita, PPP (constant 2017 international $)": 38816.1,
+        "Population (historical estimates)": 1237540
+      },
+      {
+        "Entity": "Czechia",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "41282.71875",
+        "GDP per capita, PPP (constant 2017 international $)": 38511.3,
+        "Population (historical estimates)": 10530951
+      },
+      {
+        "Entity": "Denmark",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "30081.701171875",
+        "GDP per capita, PPP (constant 2017 international $)": 55819.9,
+        "Population (historical estimates)": 5825638
+      },
+      {
+        "Entity": "Ecuador",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "10335.3173828125",
+        "GDP per capita, PPP (constant 2017 international $)": 10329.2,
+        "Population (historical estimates)": 17588596
+      },
+      {
+        "Entity": "Egypt",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "9612.5888671875",
+        "GDP per capita, PPP (constant 2017 international $)": 11951.4,
+        "Population (historical estimates)": 107465128
+      },
+      {
+        "Entity": "Estonia",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "44261.19921875",
+        "GDP per capita, PPP (constant 2017 international $)": 35257.2,
+        "Population (historical estimates)": 1329449
+      },
+      {
+        "Entity": "Finland",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "56608.80078125",
+        "GDP per capita, PPP (constant 2017 international $)": 47154.4,
+        "Population (historical estimates)": 5529468
+      },
+      {
+        "Entity": "France",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "37692.0703125",
+        "GDP per capita, PPP (constant 2017 international $)": 42320.5,
+        "Population (historical estimates)": 64480052
+      },
+      {
+        "Entity": "Germany",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "40966.94921875",
+        "GDP per capita, PPP (constant 2017 international $)": 51423.2,
+        "Population (historical estimates)": 83328992
+      },
+      {
+        "Entity": "Greece",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "26558.4765625",
+        "GDP per capita, PPP (constant 2017 international $)": 27072.6,
+        "Population (historical estimates)": 10512232
+      },
+      {
+        "Entity": "Hong Kong",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "34426.15234375",
+        "GDP per capita, PPP (constant 2017 international $)": 56154,
+        "Population (historical estimates)": 7500955
+      },
+      {
+        "Entity": "Hungary",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "28011.142578125",
+        "GDP per capita, PPP (constant 2017 international $)": 31098.4,
+        "Population (historical estimates)": 9750571
+      },
+      {
+        "Entity": "Iceland",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "167358.359375",
+        "GDP per capita, PPP (constant 2017 international $)": 52375.7,
+        "Population (historical estimates)": 366682
+      },
+      {
+        "Entity": "India",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "6479.626953125",
+        "GDP per capita, PPP (constant 2017 international $)": 6165.7,
+        "Population (historical estimates)": 1396387072
+      },
+      {
+        "Entity": "Indonesia",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "8224.626953125",
+        "GDP per capita, PPP (constant 2017 international $)": 11445,
+        "Population (historical estimates)": 271857984
+      },
+      {
+        "Entity": "Iran",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "39762.52734375",
+        "GDP per capita, PPP (constant 2017 international $)": 12644.4,
+        "Population (historical estimates)": 87290192
+      },
+      {
+        "Entity": "Iraq",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "13716.458984375",
+        "GDP per capita, PPP (constant 2017 international $)": 9012.4,
+        "Population (historical estimates)": 42556988
+      },
+      {
+        "Entity": "Ireland",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "35422.26171875",
+        "GDP per capita, PPP (constant 2017 international $)": 90789.2,
+        "Population (historical estimates)": 4946123
+      },
+      {
+        "Entity": "Israel",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "33011.45703125",
+        "GDP per capita, PPP (constant 2017 international $)": 39056.4,
+        "Population (historical estimates)": 8757487
+      },
+      {
+        "Entity": "Italy",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "27215.712890625",
+        "GDP per capita, PPP (constant 2017 international $)": 39073.4,
+        "Population (historical estimates)": 59500576
+      },
+      {
+        "Entity": "Japan",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "37626.50390625",
+        "GDP per capita, PPP (constant 2017 international $)": 40232.2,
+        "Population (historical estimates)": 125244760
+      },
+      {
+        "Entity": "Kazakhstan",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "42798.63671875",
+        "GDP per capita, PPP (constant 2017 international $)": 25363.2,
+        "Population (historical estimates)": 18979250
+      },
+      {
+        "Entity": "Kuwait",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "104990.765625",
+        "GDP per capita, PPP (constant 2017 international $)": 44847.1,
+        "Population (historical estimates)": 4360451
+      },
+      {
+        "Entity": "Latvia",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "21574.96875",
+        "GDP per capita, PPP (constant 2017 international $)": 30100.3,
+        "Population (historical estimates)": 1897057
+      },
+      {
+        "Entity": "Lithuania",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "25705.791015625",
+        "GDP per capita, PPP (constant 2017 international $)": 37107.1,
+        "Population (historical estimates)": 2820269
+      },
+      {
+        "Entity": "Luxembourg",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "64694.06640625",
+        "GDP per capita, PPP (constant 2017 international $)": 112557.3,
+        "Population (historical estimates)": 630401
+      },
+      {
+        "Entity": "Malaysia",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "35205.984375",
+        "GDP per capita, PPP (constant 2017 international $)": 26471.7,
+        "Population (historical estimates)": 33199988
+      },
+      {
+        "Entity": "Mexico",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "13853.501953125",
+        "GDP per capita, PPP (constant 2017 international $)": 17852.4,
+        "Population (historical estimates)": 125998296
+      },
+      {
+        "Entity": "Morocco",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "6505.1630859375",
+        "GDP per capita, PPP (constant 2017 international $)": 6986.3,
+        "Population (historical estimates)": 36688768
+      },
+      {
+        "Entity": "Netherlands",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "54869.12109375",
+        "GDP per capita, PPP (constant 2017 international $)": 54324.4,
+        "Population (historical estimates)": 17434562
+      },
+      {
+        "Entity": "New Zealand",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "49609.375",
+        "GDP per capita, PPP (constant 2017 international $)": 42774.7,
+        "Population (historical estimates)": 5061130
+      },
+      {
+        "Entity": "North America",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "52011.91015625",
+        "GDP per capita, PPP (constant 2017 international $)": 58496.8,
+        "Population (historical estimates)": 594263186
+      },
+      {
+        "Entity": "North Macedonia",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "12981.953125",
+        "GDP per capita, PPP (constant 2017 international $)": 15931.4,
+        "Population (historical estimates)": 2111078
+      },
+      {
+        "Entity": "Norway",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "103128.3828125",
+        "GDP per capita, PPP (constant 2017 international $)": 63548,
+        "Population (historical estimates)": 5379836
+      },
+      {
+        "Entity": "Oman",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "72628.5703125",
+        "GDP per capita, PPP (constant 2017 international $)": 29502.1,
+        "Population (historical estimates)": 4543406
+      },
+      {
+        "Entity": "Pakistan",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "4420.59619140625",
+        "GDP per capita, PPP (constant 2017 international $)": 4562.6,
+        "Population (historical estimates)": 227196736
+      },
+      {
+        "Entity": "Peru",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "8754.240234375",
+        "GDP per capita, PPP (constant 2017 international $)": 11260.8,
+        "Population (historical estimates)": 33304768
+      },
+      {
+        "Entity": "Philippines",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "4653.69970703125",
+        "GDP per capita, PPP (constant 2017 international $)": 7953.6,
+        "Population (historical estimates)": 112190984
+      },
+      {
+        "Entity": "Poland",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "29967.81640625",
+        "GDP per capita, PPP (constant 2017 international $)": 32398.7,
+        "Population (historical estimates)": 38428368
+      },
+      {
+        "Entity": "Portugal",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "25975.78515625",
+        "GDP per capita, PPP (constant 2017 international $)": 31961.8,
+        "Population (historical estimates)": 10298186
+      },
+      {
+        "Entity": "Qatar",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "178662",
+        "GDP per capita, PPP (constant 2017 international $)": 85290.5,
+        "Population (historical estimates)": 2760390
+      },
+      {
+        "Entity": "Romania",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "19199.23046875",
+        "GDP per capita, PPP (constant 2017 international $)": 28870.9,
+        "Population (historical estimates)": 19442040
+      },
+      {
+        "Entity": "Russia",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "54971.953125",
+        "GDP per capita, PPP (constant 2017 international $)": 26456.4,
+        "Population (historical estimates)": 145617328
+      },
+      {
+        "Entity": "Saudi Arabia",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "84697.9140625",
+        "GDP per capita, PPP (constant 2017 international $)": 44328.2,
+        "Population (historical estimates)": 35997108
+      },
+      {
+        "Entity": "Singapore",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "163306.546875",
+        "GDP per capita, PPP (constant 2017 international $)": 93397,
+        "Population (historical estimates)": 5909874
+      },
+      {
+        "Entity": "Slovakia",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "33126.2421875",
+        "GDP per capita, PPP (constant 2017 international $)": 30509.8,
+        "Population (historical estimates)": 5456681
+      },
+      {
+        "Entity": "Slovenia",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "37223.421875",
+        "GDP per capita, PPP (constant 2017 international $)": 37050.5,
+        "Population (historical estimates)": 2117648
+      },
+      {
+        "Entity": "South Africa",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "23196.705078125",
+        "GDP per capita, PPP (constant 2017 international $)": 12665.8,
+        "Population (historical estimates)": 58801928
+      },
+      {
+        "Entity": "South Korea",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "64942.35546875",
+        "GDP per capita, PPP (constant 2017 international $)": 42335.9,
+        "Population (historical estimates)": 51844688
+      },
+      {
+        "Entity": "Spain",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "30787.166015625",
+        "GDP per capita, PPP (constant 2017 international $)": 36210.9,
+        "Population (historical estimates)": 47363808
+      },
+      {
+        "Entity": "Sri Lanka",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "4821.7939453125",
+        "GDP per capita, PPP (constant 2017 international $)": 12536.9,
+        "Population (historical estimates)": 21715076
+      },
+      {
+        "Entity": "Sweden",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "61217.20703125",
+        "GDP per capita, PPP (constant 2017 international $)": 50923.1,
+        "Population (historical estimates)": 10368968
+      },
+      {
+        "Entity": "Switzerland",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "35699.67578125",
+        "GDP per capita, PPP (constant 2017 international $)": 68755.4,
+        "Population (historical estimates)": 8638609
+      },
+      {
+        "Entity": "Thailand",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "20175.748046875",
+        "GDP per capita, PPP (constant 2017 international $)": 17284.7,
+        "Population (historical estimates)": 71475664
+      },
+      {
+        "Entity": "Trinidad and Tobago",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "120252.578125",
+        "GDP per capita, PPP (constant 2017 international $)": 23722.5,
+        "Population (historical estimates)": 1518142
+      },
+      {
+        "Entity": "Turkey",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "21215.16015625",
+        "GDP per capita, PPP (constant 2017 international $)": 28393.5,
+        "Population (historical estimates)": 84135432
+      },
+      {
+        "Entity": "Ukraine",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "20992.607421875",
+        "GDP per capita, PPP (constant 2017 international $)": 12375.9,
+        "Population (historical estimates)": 43909664
+      },
+      {
+        "Entity": "United Arab Emirates",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "119625.15625",
+        "GDP per capita, PPP (constant 2017 international $)": 63299.4,
+        "Population (historical estimates)": 9287286
+      },
+      {
+        "Entity": "United Kingdom",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "28889.13671875",
+        "GDP per capita, PPP (constant 2017 international $)": 42675.8,
+        "Population (historical estimates)": 67059472
+      },
+      {
+        "Entity": "United States",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "74299.171875",
+        "GDP per capita, PPP (constant 2017 international $)": 59919.8,
+        "Population (historical estimates)": 335942016
+      },
+      {
+        "Entity": "Uzbekistan",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "15566.9521484375",
+        "GDP per capita, PPP (constant 2017 international $)": 7331.9,
+        "Population (historical estimates)": 33526662
+      },
+      {
+        "Entity": "Vietnam",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "12050.384765625",
+        "GDP per capita, PPP (constant 2017 international $)": 8200.3,
+        "Population (historical estimates)": 96648680
+      },
+      {
+        "Entity": "World",
+        "Year": 2020,
+        "Primary energy consumption per capita (kWh/person)": "20099.318359375",
+        "GDP per capita, PPP (constant 2017 international $)": 16185.2,
+        "Population (historical estimates)": 7840952832
+      }
+    ]
+  },
+  "mark": {
+    "type": "point"
+  },
+  "encoding": {
+    "color": {
+      "field": "Primary energy consumption per capita (kWh/person)",
+      "type": "quantitative",
+      "scale": {
+        "range": [
+          "orange",
+          "darkred"
+        ]
+      }
+    },
+    "x": {
+      "field": "Primary energy consumption per capita (kWh/person)",
+      "type": "quantitative",
+      "scale": {
+        "type": "sqrt",
+        "domain": [
+          1000,
+          180000
+        ]
+      }
+    },
+    "y": {
+      "field": "GDP per capita, PPP (constant 2017 international $)",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "Entity",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "GDP per capita, PPP (constant 2017 international $)",
+        "title": "GDP Per/Capita"
+      },
+      {
+        "field": "Primary energy consumption per capita (kWh/person)",
+        "title": "Per Person Energy Consumption",
+        "format": ".02f"
+      },
+      {
+        "title": "Population",
+        "field": "Population (historical estimates)"
+      }
+    ],
+    "size": {
+      "field": "Population (historical estimates)",
+      "sort": "ascending",
+      "scale": {
+        "type": "sqrt"
+      }
+    }
+  },
+  "width": 320,
+  "height": 340
+}

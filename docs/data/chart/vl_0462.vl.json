@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 120,
+  "height": 150,
+  "title": {
+    "text": "Price distributions - four items",
+    "subtitle": "Prices by decile",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/newItems.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "price",
+        "oneOf": [
+          "10",
+          "1020",
+          "2030",
+          "3040",
+          "4050",
+          "5060",
+          "6070",
+          "7080",
+          "8090"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "area",
+    "orient": "vertical",
+    "opacity": 0.7
+  },
+  "encoding": {
+    "facet": {
+      "field": "itemName",
+      "columns": 2,
+      "title": null
+    },
+    "x": {
+      "field": "newDate",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "p",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "legend": null,
+      "field": "price",
+      "scale": {
+        "range": [
+          null,
+          "#D9D9F3",
+          "#00BFFF",
+          "#0276FD",
+          "#000080",
+          "#000080",
+          "#0276FD",
+          "#00BFFF",
+          "#D9D9F3"
+        ]
+      }
+    },
+    "order": {
+      "field": "price"
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "At risk: select firm size",
+    "subtitle": [
+      "Proportion of firms deemed 'At Risk' of failure",
+      "Source: ONS (2021), Van Reenen and Lambert (2021)",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/atRiskFirmsBySizeLong.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 300,
+  "width": 280,
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "selection": {
+    "SIZE": {
+      "type": "single",
+      "fields": [
+        "employees"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "0-9",
+          "10-49",
+          "50-99",
+          "100-249",
+          "250+",
+          "All firms"
+        ],
+        "name": "Filter firm size: "
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "SIZE"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "dateUTC",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": true,
+        "format": "%"
+      }
+    },
+    "color": {
+      "field": "employees",
+      "type": "nominal",
+      "scale": {
+        "scheme": "set2"
+      },
+      "title": "Employees:",
+      "legend": {
+        "orient": "top-right",
+        "columns": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Google's stock price over time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/KrishnaSharan/KrishnaSharan.github.io/main/Inflation%20Statistics.csv"
+  },
+  "title": {
+    "text": "Inflation in Uk (Nov 2021 - DNov 2022)",
+    "subtitle": [
+      "Source: Statista",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black",
+    "subtitleColor": "black"
+  },
+  "mark": "line",
+  "width": 390,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "grid": ""
+      }
+    },
+    "y": {
+      "field": "Inflation",
+      "type": "quantitative",
+      "axis": {
+        "grid": ""
+      },
+      "title": "Inflation (%)"
+    },
+    "tooltip": [
+      {
+        "field": "Date",
+        "type": "nominal"
+      },
+      {
+        "field": "Inflation",
+        "type": "quantitative"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 250,
+  "height": 300,
+  "title": {
+    "text": "Sum of passengers carried by the 20 largest European airlines",
+    "subtitle": "Data spans between 2006-2021 and is presented in millions. Source: Wikipedia (2022)",
+    "fontSize": 13,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/wk4scrapingairline_IMPROVED%2BCATEGORY.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "Year",
+      "axis": {
+        "format": "%Y",
+        "grid": false
+      },
+      "title": null
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Passengers",
+      "title": "Total passengers (millions)",
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "Category",
+      "scale": {
+        "scheme": "set2"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Category",
+        "type": "nominal",
+        "title": "Category"
+      },
+      {
+        "field": "sum_Passengers",
+        "title": "Sum of passangers (millions)",
+        "type": "quantitative"
+      }
+    ]
+  }
+}

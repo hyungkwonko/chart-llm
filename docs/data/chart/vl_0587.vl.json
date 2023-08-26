@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Assets and wages",
+    "subtitle": [
+      "Correlation",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/example_bondYields.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "wages",
+        "asset1"
+      ],
+      "as": [
+        "asset",
+        "value"
+      ]
+    },
+    {
+      "filter": "datum.value>0"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": {
+      "color": "rgb(128,0,0)"
+    },
+    "color": "rgb(128,0,0)",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": null
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "asset",
+      "legend": null,
+      "scale": {
+        "range": [
+          "blue",
+          "rgb(128,0,0)"
+        ]
+      }
+    }
+  }
+}

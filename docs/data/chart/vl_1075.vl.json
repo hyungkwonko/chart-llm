@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "International Territorial Level Map, to change regional hierarchy: replace x in 'ITLx_2021_20m' in URL, and 'ITLx21NM' in tooltip, with 1, 2 or 3.",
+  "title": {
+    "text": "United Kingdom average rent prices 2021",
+    "subtitle": [
+      "ITL3 regions, Mercator Projection, Rent in pounds",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {},
+  "width": 350,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/UK%20Map%20Data/ITL3_2021_20m.geojson",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "filxzl": "rgb(50,50,50)",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "2021",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "properties.ITL321NM",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "2021",
+        "type": "quantitative",
+        "title": "Average Rent (\u00a3)"
+      }
+    ]
+  },
+  "transform": [
+    {
+      "lookup": "properties.ITL321NM",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Emilysquires02/Emilysquires02.github.io/main/Live_Table_704_December_2021%20(1).csv",
+          "format": {
+            "type": "csv"
+          }
+        },
+        "key": "ITL3 regions ",
+        "fields": [
+          "2021"
+        ]
+      }
+    }
+  ]
+}

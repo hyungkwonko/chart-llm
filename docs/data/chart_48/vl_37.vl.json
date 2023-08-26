@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/EnergySourceClean%20(1).csv",
+    "format": {
+      "property": "csv"
+    }
+  },
+  "title": {
+    "text": "Energy Consumption in Africa by Source",
+    "subtitle": "Source: Our World in Data",
+    "fontSize": 15,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "EnergyConsumption",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "Energy Source",
+      "type": "nominal",
+      "scale": {
+        "scheme": "dark2"
+      },
+      "legend": {
+        "orient": "top-left",
+        "fillColor": "white"
+      },
+      "title": "Energy Source"
+    },
+    "tooltip": [
+      {
+        "field": "Energy Source",
+        "title": "Energy Source"
+      },
+      {
+        "field": "EnergyConsumption",
+        "title": "Energy Consumption",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "selection": {
+    "Type": {
+      "type": "single",
+      "fields": [
+        "Energy Source"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "1 Geo Biomass",
+          "2 Nuclear",
+          "3 Solar",
+          "4 Wind",
+          "5 Hydro",
+          "6 Coal",
+          "7 Gas",
+          "8 Oil"
+        ],
+        "name": "Pick source:"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.Date)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    },
+    {
+      "filter": {
+        "selection": "Type"
+      }
+    },
+    {
+      "calculate": "year(datum.Date)",
+      "as": "value"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1989,
+      "bind": {
+        "input": "range",
+        "min": 1963,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1963,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "background": "white",
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

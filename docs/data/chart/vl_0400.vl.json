@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Cohort effects",
+    "subtitle": [
+      "Firm entry and exit as % of active firms. Source: BSD",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_Cohorts.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "c2000",
+        "c2005",
+        "c2007",
+        "c2009",
+        "c2012",
+        "c2013"
+      ],
+      "as": [
+        "metric",
+        "value"
+      ]
+    },
+    {
+      "filter": "datum.value>0"
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 1,
+    "point": true
+  },
+  "encoding": {
+    "x": {
+      "field": "Age",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "format": ""
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "format": "%"
+      }
+    },
+    "color": {
+      "field": "metric",
+      "title": "Birth year",
+      "scale": {
+        "scheme": "turbo"
+      },
+      "legend": {
+        "orient": "bottom-right",
+        "columns": 2
+      }
+    }
+  }
+}

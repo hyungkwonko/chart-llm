@@ -1,0 +1,129 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Regressing Overall WGI Score on GDP per capita for all countries featured in the 2018 to 2022 editions of the CAF World Giving Index Report (exploring data for 2017-2021). I ran the regression in Colab in order to ascertain the equation for the regression line",
+  "title": {
+    "text": [
+      "Regressing WGI Score on GDP per capita"
+    ],
+    "fontSize": 12,
+    "subtitle": [
+      "GDP per capita measured in current US$",
+      "",
+      "Sources: CAF, World Bank and World Population Review"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/_CAF_GDP_2018-22_SHIFTED_new.csv"
+  },
+  "height": 200,
+  "width": 200,
+  "encoding": {
+    "x": {
+      "field": "GDPpc",
+      "type": "quantitative",
+      "title": "GDP per capita (current US$)",
+      "axis": {
+        "grid": false
+      },
+      "scale": {
+        "domain": [
+          0,
+          110000
+        ]
+      }
+    },
+    "y": {
+      "field": "WGI",
+      "type": "quantitative",
+      "title": "WGI overall score (out of 100)",
+      "axis": {
+        "grid": false
+      },
+      "scale": {
+        "domain": [
+          0,
+          70
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "WGI",
+        "type": "quantitative",
+        "title": "WGI Score"
+      },
+      {
+        "field": "GDPpc",
+        "type": "quantitative",
+        "title": "GDP per capita"
+      },
+      {
+        "field": "year",
+        "type": "nominal",
+        "title": "Year"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "WGI": 33.46,
+            "GDPpc": 0
+          },
+          {
+            "WGI": 45.49,
+            "GDPpc": 100173
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "color": "#2c2a2e",
+        "clip": true
+      },
+      "encoding": {
+        "tooltip": null
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/_CAF_GDP_2018-22_SHIFTED_new.csv"
+      },
+      "mark": {
+        "type": "circle",
+        "color": "#2bb660",
+        "fillOpacity": 0.9
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "WGI": 39,
+            "GDPpc": 95000,
+            "text": "R\u00b2 = 0.06"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "color": "red",
+        "fontWeight": "normal",
+        "fontSize": 12
+      },
+      "encoding": {
+        "tooltip": null,
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

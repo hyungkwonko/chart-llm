@@ -1,0 +1,1819 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": [
+      "Ball Progression and Goal Creation in the 2021-22 Premier League"
+    ],
+    "subtitle": [
+      "Progressive Passes (x), Progressive Carries (y). size by Expected Assists",
+      "all stats normalised per 90mins played. min 1500 mins played"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "Player": "Max Aarons",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.9375,
+        "Expected Assists": 0.04375,
+        "Progressive Carries": 5.4375
+      },
+      {
+        "Player": "Che Adams",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.5418502202643172,
+        "Expected Assists": 0.1145374449339207,
+        "Progressive Carries": 2.026431718061674
+      },
+      {
+        "Player": "Rayan Ait Nouri",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.413793103448276,
+        "Expected Assists": 0.06403940886699508,
+        "Progressive Carries": 5.812807881773399
+      },
+      {
+        "Player": "Kristoffer Ajer",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.3783783783783785,
+        "Expected Assists": 0.06306306306306306,
+        "Progressive Carries": 3.2882882882882885
+      },
+      {
+        "Player": "Thiago Alcantara",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 10.294117647058824,
+        "Expected Assists": 0.13529411764705881,
+        "Progressive Carries": 9.588235294117647
+      },
+      {
+        "Player": "Trent Alexander-Arnold",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 8.769716088328076,
+        "Expected Assists": 0.3533123028391167,
+        "Progressive Carries": 4.921135646687698
+      },
+      {
+        "Player": "Allan",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.362139917695473,
+        "Expected Assists": 0.037037037037037035,
+        "Progressive Carries": 4.362139917695473
+      },
+      {
+        "Player": "Miguel Almiron",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.9895287958115182,
+        "Expected Assists": 0.03664921465968586,
+        "Progressive Carries": 4.031413612565444
+      },
+      {
+        "Player": "Marcos Alonso",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.439834024896265,
+        "Expected Assists": 0.19087136929460577,
+        "Progressive Carries": 5.1037344398340245
+      },
+      {
+        "Player": "Daniel Amartey",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.5,
+        "Expected Assists": 0.00847457627118644,
+        "Progressive Carries": 2.542372881355932
+      },
+      {
+        "Player": "Joachim Andersen",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.8703703703703707,
+        "Expected Assists": 0.05555555555555556,
+        "Progressive Carries": 1.9753086419753088
+      },
+      {
+        "Player": "Michail Antonio",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.303030303030303,
+        "Expected Assists": 0.19999999999999998,
+        "Progressive Carries": 4.03030303030303
+      },
+      {
+        "Player": "Jordan Ayew",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.142857142857143,
+        "Expected Assists": 0.10267857142857142,
+        "Progressive Carries": 6.517857142857143
+      },
+      {
+        "Player": "Luke Ayling",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.9603174603174605,
+        "Expected Assists": 0.03174603174603175,
+        "Progressive Carries": 4.166666666666667
+      },
+      {
+        "Player": "Cesar Azpilicueta",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.391304347826087,
+        "Expected Assists": 0.09130434782608696,
+        "Progressive Carries": 6.782608695652174
+      },
+      {
+        "Player": "Harvey Barnes",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.1759656652360513,
+        "Expected Assists": 0.17167381974248927,
+        "Progressive Carries": 8.49785407725322
+      },
+      {
+        "Player": "Jan Bednarek",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.7465753424657535,
+        "Expected Assists": 0.02054794520547945,
+        "Progressive Carries": 0.9246575342465754
+      },
+      {
+        "Player": "Said Benrahma",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.5311203319502074,
+        "Expected Assists": 0.13278008298755187,
+        "Progressive Carries": 5.352697095435684
+      },
+      {
+        "Player": "Yves Bissouma",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.2127659574468086,
+        "Expected Assists": 0.03404255319148936,
+        "Progressive Carries": 4.340425531914893
+      },
+      {
+        "Player": "Jarrod Bowen",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.6012084592145015,
+        "Expected Assists": 0.17220543806646527,
+        "Progressive Carries": 3.927492447129909
+      },
+      {
+        "Player": "Armando Broja",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 0.8219178082191781,
+        "Expected Assists": 0.05936073059360731,
+        "Progressive Carries": 3.6073059360730597
+      },
+      {
+        "Player": "Josh Brownhill",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.804878048780488,
+        "Expected Assists": 0.07621951219512196,
+        "Progressive Carries": 2.103658536585366
+      },
+      {
+        "Player": "Emi Buendia",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.118483412322274,
+        "Expected Assists": 0.2606635071090047,
+        "Progressive Carries": 5.829383886255924
+      },
+      {
+        "Player": "Joao Cancelo",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 7.632311977715878,
+        "Expected Assists": 0.14206128133704735,
+        "Progressive Carries": 10.139275766016713
+      },
+      {
+        "Player": "Sergi Canos",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.333333333333333,
+        "Expected Assists": 0.08225108225108224,
+        "Progressive Carries": 4.891774891774891
+      },
+      {
+        "Player": "Matty Cash",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.4266666666666667,
+        "Expected Assists": 0.050666666666666665,
+        "Progressive Carries": 3.9466666666666668
+      },
+      {
+        "Player": "Timothy Castagne",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.923728813559322,
+        "Expected Assists": 0.05508474576271186,
+        "Progressive Carries": 3.2203389830508473
+      },
+      {
+        "Player": "Craig Cathcart",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.5037593984962405,
+        "Expected Assists": 0.011278195488721804,
+        "Progressive Carries": 0.48872180451127817
+      },
+      {
+        "Player": "Tom Cleverley",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.388888888888889,
+        "Expected Assists": 0.1111111111111111,
+        "Progressive Carries": 1.0
+      },
+      {
+        "Player": "Conor Coady",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.1796246648793567,
+        "Expected Assists": 0.0,
+        "Progressive Carries": 0.9115281501340483
+      },
+      {
+        "Player": "Seamus Coleman",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.847457627118644,
+        "Expected Assists": 0.03728813559322034,
+        "Progressive Carries": 2.9491525423728815
+      },
+      {
+        "Player": "Nathan Collins",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.419354838709677,
+        "Expected Assists": 0.04838709677419355,
+        "Progressive Carries": 1.3978494623655913
+      },
+      {
+        "Player": "Liam Cooper",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.1782178217821784,
+        "Expected Assists": 0.0049504950495049506,
+        "Progressive Carries": 0.9900990099009901
+      },
+      {
+        "Player": "Jack Cork",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.096774193548387,
+        "Expected Assists": 0.005376344086021505,
+        "Progressive Carries": 1.6666666666666665
+      },
+      {
+        "Player": "Maxwel Cornet",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.173469387755102,
+        "Expected Assists": 0.07653061224489795,
+        "Progressive Carries": 2.6020408163265305
+      },
+      {
+        "Player": "Vladimir Coufal",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.285714285714286,
+        "Expected Assists": 0.09795918367346938,
+        "Progressive Carries": 3.795918367346939
+      },
+      {
+        "Player": "Aaron Cresswell",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.115511551155115,
+        "Expected Assists": 0.10561056105610561,
+        "Progressive Carries": 3.6303630363036303
+      },
+      {
+        "Player": "Marc Cucurella",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.102040816326531,
+        "Expected Assists": 0.07871720116618076,
+        "Progressive Carries": 6.005830903790088
+      },
+      {
+        "Player": "Stuart Dallas",
+        "Pos": "DFMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.9506172839506175,
+        "Expected Assists": 0.07407407407407407,
+        "Progressive Carries": 4.753086419753086
+      },
+      {
+        "Player": "Diogo Dalot",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.95,
+        "Expected Assists": 0.05,
+        "Progressive Carries": 4.9
+      },
+      {
+        "Player": "Ben Davies",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.1489361702127665,
+        "Expected Assists": 0.02127659574468085,
+        "Progressive Carries": 6.134751773049645
+      },
+      {
+        "Player": "Craig Dawson",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.4705882352941175,
+        "Expected Assists": 0.016339869281045753,
+        "Progressive Carries": 1.5686274509803921
+      },
+      {
+        "Player": "Kevin De Bruyne",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 6.408163265306122,
+        "Expected Assists": 0.3877551020408163,
+        "Progressive Carries": 8.36734693877551
+      },
+      {
+        "Player": "Leander Dendoncker",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.7050691244239633,
+        "Expected Assists": 0.04608294930875576,
+        "Progressive Carries": 1.2903225806451613
+      },
+      {
+        "Player": "Emmanuel Dennis",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.0905923344947737,
+        "Expected Assists": 0.11149825783972127,
+        "Progressive Carries": 4.878048780487805
+      },
+      {
+        "Player": "Kiernan Dewsbury-Hall",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.188034188034188,
+        "Expected Assists": 0.12820512820512822,
+        "Progressive Carries": 6.153846153846154
+      },
+      {
+        "Player": "Ruben Dias",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.9700374531835205,
+        "Expected Assists": 0.0898876404494382,
+        "Progressive Carries": 8.951310861423222
+      },
+      {
+        "Player": "Eric Dier",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.727272727272727,
+        "Expected Assists": 0.04105571847507331,
+        "Progressive Carries": 3.1378299120234603
+      },
+      {
+        "Player": "Gabriel Dos Santos",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.4411764705882355,
+        "Expected Assists": 0.023529411764705882,
+        "Progressive Carries": 4.235294117647059
+      },
+      {
+        "Player": "Abdoulaye Doucoure",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.226950354609929,
+        "Expected Assists": 0.07801418439716312,
+        "Progressive Carries": 3.120567375886525
+      },
+      {
+        "Player": "Lewis Dunk",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.8881118881118881,
+        "Expected Assists": 0.006993006993006993,
+        "Progressive Carries": 1.4335664335664335
+      },
+      {
+        "Player": "Odsonne Edouard",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.0689655172413794,
+        "Expected Assists": 0.13218390804597702,
+        "Progressive Carries": 4.080459770114943
+      },
+      {
+        "Player": "Mohamed Elyounoussi",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.158590308370044,
+        "Expected Assists": 0.11013215859030838,
+        "Progressive Carries": 4.933920704845815
+      },
+      {
+        "Player": "Emerson",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.188976377952756,
+        "Expected Assists": 0.08267716535433071,
+        "Progressive Carries": 4.960629921259843
+      },
+      {
+        "Player": "Fabinho",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.163424124513619,
+        "Expected Assists": 0.054474708171206226,
+        "Progressive Carries": 4.124513618677043
+      },
+      {
+        "Player": "Kiko Femenia",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.3193277310924367,
+        "Expected Assists": 0.13445378151260504,
+        "Progressive Carries": 3.3193277310924367
+      },
+      {
+        "Player": "Bruno Fernandes",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.664739884393064,
+        "Expected Assists": 0.24277456647398843,
+        "Progressive Carries": 6.069364161849711
+      },
+      {
+        "Player": "Junior Firpo",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.8947368421052633,
+        "Expected Assists": 0.1368421052631579,
+        "Progressive Carries": 5.105263157894737
+      },
+      {
+        "Player": "Phil Foden",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.2203389830508473,
+        "Expected Assists": 0.2796610169491525,
+        "Progressive Carries": 5.5508474576271185
+      },
+      {
+        "Player": "Pablo Fornals",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.209003215434083,
+        "Expected Assists": 0.180064308681672,
+        "Progressive Carries": 4.95176848874598
+      },
+      {
+        "Player": "Adam Forshaw",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.588235294117647,
+        "Expected Assists": 0.06470588235294118,
+        "Progressive Carries": 2.764705882352941
+      },
+      {
+        "Player": "Fred",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.8,
+        "Expected Assists": 0.08888888888888889,
+        "Progressive Carries": 3.2888888888888888
+      },
+      {
+        "Player": "Conor Gallagher",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.9620253164556962,
+        "Expected Assists": 0.11075949367088607,
+        "Progressive Carries": 3.3227848101265822
+      },
+      {
+        "Player": "Ben Gibson",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.815884476534296,
+        "Expected Assists": 0.0,
+        "Progressive Carries": 2.2382671480144407
+      },
+      {
+        "Player": "Billy Gilmour",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.514563106796116,
+        "Expected Assists": 0.0970873786407767,
+        "Progressive Carries": 3.8834951456310676
+      },
+      {
+        "Player": "Ben Godfrey",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.7333333333333334,
+        "Expected Assists": 0.03111111111111111,
+        "Progressive Carries": 1.9111111111111112
+      },
+      {
+        "Player": "Anthony Gordon",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.1653543307086616,
+        "Expected Assists": 0.12992125984251968,
+        "Progressive Carries": 5.433070866141732
+      },
+      {
+        "Player": "Demarai Gray",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.7307692307692308,
+        "Expected Assists": 0.16538461538461538,
+        "Progressive Carries": 6.6923076923076925
+      },
+      {
+        "Player": "Jack Grealish",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.8497652582159625,
+        "Expected Assists": 0.29577464788732394,
+        "Progressive Carries": 13.474178403755868
+      },
+      {
+        "Player": "Pascal Gross",
+        "Pos": "MFDF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.557522123893805,
+        "Expected Assists": 0.23451327433628316,
+        "Progressive Carries": 4.424778761061947
+      },
+      {
+        "Player": "Marc Guehi",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.7653631284916202,
+        "Expected Assists": 0.013966480446927375,
+        "Progressive Carries": 2.7653631284916202
+      },
+      {
+        "Player": "Ilkay Gundogan",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.077669902912621,
+        "Expected Assists": 0.20388349514563106,
+        "Progressive Carries": 6.407766990291262
+      },
+      {
+        "Player": "Grant Hanley",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 0.9006211180124223,
+        "Expected Assists": 0.009316770186335402,
+        "Progressive Carries": 0.7142857142857142
+      },
+      {
+        "Player": "Jack Harrison",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.6177474402730376,
+        "Expected Assists": 0.08873720136518772,
+        "Progressive Carries": 6.996587030716723
+      },
+      {
+        "Player": "Kai Havertz",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.288557213930348,
+        "Expected Assists": 0.09950248756218905,
+        "Progressive Carries": 5.621890547263681
+      },
+      {
+        "Player": "Hwang Hee-chan",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.0297029702970297,
+        "Expected Assists": 0.08415841584158416,
+        "Progressive Carries": 5.198019801980198
+      },
+      {
+        "Player": "Jordan Henderson",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 6.0899653979238755,
+        "Expected Assists": 0.1314878892733564,
+        "Progressive Carries": 4.498269896193772
+      },
+      {
+        "Player": "Rico Henry",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.5324675324675323,
+        "Expected Assists": 0.05519480519480519,
+        "Progressive Carries": 3.5064935064935066
+      },
+      {
+        "Player": "Son Heung-min",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.2754491017964074,
+        "Expected Assists": 0.24251497005988024,
+        "Progressive Carries": 5.538922155688623
+      },
+      {
+        "Player": "Mason Holgate",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.6033755274261603,
+        "Expected Assists": 0.0042194092827004225,
+        "Progressive Carries": 0.8860759493670887
+      },
+      {
+        "Player": "Pierre Hojbjerg",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.71830985915493,
+        "Expected Assists": 0.07042253521126761,
+        "Progressive Carries": 4.056338028169014
+      },
+      {
+        "Player": "Danny Ings",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.2796208530805686,
+        "Expected Assists": 0.0947867298578199,
+        "Progressive Carries": 1.990521327014218
+      },
+      {
+        "Player": "Alex Iwobi",
+        "Pos": "MFDF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.495575221238938,
+        "Expected Assists": 0.1238938053097345,
+        "Progressive Carries": 4.778761061946902
+      },
+      {
+        "Player": "Daniel James",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.8631178707224334,
+        "Expected Assists": 0.09125475285171102,
+        "Progressive Carries": 4.638783269961977
+      },
+      {
+        "Player": "Reece James",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.797101449275362,
+        "Expected Assists": 0.2753623188405797,
+        "Progressive Carries": 7.536231884057972
+      },
+      {
+        "Player": "Vitaly Janelt",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.764705882352941,
+        "Expected Assists": 0.08627450980392158,
+        "Progressive Carries": 2.549019607843137
+      },
+      {
+        "Player": "Pontus Jansson",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.4363143631436315,
+        "Expected Assists": 0.013550135501355014,
+        "Progressive Carries": 0.9214092140921409
+      },
+      {
+        "Player": "Mathias Jensen",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.8764044943820224,
+        "Expected Assists": 0.20224719101123595,
+        "Progressive Carries": 3.7640449438202244
+      },
+      {
+        "Player": "Gabriel Jesus",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.535885167464115,
+        "Expected Assists": 0.2583732057416268,
+        "Progressive Carries": 7.033492822966507
+      },
+      {
+        "Player": "Raul Jimenez",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.7123287671232876,
+        "Expected Assists": 0.09246575342465754,
+        "Progressive Carries": 3.2534246575342465
+      },
+      {
+        "Player": "Joao Pedro",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.060109289617486,
+        "Expected Assists": 0.14207650273224043,
+        "Progressive Carries": 4.863387978142076
+      },
+      {
+        "Player": "Joelinton",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.359154929577465,
+        "Expected Assists": 0.06338028169014084,
+        "Progressive Carries": 3.767605633802817
+      },
+      {
+        "Player": "Jorginho",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.533596837944664,
+        "Expected Assists": 0.11067193675889327,
+        "Progressive Carries": 4.703557312252964
+      },
+      {
+        "Player": "Diogo Jota",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.6996197718631176,
+        "Expected Assists": 0.2091254752851711,
+        "Progressive Carries": 5.247148288973384
+      },
+      {
+        "Player": "Hassane Kamara",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.611111111111111,
+        "Expected Assists": 0.022222222222222223,
+        "Progressive Carries": 2.7222222222222223
+      },
+      {
+        "Player": "Harry Kane",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.2590529247910864,
+        "Expected Assists": 0.25069637883008355,
+        "Progressive Carries": 3.816155988857939
+      },
+      {
+        "Player": "N'Golo Kante",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.939086294416244,
+        "Expected Assists": 0.11675126903553298,
+        "Progressive Carries": 7.5126903553299496
+      },
+      {
+        "Player": "Michael Keane",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.3548387096774195,
+        "Expected Assists": 0.01935483870967742,
+        "Progressive Carries": 1.5483870967741935
+      },
+      {
+        "Player": "Max Kilman",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.076923076923077,
+        "Expected Assists": 0.0,
+        "Progressive Carries": 3.678929765886288
+      },
+      {
+        "Player": "Joshua King",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.2,
+        "Expected Assists": 0.128,
+        "Progressive Carries": 3.28
+      },
+      {
+        "Player": "Mateusz Klich",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.043478260869565,
+        "Expected Assists": 0.09565217391304348,
+        "Progressive Carries": 4.478260869565218
+      },
+      {
+        "Player": "Robin Koch",
+        "Pos": "MFDF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.1142857142857143,
+        "Expected Assists": 0.02857142857142857,
+        "Progressive Carries": 1.1428571428571428
+      },
+      {
+        "Player": "Ezri Konsa",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.2,
+        "Expected Assists": 0.010909090909090908,
+        "Progressive Carries": 1.0545454545454545
+      },
+      {
+        "Player": "Cheikhou Kouyate",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.9634703196347034,
+        "Expected Assists": 0.0319634703196347,
+        "Progressive Carries": 1.0502283105022832
+      },
+      {
+        "Player": "Mateo Kovacic",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 6.53179190751445,
+        "Expected Assists": 0.20809248554913296,
+        "Progressive Carries": 7.283236994219653
+      },
+      {
+        "Player": "Emil Krafth",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.9120879120879124,
+        "Expected Assists": 0.04395604395604396,
+        "Progressive Carries": 3.021978021978022
+      },
+      {
+        "Player": "Juraj Kucka",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.676056338028169,
+        "Expected Assists": 0.04225352112676056,
+        "Progressive Carries": 3.004694835680751
+      },
+      {
+        "Player": "Alexandre Lacazette",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.8686868686868687,
+        "Expected Assists": 0.09595959595959595,
+        "Progressive Carries": 2.323232323232323
+      },
+      {
+        "Player": "Adam Lallana",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.4104046242774566,
+        "Expected Assists": 0.040462427745664734,
+        "Progressive Carries": 3.9884393063583814
+      },
+      {
+        "Player": "Tariq Lamptey",
+        "Pos": "DFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.485549132947977,
+        "Expected Assists": 0.12716763005780346,
+        "Progressive Carries": 9.30635838150289
+      },
+      {
+        "Player": "Manuel Lanzini",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.343434343434343,
+        "Expected Assists": 0.11111111111111112,
+        "Progressive Carries": 6.0606060606060606
+      },
+      {
+        "Player": "Aymeric Laporte",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 6.305732484076433,
+        "Expected Assists": 0.01592356687898089,
+        "Progressive Carries": 11.210191082802549
+      },
+      {
+        "Player": "Jamaal Lascelles",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 0.9606986899563319,
+        "Expected Assists": 0.013100436681222708,
+        "Progressive Carries": 0.4366812227074236
+      },
+      {
+        "Player": "Pierre Lees-Melou",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.928571428571429,
+        "Expected Assists": 0.07142857142857144,
+        "Progressive Carries": 2.9761904761904763
+      },
+      {
+        "Player": "Aaron Lennon",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 0.9883720930232559,
+        "Expected Assists": 0.029069767441860465,
+        "Progressive Carries": 3.255813953488372
+      },
+      {
+        "Player": "Victor Lindelof",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.2519083969465647,
+        "Expected Assists": 0.019083969465648856,
+        "Progressive Carries": 2.786259541984733
+      },
+      {
+        "Player": "Valentino Livramento",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.2653061224489797,
+        "Expected Assists": 0.09387755102040815,
+        "Progressive Carries": 5.224489795918367
+      },
+      {
+        "Player": "Diego Llorente",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.6923076923076925,
+        "Expected Assists": 0.0038461538461538464,
+        "Progressive Carries": 2.1538461538461537
+      },
+      {
+        "Player": "Matthew Lowton",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.060913705583756,
+        "Expected Assists": 0.06598984771573604,
+        "Progressive Carries": 2.9441624365482233
+      },
+      {
+        "Player": "Douglas Luiz",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.3443708609271523,
+        "Expected Assists": 0.08278145695364239,
+        "Progressive Carries": 3.1456953642384105
+      },
+      {
+        "Player": "Romelu Lukaku",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 0.903954802259887,
+        "Expected Assists": 0.16949152542372883,
+        "Progressive Carries": 2.3728813559322033
+      },
+      {
+        "Player": "Alexis Mac Allister",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.61864406779661,
+        "Expected Assists": 0.0635593220338983,
+        "Progressive Carries": 4.406779661016949
+      },
+      {
+        "Player": "James Maddison",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.8095238095238093,
+        "Expected Assists": 0.1758241758241758,
+        "Progressive Carries": 5.4945054945054945
+      },
+      {
+        "Player": "Harry Maguire",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.0824372759856633,
+        "Expected Assists": 0.007168458781362008,
+        "Progressive Carries": 3.9426523297491043
+      },
+      {
+        "Player": "Sadio Mane",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.29073482428115,
+        "Expected Assists": 0.1405750798722045,
+        "Progressive Carries": 6.357827476038339
+      },
+      {
+        "Player": "Solly March",
+        "Pos": "DFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.8350515463917527,
+        "Expected Assists": 0.1391752577319588,
+        "Progressive Carries": 6.494845360824743
+      },
+      {
+        "Player": "Martinelli",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.497584541062802,
+        "Expected Assists": 0.15942028985507245,
+        "Progressive Carries": 7.004830917874396
+      },
+      {
+        "Player": "Joel Matip",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.064516129032258,
+        "Expected Assists": 0.03870967741935484,
+        "Progressive Carries": 8.870967741935484
+      },
+      {
+        "Player": "Neal Maupay",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.383399209486166,
+        "Expected Assists": 0.08695652173913045,
+        "Progressive Carries": 2.766798418972332
+      },
+      {
+        "Player": "Bryan Mbeumo",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.51702786377709,
+        "Expected Assists": 0.11145510835913314,
+        "Progressive Carries": 3.8699690402476783
+      },
+      {
+        "Player": "John McGinn",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.839650145772596,
+        "Expected Assists": 0.14285714285714288,
+        "Progressive Carries": 3.644314868804665
+      },
+      {
+        "Player": "Kenny McLean",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.7574750830564785,
+        "Expected Assists": 0.02325581395348837,
+        "Progressive Carries": 2.6578073089700998
+      },
+      {
+        "Player": "Dwight McNeil",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.0579710144927534,
+        "Expected Assists": 0.1391304347826087,
+        "Progressive Carries": 5.768115942028985
+      },
+      {
+        "Player": "Scott McTominay",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.7358490566037736,
+        "Expected Assists": 0.06792452830188679,
+        "Progressive Carries": 4.90566037735849
+      },
+      {
+        "Player": "Ben Mee",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.3039215686274512,
+        "Expected Assists": 0.004901960784313726,
+        "Progressive Carries": 0.9313725490196079
+      },
+      {
+        "Player": "Tyrone Mings",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.1186440677966103,
+        "Expected Assists": 0.04237288135593221,
+        "Progressive Carries": 1.8926553672316384
+      },
+      {
+        "Player": "Tyrick Mitchell",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.8550724637681157,
+        "Expected Assists": 0.03768115942028986,
+        "Progressive Carries": 2.7246376811594204
+      },
+      {
+        "Player": "Jakub Moder",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.544973544973545,
+        "Expected Assists": 0.08994708994708996,
+        "Progressive Carries": 4.656084656084657
+      },
+      {
+        "Player": "Mason Mount",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.638783269961977,
+        "Expected Assists": 0.25475285171102663,
+        "Progressive Carries": 6.844106463878327
+      },
+      {
+        "Player": "Lucas Moura",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.162436548223351,
+        "Expected Assists": 0.22335025380710663,
+        "Progressive Carries": 7.309644670050762
+      },
+      {
+        "Player": "Joao Moutinho",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.181818181818182,
+        "Expected Assists": 0.07272727272727272,
+        "Progressive Carries": 4.303030303030303
+      },
+      {
+        "Player": "Wilfred Ndidi",
+        "Pos": "MFDF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.888888888888889,
+        "Expected Assists": 0.0,
+        "Progressive Carries": 2.2777777777777777
+      },
+      {
+        "Player": "Ruben Neves",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.9324324324324325,
+        "Expected Assists": 0.07432432432432433,
+        "Progressive Carries": 3.8175675675675675
+      },
+      {
+        "Player": "Mathias Normann",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.66120218579235,
+        "Expected Assists": 0.09836065573770492,
+        "Progressive Carries": 3.0054644808743167
+      },
+      {
+        "Player": "Christian Norgaard",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.8082595870206495,
+        "Expected Assists": 0.09144542772861358,
+        "Progressive Carries": 2.359882005899705
+      },
+      {
+        "Player": "Thomas Partey",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.155555555555556,
+        "Expected Assists": 0.05777777777777778,
+        "Progressive Carries": 3.8222222222222224
+      },
+      {
+        "Player": "Romain Perraud",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.4444444444444446,
+        "Expected Assists": 0.03333333333333333,
+        "Progressive Carries": 3.5
+      },
+      {
+        "Player": "Kalvin Phillips",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.124293785310734,
+        "Expected Assists": 0.01129943502824859,
+        "Progressive Carries": 1.5254237288135595
+      },
+      {
+        "Player": "Ethan Pinnock",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.939799331103679,
+        "Expected Assists": 0.04013377926421405,
+        "Progressive Carries": 1.3043478260869565
+      },
+      {
+        "Player": "Teemu Pukki",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 0.6648199445983379,
+        "Expected Assists": 0.07756232686980609,
+        "Progressive Carries": 2.2437673130193905
+      },
+      {
+        "Player": "Jacob Ramsey",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.394160583941606,
+        "Expected Assists": 0.07299270072992702,
+        "Progressive Carries": 6.021897810218978
+      },
+      {
+        "Player": "Raphinha",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.21604938271605,
+        "Expected Assists": 0.20987654320987656,
+        "Progressive Carries": 5.648148148148149
+      },
+      {
+        "Player": "Milot Rashica",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.6532258064516128,
+        "Expected Assists": 0.10483870967741936,
+        "Progressive Carries": 4.838709677419355
+      },
+      {
+        "Player": "Nathan Redmond",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.823529411764706,
+        "Expected Assists": 0.2107843137254902,
+        "Progressive Carries": 5.735294117647059
+      },
+      {
+        "Player": "Sergio Reguillonn",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.44131455399061,
+        "Expected Assists": 0.18779342723004694,
+        "Progressive Carries": 4.60093896713615
+      },
+      {
+        "Player": "Declan Rice",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.220963172804533,
+        "Expected Assists": 0.056657223796034,
+        "Progressive Carries": 7.110481586402267
+      },
+      {
+        "Player": "Richarlison",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.2142857142857142,
+        "Expected Assists": 0.08571428571428572,
+        "Progressive Carries": 3.4285714285714284
+      },
+      {
+        "Player": "Connor Roberts",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.351063829787234,
+        "Expected Assists": 0.05851063829787234,
+        "Progressive Carries": 3.6170212765957444
+      },
+      {
+        "Player": "Andrew Robertson",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 7.021276595744681,
+        "Expected Assists": 0.1843971631205674,
+        "Progressive Carries": 7.269503546099291
+      },
+      {
+        "Player": "Rodri",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.59375,
+        "Expected Assists": 0.04375,
+        "Progressive Carries": 6.40625
+      },
+      {
+        "Player": "Rodrigo",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.015873015873016,
+        "Expected Assists": 0.18253968253968253,
+        "Progressive Carries": 3.8095238095238098
+      },
+      {
+        "Player": "Cristian Romero",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.5365853658536586,
+        "Expected Assists": 0.024390243902439025,
+        "Progressive Carries": 3.8536585365853657
+      },
+      {
+        "Player": "Oriol Romeu",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.894080996884735,
+        "Expected Assists": 0.08722741433021806,
+        "Progressive Carries": 4.485981308411215
+      },
+      {
+        "Player": "Cristiano Ronaldo",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.794871794871795,
+        "Expected Assists": 0.11355311355311355,
+        "Progressive Carries": 5.164835164835165
+      },
+      {
+        "Player": "Antonio Rudiger",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.777448071216617,
+        "Expected Assists": 0.032640949554896145,
+        "Progressive Carries": 5.548961424332344
+      },
+      {
+        "Player": "Allan Saint-Maximin",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.794871794871795,
+        "Expected Assists": 0.1858974358974359,
+        "Progressive Carries": 7.884615384615385
+      },
+      {
+        "Player": "Romain Saiss",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.9867109634551494,
+        "Expected Assists": 0.013289036544850499,
+        "Progressive Carries": 2.4252491694352156
+      },
+      {
+        "Player": "Bukayo Saka",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.205438066465257,
+        "Expected Assists": 0.2084592145015106,
+        "Progressive Carries": 7.915407854984894
+      },
+      {
+        "Player": "Mohamed Salah",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.006514657980456,
+        "Expected Assists": 0.3387622149837134,
+        "Progressive Carries": 6.938110749185668
+      },
+      {
+        "Player": "Mohammed Salisu",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.5757575757575757,
+        "Expected Assists": 0.015151515151515152,
+        "Progressive Carries": 3.3636363636363638
+      },
+      {
+        "Player": "Davinson Sanchez",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.87292817679558,
+        "Expected Assists": 0.022099447513812154,
+        "Progressive Carries": 5.69060773480663
+      },
+      {
+        "Player": "Jadon Sancho",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.4123222748815163,
+        "Expected Assists": 0.1990521327014218,
+        "Progressive Carries": 9.95260663507109
+      },
+      {
+        "Player": "Samir Santos",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.182795698924731,
+        "Expected Assists": 0.005376344086021505,
+        "Progressive Carries": 0.8602150537634408
+      },
+      {
+        "Player": "Josh Sargent",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.1428571428571428,
+        "Expected Assists": 0.04,
+        "Progressive Carries": 2.2285714285714286
+      },
+      {
+        "Player": "Ismaila Sarr",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.1739130434782608,
+        "Expected Assists": 0.12077294685990339,
+        "Progressive Carries": 6.086956521739131
+      },
+      {
+        "Player": "Fabian Schar",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.8333333333333333,
+        "Expected Assists": 0.024999999999999998,
+        "Progressive Carries": 2.125
+      },
+      {
+        "Player": "Jeffrey Schlupp",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.378640776699029,
+        "Expected Assists": 0.08737864077669903,
+        "Progressive Carries": 3.1553398058252426
+      },
+      {
+        "Player": "Nelson Semedo",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.037974683544304,
+        "Expected Assists": 0.05063291139240506,
+        "Progressive Carries": 6.329113924050633
+      },
+      {
+        "Player": "Luke Shaw",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.382022471910112,
+        "Expected Assists": 0.1797752808988764,
+        "Progressive Carries": 5.393258426966292
+      },
+      {
+        "Player": "Jonjo Shelvey",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.1818181818181817,
+        "Expected Assists": 0.03636363636363637,
+        "Progressive Carries": 1.4545454545454546
+      },
+      {
+        "Player": "Bernardo Silva",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.77602523659306,
+        "Expected Assists": 0.1640378548895899,
+        "Progressive Carries": 10.757097791798108
+      },
+      {
+        "Player": "Thiago Silva",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.557823129251701,
+        "Expected Assists": 0.006802721088435375,
+        "Progressive Carries": 6.9727891156462585
+      },
+      {
+        "Player": "Moussa Sissoko",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.128491620111732,
+        "Expected Assists": 0.0782122905027933,
+        "Progressive Carries": 2.374301675977654
+      },
+      {
+        "Player": "Emile Smith Rowe",
+        "Pos": "MFFW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.676056338028169,
+        "Expected Assists": 0.10328638497652583,
+        "Progressive Carries": 6.103286384976526
+      },
+      {
+        "Player": "Tomas Soucek",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.9411764705882355,
+        "Expected Assists": 0.04411764705882353,
+        "Progressive Carries": 2.235294117647059
+      },
+      {
+        "Player": "Caglar Soyuncu",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.9133574007220218,
+        "Expected Assists": 0.0036101083032490976,
+        "Progressive Carries": 2.0577617328519855
+      },
+      {
+        "Player": "Raheem Sterling",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.1779661016949152,
+        "Expected Assists": 0.19491525423728812,
+        "Progressive Carries": 7.966101694915253
+      },
+      {
+        "Player": "Pascal Struijk",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.1578947368421053,
+        "Expected Assists": 0.013157894736842105,
+        "Progressive Carries": 1.4912280701754386
+      },
+      {
+        "Player": "James Tarkowski",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.6666666666666665,
+        "Expected Assists": 0.017391304347826087,
+        "Progressive Carries": 0.6666666666666666
+      },
+      {
+        "Player": "Charlie Taylor",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.607260726072607,
+        "Expected Assists": 0.11551155115511551,
+        "Progressive Carries": 3.8943894389438944
+      },
+      {
+        "Player": "Alex Telles",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.2608695652173916,
+        "Expected Assists": 0.10869565217391305,
+        "Progressive Carries": 4.4021739130434785
+      },
+      {
+        "Player": "Luke Thomas",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.4433962264150946,
+        "Expected Assists": 0.07547169811320756,
+        "Progressive Carries": 2.8773584905660377
+      },
+      {
+        "Player": "Youri Tielemans",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.616438356164384,
+        "Expected Assists": 0.1678082191780822,
+        "Progressive Carries": 3.8013698630136985
+      },
+      {
+        "Player": "Kieran Tierney",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.568075117370892,
+        "Expected Assists": 0.0892018779342723,
+        "Progressive Carries": 5.211267605633803
+      },
+      {
+        "Player": "Takehiro Tomiyasu",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.9411764705882355,
+        "Expected Assists": 0.03208556149732621,
+        "Progressive Carries": 3.9037433155080214
+      },
+      {
+        "Player": "Ivan Toney",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.3839009287925697,
+        "Expected Assists": 0.17956656346749228,
+        "Progressive Carries": 1.6718266253869971
+      },
+      {
+        "Player": "Leandro Trossard",
+        "Pos": "FWMF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.91025641025641,
+        "Expected Assists": 0.13141025641025642,
+        "Progressive Carries": 6.185897435897436
+      },
+      {
+        "Player": "Virgil van Dijk",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.0588235294117645,
+        "Expected Assists": 0.011764705882352941,
+        "Progressive Carries": 2.911764705882353
+      },
+      {
+        "Player": "Raphael Varane",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.019704433497537,
+        "Expected Assists": 0.009852216748768473,
+        "Progressive Carries": 3.0049261083743843
+      },
+      {
+        "Player": "Jamie Vardy",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.3432835820895521,
+        "Expected Assists": 0.07960199004975124,
+        "Progressive Carries": 2.4378109452736316
+      },
+      {
+        "Player": "Joel Veltman",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.6050156739811916,
+        "Expected Assists": 0.03448275862068966,
+        "Progressive Carries": 2.5391849529780566
+      },
+      {
+        "Player": "Kyle Walker",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.410256410256411,
+        "Expected Assists": 0.061538461538461535,
+        "Progressive Carries": 4.666666666666667
+      },
+      {
+        "Player": "Kyle Walker-Peters",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.2320819112627985,
+        "Expected Assists": 0.09897610921501707,
+        "Progressive Carries": 7.8839590443686
+      },
+      {
+        "Player": "Aaron Wan-Bissaka",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.663316582914573,
+        "Expected Assists": 0.04522613065326633,
+        "Progressive Carries": 4.723618090452262
+      },
+      {
+        "Player": "Joel Ward",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.079710144927536,
+        "Expected Assists": 0.021739130434782608,
+        "Progressive Carries": 3.043478260869565
+      },
+      {
+        "Player": "James Ward-Prowse",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.7815126050420167,
+        "Expected Assists": 0.17366946778711484,
+        "Progressive Carries": 2.773109243697479
+      },
+      {
+        "Player": "Ollie Watkins",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.4634146341463417,
+        "Expected Assists": 0.08841463414634147,
+        "Progressive Carries": 3.3841463414634148
+      },
+      {
+        "Player": "Ashley Westwood",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 4.212598425196851,
+        "Expected Assists": 0.14173228346456693,
+        "Progressive Carries": 1.4566929133858268
+      },
+      {
+        "Player": "Ben White",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 2.8125,
+        "Expected Assists": 0.01875,
+        "Progressive Carries": 3.125
+      },
+      {
+        "Player": "Brandon Williams",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.4745762711864403,
+        "Expected Assists": 0.05508474576271186,
+        "Progressive Carries": 3.7288135593220337
+      },
+      {
+        "Player": "Joe Willock",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.6371681415929202,
+        "Expected Assists": 0.053097345132743355,
+        "Progressive Carries": 3.7610619469026547
+      },
+      {
+        "Player": "Granit Xhaka",
+        "Pos": "MFDF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.598455598455598,
+        "Expected Assists": 0.0888030888030888,
+        "Progressive Carries": 4.285714285714286
+      },
+      {
+        "Player": "Wilfried Zaha",
+        "Pos": "FW",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 3.778501628664495,
+        "Expected Assists": 0.1563517915309446,
+        "Progressive Carries": 7.45928338762215
+      },
+      {
+        "Player": "Kurt Zouma",
+        "Pos": "DF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 1.3419913419913418,
+        "Expected Assists": 0.0,
+        "Progressive Carries": 1.4285714285714284
+      },
+      {
+        "Player": "Martin Odegaard",
+        "Pos": "MF",
+        "Comp": "eng Premier League",
+        "Progressive Passes": 5.11326860841424,
+        "Expected Assists": 0.22006472491909385,
+        "Progressive Carries": 6.5048543689320395
+      }
+    ]
+  },
+  "mark": {
+    "type": "circle",
+    "color": "#000080",
+    "opacity": 0.7
+  },
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "Progressive Carries",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          14
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "y": {
+      "field": "Progressive Passes",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          12
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "size": {
+      "field": "Expected Assists",
+      "type": "quantitative",
+      "title": "Expected Assists",
+      "scale": {
+        "range": [
+          5,
+          200
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Player",
+        "type": "ordinal",
+        "title": "Player"
+      },
+      {
+        "field": "Progressive Passes",
+        "type": "quantitative",
+        "title": "Progressive Passes",
+        "format": ".2f"
+      },
+      {
+        "field": "Progressive Carries",
+        "type": "quantitative",
+        "title": "Progressive Carries",
+        "format": ".2f"
+      },
+      {
+        "field": "Expected Assists",
+        "type": "quantitative",
+        "title": "Expected Assists",
+        "format": ".2f"
+      }
+    ]
+  }
+}

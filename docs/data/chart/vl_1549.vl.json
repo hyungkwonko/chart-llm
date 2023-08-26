@@ -1,0 +1,337 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "concat": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "color": {
+          "field": "species",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "bin": true,
+            "field": "value",
+            "title": "x",
+            "type": "quantitative"
+          },
+          {
+            "aggregate": "count",
+            "title": "y",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "bin": true,
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "height": 150,
+      "title": "petalLength",
+      "transform": [
+        {
+          "calculate": "datum._source.ml.species_prediction",
+          "as": "species_prediction"
+        },
+        {
+          "calculate": "datum._source.species",
+          "as": "species"
+        },
+        {
+          "calculate": "datum._source.petalLength",
+          "as": "petalLength"
+        },
+        {
+          "calculate": "datum._source.petalWidth",
+          "as": "petalWidth"
+        },
+        {
+          "calculate": "datum._source.sepalLength",
+          "as": "sepalLength"
+        },
+        {
+          "calculate": "datum._source.sepalWidth",
+          "as": "sepalWidth"
+        },
+        {
+          "fold": [
+            "petalLength",
+            "petalWidth",
+            "sepalLength",
+            "sepalWidth"
+          ],
+          "as": [
+            "attribute",
+            "value"
+          ]
+        },
+        {
+          "filter": "(datum.attribute === 'petalLength')"
+        }
+      ],
+      "width": 150
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "color": {
+          "field": "species",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "bin": true,
+            "field": "value",
+            "title": "x",
+            "type": "quantitative"
+          },
+          {
+            "aggregate": "count",
+            "title": "y",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "bin": true,
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "height": 150,
+      "title": "petalWidth",
+      "transform": [
+        {
+          "calculate": "datum._source.ml.species_prediction",
+          "as": "species_prediction"
+        },
+        {
+          "calculate": "datum._source.species",
+          "as": "species"
+        },
+        {
+          "calculate": "datum._source.petalLength",
+          "as": "petalLength"
+        },
+        {
+          "calculate": "datum._source.petalWidth",
+          "as": "petalWidth"
+        },
+        {
+          "calculate": "datum._source.sepalLength",
+          "as": "sepalLength"
+        },
+        {
+          "calculate": "datum._source.sepalWidth",
+          "as": "sepalWidth"
+        },
+        {
+          "fold": [
+            "petalLength",
+            "petalWidth",
+            "sepalLength",
+            "sepalWidth"
+          ],
+          "as": [
+            "attribute",
+            "value"
+          ]
+        },
+        {
+          "filter": "(datum.attribute === 'petalWidth')"
+        }
+      ],
+      "width": 150
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "color": {
+          "field": "species",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "bin": true,
+            "field": "value",
+            "title": "x",
+            "type": "quantitative"
+          },
+          {
+            "aggregate": "count",
+            "title": "y",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "bin": true,
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "height": 150,
+      "title": "sepalLength",
+      "transform": [
+        {
+          "calculate": "datum._source.ml.species_prediction",
+          "as": "species_prediction"
+        },
+        {
+          "calculate": "datum._source.species",
+          "as": "species"
+        },
+        {
+          "calculate": "datum._source.petalLength",
+          "as": "petalLength"
+        },
+        {
+          "calculate": "datum._source.petalWidth",
+          "as": "petalWidth"
+        },
+        {
+          "calculate": "datum._source.sepalLength",
+          "as": "sepalLength"
+        },
+        {
+          "calculate": "datum._source.sepalWidth",
+          "as": "sepalWidth"
+        },
+        {
+          "fold": [
+            "petalLength",
+            "petalWidth",
+            "sepalLength",
+            "sepalWidth"
+          ],
+          "as": [
+            "attribute",
+            "value"
+          ]
+        },
+        {
+          "filter": "(datum.attribute === 'sepalLength')"
+        }
+      ],
+      "width": 150
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "color": {
+          "field": "species",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "bin": true,
+            "field": "value",
+            "title": "x",
+            "type": "quantitative"
+          },
+          {
+            "aggregate": "count",
+            "title": "y",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "bin": true,
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "height": 150,
+      "title": "sepalWidth",
+      "transform": [
+        {
+          "calculate": "datum._source.ml.species_prediction",
+          "as": "species_prediction"
+        },
+        {
+          "calculate": "datum._source.species",
+          "as": "species"
+        },
+        {
+          "calculate": "datum._source.petalLength",
+          "as": "petalLength"
+        },
+        {
+          "calculate": "datum._source.petalWidth",
+          "as": "petalWidth"
+        },
+        {
+          "calculate": "datum._source.sepalLength",
+          "as": "sepalLength"
+        },
+        {
+          "calculate": "datum._source.sepalWidth",
+          "as": "sepalWidth"
+        },
+        {
+          "fold": [
+            "petalLength",
+            "petalWidth",
+            "sepalLength",
+            "sepalWidth"
+          ],
+          "as": [
+            "attribute",
+            "value"
+          ]
+        },
+        {
+          "filter": "(datum.attribute === 'sepalWidth')"
+        }
+      ],
+      "width": 150
+    }
+  ],
+  "columns": 2,
+  "data": {
+    "url": "https://walterra.github.io/jupyter2kibana/data/iris_classification.json",
+    "format": {
+      "property": "hits.hits",
+      "type": "json"
+    }
+  },
+  "resolve": {
+    "axis": {
+      "x": "independent",
+      "y": "independent"
+    },
+    "scale": {
+      "x": "independent",
+      "y": "independent"
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
+}

@@ -1,0 +1,259 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/hyungkwonko/tmp-data/main/presidential_second_round.csv",
+    "format": {
+      "parse": {
+        "total_voters": "number",
+        "voters": "number"
+      }
+    }
+  },
+  "title": "Distribution of total voters",
+  "hconcat": [
+    {
+      "vconcat": [
+        {
+          "mark": "tick",
+          "transform": [
+            {
+              "aggregate": [
+                {
+                  "op": "sum",
+                  "field": "total_voters",
+                  "as": "votersFordepartment"
+                }
+              ],
+              "groupby": [
+                "department"
+              ]
+            }
+          ],
+          "encoding": {
+            "x": {
+              "type": "quantitative",
+              "field": "votersFordepartment",
+              "axis": {
+                "title": "By department"
+              }
+            },
+            "color": {
+              "condition": {
+                "selection": "dept",
+                "value": "purple"
+              },
+              "value": "grey"
+            },
+            "tooltip": [
+              {
+                "field": "department",
+                "type": "nominal",
+                "title": "Department"
+              },
+              {
+                "field": "votersFordepartment",
+                "type": "quantitative",
+                "title": "Total voters",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "selection": "dept"
+              }
+            }
+          ],
+          "mark": "tick",
+          "encoding": {
+            "x": {
+              "type": "quantitative",
+              "field": "total_voters",
+              "axis": {
+                "title": "By municipality"
+              }
+            },
+            "tooltip": [
+              {
+                "field": "municipality",
+                "type": "nominal",
+                "title": "Municipality"
+              },
+              {
+                "field": "total_voters",
+                "type": "quantitative",
+                "title": "Total voters",
+                "format": ","
+              }
+            ],
+            "color": {
+              "value": "purple"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "calculate": "(datum.total_voters - datum.voters)/datum.total_voters",
+              "as": "abstention"
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "sum",
+                  "field": "voters",
+                  "as": "votersFordepartment"
+                },
+                {
+                  "op": "sum",
+                  "field": "total_voters",
+                  "as": "totalvotersFordepartment"
+                },
+                {
+                  "op": "mean",
+                  "field": "abstention",
+                  "as": "abstention2"
+                }
+              ],
+              "groupby": [
+                "department"
+              ]
+            }
+          ],
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "type": "quantitative",
+              "field": "totalvotersFordepartment",
+              "bin": {
+                "step": 500000
+              },
+              "axis": {
+                "title": "Total voters by department"
+              }
+            },
+            "y": {
+              "field": "*",
+              "type": "quantitative",
+              "aggregate": "count",
+              "axis": {
+                "title": "Department count"
+              }
+            },
+            "fill": {
+              "bin": true,
+              "field": "abstention2",
+              "type": "quantitative",
+              "title": "Abstention %"
+            },
+            "stroke": {
+              "condition": {
+                "selection": "dept",
+                "value": "purple"
+              },
+              "value": "white"
+            },
+            "tooltip": [
+              {
+                "field": "department",
+                "type": "nominal",
+                "title": "Department"
+              },
+              {
+                "field": "totalvotersFordepartment",
+                "type": "quantitative",
+                "title": "Total voters",
+                "format": ","
+              },
+              {
+                "field": "votersFordepartment",
+                "type": "quantitative",
+                "title": "Voters",
+                "format": ","
+              },
+              {
+                "field": "abstention2",
+                "type": "quantitative",
+                "title": "Abstention",
+                "format": ".1%"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Voters by department",
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "aggregate": "sum",
+              "type": "quantitative",
+              "field": "total_voters",
+              "axis": {
+                "title": "Total number of voters"
+              }
+            },
+            "color": {
+              "condition": {
+                "selection": "dept",
+                "value": "red"
+              },
+              "value": "pink"
+            },
+            "opacity": {
+              "value": 0.8
+            }
+          },
+          "selection": {
+            "dept": {
+              "type": "interval",
+              "empty": "none",
+              "encodings": [
+                "y"
+              ]
+            }
+          }
+        },
+        {
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "aggregate": "sum",
+              "type": "quantitative",
+              "field": "voters",
+              "axis": {
+                "title": "Number of voters"
+              }
+            },
+            "color": {
+              "value": "blue"
+            },
+            "opacity": {
+              "value": 1
+            }
+          }
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "department",
+          "type": "nominal",
+          "sort": {
+            "op": "sum",
+            "field": "voters",
+            "order": "descending"
+          },
+          "axis": {
+            "title": "Departments of Colombia"
+          }
+        }
+      }
+    }
+  ]
+}

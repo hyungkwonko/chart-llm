@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatterplot showing Highstreeet Spend Index and Average Footfall.",
+  "title": {
+    "text": "Highstreet Recovery",
+    "subtitle": [
+      "Data from April 2022 showing High Street Recovery.",
+      "Index=100 a pre-lockdown baseline Source: Center for Cities"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/Highstreetsdata.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "size": 100,
+        "color": "#557A95",
+        "opacity": 0.9
+      },
+      "encoding": {
+        "x": {
+          "field": "Spend Index",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "Average Footfall",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          }
+        },
+        "color": {
+          "field": "High Street Vacancies",
+          "type": "quantitative",
+          "title": "% of Shops Vacant"
+        },
+        "tooltip": [
+          {
+            "field": "City"
+          },
+          {
+            "field": "Spend Index"
+          },
+          {
+            "field": "Average Footfall"
+          },
+          {
+            "field": "High Street Vacancies"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "Average Footfall",
+          "on": "Spend Index"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Spend Index",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Average Footfall",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Average Footfall",
+          "on": "Spend Index",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ]
+}

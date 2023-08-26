@@ -1,0 +1,163 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "concat": [
+    {
+      "encoding": {
+        "strokeDash": {
+          "field": "cat",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      },
+      "mark": "line",
+      "title": "Nominal",
+      "width": 200
+    },
+    {
+      "encoding": {
+        "strokeDash": {
+          "field": "cat",
+          "type": "ordinal"
+        },
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      },
+      "mark": "line",
+      "title": "Ordinal",
+      "width": 200
+    }
+  ],
+  "config": {
+    "axis": {
+      "grid": false,
+      "title": null
+    },
+    "line": {
+      "color": "orange",
+      "opacity": 0.6,
+      "strokeWidth": 1
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "cat": 1,
+        "x": 0,
+        "y": 100
+      },
+      {
+        "cat": 1,
+        "x": 1,
+        "y": 100
+      },
+      {
+        "cat": 2,
+        "x": 0,
+        "y": 90
+      },
+      {
+        "cat": 2,
+        "x": 1,
+        "y": 90
+      },
+      {
+        "cat": 3,
+        "x": 0,
+        "y": 80
+      },
+      {
+        "cat": 3,
+        "x": 1,
+        "y": 80
+      },
+      {
+        "cat": 4,
+        "x": 0,
+        "y": 70
+      },
+      {
+        "cat": 4,
+        "x": 1,
+        "y": 70
+      },
+      {
+        "cat": 5,
+        "x": 0,
+        "y": 60
+      },
+      {
+        "cat": 5,
+        "x": 1,
+        "y": 60
+      },
+      {
+        "cat": 6,
+        "x": 0,
+        "y": 50
+      },
+      {
+        "cat": 6,
+        "x": 1,
+        "y": 50
+      },
+      {
+        "cat": 7,
+        "x": 0,
+        "y": 40
+      },
+      {
+        "cat": 7,
+        "x": 1,
+        "y": 40
+      },
+      {
+        "cat": 8,
+        "x": 0,
+        "y": 30
+      },
+      {
+        "cat": 8,
+        "x": 1,
+        "y": 30
+      },
+      {
+        "cat": 9,
+        "x": 0,
+        "y": 20
+      },
+      {
+        "cat": 9,
+        "x": 1,
+        "y": 20
+      },
+      {
+        "cat": 10,
+        "x": 0,
+        "y": 10
+      },
+      {
+        "cat": 10,
+        "x": 1,
+        "y": 10
+      }
+    ]
+  },
+  "resolve": {
+    "scale": {
+      "strokeDash": "independent"
+    }
+  }
+}

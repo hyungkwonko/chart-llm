@@ -1,0 +1,154 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "description": "Bike hire station data from TfL open data api. Uses Vega-lite example data for London borough geojson and to overlay shortened borough names. Filter transform used to only show relevant inner London boroughs. Using Santander red.",
+  "title": {
+    "text": "Inner London cycle hire",
+    "fontSize": 12,
+    "subtitle": [
+      "Santander bike docking stations. Source: TfL, 2021",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/londonBoroughs.json",
+        "format": {
+          "type": "topojson",
+          "feature": "boroughs"
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "field": "id",
+            "oneOf": [
+              "Camden",
+              "Greenwich",
+              "Hackney",
+              "Hammersmith and Fulham",
+              "Islington",
+              "Kensington and Chelsea",
+              "Lambeth",
+              "Lewisham",
+              "Southwark",
+              "Tower Hamlets",
+              "Wandsworth",
+              "Westminster",
+              "Newham",
+              "City of London"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "color": {
+          "value": "#eee"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/londonCentroids.json",
+        "format": {
+          "type": "json"
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "field": "name",
+            "oneOf": [
+              "Camden",
+              "Greenwich",
+              "Hackney",
+              "Hammersmith and Fulham",
+              "Islington",
+              "Kensington and Chelsea",
+              "Lambeth",
+              "Lewisham",
+              "Southwark",
+              "Tower Hamlets",
+              "Wandsworth",
+              "Westminster",
+              "Newham",
+              "City of London"
+            ]
+          }
+        },
+        {
+          "calculate": "indexof (datum.name,' ') > 0  ? substring(datum.name,0,indexof(datum.name, ' ')) : datum.name",
+          "as": "bLabel"
+        }
+      ],
+      "mark": "text",
+      "encoding": {
+        "longitude": {
+          "field": "cx",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "cy",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "bLabel",
+          "type": "nominal"
+        },
+        "size": {
+          "value": 8
+        },
+        "opacity": {
+          "value": 0.6
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://api.tfl.gov.uk/BikePoint/",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": "circle",
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "value": 6
+        },
+        "color": {
+          "value": "#EA1D25"
+        },
+        "tooltip": {
+          "field": "commonName"
+        }
+      }
+    }
+  ]
+}

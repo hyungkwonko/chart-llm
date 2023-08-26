@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "format": {
+      "parse": {
+        "NOX": "number"
+      }
+    },
+    "url": "https://gicentre.github.io/data/putneyAirQuality2018.csv"
+  },
+  "description": "Cumulative Frequency Distribution",
+  "encoding": {
+    "x": {
+      "field": "NOX",
+      "title": "NOX concentration (\u03bcg/\u33a5)",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "cumulativeCount",
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "fill": {
+      "gradient": "linear",
+      "stops": [
+        {
+          "color": "white",
+          "offset": 0
+        },
+        {
+          "color": "black",
+          "offset": 1
+        }
+      ],
+      "x1": 0,
+      "x2": 1,
+      "y1": 1,
+      "y2": 1
+    },
+    "fillOpacity": 0.5,
+    "stroke": {
+      "gradient": "linear",
+      "stops": [
+        {
+          "color": "orange",
+          "offset": 0
+        },
+        {
+          "color": "green",
+          "offset": 0.5
+        },
+        {
+          "color": "purple",
+          "offset": 1
+        }
+      ]
+    },
+    "strokeDash": [
+      10,
+      6,
+      6,
+      6
+    ],
+    "strokeDashOffset": 5,
+    "strokeOpacity": 0.8,
+    "strokeWidth": 2,
+    "type": "area"
+  },
+  "transform": [
+    {
+      "sort": [
+        {
+          "field": "NOX",
+          "order": "ascending"
+        }
+      ],
+      "window": [
+        {
+          "as": "cumulativeCount",
+          "op": "count"
+        }
+      ]
+    }
+  ],
+  "width": 500
+}

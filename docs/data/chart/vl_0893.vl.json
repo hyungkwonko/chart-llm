@@ -1,0 +1,234 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#fff0d8",
+  "width": 400,
+  "height": 400,
+  "title": {
+    "align": "left",
+    "text": "Heat Map Showing the Positive Relationship Between Change in GDP and Energy Consumption",
+    "anchor": "start",
+    "subtitle": [
+      "Observations from 1981-2021 for 52 countries. Grey lines represent means of each growth rate.",
+      "Orange lines represent Chinese growth rate means.",
+      "Source: World Bank and BP"
+    ],
+    "subtitleFontSize": 10
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/heatmapdtafinalV2.csv"
+  },
+  "params": [
+    {
+      "name": "Means",
+      "bind": {
+        "input": "checkbox"
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "bin": {
+            "maxbins": 20
+          },
+          "field": "pct_chn_exa",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              -0.18,
+              0.25
+            ]
+          },
+          "axis": {
+            "labelSeparation": {
+              "expr": "5"
+            },
+            "format": "%",
+            "title": "Change in Energy Consumption",
+            "grid": true,
+            "gridWidth": 0.1,
+            "gridColor": "black"
+          }
+        },
+        "y": {
+          "bin": {
+            "maxbins": 30
+          },
+          "field": "GDP Growth Rates",
+          "type": "quantitative",
+          "axis": {
+            "labelSeparation": {
+              "expr": "3"
+            },
+            "format": "%",
+            "title": "GDP Growth",
+            "grid": true,
+            "gridWidth": 0.1,
+            "gridColor": "black"
+          }
+        },
+        "color": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "scale": {
+            "range": [
+              "black",
+              "darkorange",
+              "orange",
+              "gold",
+              "goldred",
+              "red"
+            ]
+          },
+          "legend": {
+            "title": "# Of Observations"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "__count",
+            "title": "Observations"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          4,
+          2
+        ],
+        "strokeCap": "butt",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "aggregate": "mean",
+          "field": "pct_chn_exa",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              -0.18,
+              0.25
+            ]
+          }
+        },
+        "color": {
+          "value": "darkgrey"
+        },
+        "opacity": {
+          "condition": {
+            "test": {
+              "param": "Means"
+            }
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          4,
+          2
+        ],
+        "strokeCap": "butt",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "y": {
+          "aggregate": "mean",
+          "field": "GDP Growth Rates",
+          "type": "quantitative"
+        },
+        "color": {
+          "value": "darkgrey"
+        },
+        "opacity": {
+          "condition": {
+            "test": {
+              "param": "Means"
+            }
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.Country =='China'"
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          4,
+          2
+        ],
+        "strokeCap": "butt",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "y": {
+          "aggregate": "mean",
+          "field": "GDP Growth Rates"
+        },
+        "opacity": {
+          "condition": {
+            "test": {
+              "param": "Means"
+            }
+          },
+          "value": 0
+        },
+        "color": {
+          "value": "darkorange"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.Country =='China'"
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          4,
+          2
+        ],
+        "strokeCap": "butt",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "aggregate": "mean",
+          "field": "pct_chn_exa",
+          "scale": {
+            "domain": [
+              -0.18,
+              0.25
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {
+            "test": {
+              "param": "Means"
+            }
+          },
+          "value": 0
+        },
+        "color": {
+          "value": "darkorange"
+        }
+      }
+    }
+  ]
+}

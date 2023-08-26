@@ -1,0 +1,96 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Price adjustment - monthly",
+  "height": 300,
+  "width": 280,
+  "title": {
+    "text": "Price changes vs inflation",
+    "subtitle": [
+      "Net 12-m price changes, CPI inflation",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/db_AdjustmentFrequency.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "timeParse(datum.date3, '%d-%m-%Y')",
+      "as": "date4"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date4",
+      "title": null,
+      "axis": {
+        "grid": false
+      },
+      "type": "temporal"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "y": {
+          "field": "inflation",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "grid": false,
+            "format": ",.0%"
+          }
+        },
+        "color": {
+          "datum": "inflation"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "point": false,
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "y": {
+          "field": "net12_sh",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "grid": false,
+            "format": ",.0%"
+          }
+        },
+        "color": {
+          "datum": "net12_sh",
+          "scale": {
+            "range": [
+              "rgba(150,150,220)",
+              "rgba(0,67,167)"
+            ]
+          },
+          "legend": {
+            "orient": "top",
+            "labelExpr": "{'net12_sh': 'Net price change (rhs)', 'inflation': 'CPI inflation (lhs)'}[datum.label]"
+          }
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

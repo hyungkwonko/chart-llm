@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ferguswalshe/ferguswalshe.github.io/main/data_ONS-DITG.json",
+    "format": {
+      "type": "json",
+      "property": "years"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "color": "#7aa1b8",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "title": {
+    "text": "FTSE 100 Pension Funds",
+    "subtitle": "Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 150,
+  "height": 150,
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "date",
+        "type": "temporal",
+        "title": "Date"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "SRS Grossed"
+      }
+    ]
+  },
+  "config": {}
+}

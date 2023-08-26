@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300,
+  "height": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/main/Investment.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "Year",
+      "axis": {
+        "format": "%Y"
+      }
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Amount (2020 USD million)"
+    },
+    "color": {
+      "field": "Category",
+      "scale": {
+        "range": [
+          "grey",
+          "lightgreen"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/tableau/Visualization-Linting/e36a78027ee5ba556f361bff1df3a9ca2bfb4546/example-data/bad/missingquarter.csv"
+  },
+  "height": 200,
+  "width": 200,
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "timeUnit": "yearquarter",
+      "field": "Time",
+      "type": "temporal"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "Sales",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "repeat": {
+    "row": [
+      "% Of Energy From Renewables",
+      "GDP US$ in Billions",
+      "2012 CO2 Emissions Millions of Tonnes"
+    ]
+  },
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "title": {
+    "text": "China's Geographic Challenge For Renewables",
+    "subtitle": [
+      "Percentage of Energy from Renewables, GDP and Emissions by Province",
+      "Source: SP Global, Wikipedia & The University of East Angelia"
+    ],
+    "subtitleFontSize": 10
+  },
+  "config": {
+    "background": "#fff0d8"
+  },
+  "spec": {
+    "width": 340,
+    "height": 250,
+    "data": {
+      "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/Chinageoshape.json",
+      "format": {
+        "property": "features",
+        "type": "json"
+      }
+    },
+    "transform": [
+      {
+        "lookup": "properties.NAME_1",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/Chinatrellv4.csv"
+          },
+          "key": "Province",
+          "fields": [
+            "% Of Energy From Renewables",
+            "targ",
+            "GDP US$ in Billions",
+            "2012 CO2 Emissions Millions of Tonnes"
+          ]
+        }
+      }
+    ],
+    "mark": "geoshape",
+    "projection": {
+      "type": "mercator"
+    },
+    "encoding": {
+      "color": {
+        "field": {
+          "repeat": "row"
+        },
+        "type": "quantitative",
+        "scale": {
+          "range": [
+            "black",
+            "darkorange",
+            "orange",
+            "gold",
+            "goldred",
+            "red"
+          ]
+        },
+        "legend": {
+          "titleAlign": "left",
+          "titleBaseline": "line-bottom",
+          "titleFontSize": 9
+        }
+      },
+      "tooltip": [
+        {
+          "field": "properties.NAME_1",
+          "title": "Province"
+        },
+        {
+          "field": "% Of Energy From Renewables",
+          "title": "% Energy Coming from Renewable ",
+          "type": "quantitative",
+          "format": "%"
+        },
+        {
+          "field": "GDP US$ in Billions",
+          "type": "ordinal",
+          "title": "GDP in Billions of US$"
+        },
+        {
+          "field": "2012 CO2 Emissions Millions of Tonnes",
+          "type": "ordinal",
+          "title": "2012 Emissions in millions of tonnes"
+        },
+        {
+          "field": "targ",
+          "title": "Met Governmants 2020 Renewables Target?"
+        }
+      ]
+    }
+  }
+}

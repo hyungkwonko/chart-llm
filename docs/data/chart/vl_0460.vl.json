@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "UK CPI data visualisation",
+  "title": {
+    "text": "All items - price rises and cuts - [Hover for detail]",
+    "subtitle": "Share of prices rising and falling for each consumer item",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/prices/8357f5fba93bec983b3e606cee4ae40ecb0b4433/dbLatestRelease.csv"
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "circle",
+    "opacity": 0.5,
+    "color": "orange"
+  },
+  "selection": {
+    "paintbrush": {
+      "type": "multi",
+      "on": "mouseover",
+      "nearest": true
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "down_sh",
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      },
+      "scale": {
+        "zero": true
+      },
+      "title": "Prices cut"
+    },
+    "y": {
+      "field": "up_sh",
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      },
+      "scale": {
+        "zero": false
+      },
+      "title": "Prices rising"
+    },
+    "color": {
+      "condition": {
+        "test": {
+          "selection": "paintbrush"
+        },
+        "value": "red"
+      },
+      "value": "orange"
+    },
+    "tooltip": [
+      {
+        "field": "item_desc",
+        "type": "nominal",
+        "title": "Description"
+      },
+      {
+        "field": "item_id",
+        "type": "nominal",
+        "title": "Item ID",
+        "format": ".0f"
+      },
+      {
+        "field": "p",
+        "type": "quantitative",
+        "title": "Price (median)",
+        "format": ".0f"
+      },
+      {
+        "field": "up_sh",
+        "type": "quantitative",
+        "title": "Share rising",
+        "format": ",.2%"
+      },
+      {
+        "field": "down_sh",
+        "type": "quantitative",
+        "title": "Share falling",
+        "format": ",.2%"
+      }
+    ]
+  }
+}

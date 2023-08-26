@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart showing recipient countries who received more than 10 million between 1991 and 2010",
+  "data": {
+    "url": "https://raw.githubusercontent.com/grantat/cs725-blog/6c77cd08497a86c6495df1c40635ef033a1e71c7/static/data/v3/recip_amount.json",
+    "format": {
+      "type": "json"
+    }
+  },
+  "signals": [
+    {
+      "name": "tooltip",
+      "value": {},
+      "on": [
+        {
+          "events": "rect:mouseover",
+          "update": "datum"
+        },
+        {
+          "events": "rect:mouseout",
+          "update": "{}"
+        }
+      ]
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.amount >= 10000000"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "recip",
+      "type": "ordinal",
+      "sort": {
+        "op": "sum",
+        "field": "amount",
+        "order": "descending"
+      },
+      "axis": {
+        "title": "Recipient Countries"
+      }
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "amount",
+      "type": "quantitative",
+      "axis": {
+        "title": "Total Amount Received (million)"
+      }
+    },
+    "tooltip": {
+      "field": "amount",
+      "type": "quantitative"
+    }
+  }
+}

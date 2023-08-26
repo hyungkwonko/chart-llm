@@ -1,0 +1,131 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "width": 450,
+  "height": 300,
+  "title": "Syrian Arab Republic",
+  "data": {
+    "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/Datasets/Syria_move.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.rank <= 20"
+    }
+  ],
+  "layer": [
+    {
+      "selection": {
+        "brush": {
+          "type": "interval",
+          "encodings": [
+            "x"
+          ]
+        }
+      },
+      "mark": {
+        "type": "rect",
+        "width": 20
+      },
+      "encoding": {
+        "x": {
+          "field": "Country of asylum",
+          "type": "nominal",
+          "axis": {
+            "labelAngle": 30
+          }
+        },
+        "y": {
+          "field": "FDP over pop",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              1,
+              20000
+            ]
+          },
+          "title": ""
+        },
+        "color": {
+          "field": "Income group"
+        },
+        "tooltip": [
+          {
+            "field": "Country of asylum",
+            "type": "nominal"
+          },
+          {
+            "field": "FDP over pop",
+            "type": "quantitative",
+            "title": "FDPs hosted per 100,000 pop.",
+            "format": "0.2f"
+          },
+          {
+            "field": "FDP",
+            "type": "quantitative",
+            "title": "Total FDPs",
+            "format": ","
+          }
+        ],
+        "opacity": {
+          "condition": {
+            "selection": "brush",
+            "value": 1
+          },
+          "value": 0.2
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "selection": "brush"
+          }
+        }
+      ],
+      "mark": "rule",
+      "encoding": {
+        "y": {
+          "aggregate": "mean",
+          "field": "FDP over pop",
+          "type": "quantitative"
+        },
+        "color": {
+          "value": "firebrick"
+        },
+        "size": {
+          "value": 3
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "dx": -40,
+        "dy": -100,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "value": "width"
+        },
+        "y": {
+          "aggregate": "mean",
+          "field": "FDP over pop",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Drag to interact"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "#ff000000"
+  }
+}

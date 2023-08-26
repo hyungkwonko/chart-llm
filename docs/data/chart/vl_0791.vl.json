@@ -1,0 +1,112 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {
+        "Country": "United States",
+        "Gold Reserves": 8133.0
+      },
+      {
+        "Country": "Germany",
+        "Gold Reserves": 3355.0
+      },
+      {
+        "Country": "Italy",
+        "Gold Reserves": 2452.0
+      },
+      {
+        "Country": "France",
+        "Gold Reserves": 2436.0
+      },
+      {
+        "Country": "Russia",
+        "Gold Reserves": 2299.0
+      },
+      {
+        "Country": "China",
+        "Gold Reserves": 1948.0
+      },
+      {
+        "Country": "Switzerland",
+        "Gold Reserves": 1040.0
+      },
+      {
+        "Country": "Japan",
+        "Gold Reserves": 846.0
+      },
+      {
+        "Country": "India",
+        "Gold Reserves": 769.0
+      },
+      {
+        "Country": "Netherlands",
+        "Gold Reserves": 612.0
+      },
+      {
+        "Country": "Euro Area",
+        "Gold Reserves": 505.0
+      },
+      {
+        "Country": "Turkey",
+        "Gold Reserves": 458.0
+      },
+      {
+        "Country": "Saudi Arabia",
+        "Gold Reserves": 323.0
+      },
+      {
+        "Country": "United Kingdom",
+        "Gold Reserves": 310.0
+      },
+      {
+        "Country": "Spain",
+        "Gold Reserves": 282.0
+      },
+      {
+        "Country": "Singapore",
+        "Gold Reserves": 154.0
+      },
+      {
+        "Country": "Brazil",
+        "Gold Reserves": 130.0
+      },
+      {
+        "Country": "South Africa",
+        "Gold Reserves": 125.0
+      },
+      {
+        "Country": "Mexico",
+        "Gold Reserves": 120.0
+      },
+      {
+        "Country": "South Korea",
+        "Gold Reserves": 104.0
+      },
+      {
+        "Country": "Australia",
+        "Gold Reserves": 79.85
+      },
+      {
+        "Country": "Indonesia",
+        "Gold Reserves": 78.57
+      },
+      {
+        "Country": "Argentina",
+        "Gold Reserves": 61.74
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Country",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "Gold Reserves",
+      "type": "quantitative",
+      "title": "G20 Gold Reserves"
+    }
+  }
+}

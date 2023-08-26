@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "stroke": ""
+    }
+  },
+  "width": 700,
+  "height": 600,
+  "data": {
+    "url": "https://gicentre.github.io/scrc/data/geo/greaterGlasgow.json",
+    "format": {
+      "type": "topojson",
+      "feature": "greaterGlasgow"
+    }
+  },
+  "projection": {
+    "type": "identity",
+    "reflectY": true
+  },
+  "encoding": {
+    "color": {
+      "field": "properties.NRSCouncil",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "scheme": "tableau20"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.IZ_NAME",
+        "title": "MSOA",
+        "type": "nominal"
+      },
+      {
+        "field": "properties.NRSCouncil",
+        "title": "Council",
+        "type": "nominal"
+      }
+    ]
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokewidth": 1,
+    "strokeJoin": "round"
+  }
+}

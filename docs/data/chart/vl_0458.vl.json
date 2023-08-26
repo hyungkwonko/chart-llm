@@ -1,0 +1,121 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Price adjustment - monthly",
+  "height": 300,
+  "width": 300,
+  "title": {
+    "text": "Price adjustment",
+    "subtitle": [
+      "Share of prices changing month-on-month",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/db_AdjustmentFrequency.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "timeParse(datum.date3, '%d-%m-%Y')",
+      "as": "date4"
+    },
+    {
+      "filter": {
+        "field": "change_sh",
+        "gt": 0
+      }
+    },
+    {
+      "filter": {
+        "field": "change_sh",
+        "lt": 0.31
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date4",
+      "type": "temporal",
+      "title": null
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "y": {
+          "field": "change_sh",
+          "type": "quantitative",
+          "title": null
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "color": "rgb(0,67,167)",
+            "strokeWidth": 1,
+            "opacity": 1
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "selection": "hover"
+              }
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "size": 150,
+            "color": "rgb(0,67,167)"
+          }
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0.2,
+            "selection": "hover"
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "date4",
+            "type": "temporal",
+            "format": "%b-%Y",
+            "title": "Date"
+          },
+          {
+            "field": "change_sh",
+            "type": "quantitative",
+            "format": ",.1%",
+            "title": "Price changes"
+          }
+        ]
+      },
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": [
+            "date4"
+          ],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
+    }
+  ]
+}

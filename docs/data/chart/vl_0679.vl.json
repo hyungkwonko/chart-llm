@@ -1,0 +1,104 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Aid to Sub-saharan Africa, Compared to Aid to Ukraine over time",
+    "subtitle": "Official Development Aid (millions US$, 2020 constant), source World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "width": 400,
+  "height": 300,
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/SSA_UKR3.csv"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "title": null,
+      "type": "temporal"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": false,
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "y": {
+          "field": "SSA",
+          "type": "quantitative",
+          "title": "",
+          "scale": {
+            "domain": [
+              30000,
+              55000
+            ]
+          },
+          "axis": {
+            "grid": false,
+            "labelColor": "blue",
+            "format": ",.5"
+          }
+        },
+        "color": {
+          "datum": "SSA",
+          "scale": {
+            "range": [
+              "blue",
+              "red"
+            ]
+          },
+          "legend": {
+            "orient": "top-left"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "point": false,
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "y": {
+          "field": "UKR",
+          "type": "quantitative",
+          "title": "",
+          "scale": {
+            "domain": [
+              400,
+              1800
+            ]
+          },
+          "axis": {
+            "grid": false,
+            "labelColor": "red",
+            "format": "$,.5"
+          }
+        },
+        "color": {
+          "datum": "UKR",
+          "scale": {
+            "range": [
+              "red",
+              "red"
+            ]
+          },
+          "legend": {
+            "orient": "top-left"
+          }
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

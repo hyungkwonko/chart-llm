@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "the population per state, engineers per state, and hurricanes per state",
+  "repeat": {
+    "row": [
+      "recession",
+      "present"
+    ]
+  },
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "spec": {
+    "width": 500,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/c2ec519622471ba4d38fd3acdbc926b36626c695/Data/household-debt-by-county2008.csv"
+    },
+    "transform": [
+      {
+        "lookup": "id",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/us-10m.json",
+            "format": {
+              "type": "topojson",
+              "feature": "counties"
+            }
+          },
+          "key": "id"
+        },
+        "as": "geo"
+      }
+    ],
+    "projection": {
+      "type": "albersUsa"
+    },
+    "mark": "geoshape",
+    "encoding": {
+      "shape": {
+        "field": "geo",
+        "type": "geojson"
+      },
+      "color": {
+        "field": {
+          "repeat": "row"
+        },
+        "type": "quantitative"
+      }
+    }
+  },
+  "config": {}
+}

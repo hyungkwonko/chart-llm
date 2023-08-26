@@ -1,0 +1,395 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Color Bins in VSUPS versus traditional Bivariate Plots.",
+  "width": 500,
+  "data": {
+    "values": [
+      {
+        "threshold": 1,
+        "num": 121,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 2,
+        "num": 81,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 3,
+        "num": 49,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 4,
+        "num": 36,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 5,
+        "num": 25,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 6,
+        "num": 25,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 7,
+        "num": 25,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 8,
+        "num": 16,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 9,
+        "num": 16,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 10,
+        "num": 16,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 11,
+        "num": 16,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 12,
+        "num": 16,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 13,
+        "num": 16,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 14,
+        "num": 9,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 15,
+        "num": 9,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 16,
+        "num": 9,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 17,
+        "num": 9,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 18,
+        "num": 9,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 19,
+        "num": 4,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 20,
+        "num": 4,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 21,
+        "num": 4,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 22,
+        "num": 4,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 23,
+        "num": 4,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 24,
+        "num": 4,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 25,
+        "num": 4,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 26,
+        "num": 4,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 27,
+        "num": 4,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 28,
+        "num": 4,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 29,
+        "num": 4,
+        "type": "Bivariate"
+      },
+      {
+        "threshold": 1,
+        "num": 165,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 2,
+        "num": 110,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 3,
+        "num": 82,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 4,
+        "num": 56,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 5,
+        "num": 47,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 6,
+        "num": 42,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 7,
+        "num": 35,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 8,
+        "num": 31,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 9,
+        "num": 26,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 10,
+        "num": 25,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 11,
+        "num": 22,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 12,
+        "num": 22,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 13,
+        "num": 19,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 14,
+        "num": 18,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 15,
+        "num": 16,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 16,
+        "num": 16,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 17,
+        "num": 15,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 18,
+        "num": 15,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 19,
+        "num": 11,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 20,
+        "num": 11,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 21,
+        "num": 11,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 22,
+        "num": 11,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 23,
+        "num": 8,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 24,
+        "num": 8,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 25,
+        "num": 8,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 26,
+        "num": 8,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 27,
+        "num": 8,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 28,
+        "num": 8,
+        "type": "VSUP"
+      },
+      {
+        "threshold": 29,
+        "num": 8,
+        "type": "VSUP"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "threshold",
+          "type": "quantitative",
+          "title": "Difference Threshold (Euclidean Distance in CIELAB)"
+        },
+        "y": {
+          "field": "num",
+          "type": "quantitative",
+          "title": "Number of Distinct Colors"
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "title": "Map Type"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "value": 1
+          },
+          {
+            "value": 2.3
+          },
+          {
+            "value": 6.01
+          },
+          {
+            "value": 11
+          },
+          {
+            "value": 19
+          }
+        ]
+      },
+      "mark": "rule",
+      "encoding": {
+        "x": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "value": "red"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "value": 1,
+            "label": "1"
+          },
+          {
+            "value": 2.3,
+            "label": "2.3"
+          },
+          {
+            "value": 6.01,
+            "label": "6.01"
+          },
+          {
+            "value": 11,
+            "label": "11"
+          },
+          {
+            "value": 19,
+            "label": "19"
+          }
+        ]
+      },
+      "mark": "text",
+      "encoding": {
+        "x": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "value": "red"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "y": {
+          "value": 212
+        }
+      }
+    }
+  ]
+}

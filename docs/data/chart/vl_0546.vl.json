@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/chartENV15b.csv"
+  },
+  "title": {
+    "text": "GDP loss by temperature increase scenario",
+    "subtitle": "By most affected country. Source: Swiss Re",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": {
+    "step": 10
+  },
+  "height": 300,
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "Scenario",
+      "type": "nominal",
+      "spacing": 1,
+      "title": null
+    },
+    "y": {
+      "field": "Value 1",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": [
+          -13,
+          0.5
+        ]
+      },
+      "axis": {
+        "grid": false
+      }
+    },
+    "x": {
+      "field": "Country",
+      "type": "nominal",
+      "axis": {
+        "title": "",
+        "labelColor": "white",
+        "ticks": false
+      },
+      "sort": "-y"
+    },
+    "color": {
+      "field": "Country",
+      "scale": {
+        "scheme": "yellowgreenblue"
+      },
+      "legend": {
+        "orient": "right"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Scenario",
+        "type": "nominal"
+      },
+      {
+        "field": "Value 1",
+        "type": "quantitative",
+        "title": "GDP loss (%)"
+      },
+      {
+        "field": "Country",
+        "type": "nominal"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "domainWidth": 1
+    }
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 350,
+  "width": 350,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/T21_C1b.csv"
+  },
+  "layer": [
+    {
+      "transform": [
+        {
+          "filter": "(datum.code!='SCOT')&(datum.code!='IRL')"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "color": "#e6224b",
+        "size": 70,
+        "filled": true,
+        "stroke": "#6e0018",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "value1",
+          "type": "quantitative",
+          "title": "1926 GDP per capita"
+        },
+        "y": {
+          "field": "value2",
+          "type": "quantitative",
+          "title": "Average annual growth rate (%)"
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "code",
+            "type": "nominal",
+            "title": "Code"
+          },
+          {
+            "field": "value2",
+            "type": "quantitative",
+            "title": "Average annual growth rate (%)"
+          },
+          {
+            "field": "value1",
+            "type": "quantitative",
+            "title": "1926 GDP per capita"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "code",
+            "oneOf": [
+              "SCOT",
+              "IRL"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "color": "#00abc2",
+        "size": 70,
+        "filled": true,
+        "stroke": "#005a66",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "value1",
+          "type": "quantitative",
+          "title": "1926 GDP per capita"
+        },
+        "y": {
+          "field": "value2",
+          "type": "quantitative",
+          "title": "Average annual growth rate (%)"
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "code",
+            "type": "nominal",
+            "title": "Code"
+          },
+          {
+            "field": "value2",
+            "type": "quantitative",
+            "title": "Average annual growth rate (%)"
+          },
+          {
+            "field": "value1",
+            "type": "quantitative",
+            "title": "1926 GDP per capita"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#6e0018"
+      },
+      "transform": [
+        {
+          "regression": "value2",
+          "on": "value1",
+          "extent": [
+            750,
+            11000
+          ]
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "value1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "value2",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "value2",
+          "on": "value1",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "#6e0018",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "(datum.code!='SCOT')&(datum.code!='IRL')"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "dy": 11,
+        "dx": 14,
+        "color": "#6e0018"
+      },
+      "encoding": {
+        "x": {
+          "field": "value1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "value2",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "code",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "code",
+            "oneOf": [
+              "SCOT",
+              "IRL"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "dy": 11,
+        "dx": 14,
+        "color": "#005a66"
+      },
+      "encoding": {
+        "x": {
+          "field": "value1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "value2",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "code",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

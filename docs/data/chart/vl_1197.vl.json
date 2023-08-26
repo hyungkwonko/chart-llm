@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ben25Walker/Ben25Walker.github.io/73ca06a7edacbd1969dc2b8034d9cb8361e755f1/EnergySource.csv",
+    "format": {
+      "property": "csv"
+    }
+  },
+  "title": {
+    "text": "Poverty in different regions",
+    "subtitle": "Source:World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 400,
+  "height": 300,
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "Energy Consumption",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "Energy Source",
+      "type": "nominal",
+      "scale": {
+        "scheme": "rainbow"
+      },
+      "legend": {
+        "orient": "right"
+      }
+    }
+  }
+}

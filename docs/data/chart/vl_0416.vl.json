@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Entry and exit rates",
+    "subtitle": [
+      "Firm entry and exit as % of active firms. Source: BSD",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_Annual.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Entry rate",
+        "Exit Rate"
+      ],
+      "as": [
+        "metric",
+        "value"
+      ]
+    },
+    {
+      "filter": {
+        "field": "year",
+        "gt": 1997
+      }
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 1,
+    "point": true
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "format": ""
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "format": "%"
+      }
+    },
+    "color": {
+      "field": "metric",
+      "title": null,
+      "scale": {
+        "range": [
+          "blue",
+          "orange"
+        ]
+      },
+      "legend": {
+        "orient": "bottom-left"
+      }
+    }
+  }
+}

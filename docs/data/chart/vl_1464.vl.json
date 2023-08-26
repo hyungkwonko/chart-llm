@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Top 10 sectors w/ payment operations in ATM and POS terminals",
+    "anchor": "start",
+    "subtitle": "Lisbon (Municipality) | April 2020 | Source: SIBS Analytics",
+    "offset": 15
+  },
+  "description": "A simple bar chart with embedded data.",
+  "background": "#fefefa",
+  "height": 300,
+  "width": 300,
+  "config": {
+    "font": "Roboto",
+    "title": {
+      "font": "Roboto",
+      "color": "#44475a",
+      "subtitleFont": "Roboto",
+      "subtitleColor": "#44475a"
+    },
+    "style": {
+      "guide-label": {
+        "fill": "#44475a"
+      },
+      "guide-title": {
+        "fill": "#44475a"
+      }
+    },
+    "axis": {
+      "domainColor": "#44475a",
+      "tickColor": "#44475a"
+    },
+    "text": {
+      "font": "Roboto",
+      "fill": "#44475a"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/joaopalmeiro/data-preparation/master/vega-presentation-require-lx/data/operations.csv",
+    "name": "operations"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "sector",
+      "type": "nominal",
+      "sort": "descending"
+    },
+    "y": {
+      "field": "amount",
+      "type": "quantitative",
+      "title": "Number of operations"
+    }
+  }
+}

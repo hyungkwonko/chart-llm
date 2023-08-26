@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "name": "Road Pie Chart",
+  "usermeta": {
+    "source": "https://imgur.com/gallery/B35ouoH",
+    "color": "https://coolors.co/e7c641-abaaae-4d4d4b-439145-1f7744-2a518a-6499f9",
+    "tags": [
+      "Pie Chart",
+      "Interactive"
+    ]
+  },
+  "height": 200,
+  "width": 200,
+  "padding": 0,
+  "config": {
+    "font": "Roboto",
+    "style": {
+      "guide-label": {
+        "fill": "#44475a"
+      },
+      "guide-title": {
+        "fill": "#44475a"
+      }
+    },
+    "axis": {
+      "domainColor": "#44475a",
+      "tickColor": "#44475a"
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "category": "Mountains",
+        "value": 4.5,
+        "order": 1
+      },
+      {
+        "category": "Grass",
+        "value": 9,
+        "order": 2
+      },
+      {
+        "category": "Road",
+        "value": 13.5,
+        "order": 3
+      },
+      {
+        "category": "Sidewalk",
+        "value": 5,
+        "order": 4
+      },
+      {
+        "category": "Beach",
+        "value": 13.5,
+        "order": 5
+      },
+      {
+        "category": "Ocean",
+        "value": 9,
+        "order": 6
+      },
+      {
+        "category": "Sky",
+        "value": 45.5,
+        "order": 7
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "outerRadius": 100
+  },
+  "selection": {
+    "element": {
+      "type": "multi",
+      "fields": [
+        "category"
+      ],
+      "bind": "legend"
+    }
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "range": [
+          1.285,
+          7.568
+        ]
+      },
+      "stack": true
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Mountains",
+          "Grass",
+          "Road",
+          "Sidewalk",
+          "Beach",
+          "Ocean",
+          "Sky"
+        ],
+        "range": [
+          "#1F7744",
+          "#439145",
+          "#4D4D4B",
+          "#ABAAAE",
+          "#E7C641",
+          "#2A518A",
+          "#6499F9"
+        ]
+      },
+      "legend": {
+        "title": null,
+        "direction": "vertical",
+        "orient": "none",
+        "legendX": 220,
+        "legendY": 55,
+        "fillColor": "transparent"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "element",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "order": {
+      "field": "order",
+      "type": "quantitative"
+    }
+  },
+  "view": {
+    "stroke": null
+  }
+}

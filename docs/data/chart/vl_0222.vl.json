@@ -1,0 +1,128 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Semiconductor production index and Nintendo's hardware sale volumes",
+    "subtitle": [
+      "The industrial production index refer to the real output of all Semiconductor and Other Electronic Component, located in the United States, regardless of their ownership",
+      "Source:https://fred.stlouisfed.org/series/IPG3344S."
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 400,
+  "height": 300,
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/pjchart5p1.csv"
+      },
+      "mark": {
+        "opacity": 1,
+        "type": "line",
+        "size": 2.7,
+        "color": "#e6224b"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": null
+        },
+        "y": {
+          "field": "industrial production (IP) index",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              100,
+              140
+            ]
+          },
+          "title": "industrial production (IP) index",
+          "axis": {
+            "titleColor": "#e6224b",
+            "grid": true
+          }
+        },
+        "tooltip": [
+          {
+            "field": "DATE",
+            "title": "date",
+            "type": "temporal",
+            "timeUnit": "yearmonth"
+          },
+          {
+            "field": "industrial production (IP) index",
+            "type": "quantitative",
+            "title": "IP index"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/pjchart5p2.csv"
+      },
+      "transform": [
+        {
+          "calculate": "datum.total_sales*10",
+          "as": "sale_volumes"
+        }
+      ],
+      "mark": {
+        "stroke": "#122b39 ",
+        "type": "line",
+        "size": 2.3
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": null
+        },
+        "y": {
+          "field": "sale_volumes",
+          "type": "quantitative",
+          "title": "nintendo hardware sales volumes('000)",
+          "scale": {
+            "domain": [
+              15000,
+              30000
+            ]
+          },
+          "axis": {
+            "titleColor": "#122b39"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "title": "date",
+            "type": "temporal",
+            "timeUnit": "year"
+          },
+          {
+            "field": "sale_volumes",
+            "type": "quantitative",
+            "title": "hardware sales units ('000)"
+          }
+        ]
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "autosize": {
+    "type": "pad",
+    "contains": "padding",
+    "resize": true
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Fish caught - by continent",
+    "subtitle": "Million tonnes. Source: Our World in Data",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 280,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/environment/greenChart4.csv"
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "Time",
+      "title": null,
+      "axis": {
+        "format": "%Y",
+        "grid": false
+      }
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Value",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "Region",
+      "title": null,
+      "scale": {
+        "scheme": "yellowgreenblue"
+      },
+      "legend": {
+        "orient": "top-left"
+      },
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "Time",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Fish caught (million tonnes)"
+      },
+      {
+        "field": "Region"
+      }
+    ]
+  }
+}

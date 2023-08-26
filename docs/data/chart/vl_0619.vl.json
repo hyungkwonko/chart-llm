@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Solow Swann Model",
+    "subtitle": [
+      "Simple graphical version",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch2_Growth/solowModel.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "y2",
+        "s2"
+      ],
+      "as": [
+        "variable",
+        "value"
+      ]
+    }
+  ],
+  "height": 300,
+  "width": 400,
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "k",
+          "type": "quantitative",
+          "title": null,
+          "axis": {
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null
+        },
+        "color": {
+          "field": "variable",
+          "title": null,
+          "scale": {
+            "range": [
+              "green",
+              "rgb(128,0,0)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "darkgray",
+        "size": 0,
+        "strokeDash": [
+          6,
+          3
+        ]
+      },
+      "encoding": {
+        "x": {
+          "datum": 64
+        }
+      }
+    }
+  ]
+}

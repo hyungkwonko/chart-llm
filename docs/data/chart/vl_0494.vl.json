@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "view": {
+    "stroke": "transparent"
+  },
+  "title": {
+    "text": "New York vs California",
+    "fontSize": 12,
+    "subtitle": [
+      "Population, 1900-2021",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 2015,
+      "bind": {
+        "input": "range",
+        "min": 1900,
+        "max": 2021,
+        "step": 5,
+        "name": "Year:"
+      }
+    }
+  ],
+  "mark": {
+    "type": "bar"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataUSstatesPopulation.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "toNumber(yearSelector)",
+      "as": "yearS"
+    },
+    {
+      "filter": "datum.yearS == datum.Year"
+    },
+    {
+      "fold": [
+        "New York",
+        "California"
+      ],
+      "as": [
+        "State",
+        "Value"
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "State",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "State"
+    }
+  }
+}

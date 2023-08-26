@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch7_Trade/IIP_P20.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "title": {
+    "text": "International Investment Position (IIP)",
+    "subtitle": [
+      "USD Billions. Source: IMF BOPS",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
+    {
+      "fold": [
+        "France",
+        "Germany"
+      ],
+      "as": [
+        "var",
+        "val"
+      ]
+    },
+    {
+      "calculate": "datum.val/1000",
+      "as": "val_bn"
+    },
+    {
+      "filter": "datum.Year < 1031152000000"
+    }
+  ],
+  "width": 400,
+  "height": 300,
+  "mark": {
+    "type": "line",
+    "color": "seagreen",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "val_bn",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "var",
+      "scale": {
+        "range": [
+          "red",
+          "blue",
+          "green",
+          "yellow",
+          "pink"
+        ]
+      },
+      "legend": {
+        "orient": "top-left",
+        "title": null
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 210,
+  "height": 260,
+  "title": {
+    "text": "Do more educated countries emit less greenhouse gases?",
+    "subtitle": "Data is from 2021. Source: Eurostat (2022)",
+    "fontSize": 12,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "description": "A bubbleplot showing horsepower on x, miles per gallons on y, and binned acceleration on size.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/wk9.BUBBLE.HW.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "field": "Educational attainment",
+      "legend": "",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "viridis"
+      }
+    },
+    "x": {
+      "field": "Educational attainment",
+      "type": "quantitative",
+      "title": "Share with at least upper secondary education (%)"
+    },
+    "y": {
+      "field": "Air emissions",
+      "type": "quantitative",
+      "title": "Greenhouse gas emissions"
+    },
+    "size": {
+      "field": "Population",
+      "type": "quantitative",
+      "title": "Population (millions)"
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "Educational attainment",
+        "type": "quantitative",
+        "title": "Educational attainment"
+      },
+      {
+        "field": "Population",
+        "type": "quantitative",
+        "title": "Population (millions)"
+      }
+    ]
+  }
+}

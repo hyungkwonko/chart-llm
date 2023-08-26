@@ -1,0 +1,131 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/demographicsUN.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "title": {
+    "text": "Extreme demographics: the old-age tsunami",
+    "subtitle": [
+      "Share of popluation that is aged 65+",
+      "Source: UN. Japan=Red, S Korea=Yellow",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#179fdb",
+    "subtitleColor": "#179fdb"
+  },
+  "config": {
+    "background": "#122b39",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "Region"
+      }
+    }
+  ],
+  "selection": {
+    "Region": {
+      "type": "single",
+      "fields": [
+        "Region"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Australia",
+          "Bangladesh",
+          "Brazil",
+          "Canada",
+          "Chile",
+          "China",
+          "Democratic Republic of the Congo",
+          "France",
+          "India",
+          "Indonesia",
+          "Italy",
+          "France",
+          "Japan",
+          "Republic of Korea",
+          "Spain",
+          "United Kingdom",
+          "United States of America"
+        ],
+        "name": "Select a country"
+      }
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "domainColor": "dimgrey",
+        "labelColor": "#00a767",
+        "tickColor": "pink",
+        "gridColor": "dimgrey"
+      }
+    },
+    "y": {
+      "field": "sh_65+",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "domainColor": "dimgrey",
+        "labelColor": "#00a767",
+        "tickColor": "pink",
+        "gridColor": "dimgrey",
+        "format": "%"
+      }
+    },
+    "color": {
+      "field": "Region",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "range": [
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "red",
+          "yellow",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6",
+          "#C1D0E6"
+        ]
+      }
+    }
+  }
+}

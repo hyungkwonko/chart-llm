@@ -1,0 +1,565 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-ccbfb6948dcae8a1dc6da05f90ca5b40"
+  },
+  "mark": "area",
+  "encoding": {
+    "color": {
+      "field": "major_release",
+      "title": "Major Release",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "month",
+        "format": "%Y-%m",
+        "title": "Date",
+        "type": "temporal"
+      },
+      {
+        "field": "num_downloads",
+        "format": ",.0f",
+        "title": "Num Downloads",
+        "type": "quantitative"
+      },
+      {
+        "field": "major_release",
+        "title": "Major release",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "month",
+      "title": "Date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "num_downloads",
+      "title": "Downloads",
+      "type": "quantitative"
+    }
+  },
+  "height": 200,
+  "title": "Monthly downloads by Major Release",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-ccbfb6948dcae8a1dc6da05f90ca5b40": [
+      {
+        "month": "2023-05-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 40467.0
+      },
+      {
+        "month": "2023-05-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 3348.0
+      },
+      {
+        "month": "2023-05-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 14760.0
+      },
+      {
+        "month": "2023-05-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 348684.0
+      },
+      {
+        "month": "2023-04-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 39670.0
+      },
+      {
+        "month": "2023-04-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 14353.0
+      },
+      {
+        "month": "2023-04-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 413184.0
+      },
+      {
+        "month": "2023-04-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 1832.0
+      },
+      {
+        "month": "2023-03-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 45512.0
+      },
+      {
+        "month": "2023-03-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 3043.0
+      },
+      {
+        "month": "2023-03-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 11346.0
+      },
+      {
+        "month": "2023-03-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 316265.0
+      },
+      {
+        "month": "2023-02-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 40546.0
+      },
+      {
+        "month": "2023-02-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 2456.0
+      },
+      {
+        "month": "2023-02-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 23636.0
+      },
+      {
+        "month": "2023-02-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 228409.0
+      },
+      {
+        "month": "2023-01-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 37934.0
+      },
+      {
+        "month": "2023-01-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 2354.0
+      },
+      {
+        "month": "2023-01-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 27524.0
+      },
+      {
+        "month": "2023-01-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 243201.0
+      },
+      {
+        "month": "2022-12-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 33425.0
+      },
+      {
+        "month": "2022-12-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 3110.0
+      },
+      {
+        "month": "2022-12-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 13371.0
+      },
+      {
+        "month": "2022-12-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 205161.0
+      },
+      {
+        "month": "2022-11-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 38086.0
+      },
+      {
+        "month": "2022-11-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 2784.0
+      },
+      {
+        "month": "2022-11-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 36358.0
+      },
+      {
+        "month": "2022-11-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 196258.0
+      },
+      {
+        "month": "2022-10-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 38622.0
+      },
+      {
+        "month": "2022-10-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 3149.0
+      },
+      {
+        "month": "2022-10-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 46867.0
+      },
+      {
+        "month": "2022-10-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 203867.0
+      },
+      {
+        "month": "2022-09-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 37898.0
+      },
+      {
+        "month": "2022-09-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 3003.0
+      },
+      {
+        "month": "2022-09-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 30328.0
+      },
+      {
+        "month": "2022-09-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 170576.0
+      },
+      {
+        "month": "2022-08-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 36234.0
+      },
+      {
+        "month": "2022-08-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 2915.0
+      },
+      {
+        "month": "2022-08-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 43731.0
+      },
+      {
+        "month": "2022-08-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 184717.0
+      },
+      {
+        "month": "2022-07-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 39489.0
+      },
+      {
+        "month": "2022-07-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 3019.0
+      },
+      {
+        "month": "2022-07-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 103193.0
+      },
+      {
+        "month": "2022-07-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 112448.0
+      },
+      {
+        "month": "2022-06-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 43227.0
+      },
+      {
+        "month": "2022-06-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 4996.0
+      },
+      {
+        "month": "2022-06-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 201770.0
+      },
+      {
+        "month": "2022-06-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 3559.0
+      },
+      {
+        "month": "2022-05-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 43098.0
+      },
+      {
+        "month": "2022-05-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 6145.0
+      },
+      {
+        "month": "2022-05-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 216397.0
+      },
+      {
+        "month": "2022-05-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 2272.0
+      },
+      {
+        "month": "2022-04-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 41542.0
+      },
+      {
+        "month": "2022-04-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 7194.0
+      },
+      {
+        "month": "2022-04-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 214207.0
+      },
+      {
+        "month": "2022-04-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 2633.0
+      },
+      {
+        "month": "2022-03-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 43098.0
+      },
+      {
+        "month": "2022-03-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 8268.0
+      },
+      {
+        "month": "2022-03-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 205676.0
+      },
+      {
+        "month": "2022-03-01T00:00:00",
+        "major_release": "3",
+        "num_downloads": 931.0
+      },
+      {
+        "month": "2022-02-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 41028.0
+      },
+      {
+        "month": "2022-02-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 6961.0
+      },
+      {
+        "month": "2022-02-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 122689.0
+      },
+      {
+        "month": "2022-01-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 50397.0
+      },
+      {
+        "month": "2022-01-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 8309.0
+      },
+      {
+        "month": "2022-01-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 123767.0
+      },
+      {
+        "month": "2021-12-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 48110.0
+      },
+      {
+        "month": "2021-12-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 7133.0
+      },
+      {
+        "month": "2021-12-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 126401.0
+      },
+      {
+        "month": "2021-11-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 46457.0
+      },
+      {
+        "month": "2021-11-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 45486.0
+      },
+      {
+        "month": "2021-11-01T00:00:00",
+        "major_release": "2",
+        "num_downloads": 110128.0
+      },
+      {
+        "month": "2021-10-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 207556.0
+      },
+      {
+        "month": "2021-10-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 46091.0
+      },
+      {
+        "month": "2021-09-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 27861.0
+      },
+      {
+        "month": "2021-09-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 112215.0
+      },
+      {
+        "month": "2021-08-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 38237.0
+      },
+      {
+        "month": "2021-08-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 44516.0
+      },
+      {
+        "month": "2021-07-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 23346.0
+      },
+      {
+        "month": "2021-07-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 39386.0
+      },
+      {
+        "month": "2021-06-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 34807.0
+      },
+      {
+        "month": "2021-06-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 34642.0
+      },
+      {
+        "month": "2021-05-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 36923.0
+      },
+      {
+        "month": "2021-05-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 31632.0
+      },
+      {
+        "month": "2021-04-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 37719.0
+      },
+      {
+        "month": "2021-04-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 28759.0
+      },
+      {
+        "month": "2021-03-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 35029.0
+      },
+      {
+        "month": "2021-03-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 47808.0
+      },
+      {
+        "month": "2021-02-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 32970.0
+      },
+      {
+        "month": "2021-02-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 24140.0
+      },
+      {
+        "month": "2021-01-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 42054.0
+      },
+      {
+        "month": "2021-01-01T00:00:00",
+        "major_release": "1",
+        "num_downloads": 3775.0
+      },
+      {
+        "month": "2020-12-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 44004.0
+      },
+      {
+        "month": "2020-11-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 42302.0
+      },
+      {
+        "month": "2020-10-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 36470.0
+      },
+      {
+        "month": "2020-09-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 32410.0
+      },
+      {
+        "month": "2020-08-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 34286.0
+      },
+      {
+        "month": "2020-07-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 12977.0
+      },
+      {
+        "month": "2020-06-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 5683.0
+      },
+      {
+        "month": "2020-05-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 2360.0
+      },
+      {
+        "month": "2020-04-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 533.0
+      },
+      {
+        "month": "2020-03-01T00:00:00",
+        "major_release": "0",
+        "num_downloads": 1763.0
+      }
+    ]
+  }
+}

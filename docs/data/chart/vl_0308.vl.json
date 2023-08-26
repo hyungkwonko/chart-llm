@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Carbon Monoxide Emissions Across the UK",
+    "subtitle": "The Weekly Average Emmisions of Carbon Monoxide",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://api.v2.emissions-api.org/api/v2/carbonmonoxide/statistics.json?country=GB&interval=week&end=2022-11-01&offset=0"
+  },
+  "mark": {
+    "type": "line",
+    "point": false,
+    "clip": true,
+    "color": "darkgoldenrod"
+  },
+  "height": 300,
+  "width": 320,
+  "encoding": {
+    "x": {
+      "field": "time.interval_start",
+      "title": null,
+      "axis": {
+        "grid": false
+      },
+      "type": "temporal"
+    },
+    "y": {
+      "field": "value.average",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false
+      },
+      "scale": {
+        "domain": [
+          0.01,
+          0.05
+        ]
+      }
+    }
+  },
+  "config": {}
+}

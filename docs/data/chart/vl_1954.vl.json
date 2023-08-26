@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": "container",
+  "title": "South Western Sydney Daily Tests and Daily Cases",
+  "layer": [
+    {
+      "selection": {
+        "date": {
+          "type": "interval",
+          "bind": "scales",
+          "encodings": [
+            "x"
+          ]
+        }
+      },
+      "data": {
+        "url": "https://swsphn.github.io/nsw-covid-19-data/confirmed_cases_table1_location_agg.csv"
+      },
+      "transform": [
+        {
+          "filter": {
+            "and": [
+              {
+                "field": "lhd_2010_name",
+                "equal": "South Western Sydney"
+              },
+              {
+                "not": {
+                  "field": "lga_name19",
+                  "equal": "Penrith"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "bar",
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "timeUnit": "yearmonthdate",
+          "field": "notification_date",
+          "type": "temporal",
+          "title": "Date"
+        },
+        "color": {
+          "field": "lga_name19",
+          "type": "nominal",
+          "title": "LGA",
+          "legend": {
+            "orient": "top",
+            "columns": 4
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "confirmed_cases_count",
+          "type": "quantitative",
+          "title": "Cases",
+          "axis": {
+            "title": "Daily Cases by SWS LGA"
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://swsphn.github.io/nsw-covid-19-data/covid-19-tests-by-date-and-postcode-local-health-district-and-local-government-area-aggregated.csv"
+      },
+      "transform": [
+        {
+          "filter": {
+            "and": [
+              {
+                "field": "lhd_2010_name",
+                "equal": "South Western Sydney"
+              },
+              {
+                "not": {
+                  "field": "lga_name19",
+                  "equal": "Penrith"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "timeUnit": "yearmonthdate",
+          "field": "test_date",
+          "title": "Date",
+          "type": "temporal"
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "test_count",
+          "type": "quantitative",
+          "axis": {
+            "title": "Daily Tests"
+          }
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

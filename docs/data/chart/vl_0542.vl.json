@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/chartENV21.csv"
+  },
+  "mark": "bar",
+  "width": 270,
+  "height": 300,
+  "title": {
+    "text": "Food - annual meat consumption by country",
+    "subtitle": "Kg per capita, by food type, 2020. Source: OECD",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "encoding": {
+    "y": {
+      "field": "Country",
+      "sort": "-x",
+      "type": "ordinal",
+      "title": null
+    },
+    "x": {
+      "field": "Value",
+      "title": null,
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "legend": {
+        "orient": "bottom-right"
+      },
+      "scale": {
+        "domain": [
+          "Beef",
+          "Pork",
+          "Poultry",
+          "Mutton/lamb"
+        ],
+        "scheme": "yellowgreenblue"
+      },
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "nominal"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Kg per capita"
+      },
+      {
+        "field": "Type"
+      }
+    ]
+  }
+}

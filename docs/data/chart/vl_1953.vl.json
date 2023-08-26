@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": "container",
+  "title": "South Western Sydney Cumulative and Daily COVID-19 Cases by LGA",
+  "data": {
+    "url": "https://swsphn.github.io/nsw-covid-19-data/confirmed_cases_table1_location_agg.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "and": [
+          {
+            "field": "lhd_2010_name",
+            "equal": "South Western Sydney"
+          },
+          {
+            "not": {
+              "field": "lga_name19",
+              "equal": "Penrith"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "confirmed_cases_count",
+          "as": "cumulative_count"
+        }
+      ],
+      "frame": [
+        null,
+        0
+      ]
+    }
+  ],
+  "layer": [
+    {
+      "selection": {
+        "date": {
+          "type": "interval",
+          "bind": "scales",
+          "encodings": [
+            "x"
+          ]
+        }
+      },
+      "mark": {
+        "type": "bar",
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "timeUnit": "yearmonthdate",
+          "field": "notification_date",
+          "type": "temporal",
+          "title": "Date"
+        },
+        "color": {
+          "field": "lga_name19",
+          "type": "nominal",
+          "title": "LGA",
+          "legend": {
+            "orient": "top",
+            "columns": 4
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "confirmed_cases_count",
+          "type": "quantitative",
+          "title": "Cases",
+          "axis": {
+            "title": "Daily Cases by SWS LGA"
+          }
+        }
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "timeUnit": "yearmonthdate",
+          "field": "notification_date",
+          "title": "Date",
+          "type": "temporal"
+        },
+        "y": {
+          "aggregate": "max",
+          "field": "cumulative_count",
+          "type": "quantitative",
+          "axis": {
+            "title": "Cumulative Cases"
+          }
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

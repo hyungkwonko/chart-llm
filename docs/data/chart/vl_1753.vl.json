@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "a": "A",
+        "b": 28
+      },
+      {
+        "a": "B",
+        "b": 55
+      },
+      {
+        "a": "C",
+        "b": 43
+      },
+      {
+        "a": "Z",
+        "b": 91
+      },
+      {
+        "a": "Y",
+        "b": 81
+      },
+      {
+        "a": "X",
+        "b": 53
+      }
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "a",
+      "sort": [
+        "B",
+        "A",
+        "C"
+      ],
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "b",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar"
+}

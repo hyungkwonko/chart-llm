@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Foreign Direct Investment - inward",
+    "subtitle": [
+      "Total FDI in the UK (\u00a3, billions). [ONS, PB-N2SA]"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 270,
+  "height": 270,
+  "data": {
+    "url": "https://api.ons.gov.uk/timeseries/n2sa/dataset/pb/data",
+    "format": {
+      "type": "json",
+      "property": "years"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.value/1000",
+      "as": "billions"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "color": "#002FA7",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "billions",
+      "type": "quantitative",
+      "title": null
+    }
+  }
+}

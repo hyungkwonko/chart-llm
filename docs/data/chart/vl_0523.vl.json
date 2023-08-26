@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Comparing four economies",
+    "subtitle": [
+      "GDP, constant prices. Rebased, 1980=100. Source: IMF.",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/fourCountriesGDP.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.Japan/273862.7*100",
+      "as": "Japan_Index"
+    },
+    {
+      "calculate": "datum.UK/915.042*100",
+      "as": "UK_Index"
+    },
+    {
+      "calculate": "datum.Kenya/2112.19*100",
+      "as": "Kenya_Index"
+    },
+    {
+      "calculate": "datum.Congo_DR/8372.44*100",
+      "as": "CongoDR_Index"
+    }
+  ],
+  "repeat": {
+    "layer": [
+      "Kenya_Index",
+      "CongoDR_Index",
+      "UK_Index",
+      "Japan_Index"
+    ]
+  },
+  "height": 300,
+  "width": 300,
+  "spec": {
+    "mark": {
+      "type": "line",
+      "strokeWidth": 2
+    },
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": null,
+        "axis": {
+          "grid": false
+        }
+      },
+      "y": {
+        "field": {
+          "repeat": "layer"
+        },
+        "type": "quantitative",
+        "title": null
+      },
+      "color": {
+        "datum": {
+          "repeat": "layer"
+        },
+        "scale": {
+          "range": [
+            "black",
+            "green",
+            "orange",
+            "pink"
+          ]
+        },
+        "legend": {
+          "orient": "top-left",
+          "fillColor": "white"
+        }
+      }
+    }
+  }
+}

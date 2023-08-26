@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Regression of house prices against housebuilding",
+  "title": {
+    "text": "House Prices and House Building",
+    "fontSize": 12,
+    "subtitle": "Quarterly Data. Sources: HM Land Registry and DLUHC",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/house%20building%20regression.csv"
+  },
+  "height": 250,
+  "width": 250,
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "size": 100
+      },
+      "encoding": {
+        "x": {
+          "field": "Builds",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              60000
+            ]
+          },
+          "title": "House Build Completions"
+        },
+        "y": {
+          "field": "Price",
+          "type": "quantitative",
+          "title": "Average House Price (quarterly)"
+        },
+        "color": {
+          "field": "Period",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "1980-1989",
+              "1990-1999",
+              "2000-2009",
+              "2010-2019",
+              "2020-2022"
+            ],
+            "scheme": "magma",
+            "reverse": true
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal",
+            "timeUnit": "yearquarter",
+            "title": "Date"
+          },
+          {
+            "field": "Builds",
+            "title": "Completed Houses"
+          },
+          {
+            "field": "Price",
+            "title": "Average House Price"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "black"
+      },
+      "transform": [
+        {
+          "regression": "Price",
+          "on": "Builds",
+          "extent": [
+            10000,
+            55000
+          ]
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Builds",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Price",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Price",
+          "on": "Builds",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "black",
+        "fontWeight": "bold",
+        "fontStyle": "normal",
+        "x": "width",
+        "align": "right",
+        "y": 20,
+        "size": 14
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ]
+}

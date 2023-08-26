@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "vconcat": [
+    {
+      "title": "Makevention 2019",
+      "data": {
+        "url": "https://raw.githubusercontent.com/cns-iu/xmacroscope/3fcd51292a91bec3d5d483b57053f4adcdd62e83/packages/site-visualizations/src/assets/xmac-data/astc-2019/Run%20Data%20from%20Makevention%202019%20-%20Runs.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "Time": "number",
+            "Age Group": null
+          }
+        }
+      },
+      "mark": "rect",
+      "width": 300,
+      "height": 200,
+      "encoding": {
+        "y": {
+          "field": "Age Group",
+          "type": "nominal",
+          "sort": [
+            "",
+            "Retired",
+            "Adult",
+            "Teen",
+            "Pre-Teen",
+            "Kid"
+          ]
+        },
+        "x": {
+          "title": "Time (seconds)",
+          "bin": {
+            "maxbins": 20
+          },
+          "field": "Time",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              18
+            ]
+          }
+        },
+        "color": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "legend": {
+            "title": "Count"
+          }
+        }
+      }
+    },
+    {
+      "title": "Makevention 2018",
+      "data": {
+        "url": "https://raw.githubusercontent.com/cns-iu/xmacroscope/3fcd51292a91bec3d5d483b57053f4adcdd62e83/packages/site-visualizations/src/assets/xmac-data/raw-data/2018-08-25-makevention-run-data.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "runTime": "number",
+            "age_group": null
+          }
+        }
+      },
+      "mark": "rect",
+      "width": 300,
+      "height": 200,
+      "encoding": {
+        "y": {
+          "title": "Age Group",
+          "field": "age_group",
+          "type": "nominal",
+          "sort": [
+            "",
+            "Retired",
+            "Adult",
+            "Teen",
+            "Pre-Teen",
+            "Kid"
+          ]
+        },
+        "x": {
+          "title": "Time (seconds)",
+          "bin": {
+            "maxbins": 20
+          },
+          "field": "runTime",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              18
+            ]
+          }
+        },
+        "color": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "legend": {
+            "title": "Count"
+          }
+        }
+      }
+    }
+  ]
+}

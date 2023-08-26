@@ -1,0 +1,200 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axisX": {
+      "domain": true,
+      "domainColor": "#023B7F",
+      "domainWidth": 1,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 12,
+      "tickColor": "#023B7F",
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 12,
+      "titlePadding": 10
+    },
+    "axisY": {
+      "domain": false,
+      "grid": true,
+      "gridColor": "#023B7F",
+      "gridWidth": 1,
+      "labelAngle": 0,
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 12,
+      "ticks": false,
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 12,
+      "titlePadding": 10
+    },
+    "mark": {
+      "color": "#4279C1",
+      "fill": "#7EB7FD"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#023B7F",
+      "font": "Helvetica Neue",
+      "fontSize": 18
+    },
+    "view": {
+      "height": 300,
+      "stroke": "#4279C1",
+      "width": 300
+    }
+  },
+  "data": {
+    "name": "data-c6b58a08fe9e100192b2b3676329a704"
+  },
+  "datasets": {
+    "data-c6b58a08fe9e100192b2b3676329a704": [
+      {
+        "PPG": 103.0,
+        "player": "Andrew Yaphe",
+        "ppg": 103.0,
+        "team": "Stanford A",
+        "team_tournament": "2010 Andrew Yaphe",
+        "tournament": "ACF Nationals 2010"
+      },
+      {
+        "PPG": 66.0,
+        "player": "Eric Mukherjee",
+        "ppg": 66.0,
+        "team": "Penn A",
+        "team_tournament": "2010 Eric Mukherjee",
+        "tournament": "ACF Nationals 2010"
+      },
+      {
+        "PPG": 69.44444444444444,
+        "player": "Eric Mukherjee",
+        "ppg": 69.44,
+        "team": "Penn A",
+        "team_tournament": "2012 Eric Mukherjee",
+        "tournament": "ACF Nationals 2012"
+      },
+      {
+        "PPG": 66.0,
+        "player": "Jacob Reed",
+        "ppg": 66.0,
+        "team": "Yale A",
+        "team_tournament": "2018 Jacob Reed",
+        "tournament": "ACF Nationals 2018"
+      },
+      {
+        "PPG": 82.22222222222223,
+        "player": "Jordan Brownstein",
+        "ppg": 82.22,
+        "team": "Maryland A",
+        "team_tournament": "2016 Jordan Brownstein",
+        "tournament": "ACF Nationals 2016"
+      },
+      {
+        "PPG": 85.0,
+        "player": "Jordan Brownstein",
+        "ppg": 85.0,
+        "team": "Maryland A",
+        "team_tournament": "2017 Jordan Brownstein",
+        "tournament": "ACF Nationals 2017"
+      },
+      {
+        "PPG": 67.22222222222223,
+        "player": "Matt Bollinger",
+        "ppg": 67.22,
+        "team": "Virginia A",
+        "team_tournament": "2013 Matt Bollinger",
+        "tournament": "ACF Nationals 2013"
+      },
+      {
+        "PPG": 83.75,
+        "player": "Matt Bollinger",
+        "ppg": 83.75,
+        "team": "Virginia A",
+        "team_tournament": "2014 Matt Bollinger",
+        "tournament": "ACF Nationals 2014"
+      },
+      {
+        "PPG": 65.0,
+        "player": "Matt Bollinger",
+        "ppg": 65.0,
+        "team": "Virginia A",
+        "team_tournament": "2015 Matt Bollinger",
+        "tournament": "ACF Nationals 2015"
+      },
+      {
+        "PPG": 82.5,
+        "player": "Matt Weiner",
+        "ppg": 82.5,
+        "team": "VCU A",
+        "team_tournament": "2007 Matt Weiner",
+        "tournament": "ACF Nationals 2007"
+      }
+    ]
+  },
+  "encoding": {
+    "fill": {
+      "field": "team",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Virginia A",
+          "Penn A",
+          "Yale A",
+          "Stanford A",
+          "Maryland A",
+          "VCU A"
+        ],
+        "range": [
+          "#F84C1E",
+          "#045ea7",
+          "#00356B",
+          "#B1040E",
+          "#E03A3E",
+          "#000000"
+        ]
+      },
+      "title": "Team",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "player",
+        "type": "nominal"
+      },
+      {
+        "field": "team",
+        "type": "nominal"
+      },
+      {
+        "field": "tournament",
+        "type": "nominal"
+      },
+      {
+        "field": "ppg",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "labelAngle": 315
+      },
+      "field": "team_tournament",
+      "sort": {
+        "field": "ppg",
+        "order": "descending"
+      },
+      "title": "Team",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "ppg",
+      "title": "Points per game",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar",
+  "title": "Highest Playoffs PPG"
+}

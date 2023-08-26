@@ -1,0 +1,98 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-4d9a416548cea1094b8e6f4d18718020"
+  },
+  "mark": "bar",
+  "encoding": {
+    "facet": {
+      "columns": 2,
+      "field": "pacbioRun",
+      "title": null,
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "type": "nominal"
+      },
+      {
+        "field": "count",
+        "type": "quantitative"
+      },
+      {
+        "field": "pacbioRun",
+        "type": "nominal"
+      },
+      {
+        "field": "library",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "count",
+      "type": "quantitative"
+    },
+    "y": {
+      "axis": {
+        "title": null
+      },
+      "field": "category",
+      "type": "nominal"
+    }
+  },
+  "height": 75,
+  "resolve": {
+    "scale": {
+      "x": "independent",
+      "y": "independent"
+    }
+  },
+  "width": 250,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-4d9a416548cea1094b8e6f4d18718020": [
+      {
+        "category": "aligned PacBio_amplicon",
+        "count": 1002852,
+        "pacbioRun": "A_220708",
+        "library": "A"
+      },
+      {
+        "category": "filtered PacBio_amplicon",
+        "count": 336647,
+        "pacbioRun": "A_220708",
+        "library": "A"
+      },
+      {
+        "category": "unmapped",
+        "count": 240348,
+        "pacbioRun": "A_220708",
+        "library": "A"
+      },
+      {
+        "category": "aligned PacBio_amplicon",
+        "count": 924683,
+        "pacbioRun": "B_220708",
+        "library": "B"
+      },
+      {
+        "category": "filtered PacBio_amplicon",
+        "count": 314493,
+        "pacbioRun": "B_220708",
+        "library": "B"
+      },
+      {
+        "category": "unmapped",
+        "count": 678394,
+        "pacbioRun": "B_220708",
+        "library": "B"
+      }
+    ]
+  }
+}

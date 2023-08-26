@@ -1,0 +1,124 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mode": "vega-lite",
+  "data": {
+    "values": [
+      {
+        "a": "A",
+        "b": 28,
+        "c": 20
+      },
+      {
+        "a": "B",
+        "b": 55,
+        "c": 25
+      },
+      {
+        "a": "C",
+        "b": 43,
+        "c": 30
+      },
+      {
+        "a": "D",
+        "b": 91,
+        "c": 25
+      },
+      {
+        "a": "E",
+        "b": 81,
+        "c": 50
+      },
+      {
+        "a": "F",
+        "b": 53,
+        "c": 15
+      },
+      {
+        "a": "G",
+        "b": 19,
+        "c": 40
+      },
+      {
+        "a": "H",
+        "b": 87,
+        "c": 45
+      },
+      {
+        "a": "I",
+        "b": 52,
+        "c": 15
+      }
+    ]
+  },
+  "padding": {
+    "left": 20,
+    "top": 5,
+    "right": 30,
+    "bottom": 5
+  },
+  "width": 500,
+  "height": 500,
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "background": "#ffffff",
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadius": 1,
+        "tooltip": true,
+        "binSpacing": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "a",
+          "type": "ordinal",
+          "axis": {
+            "title": "category",
+            "orient": "bottom"
+          }
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "b",
+          "axis": {
+            "title": "Count",
+            "orient": "left"
+          }
+        },
+        "opacity": {
+          "value": 1
+        },
+        "color": {
+          "value": "#1f77b4"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "opacity": 1,
+        "strokeWidth": 1,
+        "interpolate": "linear",
+        "strokeDash": 0,
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "a",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "c",
+          "type": "quantitative"
+        },
+        "color": {
+          "value": "#FFFF00"
+        }
+      }
+    }
+  ]
+}

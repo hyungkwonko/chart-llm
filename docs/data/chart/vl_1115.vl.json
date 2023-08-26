@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Football teams with highest total player salaries",
+    "subtitle": [
+      "Source: spotrac"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/Total_wage_cost_football_data.json"
+  },
+  "transform": [
+    {
+      "filter": "datum.Type == 'Estimated Total Salary'"
+    }
+  ],
+  "height": 260,
+  "width": "container",
+  "mark": {
+    "type": "bar",
+    "color": "#000f71"
+  },
+  "encoding": {
+    "x": {
+      "field": "Team",
+      "type": "nominal",
+      "sort": [
+        "null"
+      ]
+    },
+    "y": {
+      "field": "Value",
+      "title": "Total Player salaries, estimated, \u00a3",
+      "type": "quantitative"
+    },
+    "tooltip": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "\u00a3",
+      "format": ","
+    }
+  }
+}

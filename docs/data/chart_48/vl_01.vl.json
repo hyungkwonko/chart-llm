@@ -1,0 +1,37 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/mobility.csv"
+  },
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "bin": {
+        "maxbins": 5
+      },
+      "field": "Income",
+      "scale": {
+        "scheme": "sinebow"
+      },
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "Mobility",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Population",
+      "scale": {
+        "type": "log"
+      },
+      "type": "quantitative"
+    }
+  },
+  "width": "container",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
+}

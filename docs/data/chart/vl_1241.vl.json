@@ -1,0 +1,167 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "stage": "original",
+        "tracker": "CN",
+        "precision": 72.4,
+        "AUC": 44.2
+      },
+      {
+        "stage": "original",
+        "tracker": "KCF",
+        "precision": 68.5,
+        "AUC": 41.3
+      },
+      {
+        "stage": "original",
+        "tracker": "Staple",
+        "precision": 77.8,
+        "AUC": 56.2
+      },
+      {
+        "stage": "original",
+        "tracker": "ECO_HC",
+        "precision": 79.8,
+        "AUC": 57.5
+      },
+      {
+        "stage": "original",
+        "tracker": "AutoTrack",
+        "precision": 79.0,
+        "AUC": 57.4
+      },
+      {
+        "stage": "demos.+g.c.",
+        "tracker": "CN",
+        "precision": 67.7,
+        "AUC": 41.9
+      },
+      {
+        "stage": "demos.+g.c.",
+        "tracker": "KCF",
+        "precision": 67.8,
+        "AUC": 40.7
+      },
+      {
+        "stage": "demos.+g.c.",
+        "tracker": "Staple",
+        "precision": 77.4,
+        "AUC": 56.4
+      },
+      {
+        "stage": "demos.+g.c.",
+        "tracker": "ECO_HC",
+        "precision": 78.9,
+        "AUC": 59.0
+      },
+      {
+        "stage": "demos.+g.c.",
+        "tracker": "AutoTrack",
+        "precision": 81.2,
+        "AUC": 58.5
+      },
+      {
+        "stage": "+denoise",
+        "tracker": "CN",
+        "precision": 67.7,
+        "AUC": 42.0
+      },
+      {
+        "stage": "+denoise",
+        "tracker": "KCF",
+        "precision": 68.2,
+        "AUC": 41.0
+      },
+      {
+        "stage": "+denoise",
+        "tracker": "Staple",
+        "precision": 77.6,
+        "AUC": 56.8
+      },
+      {
+        "stage": "+denoise",
+        "tracker": "ECO_HC",
+        "precision": 75.8,
+        "AUC": 56.8
+      },
+      {
+        "stage": "+denoise",
+        "tracker": "AutoTrack",
+        "precision": 83.0,
+        "AUC": 59.4
+      },
+      {
+        "stage": "all off",
+        "tracker": "CN",
+        "precision": 44.7,
+        "AUC": 25.3
+      },
+      {
+        "stage": "all off",
+        "tracker": "KCF",
+        "precision": 63.6,
+        "AUC": 38.6
+      },
+      {
+        "stage": "all off",
+        "tracker": "Staple",
+        "precision": 63.2,
+        "AUC": 40.6
+      },
+      {
+        "stage": "all off",
+        "tracker": "ECO_HC",
+        "precision": 65.5,
+        "AUC": 45.7
+      },
+      {
+        "stage": "all off",
+        "tracker": "AutoTrack",
+        "precision": 73.3,
+        "AUC": 50.4
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "tracker",
+      "type": "nominal",
+      "sort": [
+        "CN",
+        "KCF",
+        "Staple",
+        "ECO_HC",
+        "AutoTrack"
+      ],
+      "axis": null
+    },
+    "y": {
+      "field": "precision",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "tracker",
+      "sort": [
+        "CN",
+        "KCF",
+        "Staple",
+        "ECO_HC",
+        "AutoTrack"
+      ],
+      "type": "nominal"
+    },
+    "column": {
+      "field": "stage",
+      "sort": [
+        "original",
+        "demos.+g.c.",
+        "+denoise",
+        "all off"
+      ],
+      "title": "Minimal ISP with only two stages"
+    }
+  }
+}

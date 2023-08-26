@@ -1,0 +1,405 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/cns-iu/xmacroscope/3fcd51292a91bec3d5d483b57053f4adcdd62e83/packages/site-visualizations/src/assets/generated/combined-data.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "Time (seconds)": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "grid",
+      "select": "interval",
+      "bind": "scales"
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.Height < 200"
+    }
+  ],
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "height": 200,
+          "width": 200,
+          "mark": {
+            "type": "point",
+            "tooltip": {
+              "content": "data"
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "Age Group",
+              "type": "nominal",
+              "sort": [
+                "Kid",
+                "Pre-Teen",
+                "Teen",
+                "Adult",
+                "Retired"
+              ]
+            },
+            "y": {
+              "field": "Height",
+              "title": "Height (inches)",
+              "type": "quantitative",
+              "scale": {
+                "zero": false
+              },
+              "axis": {
+                "minExtent": 50
+              }
+            },
+            "color": {
+              "field": "Event",
+              "type": "nominal"
+            },
+            "shape": {
+              "field": "Gender",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "mark": {
+            "type": "point",
+            "tooltip": {
+              "content": "data"
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "Time (seconds)",
+              "type": "quantitative",
+              "scale": {
+                "zero": false
+              }
+            },
+            "y": {
+              "field": "Height",
+              "title": "Height (inches)",
+              "type": "quantitative",
+              "scale": {
+                "zero": false
+              },
+              "axis": {
+                "minExtent": 50
+              }
+            },
+            "color": {
+              "field": "Event",
+              "type": "nominal"
+            },
+            "shape": {
+              "field": "Gender",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "mark": {
+            "type": "point",
+            "tooltip": {
+              "content": "data"
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "Height",
+              "title": "Height (inches)",
+              "type": "quantitative",
+              "scale": {
+                "zero": false
+              }
+            },
+            "y": {
+              "field": "Height",
+              "title": "Height (inches)",
+              "type": "quantitative",
+              "scale": {
+                "zero": false
+              },
+              "axis": {
+                "minExtent": 50
+              }
+            },
+            "color": {
+              "field": "Event",
+              "type": "nominal"
+            },
+            "shape": {
+              "field": "Gender",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "hconcat": [
+        {
+          "height": 200,
+          "width": 200,
+          "mark": {
+            "type": "point",
+            "tooltip": {
+              "content": "data"
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "Time (seconds)",
+              "type": "quantitative",
+              "scale": {
+                "zero": false
+              }
+            },
+            "y": {
+              "field": "Age Group",
+              "type": "nominal",
+              "axis": {
+                "minExtent": 50
+              },
+              "sort": [
+                "",
+                "Retired",
+                "Adult",
+                "Teen",
+                "Pre-Teen",
+                "Kid"
+              ]
+            },
+            "color": {
+              "field": "Event",
+              "type": "nominal"
+            },
+            "shape": {
+              "field": "Gender",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "mark": {
+            "type": "point",
+            "tooltip": {
+              "content": "data"
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "Time (seconds)",
+              "type": "quantitative",
+              "scale": {
+                "zero": false
+              }
+            },
+            "y": {
+              "field": "Time (seconds)",
+              "type": "quantitative",
+              "scale": {
+                "zero": false
+              },
+              "axis": {
+                "minExtent": 50
+              }
+            },
+            "color": {
+              "field": "Event",
+              "type": "nominal"
+            },
+            "shape": {
+              "field": "Gender",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "mark": {
+            "type": "point",
+            "tooltip": {
+              "content": "data"
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "Height",
+              "title": "Height (inches)",
+              "type": "quantitative",
+              "scale": {
+                "zero": false
+              }
+            },
+            "y": {
+              "field": "Time (seconds)",
+              "type": "quantitative",
+              "scale": {
+                "zero": false
+              },
+              "axis": {
+                "minExtent": 50
+              }
+            },
+            "color": {
+              "field": "Event",
+              "type": "nominal"
+            },
+            "shape": {
+              "field": "Gender",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "hconcat": [
+        {
+          "height": 200,
+          "width": 200,
+          "mark": {
+            "type": "point",
+            "tooltip": {
+              "content": "data"
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "Age Group",
+              "type": "nominal",
+              "sort": [
+                "Kid",
+                "Pre-Teen",
+                "Teen",
+                "Adult",
+                "Retired"
+              ]
+            },
+            "y": {
+              "field": "Age Group",
+              "type": "nominal",
+              "axis": {
+                "minExtent": 50
+              },
+              "sort": [
+                "",
+                "Retired",
+                "Adult",
+                "Teen",
+                "Pre-Teen",
+                "Kid"
+              ]
+            },
+            "color": {
+              "field": "Event",
+              "type": "nominal"
+            },
+            "shape": {
+              "field": "Gender",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "mark": {
+            "type": "point",
+            "tooltip": {
+              "content": "data"
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "Time (seconds)",
+              "type": "quantitative",
+              "scale": {
+                "zero": false
+              }
+            },
+            "y": {
+              "field": "Age Group",
+              "type": "nominal",
+              "axis": {
+                "minExtent": 50
+              },
+              "sort": [
+                "",
+                "Retired",
+                "Adult",
+                "Teen",
+                "Pre-Teen",
+                "Kid"
+              ]
+            },
+            "color": {
+              "field": "Event",
+              "type": "nominal"
+            },
+            "shape": {
+              "field": "Gender",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "mark": {
+            "type": "point",
+            "tooltip": {
+              "content": "data"
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "Height",
+              "title": "Height (inches)",
+              "type": "quantitative",
+              "scale": {
+                "zero": false
+              }
+            },
+            "y": {
+              "field": "Age Group",
+              "type": "nominal",
+              "axis": {
+                "minExtent": 50
+              },
+              "sort": [
+                "",
+                "Retired",
+                "Adult",
+                "Teen",
+                "Pre-Teen",
+                "Kid"
+              ]
+            },
+            "color": {
+              "field": "Event",
+              "type": "nominal"
+            },
+            "shape": {
+              "field": "Gender",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

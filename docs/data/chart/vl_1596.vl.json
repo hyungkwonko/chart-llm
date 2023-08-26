@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/cars.json"
+  },
+  "description": "cube-helix interpolation.",
+  "encoding": {
+    "color": {
+      "field": "Acceleration",
+      "scale": {
+        "interpolate": {
+          "gamma": 1,
+          "type": "cubehelix"
+        },
+        "range": [
+          "yellow",
+          "red"
+        ],
+        "type": "linear"
+      },
+      "type": "quantitative"
+    },
+    "opacity": {
+      "value": 1
+    },
+    "size": {
+      "value": 60
+    },
+    "x": {
+      "field": "Horsepower",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Miles_per_Gallon",
+      "type": "quantitative"
+    }
+  },
+  "mark": "circle",
+  "transform": [
+    {
+      "as": "accelerationZScore",
+      "calculate": "(datum.Acceleration - 15.52)/2.80"
+    }
+  ]
+}

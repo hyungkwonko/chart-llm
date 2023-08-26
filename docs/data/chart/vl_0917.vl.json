@@ -1,0 +1,139 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "title": {
+    "text": "Average house prices across England",
+    "subtitle": "Average price and volume of all property types for each region in England. Source: HM Land Registery",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/regional_variation.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "config": {
+    "locale": {
+      "number": {
+        "decimal": ".",
+        "thousands": ",",
+        "grouping": [
+          3
+        ],
+        "currency": [
+          "\u00a3 ",
+          ""
+        ]
+      }
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "selection": {
+    "Region": {
+      "type": "single",
+      "fields": [
+        "Region"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "East Midlands",
+          "East of England",
+          "London",
+          "North East",
+          "North West",
+          "South East",
+          "South West",
+          "West Midlands",
+          "Yorkshire and The Humber"
+        ],
+        "name": "Region"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "if(datum.Region === 'North East', 0, if(datum.Region === 'Yorkshire and The Humber', 1 ,if(datum.Region === 'North West', 2 ,if(datum.Region === 'East Midlands', 3, if(datum.Region === 'West Midlands', 4 ,if(datum.Region === 'South West', 5 ,if(datum.Region === 'East of England', 6, if(datum.Region === 'South East', 7 ,if(datum.Region === 'London', 8 , 9)))))))))",
+      "as": "RegionOrder"
+    },
+    {
+      "filter": {
+        "selection": "Region"
+      }
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "circle",
+    "point": false
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Average Price",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "Region",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "London",
+          "South East",
+          "East of England",
+          "South West",
+          "West Midlands",
+          "East Midlands",
+          "North West",
+          "Yorkshire and the Humber",
+          "North East"
+        ],
+        "scheme": "inferno"
+      },
+      "title": null,
+      "legend": {
+        "symbolSize": 40,
+        "labelFontSize": 10,
+        "legendX": 8,
+        "legendY": 10
+      }
+    },
+    "order": {
+      "field": "RegionOrder"
+    },
+    "tooltip": [
+      {
+        "field": "Region",
+        "title": "Region"
+      },
+      {
+        "field": "Volume",
+        "type": "quantitative",
+        "title": "Volume of Sales"
+      },
+      {
+        "field": "Average Price",
+        "type": "quantitative",
+        "title": "Average Price"
+      }
+    ]
+  }
+}

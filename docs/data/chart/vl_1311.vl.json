@@ -1,0 +1,338 @@
+{
+  "config": {
+    "view": {
+      "width": 400,
+      "height": 300
+    },
+    "mark": {
+      "tooltip": null
+    },
+    "axis": {
+      "labelFontSize": 24,
+      "titleFontSize": 36
+    },
+    "header": {
+      "labelFontSize": 24,
+      "titleFontSize": 18
+    }
+  },
+  "data": {
+    "name": "data-154a55a8aab178bad0b32f89e5c516d1"
+  },
+  "facet": {
+    "type": "nominal",
+    "field": "dataset"
+  },
+  "spec": {
+    "mark": "point",
+    "encoding": {
+      "color": {
+        "type": "nominal",
+        "field": "dataset",
+        "scale": {
+          "scheme": "dark2"
+        }
+      },
+      "fill": {
+        "type": "nominal",
+        "field": "dataset",
+        "scale": {
+          "scheme": "dark2"
+        }
+      },
+      "size": {
+        "value": 90
+      },
+      "stroke": {
+        "type": "nominal",
+        "field": "dataset",
+        "scale": {
+          "scheme": "dark2"
+        }
+      },
+      "strokeWidth": {
+        "value": 4
+      },
+      "x": {
+        "type": "quantitative",
+        "field": "x"
+      },
+      "y": {
+        "type": "quantitative",
+        "field": "y"
+      }
+    },
+    "height": 200,
+    "width": 300
+  },
+  "columns": 2,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-154a55a8aab178bad0b32f89e5c516d1": [
+      {
+        "id": 0,
+        "dataset": "I",
+        "x": 10.0,
+        "y": 8.04
+      },
+      {
+        "id": 1,
+        "dataset": "I",
+        "x": 8.0,
+        "y": 6.95
+      },
+      {
+        "id": 2,
+        "dataset": "I",
+        "x": 13.0,
+        "y": 7.58
+      },
+      {
+        "id": 3,
+        "dataset": "I",
+        "x": 9.0,
+        "y": 8.81
+      },
+      {
+        "id": 4,
+        "dataset": "I",
+        "x": 11.0,
+        "y": 8.33
+      },
+      {
+        "id": 5,
+        "dataset": "I",
+        "x": 14.0,
+        "y": 9.96
+      },
+      {
+        "id": 6,
+        "dataset": "I",
+        "x": 6.0,
+        "y": 7.24
+      },
+      {
+        "id": 7,
+        "dataset": "I",
+        "x": 4.0,
+        "y": 4.26
+      },
+      {
+        "id": 8,
+        "dataset": "I",
+        "x": 12.0,
+        "y": 10.84
+      },
+      {
+        "id": 9,
+        "dataset": "I",
+        "x": 7.0,
+        "y": 4.82
+      },
+      {
+        "id": 10,
+        "dataset": "I",
+        "x": 5.0,
+        "y": 5.68
+      },
+      {
+        "id": 11,
+        "dataset": "II",
+        "x": 10.0,
+        "y": 9.14
+      },
+      {
+        "id": 12,
+        "dataset": "II",
+        "x": 8.0,
+        "y": 8.14
+      },
+      {
+        "id": 13,
+        "dataset": "II",
+        "x": 13.0,
+        "y": 8.74
+      },
+      {
+        "id": 14,
+        "dataset": "II",
+        "x": 9.0,
+        "y": 8.77
+      },
+      {
+        "id": 15,
+        "dataset": "II",
+        "x": 11.0,
+        "y": 9.26
+      },
+      {
+        "id": 16,
+        "dataset": "II",
+        "x": 14.0,
+        "y": 8.1
+      },
+      {
+        "id": 17,
+        "dataset": "II",
+        "x": 6.0,
+        "y": 6.13
+      },
+      {
+        "id": 18,
+        "dataset": "II",
+        "x": 4.0,
+        "y": 3.1
+      },
+      {
+        "id": 19,
+        "dataset": "II",
+        "x": 12.0,
+        "y": 9.13
+      },
+      {
+        "id": 20,
+        "dataset": "II",
+        "x": 7.0,
+        "y": 7.26
+      },
+      {
+        "id": 21,
+        "dataset": "II",
+        "x": 5.0,
+        "y": 4.74
+      },
+      {
+        "id": 22,
+        "dataset": "III",
+        "x": 10.0,
+        "y": 7.46
+      },
+      {
+        "id": 23,
+        "dataset": "III",
+        "x": 8.0,
+        "y": 6.77
+      },
+      {
+        "id": 24,
+        "dataset": "III",
+        "x": 13.0,
+        "y": 12.74
+      },
+      {
+        "id": 25,
+        "dataset": "III",
+        "x": 9.0,
+        "y": 7.11
+      },
+      {
+        "id": 26,
+        "dataset": "III",
+        "x": 11.0,
+        "y": 7.81
+      },
+      {
+        "id": 27,
+        "dataset": "III",
+        "x": 14.0,
+        "y": 8.84
+      },
+      {
+        "id": 28,
+        "dataset": "III",
+        "x": 6.0,
+        "y": 6.08
+      },
+      {
+        "id": 29,
+        "dataset": "III",
+        "x": 4.0,
+        "y": 5.39
+      },
+      {
+        "id": 30,
+        "dataset": "III",
+        "x": 12.0,
+        "y": 8.15
+      },
+      {
+        "id": 31,
+        "dataset": "III",
+        "x": 7.0,
+        "y": 6.42
+      },
+      {
+        "id": 32,
+        "dataset": "III",
+        "x": 5.0,
+        "y": 5.73
+      },
+      {
+        "id": 33,
+        "dataset": "IV",
+        "x": 8.0,
+        "y": 6.58
+      },
+      {
+        "id": 34,
+        "dataset": "IV",
+        "x": 8.0,
+        "y": 5.76
+      },
+      {
+        "id": 35,
+        "dataset": "IV",
+        "x": 8.0,
+        "y": 7.71
+      },
+      {
+        "id": 36,
+        "dataset": "IV",
+        "x": 8.0,
+        "y": 8.84
+      },
+      {
+        "id": 37,
+        "dataset": "IV",
+        "x": 8.0,
+        "y": 8.47
+      },
+      {
+        "id": 38,
+        "dataset": "IV",
+        "x": 8.0,
+        "y": 7.04
+      },
+      {
+        "id": 39,
+        "dataset": "IV",
+        "x": 8.0,
+        "y": 5.25
+      },
+      {
+        "id": 40,
+        "dataset": "IV",
+        "x": 19.0,
+        "y": 12.5
+      },
+      {
+        "id": 41,
+        "dataset": "IV",
+        "x": 8.0,
+        "y": 5.56
+      },
+      {
+        "id": 42,
+        "dataset": "IV",
+        "x": 8.0,
+        "y": 7.91
+      },
+      {
+        "id": 43,
+        "dataset": "IV",
+        "x": 8.0,
+        "y": 6.89
+      }
+    ]
+  }
+}

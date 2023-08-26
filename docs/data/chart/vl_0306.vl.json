@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 410,
+  "width": 630,
+  "title": "Does a happy world mean a recession free world?",
+  "font": "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif",
+  "data": {
+    "url": "https://raw.githubusercontent.com/SamJones033/SamJones033.github.io/main/happiness.csv"
+  },
+  "mark": "circle",
+  "encoding": {
+    "color": {
+      "field": "Happy",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "redyellowgreen"
+      },
+      "sort": "ascending",
+      "title": "Happiness Score"
+    },
+    "x": {
+      "field": "GDP",
+      "type": "quantitative",
+      "title": "GDP per Capita"
+    },
+    "size": {
+      "field": "GDP",
+      "type": "nominal",
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "title": "Country"
+      },
+      {
+        "field": "GDP",
+        "title": "GDP per Capita"
+      },
+      {
+        "field": "Number",
+        "title": "GDP per Capita"
+      },
+      {
+        "field": "Population"
+      }
+    ],
+    "y": {
+      "field": "Happy",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          6,
+          8
+        ]
+      },
+      "title": "Happiness index score"
+    }
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "Institution": "University College London[b]",
+        "Total": 41095
+      },
+      {
+        "Institution": "University of Manchester",
+        "Total": 40485
+      },
+      {
+        "Institution": "Coventry University",
+        "Total": 38430
+      },
+      {
+        "Institution": "University of Leeds",
+        "Total": 36325
+      },
+      {
+        "Institution": "Nottingham Trent University",
+        "Total": 35785
+      },
+      {
+        "Institution": "University of Birmingham",
+        "Total": 35760
+      },
+      {
+        "Institution": "University of Edinburgh",
+        "Total": 35370
+      },
+      {
+        "Institution": "University of Nottingham",
+        "Total": 34840
+      },
+      {
+        "Institution": "Manchester Metropolitan University",
+        "Total": 33420
+      },
+      {
+        "Institution": "Cardiff University",
+        "Total": 33260
+      },
+      {
+        "Institution": "King's College London[b]",
+        "Total": 33110
+      },
+      {
+        "Institution": "University of Glasgow",
+        "Total": 32465
+      },
+      {
+        "Institution": "Sheffield Hallam University",
+        "Total": 30965
+      },
+      {
+        "Institution": "University of the West of England",
+        "Total": 30680
+      },
+      {
+        "Institution": "University of Sheffield",
+        "Total": 30055
+      },
+      {
+        "Institution": "University of Liverpool",
+        "Total": 29600
+      },
+      {
+        "Institution": "De Montfort University",
+        "Total": 29000
+      },
+      {
+        "Institution": "Northumbria University",
+        "Total": 28330
+      },
+      {
+        "Institution": "Newcastle University",
+        "Total": 28075
+      },
+      {
+        "Institution": "Ulster University",
+        "Total": 27680
+      },
+      {
+        "Institution": "University of Bristol",
+        "Total": 27375
+      },
+      {
+        "Institution": "University of Exeter",
+        "Total": 26935
+      },
+      {
+        "Institution": "Birmingham City University",
+        "Total": 26930
+      },
+      {
+        "Institution": "University of Warwick",
+        "Total": 26825
+      },
+      {
+        "Institution": "University of Portsmouth",
+        "Total": 26775
+      },
+      {
+        "Institution": "Anglia Ruskin University",
+        "Total": 26715
+      },
+      {
+        "Institution": "University of Oxford",
+        "Total": 25910
+      },
+      {
+        "Institution": "University of Hertfordshire",
+        "Total": 25520
+      },
+      {
+        "Institution": "Liverpool John Moores University",
+        "Total": 25050
+      },
+      {
+        "Institution": "Queen's University Belfast",
+        "Total": 24915
+      },
+      {
+        "Institution": "University of Central Lancashire",
+        "Total": 24720
+      },
+      {
+        "Institution": "University of Strathclyde",
+        "Total": 24330
+      },
+      {
+        "Institution": "Leeds Beckett University",
+        "Total": 23295
+      },
+      {
+        "Institution": "University of South Wales",
+        "Total": 23090
+      },
+      {
+        "Institution": "University of Southampton",
+        "Total": 22665
+      },
+      {
+        "Institution": "Queen Mary, University of London[b]",
+        "Total": 21665
+      },
+      {
+        "Institution": "University of Salford",
+        "Total": 21500
+      },
+      {
+        "Institution": "University of Cambridge",
+        "Total": 21335
+      },
+      {
+        "Institution": "Swansea University",
+        "Total": 20380
+      },
+      {
+        "Institution": "Middlesex University",
+        "Total": 20170
+      },
+      {
+        "Institution": "City, University of London[b]",
+        "Total": 19975
+      },
+      {
+        "Institution": "University of the Arts London",
+        "Total": 19965
+      },
+      {
+        "Institution": "University of Greenwich",
+        "Total": 19825
+      },
+      {
+        "Institution": "University of York",
+        "Total": 19790
+      },
+      {
+        "Institution": "University of Derby",
+        "Total": 19685
+      },
+      {
+        "Institution": "Durham University",
+        "Total": 19520
+      },
+      {
+        "Institution": "University of Westminster",
+        "Total": 19470
+      },
+      {
+        "Institution": "Imperial College London",
+        "Total": 19400
+      },
+      {
+        "Institution": "University of Sussex",
+        "Total": 19395
+      },
+      {
+        "Institution": "Teesside University",
+        "Total": 19295
+      },
+      {
+        "Institution": "University of Brighton",
+        "Total": 18985
+      },
+      {
+        "Institution": "University of Wolverhampton",
+        "Total": 18875
+      },
+      {
+        "Institution": "University of Reading",
+        "Total": 18735
+      },
+      {
+        "Institution": "University of Kent",
+        "Total": 18705
+      },
+      {
+        "Institution": "University of Bath",
+        "Total": 18560
+      },
+      {
+        "Institution": "University of Plymouth",
+        "Total": 18410
+      },
+      {
+        "Institution": "Loughborough University",
+        "Total": 18295
+      },
+      {
+        "Institution": "Kingston University",
+        "Total": 18070
+      },
+      {
+        "Institution": "University of East Anglia",
+        "Total": 18035
+      },
+      {
+        "Institution": "Glasgow Caledonian University",
+        "Total": 17540
+      },
+      {
+        "Institution": "Bournemouth University",
+        "Total": 17390
+      },
+      {
+        "Institution": "University of Huddersfield",
+        "Total": 17305
+      },
+      {
+        "Institution": "University of Surrey",
+        "Total": 16990
+      },
+      {
+        "Institution": "Oxford Brookes University",
+        "Total": 16895
+      },
+      {
+        "Institution": "London South Bank University",
+        "Total": 16840
+      },
+      {
+        "Institution": "University of Bedfordshire",
+        "Total": 16730
+      },
+      {
+        "Institution": "University of Essex",
+        "Total": 16530
+      },
+      {
+        "Institution": "University of Lincoln",
+        "Total": 16425
+      },
+      {
+        "Institution": "University of Dundee",
+        "Total": 16270
+      },
+      {
+        "Institution": "University of Leicester",
+        "Total": 16180
+      },
+      {
+        "Institution": "University of the West of Scotland",
+        "Total": 16105
+      },
+      {
+        "Institution": "University of Sunderland",
+        "Total": 15740
+      },
+      {
+        "Institution": "Staffordshire University",
+        "Total": 15675
+      },
+      {
+        "Institution": "Lancaster University",
+        "Total": 15665
+      },
+      {
+        "Institution": "Brunel University London",
+        "Total": 15520
+      },
+      {
+        "Institution": "Aston University",
+        "Total": 15385
+      },
+      {
+        "Institution": "University of East London",
+        "Total": 15355
+      },
+      {
+        "Institution": "University of Aberdeen",
+        "Total": 15185
+      },
+      {
+        "Institution": "University of Hull",
+        "Total": 14255
+      },
+      {
+        "Institution": "Buckinghamshire New University",
+        "Total": 14075
+      },
+      {
+        "Institution": "Edinburgh Napier University",
+        "Total": 13935
+      },
+      {
+        "Institution": "Edge Hill University",
+        "Total": 13560
+      },
+      {
+        "Institution": "University of Chester",
+        "Total": 13545
+      },
+      {
+        "Institution": "Canterbury Christ Church University",
+        "Total": 13340
+      },
+      {
+        "Institution": "University of Wales, Trinity Saint David",
+        "Total": 12705
+      },
+      {
+        "Institution": "Robert Gordon University",
+        "Total": 12665
+      },
+      {
+        "Institution": "University of Stirling",
+        "Total": 12540
+      },
+      {
+        "Institution": "Roehampton University",
+        "Total": 12495
+      },
+      {
+        "Institution": "University of Northampton",
+        "Total": 12060
+      },
+      {
+        "Institution": "London School of Economics[b]",
+        "Total": 12055
+      },
+      {
+        "Institution": "University of West London",
+        "Total": 11985
+      },
+      {
+        "Institution": "Royal Holloway, University of London[b]",
+        "Total": 11535
+      },
+      {
+        "Institution": "Birkbeck, University of London[b]",
+        "Total": 11425
+      },
+      {
+        "Institution": "Heriot-Watt University",
+        "Total": 11155
+      },
+      {
+        "Institution": "Cardiff Metropolitan University",
+        "Total": 10920
+      },
+      {
+        "Institution": "Keele University",
+        "Total": 10885
+      },
+      {
+        "Institution": "University of St Andrews",
+        "Total": 10535
+      },
+      {
+        "Institution": "Solent University",
+        "Total": 10510
+      },
+      {
+        "Institution": "London Metropolitan University",
+        "Total": 10385
+      },
+      {
+        "Institution": "University of Worcester",
+        "Total": 10180
+      },
+      {
+        "Institution": "Goldsmiths, University of London[b]",
+        "Total": 10090
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "color": "darkblue",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "title": {
+    "text": "Total number of students at the 100 biggest UK univeristies ",
+    "subtitle": "Source: Wikipedia",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 800,
+  "height": 350,
+  "encoding": {
+    "x": {
+      "field": "Institution",
+      "type": "nominal",
+      "sort": "-y",
+      "title": null,
+      "axis": {
+        "labelExpr": "0"
+      }
+    },
+    "y": {
+      "field": "Total",
+      "type": "quantitative",
+      "title": "Total number of students"
+    },
+    "tooltip": [
+      {
+        "field": "Institution",
+        "type": "nominal",
+        "title": "University"
+      },
+      {
+        "field": "Total",
+        "type": "quantitative",
+        "title": "Number of students"
+      }
+    ]
+  },
+  "config": {}
+}

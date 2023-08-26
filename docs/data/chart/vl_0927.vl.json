@@ -1,0 +1,3682 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Total population aged 65+ ",
+    "subtitle": "Unemployment rate, %, 1992-2022",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {
+        "date": "1992 APR",
+        "label": "1992 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.8",
+        "year": "1992"
+      },
+      {
+        "date": "1992 MAY",
+        "label": "1992 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.3",
+        "year": "1992"
+      },
+      {
+        "date": "1992 JUN",
+        "label": "1992 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.5",
+        "year": "1992"
+      },
+      {
+        "date": "1992 JUL",
+        "label": "1992 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.5",
+        "year": "1992"
+      },
+      {
+        "date": "1992 AUG",
+        "label": "1992 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.4",
+        "year": "1992"
+      },
+      {
+        "date": "1992 SEP",
+        "label": "1992 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.2",
+        "year": "1992"
+      },
+      {
+        "date": "1992 OCT",
+        "label": "1992 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.0",
+        "year": "1992"
+      },
+      {
+        "date": "1992 NOV",
+        "label": "1992 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.3",
+        "year": "1992"
+      },
+      {
+        "date": "1992 DEC",
+        "label": "1992 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.0",
+        "year": "1992"
+      },
+      {
+        "date": "1993 JAN",
+        "label": "1992 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.9",
+        "year": "1993"
+      },
+      {
+        "date": "1993 FEB",
+        "label": "1993 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.1",
+        "year": "1993"
+      },
+      {
+        "date": "1993 MAR",
+        "label": "1993 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.2",
+        "year": "1993"
+      },
+      {
+        "date": "1993 APR",
+        "label": "1993 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.4",
+        "year": "1993"
+      },
+      {
+        "date": "1993 MAY",
+        "label": "1993 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.6",
+        "year": "1993"
+      },
+      {
+        "date": "1993 JUN",
+        "label": "1993 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.9",
+        "year": "1993"
+      },
+      {
+        "date": "1993 JUL",
+        "label": "1993 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.7",
+        "year": "1993"
+      },
+      {
+        "date": "1993 AUG",
+        "label": "1993 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.2",
+        "year": "1993"
+      },
+      {
+        "date": "1993 SEP",
+        "label": "1993 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.8",
+        "year": "1993"
+      },
+      {
+        "date": "1993 OCT",
+        "label": "1993 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.1",
+        "year": "1993"
+      },
+      {
+        "date": "1993 NOV",
+        "label": "1993 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.8",
+        "year": "1993"
+      },
+      {
+        "date": "1993 DEC",
+        "label": "1993 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.9",
+        "year": "1993"
+      },
+      {
+        "date": "1994 JAN",
+        "label": "1993 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.7",
+        "year": "1994"
+      },
+      {
+        "date": "1994 FEB",
+        "label": "1994 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.8",
+        "year": "1994"
+      },
+      {
+        "date": "1994 MAR",
+        "label": "1994 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.8",
+        "year": "1994"
+      },
+      {
+        "date": "1994 APR",
+        "label": "1994 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.4",
+        "year": "1994"
+      },
+      {
+        "date": "1994 MAY",
+        "label": "1994 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.5",
+        "year": "1994"
+      },
+      {
+        "date": "1994 JUN",
+        "label": "1994 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.1",
+        "year": "1994"
+      },
+      {
+        "date": "1994 JUL",
+        "label": "1994 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.5",
+        "year": "1994"
+      },
+      {
+        "date": "1994 AUG",
+        "label": "1994 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.8",
+        "year": "1994"
+      },
+      {
+        "date": "1994 SEP",
+        "label": "1994 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.3",
+        "year": "1994"
+      },
+      {
+        "date": "1994 OCT",
+        "label": "1994 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.3",
+        "year": "1994"
+      },
+      {
+        "date": "1994 NOV",
+        "label": "1994 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.0",
+        "year": "1994"
+      },
+      {
+        "date": "1994 DEC",
+        "label": "1994 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.8",
+        "year": "1994"
+      },
+      {
+        "date": "1995 JAN",
+        "label": "1994 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.9",
+        "year": "1995"
+      },
+      {
+        "date": "1995 FEB",
+        "label": "1995 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "1995"
+      },
+      {
+        "date": "1995 MAR",
+        "label": "1995 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.9",
+        "year": "1995"
+      },
+      {
+        "date": "1995 APR",
+        "label": "1995 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "1995"
+      },
+      {
+        "date": "1995 MAY",
+        "label": "1995 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.8",
+        "year": "1995"
+      },
+      {
+        "date": "1995 JUN",
+        "label": "1995 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "1995"
+      },
+      {
+        "date": "1995 JUL",
+        "label": "1995 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "1995"
+      },
+      {
+        "date": "1995 AUG",
+        "label": "1995 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.0",
+        "year": "1995"
+      },
+      {
+        "date": "1995 SEP",
+        "label": "1995 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.8",
+        "year": "1995"
+      },
+      {
+        "date": "1995 OCT",
+        "label": "1995 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.0",
+        "year": "1995"
+      },
+      {
+        "date": "1995 NOV",
+        "label": "1995 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.3",
+        "year": "1995"
+      },
+      {
+        "date": "1995 DEC",
+        "label": "1995 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "5.0",
+        "year": "1995"
+      },
+      {
+        "date": "1996 JAN",
+        "label": "1995 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.8",
+        "year": "1996"
+      },
+      {
+        "date": "1996 FEB",
+        "label": "1996 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.7",
+        "year": "1996"
+      },
+      {
+        "date": "1996 MAR",
+        "label": "1996 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.9",
+        "year": "1996"
+      },
+      {
+        "date": "1996 APR",
+        "label": "1996 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.4",
+        "year": "1996"
+      },
+      {
+        "date": "1996 MAY",
+        "label": "1996 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.1",
+        "year": "1996"
+      },
+      {
+        "date": "1996 JUN",
+        "label": "1996 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.2",
+        "year": "1996"
+      },
+      {
+        "date": "1996 JUL",
+        "label": "1996 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.9",
+        "year": "1996"
+      },
+      {
+        "date": "1996 AUG",
+        "label": "1996 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.4",
+        "year": "1996"
+      },
+      {
+        "date": "1996 SEP",
+        "label": "1996 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.8",
+        "year": "1996"
+      },
+      {
+        "date": "1996 OCT",
+        "label": "1996 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.3",
+        "year": "1996"
+      },
+      {
+        "date": "1996 NOV",
+        "label": "1996 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.0",
+        "year": "1996"
+      },
+      {
+        "date": "1996 DEC",
+        "label": "1996 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.6",
+        "year": "1996"
+      },
+      {
+        "date": "1997 JAN",
+        "label": "1996 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.2",
+        "year": "1997"
+      },
+      {
+        "date": "1997 FEB",
+        "label": "1997 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.3",
+        "year": "1997"
+      },
+      {
+        "date": "1997 MAR",
+        "label": "1997 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.0",
+        "year": "1997"
+      },
+      {
+        "date": "1997 APR",
+        "label": "1997 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.4",
+        "year": "1997"
+      },
+      {
+        "date": "1997 MAY",
+        "label": "1997 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.0",
+        "year": "1997"
+      },
+      {
+        "date": "1997 JUN",
+        "label": "1997 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.3",
+        "year": "1997"
+      },
+      {
+        "date": "1997 JUL",
+        "label": "1997 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.1",
+        "year": "1997"
+      },
+      {
+        "date": "1997 AUG",
+        "label": "1997 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "1997"
+      },
+      {
+        "date": "1997 SEP",
+        "label": "1997 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.5",
+        "year": "1997"
+      },
+      {
+        "date": "1997 OCT",
+        "label": "1997 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "1997"
+      },
+      {
+        "date": "1997 NOV",
+        "label": "1997 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "1997"
+      },
+      {
+        "date": "1997 DEC",
+        "label": "1997 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.8",
+        "year": "1997"
+      },
+      {
+        "date": "1998 JAN",
+        "label": "1997 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.0",
+        "year": "1998"
+      },
+      {
+        "date": "1998 FEB",
+        "label": "1998 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.0",
+        "year": "1998"
+      },
+      {
+        "date": "1998 MAR",
+        "label": "1998 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.3",
+        "year": "1998"
+      },
+      {
+        "date": "1998 APR",
+        "label": "1998 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.9",
+        "year": "1998"
+      },
+      {
+        "date": "1998 MAY",
+        "label": "1998 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.6",
+        "year": "1998"
+      },
+      {
+        "date": "1998 JUN",
+        "label": "1998 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.6",
+        "year": "1998"
+      },
+      {
+        "date": "1998 JUL",
+        "label": "1998 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.3",
+        "year": "1998"
+      },
+      {
+        "date": "1998 AUG",
+        "label": "1998 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.0",
+        "year": "1998"
+      },
+      {
+        "date": "1998 SEP",
+        "label": "1998 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "1998"
+      },
+      {
+        "date": "1998 OCT",
+        "label": "1998 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.8",
+        "year": "1998"
+      },
+      {
+        "date": "1998 NOV",
+        "label": "1998 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "1998"
+      },
+      {
+        "date": "1998 DEC",
+        "label": "1998 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "1998"
+      },
+      {
+        "date": "1999 JAN",
+        "label": "1998 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "1999"
+      },
+      {
+        "date": "1999 FEB",
+        "label": "1999 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.5",
+        "year": "1999"
+      },
+      {
+        "date": "1999 MAR",
+        "label": "1999 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "1999"
+      },
+      {
+        "date": "1999 APR",
+        "label": "1999 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "1999"
+      },
+      {
+        "date": "1999 MAY",
+        "label": "1999 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "1999"
+      },
+      {
+        "date": "1999 JUN",
+        "label": "1999 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "1999"
+      },
+      {
+        "date": "1999 JUL",
+        "label": "1999 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "1999"
+      },
+      {
+        "date": "1999 AUG",
+        "label": "1999 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.1",
+        "year": "1999"
+      },
+      {
+        "date": "1999 SEP",
+        "label": "1999 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "1999"
+      },
+      {
+        "date": "1999 OCT",
+        "label": "1999 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "1999"
+      },
+      {
+        "date": "1999 NOV",
+        "label": "1999 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.5",
+        "year": "1999"
+      },
+      {
+        "date": "1999 DEC",
+        "label": "1999 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "1999"
+      },
+      {
+        "date": "2000 JAN",
+        "label": "1999 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2000"
+      },
+      {
+        "date": "2000 FEB",
+        "label": "2000 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.1",
+        "year": "2000"
+      },
+      {
+        "date": "2000 MAR",
+        "label": "2000 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2000"
+      },
+      {
+        "date": "2000 APR",
+        "label": "2000 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2000"
+      },
+      {
+        "date": "2000 MAY",
+        "label": "2000 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2000"
+      },
+      {
+        "date": "2000 JUN",
+        "label": "2000 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.5",
+        "year": "2000"
+      },
+      {
+        "date": "2000 JUL",
+        "label": "2000 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2000"
+      },
+      {
+        "date": "2000 AUG",
+        "label": "2000 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.7",
+        "year": "2000"
+      },
+      {
+        "date": "2000 SEP",
+        "label": "2000 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2000"
+      },
+      {
+        "date": "2000 OCT",
+        "label": "2000 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2000"
+      },
+      {
+        "date": "2000 NOV",
+        "label": "2000 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2000"
+      },
+      {
+        "date": "2000 DEC",
+        "label": "2000 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "2000"
+      },
+      {
+        "date": "2001 JAN",
+        "label": "2000 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2001"
+      },
+      {
+        "date": "2001 FEB",
+        "label": "2001 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "2001"
+      },
+      {
+        "date": "2001 MAR",
+        "label": "2001 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2001"
+      },
+      {
+        "date": "2001 APR",
+        "label": "2001 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2001"
+      },
+      {
+        "date": "2001 MAY",
+        "label": "2001 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2001"
+      },
+      {
+        "date": "2001 JUN",
+        "label": "2001 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2001"
+      },
+      {
+        "date": "2001 JUL",
+        "label": "2001 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2001"
+      },
+      {
+        "date": "2001 AUG",
+        "label": "2001 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.7",
+        "year": "2001"
+      },
+      {
+        "date": "2001 SEP",
+        "label": "2001 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.6",
+        "year": "2001"
+      },
+      {
+        "date": "2001 OCT",
+        "label": "2001 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.9",
+        "year": "2001"
+      },
+      {
+        "date": "2001 NOV",
+        "label": "2001 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2001"
+      },
+      {
+        "date": "2001 DEC",
+        "label": "2001 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2001"
+      },
+      {
+        "date": "2002 JAN",
+        "label": "2001 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2002"
+      },
+      {
+        "date": "2002 FEB",
+        "label": "2002 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2002"
+      },
+      {
+        "date": "2002 MAR",
+        "label": "2002 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "2002"
+      },
+      {
+        "date": "2002 APR",
+        "label": "2002 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.9",
+        "year": "2002"
+      },
+      {
+        "date": "2002 MAY",
+        "label": "2002 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2002"
+      },
+      {
+        "date": "2002 JUN",
+        "label": "2002 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "2002"
+      },
+      {
+        "date": "2002 JUL",
+        "label": "2002 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.5",
+        "year": "2002"
+      },
+      {
+        "date": "2002 AUG",
+        "label": "2002 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "2002"
+      },
+      {
+        "date": "2002 SEP",
+        "label": "2002 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2002"
+      },
+      {
+        "date": "2002 OCT",
+        "label": "2002 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.6",
+        "year": "2002"
+      },
+      {
+        "date": "2002 NOV",
+        "label": "2002 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.6",
+        "year": "2002"
+      },
+      {
+        "date": "2002 DEC",
+        "label": "2002 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.6",
+        "year": "2002"
+      },
+      {
+        "date": "2003 JAN",
+        "label": "2002 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2003"
+      },
+      {
+        "date": "2003 FEB",
+        "label": "2003 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2003"
+      },
+      {
+        "date": "2003 MAR",
+        "label": "2003 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "2003"
+      },
+      {
+        "date": "2003 APR",
+        "label": "2003 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2003"
+      },
+      {
+        "date": "2003 MAY",
+        "label": "2003 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2003"
+      },
+      {
+        "date": "2003 JUN",
+        "label": "2003 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2003"
+      },
+      {
+        "date": "2003 JUL",
+        "label": "2003 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.9",
+        "year": "2003"
+      },
+      {
+        "date": "2003 AUG",
+        "label": "2003 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.1",
+        "year": "2003"
+      },
+      {
+        "date": "2003 SEP",
+        "label": "2003 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2003"
+      },
+      {
+        "date": "2003 OCT",
+        "label": "2003 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2003"
+      },
+      {
+        "date": "2003 NOV",
+        "label": "2003 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2003"
+      },
+      {
+        "date": "2003 DEC",
+        "label": "2003 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.5",
+        "year": "2003"
+      },
+      {
+        "date": "2004 JAN",
+        "label": "2003 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2004"
+      },
+      {
+        "date": "2004 FEB",
+        "label": "2004 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2004"
+      },
+      {
+        "date": "2004 MAR",
+        "label": "2004 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2004"
+      },
+      {
+        "date": "2004 APR",
+        "label": "2004 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2004"
+      },
+      {
+        "date": "2004 MAY",
+        "label": "2004 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.9",
+        "year": "2004"
+      },
+      {
+        "date": "2004 JUN",
+        "label": "2004 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.6",
+        "year": "2004"
+      },
+      {
+        "date": "2004 JUL",
+        "label": "2004 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2004"
+      },
+      {
+        "date": "2004 AUG",
+        "label": "2004 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.7",
+        "year": "2004"
+      },
+      {
+        "date": "2004 SEP",
+        "label": "2004 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2004"
+      },
+      {
+        "date": "2004 OCT",
+        "label": "2004 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.5",
+        "year": "2004"
+      },
+      {
+        "date": "2004 NOV",
+        "label": "2004 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "2004"
+      },
+      {
+        "date": "2004 DEC",
+        "label": "2004 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2004"
+      },
+      {
+        "date": "2005 JAN",
+        "label": "2004 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2005"
+      },
+      {
+        "date": "2005 FEB",
+        "label": "2005 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2005"
+      },
+      {
+        "date": "2005 MAR",
+        "label": "2005 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2005"
+      },
+      {
+        "date": "2005 APR",
+        "label": "2005 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2005"
+      },
+      {
+        "date": "2005 MAY",
+        "label": "2005 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2005"
+      },
+      {
+        "date": "2005 JUN",
+        "label": "2005 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.1",
+        "year": "2005"
+      },
+      {
+        "date": "2005 JUL",
+        "label": "2005 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.1",
+        "year": "2005"
+      },
+      {
+        "date": "2005 AUG",
+        "label": "2005 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.5",
+        "year": "2005"
+      },
+      {
+        "date": "2005 SEP",
+        "label": "2005 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2005"
+      },
+      {
+        "date": "2005 OCT",
+        "label": "2005 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.9",
+        "year": "2005"
+      },
+      {
+        "date": "2005 NOV",
+        "label": "2005 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2005"
+      },
+      {
+        "date": "2005 DEC",
+        "label": "2005 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2005"
+      },
+      {
+        "date": "2006 JAN",
+        "label": "2005 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2006"
+      },
+      {
+        "date": "2006 FEB",
+        "label": "2006 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2006"
+      },
+      {
+        "date": "2006 MAR",
+        "label": "2006 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2006"
+      },
+      {
+        "date": "2006 APR",
+        "label": "2006 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2006"
+      },
+      {
+        "date": "2006 MAY",
+        "label": "2006 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2006"
+      },
+      {
+        "date": "2006 JUN",
+        "label": "2006 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2006"
+      },
+      {
+        "date": "2006 JUL",
+        "label": "2006 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2006"
+      },
+      {
+        "date": "2006 AUG",
+        "label": "2006 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2006"
+      },
+      {
+        "date": "2006 SEP",
+        "label": "2006 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2006"
+      },
+      {
+        "date": "2006 OCT",
+        "label": "2006 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2006"
+      },
+      {
+        "date": "2006 NOV",
+        "label": "2006 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.6",
+        "year": "2006"
+      },
+      {
+        "date": "2006 DEC",
+        "label": "2006 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2006"
+      },
+      {
+        "date": "2007 JAN",
+        "label": "2006 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2007"
+      },
+      {
+        "date": "2007 FEB",
+        "label": "2007 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2007"
+      },
+      {
+        "date": "2007 MAR",
+        "label": "2007 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2007"
+      },
+      {
+        "date": "2007 APR",
+        "label": "2007 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2007"
+      },
+      {
+        "date": "2007 MAY",
+        "label": "2007 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2007"
+      },
+      {
+        "date": "2007 JUN",
+        "label": "2007 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2007"
+      },
+      {
+        "date": "2007 JUL",
+        "label": "2007 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.1",
+        "year": "2007"
+      },
+      {
+        "date": "2007 AUG",
+        "label": "2007 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.7",
+        "year": "2007"
+      },
+      {
+        "date": "2007 SEP",
+        "label": "2007 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2007"
+      },
+      {
+        "date": "2007 OCT",
+        "label": "2007 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.7",
+        "year": "2007"
+      },
+      {
+        "date": "2007 NOV",
+        "label": "2007 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.3",
+        "year": "2007"
+      },
+      {
+        "date": "2007 DEC",
+        "label": "2007 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.5",
+        "year": "2007"
+      },
+      {
+        "date": "2008 JAN",
+        "label": "2007 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2008"
+      },
+      {
+        "date": "2008 FEB",
+        "label": "2008 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2008"
+      },
+      {
+        "date": "2008 MAR",
+        "label": "2008 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2008"
+      },
+      {
+        "date": "2008 APR",
+        "label": "2008 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.1",
+        "year": "2008"
+      },
+      {
+        "date": "2008 MAY",
+        "label": "2008 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.1",
+        "year": "2008"
+      },
+      {
+        "date": "2008 JUN",
+        "label": "2008 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.9",
+        "year": "2008"
+      },
+      {
+        "date": "2008 JUL",
+        "label": "2008 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2008"
+      },
+      {
+        "date": "2008 AUG",
+        "label": "2008 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "2008"
+      },
+      {
+        "date": "2008 SEP",
+        "label": "2008 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.8",
+        "year": "2008"
+      },
+      {
+        "date": "2008 OCT",
+        "label": "2008 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2008"
+      },
+      {
+        "date": "2008 NOV",
+        "label": "2008 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2008"
+      },
+      {
+        "date": "2008 DEC",
+        "label": "2008 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2008"
+      },
+      {
+        "date": "2009 JAN",
+        "label": "2008 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.5",
+        "year": "2009"
+      },
+      {
+        "date": "2009 FEB",
+        "label": "2009 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "2009"
+      },
+      {
+        "date": "2009 MAR",
+        "label": "2009 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.5",
+        "year": "2009"
+      },
+      {
+        "date": "2009 APR",
+        "label": "2009 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2009"
+      },
+      {
+        "date": "2009 MAY",
+        "label": "2009 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.9",
+        "year": "2009"
+      },
+      {
+        "date": "2009 JUN",
+        "label": "2009 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.0",
+        "year": "2009"
+      },
+      {
+        "date": "2009 JUL",
+        "label": "2009 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.5",
+        "year": "2009"
+      },
+      {
+        "date": "2009 AUG",
+        "label": "2009 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.1",
+        "year": "2009"
+      },
+      {
+        "date": "2009 SEP",
+        "label": "2009 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.3",
+        "year": "2009"
+      },
+      {
+        "date": "2009 OCT",
+        "label": "2009 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.4",
+        "year": "2009"
+      },
+      {
+        "date": "2009 NOV",
+        "label": "2009 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.8",
+        "year": "2009"
+      },
+      {
+        "date": "2009 DEC",
+        "label": "2009 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.1",
+        "year": "2009"
+      },
+      {
+        "date": "2010 JAN",
+        "label": "2009 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.1",
+        "year": "2010"
+      },
+      {
+        "date": "2010 FEB",
+        "label": "2010 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.2",
+        "year": "2010"
+      },
+      {
+        "date": "2010 MAR",
+        "label": "2010 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.8",
+        "year": "2010"
+      },
+      {
+        "date": "2010 APR",
+        "label": "2010 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2010"
+      },
+      {
+        "date": "2010 MAY",
+        "label": "2010 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2010"
+      },
+      {
+        "date": "2010 JUN",
+        "label": "2010 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.1",
+        "year": "2010"
+      },
+      {
+        "date": "2010 JUL",
+        "label": "2010 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2010"
+      },
+      {
+        "date": "2010 AUG",
+        "label": "2010 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2010"
+      },
+      {
+        "date": "2010 SEP",
+        "label": "2010 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.1",
+        "year": "2010"
+      },
+      {
+        "date": "2010 OCT",
+        "label": "2010 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2010"
+      },
+      {
+        "date": "2010 NOV",
+        "label": "2010 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2010"
+      },
+      {
+        "date": "2010 DEC",
+        "label": "2010 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2010"
+      },
+      {
+        "date": "2011 JAN",
+        "label": "2010 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.9",
+        "year": "2011"
+      },
+      {
+        "date": "2011 FEB",
+        "label": "2011 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.9",
+        "year": "2011"
+      },
+      {
+        "date": "2011 MAR",
+        "label": "2011 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.9",
+        "year": "2011"
+      },
+      {
+        "date": "2011 APR",
+        "label": "2011 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2011"
+      },
+      {
+        "date": "2011 MAY",
+        "label": "2011 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2011"
+      },
+      {
+        "date": "2011 JUN",
+        "label": "2011 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2011"
+      },
+      {
+        "date": "2011 JUL",
+        "label": "2011 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "2.6",
+        "year": "2011"
+      },
+      {
+        "date": "2011 AUG",
+        "label": "2011 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.1",
+        "year": "2011"
+      },
+      {
+        "date": "2011 SEP",
+        "label": "2011 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.5",
+        "year": "2011"
+      },
+      {
+        "date": "2011 OCT",
+        "label": "2011 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "3.2",
+        "year": "2011"
+      },
+      {
+        "date": "2011 NOV",
+        "label": "2011 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.0",
+        "year": "2011"
+      },
+      {
+        "date": "2011 DEC",
+        "label": "2011 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "2.7",
+        "year": "2011"
+      },
+      {
+        "date": "2012 JAN",
+        "label": "2011 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2012"
+      },
+      {
+        "date": "2012 FEB",
+        "label": "2012 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.1",
+        "year": "2012"
+      },
+      {
+        "date": "2012 MAR",
+        "label": "2012 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.9",
+        "year": "2012"
+      },
+      {
+        "date": "2012 APR",
+        "label": "2012 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2012"
+      },
+      {
+        "date": "2012 MAY",
+        "label": "2012 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "2.0",
+        "year": "2012"
+      },
+      {
+        "date": "2012 JUN",
+        "label": "2012 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-05-16T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2012"
+      },
+      {
+        "date": "2012 JUL",
+        "label": "2012 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.1",
+        "year": "2012"
+      },
+      {
+        "date": "2012 AUG",
+        "label": "2012 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "2.0",
+        "year": "2012"
+      },
+      {
+        "date": "2012 SEP",
+        "label": "2012 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-05-18T08:30:00.000Z",
+        "value": "2.2",
+        "year": "2012"
+      },
+      {
+        "date": "2012 OCT",
+        "label": "2012 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-05-18T08:30:00.000Z",
+        "value": "2.4",
+        "year": "2012"
+      },
+      {
+        "date": "2012 NOV",
+        "label": "2012 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2012"
+      },
+      {
+        "date": "2012 DEC",
+        "label": "2012 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.7",
+        "year": "2012"
+      },
+      {
+        "date": "2013 JAN",
+        "label": "2012 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.6",
+        "year": "2013"
+      },
+      {
+        "date": "2013 FEB",
+        "label": "2013 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-05-16T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2013"
+      },
+      {
+        "date": "2013 MAR",
+        "label": "2013 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "2.0",
+        "year": "2013"
+      },
+      {
+        "date": "2013 APR",
+        "label": "2013 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.1",
+        "year": "2013"
+      },
+      {
+        "date": "2013 MAY",
+        "label": "2013 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-05-18T08:30:00.000Z",
+        "value": "2.4",
+        "year": "2013"
+      },
+      {
+        "date": "2013 JUN",
+        "label": "2013 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-05-16T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2013"
+      },
+      {
+        "date": "2013 JUL",
+        "label": "2013 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-05-18T08:30:00.000Z",
+        "value": "2.4",
+        "year": "2013"
+      },
+      {
+        "date": "2013 AUG",
+        "label": "2013 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2013"
+      },
+      {
+        "date": "2013 SEP",
+        "label": "2013 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-05-18T08:30:00.000Z",
+        "value": "2.3",
+        "year": "2013"
+      },
+      {
+        "date": "2013 OCT",
+        "label": "2013 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-05-18T08:30:00.000Z",
+        "value": "2.2",
+        "year": "2013"
+      },
+      {
+        "date": "2013 NOV",
+        "label": "2013 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-05-18T08:30:00.000Z",
+        "value": "2.8",
+        "year": "2013"
+      },
+      {
+        "date": "2013 DEC",
+        "label": "2013 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.8",
+        "year": "2013"
+      },
+      {
+        "date": "2014 JAN",
+        "label": "2013 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-05-16T23:00:00.000Z",
+        "value": "2.8",
+        "year": "2014"
+      },
+      {
+        "date": "2014 FEB",
+        "label": "2014 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "2.4",
+        "year": "2014"
+      },
+      {
+        "date": "2014 MAR",
+        "label": "2014 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "2.5",
+        "year": "2014"
+      },
+      {
+        "date": "2014 APR",
+        "label": "2014 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-05-18T08:30:00.000Z",
+        "value": "2.5",
+        "year": "2014"
+      },
+      {
+        "date": "2014 MAY",
+        "label": "2014 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-05-18T08:30:00.000Z",
+        "value": "2.3",
+        "year": "2014"
+      },
+      {
+        "date": "2014 JUN",
+        "label": "2014 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-05-16T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2014"
+      },
+      {
+        "date": "2014 JUL",
+        "label": "2014 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.7",
+        "year": "2014"
+      },
+      {
+        "date": "2014 AUG",
+        "label": "2014 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.9",
+        "year": "2014"
+      },
+      {
+        "date": "2014 SEP",
+        "label": "2014 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.7",
+        "year": "2014"
+      },
+      {
+        "date": "2014 OCT",
+        "label": "2014 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-05-18T08:30:00.000Z",
+        "value": "1.7",
+        "year": "2014"
+      },
+      {
+        "date": "2014 NOV",
+        "label": "2014 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-05-18T08:30:00.000Z",
+        "value": "1.6",
+        "year": "2014"
+      },
+      {
+        "date": "2014 DEC",
+        "label": "2014 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2014"
+      },
+      {
+        "date": "2015 JAN",
+        "label": "2014 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.7",
+        "year": "2015"
+      },
+      {
+        "date": "2015 FEB",
+        "label": "2015 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.9",
+        "year": "2015"
+      },
+      {
+        "date": "2015 MAR",
+        "label": "2015 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "1.7",
+        "year": "2015"
+      },
+      {
+        "date": "2015 APR",
+        "label": "2015 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-05-16T23:00:00.000Z",
+        "value": "1.6",
+        "year": "2015"
+      },
+      {
+        "date": "2015 MAY",
+        "label": "2015 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.9",
+        "year": "2015"
+      },
+      {
+        "date": "2015 JUN",
+        "label": "2015 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.9",
+        "year": "2015"
+      },
+      {
+        "date": "2015 JUL",
+        "label": "2015 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "2.1",
+        "year": "2015"
+      },
+      {
+        "date": "2015 AUG",
+        "label": "2015 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.7",
+        "year": "2015"
+      },
+      {
+        "date": "2015 SEP",
+        "label": "2015 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-12-16T00:00:00.000Z",
+        "value": "1.7",
+        "year": "2015"
+      },
+      {
+        "date": "2015 OCT",
+        "label": "2015 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-05-16T23:00:00.000Z",
+        "value": "1.6",
+        "year": "2015"
+      },
+      {
+        "date": "2015 NOV",
+        "label": "2015 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.6",
+        "year": "2015"
+      },
+      {
+        "date": "2015 DEC",
+        "label": "2015 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.6",
+        "year": "2015"
+      },
+      {
+        "date": "2016 JAN",
+        "label": "2015 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.8",
+        "year": "2016"
+      },
+      {
+        "date": "2016 FEB",
+        "label": "2016 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.8",
+        "year": "2016"
+      },
+      {
+        "date": "2016 MAR",
+        "label": "2016 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-05-16T23:00:00.000Z",
+        "value": "1.9",
+        "year": "2016"
+      },
+      {
+        "date": "2016 APR",
+        "label": "2016 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-07-19T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2016"
+      },
+      {
+        "date": "2016 MAY",
+        "label": "2016 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-05-16T23:00:00.000Z",
+        "value": "1.5",
+        "year": "2016"
+      },
+      {
+        "date": "2016 JUN",
+        "label": "2016 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-05-16T23:00:00.000Z",
+        "value": "1.5",
+        "year": "2016"
+      },
+      {
+        "date": "2016 JUL",
+        "label": "2016 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.2",
+        "year": "2016"
+      },
+      {
+        "date": "2016 AUG",
+        "label": "2016 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.3",
+        "year": "2016"
+      },
+      {
+        "date": "2016 SEP",
+        "label": "2016 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-12-14T00:00:00.000Z",
+        "value": "1.4",
+        "year": "2016"
+      },
+      {
+        "date": "2016 OCT",
+        "label": "2016 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-01-18T00:00:00.000Z",
+        "value": "1.4",
+        "year": "2016"
+      },
+      {
+        "date": "2016 NOV",
+        "label": "2016 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-02-15T00:00:00.000Z",
+        "value": "1.4",
+        "year": "2016"
+      },
+      {
+        "date": "2016 DEC",
+        "label": "2016 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-03-15T00:00:00.000Z",
+        "value": "1.3",
+        "year": "2016"
+      },
+      {
+        "date": "2017 JAN",
+        "label": "2016 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.2",
+        "year": "2017"
+      },
+      {
+        "date": "2017 FEB",
+        "label": "2017 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-05-16T23:00:00.000Z",
+        "value": "1.1",
+        "year": "2017"
+      },
+      {
+        "date": "2017 MAR",
+        "label": "2017 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.0",
+        "year": "2017"
+      },
+      {
+        "date": "2017 APR",
+        "label": "2017 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-07-11T23:00:00.000Z",
+        "value": "1.1",
+        "year": "2017"
+      },
+      {
+        "date": "2017 MAY",
+        "label": "2017 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-08-15T23:00:00.000Z",
+        "value": "1.6",
+        "year": "2017"
+      },
+      {
+        "date": "2017 JUN",
+        "label": "2017 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "2.1",
+        "year": "2017"
+      },
+      {
+        "date": "2017 JUL",
+        "label": "2017 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-10-17T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2017"
+      },
+      {
+        "date": "2017 AUG",
+        "label": "2017 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-11-15T00:00:00.000Z",
+        "value": "1.8",
+        "year": "2017"
+      },
+      {
+        "date": "2017 SEP",
+        "label": "2017 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-12-13T00:00:00.000Z",
+        "value": "1.9",
+        "year": "2017"
+      },
+      {
+        "date": "2017 OCT",
+        "label": "2017 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-01-24T00:00:00.000Z",
+        "value": "1.9",
+        "year": "2017"
+      },
+      {
+        "date": "2017 NOV",
+        "label": "2017 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-02-21T00:00:00.000Z",
+        "value": "1.8",
+        "year": "2017"
+      },
+      {
+        "date": "2017 DEC",
+        "label": "2017 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-03-20T00:00:00.000Z",
+        "value": "1.4",
+        "year": "2017"
+      },
+      {
+        "date": "2018 JAN",
+        "label": "2017 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-04-16T23:00:00.000Z",
+        "value": "1.6",
+        "year": "2018"
+      },
+      {
+        "date": "2018 FEB",
+        "label": "2018 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-05-14T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2018"
+      },
+      {
+        "date": "2018 MAR",
+        "label": "2018 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-06-11T23:00:00.000Z",
+        "value": "1.7",
+        "year": "2018"
+      },
+      {
+        "date": "2018 APR",
+        "label": "2018 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-07-16T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2018"
+      },
+      {
+        "date": "2018 MAY",
+        "label": "2018 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.3",
+        "year": "2018"
+      },
+      {
+        "date": "2018 JUN",
+        "label": "2018 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-09-10T23:00:00.000Z",
+        "value": "1.3",
+        "year": "2018"
+      },
+      {
+        "date": "2018 JUL",
+        "label": "2018 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-10-15T23:00:00.000Z",
+        "value": "1.4",
+        "year": "2018"
+      },
+      {
+        "date": "2018 AUG",
+        "label": "2018 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z",
+        "value": "1.2",
+        "year": "2018"
+      },
+      {
+        "date": "2018 SEP",
+        "label": "2018 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-12-11T00:00:00.000Z",
+        "value": "1.2",
+        "year": "2018"
+      },
+      {
+        "date": "2018 OCT",
+        "label": "2018 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-01-22T00:00:00.000Z",
+        "value": "1.1",
+        "year": "2018"
+      },
+      {
+        "date": "2018 NOV",
+        "label": "2018 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "1.4",
+        "year": "2018"
+      },
+      {
+        "date": "2018 DEC",
+        "label": "2018 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-03-19T00:00:00.000Z",
+        "value": "1.6",
+        "year": "2018"
+      },
+      {
+        "date": "2019 JAN",
+        "label": "2018 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-04-15T23:00:00.000Z",
+        "value": "1.5",
+        "year": "2019"
+      },
+      {
+        "date": "2019 FEB",
+        "label": "2019 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-05-13T23:00:00.000Z",
+        "value": "1.4",
+        "year": "2019"
+      },
+      {
+        "date": "2019 MAR",
+        "label": "2019 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-06-10T23:00:00.000Z",
+        "value": "1.3",
+        "year": "2019"
+      },
+      {
+        "date": "2019 APR",
+        "label": "2019 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-07-15T23:00:00.000Z",
+        "value": "1.2",
+        "year": "2019"
+      },
+      {
+        "date": "2019 MAY",
+        "label": "2019 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-08-12T23:00:00.000Z",
+        "value": "1.2",
+        "year": "2019"
+      },
+      {
+        "date": "2019 JUN",
+        "label": "2019 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-09-09T23:00:00.000Z",
+        "value": "1.0",
+        "year": "2019"
+      },
+      {
+        "date": "2019 JUL",
+        "label": "2019 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-10-14T23:00:00.000Z",
+        "value": "1.2",
+        "year": "2019"
+      },
+      {
+        "date": "2019 AUG",
+        "label": "2019 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-11-12T00:00:00.000Z",
+        "value": "1.3",
+        "year": "2019"
+      },
+      {
+        "date": "2019 SEP",
+        "label": "2019 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-12-17T00:00:00.000Z",
+        "value": "1.8",
+        "year": "2019"
+      },
+      {
+        "date": "2019 OCT",
+        "label": "2019 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2020-01-21T00:00:00.000Z",
+        "value": "2.0",
+        "year": "2019"
+      },
+      {
+        "date": "2019 NOV",
+        "label": "2019 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2020-02-18T00:00:00.000Z",
+        "value": "2.5",
+        "year": "2019"
+      },
+      {
+        "date": "2019 DEC",
+        "label": "2019 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2020-03-17T00:00:00.000Z",
+        "value": "2.3",
+        "year": "2019"
+      },
+      {
+        "date": "2020 JAN",
+        "label": "2019 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2020-04-20T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2020"
+      },
+      {
+        "date": "2020 FEB",
+        "label": "2020 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2020-05-18T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2020"
+      },
+      {
+        "date": "2020 MAR",
+        "label": "2020 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2020-06-15T23:00:00.000Z",
+        "value": "1.6",
+        "year": "2020"
+      },
+      {
+        "date": "2020 APR",
+        "label": "2020 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "1.7",
+        "year": "2020"
+      },
+      {
+        "date": "2020 MAY",
+        "label": "2020 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "1.4",
+        "year": "2020"
+      },
+      {
+        "date": "2020 JUN",
+        "label": "2020 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2021-07-14T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2020"
+      },
+      {
+        "date": "2020 JUL",
+        "label": "2020 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2020"
+      },
+      {
+        "date": "2020 AUG",
+        "label": "2020 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2020"
+      },
+      {
+        "date": "2020 SEP",
+        "label": "2020 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2020"
+      },
+      {
+        "date": "2020 OCT",
+        "label": "2020 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "2.6",
+        "year": "2020"
+      },
+      {
+        "date": "2020 NOV",
+        "label": "2020 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2020"
+      },
+      {
+        "date": "2020 DEC",
+        "label": "2020 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2020"
+      },
+      {
+        "date": "2021 JAN",
+        "label": "2020 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "2.5",
+        "year": "2021"
+      },
+      {
+        "date": "2021 FEB",
+        "label": "2021 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2021-07-14T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2021"
+      },
+      {
+        "date": "2021 MAR",
+        "label": "2021 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2021"
+      },
+      {
+        "date": "2021 APR",
+        "label": "2021 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "2.8",
+        "year": "2021"
+      },
+      {
+        "date": "2021 MAY",
+        "label": "2021 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2021-08-16T23:00:00.000Z",
+        "value": "2.7",
+        "year": "2021"
+      },
+      {
+        "date": "2021 JUN",
+        "label": "2021 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "2.5",
+        "year": "2021"
+      },
+      {
+        "date": "2021 JUL",
+        "label": "2021 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2021"
+      },
+      {
+        "date": "2021 AUG",
+        "label": "2021 JUL-SEP",
+        "month": "August",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "2.4",
+        "year": "2021"
+      },
+      {
+        "date": "2021 SEP",
+        "label": "2021 AUG-OCT",
+        "month": "September",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2021-12-14T00:00:00.000Z",
+        "value": "2.6",
+        "year": "2021"
+      },
+      {
+        "date": "2021 OCT",
+        "label": "2021 SEP-NOV",
+        "month": "October",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "2.3",
+        "year": "2021"
+      },
+      {
+        "date": "2021 NOV",
+        "label": "2021 OCT-DEC",
+        "month": "November",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-02-15T00:00:00.000Z",
+        "value": "2.3",
+        "year": "2021"
+      },
+      {
+        "date": "2021 DEC",
+        "label": "2021 NOV-JAN",
+        "month": "December",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "2.2",
+        "year": "2021"
+      },
+      {
+        "date": "2022 JAN",
+        "label": "2021 DEC-FEB",
+        "month": "January",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-04-11T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2022"
+      },
+      {
+        "date": "2022 FEB",
+        "label": "2022 JAN-MAR",
+        "month": "February",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-05-16T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2022"
+      },
+      {
+        "date": "2022 MAR",
+        "label": "2022 FEB-APR",
+        "month": "March",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2022"
+      },
+      {
+        "date": "2022 APR",
+        "label": "2022 MAR-MAY",
+        "month": "April",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-06-13T23:00:00.000Z",
+        "value": "1.8",
+        "year": "2022"
+      },
+      {
+        "date": "2022 MAY",
+        "label": "2022 APR-JUN",
+        "month": "May",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-08-15T23:00:00.000Z",
+        "value": "2.0",
+        "year": "2022"
+      },
+      {
+        "date": "2022 JUN",
+        "label": "2022 MAY-JUL",
+        "month": "June",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-09-12T23:00:00.000Z",
+        "value": "1.9",
+        "year": "2022"
+      },
+      {
+        "date": "2022 JUL",
+        "label": "2022 JUN-AUG",
+        "month": "July",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-10-10T23:00:00.000Z",
+        "value": "1.7",
+        "year": "2022"
+      }
+    ]
+  },
+  "height": 200,
+  "width": 200,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 1,
+    "color": "#DAD7CD"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "title": "",
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "title": "",
+        "grid": false
+      }
+    }
+  }
+}

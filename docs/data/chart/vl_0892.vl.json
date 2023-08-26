@@ -1,0 +1,303 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/pp_co2pt1v1.csv"
+  },
+  "params": [
+    {
+      "name": "Names",
+      "bind": {
+        "input": "checkbox"
+      }
+    }
+  ],
+  "background": "#fff0d8",
+  "title": {
+    "text": "Kmeans Grouping: Grouping Countries by Energy and GDP Growth Rates 1990-2014",
+    "fontSize": 12,
+    "subtitle": [
+      "Source: World Bank",
+      " Orange dotted line is line of best fit."
+    ],
+    "subtitleFontSize": 10
+  },
+  "vconcat": [
+    {
+      "width": 340,
+      "height": 340,
+      "transform": [
+        {
+          "calculate": "{'0' : 'Cluster 0', '1': 'Cluster 1', '2': 'Cluster 2'}[datum.Cluster]",
+          "as": "Groups"
+        }
+      ],
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "grid",
+              "select": "interval",
+              "bind": "scales"
+            }
+          ],
+          "mark": "circle",
+          "encoding": {
+            "x": {
+              "field": "eng_mean",
+              "type": "quantitative",
+              "axis": {
+                "format": "%"
+              },
+              "title": "Mean Rate of Energy Consumption Growth",
+              "scale": {
+                "domain": [
+                  -0.02,
+                  0.11
+                ]
+              }
+            },
+            "y": {
+              "field": "mean_gdp",
+              "type": "quantitative",
+              "axis": {
+                "format": "%"
+              },
+              "scale": {
+                "domain": [
+                  0,
+                  0.1
+                ]
+              },
+              "title": "Mean Rate of GDP Growth (2015 USD)"
+            },
+            "color": {
+              "field": "Groups",
+              "scale": {
+                "range": [
+                  "Orange",
+                  "black",
+                  "red",
+                  "darkred",
+                  "#829c24"
+                ],
+                "domain": [
+                  "Cluster 0",
+                  "Cluster 1",
+                  "Cluster 2"
+                ]
+              }
+            },
+            "size": {
+              "value": 40
+            },
+            "tooltip": [
+              {
+                "field": "Original Name",
+                "title": "Country"
+              },
+              {
+                "field": "eng_mean",
+                "format": "%"
+              },
+              {
+                "field": "mean_gdp",
+                "format": "%"
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.Country == 'China'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "yOffset": -8,
+            "xOffset": -10,
+            "fontSize": 10,
+            "color": "darkred",
+            "fontStyle": "bold"
+          },
+          "encoding": {
+            "x": {
+              "field": "eng_mean",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  -0.02,
+                  0.11
+                ]
+              }
+            },
+            "y": {
+              "field": "mean_gdp",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  0.1
+                ]
+              }
+            },
+            "text": {
+              "field": "Country"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.Country != 'China'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "yOffset": -8,
+            "xOffset": -10,
+            "fontSize": 8,
+            "color": "black"
+          },
+          "encoding": {
+            "x": {
+              "field": "eng_mean",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  -0.02,
+                  0.11
+                ]
+              }
+            },
+            "y": {
+              "field": "mean_gdp",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  0.1
+                ]
+              }
+            },
+            "text": {
+              "field": "Country"
+            },
+            "opacity": {
+              "condition": {
+                "test": {
+                  "param": "Names"
+                }
+              },
+              "value": 0
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "color": "orange",
+            "strokeDash": [
+              8,
+              4
+            ]
+          },
+          "transform": [
+            {
+              "regression": "eng_mean",
+              "on": "mean_gdp"
+            }
+          ],
+          "encoding": {
+            "x": {
+              "field": "mean_gdp",
+              "type": "quantitative",
+              "axis": {
+                "format": "%"
+              }
+            },
+            "y": {
+              "field": "eng_mean",
+              "type": "quantitative",
+              "axis": {
+                "format": "%"
+              }
+            },
+            "opacity": {
+              "condition": {
+                "test": {
+                  "param": "Names"
+                },
+                "value": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/pp_co2pt2v5.csv"
+      },
+      "title": {
+        "text": "Clusters Rate of CO2 output per person",
+        "anchor": "start",
+        "subtitle": "CO2 measured in metric tonnes.",
+        "subtitleFontSize": 10
+      },
+      "transform": [
+        {
+          "calculate": "{'0' : 'Cluster 0', '1': 'Cluster 1', '2': 'Cluster 2', '3': 'Cluster 3', '4': 'Cluster 4','5': 'China'}[datum.Cluster2]",
+          "as": "Groups2"
+        }
+      ],
+      "width": 340,
+      "height": 340,
+      "mark": {
+        "type": "line",
+        "interpolate": "cardinal",
+        "point": true
+      },
+      "encoding": {
+        "x": {
+          "field": "variable",
+          "type": "temporal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "cluster_mean",
+          "type": "quantitative",
+          "title": "Annual Rate of CO2 Output Per Person by Cluster"
+        },
+        "tooltip": [
+          {
+            "field": "Groups2",
+            "title": "Group"
+          }
+        ],
+        "color": {
+          "field": "Groups2",
+          "scale": {
+            "range": [
+              "red",
+              "Orange",
+              "black",
+              "#7C521F",
+              "darkred",
+              "#997C2E"
+            ],
+            "domain": [
+              "China",
+              "Cluster 0",
+              "Cluster 1",
+              "Cluster 2"
+            ]
+          },
+          "legend": {
+            "title": "Clusters"
+          }
+        }
+      }
+    }
+  ]
+}

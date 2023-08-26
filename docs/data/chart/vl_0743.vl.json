@@ -1,0 +1,129 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Regressing WGI Overall Score on Religiosity for all countries featured in the 2022 edition of the CAF World Giving Index Report (which explores data from the year before - 2021). I ran the regression in Colab in order to ascertain the equation for the regression line",
+  "title": {
+    "text": [
+      "Regressing WGI Score on Religiosity"
+    ],
+    "fontSize": 12,
+    "subtitle": [
+      "Religiosity measured as percentage of the",
+      "population who consider religion important",
+      "Sources: CAF and Wikipedia"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/_CAF_Religiosity_2022_dropna.csv"
+  },
+  "height": 200,
+  "width": 200,
+  "encoding": {
+    "x": {
+      "field": "Religiosity",
+      "type": "quantitative",
+      "title": "Religiosity (%)",
+      "axis": {
+        "grid": false
+      },
+      "scale": {
+        "domain": [
+          0,
+          100
+        ]
+      }
+    },
+    "y": {
+      "field": "CAF",
+      "type": "quantitative",
+      "title": "WGI overall score (out of 100)",
+      "axis": {
+        "grid": false
+      },
+      "scale": {
+        "domain": [
+          0,
+          70
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "CAF",
+        "type": "quantitative",
+        "title": "WGI Score"
+      },
+      {
+        "field": "Religiosity",
+        "type": "quantitative",
+        "title": "Religiosity (%)"
+      },
+      {
+        "field": "Country",
+        "type": "nominal",
+        "title": "Country"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "CAF": 42.2,
+            "Religiosity": 14
+          },
+          {
+            "CAF": 38.7,
+            "Religiosity": 98
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "color": "#2c2a2e",
+        "clip": true
+      },
+      "encoding": {
+        "tooltip": null
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/_CAF_Religiosity_2022_dropna.csv"
+      },
+      "mark": {
+        "type": "circle",
+        "color": "#865fa5",
+        "fillOpacity": 0.9
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "CAF": 38,
+            "Religiosity": 15,
+            "text": "R\u00b2 = 0.02"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "color": "red",
+        "fontWeight": "normal",
+        "fontSize": 12
+      },
+      "encoding": {
+        "tooltip": null,
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Ether: Price vs volume",
+    "subtitle": "Daily ETH price and volume traded",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "lightgrey",
+    "subtitleColor": "lightgrey"
+  },
+  "config": {
+    "background": "#122b39",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 260,
+  "height": 300,
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/dataETH.csv"
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.Date)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 2016,
+      "bind": {
+        "input": "range",
+        "min": 2016,
+        "max": 2021,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 2016,
+        "max": 2021,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "domainColor": "dimgrey",
+        "labelColor": "lightgrey",
+        "tickColor": "pink",
+        "gridColor": "dimgrey"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "point": false,
+        "strokeWidth": 1,
+        "opacity": 0.3,
+        "width": 1
+      },
+      "encoding": {
+        "y": {
+          "field": "Volume",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "grid": false,
+            "domainColor": "dimgrey",
+            "labelColor": "lemonchiffon",
+            "tickColor": "pink",
+            "gridColor": "dimgrey",
+            "format": ",.5"
+          }
+        },
+        "color": {
+          "datum": "Volume",
+          "scale": {
+            "range": [
+              "lemonchiffon",
+              "hotpink"
+            ]
+          },
+          "legend": {
+            "labelColor": "lightgrey",
+            "orient": "top-left"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "point": false,
+        "interpolate": "linear",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "y": {
+          "field": "Price",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "grid": false,
+            "domainColor": "dimgrey",
+            "labelColor": "hotpink",
+            "tickColor": "pink",
+            "gridColor": "dimgrey",
+            "format": "$,.5"
+          }
+        },
+        "color": {
+          "datum": "Price",
+          "scale": {
+            "range": [
+              "orange",
+              "hotpink"
+            ]
+          },
+          "legend": {
+            "labelColor": "lightgrey",
+            "orient": "top-left"
+          }
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

@@ -1,0 +1,892 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-2c4b8116a5ba02671a69ae33b802cc1c"
+  },
+  "mark": {
+    "type": "circle",
+    "opacity": 0.6,
+    "size": 20
+  },
+  "encoding": {
+    "color": {
+      "type": "nominal",
+      "field": "country",
+      "scale": {
+        "domain": [
+          "Canada",
+          "USA"
+        ],
+        "range": [
+          "red",
+          "blue"
+        ]
+      }
+    },
+    "x": {
+      "type": "quantitative",
+      "field": "longitude",
+      "scale": {
+        "domain": [
+          -140,
+          -50
+        ]
+      }
+    },
+    "y": {
+      "type": "quantitative",
+      "field": "latitude",
+      "scale": {
+        "domain": [
+          25,
+          60
+        ]
+      }
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-2c4b8116a5ba02671a69ae33b802cc1c": [
+      {
+        "longitude": -76.4813,
+        "latitude": 44.2307,
+        "country": "Canada"
+      },
+      {
+        "longitude": -81.2496,
+        "latitude": 42.9837,
+        "country": "Canada"
+      },
+      {
+        "longitude": -66.058,
+        "latitude": 45.2788,
+        "country": "Canada"
+      },
+      {
+        "longitude": -73.2533,
+        "latitude": 45.3057,
+        "country": "Canada"
+      },
+      {
+        "longitude": -67.9245,
+        "latitude": 47.1652,
+        "country": "Canada"
+      },
+      {
+        "longitude": -120.3394,
+        "latitude": 50.6758,
+        "country": "Canada"
+      },
+      {
+        "longitude": -106.65100000000001,
+        "latitude": 35.0841,
+        "country": "USA"
+      },
+      {
+        "longitude": -79.6902,
+        "latitude": 44.3893,
+        "country": "Canada"
+      },
+      {
+        "longitude": -84.3201,
+        "latitude": 46.5239,
+        "country": "Canada"
+      },
+      {
+        "longitude": -98.4951,
+        "latitude": 29.4246,
+        "country": "USA"
+      },
+      {
+        "longitude": -77.0366,
+        "latitude": 38.895,
+        "country": "USA"
+      },
+      {
+        "longitude": -93.3968,
+        "latitude": 48.6114,
+        "country": "Canada"
+      },
+      {
+        "longitude": -67.2799,
+        "latitude": 45.2004,
+        "country": "Canada"
+      },
+      {
+        "longitude": -122.8565,
+        "latitude": 49.3144,
+        "country": "Canada"
+      },
+      {
+        "longitude": -63.571999999999996,
+        "latitude": 44.68,
+        "country": "Canada"
+      },
+      {
+        "longitude": -68.3219,
+        "latitude": 47.3556,
+        "country": "USA"
+      },
+      {
+        "longitude": -97.1385,
+        "latitude": 49.8955,
+        "country": "Canada"
+      },
+      {
+        "longitude": -122.3295,
+        "latitude": 49.0521,
+        "country": "Canada"
+      },
+      {
+        "longitude": -87.6244,
+        "latitude": 41.8756,
+        "country": "USA"
+      },
+      {
+        "longitude": -68.5897,
+        "latitude": 47.2587,
+        "country": "USA"
+      },
+      {
+        "longitude": -73.4467,
+        "latitude": 45.5172,
+        "country": "Canada"
+      },
+      {
+        "longitude": -63.5859,
+        "latitude": 44.6486,
+        "country": "Canada"
+      },
+      {
+        "longitude": -97.7437,
+        "latitude": 30.2711,
+        "country": "USA"
+      },
+      {
+        "longitude": -79.0247,
+        "latitude": 43.8504,
+        "country": "Canada"
+      },
+      {
+        "longitude": -111.9639,
+        "latitude": 49.0017,
+        "country": "Canada"
+      },
+      {
+        "longitude": -129.9912,
+        "latitude": 55.9383,
+        "country": "Canada"
+      },
+      {
+        "longitude": -78.9186,
+        "latitude": 42.9131,
+        "country": "Canada"
+      },
+      {
+        "longitude": -71.7985,
+        "latitude": 45.0126,
+        "country": "Canada"
+      },
+      {
+        "longitude": -95.9929,
+        "latitude": 36.1557,
+        "country": "USA"
+      },
+      {
+        "longitude": -123.0833,
+        "latitude": 49.0167,
+        "country": "Canada"
+      },
+      {
+        "longitude": -94.5648,
+        "latitude": 48.7227,
+        "country": "Canada"
+      },
+      {
+        "longitude": -118.7148,
+        "latitude": 50.4165,
+        "country": "Canada"
+      },
+      {
+        "longitude": -97.2049,
+        "latitude": 48.9988,
+        "country": "USA"
+      },
+      {
+        "longitude": -122.7933,
+        "latitude": 49.2843,
+        "country": "Canada"
+      },
+      {
+        "longitude": -97.1056,
+        "latitude": 32.7019,
+        "country": "USA"
+      },
+      {
+        "longitude": -72.5565,
+        "latitude": 46.3327,
+        "country": "Canada"
+      },
+      {
+        "longitude": -75.1635,
+        "latitude": 39.9527,
+        "country": "USA"
+      },
+      {
+        "longitude": -110.9748,
+        "latitude": 32.2229,
+        "country": "USA"
+      },
+      {
+        "longitude": -67.2781,
+        "latitude": 45.18899999999999,
+        "country": "USA"
+      },
+      {
+        "longitude": -83.0466,
+        "latitude": 42.3316,
+        "country": "USA"
+      },
+      {
+        "longitude": -79.7599,
+        "latitude": 43.6858,
+        "country": "Canada"
+      },
+      {
+        "longitude": -84.3201,
+        "latitude": 46.5239,
+        "country": "Canada"
+      },
+      {
+        "longitude": -106.6608,
+        "latitude": 52.1318,
+        "country": "Canada"
+      },
+      {
+        "longitude": -83.0007,
+        "latitude": 39.9623,
+        "country": "USA"
+      },
+      {
+        "longitude": -75.7106,
+        "latitude": 45.4284,
+        "country": "Canada"
+      },
+      {
+        "longitude": -52.7151,
+        "latitude": 47.5617,
+        "country": "Canada"
+      },
+      {
+        "longitude": -113.508,
+        "latitude": 53.5354,
+        "country": "Canada"
+      },
+      {
+        "longitude": -76.6108,
+        "latitude": 39.2909,
+        "country": "USA"
+      },
+      {
+        "longitude": -97.5533,
+        "latitude": 48.7531,
+        "country": "USA"
+      },
+      {
+        "longitude": -66.9843,
+        "latitude": 44.8607,
+        "country": "USA"
+      },
+      {
+        "longitude": -113.8184,
+        "latitude": 52.2698,
+        "country": "Canada"
+      },
+      {
+        "longitude": -113.2966,
+        "latitude": 53.5257,
+        "country": "Canada"
+      },
+      {
+        "longitude": -79.4394,
+        "latitude": 43.8801,
+        "country": "Canada"
+      },
+      {
+        "longitude": -66.9905,
+        "latitude": 44.9065,
+        "country": "USA"
+      },
+      {
+        "longitude": -112.0741,
+        "latitude": 33.4484,
+        "country": "USA"
+      },
+      {
+        "longitude": -130.0437,
+        "latitude": 55.9773,
+        "country": "USA"
+      },
+      {
+        "longitude": -75.7887,
+        "latitude": 45.3113,
+        "country": "Canada"
+      },
+      {
+        "longitude": -80.8431,
+        "latitude": 35.2272,
+        "country": "USA"
+      },
+      {
+        "longitude": -79.6667,
+        "latitude": 43.4474,
+        "country": "Canada"
+      },
+      {
+        "longitude": -121.8906,
+        "latitude": 37.3362,
+        "country": "USA"
+      },
+      {
+        "longitude": -85.7039,
+        "latitude": 38.2092,
+        "country": "USA"
+      },
+      {
+        "longitude": -73.6515,
+        "latitude": 45.7081,
+        "country": "Canada"
+      },
+      {
+        "longitude": -122.4199,
+        "latitude": 37.779,
+        "country": "USA"
+      },
+      {
+        "longitude": -79.4109,
+        "latitude": 43.7615,
+        "country": "Canada"
+      },
+      {
+        "longitude": -67.9245,
+        "latitude": 47.1652,
+        "country": "Canada"
+      },
+      {
+        "longitude": -111.9626,
+        "latitude": 48.9971,
+        "country": "USA"
+      },
+      {
+        "longitude": -79.0359,
+        "latitude": 43.1726,
+        "country": "USA"
+      },
+      {
+        "longitude": -73.6875,
+        "latitude": 45.5089,
+        "country": "Canada"
+      },
+      {
+        "longitude": -111.8315,
+        "latitude": 33.4151,
+        "country": "USA"
+      },
+      {
+        "longitude": -114.0626,
+        "latitude": 51.0534,
+        "country": "Canada"
+      },
+      {
+        "longitude": -73.6289,
+        "latitude": 45.468,
+        "country": "Canada"
+      },
+      {
+        "longitude": -75.9774,
+        "latitude": 36.853,
+        "country": "USA"
+      },
+      {
+        "longitude": -79.3839,
+        "latitude": 43.6535,
+        "country": "Canada"
+      },
+      {
+        "longitude": -87.9225,
+        "latitude": 43.035,
+        "country": "USA"
+      },
+      {
+        "longitude": -72.7218,
+        "latitude": 45.398999999999994,
+        "country": "Canada"
+      },
+      {
+        "longitude": -117.1628,
+        "latitude": 32.7174,
+        "country": "USA"
+      },
+      {
+        "longitude": -67.4297,
+        "latitude": 45.5634,
+        "country": "USA"
+      },
+      {
+        "longitude": -83.0466,
+        "latitude": 42.3316,
+        "country": "USA"
+      },
+      {
+        "longitude": -123.1374,
+        "latitude": 49.1632,
+        "country": "Canada"
+      },
+      {
+        "longitude": -119.4983,
+        "latitude": 49.8893,
+        "country": "Canada"
+      },
+      {
+        "longitude": -79.8729,
+        "latitude": 43.2561,
+        "country": "Canada"
+      },
+      {
+        "longitude": -122.5997,
+        "latitude": 49.2197,
+        "country": "Canada"
+      },
+      {
+        "longitude": -80.2632,
+        "latitude": 43.1408,
+        "country": "Canada"
+      },
+      {
+        "longitude": -79.2441,
+        "latitude": 43.158,
+        "country": "Canada"
+      },
+      {
+        "longitude": -97.2089,
+        "latitude": 49.0061,
+        "country": "Canada"
+      },
+      {
+        "longitude": -94.6002,
+        "latitude": 48.7124,
+        "country": "USA"
+      },
+      {
+        "longitude": -102.5496,
+        "latitude": 48.9959,
+        "country": "USA"
+      },
+      {
+        "longitude": -83.0353,
+        "latitude": 42.3171,
+        "country": "Canada"
+      },
+      {
+        "longitude": -71.889,
+        "latitude": 45.4033,
+        "country": "Canada"
+      },
+      {
+        "longitude": -66.6458,
+        "latitude": 45.9664,
+        "country": "Canada"
+      },
+      {
+        "longitude": -71.0692,
+        "latitude": 48.406000000000006,
+        "country": "Canada"
+      },
+      {
+        "longitude": -84.3902,
+        "latitude": 33.7491,
+        "country": "USA"
+      },
+      {
+        "longitude": -122.7436,
+        "latitude": 48.9881,
+        "country": "USA"
+      },
+      {
+        "longitude": -102.54799999999999,
+        "latitude": 49.0014,
+        "country": "Canada"
+      },
+      {
+        "longitude": -104.6173,
+        "latitude": 50.4488,
+        "country": "Canada"
+      },
+      {
+        "longitude": -122.3301,
+        "latitude": 47.6038,
+        "country": "USA"
+      },
+      {
+        "longitude": -123.11399999999999,
+        "latitude": 49.2609,
+        "country": "Canada"
+      },
+      {
+        "longitude": -71.0583,
+        "latitude": 42.3603,
+        "country": "USA"
+      },
+      {
+        "longitude": -134.4197,
+        "latitude": 58.3019,
+        "country": "USA"
+      },
+      {
+        "longitude": -75.4864,
+        "latitude": 44.6943,
+        "country": "USA"
+      },
+      {
+        "longitude": -82.4405,
+        "latitude": 42.9816,
+        "country": "USA"
+      },
+      {
+        "longitude": -71.3998,
+        "latitude": 46.8884,
+        "country": "Canada"
+      },
+      {
+        "longitude": -122.6742,
+        "latitude": 45.5202,
+        "country": "USA"
+      },
+      {
+        "longitude": -67.9353,
+        "latitude": 47.1575,
+        "country": "USA"
+      },
+      {
+        "longitude": -69.265,
+        "latitude": 47.5052,
+        "country": "Canada"
+      },
+      {
+        "longitude": -97.3327,
+        "latitude": 32.7532,
+        "country": "USA"
+      },
+      {
+        "longitude": -123.365,
+        "latitude": 48.4283,
+        "country": "Canada"
+      },
+      {
+        "longitude": -68.3281,
+        "latitude": 47.3644,
+        "country": "Canada"
+      },
+      {
+        "longitude": -78.8784,
+        "latitude": 42.8867,
+        "country": "USA"
+      },
+      {
+        "longitude": -79.5268,
+        "latitude": 43.7942,
+        "country": "Canada"
+      },
+      {
+        "longitude": -79.6457,
+        "latitude": 43.5903,
+        "country": "Canada"
+      },
+      {
+        "longitude": -79.4608,
+        "latitude": 46.3092,
+        "country": "Canada"
+      },
+      {
+        "longitude": -95.9384,
+        "latitude": 41.2587,
+        "country": "USA"
+      },
+      {
+        "longitude": -79.0615,
+        "latitude": 43.0844,
+        "country": "USA"
+      },
+      {
+        "longitude": -79.7967,
+        "latitude": 43.3249,
+        "country": "Canada"
+      },
+      {
+        "longitude": -69.2275,
+        "latitude": 47.4562,
+        "country": "USA"
+      },
+      {
+        "longitude": -123.0833,
+        "latitude": 49.0833,
+        "country": "Canada"
+      },
+      {
+        "longitude": -90.0516,
+        "latitude": 35.149,
+        "country": "USA"
+      },
+      {
+        "longitude": -122.2714,
+        "latitude": 37.8045,
+        "country": "USA"
+      },
+      {
+        "longitude": -119.7848,
+        "latitude": 36.7394,
+        "country": "USA"
+      },
+      {
+        "longitude": -104.8253,
+        "latitude": 38.834,
+        "country": "USA"
+      },
+      {
+        "longitude": -74.0132,
+        "latitude": 45.7754,
+        "country": "Canada"
+      },
+      {
+        "longitude": -79.3377,
+        "latitude": 43.8564,
+        "country": "Canada"
+      },
+      {
+        "longitude": -93.2655,
+        "latitude": 44.9773,
+        "country": "USA"
+      },
+      {
+        "longitude": -95.3677,
+        "latitude": 29.7589,
+        "country": "USA"
+      },
+      {
+        "longitude": -80.3123,
+        "latitude": 43.3601,
+        "country": "Canada"
+      },
+      {
+        "longitude": -79.1153,
+        "latitude": 43.101000000000006,
+        "country": "Canada"
+      },
+      {
+        "longitude": -79.7599,
+        "latitude": 43.6858,
+        "country": "Canada"
+      },
+      {
+        "longitude": -75.5192,
+        "latitude": 44.7184,
+        "country": "Canada"
+      },
+      {
+        "longitude": -68.6034,
+        "latitude": 47.2527,
+        "country": "Canada"
+      },
+      {
+        "longitude": -83.0353,
+        "latitude": 42.3171,
+        "country": "Canada"
+      },
+      {
+        "longitude": -73.7344,
+        "latitude": 45.6056,
+        "country": "Canada"
+      },
+      {
+        "longitude": -72.0968,
+        "latitude": 45.0072,
+        "country": "Canada"
+      },
+      {
+        "longitude": -67.5735,
+        "latitude": 46.1503,
+        "country": "Canada"
+      },
+      {
+        "longitude": -80.4944,
+        "latitude": 43.4532,
+        "country": "Canada"
+      },
+      {
+        "longitude": -79.1153,
+        "latitude": 43.101000000000006,
+        "country": "Canada"
+      },
+      {
+        "longitude": -110.679,
+        "latitude": 50.043,
+        "country": "Canada"
+      },
+      {
+        "longitude": -78.3199,
+        "latitude": 44.3048,
+        "country": "Canada"
+      },
+      {
+        "longitude": -79.2506,
+        "latitude": 42.9931,
+        "country": "Canada"
+      },
+      {
+        "longitude": -96.7969,
+        "latitude": 32.7763,
+        "country": "USA"
+      },
+      {
+        "longitude": -122.3295,
+        "latitude": 49.0521,
+        "country": "Canada"
+      },
+      {
+        "longitude": -123.07799999999999,
+        "latitude": 48.9854,
+        "country": "USA"
+      },
+      {
+        "longitude": -97.5171,
+        "latitude": 35.473,
+        "country": "USA"
+      },
+      {
+        "longitude": -104.9849,
+        "latitude": 39.7392,
+        "country": "USA"
+      },
+      {
+        "longitude": -94.5781,
+        "latitude": 39.1001,
+        "country": "USA"
+      },
+      {
+        "longitude": -122.9109,
+        "latitude": 49.2068,
+        "country": "Canada"
+      },
+      {
+        "longitude": -89.2598,
+        "latitude": 48.4064,
+        "country": "Canada"
+      },
+      {
+        "longitude": -82.4584,
+        "latitude": 27.9478,
+        "country": "USA"
+      },
+      {
+        "longitude": -71.1473,
+        "latitude": 48.382,
+        "country": "Canada"
+      },
+      {
+        "longitude": -71.1753,
+        "latitude": 46.791000000000004,
+        "country": "Canada"
+      },
+      {
+        "longitude": -73.6104,
+        "latitude": 45.4972,
+        "country": "Canada"
+      },
+      {
+        "longitude": -79.8828,
+        "latitude": 43.5137,
+        "country": "Canada"
+      },
+      {
+        "longitude": -118.2428,
+        "latitude": 34.0537,
+        "country": "USA"
+      },
+      {
+        "longitude": -118.1916,
+        "latitude": 33.769,
+        "country": "USA"
+      },
+      {
+        "longitude": -86.1584,
+        "latitude": 39.7683,
+        "country": "USA"
+      },
+      {
+        "longitude": -72.9406,
+        "latitude": 45.6275,
+        "country": "Canada"
+      },
+      {
+        "longitude": -75.6903,
+        "latitude": 45.4211,
+        "country": "Canada"
+      },
+      {
+        "longitude": -76.3019,
+        "latitude": 44.211000000000006,
+        "country": "Canada"
+      },
+      {
+        "longitude": -115.1485,
+        "latitude": 36.1673,
+        "country": "USA"
+      },
+      {
+        "longitude": -122.8491,
+        "latitude": 49.1913,
+        "country": "Canada"
+      },
+      {
+        "longitude": -67.4253,
+        "latitude": 45.5672,
+        "country": "Canada"
+      },
+      {
+        "longitude": -122.8491,
+        "latitude": 49.1913,
+        "country": "Canada"
+      },
+      {
+        "longitude": -76.3305,
+        "latitude": 44.1255,
+        "country": "USA"
+      },
+      {
+        "longitude": -74.7287,
+        "latitude": 45.0184,
+        "country": "Canada"
+      },
+      {
+        "longitude": -121.4944,
+        "latitude": 38.5816,
+        "country": "USA"
+      },
+      {
+        "longitude": -79.5656,
+        "latitude": 43.6436,
+        "country": "Canada"
+      },
+      {
+        "longitude": -66.9195,
+        "latitude": 44.8938,
+        "country": "Canada"
+      }
+    ]
+  }
+}

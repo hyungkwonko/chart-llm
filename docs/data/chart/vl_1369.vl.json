@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Yearly Terrorist Attacks in Iraq",
+  "mark": {
+    "type": "area",
+    "point": true,
+    "line": true,
+    "color": "#80b1d3"
+  },
+  "encoding": {
+    "x": {
+      "type": "nominal",
+      "field": "iyear",
+      "axis": {
+        "title": "Year"
+      }
+    },
+    "y": {
+      "aggregate": "sum",
+      "type": "quantitative",
+      "field": "Attack Count"
+    }
+  },
+  "description": "simpleAreaChart",
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/thomasxu2009/ChartStory/1888d7060e265cc2e1493f5555412997857945c5/savedFile_globalTerr/Ewen1Data.json",
+    "format": {
+      "parse": {
+        "iyear": "number",
+        "Attack Count": "number"
+      }
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Average temperature change in \u00b0C between 1990 and 1991",
+    "offset": 20
+  },
+  "height": "container",
+  "width": "container",
+  "data": {
+    "values": [
+      {
+        "a": "Munich",
+        "b": "01",
+        "c": -0.6
+      },
+      {
+        "a": "Munich",
+        "b": "02",
+        "c": -8.4
+      },
+      {
+        "a": "Munich",
+        "b": "03",
+        "c": -2.2
+      },
+      {
+        "a": "Munich",
+        "b": "04",
+        "c": 1.35
+      },
+      {
+        "a": "Munich",
+        "b": "05",
+        "c": -6.2
+      },
+      {
+        "a": "Munich",
+        "b": "06",
+        "c": 1.1
+      },
+      {
+        "a": "Munich",
+        "b": "07",
+        "c": 1.1
+      },
+      {
+        "a": "Munich",
+        "b": "08",
+        "c": -1.2
+      },
+      {
+        "a": "Munich",
+        "b": "09",
+        "c": 3.8
+      },
+      {
+        "a": "Munich",
+        "b": "10",
+        "c": 0.5
+      },
+      {
+        "a": "Munich",
+        "b": "11",
+        "c": -1.45
+      },
+      {
+        "a": "Munich",
+        "b": "12",
+        "c": 0
+      },
+      {
+        "a": "Oslo",
+        "b": "01",
+        "c": -3.5
+      },
+      {
+        "a": "Oslo",
+        "b": "02",
+        "c": -8.65
+      },
+      {
+        "a": "Oslo",
+        "b": "03",
+        "c": -3.8
+      },
+      {
+        "a": "Oslo",
+        "b": "04",
+        "c": -0.5
+      },
+      {
+        "a": "Oslo",
+        "b": "05",
+        "c": -2.4
+      },
+      {
+        "a": "Oslo",
+        "b": "06",
+        "c": -3.55
+      },
+      {
+        "a": "Oslo",
+        "b": "07",
+        "c": 2
+      },
+      {
+        "a": "Oslo",
+        "b": "08",
+        "c": 0.4
+      },
+      {
+        "a": "Oslo",
+        "b": "09",
+        "c": 0.25
+      },
+      {
+        "a": "Oslo",
+        "b": "10",
+        "c": -0.3
+      },
+      {
+        "a": "Oslo",
+        "b": "11",
+        "c": 2.3
+      },
+      {
+        "a": "Oslo",
+        "b": "12",
+        "c": 0.5
+      },
+      {
+        "a": "Tallinn",
+        "b": "01",
+        "c": 0.2
+      },
+      {
+        "a": "Tallinn",
+        "b": "02",
+        "c": -6.95
+      },
+      {
+        "a": "Tallinn",
+        "b": "03",
+        "c": -1.5
+      },
+      {
+        "a": "Tallinn",
+        "b": "04",
+        "c": -3.1
+      },
+      {
+        "a": "Tallinn",
+        "b": "05",
+        "c": -2.1
+      },
+      {
+        "a": "Tallinn",
+        "b": "06",
+        "c": -1
+      },
+      {
+        "a": "Tallinn",
+        "b": "07",
+        "c": 0.8
+      },
+      {
+        "a": "Tallinn",
+        "b": "08",
+        "c": 1.1
+      },
+      {
+        "a": "Tallinn",
+        "b": "09",
+        "c": 0.95
+      },
+      {
+        "a": "Tallinn",
+        "b": "10",
+        "c": 2
+      },
+      {
+        "a": "Tallinn",
+        "b": "11",
+        "c": 2.65
+      },
+      {
+        "a": "Tallinn",
+        "b": "12",
+        "c": 2.4
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "grid": true,
+      "bandPosition": 0
+    },
+    "legend": {
+      "gradientDirection": "horizontal"
+    }
+  },
+  "mark": {
+    "type": "rect",
+    "tooltip": null
+  },
+  "encoding": {
+    "y": {
+      "field": "a",
+      "type": "nominal",
+      "title": "City",
+      "axis": {
+        "labelColor": "black",
+        "tickColor": "white"
+      }
+    },
+    "x": {
+      "field": "b",
+      "type": "ordinal",
+      "title": "Month",
+      "axis": {
+        "orient": "top",
+        "labelColor": "black",
+        "labelAngle": 0,
+        "tickColor": "white"
+      }
+    },
+    "color": {
+      "field": "c",
+      "type": "quantitative"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "tooltip": true
+      },
+      "encoding": {
+        "color": {
+          "field": "c",
+          "type": "quantitative",
+          "title": "Value Change",
+          "scale": {
+            "domain": [
+              -9,
+              0,
+              9
+            ],
+            "range": [
+              "steelblue",
+              "#FDFDFD",
+              "#D2B48C"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

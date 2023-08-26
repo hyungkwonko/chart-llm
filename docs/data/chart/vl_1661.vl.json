@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "a": "A",
+        "b": 10
+      },
+      {
+        "a": "B",
+        "b": 20
+      }
+    ]
+  },
+  "encoding": {
+    "fillOpacity": {
+      "field": "b",
+      "type": "quantitative"
+    },
+    "x": {
+      "axis": {
+        "labelAngle": 0
+      },
+      "field": "a",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "b",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar"
+}

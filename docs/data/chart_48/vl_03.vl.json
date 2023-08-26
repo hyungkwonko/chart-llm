@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/2020_values.csv"
+  },
+  "height": 350,
+  "width": 400,
+  "title": {
+    "text": "Linear regression of % of population in Extreme poverty on Net ODA received",
+    "subtitle": [
+      "% of population given by value reported closest to year 2022",
+      "Net ODA refers to Official Development Aid received (millions, in constant terms, 2020 US$)",
+      "Source: World Bank and UNDP",
+      "R Squared value = 0.11"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black",
+    "subtitleColor": "black"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "color": "darkblue"
+      },
+      "encoding": {
+        "x": {
+          "field": "X",
+          "type": "quantitative",
+          "title": "1 - HDI"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "title": "ODA (millions US$)"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "red"
+      },
+      "encoding": {
+        "x": {
+          "field": "X",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y2",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

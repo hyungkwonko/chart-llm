@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "England - Immigration",
+    "subtitle": [
+      "Percentage of population not born in the UK by parlimentary constituency. Source: ONS Census 2021",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/sadieward/sadieward.github.io/main/ENGconstintuenciesGEO.json",
+    "format": {
+      "type": "topojson",
+      "feature": "wpc"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.PCON13NM",
+      "from": {
+        "key": "ConstituencyName",
+        "fields": [
+          "% not  born in UK"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/sadieward/sadieward.github.io/main/imm_constituencies.csv"
+        }
+      }
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0
+  },
+  "encoding": {
+    "color": {
+      "field": "% not  born in UK",
+      "type": "quantitative"
+    },
+    "tooltip": {
+      "field": "properties.PCON13NM"
+    }
+  }
+}

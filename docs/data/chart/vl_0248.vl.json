@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": [
+      "Do you support affirmative action that decreases the share",
+      "of White and Asian students in selective institutions?"
+    ],
+    "subtitle": "Data: YouGov",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {
+        "Answer": "Yes",
+        "Percent": "19"
+      },
+      {
+        "Answer": "No",
+        "Percent": "51"
+      },
+      {
+        "Answer": "Not Sure",
+        "Percent": "30"
+      }
+    ]
+  },
+  "height": 300,
+  "width": 260,
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "x": {
+      "field": "Answer",
+      "type": "ordinal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 360
+      }
+    },
+    "y": {
+      "field": "Percent",
+      "type": "quantitative",
+      "title": "Percent",
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "Answer",
+      "legend": false
+    }
+  }
+}

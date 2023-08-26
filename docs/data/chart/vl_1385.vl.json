@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "weekday": "Mon",
+        "total": 120
+      },
+      {
+        "weekday": "Tue",
+        "total": 200
+      },
+      {
+        "weekday": "Wed",
+        "total": 150
+      },
+      {
+        "weekday": "Thu",
+        "total": 80
+      },
+      {
+        "weekday": "Fri",
+        "total": 70
+      },
+      {
+        "weekday": "Sat",
+        "total": 110
+      },
+      {
+        "weekday": "Sun",
+        "total": 130
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "weekday",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labelAngle": 0
+      },
+      "sort": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ]
+    },
+    "y": {
+      "field": "total",
+      "type": "quantitative",
+      "title": null
+    }
+  }
+}

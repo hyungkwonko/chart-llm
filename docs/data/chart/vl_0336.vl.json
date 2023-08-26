@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": "Number of iterations before convergence",
+  "data": {
+    "values": [
+      {
+        "Model name": "Model 1",
+        "Number of iterations": 9,
+        "block": "postcode+dob"
+      },
+      {
+        "Model name": "Model 2",
+        "Number of iterations": 6,
+        "block": "postcode+dob"
+      },
+      {
+        "Model name": "Model 3",
+        "Number of iterations": 6,
+        "block": "postcode+dob"
+      },
+      {
+        "Model name": "Model 4",
+        "Number of iterations": 6,
+        "block": "postcode+dob"
+      },
+      {
+        "Model name": "Model 5",
+        "Number of iterations": 6,
+        "block": "postcode+dob"
+      },
+      {
+        "Model name": "Model 1",
+        "Number of iterations": 14,
+        "block": "name"
+      },
+      {
+        "Model name": "Model 2",
+        "Number of iterations": 9,
+        "block": "name"
+      },
+      {
+        "Model name": "Model 3",
+        "Number of iterations": 6,
+        "block": "name"
+      },
+      {
+        "Model name": "Model 4",
+        "Number of iterations": 6,
+        "block": "name"
+      },
+      {
+        "Model name": "Model 5",
+        "Number of iterations": 6,
+        "block": "name"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "Model name",
+      "type": "nominal",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "x": {
+      "field": "Number of iterations",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "block",
+      "type": "nominal"
+    },
+    "column": {
+      "field": "block",
+      "type": "nominal"
+    }
+  }
+}

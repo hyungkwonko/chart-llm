@@ -1,0 +1,222 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "stroke": ""
+    },
+    "header": {
+      "labelfontsize": 0,
+      "title": null
+    },
+    "facet": {
+      "spacing": 5
+    }
+  },
+  "title": {
+    "text": "Incoming flows"
+  },
+  "background": "#f9f9fc",
+  "data": {
+    "url": "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv"
+  },
+  "transform": [
+    {
+      "lookup": "source",
+      "from": {
+        "data": {
+          "url": "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv"
+        },
+        "key": "regionCode",
+        "fields": [
+          "g79X",
+          "g79Y",
+          "regionName"
+        ]
+      },
+      "as": [
+        "oCol",
+        "oRow",
+        "oName"
+      ]
+    },
+    {
+      "lookup": "dest",
+      "from": {
+        "data": {
+          "url": "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv"
+        },
+        "key": "regionCode",
+        "fields": [
+          "g79X",
+          "g79Y",
+          "regionName"
+        ]
+      },
+      "as": [
+        "dCol",
+        "dRow",
+        "dName"
+      ]
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "shared"
+    }
+  },
+  "facet": {
+    "row": {
+      "field": "dRow",
+      "type": "ordinal"
+    },
+    "column": {
+      "field": "dCol",
+      "type": "ordinal"
+    }
+  },
+  "spec": {
+    "width": 80,
+    "height": 80,
+    "layer": [
+      {
+        "encoding": {
+          "x": {
+            "field": "oCol",
+            "type": "quantitative",
+            "scale": {
+              "nice": false,
+              "domain": [
+                -1,
+                7
+              ]
+            },
+            "axis": null
+          },
+          "y": {
+            "field": "oRow",
+            "type": "quantitative",
+            "sort": "descending",
+            "scale": {
+              "nice": false,
+              "domain": [
+                0,
+                8
+              ]
+            },
+            "axis": null
+          },
+          "color": {
+            "field": "total",
+            "type": "quantitative",
+            "scale": {
+              "type": "symlog",
+              "scheme": {
+                "name": "yelloworangebrown",
+                "extent": [
+                  0,
+                  1.2
+                ]
+              }
+            },
+            "legend": {
+              "gradientLength": 96,
+              "gradientThickness": 8,
+              "titlefontsize": 8,
+              "labelfontsize": 8,
+              "orient": "top-left",
+              "direction": "horizontal",
+              "offset": -8
+            }
+          },
+          "tooltip": [
+            {
+              "field": "oName",
+              "type": "nominal",
+              "title": "origin"
+            },
+            {
+              "field": "dName",
+              "type": "nominal",
+              "title": "destination"
+            },
+            {
+              "field": "total",
+              "type": "nominal"
+            }
+          ]
+        },
+        "mark": {
+          "type": "square",
+          "size": 79.01234567901234,
+          "opacity": 1
+        }
+      },
+      {
+        "data": {
+          "url": "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv"
+        },
+        "encoding": {
+          "x": {
+            "field": "g79X",
+            "type": "quantitative",
+            "scale": {
+              "nice": false,
+              "domain": [
+                -1,
+                7
+              ]
+            },
+            "axis": null
+          },
+          "y": {
+            "field": "g79Y",
+            "type": "quantitative",
+            "sort": "descending",
+            "scale": {
+              "nice": false,
+              "domain": [
+                0,
+                8
+              ]
+            },
+            "axis": null
+          }
+        },
+        "mark": {
+          "type": "square",
+          "fill": null,
+          "stroke": "black",
+          "size": 63.20987654320987,
+          "strokeWidth": 0.2
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "cCol": 3,
+              "cRow": 4
+            }
+          ]
+        },
+        "encoding": {
+          "x": {
+            "field": "cCol",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "cRow",
+            "type": "quantitative"
+          }
+        },
+        "mark": {
+          "type": "square",
+          "size": 9560.493827160493,
+          "fill": null,
+          "stroke": "black",
+          "strokeWidth": 0.5
+        }
+      }
+    ]
+  }
+}

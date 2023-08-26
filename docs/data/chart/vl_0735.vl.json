@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/Global_democracy_vs_gdp3.csv"
+  },
+  "title": {
+    "fontSize": 13,
+    "subtitleFontSize": 13,
+    "text": "Stacked Bar Chart: Democracy Index by Region",
+    "subtitle": [
+      "Source: The Economist",
+      ""
+    ],
+    "anchor": "start"
+  },
+  "width": 500,
+  "height": 300,
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "y": {
+      "field": "Region",
+      "sort": {
+        "op": "mean",
+        "order": "ascending",
+        "field": "democracy_eiu"
+      },
+      "axis": {
+        "title": null
+      }
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "democracy_eiu",
+      "axis": {
+        "title": "Democracy Index"
+      }
+    },
+    "color": {
+      "field": "Regime",
+      "legend": {
+        "orient": "none",
+        "columns": 13,
+        "legendX": -100,
+        "legendY": -30,
+        "offset": 10,
+        "title": null
+      }
+    }
+  }
+}

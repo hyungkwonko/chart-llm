@@ -1,0 +1,568 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    },
+    "title": {
+      "anchor": "middle"
+    }
+  },
+  "hconcat": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": false,
+        "opacity": 0.7,
+        "size": 100
+      },
+      "encoding": {
+        "color": {
+          "type": "nominal",
+          "field": "estimate_name"
+        },
+        "row": {
+          "type": "nominal",
+          "field": "column_name",
+          "header": {
+            "labels": false
+          },
+          "sort": {
+            "field": "gamma_index"
+          },
+          "title": null
+        },
+        "shape": {
+          "type": "nominal",
+          "field": "estimate_name",
+          "scale": {
+            "range": [
+              "circle",
+              "square",
+              "triangle",
+              "diamond",
+              "cross"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "type": "nominal",
+            "field": "column_name"
+          },
+          {
+            "type": "nominal",
+            "field": "estimate_name"
+          },
+          {
+            "type": "quantitative",
+            "field": "m_probability"
+          },
+          {
+            "type": "quantitative",
+            "field": "u_probability"
+          }
+        ],
+        "x": {
+          "type": "quantitative",
+          "field": "m_probability",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          }
+        },
+        "y": {
+          "type": "nominal",
+          "axis": {
+            "grid": true,
+            "title": null
+          },
+          "field": "level_name"
+        }
+      },
+      "resolve": {
+        "scale": {
+          "y": "independent"
+        }
+      },
+      "selection": {
+        "selector076": {
+          "type": "interval",
+          "bind": "scales",
+          "encodings": [
+            "x",
+            "y"
+          ]
+        }
+      },
+      "title": "Matches",
+      "transform": [
+        {
+          "filter": "(datum.gamma_index !== 1000001)"
+        }
+      ]
+    }
+  ],
+  "data": {
+    "name": "data-ba1a6a87f933966b61db6e8365350111"
+  },
+  "title": {
+    "text": "Comparison of parameter estimates between jobs",
+    "subtitle": "Use mousewheeel to zoom"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-ba1a6a87f933966b61db6e8365350111": [
+      {
+        "m_probability": 0.16186812378643906,
+        "u_probability": 0.9986608203754984,
+        "bayes_factor": 0.16208518496357585,
+        "log2_bayes_factor": -2.6251758643425323,
+        "gamma_column_name": "gamma_surname_std",
+        "level_name": "level_0",
+        "gamma_index": 0,
+        "column_name": "surname_std",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.18294854463667662,
+        "u_probability": 0.0008622796063535286,
+        "bayes_factor": 212.16846981960165,
+        "log2_bayes_factor": 7.72906646424262,
+        "gamma_column_name": "gamma_surname_std",
+        "level_name": "level_1",
+        "gamma_index": 1,
+        "column_name": "surname_std",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.6551833315768844,
+        "u_probability": 0.00047690001814808524,
+        "bayes_factor": 1373.8379254442368,
+        "log2_bayes_factor": 10.4239961010818,
+        "gamma_column_name": "gamma_surname_std",
+        "level_name": "level_2",
+        "gamma_index": 2,
+        "column_name": "surname_std",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.08152011229437625,
+        "u_probability": 0.9986354137554884,
+        "bayes_factor": 0.08163150552393299,
+        "log2_bayes_factor": -3.6147301247006602,
+        "gamma_column_name": "gamma_surname_std",
+        "level_name": "level_0",
+        "gamma_index": 0,
+        "column_name": "surname_std",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.12577941572380352,
+        "u_probability": 0.0008934719284831317,
+        "bayes_factor": 140.77601289314393,
+        "log2_bayes_factor": 7.137257720992557,
+        "gamma_column_name": "gamma_surname_std",
+        "level_name": "level_1",
+        "gamma_index": 1,
+        "column_name": "surname_std",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.7927004719818205,
+        "u_probability": 0.0004711143160284772,
+        "bayes_factor": 1682.607479781838,
+        "log2_bayes_factor": 10.716482947355482,
+        "gamma_column_name": "gamma_surname_std",
+        "level_name": "level_2",
+        "gamma_index": 2,
+        "column_name": "surname_std",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.3270135280977838,
+        "u_probability": 0.9924946094469022,
+        "bayes_factor": 0.3294864526065507,
+        "log2_bayes_factor": -1.6017089472842285,
+        "gamma_column_name": "gamma_forename1_std",
+        "level_name": "level_0",
+        "gamma_index": 0,
+        "column_name": "forename1_std",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.18588889964539387,
+        "u_probability": 0.0027841427795110055,
+        "bayes_factor": 66.76701389504261,
+        "log2_bayes_factor": 6.0610636131001465,
+        "gamma_column_name": "gamma_forename1_std",
+        "level_name": "level_1",
+        "gamma_index": 1,
+        "column_name": "forename1_std",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.4870975722568223,
+        "u_probability": 0.004721247773586819,
+        "bayes_factor": 103.17136393093077,
+        "log2_bayes_factor": 6.688898784104637,
+        "gamma_column_name": "gamma_forename1_std",
+        "level_name": "level_2",
+        "gamma_index": 2,
+        "column_name": "forename1_std",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.20411393617643853,
+        "u_probability": 0.9928171961090635,
+        "bayes_factor": 0.2055906535225001,
+        "log2_bayes_factor": -2.2821534160717136,
+        "gamma_column_name": "gamma_forename1_std",
+        "level_name": "level_0",
+        "gamma_index": 0,
+        "column_name": "forename1_std",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.1268168245349612,
+        "u_probability": 0.002515520221454985,
+        "bayes_factor": 50.413756746352036,
+        "log2_bayes_factor": 5.655745560390926,
+        "gamma_column_name": "gamma_forename1_std",
+        "level_name": "level_1",
+        "gamma_index": 1,
+        "column_name": "forename1_std",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.6690692392886002,
+        "u_probability": 0.00466728366948153,
+        "bayes_factor": 143.35302644309263,
+        "log2_bayes_factor": 7.163428552590702,
+        "gamma_column_name": "gamma_forename1_std",
+        "level_name": "level_2",
+        "gamma_index": 2,
+        "column_name": "forename1_std",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.5055722573882127,
+        "u_probability": 0.9942601732980835,
+        "bayes_factor": 0.5084909070743195,
+        "log2_bayes_factor": -0.9757061191056248,
+        "gamma_column_name": "gamma_forename2_std",
+        "level_name": "level_0",
+        "gamma_index": 0,
+        "column_name": "forename2_std",
+        "max_gamma_index": 1,
+        "num_levels": 2,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.49442774261178735,
+        "u_probability": 0.00573982670191654,
+        "bayes_factor": 86.13983806282809,
+        "log2_bayes_factor": 6.428608706298868,
+        "gamma_column_name": "gamma_forename2_std",
+        "level_name": "level_1",
+        "gamma_index": 1,
+        "column_name": "forename2_std",
+        "max_gamma_index": 1,
+        "num_levels": 2,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.42032604883204283,
+        "u_probability": 0.9940307387894742,
+        "bayes_factor": 0.422850151841294,
+        "log2_bayes_factor": -1.2417815982003038,
+        "gamma_column_name": "gamma_forename2_std",
+        "level_name": "level_0",
+        "gamma_index": 0,
+        "column_name": "forename2_std",
+        "max_gamma_index": 1,
+        "num_levels": 2,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.5684236941980652,
+        "u_probability": 0.00596926121052577,
+        "bayes_factor": 95.22513325363403,
+        "log2_bayes_factor": 6.573270496517905,
+        "gamma_column_name": "gamma_forename2_std",
+        "level_name": "level_1",
+        "gamma_index": 1,
+        "column_name": "forename2_std",
+        "max_gamma_index": 1,
+        "num_levels": 2,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.12383415602114342,
+        "u_probability": 0.9628577133664711,
+        "bayes_factor": 0.12861106506399372,
+        "log2_bayes_factor": -2.9589133244903976,
+        "gamma_column_name": "gamma_occupation",
+        "level_name": "level_0",
+        "gamma_index": 0,
+        "column_name": "occupation",
+        "max_gamma_index": 1,
+        "num_levels": 2,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.8761658439788566,
+        "u_probability": 0.03714228663352891,
+        "bayes_factor": 23.58944274550744,
+        "log2_bayes_factor": 4.560069433015873,
+        "gamma_column_name": "gamma_occupation",
+        "level_name": "level_1",
+        "gamma_index": 1,
+        "column_name": "occupation",
+        "max_gamma_index": 1,
+        "num_levels": 2,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.07891821436931834,
+        "u_probability": 0.9585406551349641,
+        "bayes_factor": 0.08233162980260501,
+        "log2_bayes_factor": -3.6024094044150785,
+        "gamma_column_name": "gamma_occupation",
+        "level_name": "level_0",
+        "gamma_index": 0,
+        "column_name": "occupation",
+        "max_gamma_index": 1,
+        "num_levels": 2,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.9209253221781979,
+        "u_probability": 0.04145934486503587,
+        "bayes_factor": 22.212732139789473,
+        "log2_bayes_factor": 4.473314948470434,
+        "gamma_column_name": "gamma_occupation",
+        "level_name": "level_1",
+        "gamma_index": 1,
+        "column_name": "occupation",
+        "max_gamma_index": 1,
+        "num_levels": 2,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.0701545640159956,
+        "u_probability": 0.9953849866144641,
+        "bayes_factor": 0.07047982937195747,
+        "log2_bayes_factor": -3.8266457582026745,
+        "gamma_column_name": "gamma_dob",
+        "level_name": "level_0",
+        "gamma_index": 0,
+        "column_name": "dob",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.430486876107942,
+        "u_probability": 0.004299657003868688,
+        "bayes_factor": 100.12121332483133,
+        "log2_bayes_factor": 6.645603869404524,
+        "gamma_column_name": "gamma_dob",
+        "level_name": "level_1",
+        "gamma_index": 1,
+        "column_name": "dob",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.49935855987606237,
+        "u_probability": 0.00031535638166721214,
+        "bayes_factor": 1583.4737741347603,
+        "log2_bayes_factor": 10.628877257971325,
+        "gamma_column_name": "gamma_dob",
+        "level_name": "level_2",
+        "gamma_index": 2,
+        "column_name": "dob",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.07059269855670869,
+        "u_probability": 0.9951064672956292,
+        "bayes_factor": 0.07093984500829979,
+        "log2_bayes_factor": -3.8172600115456254,
+        "gamma_column_name": "gamma_dob",
+        "level_name": "level_0",
+        "gamma_index": 0,
+        "column_name": "dob",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.34249722017564277,
+        "u_probability": 0.004581095274605442,
+        "bayes_factor": 74.76317335599207,
+        "log2_bayes_factor": 6.224255901099778,
+        "gamma_column_name": "gamma_dob",
+        "level_name": "level_1",
+        "gamma_index": 1,
+        "column_name": "dob",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.5869100812676487,
+        "u_probability": 0.0003124374297653355,
+        "bayes_factor": 1878.4883799244642,
+        "log2_bayes_factor": 10.875356476352604,
+        "gamma_column_name": "gamma_dob",
+        "level_name": "level_2",
+        "gamma_index": 2,
+        "column_name": "dob",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.29476093636869755,
+        "u_probability": 0.9999305514260932,
+        "bayes_factor": 0.2947814085171333,
+        "log2_bayes_factor": -1.7622825564989055,
+        "gamma_column_name": "gamma_postcode",
+        "level_name": "level_0",
+        "gamma_index": 0,
+        "column_name": "postcode",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.10798961901111892,
+        "u_probability": 5.2981548887742366e-05,
+        "bayes_factor": 2038.249565710659,
+        "log2_bayes_factor": 10.993114992284527,
+        "gamma_column_name": "gamma_postcode",
+        "level_name": "level_1",
+        "gamma_index": 1,
+        "column_name": "postcode",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.5972494446201835,
+        "u_probability": 1.646702501899465e-05,
+        "bayes_factor": 36269.41988193122,
+        "log2_bayes_factor": 15.146466049584575,
+        "gamma_column_name": "gamma_postcode",
+        "level_name": "level_2",
+        "gamma_index": 2,
+        "column_name": "postcode",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "True value"
+      },
+      {
+        "m_probability": 0.2407817116090107,
+        "u_probability": 0.9999219053097891,
+        "bayes_factor": 0.2408005168507768,
+        "log2_bayes_factor": -2.0540896062064737,
+        "gamma_column_name": "gamma_postcode",
+        "level_name": "level_0",
+        "gamma_index": 0,
+        "column_name": "postcode",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.08629318393269374,
+        "u_probability": 6.218259170494976e-05,
+        "bayes_factor": 1387.7386189071428,
+        "log2_bayes_factor": 10.438520146009788,
+        "gamma_column_name": "gamma_postcode",
+        "level_name": "level_1",
+        "gamma_index": 1,
+        "column_name": "postcode",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      },
+      {
+        "m_probability": 0.6729251044582959,
+        "u_probability": 1.591209850595493e-05,
+        "bayes_factor": 42290.15451396691,
+        "log2_bayes_factor": 15.368034211047084,
+        "gamma_column_name": "gamma_postcode",
+        "level_name": "level_2",
+        "gamma_index": 2,
+        "column_name": "postcode",
+        "max_gamma_index": 2,
+        "num_levels": 3,
+        "level_proportion": null,
+        "estimate_name": "Estimated value"
+      }
+    ]
+  }
+}

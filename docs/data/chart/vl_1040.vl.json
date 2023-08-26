@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bitcoin",
+  "title": {
+    "text": "Bitcoin",
+    "subtitle": "Source Yahoo Finance",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ferguswalshe/ferguswalshe.github.io/main/bitcoinvalue.csv"
+  },
+  "height": 300,
+  "width": 345,
+  "mark": {
+    "type": "line",
+    "point": "transparent",
+    "interpolate": "monotone",
+    "color": "blueviolet"
+  },
+  "encoding": {
+    "x": {
+      "field": "DATE",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "CBBTCUSD",
+      "type": "quantitative",
+      "title": "Bitcoin US Dollar",
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

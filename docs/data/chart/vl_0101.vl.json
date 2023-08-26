@@ -1,0 +1,329 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    },
+    "background": "#F1F4F4",
+    "header": {
+      "labelFont": "IBM Plex Sans",
+      "labelFontSize": 14,
+      "titleFont": "IBM Plex Sans",
+      "titleFontSize": 16
+    }
+  },
+  "data": {
+    "name": "data-0136a27213fc30c2cd0008fef37a6398"
+  },
+  "mark": "bar",
+  "autosize": {
+    "contains": "padding",
+    "type": "fit-x"
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "type": "quantitative",
+        "field": "Value",
+        "format": ".2s"
+      },
+      {
+        "type": "nominal",
+        "field": "DECL",
+        "title": "Country"
+      }
+    ],
+    "x": {
+      "type": "nominal",
+      "axis": {
+        "title": ""
+      },
+      "field": "DECL"
+    },
+    "y": {
+      "type": "quantitative",
+      "axis": {
+        "format": "s"
+      },
+      "field": "Value",
+      "title": "Ice-cream production (Liter)"
+    }
+  },
+  "height": 250,
+  "width": 600,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-0136a27213fc30c2cd0008fef37a6398": [
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "France",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 450600078.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Netherlands",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 115828000.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Germany",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 493945671.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Italy",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 435463054.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "United Kingdom",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 328055041.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Ireland",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": null,
+        "Flag and Footnotes": "(1)"
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Denmark",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 17992244.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Greece",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 30152950.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Portugal",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": null,
+        "Flag and Footnotes": "(1)"
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Spain",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 307065000.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Belgium",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 209300306.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Luxemburg",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 0.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Iceland",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": null,
+        "Flag and Footnotes": "(1)"
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Norway",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": null,
+        "Flag and Footnotes": "(1)"
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Sweden",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 99141300.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Finland",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 39897381.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Austria",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 2757396.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Malta",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 0.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Estonia",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 20349800.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Latvia",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": null,
+        "Flag and Footnotes": "(1)"
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Lithuania",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 42112321.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Poland",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 237755600.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Czechia",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 50905000.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Slovakia",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 176103.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Hungary",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 65009000.0,
+        "Flag and Footnotes": "(2)"
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Romania",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 49862002.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Bulgaria",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 29673973.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Slovenia",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": null,
+        "Flag and Footnotes": "(1)"
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Croatia",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 34846400.0,
+        "Flag and Footnotes": null
+      },
+      {
+        "INDICATORS": "PRODQNT",
+        "DECL": "Cyprus",
+        "PRCCODE": 10521000,
+        "PRCCODE_LABEL": "Ice cream and other edible ice (including sherbet, lollipops) (excluding mixes and bases for ice cream)",
+        "PERIOD": "Jan.-Dez. 2018",
+        "Value": 0.0,
+        "Flag and Footnotes": null
+      }
+    ]
+  }
+}

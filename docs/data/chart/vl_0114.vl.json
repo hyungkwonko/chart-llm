@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/COG-UK/UK-lineage-dynamics-analysis/2ca84630ab1fb80b949d25b05b6578fa9674f574/analyses/epidemiological/results/lag-estimate-model-fig.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.tmrca_date - datum.lag_upper_bound",
+      "as": "lower_intro_est"
+    },
+    {
+      "calculate": "datum.tmrca_date - datum.lag_lower_bound",
+      "as": "upper_intro_est"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "ix",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "cluster_size",
+      "type": "quantitative",
+      "title": "Cluster size"
+    }
+  },
+  "layer": [
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "tmrca_date",
+          "type": "quantitative",
+          "title": "TMRCA day number"
+        },
+        "size": {
+          "field": "cluster_size",
+          "type": "quantitative",
+          "title": "Cluster size"
+        }
+      }
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {
+          "field": "upper_intro_est",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "lower_intro_est",
+          "type": "quantitative"
+        },
+        "y2": {
+          "field": "ix",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "height": 500,
+  "config": {
+    "axisY": {
+      "labels": false,
+      "ticks": false,
+      "grid": false
+    }
+  }
+}

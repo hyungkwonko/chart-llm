@@ -1,0 +1,154 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Growth tradjectories",
+    "subtitle": [
+      "GDP per capita, 1960=1, logs. Source: World Bank.",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/Global_WB_GDPperCapita.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "CHN",
+        "KOR",
+        "SGP",
+        "BWA",
+        "THA",
+        "MYS",
+        "IDN",
+        "IND",
+        "MIC",
+        "DOM",
+        "JPN",
+        "TUR",
+        "PRT",
+        "EGY",
+        "SYC",
+        "PAN",
+        "PRI",
+        "CHL",
+        "LUX",
+        "ESP",
+        "VCT",
+        "PRY",
+        "FIN",
+        "NOR",
+        "GUY",
+        "PAK",
+        "BGD",
+        "GRC",
+        "AUT",
+        "LSO",
+        "BLZ",
+        "BEL",
+        "CRI",
+        "FRA",
+        "NLD",
+        "BRA",
+        "TTO",
+        "COL",
+        "SWE",
+        "ITA",
+        "USA",
+        "DNK",
+        "NPL",
+        "WLD",
+        "BFA",
+        "PHL",
+        "GBR",
+        "AUS",
+        "BMU",
+        "RWA",
+        "URY",
+        "MEX",
+        "BOL",
+        "PER",
+        "GTM",
+        "IRN",
+        "ECU",
+        "KEN",
+        "MWI",
+        "FJI",
+        "HND",
+        "GAB",
+        "TGO",
+        "DZA",
+        "BEN",
+        "PNG",
+        "GHA",
+        "SUR",
+        "ARG",
+        "NGA",
+        "CIV",
+        "CMR",
+        "ZAF",
+        "BHS",
+        "COG",
+        "SDN",
+        "NIC",
+        "SLE",
+        "SEN",
+        "ZWE",
+        "TCD",
+        "ZMB",
+        "BDI",
+        "HTI",
+        "NER",
+        "CAF",
+        "MDG",
+        "COD",
+        "SYR"
+      ],
+      "as": [
+        "country",
+        "GDPpc"
+      ]
+    },
+    {
+      "calculate": "log(datum.GDPpc)",
+      "as": "logGDP"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "logGDP",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "country",
+      "scale": {
+        "range": [
+          "rgba(128,0,0,0.2)"
+        ]
+      },
+      "legend": null,
+      "title": null
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "description": "All crimes reported in Westminster Local Area District in Sep 22. Downloaded from API using polygon coordinates of LAD and overlayed on a filtered UK LAD map.",
+  "title": {
+    "text": "Westminster Crime Map",
+    "fontSize": 12,
+    "subtitle": [
+      "All reported crimes, September 2022. Source: Police Crime API",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/UK%20Map%20Data/LAD_2021_20m.geojson",
+        "format": {
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "field": "properties.LAD21NM",
+            "oneOf": [
+              "Westminster"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "color": {
+          "value": "#eee"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/point_maps/allCrimes_Westminster_2022-09.csv"
+      },
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": "circle",
+      "encoding": {
+        "longitude": {
+          "field": "Longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "size": {
+          "value": 6
+        },
+        "color": {
+          "field": "Crime Category"
+        },
+        "tooltip": [
+          {
+            "field": "Crime Category"
+          },
+          {
+            "field": "Location"
+          }
+        ]
+      }
+    }
+  ]
+}

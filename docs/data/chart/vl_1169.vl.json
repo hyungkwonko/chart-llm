@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/martinjc/UK-GeoJSON/master/json/administrative/eng/lad.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.LAD13NM",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/ConorQuah/ConorQuah.github.io/main/Population_data.csv"
+        },
+        "key": "Local Authority District",
+        "fields": [
+          "Population"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "XYZfill": "rgb(50,50,50)",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "Population",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "properties.LAD13NM",
+        "type": "nominal",
+        "title": "Local Authority District"
+      },
+      {
+        "field": "Population"
+      }
+    ]
+  }
+}

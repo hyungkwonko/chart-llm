@@ -1,0 +1,539 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Unemployment Rate 16 and over",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {
+        "date": "1971",
+        "label": "1971",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.1",
+        "year": "1971"
+      },
+      {
+        "date": "1972",
+        "label": "1972",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.3",
+        "year": "1972"
+      },
+      {
+        "date": "1973",
+        "label": "1973",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.7",
+        "year": "1973"
+      },
+      {
+        "date": "1974",
+        "label": "1974",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "3.7",
+        "year": "1974"
+      },
+      {
+        "date": "1975",
+        "label": "1975",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.5",
+        "year": "1975"
+      },
+      {
+        "date": "1976",
+        "label": "1976",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "5.4",
+        "year": "1976"
+      },
+      {
+        "date": "1977",
+        "label": "1977",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "5.6",
+        "year": "1977"
+      },
+      {
+        "date": "1978",
+        "label": "1978",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "5.5",
+        "year": "1978"
+      },
+      {
+        "date": "1979",
+        "label": "1979",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "5.4",
+        "year": "1979"
+      },
+      {
+        "date": "1980",
+        "label": "1980",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "6.8",
+        "year": "1980"
+      },
+      {
+        "date": "1981",
+        "label": "1981",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "9.6",
+        "year": "1981"
+      },
+      {
+        "date": "1982",
+        "label": "1982",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "10.7",
+        "year": "1982"
+      },
+      {
+        "date": "1983",
+        "label": "1983",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "11.5",
+        "year": "1983"
+      },
+      {
+        "date": "1984",
+        "label": "1984",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "11.8",
+        "year": "1984"
+      },
+      {
+        "date": "1985",
+        "label": "1985",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "11.4",
+        "year": "1985"
+      },
+      {
+        "date": "1986",
+        "label": "1986",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "11.3",
+        "year": "1986"
+      },
+      {
+        "date": "1987",
+        "label": "1987",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "10.4",
+        "year": "1987"
+      },
+      {
+        "date": "1988",
+        "label": "1988",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "8.6",
+        "year": "1988"
+      },
+      {
+        "date": "1989",
+        "label": "1989",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "7.2",
+        "year": "1989"
+      },
+      {
+        "date": "1990",
+        "label": "1990",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "7.1",
+        "year": "1990"
+      },
+      {
+        "date": "1991",
+        "label": "1991",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "8.9",
+        "year": "1991"
+      },
+      {
+        "date": "1992",
+        "label": "1992",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "9.9",
+        "year": "1992"
+      },
+      {
+        "date": "1993",
+        "label": "1993",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "10.4",
+        "year": "1993"
+      },
+      {
+        "date": "1994",
+        "label": "1994",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "9.5",
+        "year": "1994"
+      },
+      {
+        "date": "1995",
+        "label": "1995",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "8.6",
+        "year": "1995"
+      },
+      {
+        "date": "1996",
+        "label": "1996",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "8.1",
+        "year": "1996"
+      },
+      {
+        "date": "1997",
+        "label": "1997",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "6.9",
+        "year": "1997"
+      },
+      {
+        "date": "1998",
+        "label": "1998",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "6.2",
+        "year": "1998"
+      },
+      {
+        "date": "1999",
+        "label": "1999",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "6.0",
+        "year": "1999"
+      },
+      {
+        "date": "2000",
+        "label": "2000",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "5.4",
+        "year": "2000"
+      },
+      {
+        "date": "2001",
+        "label": "2001",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "5.1",
+        "year": "2001"
+      },
+      {
+        "date": "2002",
+        "label": "2002",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "5.2",
+        "year": "2002"
+      },
+      {
+        "date": "2003",
+        "label": "2003",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "5.0",
+        "year": "2003"
+      },
+      {
+        "date": "2004",
+        "label": "2004",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.8",
+        "year": "2004"
+      },
+      {
+        "date": "2005",
+        "label": "2005",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "4.8",
+        "year": "2005"
+      },
+      {
+        "date": "2006",
+        "label": "2006",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "5.4",
+        "year": "2006"
+      },
+      {
+        "date": "2007",
+        "label": "2007",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "5.3",
+        "year": "2007"
+      },
+      {
+        "date": "2008",
+        "label": "2008",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "5.7",
+        "year": "2008"
+      },
+      {
+        "date": "2009",
+        "label": "2009",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "7.6",
+        "year": "2009"
+      },
+      {
+        "date": "2010",
+        "label": "2010",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "7.9",
+        "year": "2010"
+      },
+      {
+        "date": "2011",
+        "label": "2011",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "8.1",
+        "year": "2011"
+      },
+      {
+        "date": "2012",
+        "label": "2012",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "8.0",
+        "year": "2012"
+      },
+      {
+        "date": "2013",
+        "label": "2013",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "7.6",
+        "year": "2013"
+      },
+      {
+        "date": "2014",
+        "label": "2014",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2015-10-13T23:00:00.000Z",
+        "value": "6.2",
+        "year": "2014"
+      },
+      {
+        "date": "2015",
+        "label": "2015",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2016-03-16T09:30:00.000Z",
+        "value": "5.4",
+        "year": "2015"
+      },
+      {
+        "date": "2016",
+        "label": "2016",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2017-02-15T00:00:00.000Z",
+        "value": "4.9",
+        "year": "2016"
+      },
+      {
+        "date": "2017",
+        "label": "2017",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-02-21T00:00:00.000Z",
+        "value": "4.4",
+        "year": "2017"
+      },
+      {
+        "date": "2018",
+        "label": "2018",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z",
+        "value": "4.1",
+        "year": "2018"
+      },
+      {
+        "date": "2019",
+        "label": "2019",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2020-02-18T00:00:00.000Z",
+        "value": "3.8",
+        "year": "2019"
+      },
+      {
+        "date": "2020",
+        "label": "2020",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-08-15T23:00:00.000Z",
+        "value": "4.6",
+        "year": "2020"
+      },
+      {
+        "date": "2021",
+        "label": "2021",
+        "month": "",
+        "quarter": "",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-02-15T00:00:00.000Z",
+        "value": "4.5",
+        "year": "2021"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "labelAngle": -90
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Unemployment Rate (%)"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Visualisation showing the party represented by the three councillors in each of Trafford's wards",
+  "autosize": {
+    "type": "fit"
+  },
+  "width": 475,
+  "height": 500,
+  "title": {
+    "text": "Political control of Trafford's Wards 2021",
+    "offset": 10,
+    "font": "sans-serif",
+    "fontWeight": 400,
+    "fontSize": 18,
+    "color": "#707070"
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/analysis/local_election/2021/data/political_control_2021.csv"
+  },
+  "encoding": {
+    "x": {
+      "field": "elected_ordinal",
+      "type": "ordinal",
+      "axis": {
+        "labels": false,
+        "description": "Source: trafford.gov.uk | @traffordDataLab",
+        "title": "Source: trafford.gov.uk | @traffordDataLab",
+        "titleX": 272,
+        "titleY": 10,
+        "titleFont": "sans-serif",
+        "titleFontWeight": 300,
+        "titleColor": "#707070"
+      }
+    },
+    "y": {
+      "field": "ward",
+      "type": "nominal",
+      "axis": {
+        "title": null,
+        "offset": 5,
+        "ticks": false,
+        "minExtent": 70,
+        "domain": false,
+        "labelFont": "sans-serif",
+        "labelColor": "#212121"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "filled": true,
+        "stroke": "#fff"
+      },
+      "encoding": {
+        "color": {
+          "field": "councillor_party",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "Conservative Party",
+              "Green Party",
+              "Labour Party",
+              "Liberal Democrats"
+            ],
+            "range": [
+              "#0087dc",
+              "#6ab023",
+              "#dc241f",
+              "#fdbb30"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom",
+            "direction": "horizontal",
+            "labelFont": "sans-serif",
+            "labelColor": "#212121"
+          }
+        },
+        "size": {
+          "value": 100
+        },
+        "opacity": {
+          "value": 1
+        },
+        "tooltip": [
+          {
+            "field": "councillor_name",
+            "type": "nominal",
+            "title": "Councillor"
+          },
+          {
+            "field": "councillor_party_label",
+            "type": "nominal",
+            "title": "Party"
+          },
+          {
+            "field": "elected_year",
+            "type": "nominal",
+            "title": "Elected"
+          }
+        ],
+        "description": {
+          "field": "ward"
+        }
+      }
+    }
+  ],
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    },
+    "axis": {
+      "ticks": false,
+      "domainColor": null
+    }
+  }
+}

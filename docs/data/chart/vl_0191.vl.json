@@ -1,0 +1,213 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "stroke": null
+    }
+  },
+  "data": {
+    "name": "data-cf81b8b1c0a9939eea6651555c5ad264"
+  },
+  "mark": {
+    "type": "line",
+    "color": "#F4134D"
+  },
+  "encoding": {
+    "x": {
+      "axis": {
+        "domainColor": "#676A86",
+        "grid": false,
+        "labelAngle": 0,
+        "labelColor": "#676A86",
+        "orient": "bottom",
+        "tickColor": "#676A86",
+        "tickCount": 10,
+        "title": "",
+        "titleAlign": "center",
+        "titleAnchor": "middle",
+        "titleColor": "#676A86",
+        "titleX": 207,
+        "titleY": -15
+      },
+      "field": "Date",
+      "sort": [],
+      "type": "temporal"
+    },
+    "y": {
+      "axis": {
+        "domainColor": "#676A86",
+        "gridColor": "#676A86",
+        "gridOpacity": 0.2,
+        "labelColor": "#676A86",
+        "tickColor": "#676A86",
+        "title": "Gas price (pence per therm)",
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#676A86",
+        "titleX": 5,
+        "titleY": 28
+      },
+      "field": "Price",
+      "sort": [],
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "title": "",
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-cf81b8b1c0a9939eea6651555c5ad264": [
+      {
+        "Date": "2019-02-01T00:00:00",
+        "Price": 47.09
+      },
+      {
+        "Date": "2019-03-01T00:00:00",
+        "Price": 39.31
+      },
+      {
+        "Date": "2019-04-01T00:00:00",
+        "Price": 34.98
+      },
+      {
+        "Date": "2019-05-01T00:00:00",
+        "Price": 31.43
+      },
+      {
+        "Date": "2019-06-01T00:00:00",
+        "Price": 27.96
+      },
+      {
+        "Date": "2019-07-01T00:00:00",
+        "Price": 29.6
+      },
+      {
+        "Date": "2019-08-01T00:00:00",
+        "Price": 27.75
+      },
+      {
+        "Date": "2019-09-01T00:00:00",
+        "Price": 24.87
+      },
+      {
+        "Date": "2019-10-01T00:00:00",
+        "Price": 25.65
+      },
+      {
+        "Date": "2019-11-01T00:00:00",
+        "Price": 38.04
+      },
+      {
+        "Date": "2019-12-01T00:00:00",
+        "Price": 32.14
+      },
+      {
+        "Date": "2020-01-01T00:00:00",
+        "Price": 27.9
+      },
+      {
+        "Date": "2020-02-01T00:00:00",
+        "Price": 23.5
+      },
+      {
+        "Date": "2020-03-01T00:00:00",
+        "Price": 22.92
+      },
+      {
+        "Date": "2020-04-01T00:00:00",
+        "Price": 13.75
+      },
+      {
+        "Date": "2020-05-01T00:00:00",
+        "Price": 11.59
+      },
+      {
+        "Date": "2020-06-01T00:00:00",
+        "Price": 13.18
+      },
+      {
+        "Date": "2020-07-01T00:00:00",
+        "Price": 13.24
+      },
+      {
+        "Date": "2020-08-01T00:00:00",
+        "Price": 20.22
+      },
+      {
+        "Date": "2020-09-01T00:00:00",
+        "Price": 29.9
+      },
+      {
+        "Date": "2020-10-01T00:00:00",
+        "Price": 38.23
+      },
+      {
+        "Date": "2020-11-01T00:00:00",
+        "Price": 37.57
+      },
+      {
+        "Date": "2020-12-01T00:00:00",
+        "Price": 45.69
+      },
+      {
+        "Date": "2021-01-01T00:00:00",
+        "Price": 59.01
+      },
+      {
+        "Date": "2021-02-01T00:00:00",
+        "Price": 45.94
+      },
+      {
+        "Date": "2021-03-01T00:00:00",
+        "Price": 44.96
+      },
+      {
+        "Date": "2021-04-01T00:00:00",
+        "Price": 54.77
+      },
+      {
+        "Date": "2021-05-01T00:00:00",
+        "Price": 65.2
+      },
+      {
+        "Date": "2021-06-01T00:00:00",
+        "Price": 72.01
+      },
+      {
+        "Date": "2021-07-01T00:00:00",
+        "Price": 90.88
+      },
+      {
+        "Date": "2021-08-01T00:00:00",
+        "Price": 110.04
+      },
+      {
+        "Date": "2021-09-01T00:00:00",
+        "Price": 162.1
+      },
+      {
+        "Date": "2021-10-01T00:00:00",
+        "Price": 213.76
+      },
+      {
+        "Date": "2021-11-01T00:00:00",
+        "Price": 201.09
+      },
+      {
+        "Date": "2021-12-01T00:00:00",
+        "Price": 270.96
+      },
+      {
+        "Date": "2022-01-01T00:00:00",
+        "Price": 203.75
+      },
+      {
+        "Date": "2022-02-01T00:00:00",
+        "Price": 187.77
+      }
+    ]
+  }
+}

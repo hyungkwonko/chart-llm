@@ -1,0 +1,322 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "CPIH weights",
+    "subtitle": "Percentage of overall consumer basket",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "percent",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "format": "%"
+      }
+    },
+    "color": {
+      "field": "name",
+      "type": "ordinal",
+      "title": null,
+      "legend": {
+        "orient": "bottom",
+        "columns": 2
+      },
+      "scale": {
+        "scheme": "yellowgreenblue"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "name",
+        "title": "Division"
+      },
+      {
+        "field": "year",
+        "title": "Year",
+        "type": "temporal",
+        "format": "%Y"
+      },
+      {
+        "field": "value",
+        "title": "Weight"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5CZ.json",
+        "format": {
+          "type": "json",
+          "property": "years"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.quarter, '', 'Food')",
+          "as": "name"
+        },
+        {
+          "calculate": "datum.value/1000",
+          "as": "percent"
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D2.json",
+        "format": {
+          "type": "json",
+          "property": "years"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.quarter, '', 'Alcohol & Tobacco')",
+          "as": "name"
+        },
+        {
+          "calculate": "datum.value/1000",
+          "as": "percent"
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D3.json",
+        "format": {
+          "type": "json",
+          "property": "years"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.quarter, '', 'Clothing & Footwear')",
+          "as": "name"
+        },
+        {
+          "calculate": "datum.value/1000",
+          "as": "percent"
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D4.json",
+        "format": {
+          "type": "json",
+          "property": "years"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.quarter, '', 'Housing & Utilities')",
+          "as": "name"
+        },
+        {
+          "calculate": "datum.value/1000",
+          "as": "percent"
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D5.json",
+        "format": {
+          "type": "json",
+          "property": "years"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.quarter, '', 'Furniture & maintenance')",
+          "as": "name"
+        },
+        {
+          "calculate": "datum.value/1000",
+          "as": "percent"
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D6.json",
+        "format": {
+          "type": "json",
+          "property": "years"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.quarter, '', 'Health')",
+          "as": "name"
+        },
+        {
+          "calculate": "datum.value/1000",
+          "as": "percent"
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D7.json",
+        "format": {
+          "type": "json",
+          "property": "years"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.quarter, '', 'Transport')",
+          "as": "name"
+        },
+        {
+          "calculate": "datum.value/1000",
+          "as": "percent"
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D8.json",
+        "format": {
+          "type": "json",
+          "property": "years"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.quarter, '', 'Communication')",
+          "as": "name"
+        },
+        {
+          "calculate": "datum.value/1000",
+          "as": "percent"
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D9.json",
+        "format": {
+          "type": "json",
+          "property": "years"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.quarter, '', 'Recreation')",
+          "as": "name"
+        },
+        {
+          "calculate": "datum.value/1000",
+          "as": "percent"
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5DA.json",
+        "format": {
+          "type": "json",
+          "property": "years"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.quarter, '', 'Education')",
+          "as": "name"
+        },
+        {
+          "calculate": "datum.value/1000",
+          "as": "percent"
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5DB.json",
+        "format": {
+          "type": "json",
+          "property": "years"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.quarter, '', 'Hotels')",
+          "as": "name"
+        },
+        {
+          "calculate": "datum.value/1000",
+          "as": "percent"
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5DC.json",
+        "format": {
+          "type": "json",
+          "property": "years"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "replace(datum.quarter, '', 'Misc')",
+          "as": "name"
+        },
+        {
+          "calculate": "datum.value/1000",
+          "as": "percent"
+        }
+      ],
+      "mark": {
+        "type": "line"
+      }
+    }
+  ]
+}

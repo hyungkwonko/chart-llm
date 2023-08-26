@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Foreign Direct Investment - inward",
+    "subtitle": [
+      "Total FDI in the UK (\u00a3, billions). [ONS, PB-N2SA]",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 280,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/hyungkwonko/tmp-data/main/investment.json",
+    "format": {
+      "type": "json",
+      "property": "years"
+    }
+  },
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1987,
+      "bind": {
+        "input": "range",
+        "min": 1987,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1987,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "datum.value/1000",
+      "as": "billions"
+    },
+    {
+      "filter": "datum.date>=minYear"
+    },
+    {
+      "filter": "datum.date<=maxYear"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "color": "#00BFFF",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "billions",
+      "type": "quantitative",
+      "title": null
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "LINE CHART",
+  "width": "container",
+  "height": 350,
+  "config": {
+    "background": "#FFFFFF",
+    "axisX": {
+      "grid": false
+    },
+    "axisY": {
+      "domain": false,
+      "ticks": false,
+      "gridDash": [
+        2
+      ],
+      "gridWidth": 1
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/trends/caserate-by-modzcta.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": true,
+        "tooltip": true,
+        "interpolate": "natural",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "week_ending",
+          "type": "temporal",
+          "title": ""
+        },
+        "y": {
+          "field": "CASERATE_CITY",
+          "type": "quantitative",
+          "title": null
+        },
+        "color": {
+          "value": "black"
+        },
+        "tooltip": [
+          {
+            "field": "CASERATE_CITY",
+            "title": "New York City"
+          },
+          {
+            "field": "week_ending",
+            "type": "temporal",
+            "title": "Week ending"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "point": true,
+        "tooltip": true,
+        "interpolate": "natural",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "week_ending",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "CASERATE_BK",
+          "type": "quantitative"
+        },
+        "color": {
+          "value": "darkgrey"
+        },
+        "tooltip": [
+          {
+            "field": "CASERATE_BK",
+            "title": "Brooklyn"
+          },
+          {
+            "field": "week_ending",
+            "type": "temporal",
+            "title": "Week ending"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "point": {
+          "filled": false,
+          "fill": "white"
+        },
+        "tooltip": true,
+        "interpolate": "natural",
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "x": {
+          "field": "week_ending",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "CASERATE_11226",
+          "type": "quantitative"
+        },
+        "color": {
+          "value": "hotpink"
+        },
+        "tooltip": [
+          {
+            "field": "CASERATE_11226",
+            "title": "ZIP Code 11226"
+          },
+          {
+            "field": "week_ending",
+            "type": "temporal",
+            "title": "Week ending"
+          }
+        ]
+      }
+    }
+  ]
+}

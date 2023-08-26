@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/dsaidgovsg/datavis-examples/cf6e7faa54f7392edd956bf4884f0d286405c5f3/data/burtin.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "repeat": {
+    "row": [
+      "Penicilin",
+      "Streptomycin",
+      "Neomycin"
+    ],
+    "column": [
+      "Penicilin",
+      "Streptomycin",
+      "Neomycin"
+    ]
+  },
+  "spec": {
+    "layer": [
+      {
+        "mark": "point",
+        "encoding": {
+          "color": {
+            "field": "Gram Staining",
+            "type": "nominal"
+          },
+          "x": {
+            "field": {
+              "repeat": "row"
+            },
+            "type": "quantitative",
+            "scale": {
+              "type": "log",
+              "domain": [
+                1500,
+                0.0001
+              ]
+            }
+          },
+          "y": {
+            "field": {
+              "repeat": "column"
+            },
+            "type": "quantitative",
+            "scale": {
+              "type": "log",
+              "domain": [
+                1500,
+                0.0001
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

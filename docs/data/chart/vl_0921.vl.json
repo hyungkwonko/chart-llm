@@ -1,0 +1,95 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 500,
+  "title": {
+    "text": "Median House Prices across England",
+    "subtitle": [
+      "2004-2021. By Local Authority Area. Source: ONS"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#010001",
+    "subtitleColor": "#000000"
+  },
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 2004,
+      "bind": {
+        "input": "range",
+        "min": 2004,
+        "max": 2021,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "black",
+    "strokeWidth": 0.5
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/house_price_map_data_corrected.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "toNumber(yearSelector)",
+      "as": "yearS"
+    },
+    {
+      "filter": "datum.yearS == datum.Year"
+    },
+    {
+      "lookup": "Local Authority",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/EnglandGeoJson",
+          "format": {
+            "property": "features"
+          }
+        },
+        "key": "properties.LAD13NM",
+        "fields": [
+          "properties",
+          "type",
+          "geometry"
+        ]
+      }
+    }
+  ],
+  "encoding": {
+    "color": {
+      "field": "Value",
+      "legend": {
+        "title": null,
+        "orient": "right",
+        "direction": "vertical"
+      },
+      "type": "quantitative",
+      "scale": {
+        "scheme": "magma",
+        "reverse": true
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.LAD13NM",
+        "type": "nominal",
+        "title": "Local Authority District"
+      },
+      {
+        "field": "Value",
+        "title": "Median House Price"
+      }
+    ]
+  }
+}

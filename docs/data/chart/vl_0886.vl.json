@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart with text labels. Set domain to make the frame cover the labels.",
+  "title": {
+    "text": "Weekly Income in the UK by Industry. Is there outsized demand for data professionals? ",
+    "fontSize": 11,
+    "anchor": "start",
+    "subtitle": "Source: ONS & GlassDoor",
+    "subtitleFontSize": 10
+  },
+  "width": 340,
+  "height": 340,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/UKweeklywages.json"
+  },
+  "background": "#fff0d8",
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "height": 15,
+        "color": "#da83278c"
+      },
+      "encoding": {
+        "y": {
+          "field": "Industry",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "Average Weekly Income",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1800
+            ]
+          }
+        },
+        "color": {
+          "condition": [
+            {
+              "value": "red",
+              "test": {
+                "field": "Industry",
+                "oneOf": [
+                  "Data Sceince & Data Engineers"
+                ]
+              }
+            }
+          ]
+        },
+        "tooltip": [
+          {
+            "field": "Average Weekly Income",
+            "type": "quantitative"
+          }
+        ]
+      }
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {
+          "aggregate": "mean",
+          "field": "Average Weekly Income",
+          "title": "Mean Weekly Income"
+        },
+        "color": {
+          "value": "#3e1812"
+        },
+        "size": {
+          "value": 3
+        },
+        "tooltip": [
+          {
+            "aggregate": "mean",
+            "field": "Average Weekly Income"
+          }
+        ]
+      }
+    }
+  ]
+}

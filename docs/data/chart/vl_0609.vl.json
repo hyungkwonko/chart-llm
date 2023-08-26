@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "GDP per capita",
+    "subtitle": [
+      "GDP, constant prices. National currencies. Source: IMF.",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 400,
+  "width": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/Global_WB_GDPperCapita.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "ARG",
+        "AUS",
+        "AUT",
+        "BDI",
+        "BEL",
+        "BEN",
+        "BFA",
+        "BGD",
+        "BHS",
+        "BLZ",
+        "BMU",
+        "BOL",
+        "BRA",
+        "BWA",
+        "CAF",
+        "CHL",
+        "CHN",
+        "CIV",
+        "CMR",
+        "COD",
+        "COG",
+        "COL",
+        "CRI",
+        "DNK",
+        "DOM",
+        "DZA",
+        "ECU",
+        "EGY",
+        "ESP",
+        "FIN",
+        "FJI",
+        "FRA",
+        "GAB",
+        "GBR",
+        "GHA",
+        "GRC",
+        "GTM",
+        "GUY",
+        "HND",
+        "HTI",
+        "IDN",
+        "IND",
+        "IRN",
+        "ITA",
+        "JPN",
+        "KEN",
+        "KOR",
+        "LSO",
+        "LUX",
+        "MDG",
+        "MEX",
+        "MIC",
+        "MWI",
+        "MYS",
+        "NER",
+        "NGA",
+        "NIC",
+        "NLD",
+        "NOR",
+        "NPL",
+        "PAK",
+        "PAN",
+        "PER",
+        "PHL",
+        "PNG",
+        "PRI",
+        "PRT",
+        "PRY",
+        "RWA",
+        "SDN",
+        "SEN",
+        "SGP",
+        "SLE",
+        "SUR",
+        "SWE",
+        "SYC",
+        "SYR",
+        "TCD",
+        "TGO",
+        "THA",
+        "TTO",
+        "TUR",
+        "URY",
+        "USA",
+        "VCT",
+        "ZAF",
+        "ZMB",
+        "ZWE"
+      ],
+      "as": [
+        "country",
+        "GDPpc"
+      ]
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "GDPpc",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "country",
+      "scale": {
+        "range": [
+          "rgba(128,0,0, 0.2)"
+        ]
+      },
+      "legend": null,
+      "title": null
+    }
+  }
+}

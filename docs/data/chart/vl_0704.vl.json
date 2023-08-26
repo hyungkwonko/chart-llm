@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "data": {
+    "url": "https://raw.githubusercontent.com/matsim-scenarios/matsim-duesseldorf/b160620ef3d645969b5060b436391be3bc378cb6/src/main/simwrapper/flow/flow_av.csv"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Share of AVs"
+    },
+    "y": {
+      "field": "pred",
+      "type": "quantitative",
+      "title": "Flow capacity [veh/h]",
+      "scale": {
+        "domain": [
+          0,
+          5000
+        ]
+      }
+    },
+    "color": {
+      "field": "speed",
+      "type": "ordinal",
+      "sort": {}
+    },
+    "tooltip": [
+      {
+        "field": "speed",
+        "type": "ordinal",
+        "title": "Km/h"
+      },
+      {
+        "field": "pred",
+        "type": "quantitative",
+        "title": "Veh/h",
+        "format": "d"
+      }
+    ]
+  }
+}

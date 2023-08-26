@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "World Cup Costs",
+  "title": {
+    "text": "Market Value vs Wages, by Club",
+    "fontSize": 18,
+    "subtitle": [
+      "Figure 4: 2022-23",
+      "Club's player's total Market Values (bars)",
+      "Club's total Weekly Wage Bill (line)",
+      "Sources: Capology + Transfermarkt"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": "container",
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/josh-shah/josh-shah.github.io/main/MKTValue_Wages_clubgroup.csv"
+  },
+  "encoding": {
+    "x": {
+      "field": "Team",
+      "type": "nominal",
+      "sort": [
+        "0"
+      ],
+      "title": "Club",
+      "axis": {
+        "labelAngle": 90,
+        "labelFontSize": 10
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Team",
+        "title": "Team"
+      },
+      {
+        "field": "Wages",
+        "title": "Club Wages"
+      },
+      {
+        "field": "MktValue",
+        "title": "Market Value (\u00a3 Millions)"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "opacity": 1.0,
+        "type": "bar",
+        "color": "rgb(0,67,167)"
+      },
+      "encoding": {
+        "y": {
+          "field": "MktValue",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1000
+            ]
+          },
+          "title": "Market Value (\u00a3 Millions)",
+          "axis": {
+            "titleColor": "rgb(0,67,167)"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "stroke": "orange",
+        "type": "line",
+        "interpolate": "monotone"
+      },
+      "encoding": {
+        "y": {
+          "field": "Wages",
+          "type": "quantitative",
+          "title": "Club Weekly Wages (\u00a3 Millions)",
+          "axis": {
+            "titleColor": "orange"
+          }
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

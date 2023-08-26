@@ -1,0 +1,124 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Dot plot",
+  "width": "container",
+  "title": {
+    "text": "Change in life expectancy, 1952 - 2017",
+    "offset": 20
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "country",
+        "oneOf": [
+          "Canada",
+          "Egypt",
+          "Germany",
+          "India",
+          "Nigeria",
+          "United Kingdom"
+        ]
+      }
+    },
+    {
+      "filter": {
+        "field": "year",
+        "oneOf": [
+          "1952",
+          "2017"
+        ]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "lifeExp",
+      "type": "quantitative",
+      "axis": {
+        "title": null
+      }
+    },
+    "y": {
+      "field": "country",
+      "type": "nominal",
+      "axis": {
+        "title": null,
+        "offset": 5,
+        "ticks": false,
+        "minExtent": 70,
+        "domain": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "detail": {
+          "field": "country",
+          "type": "nominal"
+        },
+        "color": {
+          "value": "#212121"
+        },
+        "size": {
+          "value": 1
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "color": {
+          "field": "year",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              1952,
+              2017
+            ],
+            "range": [
+              "#FAA757",
+              "#60BCD3"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom",
+            "direction": "horizontal"
+          }
+        },
+        "size": {
+          "value": 100
+        },
+        "opacity": {
+          "value": 1
+        },
+        "tooltip": [
+          {
+            "field": "lifeExp",
+            "type": "quantitative",
+            "title": "Age (years)"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    },
+    "axis": {
+      "ticks": false,
+      "domainColor": null
+    }
+  }
+}

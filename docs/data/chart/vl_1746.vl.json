@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/cars.json"
+  },
+  "encoding": {
+    "x": {
+      "field": "Origin",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "Cylinders",
+      "type": "ordinal"
+    }
+  },
+  "height": 200,
+  "mark": {
+    "cornerRadiusTopLeft": 8,
+    "opacity": 0.6,
+    "size": 30,
+    "type": "rect"
+  },
+  "width": 200
+}

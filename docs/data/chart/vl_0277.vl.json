@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "",
+  "vconcat": [
+    {
+      "projection": {
+        "type": "naturalEarth1"
+      },
+      "width": 800,
+      "height": 450,
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/JSON/ne_110m_admin_0_countries.json",
+            "format": {
+              "type": "topojson",
+              "feature": "ne_110m_admin_0_countries"
+            }
+          },
+          "transform": [
+            {
+              "filter": "datum.properties.NAME != 'Antarctica'"
+            }
+          ],
+          "mark": {
+            "fill": "lightgray",
+            "type": "geoshape"
+          },
+          "encoding": {
+            "fillOpacity": {
+              "value": 0.5
+            },
+            "color": {
+              "value": "gray"
+            }
+          }
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/JSON/ne_110m_admin_0_countries.json",
+            "format": {
+              "type": "topojson",
+              "feature": "ne_110m_admin_0_countries"
+            }
+          },
+          "transform": [
+            {
+              "filter": "datum.properties.NAME != 'Antarctica'"
+            },
+            {
+              "filter": "datum.properties.NAME == 'Venezuela' || datum.properties.NAME == 'Sudan' || datum.properties.NAME == 'Afghanistan' | datum.properties.NAME == 'Myanmar' || datum.properties.NAME == 'Syria'"
+            }
+          ],
+          "params": [
+            {
+              "name": "hover",
+              "value": "Sudan",
+              "select": {
+                "type": "point",
+                "on": "mouseover",
+                "fields": [
+                  "properties.NAME"
+                ]
+              }
+            },
+            {
+              "name": "countrySelect",
+              "value": "Sudan",
+              "select": {
+                "type": "point",
+                "clear": "dblclick",
+                "fields": [
+                  "properties.NAME"
+                ]
+              }
+            },
+            {
+              "name": "ssda",
+              "value": "Sudan",
+              "bind": {}
+            }
+          ],
+          "mark": {
+            "fill": "red",
+            "type": "geoshape",
+            "cursor": "pointer",
+            "stroke": "black"
+          },
+          "encoding": {
+            "color": {
+              "value": "red"
+            },
+            "strokeWidth": {
+              "condition": [
+                {
+                  "param": "countrySelect",
+                  "empty": false,
+                  "value": 1
+                },
+                {
+                  "param": "hover",
+                  "empty": false,
+                  "value": 0.5
+                }
+              ],
+              "value": 0
+            },
+            "fillOpacity": {
+              "condition": {
+                "param": "countrySelect",
+                "value": 1
+              },
+              "value": 0.2
+            },
+            "tooltip": [
+              {
+                "field": "properties.NAME",
+                "title": "Country of origin"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/timjordanRe/DataVisA2_RefugeeData/main/Datasets/FDP_movement.csv"
+      },
+      "mark": "rect",
+      "encoding": {
+        "y": {
+          "field": "Country of origin",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "Country of asylum",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

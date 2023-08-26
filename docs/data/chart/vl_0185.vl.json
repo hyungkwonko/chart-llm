@@ -1,0 +1,185 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/editor/data/sp500.csv"
+  },
+  "transform": [
+    {
+      "calculate": "+datum.price",
+      "as": "price"
+    }
+  ],
+  "width": 500,
+  "height": 400,
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "title": ""
+      }
+    },
+    "y": {
+      "field": "price",
+      "type": "quantitative"
+    }
+  },
+  "layer": [
+    {
+      "selection": {
+        "range": {
+          "type": "interval",
+          "empty": "none",
+          "encodings": [
+            "x"
+          ],
+          "mark": {
+            "fillOpacity": 0.05
+          }
+        }
+      },
+      "mark": "area"
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "selection": "range"
+          }
+        },
+        {
+          "aggregate": [
+            {
+              "op": "argmin",
+              "field": "date",
+              "as": "left"
+            },
+            {
+              "op": "argmax",
+              "field": "date",
+              "as": "right"
+            }
+          ]
+        },
+        {
+          "calculate": "datum.left.date",
+          "as": "left_date"
+        },
+        {
+          "calculate": "datum.right.date",
+          "as": "right_date"
+        },
+        {
+          "calculate": "datum.left.price",
+          "as": "left_value"
+        },
+        {
+          "calculate": "datum.right.price",
+          "as": "right_value"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "fill": "red",
+            "fillOpacity": 0.05,
+            "strokeWidth": 2,
+            "stroke": "black",
+            "opacity": 0.5,
+            "strokeOpacity": 1,
+            "tooltip": null
+          },
+          "encoding": {
+            "x": {
+              "field": "left_date",
+              "type": "temporal"
+            },
+            "x2": {
+              "field": "right_date",
+              "type": "temporal"
+            },
+            "y": {
+              "field": "left_value",
+              "type": "quantitative"
+            },
+            "y2": {
+              "field": "right_value",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "stroke": "green",
+            "opacity": 0.1,
+            "size": 3
+          },
+          "encoding": {
+            "x": null,
+            "y": {
+              "field": "left_value",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "stroke": "green",
+            "opacity": 0.1,
+            "size": 3
+          },
+          "encoding": {
+            "x": null,
+            "y": {
+              "field": "right_value",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "fontSize": 14,
+            "dx": -40,
+            "dy": -18
+          },
+          "encoding": {
+            "x": {
+              "field": "left_date"
+            },
+            "y": {
+              "field": "left_value",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "left_value"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "fontSize": 14,
+            "dx": 40,
+            "dy": 18
+          },
+          "encoding": {
+            "x": {
+              "field": "right_date"
+            },
+            "y": {
+              "field": "right_value",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "right_value"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

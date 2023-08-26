@@ -1,0 +1,361 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "stroke": null
+    },
+    "background": null
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/articles/2021-08-04-where-are-the-uks-levelling-up-funds-most-needed/data/fig1_imd.csv"
+      },
+      "mark": {
+        "type": "point",
+        "size": 90
+      },
+      "encoding": {
+        "color": {
+          "type": "nominal",
+          "field": "supergroup_name",
+          "legend": {
+            "columns": 2,
+            "labelLimit": 400,
+            "orient": "bottom",
+            "title": "",
+            "labelColor": "#9a9ec9"
+          },
+          "scale": {
+            "range": [
+              "#f06670",
+              "#f06670",
+              "#0174cc",
+              "#0174cc",
+              "#289e72",
+              "#289e72",
+              "#848596",
+              "#848596"
+            ]
+          }
+        },
+        "fill": {
+          "type": "nominal",
+          "field": "supergroup_name",
+          "scale": {
+            "range": [
+              "#f06670",
+              "#111546",
+              "#0174cc",
+              "#111546",
+              "#289e72",
+              "#111546",
+              "#848596",
+              "#111546"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {
+            "value": 0.8,
+            "selection": {
+              "or": [
+                "selector050",
+                "selector051"
+              ]
+            }
+          },
+          "value": 0.1
+        },
+        "shape": {
+          "type": "nominal",
+          "field": "region",
+          "legend": {
+            "columns": 3,
+            "labelLimit": 170,
+            "offset": 30,
+            "orient": "bottom",
+            "labelColor": "#9a9ec9",
+            "symbolFillColor": "#cbcef0",
+            "symbolStrokeColor": "#9a9ec9",
+            "title": ""
+          },
+          "scale": {
+            "range": [
+              "triangle-right",
+              "cross",
+              "circle",
+              "triangle-up",
+              "diamond",
+              "triangle-down",
+              "triangle-left",
+              "M0,.5L.6,.8L.5,.1L1,-.3L.3,-.4L0,-1L-.3,-.4L-1,-.3L-.5,.1L-.6,.8L0,.5Z",
+              "square"
+            ]
+          }
+        },
+        "tooltip": {
+          "type": "nominal",
+          "field": "tooltip"
+        },
+        "x": {
+          "type": "quantitative",
+          "axis": null,
+          "field": "x_axis_imd_rank",
+          "scale": {
+            "domain": [
+              0,
+              300
+            ]
+          }
+        },
+        "y": {
+          "type": "quantitative",
+          "axis": null,
+          "field": "y_axis_allcat_rank",
+          "scale": {
+            "domain": [
+              0,
+              300
+            ]
+          },
+          "sort": []
+        }
+      },
+      "selection": {
+        "selector050": {
+          "type": "multi",
+          "fields": [
+            "supergroup_name"
+          ],
+          "bind": "legend"
+        },
+        "selector051": {
+          "type": "multi",
+          "fields": [
+            "region"
+          ],
+          "bind": "legend"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.region+' \ud83c\udfe8 '+datum.local_authorities+' \ud83d\udcca X: '+datum.x_axis_imd_rank+'. Y: '+datum.y_axis_allcat_rank+'.'",
+          "as": "tooltip"
+        }
+      ]
+    },
+    {
+      "data": {
+        "name": "data-79e22a059cbb2a21887d0892c6a70ea6"
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#3d427a",
+        "strokeDash": [
+          5,
+          3
+        ]
+      },
+      "encoding": {
+        "x": {
+          "type": "quantitative",
+          "field": "x"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-79e22a059cbb2a21887d0892c6a70ea6"
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#3d427a",
+        "strokeDash": [
+          5,
+          3
+        ]
+      },
+      "encoding": {
+        "y": {
+          "type": "quantitative",
+          "field": "x"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-e0e22ad826dab36619fba5650bd09944"
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "color": "#9a9ec9",
+        "size": 11
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "t"
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "x"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "y"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-6653bc0e1bb3a446325f7659d47f899d"
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "angle": 270,
+        "color": "#9a9ec9",
+        "size": 11
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "t"
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "x"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "y"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-777b4bf3f91e59502ae29a0c3d4f53e7"
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "color": "#9a9ec9",
+        "size": 11
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "t"
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "x"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "y"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-34aa14c15345bb3e6a3c9729ddde108d"
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "angle": 270,
+        "color": "#9a9ec9",
+        "size": 11
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "t"
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "x"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "y"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-bab1d4b6b2e1ff1343bf7abec52d680c"
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "color": "#9a9ec9",
+        "size": 10
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "t"
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "x"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "y"
+        }
+      }
+    }
+  ],
+  "height": 400,
+  "title": "",
+  "width": 600,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-79e22a059cbb2a21887d0892c6a70ea6": [
+      {
+        "x": 155
+      }
+    ],
+    "data-e0e22ad826dab36619fba5650bd09944": [
+      {
+        "x": 0,
+        "y": -10,
+        "t": "\u2b05 Increasing deprivation"
+      }
+    ],
+    "data-6653bc0e1bb3a446325f7659d47f899d": [
+      {
+        "x": -10,
+        "y": 0,
+        "t": "\u2b05 Increasing COVID economic impact"
+      }
+    ],
+    "data-777b4bf3f91e59502ae29a0c3d4f53e7": [
+      {
+        "x": 310,
+        "y": 320,
+        "t": "Decreasing deprivation \u27a1"
+      }
+    ],
+    "data-34aa14c15345bb3e6a3c9729ddde108d": [
+      {
+        "x": 320,
+        "y": 310,
+        "t": "Decreasing COVID economic impact \u27a1"
+      }
+    ],
+    "data-bab1d4b6b2e1ff1343bf7abec52d680c": [
+      {
+        "x": 178,
+        "y": -65,
+        "t": "\u2b06 click to filter"
+      }
+    ]
+  }
+}

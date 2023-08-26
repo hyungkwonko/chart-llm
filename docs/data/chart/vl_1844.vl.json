@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "stroke": ""
+    }
+  },
+  "width": 400,
+  "height": 700,
+  "projection": {
+    "type": "identity",
+    "reflectY": true
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://gicentre.github.io/scrc/data/geo/scotLAs2017.json",
+        "format": {
+          "type": "topojson",
+          "feature": "scotLAs2017"
+        }
+      },
+      "encoding": {
+        "color": {
+          "field": "properties.lad17nm",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "scheme": "tableau20"
+          }
+        },
+        "tooltip": {
+          "field": "properties.lad17nm",
+          "type": "nominal"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 2,
+        "strokeJoin": "round",
+        "opacity": 0.2
+      }
+    },
+    {
+      "data": {
+        "url": "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv"
+      },
+      "transform": [
+        {
+          "lookup": "source",
+          "from": {
+            "data": {
+              "url": "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv"
+            },
+            "key": "lad17cd",
+            "fields": [
+              "cx",
+              "cy"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.cx",
+          "as": "oX"
+        },
+        {
+          "calculate": "datum.cy",
+          "as": "oY"
+        },
+        {
+          "lookup": "dest",
+          "from": {
+            "data": {
+              "url": "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv"
+            },
+            "key": "lad17cd",
+            "fields": [
+              "cx",
+              "cy"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.cx",
+          "as": "dX"
+        },
+        {
+          "calculate": "datum.cy",
+          "as": "dY"
+        },
+        {
+          "filter": "datum.oX != datum.dX || datum.oY != datum.dY"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "oX",
+          "type": "quantitative",
+          "scale": {
+            "nice": false,
+            "zero": false,
+            "domain": [
+              70353,
+              465892
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "oY",
+          "type": "quantitative",
+          "scale": {
+            "nice": false,
+            "zero": false,
+            "domain": [
+              535457,
+              1218575
+            ]
+          },
+          "axis": null
+        },
+        "x2": {
+          "field": "dX"
+        },
+        "y2": {
+          "field": "dY"
+        },
+        "strokeWidth": {
+          "field": "total",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "range": [
+              0.2,
+              20
+            ]
+          },
+          "legend": null
+        }
+      },
+      "mark": {
+        "type": "rule",
+        "color": "brown",
+        "opacity": 0.3,
+        "strokeCap": "round"
+      }
+    }
+  ]
+}

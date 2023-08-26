@@ -1,0 +1,94 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "UK Minimum Wage, 1999-2022",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/MinWageUK%20CSV.csv"
+  },
+  "title": {
+    "text": "UK National Minimum Wage, 1995-2021",
+    "anchor": "start",
+    "subtitle": [
+      "Using rates for oldest age group",
+      "Source: Gov.uk"
+    ]
+  },
+  "width": 400,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal"
+    }
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "y": {
+          "field": "MinWage",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "opacity": 1
+      },
+      "selection": {
+        "highlighted": {
+          "type": "single",
+          "on": "mouseover",
+          "encodings": [
+            "x"
+          ],
+          "empty": "none",
+          "nearest": true
+        }
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "selection": "highlighted",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Year",
+            "type": "temporal",
+            "format": "%Y"
+          },
+          {
+            "field": "MinWage",
+            "type": "quantitative",
+            "title": "Minimum Wage"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "opacity": 1,
+        "size": 100,
+        "fill": "white"
+      },
+      "encoding": {
+        "y": {
+          "field": "MinWage",
+          "type": "quantitative",
+          "title": "Minimum Wage (\u00a3)"
+        },
+        "opacity": {
+          "condition": {
+            "selection": "highlighted",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    }
+  ]
+}

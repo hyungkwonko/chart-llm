@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Stamp Duty",
+    "subtitle": "Source: Stampdutyrates.co.uk",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "#FeFeF8",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "height": 400,
+  "width": 600,
+  "description": "StampDuty",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ferguswalshe/ferguswalshe.github.io/main/StampDuty.csv"
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "encoding": {
+    "x": {
+      "field": "Year"
+    },
+    "y": {
+      "field": "StampDuty",
+      "type": "quantitative",
+      "title": "Stamp Duty"
+    },
+    "color": {
+      "field": "Bracket",
+      "type": "nominal",
+      "title": "House Price"
+    }
+  }
+}

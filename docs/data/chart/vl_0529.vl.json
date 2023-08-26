@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart runs from GitHub JSON rather than API for stability.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/library/data_footballAPI.json",
+    "format": {
+      "type": "json",
+      "property": "data"
+    }
+  },
+  "title": {
+    "text": "Premiership - venues",
+    "subtitle": [
+      "Stadium capacity, 20/21 season",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "params": [
+    {
+      "name": "highlight",
+      "select": {
+        "type": "point",
+        "on": "mouseover"
+      }
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "rgba(0,67,167, 1)"
+  },
+  "height": 300,
+  "width": 160,
+  "encoding": {
+    "x": {
+      "field": "venue.capacity",
+      "type": "quantitative",
+      "aggregate": "mean",
+      "title": null
+    },
+    "y": {
+      "field": "venue.name",
+      "type": "ordinal",
+      "title": null
+    },
+    "fillOpacity": {
+      "condition": {
+        "param": "highlight",
+        "value": 1
+      },
+      "value": 0.6
+    },
+    "tooltip": [
+      {
+        "field": "home_team.name",
+        "title": "Team"
+      },
+      {
+        "field": "venue.city",
+        "title": "City"
+      }
+    ]
+  }
+}

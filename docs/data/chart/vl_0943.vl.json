@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Breakdown of CPIH",
+  "title": {
+    "text": "Sources of Inflation",
+    "subtitle": "Contributions to CPIH all items, by sub series. Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/CPIH.csv"
+  },
+  "transform": [
+    {
+      "calculate": "if(datum.Type === 'Housing and household services', 0, if(datum.Type === 'Food and non-alcoholic beverages', 1 ,if(datum.Type === 'Clothing and footwear', 2 , 3)))",
+      "as": "TypeOrder"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "ordinal",
+      "sort": [
+        "0"
+      ],
+      "title": "",
+      "axis": {
+        "labelAngle": 60,
+        "labelFontSize": 8
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "interpolate": "monotone"
+      },
+      "encoding": {
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "title": ""
+        },
+        "color": {
+          "field": "Type",
+          "type": "nominal",
+          "title": "Type of Spending",
+          "scale": {
+            "domain": [
+              "Other goods and services",
+              "Restaurants and hotels",
+              "Recreation and culture",
+              "Transport",
+              "Furniture and household goods",
+              "Alcohol and tobacco",
+              "Clothing and footwear",
+              "Food and non-alcoholic beverages",
+              "Housing and household services"
+            ],
+            "scheme": "viridis",
+            "reverse": true
+          }
+        },
+        "order": {
+          "field": "TypeOrder"
+        },
+        "tooltip": [
+          {
+            "field": "Type",
+            "type": "nominal",
+            "title": "Type of Spending"
+          },
+          {
+            "field": "Value",
+            "type": "quantitative",
+            "title": "Contribution to CPIH inflation"
+          },
+          {
+            "field": "CPIH 12-month inflation rate",
+            "type": "quantitative",
+            "title": "Total CPIH"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "opacity": 0.5,
+        "type": "line",
+        "color": "black"
+      },
+      "encoding": {
+        "y": {
+          "field": "CPIH 12-month inflation rate",
+          "type": "quantitative",
+          "title": "CPIH"
+        }
+      }
+    }
+  ]
+}

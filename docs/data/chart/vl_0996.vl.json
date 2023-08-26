@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/ONS-data-w9.csv"
+  },
+  "title": {
+    "text": "European CO2 emissions",
+    "subtitle": "Chart showing total and per capita CO2 emissions across Europe , Source: ONS",
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Tonnes of CO2e per head",
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Thousand tonnes of CO2e",
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      }
+    },
+    "tooltip": {
+      "field": "Country ",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "Country ",
+      "scale": {
+        "scheme": "inferno"
+      }
+    }
+  }
+}

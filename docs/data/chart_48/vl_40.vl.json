@@ -1,0 +1,191 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/hyungkwonko/tmp-data/main/distributionpz.json",
+    "format": {
+      "type": "json"
+    }
+  },
+  "title": "Gender distribution by UPZ",
+  "hconcat": [
+    {
+      "vconcat": [
+        {
+          "mark": "tick",
+          "height": 1200,
+          "encoding": {
+            "y": {
+              "type": "nominal",
+              "field": "UPlName",
+              "axis": {
+                "title": "UPZ"
+              },
+              "sort": {
+                "op": "sum",
+                "field": "Cnt_UPlCod",
+                "order": "descending"
+              }
+            },
+            "color": {
+              "value": "grey"
+            },
+            "tooltip": [
+              {
+                "field": "UPlName",
+                "type": "nominal",
+                "title": "UPlName"
+              },
+              {
+                "field": "OBJECTID",
+                "type": "quantitative",
+                "title": "OBJECTID",
+                "format": ","
+              }
+            ]
+          },
+          "selection": {
+            "selupz": {
+              "type": "interval",
+              "empty": "none",
+              "encodings": [
+                "y"
+              ],
+              "on": "[mousedown, window:mouseup] > window:mousemove!",
+              "translate": "[mousedown, window:mouseup] > window:mousemove!",
+              "zoom": "wheel!",
+              "mark": {
+                "fill": "#333",
+                "fillOpacity": 0.125,
+                "stroke": "white"
+              },
+              "resolve": "global"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "vconcat": [
+        {
+          "layer": [
+            {
+              "mark": "bar",
+              "width": 1400,
+              "height": 400,
+              "encoding": {
+                "x": {
+                  "type": "ordinal",
+                  "field": "UPlCode",
+                  "axis": {
+                    "title": "UPZ"
+                  },
+                  "sort": {
+                    "op": "sum",
+                    "field": "Cnt_UPlCod",
+                    "order": "descending"
+                  }
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Cnt_UPlCod",
+                  "axis": {
+                    "title": "Whereabouts"
+                  }
+                },
+                "color": {
+                  "condition": {
+                    "selection": "selupz",
+                    "value": "green"
+                  },
+                  "value": "gray"
+                }
+              }
+            },
+            {
+              "mark": "line",
+              "width": 1400,
+              "height": 400,
+              "encoding": {
+                "x": {
+                  "type": "ordinal",
+                  "field": "UPlCode",
+                  "axis": {
+                    "title": "UPZ"
+                  }
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Men_20",
+                  "axis": {
+                    "title": "Men [%]"
+                  }
+                }
+              }
+            },
+            {
+              "mark": "line",
+              "width": 1400,
+              "height": 400,
+              "encoding": {
+                "x": {
+                  "type": "ordinal",
+                  "field": "UPlCode",
+                  "axis": {
+                    "title": "UPZ"
+                  }
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Women_20",
+                  "axis": {
+                    "title": "Women [%]"
+                  }
+                },
+                "color": {
+                  "value": "pink"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "layer": [
+            {
+              "mark": "circle",
+              "width": 1400,
+              "height": 400,
+              "encoding": {
+                "x": {
+                  "type": "ordinal",
+                  "field": "UPlCode",
+                  "axis": {
+                    "title": "UPZ"
+                  },
+                  "sort": {
+                    "op": "sum",
+                    "field": "Cnt_UPlCod",
+                    "order": "descending"
+                  }
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Cnt_UPlCod",
+                  "axis": {
+                    "title": "Whereabouts"
+                  }
+                },
+                "color": {
+                  "condition": {
+                    "selection": "selupz",
+                    "value": "green"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {}
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Wild fires",
+  "title": {
+    "text": "California wildfires - top 20 by size",
+    "subtitle": "Acres. Source: Cal fire",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/chartENV16.csv"
+  },
+  "height": 300,
+  "width": 235,
+  "mark": {
+    "type": "bar",
+    "color": "#86d0bb"
+  },
+  "encoding": {
+    "x": {
+      "field": "Name",
+      "type": "nominal",
+      "sort": "-y",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "Size",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Date",
+        "type": "nominal"
+      },
+      {
+        "field": "Name",
+        "type": "nominal"
+      },
+      {
+        "field": "Size",
+        "type": "quantitative",
+        "title": "Size of fire (acres)"
+      },
+      {
+        "field": "Deaths",
+        "type": "quantitative"
+      }
+    ]
+  }
+}

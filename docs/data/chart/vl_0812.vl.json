@@ -1,0 +1,674 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": {
+    "text": "Total Goals Scored by Top 6 EPL Clubs",
+    "subtitle": [
+      "Goals scored (season) by Top 6 EPL Teams from 2002-2022.",
+      "Source: Wikipedia"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": "container",
+  "data": {
+    "values": [
+      {
+        "Team": "Arsenal",
+        "Year": "02/03",
+        "Goals Scored": 85
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "03/04",
+        "Goals Scored": 73
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "04/05",
+        "Goals Scored": 87
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "05/06",
+        "Goals Scored": 68
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "06/07",
+        "Goals Scored": 63
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "07/08",
+        "Goals Scored": 74
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "08/09",
+        "Goals Scored": 68
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "09/10",
+        "Goals Scored": 83
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "10/11",
+        "Goals Scored": 72
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "11/12",
+        "Goals Scored": 74
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "12/13",
+        "Goals Scored": 72
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "13/14",
+        "Goals Scored": 68
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "14/15",
+        "Goals Scored": 71
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "15/16",
+        "Goals Scored": 65
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "16/17",
+        "Goals Scored": 77
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "17/18",
+        "Goals Scored": 74
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "18/19",
+        "Goals Scored": 73
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "19/20",
+        "Goals Scored": 56
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "20/21",
+        "Goals Scored": 55
+      },
+      {
+        "Team": "Arsenal",
+        "Year": "21/22",
+        "Goals Scored": 61
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "02/03",
+        "Goals Scored": 68
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "03/04",
+        "Goals Scored": 67
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "04/05",
+        "Goals Scored": 72
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "05/06",
+        "Goals Scored": 72
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "06/07",
+        "Goals Scored": 64
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "07/08",
+        "Goals Scored": 65
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "08/09",
+        "Goals Scored": 68
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "09/10",
+        "Goals Scored": 103
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "10/11",
+        "Goals Scored": 69
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "11/12",
+        "Goals Scored": 65
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "12/13",
+        "Goals Scored": 75
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "13/14",
+        "Goals Scored": 71
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "14/15",
+        "Goals Scored": 73
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "15/16",
+        "Goals Scored": 59
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "16/17",
+        "Goals Scored": 85
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "17/18",
+        "Goals Scored": 62
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "18/19",
+        "Goals Scored": 63
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "19/20",
+        "Goals Scored": 69
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "20/21",
+        "Goals Scored": 58
+      },
+      {
+        "Team": "Chelsea",
+        "Year": "21/22",
+        "Goals Scored": 76
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "02/03",
+        "Goals Scored": 61
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "03/04",
+        "Goals Scored": 55
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "04/05",
+        "Goals Scored": 52
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "05/06",
+        "Goals Scored": 57
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "06/07",
+        "Goals Scored": 57
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "07/08",
+        "Goals Scored": 67
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "08/09",
+        "Goals Scored": 77
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "09/10",
+        "Goals Scored": 61
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "10/11",
+        "Goals Scored": 59
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "11/12",
+        "Goals Scored": 47
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "12/13",
+        "Goals Scored": 71
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "13/14",
+        "Goals Scored": 101
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "14/15",
+        "Goals Scored": 52
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "15/16",
+        "Goals Scored": 63
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "16/17",
+        "Goals Scored": 78
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "17/18",
+        "Goals Scored": 84
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "18/19",
+        "Goals Scored": 89
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "19/20",
+        "Goals Scored": 85
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "20/21",
+        "Goals Scored": 68
+      },
+      {
+        "Team": "Liverpool",
+        "Year": "21/22",
+        "Goals Scored": 94
+      },
+      {
+        "Team": "Man City",
+        "Year": "02/03",
+        "Goals Scored": 47
+      },
+      {
+        "Team": "Man City",
+        "Year": "03/04",
+        "Goals Scored": 55
+      },
+      {
+        "Team": "Man City",
+        "Year": "04/05",
+        "Goals Scored": 47
+      },
+      {
+        "Team": "Man City",
+        "Year": "05/06",
+        "Goals Scored": 43
+      },
+      {
+        "Team": "Man City",
+        "Year": "06/07",
+        "Goals Scored": 29
+      },
+      {
+        "Team": "Man City",
+        "Year": "07/08",
+        "Goals Scored": 45
+      },
+      {
+        "Team": "Man City",
+        "Year": "08/09",
+        "Goals Scored": 58
+      },
+      {
+        "Team": "Man City",
+        "Year": "09/10",
+        "Goals Scored": 73
+      },
+      {
+        "Team": "Man City",
+        "Year": "10/11",
+        "Goals Scored": 60
+      },
+      {
+        "Team": "Man City",
+        "Year": "11/12",
+        "Goals Scored": 93
+      },
+      {
+        "Team": "Man City",
+        "Year": "12/13",
+        "Goals Scored": 66
+      },
+      {
+        "Team": "Man City",
+        "Year": "13/14",
+        "Goals Scored": 102
+      },
+      {
+        "Team": "Man City",
+        "Year": "14/15",
+        "Goals Scored": 83
+      },
+      {
+        "Team": "Man City",
+        "Year": "15/16",
+        "Goals Scored": 71
+      },
+      {
+        "Team": "Man City",
+        "Year": "16/17",
+        "Goals Scored": 80
+      },
+      {
+        "Team": "Man City",
+        "Year": "17/18",
+        "Goals Scored": 106
+      },
+      {
+        "Team": "Man City",
+        "Year": "18/19",
+        "Goals Scored": 95
+      },
+      {
+        "Team": "Man City",
+        "Year": "19/20",
+        "Goals Scored": 102
+      },
+      {
+        "Team": "Man City",
+        "Year": "20/21",
+        "Goals Scored": 83
+      },
+      {
+        "Team": "Man City",
+        "Year": "21/22",
+        "Goals Scored": 99
+      },
+      {
+        "Team": "Man United",
+        "Year": "02/03",
+        "Goals Scored": 74
+      },
+      {
+        "Team": "Man United",
+        "Year": "03/04",
+        "Goals Scored": 64
+      },
+      {
+        "Team": "Man United",
+        "Year": "04/05",
+        "Goals Scored": 58
+      },
+      {
+        "Team": "Man United",
+        "Year": "05/06",
+        "Goals Scored": 72
+      },
+      {
+        "Team": "Man United",
+        "Year": "06/07",
+        "Goals Scored": 83
+      },
+      {
+        "Team": "Man United",
+        "Year": "07/08",
+        "Goals Scored": 80
+      },
+      {
+        "Team": "Man United",
+        "Year": "08/09",
+        "Goals Scored": 68
+      },
+      {
+        "Team": "Man United",
+        "Year": "09/10",
+        "Goals Scored": 86
+      },
+      {
+        "Team": "Man United",
+        "Year": "10/11",
+        "Goals Scored": 78
+      },
+      {
+        "Team": "Man United",
+        "Year": "11/12",
+        "Goals Scored": 89
+      },
+      {
+        "Team": "Man United",
+        "Year": "12/13",
+        "Goals Scored": 86
+      },
+      {
+        "Team": "Man United",
+        "Year": "13/14",
+        "Goals Scored": 64
+      },
+      {
+        "Team": "Man United",
+        "Year": "14/15",
+        "Goals Scored": 62
+      },
+      {
+        "Team": "Man United",
+        "Year": "15/16",
+        "Goals Scored": 49
+      },
+      {
+        "Team": "Man United",
+        "Year": "16/17",
+        "Goals Scored": 54
+      },
+      {
+        "Team": "Man United",
+        "Year": "17/18",
+        "Goals Scored": 68
+      },
+      {
+        "Team": "Man United",
+        "Year": "18/19",
+        "Goals Scored": 65
+      },
+      {
+        "Team": "Man United",
+        "Year": "19/20",
+        "Goals Scored": 66
+      },
+      {
+        "Team": "Man United",
+        "Year": "20/21",
+        "Goals Scored": 73
+      },
+      {
+        "Team": "Man United",
+        "Year": "21/22",
+        "Goals Scored": 57
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "02/03",
+        "Goals Scored": 51
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "03/04",
+        "Goals Scored": 47
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "04/05",
+        "Goals Scored": 47
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "05/06",
+        "Goals Scored": 53
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "06/07",
+        "Goals Scored": 57
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "07/08",
+        "Goals Scored": 66
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "08/09",
+        "Goals Scored": 45
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "09/10",
+        "Goals Scored": 67
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "10/11",
+        "Goals Scored": 55
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "11/12",
+        "Goals Scored": 66
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "12/13",
+        "Goals Scored": 66
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "13/14",
+        "Goals Scored": 55
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "14/15",
+        "Goals Scored": 58
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "15/16",
+        "Goals Scored": 69
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "16/17",
+        "Goals Scored": 86
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "17/18",
+        "Goals Scored": 74
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "18/19",
+        "Goals Scored": 67
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "19/20",
+        "Goals Scored": 61
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "20/21",
+        "Goals Scored": 68
+      },
+      {
+        "Team": "Tottenham",
+        "Year": "21/22",
+        "Goals Scored": 69
+      }
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "nominal",
+      "axis": {
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "Goals Scored",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "Year",
+        "type": "nominal",
+        "title": "Year"
+      },
+      {
+        "field": "Goals Scored",
+        "type": "quantitative",
+        "title": "Goals Scored"
+      },
+      {
+        "field": "Team",
+        "type": "ordinal",
+        "title": "Team"
+      }
+    ],
+    "color": {
+      "field": "Team",
+      "scale": {
+        "range": [
+          "#EF0107",
+          "#034694",
+          "#00B2A9",
+          "#4fc3f7",
+          "#FBE122",
+          "black"
+        ]
+      },
+      "title": "Team",
+      "legend": {
+        "orient": "bottom",
+        "columns": 1,
+        "fillColor": "#FfFfFf"
+      }
+    }
+  }
+}

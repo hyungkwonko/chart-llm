@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Total number of points in World Cup final history",
+    "subtitleFontSize": 11,
+    "fontSize": 12,
+    "subtitle": "Source: Wikipedia",
+    "subtitleFontStyle": "italic"
+  },
+  "background": "floralwhite",
+  "data": {
+    "url": "https://raw.githubusercontent.com/dannysupple/dannysupple.github.io/main/wc_finals_mastersheet_continents(1).csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 580,
+  "width": 260,
+  "mark": {
+    "type": "bar",
+    "size": 5.5
+  },
+  "type": "text",
+  "selection": {
+    "Continent": {
+      "type": "single",
+      "fields": [
+        "Continent"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Africa",
+          "Asia",
+          "Europe",
+          "North and Central America",
+          "South America"
+        ],
+        "name": "Continent"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "Continent"
+      }
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "Country",
+      "type": "nominal",
+      "title": "",
+      "sort": "-x",
+      "axis": {
+        "labelAngle": 0,
+        "labelFontSize": 9.4
+      }
+    },
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "title": "Continent:",
+      "scale": {
+        "scheme": "set1"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "Points",
+        "type": "nominal",
+        "title": "Total points"
+      }
+    ],
+    "x": {
+      "field": "Points",
+      "type": "quantitative",
+      "axis": {
+        "labelAngle": 0,
+        "grid": true,
+        "gridColor": "#C2C3C0"
+      }
+    }
+  },
+  "config": {}
+}

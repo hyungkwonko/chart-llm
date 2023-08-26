@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/antoniolch/KickstarterProjectDetails/master/data/whole_kickstarter_projects_filtered_vis3.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "launched": "utc:'%Y-%m-%d %H:%M:%S'"
+      }
+    }
+  },
+  "title": {
+    "text": "Robot and 3D Printing Launch",
+    "anchor": "middle",
+    "fontSize": 15
+  },
+  "width": 400,
+  "height": 400,
+  "transform": [
+    {
+      "filter": "year(datum.launched) > 2013"
+    },
+    {
+      "filter": "year(datum.launched) < 2018"
+    }
+  ],
+  "mark": {
+    "type": "line"
+  },
+  "encoding": {
+    "y": {
+      "field": "ID",
+      "title": "Number of Projects Launched",
+      "aggregate": "count",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "launched",
+      "timeUnit": "year",
+      "title": "Year",
+      "type": "ordinal",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "legend": {
+        "title": "Category",
+        "orient": "top-right"
+      },
+      "scale": {
+        "range": [
+          "rgb(255,128,14)",
+          "rgb(0,107,164)",
+          "rgb(171,171,171)"
+        ]
+      }
+    }
+  }
+}

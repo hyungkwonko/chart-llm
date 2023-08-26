@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "An ordered donut chart, with a filter from raw data",
+  "height": 300,
+  "width": 300,
+  "view": {
+    "stroke": "transparent"
+  },
+  "title": {
+    "text": "US GDP - expenditure",
+    "subtitle": [
+      "2022 Q3, excluding trade. Source: BEA",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDPdetail.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Number",
+        "oneOf": [
+          4,
+          5,
+          6,
+          10,
+          11,
+          12,
+          13,
+          24,
+          25,
+          26
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "arc",
+    "innerRadius": 60,
+    "outerRadius": 120,
+    "cornerRadius": 0,
+    "padAngle": 0.02
+  },
+  "encoding": {
+    "theta": {
+      "field": "Value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Item",
+      "type": "nominal",
+      "legend": {
+        "title": null
+      },
+      "sort": {
+        "field": "Number",
+        "order": "ascending"
+      },
+      "scale": {
+        "range": [
+          "rgb(128,0,0)",
+          "rgb(128,0,0)",
+          "rgb(128,0,0)",
+          "rgb(118,118,118)",
+          "rgb(118,118,118)",
+          "rgb(118,118,118)",
+          "rgb(118,118,118)",
+          "rgb(214,214,206)",
+          "rgb(214,214,206)",
+          "rgb(214,214,206)"
+        ]
+      }
+    },
+    "order": {
+      "field": "Number",
+      "type": "quantitative",
+      "sort": "ascending"
+    },
+    "tooltip": [
+      {
+        "field": "Item",
+        "title": "Item",
+        "format": ""
+      },
+      {
+        "field": "Value",
+        "title": "USD billions",
+        "format": "$,"
+      }
+    ]
+  }
+}

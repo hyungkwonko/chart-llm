@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/cars.json"
+  },
+  "encoding": {
+    "x": {
+      "field": "Horsepower",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Miles_per_Gallon",
+      "type": "quantitative"
+    }
+  },
+  "height": 200,
+  "mark": "circle",
+  "title": {
+    "subtitle": [
+      "A subtitle",
+      "also over two lines"
+    ],
+    "text": [
+      "Car",
+      "Scatter"
+    ]
+  },
+  "width": 200
+}

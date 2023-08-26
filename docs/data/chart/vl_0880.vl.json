@@ -1,0 +1,135 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "autosize": {
+    "resize": true
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jisnu-Palanisamy/FIT3179/main/COVID-19%20Coronavirus.csv"
+  },
+  "params": [
+    {
+      "name": "highlight",
+      "select": {
+        "type": "point",
+        "on": "mouseover"
+      }
+    },
+    {
+      "name": "select",
+      "select": "point"
+    }
+  ],
+  "hconcat": [
+    {
+      "width": 400,
+      "height": 500,
+      "mark": {
+        "type": "bar",
+        "stroke": "black",
+        "cursor": "pointer"
+      },
+      "title": "Sum of Total Cases In Each Continent",
+      "encoding": {
+        "x": {
+          "field": "Continent",
+          "type": "nominal"
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "TotalCasesPer1MPop",
+          "type": "quantitative",
+          "axis": {
+            "domain": false,
+            "grid": false,
+            "ticks": false
+          },
+          "title": "Sum of Total Cases/1 Million Population"
+        },
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "legend": null
+        },
+        "fillOpacity": {
+          "condition": {
+            "param": "select",
+            "value": 1
+          },
+          "value": 0.3
+        },
+        "tooltip": [
+          {
+            "field": "Continent"
+          },
+          {
+            "field": "TotalCases",
+            "aggregate": "sum",
+            "title": "Sum of Total Cases/1 Million Population",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "mark": {
+        "type": "bar",
+        "stroke": "black",
+        "cursor": "pointer"
+      },
+      "title": "Sum of Total Deaths In Each Continent",
+      "encoding": {
+        "x": {
+          "field": "Continent",
+          "type": "nominal"
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "TotalDeathsPer1MPop",
+          "type": "quantitative",
+          "axis": {
+            "domain": false,
+            "grid": false,
+            "ticks": false
+          },
+          "title": "Sum of Total Deaths/1 Million Population"
+        },
+        "color": {
+          "field": "Continent",
+          "type": "nominal"
+        },
+        "fillOpacity": {
+          "condition": {
+            "param": "select",
+            "value": 1
+          },
+          "value": 0.3
+        },
+        "tooltip": [
+          {
+            "field": "Continent"
+          },
+          {
+            "field": "TotalDeaths",
+            "aggregate": "sum",
+            "title": "Sum of Total Deaths/1 Million Population",
+            "format": ","
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFont": "Sans-Serif",
+      "titleFont": "Sans-Serif"
+    },
+    "title": {
+      "font": "Sans-Serif",
+      "fontSize": 24,
+      "fontWeight": "bold",
+      "fontStyle": "italic"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Multiple line chart",
+  "width": "container",
+  "title": {
+    "text": "Total coal consumption by region, 1965-2016"
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder_dcoal.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "coalConsumption",
+        "valid": true
+      }
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "coalConsumption",
+          "as": "total"
+        }
+      ],
+      "groupby": [
+        "region",
+        "year"
+      ]
+    }
+  ],
+  "mark": "area",
+  "selection": {
+    "choice": {
+      "type": "multi",
+      "fields": [
+        "region"
+      ],
+      "bind": "legend"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "timeUnit": "year",
+      "axis": {
+        "domain": false,
+        "grid": false,
+        "title": null,
+        "format": "%Y",
+        "tickSize": 0
+      }
+    },
+    "y": {
+      "field": "total",
+      "type": "quantitative",
+      "axis": null,
+      "stack": "center"
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Africa",
+          "Americas",
+          "Asia",
+          "Europe"
+        ],
+        "range": [
+          "#08C5ED",
+          "#80D322",
+          "#FF6973",
+          "#FFDC25"
+        ]
+      },
+      "legend": {
+        "title": null
+      }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "choice",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "region",
+        "type": "nominal",
+        "title": "Region"
+      },
+      {
+        "field": "total",
+        "type": "quantitative",
+        "title": "Coal consumption (tonnes)",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

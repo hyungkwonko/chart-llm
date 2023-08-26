@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A line chart showing the total amount of money committed every year between 1991 and 2010",
+  "data": {
+    "url": "https://raw.githubusercontent.com/grantat/cs725-blog/6c77cd08497a86c6495df1c40635ef033a1e71c7/static/data/v3/year_amount.json"
+  },
+  "transform": [
+    {
+      "filter": "datum.year <= 2010"
+    }
+  ],
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": {
+        "title": "years"
+      }
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "amount",
+      "type": "quantitative",
+      "axis": {
+        "title": "total funds (million)"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "Name",
+      "type": "nominal",
+      "aggregate": null
+    },
+    "y": {
+      "field": "Salary",
+      "type": "quantitative",
+      "aggregate": "null",
+      "axis": {
+        "format": "s"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Foot",
+        "oneOf": [
+          "Left"
+        ]
+      }
+    },
+    {
+      "filter": {
+        "field": "Position",
+        "oneOf": [
+          "Forward"
+        ]
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/nl4dv/nl4dv/master/examples/assets/data/euro.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "ignore-orientation": "True",
+  "config": {}
+}

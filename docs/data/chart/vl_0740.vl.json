@@ -1,0 +1,119 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "High Giving Index \u2192": "A",
+        "High Median Age \u2192": "A",
+        "color": "7",
+        "Meaning": "High WGI, Low Median Age"
+      },
+      {
+        "High Giving Index \u2192": "A",
+        "High Median Age \u2192": "B",
+        "color": "8",
+        "Meaning": "High WGI, Average Median Age"
+      },
+      {
+        "High Giving Index \u2192": "A",
+        "High Median Age \u2192": "C",
+        "color": "9",
+        "Meaning": "High WGI, High Median Age"
+      },
+      {
+        "High Giving Index \u2192": "B",
+        "High Median Age \u2192": "A",
+        "color": "4",
+        "Meaning": "Average WGI, Low Median Age"
+      },
+      {
+        "High Giving Index \u2192": "B",
+        "High Median Age \u2192": "B",
+        "color": "5",
+        "Meaning": "Average WGI, Average Median Age"
+      },
+      {
+        "High Giving Index \u2192": "B",
+        "High Median Age \u2192": "C",
+        "color": "6",
+        "Meaning": "Average WGI, High Median Age"
+      },
+      {
+        "High Giving Index \u2192": "C",
+        "High Median Age \u2192": "A",
+        "color": "1",
+        "Meaning": "Low WGI, Low Median Age"
+      },
+      {
+        "High Giving Index \u2192": "C",
+        "High Median Age \u2192": "B",
+        "color": "2",
+        "Meaning": "Low WGI, Average Median Age"
+      },
+      {
+        "High Giving Index \u2192": "C",
+        "High Median Age \u2192": "C",
+        "color": "3",
+        "Meaning": "Low WGI, High Median Age"
+      }
+    ]
+  },
+  "mark": {
+    "type": "rect"
+  },
+  "config": {
+    "background": "transparent",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "height": 140,
+  "width": 140,
+  "encoding": {
+    "y": {
+      "field": "High Giving Index \u2192",
+      "type": "nominal",
+      "axis": {
+        "domainColor": "transparent",
+        "labels": false,
+        "ticks": false,
+        "titleColor": "black"
+      }
+    },
+    "x": {
+      "field": "High Median Age \u2192",
+      "type": "nominal",
+      "axis": {
+        "domainColor": "transparent",
+        "labels": false,
+        "ticks": false,
+        "titleColor": "black"
+      }
+    },
+    "color": {
+      "legend": null,
+      "type": "nominal",
+      "field": "color",
+      "scale": {
+        "range": [
+          "#FFF7FB",
+          "#ECE7F2",
+          "#D0D1E6",
+          "#A6BDDB",
+          "#74A9CF",
+          "#3690C0",
+          "#0570B0",
+          "#045A8D",
+          "#023858"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Meaning",
+        "type": "nominal",
+        "title": "Classification"
+      }
+    ]
+  }
+}

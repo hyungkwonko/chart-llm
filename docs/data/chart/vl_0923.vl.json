@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": " Household Spending",
+    "subtitle": "Composition of spending, by income quitile and sub series. Source: Joseph Rowntree Foundation",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 250,
+  "width": 250,
+  "data": {
+    "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/quintile_hhspending.csv"
+  },
+  "transform": [
+    {
+      "calculate": "if(datum.Type === 'Housing, water, electricity', 0, if(datum.Type === 'Food and non-alcoholic drinks', 1 ,if(datum.Type === 'Clothing and footwear', 2 , 3)))",
+      "as": "TypeOrder"
+    }
+  ],
+  "params": [
+    {
+      "name": "highlight",
+      "select": {
+        "type": "point",
+        "on": "mouseover"
+      }
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Income Quintile",
+      "type": "nominal",
+      "title": "Equivilised Income Quintile"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Percentage of Total Spend"
+    },
+    "fillOpacity": {
+      "condition": {
+        "param": "highlight",
+        "value": 1
+      },
+      "value": 0.6
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "title": "Type of Spending",
+      "scale": {
+        "domain": [
+          "Other",
+          "Miscellaneous goods and services",
+          "Restaurants and hotels",
+          "Education",
+          "Recreation and culture",
+          "Communication",
+          "Transport",
+          "Health",
+          "Households goods and services",
+          "Alcohol and tobacco",
+          "Clothing and footwear",
+          "Food and non-alcoholic drinks",
+          "Housing, water, electricity"
+        ],
+        "scheme": "inferno"
+      }
+    },
+    "order": {
+      "field": "TypeOrder"
+    },
+    "tooltip": [
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Percentage (%)"
+      },
+      {
+        "field": "Type",
+        "type": "nominal",
+        "title": "Type of Spending"
+      }
+    ]
+  }
+}

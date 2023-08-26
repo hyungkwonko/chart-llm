@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/demographicsUN.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "title": {
+    "text": "Getting older fast",
+    "subtitle": [
+      "Share of popluation that is aged 65+. Source: UN",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "height": 400,
+  "width": 300,
+  "view": {
+    "stroke": "transparent"
+  },
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "Region"
+      }
+    },
+    {
+      "filter": "datum.Region!='Democratic Republic of the Congo'"
+    }
+  ],
+  "selection": {
+    "Region": {
+      "type": "single",
+      "fields": [
+        "Region"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Australia",
+          "Bangladesh",
+          "Brazil",
+          "Canada",
+          "Chile",
+          "China",
+          "France",
+          "India",
+          "Indonesia",
+          "Italy",
+          "France",
+          "Japan",
+          "Republic of Korea",
+          "Spain",
+          "United Kingdom",
+          "United States of America"
+        ],
+        "name": "Select a country"
+      }
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10
+      }
+    },
+    "y": {
+      "field": "sh_65+",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "format": "%"
+      }
+    },
+    "color": {
+      "field": "Region",
+      "type": "nominal",
+      "legend": {
+        "orient": "top-left",
+        "columns": 2,
+        "title": null,
+        "labelExpr": "{'WORLD':'World','Japan':'Japan','United States of America':'USA'}[datum.label]"
+      },
+      "scale": {
+        "range": [
+          "rgba(128,0,0,0.2)",
+          "rgba(128,0,0,0.2)",
+          "rgba(128,0,0,0.2)",
+          "rgba(128,0,0,0.2)",
+          "rgba(128,0,0,0.2)",
+          "rgba(128,0,0,0.2)",
+          "rgba(128,0,0,0.2)",
+          "rgba(128,0,0,0.2)",
+          "rgba(128,0,0,0.2)",
+          "rgba(128,0,0,0.2)",
+          "rgba(0,150,150,1)",
+          "rgba(128,0,0,0.2)",
+          "rgba(128,0,0,0.2)",
+          "rgba(128,0,0,0.2)",
+          "rgba(0,67,167,1)",
+          "rgba(128,0,0,1)"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/driving.json"
+  },
+  "encoding": {
+    "size": {
+      "field": "year",
+      "legend": null,
+      "type": "temporal"
+    },
+    "x": {
+      "field": "miles",
+      "scale": {
+        "zero": false
+      },
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "gas",
+      "scale": {
+        "zero": false
+      },
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "order": false,
+    "type": "trail"
+  }
+}

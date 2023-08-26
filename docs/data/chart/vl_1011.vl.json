@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "London 2012 Olympics Medal Distrobution - Top 20 Nations",
+    "subtitle": "Source: Wikipedia",
+    "subtitleFontStyle": "italic"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/Data/2012medals%20(1).csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Country",
+      "type": "ordinal",
+      "title": "Country",
+      "sort": "-y"
+    },
+    "y": {
+      "field": "Total",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Medal",
+      "type": "ordinal",
+      "scale": {
+        "domain": [
+          "Gold",
+          "Silver",
+          "Bronze"
+        ],
+        "range": [
+          "#e7ba52",
+          "#A7A7AD",
+          "#A77044"
+        ]
+      },
+      "title": "Medal Type"
+    },
+    "order": {
+      "aggregate": "count"
+    }
+  }
+}

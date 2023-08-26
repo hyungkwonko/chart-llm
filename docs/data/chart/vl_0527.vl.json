@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/MW17668/MW17668.github.io/main/myDataJuly1.csv"
+  },
+  "mark": "bar",
+  "width": 250,
+  "height": 300,
+  "title": {
+    "text": "Food - CO2 greenhouse gas emissions",
+    "subtitle": "Kg of CO2 emitted per kg of food, source: Our World in Data",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "encoding": {
+    "y": {
+      "field": "Entity",
+      "sort": "-x",
+      "type": "ordinal",
+      "title": null
+    },
+    "x": {
+      "field": "food_emissions",
+      "title": null,
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "legend": {
+        "orient": "bottom-right"
+      },
+      "scale": {
+        "domain": [
+          "Land Use",
+          "Farm",
+          "Animal Feed",
+          "Processing",
+          "Transport",
+          "Retail",
+          "Packaging"
+        ],
+        "scheme": "yellowgreenblue"
+      },
+      "title": "Emissions from:"
+    }
+  }
+}

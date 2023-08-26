@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": {
+    "text": "Comfortability of data being shared",
+    "subtitle": [
+      "A survey showing the comfortability of data being shared with government",
+      "given clear explanations of use.",
+      "Source: Delta Poll Survey Results"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 270,
+  "height": 200,
+  "data": {
+    "values": [
+      {
+        "Responce": "0 - Much Less Comfortable",
+        "Percentage of Responces": 2
+      },
+      {
+        "Responce": "1",
+        "Percentage of Responces": 2
+      },
+      {
+        "Responce": "2",
+        "Percentage of Responces": 3
+      },
+      {
+        "Responce": "3",
+        "Percentage of Responces": 4
+      },
+      {
+        "Responce": "4",
+        "Percentage of Responces": 4
+      },
+      {
+        "Responce": "5",
+        "Percentage of Responces": 14
+      },
+      {
+        "Responce": "6",
+        "Percentage of Responces": 11
+      },
+      {
+        "Responce": "7",
+        "Percentage of Responces": 15
+      },
+      {
+        "Responce": "8",
+        "Percentage of Responces": 17
+      },
+      {
+        "Responce": "9",
+        "Percentage of Responces": 8
+      },
+      {
+        "Responce": "10 - Much More comfortable",
+        "Percentage of Responces": 12
+      },
+      {
+        "Responce": "Don't know",
+        "Percentage of Responces": 7
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Responce",
+      "type": "nominal",
+      "axis": {
+        "labelAngle": 45
+      },
+      "sort": ""
+    },
+    "y": {
+      "field": "Percentage of Responces",
+      "type": "quantitative"
+    }
+  }
+}

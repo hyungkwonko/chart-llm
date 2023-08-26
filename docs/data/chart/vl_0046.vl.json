@@ -1,0 +1,26 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/mobility.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "State",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "State",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "width": "container",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
+}

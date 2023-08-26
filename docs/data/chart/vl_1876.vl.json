@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "repeat": {
+    "row": [
+      "h",
+      "s",
+      "l"
+    ],
+    "column": [
+      "h",
+      "s",
+      "l"
+    ]
+  },
+  "spec": {
+    "data": {
+      "url": "https://raw.githubusercontent.com/lepisma/lepisma.github.io/0002191ab5505517653d672405ba940c26687b11/blog/2019/10/31/github-linguist-colors/linguist-data.json",
+      "format": {
+        "type": "json"
+      }
+    },
+    "mark": {
+      "type": "point"
+    },
+    "transform": [
+      {
+        "calculate": "'https://github.com/trending?l=' + datum.name",
+        "as": "url"
+      }
+    ],
+    "selection": {
+      "brush": {
+        "type": "interval",
+        "resolve": "union",
+        "on": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
+        "translate": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
+        "zoom": "wheel![event.shiftKey]"
+      },
+      "grid": {
+        "type": "interval",
+        "resolve": "global",
+        "bind": "scales",
+        "translate": "[mousedown[!event.shiftKey], window:mouseup] > window:mousemove!",
+        "zoom": "wheel![!event.shiftKey]"
+      }
+    },
+    "encoding": {
+      "x": {
+        "field": {
+          "repeat": "column"
+        },
+        "type": "quantitative"
+      },
+      "y": {
+        "field": {
+          "repeat": "row"
+        },
+        "type": "quantitative",
+        "axis": {
+          "minExtent": 30
+        }
+      },
+      "tooltip": {
+        "field": "name",
+        "type": "nominal"
+      },
+      "href": {
+        "field": "url",
+        "type": "nominal"
+      },
+      "color": {
+        "condition": {
+          "selection": "brush",
+          "field": "color",
+          "type": "nominal",
+          "scale": null
+        },
+        "value": "gray"
+      }
+    }
+  }
+}

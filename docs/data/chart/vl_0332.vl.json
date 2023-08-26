@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 300,
+  "width": 100,
+  "title": {
+    "text": "Cryptocurrency ownership by ethnicity in USA",
+    "subtitle": "as a % of the population or total crypto owners, source: Morning Consult Crypto Report",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {
+        "category": "All US adults",
+        "Ethnicity": "White",
+        "value": 67
+      },
+      {
+        "category": "All US adults",
+        "Ethnicity": "Black",
+        "value": 11
+      },
+      {
+        "category": "All US adults",
+        "Ethnicity": "Hispanic",
+        "value": 17
+      },
+      {
+        "category": "All US adults",
+        "Ethnicity": "Asian or other",
+        "value": 5
+      },
+      {
+        "category": "Crypto owners",
+        "Ethnicity": "White",
+        "value": 58
+      },
+      {
+        "category": "Crypto owners",
+        "Ethnicity": "Black",
+        "value": 12
+      },
+      {
+        "category": "Crypto owners",
+        "Ethnicity": "Hispanic",
+        "value": 23
+      },
+      {
+        "category": "Crypto owners",
+        "Ethnicity": "Asian or other",
+        "value": 6
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "Ethnicity",
+      "type": "nominal",
+      "title": null
+    },
+    "x": {
+      "field": "category",
+      "type": "nominal",
+      "axis": null
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "title": null
+      }
+    },
+    "color": {
+      "field": "category",
+      "title": null,
+      "scale": {
+        "range": [
+          "#033542",
+          "#78969d"
+        ]
+      }
+    }
+  }
+}

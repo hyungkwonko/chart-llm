@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": [
+      "Canada Population Density by Province"
+    ],
+    "subtitle": [
+      "Data: Statistics Canada"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/vikrajendran/vikrajendran.github.io/main/canadaprov.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "conicConformal",
+    "rotate": [
+      0,
+      70
+    ]
+  },
+  "transform": [
+    {
+      "lookup": "properties.gn_name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/vikrajendran/vikrajendran.github.io/main/CanadaDensity.csv"
+        },
+        "key": "Province",
+        "fields": [
+          "Population density per square kilometre, 2021"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "lightgray",
+    "strokeWidth": 0.3
+  },
+  "encoding": {
+    "color": {
+      "field": "Population density per square kilometre, 2021",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "magma"
+      },
+      "legend": {
+        "orient": "bottom"
+      },
+      "title": "People per Km\u00b2"
+    },
+    "tooltip": [
+      {
+        "field": "properties.gn_name",
+        "type": "nominal",
+        "title": "Province"
+      },
+      {
+        "field": "Population density per square kilometre, 2021",
+        "type": "quantitative",
+        "title": "Population Density",
+        "format": ".1f"
+      }
+    ]
+  }
+}

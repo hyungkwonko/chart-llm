@@ -1,0 +1,234 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-285791de425a3c8a7f42e15d3945312b"
+  },
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "type": "nominal",
+      "field": "score_type",
+      "scale": {
+        "domain": [
+          "mean_train_score",
+          "mean_cv_score"
+        ],
+        "range": [
+          "teal",
+          "gold"
+        ]
+      }
+    },
+    "x": {
+      "type": "quantitative",
+      "axis": {
+        "title": "Tree Depth"
+      },
+      "field": "depth"
+    },
+    "y": {
+      "type": "quantitative",
+      "field": "accuracy"
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-285791de425a3c8a7f42e15d3945312b": [
+      {
+        "depth": 1,
+        "score_type": "mean_train_score",
+        "accuracy": 0.8343487858719646
+      },
+      {
+        "depth": 2,
+        "score_type": "mean_train_score",
+        "accuracy": 0.8449889624724062
+      },
+      {
+        "depth": 3,
+        "score_type": "mean_train_score",
+        "accuracy": 0.8629668874172186
+      },
+      {
+        "depth": 4,
+        "score_type": "mean_train_score",
+        "accuracy": 0.9068653421633552
+      },
+      {
+        "depth": 5,
+        "score_type": "mean_train_score",
+        "accuracy": 0.9188476821192054
+      },
+      {
+        "depth": 6,
+        "score_type": "mean_train_score",
+        "accuracy": 0.9308167770419427
+      },
+      {
+        "depth": 7,
+        "score_type": "mean_train_score",
+        "accuracy": 0.9541147902869757
+      },
+      {
+        "depth": 8,
+        "score_type": "mean_train_score",
+        "accuracy": 0.9720662251655628
+      },
+      {
+        "depth": 9,
+        "score_type": "mean_train_score",
+        "accuracy": 0.980048565121413
+      },
+      {
+        "depth": 10,
+        "score_type": "mean_train_score",
+        "accuracy": 0.9940132450331127
+      },
+      {
+        "depth": 11,
+        "score_type": "mean_train_score",
+        "accuracy": 0.9973333333333333
+      },
+      {
+        "depth": 12,
+        "score_type": "mean_train_score",
+        "accuracy": 1.0
+      },
+      {
+        "depth": 13,
+        "score_type": "mean_train_score",
+        "accuracy": 1.0
+      },
+      {
+        "depth": 14,
+        "score_type": "mean_train_score",
+        "accuracy": 1.0
+      },
+      {
+        "depth": 15,
+        "score_type": "mean_train_score",
+        "accuracy": 1.0
+      },
+      {
+        "depth": 16,
+        "score_type": "mean_train_score",
+        "accuracy": 1.0
+      },
+      {
+        "depth": 17,
+        "score_type": "mean_train_score",
+        "accuracy": 1.0
+      },
+      {
+        "depth": 18,
+        "score_type": "mean_train_score",
+        "accuracy": 1.0
+      },
+      {
+        "depth": 19,
+        "score_type": "mean_train_score",
+        "accuracy": 1.0
+      },
+      {
+        "depth": 1,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8099264705882353
+      },
+      {
+        "depth": 2,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8040441176470589
+      },
+      {
+        "depth": 3,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8044117647058824
+      },
+      {
+        "depth": 4,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8400735294117647
+      },
+      {
+        "depth": 5,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8459558823529412
+      },
+      {
+        "depth": 6,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8150735294117647
+      },
+      {
+        "depth": 7,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8279411764705882
+      },
+      {
+        "depth": 8,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8213235294117647
+      },
+      {
+        "depth": 9,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8216911764705882
+      },
+      {
+        "depth": 10,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8033088235294118
+      },
+      {
+        "depth": 11,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8091911764705882
+      },
+      {
+        "depth": 12,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8033088235294118
+      },
+      {
+        "depth": 13,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8091911764705882
+      },
+      {
+        "depth": 14,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8091911764705882
+      },
+      {
+        "depth": 15,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8091911764705882
+      },
+      {
+        "depth": 16,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8091911764705882
+      },
+      {
+        "depth": 17,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8091911764705882
+      },
+      {
+        "depth": 18,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8091911764705882
+      },
+      {
+        "depth": 19,
+        "score_type": "mean_cv_score",
+        "accuracy": 0.8091911764705882
+      }
+    ]
+  }
+}

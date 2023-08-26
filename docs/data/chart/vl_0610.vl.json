@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/OECD_output_per_worker.csv"
+  },
+  "title": {
+    "text": "Productivity: nine countries compared",
+    "fontSize": 12,
+    "anchor": "start",
+    "subtitle": [
+      "Output per worker, GDP:  PPP (constant 2015 $) source: World Bank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 9
+  },
+  "width": 150,
+  "height": 100,
+  "view": {
+    "stroke": "transparent"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "ISO3",
+        "oneOf": [
+          "USA",
+          "GBR",
+          "AUS",
+          "DEU",
+          "FRA",
+          "KOR",
+          "JPN",
+          "ITA",
+          "CHL"
+        ]
+      }
+    },
+    {
+      "calculate": "year(datum.Year)",
+      "as": "year"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": false,
+    "color": "rgb(128,0,0)"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Output per worker ($)",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "gridOpacity": 0
+      }
+    },
+    "facet": {
+      "field": "Country",
+      "columns": 3,
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "Country"
+      },
+      {
+        "field": "Year",
+        "type": "temporal",
+        "format": "%Y"
+      },
+      {
+        "field": "Output per worker ($)",
+        "format": "$,d"
+      }
+    ]
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

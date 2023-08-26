@@ -1,0 +1,435 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    },
+    "axis": {
+      "labelLimit": 500
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "blue"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "library",
+            "type": "nominal"
+          },
+          {
+            "field": "pre_sample",
+            "type": "nominal"
+          },
+          {
+            "field": "pre_count_threshold",
+            "type": "quantitative"
+          },
+          {
+            "field": "median",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "percentile_25",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "percentile_75",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "min",
+            "type": "quantitative"
+          },
+          {
+            "field": "max",
+            "type": "quantitative"
+          },
+          {
+            "field": "frac_counts_above_threshold",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "frac_variants_above_threshold",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "virus_batch",
+            "type": "nominal"
+          }
+        ],
+        "x": {
+          "field": "percentile_25",
+          "scale": {
+            "constant": 20,
+            "type": "symlog"
+          },
+          "title": "counts for variant",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "percentile_75"
+        },
+        "y": {
+          "field": "library_sample",
+          "title": null,
+          "type": "nominal"
+        }
+      },
+      "params": [
+        {
+          "name": "parameter001",
+          "select": {
+            "type": "point",
+            "fields": [
+              "library"
+            ]
+          },
+          "bind": {
+            "input": "select",
+            "options": [
+              null,
+              "Lib-1",
+              "Lib-2",
+              "Lib-3"
+            ],
+            "labels": [
+              "all",
+              "Lib-1",
+              "Lib-2",
+              "Lib-3"
+            ],
+            "name": "library"
+          }
+        },
+        {
+          "name": "parameter002",
+          "select": {
+            "type": "point",
+            "fields": [
+              "virus_batch"
+            ]
+          },
+          "bind": {
+            "input": "select",
+            "options": [
+              null,
+              "thaw-1"
+            ],
+            "labels": [
+              "all",
+              "thaw-1"
+            ],
+            "name": "virus_batch"
+          }
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "blue",
+        "opacity": 0.5
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "library",
+            "type": "nominal"
+          },
+          {
+            "field": "pre_sample",
+            "type": "nominal"
+          },
+          {
+            "field": "pre_count_threshold",
+            "type": "quantitative"
+          },
+          {
+            "field": "median",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "percentile_25",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "percentile_75",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "min",
+            "type": "quantitative"
+          },
+          {
+            "field": "max",
+            "type": "quantitative"
+          },
+          {
+            "field": "frac_counts_above_threshold",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "frac_variants_above_threshold",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "virus_batch",
+            "type": "nominal"
+          }
+        ],
+        "x": {
+          "field": "min",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "max"
+        },
+        "y": {
+          "field": "library_sample",
+          "title": null,
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "color": "black",
+        "x2Offset": -1,
+        "xOffset": 1
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "library",
+            "type": "nominal"
+          },
+          {
+            "field": "pre_sample",
+            "type": "nominal"
+          },
+          {
+            "field": "pre_count_threshold",
+            "type": "quantitative"
+          },
+          {
+            "field": "median",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "percentile_25",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "percentile_75",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "min",
+            "type": "quantitative"
+          },
+          {
+            "field": "max",
+            "type": "quantitative"
+          },
+          {
+            "field": "frac_counts_above_threshold",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "frac_variants_above_threshold",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "virus_batch",
+            "type": "nominal"
+          }
+        ],
+        "x": {
+          "field": "median",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "median"
+        },
+        "y": {
+          "field": "library_sample",
+          "title": null,
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "color": "red",
+        "x2Offset": -1,
+        "xOffset": 1
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "library",
+            "type": "nominal"
+          },
+          {
+            "field": "pre_sample",
+            "type": "nominal"
+          },
+          {
+            "field": "pre_count_threshold",
+            "type": "quantitative"
+          },
+          {
+            "field": "median",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "percentile_25",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "percentile_75",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "min",
+            "type": "quantitative"
+          },
+          {
+            "field": "max",
+            "type": "quantitative"
+          },
+          {
+            "field": "frac_counts_above_threshold",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "frac_variants_above_threshold",
+            "format": ".2g",
+            "type": "quantitative"
+          },
+          {
+            "field": "virus_batch",
+            "type": "nominal"
+          }
+        ],
+        "x": {
+          "field": "pre_count_threshold",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "pre_count_threshold"
+        },
+        "y": {
+          "field": "library_sample",
+          "title": null,
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "data": {
+    "name": "data-966eb28a0b90015491ad121ba7cd2b41"
+  },
+  "height": {
+    "step": 14
+  },
+  "transform": [
+    {
+      "filter": {
+        "param": "parameter001"
+      }
+    },
+    {
+      "filter": {
+        "param": "parameter002"
+      }
+    }
+  ],
+  "width": 350,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-966eb28a0b90015491ad121ba7cd2b41": [
+      {
+        "library": "Lib-1",
+        "pre_sample": "2022-03-25_thaw-1_VSVG_control_1",
+        "pre_count_threshold": 51,
+        "median": 343.0,
+        "percentile_25": 173.0,
+        "percentile_75": 690.0,
+        "min": 0,
+        "max": 11641,
+        "library_sample": "Lib-1 2022-03-25_thaw-1_VSVG_control_1",
+        "frac_counts_above_threshold": 0.9983648590126066,
+        "frac_variants_above_threshold": 0.9612706286368407,
+        "virus_batch": "thaw-1"
+      },
+      {
+        "library": "Lib-1",
+        "pre_sample": "2022-03-25_thaw-1_VSVG_control_2",
+        "pre_count_threshold": 47,
+        "median": 315.0,
+        "percentile_25": 160.0,
+        "percentile_75": 635.0,
+        "min": 0,
+        "max": 10731,
+        "library_sample": "Lib-1 2022-03-25_thaw-1_VSVG_control_2",
+        "frac_counts_above_threshold": 0.9983300834890584,
+        "frac_variants_above_threshold": 0.9607618684218894,
+        "virus_batch": "thaw-1"
+      },
+      {
+        "library": "Lib-2",
+        "pre_sample": "2022-06-22_thaw-1_VSVG_control_1",
+        "pre_count_threshold": 66,
+        "median": 338.0,
+        "percentile_25": 185.0,
+        "percentile_75": 609.0,
+        "min": 0,
+        "max": 7252,
+        "library_sample": "Lib-2 2022-06-22_thaw-1_VSVG_control_1",
+        "frac_counts_above_threshold": 0.9967152162769597,
+        "frac_variants_above_threshold": 0.9523403226609216,
+        "virus_batch": "thaw-1"
+      },
+      {
+        "library": "Lib-3",
+        "pre_sample": "2022-06-22_thaw-1_VSVG_control_1",
+        "pre_count_threshold": 70,
+        "median": 377.0,
+        "percentile_25": 195.0,
+        "percentile_75": 724.0,
+        "min": 0,
+        "max": 11612,
+        "library_sample": "Lib-3 2022-06-22_thaw-1_VSVG_control_1",
+        "frac_counts_above_threshold": 0.9967466457208356,
+        "frac_variants_above_threshold": 0.9477171194066828,
+        "virus_batch": "thaw-1"
+      }
+    ]
+  }
+}

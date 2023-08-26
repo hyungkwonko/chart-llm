@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/barley.json"
+  },
+  "encoding": {
+    "color": {
+      "field": "site",
+      "type": "nominal"
+    },
+    "order": {
+      "field": "siteOrder"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "yield",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "variety",
+      "type": "nominal"
+    }
+  },
+  "mark": "bar",
+  "transform": [
+    {
+      "as": "siteOrder",
+      "calculate": "if(datum.site === 'University Farm', 0, if(datum.site === 'Grand Rapids', 1, 2))"
+    }
+  ]
+}

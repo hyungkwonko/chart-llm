@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/barscrollv2.csv"
+  },
+  "background": "#fff0d8",
+  "title": {
+    "text": "Energy Consumption",
+    "subtitle": "Source: BP"
+  },
+  "transform": [
+    {
+      "filter": "datum.Year == yearSelector"
+    }
+  ],
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 1985,
+      "bind": {
+        "input": "range",
+        "min": 1965,
+        "max": 2021,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "hconcat": [
+    {
+      "title": {
+        "text": "Exajoules of Energy Consumption by Fuel Type",
+        "anchor": "start",
+        "subtitle": "China generates more energy from coal than the 19 next largest consumers of energy combined.",
+        "subtitleFontSize": 10
+      },
+      "width": 380,
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "Country",
+          "sort": {
+            "field": "rank",
+            "order": "descending"
+          }
+        },
+        "y": {
+          "field": "Exajoules",
+          "aggregate": "sum",
+          "title": "Exajoules",
+          "scale": {
+            "domain": [
+              0,
+              160
+            ]
+          }
+        },
+        "color": {
+          "field": "fuel",
+          "scale": {
+            "domain": [
+              "Coal",
+              "Oil",
+              "Renewables",
+              "Hydro",
+              "Nuclear Energy",
+              "Natural Gas",
+              "Other"
+            ],
+            "range": [
+              "darkred",
+              "Orange",
+              "darkorange",
+              "#7C521F",
+              "#997C2E",
+              "#B5A437",
+              "#A46C4C",
+              "#824d2f"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "fuel",
+            "type": "nominal",
+            "title": "Fuel"
+          },
+          {
+            "field": "Exajoules",
+            "type": "quantitative",
+            "format": "0.2f"
+          },
+          {
+            "field": "Total",
+            "format": ".02f"
+          },
+          {
+            "field": "pct",
+            "format": "%",
+            "title": "Share of Consumption"
+          }
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Share of Energy Consumption by Fuel Type.",
+        "anchor": "start",
+        "subtitleFontSize": 10
+      },
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "Country",
+          "sort": {
+            "field": "rank",
+            "order": "descending"
+          }
+        },
+        "y": {
+          "field": "pct",
+          "aggregate": "sum",
+          "axis": {
+            "format": "%"
+          },
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "title": "Share of total energy consumed by type"
+        },
+        "color": {
+          "field": "fuel"
+        },
+        "tooltip": [
+          {
+            "field": "fuel",
+            "type": "nominal"
+          },
+          {
+            "field": "pct",
+            "type": "quantitative",
+            "format": "%"
+          }
+        ]
+      }
+    }
+  ]
+}

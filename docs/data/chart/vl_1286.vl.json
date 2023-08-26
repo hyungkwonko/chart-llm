@@ -1,0 +1,341 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axisX": {
+      "domain": true,
+      "domainColor": "#023B7F",
+      "domainWidth": 1,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 12,
+      "tickColor": "#023B7F",
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 12,
+      "titlePadding": 10
+    },
+    "axisY": {
+      "domain": false,
+      "grid": true,
+      "gridColor": "#023B7F",
+      "gridWidth": 1,
+      "labelAngle": 0,
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 12,
+      "ticks": false,
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 12,
+      "titlePadding": 10
+    },
+    "legend": {
+      "labelColor": "#023B7F",
+      "labelFont": "Helvetica Neue",
+      "labelFontSize": 16,
+      "padding": 10,
+      "strokeColor": "white",
+      "titleColor": "#023B7F",
+      "titleFont": "Helvetica Neue",
+      "titleFontSize": 20
+    },
+    "mark": {
+      "color": "#4279C1",
+      "fill": "#7EB7FD"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#023B7F",
+      "font": "Helvetica Neue",
+      "fontSize": 18
+    },
+    "view": {
+      "height": 300,
+      "stroke": "#4279C1",
+      "width": 500
+    }
+  },
+  "data": {
+    "name": "data-7f01cbc174f11be3ffb91e448a8ee465"
+  },
+  "datasets": {
+    "data-7f01cbc174f11be3ffb91e448a8ee465": [
+      {
+        "PPB": 23.0,
+        "axis_label": "2014 Virginia A (R3)",
+        "bhrd": 20.0,
+        "bpts": 460.0,
+        "game_id": 20140306.0,
+        "negs": 0.0,
+        "opponent": "Stanford A",
+        "pa": -5.0,
+        "packet": "Illinois + USC",
+        "pf": 660.0,
+        "result": "W",
+        "round": 3.0,
+        "status": "NA",
+        "team": "Virginia A",
+        "tossups": 20.0,
+        "tournament": "ACF Nationals 2014"
+      },
+      {
+        "PPB": 22.11,
+        "axis_label": "2015 Virginia A (R1)",
+        "bhrd": 19.0,
+        "bpts": 420.0,
+        "game_id": 20150112.0,
+        "negs": 0.0,
+        "opponent": "Notre Dame B",
+        "pa": 0.0,
+        "packet": "MIT A + Alberta",
+        "pf": 610.0,
+        "result": "W",
+        "round": 1.0,
+        "status": "NA",
+        "team": "Virginia A",
+        "tossups": 19.0,
+        "tournament": "ACF Nationals 2015"
+      },
+      {
+        "PPB": 23.89,
+        "axis_label": "2014 Virginia A (R8)",
+        "bhrd": 18.0,
+        "bpts": 430.0,
+        "game_id": 20140811.0,
+        "negs": 2.0,
+        "opponent": "Carleton",
+        "pa": -5.0,
+        "packet": "Virginia",
+        "pf": 600.0,
+        "result": "W",
+        "round": 8.0,
+        "status": "NA",
+        "team": "Virginia A",
+        "tossups": 18.0,
+        "tournament": "ACF Nationals 2014"
+      },
+      {
+        "PPB": 21.67,
+        "axis_label": "2016 Chicago A (R7)",
+        "bhrd": 18.0,
+        "bpts": 390.0,
+        "game_id": 20160720.0,
+        "negs": 1.0,
+        "opponent": "Yale B",
+        "pa": 25.0,
+        "packet": "Dartmouth + Chicago B",
+        "pf": 565.0,
+        "result": "W",
+        "round": 7.0,
+        "status": "NA",
+        "team": "Chicago A",
+        "tossups": 18.0,
+        "tournament": "ACF Nationals 2016"
+      },
+      {
+        "PPB": 22.94,
+        "axis_label": "2016 Michigan A (R7)",
+        "bhrd": 17.0,
+        "bpts": 390.0,
+        "game_id": 20160711.0,
+        "negs": 0.0,
+        "opponent": "Minnesota A",
+        "pa": 60.0,
+        "packet": "Dartmouth + Chicago B",
+        "pf": 560.0,
+        "result": "W",
+        "round": 7.0,
+        "status": "NA",
+        "team": "Michigan A",
+        "tossups": 17.0,
+        "tournament": "ACF Nationals 2016"
+      },
+      {
+        "PPB": 22.94,
+        "axis_label": "2016 Chicago A (R4)",
+        "bhrd": 17.0,
+        "bpts": 390.0,
+        "game_id": 20160420.0,
+        "negs": 1.0,
+        "opponent": "Berkeley B",
+        "pa": 50.0,
+        "packet": "Stanford A + Louisville",
+        "pf": 555.0,
+        "result": "W",
+        "round": 4.0,
+        "status": "NA",
+        "team": "Chicago A",
+        "tossups": 17.0,
+        "tournament": "ACF Nationals 2016"
+      },
+      {
+        "PPB": 22.94,
+        "axis_label": "2015 Penn A (R2)",
+        "bhrd": 17.0,
+        "bpts": 390.0,
+        "game_id": 20150215.0,
+        "negs": 1.0,
+        "opponent": "Kenyon",
+        "pa": 15.0,
+        "packet": "Minnesota + Washington",
+        "pf": 555.0,
+        "result": "W",
+        "round": 2.0,
+        "status": "NA",
+        "team": "Penn A",
+        "tossups": 17.0,
+        "tournament": "ACF Nationals 2015"
+      },
+      {
+        "PPB": 20.56,
+        "axis_label": "2015 Virginia A (R5)",
+        "bhrd": 18.0,
+        "bpts": 370.0,
+        "game_id": 20150501.0,
+        "negs": 0.0,
+        "opponent": "Waterloo A",
+        "pa": 35.0,
+        "packet": "Rice + Illinois + W+M",
+        "pf": 550.0,
+        "result": "W",
+        "round": 5.0,
+        "status": "NA",
+        "team": "Virginia A",
+        "tossups": 18.0,
+        "tournament": "ACF Nationals 2015"
+      },
+      {
+        "PPB": 20.0,
+        "axis_label": "2016 Michigan A (R5)",
+        "bhrd": 18.0,
+        "bpts": 360.0,
+        "game_id": 20160520.0,
+        "negs": 0.0,
+        "opponent": "William and Mary",
+        "pa": 25.0,
+        "packet": "Maryland A + McGill",
+        "pf": 540.0,
+        "result": "W",
+        "round": 5.0,
+        "status": "NA",
+        "team": "Michigan A",
+        "tossups": 18.0,
+        "tournament": "ACF Nationals 2016"
+      },
+      {
+        "PPB": 20.0,
+        "axis_label": "2016 Michigan A (R14)",
+        "bhrd": 18.0,
+        "bpts": 360.0,
+        "game_id": 20161420.0,
+        "negs": 0.0,
+        "opponent": "Louisville",
+        "pa": 40.0,
+        "packet": "Editors 2",
+        "pf": 540.0,
+        "result": "W",
+        "round": 14.0,
+        "status": "NA",
+        "team": "Michigan A",
+        "tossups": 18.0,
+        "tournament": "ACF Nationals 2016"
+      },
+      {
+        "PPB": 21.76,
+        "axis_label": "2013 Yale A (R7)",
+        "bhrd": 17.0,
+        "bpts": 370.0,
+        "game_id": 20130704.0,
+        "negs": 0.0,
+        "opponent": "Carleton",
+        "pa": 50.0,
+        "packet": "Chicago A + Maryland + Penn B",
+        "pf": 540.0,
+        "result": "W",
+        "round": 7.0,
+        "status": "NA",
+        "team": "Yale A",
+        "tossups": 17.0,
+        "tournament": "ACF Nationals 2013"
+      }
+    ]
+  },
+  "encoding": {
+    "fill": {
+      "field": "team",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Virginia A",
+          "Chicago A",
+          "Michigan A",
+          "Penn A",
+          "Yale A"
+        ],
+        "range": [
+          "#F84C1E",
+          "#8B1F41",
+          "#FFCB05",
+          "#045ea7",
+          "#00356B"
+        ]
+      },
+      "title": "Team",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "team",
+        "type": "nominal"
+      },
+      {
+        "field": "tournament",
+        "type": "nominal"
+      },
+      {
+        "field": "opponent",
+        "type": "nominal"
+      },
+      {
+        "field": "pf",
+        "type": "quantitative"
+      },
+      {
+        "field": "pa",
+        "type": "quantitative"
+      },
+      {
+        "field": "tossups",
+        "type": "quantitative"
+      },
+      {
+        "field": "negs",
+        "type": "quantitative"
+      },
+      {
+        "field": "PPB",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "labelAngle": 315
+      },
+      "field": "axis_label",
+      "sort": [
+        "pf"
+      ],
+      "title": "Team",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "pf",
+      "title": "Points scored",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar",
+  "title": "Most Points in a Win"
+}

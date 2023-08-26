@@ -1,0 +1,146 @@
+{
+  "config": {
+    "view": {
+      "width": 400,
+      "height": 300
+    },
+    "mark": {
+      "tooltip": null
+    },
+    "axis": {
+      "labelFontSize": 24,
+      "titleFontSize": 36
+    }
+  },
+  "data": {
+    "name": "data-fd22828f7bf89e47944ade0096e1ab34"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "type": "quantitative",
+      "field": "count"
+    },
+    "y": {
+      "type": "nominal",
+      "axis": {
+        "labelLimit": 350,
+        "labelPadding": 25,
+        "titlePadding": 75
+      },
+      "field": "field",
+      "sort": {
+        "field": "count",
+        "order": "descending"
+      }
+    }
+  },
+  "height": 600,
+  "transform": [
+    {
+      "filter": "(datum.count < 1000)"
+    }
+  ],
+  "width": 600,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-fd22828f7bf89e47944ade0096e1ab34": [
+      {
+        "field": "id",
+        "count": 129880
+      },
+      {
+        "field": "satisfaction_v2",
+        "count": 2
+      },
+      {
+        "field": "Gender",
+        "count": 2
+      },
+      {
+        "field": "Customer Type",
+        "count": 2
+      },
+      {
+        "field": "Age",
+        "count": 75
+      },
+      {
+        "field": "Type of Travel",
+        "count": 2
+      },
+      {
+        "field": "Class",
+        "count": 3
+      },
+      {
+        "field": "Flight Distance",
+        "count": 5398
+      },
+      {
+        "field": "Seat comfort",
+        "count": 6
+      },
+      {
+        "field": "Departure/Arrival time convenient",
+        "count": 6
+      },
+      {
+        "field": "Food and drink",
+        "count": 6
+      },
+      {
+        "field": "Gate location",
+        "count": 6
+      },
+      {
+        "field": "Inflight wifi service",
+        "count": 6
+      },
+      {
+        "field": "Inflight entertainment",
+        "count": 6
+      },
+      {
+        "field": "Online support",
+        "count": 6
+      },
+      {
+        "field": "Ease of Online booking",
+        "count": 6
+      },
+      {
+        "field": "On-board service",
+        "count": 6
+      },
+      {
+        "field": "Leg room service",
+        "count": 6
+      },
+      {
+        "field": "Baggage handling",
+        "count": 5
+      },
+      {
+        "field": "Checkin service",
+        "count": 6
+      },
+      {
+        "field": "Cleanliness",
+        "count": 6
+      },
+      {
+        "field": "Online boarding",
+        "count": 6
+      },
+      {
+        "field": "Departure Delay in Minutes",
+        "count": 466
+      },
+      {
+        "field": "Arrival Delay in Minutes",
+        "count": 472
+      }
+    ]
+  }
+}

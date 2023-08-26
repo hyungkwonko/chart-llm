@@ -1,0 +1,127 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/queryverse/queryverse.github.io/517cec1d59eef7ee5ff4343834e728394cb6dc26/benchmarkresults/csvreader.csv"
+  },
+  "selection": {
+    "Run": {
+      "type": "single",
+      "fields": [
+        "rows",
+        "cols",
+        "withna",
+        "attempt",
+        "platform",
+        "file"
+      ],
+      "init": {
+        "rows": "1000000",
+        "cols": "20",
+        "withna": "true",
+        "attempt": "first",
+        "platform": "Windows",
+        "file": "mixed.csv"
+      },
+      "bind": {
+        "rows": {
+          "input": "select",
+          "options": [
+            "100",
+            "10000",
+            "1000000"
+          ]
+        },
+        "cols": {
+          "input": "select",
+          "options": [
+            "20"
+          ]
+        },
+        "withna": {
+          "input": "select",
+          "options": [
+            "true",
+            "false"
+          ]
+        },
+        "attempt": {
+          "input": "select",
+          "options": [
+            "warmup",
+            "first",
+            "second"
+          ]
+        },
+        "platform": {
+          "input": "select",
+          "options": [
+            "Windows",
+            "MacOS",
+            "Linux"
+          ]
+        },
+        "file": {
+          "input": "select",
+          "options": [
+            "mixed.csv",
+            "uniform_datetime.csv",
+            "uniform_float64.csv",
+            "uniform_float64short.csv",
+            "uniform_int64.csv",
+            "uniform_string.csv",
+            "uniform_stringcat.csv",
+            "uniform_stringescaped.csv"
+          ]
+        }
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "Run"
+      }
+    },
+    {
+      "filter": "indexof(['Julia CSV.jl', 'Julia CSV.jl copycols', 'Julia CSV.jl parallel', 'Julia CSV.jl copycols parallel', 'Julia CSVFiles.jl', 'Julia CSVReader.jl', 'Julia TableReader.jl', 'Julia Pandas.jl', 'Julia TextParse.jl', 'Python Arrow', 'Python Arrow parallel', 'Python Pandas', 'R fread', 'R fread parallel', 'R readr'],datum.package)>=0"
+    },
+    {
+      "calculate": "datum.withna=='true' ? 'With NA values' : 'Without NA values'",
+      "as": "withna_verbal"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "timing",
+      "title": "seconds",
+      "aggregate": "min",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "package",
+      "title": "",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "package",
+      "scale": {
+        "scheme": "category20"
+      },
+      "type": "nominal",
+      "legend": null
+    }
+  },
+  "mark": "bar",
+  "background": "white",
+  "width": 600,
+  "height": 400,
+  "config": {
+    "text": {
+      "baseline": "middle",
+      "align": "left"
+    },
+    "axis": {
+      "labelFontSize": 18
+    }
+  }
+}

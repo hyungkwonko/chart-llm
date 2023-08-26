@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Borrowing levels in relation to global GDP",
+    "subtitle": "The outstadning credit levels of the IMF in relation to global GDP levels",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/SamJones033/SamJones033.github.io/main/updated%20values.csv"
+  },
+  "height": 300,
+  "width": 600,
+  "mark": {
+    "type": "bar",
+    "color": "#2b1d70"
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "nominal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "numbers",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

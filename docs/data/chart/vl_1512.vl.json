@@ -1,0 +1,1853 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "taxon": "Actinomyces",
+        "sample_id": "Healthy4",
+        "abundance": 0.0010528396,
+        "growth_rate": 1.1673064342
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Healthy4",
+        "abundance": 0.000464488,
+        "growth_rate": 0.4795337578
+      },
+      {
+        "taxon": "Anaerococcus",
+        "sample_id": "Healthy4",
+        "abundance": 0.002368889,
+        "growth_rate": 0.7572440779
+      },
+      {
+        "taxon": "Dialister",
+        "sample_id": "Healthy4",
+        "abundance": 0.0434296326,
+        "growth_rate": 11.7337867618
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Healthy4",
+        "abundance": 0.0973876609,
+        "growth_rate": 0.0161377531
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "Healthy4",
+        "abundance": 0.0462920402,
+        "growth_rate": 3.4947143286
+      },
+      {
+        "taxon": "Odoribacter",
+        "sample_id": "Healthy4",
+        "abundance": 0.0319800022,
+        "growth_rate": 8.6407340939
+      },
+      {
+        "taxon": "Parabacteroides",
+        "sample_id": "Healthy4",
+        "abundance": 0.0022372841,
+        "growth_rate": 1.1456701617
+      },
+      {
+        "taxon": "Pseudomonas",
+        "sample_id": "Healthy4",
+        "abundance": 0.0011844445,
+        "growth_rate": 1.4902864068
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Healthy4",
+        "abundance": 0.0037902225,
+        "growth_rate": 4.1558569958
+      },
+      {
+        "taxon": "Veillonella",
+        "sample_id": "Healthy4",
+        "abundance": 0.0002632099,
+        "growth_rate": 0.1726266063
+      },
+      {
+        "taxon": "Acinetobacter",
+        "sample_id": "Cancer2",
+        "abundance": 0.0032464071,
+        "growth_rate": 1.3507124769
+      },
+      {
+        "taxon": "Actinomyces",
+        "sample_id": "Cancer2",
+        "abundance": 0.0018035595,
+        "growth_rate": 0.6605223028
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Cancer2",
+        "abundance": 0.0058244362,
+        "growth_rate": 1.939119031
+      },
+      {
+        "taxon": "Enterococcus",
+        "sample_id": "Cancer2",
+        "abundance": 0.0037874749,
+        "growth_rate": 0.3783297656
+      },
+      {
+        "taxon": "Haemophilus",
+        "sample_id": "Cancer2",
+        "abundance": 0.068715616,
+        "growth_rate": 19.0683893265
+      },
+      {
+        "taxon": "Lachnoclostridium",
+        "sample_id": "Cancer2",
+        "abundance": 0.0014264516,
+        "growth_rate": 0.3761889576
+      },
+      {
+        "taxon": "Methanobrevibacter",
+        "sample_id": "Cancer2",
+        "abundance": 0.6341315111,
+        "growth_rate": 0.2255754064
+      },
+      {
+        "taxon": "Neisseria",
+        "sample_id": "Cancer2",
+        "abundance": 0.0043285427,
+        "growth_rate": 1.6010233784
+      },
+      {
+        "taxon": "Odoribacter",
+        "sample_id": "Cancer2",
+        "abundance": 0.0113624247,
+        "growth_rate": 0.0091985319
+      },
+      {
+        "taxon": "Parabacteroides",
+        "sample_id": "Cancer2",
+        "abundance": 0.006808437,
+        "growth_rate": 0.7210492512
+      },
+      {
+        "taxon": "Porphyromonas",
+        "sample_id": "Cancer2",
+        "abundance": 0.0270533921,
+        "growth_rate": 10.0064330389
+      },
+      {
+        "taxon": "Pseudomonas",
+        "sample_id": "Cancer2",
+        "abundance": 0.0010821357,
+        "growth_rate": 0.4669428334
+      },
+      {
+        "taxon": "Staphylococcus",
+        "sample_id": "Cancer2",
+        "abundance": 0.0113624247,
+        "growth_rate": 5.384503622
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Cancer2",
+        "abundance": 0.0242398393,
+        "growth_rate": 8.7478147852
+      },
+      {
+        "taxon": "Veillonella",
+        "sample_id": "Cancer2",
+        "abundance": 0.0009919577,
+        "growth_rate": 0.1674964304
+      },
+      {
+        "taxon": "Acinetobacter",
+        "sample_id": "Healthy7",
+        "abundance": 0.0398367058,
+        "growth_rate": 1.9887263592
+      },
+      {
+        "taxon": "Actinomyces",
+        "sample_id": "Healthy7",
+        "abundance": 0.0143412141,
+        "growth_rate": 0.6793310848
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Healthy7",
+        "abundance": 0.0007967341,
+        "growth_rate": 0.0393216882
+      },
+      {
+        "taxon": "Anaerostipes",
+        "sample_id": "Healthy7",
+        "abundance": 0.266109195,
+        "growth_rate": 0.6500895939
+      },
+      {
+        "taxon": "Bacillus",
+        "sample_id": "Healthy7",
+        "abundance": 0.0589583246,
+        "growth_rate": 2.7927961033
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Healthy7",
+        "abundance": 0.0871504549,
+        "growth_rate": 1.7894067312
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Healthy7",
+        "abundance": 0.0509909835,
+        "growth_rate": 0.6928891168
+      },
+      {
+        "taxon": "Eggerthella",
+        "sample_id": "Healthy7",
+        "abundance": 0.0031869365,
+        "growth_rate": 0.122202813
+      },
+      {
+        "taxon": "Enterococcus",
+        "sample_id": "Healthy7",
+        "abundance": 0.0318693647,
+        "growth_rate": 1.0747822605
+      },
+      {
+        "taxon": "Erysipelatoclostridium",
+        "sample_id": "Healthy7",
+        "abundance": 0.0116095543,
+        "growth_rate": 0.1722627612
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "Healthy7",
+        "abundance": 0.0363509941,
+        "growth_rate": 0.8823844087
+      },
+      {
+        "taxon": "Granulicatella",
+        "sample_id": "Healthy7",
+        "abundance": 0.0159346823,
+        "growth_rate": 0.2165251749
+      },
+      {
+        "taxon": "Lactobacillus",
+        "sample_id": "Healthy7",
+        "abundance": 0.002708896,
+        "growth_rate": 0.0021082219
+      },
+      {
+        "taxon": "Lactococcus",
+        "sample_id": "Healthy7",
+        "abundance": 0.0015934682,
+        "growth_rate": 0.0451002929
+      },
+      {
+        "taxon": "Methanobrevibacter",
+        "sample_id": "Healthy7",
+        "abundance": 0.0015934682,
+        "growth_rate": 0.0482800841
+      },
+      {
+        "taxon": "Neisseria",
+        "sample_id": "Healthy7",
+        "abundance": 0.0661289317,
+        "growth_rate": 3.144813381
+      },
+      {
+        "taxon": "Porphyromonas",
+        "sample_id": "Healthy7",
+        "abundance": 0.0191216188,
+        "growth_rate": 0.909344966
+      },
+      {
+        "taxon": "Pseudomonas",
+        "sample_id": "Healthy7",
+        "abundance": 0.0187232517,
+        "growth_rate": 0.9494688618
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "Healthy7",
+        "abundance": 0.0098595847,
+        "growth_rate": 0.0113737754
+      },
+      {
+        "taxon": "Rothia",
+        "sample_id": "Healthy7",
+        "abundance": 0.0023902024,
+        "growth_rate": 0.0918165132
+      },
+      {
+        "taxon": "Staphylococcus",
+        "sample_id": "Healthy7",
+        "abundance": 0.1418186728,
+        "growth_rate": 7.499964857
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Healthy7",
+        "abundance": 0.0258141854,
+        "growth_rate": 1.2157251718
+      },
+      {
+        "taxon": "Acidaminococcus",
+        "sample_id": "Healthy3",
+        "abundance": 0.0203684995,
+        "growth_rate": 0.1853710893
+      },
+      {
+        "taxon": "Actinomyces",
+        "sample_id": "Healthy3",
+        "abundance": 0.0051919705,
+        "growth_rate": 0.0544478523
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Healthy3",
+        "abundance": 0.0034534826,
+        "growth_rate": 0.0364228199
+      },
+      {
+        "taxon": "Anaerostipes",
+        "sample_id": "Healthy3",
+        "abundance": 0.0702912924,
+        "growth_rate": 0.3037735628
+      },
+      {
+        "taxon": "Bacteroides",
+        "sample_id": "Healthy3",
+        "abundance": 0.0254089801,
+        "growth_rate": 0.0941415238
+      },
+      {
+        "taxon": "Barnesiella",
+        "sample_id": "Healthy3",
+        "abundance": 0.0067894998,
+        "growth_rate": 0.0275847394
+      },
+      {
+        "taxon": "Bifidobacterium",
+        "sample_id": "Healthy3",
+        "abundance": 0.0196496113,
+        "growth_rate": 0.115283368
+      },
+      {
+        "taxon": "Bilophila",
+        "sample_id": "Healthy3",
+        "abundance": 0.001198147,
+        "growth_rate": 0.0026476838
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Healthy3",
+        "abundance": 0.1005982679,
+        "growth_rate": 0.6787191666
+      },
+      {
+        "taxon": "Butyricicoccus",
+        "sample_id": "Healthy3",
+        "abundance": 0.0071888822,
+        "growth_rate": 0.0016694936
+      },
+      {
+        "taxon": "Collinsella",
+        "sample_id": "Healthy3",
+        "abundance": 0.1473720847,
+        "growth_rate": 0.9018868246
+      },
+      {
+        "taxon": "Dialister",
+        "sample_id": "Healthy3",
+        "abundance": 0.2659886406,
+        "growth_rate": 2.0831891623
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Healthy3",
+        "abundance": 0.0726875865,
+        "growth_rate": 0.4227422798
+      },
+      {
+        "taxon": "Erysipelatoclostridium",
+        "sample_id": "Healthy3",
+        "abundance": 0.0015404748,
+        "growth_rate": 0.0103394818
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "Healthy3",
+        "abundance": 0.0546654582,
+        "growth_rate": 0.3962400759
+      },
+      {
+        "taxon": "Haemophilus",
+        "sample_id": "Healthy3",
+        "abundance": 0.040736999,
+        "growth_rate": 0.3965866649
+      },
+      {
+        "taxon": "Holdemanella",
+        "sample_id": "Healthy3",
+        "abundance": 0.0806752333,
+        "growth_rate": 0.0534972786
+      },
+      {
+        "taxon": "Lachnoclostridium",
+        "sample_id": "Healthy3",
+        "abundance": 0.0008713797,
+        "growth_rate": 0.0085612484
+      },
+      {
+        "taxon": "Lachnospira",
+        "sample_id": "Healthy3",
+        "abundance": 0.0041935146,
+        "growth_rate": 0.0008483219
+      },
+      {
+        "taxon": "Lactobacillus",
+        "sample_id": "Healthy3",
+        "abundance": 0.0014377764,
+        "growth_rate": 0.0065094754
+      },
+      {
+        "taxon": "Leuconostoc",
+        "sample_id": "Healthy3",
+        "abundance": 0.0143777644,
+        "growth_rate": 0.1394440286
+      },
+      {
+        "taxon": "Marvinbryantia",
+        "sample_id": "Healthy3",
+        "abundance": 0.0017972205,
+        "growth_rate": 0.0018747151
+      },
+      {
+        "taxon": "Methanobrevibacter",
+        "sample_id": "Healthy3",
+        "abundance": 0.0023962941,
+        "growth_rate": 0.0209275791
+      },
+      {
+        "taxon": "Odoribacter",
+        "sample_id": "Healthy3",
+        "abundance": 0.0029953676,
+        "growth_rate": 0.0246495277
+      },
+      {
+        "taxon": "Parasutterella",
+        "sample_id": "Healthy3",
+        "abundance": 0.0035944411,
+        "growth_rate": 0.0169365351
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "Healthy3",
+        "abundance": 0.0035944411,
+        "growth_rate": 0.015352865
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Healthy3",
+        "abundance": 0.0083870292,
+        "growth_rate": 0.0869373673
+      },
+      {
+        "taxon": "Subdoligranulum",
+        "sample_id": "Healthy3",
+        "abundance": 0.0317508963,
+        "growth_rate": 0.0210634814
+      },
+      {
+        "taxon": "Veillonella",
+        "sample_id": "Healthy3",
+        "abundance": 0.0007987647,
+        "growth_rate": 0.007572368
+      },
+      {
+        "taxon": "Acidaminococcus",
+        "sample_id": "Cancer8",
+        "abundance": 0.0191451344,
+        "growth_rate": 1.8456477504
+      },
+      {
+        "taxon": "Actinomyces",
+        "sample_id": "Cancer8",
+        "abundance": 0.0020512644,
+        "growth_rate": 0.2725928759
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Cancer8",
+        "abundance": 0.0002815461,
+        "growth_rate": 0.0389685768
+      },
+      {
+        "taxon": "Bifidobacterium",
+        "sample_id": "Cancer8",
+        "abundance": 0.132101427,
+        "growth_rate": 0.2105949236
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Cancer8",
+        "abundance": 0.0288491928,
+        "growth_rate": 0.7901659955
+      },
+      {
+        "taxon": "Collinsella",
+        "sample_id": "Cancer8",
+        "abundance": 0.1849556729,
+        "growth_rate": 1.6658511112
+      },
+      {
+        "taxon": "Dialister",
+        "sample_id": "Cancer8",
+        "abundance": 0.084785595,
+        "growth_rate": 5.0192961957
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Cancer8",
+        "abundance": 0.0692871529,
+        "growth_rate": 0.0097916346
+      },
+      {
+        "taxon": "Eggerthella",
+        "sample_id": "Cancer8",
+        "abundance": 0.0044444062,
+        "growth_rate": 0.4284531305
+      },
+      {
+        "taxon": "Erysipelatoclostridium",
+        "sample_id": "Cancer8",
+        "abundance": 0.0006837548,
+        "growth_rate": 0.0079019628
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "Cancer8",
+        "abundance": 0.0094016285,
+        "growth_rate": 0.3957686704
+      },
+      {
+        "taxon": "Hungatella",
+        "sample_id": "Cancer8",
+        "abundance": 0.0054700384,
+        "growth_rate": 0.0052724118
+      },
+      {
+        "taxon": "Lachnoclostridium",
+        "sample_id": "Cancer8",
+        "abundance": 0.0033566145,
+        "growth_rate": 0.3767102948
+      },
+      {
+        "taxon": "Odoribacter",
+        "sample_id": "Cancer8",
+        "abundance": 0.0044444062,
+        "growth_rate": 0.2631131568
+      },
+      {
+        "taxon": "Parabacteroides",
+        "sample_id": "Cancer8",
+        "abundance": 0.0049572223,
+        "growth_rate": 0.398818637
+      },
+      {
+        "taxon": "Paraprevotella",
+        "sample_id": "Cancer8",
+        "abundance": 0.0003418774,
+        "growth_rate": 0.0217392405
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Cancer8",
+        "abundance": 0.0128545902,
+        "growth_rate": 1.6941469541
+      },
+      {
+        "taxon": "Acinetobacter",
+        "sample_id": "Cancer1",
+        "abundance": 0.0184756793,
+        "growth_rate": 5.6654764579
+      },
+      {
+        "taxon": "Actinomyces",
+        "sample_id": "Cancer1",
+        "abundance": 0.0056453465,
+        "growth_rate": 1.6187482086
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Cancer1",
+        "abundance": 0.0234568673,
+        "growth_rate": 6.4139753984
+      },
+      {
+        "taxon": "Atopobium",
+        "sample_id": "Cancer1",
+        "abundance": 0.0061585598,
+        "growth_rate": 0.8389609638
+      },
+      {
+        "taxon": "Bacillus",
+        "sample_id": "Cancer1",
+        "abundance": 0.0138567595,
+        "growth_rate": 3.9732737113
+      },
+      {
+        "taxon": "Bifidobacterium",
+        "sample_id": "Cancer1",
+        "abundance": 0.0243263111,
+        "growth_rate": 0.6401551888
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Cancer1",
+        "abundance": 0.0273582174,
+        "growth_rate": 2.1199402587
+      },
+      {
+        "taxon": "Butyricimonas",
+        "sample_id": "Cancer1",
+        "abundance": 0.0021170049,
+        "growth_rate": 0.2976375758
+      },
+      {
+        "taxon": "Collinsella",
+        "sample_id": "Cancer1",
+        "abundance": 0.0169360394,
+        "growth_rate": 0.694723483
+      },
+      {
+        "taxon": "Desulfovibrio",
+        "sample_id": "Cancer1",
+        "abundance": 0.0076981997,
+        "growth_rate": 0.0204280149
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Cancer1",
+        "abundance": 0.0405438518,
+        "growth_rate": 0.9464955948
+      },
+      {
+        "taxon": "Enterococcus",
+        "sample_id": "Cancer1",
+        "abundance": 0.0138567595,
+        "growth_rate": 2.4990799255
+      },
+      {
+        "taxon": "Erysipelatoclostridium",
+        "sample_id": "Cancer1",
+        "abundance": 0.0006598457,
+        "growth_rate": 0.027341816
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "Cancer1",
+        "abundance": 0.0150114894,
+        "growth_rate": 1.6011630455
+      },
+      {
+        "taxon": "Gemella",
+        "sample_id": "Cancer1",
+        "abundance": 0.0030792799,
+        "growth_rate": 0.5932770131
+      },
+      {
+        "taxon": "Haemophilus",
+        "sample_id": "Cancer1",
+        "abundance": 0.0461891982,
+        "growth_rate": 11.6071311492
+      },
+      {
+        "taxon": "Lachnoclostridium",
+        "sample_id": "Cancer1",
+        "abundance": 0.0025194108,
+        "growth_rate": 0.6192550155
+      },
+      {
+        "taxon": "Neisseria",
+        "sample_id": "Cancer1",
+        "abundance": 0.0277135189,
+        "growth_rate": 7.9869127388
+      },
+      {
+        "taxon": "Odoribacter",
+        "sample_id": "Cancer1",
+        "abundance": 0.0315626188,
+        "growth_rate": 4.4375744378
+      },
+      {
+        "taxon": "Parabacteroides",
+        "sample_id": "Cancer1",
+        "abundance": 0.0075698964,
+        "growth_rate": 1.3834276418
+      },
+      {
+        "taxon": "Pseudomonas",
+        "sample_id": "Cancer1",
+        "abundance": 0.0061585598,
+        "growth_rate": 1.9263663629
+      },
+      {
+        "taxon": "Staphylococcus",
+        "sample_id": "Cancer1",
+        "abundance": 0.0354117186,
+        "growth_rate": 11.6767384966
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Cancer1",
+        "abundance": 0.0209391032,
+        "growth_rate": 5.9593638281
+      },
+      {
+        "taxon": "Veillonella",
+        "sample_id": "Cancer1",
+        "abundance": 0.0169360394,
+        "growth_rate": 3.5150442345
+      },
+      {
+        "taxon": "Acidaminococcus",
+        "sample_id": "Cancer4",
+        "abundance": 0.0169460635,
+        "growth_rate": 0.1694343957
+      },
+      {
+        "taxon": "Actinomyces",
+        "sample_id": "Cancer4",
+        "abundance": 0.0025419095,
+        "growth_rate": 0.0359696763
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Cancer4",
+        "abundance": 0.0119120858,
+        "growth_rate": 0.1521004181
+      },
+      {
+        "taxon": "Bifidobacterium",
+        "sample_id": "Cancer4",
+        "abundance": 0.0174544454,
+        "growth_rate": 0.0218159001
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Cancer4",
+        "abundance": 0.0456891942,
+        "growth_rate": 0.1636819114
+      },
+      {
+        "taxon": "Collinsella",
+        "sample_id": "Cancer4",
+        "abundance": 0.2088602324,
+        "growth_rate": 0.3913046885
+      },
+      {
+        "taxon": "Desulfovibrio",
+        "sample_id": "Cancer4",
+        "abundance": 0.0039540815,
+        "growth_rate": 0.0044206564
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Cancer4",
+        "abundance": 0.0098852037,
+        "growth_rate": 0.0124997796
+      },
+      {
+        "taxon": "Erysipelatoclostridium",
+        "sample_id": "Cancer4",
+        "abundance": 0.0031471261,
+        "growth_rate": 0.0069321418
+      },
+      {
+        "taxon": "Eubacterium",
+        "sample_id": "Cancer4",
+        "abundance": 0.0016946063,
+        "growth_rate": 0.0257087725
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "Cancer4",
+        "abundance": 0.0048719933,
+        "growth_rate": 0.0242974279
+      },
+      {
+        "taxon": "Lachnoclostridium",
+        "sample_id": "Cancer4",
+        "abundance": 0.0029270473,
+        "growth_rate": 0.0339915725
+      },
+      {
+        "taxon": "Methanobrevibacter",
+        "sample_id": "Cancer4",
+        "abundance": 0.3592565459,
+        "growth_rate": 2.3494498811
+      },
+      {
+        "taxon": "Odoribacter",
+        "sample_id": "Cancer4",
+        "abundance": 0.0033892127,
+        "growth_rate": 0.0233538102
+      },
+      {
+        "taxon": "Parabacteroides",
+        "sample_id": "Cancer4",
+        "abundance": 0.0076963372,
+        "growth_rate": 0.0660811548
+      },
+      {
+        "taxon": "Slackia",
+        "sample_id": "Cancer4",
+        "abundance": 0.0360103849,
+        "growth_rate": 0.2355055448
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Cancer4",
+        "abundance": 0.0027113702,
+        "growth_rate": 0.037457619
+      },
+      {
+        "taxon": "Veillonella",
+        "sample_id": "Cancer4",
+        "abundance": 0.0004236516,
+        "growth_rate": 0.004717914
+      },
+      {
+        "taxon": "Acidaminococcus",
+        "sample_id": "Cancer3",
+        "abundance": 0.0110768457,
+        "growth_rate": 8.0901836821
+      },
+      {
+        "taxon": "Actinomyces",
+        "sample_id": "Cancer3",
+        "abundance": 0.0029538255,
+        "growth_rate": 3.8475384448
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Cancer3",
+        "abundance": 0.0060596862,
+        "growth_rate": 7.2553992028
+      },
+      {
+        "taxon": "Barnesiella",
+        "sample_id": "Cancer3",
+        "abundance": 0.0014769128,
+        "growth_rate": 3.25176e-05
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Cancer3",
+        "abundance": 0.0896372435,
+        "growth_rate": 1.97034e-05
+      },
+      {
+        "taxon": "Collinsella",
+        "sample_id": "Cancer3",
+        "abundance": 0.1373528865,
+        "growth_rate": 6.4557e-06
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Cancer3",
+        "abundance": 0.0594457385,
+        "growth_rate": 4.82852e-05
+      },
+      {
+        "taxon": "Erysipelatoclostridium",
+        "sample_id": "Cancer3",
+        "abundance": 0.0006329626,
+        "growth_rate": 0.0003899387
+      },
+      {
+        "taxon": "Faecalitalea",
+        "sample_id": "Cancer3",
+        "abundance": 0.0013846057,
+        "growth_rate": 9.2702e-06
+      },
+      {
+        "taxon": "Haemophilus",
+        "sample_id": "Cancer3",
+        "abundance": 0.0022153691,
+        "growth_rate": 2.2646370532
+      },
+      {
+        "taxon": "Lachnoclostridium",
+        "sample_id": "Cancer3",
+        "abundance": 0.0025174649,
+        "growth_rate": 2.4638458756
+      },
+      {
+        "taxon": "Lachnospira",
+        "sample_id": "Cancer3",
+        "abundance": 0.0016615269,
+        "growth_rate": 1.48198e-05
+      },
+      {
+        "taxon": "Megamonas",
+        "sample_id": "Cancer3",
+        "abundance": 0.0454150673,
+        "growth_rate": 6.3451091459
+      },
+      {
+        "taxon": "Mogibacterium",
+        "sample_id": "Cancer3",
+        "abundance": 0.007753792,
+        "growth_rate": 1.2095e-06
+      },
+      {
+        "taxon": "Parabacteroides",
+        "sample_id": "Cancer3",
+        "abundance": 0.0056307299,
+        "growth_rate": 2.7033473962
+      },
+      {
+        "taxon": "Paraprevotella",
+        "sample_id": "Cancer3",
+        "abundance": 0.0631380204,
+        "growth_rate": 9.259614212
+      },
+      {
+        "taxon": "Pseudomonas",
+        "sample_id": "Cancer3",
+        "abundance": 0.0022153691,
+        "growth_rate": 3.3422016413
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "Cancer3",
+        "abundance": 0.0609226513,
+        "growth_rate": 0.0004213264
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Cancer3",
+        "abundance": 0.0048738121,
+        "growth_rate": 6.2660419599
+      },
+      {
+        "taxon": "Subdoligranulum",
+        "sample_id": "Cancer3",
+        "abundance": 0.0158768121,
+        "growth_rate": 1.2946e-06
+      },
+      {
+        "taxon": "Sutterella",
+        "sample_id": "Cancer3",
+        "abundance": 0.0022153691,
+        "growth_rate": 0.3252753895
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Cancer7",
+        "abundance": 0.0002234489,
+        "growth_rate": 0.0472622182
+      },
+      {
+        "taxon": "Bifidobacterium",
+        "sample_id": "Cancer7",
+        "abundance": 0.0129153451,
+        "growth_rate": 0.4687903707
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Cancer7",
+        "abundance": 0.0235588167,
+        "growth_rate": 1.633073751
+      },
+      {
+        "taxon": "Collinsella",
+        "sample_id": "Cancer7",
+        "abundance": 0.1096854673,
+        "growth_rate": 5.0220959686
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Cancer7",
+        "abundance": 0.0085469195,
+        "growth_rate": 0.2938464636
+      },
+      {
+        "taxon": "Erysipelatoclostridium",
+        "sample_id": "Cancer7",
+        "abundance": 0.0005426616,
+        "growth_rate": 0.0231631364
+      },
+      {
+        "taxon": "Lachnoclostridium",
+        "sample_id": "Cancer7",
+        "abundance": 0.0056979464,
+        "growth_rate": 1.0138147874
+      },
+      {
+        "taxon": "Parabacteroides",
+        "sample_id": "Cancer7",
+        "abundance": 0.0020575917,
+        "growth_rate": 0.2823979933
+      },
+      {
+        "taxon": "Pseudomonas",
+        "sample_id": "Cancer7",
+        "abundance": 0.0009496577,
+        "growth_rate": 0.2114633451
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Cancer7",
+        "abundance": 0.0412151453,
+        "growth_rate": 8.365480868
+      },
+      {
+        "taxon": "Anaerostipes",
+        "sample_id": "Healthy1",
+        "abundance": 0.0331894905,
+        "growth_rate": 0.4646111079
+      },
+      {
+        "taxon": "Bacteroides",
+        "sample_id": "Healthy1",
+        "abundance": 0.087533128,
+        "growth_rate": 0.7248115308
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Healthy1",
+        "abundance": 0.0204654799,
+        "growth_rate": 0.7030587929
+      },
+      {
+        "taxon": "Dialister",
+        "sample_id": "Healthy1",
+        "abundance": 0.1156279025,
+        "growth_rate": 5.0252121068
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Healthy1",
+        "abundance": 0.0185575646,
+        "growth_rate": 0.4925166127
+      },
+      {
+        "taxon": "Erysipelatoclostridium",
+        "sample_id": "Healthy1",
+        "abundance": 0.0015294696,
+        "growth_rate": 0.0428334949
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "Healthy1",
+        "abundance": 0.0563418368,
+        "growth_rate": 2.1727418819
+      },
+      {
+        "taxon": "Haemophilus",
+        "sample_id": "Healthy1",
+        "abundance": 0.0064237724,
+        "growth_rate": 0.3818011144
+      },
+      {
+        "taxon": "Lachnoclostridium",
+        "sample_id": "Healthy1",
+        "abundance": 0.0006813092,
+        "growth_rate": 0.0405112519
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "Healthy1",
+        "abundance": 0.0513901789,
+        "growth_rate": 0.6230539076
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Healthy1",
+        "abundance": 0.0062096466,
+        "growth_rate": 0.3989234245
+      },
+      {
+        "taxon": "Veillonella",
+        "sample_id": "Healthy1",
+        "abundance": 0.0069590867,
+        "growth_rate": 0.3696838348
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Healthy8",
+        "abundance": 0.0415154821,
+        "growth_rate": 8.6223519659
+      },
+      {
+        "taxon": "Anaerostipes",
+        "sample_id": "Healthy8",
+        "abundance": 0.0361929844,
+        "growth_rate": 1.6192690002
+      },
+      {
+        "taxon": "Bacteroides",
+        "sample_id": "Healthy8",
+        "abundance": 0.0858605047,
+        "growth_rate": 2.196285664
+      },
+      {
+        "taxon": "Bifidobacterium",
+        "sample_id": "Healthy8",
+        "abundance": 0.0138024093,
+        "growth_rate": 1.2173377615
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Healthy8",
+        "abundance": 0.0182616492,
+        "growth_rate": 2.0624979371
+      },
+      {
+        "taxon": "Butyricimonas",
+        "sample_id": "Healthy8",
+        "abundance": 0.0036806425,
+        "growth_rate": 0.5280078271
+      },
+      {
+        "taxon": "Collinsella",
+        "sample_id": "Healthy8",
+        "abundance": 0.0262245777,
+        "growth_rate": 2.4994104395
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Healthy8",
+        "abundance": 0.008894886,
+        "growth_rate": 0.7717310227
+      },
+      {
+        "taxon": "Erysipelatoclostridium",
+        "sample_id": "Healthy8",
+        "abundance": 0.0023661273,
+        "growth_rate": 0.2164351706
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "Healthy8",
+        "abundance": 0.0198984734,
+        "growth_rate": 2.5280679627
+      },
+      {
+        "taxon": "Lachnoclostridium",
+        "sample_id": "Healthy8",
+        "abundance": 0.0004182548,
+        "growth_rate": 0.081385964
+      },
+      {
+        "taxon": "Parabacteroides",
+        "sample_id": "Healthy8",
+        "abundance": 0.0062877642,
+        "growth_rate": 1.0301957261
+      },
+      {
+        "taxon": "Parasutterella",
+        "sample_id": "Healthy8",
+        "abundance": 0.0335858626,
+        "growth_rate": 1.2225660623
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "Healthy8",
+        "abundance": 0.0081664255,
+        "growth_rate": 0.3140659165
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Healthy8",
+        "abundance": 0.0025764497,
+        "growth_rate": 0.5490155704
+      },
+      {
+        "taxon": "Actinomyces",
+        "sample_id": "Healthy6",
+        "abundance": 0.001979962,
+        "growth_rate": 0.0879298231
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Healthy6",
+        "abundance": 0.1134692902,
+        "growth_rate": 4.8903793733
+      },
+      {
+        "taxon": "Anaerostipes",
+        "sample_id": "Healthy6",
+        "abundance": 0.0410842105,
+        "growth_rate": 0.5528888389
+      },
+      {
+        "taxon": "Bacteroides",
+        "sample_id": "Healthy6",
+        "abundance": 0.16636801,
+        "growth_rate": 1.6590463497
+      },
+      {
+        "taxon": "Bifidobacterium",
+        "sample_id": "Healthy6",
+        "abundance": 0.0044549144,
+        "growth_rate": 0.0951683825
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Healthy6",
+        "abundance": 0.0042264572,
+        "growth_rate": 0.109311362
+      },
+      {
+        "taxon": "Butyricimonas",
+        "sample_id": "Healthy6",
+        "abundance": 0.0152209575,
+        "growth_rate": 0.4781537728
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Healthy6",
+        "abundance": 0.0188096386,
+        "growth_rate": 0.396907721
+      },
+      {
+        "taxon": "Eggerthella",
+        "sample_id": "Healthy6",
+        "abundance": 0.0014849715,
+        "growth_rate": 0.0580793485
+      },
+      {
+        "taxon": "Erysipelatoclostridium",
+        "sample_id": "Healthy6",
+        "abundance": 0.0282144578,
+        "growth_rate": 0.6195405561
+      },
+      {
+        "taxon": "Eubacterium",
+        "sample_id": "Healthy6",
+        "abundance": 0.0022274572,
+        "growth_rate": 0.10294537
+      },
+      {
+        "taxon": "Fusobacterium",
+        "sample_id": "Healthy6",
+        "abundance": 0.0344018389,
+        "growth_rate": 0.1955877957
+      },
+      {
+        "taxon": "Holdemanella",
+        "sample_id": "Healthy6",
+        "abundance": 0.000989981,
+        "growth_rate": 0.0004157311
+      },
+      {
+        "taxon": "Hungatella",
+        "sample_id": "Healthy6",
+        "abundance": 0.0252445149,
+        "growth_rate": 0.5326870961
+      },
+      {
+        "taxon": "Lachnoclostridium",
+        "sample_id": "Healthy6",
+        "abundance": 0.0080998444,
+        "growth_rate": 0.3293986397
+      },
+      {
+        "taxon": "Odoribacter",
+        "sample_id": "Healthy6",
+        "abundance": 0.0267294864,
+        "growth_rate": 0.8396898155
+      },
+      {
+        "taxon": "Parabacteroides",
+        "sample_id": "Healthy6",
+        "abundance": 0.0341543437,
+        "growth_rate": 1.1995846214
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Healthy6",
+        "abundance": 0.0044549144,
+        "growth_rate": 0.1965526281
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Healthy5",
+        "abundance": 0.0056754108,
+        "growth_rate": 0.4326697865
+      },
+      {
+        "taxon": "Bifidobacterium",
+        "sample_id": "Healthy5",
+        "abundance": 0.1341288742,
+        "growth_rate": 0.9086165786
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Healthy5",
+        "abundance": 0.019791176,
+        "growth_rate": 0.4187422699
+      },
+      {
+        "taxon": "Collinsella",
+        "sample_id": "Healthy5",
+        "abundance": 0.0747262416,
+        "growth_rate": 0.8150802544
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Healthy5",
+        "abundance": 0.02112514,
+        "growth_rate": 0.1129755526
+      },
+      {
+        "taxon": "Eggerthella",
+        "sample_id": "Healthy5",
+        "abundance": 0.0028377054,
+        "growth_rate": 0.169355721
+      },
+      {
+        "taxon": "Erysipelatoclostridium",
+        "sample_id": "Healthy5",
+        "abundance": 0.0012161594,
+        "growth_rate": 0.013757487
+      },
+      {
+        "taxon": "Eubacterium",
+        "sample_id": "Healthy5",
+        "abundance": 0.0331065627,
+        "growth_rate": 2.7750194422
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "Healthy5",
+        "abundance": 0.1280514552,
+        "growth_rate": 3.7593872425
+      },
+      {
+        "taxon": "Lachnoclostridium",
+        "sample_id": "Healthy5",
+        "abundance": 0.0017198214,
+        "growth_rate": 0.1177503614
+      },
+      {
+        "taxon": "Methanobrevibacter",
+        "sample_id": "Healthy5",
+        "abundance": 0.0018918036,
+        "growth_rate": 0.073770964
+      },
+      {
+        "taxon": "Parabacteroides",
+        "sample_id": "Healthy5",
+        "abundance": 0.0018918036,
+        "growth_rate": 0.0963319151
+      },
+      {
+        "taxon": "Paraprevotella",
+        "sample_id": "Healthy5",
+        "abundance": 0.0160803305,
+        "growth_rate": 0.6254661438
+      },
+      {
+        "taxon": "Slackia",
+        "sample_id": "Healthy5",
+        "abundance": 0.0094590179,
+        "growth_rate": 0.3679241642
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Healthy5",
+        "abundance": 0.0578891897,
+        "growth_rate": 4.5949461112
+      },
+      {
+        "taxon": "Veillonella",
+        "sample_id": "Healthy5",
+        "abundance": 0.0148191281,
+        "growth_rate": 0.8552954793
+      },
+      {
+        "taxon": "Akkermansia",
+        "sample_id": "Healthy2",
+        "abundance": 0.1454258288,
+        "growth_rate": 0.0015716825
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Healthy2",
+        "abundance": 0.0004897592,
+        "growth_rate": 0.004427797
+      },
+      {
+        "taxon": "Anaerostipes",
+        "sample_id": "Healthy2",
+        "abundance": 0.0111012083,
+        "growth_rate": 0.0562124683
+      },
+      {
+        "taxon": "Bacteroides",
+        "sample_id": "Healthy2",
+        "abundance": 0.009359467,
+        "growth_rate": 0.0442823103
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Healthy2",
+        "abundance": 0.0075253383,
+        "growth_rate": 0.0493410352
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Healthy2",
+        "abundance": 0.0091584969,
+        "growth_rate": 0.0548001815
+      },
+      {
+        "taxon": "Enterococcus",
+        "sample_id": "Healthy2",
+        "abundance": 0.2114780182,
+        "growth_rate": 1.616850771
+      },
+      {
+        "taxon": "Erysipelatoclostridium",
+        "sample_id": "Healthy2",
+        "abundance": 0.000237883,
+        "growth_rate": 0.0018126519
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "Healthy2",
+        "abundance": 0.0570324577,
+        "growth_rate": 0.3915546105
+      },
+      {
+        "taxon": "Flavonifractor",
+        "sample_id": "Healthy2",
+        "abundance": 0.0016651812,
+        "growth_rate": 0.005187979
+      },
+      {
+        "taxon": "Haemophilus",
+        "sample_id": "Healthy2",
+        "abundance": 0.0424621218,
+        "growth_rate": 0.3565307436
+      },
+      {
+        "taxon": "Intestinibacter",
+        "sample_id": "Healthy2",
+        "abundance": 0.2397860994,
+        "growth_rate": 0.6557543507
+      },
+      {
+        "taxon": "Lachnospira",
+        "sample_id": "Healthy2",
+        "abundance": 0.0049955437,
+        "growth_rate": 0.0119946378
+      },
+      {
+        "taxon": "Marvinbryantia",
+        "sample_id": "Healthy2",
+        "abundance": 0.0033303625,
+        "growth_rate": 0.009115292
+      },
+      {
+        "taxon": "Parabacteroides",
+        "sample_id": "Healthy2",
+        "abundance": 0.0043017182,
+        "growth_rate": 0.0340555475
+      },
+      {
+        "taxon": "Parasutterella",
+        "sample_id": "Healthy2",
+        "abundance": 0.0074933156,
+        "growth_rate": 0.0365779156
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "Healthy2",
+        "abundance": 0.0293488195,
+        "growth_rate": 0.1445758518
+      },
+      {
+        "taxon": "Subdoligranulum",
+        "sample_id": "Healthy2",
+        "abundance": 0.0312221484,
+        "growth_rate": 0.0877761337
+      },
+      {
+        "taxon": "Terrisporobacter",
+        "sample_id": "Healthy2",
+        "abundance": 0.159024809,
+        "growth_rate": 0.3814764205
+      },
+      {
+        "taxon": "Veillonella",
+        "sample_id": "Healthy2",
+        "abundance": 0.0245614234,
+        "growth_rate": 0.1948980126
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Cancer5",
+        "abundance": 0.0131557576,
+        "growth_rate": 0.1176132019
+      },
+      {
+        "taxon": "Anaerostipes",
+        "sample_id": "Cancer5",
+        "abundance": 0.079009507,
+        "growth_rate": 0.3588180573
+      },
+      {
+        "taxon": "Bacteroides",
+        "sample_id": "Cancer5",
+        "abundance": 0.0739890197,
+        "growth_rate": 0.2982639978
+      },
+      {
+        "taxon": "Bifidobacterium",
+        "sample_id": "Cancer5",
+        "abundance": 0.0422445993,
+        "growth_rate": 0.2407431508
+      },
+      {
+        "taxon": "Bilophila",
+        "sample_id": "Cancer5",
+        "abundance": 0.0133806423,
+        "growth_rate": 0.0241074093
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Cancer5",
+        "abundance": 0.0430092074,
+        "growth_rate": 0.2734421511
+      },
+      {
+        "taxon": "Butyricimonas",
+        "sample_id": "Cancer5",
+        "abundance": 0.0007168201,
+        "growth_rate": 0.0061386861
+      },
+      {
+        "taxon": "Collinsella",
+        "sample_id": "Cancer5",
+        "abundance": 0.0845847746,
+        "growth_rate": 0.4980480378
+      },
+      {
+        "taxon": "Desulfovibrio",
+        "sample_id": "Cancer5",
+        "abundance": 0.0226196572,
+        "growth_rate": 0.1217119046
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "Cancer5",
+        "abundance": 0.0434870875,
+        "growth_rate": 0.2928178346
+      },
+      {
+        "taxon": "Flavonifractor",
+        "sample_id": "Cancer5",
+        "abundance": 0.0028672805,
+        "growth_rate": 0.0048398609
+      },
+      {
+        "taxon": "Gemella",
+        "sample_id": "Cancer5",
+        "abundance": 0.0019115203,
+        "growth_rate": 0.0156890927
+      },
+      {
+        "taxon": "Holdemania",
+        "sample_id": "Cancer5",
+        "abundance": 0.0038230407,
+        "growth_rate": 0.007289685
+      },
+      {
+        "taxon": "Lachnoclostridium",
+        "sample_id": "Cancer5",
+        "abundance": 0.001824633,
+        "growth_rate": 0.0157274423
+      },
+      {
+        "taxon": "Odoribacter",
+        "sample_id": "Cancer5",
+        "abundance": 0.0019115203,
+        "growth_rate": 0.0157773056
+      },
+      {
+        "taxon": "Parabacteroides",
+        "sample_id": "Cancer5",
+        "abundance": 0.0305046786,
+        "growth_rate": 0.2352914974
+      },
+      {
+        "taxon": "Paraprevotella",
+        "sample_id": "Cancer5",
+        "abundance": 0.2661792061,
+        "growth_rate": 1.9086128358
+      },
+      {
+        "taxon": "Parasutterella",
+        "sample_id": "Cancer5",
+        "abundance": 0.0033451606,
+        "growth_rate": 0.0164403527
+      },
+      {
+        "taxon": "Phascolarctobacterium",
+        "sample_id": "Cancer5",
+        "abundance": 0.217594731,
+        "growth_rate": 0.4042188357
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "Cancer5",
+        "abundance": 0.0234161241,
+        "growth_rate": 0.102426
+      },
+      {
+        "taxon": "Slackia",
+        "sample_id": "Cancer5",
+        "abundance": 0.0081239614,
+        "growth_rate": 0.0590787064
+      },
+      {
+        "taxon": "Sutterella",
+        "sample_id": "Cancer5",
+        "abundance": 0.0105133618,
+        "growth_rate": 0.0753856711
+      },
+      {
+        "taxon": "Akkermansia",
+        "sample_id": "Cancer6",
+        "abundance": 0.226662135,
+        "growth_rate": 0.1736417187
+      },
+      {
+        "taxon": "Alistipes",
+        "sample_id": "Cancer6",
+        "abundance": 0.0108794952,
+        "growth_rate": 0.0361749531
+      },
+      {
+        "taxon": "Anaerostipes",
+        "sample_id": "Cancer6",
+        "abundance": 0.0046797389,
+        "growth_rate": 0.0109227557
+      },
+      {
+        "taxon": "Bacteroides",
+        "sample_id": "Cancer6",
+        "abundance": 0.0145022792,
+        "growth_rate": 0.0307946538
+      },
+      {
+        "taxon": "Barnesiella",
+        "sample_id": "Cancer6",
+        "abundance": 0.0421176499,
+        "growth_rate": 0.0912063342
+      },
+      {
+        "taxon": "Bifidobacterium",
+        "sample_id": "Cancer6",
+        "abundance": 0.0064702477,
+        "growth_rate": 0.0170788568
+      },
+      {
+        "taxon": "Bilophila",
+        "sample_id": "Cancer6",
+        "abundance": 0.0012208014,
+        "growth_rate": 0.0030408853
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "Cancer6",
+        "abundance": 0.0117619524,
+        "growth_rate": 0.0311274369
+      },
+      {
+        "taxon": "Butyricimonas",
+        "sample_id": "Cancer6",
+        "abundance": 0.0019838023,
+        "growth_rate": 0.0062629156
+      },
+      {
+        "taxon": "Catenibacterium",
+        "sample_id": "Cancer6",
+        "abundance": 0.003357204,
+        "growth_rate": 0.0052135498
+      },
+      {
+        "taxon": "Cloacibacillus",
+        "sample_id": "Cancer6",
+        "abundance": 0.007630009,
+        "growth_rate": 0.0182839015
+      },
+      {
+        "taxon": "Collinsella",
+        "sample_id": "Cancer6",
+        "abundance": 0.0021364025,
+        "growth_rate": 0.0055142631
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "Cancer6",
+        "abundance": 0.0034589374,
+        "growth_rate": 0.009390467
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "Cancer6",
+        "abundance": 0.0208299247,
+        "growth_rate": 0.0569602834
+      },
+      {
+        "taxon": "Intestinibacter",
+        "sample_id": "Cancer6",
+        "abundance": 0.0024416029,
+        "growth_rate": 0.0044351645
+      },
+      {
+        "taxon": "Lachnospira",
+        "sample_id": "Cancer6",
+        "abundance": 0.003357204,
+        "growth_rate": 0.0050807104
+      },
+      {
+        "taxon": "Methanobrevibacter",
+        "sample_id": "Cancer6",
+        "abundance": 0.5328798308,
+        "growth_rate": 1.5120595042
+      },
+      {
+        "taxon": "Neisseria",
+        "sample_id": "Cancer6",
+        "abundance": 0.0018312022,
+        "growth_rate": 0.0061493939
+      },
+      {
+        "taxon": "Odoribacter",
+        "sample_id": "Cancer6",
+        "abundance": 0.0057988069,
+        "growth_rate": 0.0176484009
+      },
+      {
+        "taxon": "Parabacteroides",
+        "sample_id": "Cancer6",
+        "abundance": 0.0125132148,
+        "growth_rate": 0.0376167542
+      },
+      {
+        "taxon": "Paraprevotella",
+        "sample_id": "Cancer6",
+        "abundance": 0.0274680325,
+        "growth_rate": 0.0779818078
+      },
+      {
+        "taxon": "Phascolarctobacterium",
+        "sample_id": "Cancer6",
+        "abundance": 0.0278749663,
+        "growth_rate": 0.0441900364
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "Cancer6",
+        "abundance": 0.0087745104,
+        "growth_rate": 0.0191435379
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "Cancer6",
+        "abundance": 0.0026857632,
+        "growth_rate": 0.0089467127
+      },
+      {
+        "taxon": "Subdoligranulum",
+        "sample_id": "Cancer6",
+        "abundance": 0.0141409501,
+        "growth_rate": 0.0222303243
+      },
+      {
+        "taxon": "Terrisporobacter",
+        "sample_id": "Cancer6",
+        "abundance": 0.0014242684,
+        "growth_rate": 0.0037344417
+      },
+      {
+        "taxon": "Tyzzerella",
+        "sample_id": "Cancer6",
+        "abundance": 0.0006104007,
+        "growth_rate": 0.0023573968
+      },
+      {
+        "taxon": "Veillonella",
+        "sample_id": "Cancer6",
+        "abundance": 0.0005086673,
+        "growth_rate": 0.0015978436
+      }
+    ]
+  },
+  "selection": {
+    "pts": {
+      "type": "single",
+      "fields": [
+        "sample_id"
+      ]
+    }
+  },
+  "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 40,
+    "tooltip": {
+      "content": "data"
+    }
+  },
+  "encoding": {
+    "y": {
+      "field": "growth_rate",
+      "type": "quantitative",
+      "scale": {
+        "type": "log"
+      },
+      "axis": {
+        "title": "growth rate [1/h]",
+        "grid": false
+      }
+    },
+    "x": {
+      "field": "taxon",
+      "type": "nominal",
+      "sort": {
+        "op": "median",
+        "field": "growth_rate"
+      },
+      "axis": {
+        "title": null
+      }
+    },
+    "color": {
+      "condition": {
+        "selection": "pts",
+        "field": "taxon",
+        "type": "nominal",
+        "legend": null
+      },
+      "value": "lightgrey"
+    },
+    "opacity": {
+      "condition": {
+        "selection": "pts",
+        "value": 0.8
+      },
+      "value": 0.2
+    }
+  }
+}

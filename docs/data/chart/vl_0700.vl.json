@@ -1,0 +1,5668 @@
+{
+  "height": 300,
+  "width": 300,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "hconcat": [
+    {
+      "data": {
+        "values": [
+          {
+            "gemini_id": 1,
+            "datamations_x": 108.197138495743,
+            "datamations_y": 81.9445013836958,
+            "datamations_y_tooltip": 81.9445013836958
+          },
+          {
+            "gemini_id": 2,
+            "datamations_x": 88.6565621732734,
+            "datamations_y": 82.8953005648218,
+            "datamations_y_tooltip": 82.8953005648218
+          },
+          {
+            "gemini_id": 3,
+            "datamations_x": 68.4237992879935,
+            "datamations_y": 83.2656172472052,
+            "datamations_y_tooltip": 83.2656172472052
+          },
+          {
+            "gemini_id": 4,
+            "datamations_x": 91.707503576763,
+            "datamations_y": 82.899547266541,
+            "datamations_y_tooltip": 82.899547266541
+          },
+          {
+            "gemini_id": 5,
+            "datamations_x": 101.154054389335,
+            "datamations_y": 90.1877911367919,
+            "datamations_y_tooltip": 90.1877911367919
+          },
+          {
+            "gemini_id": 6,
+            "datamations_x": 61.4839485404082,
+            "datamations_y": 90.3138903337531,
+            "datamations_y_tooltip": 90.3138903337531
+          },
+          {
+            "gemini_id": 7,
+            "datamations_x": 97.6091434853151,
+            "datamations_y": 90.3365755749401,
+            "datamations_y_tooltip": 90.3365755749401
+          },
+          {
+            "gemini_id": 8,
+            "datamations_x": 94.6975027467124,
+            "datamations_y": 89.6885157823563,
+            "datamations_y_tooltip": 89.6885157823563
+          },
+          {
+            "gemini_id": 9,
+            "datamations_x": 81.8219332979061,
+            "datamations_y": 89.657391943736,
+            "datamations_y_tooltip": 89.657391943736
+          },
+          {
+            "gemini_id": 10,
+            "datamations_x": 97.3172331484966,
+            "datamations_y": 89.8103184474166,
+            "datamations_y_tooltip": 89.8103184474166
+          },
+          {
+            "gemini_id": 11,
+            "datamations_x": 63.5424664733,
+            "datamations_y": 90.1445505130105,
+            "datamations_y_tooltip": 90.1445505130105
+          },
+          {
+            "gemini_id": 12,
+            "datamations_x": 100.735607570969,
+            "datamations_y": 90.2597002927214,
+            "datamations_y_tooltip": 90.2597002927214
+          },
+          {
+            "gemini_id": 13,
+            "datamations_x": 102.803507274948,
+            "datamations_y": 89.5807276440319,
+            "datamations_y_tooltip": 89.5807276440319
+          },
+          {
+            "gemini_id": 14,
+            "datamations_x": 79.4917103042826,
+            "datamations_y": 91.4775695463177,
+            "datamations_y_tooltip": 91.4775695463177
+          },
+          {
+            "gemini_id": 15,
+            "datamations_x": 91.7843236261979,
+            "datamations_y": 90.5421400056221,
+            "datamations_y_tooltip": 90.5421400056221
+          },
+          {
+            "gemini_id": 16,
+            "datamations_x": 107.358183562756,
+            "datamations_y": 90.9508253019303,
+            "datamations_y_tooltip": 90.9508253019303
+          },
+          {
+            "gemini_id": 17,
+            "datamations_x": 88.2195205101743,
+            "datamations_y": 84.3256172758993,
+            "datamations_y_tooltip": 84.3256172758993
+          },
+          {
+            "gemini_id": 18,
+            "datamations_x": 68.9803898357786,
+            "datamations_y": 90.7608228451572,
+            "datamations_y_tooltip": 90.7608228451572
+          },
+          {
+            "gemini_id": 19,
+            "datamations_x": 82.8341949987225,
+            "datamations_y": 91.2149588565808,
+            "datamations_y_tooltip": 91.2149588565808
+          },
+          {
+            "gemini_id": 20,
+            "datamations_x": 91.7849920014851,
+            "datamations_y": 91.4811559985392,
+            "datamations_y_tooltip": 91.4811559985392
+          },
+          {
+            "gemini_id": 21,
+            "datamations_x": 60.3296202165075,
+            "datamations_y": 91.203505871119,
+            "datamations_y_tooltip": 91.203505871119
+          },
+          {
+            "gemini_id": 22,
+            "datamations_x": 62.209513541311,
+            "datamations_y": 84.1406831252389,
+            "datamations_y_tooltip": 84.1406831252389
+          },
+          {
+            "gemini_id": 23,
+            "datamations_x": 85.7330019841902,
+            "datamations_y": 90.900099467719,
+            "datamations_y_tooltip": 90.900099467719
+          },
+          {
+            "gemini_id": 24,
+            "datamations_x": 99.4594412413426,
+            "datamations_y": 91.3447520111222,
+            "datamations_y_tooltip": 91.3447520111222
+          },
+          {
+            "gemini_id": 25,
+            "datamations_x": 108.575439932756,
+            "datamations_y": 90.6169246234931,
+            "datamations_y_tooltip": 90.6169246234931
+          },
+          {
+            "gemini_id": 26,
+            "datamations_x": 82.3906649742275,
+            "datamations_y": 91.1798533124384,
+            "datamations_y_tooltip": 91.1798533124384
+          },
+          {
+            "gemini_id": 27,
+            "datamations_x": 69.4802642823197,
+            "datamations_y": 91.2493746823166,
+            "datamations_y_tooltip": 91.2493746823166
+          },
+          {
+            "gemini_id": 28,
+            "datamations_x": 102.913876322564,
+            "datamations_y": 91.4049337708857,
+            "datamations_y_tooltip": 91.4049337708857
+          },
+          {
+            "gemini_id": 29,
+            "datamations_x": 71.8817270500585,
+            "datamations_y": 91.1165353488177,
+            "datamations_y_tooltip": 91.1165353488177
+          },
+          {
+            "gemini_id": 30,
+            "datamations_x": 90.9859726927243,
+            "datamations_y": 91.1068642993923,
+            "datamations_y_tooltip": 91.1068642993923
+          },
+          {
+            "gemini_id": 31,
+            "datamations_x": 109.392303684726,
+            "datamations_y": 90.6704280367121,
+            "datamations_y_tooltip": 90.6704280367121
+          },
+          {
+            "gemini_id": 32,
+            "datamations_x": 86.7987731494941,
+            "datamations_y": 91.4698466714472,
+            "datamations_y_tooltip": 91.4698466714472
+          },
+          {
+            "gemini_id": 33,
+            "datamations_x": 106.88808186911,
+            "datamations_y": 91.0579056167044,
+            "datamations_y_tooltip": 91.0579056167044
+          },
+          {
+            "gemini_id": 34,
+            "datamations_x": 75.7702176831663,
+            "datamations_y": 90.9434416298755,
+            "datamations_y_tooltip": 90.9434416298755
+          },
+          {
+            "gemini_id": 35,
+            "datamations_x": 83.7883752444759,
+            "datamations_y": 91.1740557027515,
+            "datamations_y_tooltip": 91.1740557027515
+          },
+          {
+            "gemini_id": 36,
+            "datamations_x": 108.52535846876,
+            "datamations_y": 91.2401522365399,
+            "datamations_y_tooltip": 91.2401522365399
+          },
+          {
+            "gemini_id": 37,
+            "datamations_x": 101.965444094967,
+            "datamations_y": 90.5011388328858,
+            "datamations_y_tooltip": 90.5011388328858
+          },
+          {
+            "gemini_id": 38,
+            "datamations_x": 95.4353828588501,
+            "datamations_y": 85.3303201349918,
+            "datamations_y_tooltip": 85.3303201349918
+          },
+          {
+            "gemini_id": 39,
+            "datamations_x": 83.2167628826573,
+            "datamations_y": 90.6040293425322,
+            "datamations_y_tooltip": 90.6040293425322
+          },
+          {
+            "gemini_id": 40,
+            "datamations_x": 71.1349574406631,
+            "datamations_y": 85.4951418309938,
+            "datamations_y_tooltip": 85.4951418309938
+          },
+          {
+            "gemini_id": 41,
+            "datamations_x": 83.7933087861165,
+            "datamations_y": 91.4005046924576,
+            "datamations_y_tooltip": 91.4005046924576
+          },
+          {
+            "gemini_id": 42,
+            "datamations_x": 96.6458024014719,
+            "datamations_y": 91.1476999609731,
+            "datamations_y_tooltip": 91.1476999609731
+          },
+          {
+            "gemini_id": 43,
+            "datamations_x": 100.798250597436,
+            "datamations_y": 90.7045878821518,
+            "datamations_y_tooltip": 90.7045878821518
+          },
+          {
+            "gemini_id": 44,
+            "datamations_x": 84.6707479585893,
+            "datamations_y": 90.6188371984754,
+            "datamations_y_tooltip": 90.6188371984754
+          },
+          {
+            "gemini_id": 45,
+            "datamations_x": 91.5696700243279,
+            "datamations_y": 90.5633510330226,
+            "datamations_y_tooltip": 90.5633510330226
+          },
+          {
+            "gemini_id": 46,
+            "datamations_x": 106.191942272708,
+            "datamations_y": 90.5981954357121,
+            "datamations_y_tooltip": 90.5981954357121
+          },
+          {
+            "gemini_id": 47,
+            "datamations_x": 109.822490825318,
+            "datamations_y": 91.1700340267271,
+            "datamations_y_tooltip": 91.1700340267271
+          },
+          {
+            "gemini_id": 48,
+            "datamations_x": 102.613310238812,
+            "datamations_y": 90.7472879537381,
+            "datamations_y_tooltip": 90.7472879537381
+          },
+          {
+            "gemini_id": 49,
+            "datamations_x": 103.626687233336,
+            "datamations_y": 92.0161147855688,
+            "datamations_y_tooltip": 92.0161147855688
+          },
+          {
+            "gemini_id": 50,
+            "datamations_x": 62.9249094193801,
+            "datamations_y": 92.2819435379934,
+            "datamations_y_tooltip": 92.2819435379934
+          },
+          {
+            "gemini_id": 51,
+            "datamations_x": 87.7403319487348,
+            "datamations_y": 91.5201518230606,
+            "datamations_y_tooltip": 91.5201518230606
+          },
+          {
+            "gemini_id": 52,
+            "datamations_x": 98.2851789821871,
+            "datamations_y": 92.2406232669018,
+            "datamations_y_tooltip": 92.2406232669018
+          },
+          {
+            "gemini_id": 53,
+            "datamations_x": 88.5169246955775,
+            "datamations_y": 84.5408536496107,
+            "datamations_y_tooltip": 84.5408536496107
+          },
+          {
+            "gemini_id": 54,
+            "datamations_x": 71.6882668924518,
+            "datamations_y": 91.6161431246437,
+            "datamations_y_tooltip": 91.6161431246437
+          },
+          {
+            "gemini_id": 55,
+            "datamations_x": 65.7861902518198,
+            "datamations_y": 92.0414693744387,
+            "datamations_y_tooltip": 92.0414693744387
+          },
+          {
+            "gemini_id": 56,
+            "datamations_x": 68.5606893990189,
+            "datamations_y": 92.2921498068608,
+            "datamations_y_tooltip": 92.2921498068608
+          },
+          {
+            "gemini_id": 57,
+            "datamations_x": 92.8013195423409,
+            "datamations_y": 91.6981512298808,
+            "datamations_y_tooltip": 91.6981512298808
+          },
+          {
+            "gemini_id": 58,
+            "datamations_x": 80.1982381753623,
+            "datamations_y": 91.8960476492066,
+            "datamations_y_tooltip": 91.8960476492066
+          },
+          {
+            "gemini_id": 59,
+            "datamations_x": 61.25630015973,
+            "datamations_y": 92.4187721665949,
+            "datamations_y_tooltip": 92.4187721665949
+          },
+          {
+            "gemini_id": 60,
+            "datamations_x": 72.5947196851484,
+            "datamations_y": 91.8766731780488,
+            "datamations_y_tooltip": 91.8766731780488
+          },
+          {
+            "gemini_id": 61,
+            "datamations_x": 94.7003551083617,
+            "datamations_y": 92.3804325407837,
+            "datamations_y_tooltip": 92.3804325407837
+          },
+          {
+            "gemini_id": 62,
+            "datamations_x": 105.065170619637,
+            "datamations_y": 92.1729675922543,
+            "datamations_y_tooltip": 92.1729675922543
+          },
+          {
+            "gemini_id": 63,
+            "datamations_x": 101.013525752351,
+            "datamations_y": 92.1522822889965,
+            "datamations_y_tooltip": 92.1522822889965
+          },
+          {
+            "gemini_id": 64,
+            "datamations_x": 64.8834083252586,
+            "datamations_y": 85.4612494898029,
+            "datamations_y_tooltip": 85.4612494898029
+          },
+          {
+            "gemini_id": 65,
+            "datamations_x": 108.946625902317,
+            "datamations_y": 92.1945560907479,
+            "datamations_y_tooltip": 92.1945560907479
+          },
+          {
+            "gemini_id": 66,
+            "datamations_x": 107.516633966006,
+            "datamations_y": 91.5597189620603,
+            "datamations_y_tooltip": 91.5597189620603
+          },
+          {
+            "gemini_id": 67,
+            "datamations_x": 72.3243912355974,
+            "datamations_y": 91.992212592857,
+            "datamations_y_tooltip": 91.992212592857
+          },
+          {
+            "gemini_id": 68,
+            "datamations_x": 83.7335656653158,
+            "datamations_y": 92.4685412924737,
+            "datamations_y_tooltip": 92.4685412924737
+          },
+          {
+            "gemini_id": 69,
+            "datamations_x": 88.7029005470686,
+            "datamations_y": 91.9892992568202,
+            "datamations_y_tooltip": 91.9892992568202
+          },
+          {
+            "gemini_id": 70,
+            "datamations_x": 62.0156437181868,
+            "datamations_y": 91.9956347632688,
+            "datamations_y_tooltip": 91.9956347632688
+          },
+          {
+            "gemini_id": 71,
+            "datamations_x": 71.1280782730319,
+            "datamations_y": 92.3084856946953,
+            "datamations_y_tooltip": 92.3084856946953
+          },
+          {
+            "gemini_id": 72,
+            "datamations_x": 108.18305997178,
+            "datamations_y": 91.7435715948232,
+            "datamations_y_tooltip": 91.7435715948232
+          },
+          {
+            "gemini_id": 73,
+            "datamations_x": 92.5483013875782,
+            "datamations_y": 84.4868333523627,
+            "datamations_y_tooltip": 84.4868333523627
+          },
+          {
+            "gemini_id": 74,
+            "datamations_x": 90.5277793202549,
+            "datamations_y": 83.8469139884692,
+            "datamations_y_tooltip": 83.8469139884692
+          },
+          {
+            "gemini_id": 75,
+            "datamations_x": 84.9783491250128,
+            "datamations_y": 83.7531382157467,
+            "datamations_y_tooltip": 83.7531382157467
+          },
+          {
+            "gemini_id": 76,
+            "datamations_x": 100.835474454798,
+            "datamations_y": 85.2683244312648,
+            "datamations_y_tooltip": 85.2683244312648
+          },
+          {
+            "gemini_id": 77,
+            "datamations_x": 103.048453866504,
+            "datamations_y": 91.4052118111867,
+            "datamations_y_tooltip": 91.4052118111867
+          },
+          {
+            "gemini_id": 78,
+            "datamations_x": 99.8376574856229,
+            "datamations_y": 85.3309176496696,
+            "datamations_y_tooltip": 85.3309176496696
+          },
+          {
+            "gemini_id": 79,
+            "datamations_x": 102.011997883674,
+            "datamations_y": 92.3489408034366,
+            "datamations_y_tooltip": 92.3489408034366
+          },
+          {
+            "gemini_id": 80,
+            "datamations_x": 61.7974822316319,
+            "datamations_y": 84.7384647994768,
+            "datamations_y_tooltip": 84.7384647994768
+          },
+          {
+            "gemini_id": 81,
+            "datamations_x": 92.5725180096924,
+            "datamations_y": 85.0068552203011,
+            "datamations_y_tooltip": 85.0068552203011
+          },
+          {
+            "gemini_id": 82,
+            "datamations_x": 80.5784203484654,
+            "datamations_y": 85.1630066898651,
+            "datamations_y_tooltip": 85.1630066898651
+          },
+          {
+            "gemini_id": 83,
+            "datamations_x": 93.3292160299607,
+            "datamations_y": 85.3773716066498,
+            "datamations_y_tooltip": 85.3773716066498
+          },
+          {
+            "gemini_id": 84,
+            "datamations_x": 104.936267507728,
+            "datamations_y": 85.0828845105134,
+            "datamations_y_tooltip": 85.0828845105134
+          },
+          {
+            "gemini_id": 85,
+            "datamations_x": 79.5674253278412,
+            "datamations_y": 86.0538539250847,
+            "datamations_y_tooltip": 86.0538539250847
+          },
+          {
+            "gemini_id": 86,
+            "datamations_x": 77.8949976223521,
+            "datamations_y": 93.1602621641941,
+            "datamations_y_tooltip": 93.1602621641941
+          },
+          {
+            "gemini_id": 87,
+            "datamations_x": 96.3351090112701,
+            "datamations_y": 85.9106459924951,
+            "datamations_y_tooltip": 85.9106459924951
+          },
+          {
+            "gemini_id": 88,
+            "datamations_x": 68.1925522536039,
+            "datamations_y": 93.4098555028904,
+            "datamations_y_tooltip": 93.4098555028904
+          },
+          {
+            "gemini_id": 89,
+            "datamations_x": 79.5696711773053,
+            "datamations_y": 86.0406335154548,
+            "datamations_y_tooltip": 86.0406335154548
+          },
+          {
+            "gemini_id": 90,
+            "datamations_x": 71.0633022617549,
+            "datamations_y": 93.0570627038833,
+            "datamations_y_tooltip": 93.0570627038833
+          },
+          {
+            "gemini_id": 91,
+            "datamations_x": 96.4183427300304,
+            "datamations_y": 86.4447282091714,
+            "datamations_y_tooltip": 86.4447282091714
+          },
+          {
+            "gemini_id": 92,
+            "datamations_x": 87.688821265474,
+            "datamations_y": 92.7338204937987,
+            "datamations_y_tooltip": 92.7338204937987
+          },
+          {
+            "gemini_id": 93,
+            "datamations_x": 66.6427565994672,
+            "datamations_y": 86.3678887020797,
+            "datamations_y_tooltip": 86.3678887020797
+          },
+          {
+            "gemini_id": 94,
+            "datamations_x": 85.1814102753997,
+            "datamations_y": 87.049029128626,
+            "datamations_y_tooltip": 87.049029128626
+          },
+          {
+            "gemini_id": 95,
+            "datamations_x": 73.5818537906744,
+            "datamations_y": 93.1600916916505,
+            "datamations_y_tooltip": 93.1600916916505
+          },
+          {
+            "gemini_id": 96,
+            "datamations_x": 107.076522698626,
+            "datamations_y": 86.6827135430649,
+            "datamations_y_tooltip": 86.6827135430649
+          },
+          {
+            "gemini_id": 97,
+            "datamations_x": 93.1657705479302,
+            "datamations_y": 93.7030599385034,
+            "datamations_y_tooltip": 93.7030599385034
+          },
+          {
+            "gemini_id": 98,
+            "datamations_x": 66.512074591592,
+            "datamations_y": 87.4391794742551,
+            "datamations_y_tooltip": 87.4391794742551
+          },
+          {
+            "gemini_id": 99,
+            "datamations_x": 108.700069554616,
+            "datamations_y": 93.833772216225,
+            "datamations_y_tooltip": 93.833772216225
+          },
+          {
+            "gemini_id": 100,
+            "datamations_x": 94.3370326678269,
+            "datamations_y": 94.0215112566948,
+            "datamations_y_tooltip": 94.0215112566948
+          }
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "datamations_x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "datamations_y",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "gemini_id": 1,
+            "datamations_x": 108.197138495743,
+            "datamations_y": 81.9445013836958,
+            "datamations_y_tooltip": 81.9445013836958
+          },
+          {
+            "gemini_id": 2,
+            "datamations_x": 88.6565621732734,
+            "datamations_y": 82.8953005648218,
+            "datamations_y_tooltip": 82.8953005648218
+          },
+          {
+            "gemini_id": 3,
+            "datamations_x": 68.4237992879935,
+            "datamations_y": 83.2656172472052,
+            "datamations_y_tooltip": 83.2656172472052
+          },
+          {
+            "gemini_id": 4,
+            "datamations_x": 91.707503576763,
+            "datamations_y": 82.899547266541,
+            "datamations_y_tooltip": 82.899547266541
+          },
+          {
+            "gemini_id": 5,
+            "datamations_x": 101.154054389335,
+            "datamations_y": 90.1877911367919,
+            "datamations_y_tooltip": 90.1877911367919
+          },
+          {
+            "gemini_id": 6,
+            "datamations_x": 61.4839485404082,
+            "datamations_y": 90.3138903337531,
+            "datamations_y_tooltip": 90.3138903337531
+          },
+          {
+            "gemini_id": 7,
+            "datamations_x": 97.6091434853151,
+            "datamations_y": 90.3365755749401,
+            "datamations_y_tooltip": 90.3365755749401
+          },
+          {
+            "gemini_id": 8,
+            "datamations_x": 94.6975027467124,
+            "datamations_y": 89.6885157823563,
+            "datamations_y_tooltip": 89.6885157823563
+          },
+          {
+            "gemini_id": 9,
+            "datamations_x": 81.8219332979061,
+            "datamations_y": 89.657391943736,
+            "datamations_y_tooltip": 89.657391943736
+          },
+          {
+            "gemini_id": 10,
+            "datamations_x": 97.3172331484966,
+            "datamations_y": 89.8103184474166,
+            "datamations_y_tooltip": 89.8103184474166
+          },
+          {
+            "gemini_id": 11,
+            "datamations_x": 63.5424664733,
+            "datamations_y": 90.1445505130105,
+            "datamations_y_tooltip": 90.1445505130105
+          },
+          {
+            "gemini_id": 12,
+            "datamations_x": 100.735607570969,
+            "datamations_y": 90.2597002927214,
+            "datamations_y_tooltip": 90.2597002927214
+          },
+          {
+            "gemini_id": 13,
+            "datamations_x": 102.803507274948,
+            "datamations_y": 89.5807276440319,
+            "datamations_y_tooltip": 89.5807276440319
+          },
+          {
+            "gemini_id": 14,
+            "datamations_x": 79.4917103042826,
+            "datamations_y": 91.4775695463177,
+            "datamations_y_tooltip": 91.4775695463177
+          },
+          {
+            "gemini_id": 15,
+            "datamations_x": 91.7843236261979,
+            "datamations_y": 90.5421400056221,
+            "datamations_y_tooltip": 90.5421400056221
+          },
+          {
+            "gemini_id": 16,
+            "datamations_x": 107.358183562756,
+            "datamations_y": 90.9508253019303,
+            "datamations_y_tooltip": 90.9508253019303
+          },
+          {
+            "gemini_id": 17,
+            "datamations_x": 88.2195205101743,
+            "datamations_y": 84.3256172758993,
+            "datamations_y_tooltip": 84.3256172758993
+          },
+          {
+            "gemini_id": 18,
+            "datamations_x": 68.9803898357786,
+            "datamations_y": 90.7608228451572,
+            "datamations_y_tooltip": 90.7608228451572
+          },
+          {
+            "gemini_id": 19,
+            "datamations_x": 82.8341949987225,
+            "datamations_y": 91.2149588565808,
+            "datamations_y_tooltip": 91.2149588565808
+          },
+          {
+            "gemini_id": 20,
+            "datamations_x": 91.7849920014851,
+            "datamations_y": 91.4811559985392,
+            "datamations_y_tooltip": 91.4811559985392
+          },
+          {
+            "gemini_id": 21,
+            "datamations_x": 60.3296202165075,
+            "datamations_y": 91.203505871119,
+            "datamations_y_tooltip": 91.203505871119
+          },
+          {
+            "gemini_id": 22,
+            "datamations_x": 62.209513541311,
+            "datamations_y": 84.1406831252389,
+            "datamations_y_tooltip": 84.1406831252389
+          },
+          {
+            "gemini_id": 23,
+            "datamations_x": 85.7330019841902,
+            "datamations_y": 90.900099467719,
+            "datamations_y_tooltip": 90.900099467719
+          },
+          {
+            "gemini_id": 24,
+            "datamations_x": 99.4594412413426,
+            "datamations_y": 91.3447520111222,
+            "datamations_y_tooltip": 91.3447520111222
+          },
+          {
+            "gemini_id": 25,
+            "datamations_x": 108.575439932756,
+            "datamations_y": 90.6169246234931,
+            "datamations_y_tooltip": 90.6169246234931
+          },
+          {
+            "gemini_id": 26,
+            "datamations_x": 82.3906649742275,
+            "datamations_y": 91.1798533124384,
+            "datamations_y_tooltip": 91.1798533124384
+          },
+          {
+            "gemini_id": 27,
+            "datamations_x": 69.4802642823197,
+            "datamations_y": 91.2493746823166,
+            "datamations_y_tooltip": 91.2493746823166
+          },
+          {
+            "gemini_id": 28,
+            "datamations_x": 102.913876322564,
+            "datamations_y": 91.4049337708857,
+            "datamations_y_tooltip": 91.4049337708857
+          },
+          {
+            "gemini_id": 29,
+            "datamations_x": 71.8817270500585,
+            "datamations_y": 91.1165353488177,
+            "datamations_y_tooltip": 91.1165353488177
+          },
+          {
+            "gemini_id": 30,
+            "datamations_x": 90.9859726927243,
+            "datamations_y": 91.1068642993923,
+            "datamations_y_tooltip": 91.1068642993923
+          },
+          {
+            "gemini_id": 31,
+            "datamations_x": 109.392303684726,
+            "datamations_y": 90.6704280367121,
+            "datamations_y_tooltip": 90.6704280367121
+          },
+          {
+            "gemini_id": 32,
+            "datamations_x": 86.7987731494941,
+            "datamations_y": 91.4698466714472,
+            "datamations_y_tooltip": 91.4698466714472
+          },
+          {
+            "gemini_id": 33,
+            "datamations_x": 106.88808186911,
+            "datamations_y": 91.0579056167044,
+            "datamations_y_tooltip": 91.0579056167044
+          },
+          {
+            "gemini_id": 34,
+            "datamations_x": 75.7702176831663,
+            "datamations_y": 90.9434416298755,
+            "datamations_y_tooltip": 90.9434416298755
+          },
+          {
+            "gemini_id": 35,
+            "datamations_x": 83.7883752444759,
+            "datamations_y": 91.1740557027515,
+            "datamations_y_tooltip": 91.1740557027515
+          },
+          {
+            "gemini_id": 36,
+            "datamations_x": 108.52535846876,
+            "datamations_y": 91.2401522365399,
+            "datamations_y_tooltip": 91.2401522365399
+          },
+          {
+            "gemini_id": 37,
+            "datamations_x": 101.965444094967,
+            "datamations_y": 90.5011388328858,
+            "datamations_y_tooltip": 90.5011388328858
+          },
+          {
+            "gemini_id": 38,
+            "datamations_x": 95.4353828588501,
+            "datamations_y": 85.3303201349918,
+            "datamations_y_tooltip": 85.3303201349918
+          },
+          {
+            "gemini_id": 39,
+            "datamations_x": 83.2167628826573,
+            "datamations_y": 90.6040293425322,
+            "datamations_y_tooltip": 90.6040293425322
+          },
+          {
+            "gemini_id": 40,
+            "datamations_x": 71.1349574406631,
+            "datamations_y": 85.4951418309938,
+            "datamations_y_tooltip": 85.4951418309938
+          },
+          {
+            "gemini_id": 41,
+            "datamations_x": 83.7933087861165,
+            "datamations_y": 91.4005046924576,
+            "datamations_y_tooltip": 91.4005046924576
+          },
+          {
+            "gemini_id": 42,
+            "datamations_x": 96.6458024014719,
+            "datamations_y": 91.1476999609731,
+            "datamations_y_tooltip": 91.1476999609731
+          },
+          {
+            "gemini_id": 43,
+            "datamations_x": 100.798250597436,
+            "datamations_y": 90.7045878821518,
+            "datamations_y_tooltip": 90.7045878821518
+          },
+          {
+            "gemini_id": 44,
+            "datamations_x": 84.6707479585893,
+            "datamations_y": 90.6188371984754,
+            "datamations_y_tooltip": 90.6188371984754
+          },
+          {
+            "gemini_id": 45,
+            "datamations_x": 91.5696700243279,
+            "datamations_y": 90.5633510330226,
+            "datamations_y_tooltip": 90.5633510330226
+          },
+          {
+            "gemini_id": 46,
+            "datamations_x": 106.191942272708,
+            "datamations_y": 90.5981954357121,
+            "datamations_y_tooltip": 90.5981954357121
+          },
+          {
+            "gemini_id": 47,
+            "datamations_x": 109.822490825318,
+            "datamations_y": 91.1700340267271,
+            "datamations_y_tooltip": 91.1700340267271
+          },
+          {
+            "gemini_id": 48,
+            "datamations_x": 102.613310238812,
+            "datamations_y": 90.7472879537381,
+            "datamations_y_tooltip": 90.7472879537381
+          },
+          {
+            "gemini_id": 49,
+            "datamations_x": 103.626687233336,
+            "datamations_y": 92.0161147855688,
+            "datamations_y_tooltip": 92.0161147855688
+          },
+          {
+            "gemini_id": 50,
+            "datamations_x": 62.9249094193801,
+            "datamations_y": 92.2819435379934,
+            "datamations_y_tooltip": 92.2819435379934
+          },
+          {
+            "gemini_id": 51,
+            "datamations_x": 87.7403319487348,
+            "datamations_y": 91.5201518230606,
+            "datamations_y_tooltip": 91.5201518230606
+          },
+          {
+            "gemini_id": 52,
+            "datamations_x": 98.2851789821871,
+            "datamations_y": 92.2406232669018,
+            "datamations_y_tooltip": 92.2406232669018
+          },
+          {
+            "gemini_id": 53,
+            "datamations_x": 88.5169246955775,
+            "datamations_y": 84.5408536496107,
+            "datamations_y_tooltip": 84.5408536496107
+          },
+          {
+            "gemini_id": 54,
+            "datamations_x": 71.6882668924518,
+            "datamations_y": 91.6161431246437,
+            "datamations_y_tooltip": 91.6161431246437
+          },
+          {
+            "gemini_id": 55,
+            "datamations_x": 65.7861902518198,
+            "datamations_y": 92.0414693744387,
+            "datamations_y_tooltip": 92.0414693744387
+          },
+          {
+            "gemini_id": 56,
+            "datamations_x": 68.5606893990189,
+            "datamations_y": 92.2921498068608,
+            "datamations_y_tooltip": 92.2921498068608
+          },
+          {
+            "gemini_id": 57,
+            "datamations_x": 92.8013195423409,
+            "datamations_y": 91.6981512298808,
+            "datamations_y_tooltip": 91.6981512298808
+          },
+          {
+            "gemini_id": 58,
+            "datamations_x": 80.1982381753623,
+            "datamations_y": 91.8960476492066,
+            "datamations_y_tooltip": 91.8960476492066
+          },
+          {
+            "gemini_id": 59,
+            "datamations_x": 61.25630015973,
+            "datamations_y": 92.4187721665949,
+            "datamations_y_tooltip": 92.4187721665949
+          },
+          {
+            "gemini_id": 60,
+            "datamations_x": 72.5947196851484,
+            "datamations_y": 91.8766731780488,
+            "datamations_y_tooltip": 91.8766731780488
+          },
+          {
+            "gemini_id": 61,
+            "datamations_x": 94.7003551083617,
+            "datamations_y": 92.3804325407837,
+            "datamations_y_tooltip": 92.3804325407837
+          },
+          {
+            "gemini_id": 62,
+            "datamations_x": 105.065170619637,
+            "datamations_y": 92.1729675922543,
+            "datamations_y_tooltip": 92.1729675922543
+          },
+          {
+            "gemini_id": 63,
+            "datamations_x": 101.013525752351,
+            "datamations_y": 92.1522822889965,
+            "datamations_y_tooltip": 92.1522822889965
+          },
+          {
+            "gemini_id": 64,
+            "datamations_x": 64.8834083252586,
+            "datamations_y": 85.4612494898029,
+            "datamations_y_tooltip": 85.4612494898029
+          },
+          {
+            "gemini_id": 65,
+            "datamations_x": 108.946625902317,
+            "datamations_y": 92.1945560907479,
+            "datamations_y_tooltip": 92.1945560907479
+          },
+          {
+            "gemini_id": 66,
+            "datamations_x": 107.516633966006,
+            "datamations_y": 91.5597189620603,
+            "datamations_y_tooltip": 91.5597189620603
+          },
+          {
+            "gemini_id": 67,
+            "datamations_x": 72.3243912355974,
+            "datamations_y": 91.992212592857,
+            "datamations_y_tooltip": 91.992212592857
+          },
+          {
+            "gemini_id": 68,
+            "datamations_x": 83.7335656653158,
+            "datamations_y": 92.4685412924737,
+            "datamations_y_tooltip": 92.4685412924737
+          },
+          {
+            "gemini_id": 69,
+            "datamations_x": 88.7029005470686,
+            "datamations_y": 91.9892992568202,
+            "datamations_y_tooltip": 91.9892992568202
+          },
+          {
+            "gemini_id": 70,
+            "datamations_x": 62.0156437181868,
+            "datamations_y": 91.9956347632688,
+            "datamations_y_tooltip": 91.9956347632688
+          },
+          {
+            "gemini_id": 71,
+            "datamations_x": 71.1280782730319,
+            "datamations_y": 92.3084856946953,
+            "datamations_y_tooltip": 92.3084856946953
+          },
+          {
+            "gemini_id": 72,
+            "datamations_x": 108.18305997178,
+            "datamations_y": 91.7435715948232,
+            "datamations_y_tooltip": 91.7435715948232
+          },
+          {
+            "gemini_id": 73,
+            "datamations_x": 92.5483013875782,
+            "datamations_y": 84.4868333523627,
+            "datamations_y_tooltip": 84.4868333523627
+          },
+          {
+            "gemini_id": 74,
+            "datamations_x": 90.5277793202549,
+            "datamations_y": 83.8469139884692,
+            "datamations_y_tooltip": 83.8469139884692
+          },
+          {
+            "gemini_id": 75,
+            "datamations_x": 84.9783491250128,
+            "datamations_y": 83.7531382157467,
+            "datamations_y_tooltip": 83.7531382157467
+          },
+          {
+            "gemini_id": 76,
+            "datamations_x": 100.835474454798,
+            "datamations_y": 85.2683244312648,
+            "datamations_y_tooltip": 85.2683244312648
+          },
+          {
+            "gemini_id": 77,
+            "datamations_x": 103.048453866504,
+            "datamations_y": 91.4052118111867,
+            "datamations_y_tooltip": 91.4052118111867
+          },
+          {
+            "gemini_id": 78,
+            "datamations_x": 99.8376574856229,
+            "datamations_y": 85.3309176496696,
+            "datamations_y_tooltip": 85.3309176496696
+          },
+          {
+            "gemini_id": 79,
+            "datamations_x": 102.011997883674,
+            "datamations_y": 92.3489408034366,
+            "datamations_y_tooltip": 92.3489408034366
+          },
+          {
+            "gemini_id": 80,
+            "datamations_x": 61.7974822316319,
+            "datamations_y": 84.7384647994768,
+            "datamations_y_tooltip": 84.7384647994768
+          },
+          {
+            "gemini_id": 81,
+            "datamations_x": 92.5725180096924,
+            "datamations_y": 85.0068552203011,
+            "datamations_y_tooltip": 85.0068552203011
+          },
+          {
+            "gemini_id": 82,
+            "datamations_x": 80.5784203484654,
+            "datamations_y": 85.1630066898651,
+            "datamations_y_tooltip": 85.1630066898651
+          },
+          {
+            "gemini_id": 83,
+            "datamations_x": 93.3292160299607,
+            "datamations_y": 85.3773716066498,
+            "datamations_y_tooltip": 85.3773716066498
+          },
+          {
+            "gemini_id": 84,
+            "datamations_x": 104.936267507728,
+            "datamations_y": 85.0828845105134,
+            "datamations_y_tooltip": 85.0828845105134
+          },
+          {
+            "gemini_id": 85,
+            "datamations_x": 79.5674253278412,
+            "datamations_y": 86.0538539250847,
+            "datamations_y_tooltip": 86.0538539250847
+          },
+          {
+            "gemini_id": 86,
+            "datamations_x": 77.8949976223521,
+            "datamations_y": 93.1602621641941,
+            "datamations_y_tooltip": 93.1602621641941
+          },
+          {
+            "gemini_id": 87,
+            "datamations_x": 96.3351090112701,
+            "datamations_y": 85.9106459924951,
+            "datamations_y_tooltip": 85.9106459924951
+          },
+          {
+            "gemini_id": 88,
+            "datamations_x": 68.1925522536039,
+            "datamations_y": 93.4098555028904,
+            "datamations_y_tooltip": 93.4098555028904
+          },
+          {
+            "gemini_id": 89,
+            "datamations_x": 79.5696711773053,
+            "datamations_y": 86.0406335154548,
+            "datamations_y_tooltip": 86.0406335154548
+          },
+          {
+            "gemini_id": 90,
+            "datamations_x": 71.0633022617549,
+            "datamations_y": 93.0570627038833,
+            "datamations_y_tooltip": 93.0570627038833
+          },
+          {
+            "gemini_id": 91,
+            "datamations_x": 96.4183427300304,
+            "datamations_y": 86.4447282091714,
+            "datamations_y_tooltip": 86.4447282091714
+          },
+          {
+            "gemini_id": 92,
+            "datamations_x": 87.688821265474,
+            "datamations_y": 92.7338204937987,
+            "datamations_y_tooltip": 92.7338204937987
+          },
+          {
+            "gemini_id": 93,
+            "datamations_x": 66.6427565994672,
+            "datamations_y": 86.3678887020797,
+            "datamations_y_tooltip": 86.3678887020797
+          },
+          {
+            "gemini_id": 94,
+            "datamations_x": 85.1814102753997,
+            "datamations_y": 87.049029128626,
+            "datamations_y_tooltip": 87.049029128626
+          },
+          {
+            "gemini_id": 95,
+            "datamations_x": 73.5818537906744,
+            "datamations_y": 93.1600916916505,
+            "datamations_y_tooltip": 93.1600916916505
+          },
+          {
+            "gemini_id": 96,
+            "datamations_x": 107.076522698626,
+            "datamations_y": 86.6827135430649,
+            "datamations_y_tooltip": 86.6827135430649
+          },
+          {
+            "gemini_id": 97,
+            "datamations_x": 93.1657705479302,
+            "datamations_y": 93.7030599385034,
+            "datamations_y_tooltip": 93.7030599385034
+          },
+          {
+            "gemini_id": 98,
+            "datamations_x": 66.512074591592,
+            "datamations_y": 87.4391794742551,
+            "datamations_y_tooltip": 87.4391794742551
+          },
+          {
+            "gemini_id": 99,
+            "datamations_x": 108.700069554616,
+            "datamations_y": 93.833772216225,
+            "datamations_y_tooltip": 93.833772216225
+          },
+          {
+            "gemini_id": 100,
+            "datamations_x": 94.3370326678269,
+            "datamations_y": 94.0215112566948,
+            "datamations_y_tooltip": 94.0215112566948
+          }
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "datamations_x",
+          "type": "quantitative",
+          "title": "SalaryTwo",
+          "scale": {
+            "domain": [
+              60.3296202165075,
+              109.822490825318
+            ]
+          }
+        },
+        "y": {
+          "field": "datamations_y",
+          "type": "quantitative",
+          "title": "Salary",
+          "scale": {
+            "domain": [
+              81.9445013836958,
+              94.0215112566948
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "datamations_y_tooltip",
+            "type": "quantitative",
+            "title": "Salary"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "gemini_id": 1,
+            "datamations_x": 108.197138495743,
+            "datamations_y": 190.141639879439,
+            "datamations_y_tooltip": 190.141639879439
+          },
+          {
+            "gemini_id": 2,
+            "datamations_x": 88.6565621732734,
+            "datamations_y": 171.551862738095,
+            "datamations_y_tooltip": 171.551862738095
+          },
+          {
+            "gemini_id": 3,
+            "datamations_x": 68.4237992879935,
+            "datamations_y": 151.689416535199,
+            "datamations_y_tooltip": 151.689416535199
+          },
+          {
+            "gemini_id": 4,
+            "datamations_x": 91.707503576763,
+            "datamations_y": 174.607050843304,
+            "datamations_y_tooltip": 174.607050843304
+          },
+          {
+            "gemini_id": 5,
+            "datamations_x": 101.154054389335,
+            "datamations_y": 191.341845526127,
+            "datamations_y_tooltip": 191.341845526127
+          },
+          {
+            "gemini_id": 6,
+            "datamations_x": 61.4839485404082,
+            "datamations_y": 151.797838874161,
+            "datamations_y_tooltip": 151.797838874161
+          },
+          {
+            "gemini_id": 7,
+            "datamations_x": 97.6091434853151,
+            "datamations_y": 187.945719060255,
+            "datamations_y_tooltip": 187.945719060255
+          },
+          {
+            "gemini_id": 8,
+            "datamations_x": 94.6975027467124,
+            "datamations_y": 184.386018529069,
+            "datamations_y_tooltip": 184.386018529069
+          },
+          {
+            "gemini_id": 9,
+            "datamations_x": 81.8219332979061,
+            "datamations_y": 171.479325241642,
+            "datamations_y_tooltip": 171.479325241642
+          },
+          {
+            "gemini_id": 10,
+            "datamations_x": 97.3172331484966,
+            "datamations_y": 187.127551595913,
+            "datamations_y_tooltip": 187.127551595913
+          },
+          {
+            "gemini_id": 11,
+            "datamations_x": 63.5424664733,
+            "datamations_y": 153.68701698631,
+            "datamations_y_tooltip": 153.68701698631
+          },
+          {
+            "gemini_id": 12,
+            "datamations_x": 100.735607570969,
+            "datamations_y": 190.99530786369,
+            "datamations_y_tooltip": 190.99530786369
+          },
+          {
+            "gemini_id": 13,
+            "datamations_x": 102.803507274948,
+            "datamations_y": 192.38423491898,
+            "datamations_y_tooltip": 192.38423491898
+          },
+          {
+            "gemini_id": 14,
+            "datamations_x": 79.4917103042826,
+            "datamations_y": 170.9692798506,
+            "datamations_y_tooltip": 170.9692798506
+          },
+          {
+            "gemini_id": 15,
+            "datamations_x": 91.7843236261979,
+            "datamations_y": 182.32646363182,
+            "datamations_y_tooltip": 182.32646363182
+          },
+          {
+            "gemini_id": 16,
+            "datamations_x": 107.358183562756,
+            "datamations_y": 198.309008864686,
+            "datamations_y_tooltip": 198.309008864686
+          },
+          {
+            "gemini_id": 17,
+            "datamations_x": 88.2195205101743,
+            "datamations_y": 172.545137786074,
+            "datamations_y_tooltip": 172.545137786074
+          },
+          {
+            "gemini_id": 18,
+            "datamations_x": 68.9803898357786,
+            "datamations_y": 159.741212680936,
+            "datamations_y_tooltip": 159.741212680936
+          },
+          {
+            "gemini_id": 19,
+            "datamations_x": 82.8341949987225,
+            "datamations_y": 174.049153855303,
+            "datamations_y_tooltip": 174.049153855303
+          },
+          {
+            "gemini_id": 20,
+            "datamations_x": 91.7849920014851,
+            "datamations_y": 183.266148000024,
+            "datamations_y_tooltip": 183.266148000024
+          },
+          {
+            "gemini_id": 21,
+            "datamations_x": 60.3296202165075,
+            "datamations_y": 151.533126087626,
+            "datamations_y_tooltip": 151.533126087626
+          },
+          {
+            "gemini_id": 22,
+            "datamations_x": 62.209513541311,
+            "datamations_y": 146.35019666655,
+            "datamations_y_tooltip": 146.35019666655
+          },
+          {
+            "gemini_id": 23,
+            "datamations_x": 85.7330019841902,
+            "datamations_y": 176.633101451909,
+            "datamations_y_tooltip": 176.633101451909
+          },
+          {
+            "gemini_id": 24,
+            "datamations_x": 99.4594412413426,
+            "datamations_y": 190.804193252465,
+            "datamations_y_tooltip": 190.804193252465
+          },
+          {
+            "gemini_id": 25,
+            "datamations_x": 108.575439932756,
+            "datamations_y": 199.192364556249,
+            "datamations_y_tooltip": 199.192364556249
+          },
+          {
+            "gemini_id": 26,
+            "datamations_x": 82.3906649742275,
+            "datamations_y": 173.570518286666,
+            "datamations_y_tooltip": 173.570518286666
+          },
+          {
+            "gemini_id": 27,
+            "datamations_x": 69.4802642823197,
+            "datamations_y": 160.729638964636,
+            "datamations_y_tooltip": 160.729638964636
+          },
+          {
+            "gemini_id": 28,
+            "datamations_x": 102.913876322564,
+            "datamations_y": 194.318810093449,
+            "datamations_y_tooltip": 194.318810093449
+          },
+          {
+            "gemini_id": 29,
+            "datamations_x": 71.8817270500585,
+            "datamations_y": 162.998262398876,
+            "datamations_y_tooltip": 162.998262398876
+          },
+          {
+            "gemini_id": 30,
+            "datamations_x": 90.9859726927243,
+            "datamations_y": 182.092836992117,
+            "datamations_y_tooltip": 182.092836992117
+          },
+          {
+            "gemini_id": 31,
+            "datamations_x": 109.392303684726,
+            "datamations_y": 200.062731721438,
+            "datamations_y_tooltip": 200.062731721438
+          },
+          {
+            "gemini_id": 32,
+            "datamations_x": 86.7987731494941,
+            "datamations_y": 178.268619820941,
+            "datamations_y_tooltip": 178.268619820941
+          },
+          {
+            "gemini_id": 33,
+            "datamations_x": 106.88808186911,
+            "datamations_y": 197.945987485815,
+            "datamations_y_tooltip": 197.945987485815
+          },
+          {
+            "gemini_id": 34,
+            "datamations_x": 75.7702176831663,
+            "datamations_y": 166.713659313042,
+            "datamations_y_tooltip": 166.713659313042
+          },
+          {
+            "gemini_id": 35,
+            "datamations_x": 83.7883752444759,
+            "datamations_y": 174.962430947227,
+            "datamations_y_tooltip": 174.962430947227
+          },
+          {
+            "gemini_id": 36,
+            "datamations_x": 108.52535846876,
+            "datamations_y": 199.7655107053,
+            "datamations_y_tooltip": 199.7655107053
+          },
+          {
+            "gemini_id": 37,
+            "datamations_x": 101.965444094967,
+            "datamations_y": 192.466582927853,
+            "datamations_y_tooltip": 192.466582927853
+          },
+          {
+            "gemini_id": 38,
+            "datamations_x": 95.4353828588501,
+            "datamations_y": 180.765702993842,
+            "datamations_y_tooltip": 180.765702993842
+          },
+          {
+            "gemini_id": 39,
+            "datamations_x": 83.2167628826573,
+            "datamations_y": 173.82079222519,
+            "datamations_y_tooltip": 173.82079222519
+          },
+          {
+            "gemini_id": 40,
+            "datamations_x": 71.1349574406631,
+            "datamations_y": 156.630099271657,
+            "datamations_y_tooltip": 156.630099271657
+          },
+          {
+            "gemini_id": 41,
+            "datamations_x": 83.7933087861165,
+            "datamations_y": 175.193813478574,
+            "datamations_y_tooltip": 175.193813478574
+          },
+          {
+            "gemini_id": 42,
+            "datamations_x": 96.6458024014719,
+            "datamations_y": 187.793502362445,
+            "datamations_y_tooltip": 187.793502362445
+          },
+          {
+            "gemini_id": 43,
+            "datamations_x": 100.798250597436,
+            "datamations_y": 191.502838479588,
+            "datamations_y_tooltip": 191.502838479588
+          },
+          {
+            "gemini_id": 44,
+            "datamations_x": 84.6707479585893,
+            "datamations_y": 175.289585157065,
+            "datamations_y_tooltip": 175.289585157065
+          },
+          {
+            "gemini_id": 45,
+            "datamations_x": 91.5696700243279,
+            "datamations_y": 182.133021057351,
+            "datamations_y_tooltip": 182.133021057351
+          },
+          {
+            "gemini_id": 46,
+            "datamations_x": 106.191942272708,
+            "datamations_y": 196.79013770842,
+            "datamations_y_tooltip": 196.79013770842
+          },
+          {
+            "gemini_id": 47,
+            "datamations_x": 109.822490825318,
+            "datamations_y": 200.992524852045,
+            "datamations_y_tooltip": 200.992524852045
+          },
+          {
+            "gemini_id": 48,
+            "datamations_x": 102.613310238812,
+            "datamations_y": 193.36059819255,
+            "datamations_y_tooltip": 193.36059819255
+          },
+          {
+            "gemini_id": 49,
+            "datamations_x": 103.626687233336,
+            "datamations_y": 195.642802018905,
+            "datamations_y_tooltip": 195.642802018905
+          },
+          {
+            "gemini_id": 50,
+            "datamations_x": 62.9249094193801,
+            "datamations_y": 155.206852957373,
+            "datamations_y_tooltip": 155.206852957373
+          },
+          {
+            "gemini_id": 51,
+            "datamations_x": 87.7403319487348,
+            "datamations_y": 179.260483771795,
+            "datamations_y_tooltip": 179.260483771795
+          },
+          {
+            "gemini_id": 52,
+            "datamations_x": 98.2851789821871,
+            "datamations_y": 190.525802249089,
+            "datamations_y_tooltip": 190.525802249089
+          },
+          {
+            "gemini_id": 53,
+            "datamations_x": 88.5169246955775,
+            "datamations_y": 173.057778345188,
+            "datamations_y_tooltip": 173.057778345188
+          },
+          {
+            "gemini_id": 54,
+            "datamations_x": 71.6882668924518,
+            "datamations_y": 163.304410017096,
+            "datamations_y_tooltip": 163.304410017096
+          },
+          {
+            "gemini_id": 55,
+            "datamations_x": 65.7861902518198,
+            "datamations_y": 157.827659626259,
+            "datamations_y_tooltip": 157.827659626259
+          },
+          {
+            "gemini_id": 56,
+            "datamations_x": 68.5606893990189,
+            "datamations_y": 160.85283920588,
+            "datamations_y_tooltip": 160.85283920588
+          },
+          {
+            "gemini_id": 57,
+            "datamations_x": 92.8013195423409,
+            "datamations_y": 184.499470772222,
+            "datamations_y_tooltip": 184.499470772222
+          },
+          {
+            "gemini_id": 58,
+            "datamations_x": 80.1982381753623,
+            "datamations_y": 172.094285824569,
+            "datamations_y_tooltip": 172.094285824569
+          },
+          {
+            "gemini_id": 59,
+            "datamations_x": 61.25630015973,
+            "datamations_y": 153.675072326325,
+            "datamations_y_tooltip": 153.675072326325
+          },
+          {
+            "gemini_id": 60,
+            "datamations_x": 72.5947196851484,
+            "datamations_y": 164.471392863197,
+            "datamations_y_tooltip": 164.471392863197
+          },
+          {
+            "gemini_id": 61,
+            "datamations_x": 94.7003551083617,
+            "datamations_y": 187.080787649145,
+            "datamations_y_tooltip": 187.080787649145
+          },
+          {
+            "gemini_id": 62,
+            "datamations_x": 105.065170619637,
+            "datamations_y": 197.238138211891,
+            "datamations_y_tooltip": 197.238138211891
+          },
+          {
+            "gemini_id": 63,
+            "datamations_x": 101.013525752351,
+            "datamations_y": 193.165808041347,
+            "datamations_y_tooltip": 193.165808041347
+          },
+          {
+            "gemini_id": 64,
+            "datamations_x": 64.8834083252586,
+            "datamations_y": 150.344657815062,
+            "datamations_y_tooltip": 150.344657815062
+          },
+          {
+            "gemini_id": 65,
+            "datamations_x": 108.946625902317,
+            "datamations_y": 201.141181993065,
+            "datamations_y_tooltip": 201.141181993065
+          },
+          {
+            "gemini_id": 66,
+            "datamations_x": 107.516633966006,
+            "datamations_y": 199.076352928067,
+            "datamations_y_tooltip": 199.076352928067
+          },
+          {
+            "gemini_id": 67,
+            "datamations_x": 72.3243912355974,
+            "datamations_y": 164.316603828454,
+            "datamations_y_tooltip": 164.316603828454
+          },
+          {
+            "gemini_id": 68,
+            "datamations_x": 83.7335656653158,
+            "datamations_y": 176.20210695779,
+            "datamations_y_tooltip": 176.20210695779
+          },
+          {
+            "gemini_id": 69,
+            "datamations_x": 88.7029005470686,
+            "datamations_y": 180.692199803889,
+            "datamations_y_tooltip": 180.692199803889
+          },
+          {
+            "gemini_id": 70,
+            "datamations_x": 62.0156437181868,
+            "datamations_y": 154.011278481456,
+            "datamations_y_tooltip": 154.011278481456
+          },
+          {
+            "gemini_id": 71,
+            "datamations_x": 71.1280782730319,
+            "datamations_y": 163.436563967727,
+            "datamations_y_tooltip": 163.436563967727
+          },
+          {
+            "gemini_id": 72,
+            "datamations_x": 108.18305997178,
+            "datamations_y": 199.926631566603,
+            "datamations_y_tooltip": 199.926631566603
+          },
+          {
+            "gemini_id": 73,
+            "datamations_x": 92.5483013875782,
+            "datamations_y": 177.035134739941,
+            "datamations_y_tooltip": 177.035134739941
+          },
+          {
+            "gemini_id": 74,
+            "datamations_x": 90.5277793202549,
+            "datamations_y": 174.374693308724,
+            "datamations_y_tooltip": 174.374693308724
+          },
+          {
+            "gemini_id": 75,
+            "datamations_x": 84.9783491250128,
+            "datamations_y": 168.731487340759,
+            "datamations_y_tooltip": 168.731487340759
+          },
+          {
+            "gemini_id": 76,
+            "datamations_x": 100.835474454798,
+            "datamations_y": 186.103798886063,
+            "datamations_y_tooltip": 186.103798886063
+          },
+          {
+            "gemini_id": 77,
+            "datamations_x": 103.048453866504,
+            "datamations_y": 194.453665677691,
+            "datamations_y_tooltip": 194.453665677691
+          },
+          {
+            "gemini_id": 78,
+            "datamations_x": 99.8376574856229,
+            "datamations_y": 185.168575135292,
+            "datamations_y_tooltip": 185.168575135292
+          },
+          {
+            "gemini_id": 79,
+            "datamations_x": 102.011997883674,
+            "datamations_y": 194.36093868711,
+            "datamations_y_tooltip": 194.36093868711
+          },
+          {
+            "gemini_id": 80,
+            "datamations_x": 61.7974822316319,
+            "datamations_y": 146.535947031109,
+            "datamations_y_tooltip": 146.535947031109
+          },
+          {
+            "gemini_id": 81,
+            "datamations_x": 92.5725180096924,
+            "datamations_y": 177.579373229994,
+            "datamations_y_tooltip": 177.579373229994
+          },
+          {
+            "gemini_id": 82,
+            "datamations_x": 80.5784203484654,
+            "datamations_y": 165.741427038331,
+            "datamations_y_tooltip": 165.741427038331
+          },
+          {
+            "gemini_id": 83,
+            "datamations_x": 93.3292160299607,
+            "datamations_y": 178.70658763661,
+            "datamations_y_tooltip": 178.70658763661
+          },
+          {
+            "gemini_id": 84,
+            "datamations_x": 104.936267507728,
+            "datamations_y": 190.019152018242,
+            "datamations_y_tooltip": 190.019152018242
+          },
+          {
+            "gemini_id": 85,
+            "datamations_x": 79.5674253278412,
+            "datamations_y": 165.621279252926,
+            "datamations_y_tooltip": 165.621279252926
+          },
+          {
+            "gemini_id": 86,
+            "datamations_x": 77.8949976223521,
+            "datamations_y": 171.055259786546,
+            "datamations_y_tooltip": 171.055259786546
+          },
+          {
+            "gemini_id": 87,
+            "datamations_x": 96.3351090112701,
+            "datamations_y": 182.245755003765,
+            "datamations_y_tooltip": 182.245755003765
+          },
+          {
+            "gemini_id": 88,
+            "datamations_x": 68.1925522536039,
+            "datamations_y": 161.602407756494,
+            "datamations_y_tooltip": 161.602407756494
+          },
+          {
+            "gemini_id": 89,
+            "datamations_x": 79.5696711773053,
+            "datamations_y": 165.61030469276,
+            "datamations_y_tooltip": 165.61030469276
+          },
+          {
+            "gemini_id": 90,
+            "datamations_x": 71.0633022617549,
+            "datamations_y": 164.120364965638,
+            "datamations_y_tooltip": 164.120364965638
+          },
+          {
+            "gemini_id": 91,
+            "datamations_x": 96.4183427300304,
+            "datamations_y": 182.863070939202,
+            "datamations_y_tooltip": 182.863070939202
+          },
+          {
+            "gemini_id": 92,
+            "datamations_x": 87.688821265474,
+            "datamations_y": 180.422641759273,
+            "datamations_y_tooltip": 180.422641759273
+          },
+          {
+            "gemini_id": 93,
+            "datamations_x": 66.6427565994672,
+            "datamations_y": 153.010645301547,
+            "datamations_y_tooltip": 153.010645301547
+          },
+          {
+            "gemini_id": 94,
+            "datamations_x": 85.1814102753997,
+            "datamations_y": 172.230439404026,
+            "datamations_y_tooltip": 172.230439404026
+          },
+          {
+            "gemini_id": 95,
+            "datamations_x": 73.5818537906744,
+            "datamations_y": 166.741945482325,
+            "datamations_y_tooltip": 166.741945482325
+          },
+          {
+            "gemini_id": 96,
+            "datamations_x": 107.076522698626,
+            "datamations_y": 193.759236241691,
+            "datamations_y_tooltip": 193.759236241691
+          },
+          {
+            "gemini_id": 97,
+            "datamations_x": 93.1657705479302,
+            "datamations_y": 186.868830486434,
+            "datamations_y_tooltip": 186.868830486434
+          },
+          {
+            "gemini_id": 98,
+            "datamations_x": 66.512074591592,
+            "datamations_y": 153.951254065847,
+            "datamations_y_tooltip": 153.951254065847
+          },
+          {
+            "gemini_id": 99,
+            "datamations_x": 108.700069554616,
+            "datamations_y": 202.533841770841,
+            "datamations_y_tooltip": 202.533841770841
+          },
+          {
+            "gemini_id": 100,
+            "datamations_x": 94.3370326678269,
+            "datamations_y": 188.358543924522,
+            "datamations_y_tooltip": 188.358543924522
+          }
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "datamations_x",
+          "type": "quantitative",
+          "title": "SalaryTwo",
+          "scale": {
+            "domain": [
+              60.3296202165075,
+              109.822490825318
+            ]
+          }
+        },
+        "y": {
+          "field": "datamations_y",
+          "type": "quantitative",
+          "title": "newVar",
+          "scale": {
+            "domain": [
+              146.35019666655,
+              202.533841770841
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "datamations_y_tooltip",
+            "type": "quantitative",
+            "title": "newVar"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "gemini_id": 1,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 190.141639879439,
+            "datamations_y_tooltip": 190.141639879439
+          },
+          {
+            "gemini_id": 2,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 171.551862738095,
+            "datamations_y_tooltip": 171.551862738095
+          },
+          {
+            "gemini_id": 3,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 151.689416535199,
+            "datamations_y_tooltip": 151.689416535199
+          },
+          {
+            "gemini_id": 4,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 174.607050843304,
+            "datamations_y_tooltip": 174.607050843304
+          },
+          {
+            "gemini_id": 5,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 191.341845526127,
+            "datamations_y_tooltip": 191.341845526127
+          },
+          {
+            "gemini_id": 6,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 151.797838874161,
+            "datamations_y_tooltip": 151.797838874161
+          },
+          {
+            "gemini_id": 7,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 187.945719060255,
+            "datamations_y_tooltip": 187.945719060255
+          },
+          {
+            "gemini_id": 8,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 184.386018529069,
+            "datamations_y_tooltip": 184.386018529069
+          },
+          {
+            "gemini_id": 9,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 171.479325241642,
+            "datamations_y_tooltip": 171.479325241642
+          },
+          {
+            "gemini_id": 10,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 187.127551595913,
+            "datamations_y_tooltip": 187.127551595913
+          },
+          {
+            "gemini_id": 11,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 153.68701698631,
+            "datamations_y_tooltip": 153.68701698631
+          },
+          {
+            "gemini_id": 12,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 190.99530786369,
+            "datamations_y_tooltip": 190.99530786369
+          },
+          {
+            "gemini_id": 13,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 192.38423491898,
+            "datamations_y_tooltip": 192.38423491898
+          },
+          {
+            "gemini_id": 14,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 170.9692798506,
+            "datamations_y_tooltip": 170.9692798506
+          },
+          {
+            "gemini_id": 15,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 182.32646363182,
+            "datamations_y_tooltip": 182.32646363182
+          },
+          {
+            "gemini_id": 16,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 198.309008864686,
+            "datamations_y_tooltip": 198.309008864686
+          },
+          {
+            "gemini_id": 17,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 172.545137786074,
+            "datamations_y_tooltip": 172.545137786074
+          },
+          {
+            "gemini_id": 18,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 159.741212680936,
+            "datamations_y_tooltip": 159.741212680936
+          },
+          {
+            "gemini_id": 19,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 174.049153855303,
+            "datamations_y_tooltip": 174.049153855303
+          },
+          {
+            "gemini_id": 20,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 183.266148000024,
+            "datamations_y_tooltip": 183.266148000024
+          },
+          {
+            "gemini_id": 21,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 151.533126087626,
+            "datamations_y_tooltip": 151.533126087626
+          },
+          {
+            "gemini_id": 22,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 146.35019666655,
+            "datamations_y_tooltip": 146.35019666655
+          },
+          {
+            "gemini_id": 23,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 176.633101451909,
+            "datamations_y_tooltip": 176.633101451909
+          },
+          {
+            "gemini_id": 24,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 190.804193252465,
+            "datamations_y_tooltip": 190.804193252465
+          },
+          {
+            "gemini_id": 25,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 199.192364556249,
+            "datamations_y_tooltip": 199.192364556249
+          },
+          {
+            "gemini_id": 26,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 173.570518286666,
+            "datamations_y_tooltip": 173.570518286666
+          },
+          {
+            "gemini_id": 27,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 160.729638964636,
+            "datamations_y_tooltip": 160.729638964636
+          },
+          {
+            "gemini_id": 28,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 194.318810093449,
+            "datamations_y_tooltip": 194.318810093449
+          },
+          {
+            "gemini_id": 29,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 162.998262398876,
+            "datamations_y_tooltip": 162.998262398876
+          },
+          {
+            "gemini_id": 30,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 182.092836992117,
+            "datamations_y_tooltip": 182.092836992117
+          },
+          {
+            "gemini_id": 31,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 200.062731721438,
+            "datamations_y_tooltip": 200.062731721438
+          },
+          {
+            "gemini_id": 32,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.268619820941,
+            "datamations_y_tooltip": 178.268619820941
+          },
+          {
+            "gemini_id": 33,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 197.945987485815,
+            "datamations_y_tooltip": 197.945987485815
+          },
+          {
+            "gemini_id": 34,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 166.713659313042,
+            "datamations_y_tooltip": 166.713659313042
+          },
+          {
+            "gemini_id": 35,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 174.962430947227,
+            "datamations_y_tooltip": 174.962430947227
+          },
+          {
+            "gemini_id": 36,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 199.7655107053,
+            "datamations_y_tooltip": 199.7655107053
+          },
+          {
+            "gemini_id": 37,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 192.466582927853,
+            "datamations_y_tooltip": 192.466582927853
+          },
+          {
+            "gemini_id": 38,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 180.765702993842,
+            "datamations_y_tooltip": 180.765702993842
+          },
+          {
+            "gemini_id": 39,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 173.82079222519,
+            "datamations_y_tooltip": 173.82079222519
+          },
+          {
+            "gemini_id": 40,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 156.630099271657,
+            "datamations_y_tooltip": 156.630099271657
+          },
+          {
+            "gemini_id": 41,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 175.193813478574,
+            "datamations_y_tooltip": 175.193813478574
+          },
+          {
+            "gemini_id": 42,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 187.793502362445,
+            "datamations_y_tooltip": 187.793502362445
+          },
+          {
+            "gemini_id": 43,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 191.502838479588,
+            "datamations_y_tooltip": 191.502838479588
+          },
+          {
+            "gemini_id": 44,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 175.289585157065,
+            "datamations_y_tooltip": 175.289585157065
+          },
+          {
+            "gemini_id": 45,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 182.133021057351,
+            "datamations_y_tooltip": 182.133021057351
+          },
+          {
+            "gemini_id": 46,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 196.79013770842,
+            "datamations_y_tooltip": 196.79013770842
+          },
+          {
+            "gemini_id": 47,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 200.992524852045,
+            "datamations_y_tooltip": 200.992524852045
+          },
+          {
+            "gemini_id": 48,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 193.36059819255,
+            "datamations_y_tooltip": 193.36059819255
+          },
+          {
+            "gemini_id": 49,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 195.642802018905,
+            "datamations_y_tooltip": 195.642802018905
+          },
+          {
+            "gemini_id": 50,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 155.206852957373,
+            "datamations_y_tooltip": 155.206852957373
+          },
+          {
+            "gemini_id": 51,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 179.260483771795,
+            "datamations_y_tooltip": 179.260483771795
+          },
+          {
+            "gemini_id": 52,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 190.525802249089,
+            "datamations_y_tooltip": 190.525802249089
+          },
+          {
+            "gemini_id": 53,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 173.057778345188,
+            "datamations_y_tooltip": 173.057778345188
+          },
+          {
+            "gemini_id": 54,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 163.304410017096,
+            "datamations_y_tooltip": 163.304410017096
+          },
+          {
+            "gemini_id": 55,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 157.827659626259,
+            "datamations_y_tooltip": 157.827659626259
+          },
+          {
+            "gemini_id": 56,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 160.85283920588,
+            "datamations_y_tooltip": 160.85283920588
+          },
+          {
+            "gemini_id": 57,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 184.499470772222,
+            "datamations_y_tooltip": 184.499470772222
+          },
+          {
+            "gemini_id": 58,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 172.094285824569,
+            "datamations_y_tooltip": 172.094285824569
+          },
+          {
+            "gemini_id": 59,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 153.675072326325,
+            "datamations_y_tooltip": 153.675072326325
+          },
+          {
+            "gemini_id": 60,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 164.471392863197,
+            "datamations_y_tooltip": 164.471392863197
+          },
+          {
+            "gemini_id": 61,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 187.080787649145,
+            "datamations_y_tooltip": 187.080787649145
+          },
+          {
+            "gemini_id": 62,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 197.238138211891,
+            "datamations_y_tooltip": 197.238138211891
+          },
+          {
+            "gemini_id": 63,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 193.165808041347,
+            "datamations_y_tooltip": 193.165808041347
+          },
+          {
+            "gemini_id": 64,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 150.344657815062,
+            "datamations_y_tooltip": 150.344657815062
+          },
+          {
+            "gemini_id": 65,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 201.141181993065,
+            "datamations_y_tooltip": 201.141181993065
+          },
+          {
+            "gemini_id": 66,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 199.076352928067,
+            "datamations_y_tooltip": 199.076352928067
+          },
+          {
+            "gemini_id": 67,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 164.316603828454,
+            "datamations_y_tooltip": 164.316603828454
+          },
+          {
+            "gemini_id": 68,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 176.20210695779,
+            "datamations_y_tooltip": 176.20210695779
+          },
+          {
+            "gemini_id": 69,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 180.692199803889,
+            "datamations_y_tooltip": 180.692199803889
+          },
+          {
+            "gemini_id": 70,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 154.011278481456,
+            "datamations_y_tooltip": 154.011278481456
+          },
+          {
+            "gemini_id": 71,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 163.436563967727,
+            "datamations_y_tooltip": 163.436563967727
+          },
+          {
+            "gemini_id": 72,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 199.926631566603,
+            "datamations_y_tooltip": 199.926631566603
+          },
+          {
+            "gemini_id": 73,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 177.035134739941,
+            "datamations_y_tooltip": 177.035134739941
+          },
+          {
+            "gemini_id": 74,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 174.374693308724,
+            "datamations_y_tooltip": 174.374693308724
+          },
+          {
+            "gemini_id": 75,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 168.731487340759,
+            "datamations_y_tooltip": 168.731487340759
+          },
+          {
+            "gemini_id": 76,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 186.103798886063,
+            "datamations_y_tooltip": 186.103798886063
+          },
+          {
+            "gemini_id": 77,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 194.453665677691,
+            "datamations_y_tooltip": 194.453665677691
+          },
+          {
+            "gemini_id": 78,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 185.168575135292,
+            "datamations_y_tooltip": 185.168575135292
+          },
+          {
+            "gemini_id": 79,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 194.36093868711,
+            "datamations_y_tooltip": 194.36093868711
+          },
+          {
+            "gemini_id": 80,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 146.535947031109,
+            "datamations_y_tooltip": 146.535947031109
+          },
+          {
+            "gemini_id": 81,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 177.579373229994,
+            "datamations_y_tooltip": 177.579373229994
+          },
+          {
+            "gemini_id": 82,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 165.741427038331,
+            "datamations_y_tooltip": 165.741427038331
+          },
+          {
+            "gemini_id": 83,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 178.70658763661,
+            "datamations_y_tooltip": 178.70658763661
+          },
+          {
+            "gemini_id": 84,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 190.019152018242,
+            "datamations_y_tooltip": 190.019152018242
+          },
+          {
+            "gemini_id": 85,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 165.621279252926,
+            "datamations_y_tooltip": 165.621279252926
+          },
+          {
+            "gemini_id": 86,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 171.055259786546,
+            "datamations_y_tooltip": 171.055259786546
+          },
+          {
+            "gemini_id": 87,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 182.245755003765,
+            "datamations_y_tooltip": 182.245755003765
+          },
+          {
+            "gemini_id": 88,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 161.602407756494,
+            "datamations_y_tooltip": 161.602407756494
+          },
+          {
+            "gemini_id": 89,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 165.61030469276,
+            "datamations_y_tooltip": 165.61030469276
+          },
+          {
+            "gemini_id": 90,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 164.120364965638,
+            "datamations_y_tooltip": 164.120364965638
+          },
+          {
+            "gemini_id": 91,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 182.863070939202,
+            "datamations_y_tooltip": 182.863070939202
+          },
+          {
+            "gemini_id": 92,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 180.422641759273,
+            "datamations_y_tooltip": 180.422641759273
+          },
+          {
+            "gemini_id": 93,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 153.010645301547,
+            "datamations_y_tooltip": 153.010645301547
+          },
+          {
+            "gemini_id": 94,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 172.230439404026,
+            "datamations_y_tooltip": 172.230439404026
+          },
+          {
+            "gemini_id": 95,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 166.741945482325,
+            "datamations_y_tooltip": 166.741945482325
+          },
+          {
+            "gemini_id": 96,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 193.759236241691,
+            "datamations_y_tooltip": 193.759236241691
+          },
+          {
+            "gemini_id": 97,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 186.868830486434,
+            "datamations_y_tooltip": 186.868830486434
+          },
+          {
+            "gemini_id": 98,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 153.951254065847,
+            "datamations_y_tooltip": 153.951254065847
+          },
+          {
+            "gemini_id": 99,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 202.533841770841,
+            "datamations_y_tooltip": 202.533841770841
+          },
+          {
+            "gemini_id": 100,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 188.358543924522,
+            "datamations_y_tooltip": 188.358543924522
+          }
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "datamations_x",
+          "type": "quantitative",
+          "axis": {
+            "values": [
+              1,
+              2
+            ],
+            "labelExpr": "round(datum.label) == 1 ? 'Masters' : 'PhD'",
+            "labelAngle": -90
+          },
+          "title": "Degree",
+          "scale": {
+            "domain": [
+              0,
+              3
+            ]
+          }
+        },
+        "y": {
+          "field": "datamations_y",
+          "type": "quantitative",
+          "title": "newVar",
+          "scale": {
+            "domain": [
+              146.35019666655,
+              202.533841770841
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "datamations_y_tooltip",
+            "type": "quantitative",
+            "title": "newVar"
+          },
+          {
+            "field": "Degree",
+            "type": "nominal"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "gemini_id": 1,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 2,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 3,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 4,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 5,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 6,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 7,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 8,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 9,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 10,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 11,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 12,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 13,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 14,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 15,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 16,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 17,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 18,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 19,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 20,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 21,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 22,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 23,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 24,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 25,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 26,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 27,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 28,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 29,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 30,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 31,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 32,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 33,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 34,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 35,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 36,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 37,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 38,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 39,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 40,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 41,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 42,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 43,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 44,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 45,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 46,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 47,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 48,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 49,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 50,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 51,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 52,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 53,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 54,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 55,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 56,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 57,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 58,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 59,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 60,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 61,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 62,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 63,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 64,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 65,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 66,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 67,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 68,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 69,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 70,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 71,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 72,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874
+          },
+          {
+            "gemini_id": 73,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 74,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 75,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 76,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 77,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 78,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 79,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 80,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 81,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 82,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 83,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 84,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 85,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 86,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 87,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 88,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 89,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 90,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 91,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 92,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 93,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 94,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 95,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 96,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 97,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 98,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 99,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          },
+          {
+            "gemini_id": 100,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418
+          }
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "datamations_x",
+          "type": "quantitative",
+          "axis": {
+            "values": [
+              1,
+              2
+            ],
+            "labelExpr": "round(datum.label) == 1 ? 'Masters' : 'PhD'",
+            "labelAngle": -90
+          },
+          "title": "Degree",
+          "scale": {
+            "domain": [
+              0,
+              3
+            ]
+          }
+        },
+        "y": {
+          "field": "datamations_y",
+          "type": "quantitative",
+          "title": "mean(newVar)",
+          "scale": {
+            "domain": [
+              146.35019666655,
+              202.533841770841
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "datamations_y_tooltip",
+            "type": "quantitative",
+            "title": "mean(newVar)"
+          },
+          {
+            "field": "Degree",
+            "type": "nominal"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "gemini_id": 1,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 190.141639879439,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 2,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 171.551862738095,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 3,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 151.689416535199,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 4,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 174.607050843304,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 5,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 191.341845526127,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 6,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 151.797838874161,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 7,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 187.945719060255,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 8,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 184.386018529069,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 9,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 171.479325241642,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 10,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 187.127551595913,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 11,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 153.68701698631,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 12,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 190.99530786369,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 13,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 192.38423491898,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 14,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 170.9692798506,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 15,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 182.32646363182,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 16,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 198.309008864686,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 17,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 172.545137786074,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 18,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 159.741212680936,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 19,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 174.049153855303,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 20,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 183.266148000024,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 21,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 151.533126087626,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 22,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 146.35019666655,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 23,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 176.633101451909,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 24,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 190.804193252465,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 25,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 199.192364556249,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 26,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 173.570518286666,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 27,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 160.729638964636,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 28,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 194.318810093449,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 29,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 162.998262398876,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 30,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 182.092836992117,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 31,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 200.062731721438,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 32,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 178.268619820941,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 33,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 197.945987485815,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 34,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 166.713659313042,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 35,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 174.962430947227,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 36,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 199.7655107053,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 37,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 192.466582927853,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 38,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 180.765702993842,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 39,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 173.82079222519,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 40,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 156.630099271657,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 41,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 175.193813478574,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 42,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 187.793502362445,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 43,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 191.502838479588,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 44,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 175.289585157065,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 45,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 182.133021057351,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 46,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 196.79013770842,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 47,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 200.992524852045,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 48,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 193.36059819255,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 49,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 195.642802018905,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 50,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 155.206852957373,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 51,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 179.260483771795,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 52,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 190.525802249089,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 53,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 173.057778345188,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 54,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 163.304410017096,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 55,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 157.827659626259,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 56,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 160.85283920588,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 57,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 184.499470772222,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 58,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 172.094285824569,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 59,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 153.675072326325,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 60,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 164.471392863197,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 61,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 187.080787649145,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 62,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 197.238138211891,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 63,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 193.165808041347,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 64,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 150.344657815062,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 65,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 201.141181993065,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 66,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 199.076352928067,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 67,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 164.316603828454,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 68,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 176.20210695779,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 69,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 180.692199803889,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 70,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 154.011278481456,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 71,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 163.436563967727,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 72,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 199.926631566603,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 73,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 177.035134739941,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 74,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 174.374693308724,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 75,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 168.731487340759,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 76,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 186.103798886063,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 77,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 194.453665677691,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 78,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 185.168575135292,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 79,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 194.36093868711,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 80,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 146.535947031109,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 81,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 177.579373229994,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 82,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 165.741427038331,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 83,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 178.70658763661,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 84,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 190.019152018242,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 85,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 165.621279252926,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 86,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 171.055259786546,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 87,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 182.245755003765,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 88,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 161.602407756494,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 89,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 165.61030469276,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 90,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 164.120364965638,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 91,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 182.863070939202,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 92,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 180.422641759273,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 93,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 153.010645301547,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 94,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 172.230439404026,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 95,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 166.741945482325,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 96,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 193.759236241691,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 97,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 186.868830486434,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 98,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 153.951254065847,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 99,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 202.533841770841,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 100,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 188.358543924522,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": "errorbar",
+          "encoding": {
+            "x": {
+              "field": "datamations_x",
+              "type": "quantitative",
+              "axis": {
+                "values": [
+                  1,
+                  2
+                ],
+                "labelExpr": "round(datum.label) == 1 ? 'Masters' : 'PhD'",
+                "labelAngle": -90
+              },
+              "title": "Degree",
+              "scale": {
+                "domain": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "y": {
+              "field": "datamations_y_raw",
+              "type": "quantitative",
+              "title": "mean(newVar)",
+              "scale": {
+                "domain": [
+                  146.35019666655,
+                  202.533841770841
+                ]
+              }
+            },
+            "tooltip": [
+              {
+                "field": "datamations_y_tooltip",
+                "type": "quantitative",
+                "title": "mean(newVar)"
+              },
+              {
+                "field": "Upper",
+                "type": "nominal",
+                "title": "mean(newVar) + standard error"
+              },
+              {
+                "field": "Lower",
+                "type": "nominal",
+                "title": "mean(newVar) - standard error"
+              },
+              {
+                "field": "Degree",
+                "type": "nominal"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "field": "datamations_x",
+              "type": "quantitative",
+              "axis": {
+                "values": [
+                  1,
+                  2
+                ],
+                "labelExpr": "round(datum.label) == 1 ? 'Masters' : 'PhD'",
+                "labelAngle": -90
+              },
+              "title": "Degree",
+              "scale": {
+                "domain": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "y": {
+              "field": "datamations_y",
+              "type": "quantitative",
+              "title": "mean(newVar)",
+              "scale": {
+                "domain": [
+                  146.35019666655,
+                  202.533841770841
+                ]
+              }
+            },
+            "tooltip": [
+              {
+                "field": "datamations_y_tooltip",
+                "type": "quantitative",
+                "title": "mean(newVar)"
+              },
+              {
+                "field": "Upper",
+                "type": "nominal",
+                "title": "mean(newVar) + standard error"
+              },
+              {
+                "field": "Lower",
+                "type": "nominal",
+                "title": "mean(newVar) - standard error"
+              },
+              {
+                "field": "Degree",
+                "type": "nominal"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "gemini_id": 1,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 190.141639879439,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 2,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 171.551862738095,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 3,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 151.689416535199,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 4,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 174.607050843304,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 5,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 191.341845526127,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 6,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 151.797838874161,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 7,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 187.945719060255,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 8,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 184.386018529069,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 9,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 171.479325241642,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 10,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 187.127551595913,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 11,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 153.68701698631,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 12,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 190.99530786369,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 13,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 192.38423491898,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 14,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 170.9692798506,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 15,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 182.32646363182,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 16,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 198.309008864686,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 17,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 172.545137786074,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 18,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 159.741212680936,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 19,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 174.049153855303,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 20,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 183.266148000024,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 21,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 151.533126087626,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 22,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 146.35019666655,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 23,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 176.633101451909,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 24,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 190.804193252465,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 25,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 199.192364556249,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 26,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 173.570518286666,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 27,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 160.729638964636,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 28,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 194.318810093449,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 29,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 162.998262398876,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 30,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 182.092836992117,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 31,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 200.062731721438,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 32,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 178.268619820941,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 33,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 197.945987485815,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 34,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 166.713659313042,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 35,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 174.962430947227,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 36,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 199.7655107053,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 37,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 192.466582927853,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 38,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 180.765702993842,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 39,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 173.82079222519,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 40,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 156.630099271657,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 41,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 175.193813478574,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 42,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 187.793502362445,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 43,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 191.502838479588,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 44,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 175.289585157065,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 45,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 182.133021057351,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 46,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 196.79013770842,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 47,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 200.992524852045,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 48,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 193.36059819255,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 49,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 195.642802018905,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 50,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 155.206852957373,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 51,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 179.260483771795,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 52,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 190.525802249089,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 53,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 173.057778345188,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 54,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 163.304410017096,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 55,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 157.827659626259,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 56,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 160.85283920588,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 57,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 184.499470772222,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 58,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 172.094285824569,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 59,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 153.675072326325,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 60,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 164.471392863197,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 61,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 187.080787649145,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 62,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 197.238138211891,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 63,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 193.165808041347,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 64,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 150.344657815062,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 65,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 201.141181993065,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 66,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 199.076352928067,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 67,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 164.316603828454,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 68,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 176.20210695779,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 69,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 180.692199803889,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 70,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 154.011278481456,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 71,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 163.436563967727,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 72,
+            "Degree": "Masters",
+            "datamations_x": 1,
+            "datamations_y": 178.056577526874,
+            "datamations_y_tooltip": 178.056577526874,
+            "datamations_y_raw": 199.926631566603,
+            "Lower": 176.216445838684,
+            "Upper": 179.896709215063
+          },
+          {
+            "gemini_id": 73,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 177.035134739941,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 74,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 174.374693308724,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 75,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 168.731487340759,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 76,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 186.103798886063,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 77,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 194.453665677691,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 78,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 185.168575135292,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 79,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 194.36093868711,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 80,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 146.535947031109,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 81,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 177.579373229994,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 82,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 165.741427038331,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 83,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 178.70658763661,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 84,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 190.019152018242,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 85,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 165.621279252926,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 86,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 171.055259786546,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 87,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 182.245755003765,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 88,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 161.602407756494,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 89,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 165.61030469276,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 90,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 164.120364965638,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 91,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 182.863070939202,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 92,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 180.422641759273,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 93,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 153.010645301547,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 94,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 172.230439404026,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 95,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 166.741945482325,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 96,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 193.759236241691,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 97,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 186.868830486434,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 98,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 153.951254065847,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 99,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 202.533841770841,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          },
+          {
+            "gemini_id": 100,
+            "Degree": "PhD",
+            "datamations_x": 2,
+            "datamations_y": 176.064521484418,
+            "datamations_y_tooltip": 176.064521484418,
+            "datamations_y_raw": 188.358543924522,
+            "Lower": 173.442109653134,
+            "Upper": 178.686933315702
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": "errorbar",
+          "encoding": {
+            "x": {
+              "field": "datamations_x",
+              "type": "quantitative",
+              "axis": {
+                "values": [
+                  1,
+                  2
+                ],
+                "labelExpr": "round(datum.label) == 1 ? 'Masters' : 'PhD'",
+                "labelAngle": -90
+              },
+              "title": "Degree",
+              "scale": {
+                "domain": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "y": {
+              "field": "datamations_y_raw",
+              "type": "quantitative",
+              "title": "mean(newVar)",
+              "scale": {
+                "domain": [
+                  173.442109653134,
+                  179.896709215063
+                ]
+              }
+            },
+            "tooltip": [
+              {
+                "field": "datamations_y_tooltip",
+                "type": "quantitative",
+                "title": "mean(newVar)"
+              },
+              {
+                "field": "Upper",
+                "type": "nominal",
+                "title": "mean(newVar) + standard error"
+              },
+              {
+                "field": "Lower",
+                "type": "nominal",
+                "title": "mean(newVar) - standard error"
+              },
+              {
+                "field": "Degree",
+                "type": "nominal"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "field": "datamations_x",
+              "type": "quantitative",
+              "axis": {
+                "values": [
+                  1,
+                  2
+                ],
+                "labelExpr": "round(datum.label) == 1 ? 'Masters' : 'PhD'",
+                "labelAngle": -90
+              },
+              "title": "Degree",
+              "scale": {
+                "domain": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "y": {
+              "field": "datamations_y",
+              "type": "quantitative",
+              "title": "mean(newVar)",
+              "scale": {
+                "domain": [
+                  173.442109653134,
+                  179.896709215063
+                ]
+              }
+            },
+            "tooltip": [
+              {
+                "field": "datamations_y_tooltip",
+                "type": "quantitative",
+                "title": "mean(newVar)"
+              },
+              {
+                "field": "Upper",
+                "type": "nominal",
+                "title": "mean(newVar) + standard error"
+              },
+              {
+                "field": "Lower",
+                "type": "nominal",
+                "title": "mean(newVar) - standard error"
+              },
+              {
+                "field": "Degree",
+                "type": "nominal"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

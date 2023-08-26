@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Short-term Net Lending in \u00a3(Sterling) ",
+    "subtitle": "3 Month % growth rate annualised",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jordanboi58/Jordanboi58.github.io/main/LPMB3QJ%20%20Bank%20of%20England%20%20Database.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "point": false
+  },
+  "transform": [
+    {
+      "timeUnit": "yearmonth",
+      "field": "Date",
+      "as": "yearmonth"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "yearmonth",
+      "type": "temporal",
+      "title": "Date (Year,Quarter)",
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Monthly_3_month_growth-rate_of_total_sterling_net_lending_to_individuals_not_seasonally_adjusted_ LPMB3QJ",
+      "type": "quantitative",
+      "title": "Growth Rate of Net lending in the UK",
+      "scale": {
+        "domain": [
+          -3,
+          10
+        ]
+      },
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

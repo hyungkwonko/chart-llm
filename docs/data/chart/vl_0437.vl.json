@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "UK CPI data visualisation",
+  "title": {
+    "text": "Latest data - risers and fallers - [hover and zoom]",
+    "subtitle": "CPIH, weighted shares of UK consumer basket",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/prices/8357f5fba93bec983b3e606cee4ae40ecb0b4433/dbLatestRelease.csv"
+  },
+  "height": 400,
+  "width": 300,
+  "mark": {
+    "type": "circle",
+    "opacity": 0.5
+  },
+  "transform": [
+    {
+      "filter": "datum.p_ch!=0"
+    }
+  ],
+  "selection": {
+    "paintbrush": {
+      "type": "multi",
+      "on": "mouseover",
+      "nearest": true
+    },
+    "grid": {
+      "type": "interval",
+      "bind": "scales"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "p",
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      },
+      "scale": {
+        "zero": false,
+        "type": "log"
+      },
+      "title": "Median price"
+    },
+    "y": {
+      "field": "p_ch",
+      "type": "quantitative",
+      "scale": {
+        "zero": false
+      },
+      "title": "Median price change"
+    },
+    "color": {
+      "condition": {
+        "test": "datum['p_ch'] < 0",
+        "value": "blue"
+      },
+      "value": "orange"
+    },
+    "size": {
+      "condition": {
+        "test": {
+          "selection": "paintbrush"
+        },
+        "value": 60
+      },
+      "value": 30
+    },
+    "tooltip": [
+      {
+        "field": "item_desc",
+        "type": "nominal",
+        "title": "Description"
+      },
+      {
+        "field": "item_id",
+        "type": "nominal",
+        "title": "Item ID",
+        "format": ".0f"
+      },
+      {
+        "field": "p",
+        "type": "quantitative",
+        "title": "Price (median)",
+        "format": ".0f"
+      },
+      {
+        "field": "p_ch",
+        "type": "quantitative",
+        "title": "Price rise (median)",
+        "format": ",.2%"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "data": {
+    "url": "https://raw.githubusercontent.com/matsim-scenarios/matsim-duesseldorf/b160620ef3d645969b5060b436391be3bc378cb6/src/main/simwrapper/scenarios/rel_tt.csv"
+  },
+  "mark": "line",
+  "transform": [
+    {
+      "timeUnit": "seconds",
+      "field": "t",
+      "as": "d"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "timeUnit": "hoursminutes",
+      "scale": {
+        "domainMin": {
+          "hours": 0
+        },
+        "domainMax": {
+          "hours": 23,
+          "minutes": 45
+        }
+      },
+      "field": "t",
+      "type": "quantitative",
+      "title": "Time",
+      "axis": {
+        "values": [
+          {
+            "hours": 4
+          },
+          {
+            "hours": 8
+          },
+          {
+            "hours": 12
+          },
+          {
+            "hours": 16
+          },
+          {
+            "hours": 20
+          }
+        ]
+      }
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Rel. travel time",
+      "scale": {
+        "domain": [
+          0.88,
+          1
+        ]
+      }
+    },
+    "color": {
+      "field": "scenario",
+      "type": "nominal",
+      "sort": {}
+    }
+  }
+}

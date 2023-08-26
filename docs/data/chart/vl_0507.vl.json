@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "England: house prices",
+    "subtitle": [
+      "By electoral ward, Source: ONS",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoEngWards.json",
+    "format": {
+      "type": "topojson",
+      "feature": "wards"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.WD13NM",
+      "from": {
+        "key": "WardName",
+        "fields": [
+          "y2022"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataUKHousePrices.csv"
+        }
+      }
+    },
+    {
+      "calculate": "parseInt(datum.y2022)",
+      "as": "housePrice"
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.1
+  },
+  "encoding": {
+    "color": {
+      "field": "housePrice",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "lightmulti"
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/vikrajendran/vikrajendran.github.io/main/G-xG.csv"
+  },
+  "title": {
+    "text": [
+      "Distribution of player difference between",
+      "Non-Penalty Goals and Expected Goals"
+    ],
+    "subtitle": [
+      "Europe's Top 5 Leagues, all stats normalised per 90mins, data: FBref"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "mark": {
+    "type": "bar",
+    "color": "#f4c2c2"
+  },
+  "width": 400,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "bin": {
+        "maxbins": 40
+      },
+      "field": "G-xG",
+      "title": null,
+      "axis": {
+        "format": ".2f"
+      }
+    },
+    "y": {
+      "aggregate": "count",
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "bin_maxbins_40_G-xG",
+        "type": "quantitative",
+        "title": "Bin Min"
+      },
+      {
+        "field": "bin_maxbins_40_G-xG_end",
+        "type": "quantitative",
+        "title": "Bin Max"
+      },
+      {
+        "field": "__count",
+        "type": "quantitative",
+        "title": "Count"
+      }
+    ]
+  }
+}

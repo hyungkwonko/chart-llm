@@ -1,0 +1,104 @@
+{
+  "config": {
+    "view": {
+      "width": 300,
+      "height": 225
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Global-Solutions-Alliance/climateSolutionsExplorer/26cd27b55a815341137f8caa09193c6cd827496a/world_topo_sans_antartica_highres.json",
+    "format": {
+      "feature": "areas",
+      "type": "topojson"
+    }
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "black"
+  },
+  "encoding": {
+    "color": {
+      "type": "quantitative",
+      "field": "adoption",
+      "scale": {
+        "scheme": "greens"
+      }
+    },
+    "tooltip": [
+      {
+        "type": "ordinal",
+        "field": "id"
+      },
+      {
+        "type": "quantitative",
+        "field": "adoption",
+        "format": ".2f"
+      }
+    ]
+  },
+  "height": 225,
+  "projection": {
+    "type": "conicEquidistant"
+  },
+  "title": "Regional Adoption in 2050",
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {
+          "name": "data-a920cbb4fbc6fc7e9659e9baa9f3dcac"
+        },
+        "key": "region",
+        "fields": [
+          "adoption"
+        ]
+      }
+    }
+  ],
+  "width": 300,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-a920cbb4fbc6fc7e9659e9baa9f3dcac": [
+      {
+        "region": "World",
+        "adoption": 6293.724128825033
+      },
+      {
+        "region": "OECD90",
+        "adoption": 1339.1798237969147
+      },
+      {
+        "region": "Eastern Europe",
+        "adoption": 416.75127650882087
+      },
+      {
+        "region": "Asia (Sans Japan)",
+        "adoption": 1900.7744653837271
+      },
+      {
+        "region": "Middle East and Africa",
+        "adoption": 121.28426842290466
+      },
+      {
+        "region": "Latin America",
+        "adoption": 87.69013341590633
+      },
+      {
+        "region": "China",
+        "adoption": 1165.8360537623478
+      },
+      {
+        "region": "India",
+        "adoption": 588.5261161622009
+      },
+      {
+        "region": "EU",
+        "adoption": 571.5227293050552
+      },
+      {
+        "region": "USA",
+        "adoption": 588.4497640515553
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": [
+      "Non-Penalty Goals and Expected Goals",
+      "in Europe's Top 5 Leagues 2021-22"
+    ],
+    "subtitle": [
+      "Non-Penalty xG (x), Non-Penalty Goals (y). size by Non-Penalty xG,",
+      "all stats per 90mins played, min 25 90s played, data: FBref"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/vikrajendran/vikrajendran.github.io/main/Week9d.csv"
+  },
+  "mark": {
+    "type": "circle",
+    "color": "#000080",
+    "opacity": 0.7
+  },
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "npxG p90",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          1
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "y": {
+      "field": "G-PK p90",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          1
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "size": {
+      "field": "npxG p90",
+      "type": "quantitative",
+      "title": [
+        "Non-Penalty",
+        "Expected Goals"
+      ],
+      "scale": {
+        "range": [
+          1,
+          120
+        ]
+      },
+      "legend": false
+    },
+    "tooltip": [
+      {
+        "field": "Player",
+        "type": "ordinal",
+        "title": "Player"
+      },
+      {
+        "field": "npxG p90",
+        "type": "quantitative",
+        "title": "Non-Penalty Expected Goals",
+        "format": ".2f"
+      },
+      {
+        "field": "G-PK p90",
+        "type": "quantitative",
+        "title": "Non-Penalty Goals",
+        "format": ".2f"
+      }
+    ]
+  }
+}

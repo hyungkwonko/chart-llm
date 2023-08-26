@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "score": 100,
+        "student": "A"
+      },
+      {
+        "score": 56,
+        "student": "B"
+      },
+      {
+        "score": 88,
+        "student": "C"
+      },
+      {
+        "score": 65,
+        "student": "D"
+      },
+      {
+        "score": 45,
+        "student": "E"
+      },
+      {
+        "score": 23,
+        "student": "F"
+      },
+      {
+        "score": 66,
+        "student": "G"
+      },
+      {
+        "score": 67,
+        "student": "H"
+      },
+      {
+        "score": 13,
+        "student": "I"
+      },
+      {
+        "score": 12,
+        "student": "J"
+      },
+      {
+        "score": 50,
+        "student": "K"
+      },
+      {
+        "score": 78,
+        "student": "L"
+      },
+      {
+        "score": 66,
+        "student": "M"
+      },
+      {
+        "score": 30,
+        "student": "N"
+      },
+      {
+        "score": 97,
+        "student": "O"
+      },
+      {
+        "score": 75,
+        "student": "P"
+      },
+      {
+        "score": 24,
+        "student": "Q"
+      },
+      {
+        "score": 42,
+        "student": "R"
+      },
+      {
+        "score": 76,
+        "student": "S"
+      },
+      {
+        "score": 78,
+        "student": "T"
+      },
+      {
+        "score": 21,
+        "student": "U"
+      },
+      {
+        "score": 46,
+        "student": "V"
+      }
+    ]
+  },
+  "description": "Filtering the top-k items",
+  "encoding": {
+    "x": {
+      "field": "score",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "student",
+      "sort": {
+        "encoding": "x",
+        "order": "descending"
+      },
+      "type": "nominal"
+    }
+  },
+  "mark": "bar",
+  "transform": [
+    {
+      "sort": [
+        {
+          "field": "score",
+          "order": "descending"
+        }
+      ],
+      "window": [
+        {
+          "as": "rank",
+          "op": "rank"
+        }
+      ]
+    },
+    {
+      "filter": "datum.rank <=5"
+    }
+  ]
+}

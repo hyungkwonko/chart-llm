@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "type": "nominal",
+      "field": "DATE"
+    },
+    "y": {
+      "aggregate": "sum",
+      "type": "quantitative",
+      "field": "COUNT"
+    },
+    "color": {
+      "type": "nominal",
+      "field": "gender"
+    }
+  },
+  "description": "stackedAreaChart",
+  "config": {
+    "line": {
+      "point": true
+    },
+    "scale": {
+      "useUnaggregatedDomain": true
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/thomasxu2009/ChartStory/1888d7060e265cc2e1493f5555412997857945c5/savedFile_luma/traffic1Data.json"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    },
+    "axis": {
+      "labelLimit": 500
+    }
+  },
+  "data": {
+    "name": "data-eed754780e11bfe8800340e73e287d26"
+  },
+  "mark": {
+    "type": "rect",
+    "stroke": "black"
+  },
+  "encoding": {
+    "color": {
+      "field": "r2",
+      "scale": {
+        "zero": true
+      },
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "library",
+        "type": "nominal"
+      },
+      {
+        "field": "sample_1",
+        "type": "nominal"
+      },
+      {
+        "field": "sample_2",
+        "type": "nominal"
+      },
+      {
+        "field": "r2",
+        "format": ".3g",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "sample_1",
+      "title": null,
+      "type": "nominal"
+    },
+    "y": {
+      "field": "sample_2",
+      "title": null,
+      "type": "nominal"
+    }
+  },
+  "height": {
+    "step": 15
+  },
+  "title": "Lib-4",
+  "width": {
+    "step": 15
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-eed754780e11bfe8800340e73e287d26": [
+      {
+        "library": "Lib-4",
+        "sample_1": "2021-10-28_thaw-1_VSVG_control_1 vs 2021-12-14_thaw-1_no-antibody_control_1",
+        "sample_2": "2021-10-28_thaw-1_VSVG_control_1 vs 2021-12-14_thaw-1_no-antibody_control_1",
+        "r2": 1.0
+      },
+      {
+        "library": "Lib-4",
+        "sample_1": "2021-10-28_thaw-1_VSVG_control_2 vs 2021-12-14_thaw-1_no-antibody_control_2",
+        "sample_2": "2021-10-28_thaw-1_VSVG_control_1 vs 2021-12-14_thaw-1_no-antibody_control_1",
+        "r2": 0.3388846335816457
+      },
+      {
+        "library": "Lib-4",
+        "sample_1": "2021-10-28_thaw-1_VSVG_control_1 vs 2021-12-14_thaw-1_no-antibody_control_1",
+        "sample_2": "2021-10-28_thaw-1_VSVG_control_2 vs 2021-12-14_thaw-1_no-antibody_control_2",
+        "r2": 0.3388846335816457
+      },
+      {
+        "library": "Lib-4",
+        "sample_1": "2021-10-28_thaw-1_VSVG_control_2 vs 2021-12-14_thaw-1_no-antibody_control_2",
+        "sample_2": "2021-10-28_thaw-1_VSVG_control_2 vs 2021-12-14_thaw-1_no-antibody_control_2",
+        "r2": 1.0
+      }
+    ]
+  }
+}

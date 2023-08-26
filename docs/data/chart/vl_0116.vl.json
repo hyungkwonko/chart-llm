@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 300,
+  "width": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/COG-UK/UK-lineage-dynamics-analysis/2ca84630ab1fb80b949d25b05b6578fa9674f574/analyses/epidemiological/results/tree-varying-lag-estimates.csv"
+  },
+  "mark": {
+    "type": "point",
+    "size": 60,
+    "filled": true,
+    "stroke": "black",
+    "strokeWidth": 0.5
+  },
+  "selection": {
+    "grid": {
+      "type": "interval",
+      "bind": "scales"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "beta",
+      "type": "quantitative",
+      "title": "Beta",
+      "scale": {
+        "zero": false
+      }
+    },
+    "y": {
+      "field": "alpha",
+      "type": "quantitative",
+      "title": "Alpha",
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "field": "exit_code",
+      "type": "ordinal",
+      "title": [
+        "Optimisation",
+        "exit code"
+      ],
+      "scale": {
+        "range": "diverging"
+      }
+    }
+  }
+}

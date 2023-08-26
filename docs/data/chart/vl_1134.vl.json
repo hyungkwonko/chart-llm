@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/dannysupple/dannysupple.github.io/main/data_ONS-AIXR.json",
+    "transform": [
+      {
+        "calculate": "datum.Totals/1000",
+        "as": "billions"
+      }
+    ],
+    "format": {
+      "type": "json",
+      "property": "years"
+    }
+  },
+  "title": {
+    "text": "UK Unemployment rate (Aged 16-17) ",
+    "subtitle": "Seasonally adjusted from 1992-2022 , Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 200,
+  "height": 180,
+  "mark": {
+    "type": "line",
+    "color": "rgb(0,47,167"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "grid": false
+      },
+      "title": "Unemployment rate (%)"
+    }
+  },
+  "config": {}
+}

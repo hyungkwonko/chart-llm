@@ -1,0 +1,188 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "NINTENDO'S Consolidated Statements of Income",
+    "subtitle": [
+      " Net Sales, GrossProfit Ratio (dark green line) and Operation Profit Ratio(light green line).",
+      "Source:https://www.nintendo.co.jp/ir/en/finance/highlight/index.html."
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/pjchart1.csv"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "year",
+      "axis": {
+        "labelAngle": 0,
+        "grid": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "date",
+        "title": "Year",
+        "type": "temporal",
+        "timeUnit": "year"
+      },
+      {
+        "field": "Net sales",
+        "type": "quantitative",
+        "title": "net sales(million yen)"
+      },
+      {
+        "field": "Gross profit",
+        "type": "quantitative",
+        "title": "Gross profit(million yen)"
+      },
+      {
+        "field": "Gross profit ratio",
+        "type": "quantitative",
+        "title": "Gross profit ratio"
+      },
+      {
+        "field": "Operating profit",
+        "type": "quantitative",
+        "title": "Operating profit(million yen)"
+      },
+      {
+        "field": "Operating profit ratio",
+        "type": "quantitative",
+        "title": "Operating profit ratio"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "opacity": 1,
+        "type": "bar",
+        "size": 8,
+        "color": "#e6224b"
+      },
+      "encoding": {
+        "y": {
+          "field": "Net sales",
+          "type": "quantitative",
+          "title": "net sales(million yen)",
+          "axis": {
+            "titleColor": "#e6224b",
+            "grid": true
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "stroke": "#008B8B",
+        "type": "line",
+        "size": 2.3
+      },
+      "encoding": {
+        "y": {
+          "field": "Gross profit ratio",
+          "type": "quantitative",
+          "title": "Gross/Operating profit ratio",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "axis": {
+            "titleColor": "#122b39",
+            "grid": true,
+            "gridOpacity": 0.6,
+            "ticks": false,
+            "labelPadding": 5
+          }
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "date"
+          },
+          {
+            "field": "Gross profit",
+            "type": "quantitative",
+            "title": "Gross profit(million yen)"
+          },
+          {
+            "field": "Gross profit ratio",
+            "type": "quantitative",
+            "title": "Gross profit ratio"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "stroke": "#4efa04cd",
+        "type": "line",
+        "size": 2.3
+      },
+      "encoding": {
+        "y": {
+          "field": "Operating profit ratio",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "axis": {
+            "titleColor": "#122b39",
+            "grid": true,
+            "gridOpacity": 0.6,
+            "ticks": false,
+            "labelPadding": 5
+          }
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "date"
+          },
+          {
+            "field": "Operating profit",
+            "type": "quantitative",
+            "title": "Operating profit(million yen)"
+          },
+          {
+            "field": "Operating profit ratio",
+            "type": "quantitative",
+            "title": "Operating profit ratio"
+          }
+        ]
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "autosize": {
+    "type": "pad",
+    "contains": "padding",
+    "resize": true
+  }
+}

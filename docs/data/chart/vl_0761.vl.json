@@ -1,0 +1,103 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Public v Private Total Compensation Growth",
+    "subtitle": "Mean YoY growth of weekly earnings in UK between 2001-2022. Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/Week8TotalCompGrowth_1_shifted.csv"
+  },
+  "width": 250,
+  "height": 350,
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "Sector",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "Growth Rate",
+          "type": "quantitative"
+        }
+      },
+      "layer": [
+        {
+          "mark": "line"
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            }
+          ],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "pivot": "Sector",
+          "value": "Growth Rate",
+          "groupby": [
+            "Date"
+          ]
+        }
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0.3,
+            "param": "hover",
+            "empty": false
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Private Sector",
+            "type": "quantitative"
+          },
+          {
+            "field": "Public Sector",
+            "type": "quantitative"
+          },
+          {
+            "field": "Date",
+            "type": "temporal"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Date"
+            ],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ]
+}

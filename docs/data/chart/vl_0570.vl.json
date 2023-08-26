@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch6_Government/usYieldCurve.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "title": {
+    "text": "US Yield Curve",
+    "subtitle": [
+      "Yield for contracts of different maturity (months). Source: US Treasury",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Current",
+        "April_2004"
+      ],
+      "as": [
+        "var",
+        "val"
+      ]
+    },
+    {
+      "calculate": "datum.val/100",
+      "as": "val_pct"
+    },
+    {
+      "filter": "datum.val_pct>0"
+    },
+    {
+      "filter": "datum.Months<300"
+    }
+  ],
+  "width": 400,
+  "height": 300,
+  "mark": {
+    "type": "line",
+    "point": true,
+    "color": "seagreen",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "Months",
+      "type": "quantitative",
+      "title": "Months",
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "val_pct",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "format": "%"
+      }
+    },
+    "color": {
+      "field": "var",
+      "scale": {
+        "range": [
+          "rgb(128,0,0)",
+          "green"
+        ]
+      },
+      "legend": {
+        "orient": "bottom-right",
+        "title": null
+      }
+    }
+  }
+}

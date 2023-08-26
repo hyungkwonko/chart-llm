@@ -1,0 +1,1476 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Inflater throughput for Calgary corpus (part2) at compression level 6 on i7-8650U / 1900MHz",
+    "anchor": "middle",
+    "offset": 20
+  },
+  "data": {
+    "values": [
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.57",
+        "throughput": "43.00",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.57",
+        "throughput": "42.95",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.57",
+        "throughput": "42.91",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.57",
+        "throughput": "43.00",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.57",
+        "throughput": "42.89",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.57",
+        "throughput": "59.48",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.57",
+        "throughput": "59.33",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.57",
+        "throughput": "59.37",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.57",
+        "throughput": "59.70",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.57",
+        "throughput": "59.70",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.57",
+        "throughput": "59.12",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.57",
+        "throughput": "59.55",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.57",
+        "throughput": "59.30",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.57",
+        "throughput": "59.44",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.57",
+        "throughput": "59.37",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.57",
+        "throughput": "37.22",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.57",
+        "throughput": "37.23",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.57",
+        "throughput": "37.28",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.57",
+        "throughput": "37.21",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.57",
+        "throughput": "37.22",
+        "file": "paper3"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.41",
+        "throughput": "47.38",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.41",
+        "throughput": "47.38",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.41",
+        "throughput": "47.38",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.41",
+        "throughput": "47.34",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.41",
+        "throughput": "47.20",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.41",
+        "throughput": "66.89",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.41",
+        "throughput": "67.07",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.41",
+        "throughput": "66.66",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.41",
+        "throughput": "66.98",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.41",
+        "throughput": "66.89",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.41",
+        "throughput": "67.07",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.41",
+        "throughput": "67.58",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.41",
+        "throughput": "67.03",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.41",
+        "throughput": "67.03",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.41",
+        "throughput": "67.07",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.41",
+        "throughput": "45.00",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.41",
+        "throughput": "45.23",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.41",
+        "throughput": "44.74",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.41",
+        "throughput": "45.07",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.41",
+        "throughput": "44.86",
+        "file": "paper4"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.40",
+        "throughput": "48.08",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.40",
+        "throughput": "48.06",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.40",
+        "throughput": "48.01",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.40",
+        "throughput": "47.89",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.40",
+        "throughput": "48.27",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.40",
+        "throughput": "66.25",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.40",
+        "throughput": "65.63",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.40",
+        "throughput": "64.76",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.40",
+        "throughput": "66.43",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.40",
+        "throughput": "66.25",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.40",
+        "throughput": "66.21",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.40",
+        "throughput": "66.48",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.40",
+        "throughput": "66.34",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.40",
+        "throughput": "65.94",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.40",
+        "throughput": "66.52",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.40",
+        "throughput": "46.24",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.40",
+        "throughput": "46.24",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.40",
+        "throughput": "46.46",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.40",
+        "throughput": "46.20",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.40",
+        "throughput": "46.31",
+        "file": "paper5"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.86",
+        "throughput": "43.62",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.86",
+        "throughput": "43.66",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.86",
+        "throughput": "43.64",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.86",
+        "throughput": "43.64",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.86",
+        "throughput": "43.60",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.86",
+        "throughput": "60.40",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.86",
+        "throughput": "60.51",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.86",
+        "throughput": "60.55",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.86",
+        "throughput": "60.40",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.86",
+        "throughput": "60.43",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.86",
+        "throughput": "60.36",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.86",
+        "throughput": "60.58",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.86",
+        "throughput": "60.51",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.86",
+        "throughput": "60.55",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.86",
+        "throughput": "60.47",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.86",
+        "throughput": "36.29",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.86",
+        "throughput": "37.37",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.86",
+        "throughput": "37.55",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.86",
+        "throughput": "37.47",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.86",
+        "throughput": "37.17",
+        "file": "paper6"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "9.09",
+        "throughput": "36.13",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "9.09",
+        "throughput": "36.28",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "9.09",
+        "throughput": "36.23",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "9.09",
+        "throughput": "36.20",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "9.09",
+        "throughput": "36.26",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "9.09",
+        "throughput": "41.11",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "9.09",
+        "throughput": "41.21",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "9.09",
+        "throughput": "41.21",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "9.09",
+        "throughput": "41.23",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "9.09",
+        "throughput": "41.16",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "9.09",
+        "throughput": "41.68",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "9.09",
+        "throughput": "41.67",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "9.09",
+        "throughput": "41.65",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "9.09",
+        "throughput": "41.79",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "9.09",
+        "throughput": "41.74",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "9.09",
+        "throughput": "24.10",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "9.09",
+        "throughput": "24.12",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "9.09",
+        "throughput": "24.13",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "9.09",
+        "throughput": "24.11",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "9.09",
+        "throughput": "24.15",
+        "file": "pic"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.97",
+        "throughput": "43.58",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.97",
+        "throughput": "43.60",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.97",
+        "throughput": "43.48",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.97",
+        "throughput": "43.58",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "2.97",
+        "throughput": "43.56",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.97",
+        "throughput": "59.88",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.97",
+        "throughput": "59.88",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.97",
+        "throughput": "59.95",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.97",
+        "throughput": "60.03",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "2.97",
+        "throughput": "60.03",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.97",
+        "throughput": "60.17",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.97",
+        "throughput": "60.25",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.97",
+        "throughput": "60.25",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.97",
+        "throughput": "60.21",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "2.97",
+        "throughput": "60.17",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.97",
+        "throughput": "37.28",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.97",
+        "throughput": "37.32",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.97",
+        "throughput": "37.29",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.97",
+        "throughput": "37.32",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "2.97",
+        "throughput": "37.33",
+        "file": "progc"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.41",
+        "throughput": "39.49",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.41",
+        "throughput": "39.55",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.41",
+        "throughput": "39.49",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.41",
+        "throughput": "39.58",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.41",
+        "throughput": "39.58",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.41",
+        "throughput": "53.10",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.41",
+        "throughput": "53.13",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.41",
+        "throughput": "53.25",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.41",
+        "throughput": "53.22",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.41",
+        "throughput": "53.28",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.41",
+        "throughput": "53.54",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.41",
+        "throughput": "53.66",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.41",
+        "throughput": "53.69",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.41",
+        "throughput": "53.57",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.41",
+        "throughput": "53.66",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.41",
+        "throughput": "32.91",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.41",
+        "throughput": "32.92",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.41",
+        "throughput": "32.95",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.41",
+        "throughput": "32.94",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.41",
+        "throughput": "32.95",
+        "file": "progl"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.40",
+        "throughput": "39.81",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.40",
+        "throughput": "39.89",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.40",
+        "throughput": "39.78",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.40",
+        "throughput": "39.85",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.40",
+        "throughput": "39.88",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.40",
+        "throughput": "54.20",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.40",
+        "throughput": "54.26",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.40",
+        "throughput": "54.02",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.40",
+        "throughput": "54.32",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.40",
+        "throughput": "54.35",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.40",
+        "throughput": "54.65",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.40",
+        "throughput": "54.71",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.40",
+        "throughput": "54.71",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.40",
+        "throughput": "54.74",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.40",
+        "throughput": "54.68",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.40",
+        "throughput": "33.12",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.40",
+        "throughput": "33.07",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.40",
+        "throughput": "33.12",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.40",
+        "throughput": "33.13",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.40",
+        "throughput": "33.14",
+        "file": "progp"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.92",
+        "throughput": "40.22",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.92",
+        "throughput": "40.22",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.92",
+        "throughput": "40.17",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.92",
+        "throughput": "40.22",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "chromium-fixed",
+        "ratio": "4.92",
+        "throughput": "40.26",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.92",
+        "throughput": "49.73",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.92",
+        "throughput": "49.73",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.92",
+        "throughput": "49.80",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.92",
+        "throughput": "49.83",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "chromium",
+        "ratio": "4.92",
+        "throughput": "49.85",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.92",
+        "throughput": "50.34",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.92",
+        "throughput": "50.50",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.92",
+        "throughput": "50.50",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.92",
+        "throughput": "50.44",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "cloudflare",
+        "ratio": "4.92",
+        "throughput": "50.44",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.92",
+        "throughput": "32.47",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.92",
+        "throughput": "32.47",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.92",
+        "throughput": "32.49",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.92",
+        "throughput": "32.47",
+        "file": "trans"
+      },
+      {
+        "level": "6",
+        "type": "zlib",
+        "ratio": "4.92",
+        "throughput": "32.46",
+        "file": "trans"
+      }
+    ]
+  },
+  "transform": [
+    {
+      "filter": "datum.type == 'isal' ? datum.level == 6 : datum.level == 6"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "mean",
+          "field": "throughput",
+          "as": "throughput_mean"
+        }
+      ],
+      "groupby": [
+        "type",
+        "file"
+      ]
+    },
+    {
+      "lookup": "type",
+      "from": {
+        "data": {
+          "values": [
+            {
+              "type": "chromium-fixed",
+              "new-type": "chromium-fixed"
+            },
+            {
+              "type": "chromium",
+              "new-type": "chromium"
+            },
+            {
+              "type": "cloudflare",
+              "new-type": "cloudflare"
+            },
+            {
+              "type": "zlib",
+              "new-type": "zlib"
+            }
+          ]
+        },
+        "key": "type",
+        "fields": [
+          "new-type"
+        ]
+      }
+    },
+    {
+      "lookup": "file",
+      "from": {
+        "data": {
+          "values": [
+            {
+              "file": "paper6",
+              "default_val": "37.17"
+            },
+            {
+              "file": "paper4",
+              "default_val": "44.980000000000004"
+            },
+            {
+              "file": "paper5",
+              "default_val": "46.290000000000006"
+            },
+            {
+              "file": "progc",
+              "default_val": "37.308"
+            },
+            {
+              "file": "progp",
+              "default_val": "33.116"
+            },
+            {
+              "file": "pic",
+              "default_val": "24.122"
+            },
+            {
+              "file": "progl",
+              "default_val": "32.934000000000005"
+            },
+            {
+              "file": "paper3",
+              "default_val": "37.232"
+            },
+            {
+              "file": "trans",
+              "default_val": "32.472"
+            }
+          ]
+        },
+        "key": "file",
+        "fields": [
+          "default_val"
+        ]
+      }
+    },
+    {
+      "calculate": "datum.throughput_mean/datum.default_val",
+      "as": "default-val"
+    }
+  ],
+  "facet": {
+    "column": {
+      "field": "file",
+      "type": "nominal",
+      "title": "",
+      "header": {
+        "labelAngle": 0,
+        "labelAlign": "center",
+        "labelAnchor": "middle",
+        "labelOrient": "bottom"
+      },
+      "sort": [
+        "paper3",
+        "paper4",
+        "paper5",
+        "paper6",
+        "pic",
+        "progc",
+        "progl",
+        "progp",
+        "trans"
+      ]
+    }
+  },
+  "spec": {
+    "encoding": {
+      "y": {
+        "field": "throughput_mean",
+        "type": "quantitative",
+        "axis": {
+          "title": "Throughput (kb/ms)",
+          "grid": true
+        }
+      },
+      "x": {
+        "field": "new-type",
+        "type": "nominal",
+        "axis": {
+          "labels": false,
+          "ticks": false,
+          "domainWidth": 0,
+          "title": ""
+        },
+        "sort": [
+          "zlib",
+          "cloudflare",
+          "jtkukunas",
+          "ng",
+          "chromium",
+          "ipp",
+          "isal"
+        ]
+      }
+    },
+    "layer": [
+      {
+        "mark": "bar",
+        "encoding": {
+          "color": {
+            "field": "new-type",
+            "type": "nominal",
+            "legend": {
+              "title": "",
+              "offset": null,
+              "zindex": 1
+            },
+            "sort": [
+              "zlib",
+              "cloudflare",
+              "jtkukunas",
+              "ng",
+              "chromium",
+              "ipp",
+              "isal"
+            ]
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "dx": 5,
+          "angle": 270,
+          "baseline": "middle",
+          "align": "left"
+        },
+        "encoding": {
+          "text": {
+            "field": "default-val",
+            "type": "nominal",
+            "format": ".0%"
+          }
+        }
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "domainWidth": 1
+    }
+  }
+}

@@ -1,0 +1,6906 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-faae6ec66809e6d70c2c7bb4da4c8969"
+  },
+  "mark": "line",
+  "encoding": {
+    "color": {
+      "condition": {
+        "field": "Statistic",
+        "legend": null,
+        "type": "nominal",
+        "selection": "selector004"
+      },
+      "value": "lightgray"
+    },
+    "opacity": {
+      "condition": {
+        "value": 1.0,
+        "selection": "selector004"
+      },
+      "value": 0.25
+    },
+    "x": {
+      "field": "Year Acquired",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "stat",
+      "scale": {
+        "type": "log"
+      },
+      "type": "quantitative"
+    }
+  },
+  "selection": {
+    "selector004": {
+      "type": "single",
+      "fields": [
+        "Statistic"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          "50%",
+          "mean",
+          "min",
+          "max",
+          "std"
+        ],
+        "name": "Statistic"
+      }
+    }
+  },
+  "width": "container",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-faae6ec66809e6d70c2c7bb4da4c8969": [
+      {
+        "Year Acquired": "1753-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1802-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 2.0
+      },
+      {
+        "Year Acquired": "1810-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 3.0
+      },
+      {
+        "Year Acquired": "1832-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1837-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1838-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1839-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1840-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 8.0
+      },
+      {
+        "Year Acquired": "1841-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1843-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1844-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1845-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 3.0
+      },
+      {
+        "Year Acquired": "1848-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 4.0
+      },
+      {
+        "Year Acquired": "1850-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 2.0
+      },
+      {
+        "Year Acquired": "1853-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1854-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1855-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 6.0
+      },
+      {
+        "Year Acquired": "1856-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1857-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 2.0
+      },
+      {
+        "Year Acquired": "1858-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 2.0
+      },
+      {
+        "Year Acquired": "1859-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1860-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 6.0
+      },
+      {
+        "Year Acquired": "1863-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1865-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 9.0
+      },
+      {
+        "Year Acquired": "1867-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1870-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1871-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 5.0
+      },
+      {
+        "Year Acquired": "1872-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1873-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1874-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1875-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 3.0
+      },
+      {
+        "Year Acquired": "1876-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 5.0
+      },
+      {
+        "Year Acquired": "1878-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1880-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 8.0
+      },
+      {
+        "Year Acquired": "1881-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1882-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 2.0
+      },
+      {
+        "Year Acquired": "1883-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 2.0
+      },
+      {
+        "Year Acquired": "1885-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 4.0
+      },
+      {
+        "Year Acquired": "1886-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 13.0
+      },
+      {
+        "Year Acquired": "1887-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 4.0
+      },
+      {
+        "Year Acquired": "1888-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 2.0
+      },
+      {
+        "Year Acquired": "1890-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 7.0
+      },
+      {
+        "Year Acquired": "1891-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1892-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 3.0
+      },
+      {
+        "Year Acquired": "1893-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 6.0
+      },
+      {
+        "Year Acquired": "1894-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1895-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 7.0
+      },
+      {
+        "Year Acquired": "1896-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 6.0
+      },
+      {
+        "Year Acquired": "1897-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "1898-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 2.0
+      },
+      {
+        "Year Acquired": "1899-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 3.0
+      },
+      {
+        "Year Acquired": "1900-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 27.0
+      },
+      {
+        "Year Acquired": "1901-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 3.0
+      },
+      {
+        "Year Acquired": "1902-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 8.0
+      },
+      {
+        "Year Acquired": "1903-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 6.0
+      },
+      {
+        "Year Acquired": "1904-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 7.0
+      },
+      {
+        "Year Acquired": "1905-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 13.0
+      },
+      {
+        "Year Acquired": "1906-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 2.0
+      },
+      {
+        "Year Acquired": "1907-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 9.0
+      },
+      {
+        "Year Acquired": "1908-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 11.0
+      },
+      {
+        "Year Acquired": "1909-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 7.0
+      },
+      {
+        "Year Acquired": "1910-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 22.0
+      },
+      {
+        "Year Acquired": "1911-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 8.0
+      },
+      {
+        "Year Acquired": "1912-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 9.0
+      },
+      {
+        "Year Acquired": "1913-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 17.0
+      },
+      {
+        "Year Acquired": "1914-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 4.0
+      },
+      {
+        "Year Acquired": "1915-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 16.0
+      },
+      {
+        "Year Acquired": "1916-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 11.0
+      },
+      {
+        "Year Acquired": "1917-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 2.0
+      },
+      {
+        "Year Acquired": "1918-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 6.0
+      },
+      {
+        "Year Acquired": "1919-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 6.0
+      },
+      {
+        "Year Acquired": "1920-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 38.0
+      },
+      {
+        "Year Acquired": "1921-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 18.0
+      },
+      {
+        "Year Acquired": "1922-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 10.0
+      },
+      {
+        "Year Acquired": "1923-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 13.0
+      },
+      {
+        "Year Acquired": "1924-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 8.0
+      },
+      {
+        "Year Acquired": "1925-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 13.0
+      },
+      {
+        "Year Acquired": "1926-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 17.0
+      },
+      {
+        "Year Acquired": "1927-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 18.0
+      },
+      {
+        "Year Acquired": "1928-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 30.0
+      },
+      {
+        "Year Acquired": "1929-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 37.0
+      },
+      {
+        "Year Acquired": "1930-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 101.0
+      },
+      {
+        "Year Acquired": "1931-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 29.0
+      },
+      {
+        "Year Acquired": "1932-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 60.0
+      },
+      {
+        "Year Acquired": "1933-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 9.0
+      },
+      {
+        "Year Acquired": "1934-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 13.0
+      },
+      {
+        "Year Acquired": "1935-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 214.0
+      },
+      {
+        "Year Acquired": "1936-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 60.0
+      },
+      {
+        "Year Acquired": "1937-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 52.0
+      },
+      {
+        "Year Acquired": "1938-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 32.0
+      },
+      {
+        "Year Acquired": "1939-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 30.0
+      },
+      {
+        "Year Acquired": "1940-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 67.0
+      },
+      {
+        "Year Acquired": "1941-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 27.0
+      },
+      {
+        "Year Acquired": "1942-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 25.0
+      },
+      {
+        "Year Acquired": "1943-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 9.0
+      },
+      {
+        "Year Acquired": "1944-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 10.0
+      },
+      {
+        "Year Acquired": "1945-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "1946-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 8.0
+      },
+      {
+        "Year Acquired": "1947-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "1948-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 54.0
+      },
+      {
+        "Year Acquired": "1949-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 40.0
+      },
+      {
+        "Year Acquired": "1950-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 175.0
+      },
+      {
+        "Year Acquired": "1951-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 38.0
+      },
+      {
+        "Year Acquired": "1952-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 44.0
+      },
+      {
+        "Year Acquired": "1953-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 65.0
+      },
+      {
+        "Year Acquired": "1954-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 73.0
+      },
+      {
+        "Year Acquired": "1955-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 65.0
+      },
+      {
+        "Year Acquired": "1956-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 54.0
+      },
+      {
+        "Year Acquired": "1957-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 56.0
+      },
+      {
+        "Year Acquired": "1958-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 92.0
+      },
+      {
+        "Year Acquired": "1959-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 63.0
+      },
+      {
+        "Year Acquired": "1960-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 141.0
+      },
+      {
+        "Year Acquired": "1961-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 51.0
+      },
+      {
+        "Year Acquired": "1962-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 72.0
+      },
+      {
+        "Year Acquired": "1963-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 113.0
+      },
+      {
+        "Year Acquired": "1964-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 130.0
+      },
+      {
+        "Year Acquired": "1965-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 173.0
+      },
+      {
+        "Year Acquired": "1966-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 77.0
+      },
+      {
+        "Year Acquired": "1967-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 117.0
+      },
+      {
+        "Year Acquired": "1968-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 123.0
+      },
+      {
+        "Year Acquired": "1969-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 62.0
+      },
+      {
+        "Year Acquired": "1970-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 216.0
+      },
+      {
+        "Year Acquired": "1971-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 109.0
+      },
+      {
+        "Year Acquired": "1972-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 121.0
+      },
+      {
+        "Year Acquired": "1973-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 125.0
+      },
+      {
+        "Year Acquired": "1974-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 192.0
+      },
+      {
+        "Year Acquired": "1975-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 238.0
+      },
+      {
+        "Year Acquired": "1976-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 139.0
+      },
+      {
+        "Year Acquired": "1977-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 98.0
+      },
+      {
+        "Year Acquired": "1978-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 79.0
+      },
+      {
+        "Year Acquired": "1979-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 116.0
+      },
+      {
+        "Year Acquired": "1980-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 136.0
+      },
+      {
+        "Year Acquired": "1981-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 175.0
+      },
+      {
+        "Year Acquired": "1982-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 80.0
+      },
+      {
+        "Year Acquired": "1983-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 56.0
+      },
+      {
+        "Year Acquired": "1984-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 137.0
+      },
+      {
+        "Year Acquired": "1985-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 147.0
+      },
+      {
+        "Year Acquired": "1986-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 169.0
+      },
+      {
+        "Year Acquired": "1987-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 159.0
+      },
+      {
+        "Year Acquired": "1988-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 135.0
+      },
+      {
+        "Year Acquired": "1989-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 192.0
+      },
+      {
+        "Year Acquired": "1990-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 182.0
+      },
+      {
+        "Year Acquired": "1991-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 99.0
+      },
+      {
+        "Year Acquired": "1992-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 110.0
+      },
+      {
+        "Year Acquired": "1993-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 91.0
+      },
+      {
+        "Year Acquired": "1994-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 107.0
+      },
+      {
+        "Year Acquired": "1995-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 122.0
+      },
+      {
+        "Year Acquired": "1996-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 137.0
+      },
+      {
+        "Year Acquired": "1997-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 108.0
+      },
+      {
+        "Year Acquired": "1998-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 124.0
+      },
+      {
+        "Year Acquired": "1999-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 151.0
+      },
+      {
+        "Year Acquired": "2000-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 357.0
+      },
+      {
+        "Year Acquired": "2001-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 168.0
+      },
+      {
+        "Year Acquired": "2002-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 116.0
+      },
+      {
+        "Year Acquired": "2003-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 104.0
+      },
+      {
+        "Year Acquired": "2004-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 79.0
+      },
+      {
+        "Year Acquired": "2005-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 75.0
+      },
+      {
+        "Year Acquired": "2006-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 193.0
+      },
+      {
+        "Year Acquired": "2007-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 42.0
+      },
+      {
+        "Year Acquired": "2008-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 11.0
+      },
+      {
+        "Year Acquired": "2009-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "2010-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 22.0
+      },
+      {
+        "Year Acquired": "2011-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 23.0
+      },
+      {
+        "Year Acquired": "2012-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 23.0
+      },
+      {
+        "Year Acquired": "2013-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 8.0
+      },
+      {
+        "Year Acquired": "2014-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 33.0
+      },
+      {
+        "Year Acquired": "2015-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "2016-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 10.0
+      },
+      {
+        "Year Acquired": "2017-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 1.0
+      },
+      {
+        "Year Acquired": "2018-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 4.0
+      },
+      {
+        "Year Acquired": "2019-01-01T00:00:00",
+        "Statistic": "count",
+        "stat": 2.0
+      },
+      {
+        "Year Acquired": "1753-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 1200.0
+      },
+      {
+        "Year Acquired": "1802-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 2220.0
+      },
+      {
+        "Year Acquired": "1810-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 1344.3333333333333
+      },
+      {
+        "Year Acquired": "1832-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 120000.0
+      },
+      {
+        "Year Acquired": "1837-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10302.0
+      },
+      {
+        "Year Acquired": "1838-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 2010.0
+      },
+      {
+        "Year Acquired": "1839-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 11752.0
+      },
+      {
+        "Year Acquired": "1840-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 4614.75
+      },
+      {
+        "Year Acquired": "1841-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 3256.0
+      },
+      {
+        "Year Acquired": "1843-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 900.0
+      },
+      {
+        "Year Acquired": "1844-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 4088.0
+      },
+      {
+        "Year Acquired": "1845-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 21948.666666666668
+      },
+      {
+        "Year Acquired": "1848-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 5323.0
+      },
+      {
+        "Year Acquired": "1850-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 1133.5
+      },
+      {
+        "Year Acquired": "1853-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 255000.0
+      },
+      {
+        "Year Acquired": "1854-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 2140.0
+      },
+      {
+        "Year Acquired": "1855-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 11025.666666666666
+      },
+      {
+        "Year Acquired": "1856-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 750.0
+      },
+      {
+        "Year Acquired": "1857-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 9062.0
+      },
+      {
+        "Year Acquired": "1858-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 11183.5
+      },
+      {
+        "Year Acquired": "1859-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 4847.0
+      },
+      {
+        "Year Acquired": "1860-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 4569.5
+      },
+      {
+        "Year Acquired": "1863-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 15795.0
+      },
+      {
+        "Year Acquired": "1865-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 24832.666666666668
+      },
+      {
+        "Year Acquired": "1867-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 2700.0
+      },
+      {
+        "Year Acquired": "1870-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 2864.0
+      },
+      {
+        "Year Acquired": "1871-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 1280.6
+      },
+      {
+        "Year Acquired": "1872-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 14900.0
+      },
+      {
+        "Year Acquired": "1873-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 11000.0
+      },
+      {
+        "Year Acquired": "1874-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 6600.0
+      },
+      {
+        "Year Acquired": "1875-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 1269.3333333333333
+      },
+      {
+        "Year Acquired": "1876-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 80856.0
+      },
+      {
+        "Year Acquired": "1878-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 33071.0
+      },
+      {
+        "Year Acquired": "1880-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 22479.125
+      },
+      {
+        "Year Acquired": "1881-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 6671.0
+      },
+      {
+        "Year Acquired": "1882-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 29633.0
+      },
+      {
+        "Year Acquired": "1883-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 4362.5
+      },
+      {
+        "Year Acquired": "1885-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 7539.25
+      },
+      {
+        "Year Acquired": "1886-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 12951.538461538461
+      },
+      {
+        "Year Acquired": "1887-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 48705.75
+      },
+      {
+        "Year Acquired": "1888-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 42462.0
+      },
+      {
+        "Year Acquired": "1890-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 12333.42857142857
+      },
+      {
+        "Year Acquired": "1891-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 2325.0
+      },
+      {
+        "Year Acquired": "1892-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 50493.333333333336
+      },
+      {
+        "Year Acquired": "1893-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 6598.333333333333
+      },
+      {
+        "Year Acquired": "1894-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 85000.0
+      },
+      {
+        "Year Acquired": "1895-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 32239.571428571428
+      },
+      {
+        "Year Acquired": "1896-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 48360.833333333336
+      },
+      {
+        "Year Acquired": "1897-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 132907.0
+      },
+      {
+        "Year Acquired": "1898-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 18380.0
+      },
+      {
+        "Year Acquired": "1899-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 40491.666666666664
+      },
+      {
+        "Year Acquired": "1900-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 12438.333333333334
+      },
+      {
+        "Year Acquired": "1901-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 36495.333333333336
+      },
+      {
+        "Year Acquired": "1902-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 33715.625
+      },
+      {
+        "Year Acquired": "1903-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 26764.0
+      },
+      {
+        "Year Acquired": "1904-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 5852.0
+      },
+      {
+        "Year Acquired": "1905-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 24068.153846153848
+      },
+      {
+        "Year Acquired": "1906-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10187.0
+      },
+      {
+        "Year Acquired": "1907-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 14809.444444444445
+      },
+      {
+        "Year Acquired": "1908-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 32750.18181818182
+      },
+      {
+        "Year Acquired": "1909-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 42611.857142857145
+      },
+      {
+        "Year Acquired": "1910-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10518.681818181818
+      },
+      {
+        "Year Acquired": "1911-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 29715.25
+      },
+      {
+        "Year Acquired": "1912-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 46979.11111111111
+      },
+      {
+        "Year Acquired": "1913-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 9335.882352941177
+      },
+      {
+        "Year Acquired": "1914-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 83526.5
+      },
+      {
+        "Year Acquired": "1915-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 33253.1875
+      },
+      {
+        "Year Acquired": "1916-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 19092.090909090908
+      },
+      {
+        "Year Acquired": "1917-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 16488.0
+      },
+      {
+        "Year Acquired": "1918-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 7100.5
+      },
+      {
+        "Year Acquired": "1919-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10813.0
+      },
+      {
+        "Year Acquired": "1920-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10580.5
+      },
+      {
+        "Year Acquired": "1921-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10417.222222222223
+      },
+      {
+        "Year Acquired": "1922-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 17159.4
+      },
+      {
+        "Year Acquired": "1923-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 42258.46153846154
+      },
+      {
+        "Year Acquired": "1924-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 15792.125
+      },
+      {
+        "Year Acquired": "1925-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 43784.46153846154
+      },
+      {
+        "Year Acquired": "1926-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 64058.64705882353
+      },
+      {
+        "Year Acquired": "1927-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 35424.72222222222
+      },
+      {
+        "Year Acquired": "1928-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 17604.066666666666
+      },
+      {
+        "Year Acquired": "1929-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 21414.297297297297
+      },
+      {
+        "Year Acquired": "1930-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 8335.336633663366
+      },
+      {
+        "Year Acquired": "1931-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 35125.1724137931
+      },
+      {
+        "Year Acquired": "1932-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 6901.216666666666
+      },
+      {
+        "Year Acquired": "1933-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 7662.555555555556
+      },
+      {
+        "Year Acquired": "1934-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 13542.23076923077
+      },
+      {
+        "Year Acquired": "1935-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 3236.121495327103
+      },
+      {
+        "Year Acquired": "1936-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 11056.666666666666
+      },
+      {
+        "Year Acquired": "1937-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 17813.384615384617
+      },
+      {
+        "Year Acquired": "1938-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 34791.28125
+      },
+      {
+        "Year Acquired": "1939-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 11719.1
+      },
+      {
+        "Year Acquired": "1940-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 19286.567164179105
+      },
+      {
+        "Year Acquired": "1941-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 12807.777777777777
+      },
+      {
+        "Year Acquired": "1942-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 9722.8
+      },
+      {
+        "Year Acquired": "1943-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 6402.0
+      },
+      {
+        "Year Acquired": "1944-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 4460.2
+      },
+      {
+        "Year Acquired": "1945-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 9503.95
+      },
+      {
+        "Year Acquired": "1946-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 7350.0
+      },
+      {
+        "Year Acquired": "1947-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 8236.5
+      },
+      {
+        "Year Acquired": "1948-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 7007.537037037037
+      },
+      {
+        "Year Acquired": "1949-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 22588.95
+      },
+      {
+        "Year Acquired": "1950-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 6808.171428571429
+      },
+      {
+        "Year Acquired": "1951-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 15408.763157894737
+      },
+      {
+        "Year Acquired": "1952-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 26227.0
+      },
+      {
+        "Year Acquired": "1953-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 7561.476923076923
+      },
+      {
+        "Year Acquired": "1954-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10464.82191780822
+      },
+      {
+        "Year Acquired": "1955-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 12526.476923076923
+      },
+      {
+        "Year Acquired": "1956-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 21482.12962962963
+      },
+      {
+        "Year Acquired": "1957-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 16544.303571428572
+      },
+      {
+        "Year Acquired": "1958-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10273.108695652174
+      },
+      {
+        "Year Acquired": "1959-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 23393.539682539682
+      },
+      {
+        "Year Acquired": "1960-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 6770.992907801418
+      },
+      {
+        "Year Acquired": "1961-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 16320.313725490196
+      },
+      {
+        "Year Acquired": "1962-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 17826.76388888889
+      },
+      {
+        "Year Acquired": "1963-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 21474.672566371682
+      },
+      {
+        "Year Acquired": "1964-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 19322.992307692308
+      },
+      {
+        "Year Acquired": "1965-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 24489.323699421966
+      },
+      {
+        "Year Acquired": "1966-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 28220.12987012987
+      },
+      {
+        "Year Acquired": "1967-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 20335.1452991453
+      },
+      {
+        "Year Acquired": "1968-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 13546.325203252032
+      },
+      {
+        "Year Acquired": "1969-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 35578.596774193546
+      },
+      {
+        "Year Acquired": "1970-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 9183.99537037037
+      },
+      {
+        "Year Acquired": "1971-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 23629.577981651375
+      },
+      {
+        "Year Acquired": "1972-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 15613.01652892562
+      },
+      {
+        "Year Acquired": "1973-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 9745.432
+      },
+      {
+        "Year Acquired": "1974-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 4999.770833333333
+      },
+      {
+        "Year Acquired": "1975-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 5861.399159663865
+      },
+      {
+        "Year Acquired": "1976-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10166.84892086331
+      },
+      {
+        "Year Acquired": "1977-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 12004.65306122449
+      },
+      {
+        "Year Acquired": "1978-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 12148.658227848102
+      },
+      {
+        "Year Acquired": "1979-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 3286.043103448276
+      },
+      {
+        "Year Acquired": "1980-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 3040.25
+      },
+      {
+        "Year Acquired": "1981-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10051.891428571429
+      },
+      {
+        "Year Acquired": "1982-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10162.3875
+      },
+      {
+        "Year Acquired": "1983-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 12152.964285714286
+      },
+      {
+        "Year Acquired": "1984-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 14252.21897810219
+      },
+      {
+        "Year Acquired": "1985-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 13685.251700680272
+      },
+      {
+        "Year Acquired": "1986-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 5693.7692307692305
+      },
+      {
+        "Year Acquired": "1987-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 8526.4213836478
+      },
+      {
+        "Year Acquired": "1988-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 3601.651851851852
+      },
+      {
+        "Year Acquired": "1989-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 11383.854166666666
+      },
+      {
+        "Year Acquired": "1990-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 12137.626373626374
+      },
+      {
+        "Year Acquired": "1991-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 16705.52525252525
+      },
+      {
+        "Year Acquired": "1992-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 8187.363636363636
+      },
+      {
+        "Year Acquired": "1993-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 3868.1098901098903
+      },
+      {
+        "Year Acquired": "1994-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 4071.5607476635514
+      },
+      {
+        "Year Acquired": "1995-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 7191.770491803279
+      },
+      {
+        "Year Acquired": "1996-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 9865.627737226278
+      },
+      {
+        "Year Acquired": "1997-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10283.925925925925
+      },
+      {
+        "Year Acquired": "1998-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 5898.3387096774195
+      },
+      {
+        "Year Acquired": "1999-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 2413.3576158940396
+      },
+      {
+        "Year Acquired": "2000-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 3498.002801120448
+      },
+      {
+        "Year Acquired": "2001-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 7916.392857142857
+      },
+      {
+        "Year Acquired": "2002-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 8931.98275862069
+      },
+      {
+        "Year Acquired": "2003-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10015.663461538461
+      },
+      {
+        "Year Acquired": "2004-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 7281.658227848101
+      },
+      {
+        "Year Acquired": "2005-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 19925.48
+      },
+      {
+        "Year Acquired": "2006-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 3221.295336787565
+      },
+      {
+        "Year Acquired": "2007-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 23703.0
+      },
+      {
+        "Year Acquired": "2008-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 14565.727272727272
+      },
+      {
+        "Year Acquired": "2009-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 12986.2
+      },
+      {
+        "Year Acquired": "2010-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 17214.772727272728
+      },
+      {
+        "Year Acquired": "2011-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 6650.130434782609
+      },
+      {
+        "Year Acquired": "2012-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 10874.478260869566
+      },
+      {
+        "Year Acquired": "2013-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 48935.625
+      },
+      {
+        "Year Acquired": "2014-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 20130.242424242424
+      },
+      {
+        "Year Acquired": "2015-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 15254.65
+      },
+      {
+        "Year Acquired": "2016-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 30483.9
+      },
+      {
+        "Year Acquired": "2017-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 6720.0
+      },
+      {
+        "Year Acquired": "2018-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 4290.0
+      },
+      {
+        "Year Acquired": "2019-01-01T00:00:00",
+        "Statistic": "mean",
+        "stat": 760.0
+      },
+      {
+        "Year Acquired": "1753-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1802-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 1943.1294347006326
+      },
+      {
+        "Year Acquired": "1810-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 1809.9459476275345
+      },
+      {
+        "Year Acquired": "1832-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1837-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1838-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1839-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1840-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 6890.521496955074
+      },
+      {
+        "Year Acquired": "1841-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1843-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1844-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1845-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 31203.93836254221
+      },
+      {
+        "Year Acquired": "1848-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 5095.809454836395
+      },
+      {
+        "Year Acquired": "1850-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 895.9042917633557
+      },
+      {
+        "Year Acquired": "1853-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1854-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1855-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 16923.776808581075
+      },
+      {
+        "Year Acquired": "1856-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1857-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 8572.962615105702
+      },
+      {
+        "Year Acquired": "1858-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 5397.346060796917
+      },
+      {
+        "Year Acquired": "1859-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1860-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 7751.7325482759015
+      },
+      {
+        "Year Acquired": "1863-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1865-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 32196.907405836355
+      },
+      {
+        "Year Acquired": "1867-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1870-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1871-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 1244.568117862578
+      },
+      {
+        "Year Acquired": "1872-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1873-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1874-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1875-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 801.8611683660291
+      },
+      {
+        "Year Acquired": "1876-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 160693.74499338795
+      },
+      {
+        "Year Acquired": "1878-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1880-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 18584.21640945809
+      },
+      {
+        "Year Acquired": "1881-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1882-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 16239.414336730251
+      },
+      {
+        "Year Acquired": "1883-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 5957.374631496663
+      },
+      {
+        "Year Acquired": "1885-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 13162.546900834453
+      },
+      {
+        "Year Acquired": "1886-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 13386.600723704933
+      },
+      {
+        "Year Acquired": "1887-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 32875.86620785324
+      },
+      {
+        "Year Acquired": "1888-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 19397.353221509373
+      },
+      {
+        "Year Acquired": "1890-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 12204.232078219737
+      },
+      {
+        "Year Acquired": "1891-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1892-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 53825.39714050732
+      },
+      {
+        "Year Acquired": "1893-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 4939.713217046782
+      },
+      {
+        "Year Acquired": "1894-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1895-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 35308.668821585175
+      },
+      {
+        "Year Acquired": "1896-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 32818.91091073356
+      },
+      {
+        "Year Acquired": "1897-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1898-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 23589.082220383225
+      },
+      {
+        "Year Acquired": "1899-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 9595.529914149261
+      },
+      {
+        "Year Acquired": "1900-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 24407.486225462748
+      },
+      {
+        "Year Acquired": "1901-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 44235.87532007628
+      },
+      {
+        "Year Acquired": "1902-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 74910.74220113561
+      },
+      {
+        "Year Acquired": "1903-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 22442.40435425759
+      },
+      {
+        "Year Acquired": "1904-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 5686.738256681065
+      },
+      {
+        "Year Acquired": "1905-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 38173.902599040426
+      },
+      {
+        "Year Acquired": "1906-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 5038.842922735338
+      },
+      {
+        "Year Acquired": "1907-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 14097.166977012714
+      },
+      {
+        "Year Acquired": "1908-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 30984.242959343646
+      },
+      {
+        "Year Acquired": "1909-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 46199.134419844464
+      },
+      {
+        "Year Acquired": "1910-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 12792.414930382858
+      },
+      {
+        "Year Acquired": "1911-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 56212.93885307901
+      },
+      {
+        "Year Acquired": "1912-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 31165.397067278176
+      },
+      {
+        "Year Acquired": "1913-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 8638.002972926908
+      },
+      {
+        "Year Acquired": "1914-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 133998.1448988505
+      },
+      {
+        "Year Acquired": "1915-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 36118.06747546856
+      },
+      {
+        "Year Acquired": "1916-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 19720.665848061748
+      },
+      {
+        "Year Acquired": "1917-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 16393.563615028917
+      },
+      {
+        "Year Acquired": "1918-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 5232.420462845087
+      },
+      {
+        "Year Acquired": "1919-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 9682.2401953267
+      },
+      {
+        "Year Acquired": "1920-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 20442.264121640706
+      },
+      {
+        "Year Acquired": "1921-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 15577.069049824699
+      },
+      {
+        "Year Acquired": "1922-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 24697.70899046666
+      },
+      {
+        "Year Acquired": "1923-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 116712.13873859006
+      },
+      {
+        "Year Acquired": "1924-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 13856.473798373092
+      },
+      {
+        "Year Acquired": "1925-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 70809.25675905115
+      },
+      {
+        "Year Acquired": "1926-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 142584.866876249
+      },
+      {
+        "Year Acquired": "1927-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 45566.20191197645
+      },
+      {
+        "Year Acquired": "1928-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 20197.49902908489
+      },
+      {
+        "Year Acquired": "1929-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 74637.60498638473
+      },
+      {
+        "Year Acquired": "1930-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 14198.32314062279
+      },
+      {
+        "Year Acquired": "1931-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 71166.494532223
+      },
+      {
+        "Year Acquired": "1932-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 16106.37998138633
+      },
+      {
+        "Year Acquired": "1933-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 8360.394026466563
+      },
+      {
+        "Year Acquired": "1934-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 20302.343748747524
+      },
+      {
+        "Year Acquired": "1935-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 11348.703456140014
+      },
+      {
+        "Year Acquired": "1936-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 14641.102723898613
+      },
+      {
+        "Year Acquired": "1937-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 35813.398188526524
+      },
+      {
+        "Year Acquired": "1938-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 42049.79960769586
+      },
+      {
+        "Year Acquired": "1939-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 21553.732876712787
+      },
+      {
+        "Year Acquired": "1940-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 52759.11072613757
+      },
+      {
+        "Year Acquired": "1941-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 20989.624296365193
+      },
+      {
+        "Year Acquired": "1942-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 18649.57300896368
+      },
+      {
+        "Year Acquired": "1943-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 7343.639986410009
+      },
+      {
+        "Year Acquired": "1944-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 5603.509947642935
+      },
+      {
+        "Year Acquired": "1945-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 23119.28846445391
+      },
+      {
+        "Year Acquired": "1946-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 15332.06515770136
+      },
+      {
+        "Year Acquired": "1947-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 14075.313893854243
+      },
+      {
+        "Year Acquired": "1948-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 9656.249597595084
+      },
+      {
+        "Year Acquired": "1949-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 40756.41390766392
+      },
+      {
+        "Year Acquired": "1950-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 23767.581492790137
+      },
+      {
+        "Year Acquired": "1951-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 32213.845755323826
+      },
+      {
+        "Year Acquired": "1952-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 50095.752137142794
+      },
+      {
+        "Year Acquired": "1953-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 24018.615784238384
+      },
+      {
+        "Year Acquired": "1954-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 31190.464513899857
+      },
+      {
+        "Year Acquired": "1955-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 57663.39538056934
+      },
+      {
+        "Year Acquired": "1956-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 54267.860881750195
+      },
+      {
+        "Year Acquired": "1957-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 26266.414561647933
+      },
+      {
+        "Year Acquired": "1958-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 25633.219600490233
+      },
+      {
+        "Year Acquired": "1959-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 54551.838832383706
+      },
+      {
+        "Year Acquired": "1960-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 30578.95301101641
+      },
+      {
+        "Year Acquired": "1961-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 33994.958697718816
+      },
+      {
+        "Year Acquired": "1962-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 40203.09748997627
+      },
+      {
+        "Year Acquired": "1963-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 50204.6323233443
+      },
+      {
+        "Year Acquired": "1964-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 36597.21245399766
+      },
+      {
+        "Year Acquired": "1965-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 53535.174160169925
+      },
+      {
+        "Year Acquired": "1966-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 45177.83189252476
+      },
+      {
+        "Year Acquired": "1967-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 34592.45432178191
+      },
+      {
+        "Year Acquired": "1968-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 40273.1453669295
+      },
+      {
+        "Year Acquired": "1969-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 82299.22748725335
+      },
+      {
+        "Year Acquired": "1970-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 28057.24095147776
+      },
+      {
+        "Year Acquired": "1971-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 58685.713467036134
+      },
+      {
+        "Year Acquired": "1972-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 48993.933549978654
+      },
+      {
+        "Year Acquired": "1973-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 26849.922143617525
+      },
+      {
+        "Year Acquired": "1974-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 22745.999592577427
+      },
+      {
+        "Year Acquired": "1975-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 16332.917613982721
+      },
+      {
+        "Year Acquired": "1976-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 37905.41062711686
+      },
+      {
+        "Year Acquired": "1977-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 75215.12199048368
+      },
+      {
+        "Year Acquired": "1978-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 30707.55389021007
+      },
+      {
+        "Year Acquired": "1979-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 9702.435457941334
+      },
+      {
+        "Year Acquired": "1980-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 9626.164334192976
+      },
+      {
+        "Year Acquired": "1981-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 26853.691353624563
+      },
+      {
+        "Year Acquired": "1982-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 34968.08857037605
+      },
+      {
+        "Year Acquired": "1983-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 26712.921492970596
+      },
+      {
+        "Year Acquired": "1984-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 78602.29920130268
+      },
+      {
+        "Year Acquired": "1985-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 99310.80973863353
+      },
+      {
+        "Year Acquired": "1986-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 14956.371277342452
+      },
+      {
+        "Year Acquired": "1987-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 31069.05988367671
+      },
+      {
+        "Year Acquired": "1988-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 8764.455069282427
+      },
+      {
+        "Year Acquired": "1989-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 36610.124618552596
+      },
+      {
+        "Year Acquired": "1990-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 30761.232022991848
+      },
+      {
+        "Year Acquired": "1991-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 81556.11927733221
+      },
+      {
+        "Year Acquired": "1992-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 18316.353153371783
+      },
+      {
+        "Year Acquired": "1993-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 7280.909893459668
+      },
+      {
+        "Year Acquired": "1994-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 8359.03900676136
+      },
+      {
+        "Year Acquired": "1995-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 17967.95543163361
+      },
+      {
+        "Year Acquired": "1996-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 33201.52837995283
+      },
+      {
+        "Year Acquired": "1997-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 22768.56624831277
+      },
+      {
+        "Year Acquired": "1998-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 14060.043460529747
+      },
+      {
+        "Year Acquired": "1999-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 5231.4449824681915
+      },
+      {
+        "Year Acquired": "2000-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 11276.816349499057
+      },
+      {
+        "Year Acquired": "2001-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 29596.446083590352
+      },
+      {
+        "Year Acquired": "2002-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 20494.191820667358
+      },
+      {
+        "Year Acquired": "2003-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 37322.69734282203
+      },
+      {
+        "Year Acquired": "2004-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 24762.442250873566
+      },
+      {
+        "Year Acquired": "2005-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 56811.5000471236
+      },
+      {
+        "Year Acquired": "2006-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 16471.966229616108
+      },
+      {
+        "Year Acquired": "2007-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 47710.47411310813
+      },
+      {
+        "Year Acquired": "2008-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 43181.08288380668
+      },
+      {
+        "Year Acquired": "2009-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 25445.14786462503
+      },
+      {
+        "Year Acquired": "2010-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 34147.04657511437
+      },
+      {
+        "Year Acquired": "2011-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 15220.376605973586
+      },
+      {
+        "Year Acquired": "2012-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 29866.02269967049
+      },
+      {
+        "Year Acquired": "2013-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 84820.0285713185
+      },
+      {
+        "Year Acquired": "2014-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 25152.687037161533
+      },
+      {
+        "Year Acquired": "2015-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 29153.085289960036
+      },
+      {
+        "Year Acquired": "2016-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 61864.18049144252
+      },
+      {
+        "Year Acquired": "2017-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "2018-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": 5153.644341628553
+      },
+      {
+        "Year Acquired": "2019-01-01T00:00:00",
+        "Statistic": "std",
+        "stat": null
+      },
+      {
+        "Year Acquired": "1753-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 1200.0
+      },
+      {
+        "Year Acquired": "1802-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 846.0
+      },
+      {
+        "Year Acquired": "1810-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 216.0
+      },
+      {
+        "Year Acquired": "1832-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 120000.0
+      },
+      {
+        "Year Acquired": "1837-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 10302.0
+      },
+      {
+        "Year Acquired": "1838-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 2010.0
+      },
+      {
+        "Year Acquired": "1839-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 11752.0
+      },
+      {
+        "Year Acquired": "1840-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 608.0
+      },
+      {
+        "Year Acquired": "1841-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 3256.0
+      },
+      {
+        "Year Acquired": "1843-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 900.0
+      },
+      {
+        "Year Acquired": "1844-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 4088.0
+      },
+      {
+        "Year Acquired": "1845-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 3616.0
+      },
+      {
+        "Year Acquired": "1848-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 1644.0
+      },
+      {
+        "Year Acquired": "1850-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 500.0
+      },
+      {
+        "Year Acquired": "1853-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 255000.0
+      },
+      {
+        "Year Acquired": "1854-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 2140.0
+      },
+      {
+        "Year Acquired": "1855-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 1118.0
+      },
+      {
+        "Year Acquired": "1856-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 750.0
+      },
+      {
+        "Year Acquired": "1857-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 3000.0
+      },
+      {
+        "Year Acquired": "1858-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 7367.0
+      },
+      {
+        "Year Acquired": "1859-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 4847.0
+      },
+      {
+        "Year Acquired": "1860-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 36.0
+      },
+      {
+        "Year Acquired": "1863-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 15795.0
+      },
+      {
+        "Year Acquired": "1865-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 225.0
+      },
+      {
+        "Year Acquired": "1867-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 2700.0
+      },
+      {
+        "Year Acquired": "1870-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 2864.0
+      },
+      {
+        "Year Acquired": "1871-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 290.0
+      },
+      {
+        "Year Acquired": "1872-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 14900.0
+      },
+      {
+        "Year Acquired": "1873-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 11000.0
+      },
+      {
+        "Year Acquired": "1874-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 6600.0
+      },
+      {
+        "Year Acquired": "1875-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 400.0
+      },
+      {
+        "Year Acquired": "1876-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 1200.0
+      },
+      {
+        "Year Acquired": "1878-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 33071.0
+      },
+      {
+        "Year Acquired": "1880-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 1800.0
+      },
+      {
+        "Year Acquired": "1881-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 6671.0
+      },
+      {
+        "Year Acquired": "1882-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 18150.0
+      },
+      {
+        "Year Acquired": "1883-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 150.0
+      },
+      {
+        "Year Acquired": "1885-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 184.0
+      },
+      {
+        "Year Acquired": "1886-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 50.0
+      },
+      {
+        "Year Acquired": "1887-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 15000.0
+      },
+      {
+        "Year Acquired": "1888-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 28746.0
+      },
+      {
+        "Year Acquired": "1890-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 300.0
+      },
+      {
+        "Year Acquired": "1891-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 2325.0
+      },
+      {
+        "Year Acquired": "1892-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 4380.0
+      },
+      {
+        "Year Acquired": "1893-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 800.0
+      },
+      {
+        "Year Acquired": "1894-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 85000.0
+      },
+      {
+        "Year Acquired": "1895-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 4444.0
+      },
+      {
+        "Year Acquired": "1896-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 13401.0
+      },
+      {
+        "Year Acquired": "1897-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 132907.0
+      },
+      {
+        "Year Acquired": "1898-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 1700.0
+      },
+      {
+        "Year Acquired": "1899-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 32229.0
+      },
+      {
+        "Year Acquired": "1900-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 200.0
+      },
+      {
+        "Year Acquired": "1901-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 1450.0
+      },
+      {
+        "Year Acquired": "1902-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 82.0
+      },
+      {
+        "Year Acquired": "1903-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 10288.0
+      },
+      {
+        "Year Acquired": "1904-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 480.0
+      },
+      {
+        "Year Acquired": "1905-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 150.0
+      },
+      {
+        "Year Acquired": "1906-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 6624.0
+      },
+      {
+        "Year Acquired": "1907-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 2900.0
+      },
+      {
+        "Year Acquired": "1908-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 2682.0
+      },
+      {
+        "Year Acquired": "1909-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 2175.0
+      },
+      {
+        "Year Acquired": "1910-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 150.0
+      },
+      {
+        "Year Acquired": "1911-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 160.0
+      },
+      {
+        "Year Acquired": "1912-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 3464.0
+      },
+      {
+        "Year Acquired": "1913-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 1152.0
+      },
+      {
+        "Year Acquired": "1914-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 3288.0
+      },
+      {
+        "Year Acquired": "1915-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 3736.0
+      },
+      {
+        "Year Acquired": "1916-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 16.0
+      },
+      {
+        "Year Acquired": "1917-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 4896.0
+      },
+      {
+        "Year Acquired": "1918-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 168.0
+      },
+      {
+        "Year Acquired": "1919-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 2100.0
+      },
+      {
+        "Year Acquired": "1920-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 100.0
+      },
+      {
+        "Year Acquired": "1921-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 168.0
+      },
+      {
+        "Year Acquired": "1922-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 288.0
+      },
+      {
+        "Year Acquired": "1923-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 138.0
+      },
+      {
+        "Year Acquired": "1924-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 3200.0
+      },
+      {
+        "Year Acquired": "1925-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 25.0
+      },
+      {
+        "Year Acquired": "1926-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 108.0
+      },
+      {
+        "Year Acquired": "1927-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 693.0
+      },
+      {
+        "Year Acquired": "1928-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 48.0
+      },
+      {
+        "Year Acquired": "1929-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 10.0
+      },
+      {
+        "Year Acquired": "1930-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 50.0
+      },
+      {
+        "Year Acquired": "1931-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 388.0
+      },
+      {
+        "Year Acquired": "1932-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 25.0
+      },
+      {
+        "Year Acquired": "1933-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 300.0
+      },
+      {
+        "Year Acquired": "1934-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 282.0
+      },
+      {
+        "Year Acquired": "1935-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 30.0
+      },
+      {
+        "Year Acquired": "1936-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 70.0
+      },
+      {
+        "Year Acquired": "1937-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 130.0
+      },
+      {
+        "Year Acquired": "1938-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 48.0
+      },
+      {
+        "Year Acquired": "1939-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 224.0
+      },
+      {
+        "Year Acquired": "1940-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 30.0
+      },
+      {
+        "Year Acquired": "1941-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 100.0
+      },
+      {
+        "Year Acquired": "1942-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 122.0
+      },
+      {
+        "Year Acquired": "1943-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 363.0
+      },
+      {
+        "Year Acquired": "1944-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 224.0
+      },
+      {
+        "Year Acquired": "1945-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 27.0
+      },
+      {
+        "Year Acquired": "1946-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 270.0
+      },
+      {
+        "Year Acquired": "1947-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 50.0
+      },
+      {
+        "Year Acquired": "1948-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 100.0
+      },
+      {
+        "Year Acquired": "1949-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 80.0
+      },
+      {
+        "Year Acquired": "1950-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 12.0
+      },
+      {
+        "Year Acquired": "1951-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 145.0
+      },
+      {
+        "Year Acquired": "1952-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 25.0
+      },
+      {
+        "Year Acquired": "1953-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 120.0
+      },
+      {
+        "Year Acquired": "1954-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 40.0
+      },
+      {
+        "Year Acquired": "1955-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "1956-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 132.0
+      },
+      {
+        "Year Acquired": "1957-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 40.0
+      },
+      {
+        "Year Acquired": "1958-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 12.0
+      },
+      {
+        "Year Acquired": "1959-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "1960-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 9.0
+      },
+      {
+        "Year Acquired": "1961-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 25.0
+      },
+      {
+        "Year Acquired": "1962-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 12.0
+      },
+      {
+        "Year Acquired": "1963-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 12.0
+      },
+      {
+        "Year Acquired": "1964-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "1965-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "1966-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 16.0
+      },
+      {
+        "Year Acquired": "1967-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 12.0
+      },
+      {
+        "Year Acquired": "1968-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "1969-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 25.0
+      },
+      {
+        "Year Acquired": "1970-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 18.0
+      },
+      {
+        "Year Acquired": "1971-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 124.0
+      },
+      {
+        "Year Acquired": "1972-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 16.0
+      },
+      {
+        "Year Acquired": "1973-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 24.0
+      },
+      {
+        "Year Acquired": "1974-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 16.0
+      },
+      {
+        "Year Acquired": "1975-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 16.0
+      },
+      {
+        "Year Acquired": "1976-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 16.0
+      },
+      {
+        "Year Acquired": "1977-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 18.0
+      },
+      {
+        "Year Acquired": "1978-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 48.0
+      },
+      {
+        "Year Acquired": "1979-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 12.0
+      },
+      {
+        "Year Acquired": "1980-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 12.0
+      },
+      {
+        "Year Acquired": "1981-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "1982-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "1983-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 25.0
+      },
+      {
+        "Year Acquired": "1984-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 18.0
+      },
+      {
+        "Year Acquired": "1985-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "1986-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 12.0
+      },
+      {
+        "Year Acquired": "1987-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 18.0
+      },
+      {
+        "Year Acquired": "1988-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 18.0
+      },
+      {
+        "Year Acquired": "1989-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 16.0
+      },
+      {
+        "Year Acquired": "1990-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 36.0
+      },
+      {
+        "Year Acquired": "1991-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 18.0
+      },
+      {
+        "Year Acquired": "1992-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "1993-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 18.0
+      },
+      {
+        "Year Acquired": "1994-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 36.0
+      },
+      {
+        "Year Acquired": "1995-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 64.0
+      },
+      {
+        "Year Acquired": "1996-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "1997-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 24.0
+      },
+      {
+        "Year Acquired": "1998-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 25.0
+      },
+      {
+        "Year Acquired": "1999-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 30.0
+      },
+      {
+        "Year Acquired": "2000-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 24.0
+      },
+      {
+        "Year Acquired": "2001-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 64.0
+      },
+      {
+        "Year Acquired": "2002-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 80.0
+      },
+      {
+        "Year Acquired": "2003-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "2004-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 70.0
+      },
+      {
+        "Year Acquired": "2005-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 60.0
+      },
+      {
+        "Year Acquired": "2006-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 36.0
+      },
+      {
+        "Year Acquired": "2007-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "2008-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 93.0
+      },
+      {
+        "Year Acquired": "2009-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 20.0
+      },
+      {
+        "Year Acquired": "2010-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 24.0
+      },
+      {
+        "Year Acquired": "2011-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 24.0
+      },
+      {
+        "Year Acquired": "2012-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 100.0
+      },
+      {
+        "Year Acquired": "2013-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "2014-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 10.0
+      },
+      {
+        "Year Acquired": "2015-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "2016-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 1152.0
+      },
+      {
+        "Year Acquired": "2017-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 6720.0
+      },
+      {
+        "Year Acquired": "2018-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 1455.0
+      },
+      {
+        "Year Acquired": "2019-01-01T00:00:00",
+        "Statistic": "min",
+        "stat": 760.0
+      },
+      {
+        "Year Acquired": "1753-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1200.0
+      },
+      {
+        "Year Acquired": "1802-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1533.0
+      },
+      {
+        "Year Acquired": "1810-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 300.5
+      },
+      {
+        "Year Acquired": "1832-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 120000.0
+      },
+      {
+        "Year Acquired": "1837-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 10302.0
+      },
+      {
+        "Year Acquired": "1838-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2010.0
+      },
+      {
+        "Year Acquired": "1839-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 11752.0
+      },
+      {
+        "Year Acquired": "1840-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 750.0
+      },
+      {
+        "Year Acquired": "1841-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 3256.0
+      },
+      {
+        "Year Acquired": "1843-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 900.0
+      },
+      {
+        "Year Acquired": "1844-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 4088.0
+      },
+      {
+        "Year Acquired": "1845-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 3934.0
+      },
+      {
+        "Year Acquired": "1848-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2079.0
+      },
+      {
+        "Year Acquired": "1850-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 816.75
+      },
+      {
+        "Year Acquired": "1853-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 255000.0
+      },
+      {
+        "Year Acquired": "1854-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2140.0
+      },
+      {
+        "Year Acquired": "1855-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2015.0
+      },
+      {
+        "Year Acquired": "1856-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 750.0
+      },
+      {
+        "Year Acquired": "1857-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 6031.0
+      },
+      {
+        "Year Acquired": "1858-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 9275.25
+      },
+      {
+        "Year Acquired": "1859-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 4847.0
+      },
+      {
+        "Year Acquired": "1860-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 527.25
+      },
+      {
+        "Year Acquired": "1863-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 15795.0
+      },
+      {
+        "Year Acquired": "1865-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 225.0
+      },
+      {
+        "Year Acquired": "1867-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2700.0
+      },
+      {
+        "Year Acquired": "1870-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2864.0
+      },
+      {
+        "Year Acquired": "1871-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 714.0
+      },
+      {
+        "Year Acquired": "1872-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 14900.0
+      },
+      {
+        "Year Acquired": "1873-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 11000.0
+      },
+      {
+        "Year Acquired": "1874-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 6600.0
+      },
+      {
+        "Year Acquired": "1875-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 914.0
+      },
+      {
+        "Year Acquired": "1876-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 6000.0
+      },
+      {
+        "Year Acquired": "1878-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 33071.0
+      },
+      {
+        "Year Acquired": "1880-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 3657.75
+      },
+      {
+        "Year Acquired": "1881-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 6671.0
+      },
+      {
+        "Year Acquired": "1882-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 23891.5
+      },
+      {
+        "Year Acquired": "1883-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2256.25
+      },
+      {
+        "Year Acquired": "1885-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 588.25
+      },
+      {
+        "Year Acquired": "1886-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 190.0
+      },
+      {
+        "Year Acquired": "1887-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 25078.5
+      },
+      {
+        "Year Acquired": "1888-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 35604.0
+      },
+      {
+        "Year Acquired": "1890-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1050.0
+      },
+      {
+        "Year Acquired": "1891-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2325.0
+      },
+      {
+        "Year Acquired": "1892-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 20921.0
+      },
+      {
+        "Year Acquired": "1893-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2475.0
+      },
+      {
+        "Year Acquired": "1894-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 85000.0
+      },
+      {
+        "Year Acquired": "1895-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 13050.0
+      },
+      {
+        "Year Acquired": "1896-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 19152.75
+      },
+      {
+        "Year Acquired": "1897-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 132907.0
+      },
+      {
+        "Year Acquired": "1898-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 10040.0
+      },
+      {
+        "Year Acquired": "1899-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 35229.5
+      },
+      {
+        "Year Acquired": "1900-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1053.5
+      },
+      {
+        "Year Acquired": "1901-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 11643.0
+      },
+      {
+        "Year Acquired": "1902-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 274.5
+      },
+      {
+        "Year Acquired": "1903-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 15330.5
+      },
+      {
+        "Year Acquired": "1904-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1840.0
+      },
+      {
+        "Year Acquired": "1905-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 5910.0
+      },
+      {
+        "Year Acquired": "1906-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 8405.5
+      },
+      {
+        "Year Acquired": "1907-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 5625.0
+      },
+      {
+        "Year Acquired": "1908-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 7677.5
+      },
+      {
+        "Year Acquired": "1909-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 18149.0
+      },
+      {
+        "Year Acquired": "1910-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 642.0
+      },
+      {
+        "Year Acquired": "1911-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 5261.25
+      },
+      {
+        "Year Acquired": "1912-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 31683.0
+      },
+      {
+        "Year Acquired": "1913-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 5976.0
+      },
+      {
+        "Year Acquired": "1914-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 7689.75
+      },
+      {
+        "Year Acquired": "1915-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 13754.5
+      },
+      {
+        "Year Acquired": "1916-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2610.0
+      },
+      {
+        "Year Acquired": "1917-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 10692.0
+      },
+      {
+        "Year Acquired": "1918-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 4916.75
+      },
+      {
+        "Year Acquired": "1919-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 5588.25
+      },
+      {
+        "Year Acquired": "1920-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1575.0
+      },
+      {
+        "Year Acquired": "1921-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1806.0
+      },
+      {
+        "Year Acquired": "1922-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 673.5
+      },
+      {
+        "Year Acquired": "1923-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1701.0
+      },
+      {
+        "Year Acquired": "1924-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 9447.5
+      },
+      {
+        "Year Acquired": "1925-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1800.0
+      },
+      {
+        "Year Acquired": "1926-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 4635.0
+      },
+      {
+        "Year Acquired": "1927-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 5218.75
+      },
+      {
+        "Year Acquired": "1928-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2271.5
+      },
+      {
+        "Year Acquired": "1929-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2500.0
+      },
+      {
+        "Year Acquired": "1930-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 800.0
+      },
+      {
+        "Year Acquired": "1931-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1950.0
+      },
+      {
+        "Year Acquired": "1932-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 325.0
+      },
+      {
+        "Year Acquired": "1933-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2581.0
+      },
+      {
+        "Year Acquired": "1934-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 282.0
+      },
+      {
+        "Year Acquired": "1935-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 228.0
+      },
+      {
+        "Year Acquired": "1936-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 900.0
+      },
+      {
+        "Year Acquired": "1937-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2004.75
+      },
+      {
+        "Year Acquired": "1938-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2503.25
+      },
+      {
+        "Year Acquired": "1939-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1898.25
+      },
+      {
+        "Year Acquired": "1940-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 795.0
+      },
+      {
+        "Year Acquired": "1941-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1475.5
+      },
+      {
+        "Year Acquired": "1942-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 432.0
+      },
+      {
+        "Year Acquired": "1943-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 876.0
+      },
+      {
+        "Year Acquired": "1944-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 660.75
+      },
+      {
+        "Year Acquired": "1945-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 937.0
+      },
+      {
+        "Year Acquired": "1946-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 925.5
+      },
+      {
+        "Year Acquired": "1947-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 525.75
+      },
+      {
+        "Year Acquired": "1948-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 863.25
+      },
+      {
+        "Year Acquired": "1949-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1771.0
+      },
+      {
+        "Year Acquired": "1950-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 309.0
+      },
+      {
+        "Year Acquired": "1951-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 555.0
+      },
+      {
+        "Year Acquired": "1952-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1578.75
+      },
+      {
+        "Year Acquired": "1953-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 280.0
+      },
+      {
+        "Year Acquired": "1954-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 576.0
+      },
+      {
+        "Year Acquired": "1955-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 350.0
+      },
+      {
+        "Year Acquired": "1956-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2382.0
+      },
+      {
+        "Year Acquired": "1957-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 883.5
+      },
+      {
+        "Year Acquired": "1958-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 560.0
+      },
+      {
+        "Year Acquired": "1959-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2442.0
+      },
+      {
+        "Year Acquired": "1960-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 288.0
+      },
+      {
+        "Year Acquired": "1961-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 727.5
+      },
+      {
+        "Year Acquired": "1962-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1279.5
+      },
+      {
+        "Year Acquired": "1963-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1512.0
+      },
+      {
+        "Year Acquired": "1964-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 600.0
+      },
+      {
+        "Year Acquired": "1965-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1456.0
+      },
+      {
+        "Year Acquired": "1966-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2048.0
+      },
+      {
+        "Year Acquired": "1967-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1800.0
+      },
+      {
+        "Year Acquired": "1968-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 955.0
+      },
+      {
+        "Year Acquired": "1969-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 589.5
+      },
+      {
+        "Year Acquired": "1970-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 240.0
+      },
+      {
+        "Year Acquired": "1971-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1437.0
+      },
+      {
+        "Year Acquired": "1972-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "1973-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1800.0
+      },
+      {
+        "Year Acquired": "1974-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 36.0
+      },
+      {
+        "Year Acquired": "1975-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 640.0
+      },
+      {
+        "Year Acquired": "1976-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 200.0
+      },
+      {
+        "Year Acquired": "1977-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 42.0
+      },
+      {
+        "Year Acquired": "1978-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 534.0
+      },
+      {
+        "Year Acquired": "1979-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 150.0
+      },
+      {
+        "Year Acquired": "1980-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 120.0
+      },
+      {
+        "Year Acquired": "1981-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 432.0
+      },
+      {
+        "Year Acquired": "1982-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 400.0
+      },
+      {
+        "Year Acquired": "1983-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 234.0
+      },
+      {
+        "Year Acquired": "1984-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 192.0
+      },
+      {
+        "Year Acquired": "1985-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 240.0
+      },
+      {
+        "Year Acquired": "1986-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 190.0
+      },
+      {
+        "Year Acquired": "1987-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 104.0
+      },
+      {
+        "Year Acquired": "1988-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 220.0
+      },
+      {
+        "Year Acquired": "1989-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "1990-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 183.5
+      },
+      {
+        "Year Acquired": "1991-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 544.0
+      },
+      {
+        "Year Acquired": "1992-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 360.0
+      },
+      {
+        "Year Acquired": "1993-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 90.0
+      },
+      {
+        "Year Acquired": "1994-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 560.0
+      },
+      {
+        "Year Acquired": "1995-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 309.0
+      },
+      {
+        "Year Acquired": "1996-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "1997-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 224.75
+      },
+      {
+        "Year Acquired": "1998-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 286.0
+      },
+      {
+        "Year Acquired": "1999-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "2000-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "2001-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "2002-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 332.0
+      },
+      {
+        "Year Acquired": "2003-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "2004-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "2005-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "2006-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 75.0
+      },
+      {
+        "Year Acquired": "2007-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 501.75
+      },
+      {
+        "Year Acquired": "2008-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 147.0
+      },
+      {
+        "Year Acquired": "2009-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 466.5
+      },
+      {
+        "Year Acquired": "2010-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 495.0
+      },
+      {
+        "Year Acquired": "2011-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "2012-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 850.0
+      },
+      {
+        "Year Acquired": "2013-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "2014-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 3200.0
+      },
+      {
+        "Year Acquired": "2015-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 696.0
+      },
+      {
+        "Year Acquired": "2016-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 2464.0
+      },
+      {
+        "Year Acquired": "2017-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 6720.0
+      },
+      {
+        "Year Acquired": "2018-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 1455.0
+      },
+      {
+        "Year Acquired": "2019-01-01T00:00:00",
+        "Statistic": "25%",
+        "stat": 760.0
+      },
+      {
+        "Year Acquired": "1753-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1200.0
+      },
+      {
+        "Year Acquired": "1802-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2220.0
+      },
+      {
+        "Year Acquired": "1810-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 385.0
+      },
+      {
+        "Year Acquired": "1832-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 120000.0
+      },
+      {
+        "Year Acquired": "1837-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 10302.0
+      },
+      {
+        "Year Acquired": "1838-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2010.0
+      },
+      {
+        "Year Acquired": "1839-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 11752.0
+      },
+      {
+        "Year Acquired": "1840-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1492.0
+      },
+      {
+        "Year Acquired": "1841-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3256.0
+      },
+      {
+        "Year Acquired": "1843-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 900.0
+      },
+      {
+        "Year Acquired": "1844-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 4088.0
+      },
+      {
+        "Year Acquired": "1845-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 4252.0
+      },
+      {
+        "Year Acquired": "1848-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3474.5
+      },
+      {
+        "Year Acquired": "1850-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1133.5
+      },
+      {
+        "Year Acquired": "1853-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 255000.0
+      },
+      {
+        "Year Acquired": "1854-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2140.0
+      },
+      {
+        "Year Acquired": "1855-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 5476.0
+      },
+      {
+        "Year Acquired": "1856-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 750.0
+      },
+      {
+        "Year Acquired": "1857-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 9062.0
+      },
+      {
+        "Year Acquired": "1858-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 11183.5
+      },
+      {
+        "Year Acquired": "1859-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 4847.0
+      },
+      {
+        "Year Acquired": "1860-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1606.5
+      },
+      {
+        "Year Acquired": "1863-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 15795.0
+      },
+      {
+        "Year Acquired": "1865-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 9540.0
+      },
+      {
+        "Year Acquired": "1867-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2700.0
+      },
+      {
+        "Year Acquired": "1870-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2864.0
+      },
+      {
+        "Year Acquired": "1871-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 768.0
+      },
+      {
+        "Year Acquired": "1872-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 14900.0
+      },
+      {
+        "Year Acquired": "1873-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 11000.0
+      },
+      {
+        "Year Acquired": "1874-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 6600.0
+      },
+      {
+        "Year Acquired": "1875-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1428.0
+      },
+      {
+        "Year Acquired": "1876-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 7680.0
+      },
+      {
+        "Year Acquired": "1878-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 33071.0
+      },
+      {
+        "Year Acquired": "1880-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 25258.5
+      },
+      {
+        "Year Acquired": "1881-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 6671.0
+      },
+      {
+        "Year Acquired": "1882-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 29633.0
+      },
+      {
+        "Year Acquired": "1883-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 4362.5
+      },
+      {
+        "Year Acquired": "1885-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1361.5
+      },
+      {
+        "Year Acquired": "1886-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 9203.0
+      },
+      {
+        "Year Acquired": "1887-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 46599.0
+      },
+      {
+        "Year Acquired": "1888-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 42462.0
+      },
+      {
+        "Year Acquired": "1890-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 9600.0
+      },
+      {
+        "Year Acquired": "1891-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2325.0
+      },
+      {
+        "Year Acquired": "1892-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 37462.0
+      },
+      {
+        "Year Acquired": "1893-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 6757.5
+      },
+      {
+        "Year Acquired": "1894-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 85000.0
+      },
+      {
+        "Year Acquired": "1895-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 23430.0
+      },
+      {
+        "Year Acquired": "1896-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 48302.0
+      },
+      {
+        "Year Acquired": "1897-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 132907.0
+      },
+      {
+        "Year Acquired": "1898-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 18380.0
+      },
+      {
+        "Year Acquired": "1899-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 38230.0
+      },
+      {
+        "Year Acquired": "1900-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2220.0
+      },
+      {
+        "Year Acquired": "1901-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 21836.0
+      },
+      {
+        "Year Acquired": "1902-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 608.5
+      },
+      {
+        "Year Acquired": "1903-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 20377.0
+      },
+      {
+        "Year Acquired": "1904-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 4000.0
+      },
+      {
+        "Year Acquired": "1905-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 7500.0
+      },
+      {
+        "Year Acquired": "1906-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 10187.0
+      },
+      {
+        "Year Acquired": "1907-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 9816.0
+      },
+      {
+        "Year Acquired": "1908-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 32146.0
+      },
+      {
+        "Year Acquired": "1909-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 38680.0
+      },
+      {
+        "Year Acquired": "1910-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 5675.0
+      },
+      {
+        "Year Acquired": "1911-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 8981.0
+      },
+      {
+        "Year Acquired": "1912-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 50408.0
+      },
+      {
+        "Year Acquired": "1913-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 5976.0
+      },
+      {
+        "Year Acquired": "1914-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 23812.0
+      },
+      {
+        "Year Acquired": "1915-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 22300.5
+      },
+      {
+        "Year Acquired": "1916-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 17880.0
+      },
+      {
+        "Year Acquired": "1917-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 16488.0
+      },
+      {
+        "Year Acquired": "1918-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 6522.0
+      },
+      {
+        "Year Acquired": "1919-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 6017.5
+      },
+      {
+        "Year Acquired": "1920-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3282.5
+      },
+      {
+        "Year Acquired": "1921-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 5527.0
+      },
+      {
+        "Year Acquired": "1922-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1723.0
+      },
+      {
+        "Year Acquired": "1923-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3083.0
+      },
+      {
+        "Year Acquired": "1924-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 12879.0
+      },
+      {
+        "Year Acquired": "1925-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 8296.0
+      },
+      {
+        "Year Acquired": "1926-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 12624.0
+      },
+      {
+        "Year Acquired": "1927-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 17263.5
+      },
+      {
+        "Year Acquired": "1928-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 9359.0
+      },
+      {
+        "Year Acquired": "1929-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 4386.0
+      },
+      {
+        "Year Acquired": "1930-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2333.0
+      },
+      {
+        "Year Acquired": "1931-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3025.0
+      },
+      {
+        "Year Acquired": "1932-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1060.0
+      },
+      {
+        "Year Acquired": "1933-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3240.0
+      },
+      {
+        "Year Acquired": "1934-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1155.0
+      },
+      {
+        "Year Acquired": "1935-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 239.0
+      },
+      {
+        "Year Acquired": "1936-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 5437.0
+      },
+      {
+        "Year Acquired": "1937-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 12414.0
+      },
+      {
+        "Year Acquired": "1938-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 26928.5
+      },
+      {
+        "Year Acquired": "1939-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3816.5
+      },
+      {
+        "Year Acquired": "1940-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2656.0
+      },
+      {
+        "Year Acquired": "1941-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 4000.0
+      },
+      {
+        "Year Acquired": "1942-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2182.0
+      },
+      {
+        "Year Acquired": "1943-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1633.0
+      },
+      {
+        "Year Acquired": "1944-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3260.5
+      },
+      {
+        "Year Acquired": "1945-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1707.0
+      },
+      {
+        "Year Acquired": "1946-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1650.0
+      },
+      {
+        "Year Acquired": "1947-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3080.5
+      },
+      {
+        "Year Acquired": "1948-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3205.0
+      },
+      {
+        "Year Acquired": "1949-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 7670.5
+      },
+      {
+        "Year Acquired": "1950-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1374.0
+      },
+      {
+        "Year Acquired": "1951-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2227.5
+      },
+      {
+        "Year Acquired": "1952-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 9290.5
+      },
+      {
+        "Year Acquired": "1953-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1618.0
+      },
+      {
+        "Year Acquired": "1954-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 892.0
+      },
+      {
+        "Year Acquired": "1955-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1469.0
+      },
+      {
+        "Year Acquired": "1956-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 4423.0
+      },
+      {
+        "Year Acquired": "1957-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 5928.0
+      },
+      {
+        "Year Acquired": "1958-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2400.0
+      },
+      {
+        "Year Acquired": "1959-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 6000.0
+      },
+      {
+        "Year Acquired": "1960-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 984.0
+      },
+      {
+        "Year Acquired": "1961-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2800.0
+      },
+      {
+        "Year Acquired": "1962-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3239.5
+      },
+      {
+        "Year Acquired": "1963-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3804.0
+      },
+      {
+        "Year Acquired": "1964-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2632.0
+      },
+      {
+        "Year Acquired": "1965-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 4200.0
+      },
+      {
+        "Year Acquired": "1966-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 5863.0
+      },
+      {
+        "Year Acquired": "1967-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 8349.0
+      },
+      {
+        "Year Acquired": "1968-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2400.0
+      },
+      {
+        "Year Acquired": "1969-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 4456.0
+      },
+      {
+        "Year Acquired": "1970-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 889.0
+      },
+      {
+        "Year Acquired": "1971-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 5760.0
+      },
+      {
+        "Year Acquired": "1972-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1280.0
+      },
+      {
+        "Year Acquired": "1973-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2920.0
+      },
+      {
+        "Year Acquired": "1974-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1680.0
+      },
+      {
+        "Year Acquired": "1975-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2729.5
+      },
+      {
+        "Year Acquired": "1976-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1120.0
+      },
+      {
+        "Year Acquired": "1977-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 349.5
+      },
+      {
+        "Year Acquired": "1978-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1440.0
+      },
+      {
+        "Year Acquired": "1979-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 460.5
+      },
+      {
+        "Year Acquired": "1980-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 310.0
+      },
+      {
+        "Year Acquired": "1981-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3450.0
+      },
+      {
+        "Year Acquired": "1982-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1000.0
+      },
+      {
+        "Year Acquired": "1983-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 900.0
+      },
+      {
+        "Year Acquired": "1984-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1100.0
+      },
+      {
+        "Year Acquired": "1985-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 805.0
+      },
+      {
+        "Year Acquired": "1986-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 896.0
+      },
+      {
+        "Year Acquired": "1987-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1128.0
+      },
+      {
+        "Year Acquired": "1988-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 900.0
+      },
+      {
+        "Year Acquired": "1989-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1584.5
+      },
+      {
+        "Year Acquired": "1990-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1810.0
+      },
+      {
+        "Year Acquired": "1991-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1728.0
+      },
+      {
+        "Year Acquired": "1992-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1818.0
+      },
+      {
+        "Year Acquired": "1993-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1050.0
+      },
+      {
+        "Year Acquired": "1994-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1568.0
+      },
+      {
+        "Year Acquired": "1995-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1920.0
+      },
+      {
+        "Year Acquired": "1996-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1176.0
+      },
+      {
+        "Year Acquired": "1997-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1825.0
+      },
+      {
+        "Year Acquired": "1998-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 847.5
+      },
+      {
+        "Year Acquired": "1999-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 384.0
+      },
+      {
+        "Year Acquired": "2000-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 234.0
+      },
+      {
+        "Year Acquired": "2001-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 313.0
+      },
+      {
+        "Year Acquired": "2002-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1300.0
+      },
+      {
+        "Year Acquired": "2003-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 180.0
+      },
+      {
+        "Year Acquired": "2004-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 144.0
+      },
+      {
+        "Year Acquired": "2005-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 288.0
+      },
+      {
+        "Year Acquired": "2006-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 75.0
+      },
+      {
+        "Year Acquired": "2007-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2460.0
+      },
+      {
+        "Year Acquired": "2008-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 700.0
+      },
+      {
+        "Year Acquired": "2009-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2109.5
+      },
+      {
+        "Year Acquired": "2010-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 4000.0
+      },
+      {
+        "Year Acquired": "2011-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1386.0
+      },
+      {
+        "Year Acquired": "2012-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2464.0
+      },
+      {
+        "Year Acquired": "2013-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 2673.0
+      },
+      {
+        "Year Acquired": "2014-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 13387.0
+      },
+      {
+        "Year Acquired": "2015-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3152.0
+      },
+      {
+        "Year Acquired": "2016-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 3352.5
+      },
+      {
+        "Year Acquired": "2017-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 6720.0
+      },
+      {
+        "Year Acquired": "2018-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 1852.5
+      },
+      {
+        "Year Acquired": "2019-01-01T00:00:00",
+        "Statistic": "50%",
+        "stat": 760.0
+      },
+      {
+        "Year Acquired": "1753-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 1200.0
+      },
+      {
+        "Year Acquired": "1802-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 2907.0
+      },
+      {
+        "Year Acquired": "1810-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 1908.5
+      },
+      {
+        "Year Acquired": "1832-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 120000.0
+      },
+      {
+        "Year Acquired": "1837-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 10302.0
+      },
+      {
+        "Year Acquired": "1838-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 2010.0
+      },
+      {
+        "Year Acquired": "1839-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 11752.0
+      },
+      {
+        "Year Acquired": "1840-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4218.75
+      },
+      {
+        "Year Acquired": "1841-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3256.0
+      },
+      {
+        "Year Acquired": "1843-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 900.0
+      },
+      {
+        "Year Acquired": "1844-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4088.0
+      },
+      {
+        "Year Acquired": "1845-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 31115.0
+      },
+      {
+        "Year Acquired": "1848-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 6718.5
+      },
+      {
+        "Year Acquired": "1850-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 1450.25
+      },
+      {
+        "Year Acquired": "1853-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 255000.0
+      },
+      {
+        "Year Acquired": "1854-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 2140.0
+      },
+      {
+        "Year Acquired": "1855-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 7446.0
+      },
+      {
+        "Year Acquired": "1856-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 750.0
+      },
+      {
+        "Year Acquired": "1857-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 12093.0
+      },
+      {
+        "Year Acquired": "1858-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 13091.75
+      },
+      {
+        "Year Acquired": "1859-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4847.0
+      },
+      {
+        "Year Acquired": "1860-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3282.0
+      },
+      {
+        "Year Acquired": "1863-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 15795.0
+      },
+      {
+        "Year Acquired": "1865-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 66150.0
+      },
+      {
+        "Year Acquired": "1867-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 2700.0
+      },
+      {
+        "Year Acquired": "1870-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 2864.0
+      },
+      {
+        "Year Acquired": "1871-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 1200.0
+      },
+      {
+        "Year Acquired": "1872-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 14900.0
+      },
+      {
+        "Year Acquired": "1873-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 11000.0
+      },
+      {
+        "Year Acquired": "1874-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 6600.0
+      },
+      {
+        "Year Acquired": "1875-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 1704.0
+      },
+      {
+        "Year Acquired": "1876-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 21400.0
+      },
+      {
+        "Year Acquired": "1878-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 33071.0
+      },
+      {
+        "Year Acquired": "1880-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 32816.75
+      },
+      {
+        "Year Acquired": "1881-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 6671.0
+      },
+      {
+        "Year Acquired": "1882-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 35374.5
+      },
+      {
+        "Year Acquired": "1883-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 6468.75
+      },
+      {
+        "Year Acquired": "1885-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 8312.5
+      },
+      {
+        "Year Acquired": "1886-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 18846.0
+      },
+      {
+        "Year Acquired": "1887-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 70226.25
+      },
+      {
+        "Year Acquired": "1888-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 49320.0
+      },
+      {
+        "Year Acquired": "1890-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 23462.5
+      },
+      {
+        "Year Acquired": "1891-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 2325.0
+      },
+      {
+        "Year Acquired": "1892-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 73550.0
+      },
+      {
+        "Year Acquired": "1893-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 10128.75
+      },
+      {
+        "Year Acquired": "1894-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 85000.0
+      },
+      {
+        "Year Acquired": "1895-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 31497.5
+      },
+      {
+        "Year Acquired": "1896-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 70368.25
+      },
+      {
+        "Year Acquired": "1897-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 132907.0
+      },
+      {
+        "Year Acquired": "1898-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 26720.0
+      },
+      {
+        "Year Acquired": "1899-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 44623.0
+      },
+      {
+        "Year Acquired": "1900-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 7282.0
+      },
+      {
+        "Year Acquired": "1901-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 54018.0
+      },
+      {
+        "Year Acquired": "1902-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 15125.0
+      },
+      {
+        "Year Acquired": "1903-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 23456.25
+      },
+      {
+        "Year Acquired": "1904-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 8752.0
+      },
+      {
+        "Year Acquired": "1905-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 16086.0
+      },
+      {
+        "Year Acquired": "1906-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 11968.5
+      },
+      {
+        "Year Acquired": "1907-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 15782.0
+      },
+      {
+        "Year Acquired": "1908-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 47762.0
+      },
+      {
+        "Year Acquired": "1909-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 39424.5
+      },
+      {
+        "Year Acquired": "1910-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 14022.0
+      },
+      {
+        "Year Acquired": "1911-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 17153.25
+      },
+      {
+        "Year Acquired": "1912-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 51944.0
+      },
+      {
+        "Year Acquired": "1913-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 6974.0
+      },
+      {
+        "Year Acquired": "1914-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 99648.75
+      },
+      {
+        "Year Acquired": "1915-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 33683.0
+      },
+      {
+        "Year Acquired": "1916-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 28189.5
+      },
+      {
+        "Year Acquired": "1917-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 22284.0
+      },
+      {
+        "Year Acquired": "1918-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 8470.0
+      },
+      {
+        "Year Acquired": "1919-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 15196.25
+      },
+      {
+        "Year Acquired": "1920-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 7585.0
+      },
+      {
+        "Year Acquired": "1921-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 11241.75
+      },
+      {
+        "Year Acquired": "1922-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 39454.5
+      },
+      {
+        "Year Acquired": "1923-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3200.0
+      },
+      {
+        "Year Acquired": "1924-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 15391.0
+      },
+      {
+        "Year Acquired": "1925-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 38988.0
+      },
+      {
+        "Year Acquired": "1926-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 63440.0
+      },
+      {
+        "Year Acquired": "1927-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 49970.5
+      },
+      {
+        "Year Acquired": "1928-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 20854.25
+      },
+      {
+        "Year Acquired": "1929-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 7900.0
+      },
+      {
+        "Year Acquired": "1930-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 10548.0
+      },
+      {
+        "Year Acquired": "1931-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 15220.0
+      },
+      {
+        "Year Acquired": "1932-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 5418.0
+      },
+      {
+        "Year Acquired": "1933-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 12000.0
+      },
+      {
+        "Year Acquired": "1934-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 12473.0
+      },
+      {
+        "Year Acquired": "1935-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 800.0
+      },
+      {
+        "Year Acquired": "1936-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 16126.75
+      },
+      {
+        "Year Acquired": "1937-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 17836.5
+      },
+      {
+        "Year Acquired": "1938-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 33219.75
+      },
+      {
+        "Year Acquired": "1939-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 10883.5
+      },
+      {
+        "Year Acquired": "1940-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 13242.0
+      },
+      {
+        "Year Acquired": "1941-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 12810.0
+      },
+      {
+        "Year Acquired": "1942-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 7609.0
+      },
+      {
+        "Year Acquired": "1943-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 11034.0
+      },
+      {
+        "Year Acquired": "1944-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4830.0
+      },
+      {
+        "Year Acquired": "1945-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3299.5
+      },
+      {
+        "Year Acquired": "1946-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3400.5
+      },
+      {
+        "Year Acquired": "1947-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 5557.5
+      },
+      {
+        "Year Acquired": "1948-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 7376.0
+      },
+      {
+        "Year Acquired": "1949-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 17077.5
+      },
+      {
+        "Year Acquired": "1950-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4575.0
+      },
+      {
+        "Year Acquired": "1951-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 8750.25
+      },
+      {
+        "Year Acquired": "1952-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 27378.25
+      },
+      {
+        "Year Acquired": "1953-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3711.0
+      },
+      {
+        "Year Acquired": "1954-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4900.0
+      },
+      {
+        "Year Acquired": "1955-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 5220.0
+      },
+      {
+        "Year Acquired": "1956-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 13901.75
+      },
+      {
+        "Year Acquired": "1957-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 20059.5
+      },
+      {
+        "Year Acquired": "1958-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 8043.0
+      },
+      {
+        "Year Acquired": "1959-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 16933.5
+      },
+      {
+        "Year Acquired": "1960-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 2912.0
+      },
+      {
+        "Year Acquired": "1961-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 8354.0
+      },
+      {
+        "Year Acquired": "1962-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 12446.5
+      },
+      {
+        "Year Acquired": "1963-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 19000.0
+      },
+      {
+        "Year Acquired": "1964-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 17667.0
+      },
+      {
+        "Year Acquired": "1965-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 23120.0
+      },
+      {
+        "Year Acquired": "1966-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 36075.0
+      },
+      {
+        "Year Acquired": "1967-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 18490.0
+      },
+      {
+        "Year Acquired": "1968-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 7196.0
+      },
+      {
+        "Year Acquired": "1969-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 13613.75
+      },
+      {
+        "Year Acquired": "1970-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4380.5
+      },
+      {
+        "Year Acquired": "1971-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 20303.0
+      },
+      {
+        "Year Acquired": "1972-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 5353.0
+      },
+      {
+        "Year Acquired": "1973-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3040.0
+      },
+      {
+        "Year Acquired": "1974-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 2800.0
+      },
+      {
+        "Year Acquired": "1975-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3750.0
+      },
+      {
+        "Year Acquired": "1976-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3600.0
+      },
+      {
+        "Year Acquired": "1977-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 1734.0
+      },
+      {
+        "Year Acquired": "1978-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 6804.0
+      },
+      {
+        "Year Acquired": "1979-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 2220.0
+      },
+      {
+        "Year Acquired": "1980-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 1800.0
+      },
+      {
+        "Year Acquired": "1981-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 8895.0
+      },
+      {
+        "Year Acquired": "1982-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4364.0
+      },
+      {
+        "Year Acquired": "1983-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 12147.0
+      },
+      {
+        "Year Acquired": "1984-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 10160.0
+      },
+      {
+        "Year Acquired": "1985-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4350.0
+      },
+      {
+        "Year Acquired": "1986-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3000.0
+      },
+      {
+        "Year Acquired": "1987-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4774.0
+      },
+      {
+        "Year Acquired": "1988-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3156.0
+      },
+      {
+        "Year Acquired": "1989-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 5334.0
+      },
+      {
+        "Year Acquired": "1990-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 13194.0
+      },
+      {
+        "Year Acquired": "1991-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 5139.0
+      },
+      {
+        "Year Acquired": "1992-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4710.0
+      },
+      {
+        "Year Acquired": "1993-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4223.0
+      },
+      {
+        "Year Acquired": "1994-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3936.0
+      },
+      {
+        "Year Acquired": "1995-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4815.0
+      },
+      {
+        "Year Acquired": "1996-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4032.0
+      },
+      {
+        "Year Acquired": "1997-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4652.25
+      },
+      {
+        "Year Acquired": "1998-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4299.0
+      },
+      {
+        "Year Acquired": "1999-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 2104.0
+      },
+      {
+        "Year Acquired": "2000-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 1584.0
+      },
+      {
+        "Year Acquired": "2001-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 2401.5
+      },
+      {
+        "Year Acquired": "2002-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 6300.0
+      },
+      {
+        "Year Acquired": "2003-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 2456.0
+      },
+      {
+        "Year Acquired": "2004-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4052.5
+      },
+      {
+        "Year Acquired": "2005-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3036.0
+      },
+      {
+        "Year Acquired": "2006-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 700.0
+      },
+      {
+        "Year Acquired": "2007-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 10833.0
+      },
+      {
+        "Year Acquired": "2008-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 2437.5
+      },
+      {
+        "Year Acquired": "2009-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 9186.5
+      },
+      {
+        "Year Acquired": "2010-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 10937.75
+      },
+      {
+        "Year Acquired": "2011-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4036.0
+      },
+      {
+        "Year Acquired": "2012-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4670.0
+      },
+      {
+        "Year Acquired": "2013-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 54398.5
+      },
+      {
+        "Year Acquired": "2014-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 23040.0
+      },
+      {
+        "Year Acquired": "2015-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 10590.25
+      },
+      {
+        "Year Acquired": "2016-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 3793.0
+      },
+      {
+        "Year Acquired": "2017-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 6720.0
+      },
+      {
+        "Year Acquired": "2018-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 4687.5
+      },
+      {
+        "Year Acquired": "2019-01-01T00:00:00",
+        "Statistic": "75%",
+        "stat": 760.0
+      },
+      {
+        "Year Acquired": "1753-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 1200.0
+      },
+      {
+        "Year Acquired": "1802-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 3594.0
+      },
+      {
+        "Year Acquired": "1810-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 3432.0
+      },
+      {
+        "Year Acquired": "1832-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 120000.0
+      },
+      {
+        "Year Acquired": "1837-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 10302.0
+      },
+      {
+        "Year Acquired": "1838-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 2010.0
+      },
+      {
+        "Year Acquired": "1839-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 11752.0
+      },
+      {
+        "Year Acquired": "1840-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 20221.0
+      },
+      {
+        "Year Acquired": "1841-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 3256.0
+      },
+      {
+        "Year Acquired": "1843-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 900.0
+      },
+      {
+        "Year Acquired": "1844-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 4088.0
+      },
+      {
+        "Year Acquired": "1845-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 57978.0
+      },
+      {
+        "Year Acquired": "1848-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 12699.0
+      },
+      {
+        "Year Acquired": "1850-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 1767.0
+      },
+      {
+        "Year Acquired": "1853-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 255000.0
+      },
+      {
+        "Year Acquired": "1854-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 2140.0
+      },
+      {
+        "Year Acquired": "1855-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 45120.0
+      },
+      {
+        "Year Acquired": "1856-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 750.0
+      },
+      {
+        "Year Acquired": "1857-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 15124.0
+      },
+      {
+        "Year Acquired": "1858-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 15000.0
+      },
+      {
+        "Year Acquired": "1859-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 4847.0
+      },
+      {
+        "Year Acquired": "1860-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 20160.0
+      },
+      {
+        "Year Acquired": "1863-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 15795.0
+      },
+      {
+        "Year Acquired": "1865-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 68040.0
+      },
+      {
+        "Year Acquired": "1867-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 2700.0
+      },
+      {
+        "Year Acquired": "1870-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 2864.0
+      },
+      {
+        "Year Acquired": "1871-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 3431.0
+      },
+      {
+        "Year Acquired": "1872-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 14900.0
+      },
+      {
+        "Year Acquired": "1873-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 11000.0
+      },
+      {
+        "Year Acquired": "1874-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 6600.0
+      },
+      {
+        "Year Acquired": "1875-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 1980.0
+      },
+      {
+        "Year Acquired": "1876-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 368000.0
+      },
+      {
+        "Year Acquired": "1878-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 33071.0
+      },
+      {
+        "Year Acquired": "1880-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 54118.0
+      },
+      {
+        "Year Acquired": "1881-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 6671.0
+      },
+      {
+        "Year Acquired": "1882-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 41116.0
+      },
+      {
+        "Year Acquired": "1883-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 8575.0
+      },
+      {
+        "Year Acquired": "1885-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 27250.0
+      },
+      {
+        "Year Acquired": "1886-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 44800.0
+      },
+      {
+        "Year Acquired": "1887-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 86625.0
+      },
+      {
+        "Year Acquired": "1888-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 56178.0
+      },
+      {
+        "Year Acquired": "1890-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 27409.0
+      },
+      {
+        "Year Acquired": "1891-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 2325.0
+      },
+      {
+        "Year Acquired": "1892-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 109638.0
+      },
+      {
+        "Year Acquired": "1893-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 12975.0
+      },
+      {
+        "Year Acquired": "1894-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 85000.0
+      },
+      {
+        "Year Acquired": "1895-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 108708.0
+      },
+      {
+        "Year Acquired": "1896-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 93000.0
+      },
+      {
+        "Year Acquired": "1897-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 132907.0
+      },
+      {
+        "Year Acquired": "1898-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 35060.0
+      },
+      {
+        "Year Acquired": "1899-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 51016.0
+      },
+      {
+        "Year Acquired": "1900-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 107660.0
+      },
+      {
+        "Year Acquired": "1901-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 86200.0
+      },
+      {
+        "Year Acquired": "1902-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 214000.0
+      },
+      {
+        "Year Acquired": "1903-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 71411.0
+      },
+      {
+        "Year Acquired": "1904-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 15300.0
+      },
+      {
+        "Year Acquired": "1905-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 132146.0
+      },
+      {
+        "Year Acquired": "1906-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 13750.0
+      },
+      {
+        "Year Acquired": "1907-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 47656.0
+      },
+      {
+        "Year Acquired": "1908-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 102521.0
+      },
+      {
+        "Year Acquired": "1909-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 142281.0
+      },
+      {
+        "Year Acquired": "1910-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 45072.0
+      },
+      {
+        "Year Acquired": "1911-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 166742.0
+      },
+      {
+        "Year Acquired": "1912-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 100570.0
+      },
+      {
+        "Year Acquired": "1913-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 35415.0
+      },
+      {
+        "Year Acquired": "1914-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 283194.0
+      },
+      {
+        "Year Acquired": "1915-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 148780.0
+      },
+      {
+        "Year Acquired": "1916-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 56120.0
+      },
+      {
+        "Year Acquired": "1917-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 28080.0
+      },
+      {
+        "Year Acquired": "1918-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 15890.0
+      },
+      {
+        "Year Acquired": "1919-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 27042.0
+      },
+      {
+        "Year Acquired": "1920-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 100000.0
+      },
+      {
+        "Year Acquired": "1921-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 65876.0
+      },
+      {
+        "Year Acquired": "1922-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 55764.0
+      },
+      {
+        "Year Acquired": "1923-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 420367.0
+      },
+      {
+        "Year Acquired": "1924-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 47493.0
+      },
+      {
+        "Year Acquired": "1925-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 203204.0
+      },
+      {
+        "Year Acquired": "1926-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 596000.0
+      },
+      {
+        "Year Acquired": "1927-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 150659.0
+      },
+      {
+        "Year Acquired": "1928-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 69600.0
+      },
+      {
+        "Year Acquired": "1929-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 450000.0
+      },
+      {
+        "Year Acquired": "1930-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 73856.0
+      },
+      {
+        "Year Acquired": "1931-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 299772.0
+      },
+      {
+        "Year Acquired": "1932-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 90200.0
+      },
+      {
+        "Year Acquired": "1933-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 26110.0
+      },
+      {
+        "Year Acquired": "1934-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 58305.0
+      },
+      {
+        "Year Acquired": "1935-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 80000.0
+      },
+      {
+        "Year Acquired": "1936-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 76228.0
+      },
+      {
+        "Year Acquired": "1937-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 254636.0
+      },
+      {
+        "Year Acquired": "1938-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 134450.0
+      },
+      {
+        "Year Acquired": "1939-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 109393.0
+      },
+      {
+        "Year Acquired": "1940-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 341100.0
+      },
+      {
+        "Year Acquired": "1941-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 88973.0
+      },
+      {
+        "Year Acquired": "1942-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 71274.0
+      },
+      {
+        "Year Acquired": "1943-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 18626.0
+      },
+      {
+        "Year Acquired": "1944-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 18826.0
+      },
+      {
+        "Year Acquired": "1945-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 96404.0
+      },
+      {
+        "Year Acquired": "1946-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 45000.0
+      },
+      {
+        "Year Acquired": "1947-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 49185.0
+      },
+      {
+        "Year Acquired": "1948-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 38305.0
+      },
+      {
+        "Year Acquired": "1949-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 185214.0
+      },
+      {
+        "Year Acquired": "1950-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 260237.0
+      },
+      {
+        "Year Acquired": "1951-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 155636.0
+      },
+      {
+        "Year Acquired": "1952-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 280139.0
+      },
+      {
+        "Year Acquired": "1953-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 164939.0
+      },
+      {
+        "Year Acquired": "1954-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 243593.0
+      },
+      {
+        "Year Acquired": "1955-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 452523.0
+      },
+      {
+        "Year Acquired": "1956-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 331541.0
+      },
+      {
+        "Year Acquired": "1957-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 119500.0
+      },
+      {
+        "Year Acquired": "1958-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 190977.0
+      },
+      {
+        "Year Acquired": "1959-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 344652.0
+      },
+      {
+        "Year Acquired": "1960-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 323525.0
+      },
+      {
+        "Year Acquired": "1961-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 183750.0
+      },
+      {
+        "Year Acquired": "1962-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 252320.0
+      },
+      {
+        "Year Acquired": "1963-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 335918.0
+      },
+      {
+        "Year Acquired": "1964-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 185880.0
+      },
+      {
+        "Year Acquired": "1965-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 460546.0
+      },
+      {
+        "Year Acquired": "1966-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 224843.0
+      },
+      {
+        "Year Acquired": "1967-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 228083.0
+      },
+      {
+        "Year Acquired": "1968-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 277091.0
+      },
+      {
+        "Year Acquired": "1969-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 456722.0
+      },
+      {
+        "Year Acquired": "1970-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 226525.0
+      },
+      {
+        "Year Acquired": "1971-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 500000.0
+      },
+      {
+        "Year Acquired": "1972-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 347981.0
+      },
+      {
+        "Year Acquired": "1973-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 185458.0
+      },
+      {
+        "Year Acquired": "1974-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 277831.0
+      },
+      {
+        "Year Acquired": "1975-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 160305.0
+      },
+      {
+        "Year Acquired": "1976-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 298474.0
+      },
+      {
+        "Year Acquired": "1977-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 671416.0
+      },
+      {
+        "Year Acquired": "1978-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 144534.0
+      },
+      {
+        "Year Acquired": "1979-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 70995.0
+      },
+      {
+        "Year Acquired": "1980-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 82247.0
+      },
+      {
+        "Year Acquired": "1981-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 216283.0
+      },
+      {
+        "Year Acquired": "1982-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 258516.0
+      },
+      {
+        "Year Acquired": "1983-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 147000.0
+      },
+      {
+        "Year Acquired": "1984-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 913236.0
+      },
+      {
+        "Year Acquired": "1985-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 1200000.0
+      },
+      {
+        "Year Acquired": "1986-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 101614.0
+      },
+      {
+        "Year Acquired": "1987-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 344228.0
+      },
+      {
+        "Year Acquired": "1988-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 75000.0
+      },
+      {
+        "Year Acquired": "1989-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 443865.0
+      },
+      {
+        "Year Acquired": "1990-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 226062.0
+      },
+      {
+        "Year Acquired": "1991-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 779732.0
+      },
+      {
+        "Year Acquired": "1992-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 119735.0
+      },
+      {
+        "Year Acquired": "1993-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 40000.0
+      },
+      {
+        "Year Acquired": "1994-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 49275.0
+      },
+      {
+        "Year Acquired": "1995-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 119700.0
+      },
+      {
+        "Year Acquired": "1996-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 242165.0
+      },
+      {
+        "Year Acquired": "1997-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 125000.0
+      },
+      {
+        "Year Acquired": "1998-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 116030.0
+      },
+      {
+        "Year Acquired": "1999-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 45000.0
+      },
+      {
+        "Year Acquired": "2000-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 131835.0
+      },
+      {
+        "Year Acquired": "2001-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 307288.0
+      },
+      {
+        "Year Acquired": "2002-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 140000.0
+      },
+      {
+        "Year Acquired": "2003-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 318437.0
+      },
+      {
+        "Year Acquired": "2004-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 155174.0
+      },
+      {
+        "Year Acquired": "2005-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 335247.0
+      },
+      {
+        "Year Acquired": "2006-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 180000.0
+      },
+      {
+        "Year Acquired": "2007-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 202759.0
+      },
+      {
+        "Year Acquired": "2008-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 144580.0
+      },
+      {
+        "Year Acquired": "2009-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 96000.0
+      },
+      {
+        "Year Acquired": "2010-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 148183.0
+      },
+      {
+        "Year Acquired": "2011-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 64000.0
+      },
+      {
+        "Year Acquired": "2012-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 136000.0
+      },
+      {
+        "Year Acquired": "2013-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 230665.0
+      },
+      {
+        "Year Acquired": "2014-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 94830.0
+      },
+      {
+        "Year Acquired": "2015-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 105000.0
+      },
+      {
+        "Year Acquired": "2016-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 184000.0
+      },
+      {
+        "Year Acquired": "2017-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 6720.0
+      },
+      {
+        "Year Acquired": "2018-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 12000.0
+      },
+      {
+        "Year Acquired": "2019-01-01T00:00:00",
+        "Statistic": "max",
+        "stat": 760.0
+      }
+    ]
+  }
+}

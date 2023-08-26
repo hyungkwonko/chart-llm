@@ -1,0 +1,266 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 315,
+  "height": 400,
+  "background": "#161a1d",
+  "config": {
+    "padding": 0,
+    "legend": {
+      "disable": true
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "params": [
+    {
+      "name": "var1",
+      "value": 1
+    },
+    {
+      "name": "var2",
+      "value": "CENTRAL"
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/JackECameron/FIT3179/main/D2_resources/data/responseTimes/combinedLong_barchart_2.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusTopLeft": 10,
+        "cornerRadiusTopRight": 10,
+        "cornerRadiusBottomLeft": 10,
+        "cornerRadiusBottomRight": 10,
+        "fillOpacity": 0.4,
+        "strokeOpacity": 0,
+        "stroke": "white",
+        "strokeWidth": 2,
+        "width": 50,
+        "binSpacing": 0.1
+      },
+      "transform": [
+        {
+          "filter": "datum.sTag != 'agr'"
+        },
+        {
+          "filter": "datum.sNumber == var1"
+        },
+        {
+          "filter": "datum.incType != 'totInc'"
+        },
+        {
+          "calculate": "if(datum.incType === 'nonInc', 0, if(datum.incType === 'emInc', 1, 2))",
+          "as": "sortBy"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "ordinal",
+          "axis": {
+            "domain": false,
+            "grid": false,
+            "labelColor": "white",
+            "titleColor": "white",
+            "labelAngle": 0,
+            "tickOpacity": 0,
+            "title": "Financial Quarter",
+            "titleFontSize": 16,
+            "titleOpacity": 0.4,
+            "titleFontWeight": "normal",
+            "labelFont": "hind",
+            "labelFontSize": 16,
+            "offset": 6,
+            "labelOpacity": 0.4
+          }
+        },
+        "y": {
+          "field": "numInc",
+          "aggregate": "sum",
+          "axis": null
+        },
+        "color": {
+          "field": "incType",
+          "scale": {
+            "range": [
+              "#546a7b",
+              "#98c1d9"
+            ]
+          }
+        },
+        "order": {
+          "field": "sortBy"
+        },
+        "tooltip": [
+          {
+            "field": "q",
+            "type": "nominal",
+            "title": "Quarter"
+          },
+          {
+            "field": "description",
+            "type": "nominal",
+            "title": "Incident Type"
+          },
+          {
+            "field": "numInc",
+            "type": "quantitative",
+            "title": "Number of Incidents"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "tick",
+        "interpolate": "linear",
+        "strokeOpacity": 1,
+        "strokeCap": "round",
+        "width": 60,
+        "thickness": 5,
+        "cornerRadius": 10
+      },
+      "transform": [
+        {
+          "filter": "datum.sTag == 'agr'"
+        },
+        {
+          "filter": "datum.servArea == var2"
+        },
+        {
+          "filter": "datum.incType == 'totInc'"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "ordinal",
+          "axis": {
+            "labelColor": "white",
+            "titleColor": "white"
+          }
+        },
+        "y": {
+          "field": "numInc",
+          "aggregate": "sum",
+          "axis": null
+        },
+        "color": {
+          "field": "incType",
+          "scale": {
+            "range": [
+              "#e5383b"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "q",
+            "type": "nominal",
+            "title": "Quarter"
+          },
+          {
+            "field": "description",
+            "type": "nominal",
+            "title": "Incident Type"
+          },
+          {
+            "field": "numInc",
+            "type": "quantitative",
+            "title": "Number of Incidents"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "color": "white",
+        "dy": -10,
+        "font": "hind",
+        "fontSize": 16
+      },
+      "transform": [
+        {
+          "filter": "datum.sTag != 'agr'"
+        },
+        {
+          "filter": "datum.sNumber == var1"
+        },
+        {
+          "filter": "datum.incType == 'totInc'"
+        },
+        {
+          "calculate": "if(datum.incType === 'nonInc', 0, if(datum.incType === 'emInc', 1, 2))",
+          "as": "sortBy"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "ordinal",
+          "axis": {
+            "labelColor": "white",
+            "titleColor": "white"
+          }
+        },
+        "y": {
+          "field": "numInc",
+          "aggregate": "sum",
+          "axis": null
+        },
+        "text": {
+          "field": "numInc"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "color": "white",
+        "dy": -10,
+        "font": "hind",
+        "fontSize": 16
+      },
+      "transform": [
+        {
+          "filter": "datum.sTag != 'agr'"
+        },
+        {
+          "filter": "datum.sNumber == var1"
+        },
+        {
+          "filter": "datum.incType == 'nonInc'"
+        },
+        {
+          "calculate": "if(datum.incType === 'nonInc', 0, if(datum.incType === 'emInc', 1, 2))",
+          "as": "sortBy"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "ordinal",
+          "axis": {
+            "labelColor": "white",
+            "titleColor": "white"
+          }
+        },
+        "y": {
+          "field": "numInc",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "numInc"
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  }
+}

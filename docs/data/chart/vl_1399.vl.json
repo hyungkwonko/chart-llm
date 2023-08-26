@@ -1,0 +1,73 @@
+{
+  "config": {
+    "view": {
+      "height": 800,
+      "width": 800
+    },
+    "padding": 50
+  },
+  "mark": {
+    "binSpacing": 1,
+    "size": 70,
+    "type": "bar"
+  },
+  "data": {
+    "values": [
+      {
+        "candidate_diff_spend": 5.724245818687473,
+        "count": 5
+      },
+      {
+        "candidate_diff_spend": 15.563302303423589,
+        "count": 5
+      },
+      {
+        "candidate_diff_spend": 25.402358788159706,
+        "count": 1
+      },
+      {
+        "candidate_diff_spend": 35.241415272895814,
+        "count": 1
+      },
+      {
+        "candidate_diff_spend": 45.08047175763193,
+        "count": 3
+      },
+      {
+        "candidate_diff_spend": 54.91952824236805,
+        "count": 3
+      },
+      {
+        "candidate_diff_spend": 64.75858472710416,
+        "count": 1
+      },
+      {
+        "candidate_diff_spend": 74.59764121184028,
+        "count": 1
+      },
+      {
+        "candidate_diff_spend": 84.4366976965764,
+        "count": 5
+      },
+      {
+        "candidate_diff_spend": 94.27575418131252,
+        "count": 7
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Distribution of Differential Spending (8/1/2018-11/6/2018)",
+  "encoding": {
+    "x": {
+      "field": "candidate_diff_spend",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": {
+        "title": "# Candidates"
+      }
+    }
+  }
+}

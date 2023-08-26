@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {
+        "Player": "Alan Shearer",
+        "Goals": 260
+      },
+      {
+        "Player": "Wayne Rooney",
+        "Goals": 208
+      },
+      {
+        "Player": "Harry Kane",
+        "Goals": 193
+      },
+      {
+        "Player": "Andrew Cole",
+        "Goals": 187
+      },
+      {
+        "Player": "Sergio Ag\u00c3\u00bcero",
+        "Goals": 184
+      },
+      {
+        "Player": "Frank Lampard",
+        "Goals": 177
+      },
+      {
+        "Player": "Thierry Henry",
+        "Goals": 175
+      },
+      {
+        "Player": "Robbie Fowler",
+        "Goals": 163
+      },
+      {
+        "Player": "Jermain Defoe",
+        "Goals": 162
+      },
+      {
+        "Player": "Michael Owen",
+        "Goals": 150
+      },
+      {
+        "Player": "Les Ferdinand",
+        "Goals": 149
+      },
+      {
+        "Player": "Teddy Sheringham",
+        "Goals": 146
+      },
+      {
+        "Player": "Robin van Persie",
+        "Goals": 144
+      },
+      {
+        "Player": "Jamie Vardy",
+        "Goals": 134
+      },
+      {
+        "Player": "Jimmy Floyd Hasselbaink",
+        "Goals": 127
+      },
+      {
+        "Player": "Robbie Keane",
+        "Goals": 126
+      },
+      {
+        "Player": "Nicolas Anelka",
+        "Goals": 125
+      },
+      {
+        "Player": "Mohamed Salah",
+        "Goals": 123
+      },
+      {
+        "Player": "Dwight Yorke",
+        "Goals": 123
+      },
+      {
+        "Player": "Romelu Lukaku",
+        "Goals": 121
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Player",
+      "type": "nominal",
+      "sort": "y",
+      "axis": {
+        "labelAngle": 270
+      }
+    },
+    "y": {
+      "field": "Goals",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "Player",
+        "title": "Player"
+      },
+      {
+        "field": "Goals",
+        "title": "Goals"
+      }
+    ]
+  }
+}

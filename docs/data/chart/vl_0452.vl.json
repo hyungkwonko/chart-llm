@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/priceChangesByDivision.csv"
+  },
+  "title": {
+    "text": "Price flexbility - heat map",
+    "subtitle": [
+      "Share of prices rising and falling each month. Source: LRPD (2021)",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "mark": "rect",
+  "width": 55,
+  "height": 55,
+  "transform": [
+    {
+      "filter": "datum.up_sh<0.25"
+    },
+    {
+      "filter": "datum.down_sh<0.25"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "bin": {
+        "maxbins": 5
+      },
+      "field": "up_sh",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          0.25
+        ]
+      },
+      "title": "Rising prices",
+      "axis": {
+        "format": ".0%"
+      }
+    },
+    "y": {
+      "bin": {
+        "maxbins": 5
+      },
+      "field": "down_sh",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          0.25
+        ]
+      },
+      "title": "Falling prices",
+      "axis": {
+        "format": ".0%"
+      }
+    },
+    "color": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "legend": null
+    },
+    "facet": {
+      "field": "division_sh",
+      "title": null,
+      "columns": 3
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

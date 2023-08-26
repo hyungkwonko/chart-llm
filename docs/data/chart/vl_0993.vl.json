@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300,
+  "height": 250,
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/ONS-data-environment1.csv"
+  },
+  "title": {
+    "text": "Environmental taxes",
+    "subtitle": "Histogram showing distribution of environmental taxes, Source: ONS",
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "bin": true,
+      "field": "2020",
+      "axis": {
+        "title": "Environmental taxes (% of GDP)",
+        "grid": false
+      }
+    },
+    "y": {
+      "aggregate": "count",
+      "axis": {
+        "title": "Number of countries",
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "2020",
+      "scale": {
+        "scheme": "greens"
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Country"
+      },
+      {
+        "field": "2020",
+        "title": "% GDP taxed"
+      }
+    ]
+  }
+}

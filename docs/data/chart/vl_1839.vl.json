@@ -1,0 +1,105 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Distribui\u00e7\u00e3o da m\u00e9dia de ingresso das mulheres e a m\u00e9dia geral",
+    "fontSize": 15
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/main/data/dados-processados/notas.csv"
+  },
+  "encoding": {
+    "x": {
+      "field": "periodo_ingresso",
+      "type": "nominal",
+      "title": "Per\u00edodo"
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "classe",
+          "type": "nominal",
+          "title": "M\u00e9dia",
+          "scale": {
+            "domain": [
+              "geral",
+              "mulheres"
+            ],
+            "scheme": "pastel1"
+          }
+        },
+        "y": {
+          "field": "media",
+          "type": "quantitative",
+          "title": "Nota m\u00e9dia"
+        }
+      },
+      "layer": [
+        {
+          "mark": "line"
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "selection": "hover"
+              }
+            }
+          ],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "pivot": "classe",
+          "value": "media",
+          "groupby": [
+            "periodo_ingresso"
+          ]
+        }
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0.3,
+            "selection": "hover"
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "periodo_ingresso",
+            "type": "nominal",
+            "title": "Per\u00edodo"
+          },
+          {
+            "field": "geral",
+            "type": "quantitative",
+            "title": "M\u00e9dia geral"
+          },
+          {
+            "field": "mulheres",
+            "type": "quantitative",
+            "title": "M\u00e9dia mulheres"
+          }
+        ]
+      },
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": [
+            "periodo_ingresso"
+          ],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
+    }
+  ]
+}

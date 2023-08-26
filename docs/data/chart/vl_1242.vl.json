@@ -1,0 +1,229 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "stage": "all off",
+        "tracker": "CN",
+        "precision": 44.7,
+        "AUC": 25.3
+      },
+      {
+        "stage": "all off",
+        "tracker": "KCF",
+        "precision": 63.6,
+        "AUC": 38.6
+      },
+      {
+        "stage": "all off",
+        "tracker": "Staple",
+        "precision": 63.2,
+        "AUC": 40.6
+      },
+      {
+        "stage": "all off",
+        "tracker": "ECO_HC",
+        "precision": 65.5,
+        "AUC": 45.7
+      },
+      {
+        "stage": "all off",
+        "tracker": "AutoTrack",
+        "precision": 73.3,
+        "AUC": 50.4
+      },
+      {
+        "stage": "demosaic",
+        "tracker": "CN",
+        "precision": 52.7,
+        "AUC": 32.1
+      },
+      {
+        "stage": "demosaic",
+        "tracker": "KCF",
+        "precision": 67.5,
+        "AUC": 41.0
+      },
+      {
+        "stage": "demosaic",
+        "tracker": "Staple",
+        "precision": 76.9,
+        "AUC": 54.9
+      },
+      {
+        "stage": "demosaic",
+        "tracker": "ECO_HC",
+        "precision": 77.6,
+        "AUC": 56.9
+      },
+      {
+        "stage": "demosaic",
+        "tracker": "AutoTrack",
+        "precision": 78.9,
+        "AUC": 56.2
+      },
+      {
+        "stage": "denoise",
+        "tracker": "CN",
+        "precision": 45.0,
+        "AUC": 25.4
+      },
+      {
+        "stage": "denoise",
+        "tracker": "KCF",
+        "precision": 61.3,
+        "AUC": 37.3
+      },
+      {
+        "stage": "denoise",
+        "tracker": "Staple",
+        "precision": 66.7,
+        "AUC": 42.0
+      },
+      {
+        "stage": "denoise",
+        "tracker": "ECO_HC",
+        "precision": 69.5,
+        "AUC": 48.3
+      },
+      {
+        "stage": "denoise",
+        "tracker": "AutoTrack",
+        "precision": 72.8,
+        "AUC": 49.9
+      },
+      {
+        "stage": "transform",
+        "tracker": "CN",
+        "precision": 54.9,
+        "AUC": 32.9
+      },
+      {
+        "stage": "transform",
+        "tracker": "KCF",
+        "precision": 65.7,
+        "AUC": 39.4
+      },
+      {
+        "stage": "transform",
+        "tracker": "Staple",
+        "precision": 61.6,
+        "AUC": 38.4
+      },
+      {
+        "stage": "transform",
+        "tracker": "ECO_HC",
+        "precision": 64.8,
+        "AUC": 43.7
+      },
+      {
+        "stage": "transform",
+        "tracker": "AutoTrack",
+        "precision": 69.4,
+        "AUC": 44.5
+      },
+      {
+        "stage": "gamut map",
+        "tracker": "CN",
+        "precision": 44.6,
+        "AUC": 26.0
+      },
+      {
+        "stage": "gamut map",
+        "tracker": "KCF",
+        "precision": 64.1,
+        "AUC": 38.3
+      },
+      {
+        "stage": "gamut map",
+        "tracker": "Staple",
+        "precision": 65.8,
+        "AUC": 41.0
+      },
+      {
+        "stage": "gamut map",
+        "tracker": "ECO_HC",
+        "precision": 65.7,
+        "AUC": 46.1
+      },
+      {
+        "stage": "gamut map",
+        "tracker": "AutoTrack",
+        "precision": 74.5,
+        "AUC": 49.9
+      },
+      {
+        "stage": "tone map",
+        "tracker": "CN",
+        "precision": 61.9,
+        "AUC": 39.4
+      },
+      {
+        "stage": "tone map",
+        "tracker": "KCF",
+        "precision": 67.1,
+        "AUC": 40.5
+      },
+      {
+        "stage": "tone map",
+        "tracker": "Staple",
+        "precision": 59.0,
+        "AUC": 38.9
+      },
+      {
+        "stage": "tone map",
+        "tracker": "ECO_HC",
+        "precision": 66.2,
+        "AUC": 45.8
+      },
+      {
+        "stage": "tone map",
+        "tracker": "AutoTrack",
+        "precision": 74.9,
+        "AUC": 48.3
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "tracker",
+      "type": "nominal",
+      "sort": [
+        "CN",
+        "KCF",
+        "Staple",
+        "ECO_HC",
+        "AutoTrack"
+      ],
+      "axis": null
+    },
+    "y": {
+      "field": "precision",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "tracker",
+      "sort": [
+        "CN",
+        "KCF",
+        "Staple",
+        "ECO_HC",
+        "AutoTrack"
+      ],
+      "type": "nominal"
+    },
+    "column": {
+      "field": "stage",
+      "sort": [
+        "original",
+        "demosaic",
+        "denoise",
+        "transform",
+        "gamut map",
+        "tone map"
+      ],
+      "title": "Enable a single stage"
+    }
+  }
+}

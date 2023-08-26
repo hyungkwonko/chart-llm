@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stacked area chart",
+  "width": "container",
+  "title": {
+    "text": "GDP in G7 countries, 1952-2017",
+    "offset": 20
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "country",
+        "oneOf": [
+          "Canada",
+          "France",
+          "Germany",
+          "Italy",
+          "Japan",
+          "United Kingdom",
+          "United States"
+        ]
+      }
+    },
+    {
+      "calculate": "datum.pop*datum.gdpPercap",
+      "as": "gdp"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "gdp",
+          "as": "total"
+        }
+      ],
+      "groupby": [
+        "year",
+        "country"
+      ]
+    }
+  ],
+  "mark": "area",
+  "selection": {
+    "choice": {
+      "type": "multi",
+      "fields": [
+        "country"
+      ],
+      "bind": "legend"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "timeUnit": "year",
+      "axis": {
+        "grid": false,
+        "format": "%Y",
+        "title": null
+      }
+    },
+    "y": {
+      "field": "total",
+      "type": "quantitative",
+      "axis": {
+        "format": "$,.0f",
+        "title": null
+      }
+    },
+    "color": {
+      "field": "country",
+      "type": "nominal",
+      "scale": {
+        "scheme": "set2"
+      },
+      "legend": {
+        "orient": "bottom",
+        "direction": "horizontal",
+        "title": null
+      }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "choice",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "total",
+        "type": "quantitative",
+        "title": "GDP",
+        "format": "$,.0f"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

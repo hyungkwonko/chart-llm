@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "An ordered donut chart, with a filter from raw data",
+  "height": 300,
+  "width": 300,
+  "view": {
+    "stroke": "transparent"
+  },
+  "title": {
+    "text": "US GDP - income",
+    "subtitle": [
+      "2022 Q3, GNI summary. Source: BEA",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDP_GNIbyType.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Line",
+        "oneOf": [
+          3,
+          6,
+          7,
+          9,
+          21
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "arc",
+    "innerRadius": 60,
+    "outerRadius": 120,
+    "cornerRadius": 0,
+    "padAngle": 0.02
+  },
+  "encoding": {
+    "theta": {
+      "field": "Value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "shortName",
+      "type": "nominal",
+      "legend": {
+        "title": null
+      },
+      "sort": {
+        "field": "pieNumber",
+        "order": "ascending"
+      },
+      "scale": {
+        "range": [
+          "rgb(128,0,0)",
+          "rgb(200,70,70)",
+          "rgb(214,214,206)",
+          "rgb(0,47,167)",
+          "rgb(160,160,240)"
+        ]
+      }
+    },
+    "order": {
+      "field": "pieNumber",
+      "type": "quantitative",
+      "sort": "ascending"
+    },
+    "tooltip": [
+      {
+        "field": "Item",
+        "title": "Item",
+        "format": ""
+      },
+      {
+        "field": "Value",
+        "title": "USD billions",
+        "format": "$,"
+      }
+    ]
+  }
+}

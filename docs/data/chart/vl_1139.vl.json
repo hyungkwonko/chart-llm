@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/dannysupple/dannysupple.github.io/main/custom.geo.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "lookup": "properties.brk_name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/dannysupple/dannysupple.github.io/main/covid_deathspm.csv"
+        },
+        "key": "Country",
+        "fields": [
+          "Deaths / million"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "darkgray",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "Deaths / million",
+      "type": "quantitative"
+    },
+    "tooltip": {
+      "field": "properties.brk_name",
+      "type": "nominal"
+    }
+  },
+  "config": {}
+}

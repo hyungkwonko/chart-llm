@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Graph showing main religion of countries featured in the 2022 CAF World Giving Index data",
+  "title": {
+    "text": "World Giving Index Scores 2022 by each country's main religion",
+    "subtitle": [
+      "Sources: CAF and Everycountryintheworld.com",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/9fb92b2577655eb172567ee5a66635ec9fba63b7/_CAF_MainReligion_2022_Chart6.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 1500,
+  "width": 300,
+  "mark": {
+    "type": "bar",
+    "size": 6
+  },
+  "type": "text",
+  "selection": {
+    "ReligionSelector": {
+      "type": "single",
+      "fields": [
+        "2022"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Buddhism",
+          "Christianity",
+          "Hinduism",
+          "Islam",
+          "Judaism",
+          "Shintoism"
+        ],
+        "name": "Choose Religion"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "ReligionSelector"
+      }
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "Country",
+      "type": "nominal",
+      "title": "",
+      "sort": "-x",
+      "axis": {
+        "labelAngle": 0,
+        "labelFontSize": 8
+      }
+    },
+    "color": {
+      "field": "2022",
+      "type": "nominal",
+      "title": "Main Religion:",
+      "scale": {
+        "scheme": "turbo"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "CAF_2022",
+        "type": "quantitative",
+        "title": "WGI Score"
+      },
+      {
+        "field": "2022",
+        "type": "nominal",
+        "title": "Main Religion"
+      }
+    ],
+    "x": {
+      "field": "CAF_2022",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          70
+        ]
+      },
+      "title": "WGI Overall Score",
+      "axis": {
+        "labelAngle": 0,
+        "grid": true,
+        "gridColor": "#EEE"
+      }
+    }
+  }
+}

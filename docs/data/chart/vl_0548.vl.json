@@ -1,0 +1,116 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/chartENV10.csv"
+  },
+  "mark": "bar",
+  "width": 300,
+  "height": 300,
+  "title": {
+    "text": "UK CO2 emissions \u2013 by sector",
+    "subtitle": "Millon tonnes. 1990-2019. Source: Gov.uk (BEIS)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "SectorSelector"
+      }
+    },
+    {
+      "filter": {
+        "field": "Sector",
+        "oneOf": [
+          "Agriculture",
+          "Business",
+          "Energy Supply",
+          "Residential",
+          "Transport",
+          "Waste management"
+        ]
+      }
+    }
+  ],
+  "selection": {
+    "SectorSelector": {
+      "type": "single",
+      "fields": [
+        "Sector"
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Agriculture",
+          "Business",
+          "Energy Supply",
+          "Residential",
+          "Transport",
+          "Waste management"
+        ],
+        "name": "Choose sector"
+      }
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Value",
+      "title": null,
+      "type": "quantitative",
+      "xxscale": {
+        "domain": [
+          0,
+          900
+        ]
+      },
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "Sector",
+      "type": "nominal",
+      "legend": {
+        "orient": "top-right",
+        "columns": 2
+      },
+      "scale": {
+        "scheme": "yellowgreenblue"
+      },
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "Sector"
+      },
+      {
+        "field": "Year",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "CO2 Emissions (millon tonnes)"
+      },
+      {
+        "field": "Value_2",
+        "type": "quantitative",
+        "title": "Share of annual total(%)",
+        "format": ".3"
+      }
+    ]
+  }
+}

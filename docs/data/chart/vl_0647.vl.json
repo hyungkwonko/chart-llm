@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Brazil - falling behind",
+    "subtitle": [
+      "GDP per capita, constant prices. PPP. Source: IMF WEO 2023.",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch1_GDP/gdpPC.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Brazil",
+        "Panama",
+        "Chile",
+        "Costa Rica"
+      ],
+      "as": [
+        "var",
+        "val"
+      ]
+    }
+  ],
+  "height": 250,
+  "width": 400,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "Country",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "val",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "field": "var",
+      "scale": {
+        "scheme": "set1"
+      },
+      "title": null
+    }
+  }
+}

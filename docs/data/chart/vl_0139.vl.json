@@ -1,0 +1,291 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 350,
+  "width": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/T21_C2.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "color": "#e54753",
+        "opacity": 0.2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "temporal"
+        },
+        "y2": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "x": "1922-01-01",
+            "y": "0"
+          },
+          {
+            "x": "1926-12-01",
+            "y": "0"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "area",
+        "color": "#55373a",
+        "opacity": 0.2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "temporal"
+        },
+        "y2": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "x": "1927-01-01",
+            "y": "0"
+          },
+          {
+            "x": "1978-12-01",
+            "y": "0"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "area",
+        "color": "#e54753",
+        "opacity": 0.2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "temporal"
+        },
+        "y2": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "x": "1979-01-01",
+            "y": "0"
+          },
+          {
+            "x": "1998-12-01",
+            "y": "0"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "area",
+        "color": "#55373a",
+        "opacity": 0.2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "temporal"
+        },
+        "y2": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "x": "1999-01-01",
+            "y": "0"
+          },
+          {
+            "x": "2017-01-01",
+            "y": "0"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "color": "#55373a",
+        "align": "left"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "x": "1922-01-01",
+            "y": "23",
+            "t": "\u27a1 Free currency era"
+          },
+          {
+            "x": "1927-01-01",
+            "y": "20",
+            "t": "\u27a1 Peg"
+          },
+          {
+            "x": "1979-01-01",
+            "y": "23",
+            "t": "\u27a1 Float"
+          },
+          {
+            "x": "1999-01-01",
+            "y": "20",
+            "t": "\u27a1 Euro era"
+          }
+        ]
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": null
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null
+        },
+        "color": {
+          "field": "country",
+          "type": "nominal",
+          "sort": [],
+          "title": null,
+          "legend": null,
+          "scale": {
+            "range": [
+              "#36b7b4",
+              "#122b39"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Year",
+            "timeUnit": "yearmonth"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Inflation rate (%)"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "year(datum.date)=='2013'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 20,
+        "dy": 10
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": null
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null
+        },
+        "text": {
+          "field": "country"
+        },
+        "color": {
+          "field": "country"
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Year",
+            "timeUnit": "yearmonth"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Inflation rate (%)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#e54753",
+        "size": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "line",
+          "type": "temporal"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "line": "1979-01-01"
+          }
+        ],
+        "format": {
+          "parse": {
+            "Date": "utc:'%d %b %Y'"
+          }
+        }
+      }
+    }
+  ]
+}

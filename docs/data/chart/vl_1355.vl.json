@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Sales of Houses vs Household Goods",
+    "subtitle": [
+      "",
+      "Source: ONS"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "width": 500,
+  "height": 500,
+  "config": {
+    "background": "#FeFeF8",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ferguswalshe/ferguswalshe.github.io/main/diyvshousessold.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "opacity": 0.5,
+        "type": "line",
+        "color": "green"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "Total Houses Sold England",
+          "title": "Total Houses Sold England",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1500000
+            ]
+          },
+          "axis": {
+            "orient": "left",
+            "titleColor": "green"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "blue"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "Total Household Goods sold",
+          "scale": {
+            "domain": [
+              0,
+              40000000
+            ]
+          },
+          "type": "quantitative",
+          "axis": {
+            "orient": "right",
+            "titleColor": "blue"
+          }
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

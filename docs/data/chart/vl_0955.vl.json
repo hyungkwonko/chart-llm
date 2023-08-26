@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Natural Gas and Carbon Price Regression",
+    "subtitle": "Source: https://www.investing.com, FRED Economic Data",
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "height": 200,
+  "width": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/trial-chart-6.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "Price",
+          "type": "quantitative",
+          "title": "Carbon Price \u20ac",
+          "axis": {
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "Gas Price",
+          "type": "quantitative",
+          "axis": {
+            "grid": false
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal"
+          },
+          {
+            "field": "Price",
+            "title": "Carbon price \u20ac"
+          },
+          {
+            "field": "Gas Price"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "Gas Price",
+          "on": "Price"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Price",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Gas Price",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Gas Price",
+          "on": "Price",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ]
+}

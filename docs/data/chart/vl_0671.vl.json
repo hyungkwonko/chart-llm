@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Home Ownership by age group, 2004-2022",
+    "subtitle": "Home ownership %. Source: ONS. English Housing Survey report 2021 to 2022",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/Home_ownership2.csv"
+  },
+  "repeat": {
+    "layer": [
+      "16-24",
+      "25-34",
+      "35-44",
+      "45-54",
+      "55-64",
+      "65 or over",
+      "Under 65"
+    ]
+  },
+  "spec": {
+    "height": 400,
+    "width": 500,
+    "mark": {
+      "type": "line",
+      "strokeWidth": 2
+    },
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal"
+      },
+      "y": {
+        "field": {
+          "repeat": "layer"
+        },
+        "type": "quantitative",
+        "title": null
+      },
+      "color": {
+        "datum": {
+          "repeat": "layer"
+        },
+        "scale": {
+          "range": [
+            "blue",
+            "pink",
+            "orange",
+            "lightgrey",
+            "lightblue",
+            "red",
+            "black"
+          ]
+        }
+      }
+    }
+  }
+}

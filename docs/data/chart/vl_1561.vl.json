@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/vega/vega-datasets/main/data/us-10m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "whitesmoke",
+        "stroke": "black"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/vega/vega-datasets/main/data/flights-airport.csv"
+      },
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "count",
+              "as": "sum_count"
+            },
+            {
+              "op": "count",
+              "as": "routes"
+            }
+          ],
+          "groupby": [
+            "origin"
+          ]
+        },
+        {
+          "lookup": "origin",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/vega/vega-datasets/main/data/airports.csv"
+            },
+            "key": "iata",
+            "fields": [
+              "latitude",
+              "longitude"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "circle"
+      },
+      "selection": {
+        "nearest": {
+          "type": "single",
+          "on": "mouseover",
+          "empty": "none",
+          "nearest": true
+        }
+      },
+      "encoding": {
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "routes",
+          "type": "quantitative"
+        },
+        "tooltip": {
+          "field": "routes",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "sum_count",
+          "type": "quantitative",
+          "condition": {
+            "selection": "nearest",
+            "value": "red"
+          }
+        }
+      }
+    }
+  ],
+  "projection": {
+    "type": "albersUsa"
+  },
+  "height": 768,
+  "width": 1024
+}

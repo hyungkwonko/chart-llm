@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Net official development assistance and official aid received by African Countries",
+    "subtitle": [
+      "current US$, Millions",
+      "(Showing last figure on record)",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/AfricaOutline",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "naturalEarth1"
+  },
+  "transform": [
+    {
+      "lookup": "properties.adm0_a3_is",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/Africa_Aid.csv"
+        },
+        "key": "Country Code",
+        "fields": [
+          "Net ODA Mil"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.3
+  },
+  "encoding": {
+    "color": {
+      "field": "Net ODA Mil",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "properties.name",
+        "type": "nominal"
+      },
+      {
+        "field": "Net ODA Mil"
+      }
+    ]
+  }
+}

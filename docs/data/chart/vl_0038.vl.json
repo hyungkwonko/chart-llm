@@ -1,0 +1,1008 @@
+{
+  "config": {
+    "background": "#FFFFFF",
+    "title": {
+      "anchor": "start",
+      "fontSize": 32,
+      "font": "Lato"
+    },
+    "axisX": {
+      "domain": true,
+      "domainColor": "#000000",
+      "domainWidth": 1,
+      "grid": false,
+      "labelFontSize": 12,
+      "labelFont": "Roboto",
+      "labelAngle": 0,
+      "tickColor": "#000000",
+      "tickSize": 5,
+      "titleFontSize": 12,
+      "titlePadding": 10,
+      "titleFont": "Roboto"
+    },
+    "axisY": {
+      "domain": false,
+      "domainWidth": 1,
+      "grid": true,
+      "gridColor": "#DEDDDD",
+      "gridWidth": 1,
+      "labelFontSize": 12,
+      "labelFont": "Roboto",
+      "labelPadding": 8,
+      "ticks": false,
+      "titleFontSize": 12,
+      "titlePadding": 10,
+      "titleFont": "Roboto",
+      "titleAngle": 0,
+      "titleY": -10,
+      "titleX": 18
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "labelFont": "Roboto",
+      "symbolSize": 100,
+      "titleFontSize": 12,
+      "titlePadding": 10,
+      "titleFont": "Roboto",
+      "orient": "right",
+      "offset": 10
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "range": {
+      "category": [
+        "#1696d2",
+        "#ec008b",
+        "#fdbf11",
+        "#000000",
+        "#d2d2d2",
+        "#55b748"
+      ],
+      "diverging": [
+        "#ca5800",
+        "#fdbf11",
+        "#fdd870",
+        "#fff2cf",
+        "#cfe8f3",
+        "#73bfe2",
+        "#1696d2",
+        "#0a4c6a"
+      ],
+      "heatmap": [
+        "#ca5800",
+        "#fdbf11",
+        "#fdd870",
+        "#fff2cf",
+        "#cfe8f3",
+        "#73bfe2",
+        "#1696d2",
+        "#0a4c6a"
+      ],
+      "ordinal": [
+        "#cfe8f3",
+        "#a2d4ec",
+        "#73bfe2",
+        "#46abdb",
+        "#1696d2",
+        "#12719e"
+      ],
+      "ramp": [
+        "#CFE8F3",
+        "#A2D4EC",
+        "#73BFE2",
+        "#46ABDB",
+        "#1696D2",
+        "#12719E",
+        "#0A4C6A",
+        "#062635"
+      ]
+    },
+    "area": {
+      "fill": "#1696d2"
+    },
+    "rect": {
+      "fill": "#1696d2"
+    },
+    "line": {
+      "color": "#1696d2",
+      "stroke": "#1696d2",
+      "strokeWidth": 5
+    },
+    "trail": {
+      "color": "#1696d2",
+      "stroke": "#1696d2",
+      "strokeWidth": 0,
+      "size": 1
+    },
+    "path": {
+      "stroke": "#1696d2",
+      "strokeWidth": 0.5
+    },
+    "point": {
+      "filled": true
+    },
+    "text": {
+      "font": "Lato",
+      "color": "#1696d2",
+      "fontSize": 11,
+      "align": "center",
+      "fontWeight": 400,
+      "size": 11
+    },
+    "style": {
+      "bar": {
+        "fill": "#1696d2",
+        "stroke": null
+      }
+    },
+    "arc": {
+      "fill": "#1696d2"
+    },
+    "shape": {
+      "stroke": "#1696d2"
+    },
+    "symbol": {
+      "fill": "#1696d2",
+      "size": 30
+    }
+  },
+  "vconcat": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#1e88e5"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "value": "#1e88e5",
+            "selection": {
+              "not": "selector047"
+            }
+          },
+          "value": "#b1010f"
+        },
+        "size": {
+          "condition": {
+            "value": 3,
+            "selection": {
+              "not": "selector047"
+            }
+          },
+          "value": 6
+        },
+        "tooltip": [
+          {
+            "type": "nominal",
+            "field": "area_name",
+            "title": "Area Name"
+          },
+          {
+            "type": "temporal",
+            "field": "DATE_OF_INTEREST",
+            "title": "Date"
+          },
+          {
+            "type": "quantitative",
+            "field": "CASE_COUNT",
+            "title": "Daily new cases"
+          },
+          {
+            "type": "quantitative",
+            "field": "Total_count",
+            "title": "Total cases"
+          }
+        ],
+        "x": {
+          "type": "temporal",
+          "axis": {
+            "labels": false,
+            "title": " "
+          },
+          "field": "DATE_OF_INTEREST",
+          "scale": {
+            "domain": {
+              "selection": "selector046"
+            }
+          }
+        },
+        "y": {
+          "type": "quantitative",
+          "axis": {
+            "title": "Daily number of cases"
+          },
+          "field": "CASE_COUNT"
+        }
+      },
+      "height": 250,
+      "selection": {
+        "selector047": {
+          "type": "single",
+          "on": "mouseover",
+          "fields": [
+            "DATE_OF_INTEREST"
+          ],
+          "nearest": true
+        }
+      },
+      "title": "COVID-19 impact in New York City Area",
+      "width": "container"
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#1e88e5"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "value": "#1e88e5",
+            "selection": "selector046"
+          },
+          "value": "lightgray"
+        },
+        "x": {
+          "type": "temporal",
+          "axis": {
+            "title": " "
+          },
+          "field": "DATE_OF_INTEREST"
+        },
+        "y": {
+          "type": "quantitative",
+          "axis": {
+            "title": " "
+          },
+          "field": "CASE_COUNT"
+        }
+      },
+      "height": 60,
+      "selection": {
+        "selector046": {
+          "type": "interval",
+          "encodings": [
+            "x"
+          ]
+        }
+      },
+      "width": "container"
+    }
+  ],
+  "data": {
+    "name": "data-22fac4ef31a4ee887f138225bccd9799"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-22fac4ef31a4ee887f138225bccd9799": [
+      {
+        "DATE_OF_INTEREST": "2020-02-29T00:00:00",
+        "CASE_COUNT": 1,
+        "HOSPITALIZED_COUNT": 14,
+        "DEATH_COUNT": 0,
+        "Total_count": 1,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-01T00:00:00",
+        "CASE_COUNT": 1,
+        "HOSPITALIZED_COUNT": 4,
+        "DEATH_COUNT": 0,
+        "Total_count": 2,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-02T00:00:00",
+        "CASE_COUNT": 0,
+        "HOSPITALIZED_COUNT": 23,
+        "DEATH_COUNT": 0,
+        "Total_count": 2,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-03T00:00:00",
+        "CASE_COUNT": 2,
+        "HOSPITALIZED_COUNT": 22,
+        "DEATH_COUNT": 0,
+        "Total_count": 4,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-04T00:00:00",
+        "CASE_COUNT": 5,
+        "HOSPITALIZED_COUNT": 22,
+        "DEATH_COUNT": 0,
+        "Total_count": 9,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-05T00:00:00",
+        "CASE_COUNT": 3,
+        "HOSPITALIZED_COUNT": 21,
+        "DEATH_COUNT": 0,
+        "Total_count": 12,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-06T00:00:00",
+        "CASE_COUNT": 8,
+        "HOSPITALIZED_COUNT": 23,
+        "DEATH_COUNT": 0,
+        "Total_count": 20,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-07T00:00:00",
+        "CASE_COUNT": 7,
+        "HOSPITALIZED_COUNT": 16,
+        "DEATH_COUNT": 0,
+        "Total_count": 27,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-08T00:00:00",
+        "CASE_COUNT": 21,
+        "HOSPITALIZED_COUNT": 17,
+        "DEATH_COUNT": 0,
+        "Total_count": 48,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-09T00:00:00",
+        "CASE_COUNT": 58,
+        "HOSPITALIZED_COUNT": 52,
+        "DEATH_COUNT": 0,
+        "Total_count": 106,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-10T00:00:00",
+        "CASE_COUNT": 70,
+        "HOSPITALIZED_COUNT": 65,
+        "DEATH_COUNT": 0,
+        "Total_count": 176,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-11T00:00:00",
+        "CASE_COUNT": 155,
+        "HOSPITALIZED_COUNT": 87,
+        "DEATH_COUNT": 1,
+        "Total_count": 331,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-12T00:00:00",
+        "CASE_COUNT": 357,
+        "HOSPITALIZED_COUNT": 90,
+        "DEATH_COUNT": 0,
+        "Total_count": 688,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-13T00:00:00",
+        "CASE_COUNT": 620,
+        "HOSPITALIZED_COUNT": 148,
+        "DEATH_COUNT": 0,
+        "Total_count": 1308,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-14T00:00:00",
+        "CASE_COUNT": 642,
+        "HOSPITALIZED_COUNT": 158,
+        "DEATH_COUNT": 2,
+        "Total_count": 1950,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-15T00:00:00",
+        "CASE_COUNT": 1033,
+        "HOSPITALIZED_COUNT": 192,
+        "DEATH_COUNT": 5,
+        "Total_count": 2983,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-16T00:00:00",
+        "CASE_COUNT": 2122,
+        "HOSPITALIZED_COUNT": 309,
+        "DEATH_COUNT": 9,
+        "Total_count": 5105,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-17T00:00:00",
+        "CASE_COUNT": 2457,
+        "HOSPITALIZED_COUNT": 353,
+        "DEATH_COUNT": 8,
+        "Total_count": 7562,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-18T00:00:00",
+        "CASE_COUNT": 2980,
+        "HOSPITALIZED_COUNT": 464,
+        "DEATH_COUNT": 20,
+        "Total_count": 10542,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-19T00:00:00",
+        "CASE_COUNT": 3712,
+        "HOSPITALIZED_COUNT": 551,
+        "DEATH_COUNT": 24,
+        "Total_count": 14254,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-20T00:00:00",
+        "CASE_COUNT": 4013,
+        "HOSPITALIZED_COUNT": 662,
+        "DEATH_COUNT": 46,
+        "Total_count": 18267,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-21T00:00:00",
+        "CASE_COUNT": 2639,
+        "HOSPITALIZED_COUNT": 687,
+        "DEATH_COUNT": 45,
+        "Total_count": 20906,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-22T00:00:00",
+        "CASE_COUNT": 2580,
+        "HOSPITALIZED_COUNT": 724,
+        "DEATH_COUNT": 50,
+        "Total_count": 23486,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-23T00:00:00",
+        "CASE_COUNT": 3567,
+        "HOSPITALIZED_COUNT": 1033,
+        "DEATH_COUNT": 82,
+        "Total_count": 27053,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-24T00:00:00",
+        "CASE_COUNT": 4497,
+        "HOSPITALIZED_COUNT": 1142,
+        "DEATH_COUNT": 94,
+        "Total_count": 31550,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-25T00:00:00",
+        "CASE_COUNT": 4840,
+        "HOSPITALIZED_COUNT": 1297,
+        "DEATH_COUNT": 120,
+        "Total_count": 36390,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-26T00:00:00",
+        "CASE_COUNT": 5025,
+        "HOSPITALIZED_COUNT": 1423,
+        "DEATH_COUNT": 186,
+        "Total_count": 41415,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-27T00:00:00",
+        "CASE_COUNT": 5097,
+        "HOSPITALIZED_COUNT": 1380,
+        "DEATH_COUNT": 212,
+        "Total_count": 46512,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-28T00:00:00",
+        "CASE_COUNT": 3458,
+        "HOSPITALIZED_COUNT": 1337,
+        "DEATH_COUNT": 265,
+        "Total_count": 49970,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-29T00:00:00",
+        "CASE_COUNT": 3526,
+        "HOSPITALIZED_COUNT": 1384,
+        "DEATH_COUNT": 286,
+        "Total_count": 53496,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-30T00:00:00",
+        "CASE_COUNT": 6114,
+        "HOSPITALIZED_COUNT": 1691,
+        "DEATH_COUNT": 321,
+        "Total_count": 59610,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-03-31T00:00:00",
+        "CASE_COUNT": 5433,
+        "HOSPITALIZED_COUNT": 1628,
+        "DEATH_COUNT": 372,
+        "Total_count": 65043,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-01T00:00:00",
+        "CASE_COUNT": 5436,
+        "HOSPITALIZED_COUNT": 1545,
+        "DEATH_COUNT": 431,
+        "Total_count": 70479,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-02T00:00:00",
+        "CASE_COUNT": 5753,
+        "HOSPITALIZED_COUNT": 1592,
+        "DEATH_COUNT": 486,
+        "Total_count": 76232,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-03T00:00:00",
+        "CASE_COUNT": 5659,
+        "HOSPITALIZED_COUNT": 1600,
+        "DEATH_COUNT": 482,
+        "Total_count": 81891,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-04T00:00:00",
+        "CASE_COUNT": 3856,
+        "HOSPITALIZED_COUNT": 1330,
+        "DEATH_COUNT": 488,
+        "Total_count": 85747,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-05T00:00:00",
+        "CASE_COUNT": 3776,
+        "HOSPITALIZED_COUNT": 1322,
+        "DEATH_COUNT": 565,
+        "Total_count": 89523,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-06T00:00:00",
+        "CASE_COUNT": 6368,
+        "HOSPITALIZED_COUNT": 1694,
+        "DEATH_COUNT": 564,
+        "Total_count": 95891,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-07T00:00:00",
+        "CASE_COUNT": 6053,
+        "HOSPITALIZED_COUNT": 1567,
+        "DEATH_COUNT": 590,
+        "Total_count": 101944,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-08T00:00:00",
+        "CASE_COUNT": 5563,
+        "HOSPITALIZED_COUNT": 1521,
+        "DEATH_COUNT": 544,
+        "Total_count": 107507,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-09T00:00:00",
+        "CASE_COUNT": 5039,
+        "HOSPITALIZED_COUNT": 1402,
+        "DEATH_COUNT": 534,
+        "Total_count": 112546,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-10T00:00:00",
+        "CASE_COUNT": 4498,
+        "HOSPITALIZED_COUNT": 1317,
+        "DEATH_COUNT": 517,
+        "Total_count": 117044,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-11T00:00:00",
+        "CASE_COUNT": 3710,
+        "HOSPITALIZED_COUNT": 1079,
+        "DEATH_COUNT": 523,
+        "Total_count": 120754,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-12T00:00:00",
+        "CASE_COUNT": 2870,
+        "HOSPITALIZED_COUNT": 979,
+        "DEATH_COUNT": 555,
+        "Total_count": 123624,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-13T00:00:00",
+        "CASE_COUNT": 3300,
+        "HOSPITALIZED_COUNT": 1205,
+        "DEATH_COUNT": 550,
+        "Total_count": 126924,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-14T00:00:00",
+        "CASE_COUNT": 4131,
+        "HOSPITALIZED_COUNT": 1065,
+        "DEATH_COUNT": 503,
+        "Total_count": 131055,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-15T00:00:00",
+        "CASE_COUNT": 3866,
+        "HOSPITALIZED_COUNT": 971,
+        "DEATH_COUNT": 436,
+        "Total_count": 134921,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-16T00:00:00",
+        "CASE_COUNT": 3517,
+        "HOSPITALIZED_COUNT": 857,
+        "DEATH_COUNT": 399,
+        "Total_count": 138438,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-17T00:00:00",
+        "CASE_COUNT": 3574,
+        "HOSPITALIZED_COUNT": 895,
+        "DEATH_COUNT": 366,
+        "Total_count": 142012,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-18T00:00:00",
+        "CASE_COUNT": 2164,
+        "HOSPITALIZED_COUNT": 648,
+        "DEATH_COUNT": 360,
+        "Total_count": 144176,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-19T00:00:00",
+        "CASE_COUNT": 2349,
+        "HOSPITALIZED_COUNT": 592,
+        "DEATH_COUNT": 373,
+        "Total_count": 146525,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-20T00:00:00",
+        "CASE_COUNT": 3776,
+        "HOSPITALIZED_COUNT": 717,
+        "DEATH_COUNT": 348,
+        "Total_count": 150301,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-21T00:00:00",
+        "CASE_COUNT": 3055,
+        "HOSPITALIZED_COUNT": 648,
+        "DEATH_COUNT": 306,
+        "Total_count": 153356,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-22T00:00:00",
+        "CASE_COUNT": 3458,
+        "HOSPITALIZED_COUNT": 597,
+        "DEATH_COUNT": 298,
+        "Total_count": 156814,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-23T00:00:00",
+        "CASE_COUNT": 2844,
+        "HOSPITALIZED_COUNT": 517,
+        "DEATH_COUNT": 307,
+        "Total_count": 159658,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-24T00:00:00",
+        "CASE_COUNT": 2537,
+        "HOSPITALIZED_COUNT": 555,
+        "DEATH_COUNT": 297,
+        "Total_count": 162195,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-25T00:00:00",
+        "CASE_COUNT": 1593,
+        "HOSPITALIZED_COUNT": 405,
+        "DEATH_COUNT": 239,
+        "Total_count": 163788,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-26T00:00:00",
+        "CASE_COUNT": 1006,
+        "HOSPITALIZED_COUNT": 376,
+        "DEATH_COUNT": 231,
+        "Total_count": 164794,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-27T00:00:00",
+        "CASE_COUNT": 2307,
+        "HOSPITALIZED_COUNT": 443,
+        "DEATH_COUNT": 255,
+        "Total_count": 167101,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-28T00:00:00",
+        "CASE_COUNT": 2723,
+        "HOSPITALIZED_COUNT": 441,
+        "DEATH_COUNT": 217,
+        "Total_count": 169824,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-29T00:00:00",
+        "CASE_COUNT": 2341,
+        "HOSPITALIZED_COUNT": 405,
+        "DEATH_COUNT": 228,
+        "Total_count": 172165,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-04-30T00:00:00",
+        "CASE_COUNT": 2016,
+        "HOSPITALIZED_COUNT": 334,
+        "DEATH_COUNT": 206,
+        "Total_count": 174181,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-01T00:00:00",
+        "CASE_COUNT": 1881,
+        "HOSPITALIZED_COUNT": 343,
+        "DEATH_COUNT": 201,
+        "Total_count": 176062,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-02T00:00:00",
+        "CASE_COUNT": 1057,
+        "HOSPITALIZED_COUNT": 270,
+        "DEATH_COUNT": 186,
+        "Total_count": 177119,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-03T00:00:00",
+        "CASE_COUNT": 782,
+        "HOSPITALIZED_COUNT": 253,
+        "DEATH_COUNT": 166,
+        "Total_count": 177901,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-04T00:00:00",
+        "CASE_COUNT": 1548,
+        "HOSPITALIZED_COUNT": 289,
+        "DEATH_COUNT": 148,
+        "Total_count": 179449,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-05T00:00:00",
+        "CASE_COUNT": 1508,
+        "HOSPITALIZED_COUNT": 264,
+        "DEATH_COUNT": 140,
+        "Total_count": 180957,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-06T00:00:00",
+        "CASE_COUNT": 1402,
+        "HOSPITALIZED_COUNT": 255,
+        "DEATH_COUNT": 136,
+        "Total_count": 182359,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-07T00:00:00",
+        "CASE_COUNT": 1238,
+        "HOSPITALIZED_COUNT": 234,
+        "DEATH_COUNT": 129,
+        "Total_count": 183597,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-08T00:00:00",
+        "CASE_COUNT": 1086,
+        "HOSPITALIZED_COUNT": 248,
+        "DEATH_COUNT": 120,
+        "Total_count": 184683,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-09T00:00:00",
+        "CASE_COUNT": 671,
+        "HOSPITALIZED_COUNT": 164,
+        "DEATH_COUNT": 99,
+        "Total_count": 185354,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-10T00:00:00",
+        "CASE_COUNT": 460,
+        "HOSPITALIZED_COUNT": 140,
+        "DEATH_COUNT": 90,
+        "Total_count": 185814,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-11T00:00:00",
+        "CASE_COUNT": 1232,
+        "HOSPITALIZED_COUNT": 241,
+        "DEATH_COUNT": 97,
+        "Total_count": 187046,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-12T00:00:00",
+        "CASE_COUNT": 1286,
+        "HOSPITALIZED_COUNT": 202,
+        "DEATH_COUNT": 85,
+        "Total_count": 188332,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-13T00:00:00",
+        "CASE_COUNT": 1332,
+        "HOSPITALIZED_COUNT": 202,
+        "DEATH_COUNT": 72,
+        "Total_count": 189664,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-14T00:00:00",
+        "CASE_COUNT": 1109,
+        "HOSPITALIZED_COUNT": 183,
+        "DEATH_COUNT": 63,
+        "Total_count": 190773,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-15T00:00:00",
+        "CASE_COUNT": 869,
+        "HOSPITALIZED_COUNT": 201,
+        "DEATH_COUNT": 83,
+        "Total_count": 191642,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-16T00:00:00",
+        "CASE_COUNT": 489,
+        "HOSPITALIZED_COUNT": 140,
+        "DEATH_COUNT": 72,
+        "Total_count": 192131,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-17T00:00:00",
+        "CASE_COUNT": 363,
+        "HOSPITALIZED_COUNT": 114,
+        "DEATH_COUNT": 67,
+        "Total_count": 192494,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-18T00:00:00",
+        "CASE_COUNT": 904,
+        "HOSPITALIZED_COUNT": 142,
+        "DEATH_COUNT": 46,
+        "Total_count": 193398,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-19T00:00:00",
+        "CASE_COUNT": 995,
+        "HOSPITALIZED_COUNT": 175,
+        "DEATH_COUNT": 50,
+        "Total_count": 194393,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-20T00:00:00",
+        "CASE_COUNT": 1029,
+        "HOSPITALIZED_COUNT": 91,
+        "DEATH_COUNT": 72,
+        "Total_count": 195422,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-21T00:00:00",
+        "CASE_COUNT": 1022,
+        "HOSPITALIZED_COUNT": 82,
+        "DEATH_COUNT": 38,
+        "Total_count": 196444,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-22T00:00:00",
+        "CASE_COUNT": 986,
+        "HOSPITALIZED_COUNT": 110,
+        "DEATH_COUNT": 50,
+        "Total_count": 197430,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-23T00:00:00",
+        "CASE_COUNT": 444,
+        "HOSPITALIZED_COUNT": 61,
+        "DEATH_COUNT": 47,
+        "Total_count": 197874,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-24T00:00:00",
+        "CASE_COUNT": 459,
+        "HOSPITALIZED_COUNT": 75,
+        "DEATH_COUNT": 36,
+        "Total_count": 198333,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-25T00:00:00",
+        "CASE_COUNT": 438,
+        "HOSPITALIZED_COUNT": 63,
+        "DEATH_COUNT": 27,
+        "Total_count": 198771,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-26T00:00:00",
+        "CASE_COUNT": 684,
+        "HOSPITALIZED_COUNT": 81,
+        "DEATH_COUNT": 23,
+        "Total_count": 199455,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-27T00:00:00",
+        "CASE_COUNT": 324,
+        "HOSPITALIZED_COUNT": 40,
+        "DEATH_COUNT": 12,
+        "Total_count": 199779,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-28T00:00:00",
+        "CASE_COUNT": 108,
+        "HOSPITALIZED_COUNT": 5,
+        "DEATH_COUNT": 8,
+        "Total_count": 199887,
+        "area_name": "New York City"
+      },
+      {
+        "DATE_OF_INTEREST": "2020-05-29T00:00:00",
+        "CASE_COUNT": 6,
+        "HOSPITALIZED_COUNT": 0,
+        "DEATH_COUNT": 0,
+        "Total_count": 199893,
+        "area_name": "New York City"
+      }
+    ]
+  }
+}

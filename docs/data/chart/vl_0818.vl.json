@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 350,
+  "title": {
+    "text": "Most Popular PL Teams",
+    "fontSize": 18,
+    "subtitle": [
+      "% of search queries for Top 6 over the past year",
+      "Source: Google Trends"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/josh-shah/josh-shah.github.io/main/worldmapgeo.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "naturalEarth1"
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/josh-shah/josh-shah.github.io/main/mostpopularteams_finalproject.csv"
+        },
+        "key": "geoName",
+        "fields": [
+          "Most Popular Team",
+          "Max % of search queries"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "properties.name",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "Most Popular Team",
+        "type": "nominal"
+      },
+      {
+        "field": "Max % of search queries",
+        "type": "quantitative"
+      }
+    ],
+    "color": {
+      "field": "Most Popular Team",
+      "type": "ordinal",
+      "scale": {
+        "range": [
+          "black",
+          "#00B2A9",
+          "#034694",
+          "#EF0107",
+          "#4fc3f7",
+          "#FBE122",
+          "purple"
+        ]
+      },
+      "title": "Most Popular Team",
+      "legend": {
+        "orient": "bottom",
+        "columns": 1,
+        "fillColor": "#FfFfFf"
+      }
+    }
+  }
+}

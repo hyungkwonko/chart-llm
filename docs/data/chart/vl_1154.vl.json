@@ -1,0 +1,603 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {
+        "honap": "Aug.",
+        "honap_angol": "Aug.",
+        "datum": "2021-08-01",
+        "honap_szam": 8,
+        "homerseklet": "Havi naps\u00fct\u00e9ses \u00f3r\u00e1k sz\u00e1ma",
+        "ertek": 26.2
+      },
+      {
+        "honap": "Aug.",
+        "honap_angol": "Aug.",
+        "datum": "2021-08-01",
+        "honap_szam": 8,
+        "homerseklet": "Rekord max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 38
+      },
+      {
+        "honap": "Aug.",
+        "honap_angol": "Aug.",
+        "datum": "2021-08-01",
+        "honap_szam": 8,
+        "homerseklet": "Rekord min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 3.5
+      },
+      {
+        "honap": "Aug.",
+        "honap_angol": "Aug.",
+        "datum": "2021-08-01",
+        "honap_szam": 8,
+        "homerseklet": "\u00c1tl.\u00a0csapad\u00e9kmennyis\u00e9g\u00a0(mm)",
+        "ertek": 6
+      },
+      {
+        "honap": "Aug.",
+        "honap_angol": "Aug.",
+        "datum": "2021-08-01",
+        "honap_szam": 8,
+        "homerseklet": "\u00c1tlagos max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 24.3
+      },
+      {
+        "honap": "Aug.",
+        "honap_angol": "Aug.",
+        "datum": "2021-08-01",
+        "honap_szam": 8,
+        "homerseklet": "\u00c1tlagos min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 12.2
+      },
+      {
+        "honap": "Dec.",
+        "honap_angol": "Dec.",
+        "datum": "2021-12-01",
+        "honap_szam": 12,
+        "homerseklet": "Havi naps\u00fct\u00e9ses \u00f3r\u00e1k sz\u00e1ma",
+        "ertek": 5.5
+      },
+      {
+        "honap": "Dec.",
+        "honap_angol": "Dec.",
+        "datum": "2021-12-01",
+        "honap_szam": 12,
+        "homerseklet": "Rekord max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 18.7
+      },
+      {
+        "honap": "Dec.",
+        "honap_angol": "Dec.",
+        "datum": "2021-12-01",
+        "honap_szam": 12,
+        "homerseklet": "Rekord min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -28
+      },
+      {
+        "honap": "Dec.",
+        "honap_angol": "Dec.",
+        "datum": "2021-12-01",
+        "honap_szam": 12,
+        "homerseklet": "\u00c1tl.\u00a0csapad\u00e9kmennyis\u00e9g\u00a0(mm)",
+        "ertek": 3.2
+      },
+      {
+        "honap": "Dec.",
+        "honap_angol": "Dec.",
+        "datum": "2021-12-01",
+        "honap_szam": 12,
+        "homerseklet": "\u00c1tlagos max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 1.8
+      },
+      {
+        "honap": "Dec.",
+        "honap_angol": "Dec.",
+        "datum": "2021-12-01",
+        "honap_szam": 12,
+        "homerseklet": "\u00c1tlagos min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -4.2
+      },
+      {
+        "honap": "Feb.",
+        "honap_angol": "Feb.",
+        "datum": "2021-02-01",
+        "honap_szam": 2,
+        "homerseklet": "Havi naps\u00fct\u00e9ses \u00f3r\u00e1k sz\u00e1ma",
+        "ertek": 9.9
+      },
+      {
+        "honap": "Feb.",
+        "honap_angol": "Feb.",
+        "datum": "2021-02-01",
+        "honap_szam": 2,
+        "homerseklet": "Rekord max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 19.3
+      },
+      {
+        "honap": "Feb.",
+        "honap_angol": "Feb.",
+        "datum": "2021-02-01",
+        "honap_szam": 2,
+        "homerseklet": "Rekord min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -32.5
+      },
+      {
+        "honap": "Feb.",
+        "honap_angol": "Feb.",
+        "datum": "2021-02-01",
+        "honap_szam": 2,
+        "homerseklet": "\u00c1tl.\u00a0csapad\u00e9kmennyis\u00e9g\u00a0(mm)",
+        "ertek": 2
+      },
+      {
+        "honap": "Feb.",
+        "honap_angol": "Feb.",
+        "datum": "2021-02-01",
+        "honap_szam": 2,
+        "homerseklet": "\u00c1tlagos max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 3.2
+      },
+      {
+        "honap": "Feb.",
+        "honap_angol": "Feb.",
+        "datum": "2021-02-01",
+        "honap_szam": 2,
+        "homerseklet": "\u00c1tlagos min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -4.7
+      },
+      {
+        "honap": "Jan.",
+        "honap_angol": "Jan.",
+        "datum": "2021-01-01",
+        "honap_szam": 1,
+        "homerseklet": "Havi naps\u00fct\u00e9ses \u00f3r\u00e1k sz\u00e1ma",
+        "ertek": 7.1
+      },
+      {
+        "honap": "Jan.",
+        "honap_angol": "Jan.",
+        "datum": "2021-01-01",
+        "honap_szam": 1,
+        "homerseklet": "Rekord max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 14
+      },
+      {
+        "honap": "Jan.",
+        "honap_angol": "Jan.",
+        "datum": "2021-01-01",
+        "honap_szam": 1,
+        "homerseklet": "Rekord min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -34.2
+      },
+      {
+        "honap": "Jan.",
+        "honap_angol": "Jan.",
+        "datum": "2021-01-01",
+        "honap_szam": 1,
+        "homerseklet": "\u00c1tl.\u00a0csapad\u00e9kmennyis\u00e9g\u00a0(mm)",
+        "ertek": 2.4
+      },
+      {
+        "honap": "Jan.",
+        "honap_angol": "Jan.",
+        "datum": "2021-01-01",
+        "honap_szam": 1,
+        "homerseklet": "\u00c1tlagos max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 0.3
+      },
+      {
+        "honap": "Jan.",
+        "honap_angol": "Jan.",
+        "datum": "2021-01-01",
+        "honap_szam": 1,
+        "homerseklet": "\u00c1tlagos min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -6.5
+      },
+      {
+        "honap": "J\u00fal.",
+        "honap_angol": "Jul.",
+        "datum": "2021-07-01",
+        "honap_szam": 7,
+        "homerseklet": "Havi naps\u00fct\u00e9ses \u00f3r\u00e1k sz\u00e1ma",
+        "ertek": 27.4
+      },
+      {
+        "honap": "J\u00fal.",
+        "honap_angol": "Jul.",
+        "datum": "2021-07-01",
+        "honap_szam": 7,
+        "homerseklet": "Rekord max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 37
+      },
+      {
+        "honap": "J\u00fal.",
+        "honap_angol": "Jul.",
+        "datum": "2021-07-01",
+        "honap_szam": 7,
+        "homerseklet": "Rekord min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 5.2
+      },
+      {
+        "honap": "J\u00fal.",
+        "honap_angol": "Jul.",
+        "datum": "2021-07-01",
+        "honap_szam": 7,
+        "homerseklet": "\u00c1tl.\u00a0csapad\u00e9kmennyis\u00e9g\u00a0(mm)",
+        "ertek": 8.1
+      },
+      {
+        "honap": "J\u00fal.",
+        "honap_angol": "Jul.",
+        "datum": "2021-07-01",
+        "honap_szam": 7,
+        "homerseklet": "\u00c1tlagos max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 24.5
+      },
+      {
+        "honap": "J\u00fal.",
+        "honap_angol": "Jul.",
+        "datum": "2021-07-01",
+        "honap_szam": 7,
+        "homerseklet": "\u00c1tlagos min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 12.7
+      },
+      {
+        "honap": "J\u00fan.",
+        "honap_angol": "Jun.",
+        "datum": "2021-06-01",
+        "honap_szam": 6,
+        "homerseklet": "Havi naps\u00fct\u00e9ses \u00f3r\u00e1k sz\u00e1ma",
+        "ertek": 23.8
+      },
+      {
+        "honap": "J\u00fan.",
+        "honap_angol": "Jun.",
+        "datum": "2021-06-01",
+        "honap_szam": 6,
+        "homerseklet": "Rekord max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 36
+      },
+      {
+        "honap": "J\u00fan.",
+        "honap_angol": "Jun.",
+        "datum": "2021-06-01",
+        "honap_szam": 6,
+        "homerseklet": "Rekord min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 0.4
+      },
+      {
+        "honap": "J\u00fan.",
+        "honap_angol": "Jun.",
+        "datum": "2021-06-01",
+        "honap_szam": 6,
+        "homerseklet": "\u00c1tl.\u00a0csapad\u00e9kmennyis\u00e9g\u00a0(mm)",
+        "ertek": 9.5
+      },
+      {
+        "honap": "J\u00fan.",
+        "honap_angol": "Jun.",
+        "datum": "2021-06-01",
+        "honap_szam": 6,
+        "homerseklet": "\u00c1tlagos max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 22.6
+      },
+      {
+        "honap": "J\u00fan.",
+        "honap_angol": "Jun.",
+        "datum": "2021-06-01",
+        "honap_szam": 6,
+        "homerseklet": "\u00c1tlagos min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 11.3
+      },
+      {
+        "honap": "M\u00e1j.",
+        "honap_angol": "May.",
+        "datum": "2021-05-01",
+        "honap_szam": 5,
+        "homerseklet": "Havi naps\u00fct\u00e9ses \u00f3r\u00e1k sz\u00e1ma",
+        "ertek": 23.1
+      },
+      {
+        "honap": "M\u00e1j.",
+        "honap_angol": "May.",
+        "datum": "2021-05-01",
+        "honap_szam": 5,
+        "homerseklet": "Rekord max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 32.5
+      },
+      {
+        "honap": "M\u00e1j.",
+        "honap_angol": "May.",
+        "datum": "2021-05-01",
+        "honap_szam": 5,
+        "homerseklet": "Rekord min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -3.5
+      },
+      {
+        "honap": "M\u00e1j.",
+        "honap_angol": "May.",
+        "datum": "2021-05-01",
+        "honap_szam": 5,
+        "homerseklet": "\u00c1tl.\u00a0csapad\u00e9kmennyis\u00e9g\u00a0(mm)",
+        "ertek": 6.9
+      },
+      {
+        "honap": "M\u00e1j.",
+        "honap_angol": "May.",
+        "datum": "2021-05-01",
+        "honap_szam": 5,
+        "homerseklet": "\u00c1tlagos max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 20.3
+      },
+      {
+        "honap": "M\u00e1j.",
+        "honap_angol": "May.",
+        "datum": "2021-05-01",
+        "honap_szam": 5,
+        "homerseklet": "\u00c1tlagos min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 8.6
+      },
+      {
+        "honap": "M\u00e1r.",
+        "honap_angol": "Mar.",
+        "datum": "2021-03-01",
+        "honap_szam": 3,
+        "homerseklet": "Havi naps\u00fct\u00e9ses \u00f3r\u00e1k sz\u00e1ma",
+        "ertek": 16.5
+      },
+      {
+        "honap": "M\u00e1r.",
+        "honap_angol": "Mar.",
+        "datum": "2021-03-01",
+        "honap_szam": 3,
+        "homerseklet": "Rekord max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 26.6
+      },
+      {
+        "honap": "M\u00e1r.",
+        "honap_angol": "Mar.",
+        "datum": "2021-03-01",
+        "honap_szam": 3,
+        "homerseklet": "Rekord min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -22
+      },
+      {
+        "honap": "M\u00e1r.",
+        "honap_angol": "Mar.",
+        "datum": "2021-03-01",
+        "honap_szam": 3,
+        "homerseklet": "\u00c1tl.\u00a0csapad\u00e9kmennyis\u00e9g\u00a0(mm)",
+        "ertek": 2.2
+      },
+      {
+        "honap": "M\u00e1r.",
+        "honap_angol": "Mar.",
+        "datum": "2021-03-01",
+        "honap_szam": 3,
+        "homerseklet": "\u00c1tlagos max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 10
+      },
+      {
+        "honap": "M\u00e1r.",
+        "honap_angol": "Mar.",
+        "datum": "2021-03-01",
+        "honap_szam": 3,
+        "homerseklet": "\u00c1tlagos min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -0.6
+      },
+      {
+        "honap": "Nov.",
+        "honap_angol": "Nov.",
+        "datum": "2021-11-01",
+        "honap_szam": 11,
+        "homerseklet": "Havi naps\u00fct\u00e9ses \u00f3r\u00e1k sz\u00e1ma",
+        "ertek": 7.5
+      },
+      {
+        "honap": "Nov.",
+        "honap_angol": "Nov.",
+        "datum": "2021-11-01",
+        "honap_szam": 11,
+        "homerseklet": "Rekord max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 26
+      },
+      {
+        "honap": "Nov.",
+        "honap_angol": "Nov.",
+        "datum": "2021-11-01",
+        "honap_szam": 11,
+        "homerseklet": "Rekord min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -22
+      },
+      {
+        "honap": "Nov.",
+        "honap_angol": "Nov.",
+        "datum": "2021-11-01",
+        "honap_szam": 11,
+        "homerseklet": "\u00c1tl.\u00a0csapad\u00e9kmennyis\u00e9g\u00a0(mm)",
+        "ertek": 3
+      },
+      {
+        "honap": "Nov.",
+        "honap_angol": "Nov.",
+        "datum": "2021-11-01",
+        "honap_szam": 11,
+        "homerseklet": "\u00c1tlagos max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 6.3
+      },
+      {
+        "honap": "Nov.",
+        "honap_angol": "Nov.",
+        "datum": "2021-11-01",
+        "honap_szam": 11,
+        "homerseklet": "\u00c1tlagos min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -0.7
+      },
+      {
+        "honap": "Okt.",
+        "honap_angol": "Oct.",
+        "datum": "2021-10-01",
+        "honap_szam": 10,
+        "homerseklet": "Havi naps\u00fct\u00e9ses \u00f3r\u00e1k sz\u00e1ma",
+        "ertek": 16.6
+      },
+      {
+        "honap": "Okt.",
+        "honap_angol": "Oct.",
+        "datum": "2021-10-01",
+        "honap_szam": 10,
+        "homerseklet": "Rekord max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 32.6
+      },
+      {
+        "honap": "Okt.",
+        "honap_angol": "Oct.",
+        "datum": "2021-10-01",
+        "honap_szam": 10,
+        "homerseklet": "Rekord min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -8.8
+      },
+      {
+        "honap": "Okt.",
+        "honap_angol": "Oct.",
+        "datum": "2021-10-01",
+        "honap_szam": 10,
+        "homerseklet": "\u00c1tl.\u00a0csapad\u00e9kmennyis\u00e9g\u00a0(mm)",
+        "ertek": 3.1
+      },
+      {
+        "honap": "Okt.",
+        "honap_angol": "Oct.",
+        "datum": "2021-10-01",
+        "honap_szam": 10,
+        "homerseklet": "\u00c1tlagos max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 14.6
+      },
+      {
+        "honap": "Okt.",
+        "honap_angol": "Oct.",
+        "datum": "2021-10-01",
+        "honap_szam": 10,
+        "homerseklet": "\u00c1tlagos min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 3.8
+      },
+      {
+        "honap": "Szep.",
+        "honap_angol": "Sep.",
+        "datum": "2021-09-01",
+        "honap_szam": 9,
+        "homerseklet": "Havi naps\u00fct\u00e9ses \u00f3r\u00e1k sz\u00e1ma",
+        "ertek": 20.5
+      },
+      {
+        "honap": "Szep.",
+        "honap_angol": "Sep.",
+        "datum": "2021-09-01",
+        "honap_szam": 9,
+        "homerseklet": "Rekord max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 33.7
+      },
+      {
+        "honap": "Szep.",
+        "honap_angol": "Sep.",
+        "datum": "2021-09-01",
+        "honap_szam": 9,
+        "homerseklet": "Rekord min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -3
+      },
+      {
+        "honap": "Szep.",
+        "honap_angol": "Sep.",
+        "datum": "2021-09-01",
+        "honap_szam": 9,
+        "homerseklet": "\u00c1tl.\u00a0csapad\u00e9kmennyis\u00e9g\u00a0(mm)",
+        "ertek": 3.6
+      },
+      {
+        "honap": "Szep.",
+        "honap_angol": "Sep.",
+        "datum": "2021-09-01",
+        "honap_szam": 9,
+        "homerseklet": "\u00c1tlagos max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 20.7
+      },
+      {
+        "honap": "Szep.",
+        "honap_angol": "Sep.",
+        "datum": "2021-09-01",
+        "honap_szam": 9,
+        "homerseklet": "\u00c1tlagos min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 8.9
+      },
+      {
+        "honap": "\u00c1pr.",
+        "honap_angol": "Apr.",
+        "datum": "2021-04-01",
+        "honap_szam": 4,
+        "homerseklet": "Havi naps\u00fct\u00e9ses \u00f3r\u00e1k sz\u00e1ma",
+        "ertek": 17.5
+      },
+      {
+        "honap": "\u00c1pr.",
+        "honap_angol": "Apr.",
+        "datum": "2021-04-01",
+        "honap_szam": 4,
+        "homerseklet": "Rekord max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 30.2
+      },
+      {
+        "honap": "\u00c1pr.",
+        "honap_angol": "Apr.",
+        "datum": "2021-04-01",
+        "honap_szam": 4,
+        "homerseklet": "Rekord min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": -8.4
+      },
+      {
+        "honap": "\u00c1pr.",
+        "honap_angol": "Apr.",
+        "datum": "2021-04-01",
+        "honap_szam": 4,
+        "homerseklet": "\u00c1tl.\u00a0csapad\u00e9kmennyis\u00e9g\u00a0(mm)",
+        "ertek": 4.8
+      },
+      {
+        "honap": "\u00c1pr.",
+        "honap_angol": "Apr.",
+        "datum": "2021-04-01",
+        "honap_szam": 4,
+        "homerseklet": "\u00c1tlagos max. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 15
+      },
+      {
+        "honap": "\u00c1pr.",
+        "honap_angol": "Apr.",
+        "datum": "2021-04-01",
+        "honap_szam": 4,
+        "homerseklet": "\u00c1tlagos min. h\u0151m\u00e9rs\u00e9klet (\u00b0C)",
+        "ertek": 4
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "datum",
+      "type": "temporal",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "ertek",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "homerseklet",
+      "type": "nominal"
+    }
+  },
+  "config": {}
+}

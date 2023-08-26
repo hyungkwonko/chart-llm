@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "autosize": "fit",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400
+    }
+  },
+  "data": {
+    "name": "data-25a2e6730552c2567e386b6bd72d616a"
+  },
+  "datasets": {
+    "data-25a2e6730552c2567e386b6bd72d616a": [
+      {
+        "count": 5615,
+        "value": 2015
+      },
+      {
+        "count": 5616,
+        "value": 2016
+      },
+      {
+        "count": 5722,
+        "value": 2017
+      },
+      {
+        "count": 1296,
+        "value": 2018
+      }
+    ]
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "value",
+        "type": "quantitative"
+      },
+      {
+        "field": "count",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "value",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "mark": "bar",
+  "width": 250
+}

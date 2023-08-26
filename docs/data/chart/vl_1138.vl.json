@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatterplot showing body mass and flipper lengths of penguins.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/dannysupple/dannysupple.github.io/main/wc.csv"
+  },
+  "height": 400,
+  "width": 400,
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Reduced Dimension 1",
+      "type": "quantitative",
+      "scale": {
+        "zero": false
+      }
+    },
+    "y": {
+      "field": "Reduced Dimension 2",
+      "type": "quantitative",
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "field": "confederation",
+      "type": "ordinal",
+      "title": null,
+      "scale": {
+        "scheme": "spectral"
+      }
+    }
+  },
+  "config": {}
+}

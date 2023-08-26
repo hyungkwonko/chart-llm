@@ -1,0 +1,100 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-e6697a23799a0205f41d02251fd32883"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "facet": {
+      "columns": 2,
+      "field": "pacbioRun",
+      "title": null,
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "type": "nominal"
+      },
+      {
+        "field": "count",
+        "type": "quantitative"
+      },
+      {
+        "field": "pacbioRun",
+        "type": "nominal"
+      },
+      {
+        "field": "library",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "count",
+      "type": "quantitative"
+    },
+    "y": {
+      "axis": {
+        "title": null
+      },
+      "field": "category",
+      "type": "nominal"
+    }
+  },
+  "height": 75,
+  "resolve": {
+    "scale": {
+      "x": "independent",
+      "y": "independent"
+    }
+  },
+  "width": 250,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-e6697a23799a0205f41d02251fd32883": [
+      {
+        "category": "aligned PacBio_amplicon",
+        "count": 2672923,
+        "pacbioRun": "Lib-1_220629",
+        "library": "Lib-1"
+      },
+      {
+        "category": "filtered PacBio_amplicon",
+        "count": 175199,
+        "pacbioRun": "Lib-1_220629",
+        "library": "Lib-1"
+      },
+      {
+        "category": "unmapped",
+        "count": 19379,
+        "pacbioRun": "Lib-1_220629",
+        "library": "Lib-1"
+      },
+      {
+        "category": "aligned PacBio_amplicon",
+        "count": 3060344,
+        "pacbioRun": "Lib-2_220629",
+        "library": "Lib-2"
+      },
+      {
+        "category": "filtered PacBio_amplicon",
+        "count": 205667,
+        "pacbioRun": "Lib-2_220629",
+        "library": "Lib-2"
+      },
+      {
+        "category": "unmapped",
+        "count": 33533,
+        "pacbioRun": "Lib-2_220629",
+        "library": "Lib-2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "LCOE/capacity regression",
+    "subtitle": [
+      "A regression of Solar PV LCOE on the log of capacity installed",
+      "Sources: IRENA, Our World in Data"
+    ],
+    "subtitleFontSize": 9,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/data-log-solar.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "log_solar",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Solar photovoltaic levelized cost of energy",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "Year",
+          "type": "nominal",
+          "scale": {
+            "scheme": "darkmulti"
+          },
+          "legend": {
+            "orient": "top-left",
+            "title": null
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Solar photovoltaic levelized cost of energy",
+            "title": "LCOE"
+          },
+          {
+            "field": "log_solar"
+          },
+          {
+            "field": "Year"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "Solar photovoltaic levelized cost of energy",
+          "on": "log_solar"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "log_solar",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              10,
+              15
+            ]
+          },
+          "title": "log Capacity",
+          "axis": {
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "Solar photovoltaic levelized cost of energy",
+          "type": "quantitative",
+          "title": "Solar PV LCOE",
+          "axis": {
+            "grid": false
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Solar photovoltaic levelized cost of energy",
+          "on": "log_solar",
+          "params": true
+        },
+        {
+          "calculate": "'R\u00b2: '+format(datum.rSquared, '.2f')",
+          "as": "R2"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "R2"
+        }
+      }
+    }
+  ]
+}

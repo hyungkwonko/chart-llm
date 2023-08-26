@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mode": "vega-lite",
+  "description": "Google's stock price over time.",
+  "data": {
+    "url": "https://vega.github.io/editor/data/stocks.csv"
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.date) >= 2009",
+      "as": "predicted"
+    },
+    {
+      "filter": "datum.symbol==='GOOG'"
+    }
+  ],
+  "width": 500,
+  "height": 300,
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "opacity": 1,
+        "strokeWidth": 1,
+        "interpolate": "monotone",
+        "tooltip": true
+      },
+      "encoding": {
+        "strokeDash": {
+          "field": "predicted",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": {
+            "title": "Time",
+            "orient": "bottom"
+          }
+        },
+        "y": {
+          "field": "price",
+          "type": "quantitative",
+          "axis": {
+            "title": "Count",
+            "orient": "left"
+          }
+        },
+        "color": {
+          "field": "symbol",
+          "type": "nominal",
+          "scale": {
+            "range": [
+              "#1f77b4"
+            ]
+          },
+          "legend": {
+            "title": "Time Series",
+            "orient": "right",
+            "symbolType": "circle",
+            "fillColor": "#ffffff"
+          }
+        }
+      }
+    }
+  ]
+}

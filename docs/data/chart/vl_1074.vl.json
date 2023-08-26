@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 350,
+  "height": 400,
+  "title": {
+    "text": "Number of students at UK Universities",
+    "subtitle": [
+      "Universities over 20'000 students. Source: HESA",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/UK%20Map%20Data/ITL1_2021_20m.geojson",
+        "format": {
+          "property": "features"
+        }
+      },
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgray",
+        "stroke": "white",
+        "strokeWidth": 0.1
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Emilysquires02/Emilysquires02.github.io/main/UK%20universities%20-%20long%20late.csv"
+      },
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": {
+        "type": "circle",
+        "opacity": 0.5,
+        "stroke": "black",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "Longitude ",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "2021",
+          "type": "quantitative",
+          "scale": {
+            "range": [
+              5,
+              300
+            ]
+          }
+        },
+        "color": {
+          "field": [
+            "2021"
+          ],
+          "type": "quantitative",
+          "scale": {
+            "scheme": "tealblues"
+          },
+          "legend": {
+            "orient": "bottom"
+          },
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "2021",
+            "type": "quantitative",
+            "title": "Number of students"
+          },
+          {
+            "field": "HE provider",
+            "type": "nominal",
+            "title": "University"
+          }
+        ]
+      }
+    }
+  ]
+}

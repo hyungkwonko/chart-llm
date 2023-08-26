@@ -1,0 +1,75 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "fontSize": 24
+    }
+  },
+  "data": {
+    "name": "data-5730b0352309f115c8124787c6246e4a"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "percent",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "Year of Survey type",
+      "sort": "-y",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "params": [
+    {
+      "name": "param_15",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales"
+    }
+  ],
+  "title": "Year of Survey Image (kerbs)",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-5730b0352309f115c8124787c6246e4a": [
+      {
+        "Year of Survey type": "?",
+        "count": 2239,
+        "percent": "96.05%"
+      },
+      {
+        "Year of Survey type": "2019",
+        "count": 64,
+        "percent": "2.75%"
+      },
+      {
+        "Year of Survey type": "2020",
+        "count": 25,
+        "percent": "1.07%"
+      },
+      {
+        "Year of Survey type": "2021",
+        "count": 3,
+        "percent": "0.13%"
+      }
+    ]
+  }
+}

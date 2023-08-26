@@ -1,0 +1,129 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Tax rates across the World",
+    "subtitle": [
+      "With tooltip. Natural Earth Projection",
+      ""
+    ],
+    "subtitleColor": "white",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "white"
+  },
+  "config": {
+    "background": "transparent",
+    "view": {
+      "stroke": "trasparent"
+    }
+  },
+  "width": "container",
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/unpkg_World_Map.json",
+    "format": {
+      "type": "topojson",
+      "feature": "countries"
+    }
+  },
+  "params": [
+    {
+      "name": "Type",
+      "value": "Income Tax",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Income Tax",
+          "Sales Tax",
+          "Corporation Tax"
+        ]
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "parseInt(datum.id)",
+      "as": "id_N"
+    },
+    {
+      "lookup": "id_N",
+      "from": {
+        "key": "id",
+        "fields": [
+          "alpha3",
+          "name"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/RDeconomist_dataWorldCountryNamesIDs.json"
+        }
+      }
+    },
+    {
+      "lookup": "alpha3",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/Tax%20and%20country%20code%20data.csv"
+        },
+        "key": "Country code",
+        "fields": [
+          "Income Tax",
+          "Sales Tax",
+          "Corporation Tax"
+        ]
+      }
+    },
+    {
+      "calculate": "datum[Type]",
+      "as": "varSelected"
+    }
+  ],
+  "projection": {
+    "type": "naturalEarth1",
+    "center": [
+      10,
+      0
+    ]
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "#323232",
+    "strokeWidth": 0.45
+  },
+  "encoding": {
+    "color": {
+      "field": "varSelected",
+      "type": "quantitative",
+      "title": "Tax rate",
+      "scale": {
+        "scheme": "greens"
+      },
+      "legend": {
+        "orient": "bottom-left",
+        "direction": "horizontal",
+        "labelColor": "white",
+        "titleColor": "white",
+        "labelFont": "Helvetica Neue",
+        "tickCount": 5
+      }
+    },
+    "tooltip": [
+      {
+        "field": "name",
+        "title": "Country"
+      },
+      {
+        "field": "Income Tax",
+        "title": "Income Tax"
+      },
+      {
+        "field": "Sales Tax",
+        "title": "Sales Tax"
+      },
+      {
+        "field": "Corporation Tax",
+        "title": "Corporation Tax"
+      }
+    ]
+  }
+}

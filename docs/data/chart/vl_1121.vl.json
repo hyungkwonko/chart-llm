@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "IMF lending outstanding",
+    "subtitle": [
+      "Credit outstanding to all members as % of World GDP (current prices)",
+      "Source: IMF & World Bank"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/data_IMF_creditOutstanding_New.csv"
+  },
+  "height": 260,
+  "width": "container",
+  "mark": {
+    "type": "bar",
+    "color": "#000f71"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "axis": {
+        "title": null,
+        "labelAngle": 45,
+        "ticks": true,
+        "tickWidth": 1.3,
+        "tickColor": "grey",
+        "values": [
+          "1984",
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ]
+      }
+    },
+    "y": {
+      "field": "Debt-GDP",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "format": "0.1%"
+      }
+    },
+    "tooltip": {
+      "field": "Debt-GDP",
+      "type": "quantitative",
+      "format": "0.1%",
+      "title": "Debt-GDP"
+    }
+  }
+}

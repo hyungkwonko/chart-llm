@@ -1,0 +1,131 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/fabiancpl/salurbal/737072fc71a45a5f62d1b63051ef9decc23592b3/data/l2.csv"
+  },
+  "config": {
+    "view": {
+      "width": 600,
+      "height": 500
+    }
+  },
+  "vconcat": [
+    {
+      "mark": "circle",
+      "selection": {
+        "brush": {
+          "type": "interval",
+          "resolve": "global"
+        },
+        "grid": {
+          "type": "interval",
+          "resolve": "global"
+        },
+        "filter": {
+          "type": "single",
+          "fields": [
+            "COUNTRY"
+          ],
+          "bind": {
+            "input": "select",
+            "options": [
+              "Argentina",
+              "Brasil",
+              "Chile",
+              "Colombia",
+              "Costa Rica",
+              "El Salvador",
+              "Guatemala",
+              "Mexico",
+              "Nicaragua",
+              "Peru"
+            ]
+          }
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "AREA",
+          "type": "quantitative",
+          "title": "Total area"
+        },
+        "y": {
+          "field": "URBAN_PROF",
+          "type": "nominal",
+          "title": "Urban Landscape profiles"
+        },
+        "size": {
+          "condition": {
+            "selection": "filter",
+            "value": 25
+          },
+          "value": 0
+        },
+        "color": {
+          "condition": {
+            "selection": "brush",
+            "field": "URBAN_PROF",
+            "type": "nominal",
+            "scheme": "category10",
+            "title": "Urban Landscape profiles"
+          },
+          "value": "lightgrey"
+        }
+      },
+      "tooltip": [
+        {
+          "field": "COUNTRY"
+        },
+        {
+          "field": "L1"
+        },
+        {
+          "field": "AREA"
+        }
+      ]
+    },
+    {
+      "mark": "circle",
+      "encoding": {
+        "x": {
+          "field": "BECADSTTDENS",
+          "type": "quantitative",
+          "title": "Population density"
+        },
+        "y": {
+          "field": "URBAN_PROF",
+          "type": "nominal",
+          "title": "Urban Landscape profiles"
+        },
+        "size": {
+          "condition": {
+            "selection": "filter",
+            "value": 25
+          },
+          "value": 0
+        },
+        "color": {
+          "condition": {
+            "selection": "brush",
+            "field": "URBAN_PROF",
+            "type": "nominal",
+            "scheme": "category10",
+            "title": "Urban Landscape profiles"
+          },
+          "value": "lightgrey"
+        }
+      },
+      "tooltip": [
+        {
+          "field": "COUNTRY"
+        },
+        {
+          "field": "L1"
+        },
+        {
+          "field": "BECADSTTDENS"
+        }
+      ]
+    }
+  ]
+}

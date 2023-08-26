@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Rank of Country of Birth of Oversea residents",
+    "color": "navy",
+    "fontSize": 22,
+    "align": "center",
+    "anchor": "middle",
+    "dy": -1,
+    "baseline": "middle",
+    "subtitleColor": "navy",
+    "subtitleFontSize": 18,
+    "subtitlePadding": 5
+  },
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/top10_CoB.CSV",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "sort": [
+        {
+          "field": "Population",
+          "order": "descending"
+        }
+      ],
+      "window": [
+        {
+          "op": "rank",
+          "as": "rank"
+        }
+      ],
+      "groupby": [
+        "Year"
+      ]
+    },
+    {
+      "lookup": "Country",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/melvinalex7/FIT3179/main/Assignment_2/data/flags.csv"
+        },
+        "key": "Country",
+        "fields": [
+          "ImageURL"
+        ]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "sort": [
+        "2011",
+        "2016",
+        "2021"
+      ],
+      "title": null,
+      "axis": {
+        "grid": true,
+        "domain": false,
+        "ticks": false,
+        "offset": 20,
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "rank",
+      "type": "quantitative",
+      "sort": "descending",
+      "scale": {
+        "domainMin": 1
+      },
+      "axis": {
+        "grid": false,
+        "domain": false,
+        "ticks": false,
+        "offset": -40
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "nominal"
+      },
+      {
+        "field": "Population",
+        "type": "quantitative"
+      },
+      {
+        "field": "rank",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "size": 5,
+        "point": {
+          "filled": false,
+          "fill": "white",
+          "size": 80,
+          "strokeWidth": 4
+        }
+      },
+      "encoding": {
+        "color": {
+          "field": "Country"
+        },
+        "opacity": {
+          "value": 0.8
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "image",
+        "width": 40,
+        "height": 20,
+        "tooltip": true
+      },
+      "transform": [
+        {
+          "filter": "datum.Year != 2016"
+        }
+      ],
+      "encoding": {
+        "url": {
+          "field": "ImageURL",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

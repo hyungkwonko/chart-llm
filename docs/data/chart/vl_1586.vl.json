@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "gridWidth": 8
+    },
+    "axisX": {
+      "gridColor": "red"
+    },
+    "axisY": {
+      "gridColor": "blue"
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "cat": "a",
+        "x": 20,
+        "y": 10
+      },
+      {
+        "cat": "b",
+        "x": 10,
+        "y": 20
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "cat",
+      "legend": null,
+      "type": "nominal"
+    },
+    "x": {
+      "axis": {
+        "zindex": 2
+      },
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "axis": {
+        "zindex": 1
+      },
+      "field": "y",
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "opacity": 1,
+    "size": 5000,
+    "type": "circle"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Creates year variable, then defined parameters on this and adds sliders.",
+  "title": {
+    "text": "CPI - Chicago versus NYC",
+    "subtitle": [
+      "All items. Source: FRED (CUURA207SA0, CUURA101SA0)",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 750,
+  "height": 200,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 1
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/usa/data_FRED_inflationNYCChicago.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "CUURA207SA0",
+        "CUURA101SA0"
+      ],
+      "as": [
+        "metric",
+        "value"
+      ]
+    },
+    {
+      "calculate": "{'CUURA207SA0': 'Chicago', 'CUURA101SA0': 'NYC'}[datum.metric]",
+      "as": "metricClean"
+    },
+    {
+      "calculate": "year(datum.Date)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    },
+    {
+      "calculate": "datum.value/100",
+      "as": "valuePCT"
+    },
+    {
+      "calculate": "timeParse(datum.DATE, '%d/%m/%Y')",
+      "as": "date2"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1940,
+      "bind": {
+        "input": "range",
+        "min": 1940,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1940,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date2",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "format": "d",
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "metricClean",
+      "type": "ordinal",
+      "legend": {
+        "orient": "top",
+        "columns": 2,
+        "title": null
+      },
+      "scale": {
+        "range": [
+          "rgb(134, 38, 51)",
+          "rgba(0,47,167,0.7)"
+        ]
+      }
+    }
+  }
+}

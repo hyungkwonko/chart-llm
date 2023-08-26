@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": {
+    "text": "Transfer Price Index (TPI) vs CPI",
+    "subtitle": [
+      "Figure 5: 1992-2022",
+      "Average Transfer Fees (\u00a3) in the PL vs UK Inflation",
+      "Source: Tomkins Times + Bank of England"
+    ],
+    "subtitleFontStyle": "italic",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": "container",
+  "data": {
+    "url": "https://raw.githubusercontent.com/josh-shah/josh-shah.github.io/main/TPIvsUKInflation_final.csv"
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.Year)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1992,
+      "bind": {
+        "input": "range",
+        "min": 1992,
+        "max": 2021,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1993,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "nominal",
+      "title": "",
+      "axis": {
+        "labelAngle": 90
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Index, Base Year 1992"
+    },
+    "tooltip": [
+      {
+        "field": "Index",
+        "type": "nominal"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Index Value"
+      },
+      {
+        "field": "Year",
+        "type": "ordinal",
+        "title": "Date"
+      }
+    ],
+    "color": {
+      "field": "Index",
+      "scale": {
+        "range": [
+          "orange",
+          "#00ff85"
+        ]
+      },
+      "legend": {
+        "orient": "bottom",
+        "columns": 1,
+        "fillColor": "#FfFfFf"
+      }
+    }
+  }
+}

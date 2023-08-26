@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Women's football performance vs economic development",
+    "subtitle": [
+      "Human Development Index (x), FIFA ranking points (y). 2021 data",
+      "Size of points based on popluation",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/football/dataWomensFIFA.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "color": "green",
+    "opacity": 0.7
+  },
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "HDI_2021",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0.3,
+          1
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "y": {
+      "field": "FIFA_rank_2021",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          300,
+          2200
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "size": {
+      "field": "Population_2021",
+      "type": "quantitative",
+      "title": "Prison Rate",
+      "scale": {
+        "range": [
+          10,
+          800
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "country",
+        "type": "ordinal",
+        "title": "Country"
+      },
+      {
+        "field": "FIFA_rank_2021",
+        "type": "quantitative",
+        "title": "Rank",
+        "format": ".0f"
+      },
+      {
+        "field": "HDI_2021",
+        "type": "quantitative",
+        "title": "HDI",
+        "format": ".2f"
+      },
+      {
+        "field": "Population_2021",
+        "type": "quantitative",
+        "title": "Population",
+        "format": ","
+      }
+    ]
+  }
+}

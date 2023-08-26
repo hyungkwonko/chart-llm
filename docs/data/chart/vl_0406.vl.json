@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A calculate that takes the messy names in the field, metric, and creates a new field, metricClean, where the names are nicer.",
+  "title": {
+    "text": "Age - various measures",
+    "subtitle": [
+      "Mean, Median* and weighted ages of UK firms",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_Annual.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Mean",
+        "Mean_emplWeight",
+        "Mean_turnWeight",
+        "Central"
+      ],
+      "as": [
+        "metric",
+        "value"
+      ]
+    },
+    {
+      "calculate": "{'Mean_turnWeight':'Weighted (Turnover)','Mean': 'Mean', 'Mean_emplWeight': 'Weighted (Employment)', 'Central': 'Median (*estimated)'}[datum.metric]",
+      "as": "metricClean"
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 1,
+    "point": true
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "format": ""
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": [
+          0,
+          30
+        ]
+      },
+      "axis": {
+        "grid": false,
+        "format": "d"
+      }
+    },
+    "color": {
+      "field": "metricClean",
+      "title": null,
+      "scale": {
+        "range": [
+          "blue",
+          "orange",
+          "green",
+          "red"
+        ]
+      },
+      "legend": {
+        "orient": "bottom-left",
+        "columns": 2
+      }
+    }
+  }
+}

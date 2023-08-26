@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Global fossil fuel consumption",
+    "subtitle": "TWh. Source: Smil (2017) / BP Statistical Review of World Energy",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 280,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/ECO2.DATA.C1.csv"
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "Time",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "format": "%Y",
+        "grid": false
+      }
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "Source",
+      "title": null,
+      "scale": {
+        "scheme": "yellowgreenblue"
+      },
+      "legend": {
+        "orient": "top-left"
+      },
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "Time",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "TWh consumed)"
+      },
+      {
+        "field": "Source",
+        "type": "nominal"
+      }
+    ]
+  }
+}

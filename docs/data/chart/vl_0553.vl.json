@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "GDP data from BEA, Q3 2022. Population estimate from Census Bureau, Mid-2022. District of Columbia filtered out as distorts relative differences",
+  "width": 600,
+  "height": 300,
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "padding": 0
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/US_States_5m.json",
+    "format": {
+      "property": "features"
+    }
+  },
+  "title": {
+    "text": "GDP in the United States",
+    "fontSize": 12,
+    "subtitle": [
+      "Current GDP per capita, source: BEA; Census Bureau, 2022",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 9,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "projection": {
+    "type": "albersUsa"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "transform": [
+    {
+      "lookup": "properties.NAME",
+      "from": {
+        "key": "State",
+        "fields": [
+          "Current GDP",
+          "Real GDP",
+          "Population",
+          "Current GDP per capita",
+          "Real GDP per capita"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/explainer_usStates_gdp.csv"
+        }
+      }
+    },
+    {
+      "filter": "datum['properties.NAME'] != 'District of Columbia'"
+    }
+  ],
+  "encoding": {
+    "color": {
+      "field": "Current GDP per capita",
+      "legend": {
+        "title": "",
+        "orient": "bottom-left",
+        "legendX": -5,
+        "legendY": 0,
+        "direction": "vertical",
+        "format": "$,d"
+      },
+      "type": "quantitative",
+      "scale": {
+        "scheme": "inferno",
+        "reverse": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.NAME",
+        "title": "State"
+      },
+      {
+        "field": "Population",
+        "format": ","
+      },
+      {
+        "field": "Current GDP",
+        "title": "GDP ($m)",
+        "format": "$,d"
+      },
+      {
+        "field": "Current GDP per capita",
+        "title": "GDP pc, current",
+        "format": "$,d"
+      }
+    ]
+  }
+}

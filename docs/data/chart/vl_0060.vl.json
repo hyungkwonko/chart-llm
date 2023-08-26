@@ -1,0 +1,241 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "whitesmoke",
+  "width": 650,
+  "height": 500,
+  "title": "The Relationship Between Cases, Deaths and Death Percentage",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jisnu-Palanisamy/FIT3179/main/COVID-19%20Coronavirus.csv"
+  },
+  "params": [
+    {
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Asia",
+          "Europe",
+          "Africa",
+          "Northern America",
+          "Oceania",
+          "Latin America and the Caribbean"
+        ],
+        "labels": [
+          "Show All",
+          "Asia",
+          "Europe",
+          "Africa",
+          "Northern America",
+          "Oceania",
+          "Latin America and the Caribbean"
+        ],
+        "name": "Continent:   "
+      }
+    },
+    {
+      "name": "Population_Above",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 100000000,
+        "step": 1000000,
+        "name": "Population:"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.TotalDeaths > 0"
+    },
+    {
+      "filter": "datum.TotalCases > 0"
+    },
+    {
+      "filter": "datum.Population > Population_Above"
+    },
+    {
+      "filter": "Continent_selection == null || datum.Continent == Continent_selection"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "TotalCases",
+      "type": "quantitative",
+      "axis": {
+        "tickCount": 7
+      },
+      "scale": {
+        "type": "log",
+        "domain": [
+          1,
+          1000000000
+        ]
+      },
+      "title": "Total Cases"
+    },
+    "y": {
+      "field": "TotalDeaths",
+      "type": "quantitative",
+      "axis": {
+        "tickCount": 7
+      },
+      "scale": {
+        "type": "log",
+        "domain": [
+          1,
+          10000000
+        ]
+      },
+      "title": "Total Deaths"
+    }
+  },
+  "layer": [
+    {
+      "selection": {
+        "cnt_highlight": {
+          "type": "multi",
+          "fields": [
+            "Continent"
+          ],
+          "bind": "legend"
+        },
+        "grid": {
+          "type": "interval",
+          "bind": "scales"
+        }
+      },
+      "mark": {
+        "type": "circle"
+      },
+      "encoding": {
+        "size": {
+          "field": "DeathPercentage",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          "legend": {
+            "format": ".1s"
+          },
+          "title": "Death Percentage"
+        },
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Asia",
+              "Europe",
+              "Africa",
+              "Northern America",
+              "Oceania",
+              "Latin America and the Caribbean"
+            ],
+            "range": [
+              "#e41a1c",
+              "#984ea3",
+              "#ff7f00",
+              "#30d5c8",
+              "#377eb8",
+              "#a65628"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {
+            "selection": "cnt_highlight",
+            "value": 0.6
+          },
+          "value": 0.2
+        },
+        "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "TotalCases",
+            "type": "quantitative",
+            "format": ",",
+            "title": "Total Cases"
+          },
+          {
+            "field": "TotalDeaths",
+            "type": "quantitative",
+            "format": ",",
+            "title": "Total Deaths"
+          },
+          {
+            "field": "DeathPercentage",
+            "type": "quantitative",
+            "format": ".4s",
+            "title": "Death Percentage"
+          },
+          {
+            "field": "Population",
+            "type": "quantitative",
+            "format": ",",
+            "title": "Population"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "baseline": "middle"
+      },
+      "encoding": {
+        "text": {
+          "field": "Country",
+          "type": "nominal"
+        },
+        "color": {
+          "value": "black"
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum.Country == 'Russia' || datum.Country == 'Singapore' || datum.Country == 'Australia' || datum.Country == 'Yemen' || datum.Country == 'Egypt' ||  datum.Country == 'United States of America'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFont": "Sans-Serif",
+      "titleFont": "Sans-Serif"
+    },
+    "legend": {
+      "labelFont": "Sans-Serif",
+      "titleFont": "Sans-Serif"
+    },
+    "title": {
+      "font": "Sans-Serif",
+      "fontSize": 24,
+      "fontWeight": "bold",
+      "fontStyle": "italic"
+    },
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    },
+    "text": {
+      "align": "right",
+      "fontWeight": "bold",
+      "font": "Sans-Serif"
+    }
+  }
+}

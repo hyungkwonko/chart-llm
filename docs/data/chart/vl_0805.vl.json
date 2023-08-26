@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 250,
+  "height": 250,
+  "title": "Africa",
+  "background": "rgba(255, 255, 255, 0)",
+  "data": {
+    "url": "https://gist.githubusercontent.com/khang-dao/6f07489ece55075f367f9ba2fc7ce379/raw/52ff839d2c3207f8dfb45ce30ffce6eda46780d2/olympics-1986-2016-cleaned-4-africa.csv"
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Height",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          250
+        ]
+      }
+    },
+    "y": {
+      "field": "Weight",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          250
+        ]
+      }
+    },
+    "color": {
+      "value": "#000000"
+    },
+    "tooltip": [
+      {
+        "field": "Height",
+        "type": "quantitative"
+      },
+      {
+        "field": "Weight",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "gridColor": "#bbbbbb99"
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-64b9f1367cf0c147fbb8d31d6403fc46"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "axis": {
+        "title": "Date"
+      },
+      "field": "interaction_createdAt",
+      "type": "temporal"
+    },
+    "y": {
+      "axis": {
+        "title": "Count"
+      },
+      "field": "cumulative_count",
+      "type": "quantitative"
+    }
+  },
+  "height": 200,
+  "title": "Cumulative code contributions (pull requests) from external users",
+  "transform": [
+    {
+      "window": [
+        {
+          "op": "count",
+          "as": "cumulative_count"
+        }
+      ],
+      "sort": [
+        {
+          "field": "interaction_createdAt"
+        }
+      ]
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-64b9f1367cf0c147fbb8d31d6403fc46": [
+      {
+        "interaction_createdAt": "2021-03-17T20:21:39+00:00"
+      },
+      {
+        "interaction_createdAt": "2021-06-16T18:28:24+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-02-11T09:53:46+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-05-18T18:04:27+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-08-16T17:37:01+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-09-24T22:36:24+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-09-27T16:19:28+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-10-08T21:21:56+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-10-18T06:43:35+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-11-09T14:34:37+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-11-15T19:00:46+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-11-22T11:34:32+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-11-23T20:58:35+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-11-29T16:09:16+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-12-13T21:07:40+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-12-14T10:04:50+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-12-15T09:47:26+00:00"
+      },
+      {
+        "interaction_createdAt": "2022-12-16T11:00:11+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-01-06T13:22:22+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-01-16T15:16:03+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-01-23T13:33:49+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-01-24T00:37:28+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-01-24T11:08:39+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-01-27T18:18:48+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-01-27T19:22:02+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-01-31T00:10:12+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-02-01T16:20:17+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-02-02T16:50:51+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-02-02T17:44:38+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-02-28T03:09:35+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-02-28T19:36:22+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-02-28T20:36:45+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-02-28T21:53:12+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-03-11T00:40:26+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-03-11T01:15:45+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-03-20T20:08:04+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-03-21T19:31:14+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-03-23T20:40:50+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-03-30T15:01:06+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-03-31T11:09:10+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-04-16T18:35:44+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-05-13T14:34:00+00:00"
+      },
+      {
+        "interaction_createdAt": "2023-06-01T09:11:14+00:00"
+      }
+    ]
+  }
+}

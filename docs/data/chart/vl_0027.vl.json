@@ -1,0 +1,330 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/ghattab/CMANGOES/c492c918df3c0da3eaaf27d2b218b66c00610307/Data/Visualization_data/data/multiple_datasets/vis/home_Home_tsne/elapsed_time_data.json"
+          },
+          "encoding": {
+            "color": {
+              "condition": {
+                "selection": "selector001",
+                "value": "#4C78A8"
+              },
+              "value": "lightgrey"
+            },
+            "tooltip": {
+              "field": "dataset",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "grid": false,
+                "titleFontWeight": "normal"
+              },
+              "field": "hours",
+              "scale": {
+                "type": "log"
+              },
+              "title": "log(Computation time) (h)",
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "grid": false,
+                "titleFontWeight": "normal"
+              },
+              "field": "seq_size",
+              "scale": {
+                "type": "log"
+              },
+              "sort": "-x",
+              "title": "log(# of sequences)",
+              "type": "quantitative"
+            }
+          },
+          "height": 250,
+          "mark": {
+            "filled": true,
+            "size": 60,
+            "type": "point"
+          },
+          "selection": {
+            "selector001": {
+              "empty": "none",
+              "fields": [
+                "dataset"
+              ],
+              "init": {
+                "dataset": "hiv_ddi"
+              },
+              "type": "single"
+            },
+            "selector002": {
+              "bind": "scales",
+              "encodings": [
+                "x",
+                "y"
+              ],
+              "type": "interval"
+            }
+          },
+          "title": "Multiple datasets",
+          "width": 250
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/ghattab/CMANGOES/c492c918df3c0da3eaaf27d2b218b66c00610307/Data/Visualization_data/data/multiple_datasets/vis/home_Home_tsne/tsne_data.json"
+          },
+          "height": 250,
+          "layer": [
+            {
+              "encoding": {
+                "x": {
+                  "axis": {
+                    "grid": false,
+                    "titleFontWeight": "normal"
+                  },
+                  "field": "x",
+                  "scale": {
+                    "domain": [
+                      -96.58058,
+                      98.690735
+                    ]
+                  },
+                  "title": "tSNE-1",
+                  "type": "quantitative"
+                },
+                "y": {
+                  "axis": {
+                    "grid": false,
+                    "titleFontWeight": "normal"
+                  },
+                  "field": "y",
+                  "scale": {
+                    "domain": [
+                      -97.99146999999999,
+                      97.53912
+                    ]
+                  },
+                  "title": "tSNE-2",
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "color": "#fdc086",
+                "size": 10,
+                "type": "circle"
+              }
+            },
+            {
+              "encoding": {
+                "order": {
+                  "field": "order",
+                  "type": "ordinal"
+                },
+                "x": {
+                  "field": "x",
+                  "type": "quantitative"
+                },
+                "y": {
+                  "field": "y",
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "color": "#386cb0",
+                "strokeDash": [
+                  5,
+                  3
+                ],
+                "strokeWidth": 1,
+                "type": "line"
+              },
+              "transform": [
+                {
+                  "filter": "(datum.hull_vertex === true)"
+                }
+              ]
+            },
+            {
+              "encoding": {
+                "text": {
+                  "field": "text",
+                  "type": "nominal"
+                },
+                "x": {
+                  "field": "x",
+                  "type": "quantitative"
+                },
+                "y": {
+                  "field": "y",
+                  "type": "quantitative"
+                }
+              },
+              "mark": "text",
+              "transform": [
+                {
+                  "as": "text",
+                  "calculate": "join(['area=', round(datum.area)], '')"
+                },
+                {
+                  "filter": "(datum.y === 0)"
+                }
+              ]
+            }
+          ],
+          "title": "Single dataset",
+          "transform": [
+            {
+              "filter": {
+                "selection": "selector001"
+              }
+            }
+          ],
+          "width": 250
+        }
+      ]
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ghattab/CMANGOES/c492c918df3c0da3eaaf27d2b218b66c00610307/Data/Visualization_data/data/multiple_datasets/vis/home_Home_tsne/elapsed_time_data.json"
+      },
+      "resolve": {
+        "scale": {
+          "y": "independent"
+        }
+      },
+      "spacing": 5,
+      "vconcat": [
+        {
+          "hconcat": [
+            {
+              "encoding": {
+                "text": {
+                  "field": "dataset",
+                  "type": "nominal"
+                }
+              },
+              "mark": {
+                "fontSize": 12,
+                "lineBreak": "\n",
+                "type": "text"
+              }
+            },
+            {
+              "encoding": {
+                "text": {
+                  "field": "seq_size",
+                  "type": "ordinal"
+                }
+              },
+              "mark": {
+                "fontSize": 12,
+                "type": "text"
+              }
+            },
+            {
+              "encoding": {
+                "text": {
+                  "field": "desc",
+                  "type": "nominal"
+                }
+              },
+              "mark": {
+                "dy": -50,
+                "fontSize": 12,
+                "lineBreak": "\n",
+                "type": "text"
+              }
+            },
+            {
+              "encoding": {
+                "href": {
+                  "field": "url",
+                  "type": "nominal"
+                },
+                "text": {
+                  "field": "ref",
+                  "type": "nominal"
+                },
+                "tooltip": {
+                  "field": "url",
+                  "type": "nominal"
+                }
+              },
+              "height": 120,
+              "mark": {
+                "dy": -50,
+                "fontSize": 12,
+                "lineBreak": "\n",
+                "type": "text"
+              },
+              "transform": [
+                {
+                  "as": "url",
+                  "calculate": "('' + datum.ref)"
+                }
+              ],
+              "width": 125
+            }
+          ],
+          "transform": [
+            {
+              "filter": {
+                "selection": "selector001"
+              }
+            }
+          ]
+        },
+        {
+          "encoding": {
+            "href": {
+              "field": "url",
+              "type": "nominal"
+            },
+            "tooltip": {
+              "field": "url",
+              "type": "nominal"
+            }
+          },
+          "height": 30,
+          "mark": {
+            "color": "black",
+            "filled": true,
+            "shape": "M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z",
+            "size": 5,
+            "type": "point",
+            "xOffset": -13,
+            "yOffset": -14
+          },
+          "transform": [
+            {
+              "as": "url",
+              "calculate": "('https://github.com/spaenigs/peptidereactor/tree/master/data/' + datum.dataset)"
+            },
+            {
+              "filter": {
+                "selection": "selector001"
+              }
+            }
+          ],
+          "width": 567
+        }
+      ]
+    }
+  ]
+}

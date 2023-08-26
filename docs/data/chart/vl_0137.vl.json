@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Area",
+  "width": "container",
+  "title": {
+    "text": "Share of people using the Internet in South Korea, 1990-2016",
+    "offset": 10
+  },
+  "data": {
+    "url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder_dintus.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "internetUsers",
+        "valid": true
+      }
+    },
+    {
+      "filter": {
+        "field": "country",
+        "equal": "South Korea"
+      }
+    }
+  ],
+  "mark": {
+    "type": "area",
+    "line": {
+      "color": "#fc6721"
+    },
+    "color": {
+      "x1": 1,
+      "y1": 1,
+      "x2": 1,
+      "y2": 0,
+      "gradient": "linear",
+      "stops": [
+        {
+          "offset": 0,
+          "color": "white"
+        },
+        {
+          "offset": 1,
+          "color": "#fc6721"
+        }
+      ]
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "timeUnit": "year",
+      "axis": {
+        "format": "%Y",
+        "grid": false,
+        "title": "Year"
+      }
+    },
+    "y": {
+      "field": "internetUsers",
+      "type": "quantitative",
+      "axis": {
+        "title": "Internet users",
+        "titlePadding": 10,
+        "format": ".0%"
+      }
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

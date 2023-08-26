@@ -1,0 +1,187 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple line chart with embedded data.",
+  "title": {
+    "text": "Number First-Time Buyers",
+    "subtitle": "Source: Money.co.uk",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "background": "#FeFeF8",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "height": 500,
+  "width": 550,
+  "data": {
+    "values": [
+      {
+        "Year": 2006,
+        "First-time buyers": 400900,
+        "Year-on-year change": 10,
+        "FTB Share of all mortgage house purchases": 37
+      },
+      {
+        "Year": 2007,
+        "First-time buyers": 357600,
+        "Year-on-year change": -11,
+        "FTB Share of all mortgage house purchases": 36
+      },
+      {
+        "Year": 2008,
+        "First-time buyers": 191000,
+        "Year-on-year change": -47,
+        "FTB Share of all mortgage house purchases": 38
+      },
+      {
+        "Year": 2009,
+        "First-time buyers": 193900,
+        "Year-on-year change": 2,
+        "FTB Share of all mortgage house purchases": 39
+      },
+      {
+        "Year": 2010,
+        "First-time buyers": 193600,
+        "Year-on-year change": 0,
+        "FTB Share of all mortgage house purchases": 38
+      },
+      {
+        "Year": 2011,
+        "First-time buyers": 188000,
+        "Year-on-year change": -3,
+        "FTB Share of all mortgage house purchases": 39
+      },
+      {
+        "Year": 2012,
+        "First-time buyers": 211900,
+        "Year-on-year change": 13,
+        "FTB Share of all mortgage house purchases": 41
+      },
+      {
+        "Year": 2013,
+        "First-time buyers": 258200,
+        "Year-on-year change": 22,
+        "FTB Share of all mortgage house purchases": 45
+      },
+      {
+        "Year": 2014,
+        "First-time buyers": 310300,
+        "Year-on-year change": 20,
+        "FTB Share of all mortgage house purchases": 47
+      },
+      {
+        "Year": 2015,
+        "First-time buyers": 298100,
+        "Year-on-year change": -4,
+        "FTB Share of all mortgage house purchases": 47
+      },
+      {
+        "Year": 2016,
+        "First-time buyers": 328500,
+        "Year-on-year change": 10,
+        "FTB Share of all mortgage house purchases": 49
+      },
+      {
+        "Year": 2017,
+        "First-time buyers": 345900,
+        "Year-on-year change": 5,
+        "FTB Share of all mortgage house purchases": 50
+      },
+      {
+        "Year": 2018,
+        "First-time buyers": 353100,
+        "Year-on-year change": 2,
+        "FTB Share of all mortgage house purchases": 51
+      },
+      {
+        "Year": 2019,
+        "First-time buyers": 351300,
+        "Year-on-year change": -1,
+        "FTB Share of all mortgage house purchases": 51
+      },
+      {
+        "Year": 2020,
+        "First-time buyers": 303000,
+        "Year-on-year change": -14,
+        "FTB Share of all mortgage house purchases": 50
+      },
+      {
+        "Year": 2021,
+        "First-time buyers": 408379,
+        "Year-on-year change": 35,
+        "FTB Share of all mortgage house purchases": 50
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "opacity": 0.5,
+        "type": "line",
+        "color": "green"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "First-time buyers",
+          "title": "First-time buyers",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500000
+            ]
+          },
+          "axis": {
+            "orient": "left",
+            "titleColor": "green"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "blue"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "axis": {
+            "labelAngle": 270
+          }
+        },
+        "y": {
+          "field": "FTB Share of all mortgage house purchases",
+          "title": "Percentage of total Buyers",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "type": "quantitative",
+          "axis": {
+            "orient": "right",
+            "titleColor": "blue",
+            "labelAngle": 270
+          }
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

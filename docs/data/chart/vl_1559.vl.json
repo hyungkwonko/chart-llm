@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://uiuc-ischool-dataviz.github.io/fall2019/data/govtrack-us-congress-legislators/data/legislators_historical_terms.csv"
+  },
+  "transform": [
+    {
+      "lookup": "bioguide",
+      "from": {
+        "data": {
+          "url": "https://uiuc-ischool-dataviz.github.io/fall2019/data/govtrack-us-congress-legislators/data/legislators_historical.csv"
+        },
+        "key": "bioguide_id",
+        "fields": [
+          "gender_bio",
+          "birthday_bio"
+        ]
+      }
+    },
+    {
+      "calculate": "datetime((floor(year(datum.birthday_bio)/10)) * 10, 0)",
+      "as": "decade"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "start",
+      "type": "temporal",
+      "bin": {
+        "maxbins": 10
+      },
+      "timeUnit": "year"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "decade",
+      "type": "temporal"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://api.ons.gov.uk/timeseries/jp9o/dataset/unem/data",
+    "format": {
+      "type": "json",
+      "property": "quarters"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "color": "seagreen",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "transform": [
+    {
+      "calculate": "substring(datum.quarter,1)*3-1",
+      "as": "quarter_n"
+    },
+    {
+      "calculate": "join([datum.year, datum.quarter_n],['-'])",
+      "as": "date2"
+    },
+    {
+      "calculate": "timeParse(datum.date2, '%Y-%m')",
+      "as": "date3"
+    }
+  ],
+  "title": {
+    "text": "Accomodation and food service vacancies",
+    "subtitle": "United Kingdom (thousands) seasonally adjusted",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "field": "date3",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "date3",
+        "type": "temporal",
+        "title": "Year",
+        "timeUnit": "year"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Accomodation and food service vacancies (thousands)"
+      }
+    ]
+  }
+}

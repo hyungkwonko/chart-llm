@@ -1,0 +1,240 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/JamesFKean.github.io/main/stackeco2v4.csv"
+  },
+  "width": 340,
+  "height": 340,
+  "title": {
+    "text": " China the World's Largest Single Emitter of Carbon in 2021",
+    "anchor": "start",
+    "subtitle": "Source: BP",
+    "subtitleFontSize": 10
+  },
+  "background": "#fff0d8",
+  "transform": [
+    {
+      "calculate": "toNumber(datum.ranked)",
+      "as": "rank"
+    },
+    {
+      "calculate": "year(datum.Year)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    }
+  ],
+  "params": [
+    {
+      "name": "Percentages",
+      "bind": {
+        "input": "checkbox"
+      }
+    },
+    {
+      "name": "minYear",
+      "value": 1985,
+      "bind": {
+        "input": "range",
+        "min": 1960,
+        "max": 2020,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1961,
+        "max": 2020,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "highlight",
+          "select": {
+            "type": "point",
+            "on": "mouseover"
+          }
+        },
+        {
+          "name": "select",
+          "select": {
+            "type": "point",
+            "on": "click"
+          }
+        }
+      ],
+      "mark": "area",
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "Million tonnes of carbon dioxide",
+          "type": "quantitative",
+          "stack": "zero"
+        },
+        "order": {
+          "field": "rank",
+          "sort": "ascending"
+        },
+        "color": {
+          "field": "Country",
+          "scale": {
+            "domain": [
+              "China",
+              "Rest of the World",
+              "Canada",
+              "France",
+              "Germany",
+              "India",
+              "Italy",
+              "Japan",
+              "Russian Federation",
+              "US",
+              "United Kingdom"
+            ],
+            "range": [
+              "darkred",
+              "Orange",
+              "red",
+              "#7C521F",
+              "#997C2E",
+              "#B5A437",
+              "#A46C4C",
+              "#824d2f",
+              "#82772f",
+              "#2b1009",
+              "darkgreen"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Country"
+          },
+          {
+            "field": "year"
+          },
+          {
+            "field": "Million tonnes of carbon dioxide",
+            "type": "quantitative",
+            "format": "0.2f"
+          }
+        ],
+        "opacity": {
+          "condition": {
+            "test": {
+              "or": [
+                {
+                  "param": "Percentages"
+                }
+              ]
+            },
+            "value": 0.05
+          },
+          "value": 0.8
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "Million tonnes of carbon dioxide",
+          "type": "quantitative",
+          "stack": "zero",
+          "axis": null
+        },
+        "color": {
+          "field": "Country"
+        },
+        "tooltip": [
+          {
+            "field": "Country"
+          },
+          {
+            "field": "year"
+          },
+          {
+            "field": "Million tonnes of carbon dioxide",
+            "type": "quantitative",
+            "format": "0.2f"
+          }
+        ],
+        "order": {
+          "field": "rank",
+          "sort": "ascending"
+        },
+        "opacity": {
+          "condition": {
+            "test": {
+              "or": [
+                {
+                  "param": "Percentages"
+                }
+              ]
+            },
+            "value": 0.05
+          },
+          "value": 0.8
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "natural"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "pct",
+          "type": "quantitative",
+          "axis": {
+            "format": "%"
+          },
+          "title": "Percentage of total global emissions annually"
+        },
+        "color": {
+          "field": "Country"
+        },
+        "opacity": {
+          "condition": {
+            "test": {
+              "param": "Percentages"
+            }
+          },
+          "value": 0
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

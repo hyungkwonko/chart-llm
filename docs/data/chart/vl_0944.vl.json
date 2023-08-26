@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Comparing across countries",
+    "subtitle": [
+      "Average House Prices. Source: HM Land Registry.",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/uk_house_prices.csv"
+  },
+  "height": 140,
+  "width": 140,
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "labelAngle": 60
+      }
+    },
+    "y": {
+      "field": "Average Price",
+      "type": "quantitative",
+      "title": null
+    },
+    "facet": {
+      "field": "Country",
+      "columns": 2,
+      "title": null,
+      "header": {
+        "titleColor": "black",
+        "labelColor": "black",
+        "titleFontSize": 15
+      }
+    },
+    "color": {
+      "value": "black",
+      "condition": [
+        {
+          "test": "datum.Country =='Northern Ireland'",
+          "value": "darkgreen"
+        },
+        {
+          "test": "datum.Country =='Wales'",
+          "value": "darkred"
+        },
+        {
+          "test": "datum.Country =='Scotland'",
+          "value": "darkblue"
+        }
+      ]
+    },
+    "tooltip": [
+      {
+        "field": "Average Price",
+        "type": "quantitative",
+        "title": "Average Price (\u00a3)"
+      },
+      {
+        "field": "Sales",
+        "type": "quantitative",
+        "title": "Volume of Sales"
+      },
+      {
+        "field": "Year",
+        "type": "temporal",
+        "title": "Date"
+      }
+    ]
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

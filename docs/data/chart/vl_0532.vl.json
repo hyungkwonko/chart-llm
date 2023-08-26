@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description0": "Example using ONS API",
+  "description1": "Transform using the timeParse command",
+  "description2": "Two sliders sets two parameters for the min and max year",
+  "description3": "These parameters are then used to fiter the data",
+  "description4": "The filtered value determines the domain of the y axis",
+  "title": {
+    "text": "The size of the UK economy - interactive",
+    "subtitle": "Nominal GDP, quarterly. Source: ONS (YBHA)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "name": "myData",
+    "url": "https://api.ons.gov.uk/timeseries/ybha/dataset/pn2/data",
+    "format": {
+      "type": "json",
+      "property": "quarters"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "color": "red",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "transform": [
+    {
+      "calculate": "substring(datum.quarter,1)*3-1",
+      "as": "quarter_n"
+    },
+    {
+      "calculate": "join([datum.year, datum.quarter_n],['-'])",
+      "as": "date2"
+    },
+    {
+      "calculate": "timeParse(datum.date2, '%Y-%m')",
+      "as": "date3"
+    },
+    {
+      "filter": "datum.year>minYear"
+    },
+    {
+      "filter": "datum.year<maxYear"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1955,
+      "bind": {
+        "input": "range",
+        "min": 1955,
+        "max": 2021,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1955,
+        "max": 2021,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date3",
+      "type": "temporal",
+      "title": null
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": {
+          "data": "myData",
+          "field": "value"
+        }
+      }
+    },
+    "tooltip": [
+      {
+        "field": "date3",
+        "title": "Date",
+        "type": "temporal"
+      },
+      {
+        "field": "value",
+        "title": "GDP (\u00a3m)",
+        "type": "quantitative"
+      }
+    ]
+  }
+}

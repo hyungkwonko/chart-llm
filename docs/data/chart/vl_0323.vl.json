@@ -1,0 +1,548 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Net Migration",
+  "title": {
+    "text": "Long-term Migration in the UK",
+    "subtitle": "In thousands, source ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "Year": "1991",
+        "Category": "Immigration",
+        "value": 329
+      },
+      {
+        "Year": "1991",
+        "Category": "Emigration",
+        "value": 285
+      },
+      {
+        "Year": "1991",
+        "Category": "Net migration",
+        "value": 44
+      },
+      {
+        "Year": "1992",
+        "Category": "Immigration",
+        "value": 268
+      },
+      {
+        "Year": "1992",
+        "Category": "Emigration",
+        "value": 281
+      },
+      {
+        "Year": "1992",
+        "Category": "Net migration",
+        "value": -13
+      },
+      {
+        "Year": "1993",
+        "Category": "Immigration",
+        "value": 266
+      },
+      {
+        "Year": "1993",
+        "Category": "Emigration",
+        "value": 266
+      },
+      {
+        "Year": "1993",
+        "Category": "Net migration",
+        "value": -1
+      },
+      {
+        "Year": "1994",
+        "Category": "Immigration",
+        "value": 315
+      },
+      {
+        "Year": "1994",
+        "Category": "Emigration",
+        "value": 238
+      },
+      {
+        "Year": "1994",
+        "Category": "Net migration",
+        "value": 77
+      },
+      {
+        "Year": "1995",
+        "Category": "Immigration",
+        "value": 312
+      },
+      {
+        "Year": "1995",
+        "Category": "Emigration",
+        "value": 236
+      },
+      {
+        "Year": "1995",
+        "Category": "Net migration",
+        "value": 76
+      },
+      {
+        "Year": "1996",
+        "Category": "Immigration",
+        "value": 318
+      },
+      {
+        "Year": "1996",
+        "Category": "Emigration",
+        "value": 264
+      },
+      {
+        "Year": "1996",
+        "Category": "Net migration",
+        "value": 55
+      },
+      {
+        "Year": "1997",
+        "Category": "Immigration",
+        "value": 327
+      },
+      {
+        "Year": "1997",
+        "Category": "Emigration",
+        "value": 279
+      },
+      {
+        "Year": "1997",
+        "Category": "Net migration",
+        "value": 48
+      },
+      {
+        "Year": "1998",
+        "Category": "Immigration",
+        "value": 391
+      },
+      {
+        "Year": "1998",
+        "Category": "Emigration",
+        "value": 251
+      },
+      {
+        "Year": "1998",
+        "Category": "Net migration",
+        "value": 140
+      },
+      {
+        "Year": "1999",
+        "Category": "Immigration",
+        "value": 454
+      },
+      {
+        "Year": "1999",
+        "Category": "Emigration",
+        "value": 291
+      },
+      {
+        "Year": "1999",
+        "Category": "Net migration",
+        "value": 163
+      },
+      {
+        "Year": "2000",
+        "Category": "Immigration",
+        "value": 479
+      },
+      {
+        "Year": "2000",
+        "Category": "Emigration",
+        "value": 321
+      },
+      {
+        "Year": "2000",
+        "Category": "Net migration",
+        "value": 158
+      },
+      {
+        "Year": "2001",
+        "Category": "Immigration",
+        "value": 481
+      },
+      {
+        "Year": "2001",
+        "Category": "Emigration",
+        "value": 309
+      },
+      {
+        "Year": "2001",
+        "Category": "Net migration",
+        "value": 179
+      },
+      {
+        "Year": "2002",
+        "Category": "Immigration",
+        "value": 516
+      },
+      {
+        "Year": "2002",
+        "Category": "Emigration",
+        "value": 363
+      },
+      {
+        "Year": "2002",
+        "Category": "Net migration",
+        "value": 172
+      },
+      {
+        "Year": "2003",
+        "Category": "Immigration",
+        "value": 511
+      },
+      {
+        "Year": "2003",
+        "Category": "Emigration",
+        "value": 363
+      },
+      {
+        "Year": "2003",
+        "Category": "Net migration",
+        "value": 185
+      },
+      {
+        "Year": "2004",
+        "Category": "Immigration",
+        "value": 589
+      },
+      {
+        "Year": "2004",
+        "Category": "Emigration",
+        "value": 344
+      },
+      {
+        "Year": "2004",
+        "Category": "Net migration",
+        "value": 268
+      },
+      {
+        "Year": "2005",
+        "Category": "Immigration",
+        "value": 567
+      },
+      {
+        "Year": "2005",
+        "Category": "Emigration",
+        "value": 361
+      },
+      {
+        "Year": "2005",
+        "Category": "Net migration",
+        "value": 267
+      },
+      {
+        "Year": "2006",
+        "Category": "Immigration",
+        "value": 596
+      },
+      {
+        "Year": "2006",
+        "Category": "Emigration",
+        "value": 398
+      },
+      {
+        "Year": "2006",
+        "Category": "Net migration",
+        "value": 265
+      },
+      {
+        "Year": "2007",
+        "Category": "Immigration",
+        "value": 574
+      },
+      {
+        "Year": "2007",
+        "Category": "Emigration",
+        "value": 341
+      },
+      {
+        "Year": "2007",
+        "Category": "Net migration",
+        "value": 273
+      },
+      {
+        "Year": "2008",
+        "Category": "Immigration",
+        "value": 590
+      },
+      {
+        "Year": "2008",
+        "Category": "Emigration",
+        "value": 427
+      },
+      {
+        "Year": "2008",
+        "Category": "Net migration",
+        "value": 229
+      },
+      {
+        "Year": "2009",
+        "Category": "Immigration",
+        "value": 619
+      },
+      {
+        "Year": "2009",
+        "Category": "Emigration",
+        "value": 397
+      },
+      {
+        "Year": "2009",
+        "Category": "Net migration",
+        "value": 205
+      },
+      {
+        "Year": "2009",
+        "Category": "Immigration",
+        "value": 591
+      },
+      {
+        "Year": "2009",
+        "Category": "Emigration",
+        "value": 368
+      },
+      {
+        "Year": "2009",
+        "Category": "Net migration",
+        "value": 229
+      },
+      {
+        "Year": "2010",
+        "Category": "Immigration",
+        "value": 604
+      },
+      {
+        "Year": "2010",
+        "Category": "Emigration",
+        "value": 339
+      },
+      {
+        "Year": "2010",
+        "Category": "Net migration",
+        "value": 256
+      },
+      {
+        "Year": "2011",
+        "Category": "Immigration",
+        "value": 599
+      },
+      {
+        "Year": "2011",
+        "Category": "Emigration",
+        "value": 351
+      },
+      {
+        "Year": "2011",
+        "Category": "Net migration",
+        "value": 249
+      },
+      {
+        "Year": "2012",
+        "Category": "Immigration",
+        "value": 524
+      },
+      {
+        "Year": "2012",
+        "Category": "Emigration",
+        "value": 363
+      },
+      {
+        "Year": "2012",
+        "Category": "Net migration",
+        "value": 161
+      },
+      {
+        "Year": "2013",
+        "Category": "Immigration",
+        "value": 557
+      },
+      {
+        "Year": "2013",
+        "Category": "Emigration",
+        "value": 350
+      },
+      {
+        "Year": "2013",
+        "Category": "Net migration",
+        "value": 208
+      },
+      {
+        "Year": "2014",
+        "Category": "Immigration",
+        "value": 667
+      },
+      {
+        "Year": "2014",
+        "Category": "Emigration",
+        "value": 358
+      },
+      {
+        "Year": "2014",
+        "Category": "Net migration",
+        "value": 309
+      },
+      {
+        "Year": "2015",
+        "Category": "Immigration",
+        "value": 664
+      },
+      {
+        "Year": "2015",
+        "Category": "Emigration",
+        "value": 334
+      },
+      {
+        "Year": "2015",
+        "Category": "Net migration",
+        "value": 329
+      },
+      {
+        "Year": "2016",
+        "Category": "Immigration",
+        "value": 622
+      },
+      {
+        "Year": "2016",
+        "Category": "Emigration",
+        "value": 369
+      },
+      {
+        "Year": "2016",
+        "Category": "Net migration",
+        "value": 252
+      },
+      {
+        "Year": "2017",
+        "Category": "Immigration",
+        "value": 644
+      },
+      {
+        "Year": "2017",
+        "Category": "Emigration",
+        "value": 395
+      },
+      {
+        "Year": "2017",
+        "Category": "Net migration",
+        "value": 249
+      },
+      {
+        "Year": "2018",
+        "Category": "Immigration",
+        "value": 604
+      },
+      {
+        "Year": "2018",
+        "Category": "Emigration",
+        "value": 372
+      },
+      {
+        "Year": "2018",
+        "Category": "Net migration",
+        "value": 232
+      },
+      {
+        "Year": "2019",
+        "Category": "Immigration",
+        "value": 681
+      },
+      {
+        "Year": "2019",
+        "Category": "Emigration",
+        "value": 409
+      },
+      {
+        "Year": "2019",
+        "Category": "Net migration",
+        "value": 271
+      },
+      {
+        "Year": "2020",
+        "Category": "Immigration",
+        "value": 563
+      },
+      {
+        "Year": "2020",
+        "Category": "Emigration",
+        "value": 530
+      },
+      {
+        "Year": "2020",
+        "Category": "Net migration",
+        "value": 32
+      },
+      {
+        "Year": "2021",
+        "Category": "Immigration",
+        "value": 895
+      },
+      {
+        "Year": "2021",
+        "Category": "Emigration",
+        "value": 498
+      },
+      {
+        "Year": "2021",
+        "Category": "Net migration",
+        "value": 397
+      },
+      {
+        "Year": "2022",
+        "Category": "Immigration",
+        "value": 1064
+      },
+      {
+        "Year": "2022",
+        "Category": "Emigration",
+        "value": 560
+      },
+      {
+        "Year": "2022",
+        "Category": "Net migration",
+        "value": 504
+      }
+    ]
+  },
+  "mark": {
+    "type": "line"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": true
+      }
+    },
+    "color": {
+      "field": "Category",
+      "type": "nominal",
+      "title": "Country",
+      "scale": {
+        "range": [
+          "#033542",
+          "#78969d",
+          "#AFE1AF"
+        ]
+      }
+    }
+  }
+}

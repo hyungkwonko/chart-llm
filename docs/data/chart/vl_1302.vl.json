@@ -1,0 +1,44 @@
+{
+  "config": {
+    "view": {
+      "width": 400,
+      "height": 300
+    },
+    "mark": {
+      "tooltip": null
+    }
+  },
+  "data": {
+    "name": "data-432df842dea8e359d11d6b96ebfd30ce"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "type": "nominal",
+      "axis": {
+        "title": "type"
+      },
+      "field": "x"
+    },
+    "y": {
+      "type": "quantitative",
+      "axis": {
+        "title": "Count"
+      },
+      "field": "y"
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-432df842dea8e359d11d6b96ebfd30ce": [
+      {
+        "x": "reliable",
+        "y": 1811644.0
+      },
+      {
+        "x": "fake",
+        "y": 770287.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Debt as a percentage of GDP-World",
+    "subtitle": "The following chart shows Debt/GDP (%) for the whole world",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/KrishnaSharan/KrishnaSharan.github.io/main/Debt-to-GDP.csv"
+  },
+  "height": 300,
+  "width": 260,
+  "mark": {
+    "type": "bar",
+    "color": "#245ace"
+  },
+  "encoding": {
+    "x": {
+      "field": "Years",
+      "type": "temporal",
+      "axis": {
+        "title": "Years",
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "Debt/GDP",
+      "type": "quantitative",
+      "title": "Debt/GDP (%)",
+      "axis": {
+        "grid": false
+      }
+    }
+  }
+}

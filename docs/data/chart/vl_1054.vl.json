@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mode": "vega-lite",
+  "description": "A simple pie chart with embedded data.",
+  "width": 500,
+  "height": 300,
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "category": 1,
+        "value": 4
+      },
+      {
+        "category": 2,
+        "value": 6
+      },
+      {
+        "category": 3,
+        "value": 10
+      },
+      {
+        "category": 4,
+        "value": 3
+      },
+      {
+        "category": 5,
+        "value": 7
+      },
+      {
+        "category": 6,
+        "value": 8
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "innerRadius": 80,
+        "cornerRadius": 0,
+        "padAngle": 0,
+        "outerRadius": 150,
+        "tooltip": true
+      },
+      "encoding": {
+        "theta": {
+          "field": "value",
+          "type": "quantitative",
+          "stack": true
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "scale": {
+            "range": [
+              "#1f77b4",
+              "#ff7f0e",
+              "#2ca02c",
+              "#d62728",
+              "#9467bd",
+              "#8c564b",
+              "#e377c2",
+              "#7f7f7f",
+              "#bcbd22",
+              "#17becf"
+            ]
+          },
+          "legend": {
+            "title": "Category",
+            "orient": "right",
+            "symbolType": "circle",
+            "fillColor": "#ffffff"
+          }
+        }
+      }
+    }
+  ],
+  "view": {
+    "stroke": null
+  }
+}

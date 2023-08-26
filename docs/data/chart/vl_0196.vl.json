@@ -1,0 +1,611 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {
+        "dataset_size": "100M",
+        "dataset": "flights",
+        "driver": "monetdb",
+        "meanDuration": 85.4475102738,
+        "countAnswered": 37474,
+        "durationCiLower": 83.7588430121,
+        "durationCiUpper": 87.1361775355,
+        "durationStd": 166.7811604109,
+        "countViolated": 12326.0,
+        "responseRate": 0.0682090645
+      },
+      {
+        "dataset_size": "100M",
+        "dataset": "flights",
+        "driver": "postgresql",
+        "meanDuration": 5312.5874558304,
+        "countAnswered": 1132,
+        "durationCiLower": 5256.3799706669,
+        "durationCiUpper": 5368.7949409939,
+        "durationStd": 963.8384929249,
+        "countViolated": 1132.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "100M",
+        "dataset": "flights",
+        "driver": "sqlite",
+        "meanDuration": 34020.7299270073,
+        "countAnswered": 137,
+        "durationCiLower": 33339.6234949312,
+        "durationCiUpper": 34701.8363590833,
+        "durationStd": 4031.3028500934,
+        "countViolated": 137.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "100M",
+        "dataset": "flights",
+        "driver": "verdictdb",
+        "meanDuration": 90.2528694405,
+        "countAnswered": 33456,
+        "durationCiLower": 89.1077306924,
+        "durationCiUpper": 91.3980081885,
+        "durationStd": 106.8639724851,
+        "countViolated": 10366.0,
+        "responseRate": 0.0626271393
+      },
+      {
+        "dataset_size": "100M",
+        "dataset": "movies",
+        "driver": "monetdb",
+        "meanDuration": 44.4407223476,
+        "countAnswered": 44300,
+        "durationCiLower": 42.642966198,
+        "durationCiUpper": 46.2384784973,
+        "durationStd": 193.0512815141,
+        "countViolated": 6264.0,
+        "responseRate": 0.1314078425
+      },
+      {
+        "dataset_size": "100M",
+        "dataset": "movies",
+        "driver": "postgresql",
+        "meanDuration": 5761.9461538462,
+        "countAnswered": 520,
+        "durationCiLower": 5346.4772149091,
+        "durationCiUpper": 6177.4150927832,
+        "durationStd": 4822.5659797539,
+        "countViolated": 520.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "100M",
+        "dataset": "movies",
+        "driver": "sqlite",
+        "meanDuration": 31167.8615384615,
+        "countAnswered": 65,
+        "durationCiLower": 30224.5999858674,
+        "durationCiUpper": 32111.1230910556,
+        "durationStd": 3806.7301785658,
+        "countViolated": 65.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "100M",
+        "dataset": "movies",
+        "driver": "verdictdb",
+        "meanDuration": 69.6492505353,
+        "countAnswered": 25685,
+        "durationCiLower": 68.5017406412,
+        "durationCiUpper": 70.7967604294,
+        "durationStd": 93.8269644828,
+        "countViolated": 6069.0,
+        "responseRate": 0.0677699084
+      },
+      {
+        "dataset_size": "100M",
+        "dataset": "weather",
+        "driver": "monetdb",
+        "meanDuration": 61.2940521763,
+        "countAnswered": 59299,
+        "durationCiLower": 60.015296766,
+        "durationCiUpper": 62.5728075865,
+        "durationStd": 158.8745060257,
+        "countViolated": 12862.0,
+        "responseRate": 0.085523117
+      },
+      {
+        "dataset_size": "100M",
+        "dataset": "weather",
+        "driver": "postgresql",
+        "meanDuration": 5125.9236220472,
+        "countAnswered": 1270,
+        "durationCiLower": 5075.5335625525,
+        "durationCiUpper": 5176.313681542,
+        "durationStd": 915.3437535851,
+        "countViolated": 1270.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "100M",
+        "dataset": "weather",
+        "driver": "sqlite",
+        "meanDuration": 32709.0137931034,
+        "countAnswered": 145,
+        "durationCiLower": 32269.8124408243,
+        "durationCiUpper": 33148.2151453825,
+        "durationStd": 2675.6811385821,
+        "countViolated": 145.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "100M",
+        "dataset": "weather",
+        "driver": "verdictdb",
+        "meanDuration": 74.0505827821,
+        "countAnswered": 44442,
+        "durationCiLower": 73.1593174497,
+        "durationCiUpper": 74.9418481144,
+        "durationStd": 95.8614275715,
+        "countViolated": 10812.0,
+        "responseRate": 0.0619364392
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "flights",
+        "driver": "duckdb",
+        "meanDuration": 169.3615426289,
+        "countAnswered": 317484,
+        "durationCiLower": 168.9060463021,
+        "durationCiUpper": 169.8170389557,
+        "durationStd": 130.9471510196,
+        "countViolated": 220119.0,
+        "responseRate": 0.2640836475
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "flights",
+        "driver": "monetdb",
+        "meanDuration": 25.541600144,
+        "countAnswered": 83305,
+        "durationCiLower": 25.4269735355,
+        "durationCiUpper": 25.6562267526,
+        "durationStd": 16.8797720132,
+        "countViolated": 3.0,
+        "responseRate": 0.225940492
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "flights",
+        "driver": "postgresql",
+        "meanDuration": 531.2059496568,
+        "countAnswered": 7866,
+        "durationCiLower": 529.3760822815,
+        "durationCiUpper": 533.035817032,
+        "durationStd": 82.7907190513,
+        "countViolated": 7866.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "flights",
+        "driver": "sqlite",
+        "meanDuration": 4209.097733711,
+        "countAnswered": 1412,
+        "durationCiLower": 4068.4102156871,
+        "durationCiUpper": 4349.785251735,
+        "durationStd": 2694.958801455,
+        "countViolated": 1412.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "flights",
+        "driver": "verdictdb",
+        "meanDuration": 35.4376533972,
+        "countAnswered": 66820,
+        "durationCiLower": 35.1315753177,
+        "durationCiUpper": 35.7437314766,
+        "durationStd": 40.3672816973,
+        "countViolated": 1458.0,
+        "responseRate": 0.1772817272
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "movies",
+        "driver": "duckdb",
+        "meanDuration": 126.8831300813,
+        "countAnswered": 244032,
+        "durationCiLower": 126.4500593061,
+        "durationCiUpper": 127.3162008565,
+        "durationStd": 109.1520814778,
+        "countViolated": 162363.0,
+        "responseRate": 0.2821523579
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "movies",
+        "driver": "monetdb",
+        "meanDuration": 18.6363336369,
+        "countAnswered": 75759,
+        "durationCiLower": 18.5046550962,
+        "durationCiUpper": 18.7680121777,
+        "durationStd": 18.4917107756,
+        "countViolated": 10.0,
+        "responseRate": 0.2616997754
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "movies",
+        "driver": "postgresql",
+        "meanDuration": 587.7464916252,
+        "countAnswered": 4418,
+        "durationCiLower": 563.1354160488,
+        "durationCiUpper": 612.3575672015,
+        "durationStd": 834.4039203,
+        "countViolated": 4418.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "movies",
+        "driver": "sqlite",
+        "meanDuration": 4410.8213762811,
+        "countAnswered": 683,
+        "durationCiLower": 4072.6178496541,
+        "durationCiUpper": 4749.0249029081,
+        "durationStd": 4501.6215078256,
+        "countViolated": 683.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "movies",
+        "driver": "verdictdb",
+        "meanDuration": 29.9926410799,
+        "countAnswered": 49192,
+        "durationCiLower": 29.6443185796,
+        "durationCiUpper": 30.3409635801,
+        "durationStd": 39.4157679028,
+        "countViolated": 1796.0,
+        "responseRate": 0.1637450337
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "weather",
+        "driver": "duckdb",
+        "meanDuration": 158.2073032496,
+        "countAnswered": 472858,
+        "durationCiLower": 157.8119731408,
+        "durationCiUpper": 158.6026333584,
+        "durationStd": 138.6998718444,
+        "countViolated": 302212.0,
+        "responseRate": 0.3142790842
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "weather",
+        "driver": "monetdb",
+        "meanDuration": 24.2795805321,
+        "countAnswered": 108137,
+        "durationCiLower": 24.1802165344,
+        "durationCiUpper": 24.3789445298,
+        "durationStd": 16.6710618473,
+        "countViolated": 10.0,
+        "responseRate": 0.1991377151
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "weather",
+        "driver": "postgresql",
+        "meanDuration": 520.5252589305,
+        "countAnswered": 9462,
+        "durationCiLower": 517.3664272189,
+        "durationCiUpper": 523.684090642,
+        "durationStd": 156.752438819,
+        "countViolated": 9462.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "weather",
+        "driver": "sqlite",
+        "meanDuration": 3784.8785211268,
+        "countAnswered": 1704,
+        "durationCiLower": 3699.8997922764,
+        "durationCiUpper": 3869.8572499771,
+        "durationStd": 1788.4967887231,
+        "countViolated": 1704.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "10M",
+        "dataset": "weather",
+        "driver": "verdictdb",
+        "meanDuration": 31.3042829746,
+        "countAnswered": 84474,
+        "durationCiLower": 31.0539522418,
+        "durationCiUpper": 31.5546137075,
+        "durationStd": 37.1211469673,
+        "countViolated": 2019.0,
+        "responseRate": 0.1518575407
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "flights",
+        "driver": "duckdb",
+        "meanDuration": 17.2363378944,
+        "countAnswered": 343267,
+        "durationCiLower": 17.1932668542,
+        "durationCiUpper": 17.2794089347,
+        "durationStd": 12.875134242,
+        "countViolated": 3.0,
+        "responseRate": 0.9310369145
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "flights",
+        "driver": "monetdb",
+        "meanDuration": 5.9992821119,
+        "countAnswered": 220090,
+        "durationCiLower": 5.9892695641,
+        "durationCiUpper": 6.0092946596,
+        "durationStd": 2.3965929425,
+        "countViolated": 0.0,
+        "responseRate": 0.5969513684
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "flights",
+        "driver": "postgresql",
+        "meanDuration": 55.5312349622,
+        "countAnswered": 45718,
+        "durationCiLower": 55.4594748614,
+        "durationCiUpper": 55.6029950629,
+        "durationStd": 7.8282928204,
+        "countViolated": 220.0,
+        "responseRate": 0.1234044862
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "flights",
+        "driver": "sqlite",
+        "meanDuration": 400.2926393166,
+        "countAnswered": 10067,
+        "durationCiLower": 396.6040545115,
+        "durationCiUpper": 403.9812241216,
+        "durationStd": 188.8032615083,
+        "countViolated": 10067.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "flights",
+        "driver": "verdictdb",
+        "meanDuration": 18.3228949688,
+        "countAnswered": 99856,
+        "durationCiLower": 18.2027578781,
+        "durationCiUpper": 18.4430320594,
+        "durationStd": 19.3691622799,
+        "countViolated": 49.0,
+        "responseRate": 0.2707070981
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "movies",
+        "driver": "duckdb",
+        "meanDuration": 13.2777728841,
+        "countAnswered": 272460,
+        "durationCiLower": 13.2360043646,
+        "durationCiUpper": 13.3195414036,
+        "durationStd": 11.1237299573,
+        "countViolated": 5.0,
+        "responseRate": 0.9412851961
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "movies",
+        "driver": "monetdb",
+        "meanDuration": 5.1421621734,
+        "countAnswered": 191992,
+        "durationCiLower": 5.1280021747,
+        "durationCiUpper": 5.1563221722,
+        "durationStd": 3.1655848048,
+        "countViolated": 0.0,
+        "responseRate": 0.6632993609
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "movies",
+        "driver": "postgresql",
+        "meanDuration": 55.8971704624,
+        "countAnswered": 30429,
+        "durationCiLower": 55.2704103371,
+        "durationCiUpper": 56.5239305877,
+        "durationStd": 55.7801698165,
+        "countViolated": 843.0,
+        "responseRate": 0.1022145448
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "movies",
+        "driver": "sqlite",
+        "meanDuration": 395.3197637292,
+        "countAnswered": 6264,
+        "durationCiLower": 387.4259154101,
+        "durationCiUpper": 403.2136120484,
+        "durationStd": 318.7004103275,
+        "countViolated": 6264.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "movies",
+        "driver": "verdictdb",
+        "meanDuration": 16.9335087866,
+        "countAnswered": 71814,
+        "durationCiLower": 16.7836589227,
+        "durationCiUpper": 17.0833586504,
+        "durationStd": 20.4882799909,
+        "countViolated": 57.0,
+        "responseRate": 0.2479081016
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "weather",
+        "driver": "duckdb",
+        "meanDuration": 38.4364959679,
+        "countAnswered": 515235,
+        "durationCiLower": 37.6496428522,
+        "durationCiUpper": 39.2233490835,
+        "durationStd": 288.1689844985,
+        "countViolated": 3115.0,
+        "responseRate": 0.9431724422
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "weather",
+        "driver": "monetdb",
+        "meanDuration": 6.224494466,
+        "countAnswered": 297161,
+        "durationCiLower": 6.2133619423,
+        "durationCiUpper": 6.2356269897,
+        "durationStd": 3.0962760524,
+        "countViolated": 0.0,
+        "responseRate": 0.5472820161
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "weather",
+        "driver": "postgresql",
+        "meanDuration": 56.9599776584,
+        "countAnswered": 51921,
+        "durationCiLower": 56.8041073884,
+        "durationCiUpper": 57.1158479283,
+        "durationStd": 18.120767841,
+        "countViolated": 412.0,
+        "responseRate": 0.0948642297
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "weather",
+        "driver": "sqlite",
+        "meanDuration": 367.2801596806,
+        "countAnswered": 12525,
+        "durationCiLower": 364.9920701207,
+        "durationCiUpper": 369.5682492406,
+        "durationStd": 130.6386915715,
+        "countViolated": 12525.0,
+        "responseRate": 0.0
+      },
+      {
+        "dataset_size": "1M",
+        "dataset": "weather",
+        "driver": "verdictdb",
+        "meanDuration": 19.485487659,
+        "countAnswered": 112835,
+        "durationCiLower": 19.3662663889,
+        "durationCiUpper": 19.6047089291,
+        "durationStd": 20.4325660341,
+        "countViolated": 130.0,
+        "responseRate": 0.207569027
+      }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "datum.responseRate*100",
+      "as": "respRate"
+    },
+    {
+      "calculate": "floor(datum.respRate)+ '%'",
+      "as": "respRateNice"
+    },
+    {
+      "calculate": "clamp(datum.respRate,0,70)",
+      "as": "respRateTextPos"
+    }
+  ],
+  "facet": {
+    "row": {
+      "field": "dataset_size",
+      "type": "ordinal",
+      "title": "Dataset Size",
+      "header": {
+        "labelPadding": 2,
+        "titlePadding": 0
+      }
+    },
+    "column": {
+      "field": "dataset",
+      "type": "nominal",
+      "title": "Dataset",
+      "header": {
+        "labelPadding": 2,
+        "titlePadding": 0
+      }
+    }
+  },
+  "config": {
+    "facet": {
+      "spacing": 5
+    }
+  },
+  "spec": {
+    "height": 80,
+    "width": 100,
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "y": {
+            "field": "driver",
+            "type": "nominal",
+            "title": "DBMS"
+          },
+          "x": {
+            "field": "respRate",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                100
+              ]
+            },
+            "title": "Response Rate"
+          },
+          "color": {
+            "field": "driver",
+            "type": "nominal",
+            "title": "DBMS",
+            "legend": null
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "clip": true,
+          "dx": 3
+        },
+        "encoding": {
+          "text": {
+            "field": "respRateNice",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "driver",
+            "type": "nominal",
+            "title": "DBMS"
+          },
+          "x": {
+            "field": "respRateTextPos",
+            "type": "quantitative"
+          }
+        }
+      }
+    ]
+  }
+}

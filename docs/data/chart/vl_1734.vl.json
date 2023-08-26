@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/cars.json"
+  },
+  "description": "Custom nominal shape with area of 10x10 pixel units.",
+  "encoding": {
+    "color": {
+      "field": "Origin",
+      "type": "nominal"
+    },
+    "opacity": {
+      "value": 0.6
+    },
+    "shape": {
+      "value": "M -5 -5 h 10 v 10 h -10z"
+    },
+    "x": {
+      "field": "Horsepower",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Miles_per_Gallon",
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "filled": true,
+    "type": "point"
+  },
+  "transform": [
+    {
+      "as": "YearOfManufacture",
+      "calculate": "year(datum.Year)"
+    },
+    {
+      "filter": "datum.YearOfManufacture == 1970"
+    }
+  ]
+}

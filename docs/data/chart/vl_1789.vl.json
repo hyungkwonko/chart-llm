@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "embedOptions": {
+      "actions": false
+    }
+  },
+  "description": "",
+  "data": {
+    "url": "https://osm.codes/_sql/stats_donated_pack_timeline"
+  },
+  "transform": [
+    {
+      "filter": "datum.accepted_date > 2019"
+    }
+  ],
+  "background": "transparent",
+  "mark": {
+    "type": "area",
+    "point": true,
+    "line": {
+      "color": "darkgreen"
+    }
+  },
+  "encoding": {
+    "x": {
+      "timeUnit": "yearmonthdate",
+      "field": "accepted_date",
+      "type": "temporal",
+      "title": "Date",
+      "scale": {
+        "nice": "yearmonth"
+      },
+      "axis": {
+        "axisWidth": 0,
+        "format": "%Y",
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "accumulated_amount",
+      "type": "quantitative",
+      "title": "Donated packages"
+    }
+  },
+  "config": {
+    "cell": {
+      "width": 300,
+      "height": 200
+    }
+  }
+}

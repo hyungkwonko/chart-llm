@@ -1,0 +1,497 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 200,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "taxon": "Catenibacterium",
+        "sample_id": "chepang1",
+        "abundance": 0.0250038826,
+        "growth_rate": 0.021471367
+      },
+      {
+        "taxon": "Phascolarctobacterium",
+        "sample_id": "chepang1",
+        "abundance": 0.0181705234,
+        "growth_rate": 7.17062e-05
+      },
+      {
+        "taxon": "Prevotella",
+        "sample_id": "chepang1",
+        "abundance": 0.5741574779,
+        "growth_rate": 0.5026725252
+      },
+      {
+        "taxon": "Succinivibrio",
+        "sample_id": "chepang1",
+        "abundance": 0.3826681162,
+        "growth_rate": 0.3125036446
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "chepang2",
+        "abundance": 0.0216248989,
+        "growth_rate": 0.0209906922
+      },
+      {
+        "taxon": "Prevotella",
+        "sample_id": "chepang2",
+        "abundance": 0.5836701698,
+        "growth_rate": 0.5668240577
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "chepang2",
+        "abundance": 0.0191996766,
+        "growth_rate": 0.0181469326
+      },
+      {
+        "taxon": "Succinivibrio",
+        "sample_id": "chepang2",
+        "abundance": 0.3755052546,
+        "growth_rate": 0.3150852917
+      },
+      {
+        "taxon": "Bacteroides",
+        "sample_id": "chepang3",
+        "abundance": 0.0239403454,
+        "growth_rate": 0.0192803351
+      },
+      {
+        "taxon": "Clostridium",
+        "sample_id": "chepang3",
+        "abundance": 0.0149136578,
+        "growth_rate": 0.0120478398
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "chepang3",
+        "abundance": 0.0387231816,
+        "growth_rate": 0.0311437029
+      },
+      {
+        "taxon": "Holdemanella",
+        "sample_id": "chepang3",
+        "abundance": 0.0120355835,
+        "growth_rate": 0.0096766007
+      },
+      {
+        "taxon": "Phocaeicola",
+        "sample_id": "chepang3",
+        "abundance": 0.0966771324,
+        "growth_rate": 0.0778326467
+      },
+      {
+        "taxon": "Prevotella",
+        "sample_id": "chepang3",
+        "abundance": 0.7560177917,
+        "growth_rate": 0.6106190338
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "chepang3",
+        "abundance": 0.0461800105,
+        "growth_rate": 0.0371151505
+      },
+      {
+        "taxon": "Ruminococcus",
+        "sample_id": "chepang3",
+        "abundance": 0.0115122972,
+        "growth_rate": 0.0092902912
+      },
+      {
+        "taxon": "Anaerobutyricum",
+        "sample_id": "hadza1",
+        "abundance": 0.0203909266,
+        "growth_rate": 0.0284827248
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "hadza1",
+        "abundance": 0.1821911197,
+        "growth_rate": 0.2538957669
+      },
+      {
+        "taxon": "Bulleidia",
+        "sample_id": "hadza1",
+        "abundance": 0.0460907336,
+        "growth_rate": 0.0634606109
+      },
+      {
+        "taxon": "Clostridium",
+        "sample_id": "hadza1",
+        "abundance": 0.3219111969,
+        "growth_rate": 0.4501469322
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "hadza1",
+        "abundance": 0.0212355212,
+        "growth_rate": 0.029772072
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "hadza1",
+        "abundance": 0.0361969112,
+        "growth_rate": 0.050700991
+      },
+      {
+        "taxon": "Holdemanella",
+        "sample_id": "hadza1",
+        "abundance": 0.305019305,
+        "growth_rate": 0.4238652423
+      },
+      {
+        "taxon": "Mediterraneibacter",
+        "sample_id": "hadza1",
+        "abundance": 0.044280888,
+        "growth_rate": 0.0620745484
+      },
+      {
+        "taxon": "Prevotella",
+        "sample_id": "hadza1",
+        "abundance": 0.0226833977,
+        "growth_rate": 0.0322013103
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "hadza3",
+        "abundance": 0.2742492414,
+        "growth_rate": 1.33021e-05
+      },
+      {
+        "taxon": "Clostridium",
+        "sample_id": "hadza3",
+        "abundance": 0.0485508005,
+        "growth_rate": 6.8186e-06
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "hadza3",
+        "abundance": 0.1445014126,
+        "growth_rate": 5.4084e-06
+      },
+      {
+        "taxon": "Prevotella",
+        "sample_id": "hadza3",
+        "abundance": 0.0869519724,
+        "growth_rate": 1.43226e-05
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "hadza3",
+        "abundance": 0.2204666736,
+        "growth_rate": 4.3376e-06
+      },
+      {
+        "taxon": "Ruminococcus",
+        "sample_id": "hadza3",
+        "abundance": 0.0229151407,
+        "growth_rate": 1.4345e-06
+      },
+      {
+        "taxon": "Anaerobutyricum",
+        "sample_id": "hadza2",
+        "abundance": 0.0540662311,
+        "growth_rate": 0.1421809449
+      },
+      {
+        "taxon": "Anaerostipes",
+        "sample_id": "hadza2",
+        "abundance": 0.0514755576,
+        "growth_rate": 0.1355629011
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "hadza2",
+        "abundance": 0.2306825862,
+        "growth_rate": 0.6032206987
+      },
+      {
+        "taxon": "Catenibacterium",
+        "sample_id": "hadza2",
+        "abundance": 0.0355936022,
+        "growth_rate": 0.0886691803
+      },
+      {
+        "taxon": "Clostridium",
+        "sample_id": "hadza2",
+        "abundance": 0.0215701735,
+        "growth_rate": 0.0569628381
+      },
+      {
+        "taxon": "Collinsella",
+        "sample_id": "hadza2",
+        "abundance": 0.0175152061,
+        "growth_rate": 0.045930672
+      },
+      {
+        "taxon": "Dorea",
+        "sample_id": "hadza2",
+        "abundance": 0.0188668619,
+        "growth_rate": 0.0497097724
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "hadza2",
+        "abundance": 0.1794323046,
+        "growth_rate": 0.4707064183
+      },
+      {
+        "taxon": "Holdemanella",
+        "sample_id": "hadza2",
+        "abundance": 0.0130660059,
+        "growth_rate": 0.0332788261
+      },
+      {
+        "taxon": "Intestinibacter",
+        "sample_id": "hadza2",
+        "abundance": 0.0281031764,
+        "growth_rate": 0.070392139
+      },
+      {
+        "taxon": "Lachnospira",
+        "sample_id": "hadza2",
+        "abundance": 0.0158256364,
+        "growth_rate": 0.0341569561
+      },
+      {
+        "taxon": "Mediterraneibacter",
+        "sample_id": "hadza2",
+        "abundance": 0.0413944582,
+        "growth_rate": 0.1090638412
+      },
+      {
+        "taxon": "Prevotella",
+        "sample_id": "hadza2",
+        "abundance": 0.2391304348,
+        "growth_rate": 0.6408924754
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "hadza2",
+        "abundance": 0.0152061275,
+        "growth_rate": 0.0399571124
+      },
+      {
+        "taxon": "Ruminococcus",
+        "sample_id": "hadza2",
+        "abundance": 0.0260756927,
+        "growth_rate": 0.0687347882
+      },
+      {
+        "taxon": "Terrisporobacter",
+        "sample_id": "hadza2",
+        "abundance": 0.011995945,
+        "growth_rate": 0.0242954415
+      },
+      {
+        "taxon": "Blautia",
+        "sample_id": "mephaa1",
+        "abundance": 0.0233755093,
+        "growth_rate": 0.0908295347
+      },
+      {
+        "taxon": "Catenibacterium",
+        "sample_id": "mephaa1",
+        "abundance": 0.0253055973,
+        "growth_rate": 0.0964718942
+      },
+      {
+        "taxon": "Clostridium",
+        "sample_id": "mephaa1",
+        "abundance": 0.0933948102,
+        "growth_rate": 0.3653154729
+      },
+      {
+        "taxon": "Dialister",
+        "sample_id": "mephaa1",
+        "abundance": 0.0488955608,
+        "growth_rate": 0.1800575021
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "mephaa1",
+        "abundance": 0.2395453571,
+        "growth_rate": 0.9310970129
+      },
+      {
+        "taxon": "Holdemanella",
+        "sample_id": "mephaa1",
+        "abundance": 0.0143684323,
+        "growth_rate": 0.0557727315
+      },
+      {
+        "taxon": "Mediterraneibacter",
+        "sample_id": "mephaa1",
+        "abundance": 0.0268067768,
+        "growth_rate": 0.1043888299
+      },
+      {
+        "taxon": "Methanobrevibacter",
+        "sample_id": "mephaa1",
+        "abundance": 0.1478661806,
+        "growth_rate": 0.5628454143
+      },
+      {
+        "taxon": "Phascolarctobacterium",
+        "sample_id": "mephaa1",
+        "abundance": 0.0265923225,
+        "growth_rate": 0.0624925876
+      },
+      {
+        "taxon": "Prevotella",
+        "sample_id": "mephaa1",
+        "abundance": 0.3391593395,
+        "growth_rate": 1.328109993
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "mephaa1",
+        "abundance": 0.0146901137,
+        "growth_rate": 0.0575719974
+      },
+      {
+        "taxon": "Clostridium",
+        "sample_id": "mephaa3",
+        "abundance": 0.0145410762,
+        "growth_rate": 0.0187630627
+      },
+      {
+        "taxon": "Dialister",
+        "sample_id": "mephaa3",
+        "abundance": 0.0323237936,
+        "growth_rate": 0.0419557465
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "mephaa3",
+        "abundance": 0.11521719,
+        "growth_rate": 0.149678998
+      },
+      {
+        "taxon": "Prevotella",
+        "sample_id": "mephaa3",
+        "abundance": 0.767805872,
+        "growth_rate": 1.0022416894
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "mephaa3",
+        "abundance": 0.0188015189,
+        "growth_rate": 0.0231098046
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "mephaa3",
+        "abundance": 0.0172270075,
+        "growth_rate": 0.0224555778
+      },
+      {
+        "taxon": "Succinivibrio",
+        "sample_id": "mephaa3",
+        "abundance": 0.0340835417,
+        "growth_rate": 0.0442408046
+      },
+      {
+        "taxon": "Dialister",
+        "sample_id": "mephaa2",
+        "abundance": 0.027696793,
+        "growth_rate": 0.0375476047
+      },
+      {
+        "taxon": "Faecalibacterium",
+        "sample_id": "mephaa2",
+        "abundance": 0.1161625364,
+        "growth_rate": 0.1578092108
+      },
+      {
+        "taxon": "Haemophilus",
+        "sample_id": "mephaa2",
+        "abundance": 0.0145772595,
+        "growth_rate": 0.0197978756
+      },
+      {
+        "taxon": "Prevotella",
+        "sample_id": "mephaa2",
+        "abundance": 0.7725036443,
+        "growth_rate": 1.0516607548
+      },
+      {
+        "taxon": "Roseburia",
+        "sample_id": "mephaa2",
+        "abundance": 0.0202259475,
+        "growth_rate": 0.0260042968
+      },
+      {
+        "taxon": "Streptococcus",
+        "sample_id": "mephaa2",
+        "abundance": 0.0194059767,
+        "growth_rate": 0.0264224503
+      },
+      {
+        "taxon": "Succinivibrio",
+        "sample_id": "mephaa2",
+        "abundance": 0.0294278426,
+        "growth_rate": 0.039940318
+      }
+    ]
+  },
+  "selection": {
+    "pts": {
+      "type": "single",
+      "fields": [
+        "sample_id"
+      ]
+    }
+  },
+  "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 40,
+    "tooltip": {
+      "content": "data"
+    }
+  },
+  "encoding": {
+    "y": {
+      "field": "growth_rate",
+      "type": "quantitative",
+      "scale": {
+        "type": "log"
+      },
+      "axis": {
+        "title": "growth rate [1/h]",
+        "grid": false
+      }
+    },
+    "x": {
+      "field": "taxon",
+      "type": "nominal",
+      "sort": {
+        "op": "median",
+        "field": "growth_rate"
+      },
+      "axis": {
+        "title": null
+      }
+    },
+    "color": {
+      "condition": {
+        "selection": "pts",
+        "field": "taxon",
+        "type": "nominal",
+        "legend": null
+      },
+      "value": "lightgrey"
+    },
+    "opacity": {
+      "condition": {
+        "selection": "pts",
+        "value": 0.8
+      },
+      "value": 0.2
+    }
+  }
+}

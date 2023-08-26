@@ -1,0 +1,160 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Various US measures state by state",
+  "title": {
+    "text": "NINTENDO's Product Sales and Expenses",
+    "subtitle": [
+      "figure out relationship between Research and development expenses and nintendo's sale volumes of hardware and software",
+      "(hardware includes Switch, OLED Switch, and Switch Lite)",
+      "Source:https://www.nintendo.co.jp/ir/en/finance/historical_data/index.html"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/pjcht3.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.total_sales*10",
+      "as": "sale_volumes"
+    }
+  ],
+  "vconcat": [
+    {
+      "mark": {
+        "type": "circle",
+        "size": 150,
+        "color": "rgb(0,67,167)",
+        "opacity": 0.6
+      },
+      "height": 300,
+      "width": 300,
+      "encoding": {
+        "y": {
+          "field": "sale_volumes",
+          "type": "quantitative",
+          "title": "product sale volumes(units in '000)"
+        },
+        "x": {
+          "field": "Research_development_expenses(million yen)",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              60000,
+              110000
+            ]
+          },
+          "title": "Research and development expenses(million yen)"
+        },
+        "color": {
+          "field": "main_products",
+          "type": "ordinal",
+          "scale": {
+            "scheme": "set1"
+          },
+          "legend": {
+            "orient": "bottom"
+          },
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "main_products",
+            "type": "ordinal",
+            "title": "product type"
+          },
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Date",
+            "timeUnit": "year"
+          },
+          {
+            "field": "Research_development_expenses(million yen)",
+            "type": "quantitative",
+            "title": "Research_expenses/million yen"
+          },
+          {
+            "field": "sale_volumes",
+            "type": "quantitative",
+            "title": "volumes(units in '000)"
+          }
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Compared to Advertising Expense",
+        "anchor": "start",
+        "fontSize": 11,
+        "color": "#D2691E"
+      },
+      "mark": {
+        "type": "circle",
+        "size": 150,
+        "color": "rgb(0,67,167)",
+        "opacity": 0.6
+      },
+      "height": 300,
+      "width": 300,
+      "encoding": {
+        "y": {
+          "field": "sale_volumes",
+          "type": "quantitative",
+          "title": "product sale volumes(units in '000)"
+        },
+        "x": {
+          "field": "Advertising_expenses(million yen)",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              60000,
+              110000
+            ]
+          },
+          "title": "Advertising expenses(million yen)"
+        },
+        "color": {
+          "field": "main_products",
+          "type": "ordinal",
+          "scale": {
+            "scheme": "set1"
+          },
+          "legend": {
+            "orient": "bottom"
+          },
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "main_products",
+            "type": "ordinal",
+            "title": "product type"
+          },
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Date",
+            "timeUnit": "year"
+          },
+          {
+            "field": "Advertising_expenses(million yen)",
+            "type": "quantitative",
+            "title": "Research_expenses/million yen"
+          },
+          {
+            "field": "sale_volumes",
+            "type": "quantitative",
+            "title": "volumes(units in '000)"
+          }
+        ]
+      }
+    }
+  ]
+}

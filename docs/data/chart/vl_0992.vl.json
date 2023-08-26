@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": [
+      "Principle Component Analysis:",
+      "Carbon Pricing Systems"
+    ],
+    "fontSize": 12,
+    "subtitle": [
+      "Value 1 (x), Value 2 (y).",
+      "Source: WorldBank Carbon Pricing Dashboard"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 8,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/dara-cluster.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "size": 40,
+    "opacity": 0.7
+  },
+  "height": 150,
+  "width": 150,
+  "encoding": {
+    "x": {
+      "field": "Value 1",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -1,
+          12
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "y": {
+      "field": "Value 2",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -2,
+          3.5
+        ]
+      },
+      "axis": {
+        "grid": false
+      },
+      "title": null
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "scale": {
+        "scheme": "darkmulti"
+      },
+      "legend": {
+        "orient": "top"
+      },
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "Type",
+        "type": "nominal"
+      },
+      {
+        "field": "Year of implementation",
+        "type": "nominal",
+        "title": "Year"
+      },
+      {
+        "field": "Proportion of global GHG emissions covered"
+      }
+    ]
+  }
+}

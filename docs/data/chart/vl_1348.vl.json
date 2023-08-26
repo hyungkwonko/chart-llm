@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/dsaidgovsg/datavis-examples/cf6e7faa54f7392edd956bf4884f0d286405c5f3/data/burtin-tidy.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "Bacteria",
+      "type": "nominal"
+    },
+    "row": {
+      "field": "Gram Staining",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "Antibiotic",
+      "type": "nominal"
+    },
+    "tooltip": {
+      "field": "MIC",
+      "type": "quantitative"
+    },
+    "x": {
+      "field": "Antibiotic",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "MIC",
+      "type": "quantitative",
+      "scale": {
+        "type": "log",
+        "reverse": true
+      }
+    }
+  }
+}

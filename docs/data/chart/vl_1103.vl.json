@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {
+        "x": "Argentina",
+        "y": "France",
+        "Change": 50
+      },
+      {
+        "x": "Croatia",
+        "y": "Morocco",
+        "Change": 8
+      },
+      {
+        "x": "Argentina",
+        "y": "Morocco",
+        "Change": 20
+      },
+      {
+        "x": "Croatia",
+        "y": "France",
+        "Change": 23
+      }
+    ]
+  },
+  "width": 100,
+  "height": 100,
+  "encoding": {
+    "y": {
+      "field": "x",
+      "type": "ordinal",
+      "title": null
+    },
+    "x": {
+      "field": "y",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labelAngle": 0
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": "rect",
+      "encoding": {
+        "color": {
+          "field": "Change",
+          "type": "quantitative",
+          "legend": null
+        }
+      }
+    },
+    {
+      "mark": "text",
+      "encoding": {
+        "text": {
+          "field": "Change",
+          "type": "quantitative"
+        },
+        "color": {
+          "condition": {
+            "test": "datum['Change'] < 40",
+            "value": "black"
+          },
+          "value": "white"
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "grid": true,
+      "tickBand": "extent"
+    }
+  }
+}
