@@ -4,14 +4,14 @@
 
 ![img](https://github.com/hyungkwonko/chart-llm/blob/main/docs/static/img/fig3.png?raw=true)
 
-We introduce a Large Language Model (LLM) framework that generates rich and diverse NL datasets using only Vega-Lite specifications as input, thereby streamlining the development of Natural Language Interfaces (NLIs) for data visualization. We propose two techniques to synthesize relevant chart semantics accurately and enhance syntactic diversity in each NL dataset, respectively: 1) a guided discovery incorporated into prompting so that LLMs can steer themselves to create varying NL datasets in a self-directed manner; 2) a score-based paraphrasing to augment NL syntax along with four well-defined language axes. We also present a new chart collection of 1,981 real-world Vega-Lite specifications that have increased diversity and complexity compared to benchmarks, to demonstrate the generalizability of our framework. The experimental results show that our framework accurately extracts chart semantics and generates L1/L2 captions with 89.4\% and 76.0\% accuracy, respectively, while generating and paraphrasing utterances and questions with greater diversity than benchmarks.
+We introduce a Large Language Model (LLM) framework that generates rich and diverse NL datasets using only Vega-Lite specifications as input, thereby streamlining the development of Natural Language Interfaces (NLIs) for data visualization. We propose two techniques to synthesize relevant chart semantics accurately and enhance syntactic diversity in each NL dataset, respectively: 1) a guided discovery incorporated into prompting so that LLMs can steer themselves to create varying NL datasets in a self-directed manner; 2) a score-based paraphrasing to augment NL syntax along with four well-defined language axes. We also present a new chart collection of 1,981 real-world Vega-Lite specifications that have increased diversity and complexity compared to benchmarks, to demonstrate the generalizability of our framework. The experimental results show that our framework accurately extracts chart semantics and generates L1/L2 captions with 89.4% and 76.0% accuracy, respectively, while generating and paraphrasing utterances and questions with greater diversity than benchmarks.
 
 
 ## [Chart Dataset: 1,981 Vega-Lite Specifications](https://github.com/hyungkwonko/chart-llm/tree/main/docs/data/chart)
 
 ![img](https://github.com/hyungkwonko/chart-llm/blob/main/docs/static/img/teaser.png?raw=true)
 
-We introduce a new set of human-generated Vega-Lite specifications, which is more diverse and complex than previous datasets. You can find the dataset [here](https://github.com/hyungkwonko/chart-llm/tree/main/docs/data/chart). Also refer to [our website](https://hyungkwonko.info/chart-llm/explorer.html) to see the charts.
+We introduce a new set of human-generated Vega-Lite specifications, which is more diverse and complex than previous datasets. You can find the dataset [here](https://github.com/hyungkwonko/chart-llm/tree/main/docs/data/chart). Also refer to [our website](https://hyungkwonko.info/chart-llm/explorer.html) to see the charts. The metdata for charts including the licenses for each chart is presented [here](https://docs.google.com/spreadsheets/d/1zszDR2Rtf64v2RSUi7PpuWymhVV-4uQOmYJZqVxxDqc/edit?usp=sharing).
 
 
 ## Examples NL Dataset Generation
