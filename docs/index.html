@@ -24,54 +24,13 @@
 </head>
 
 <body>
-
-    <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu">
-            <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-                <a class="navbar-item" href="https://keunhong.com">
-                    <span class="icon">
-                        <i class="fas fa-home"></i>
-                    </span>
-                </a>
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More Research
-                    </a>
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item" href="https://hypernerf.github.io">
-                            HyperNeRF
-                        </a>
-                        <a class="navbar-item" href="https://nerfies.github.io">
-                            Nerfies
-                        </a>
-                        <a class="navbar-item" href="https://latentfusion.github.io">
-                            LatentFusion
-                        </a>
-                        <a class="navbar-item" href="https://photoshape.github.io">
-                            PhotoShape
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </nav> -->
-
     <section class="hero">
         <div class="hero-body">
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-2 publication-title">A Vega-Lite Dataset and Natural Language Generation
-                            Pipeline with Large Language Models</h1>
+                        <h1 class="title is-2 publication-title">NL Dataset Generation Framework for Visualizations
+                            Powered by LLM</h1>
                         <div class="is-size-5 publication-authors">
                             <!-- <span class="author-block">
                                 <a href="https://github.com">Anonymous authors</a><sup>1</sup>,</span> -->
@@ -107,24 +66,15 @@
                         <div class="column has-text-centered">
                             <div class="publication-links">
                                 <!-- PDF Link. -->
-                                <!-- <span class="link-block">
-                                    <a href="https://arxiv.org/pdf/2011.12948"
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2011.12948"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fas fa-file-pdf"></i>
                                         </span>
                                         <span>Paper</span>
                                     </a>
-                                </span> -->
-                                <!-- <span class="link-block">
-                                    <a href="https://arxiv.org/abs/2011.12948"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="ai ai-arxiv"></i>
-                                        </span>
-                                        <span>arXiv</span>
-                                    </a>
-                                </span> -->
+                                </span>
                                 <!-- Video Link. -->
                                 <!-- <span class="link-block">
                                     <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
@@ -153,8 +103,8 @@
                                         </span>
                                         <span>Data</span>
                                     </a>
+                                </span>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -162,71 +112,16 @@
         </div>
     </section>
 
-    <!-- <section class="hero teaser">
+    <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="hero-body">
-                <video id="teaser" autoplay muted loop playsinline height="100%">
-                    <source src="./static/videos/teaser.mp4" type="video/mp4">
-                </video>
+                <img src="./static/img/fig3.png" id="teaser" autoplay muted loop playsinline height="100%">
                 <h2 class="subtitle has-text-centered">
-                    <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-                    free-viewpoint
-                    portraits.
+                    <span class="dnerf">NL generation pipeline using Vega-Lite specifications and LLMs</span>
                 </h2>
             </div>
         </div>
-    </section> -->
-
-
-    <!-- <section class="hero is-light is-small">
-        <div class="hero-body">
-            <div class="container">
-                <div id="results-carousel" class="carousel results-carousel">
-                    <div class="item item-steve">
-                        <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-                            <source src="./static/videos/steve.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="item item-chair-tp">
-                        <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-                            <source src="./static/videos/chair-tp.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="item item-shiba">
-                        <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-                            <source src="./static/videos/shiba.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="item item-fullbody">
-                        <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-                            <source src="./static/videos/fullbody.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="item item-blueshirt">
-                        <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                            <source src="./static/videos/blueshirt.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="item item-mask">
-                        <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-                            <source src="./static/videos/mask.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="item item-coffee">
-                        <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-                            <source src="./static/videos/coffee.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="item item-toby">
-                        <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-                            <source src="./static/videos/toby2.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+    </section>
 
     <section class="section">
         <div class="container is-max-desktop">
@@ -236,18 +131,19 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            There is a growing trend of utilizing Visualization-oriented Natural Language Interfaces
-                            (V-NLIs) to author charts. However, researchers consistently highlight the lack of
-                            high-quality chart and natural language datasets, which impedes the development of more
-                            sophisticated and data-driven systems using V-NLIs. In this study, we present a meticulously
-                            curated collection of human-generated 1,981 Vega-Lite specifications, derived from
-                            real-world data, and use Large Language Models (LLMs) for generating natural language
-                            queries for chart generation tasks. Unlike previous datasets that relied on relatively
-                            simple and homogeneous templates, our Vega-Lite dataset contains more complex and diverse
-                            (i.e., varying interactions, multiple plots/views, and different chart types). Using this
-                            dataset, we demonstrate generating natural language queries for chart generation, and how
-                            the results can be different when different input types are used (e.g., Vega-Lite, Image,
-                            both Vega-Lite and Image).
+                            We introduce a Large Language Model (LLM) framework that generates rich and diverse NL
+                            datasets using only Vega-Lite specifications as input, thereby streamlining the development
+                            of Natural Language Interfaces (NLIs) for data visualization. We propose two techniques to
+                            synthesize relevant chart semantics accurately and enhance syntactic diversity in each NL
+                            dataset, respectively: 1) a guided discovery incorporated into prompting so that LLMs can
+                            steer themselves to create varying NL datasets in a self-directed manner; 2) a score-based
+                            paraphrasing to augment NL syntax along with four well-defined language axes. We also
+                            present a new chart collection of 1,981 real-world Vega-Lite specifications that have
+                            increased diversity and complexity compared to benchmarks, to demonstrate the
+                            generalizability of our framework. The experimental results show that our framework
+                            accurately extracts chart semantics and generates L1/L2 captions with 89.4\% and 76.0\%
+                            accuracy, respectively, while generating and paraphrasing utterances and questions with
+                            greater diversity than benchmarks.
                         </p>
                     </div>
                 </div>
@@ -268,6 +164,18 @@
         </div>
     </section>
 
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <img src="./static/img/teaser.png" id="teaser" autoplay muted loop playsinline height="100%">
+                <h2 class="subtitle has-text-centered">
+                    <span class="dnerf">Sample chart images of our Vega-Lite specifications</span>
+                </h2>
+            </div>
+        </div>
+    </section>
+
+
     <!-- <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
             <h2 class="title">BibTeX</h2>
@@ -284,9 +192,9 @@
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
-                <!-- <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+                <a class="icon-link" href="./static/paper.pdf">
                     <i class="fas fa-file-pdf"></i>
-                </a> -->
+                </a>
                 <a class="icon-link" href="https://github.com/hyungkwonko/chart-llm-data" class="external-link"
                     disabled>
                     <i class="fab fa-github"></i>
@@ -294,7 +202,7 @@
             </div>
             <div class="columns is-centered">
                 <div class="column is-8">
-                    <div class="content">
+                    <div class="content has-text-centered">
                         <p>
                             The website template is borrowed from <a class="f4"
                                 href="https://github.com/nerfies/nerfies.github.io">here</a>.
