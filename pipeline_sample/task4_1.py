@@ -61,34 +61,25 @@ load_dotenv(".env")
 
 MODELS = ["gpt-3.5-turbo-0613", "gpt-4-0613", "gpt-4-32k-0613"]
 
-SAMPLE_SENTENCES = [
-    "Create a bar chart showing the sum of profit from different regions.",
-]
-
-paraphrases, sentences, axes, values = [], [], [], []
 
 if __name__ == "__main__":
-    for sentence in SAMPLE_SENTENCES:
-        output, ax, value = run_agent(sentence, AXES, model=MODELS[1])
+    print("provide input: ")
+    sentence = input()
 
-        if "Paraphrase:" in output:
-            paraphrase = get_nl(output, pattern=r"Paraphrase:(.+)")
-        else:
-            paraphrase = output.replace("Paraphrase: ", "").strip()
+    if sentence == "":
+        sentence = (
+            "Create a bar chart showing the sum of profit from different regions."
+        )
+        print(f"proceeding with default sentence: {sentence}")
 
-        paraphrases.append(paraphrase)
-        axes.append([sub_list[:-1] for sub_list in ax])
-        values.append(value)
-        sentences.append(sentence)
+    output, ax, value = run_agent(sentence, AXES, model=MODELS[1])
 
-    data = {
-        "originals": sentences,
-        "paraphrases": paraphrases,
-        "axes": axes,
-        "values": values,
-    }
+    if "Paraphrase:" in output:
+        paraphrase = get_nl(output, pattern=r"Paraphrase:(.+)")
+    else:
+        paraphrase = output.replace("Paraphrase: ", "").strip()
 
-    print(f"originals: {sentences}")
-    print(f"paraphrases: {paraphrases}")
-    print(f"axes: {axes}")
-    print(f"values: {values}")
+    print(f"original: {sentence}")
+    print(f"paraphrase: {paraphrase}")
+    print(f"axes: {[sub_list[:-1] for sub_list in ax]}")
+    print(f"value: {value}")

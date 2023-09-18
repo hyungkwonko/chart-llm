@@ -62,11 +62,18 @@ def run_agent(sent, axes, model=MODELS[1], temp=0.0):
     return llm.predict(prompt)
 
 
-sent = ["Create a bar chart showing the sum of profit from different regions."]
-
 if __name__ == "__main__":
+    print("provide input: ")
+    sentence = input()
+
+    if sentence == "":
+        sentence = (
+            "Create a bar chart showing the sum of profit from different regions."
+        )
+        print(f"proceeding with default sentence: {sentence}")
+
     axe = random.sample(AXES, 2)
-    out = run_agent(sent, axe, model=MODELS[1])
+    out = run_agent(sentence, axe, model=MODELS[1])
 
     print(axe)
     print(out)
