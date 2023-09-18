@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc4.json", 
+  "encoding": {
+    "y": {
+      "field": "research_and_development_expenditure", 
+      "type": "quantitative"
+    }, 
+    "x": {
+      "field": "year", 
+      "type": "temporal"
+    }
+  }, 
+  "data": {
+    "url": "data/d3/data/3001_1.csv"
+  }, 
+  "mark": "line"
+}

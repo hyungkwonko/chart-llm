@@ -1,0 +1,877 @@
+{
+	"superstore-histogram": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/superstore.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"bin": true,
+				"field": "Quantity",
+				"type": "quantitative",
+				"axis": {
+					"title": "Order Quantity"
+				}
+			},
+			"y": {
+				"aggregate": "count",
+				"type": "quantitative",
+				"axis": {
+					"title": "COUNT"
+				}
+			}
+		}
+	},
+	"superstore-singleAttrBar": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/superstore.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"field": "Sub-Category",
+				"type": "nominal",
+				"sort": {
+					"encoding": "y",
+					"order": "descending"
+				}
+			},
+			"y": {
+				"aggregate": "count",
+				"type": "quantitative",
+				"axis": {
+					"title": "COUNT"
+				}
+			}
+		}
+	},
+	"superstore-bar": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/superstore.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"field": "State",
+				"type": "ordinal"
+			},
+			"y": {
+				"field": "Profit",
+				"aggregate": "sum",
+				"type": "quantitative",
+				"axis": {
+					"title": "AVG (Profit)"
+				}
+			}
+		}
+	},
+	"superstore-scatter": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/superstore.csv"
+		},
+		"mark": {
+			"type": "point",
+			"filled": true,
+			"opacity": 0.5,
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"field": "Profit",
+				"type": "quantitative"
+			},
+			"y": {
+				"field": "Sales",
+				"type": "quantitative"
+			}
+		}
+	},
+	"superstore-line": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/superstore.csv"
+		},
+		"mark": {
+			"type": "line",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"timeUnit": "monthyear",
+				"field": "Order Date",
+				"type": "temporal",
+				"axis": {
+					"title": "Order Date"
+				}
+			},
+			"y": {
+				"aggregate": "sum",
+				"field": "Sales Forecast",
+				"type": "quantitative",
+				"axis": {
+					"title": "SUM (Sales Forecast)"
+				}
+			}
+		}
+	},
+	"superstore-groupedBar": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/superstore.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"column": {
+				"field": "Ship Mode",
+				"type": "ordinal"
+			},
+			"x": {
+				"field": "Segment",
+				"scale": {
+					"rangeStep": 15
+				},
+				"type": "ordinal",
+				"axis": {
+					"title": null,
+					"labels": false,
+					"ticks": false
+				}
+			},
+			"y": {
+				"aggregate": "mean",
+				"field": "Profit",
+				"type": "quantitative",
+				"axis": {
+					"title": "AVG (Profit)"
+				}
+			},
+			"color": {
+				"field": "Segment",
+				"type": "nominal"
+			}
+		}
+	},
+	"superstore-stackedBar": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/superstore.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"transform": [],
+		"encoding": {
+			"x": {
+				"field": "Region",
+				"type": "ordinal"
+			},
+			"y": {
+				"aggregate": "sum",
+				"field": "Profit",
+				"type": "quantitative",
+				"axis": {
+					"title": "SUM (Profit)"
+				}
+			},
+			"color": {
+				"field": "Ship Status",
+				"type": "nominal",
+				"legend": {
+					"title": "Ship Status"
+				}
+			}
+		}
+	},
+	"superstore-scatterColor": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/superstore.csv"
+		},
+		"mark": {
+			"type": "point",
+			"filled": true,
+			"opacity": 0.75,
+			"tooltip": null
+		},
+		"encoding": {
+			"color": {
+				"field": "Region",
+				"type": "nominal"
+			},
+			"x": {
+				"field": "Sales",
+				"type": "quantitative"
+			},
+			"y": {
+				"field": "Profit",
+				"type": "quantitative"
+			}
+		}
+	},
+	"superstore-scatterFaceted": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/superstore.csv"
+		},
+		"mark": {
+			"type": "point",
+			"filled": true,
+			"opacity": 0.5,
+			"tooltip": null
+		},
+		"encoding": {
+			"column": {
+				"field": "Region",
+				"type": "nominal"
+			},
+			"x": {
+				"field": "Sales",
+				"type": "quantitative"
+			},
+			"y": {
+				"field": "Profit",
+				"type": "quantitative"
+			}
+		}
+	},
+	"superstore-multiLine": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/superstore.csv"
+		},
+		"mark": {
+			"type": "line",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"timeUnit": "monthyear",
+				"field": "Order Date",
+				"type": "temporal",
+				"axis": {
+					"title": "Order Date"
+				}
+			},
+			"y": {
+				"aggregate": "sum",
+				"field": "Sales",
+				"type": "quantitative",
+				"axis": {
+					"title": "SUM (Sales)"
+				}
+			},
+			"color": {
+				"field": "Category",
+				"type": "nominal",
+				"legend": {
+					"title": "Category"
+				}
+			}
+		}
+	},
+	"movies-histogram": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/movies.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"bin": true,
+				"field": "Running Time",
+				"type": "quantitative",
+				"axis": {
+					"title": "Running Time"
+				}
+			},
+			"y": {
+				"aggregate": "count",
+				"type": "quantitative",
+				"axis": {
+					"title": "COUNT"
+				}
+			}
+		}
+	},
+	"movies-singleAttrBar": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/movies.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"field": "Creative Type",
+				"type": "nominal",
+				"sort": {
+					"encoding": "y",
+					"order": "descending"
+				}
+			},
+			"y": {
+				"aggregate": "count",
+				"type": "quantitative",
+				"axis": {
+					"title": "COUNT"
+				}
+			}
+		}
+	},
+	"movies-bar": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/movies.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"field": "Major Genre",
+				"type": "nominal"
+			},
+			"y": {
+				"aggregate": "mean",
+				"field": "Worldwide Gross",
+				"type": "quantitative",
+				"axis": {
+					"title": "AVG (Worldwide Gross)",
+					"format": "~s"
+				}
+			}
+		}
+	},
+	"movies-scatter": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/movies.csv"
+		},
+		"mark": {
+			"type": "point",
+			"filled": true,
+			"opacity": 0.5,
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"field": "IMDB Rating",
+				"type": "quantitative"
+			},
+			"y": {
+				"field": "Rotten Tomatoes Rating",
+				"type": "quantitative"
+			}
+		}
+	},
+	"movies-line": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/movies.csv"
+		},
+		"mark": {
+			"type": "line",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"timeUnit": "year",
+				"field": "Release Year",
+				"type": "temporal",
+				"axis": {
+					"title": "Release Year"
+				}
+			},
+			"y": {
+				"aggregate": "mean",
+				"field": "Production Budget",
+				"type": "quantitative",
+				"axis": {
+					"title": "AVG (Production Budget)",
+					"format": "~s"
+				}
+			}
+		}
+	},
+	"movies-groupedBar": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/movies.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"column": {
+				"field": "Content Rating",
+				"type": "ordinal"
+			},
+			"x": {
+				"field": "Creative Type",
+				"scale": {
+					"rangeStep": 15
+				},
+				"type": "nominal",
+				"axis": {
+					"title": "",
+					"labels": false,
+					"ticks": false
+				}
+			},
+			"y": {
+				"aggregate": "mean",
+				"field": "Production Budget",
+				"type": "quantitative",
+				"axis": {
+					"title": "AVG (Production Budget)",
+					"format": "~s"
+				}
+			},
+			"color": {
+				"field": "Creative Type",
+				"type": "nominal"
+			}
+		}
+	},
+	"movies-stackedBar": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/movies.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"field": "Major Genre",
+				"type": "ordinal"
+			},
+			"y": {
+				"aggregate": "sum",
+				"field": "Worldwide Gross",
+				"type": "quantitative",
+				"axis": {
+					"title": "SUM (Worldwide Gross)",
+					"format": "~s"
+				}
+			},
+			"color": {
+				"field": "Content Rating",
+				"type": "nominal"
+			}
+		}
+	},
+	"movies-scatterColor": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/movies.csv"
+		},
+		"mark": {
+			"type": "point",
+			"filled": true,
+			"opacity": 0.8,
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"field": "Production Budget",
+				"type": "quantitative"
+			},
+			"y": {
+				"field": "Worldwide Gross",
+				"type": "quantitative",
+				"axis": {
+					"format": "~s"
+				}
+			},
+			"color": {
+				"field": "Major Genre",
+				"type": "nominal"
+			}
+		}
+	},
+	"movies-scatterFaceted": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/movies.csv"
+		},
+		"mark": {
+			"type": "point",
+			"filled": true,
+			"tooltip": null
+		},
+		"encoding": {
+			"column": {
+				"field": "Content Rating",
+				"type": "nominal"
+			},
+			"x": {
+				"field": "Production Budget",
+				"type": "quantitative",
+				"axis": {
+					"format": "~s"
+				}
+			},
+			"y": {
+				"field": "Worldwide Gross",
+				"type": "quantitative",
+				"axis": {
+					"format": "~s"
+				}
+			}
+		}
+	},
+	"movies-multiLine": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/movies.csv"
+		},
+		"mark": {
+			"type": "line",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"timeUnit": "year",
+				"field": "Release Year",
+				"type": "temporal",
+				"axis": {
+					"title": "Release Year"
+				}
+			},
+			"y": {
+				"aggregate": "sum",
+				"field": "Worldwide Gross",
+				"type": "quantitative",
+				"axis": {
+					"title": "SUM (Worldwide Gross)",
+					"format": "~s"
+				}
+			},
+			"color": {
+				"field": "Major Genre",
+				"type": "nominal"
+			}
+		}
+	},
+	"cars-histogram": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/cars.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"bin": true,
+				"field": "Weight",
+				"type": "quantitative",
+				"axis": {
+					"title": "Weight"
+				}
+			},
+			"y": {
+				"aggregate": "count",
+				"type": "quantitative",
+				"axis": {
+					"title": "COUNT"
+				}
+			}
+		}
+	},
+	"cars-singleAttrBar": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/cars.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"field": "Origin",
+				"type": "nominal",
+				"sort": {
+					"encoding": "y",
+					"order": "descending"
+				}
+			},
+			"y": {
+				"aggregate": "count",
+				"type": "quantitative",
+				"axis": {
+					"title": "COUNT"
+				}
+			}
+		}
+	},
+	"cars-bar": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/cars.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"field": "Cylinders",
+				"type": "nominal"
+			},
+			"y": {
+				"aggregate": "mean",
+				"field": "MPG",
+				"type": "quantitative",
+				"axis": {
+					"title": "AVG (MPG)",
+					"format": "~s"
+				}
+			}
+		}
+	},
+	"cars-scatter": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/cars.csv"
+		},
+		"mark": {
+			"type": "point",
+			"filled": true,
+			"opacity": 0.7,
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"field": "Horsepower",
+				"type": "quantitative"
+			},
+			"y": {
+				"field": "Acceleration",
+				"type": "quantitative"
+			}
+		}
+	},
+	"cars-line": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/cars.csv"
+		},
+		"mark": {
+			"type": "line",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"timeUnit": "year",
+				"field": "Year",
+				"type": "temporal",
+				"axis": {
+					"title": "Year"
+				}
+			},
+			"y": {
+				"aggregate": "mean",
+				"field": "Weight",
+				"type": "quantitative",
+				"axis": {
+					"title": "AVG (Weight)",
+					"format": "~s"
+				}
+			}
+		}
+	},
+	"cars-groupedBar": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/cars.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"column": {
+				"field": "Cylinders",
+				"type": "ordinal"
+			},
+			"x": {
+				"field": "Origin",
+				"scale": {
+					"rangeStep": 15
+				},
+				"type": "nominal",
+				"axis": {
+					"title": "",
+					"labels": false,
+					"ticks": false
+				}
+			},
+			"y": {
+				"aggregate": "mean",
+				"field": "Acceleration",
+				"type": "quantitative",
+				"axis": {
+					"title": "AVG (Acceleration)",
+					"format": "~s"
+				}
+			},
+			"color": {
+				"field": "Origin",
+				"type": "nominal"
+			}
+		}
+	},
+	"cars-stackedBar": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/cars.csv"
+		},
+		"mark": {
+			"type": "bar",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"field": "Cylinders",
+				"type": "ordinal"
+			},
+			"y": {
+				"aggregate": "count",
+				"type": "quantitative",
+				"axis": {
+					"title": "COUNT",
+					"format": "~s"
+				}
+			},
+			"color": {
+				"field": "Origin",
+				"type": "nominal"
+			}
+		}
+	},
+	"cars-scatterColor": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/cars.csv"
+		},
+		"mark": {
+			"type": "point",
+			"filled": true,
+			"opacity": 0.8,
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"field": "Displacement",
+				"type": "quantitative",
+				"axis": {
+					"format": "~s"
+				}
+			},
+			"y": {
+				"field": "MPG",
+				"type": "quantitative",
+				"axis": {
+					"format": "~s"
+				}
+			},
+			"color": {
+				"field": "Origin",
+				"type": "nominal"
+			}
+		}
+	},
+	"cars-scatterFaceted": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/cars.csv"
+		},
+		"mark": {
+			"type": "point",
+			"filled": true,
+			"tooltip": null
+		},
+		"encoding": {
+			"column": {
+				"field": "Origin",
+				"type": "nominal"
+			},
+			"x": {
+				"field": "Weight",
+				"type": "quantitative",
+				"axis": {
+					"format": "~s"
+				}
+			},
+			"y": {
+				"field": "Acceleration",
+				"type": "quantitative",
+				"axis": {
+					"format": "~s"
+				}
+			}
+		}
+	},
+	"cars-multiLine": {
+		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+		"data": {
+			"url": "datasets/cars.csv"
+		},
+		"mark": {
+			"type": "line",
+			"tooltip": null
+		},
+		"encoding": {
+			"x": {
+				"timeUnit": "year",
+				"field": "Year",
+				"type": "temporal",
+				"axis": {
+					"title": "Year"
+				}
+			},
+			"y": {
+				"aggregate": "mean",
+				"field": "Horsepower",
+				"type": "quantitative",
+				"axis": {
+					"title": "AVG (Horsepower)",
+					"format": "~s"
+				}
+			},
+			"color": {
+				"field": "Origin",
+				"type": "nominal"
+			}
+		}
+	}
+}

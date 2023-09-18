@@ -1,0 +1,11 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc4.json",
+  "data": {
+    "url": "data/wikitables-202/data/48.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Airport", "type": "nominal"},
+    "y": {"field": "Passengers handled", "type": "quantitative", "sort":null}
+  }
+}

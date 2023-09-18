@@ -1,0 +1,805 @@
+commands,axes,ptypes,dnames,vids,scores
+"Please make a bar chart. ""Order Quantity"" should be on the x-axis and the count of data points on the y-axis.",Implicit-Explicit,command,superstore,histogram,4
+"Make a bar graph with ""Order Quantity"" on the horizontal line and the count of data points on the vertical line.",Colloquial-Standard,command,superstore,histogram,2
+"I need you to create a bar chart. The x-axis must represent the ""Order Quantity"" and the y-axis must represent the count of data points.",Implicit-Explicit,command,superstore,histogram,5
+"Generate a bar chart with ""Order Quantity"" represented on the x-axis and the frequency of data points represented on the y-axis.",Non-technical-Technical,command,superstore,histogram,4
+"I think you should make a bar chart with ""Order Quantity"" on the x-axis and the count of data points on the y-axis. It would look really good.",Subjective-Objective,command,superstore,histogram,1
+"Let's make a bar chart. We can put ""Order Quantity"" on one axis and the count of data points on the other.",Implicit-Explicit,command,superstore,histogram,3
+"Make a bar graph with ""Order Quantity"" going from left to right and the number of items you're counting going from bottom to top.",Non-technical-Technical,command,superstore,histogram,2
+"It would be beneficial to create a bar chart with ""Order Quantity"" on the x-axis and the count of data points on the y-axis.",Subjective-Objective,command,superstore,histogram,4
+"It is requested to produce a bar chart with ""Order Quantity"" represented on the x-axis and the enumeration of data points on the y-axis.",Colloquial-Standard,command,superstore,histogram,5
+"Construct a bar chart with ""Order Quantity"" on the x-axis and the count of data points on the y-axis.",Colloquial-Standard,command,superstore,histogram,3
+"Make a simple bar graph with ""Order Quantity"" going across and the number of things you're counting going up.",Non-technical-Technical,command,superstore,histogram,1
+"Create a bar chart with ""Order Quantity"" on the x-axis and the count of data points on the y-axis.",Subjective-Objective,command,superstore,histogram,5
+"Construct a bar chart with ""Order Quantity"" as the independent variable on the x-axis and the frequency distribution of data points as the dependent variable on the y-axis.",Non-technical-Technical,command,superstore,histogram,5
+I think the bar chart is probably representing the order quantity by counting data points.,Subjective-Objective,query,superstore,histogram,2
+"Bar graph, number of orders, count of data stuff",Colloquial-Standard,query,superstore,histogram,2
+This is a bar chart that represents the count of data points for each order quantity.,Implicit-Explicit,query,superstore,histogram,4
+It's a bar chart showing the number of times an order quantity occurs.,Implicit-Explicit,query,superstore,histogram,3
+"Bar chart, quantity of orders, count of data points",Colloquial-Standard,query,superstore,histogram,3
+The bar chart seems to be displaying the order quantity by counting data points.,Subjective-Objective,query,superstore,histogram,3
+This is a bar chart that explicitly displays the total count of data points for each specific order quantity.,Implicit-Explicit,query,superstore,histogram,5
+Can you figure out the number of data points for each order quantity in the bar chart?,Implicit-Explicit,question,superstore,histogram,1
+It would be beneficial to determine the number of data points for each order quantity in the bar chart.,Subjective-Objective,question,superstore,histogram,4
+It seems to me that knowing the number of data points for each order quantity in the bar chart could be useful.,Subjective-Objective,question,superstore,histogram,3
+Please make a chart with product types and their count.,Implicit-Explicit,command,superstore,singleAttrBar,4
+Whip up a bar graph with the different stuff we sell on the bottom line and how many we got on the side line.,Colloquial-Standard,command,superstore,singleAttrBar,1
+It would be beneficial to create a bar chart with product types on the x-axis and their count on the y-axis.,Subjective-Objective,command,superstore,singleAttrBar,4
+Can you make a bar chart with the products we sell on the x-axis and the number we have on the y-axis?,Colloquial-Standard,command,superstore,singleAttrBar,3
+Please construct a bar chart with the types of products on the x-axis and their quantity on the y-axis.,Colloquial-Standard,command,superstore,singleAttrBar,4
+Can you make a chart with product types and their quantities?,Implicit-Explicit,command,superstore,singleAttrBar,3
+Construct a bar graph with different product categories along the bottom and the number of each type going up the side.,Non-technical-Technical,command,superstore,singleAttrBar,3
+Maybe you could consider creating a bar chart with product types on the x-axis and their count on the y-axis.,Subjective-Objective,command,superstore,singleAttrBar,3
+Create a bar chart with product types on the x-axis and their count on the y-axis.,Subjective-Objective,command,superstore,singleAttrBar,5
+Could you possibly put together a chart showing the different types of products and how many of each we have?,Implicit-Explicit,command,superstore,singleAttrBar,2
+I feel like a bar chart with product types on the x-axis and their count on the y-axis would be a good idea.,Subjective-Objective,command,superstore,singleAttrBar,2
+I think you should make a bar chart with product types on the x-axis and their count on the y-axis. It's the best way to visualize the data.,Subjective-Objective,command,superstore,singleAttrBar,1
+Generate a bar graph in which the abscissa represents the various product classifications and the ordinate represents their corresponding frequencies.,Non-technical-Technical,command,superstore,singleAttrBar,5
+Can you make a visual representation of the different product types and their quantities?,Implicit-Explicit,command,superstore,singleAttrBar,1
+Make a bar graph with the stuff we sell on the bottom and how many we have on the side.,Colloquial-Standard,command,superstore,singleAttrBar,2
+Create a bar chart. Use product types for the x-axis and their count for the y-axis.,Implicit-Explicit,command,superstore,singleAttrBar,5
+"The categories of products we have, the quantity of each category, and arrange them from highest to lowest.",Non-technical-Technical,query,superstore,singleAttrBar,3
+"What types of products we have, how many of each, and list them from most to least.",Colloquial-Standard,query,superstore,singleAttrBar,2
+"The types of products, the quantity of each type, and arrange them from highest to lowest.",Colloquial-Standard,query,superstore,singleAttrBar,3
+"Enumerate the product types, calculate the count of each product type, and then order the list in descending order based on the count.",Implicit-Explicit,query,superstore,singleAttrBar,5
+"What kind of stuff we have, how many different kinds, and list them from most to least.",Non-technical-Technical,query,superstore,singleAttrBar,1
+"Please list the product types, count each type, and then sort them in descending order based on the count.",Implicit-Explicit,query,superstore,singleAttrBar,4
+"The classifications of products we possess, the enumeration of each classification, and sort them in a descending order.",Non-technical-Technical,query,superstore,singleAttrBar,4
+"We need to identify the types of products, count each type, and then arrange them in descending order.",Implicit-Explicit,query,superstore,singleAttrBar,3
+"You know, the different kinds of stuff we have, how many of each, and then sort it so the most common ones are at the top.",Implicit-Explicit,query,superstore,singleAttrBar,1
+"Let's look at the variety of items we have, count them, and then arrange them from most to least.",Implicit-Explicit,query,superstore,singleAttrBar,2
+"The types of items we have, the number of each type, and list them from the most to the least.",Non-technical-Technical,query,superstore,singleAttrBar,2
+"It would be efficient to categorize the product types by their count, and arrange them in descending order.",Subjective-Objective,query,superstore,singleAttrBar,4
+"It appears that we have a variety of each type of product, can we confirm the exact numbers?",Subjective-Objective,question,superstore,singleAttrBar,3
+Can you tell me the count of each kind of item we have?,Non-technical-Technical,question,superstore,singleAttrBar,2
+Please make a bar chart with these states on the x-axis and 'AVG (Profit)' on the y-axis.,Implicit-Explicit,command,superstore,bar,4
+"Create a bar chart with 'Indiana', 'New York', 'California', 'Colorado', 'Michigan' on the x-axis and the sum of 'AVG (Profit)' on the y-axis.",Subjective-Objective,command,superstore,bar,5
+"Draw a bar graph. The states Indiana, New York, California, Colorado, Michigan should be along the bottom. The height of the bars should show the total average profit.",Non-technical-Technical,command,superstore,bar,2
+"Kindly produce a bar chart with 'Indiana', 'New York', 'California', 'Colorado', 'Michigan' on the abscissa and the summation of 'AVG (Profit)' on the ordinate.",Colloquial-Standard,command,superstore,bar,5
+"Make a simple bar graph with these states: Indiana, New York, California, Colorado, Michigan. The height of each bar should show the total average profit.",Non-technical-Technical,command,superstore,bar,1
+"Please generate a bar chart with 'Indiana', 'New York', 'California', 'Colorado', 'Michigan' on the x-axis and the aggregate of 'AVG (Profit)' on the y-axis.",Colloquial-Standard,command,superstore,bar,4
+"Generate a bar graph with the states Indiana, New York, California, Colorado, Michigan as the categories on the x-axis. The y-axis should represent the aggregate of the average profit.",Non-technical-Technical,command,superstore,bar,4
+"Make a bar graph with 'Indiana', 'New York', 'California', 'Colorado', 'Michigan' on the bottom and the total of 'AVG (Profit)' going up the side.",Colloquial-Standard,command,superstore,bar,2
+"Maybe you could create a bar chart with 'Indiana', 'New York', 'California', 'Colorado', 'Michigan' on the x-axis and the sum of 'AVG (Profit)' on the y-axis.",Subjective-Objective,command,superstore,bar,3
+Could you create a chart with these states and their 'AVG (Profit)'?,Implicit-Explicit,command,superstore,bar,3
+"Construct a bar chart. The x-axis should have 'Indiana', 'New York', 'California', 'Colorado', 'Michigan'. The y-axis should represent the sum of 'AVG (Profit)'.",Implicit-Explicit,command,superstore,bar,5
+"I suggest you create a bar chart with 'Indiana', 'New York', 'California', 'Colorado', 'Michigan' on the x-axis and the sum of 'AVG (Profit)' on the y-axis. It seems like a good idea.",Subjective-Objective,command,superstore,bar,2
+"Construct a bar chart with 'Indiana', 'New York', 'California', 'Colorado', 'Michigan' on the x-axis and the sum of 'AVG (Profit)' on the y-axis.",Colloquial-Standard,command,superstore,bar,3
+"The total average profit from Indiana, New York, California, Colorado, and Michigan.",Non-technical-Technical,query,superstore,bar,1
+"What's the total average profit from Indiana, New York, California, Colorado, and Michigan?",Implicit-Explicit,query,superstore,bar,4
+"The sum of the average profit from Indiana, New York, California, Colorado, and Michigan is a factual representation of their economic performance.",Subjective-Objective,query,superstore,bar,4
+"The states we've been discussing, what's their profit average?",Implicit-Explicit,query,superstore,bar,2
+"The sum of the average profit from Indiana, New York, California, Colorado, and Michigan could be considered significant.",Subjective-Objective,query,superstore,bar,3
+"It seems to me that the sum of the average profit from Indiana, New York, California, Colorado, and Michigan is noteworthy.",Subjective-Objective,query,superstore,bar,2
+"The aggregate of the average profit from the states of Indiana, New York, California, Colorado, and Michigan.",Non-technical-Technical,query,superstore,bar,3
+"So, ya got Indiana, New York, California, Colorado, Michigan, and then ya add up the average profit, ya see?",Colloquial-Standard,query,superstore,bar,1
+"What's the total profit for Indiana, New York, California, Colorado, and Michigan?",Non-technical-Technical,question,superstore,bar,2
+"What's the combined 'AVG (Profit)' for the states 'Indiana', 'New York', 'California', 'Colorado', 'Michigan'?",Colloquial-Standard,question,superstore,bar,2
+"How much money did Indiana, New York, California, Colorado, and Michigan make altogether?",Non-technical-Technical,question,superstore,bar,1
+"What is the aggregate of the 'AVG (Profit)' for the states 'Indiana', 'New York', 'California', 'Colorado', 'Michigan'?",Non-technical-Technical,question,superstore,bar,5
+"Could you ascertain the summation of 'AVG (Profit)' for the states 'Indiana', 'New York', 'California', 'Colorado', 'Michigan'?",Colloquial-Standard,question,superstore,bar,5
+"Construct a point graph with ""Profit"" on the x-axis and ""Sales"" on the y-axis.",Colloquial-Standard,command,superstore,scatter,3
+What if we put profit and sales on a graph? Just a thought.,Implicit-Explicit,command,superstore,scatter,2
+"You know, it might be interesting to see how profit and sales relate on a graph.",Implicit-Explicit,command,superstore,scatter,1
+"Maybe we could make a chart? Profit on one axis, sales on the other.",Implicit-Explicit,command,superstore,scatter,3
+"I need you to create a point chart. ""Profit"" should be on the x-axis and ""Sales"" on the y-axis.",Implicit-Explicit,command,superstore,scatter,5
+"Make a dot chart with ""Profit"" on the horizontal and ""Sales"" on the vertical.",Colloquial-Standard,command,superstore,scatter,2
+"Construct a graph with ""Profit"" as the horizontal component and ""Sales"" as the vertical component.",Non-technical-Technical,command,superstore,scatter,3
+"Make a simple graph with ""Profit"" going across and ""Sales"" going up.",Non-technical-Technical,command,superstore,scatter,1
+"I think you should make a point chart with ""Profit"" on the x-axis and ""Sales"" on the y-axis. It's the best way to visualize the data.",Subjective-Objective,command,superstore,scatter,1
+"Let's make a chart. Put ""Profit"" on the x-axis and ""Sales"" on the y-axis.",Implicit-Explicit,command,superstore,scatter,4
+"Develop a point chart where ""Profit"" is represented on the horizontal axis and ""Sales"" on the vertical axis.",Non-technical-Technical,command,superstore,scatter,4
+"Generate a scatter plot with ""Profit"" as the abscissa and ""Sales"" as the ordinate.",Non-technical-Technical,command,superstore,scatter,5
+"Draw a graph with ""Profit"" on the side-to-side line and ""Sales"" on the up-and-down line.",Non-technical-Technical,command,superstore,scatter,2
+"Maybe you could consider creating a point chart with ""Profit"" on the x-axis and ""Sales"" on the y-axis.",Subjective-Objective,command,superstore,scatter,3
+"You know, it's like a map, where the treasure is the profit and the path is the sales.",Implicit-Explicit,query,superstore,scatter,1
+"The chart presents profit on the x-axis and sales on the y-axis, suggesting a correlation between them.",Subjective-Objective,query,superstore,scatter,4
+"In this graphical representation, the x-axis denotes profit while the y-axis signifies sales.",Colloquial-Standard,query,superstore,scatter,4
+"I feel like this chart is showing us how profit is directly related to sales, with profit being on the x-axis and sales on the y-axis.",Subjective-Objective,query,superstore,scatter,1
+"This chart appears to be showing profit on the x-axis and sales on the y-axis, possibly indicating a relationship between the two.",Subjective-Objective,query,superstore,scatter,3
+"On this graph, profit is represented on the x-axis and sales on the y-axis.",Colloquial-Standard,query,superstore,scatter,3
+This is a graph with profit on the horizontal axis and sales on the vertical axis.,Implicit-Explicit,query,superstore,scatter,4
+"Imagine a graph, where profit and sales are the two main elements.",Implicit-Explicit,query,superstore,scatter,2
+"We're looking at a graph here, with profit and sales as the variables.",Implicit-Explicit,query,superstore,scatter,3
+This is a graph with profit represented on the horizontal line and sales on the vertical line.,Non-technical-Technical,query,superstore,scatter,3
+It's a simple graph showing how much money we make compared to how much we sell.,Non-technical-Technical,query,superstore,scatter,1
+"I need you to create a point chart. Put ""Profit"" on the x-axis and ""Sales"" on the y-axis.",Implicit-Explicit,question,superstore,scatter,5
+"Can you fabricate a Cartesian coordinate system with ""Profit"" as the x-coordinate and ""Sales"" as the y-coordinate?",Non-technical-Technical,question,superstore,scatter,5
+Whip up a line graph with 'Order Date' on the side-to-side bit and the total of 'Sales Forecast' on the up-and-down bit.,Colloquial-Standard,command,superstore,line,1
+Let's make a line chart. We can use 'Order Date' for the timeline and show the total 'Sales Forecast' on it.,Implicit-Explicit,command,superstore,line,3
+Make a line graph with 'Order Date' on the horizontal line and the total of 'Sales Forecast' on the vertical line.,Colloquial-Standard,command,superstore,line,2
+"How about we try to visualize the 'Sales Forecast' data? Perhaps a line chart could work, with 'Order Date' as our timeline.",Implicit-Explicit,command,superstore,line,2
+Draw a graph with the order date along the bottom and the total sales forecast going up the side.,Non-technical-Technical,command,superstore,line,2
+It seems like a line chart with 'Order Date' on the x-axis and the sum of 'Sales Forecast' on the y-axis would be a good idea.,Subjective-Objective,command,superstore,line,3
+Create a line chart with 'Order Date' on the x-axis and the sum of 'Sales Forecast' on the y-axis.,Subjective-Objective,command,superstore,line,5
+I think you should make a line chart with 'Order Date' on the x-axis and the sum of 'Sales Forecast' on the y-axis. It would look really good.,Subjective-Objective,command,superstore,line,1
+Fabricate a line diagram with 'Order Date' designated as the abscissa and the summation of 'Sales Forecast' as the ordinate.,Colloquial-Standard,command,superstore,line,5
+It is recommended to create a line chart with 'Order Date' on the x-axis and the sum of 'Sales Forecast' on the y-axis.,Subjective-Objective,command,superstore,line,4
+I want you to make a line chart. Put 'Order Date' on the x-axis and the total 'Sales Forecast' on the y-axis.,Implicit-Explicit,command,superstore,line,4
+Construct a graph with the order date as the horizontal reference and the total of the sales forecast as the vertical reference.,Non-technical-Technical,command,superstore,line,3
+Generate a linear graph with 'Order Date' as the abscissa and the aggregate of 'Sales Forecast' as the ordinate.,Non-technical-Technical,command,superstore,line,5
+Generate a line chart with 'Order Date' as the horizontal axis and the aggregate of 'Sales Forecast' as the vertical axis.,Colloquial-Standard,command,superstore,line,4
+Construct a line chart. The x-axis should be 'Order Date' and the y-axis should represent the sum of 'Sales Forecast'.,Implicit-Explicit,command,superstore,line,5
+"""We need a line chart showing the sum of sales forecast by order date.""",Implicit-Explicit,query,superstore,line,3
+The line chart represents the sum of sales forecast according to the order date.,Subjective-Objective,query,superstore,line,4
+"""Think about a timeline of sales predictions.""",Implicit-Explicit,query,superstore,line,1
+The line graph illustrating the cumulative forecasted sales over the order dates.,Non-technical-Technical,query,superstore,line,4
+Show me a graph with the dates and the total sales prediction.,Colloquial-Standard,query,superstore,line,1
+The graph that shows the total expected sales based on the date of order.,Non-technical-Technical,query,superstore,line,2
+Could you plot a line chart with the order dates and the sum of sales forecast?,Colloquial-Standard,query,superstore,line,3
+Kindly construct a line chart illustrating the order dates and the aggregate of the sales forecast.,Colloquial-Standard,query,superstore,line,5
+Can you draw a graph with the dates and total predicted sales?,Colloquial-Standard,query,superstore,line,2
+The graph showing the total predicted sales over time.,Non-technical-Technical,query,superstore,line,1
+"""Imagine a line graph with dates and projected sales.""",Implicit-Explicit,query,superstore,line,2
+What conclusions can we draw from the line graph that delineates 'Order Date' in relation to the summation of 'Sales Forecast'?,Non-technical-Technical,question,superstore,line,5
+"Whip up a bar graph with the shipping ways as the columns, customer types on the bottom line, and average dough on the side line.",Colloquial-Standard,command,superstore,groupedBar,1
+"Create a bar chart with the shipping method as columns, customer segment on the x-axis, and average profit on the y-axis.",Subjective-Objective,command,superstore,groupedBar,5
+"It might be a good idea to create a bar chart with the shipping method as columns, customer segment on the x-axis, and average profit on the y-axis.",Subjective-Objective,command,superstore,groupedBar,3
+"Draw a graph that shows the average profit we make from each customer group, divided by how they get their goods.",Non-technical-Technical,command,superstore,groupedBar,2
+"Please create a chart that has shipping method as columns, customer segment on the x-axis, and average profit on the y-axis.",Implicit-Explicit,command,superstore,groupedBar,4
+"I need a chart that shows the average profit for each customer segment, broken down by shipping method.",Implicit-Explicit,command,superstore,groupedBar,3
+"I feel it would be beneficial to create a bar chart with the shipping method as columns, customer segment on the x-axis, and average profit on the y-axis. This is just my suggestion though.",Subjective-Objective,command,superstore,groupedBar,2
+"Develop a bar graph that represents the average profit per customer segment, with the segments differentiated by their chosen method of shipment.",Non-technical-Technical,command,superstore,groupedBar,4
+"Generate a bar chart that delineates the average profit per customer segment, with the segments stratified by their respective shipping methods.",Non-technical-Technical,command,superstore,groupedBar,5
+"I think you should make a bar chart, and maybe use the shipping method for the columns, customer segment on the x-axis, and average profit on the y-axis. It's just my opinion, but I believe it would look best this way.",Subjective-Objective,command,superstore,groupedBar,1
+"Make a simple graph that shows how much profit we make on average from each type of customer, based on how they get their stuff.",Non-technical-Technical,command,superstore,groupedBar,1
+"Can you make a visual with shipping, customer types, and profit?",Implicit-Explicit,command,superstore,groupedBar,1
+"It is requested to construct a bar chart, utilizing the shipping method as columns, placing the customer segment on the x-axis, and representing the average profit on the y-axis.",Colloquial-Standard,command,superstore,groupedBar,5
+"A bar chart should be created with the shipping method as columns, customer segment on the x-axis, and average profit on the y-axis.",Subjective-Objective,command,superstore,groupedBar,4
+What is the average profit for each shipping method and customer segment?,Implicit-Explicit,query,superstore,groupedBar,4
+What is the mean profit derived from each shipping method and customer segment?,Colloquial-Standard,query,superstore,groupedBar,4
+What is the average monetary gain per shipping method and customer demographic?,Colloquial-Standard,query,superstore,groupedBar,5
+Please provide the exact average profit figures for each shipping method and customer segment.,Implicit-Explicit,query,superstore,groupedBar,5
+Let's talk numbers and routes.,Implicit-Explicit,query,superstore,groupedBar,1
+Can we discuss the profit margins for each shipping method and customer segment?,Implicit-Explicit,query,superstore,groupedBar,3
+What's the average gain for each shipping method and customer category?,Colloquial-Standard,question,superstore,groupedBar,3
+How much money do we usually make from each way we send stuff and each type of customer?,Non-technical-Technical,question,superstore,groupedBar,1
+I have a hunch that some shipping methods and customer segments are more profitable than others. Can we find out the average profit for each?,Subjective-Objective,question,superstore,groupedBar,2
+"Make a bar graph with 'Region' on the bottom and the total 'Profit' going up, and color it based on 'Ship Status'.",Colloquial-Standard,command,superstore,stackedBar,2
+"A bar chart can be created with 'Region' on the x-axis and the sum of 'Profit' on the y-axis, potentially colored by 'Ship Status'.",Subjective-Objective,command,superstore,stackedBar,4
+"How about we visualize the profit by region, with some color coding for the ship status?",Implicit-Explicit,command,superstore,stackedBar,1
+"Implement a bar chart visualization with 'Region' as the categorical variable on the x-axis and the aggregate of 'Profit' on the y-axis, with the variable 'Ship Status' represented through chromatic differentiation.",Non-technical-Technical,command,superstore,stackedBar,5
+"Construct a bar chart with 'Region' on the horizontal axis and the sum of 'Profit' on the vertical axis, colored according to 'Ship Status'.",Colloquial-Standard,command,superstore,stackedBar,3
+"Make a bar graph that shows different regions along the bottom and the total profit up the side, and use colors to show whether the shipment was delivered or not.",Non-technical-Technical,command,superstore,stackedBar,2
+"Can you make a chart? Use 'Region' for the horizontal axis and the total 'Profit' for the vertical one. Also, use different colors for different 'Ship Status'.",Implicit-Explicit,command,superstore,stackedBar,3
+"Please make a bar chart. 'Region' should be on the x-axis and the sum of 'Profit' on the y-axis. Also, color the bars based on 'Ship Status'.",Implicit-Explicit,command,superstore,stackedBar,4
+"I suggest you create a bar chart with 'Region' on the x-axis and the sum of 'Profit' on the y-axis, and it might be interesting to color it by 'Ship Status'.",Subjective-Objective,command,superstore,stackedBar,2
+"You could create a bar chart with 'Region' on the x-axis and the sum of 'Profit' on the y-axis, perhaps colored by 'Ship Status'.",Subjective-Objective,command,superstore,stackedBar,3
+"Whip up a bar graph with 'Region' at the bottom and the total 'Profit' going up, and color it by 'Ship Status'.",Colloquial-Standard,command,superstore,stackedBar,1
+"Make a picture with bars that shows different areas on the bottom and how much money was made on the side, and use different colors to show if the shipment was delivered or not.",Non-technical-Technical,command,superstore,stackedBar,1
+"Generate a bar graph with 'Region' as the horizontal axis and the total 'Profit' as the vertical axis, and apply color differentiation to represent the 'Ship Status'.",Non-technical-Technical,command,superstore,stackedBar,4
+"Construct a bar graph with different regions along the horizontal line and the total profit along the vertical line, and use color coding to indicate the status of the shipment.",Non-technical-Technical,command,superstore,stackedBar,3
+"Maybe we can make a chart, with regions and profits, and use colors to show the ship status?",Implicit-Explicit,command,superstore,stackedBar,2
+"A graphical representation of the total profit per region, differentiated by the status of the shipment.",Non-technical-Technical,query,superstore,stackedBar,4
+"Let's take a look at how the regions stack up in terms of profit, with a bit of color to show the ship status.",Implicit-Explicit,query,superstore,stackedBar,1
+"This is a bar diagram representing the correlation between the geographical region and the accumulated profit, with the shipping status differentiated by color.",Colloquial-Standard,query,superstore,stackedBar,5
+"What's the profit for each region, split by shipping status?",Colloquial-Standard,question,superstore,stackedBar,3
+"Create a chart. 'Region' should be represented by color, 'Sales' should be on the x-axis, and 'Profit' should be on the y-axis.",Implicit-Explicit,command,superstore,scatterColor,5
+"I think you should make a point chart where 'Region' is the color, 'Sales' is on the x-axis, and 'Profit' is on the y-axis. It would look really good.",Subjective-Objective,command,superstore,scatterColor,1
+"Create a point chart with 'Region' as color, 'Sales' on the x-axis, and 'Profit' on the y-axis.",Subjective-Objective,command,superstore,scatterColor,5
+"Make a point chart, color it 'Region', put 'Sales' on the x-axis, and 'Profit' on the y-axis.",Colloquial-Standard,command,superstore,scatterColor,2
+"Make a dot picture. Use different colors for each area, put the sales on the side, and the earnings up and down.",Non-technical-Technical,command,superstore,scatterColor,1
+"I want you to make a chart. Use 'Region' for color, 'Sales' for the x-axis, and 'Profit' for the y-axis.",Implicit-Explicit,command,superstore,scatterColor,4
+"You know, it might be interesting to see how sales and profit relate across different regions. Maybe we could visualize it somehow?",Implicit-Explicit,command,superstore,scatterColor,1
+"I feel it would be best if you create a point chart with 'Region' as color, 'Sales' on the x-axis, and 'Profit' on the y-axis.",Subjective-Objective,command,superstore,scatterColor,2
+What if we try to visualize the sales and profit data? Maybe using different colors for each region could help.,Implicit-Explicit,command,superstore,scatterColor,2
+"You should create a point chart with 'Region' as color, 'Sales' on the x-axis, and 'Profit' on the y-axis.",Subjective-Objective,command,superstore,scatterColor,4
+"Generate a scatter plot. Distinguish regions by color, plot sales on the x-axis, and profit on the y-axis.",Non-technical-Technical,command,superstore,scatterColor,4
+"Whip up a dot chart, color it with 'Region', slap 'Sales' on the x-axis, and 'Profit' on the y-axis.",Colloquial-Standard,command,superstore,scatterColor,1
+"It might be a good idea to create a point chart with 'Region' as color, 'Sales' on the x-axis, and 'Profit' on the y-axis.",Subjective-Objective,command,superstore,scatterColor,3
+"Could you create a point chart? Use 'Region' for color, 'Sales' on the x-axis, and 'Profit' on the y-axis.",Colloquial-Standard,command,superstore,scatterColor,3
+"Construct a scatter diagram with categorical variable 'Region' represented by color, quantitative variable 'Sales' on the abscissa, and 'Profit' on the ordinate.",Non-technical-Technical,command,superstore,scatterColor,5
+"I request you to generate a point chart, designating 'Region' as the color, positioning 'Sales' on the x-axis, and 'Profit' on the y-axis.",Colloquial-Standard,command,superstore,scatterColor,5
+"Imagine a chart where regions are differentiated by color, sales spread out on the horizontal line, and profit rises on the vertical.",Implicit-Explicit,query,superstore,scatterColor,2
+"The point chart could possibly have 'Region' as the color, 'Sales' on the x-axis, and 'Profit' on the y-axis.",Subjective-Objective,query,superstore,scatterColor,3
+"In this chart, 'Region' is represented by color, 'Sales' is on the x-axis, and 'Profit' is on the y-axis.",Colloquial-Standard,query,superstore,scatterColor,3
+"I feel like the point chart should have 'Region' as the color, 'Sales' on the x-axis, and 'Profit' on the y-axis.",Subjective-Objective,query,superstore,scatterColor,1
+"I think it would be best if the point chart had 'Region' as the color, 'Sales' on the x-axis, and 'Profit' on the y-axis.",Subjective-Objective,query,superstore,scatterColor,2
+"The chart has regions colored differently, sales on the x-axis, and profit on the y-axis.",Implicit-Explicit,query,superstore,scatterColor,4
+"The point chart should have 'Region' as the color, 'Sales' on the x-axis, and 'Profit' on the y-axis.",Subjective-Objective,query,superstore,scatterColor,4
+"The point chart has 'Region' as the color, 'Sales' on the x-axis, and 'Profit' on the y-axis.",Subjective-Objective,query,superstore,scatterColor,5
+"How about a chart with some color, maybe something regional, and a bit of sales and profit?",Implicit-Explicit,question,superstore,scatterColor,1
+"Can you construct a scatter plot with 'Region' as the categorical variable represented by color, 'Sales' as the independent variable on the x-axis, and 'Profit' as the dependent variable on the y-axis?",Non-technical-Technical,question,superstore,scatterColor,5
+"Construct a point chart. The column field should be 'Central', 'East', 'West', 'South'. The x-axis should represent 'Sales' and the y-axis should represent 'Profit'.",Implicit-Explicit,command,superstore,scatterFaceted,5
+"Instantiate a point chart with 'Central', 'East', 'West', 'South' as the column field, 'Sales' as the abscissa, and 'Profit' as the ordinate.",Non-technical-Technical,command,superstore,scatterFaceted,5
+I need a chart that shows our sales and profit data. Use the regions as the main categories and plot sales and profit against each other.,Implicit-Explicit,command,superstore,scatterFaceted,3
+"A point chart with 'Central', 'East', 'West', 'South' as the column field, 'Sales' as the x-axis, and 'Profit' as the y-axis could be an effective way to display the data.",Subjective-Objective,command,superstore,scatterFaceted,4
+"Can you create a point chart with 'Central', 'East', 'West', 'South' as the column field, 'Sales' on the x-axis, and 'Profit' on the y-axis?",Colloquial-Standard,command,superstore,scatterFaceted,3
+"You know those regions we always talk about? Central, East, West, South? And how we're always looking at sales and profit? Could you put those together in a visual way for me?",Implicit-Explicit,command,superstore,scatterFaceted,1
+"Make a chart with 'Central', 'East', 'West', 'South' as the columns, 'Sales' as the horizontal line, and 'Profit' as the vertical line.",Non-technical-Technical,command,superstore,scatterFaceted,2
+"Make a dot graph with 'Central', 'East', 'West', 'South' as the up and down lines, 'Sales' as the side to side line, and 'Profit' as the up and down line.",Non-technical-Technical,command,superstore,scatterFaceted,1
+"Please make a chart using our sales and profit data. The regions should be the column field, with sales on the x-axis and profit on the y-axis.",Implicit-Explicit,command,superstore,scatterFaceted,4
+Can you make a visual representation of our sales and profit data? Use the regions as the main categories and plot sales and profit against each other.,Implicit-Explicit,command,superstore,scatterFaceted,2
+"Generate a point chart with 'Central', 'East', 'West', 'South' as the column field, 'Sales' as the x-axis, and 'Profit' as the y-axis.",Non-technical-Technical,command,superstore,scatterFaceted,4
+"Construct a chart with 'Central', 'East', 'West', 'South' as the column categories, 'Sales' as the horizontal axis, and 'Profit' as the vertical axis.",Non-technical-Technical,command,superstore,scatterFaceted,3
+"Whip up a dot chart with 'Central', 'East', 'West', 'South' as the column stuff, 'Sales' as the x thingy, and 'Profit' as the y thingy.",Colloquial-Standard,command,superstore,scatterFaceted,1
+"Create a point chart with 'Central', 'East', 'West', 'South' as the column field, 'Sales' as the x-axis, and 'Profit' as the y-axis.",Subjective-Objective,command,superstore,scatterFaceted,5
+"Make a point chart with 'Central', 'East', 'West', 'South' as the column bit, 'Sales' as the x-axis, and 'Profit' as the y-axis.",Colloquial-Standard,command,superstore,scatterFaceted,2
+"In my opinion, the point chart of 'Sales' vs 'Profit' by 'Central', 'East', 'West', 'South' provides a clear picture of our company's financial situation.",Subjective-Objective,query,superstore,scatterFaceted,2
+"I feel like the point chart of 'Sales' vs 'Profit' by 'Central', 'East', 'West', 'South' is the best way to visualize our company's performance.",Subjective-Objective,query,superstore,scatterFaceted,1
+"This is a graph showing the comparison between sales and profits in the central, east, west, and south regions.",Colloquial-Standard,query,superstore,scatterFaceted,3
+"The chart that compares sales and profit across Central, East, West, and South.",Implicit-Explicit,query,superstore,scatterFaceted,3
+"The point chart displays 'Sales' vs 'Profit' for 'Central', 'East', 'West', 'South'.",Subjective-Objective,query,superstore,scatterFaceted,5
+"The point chart of 'Sales' vs 'Profit' by 'Central', 'East', 'West', 'South' seems to be a good representation of the company's financial status.",Subjective-Objective,query,superstore,scatterFaceted,3
+"You know, that chart with the different regions and how they're doing in terms of sales and profit.",Implicit-Explicit,query,superstore,scatterFaceted,1
+"Looking at the point chart, there could be a possible relationship between 'Sales' and 'Profit' across 'Central', 'East', 'West', 'South'. What are your thoughts?",Subjective-Objective,question,superstore,scatterFaceted,3
+"What do you think the point chart is trying to tell us about how 'Sales' and 'Profit' are related in 'Central', 'East', 'West', 'South'? I feel like there's a story there.",Subjective-Objective,question,superstore,scatterFaceted,1
+"What does the point chart elucidate about the correlation between 'Sales' and 'Profit' across the regions 'Central', 'East', 'West', 'South'?",Colloquial-Standard,question,superstore,scatterFaceted,5
+"Could you make a chart for me? It should have dates and sales, and don't forget to break it down by category.",Implicit-Explicit,command,superstore,multiLine,2
+"Make a graph with the date of the order along the bottom and the total sales going up the side, and show the different categories.",Non-technical-Technical,command,superstore,multiLine,1
+I need a chart with dates and sales. Make sure to differentiate it by category.,Implicit-Explicit,command,superstore,multiLine,3
+"Construct a graph with the order date on the horizontal line and the total sales on the vertical line, and distinguish it by category.",Non-technical-Technical,command,superstore,multiLine,3
+"Generate a line graph with the order date on the horizontal axis and the sum of sales on the vertical axis, and differentiate it by category.",Non-technical-Technical,command,superstore,multiLine,4
+"I think you should make a line chart with 'Order Date' on the x-axis and the total 'Sales' on the y-axis, and it would be really cool if you could differentiate it by 'Category'.",Subjective-Objective,command,superstore,multiLine,1
+"It would be appropriate to create a line chart with 'Order Date' on the x-axis and the sum of 'Sales' on the y-axis, differentiated by 'Category'.",Subjective-Objective,command,superstore,multiLine,4
+"Plot a line chart with 'Order Date' as the horizontal axis and the aggregate of 'Sales' as the vertical axis, distinguished by 'Category'.",Colloquial-Standard,command,superstore,multiLine,4
+"Can you put together a chart for me? You know, the one with dates and sales, and make sure to separate it by category.",Implicit-Explicit,command,superstore,multiLine,1
+"Generate a line chart with 'Order Date' represented on the abscissa and the summation of 'Sales' on the ordinate, differentiated by the variable 'Category'.",Colloquial-Standard,command,superstore,multiLine,5
+Please create a chart. The x-axis should have the order date and the y-axis should have the sum of sales. Differentiate it by category.,Implicit-Explicit,command,superstore,multiLine,4
+"Construct a line graph with 'Order Date' on the horizontal axis and the sum of 'Sales' on the vertical axis, divided by 'Category'.",Colloquial-Standard,command,superstore,multiLine,3
+"A graph showing dates, total sales, and categories.",Colloquial-Standard,query,superstore,multiLine,2
+"A graph with dates, total sales, and types of stuff.",Colloquial-Standard,query,superstore,multiLine,1
+"In my opinion, this line chart, which represents the sum of sales by category over time, is a pretty good way to display our data.",Subjective-Objective,query,superstore,multiLine,2
+"A graph showing the total sales for each category, month by month.",Non-technical-Technical,query,superstore,multiLine,1
+"Can you look at that chart with the lines, dates, sales, and categories?",Implicit-Explicit,query,superstore,multiLine,2
+"A line chart that plots the cumulative sales for each category, categorized by the order date in a month-year format.",Non-technical-Technical,query,superstore,multiLine,4
+The line chart displays the sum of sales by category over time.,Subjective-Objective,query,superstore,multiLine,5
+"Please analyze the line chart which clearly illustrates the sum of sales and categories, organized according to the order date in a month-year format.",Implicit-Explicit,query,superstore,multiLine,5
+What is the variation in the total sales for each category over time?,Subjective-Objective,question,superstore,multiLine,5
+What changes can we observe in the sales of each category over time?,Implicit-Explicit,question,superstore,multiLine,3
+Can you see any patterns in the sales of each category over time?,Implicit-Explicit,question,superstore,multiLine,2
+Draw a bar graph with 'Running Time' along the bottom and the total number of items up the side.,Non-technical-Technical,command,movies,histogram,2
+Maybe you could put together a visual with 'Running Time' along the bottom and the number of records going up the side?,Implicit-Explicit,command,movies,histogram,1
+Can you make a chart? Use 'Running Time' for the horizontal axis and the count of records for the vertical one.,Implicit-Explicit,command,movies,histogram,3
+Construct a bar graph with 'Running Time' as the horizontal label and the total count of items as the vertical label.,Non-technical-Technical,command,movies,histogram,3
+Generate a bar graph with 'Running Time' as the x-axis label and the aggregate count of records as the y-axis label.,Non-technical-Technical,command,movies,histogram,4
+Please make a chart. 'Running Time' should be on the horizontal axis and the count of records on the vertical axis.,Implicit-Explicit,command,movies,histogram,4
+Generate a bar chart with 'Running Time' as the x-axis and the quantity of records as the y-axis.,Colloquial-Standard,command,movies,histogram,4
+I think you should make a bar chart with 'Running Time' on the x-axis and the count of records on the y-axis. It would look really good.,Subjective-Objective,command,movies,histogram,1
+How about making a visual representation with 'Running Time' as the base and the number of records as the height?,Implicit-Explicit,command,movies,histogram,2
+I feel like a bar chart with 'Running Time' on the x-axis and the count of records on the y-axis would be a good idea.,Subjective-Objective,command,movies,histogram,2
+Implement a bar chart visualization with 'Running Time' designated as the x-axis parameter and the cumulative count of data records as the y-axis parameter.,Non-technical-Technical,command,movies,histogram,5
+Whip up a bar graph with 'Running Time' on the bottom line and the number of records on the side line.,Colloquial-Standard,command,movies,histogram,1
+It might be beneficial to create a bar chart with 'Running Time' on the x-axis and the count of records on the y-axis.,Subjective-Objective,command,movies,histogram,3
+Make a bar graph with 'Running Time' on the x-axis and the tally of records on the y-axis.,Colloquial-Standard,command,movies,histogram,2
+Construct a bar chart with 'Running Time' on the horizontal axis and the count of records on the vertical axis.,Colloquial-Standard,command,movies,histogram,3
+It is suggested to create a bar chart with 'Running Time' on the x-axis and the count of records on the y-axis.,Subjective-Objective,command,movies,histogram,4
+Construct a bar chart. The x-axis must represent 'Running Time' and the y-axis must represent the count of records.,Implicit-Explicit,command,movies,histogram,5
+The bar chart labeled 'Running Time' displays the total count of records.,Implicit-Explicit,query,movies,histogram,5
+The bar chart shows the count of records over time.,Implicit-Explicit,query,movies,histogram,4
+"The bar chart, 'Running Time', appears to represent the count of records.",Subjective-Objective,query,movies,histogram,4
+Look at the time and count.,Implicit-Explicit,query,movies,histogram,2
+"I feel like this bar chart, titled 'Running Time', is showing us the number of records.",Subjective-Objective,query,movies,histogram,1
+The quantity of data points represented in the 'Running Time' bar chart.,Non-technical-Technical,query,movies,histogram,3
+The enumeration of records depicted in the 'Running Time' bar chart.,Non-technical-Technical,query,movies,histogram,5
+"A bar diagram designated as 'Running Time', enumerating the count of records",Colloquial-Standard,query,movies,histogram,5
+The amount of items shown in the 'Running Time' bar chart.,Non-technical-Technical,query,movies,histogram,2
+Determine the number of records for each 'Running Time' in the bar chart.,Subjective-Objective,question,movies,histogram,5
+What is the distribution of each 'Running Time' in the bar chart?,Non-technical-Technical,question,movies,histogram,4
+What's the frequency of each 'Running Time' in the bar chart?,Non-technical-Technical,question,movies,histogram,3
+It seems like it might be useful to know how many records there are for each 'Running Time' in the bar chart.,Subjective-Objective,question,movies,histogram,3
+Whip up a bar graph with 'Creative Type' on the bottom line and how many there are on the side line.,Colloquial-Standard,command,movies,singleAttrBar,1
+Please make a chart with 'Creative Type' and its count.,Implicit-Explicit,command,movies,singleAttrBar,4
+It is requested that a bar chart be constructed with 'Creative Type' represented on the x-axis and its corresponding count on the y-axis.,Colloquial-Standard,command,movies,singleAttrBar,5
+You could create a bar chart with 'Creative Type' on the x-axis and its count on the y-axis.,Subjective-Objective,command,movies,singleAttrBar,4
+Can you make a visual representation of 'Creative Type' and how many there are of each?,Implicit-Explicit,command,movies,singleAttrBar,1
+Construct a bar chart with 'Creative Type' on the horizontal axis and its count on the vertical axis.,Colloquial-Standard,command,movies,singleAttrBar,3
+Please create a bar chart with 'Creative Type' as the horizontal axis and its count as the vertical axis.,Colloquial-Standard,command,movies,singleAttrBar,4
+Plot a bar diagram with 'Creative Type' as the categorical variable on the abscissa and its frequency distribution on the ordinate.,Non-technical-Technical,command,movies,singleAttrBar,5
+I need a chart that shows the count of each 'Creative Type'.,Implicit-Explicit,command,movies,singleAttrBar,3
+Construct a graph with 'Creative Type' as the horizontal label and the count as the vertical label.,Non-technical-Technical,command,movies,singleAttrBar,3
+Generate a bar graph with 'Creative Type' as the independent variable and its frequency as the dependent variable.,Non-technical-Technical,command,movies,singleAttrBar,4
+Could you possibly put together a chart showing the different 'Creative Types' and their numbers?,Implicit-Explicit,command,movies,singleAttrBar,2
+"This is a bar graph showing different creative types along the bottom, with the number of each type shown on the side, listed from highest to lowest.",Non-technical-Technical,query,movies,singleAttrBar,2
+"The bar chart seems to have 'Creative Type' on the x-axis and the count of 'Creative Type' on the y-axis, and it appears to be in descending order.",Subjective-Objective,query,movies,singleAttrBar,3
+"The bar chart delineates 'Creative Type' on the abscissa, with the enumeration of each 'Creative Type' on the ordinate, arranged in a descending order.",Non-technical-Technical,query,movies,singleAttrBar,5
+"In my opinion, the bar chart is organized with 'Creative Type' on the x-axis and the count of 'Creative Type' on the y-axis, in a descending order.",Subjective-Objective,query,movies,singleAttrBar,2
+"This is a bar chart where 'Creative Type' is on the horizontal axis, the count of 'Creative Type' is on the vertical axis, and it's arranged in descending order.",Colloquial-Standard,query,movies,singleAttrBar,3
+What do you think is the number of each 'Creative Type' shown on the bar chart?,Subjective-Objective,question,movies,singleAttrBar,1
+How many of each kind of 'Creative Type' can we see on the bar chart?,Non-technical-Technical,question,movies,singleAttrBar,1
+What is the quantitative distribution of each 'Creative Type' as depicted on the bar chart?,Non-technical-Technical,question,movies,singleAttrBar,5
+I need the exact count for each 'Creative Type' as displayed on the bar chart.,Implicit-Explicit,question,movies,singleAttrBar,5
+What is the numerical representation of each 'Creative Type' on the bar chart?,Non-technical-Technical,question,movies,singleAttrBar,4
+Could you provide the number of each 'Creative Type' that is represented on the bar chart?,Subjective-Objective,question,movies,singleAttrBar,4
+Can you figure out the numbers for each 'Creative Type' on the bar chart?,Implicit-Explicit,question,movies,singleAttrBar,1
+Develop a bar chart where 'Major Genre' is represented on the horizontal axis and the mean 'Worldwide Gross' is represented on the vertical axis.,Non-technical-Technical,command,movies,bar,4
+Maybe a bar chart could help us understand the relationship between 'Major Genre' and 'Worldwide Gross' better.,Implicit-Explicit,command,movies,bar,2
+Draw a graph with 'Major Genre' at the bottom and the average 'Worldwide Gross' going up.,Non-technical-Technical,command,movies,bar,2
+You could create a bar chart with 'Major Genre' on the x-axis and the average 'Worldwide Gross' on the y-axis.,Subjective-Objective,command,movies,bar,4
+Make a bar graph with 'Major Genre' on the horizontal line and the average 'Worldwide Gross' on the vertical line.,Colloquial-Standard,command,movies,bar,2
+"Let's consider making a bar chart, with 'Major Genre' and 'Worldwide Gross' as the variables.",Implicit-Explicit,command,movies,bar,3
+How about we visualize 'Major Genre' and 'Worldwide Gross' in a more graphical way?,Implicit-Explicit,command,movies,bar,1
+I think you should make a bar chart with 'Major Genre' on the x-axis and the average 'Worldwide Gross' on the y-axis. It would look really good.,Subjective-Objective,command,movies,bar,1
+I feel it would be beneficial to create a bar chart with 'Major Genre' on the x-axis and the average 'Worldwide Gross' on the y-axis.,Subjective-Objective,command,movies,bar,2
+I need you to create a bar chart. The x-axis should be 'Major Genre' and the y-axis should represent the average 'Worldwide Gross'.,Implicit-Explicit,command,movies,bar,5
+A bar chart illustrating the mean of global gross revenue for each major film genre.,Non-technical-Technical,query,movies,bar,4
+A simple graph showing the average global earnings for each major movie type.,Non-technical-Technical,query,movies,bar,1
+The bar chart clearly presents the 'Major Genre' and the average 'Worldwide Gross'.,Implicit-Explicit,query,movies,bar,4
+A bar chart depicting the mean of 'Worldwide Gross' for each category under 'Major Genre'.,Non-technical-Technical,query,movies,bar,5
+A graph showing the average total money made worldwide for each main movie genre.,Non-technical-Technical,query,movies,bar,2
+"You know, that bar chart we were looking at, the one about 'Major Genre' and 'Worldwide Gross'.",Implicit-Explicit,query,movies,bar,1
+"In my opinion, the bar chart that represents the 'Major Genre' and the mean of 'Worldwide Gross' is quite informative.",Subjective-Objective,query,movies,bar,2
+The bar chart seems to provide a good representation of the 'Major Genre' and the mean of 'Worldwide Gross'.,Subjective-Objective,query,movies,bar,3
+I'm wondering if you could tell me what the average 'Worldwide Gross' for each 'Major Genre' might be?,Subjective-Objective,question,movies,bar,2
+Please provide the statistics for the average 'Worldwide Gross' for each 'Major Genre'.,Subjective-Objective,question,movies,bar,5
+Can you tell me the average 'Worldwide Gross' for each 'Major Genre'?,Implicit-Explicit,question,movies,bar,4
+Any idea about the global earnings for each genre?,Implicit-Explicit,question,movies,bar,1
+What's the usual total money made globally for each main type of movie?,Non-technical-Technical,question,movies,bar,2
+Can you guess the average global earnings for each genre?,Implicit-Explicit,question,movies,bar,2
+What's the average global income for each major genre?,Colloquial-Standard,question,movies,bar,3
+Do you know the average global earnings for each genre?,Implicit-Explicit,question,movies,bar,3
+It is suggested to create a point chart with 'IMDB Rating' on the x-axis and 'Rotten Tomatoes Rating' on the y-axis.,Subjective-Objective,command,movies,scatter,4
+I would like you to generate a point chart with 'IMDB Rating' represented on the x-axis and 'Rotten Tomatoes Rating' represented on the y-axis.,Colloquial-Standard,command,movies,scatter,5
+Can you put together a chart? Maybe use the IMDB ratings for one axis and the Rotten Tomatoes ratings for the other.,Implicit-Explicit,command,movies,scatter,3
+Make a dot chart with 'IMDB Rating' on the horizontal and 'Rotten Tomatoes Rating' on the vertical.,Colloquial-Standard,command,movies,scatter,2
+Make a simple graph with 'IMDB Rating' going across and 'Rotten Tomatoes Rating' going up.,Non-technical-Technical,command,movies,scatter,1
+Fabricate a scatter plot with 'IMDB Rating' as the abscissa and 'Rotten Tomatoes Rating' as the ordinate.,Non-technical-Technical,command,movies,scatter,5
+How about we visualize the ratings from IMDB and Rotten Tomatoes? Maybe on a chart with two axes?,Implicit-Explicit,command,movies,scatter,2
+Create a point chart with 'IMDB Rating' on the x-axis and 'Rotten Tomatoes Rating' on the y-axis.,Subjective-Objective,command,movies,scatter,5
+Whip up a dot chart with 'IMDB Rating' on the side-to-side line and 'Rotten Tomatoes Rating' on the up-and-down line.,Colloquial-Standard,command,movies,scatter,1
+Draw a graph with 'IMDB Rating' on the side-to-side line and 'Rotten Tomatoes Rating' on the up-and-down line.,Non-technical-Technical,command,movies,scatter,2
+"You know those ratings from IMDB and Rotten Tomatoes? It might be interesting to see them on a chart, don't you think?",Implicit-Explicit,command,movies,scatter,1
+Please create a point chart with 'IMDB Rating' as the x-axis and 'Rotten Tomatoes Rating' as the y-axis.,Colloquial-Standard,command,movies,scatter,4
+Construct a point chart with 'IMDB Rating' on the x-axis and 'Rotten Tomatoes Rating' on the y-axis.,Colloquial-Standard,command,movies,scatter,3
+Construct a point chart. Place 'IMDB Rating' on the x-axis and 'Rotten Tomatoes Rating' on the y-axis.,Implicit-Explicit,command,movies,scatter,5
+It might be beneficial to create a point chart with 'IMDB Rating' on the x-axis and 'Rotten Tomatoes Rating' on the y-axis.,Subjective-Objective,command,movies,scatter,3
+I feel like it would be a good idea to create a point chart with 'IMDB Rating' on the x-axis and 'Rotten Tomatoes Rating' on the y-axis.,Subjective-Objective,command,movies,scatter,2
+I think you should make a point chart with 'IMDB Rating' on the x-axis and 'Rotten Tomatoes Rating' on the y-axis. It would be really interesting to see.,Subjective-Objective,command,movies,scatter,1
+Construct a graph with 'IMDB Rating' as the horizontal reference and 'Rotten Tomatoes Rating' as the vertical reference.,Non-technical-Technical,command,movies,scatter,3
+Please make a chart using the IMDB ratings and the Rotten Tomatoes ratings. IMDB should be on the x-axis and Rotten Tomatoes on the y-axis.,Implicit-Explicit,command,movies,scatter,4
+The chart displays 'IMDB Rating' on the x-axis and 'Rotten Tomatoes Rating' on the y-axis.,Subjective-Objective,query,movies,scatter,5
+The chart appears to have the IMDB ratings on the x-axis and the Rotten Tomatoes ratings on the y-axis.,Subjective-Objective,query,movies,scatter,3
+"It's a graphical representation, with 'IMDB Rating' plotted on the x-axis, and 'Rotten Tomatoes Rating' plotted on the y-axis.",Colloquial-Standard,query,movies,scatter,4
+"The chart with the movie ratings, you know the one with IMDB and Rotten Tomatoes.",Implicit-Explicit,query,movies,scatter,2
+A graphical representation with 'IMDB Rating' as the horizontal component and 'Rotten Tomatoes Rating' as the vertical component.,Non-technical-Technical,query,movies,scatter,4
+A graph showing movie ratings from IMDB and Rotten Tomatoes.,Non-technical-Technical,query,movies,scatter,1
+The chart is designed with the IMDB ratings on the x-axis and the Rotten Tomatoes ratings on the y-axis.,Subjective-Objective,query,movies,scatter,4
+A graph with IMDB ratings plotted along the horizontal line and Rotten Tomatoes ratings plotted along the vertical line.,Non-technical-Technical,query,movies,scatter,3
+I think this chart is showing us the IMDB ratings on the x-axis and the Rotten Tomatoes ratings on the y-axis. It's pretty clear to me.,Subjective-Objective,query,movies,scatter,1
+"You know, that chart with the movie ratings.",Implicit-Explicit,query,movies,scatter,1
+Is there a noticeable difference between the 'IMDB Rating' and the 'Rotten Tomatoes Rating' on a point chart?,Implicit-Explicit,question,movies,scatter,3
+Can we compare the IMDB ratings and Rotten Tomatoes ratings on a basic graph?,Non-technical-Technical,question,movies,scatter,3
+What's your take on how the 'IMDB Rating' stacks up against the 'Rotten Tomatoes Rating' on a point chart? I personally feel there's a huge difference.,Subjective-Objective,question,movies,scatter,1
+Plot a graph with the year of release on one side and the average cost of making a movie on the other side.,Non-technical-Technical,command,movies,line,3
+Construct a line chart with 'Release Year' as the horizontal axis and the mean of 'AVG (Production Budget)' as the vertical axis.,Colloquial-Standard,command,movies,line,3
+Let's try to visualize the average production budget over the years. Perhaps a line chart with 'Release Year' and 'AVG (Production Budget)' would work.,Implicit-Explicit,command,movies,line,3
+"How about we visualize the average production budget over the years? A line chart could be a good way to do that, don't you think?",Implicit-Explicit,command,movies,line,2
+I feel like it would be a good idea to create a line chart with 'Release Year' on the x-axis and the mean of 'AVG (Production Budget)' on the y-axis.,Subjective-Objective,command,movies,line,2
+Draw a line graph with 'Release Year' on the horizontal line and the average of 'AVG (Production Budget)' on the vertical line.,Colloquial-Standard,command,movies,line,2
+Generate a line chart with 'Release Year' represented on the x-axis and the mean of 'AVG (Production Budget)' represented on the y-axis.,Colloquial-Standard,command,movies,line,4
+I think you should make a line chart with 'Release Year' on the x-axis and the average of 'AVG (Production Budget)' on the y-axis. It would look really good.,Subjective-Objective,command,movies,line,1
+Create a line chart. The x-axis should be 'Release Year' and the y-axis should be the mean of 'AVG (Production Budget)'.,Implicit-Explicit,command,movies,line,5
+Create a line chart with 'Release Year' on the x-axis and the mean of 'AVG (Production Budget)' on the y-axis.,Subjective-Objective,command,movies,line,5
+The line chart represents the average 'Production Budget' per 'Release Year'.,Colloquial-Standard,query,movies,line,3
+It's a chart that shows the average production budget over the years.,Implicit-Explicit,query,movies,line,2
+"A line chart depicting the temporal trend of the mean value of the 'AVG (Production Budget)' variable, categorized by 'Release Year'.",Non-technical-Technical,query,movies,line,5
+A line chart illustrating the mean value of the production budget across different release years.,Non-technical-Technical,query,movies,line,4
+The line chart represents the average production budget by release year.,Implicit-Explicit,query,movies,line,3
+"You know, it's that graph with the years and the average budget stuff.",Implicit-Explicit,query,movies,line,1
+The line chart explicitly plots the mean of the 'AVG (Production Budget)' against the 'Release Year'.,Implicit-Explicit,query,movies,line,5
+It seems to me that the line chart is representing the average production budget per release year.,Subjective-Objective,query,movies,line,2
+The line graph showing the average 'Production Budget' for each 'Release Year'.,Colloquial-Standard,query,movies,line,2
+The line chart represents the average production budget for each release year.,Subjective-Objective,query,movies,line,4
+Can you see any pattern between the average production budget and the release year?,Implicit-Explicit,question,movies,line,2
+How does the average production budget change with each release year?,Colloquial-Standard,question,movies,line,3
+How does the average production budget fluctuate over the years of release?,Non-technical-Technical,question,movies,line,3
+"It seems to me that the average production budget might be changing over the years, what do you think?",Subjective-Objective,question,movies,line,2
+How does the average budget for making a movie change with each year?,Non-technical-Technical,question,movies,line,2
+"Make a simple graph that shows how much money, on average, is spent on making each type of movie, and sort them by their age rating.",Non-technical-Technical,command,movies,groupedBar,1
+"Could you put together a bar graph that shows us the average cost of producing different creative content, but group it by the content rating?",Implicit-Explicit,command,movies,groupedBar,2
+"Develop a bar chart that represents the mean production budget for each creative category, classified by their content rating.",Non-technical-Technical,command,movies,groupedBar,4
+"You should create a bar chart that displays the average production budget for each creative type, grouped by content rating.",Subjective-Objective,command,movies,groupedBar,4
+"Generate a bar chart that illustrates the average production budget for each creative type, organized by content rating.",Colloquial-Standard,command,movies,groupedBar,4
+"Please create a bar chart that displays the average production budget for each creative type, and make sure to group them by content rating.",Implicit-Explicit,command,movies,groupedBar,3
+"I think you should make a bar chart that shows what the average production budget is for each creative type, and you should group it by content rating. I believe it would be really interesting to see.",Subjective-Objective,command,movies,groupedBar,1
+"Generate a bar diagram that delineates the mean production expenditure for each creative genre, stratified by content rating.",Non-technical-Technical,command,movies,groupedBar,5
+"Construct a bar chart that displays the average production budget for each creative type, categorized by content rating.",Colloquial-Standard,command,movies,groupedBar,3
+What's the average production budget when we group by creative type and content rating?,Implicit-Explicit,query,movies,groupedBar,3
+I feel like the average production budget varies a lot depending on the creative type and content rating.,Subjective-Objective,query,movies,groupedBar,1
+"The mean cost of making a film, sorted by the kind of film and its audience rating.",Non-technical-Technical,query,movies,groupedBar,2
+What's the typical cost of making things by their type and who they're aimed at?,Colloquial-Standard,query,movies,groupedBar,2
+"The average production budget, classified by creative type and content rating.",Non-technical-Technical,query,movies,groupedBar,4
+It appears that the average production budget is determined by the creative type and content rating.,Subjective-Objective,query,movies,groupedBar,3
+"What's the typical budget for each genre of film, categorized by their content rating?",Non-technical-Technical,question,movies,groupedBar,3
+"How much dough do they usually spend on making each type of movie, sorted by the age rating?",Colloquial-Standard,question,movies,groupedBar,1
+"Can you provide the average production budget for each creative type, categorized by content rating?",Subjective-Objective,question,movies,groupedBar,4
+"Can you tell me the average amount of money spent on each creative type, categorized by their content rating?",Implicit-Explicit,question,movies,groupedBar,4
+It is requested that a bar chart be constructed with 'Major Genre' represented on the x-axis and the aggregate of 'Worldwide Gross' on the y-axis.,Colloquial-Standard,command,movies,stackedBar,5
+It would be beneficial to create a bar chart with 'Major Genre' on the x-axis and the sum of 'Worldwide Gross' on the y-axis.,Subjective-Objective,command,movies,stackedBar,4
+I need you to construct a bar chart. The x-axis should represent 'Major Genre' and the y-axis should represent the total 'Worldwide Gross'.,Implicit-Explicit,command,movies,stackedBar,5
+Maybe we could try creating a bar chart with 'Major Genre' on the x-axis and the sum of 'Worldwide Gross' on the y-axis.,Subjective-Objective,command,movies,stackedBar,3
+Construct a bar chart with 'Major Genre' on the horizontal axis and the sum of 'Worldwide Gross' on the vertical axis.,Colloquial-Standard,command,movies,stackedBar,3
+Draw a graph with 'Major Genre' at the bottom and the total amount of 'Worldwide Gross' going up.,Non-technical-Technical,command,movies,stackedBar,2
+I suggest you create a bar chart with 'Major Genre' on the x-axis and the sum of 'Worldwide Gross' on the y-axis. It seems like a good idea.,Subjective-Objective,command,movies,stackedBar,2
+The bar chart represents the 'Major Genre' and the sum of 'Worldwide Gross'.,Subjective-Objective,query,movies,stackedBar,5
+We're going to examine a bar chart that shows the total worldwide gross for each major genre.,Implicit-Explicit,query,movies,stackedBar,3
+I believe the bar chart showing the 'Major Genre' and the sum of 'Worldwide Gross' is the best way to present this data.,Subjective-Objective,query,movies,stackedBar,1
+A bar diagram illustrating the summation of worldwide gross revenue for each predominant film genre.,Colloquial-Standard,query,movies,stackedBar,5
+The bar chart provides a representation of the 'Major Genre' and the sum of 'Worldwide Gross'.,Subjective-Objective,query,movies,stackedBar,4
+The bar chart explicitly displays the sum of worldwide gross earnings for each major genre.,Implicit-Explicit,query,movies,stackedBar,5
+A bar graph showing the total worldwide earnings for each major film genre.,Colloquial-Standard,query,movies,stackedBar,3
+A bar diagram illustrating the summation of worldwide gross income for each major film genre.,Non-technical-Technical,query,movies,stackedBar,4
+A bar graph representing the aggregate of global revenue for each primary film genre.,Non-technical-Technical,query,movies,stackedBar,3
+Bar graph showing the total cash made worldwide for each main movie genre.,Colloquial-Standard,query,movies,stackedBar,2
+The bar chart seems to be a good representation of the 'Major Genre' and the sum of 'Worldwide Gross'.,Subjective-Objective,query,movies,stackedBar,3
+Can you tell me the total global earnings for each major film genre?,Implicit-Explicit,question,movies,stackedBar,3
+Please provide the exact total worldwide gross for each major genre in the film industry.,Implicit-Explicit,question,movies,stackedBar,5
+What are the total earnings worldwide for each major film genre?,Implicit-Explicit,question,movies,stackedBar,4
+What's the global earnings for each main movie category?,Non-technical-Technical,question,movies,stackedBar,3
+"Whip up a dot chart, right? Put 'Production Budget' on the side-to-side bit and 'Worldwide Gross' on the up-and-down bit, and color 'em different for each 'Major Genre'.",Colloquial-Standard,command,movies,scatterColor,1
+Construct a chart. The x-axis must represent the 'Production Budget' and the y-axis must represent the 'Worldwide Gross'. Each 'Major Genre' should be represented by a different color.,Implicit-Explicit,command,movies,scatterColor,5
+"Create a point chart with 'Production Budget' on the x-axis and 'Worldwide Gross' on the y-axis, color-coded by 'Major Genre'.",Subjective-Objective,command,movies,scatterColor,5
+"I think you should make a point chart with 'Production Budget' on the x-axis and 'Worldwide Gross' on the y-axis, and it would be really cool if you color-coded it by 'Major Genre'.",Subjective-Objective,command,movies,scatterColor,1
+Construct a graph with the production budget on the horizontal axis and the worldwide earnings on the vertical axis. Differentiate each major genre by using different colors.,Non-technical-Technical,command,movies,scatterColor,3
+"Plot a point chart with the production budget as the x-coordinate and the worldwide gross as the y-coordinate, with each major genre represented by a unique color.",Non-technical-Technical,command,movies,scatterColor,4
+"You could create a point chart with 'Production Budget' on the x-axis and 'Worldwide Gross' on the y-axis, possibly color-coded by 'Major Genre'.",Subjective-Objective,command,movies,scatterColor,3
+"Make a dot picture with the money spent making the movie going left to right, and the money the movie made all over the world going up and down, and use different colors for different types of movies.",Non-technical-Technical,command,movies,scatterColor,1
+"How about we make a chart? We could use the budget and the gross, and maybe add some color to show the genre.",Implicit-Explicit,command,movies,scatterColor,2
+"Make a graph with the cost of making the movie on the horizontal line, and the total money the movie made worldwide on the vertical line. Use different colors for each type of movie.",Non-technical-Technical,command,movies,scatterColor,2
+The chart clearly shows 'Production Budget' on the x-axis and 'Worldwide Gross' on the y-axis. Each color represents a different 'Major Genre'.,Implicit-Explicit,query,movies,scatterColor,4
+"This chart seems to be showing the production budget on the x-axis and the worldwide gross on the y-axis, with the major genre being represented by different colors.",Subjective-Objective,query,movies,scatterColor,3
+"The chart displays 'Production Budget' on the x-axis, 'Worldwide Gross' on the y-axis, and 'Major Genre' is color-coded.",Subjective-Objective,query,movies,scatterColor,5
+This is a graph with the cost of making the movie on one side and how much money it made globally on the other. Different movie genres are represented by different colors.,Non-technical-Technical,query,movies,scatterColor,2
+The chart has 'Production Budget' on the horizontal axis and 'Worldwide Gross' on the vertical axis. Different colors represent different genres.,Implicit-Explicit,query,movies,scatterColor,3
+This is a point chart where the x-axis represents the production budget and the y-axis represents the worldwide gross. Each major genre is color-coded for differentiation.,Non-technical-Technical,query,movies,scatterColor,4
+It's a graph where one side shows how much money was spent to make the movie and the other side shows how much money the movie made around the world. The different types of movies are shown in different colors.,Non-technical-Technical,query,movies,scatterColor,1
+How's the 'movie budget' linked to the 'global earnings' for each 'main type' on a dot chart?,Colloquial-Standard,question,movies,scatterColor,1
+"I think you should make a point chart where 'Content Rating' is the column, 'Production Budget' is the x-axis, and 'Worldwide Gross' is the y-axis. It would be really interesting to see the correlation.",Subjective-Objective,command,movies,scatterFaceted,1
+"Plot a point chart where 'Content Rating' is the column, 'Production Budget' is the horizontal axis, and 'Worldwide Gross' is the vertical axis.",Non-technical-Technical,command,movies,scatterFaceted,4
+"It might be a good idea to create a point chart with 'Content Rating' as the column, 'Production Budget' as the x-axis, and 'Worldwide Gross' as the y-axis.",Subjective-Objective,command,movies,scatterFaceted,3
+"I suggest creating a chart. Use 'Content Rating' for the column, 'Production Budget' for the x-axis, and 'Worldwide Gross' for the y-axis.",Implicit-Explicit,command,movies,scatterFaceted,4
+"Make a point graph with 'Content Rating' as the column, 'Production Budget' as the x, and 'Worldwide Gross' as the y.",Colloquial-Standard,command,movies,scatterFaceted,2
+"Maybe we can make a chart with 'Content Rating', 'Production Budget', and 'Worldwide Gross'. What do you think?",Implicit-Explicit,command,movies,scatterFaceted,2
+"How about we visualize some data? Let's take 'Content Rating', 'Production Budget', and 'Worldwide Gross' and see what we can make of it.",Implicit-Explicit,command,movies,scatterFaceted,1
+"Let's consider making a chart. We could use 'Content Rating' for the columns, 'Production Budget' for the x-axis, and 'Worldwide Gross' for the y-axis.",Implicit-Explicit,command,movies,scatterFaceted,3
+"Whip up a dot graph with 'Content Rating' as the column, 'Production Budget' on the x, and 'Worldwide Gross' on the y.",Colloquial-Standard,command,movies,scatterFaceted,1
+"Construct a graph with the content rating as the vertical column, the production budget as the horizontal line, and the total money made globally as the height.",Non-technical-Technical,command,movies,scatterFaceted,3
+"Make a dot graph using the rating of the content for the up and down, the money used to make the movie for the left and right, and the total money made all over the world for the height.",Non-technical-Technical,command,movies,scatterFaceted,1
+"Create a chart. Use 'Content Rating' as the column, 'Production Budget' as the x-axis, and 'Worldwide Gross' as the y-axis.",Implicit-Explicit,command,movies,scatterFaceted,5
+"Generate a scatter plot with 'Content Rating' as the categorical variable, 'Production Budget' as the independent variable on the x-axis, and 'Worldwide Gross' as the dependent variable on the y-axis.",Non-technical-Technical,command,movies,scatterFaceted,5
+"I think the point chart of 'Content Rating' and 'Production Budget' on the x-axis, with 'Worldwide Gross' on the y-axis, is the best way to visualize this data.",Subjective-Objective,query,movies,scatterFaceted,1
+"A basic graph showing the relationship between the money spent on making a movie and the money it made all over the world, using the movie's rating.",Non-technical-Technical,query,movies,scatterFaceted,2
+"We're going to see a graph that shows the relationship between the budget, content rating, and worldwide earnings.",Implicit-Explicit,query,movies,scatterFaceted,2
+The point chart explicitly plots 'Content Rating' and 'Production Budget' on the x-axis against 'Worldwide Gross' on the y-axis.,Implicit-Explicit,query,movies,scatterFaceted,5
+Let's look at how the budget and content rating relate to the global earnings.,Implicit-Explicit,query,movies,scatterFaceted,1
+"The point chart will display 'Content Rating' and 'Production Budget' on the x-axis, with 'Worldwide Gross' on the y-axis.",Implicit-Explicit,query,movies,scatterFaceted,4
+"A graph where 'Content Rating' and 'Production Budget' are on the horizontal axis, and 'Worldwide Gross' is on the vertical axis.",Colloquial-Standard,query,movies,scatterFaceted,3
+"A diagrammatic representation with 'Content Rating' and 'Production Budget' plotted on the abscissa, and 'Worldwide Gross' on the ordinate.",Colloquial-Standard,query,movies,scatterFaceted,5
+How is the 'Worldwide Gross' correlated with the 'Production Budget' for each 'Content Rating' in the graphical representation?,Colloquial-Standard,question,movies,scatterFaceted,5
+"Construct a line graph with 'Release Year' as the horizontal axis and the sum of 'Worldwide Gross' as the vertical axis, and differentiate the 'Major Genre' by color.",Colloquial-Standard,command,movies,multiLine,3
+"Construct a graph with the release year on the horizontal line and the total worldwide earnings on the vertical line, and differentiate each major genre with a unique color.",Non-technical-Technical,command,movies,multiLine,3
+"Draw a line graph with 'Release Year' along the bottom and the total of 'Worldwide Gross' up the side, and use different colors for each 'Major Genre'.",Colloquial-Standard,command,movies,multiLine,2
+"I feel it would be best if you created a line chart with 'Release Year' on the x-axis and the sum of 'Worldwide Gross' on the y-axis, and it might be interesting to color it by 'Major Genre'.",Subjective-Objective,command,movies,multiLine,2
+"Plot a line chart with the release year on the x-axis and the cumulative worldwide gross on the y-axis, and distinguish each major genre with a different color.",Non-technical-Technical,command,movies,multiLine,4
+"Create a line chart with 'Release Year' on the x-axis and the sum of 'Worldwide Gross' on the y-axis, and color it by 'Major Genre'.",Subjective-Objective,command,movies,multiLine,5
+"I need a line chart. The x-axis should be 'Release Year' and the y-axis should be the sum of 'Worldwide Gross'. Also, use different colors to represent each 'Major Genre'.",Implicit-Explicit,command,movies,multiLine,3
+"Draw a graph with the release year at the bottom and the total worldwide earnings on the side, and use different colors for each main genre.",Non-technical-Technical,command,movies,multiLine,2
+Please create a line chart. The x-axis should represent the 'Release Year' and the y-axis should represent the sum of 'Worldwide Gross'. Each 'Major Genre' should be represented by a different color.,Implicit-Explicit,command,movies,multiLine,4
+"It would be advisable to create a line chart with 'Release Year' on the x-axis and the sum of 'Worldwide Gross' on the y-axis, and color it by 'Major Genre'.",Subjective-Objective,command,movies,multiLine,4
+Construct a line chart. The x-axis must be labeled as 'Release Year' and the y-axis must be labeled as the sum of 'Worldwide Gross'. Differentiate each 'Major Genre' by using a unique color for each.,Implicit-Explicit,command,movies,multiLine,5
+"I think you should make a line chart with 'Release Year' on the x-axis and the total of 'Worldwide Gross' on the y-axis, and it would look really cool if you colored it by 'Major Genre'.",Subjective-Objective,command,movies,multiLine,1
+This line chart explicitly displays the sum of 'Worldwide Gross' earnings for each 'Major Genre' per 'Release Year'.,Implicit-Explicit,query,movies,multiLine,5
+This line chart represents the sum of 'Worldwide Gross' over 'Release Year' by 'Major Genre'.,Subjective-Objective,query,movies,multiLine,4
+A graph of total global earnings by movie genre per year.,Colloquial-Standard,query,movies,multiLine,2
+"A line chart representing the cumulative worldwide gross income, categorized by major genre, over the years of release.",Colloquial-Standard,query,movies,multiLine,4
+"A simple graph showing the total money made worldwide each year, grouped by the type of movie.",Non-technical-Technical,query,movies,multiLine,1
+"A graphical representation of the aggregate 'Worldwide Gross' revenue, segregated by 'Major Genre', plotted over the 'Release Year'.",Colloquial-Standard,query,movies,multiLine,5
+The line chart illustrates the sum of 'Worldwide Gross' over 'Release Year' by 'Major Genre'.,Subjective-Objective,query,movies,multiLine,5
+"A basic graph showing the total global earnings each year, categorized by the main genre of the film.",Non-technical-Technical,query,movies,multiLine,2
+"A chart showing the total worldwide earnings over the years, broken down by major movie genre.",Colloquial-Standard,query,movies,multiLine,3
+We're going to see a visual representation of how different genres have performed worldwide over time.,Implicit-Explicit,query,movies,multiLine,2
+I think this line chart showing the total worldwide gross income by major genre over different release years is really interesting.,Subjective-Objective,query,movies,multiLine,1
+"A line chart delineating the aggregate of 'Worldwide Gross' revenue over the 'Release Year', stratified by 'Major Genre'.",Non-technical-Technical,query,movies,multiLine,5
+"A line graph illustrating the cumulative worldwide gross revenue over the release year, segmented by the major genre.",Non-technical-Technical,query,movies,multiLine,4
+How does the aggregate of 'Worldwide Gross' change over the 'Release Year' for various 'Major Genres'?,Colloquial-Standard,question,movies,multiLine,4
+"It is requested to formulate a bar chart with ""Weight"" designated on the x-axis and the data count on the y-axis.",Colloquial-Standard,command,cars,histogram,5
+"Make a bar graph with ""Weight"" on the horizontal line and the number of data on the vertical line.",Colloquial-Standard,command,cars,histogram,2
+"Fabricate a bar chart where the variable ""Weight"" is plotted on the abscissa and the data count is plotted on the ordinate.",Non-technical-Technical,command,cars,histogram,5
+"Please generate a bar chart with ""Weight"" as the x-axis and the data count as the y-axis.",Colloquial-Standard,command,cars,histogram,4
+"Construct a bar graph where ""Weight"" is on the horizontal line and the count of data is on the vertical line.",Non-technical-Technical,command,cars,histogram,3
+"I need you to construct a bar chart. The x-axis should represent ""Weight"" and the y-axis should represent the data count.",Implicit-Explicit,command,cars,histogram,5
+"I feel like a bar chart with ""Weight"" on the x-axis and data count on the y-axis would be a good idea.",Subjective-Objective,command,cars,histogram,2
+"Can you put together a visual with ""Weight"" on one side and the count on the other?",Implicit-Explicit,command,cars,histogram,1
+"Make a simple graph with ""Weight"" going across and the number of data going up.",Non-technical-Technical,command,cars,histogram,1
+"It is suggested to create a bar chart with ""Weight"" on the x-axis and data count on the y-axis.",Subjective-Objective,command,cars,histogram,4
+"Create a bar chart with ""Weight"" on the x-axis and data count on the y-axis.",Subjective-Objective,command,cars,histogram,5
+"Generate a bar diagram where ""Weight"" is represented on the x-axis and the frequency of data is represented on the y-axis.",Non-technical-Technical,command,cars,histogram,4
+"Construct a bar chart with ""Weight"" on the x-axis and the count of data on the y-axis.",Colloquial-Standard,command,cars,histogram,3
+"I think you should make a bar chart with ""Weight"" on the x-axis and data count on the y-axis. It would look really good.",Subjective-Objective,command,cars,histogram,1
+"How about making a visual representation with ""Weight"" as one of the parameters and the count as the other?",Implicit-Explicit,command,cars,histogram,2
+"It might be beneficial to create a bar chart with ""Weight"" on the x-axis and data count on the y-axis.",Subjective-Objective,command,cars,histogram,3
+"The bar chart explicitly illustrates the count of data, with each bar representing a specific weight.",Implicit-Explicit,query,cars,histogram,5
+A graphical representation of data quantities.,Non-technical-Technical,query,cars,histogram,4
+This bar chart seems to represent the weight and count of data.,Subjective-Objective,query,cars,histogram,3
+The bar chart represents the count of data.,Implicit-Explicit,query,cars,histogram,3
+"Graph thingy, how heavy, how much stuff",Colloquial-Standard,query,cars,histogram,1
+The bar chart displays the weight and count of data.,Subjective-Objective,query,cars,histogram,5
+Just look at the bars.,Implicit-Explicit,query,cars,histogram,1
+This bar chart represents the weight and count of data.,Subjective-Objective,query,cars,histogram,4
+I think this bar chart is showing us the weight and count of data.,Subjective-Objective,query,cars,histogram,2
+"Bar graph, weight, amount of data",Colloquial-Standard,query,cars,histogram,3
+A basic graph that shows the amount of something.,Non-technical-Technical,query,cars,histogram,2
+The bar chart visually displays the count of data in terms of weight.,Implicit-Explicit,query,cars,histogram,4
+A simple graph showing how much of something there is.,Non-technical-Technical,query,cars,histogram,1
+"Bar diagram, weight measurement, quantity of data",Colloquial-Standard,query,cars,histogram,4
+"I'm not sure, but it seems like there might be a different number of data points for each weight category in the bar chart, right?",Subjective-Objective,question,cars,histogram,2
+What's the exact number of data points for each weight category in the chart?,Implicit-Explicit,question,cars,histogram,4
+"It's a bit unclear to me, how many data points do you think there are for each weight category in the bar chart?",Subjective-Objective,question,cars,histogram,3
+How many counts are there for each size group in the bar graph?,Non-technical-Technical,question,cars,histogram,2
+How about a graph showing the number of each country?,Implicit-Explicit,command,cars,singleAttrBar,2
+Draw a bar graph that shows the number of things from each country.,Non-technical-Technical,command,cars,singleAttrBar,2
+It is suggested to create a bar chart with 'Country of Origin' on the x-axis and their count on the y-axis.,Subjective-Objective,command,cars,singleAttrBar,4
+I need you to construct a bar chart. The x-axis should represent 'Country of Origin' and the y-axis should represent the count of each country.,Implicit-Explicit,command,cars,singleAttrBar,5
+Generate a bar chart with 'Country of Origin' on the x-axis and their frequency on the y-axis.,Colloquial-Standard,command,cars,singleAttrBar,4
+Can you make a visual with countries and their numbers?,Implicit-Explicit,command,cars,singleAttrBar,1
+I feel it would be beneficial to create a bar chart with 'Country of Origin' on the x-axis and their count on the y-axis.,Subjective-Objective,command,cars,singleAttrBar,2
+Produce a bar chart with 'Country of Origin' on the abscissa and their respective count on the ordinate.,Colloquial-Standard,command,cars,singleAttrBar,5
+"Generate a bar chart that visualizes the distribution of data points, categorized by their country of origin, along the y-axis.",Non-technical-Technical,command,cars,singleAttrBar,5
+Construct a bar graph that represents the quantity of items from each country.,Non-technical-Technical,command,cars,singleAttrBar,3
+Could you put together a chart showing the count of each country of origin?,Implicit-Explicit,command,cars,singleAttrBar,3
+Whip up a bar graph with 'where it's from' on the bottom line and how many on the side line.,Colloquial-Standard,command,cars,singleAttrBar,1
+It might be a good idea to create a bar chart with 'Country of Origin' on the x-axis and their count on the y-axis.,Subjective-Objective,command,cars,singleAttrBar,3
+Make a bar graph with 'where they're from' on the bottom and their number on the side.,Colloquial-Standard,command,cars,singleAttrBar,2
+"The bar chart titled 'Country of Origin', indicating count, arranged in descending order.",Colloquial-Standard,query,cars,singleAttrBar,4
+"A bar graph illustrating the count of individuals per country, sorted in a descending sequence.",Non-technical-Technical,query,cars,singleAttrBar,4
+"It seems like the bar chart, 'Country of Origin', could be arranged in a count format, in descending order.",Subjective-Objective,query,cars,singleAttrBar,3
+"I personally think this bar chart, titled 'Country of Origin', is best presented in a count format, in descending order.",Subjective-Objective,query,cars,singleAttrBar,1
+"A graph showing the number of people from different countries, listed from most to least.",Non-technical-Technical,query,cars,singleAttrBar,2
+"The bar graph, you know, 'Country of Origin', how many, in a top to bottom order.",Colloquial-Standard,query,cars,singleAttrBar,2
+"In my opinion, the bar chart, 'Country of Origin', should be arranged in a count format, in descending order.",Subjective-Objective,query,cars,singleAttrBar,2
+"The bar chart explicitly presents the count of each country of origin, and it is meticulously arranged in descending order.",Implicit-Explicit,query,cars,singleAttrBar,5
+"The bar chart we're looking at, it's about the country of origin and the count, and it's arranged in a way that's not ascending.",Implicit-Explicit,query,cars,singleAttrBar,2
+"The bar chart, 'Country of Origin', is presented in a count format, in descending order.",Subjective-Objective,query,cars,singleAttrBar,5
+"A bar chart labeled 'Country of Origin', quantifying individuals and arranged in descending order.",Non-technical-Technical,query,cars,singleAttrBar,5
+"The bar chart, denoted as 'Country of Origin', enumerating count, systematically arranged in descending order.",Colloquial-Standard,query,cars,singleAttrBar,5
+"The bar chart labeled 'Country of Origin', with the count, in a descending order.",Colloquial-Standard,query,cars,singleAttrBar,3
+"A visual representation of the number of individuals from each country, arranged in decreasing order.",Non-technical-Technical,query,cars,singleAttrBar,3
+"The bar chart shows the count of each country of origin, and it's arranged in descending order.",Implicit-Explicit,query,cars,singleAttrBar,3
+"The bar chart, you know, the one about where things come from, and how many there are, it's arranged in a certain way.",Implicit-Explicit,query,cars,singleAttrBar,1
+"A list of countries, ranked by number, from highest to lowest.",Non-technical-Technical,query,cars,singleAttrBar,1
+"The bar chart displays the count of each country of origin, and it's sorted in descending order.",Implicit-Explicit,query,cars,singleAttrBar,4
+It would be beneficial to determine the number of counts for each 'Country of Origin'.,Subjective-Objective,question,cars,singleAttrBar,4
+How many times does each country show up?,Non-technical-Technical,question,cars,singleAttrBar,1
+I'm really curious to know how many counts we have for each 'Country of Origin'. It's something I've been wondering about for a while.,Subjective-Objective,question,cars,singleAttrBar,1
+I think it would be useful to know how many counts there are for each 'Country of Origin'.,Subjective-Objective,question,cars,singleAttrBar,3
+What is the distribution frequency for each 'Country of Origin'?,Non-technical-Technical,question,cars,singleAttrBar,4
+Could you construct a bar chart with 'Number of Cylinders' on the horizontal axis and the average 'Miles Per Gallon' on the vertical axis?,Colloquial-Standard,command,cars,bar,3
+Construct a bar graph with 'Number of Cylinders' as the horizontal category and the average 'Miles Per Gallon' as the vertical value.,Non-technical-Technical,command,cars,bar,3
+I request you to formulate a bar chart with 'Number of Cylinders' represented on the x-axis and the average 'Miles Per Gallon' depicted on the y-axis.,Colloquial-Standard,command,cars,bar,5
+Whip up a bar graph with 'Cylinders' on the bottom and average 'Miles Per Gallon' on the side.,Colloquial-Standard,command,cars,bar,1
+I need you to construct a bar chart. The x-axis should represent the 'Number of Cylinders' and the y-axis should represent the average 'Miles Per Gallon'.,Implicit-Explicit,command,cars,bar,5
+I feel it would be beneficial to create a bar chart with 'Number of Cylinders' on the x-axis and the average 'Miles Per Gallon' on the y-axis.,Subjective-Objective,command,cars,bar,2
+Make a simple graph with the 'Number of Cylinders' going across and the average 'Miles Per Gallon' going up.,Non-technical-Technical,command,cars,bar,1
+I think you should make a bar chart with 'Number of Cylinders' on the x-axis and the average 'Miles Per Gallon' on the y-axis. It would look really good.,Subjective-Objective,command,cars,bar,1
+Implement a bar chart visualization with 'Number of Cylinders' as the independent variable on the x-axis and the mean value of 'Miles Per Gallon' as the dependent variable on the y-axis.,Non-technical-Technical,command,cars,bar,5
+Can you put together a visual with cylinders and miles per gallon?,Implicit-Explicit,command,cars,bar,1
+Make a bar graph with 'Number of Cylinders' along the bottom and the average 'Miles Per Gallon' going up the side.,Colloquial-Standard,command,cars,bar,2
+Generate a bar graph where 'Number of Cylinders' is represented on the horizontal axis and the mean 'Miles Per Gallon' is represented on the vertical axis.,Non-technical-Technical,command,cars,bar,4
+Could you make a chart showing the relationship between the number of cylinders and average miles per gallon?,Implicit-Explicit,command,cars,bar,3
+Maybe you could make a visual representation of cylinders and miles per gallon?,Implicit-Explicit,command,cars,bar,2
+A bar chart illustrating the correlation between the number of cylinders in a vehicle and its average fuel efficiency in miles per gallon.,Non-technical-Technical,query,cars,bar,4
+"A picture that shows how many miles a car can go on a gallon of gas, based on how many cylinders it has.",Non-technical-Technical,query,cars,bar,1
+"Just take a look at the bar chart, you'll see what I mean.",Implicit-Explicit,query,cars,bar,1
+"A graph showing the average miles a car can travel per gallon of gas, grouped by the number of cylinders in the car.",Non-technical-Technical,query,cars,bar,2
+The bar chart seems to provide a good representation of the 'Number of Cylinders' and the average 'Miles Per Gallon'.,Subjective-Objective,query,cars,bar,3
+The bar chart explicitly illustrates the average miles per gallon for each distinct number of cylinders in a vehicle.,Implicit-Explicit,query,cars,bar,5
+"A bar chart delineating the average fuel economy, quantified in miles per gallon, as a function of the number of cylinders in an internal combustion engine.",Non-technical-Technical,query,cars,bar,5
+The bar chart represents the 'Number of Cylinders' and the average 'Miles Per Gallon'.,Subjective-Objective,query,cars,bar,5
+"Bar graph representation, 'Quantity of Cylinders', average 'Miles Per Gallon'",Colloquial-Standard,query,cars,bar,4
+The bar chart shows the average miles per gallon for each number of cylinders.,Implicit-Explicit,query,cars,bar,3
+The bar chart provides a clear depiction of the 'Number of Cylinders' and the average 'Miles Per Gallon'.,Subjective-Objective,query,cars,bar,4
+"Bar graph, 'Cylinder count', average 'Miles per Gallon'",Colloquial-Standard,query,cars,bar,2
+"In my opinion, the bar chart that displays the 'Number of Cylinders' and the average 'Miles Per Gallon' is quite informative.",Subjective-Objective,query,cars,bar,2
+"Can you provide a bar chart that displays the average fuel efficiency, in terms of miles per gallon, for each different engine type, categorized by the number of cylinders?",Non-technical-Technical,question,cars,bar,3
+Represent the average 'Miles Per Gallon' for each 'Number of Cylinders' in a bar chart.,Subjective-Objective,question,cars,bar,5
+Could you generate a bar chart that delineates the mean 'Miles Per Gallon' for each distinct category of 'Number of Cylinders'?,Non-technical-Technical,question,cars,bar,5
+Can you show me a bar graph that shows the average miles a car can go on a gallon of gas for each different number of cylinders?,Non-technical-Technical,question,cars,bar,2
+"I think it would be interesting to see the average 'Miles Per Gallon' for each 'Number of Cylinders' in a bar chart, don't you?",Subjective-Objective,question,cars,bar,2
+Could you illustrate a bar chart that represents the mean 'Miles Per Gallon' for each distinct 'Number of Cylinders' category?,Non-technical-Technical,question,cars,bar,4
+Can you show me a simple bar graph that tells me how many miles a car can go on a gallon of gas for each type of engine?,Non-technical-Technical,question,cars,bar,1
+Can you display the average 'Miles Per Gallon' for each 'Number of Cylinders' in a chart?,Implicit-Explicit,question,cars,bar,3
+"It might be beneficial to create a point chart with ""Horsepower"" on the x-axis and ""Acceleration"" on the y-axis.",Subjective-Objective,command,cars,scatter,3
+"It is suggested to create a point chart with ""Horsepower"" on the x-axis and ""Acceleration"" on the y-axis.",Subjective-Objective,command,cars,scatter,4
+"Draw a graph with ""Horsepower"" on the side-to-side line and ""Acceleration"" on the up-and-down line.",Non-technical-Technical,command,cars,scatter,2
+"Make a simple graph with ""Horsepower"" going across and ""Acceleration"" going up.",Non-technical-Technical,command,cars,scatter,1
+"Plot a scatter diagram with ""Horsepower"" as the abscissa and ""Acceleration"" as the ordinate.",Non-technical-Technical,command,cars,scatter,5
+"Please make a chart. ""Horsepower"" should be on the x-axis and ""Acceleration"" on the y-axis.",Implicit-Explicit,command,cars,scatter,5
+"Make a dot chart with ""Horsepower"" on the horizontal and ""Acceleration"" on the vertical.",Colloquial-Standard,command,cars,scatter,2
+"I feel like it would be a good idea to create a point chart with ""Horsepower"" on the x-axis and ""Acceleration"" on the y-axis.",Subjective-Objective,command,cars,scatter,2
+"It is requested that a point chart be constructed, with ""Horsepower"" designated as the x-axis and ""Acceleration"" as the y-axis.",Colloquial-Standard,command,cars,scatter,5
+"Maybe we could make a chart? Horsepower could be on one axis, acceleration on the other.",Implicit-Explicit,command,cars,scatter,3
+"It's a graph, right? Horsepower's on the horizontal and acceleration's on the vertical.",Colloquial-Standard,query,cars,scatter,2
+It's a simple graph where horsepower is on the horizontal line and acceleration is on the vertical line.,Non-technical-Technical,query,cars,scatter,2
+It's a Cartesian coordinate system graph where the abscissa represents horsepower and the ordinate represents acceleration.,Non-technical-Technical,query,cars,scatter,5
+It seems to me that the chart is using horsepower as the x-axis and acceleration as the y-axis.,Subjective-Objective,query,cars,scatter,2
+"We're looking at a chart here, where the horizontal axis is horsepower and the vertical is acceleration.",Implicit-Explicit,query,cars,scatter,3
+This is a graph with horsepower on the x-axis and acceleration on the y-axis.,Colloquial-Standard,query,cars,scatter,3
+"Imagine a chart, where one axis represents power and the other speed.",Implicit-Explicit,query,cars,scatter,2
+"It's like, a graph with horsepower on the bottom line and acceleration going up the side.",Colloquial-Standard,query,cars,scatter,1
+The chart has horsepower on the x-axis and acceleration on the y-axis.,Subjective-Objective,query,cars,scatter,4
+The chart in question has horsepower on the x-axis and acceleration on the y-axis.,Implicit-Explicit,query,cars,scatter,4
+"I think this chart is showing horsepower on the x-axis and acceleration on the y-axis, which is a pretty interesting way to look at it.",Subjective-Objective,query,cars,scatter,1
+The chart appears to have horsepower on the x-axis and acceleration on the y-axis.,Subjective-Objective,query,cars,scatter,3
+Can you show me a simple graph comparing the car's power to its speed increase?,Non-technical-Technical,question,cars,scatter,2
+Can you generate a scatter plot illustrating the correlation coefficient between the variables of horsepower and acceleration?,Non-technical-Technical,question,cars,scatter,5
+"What's the graph of ""Horsepower"" versus ""Acceleration"" like?",Colloquial-Standard,question,cars,scatter,2
+Can you show me what happens when we compare the power of the car to how fast it speeds up?,Non-technical-Technical,question,cars,scatter,1
+"Can you show me the graph of ""Horsepower"" versus ""Acceleration""?",Colloquial-Standard,question,cars,scatter,3
+"Could you describe the graph representing ""Horsepower"" against ""Acceleration""?",Colloquial-Standard,question,cars,scatter,4
+"I wonder what the point chart of ""Horsepower"" versus ""Acceleration"" looks like, it could be quite interesting.",Subjective-Objective,question,cars,scatter,2
+"Please provide the graph that illustrates the relationship between ""Horsepower"" and ""Acceleration"".",Implicit-Explicit,question,cars,scatter,5
+"Could we examine the point chart of ""Horsepower"" versus ""Acceleration""?",Subjective-Objective,question,cars,scatter,4
+Draw a graph with 'Year' along the bottom and the average of 'Weight' going up.,Non-technical-Technical,command,cars,line,2
+Generate a line chart with 'Year' as the x-axis and the mean of 'AVG (Weight)' as the y-axis.,Colloquial-Standard,command,cars,line,4
+Create a line chart with 'Year' on the x-axis and the mean of 'AVG (Weight)' on the y-axis.,Subjective-Objective,command,cars,line,5
+"You know, it might be interesting to see how the average weight changes over the years.",Implicit-Explicit,command,cars,line,1
+I suggest you create a line chart with 'Year' on the x-axis and the mean of 'AVG (Weight)' on the y-axis. It seems like a good idea.,Subjective-Objective,command,cars,line,2
+Plot a line graph with 'Year' as the independent variable and the mean of 'Weight' as the dependent variable.,Non-technical-Technical,command,cars,line,4
+Whip up a line graph with 'Year' on the bottom line and the average of 'AVG (Weight)' on the side line.,Colloquial-Standard,command,cars,line,1
+I need a line chart. The x-axis should be 'Year' and the y-axis should be the mean of 'AVG (Weight)'.,Implicit-Explicit,command,cars,line,5
+I think you should make a line chart with 'Year' on the x-axis and the average of 'AVG (Weight)' on the y-axis. It would look really good.,Subjective-Objective,command,cars,line,1
+Maybe you could create a line chart with 'Year' on the x-axis and the mean of 'AVG (Weight)' on the y-axis.,Subjective-Objective,command,cars,line,3
+Fabricate a line chart with 'Year' designated as the x-axis and the mean of 'AVG (Weight)' designated as the y-axis.,Colloquial-Standard,command,cars,line,5
+Construct a line chart with 'Year' on the x-axis and the average of 'AVG (Weight)' on the y-axis.,Colloquial-Standard,command,cars,line,3
+Please make a line chart showing the average weight changes over the years.,Implicit-Explicit,command,cars,line,4
+Make a line graph with 'Year' on the horizontal line and the average of 'AVG (Weight)' on the vertical line.,Colloquial-Standard,command,cars,line,2
+I feel like this line chart is showing us the average weight for each year.,Subjective-Objective,query,cars,line,1
+A graph that shows the average weight for each year.,Non-technical-Technical,query,cars,line,2
+This line chart appears to represent the average weight for each year.,Subjective-Objective,query,cars,line,3
+A line chart illustrating the annual mean of weight.,Non-technical-Technical,query,cars,line,4
+The line chart shows the average weight over the years.,Implicit-Explicit,query,cars,line,3
+It seems to me that this line chart is representing the average weight for each year.,Subjective-Objective,query,cars,line,2
+"Graph thingy, Year, average of the average weight",Colloquial-Standard,query,cars,line,1
+"The line's journey over time, with weight in the balance.",Implicit-Explicit,query,cars,line,1
+"Line chart, Year, mean of average weight",Colloquial-Standard,query,cars,line,3
+"Linear graph, Year, arithmetic mean of the average weight",Colloquial-Standard,query,cars,line,5
+A line chart depicting the annual mean of the variable AVG (Weight).,Non-technical-Technical,query,cars,line,5
+Can you interpret what the line chart of the average weight over the years is showing?,Implicit-Explicit,question,cars,line,3
+What does the graph that plots the average weight against the years indicate?,Non-technical-Technical,question,cars,line,3
+What's the line chart showing about the average weight over the years?,Colloquial-Standard,question,cars,line,2
+What data is presented in the line chart of the average weight over the years?,Subjective-Objective,question,cars,line,5
+What does the line chart of the mean of 'AVG (Weight)' over 'Year' depict?,Non-technical-Technical,question,cars,line,5
+What can we understand from the graph that shows the average weight over the years?,Non-technical-Technical,question,cars,line,2
+What does the simple graph showing the average weight over the years tell us?,Non-technical-Technical,question,cars,line,1
+"Generate a bar diagram that delineates the mean acceleration of automotive vehicles, segregated on the basis of their provenance and the count of cylinders they incorporate.",Non-technical-Technical,command,cars,groupedBar,5
+"Can you make a visual representation, like a bar chart, that shows the average acceleration of cars? It should be based on where the cars are from and how many cylinders they have.",Implicit-Explicit,command,cars,groupedBar,3
+"How about we visualize the car data? Maybe something that shows the relationship between where they're from and their cylinders, with a focus on acceleration?",Implicit-Explicit,command,cars,groupedBar,1
+"I think you should make a bar chart showing the average acceleration of cars, and it should be based on where they come from and how many cylinders they have.",Subjective-Objective,command,cars,groupedBar,1
+"Draw a graph that shows the average speed increase of cars, grouped by where they were made and how many cylinders they have.",Non-technical-Technical,command,cars,groupedBar,2
+"Please generate a bar chart that delineates the average acceleration of automobiles, contingent upon their place of origin and the quantity of cylinders they encompass.",Colloquial-Standard,command,cars,groupedBar,5
+"Construct a bar chart illustrating the average acceleration of cars, taking into account their origin and the number of cylinders they possess.",Colloquial-Standard,command,cars,groupedBar,4
+"Construct a bar chart that clearly displays the average acceleration of cars, categorized by their origin and number of cylinders.",Implicit-Explicit,command,cars,groupedBar,5
+"Develop a bar chart that represents the mean acceleration of automobiles, differentiated by their origin and the quantity of cylinders they contain.",Non-technical-Technical,command,cars,groupedBar,4
+"You should create a bar chart that represents the average acceleration of cars, based on their origin and number of cylinders.",Subjective-Objective,command,cars,groupedBar,4
+Could you maybe put together a visual representation of the car data? Perhaps something that shows acceleration averages in relation to where the cars are from and their number of cylinders?,Implicit-Explicit,command,cars,groupedBar,2
+Please make a bar chart that shows the average acceleration of cars. The data should be grouped by the car's origin and the number of cylinders it has.,Implicit-Explicit,command,cars,groupedBar,4
+"Make a simple graph showing how fast different cars speed up, depending on where they're from and how many cylinders they have.",Non-technical-Technical,command,cars,groupedBar,1
+"Create a bar chart that represents the average acceleration of cars, categorized by their origin and number of cylinders.",Subjective-Objective,command,cars,groupedBar,5
+"Can you put together a bar chart that displays the average acceleration of cars, considering their origin and number of cylinders?",Colloquial-Standard,command,cars,groupedBar,3
+"Whip up a bar graph showing the average speed-up of cars, depending on where they're from and how many cylinders they got.",Colloquial-Standard,command,cars,groupedBar,1
+"Make a bar graph that shows the average speed increase of cars, based on where they come from and their cylinder count.",Colloquial-Standard,command,cars,groupedBar,2
+"I feel it would be beneficial to create a bar chart that displays the average acceleration of cars, taking into account their origin and number of cylinders.",Subjective-Objective,command,cars,groupedBar,2
+"It might be a good idea to create a bar chart that shows the average acceleration of cars, considering their origin and number of cylinders.",Subjective-Objective,command,cars,groupedBar,3
+"Construct a graph that illustrates the average rate of acceleration for cars, categorized by their place of manufacture and the number of cylinders they possess.",Non-technical-Technical,command,cars,groupedBar,3
+"Bar graph, speed increase, car's origin, number of cylinders.",Colloquial-Standard,query,cars,groupedBar,3
+"It seems to me that the bar chart is trying to depict the average acceleration of the car, which might be influenced by the number of cylinders it has. The car's origin could also be a factor.",Subjective-Objective,query,cars,groupedBar,2
+"The bar chart, the average increase in speed, the car's origin, and the number of cylinders.",Implicit-Explicit,query,cars,groupedBar,3
+"A bar chart, mean acceleration, car's place of origin, count of cylinders in the car.",Non-technical-Technical,query,cars,groupedBar,4
+"Bar graph representation, average rate of acceleration, provenance of the automobile, quantity of cylinders.",Colloquial-Standard,query,cars,groupedBar,5
+"The bar chart appears to represent the average acceleration of the car, possibly influenced by the number of cylinders. The car's origin may also be relevant.",Subjective-Objective,query,cars,groupedBar,3
+What's the usual speed-up of cars depending on where they're from and how many cylinders they got?,Colloquial-Standard,question,cars,groupedBar,1
+What's the typical acceleration of cars based on where they're made and the number of cylinders they have?,Colloquial-Standard,question,cars,groupedBar,2
+"It seems to me that the average acceleration of cars might vary depending on their origin and number of cylinders, wouldn't you agree?",Subjective-Objective,question,cars,groupedBar,3
+"I think you should make a bar chart with 'Cylinders' on the x-axis and the count of records on the y-axis, and it would look really cool if you color-coded it by 'Origin'.",Subjective-Objective,command,cars,stackedBar,1
+"Draw a bar graph where 'Cylinders' is on the bottom line and the number of records is on the side line, and use different colors to show each 'Origin'.",Non-technical-Technical,command,cars,stackedBar,2
+"A bar chart can be created with 'Cylinders' on the x-axis and the count of records on the y-axis, and it can be color-coded by 'Origin'.",Subjective-Objective,command,cars,stackedBar,4
+Let's make a bar chart showing 'Cylinders' and the count of records. We could use different colors for each 'Origin'.,Implicit-Explicit,command,cars,stackedBar,3
+"I suggest you create a bar chart with 'Cylinders' on the x-axis and the count of records on the y-axis, and it might be helpful to color-code it by 'Origin'.",Subjective-Objective,command,cars,stackedBar,2
+"You could create a bar chart with 'Cylinders' on the x-axis and the count of records on the y-axis, possibly color-coded by 'Origin'.",Subjective-Objective,command,cars,stackedBar,3
+"You know, it might be interesting to see how 'Cylinders' and the count of records relate. Maybe use colors to show 'Origin'?",Implicit-Explicit,command,cars,stackedBar,1
+Please make a bar chart. 'Cylinders' should be on the x-axis and the count of records on the y-axis. Use colors to represent different 'Origins'.,Implicit-Explicit,command,cars,stackedBar,4
+"Develop a bar chart with 'Cylinders' as the x-axis and the count of records as the y-axis, and apply color-coding according to 'Origin'.",Colloquial-Standard,command,cars,stackedBar,4
+"Construct a bar chart with 'Cylinders' on the x-axis and the tally of records on the y-axis, and differentiate by color based on 'Origin'.",Colloquial-Standard,command,cars,stackedBar,3
+"Create a bar chart with 'Cylinders' on the x-axis and the count of records on the y-axis, color-coded by 'Origin'.",Subjective-Objective,command,cars,stackedBar,5
+"Make a bar graph with 'Cylinders' on the bottom line and the number of records on the side line, and color it by 'Origin'.",Colloquial-Standard,command,cars,stackedBar,1
+"Generate a bar chart with 'Cylinders' represented on the x-axis and the quantity of records on the y-axis, with each 'Origin' distinguished by a unique color.",Colloquial-Standard,command,cars,stackedBar,5
+"Render a bar chart with 'Cylinders' as the independent variable on the x-axis and the count of records as the dependent variable on the y-axis, with each 'Origin' delineated by a unique color scheme.",Non-technical-Technical,command,cars,stackedBar,5
+I need a bar chart. The x-axis should be 'Cylinders' and the y-axis should be the count of records. Each 'Origin' should be represented by a different color.,Implicit-Explicit,command,cars,stackedBar,5
+"We have a bar chart here, it represents 'Cylinders' by the count of records, and the color indicates 'Origin'.",Colloquial-Standard,query,cars,stackedBar,3
+"The bar chart of 'Cylinders' displays the count of records, with color differentiation for 'Origin'.",Subjective-Objective,query,cars,stackedBar,5
+"The bar chart of 'Cylinders' provides a clear representation of the count of records, with the color indicating 'Origin'.",Subjective-Objective,query,cars,stackedBar,4
+"In my opinion, the bar chart of 'Cylinders' is quite informative, particularly when you consider the count of records and the color for 'Origin'.",Subjective-Objective,query,cars,stackedBar,2
+"A visual representation of 'Cylinders' quantity, with color differentiation for their 'Origin'.",Non-technical-Technical,query,cars,stackedBar,3
+This is a bar chart that clearly shows the count of records for 'Cylinders'. Each 'Origin' is represented by a different color on the chart.,Implicit-Explicit,query,cars,stackedBar,5
+"A graph showing the number of 'Cylinders', with different colors representing their 'Origin'.",Non-technical-Technical,query,cars,stackedBar,2
+"I think the bar chart of 'Cylinders' is really interesting, especially when you look at the count of records and the color for 'Origin'.",Subjective-Objective,query,cars,stackedBar,1
+"Could you please inform me of the quantity of records for each category of 'Cylinders', differentiated by 'Origin'?",Colloquial-Standard,question,cars,stackedBar,5
+"I think it would be interesting to see the count of records for each 'Cylinders' category, and how they are distinguished by 'Origin'.",Subjective-Objective,question,cars,stackedBar,2
+"I'm really curious to know the number of records for each 'Cylinders' category, and how they vary by 'Origin'. It's fascinating, isn't it?",Subjective-Objective,question,cars,stackedBar,1
+"What's the count of each type of 'Cylinders', and how are they grouped by 'Origin'?",Non-technical-Technical,question,cars,stackedBar,3
+"I suggest you create a point chart with ""Displacement"" on the x-axis and ""MPG"" on the y-axis, and it might be interesting to color the points based on ""Origin"".",Subjective-Objective,command,cars,scatterColor,2
+"You could create a point chart with ""Displacement"" on the x-axis and ""MPG"" on the y-axis, and consider coloring the points based on ""Origin"".",Subjective-Objective,command,cars,scatterColor,3
+"Make a dot picture with ""how much it moves"" on the side-to-side line and ""how far it goes on a gallon"" on the up-and-down line, and use different colors for the dots depending on ""where it comes from"".",Non-technical-Technical,command,cars,scatterColor,1
+"Make a dot chart with ""Displacement"" on the horizontal line and ""MPG"" on the vertical line, and color the dots based on where they come from.",Colloquial-Standard,command,cars,scatterColor,2
+"I need you to create a point chart. The x-axis should be labeled ""Displacement"", the y-axis should be labeled ""MPG"", and the points on the chart should be colored based on their ""Origin"".",Implicit-Explicit,command,cars,scatterColor,5
+"Maybe we could have a chart, with ""Displacement"" somewhere on the horizontal line, ""MPG"" somewhere on the vertical, and ""Origin"" influencing the color of the points?",Implicit-Explicit,command,cars,scatterColor,2
+"Plot a graph with ""Displacement"" on the x-axis and ""Miles Per Gallon (MPG)"" on the y-axis, and differentiate the data points by coloring them according to their ""Origin"".",Non-technical-Technical,command,cars,scatterColor,4
+"Construct a graph with ""Displacement"" on the horizontal axis and ""Miles Per Gallon"" on the vertical axis, and color the dots based on the ""Origin"" of the car.",Non-technical-Technical,command,cars,scatterColor,3
+"I think you should make a point chart with ""Displacement"" on the x-axis and ""MPG"" on the y-axis, and it would be really cool if you colored the points based on ""Origin"".",Subjective-Objective,command,cars,scatterColor,1
+"Make a graph with ""movement"" on the horizontal line and ""miles per gallon"" on the vertical line, and use different colors for the dots depending on ""where it's made"".",Non-technical-Technical,command,cars,scatterColor,2
+"Please make a chart. ""Displacement"" should be on the x-axis, ""MPG"" on the y-axis, and the points should be colored according to ""Origin"".",Implicit-Explicit,command,cars,scatterColor,4
+"Whip up a dot chart with ""Displacement"" on the side-to-side and ""MPG"" on the up-and-down, and slap some color on the dots based on where they're from.",Colloquial-Standard,command,cars,scatterColor,1
+"Generate a scatter plot with ""Displacement"" as the independent variable on the x-axis and ""Miles Per Gallon (MPG)"" as the dependent variable on the y-axis, and apply a color gradient to the data points based on the categorical variable ""Origin"".",Non-technical-Technical,command,cars,scatterColor,5
+"Construct a point chart with ""Displacement"" on the x-axis and ""MPG"" on the y-axis, and color the points according to their ""Origin"".",Colloquial-Standard,command,cars,scatterColor,3
+"Create a point chart with ""Displacement"" on the x-axis and ""MPG"" on the y-axis, and color the points based on ""Origin"".",Subjective-Objective,command,cars,scatterColor,5
+"Please create a point chart with ""Displacement"" on the x-axis and ""MPG"" on the y-axis, and color the points according to their ""Origin"".",Colloquial-Standard,command,cars,scatterColor,4
+"How about a chart with ""Displacement"" and ""MPG"" as the main elements, and a touch of ""Origin"" for color?",Implicit-Explicit,command,cars,scatterColor,1
+"A point chart can be created with ""Displacement"" on the x-axis and ""MPG"" on the y-axis, and the points could be colored based on ""Origin"".",Subjective-Objective,command,cars,scatterColor,4
+"It would be appreciated if you could construct a point chart with ""Displacement"" represented on the x-axis and ""MPG"" on the y-axis, and color the points in accordance with their respective ""Origin"".",Colloquial-Standard,command,cars,scatterColor,5
+"I think the point chart of ""Displacement"" vs ""MPG"", color-coded by ""Origin"" is a brilliant way to visualize the data.",Subjective-Objective,query,cars,scatterColor,1
+"The chart delineates the correlation between ""Displacement"" and ""MPG"", with the variable ""Origin"" represented through color differentiation.",Colloquial-Standard,query,cars,scatterColor,5
+"A graph showing the relationship between ""Displacement"" and ""MPG"", with different colors indicating their ""Origin"".",Non-technical-Technical,query,cars,scatterColor,2
+"A scatter plot delineating the correlation between ""Displacement"" and ""MPG"", with color differentiation signifying ""Origin"".",Non-technical-Technical,query,cars,scatterColor,5
+How does the gas mileage change with the size of the car's engine for cars from different places?,Non-technical-Technical,question,cars,scatterColor,1
+"How does the ""miles per gallon"" change with ""engine size"" for different ""places it's made""?",Colloquial-Standard,question,cars,scatterColor,1
+How does the miles per gallon change with the engine displacement for cars from different origins?,Non-technical-Technical,question,cars,scatterColor,3
+"What's the relationship between ""MPG"" and ""Displacement"" across various ""Origins""?",Implicit-Explicit,question,cars,scatterColor,1
+"How does the ""miles per gallon"" fluctuate with ""displacement"" for different ""origins""?",Colloquial-Standard,question,cars,scatterColor,3
+"Could you create a point chart? Use 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis.",Colloquial-Standard,command,cars,scatterFaceted,3
+"You know that data we have on 'Origin', 'Weight', and 'Acceleration'? How about we visualize it? Maybe a point chart would do the trick.",Implicit-Explicit,command,cars,scatterFaceted,1
+"Let's think about a point chart for our data. 'Origin' could be a good column, and maybe 'Weight' and 'Acceleration' could be our axes.",Implicit-Explicit,command,cars,scatterFaceted,2
+"I request you to generate a point chart, assigning 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis.",Colloquial-Standard,command,cars,scatterFaceted,5
+"Make a point chart, with 'Origin' as the column, 'Weight' on the x-axis, and 'Acceleration' on the y-axis.",Colloquial-Standard,command,cars,scatterFaceted,2
+"We should consider making a point chart. We could use 'Origin' as the column, and 'Weight' and 'Acceleration' as the axes.",Implicit-Explicit,command,cars,scatterFaceted,3
+"Create a point chart. Use 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis.",Implicit-Explicit,command,cars,scatterFaceted,5
+"I think you should make a point chart where 'Origin' is the column, 'Weight' is the x-axis, and 'Acceleration' is the y-axis. It's the best way to visualize the data.",Subjective-Objective,command,cars,scatterFaceted,1
+"Construct a point chart. Use 'Origin' as the column, 'Weight' as the horizontal axis, and 'Acceleration' as the vertical axis.",Non-technical-Technical,command,cars,scatterFaceted,4
+"Construct a dot graph. Use 'Origin' as the column, 'Weight' as the side-to-side measurement, and 'Acceleration' as the up-and-down measurement.",Non-technical-Technical,command,cars,scatterFaceted,3
+"Please construct a point chart, designating 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis.",Colloquial-Standard,command,cars,scatterFaceted,4
+"Make a dot graph using 'Where it's from' for the up and down, 'How heavy it is' for the left and right, and 'How fast it gets going' for the depth.",Non-technical-Technical,command,cars,scatterFaceted,1
+"It seems to me that a point chart with 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis would be a suitable choice.",Subjective-Objective,command,cars,scatterFaceted,3
+"A point chart with 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis would be an effective way to present the data.",Subjective-Objective,command,cars,scatterFaceted,4
+"Generate a scatter plot with 'Origin' as the categorical variable, 'Weight' as the independent variable on the x-axis, and 'Acceleration' as the dependent variable on the y-axis.",Non-technical-Technical,command,cars,scatterFaceted,5
+"I feel like it would be a good idea to create a point chart with 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis.",Subjective-Objective,command,cars,scatterFaceted,2
+"I suggest we create a point chart. Use 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis.",Implicit-Explicit,command,cars,scatterFaceted,4
+"Make a dot graph. Use 'Where it comes from' as the column, 'How much it weighs' as the side-to-side, and 'How quickly it speeds up' as the up-and-down.",Non-technical-Technical,command,cars,scatterFaceted,2
+"Create a point chart with 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis.",Subjective-Objective,command,cars,scatterFaceted,5
+"Please refer to the chart, specifically the 'Origin' column, 'Weight' on the x-axis, and 'Acceleration' on the y-axis.",Colloquial-Standard,query,cars,scatterFaceted,4
+"To me, the point chart with the 'Origin' column, 'Weight' on the x-axis, and 'Acceleration' on the y-axis seems a bit complex.",Subjective-Objective,query,cars,scatterFaceted,2
+"The point chart is organized with the 'Origin' column, 'Weight' on the x-axis, and 'Acceleration' on the y-axis.",Subjective-Objective,query,cars,scatterFaceted,4
+"The chart shows where things start, how heavy they are along the bottom, and how fast they speed up along the side.",Non-technical-Technical,query,cars,scatterFaceted,1
+"The scatter plot delineates 'Origin' in a columnar format, 'Weight' on the abscissa, and 'Acceleration' on the ordinate.",Non-technical-Technical,query,cars,scatterFaceted,5
+"Kindly direct your attention to the chart, particularly the 'Origin' column, 'Weight' represented on the x-axis, and 'Acceleration' on the y-axis.",Colloquial-Standard,query,cars,scatterFaceted,5
+"The point chart includes an 'Origin' column, with 'Weight' plotted on the x-axis and 'Acceleration' on the y-axis.",Non-technical-Technical,query,cars,scatterFaceted,4
+"Look at the chart, focus on where it all starts, and consider the weight and acceleration.",Implicit-Explicit,query,cars,scatterFaceted,1
+"The chart has an 'Origin' column, with 'Weight' plotted on the x-axis and 'Acceleration' on the y-axis.",Implicit-Explicit,query,cars,scatterFaceted,4
+"The point chart has the 'Origin' column, 'Weight' on the x-axis, and 'Acceleration' on the y-axis. It's neither too simple nor too complex.",Subjective-Objective,query,cars,scatterFaceted,3
+"The point chart consists of an 'Origin' column, 'Weight' on the x-axis, and 'Acceleration' on the y-axis.",Subjective-Objective,query,cars,scatterFaceted,5
+"Check out the chart, specifically the 'Origin' and how 'Weight' and 'Acceleration' are plotted.",Implicit-Explicit,query,cars,scatterFaceted,2
+"What's the chart saying with 'Origin' in the column, 'Weight' on the x, and 'Acceleration' on the y?",Colloquial-Standard,question,cars,scatterFaceted,1
+"I'm not sure, but it seems like the point chart with 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis might be trying to show a correlation between weight and acceleration.",Subjective-Objective,question,cars,scatterFaceted,2
+"Plot a line chart with 'Year' as the x-axis and the mean value of 'Horsepower' as the y-axis, and differentiate 'Origin' by using different colors.",Non-technical-Technical,command,cars,multiLine,4
+"Draw a line graph with 'Year' on the horizontal line and the average of 'AVG (Horsepower)' on the vertical line, and use different colors for 'Origin'.",Colloquial-Standard,command,cars,multiLine,2
+You could create a line chart with 'Year' on the x-axis and the mean of 'AVG (Horsepower)' on the y-axis. Consider coloring it by 'Origin'.,Subjective-Objective,command,cars,multiLine,3
+"Construct a line graph with 'Year' as the horizontal axis and the mean of 'AVG (Horsepower)' as the vertical axis, and differentiate 'Origin' by color.",Colloquial-Standard,command,cars,multiLine,3
+"Construct a graph with 'Year' as the horizontal line and the average of 'Horsepower' as the vertical line, and use different colors to represent different 'Origins'.",Non-technical-Technical,command,cars,multiLine,3
+"Please make a line chart. Use 'Year' for the x-axis and the mean of 'AVG (Horsepower)' for the y-axis. Also, color the chart by 'Origin'.",Implicit-Explicit,command,cars,multiLine,4
+"Draw a graph with years along the bottom and the average horsepower up the side, and use different colors for each origin.",Non-technical-Technical,command,cars,multiLine,2
+I suggest you create a line chart with 'Year' on the x-axis and the mean of 'AVG (Horsepower)' on the y-axis. It might be interesting if you colored it by 'Origin'.,Subjective-Objective,command,cars,multiLine,2
+How about we visualize the average horsepower over the years? We could use a line chart and maybe add some color to show where the cars come from.,Implicit-Explicit,command,cars,multiLine,2
+"I think you should make a line chart, and it would look really good if you put 'Year' on the x-axis and the average of 'AVG (Horsepower)' on the y-axis. And, in my opinion, it would be really cool if you colored it by 'Origin'.",Subjective-Objective,command,cars,multiLine,1
+Construct a line chart. The x-axis should represent 'Year'. The y-axis should represent the mean of 'AVG (Horsepower)'. The color of the lines should indicate 'Origin'.,Implicit-Explicit,command,cars,multiLine,5
+"Generate a line chart with 'Year' as the independent variable and the mean of 'AVG (Horsepower)' as the dependent variable, with the data points differentiated by the categorical variable 'Origin'.",Non-technical-Technical,command,cars,multiLine,5
+"Create a line chart with 'Year' on the x-axis and the mean of 'AVG (Horsepower)' on the y-axis, colored by 'Origin'.",Subjective-Objective,command,cars,multiLine,5
+"A line chart illustrating the mean horsepower of vehicles over a period of time, differentiated by color coding based on the country of origin.",Non-technical-Technical,query,cars,multiLine,4
+"This is a line chart that represents the mean horsepower over the years, with the origin of the cars indicated by different colors.",Colloquial-Standard,query,cars,multiLine,4
+"It's a graph, with years on one axis and average horsepower on the other. The colors tell you where the cars come from.",Implicit-Explicit,query,cars,multiLine,1
+"A line chart depicting the temporal progression of the mean value of horsepower, with the variable 'Origin' represented through color differentiation.",Non-technical-Technical,query,cars,multiLine,5
+The line chart explicitly displays the mean value of horsepower (AVG Horsepower) for each year on the x-axis. The color of each line corresponds to the origin of the car.,Implicit-Explicit,query,cars,multiLine,5
+"This is a line chart depicting the mean value of horsepower over a series of years, differentiated by color according to the origin of the vehicles.",Colloquial-Standard,query,cars,multiLine,5
+"It's a graph showing the average horsepower over the years, and it's color-coded by where the car's from.",Colloquial-Standard,query,cars,multiLine,1
+How's the average horsepower changing over time for different places?,Colloquial-Standard,question,cars,multiLine,1
+Can you tell me how the average horsepower changes over the years for different origins?,Implicit-Explicit,question,cars,multiLine,4
+What is the trend in the average horsepower over the years for different origins?,Implicit-Explicit,question,cars,multiLine,3
+It seems that the average horsepower of cars from different origins may have changed over the years. Can we check this?,Subjective-Objective,question,cars,multiLine,3
+Examine the variation in the mean of 'AVG (Horsepower)' over the years for different origins.,Subjective-Objective,question,cars,multiLine,5

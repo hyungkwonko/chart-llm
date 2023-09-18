@@ -1,0 +1,583 @@
+outs,step1s,step2s,step3s,lookup-nonvisual,step5s,lookup-visual,step7s,compositional-nonvisual,step9s,compositional-visual,open-ended,dnames
+"Step 1. Decision: The decision to be made could be determining which country has the highest percentage of a certain opinion.
+Step 2. Conclusion: The country with the highest percentage of a certain opinion could be the most influenced by that opinion.
+Step 3. Specific Value: The specific value would be the highest percentage of a certain opinion.
+Step 4. Lookup Question: What is the highest percentage of a certain opinion and which country does it belong to?
+Step 5. Visual Attributes: The length of the bar and the color representing the opinion.
+Step 6. Paraphrased Question: Which country's bar, representing a certain opinion, extends the furthest along the x-axis?
+Step 7. Operations: The operation would be finding the maximum value.
+Step 8. Compositional Question: What is the difference between the highest and lowest percentage of a certain opinion and which countries do they belong to?
+Step 9. Visual Attributes: The length of the bars and the color representing the opinion.
+Step 10. Paraphrased Question: What is the difference in length between the longest and shortest bars, representing a certain opinion, and which countries do they represent?
+Step 11. Open-ended Question: How does the highest percentage of a certain opinion in one country compare to the percentages in other countries?",The decision to be made could be determining which country has the highest percentage of a certain opinion.,The country with the highest percentage of a certain opinion could be the most influenced by that opinion.,The specific value would be the highest percentage of a certain opinion.,What is the highest percentage of a certain opinion and which country does it belong to?,The length of the bar and the color representing the opinion.,"Which country's bar, representing a certain opinion, extends the furthest along the x-axis?",The operation would be finding the maximum value.,What is the difference between the highest and lowest percentage of a certain opinion and which countries do they belong to?,The length of the bars and the color representing the opinion.,"What is the difference in length between the longest and shortest bars, representing a certain opinion, and which countries do they represent?",How does the highest percentage of a certain opinion in one country compare to the percentages in other countries?,kong|kong_27
+"Step 1. Decision: The decision could be to determine which country has the highest percentage of a certain response.
+Step 2. Conclusion: The country with the highest percentage of a certain response is X.
+Step 3. Specific Value: The percentage of the response in country X.
+Step 4. Lookup Question: What is the percentage of the response in country X?
+Step 5. Visual Attributes: The length of the bar corresponding to country X.
+Step 6. Paraphrased Question: How long is the bar corresponding to country X?
+Step 7. Operations: Max operation to find the country with the highest percentage.
+Step 8. Compositional Question: Which country has the highest percentage of the response?
+Step 9. Visual Attributes: The length of the bars.
+Step 10. Paraphrased Question: Which bar is the longest?
+Step 11. Open-ended Question: What could be the reason for country X having the highest percentage of the response?",The decision could be to determine which country has the highest percentage of a certain response.,The country with the highest percentage of a certain response is X.,The percentage of the response in country X.,What is the percentage of the response in country X?,The length of the bar corresponding to country X.,How long is the bar corresponding to country X?,Max operation to find the country with the highest percentage.,Which country has the highest percentage of the response?,The length of the bars.,Which bar is the longest?,What could be the reason for country X having the highest percentage of the response?,kong|kong_30
+"Step 1. Decision: The decision to invest in a particular tech company's stock.
+Step 2. Conclusion: The tech company with the highest stock price over time could be a good investment.
+Step 3. Specific Value: The highest stock price.
+Step 4. Lookup Question: What is the highest stock price of each tech company?
+Step 5. Visual Attributes: The highest point on the line for each color (representing each company).
+Step 6. Paraphrased Question: Which line reaches the highest point on the y-axis for each company?
+Step 7. Operations: Max (to find the highest stock price).
+Step 8. Compositional Question: Which tech company has the highest maximum stock price over time?
+Step 9. Visual Attributes: The highest point on the line for each color (representing each company).
+Step 10. Paraphrased Question: Which company's line reaches the highest point on the y-axis over time?
+Step 11. Open-ended Question: Which tech company would be the best investment based on the highest stock price over time?",The decision to invest in a particular tech company's stock.,The tech company with the highest stock price over time could be a good investment.,The highest stock price.,What is the highest stock price of each tech company?,The highest point on the line for each color (representing each company).,Which line reaches the highest point on the y-axis for each company?,Max (to find the highest stock price).,Which tech company has the highest maximum stock price over time?,The highest point on the line for each color (representing each company).,Which company's line reaches the highest point on the y-axis over time?,Which tech company would be the best investment based on the highest stock price over time?,vega-lite-example-gallery|line_color
+"Step 1. Decision: The decision could be to determine which country had the highest GDP in a specific year.
+Step 2. Conclusion: The country with the highest GDP in a specific year is the most economically prosperous.
+Step 3. Specific Value: The GDP value of a specific country in a specific year.
+Step 4. Lookup Question: What is the GDP of Country X in Year Y?
+Step 5. Visual Attributes: The position of the line (representing the country) on the y-axis (representing GDP) in correspondence to a specific point on the x-axis (representing the year).
+Step 6. Paraphrased Question: Where does the line representing Country X intersect the y-axis in Year Y?
+Step 7. Operations: Max operation to find the highest GDP.
+Step 8. Compositional Question: Which country had the highest GDP in Year Y?
+Step 9. Visual Attributes: The position of the lines (representing countries) on the y-axis (representing GDP) in correspondence to a specific point on the x-axis (representing the year).
+Step 10. Paraphrased Question: Which line reaches the highest point on the y-axis in Year Y?
+Step 11. Open-ended Question: How does the GDP of Country X compare to other countries in Year Y?",The decision could be to determine which country had the highest GDP in a specific year.,The country with the highest GDP in a specific year is the most economically prosperous.,The GDP value of a specific country in a specific year.,What is the GDP of Country X in Year Y?,The position of the line (representing the country) on the y-axis (representing GDP) in correspondence to a specific point on the x-axis (representing the year).,Where does the line representing Country X intersect the y-axis in Year Y?,Max operation to find the highest GDP.,Which country had the highest GDP in Year Y?,The position of the lines (representing countries) on the y-axis (representing GDP) in correspondence to a specific point on the x-axis (representing the year).,Which line reaches the highest point on the y-axis in Year Y?,How does the GDP of Country X compare to other countries in Year Y?,d3|d3_12
+"Step 1. Decision: The decision could be to determine which state has the highest population in a certain age range.
+Step 2. Conclusion: The state with the highest population in a certain age range is X.
+Step 3. Specific Value: The population of a certain age range in a specific state.
+Step 4. Lookup Question: What is the population of the age range X in state Y?
+Step 5. Visual Attributes: The height of the bar representing the population of the age range X in state Y.
+Step 6. Paraphrased Question: How high is the bar representing the population of the age range X in state Y?
+Step 7. Operations: Max operation to find the highest population.
+Step 8. Compositional Question: Which state has the highest population in the age range X?
+Step 9. Visual Attributes: The height of the bars representing the population of the age range X in each state.
+Step 10. Paraphrased Question: Which state's bar representing the population of the age range X is the highest?
+Step 11. Open-ended Question: What factors could contribute to state Y having the highest population in the age range X?",The decision could be to determine which state has the highest population in a certain age range.,The state with the highest population in a certain age range is X.,The population of a certain age range in a specific state.,What is the population of the age range X in state Y?,The height of the bar representing the population of the age range X in state Y.,How high is the bar representing the population of the age range X in state Y?,Max operation to find the highest population.,Which state has the highest population in the age range X?,The height of the bars representing the population of the age range X in each state.,Which state's bar representing the population of the age range X is the highest?,What factors could contribute to state Y having the highest population in the age range X?,d3|d3_4
+"Step 1. Decision: The decision could be to understand the distribution of responses across different religions.
+Step 2. Conclusion: A possible conclusion could be that a certain religion has the highest percentage of a particular response.
+Step 3. Specific Value: The specific value could be the percentage of a particular response for a specific religion.
+Step 4. Lookup Question: What is the percentage of a particular response for a specific religion?
+Step 5. Visual Attributes: The visual attributes required are the length of the bar and the color of the bar.
+Step 6. Paraphrased Question: How long is the bar representing a particular response for a specific religion?
+Step 7. Operations: The operations could be finding the maximum percentage among all religions for a particular response.
+Step 8. Compositional Question: Which religion has the highest percentage of a particular response?
+Step 9. Visual Attributes: The visual attributes required are the length of the bars and the color of the bars.
+Step 10. Paraphrased Question: Which bar representing a particular response is the longest among all religions?
+Step 11. Open-ended Question: How does the percentage of a particular response vary across different religions?",The decision could be to understand the distribution of responses across different religions.,A possible conclusion could be that a certain religion has the highest percentage of a particular response.,The specific value could be the percentage of a particular response for a specific religion.,What is the percentage of a particular response for a specific religion?,The visual attributes required are the length of the bar and the color of the bar.,How long is the bar representing a particular response for a specific religion?,The operations could be finding the maximum percentage among all religions for a particular response.,Which religion has the highest percentage of a particular response?,The visual attributes required are the length of the bars and the color of the bars.,Which bar representing a particular response is the longest among all religions?,How does the percentage of a particular response vary across different religions?,kong|kong_3
+"Step 1. Decision: The decision that can be made by analyzing this chart is to determine the year with the highest number of cases.
+Step 2. Conclusion: The year with the highest number of cases is the year with the highest bar on the chart.
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the number of cases in a specific year.
+Step 4. Lookup Question: What is the number of cases in the year 2010?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the height of the bar and the position on the x-axis.
+Step 6. Paraphrased Question: How high is the bar for the year 2010 on the x-axis?
+Step 7. Operations: The mathematical operation to reach the conclusion in Step 2 is the maximum operation.
+Step 8. Compositional Question: What is the maximum number of cases in any year?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the height of the bars.
+Step 10. Paraphrased Question: Which bar is the tallest among all the bars?
+Step 11. Open-ended Question: What could be the possible reasons for the highest number of cases in the year with the highest bar?",The decision that can be made by analyzing this chart is to determine the year with the highest number of cases.,The year with the highest number of cases is the year with the highest bar on the chart.,The specific value that can be retrieved to reach this conclusion is the number of cases in a specific year.,What is the number of cases in the year 2010?,The visual attributes required to paraphrase this question are the height of the bar and the position on the x-axis.,How high is the bar for the year 2010 on the x-axis?,The mathematical operation to reach the conclusion in Step 2 is the maximum operation.,What is the maximum number of cases in any year?,The visual attributes required to paraphrase this question are the height of the bars.,Which bar is the tallest among all the bars?,What could be the possible reasons for the highest number of cases in the year with the highest bar?,d3|d3_1
+"Step 1. Decision: The decision to be made could be whether the revenue of the company has been increasing or decreasing over the years.
+Step 2. Conclusion: The revenue of the company has been consistently increasing/decreasing over the years.
+Step 3. Specific Value: The revenue values for specific years.
+Step 4. Lookup Question: What was the revenue of the company in the year 2015?
+Step 5. Visual Attributes: The position on the y-axis corresponds to the revenue and the position on the x-axis corresponds to the year.
+Step 6. Paraphrased Question: Where does the line intersect the y-axis for the year 2015?
+Step 7. Operations: The difference between the revenue values of two specific years.
+Step 8. Compositional Question: What is the difference in revenue between the years 2015 and 2020?
+Step 9. Visual Attributes: The position on the y-axis corresponds to the revenue and the position on the x-axis corresponds to the year.
+Step 10. Paraphrased Question: What is the vertical distance between the points on the line for the years 2015 and 2020?
+Step 11. Open-ended Question: How has the revenue of the company changed over the years?",The decision to be made could be whether the revenue of the company has been increasing or decreasing over the years.,The revenue of the company has been consistently increasing/decreasing over the years.,The revenue values for specific years.,What was the revenue of the company in the year 2015?,The position on the y-axis corresponds to the revenue and the position on the x-axis corresponds to the year.,Where does the line intersect the y-axis for the year 2015?,The difference between the revenue values of two specific years.,What is the difference in revenue between the years 2015 and 2020?,The position on the y-axis corresponds to the revenue and the position on the x-axis corresponds to the year.,What is the vertical distance between the points on the line for the years 2015 and 2020?,How has the revenue of the company changed over the years?,d3|d3_10
+"Step 1. Decision: The decision to increase or decrease research and development expenditure based on the trend over the years.
+Step 2. Conclusion: If the trend of research and development expenditure is increasing over the years, it may be concluded that the organization is investing more in research and development.
+Step 3. Specific Value: The research and development expenditure for a specific year.
+Step 4. Lookup Question: What was the research and development expenditure in the year 2010?
+Step 5. Visual Attributes: The height of the line at the point corresponding to the year 2010.
+Step 6. Paraphrased Question: How high is the line at the point corresponding to the year 2010?
+Step 7. Operations: The maximum and minimum research and development expenditure over the years.
+Step 8. Compositional Question: What is the difference between the maximum and minimum research and development expenditure over the years?
+Step 9. Visual Attributes: The highest and lowest point of the line on the chart.
+Step 10. Paraphrased Question: What is the difference in height between the highest and lowest point of the line on the chart?
+Step 11. Open-ended Question: How has the research and development expenditure changed over the years and what could be the possible reasons for this trend?",The decision to increase or decrease research and development expenditure based on the trend over the years.,"If the trend of research and development expenditure is increasing over the years, it may be concluded that the organization is investing more in research and development.",The research and development expenditure for a specific year.,What was the research and development expenditure in the year 2010?,The height of the line at the point corresponding to the year 2010.,How high is the line at the point corresponding to the year 2010?,The maximum and minimum research and development expenditure over the years.,What is the difference between the maximum and minimum research and development expenditure over the years?,The highest and lowest point of the line on the chart.,What is the difference in height between the highest and lowest point of the line on the chart?,How has the research and development expenditure changed over the years and what could be the possible reasons for this trend?,d3|d3_11
+"Step 1. Decision: The decision to be made could be determining which major has the highest percentage of students.
+Step 2. Conclusion: The major with the highest percentage of students is the most popular.
+Step 3. Specific Value: The percentage of the major with the highest number of students.
+Step 4. Lookup Question: What is the percentage of the major with the highest number of students?
+Step 5. Visual Attributes: The length of the bar represents the percentage of students in each major.
+Step 6. Paraphrased Question: Which bar is the longest in the chart?
+Step 7. Operations: The operation to be performed is finding the maximum value.
+Step 8. Compositional Question: What is the maximum percentage value among all the majors?
+Step 9. Visual Attributes: The length of the bar represents the percentage of students in each major.
+Step 10. Paraphrased Question: Which bar in the chart is the longest?
+Step 11. Open-ended Question: Why do you think the major with the highest percentage of students is the most popular?",The decision to be made could be determining which major has the highest percentage of students.,The major with the highest percentage of students is the most popular.,The percentage of the major with the highest number of students.,What is the percentage of the major with the highest number of students?,The length of the bar represents the percentage of students in each major.,Which bar is the longest in the chart?,The operation to be performed is finding the maximum value.,What is the maximum percentage value among all the majors?,The length of the bar represents the percentage of students in each major.,Which bar in the chart is the longest?,Why do you think the major with the highest percentage of students is the most popular?,d3|d3_3
+"Step 1. Decision: The decision to be made could be determining which mode of transportation has the highest ridership.
+Step 2. Conclusion: The mode of transportation with the highest ridership is the most popular.
+Step 3. Specific Value: The specific value would be the highest ridership number.
+Step 4. Lookup Question: What mode of transportation has the highest ridership?
+Step 5. Visual Attributes: The length of the bar represents the ridership.
+Step 6. Paraphrased Question: Which bar is the longest in the chart?
+Step 7. Operations: The operation would be finding the maximum value of ridership.
+Step 8. Compositional Question: What is the difference in ridership between the mode of transportation with the highest ridership and the one with the lowest?
+Step 9. Visual Attributes: The length of the bars represents the ridership.
+Step 10. Paraphrased Question: What is the difference in length between the longest and shortest bars in the chart?
+Step 11. Open-ended Question: How does the popularity of different modes of transportation compare based on their ridership?",The decision to be made could be determining which mode of transportation has the highest ridership.,The mode of transportation with the highest ridership is the most popular.,The specific value would be the highest ridership number.,What mode of transportation has the highest ridership?,The length of the bar represents the ridership.,Which bar is the longest in the chart?,The operation would be finding the maximum value of ridership.,What is the difference in ridership between the mode of transportation with the highest ridership and the one with the lowest?,The length of the bars represents the ridership.,What is the difference in length between the longest and shortest bars in the chart?,How does the popularity of different modes of transportation compare based on their ridership?,d3|d3_5
+"Step 1. Decision: The decision to be made could be determining which platform has the highest count.
+Step 2. Conclusion: The platform with the highest count is the most popular or most used.
+Step 3. Specific Value: The specific value would be the highest count value.
+Step 4. Lookup Question: What is the highest count value in the dataset?
+Step 5. Visual Attributes: The height of the bars in the bar chart.
+Step 6. Paraphrased Question: Which bar in the chart is the tallest?
+Step 7. Operations: The operation would be finding the maximum value.
+Step 8. Compositional Question: Which platform has the maximum count value?
+Step 9. Visual Attributes: The height of the bars and the labels on the x-axis.
+Step 10. Paraphrased Question: Which bar is the tallest and what platform does it represent?
+Step 11. Open-ended Question: What could be the reasons for the popularity of the platform with the highest count?",The decision to be made could be determining which platform has the highest count.,The platform with the highest count is the most popular or most used.,The specific value would be the highest count value.,What is the highest count value in the dataset?,The height of the bars in the bar chart.,Which bar in the chart is the tallest?,The operation would be finding the maximum value.,Which platform has the maximum count value?,The height of the bars and the labels on the x-axis.,Which bar is the tallest and what platform does it represent?,What could be the reasons for the popularity of the platform with the highest count?,d3|d3_6
+"Step 1. Decision: The decision to be made could be determining which country has the highest amount of donations.
+Step 2. Conclusion: The country with the highest bar in the chart is the one with the most donations.
+Step 3. Specific Value: The specific value to be retrieved is the donation amount of the country with the highest bar.
+Step 4. Lookup Question: What is the donation amount of the country with the highest donations?
+Step 5. Visual Attributes: The height of the bars represents the donation amount.
+Step 6. Paraphrased Question: Which country's bar is the tallest in the chart?
+Step 7. Operations: The operation to be performed is finding the maximum value of the donation amounts.
+Step 8. Compositional Question: Which country has the maximum donation amount?
+Step 9. Visual Attributes: The height of the bars represents the donation amount.
+Step 10. Paraphrased Question: Which bar in the chart is the tallest?
+Step 11. Open-ended Question: What could be the reason for this country having the highest donation amount?",The decision to be made could be determining which country has the highest amount of donations.,The country with the highest bar in the chart is the one with the most donations.,The specific value to be retrieved is the donation amount of the country with the highest bar.,What is the donation amount of the country with the highest donations?,The height of the bars represents the donation amount.,Which country's bar is the tallest in the chart?,The operation to be performed is finding the maximum value of the donation amounts.,Which country has the maximum donation amount?,The height of the bars represents the donation amount.,Which bar in the chart is the tallest?,What could be the reason for this country having the highest donation amount?,d3|d3_7
+"Step 1. Decision: The decision to be made could be determining which country has the highest average rating.
+Step 2. Conclusion: The country with the highest average rating is the most preferred or popular.
+Step 3. Specific Value: The highest rating value.
+Step 4. Lookup Question: What is the highest rating value and which country does it correspond to?
+Step 5. Visual Attributes: The height of the bars.
+Step 6. Paraphrased Question: Which bar is the tallest and which country does it represent?
+Step 7. Operations: Max operation to find the highest rating.
+Step 8. Compositional Question: Which country has the highest average rating and by how much does it exceed the next highest rating?
+Step 9. Visual Attributes: The height of the bars and the difference between the heights.
+Step 10. Paraphrased Question: Which bar is the tallest, which country does it represent, and how much taller is it than the next tallest bar?
+Step 11. Open-ended Question: How does the highest average rating reflect the popularity of a country?",The decision to be made could be determining which country has the highest average rating.,The country with the highest average rating is the most preferred or popular.,The highest rating value.,What is the highest rating value and which country does it correspond to?,The height of the bars.,Which bar is the tallest and which country does it represent?,Max operation to find the highest rating.,Which country has the highest average rating and by how much does it exceed the next highest rating?,The height of the bars and the difference between the heights.,"Which bar is the tallest, which country does it represent, and how much taller is it than the next tallest bar?",How does the highest average rating reflect the popularity of a country?,d3|d3_8
+"Step 1. Decision: The decision could be determining which country has the highest amount of donations.
+Step 2. Conclusion: The country with the highest bar in the chart is the one with the most donations.
+Step 3. Specific Value: The specific value would be the donation amount of the country with the highest bar.
+Step 4. Lookup Question: What is the donation amount of the country with the highest donations?
+Step 5. Visual Attributes: The height of the bars represents the donation amount.
+Step 6. Paraphrased Question: Which bar is the tallest in the chart and what is its value?
+Step 7. Operations: The operation would be finding the maximum value of the donation amounts.
+Step 8. Compositional Question: Which country has the maximum donation amount?
+Step 9. Visual Attributes: The height of the bars represents the donation amount and the labels on the x-axis represent the countries.
+Step 10. Paraphrased Question: Which bar is the tallest and what country does it represent?
+Step 11. Open-ended Question: How does the country with the highest donations compare to the others in terms of donation amount?",The decision could be determining which country has the highest amount of donations.,The country with the highest bar in the chart is the one with the most donations.,The specific value would be the donation amount of the country with the highest bar.,What is the donation amount of the country with the highest donations?,The height of the bars represents the donation amount.,Which bar is the tallest in the chart and what is its value?,The operation would be finding the maximum value of the donation amounts.,Which country has the maximum donation amount?,The height of the bars represents the donation amount and the labels on the x-axis represent the countries.,Which bar is the tallest and what country does it represent?,How does the country with the highest donations compare to the others in terms of donation amount?,d3|d3_9
+"Step 1. Decision: The decision to be made could be determining which country has the highest urban population density.
+Step 2. Conclusion: The country with the highest number of persons per square kilometer is the one with the highest urban population density.
+Step 3. Specific Value: The specific value would be the highest number of persons per square kilometers.
+Step 4. Lookup Question: Which country has the highest number of persons per square kilometers?
+Step 5. Visual Attributes: The visual attributes required would be the length of the bar and the label of the country on the y-axis.
+Step 6. Paraphrased Question: Which country's bar extends the furthest along the x-axis?
+Step 7. Operations: The operation required would be finding the maximum value of persons per square kilometers.
+Step 8. Compositional Question: What is the maximum number of persons per square kilometers and which country does it correspond to?
+Step 9. Visual Attributes: The visual attributes required would be the length of the bar and the label of the country on the y-axis.
+Step 10. Paraphrased Question: Which country's bar extends the furthest along the x-axis and what is the value at that point?
+Step 11. Open-ended Question: How does the urban population density vary across different countries?",The decision to be made could be determining which country has the highest urban population density.,The country with the highest number of persons per square kilometer is the one with the highest urban population density.,The specific value would be the highest number of persons per square kilometers.,Which country has the highest number of persons per square kilometers?,The visual attributes required would be the length of the bar and the label of the country on the y-axis.,Which country's bar extends the furthest along the x-axis?,The operation required would be finding the maximum value of persons per square kilometers.,What is the maximum number of persons per square kilometers and which country does it correspond to?,The visual attributes required would be the length of the bar and the label of the country on the y-axis.,Which country's bar extends the furthest along the x-axis and what is the value at that point?,How does the urban population density vary across different countries?,kong|kong_15
+"Step 1. Decision: The decision that can be made by analyzing this chart is to determine the pollster with the highest house effect.
+Step 2. Conclusion: The pollster with the highest house effect can be considered as the most influential.
+Step 3. Specific Value: The specific value that can be retrieved is the house effect of a particular pollster.
+Step 4. Lookup Question: What is the house effect of pollster X?
+Step 5. Visual Attributes: The visual attributes required are the length of the bar and the y-axis.
+Step 6. Paraphrased Question: How long is the bar corresponding to pollster X on the y-axis?
+Step 7. Operations: The operation required is max to find the pollster with the highest house effect.
+Step 8. Compositional Question: Which pollster has the highest house effect?
+Step 9. Visual Attributes: The visual attributes required are the length of the bars and the y-axis.
+Step 10. Paraphrased Question: Which bar on the y-axis is the longest?
+Step 11. Open-ended Question: How does the house effect of a pollster influence their impact on the poll results?",The decision that can be made by analyzing this chart is to determine the pollster with the highest house effect.,The pollster with the highest house effect can be considered as the most influential.,The specific value that can be retrieved is the house effect of a particular pollster.,What is the house effect of pollster X?,The visual attributes required are the length of the bar and the y-axis.,How long is the bar corresponding to pollster X on the y-axis?,The operation required is max to find the pollster with the highest house effect.,Which pollster has the highest house effect?,The visual attributes required are the length of the bars and the y-axis.,Which bar on the y-axis is the longest?,How does the house effect of a pollster influence their impact on the poll results?,kong|kong_17
+"Step 1. Decision: The decision to be made could be understanding the distribution of age groups over different years.
+Step 2. Conclusion: A possible conclusion could be that a certain age group has consistently had the highest percentage over the years.
+Step 3. Specific Value: The specific value could be the percentage of a certain age group in a specific year.
+Step 4. Lookup Question: What is the percentage of the age group 30-35 in the year 2015?
+Step 5. Visual Attributes: The visual attributes required are the height of the bar corresponding to the age group 30-35 in the year 2015.
+Step 6. Paraphrased Question: How high is the bar representing the age group 30-35 in the year 2015?
+Step 7. Operations: The operations required could be finding the maximum percentage among all age groups for each year.
+Step 8. Compositional Question: Which age group had the highest percentage each year?
+Step 9. Visual Attributes: The visual attributes required are the heights of the bars for each age group in each year.
+Step 10. Paraphrased Question: Which bar is the highest for each year?
+Step 11. Open-ended Question: How has the distribution of age groups changed over the years?",The decision to be made could be understanding the distribution of age groups over different years.,A possible conclusion could be that a certain age group has consistently had the highest percentage over the years.,The specific value could be the percentage of a certain age group in a specific year.,What is the percentage of the age group 30-35 in the year 2015?,The visual attributes required are the height of the bar corresponding to the age group 30-35 in the year 2015.,How high is the bar representing the age group 30-35 in the year 2015?,The operations required could be finding the maximum percentage among all age groups for each year.,Which age group had the highest percentage each year?,The visual attributes required are the heights of the bars for each age group in each year.,Which bar is the highest for each year?,How has the distribution of age groups changed over the years?,kong|kong_18
+"Step 1. Decision: The decision that can be made by analyzing this chart is to understand the growth trends of different religions.
+
+Step 2. Conclusion: A possible conclusion that can be reached from this decision is that a certain religion has the highest growth percentage.
+
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the highest percentage of growth among all religions.
+
+Step 4. Lookup Question: Which religion has the highest growth percentage?
+
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars and the color representing growth.
+
+Step 6. Paraphrased Question: Which religion's bar extends the furthest on the x-axis and is colored to represent growth?
+
+Step 7. Operations: The mathematical operation to reach the conclusion in Step 2 is max.
+
+Step 8. Compositional Question: What is the difference in growth percentage between the religion with the highest growth and the one with the lowest growth?
+
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the lengths of the bars and the colors representing growth.
+
+Step 10. Paraphrased Question: What is the difference in length on the x-axis between the longest bar representing growth and the shortest bar representing growth?
+
+Step 11. Open-ended Question: How does the growth percentage of different religions compare and what factors might contribute to these differences?",The decision that can be made by analyzing this chart is to understand the growth trends of different religions.,A possible conclusion that can be reached from this decision is that a certain religion has the highest growth percentage.,The specific value that can be retrieved to reach this conclusion is the highest percentage of growth among all religions.,Which religion has the highest growth percentage?,The visual attributes required to paraphrase this question are the length of the bars and the color representing growth.,Which religion's bar extends the furthest on the x-axis and is colored to represent growth?,The mathematical operation to reach the conclusion in Step 2 is max.,What is the difference in growth percentage between the religion with the highest growth and the one with the lowest growth?,The visual attributes required to paraphrase this question are the lengths of the bars and the colors representing growth.,What is the difference in length on the x-axis between the longest bar representing growth and the shortest bar representing growth?,How does the growth percentage of different religions compare and what factors might contribute to these differences?,kong|kong_5
+"Step 1. Decision: The decision to be made could be determining which country has the highest budget for a specific budget category.
+Step 2. Conclusion: The country with the highest budget for a specific budget category is X.
+Step 3. Specific Value: The specific value would be the highest budget amount for a specific budget category.
+Step 4. Lookup Question: What is the highest budget amount for a specific budget category?
+Step 5. Visual Attributes: The visual attributes required would be the length of the bar and the color representing the budget category.
+Step 6. Paraphrased Question: Which bar representing a specific budget category is the longest?
+Step 7. Operations: The operation required would be finding the maximum budget amount.
+Step 8. Compositional Question: Which country has the maximum budget amount for a specific budget category?
+Step 9. Visual Attributes: The visual attributes required would be the length of the bar, the color representing the budget category, and the row representing the country.
+Step 10. Paraphrased Question: Which country's bar, representing a specific budget category, is the longest?
+Step 11. Open-ended Question: How does the highest budget amount for a specific budget category compare across different countries?",The decision to be made could be determining which country has the highest budget for a specific budget category.,The country with the highest budget for a specific budget category is X.,The specific value would be the highest budget amount for a specific budget category.,What is the highest budget amount for a specific budget category?,The visual attributes required would be the length of the bar and the color representing the budget category.,Which bar representing a specific budget category is the longest?,The operation required would be finding the maximum budget amount.,Which country has the maximum budget amount for a specific budget category?,"The visual attributes required would be the length of the bar, the color representing the budget category, and the row representing the country.","Which country's bar, representing a specific budget category, is the longest?",How does the highest budget amount for a specific budget category compare across different countries?,kong|kong_50
+"Step 1. Decision: The decision to be made could be understanding the racial distribution in a certain context or scenario.
+Step 2. Conclusion: A possible conclusion could be that a certain race is more prevalent or less prevalent in the given context.
+Step 3. Specific Value: The specific value could be the percentage of a particular race.
+Step 4. Lookup Question: What is the percentage of the Asian race?
+Step 5. Visual Attributes: The length of the bar corresponding to the Asian race.
+Step 6. Paraphrased Question: How long is the bar corresponding to the Asian race?
+Step 7. Operations: The operation could be finding the maximum or minimum percentage to determine the most or least prevalent race.
+Step 8. Compositional Question: Which race has the highest percentage?
+Step 9. Visual Attributes: The length of the bars.
+Step 10. Paraphrased Question: Which bar is the longest?
+Step 11. Open-ended Question: What does the racial distribution tell us about the given context or scenario?",The decision to be made could be understanding the racial distribution in a certain context or scenario.,A possible conclusion could be that a certain race is more prevalent or less prevalent in the given context.,The specific value could be the percentage of a particular race.,What is the percentage of the Asian race?,The length of the bar corresponding to the Asian race.,How long is the bar corresponding to the Asian race?,The operation could be finding the maximum or minimum percentage to determine the most or least prevalent race.,Which race has the highest percentage?,The length of the bars.,Which bar is the longest?,What does the racial distribution tell us about the given context or scenario?,kong|kong_53
+"Step 1. Decision: The decision that can be made by analyzing this chart is to understand the distribution of a certain variable across different races.
+Step 2. Conclusion: A possible conclusion that can be reached from this decision is identifying which race has the highest or lowest percentage of a certain variable.
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the percentage associated with each race.
+Step 4. Lookup Question: What is the percentage associated with the Asian race?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bar associated with the Asian race.
+Step 6. Paraphrased Question: How long is the bar associated with the Asian race?
+Step 7. Operations: The mathematical operation to reach the conclusion in Step 2 is max or min, to identify the race with the highest or lowest percentage.
+Step 8. Compositional Question: Which race has the highest percentage?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the lengths of all the bars in the chart.
+Step 10. Paraphrased Question: Which bar is the longest in the chart?
+Step 11. Open-ended Question: What can be inferred about the distribution of the variable across different races based on the chart?",The decision that can be made by analyzing this chart is to understand the distribution of a certain variable across different races.,A possible conclusion that can be reached from this decision is identifying which race has the highest or lowest percentage of a certain variable.,The specific value that can be retrieved to reach this conclusion is the percentage associated with each race.,What is the percentage associated with the Asian race?,The visual attributes required to paraphrase this question are the length of the bar associated with the Asian race.,How long is the bar associated with the Asian race?,"The mathematical operation to reach the conclusion in Step 2 is max or min, to identify the race with the highest or lowest percentage.",Which race has the highest percentage?,The visual attributes required to paraphrase this question are the lengths of all the bars in the chart.,Which bar is the longest in the chart?,What can be inferred about the distribution of the variable across different races based on the chart?,kong|kong_54
+"Step 1. Decision: The decision that can be made by analyzing this chart is to understand the racial distribution in a certain context (the context is not specified in the given Vega-Lite spec).
+Step 2. Conclusion: A possible conclusion that can be reached from this decision is identifying which race has the highest percentage.
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the highest percentage among all races.
+Step 4. Lookup Question: What is the highest percentage among all races?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars.
+Step 6. Paraphrased Question: Which bar is the longest among all the bars representing different races?
+Step 7. Operations: The mathematical operation to reach the conclusion in Step 2 is max.
+Step 8. Compositional Question: Which race has the maximum percentage?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars and the labels on the y-axis.
+Step 10. Paraphrased Question: Which bar is the longest and what race does it represent?
+Step 11. Open-ended Question: How does the racial distribution represented in the chart reflect on the context it is representing?",The decision that can be made by analyzing this chart is to understand the racial distribution in a certain context (the context is not specified in the given Vega-Lite spec).,A possible conclusion that can be reached from this decision is identifying which race has the highest percentage.,The specific value that can be retrieved to reach this conclusion is the highest percentage among all races.,What is the highest percentage among all races?,The visual attributes required to paraphrase this question are the length of the bars.,Which bar is the longest among all the bars representing different races?,The mathematical operation to reach the conclusion in Step 2 is max.,Which race has the maximum percentage?,The visual attributes required to paraphrase this question are the length of the bars and the labels on the y-axis.,Which bar is the longest and what race does it represent?,How does the racial distribution represented in the chart reflect on the context it is representing?,kong|kong_55
+"Step 1. Decision: The decision to be made could be determining the most common response to a particular statement.
+Step 2. Conclusion: The conclusion could be that the most common response to the statement is ""Agree"" (for example).
+Step 3. Specific Value: The specific value could be the percentage of respondents who chose ""Agree"" for a particular statement.
+Step 4. Lookup Question: What is the percentage of respondents who chose ""Agree"" for the statement ""I feel safe in my neighborhood""?
+Step 5. Visual Attributes: The visual attributes required are the length of the bar and the color of the bar.
+Step 6. Paraphrased Question: What is the length of the bar representing the percentage of respondents who chose ""Agree"" for the statement ""I feel safe in my neighborhood""?
+Step 7. Operations: The operations required could be finding the maximum percentage among all responses.
+Step 8. Compositional Question: What is the maximum percentage among all responses to the statement ""I feel safe in my neighborhood""?
+Step 9. Visual Attributes: The visual attributes required are the length of the bars.
+Step 10. Paraphrased Question: Which bar representing a response to the statement ""I feel safe in my neighborhood"" is the longest?
+Step 11. Open-ended Question: What can be inferred about the safety perception of the respondents based on their responses to the statement ""I feel safe in my neighborhood""?",The decision to be made could be determining the most common response to a particular statement.,"The conclusion could be that the most common response to the statement is ""Agree"" (for example).","The specific value could be the percentage of respondents who chose ""Agree"" for a particular statement.","What is the percentage of respondents who chose ""Agree"" for the statement ""I feel safe in my neighborhood""?",The visual attributes required are the length of the bar and the color of the bar.,"What is the length of the bar representing the percentage of respondents who chose ""Agree"" for the statement ""I feel safe in my neighborhood""?",The operations required could be finding the maximum percentage among all responses.,"What is the maximum percentage among all responses to the statement ""I feel safe in my neighborhood""?",The visual attributes required are the length of the bars.,"Which bar representing a response to the statement ""I feel safe in my neighborhood"" is the longest?","What can be inferred about the safety perception of the respondents based on their responses to the statement ""I feel safe in my neighborhood""?",kong|kong_65
+"Step 1. Decision: The decision to be made could be determining which administration had the highest percentage in a certain category.
+Step 2. Conclusion: The administration with the highest percentage in a certain category is the most effective in that area.
+Step 3. Specific Value: The specific value would be the highest percentage in a certain category for a particular administration.
+Step 4. Lookup Question: What is the highest percentage in a certain category for a particular administration?
+Step 5. Visual Attributes: The visual attributes required would be the height of the bar (representing the percentage) and the color of the bar (representing the category).
+Step 6. Paraphrased Question: Which bar, representing a certain category, is the tallest for a particular administration?
+Step 7. Operations: The operation required would be finding the maximum value.
+Step 8. Compositional Question: What is the maximum percentage across all categories for each administration?
+Step 9. Visual Attributes: The visual attributes required would be the height of the bars (representing the percentages) and the color of the bars (representing the categories).
+Step 10. Paraphrased Question: Which bar, representing a category, is the tallest for each administration?
+Step 11. Open-ended Question: How does the effectiveness of each administration compare across different categories?",The decision to be made could be determining which administration had the highest percentage in a certain category.,The administration with the highest percentage in a certain category is the most effective in that area.,The specific value would be the highest percentage in a certain category for a particular administration.,What is the highest percentage in a certain category for a particular administration?,The visual attributes required would be the height of the bar (representing the percentage) and the color of the bar (representing the category).,"Which bar, representing a certain category, is the tallest for a particular administration?",The operation required would be finding the maximum value.,What is the maximum percentage across all categories for each administration?,The visual attributes required would be the height of the bars (representing the percentages) and the color of the bars (representing the categories).,"Which bar, representing a category, is the tallest for each administration?",How does the effectiveness of each administration compare across different categories?,kong|kong_68
+"Step 1. Decision: The decision that can be made by analyzing this chart is to identify the income rank that has experienced the highest percentage change in income.
+Step 2. Conclusion: The income rank that has experienced the highest percentage change in income is the one with the longest bar in the chart.
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the income rank associated with the highest % change in income.
+Step 4. Lookup Question: What is the income rank associated with the highest % change in income?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars.
+Step 6. Paraphrased Question: Which bar is the longest in the chart?
+Step 7. Operations: The mathematical operation to reach the conclusion in Step 2 is max.
+Step 8. Compositional Question: What is the maximum % change in income and which income rank does it correspond to?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars and the labels on the y-axis.
+Step 10. Paraphrased Question: Which bar is the longest and what is the corresponding label on the y-axis?
+Step 11. Open-ended Question: What can be inferred about the income distribution based on the income rank that has experienced the highest % change in income?",The decision that can be made by analyzing this chart is to identify the income rank that has experienced the highest percentage change in income.,The income rank that has experienced the highest percentage change in income is the one with the longest bar in the chart.,The specific value that can be retrieved to reach this conclusion is the income rank associated with the highest % change in income.,What is the income rank associated with the highest % change in income?,The visual attributes required to paraphrase this question are the length of the bars.,Which bar is the longest in the chart?,The mathematical operation to reach the conclusion in Step 2 is max.,What is the maximum % change in income and which income rank does it correspond to?,The visual attributes required to paraphrase this question are the length of the bars and the labels on the y-axis.,Which bar is the longest and what is the corresponding label on the y-axis?,What can be inferred about the income distribution based on the income rank that has experienced the highest % change in income?,kong|kong_69
+"Step 1. Decision: The decision could be to determine the level of agreement on a certain topic or issue.
+Step 2. Conclusion: The conclusion could be that the majority of people agree or disagree on the topic or issue.
+Step 3. Specific Value: The specific value could be the percentage of people who agree.
+Step 4. Lookup Question: What is the percentage of people who agree?
+Step 5. Visual Attributes: The length of the bar represents the percentage of people who agree.
+Step 6. Paraphrased Question: How long is the bar representing the people who agree?
+Step 7. Operations: The operation could be to find the maximum value to determine the highest percentage of agreement.
+Step 8. Compositional Question: What is the maximum percentage of agreement?
+Step 9. Visual Attributes: The length of the bar represents the percentage of agreement.
+Step 10. Paraphrased Question: Which bar is the longest, representing the highest percentage of agreement?
+Step 11. Open-ended Question: What can be inferred about public opinion based on the highest percentage of agreement?",The decision could be to determine the level of agreement on a certain topic or issue.,The conclusion could be that the majority of people agree or disagree on the topic or issue.,The specific value could be the percentage of people who agree.,What is the percentage of people who agree?,The length of the bar represents the percentage of people who agree.,How long is the bar representing the people who agree?,The operation could be to find the maximum value to determine the highest percentage of agreement.,What is the maximum percentage of agreement?,The length of the bar represents the percentage of agreement.,"Which bar is the longest, representing the highest percentage of agreement?",What can be inferred about public opinion based on the highest percentage of agreement?,kong|kong_70
+"Step 1. Decision: The decision to be made could be understanding the gender distribution across different age groups.
+Step 2. Conclusion: A possible conclusion could be that a certain age group has a higher percentage of a particular gender.
+Step 3. Specific Value: The specific value could be the percentage of a particular gender in a specific age group.
+Step 4. Lookup Question: What is the percentage of males in the 20-30 age group?
+Step 5. Visual Attributes: The visual attributes required are the color of the bar (representing gender) and the height of the bar (representing the percentage).
+Step 6. Paraphrased Question: What is the height of the blue bar in the column labeled 20-30?
+Step 7. Operations: The operations required could be comparison (to compare the percentages of different genders in the same age group) and maximum (to find the age group with the highest percentage of a particular gender).
+Step 8. Compositional Question: Which age group has the highest percentage of females?
+Step 9. Visual Attributes: The visual attributes required are the color of the bar (representing gender) and the height of the bar (representing the percentage).
+Step 10. Paraphrased Question: In which column is the height of the red bar the highest?
+Step 11. Open-ended Question: How does the gender distribution vary across different age groups?",The decision to be made could be understanding the gender distribution across different age groups.,A possible conclusion could be that a certain age group has a higher percentage of a particular gender.,The specific value could be the percentage of a particular gender in a specific age group.,What is the percentage of males in the 20-30 age group?,The visual attributes required are the color of the bar (representing gender) and the height of the bar (representing the percentage).,What is the height of the blue bar in the column labeled 20-30?,The operations required could be comparison (to compare the percentages of different genders in the same age group) and maximum (to find the age group with the highest percentage of a particular gender).,Which age group has the highest percentage of females?,The visual attributes required are the color of the bar (representing gender) and the height of the bar (representing the percentage).,In which column is the height of the red bar the highest?,How does the gender distribution vary across different age groups?,kong|kong_71
+"Step 1. Decision: The decision to be made could be understanding the distribution of a certain characteristic (like a disease, a preference, etc.) across different age groups and genders.
+Step 2. Conclusion: A possible conclusion could be that a certain age group and gender has the highest percentage of the characteristic.
+Step 3. Specific Value: The specific value could be the percentage of the characteristic for a certain age group and gender.
+Step 4. Lookup Question: What is the percentage of the characteristic for males in the 30-40 age group?
+Step 5. Visual Attributes: The visual attributes required are the height of the bar corresponding to the ""Male"" category in the ""30-40"" age group column.
+Step 6. Paraphrased Question: How high is the bar for males in the 30-40 age group column?
+Step 7. Operations: The operations required could be finding the maximum value across all age groups and genders.
+Step 8. Compositional Question: Which age group and gender has the highest percentage of the characteristic?
+Step 9. Visual Attributes: The visual attributes required are the heights of all the bars in the chart.
+Step 10. Paraphrased Question: Which bar in the chart is the tallest?
+Step 11. Open-ended Question: What could be the reasons for the highest percentage of the characteristic in the identified age group and gender?","The decision to be made could be understanding the distribution of a certain characteristic (like a disease, a preference, etc.) across different age groups and genders.",A possible conclusion could be that a certain age group and gender has the highest percentage of the characteristic.,The specific value could be the percentage of the characteristic for a certain age group and gender.,What is the percentage of the characteristic for males in the 30-40 age group?,"The visual attributes required are the height of the bar corresponding to the ""Male"" category in the ""30-40"" age group column.",How high is the bar for males in the 30-40 age group column?,The operations required could be finding the maximum value across all age groups and genders.,Which age group and gender has the highest percentage of the characteristic?,The visual attributes required are the heights of all the bars in the chart.,Which bar in the chart is the tallest?,What could be the reasons for the highest percentage of the characteristic in the identified age group and gender?,kong|kong_73
+"Step 1. Decision: The decision to be made could be determining which country has received the most donations.
+Step 2. Conclusion: The country with the highest amount of donations is the most supported.
+Step 3. Specific Value: The specific value would be the highest donation amount and the corresponding country.
+Step 4. Lookup Question: Which country has the highest amount of donations?
+Step 5. Visual Attributes: The length of the bar represents the amount of donations.
+Step 6. Paraphrased Question: Which country's bar is the longest in the chart?
+Step 7. Operations: The operation would be finding the maximum value of the donations.
+Step 8. Compositional Question: What is the difference between the country with the highest donations and the country with the lowest donations?
+Step 9. Visual Attributes: The length of the bars represents the amount of donations.
+Step 10. Paraphrased Question: What is the difference in length between the longest and shortest bars in the chart?
+Step 11. Open-ended Question: How does the amount of donations received by each country compare and what could be the possible reasons for this disparity?",The decision to be made could be determining which country has received the most donations.,The country with the highest amount of donations is the most supported.,The specific value would be the highest donation amount and the corresponding country.,Which country has the highest amount of donations?,The length of the bar represents the amount of donations.,Which country's bar is the longest in the chart?,The operation would be finding the maximum value of the donations.,What is the difference between the country with the highest donations and the country with the lowest donations?,The length of the bars represents the amount of donations.,What is the difference in length between the longest and shortest bars in the chart?,How does the amount of donations received by each country compare and what could be the possible reasons for this disparity?,kong|kong_74
+"Step 1. Decision: The decision to be made could be determining which country has the highest generous donations by GDP.
+Step 2. Conclusion: The country with the highest generous donations by GDP is the most generous country.
+Step 3. Specific Value: The specific value would be the highest value of ""Generous donations by GDP"".
+Step 4. Lookup Question: Which country has the highest value of ""Generous donations by GDP""?
+Step 5. Visual Attributes: The visual attributes required would be the length of the bar.
+Step 6. Paraphrased Question: Which country's bar extends the furthest along the x-axis?
+Step 7. Operations: The operation required would be ""max"" to find the highest value of ""Generous donations by GDP"".
+Step 8. Compositional Question: What is the maximum value of ""Generous donations by GDP"" and which country does it belong to?
+Step 9. Visual Attributes: The visual attributes required would be the length of the bar and the corresponding country on the y-axis.
+Step 10. Paraphrased Question: Which country's bar extends the furthest along the x-axis and what is the corresponding country?
+Step 11. Open-ended Question: What conclusions can be drawn about the generosity of different countries based on their GDP?",The decision to be made could be determining which country has the highest generous donations by GDP.,The country with the highest generous donations by GDP is the most generous country.,"The specific value would be the highest value of ""Generous donations by GDP"".","Which country has the highest value of ""Generous donations by GDP""?",The visual attributes required would be the length of the bar.,Which country's bar extends the furthest along the x-axis?,"The operation required would be ""max"" to find the highest value of ""Generous donations by GDP"".","What is the maximum value of ""Generous donations by GDP"" and which country does it belong to?",The visual attributes required would be the length of the bar and the corresponding country on the y-axis.,Which country's bar extends the furthest along the x-axis and what is the corresponding country?,What conclusions can be drawn about the generosity of different countries based on their GDP?,kong|kong_75
+"Step 1. Decision: The decision to be made could be determining which country receives the most total funds.
+Step 2. Conclusion: The country that receives the most total funds is X.
+Step 3. Specific Value: The total funds received by each country.
+Step 4. Lookup Question: What is the total amount of funds received by country X?
+Step 5. Visual Attributes: The length of the bar corresponding to country X.
+Step 6. Paraphrased Question: How long is the bar corresponding to country X?
+Step 7. Operations: The operation would be finding the maximum value of total funds.
+Step 8. Compositional Question: Which country has the maximum total funds received?
+Step 9. Visual Attributes: The length of the bars.
+Step 10. Paraphrased Question: Which bar is the longest?
+Step 11. Open-ended Question: What could be the reason for country X receiving the most total funds?",The decision to be made could be determining which country receives the most total funds.,The country that receives the most total funds is X.,The total funds received by each country.,What is the total amount of funds received by country X?,The length of the bar corresponding to country X.,How long is the bar corresponding to country X?,The operation would be finding the maximum value of total funds.,Which country has the maximum total funds received?,The length of the bars.,Which bar is the longest?,What could be the reason for country X receiving the most total funds?,kong|kong_76
+"Step 1. Decision: The decision could be to identify the population group with the highest percentage.
+Step 2. Conclusion: The population group with the highest percentage could be the most dominant or prevalent group.
+Step 3. Specific Value: The specific value would be the highest percentage value.
+Step 4. Lookup Question: What is the highest percentage value in the dataset?
+Step 5. Visual Attributes: The length of the bar represents the percentage value.
+Step 6. Paraphrased Question: Which bar is the longest in the chart?
+Step 7. Operations: The operation would be to find the maximum value.
+Step 8. Compositional Question: Which population group has the maximum percentage value?
+Step 9. Visual Attributes: The length of the bar represents the percentage value and the label on the y-axis represents the population group.
+Step 10. Paraphrased Question: Which bar is the longest and what is the corresponding population group on the y-axis?
+Step 11. Open-ended Question: What implications could the dominance of the population group with the highest percentage have on the overall population dynamics?",The decision could be to identify the population group with the highest percentage.,The population group with the highest percentage could be the most dominant or prevalent group.,The specific value would be the highest percentage value.,What is the highest percentage value in the dataset?,The length of the bar represents the percentage value.,Which bar is the longest in the chart?,The operation would be to find the maximum value.,Which population group has the maximum percentage value?,The length of the bar represents the percentage value and the label on the y-axis represents the population group.,Which bar is the longest and what is the corresponding population group on the y-axis?,What implications could the dominance of the population group with the highest percentage have on the overall population dynamics?,kong|kong_77
+"Step 1. Decision: The decision that can be made by analyzing this chart is to understand the age distribution of the US population in the year 2000.
+Step 2. Conclusion: A possible conclusion that can be reached from this decision is identifying the age group with the highest population in the year 2000.
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the age group with the highest population.
+Step 4. Lookup Question: What is the age group with the highest population in the year 2000?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars.
+Step 6. Paraphrased Question: Which bar represents the age group with the highest population in the year 2000?
+Step 7. Operations: The mathematical operation to reach the conclusion in Step 2 is max.
+Step 8. Compositional Question: What is the difference in population between the age group with the highest population and the age group with the lowest population in the year 2000?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars.
+Step 10. Paraphrased Question: What is the difference in length between the longest bar and the shortest bar, representing the age groups with the highest and lowest populations respectively in the year 2000?
+Step 11. Open-ended Question: How does the population distribution across different age groups in the year 2000 reflect the demographic structure of the US?",The decision that can be made by analyzing this chart is to understand the age distribution of the US population in the year 2000.,A possible conclusion that can be reached from this decision is identifying the age group with the highest population in the year 2000.,The specific value that can be retrieved to reach this conclusion is the age group with the highest population.,What is the age group with the highest population in the year 2000?,The visual attributes required to paraphrase this question are the length of the bars.,Which bar represents the age group with the highest population in the year 2000?,The mathematical operation to reach the conclusion in Step 2 is max.,What is the difference in population between the age group with the highest population and the age group with the lowest population in the year 2000?,The visual attributes required to paraphrase this question are the length of the bars.,"What is the difference in length between the longest bar and the shortest bar, representing the age groups with the highest and lowest populations respectively in the year 2000?",How does the population distribution across different age groups in the year 2000 reflect the demographic structure of the US?,vega-lite-example-gallery|bar_aggregate
+"Step 1. Decision: The decision to be made could be understanding the gender distribution across different age groups in the year 2000.
+Step 2. Conclusion: A possible conclusion could be that there are more females than males in a certain age group in the year 2000.
+Step 3. Specific Value: The specific value could be the number of females in the age group of 30-34.
+Step 4. Lookup Question: What is the population of females in the age group of 30-34 in the year 2000?
+Step 5. Visual Attributes: The visual attributes required are the height of the bar and the color of the bar.
+Step 6. Paraphrased Question: How high is the pink bar for the age group of 30-34 in the year 2000?
+Step 7. Operations: The operation required could be the sum of the population of males and females in the age group of 30-34.
+Step 8. Compositional Question: What is the total population of both males and females in the age group of 30-34 in the year 2000?
+Step 9. Visual Attributes: The visual attributes required are the height of the bars for both males and females in the age group of 30-34.
+Step 10. Paraphrased Question: What is the combined height of the blue and pink bars for the age group of 30-34 in the year 2000?
+Step 11. Open-ended Question: What does the gender distribution across different age groups tell us about the population in the year 2000?",The decision to be made could be understanding the gender distribution across different age groups in the year 2000.,A possible conclusion could be that there are more females than males in a certain age group in the year 2000.,The specific value could be the number of females in the age group of 30-34.,What is the population of females in the age group of 30-34 in the year 2000?,The visual attributes required are the height of the bar and the color of the bar.,How high is the pink bar for the age group of 30-34 in the year 2000?,The operation required could be the sum of the population of males and females in the age group of 30-34.,What is the total population of both males and females in the age group of 30-34 in the year 2000?,The visual attributes required are the height of the bars for both males and females in the age group of 30-34.,What is the combined height of the blue and pink bars for the age group of 30-34 in the year 2000?,What does the gender distribution across different age groups tell us about the population in the year 2000?,vega-lite-example-gallery|bar_grouped
+"Step 1. Decision: The decision to invest in Google's stock.
+Step 2. Conclusion: Google's stock price has been increasing over time.
+Step 3. Specific Value: The price of Google's stock at a specific date.
+Step 4. Lookup Question: What was the price of Google's stock on a specific date?
+Step 5. Visual Attributes: The position on the y-axis represents the price of the stock, and the position on the x-axis represents the date.
+Step 6. Paraphrased Question: Where does the line representing Google's stock price intersect the y-axis on a specific date?
+Step 7. Operations: Max and Min to find the highest and lowest price of the stock over time.
+Step 8. Compositional Question: What is the difference between the highest and lowest price of Google's stock over time?
+Step 9. Visual Attributes: The highest point on the line represents the maximum price, and the lowest point on the line represents the minimum price.
+Step 10. Paraphrased Question: What is the vertical distance between the highest and lowest point on the line representing Google's stock price?
+Step 11. Open-ended Question: How has the price of Google's stock changed over time and what could be the potential reasons for this change?",The decision to invest in Google's stock.,Google's stock price has been increasing over time.,The price of Google's stock at a specific date.,What was the price of Google's stock on a specific date?,"The position on the y-axis represents the price of the stock, and the position on the x-axis represents the date.",Where does the line representing Google's stock price intersect the y-axis on a specific date?,Max and Min to find the highest and lowest price of the stock over time.,What is the difference between the highest and lowest price of Google's stock over time?,"The highest point on the line represents the maximum price, and the lowest point on the line represents the minimum price.",What is the vertical distance between the highest and lowest point on the line representing Google's stock price?,How has the price of Google's stock changed over time and what could be the potential reasons for this change?,vega-lite-example-gallery|line
+"Step 1. Decision: The decision to be made could be determining which variety of barley yields the highest total production across different sites.
+Step 2. Conclusion: The variety of barley that has the highest total yield across all sites is the most productive.
+Step 3. Specific Value: The total yield of each variety of barley.
+Step 4. Lookup Question: What is the total yield of the Manchuria variety of barley?
+Step 5. Visual Attributes: The length of the bar representing the Manchuria variety.
+Step 6. Paraphrased Question: How long is the bar representing the Manchuria variety of barley?
+Step 7. Operations: Summation of the yield of each variety across all sites.
+Step 8. Compositional Question: What is the sum of the yields of the Manchuria and Glabron varieties of barley?
+Step 9. Visual Attributes: The lengths of the bars representing the Manchuria and Glabron varieties.
+Step 10. Paraphrased Question: What is the combined length of the bars representing the Manchuria and Glabron varieties of barley?
+Step 11. Open-ended Question: Which variety of barley would be the most productive to grow across all sites?",The decision to be made could be determining which variety of barley yields the highest total production across different sites.,The variety of barley that has the highest total yield across all sites is the most productive.,The total yield of each variety of barley.,What is the total yield of the Manchuria variety of barley?,The length of the bar representing the Manchuria variety.,How long is the bar representing the Manchuria variety of barley?,Summation of the yield of each variety across all sites.,What is the sum of the yields of the Manchuria and Glabron varieties of barley?,The lengths of the bars representing the Manchuria and Glabron varieties.,What is the combined length of the bars representing the Manchuria and Glabron varieties of barley?,Which variety of barley would be the most productive to grow across all sites?,vega-lite-example-gallery|stacked_bar_h
+"Step 1. Decision: The decision to be made could be determining the most common weather type in Seattle throughout the year.
+Step 2. Conclusion: The most common weather type in Seattle throughout the year is rain.
+Step 3. Specific Value: The count of 'rain' weather type.
+Step 4. Lookup Question: What is the count of days with rain weather type?
+Step 5. Visual Attributes: The height of the blue bar.
+Step 6. Paraphrased Question: How high is the blue bar representing the rain weather type?
+Step 7. Operations: Count and comparison.
+Step 8. Compositional Question: Which weather type has the highest count of days?
+Step 9. Visual Attributes: The height of the bars.
+Step 10. Paraphrased Question: Which bar is the tallest in the chart?
+Step 11. Open-ended Question: What does the height of the bars tell us about the weather patterns in Seattle throughout the year?",The decision to be made could be determining the most common weather type in Seattle throughout the year.,The most common weather type in Seattle throughout the year is rain.,The count of 'rain' weather type.,What is the count of days with rain weather type?,The height of the blue bar.,How high is the blue bar representing the rain weather type?,Count and comparison.,Which weather type has the highest count of days?,The height of the bars.,Which bar is the tallest in the chart?,What does the height of the bars tell us about the weather patterns in Seattle throughout the year?,vega-lite-example-gallery|stacked_bar_weather
+"Step 1. Decision: The decision that can be made by analyzing this chart is to understand the trend of deaths over the years.
+Step 2. Conclusion: A possible conclusion that can be reached from this decision is that the number of deaths has increased, decreased, or remained constant over the years.
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the number of deaths in a specific year.
+Step 4. Lookup Question: What is the number of deaths in the year 2000?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bar and the x-axis (year).
+Step 6. Paraphrased Question: How long is the bar representing the year 2000 on the x-axis?
+Step 7. Operations: The mathematical operations to reach the conclusion in Step 2 are max and min to find the years with the highest and lowest number of deaths.
+Step 8. Compositional Question: What are the years with the highest and lowest number of deaths?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars and the x-axis (year).
+Step 10. Paraphrased Question: Which bars on the x-axis are the longest and shortest?
+Step 11. Open-ended Question: How has the number of deaths changed over the years according to the chart?",The decision that can be made by analyzing this chart is to understand the trend of deaths over the years.,"A possible conclusion that can be reached from this decision is that the number of deaths has increased, decreased, or remained constant over the years.",The specific value that can be retrieved to reach this conclusion is the number of deaths in a specific year.,What is the number of deaths in the year 2000?,The visual attributes required to paraphrase this question are the length of the bar and the x-axis (year).,How long is the bar representing the year 2000 on the x-axis?,The mathematical operations to reach the conclusion in Step 2 are max and min to find the years with the highest and lowest number of deaths.,What are the years with the highest and lowest number of deaths?,The visual attributes required to paraphrase this question are the length of the bars and the x-axis (year).,Which bars on the x-axis are the longest and shortest?,How has the number of deaths changed over the years according to the chart?,wikitables-200|10_0
+"Step 1. Decision: The decision to be made could be determining which service had the highest total cost in the year 2012/13.
+Step 2. Conclusion: The service with the highest total cost in 2012/13 is the most expensive one.
+Step 3. Specific Value: The total cost of the service with the highest cost in 2012/13.
+Step 4. Lookup Question: What is the total cost of the service with the highest cost in 2012/13?
+Step 5. Visual Attributes: The height of the bars.
+Step 6. Paraphrased Question: Which bar is the tallest in the chart?
+Step 7. Operations: The operation needed is max, to find the service with the maximum total cost.
+Step 8. Compositional Question: Which service had the maximum total cost in 2012/13?
+Step 9. Visual Attributes: The height of the bars.
+Step 10. Paraphrased Question: Which bar is the tallest in the chart?
+Step 11. Open-ended Question: What could be the reasons for the high cost of the service with the highest total cost in 2012/13?",The decision to be made could be determining which service had the highest total cost in the year 2012/13.,The service with the highest total cost in 2012/13 is the most expensive one.,The total cost of the service with the highest cost in 2012/13.,What is the total cost of the service with the highest cost in 2012/13?,The height of the bars.,Which bar is the tallest in the chart?,"The operation needed is max, to find the service with the maximum total cost.",Which service had the maximum total cost in 2012/13?,The height of the bars.,Which bar is the tallest in the chart?,What could be the reasons for the high cost of the service with the highest total cost in 2012/13?,wikitables-200|25_0
+"Step 1. Decision: The decision to be made could be determining which political party has the most total voters.
+Step 2. Conclusion: The party with the highest number of total voters is the most popular.
+Step 3. Specific Value: The specific value would be the highest number of total voters.
+Step 4. Lookup Question: Which party has the highest number of total voters?
+Step 5. Visual Attributes: The length of the bar represents the number of total voters.
+Step 6. Paraphrased Question: Which party's bar is the longest?
+Step 7. Operations: The operation would be finding the maximum value of total voters.
+Step 8. Compositional Question: What is the difference in total voters between the party with the most and the party with the least total voters?
+Step 9. Visual Attributes: The length of the bars represents the number of total voters.
+Step 10. Paraphrased Question: What is the difference in length between the longest and shortest bars?
+Step 11. Open-ended Question: How does the popularity of the parties compare based on the number of total voters?",The decision to be made could be determining which political party has the most total voters.,The party with the highest number of total voters is the most popular.,The specific value would be the highest number of total voters.,Which party has the highest number of total voters?,The length of the bar represents the number of total voters.,Which party's bar is the longest?,The operation would be finding the maximum value of total voters.,What is the difference in total voters between the party with the most and the party with the least total voters?,The length of the bars represents the number of total voters.,What is the difference in length between the longest and shortest bars?,How does the popularity of the parties compare based on the number of total voters?,wikitables-200|28_0
+"Step 1. Decision: The decision that can be made by analyzing this chart is to determine which district has the largest area size.
+Step 2. Conclusion: The district with the largest area size is the one with the highest value on the y-axis.
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the highest value of 'Area Size (km²)'.
+Step 4. Lookup Question: What is the district with the largest area size?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars.
+Step 6. Paraphrased Question: Which district has the longest bar in the chart?
+Step 7. Operations: The mathematical operation to reach the conclusion in Step 2 is 'max'.
+Step 8. Compositional Question: What is the maximum area size among all districts?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars.
+Step 10. Paraphrased Question: Which bar in the chart is the longest?
+Step 11. Open-ended Question: What implications does the district with the largest area size have on the overall distribution of area sizes among districts?",The decision that can be made by analyzing this chart is to determine which district has the largest area size.,The district with the largest area size is the one with the highest value on the y-axis.,The specific value that can be retrieved to reach this conclusion is the highest value of 'Area Size (km²)'.,What is the district with the largest area size?,The visual attributes required to paraphrase this question are the length of the bars.,Which district has the longest bar in the chart?,The mathematical operation to reach the conclusion in Step 2 is 'max'.,What is the maximum area size among all districts?,The visual attributes required to paraphrase this question are the length of the bars.,Which bar in the chart is the longest?,What implications does the district with the largest area size have on the overall distribution of area sizes among districts?,wikitables-200|33_0
+"Step 1. Decision: The decision that can be made by analyzing this chart is to determine which district has the highest population.
+Step 2. Conclusion: The district with the longest bar in the chart has the highest population.
+Step 3. Specific Value: The specific value that can be retrieved is the population of the district with the longest bar.
+Step 4. Lookup Question: What is the population of the district with the highest population?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars.
+Step 6. Paraphrased Question: Which bar is the longest in the chart?
+Step 7. Operations: The operation to reach the conclusion is max, which is used to determine the highest population.
+Step 8. Compositional Question: What is the difference in population between the district with the highest population and the district with the lowest population?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the lengths of the bars.
+Step 10. Paraphrased Question: What is the difference in length between the longest and shortest bars in the chart?
+Step 11. Open-ended Question: How does the population of the district with the highest population compare to the other districts?",The decision that can be made by analyzing this chart is to determine which district has the highest population.,The district with the longest bar in the chart has the highest population.,The specific value that can be retrieved is the population of the district with the longest bar.,What is the population of the district with the highest population?,The visual attributes required to paraphrase this question are the length of the bars.,Which bar is the longest in the chart?,"The operation to reach the conclusion is max, which is used to determine the highest population.",What is the difference in population between the district with the highest population and the district with the lowest population?,The visual attributes required to paraphrase this question are the lengths of the bars.,What is the difference in length between the longest and shortest bars in the chart?,How does the population of the district with the highest population compare to the other districts?,wikitables-200|33_1
+"Step 1. Decision: The decision that can be made by analyzing this chart is to determine which region has the highest population.
+Step 2. Conclusion: The region with the highest population is the most populated region.
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the population of the region with the highest population.
+Step 4. Lookup Question: What is the population of the region with the highest population?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars.
+Step 6. Paraphrased Question: Which bar is the longest?
+Step 7. Operations: The mathematical operation to reach the conclusion in Step 2 is max.
+Step 8. Compositional Question: Which region has the maximum population?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars and the labels on the x-axis.
+Step 10. Paraphrased Question: Which bar is the longest and what is the corresponding region on the x-axis?
+Step 11. Open-ended Question: What factors could contribute to this region having the highest population?",The decision that can be made by analyzing this chart is to determine which region has the highest population.,The region with the highest population is the most populated region.,The specific value that can be retrieved to reach this conclusion is the population of the region with the highest population.,What is the population of the region with the highest population?,The visual attributes required to paraphrase this question are the length of the bars.,Which bar is the longest?,The mathematical operation to reach the conclusion in Step 2 is max.,Which region has the maximum population?,The visual attributes required to paraphrase this question are the length of the bars and the labels on the x-axis.,Which bar is the longest and what is the corresponding region on the x-axis?,What factors could contribute to this region having the highest population?,wikitables-201|11
+"Step 1. Decision: The decision could be to determine which name has the greatest length.
+Step 2. Conclusion: The name with the greatest length is the longest.
+Step 3. Specific Value: The length of the longest name.
+Step 4. Lookup Question: What is the length of the longest name?
+Step 5. Visual Attributes: The length of the bar in the bar chart.
+Step 6. Paraphrased Question: Which bar in the bar chart is the longest?
+Step 7. Operations: The operation would be to find the maximum length.
+Step 8. Compositional Question: What is the difference in length between the longest and shortest name?
+Step 9. Visual Attributes: The length of the bars in the bar chart.
+Step 10. Paraphrased Question: What is the difference in length between the longest and shortest bar in the bar chart?
+Step 11. Open-ended Question: How does the length of the longest name compare to the others?",The decision could be to determine which name has the greatest length.,The name with the greatest length is the longest.,The length of the longest name.,What is the length of the longest name?,The length of the bar in the bar chart.,Which bar in the bar chart is the longest?,The operation would be to find the maximum length.,What is the difference in length between the longest and shortest name?,The length of the bars in the bar chart.,What is the difference in length between the longest and shortest bar in the bar chart?,How does the length of the longest name compare to the others?,wikitables-201|46
+"Step 1. Decision: The decision that can be made by analyzing this chart is to determine which country has the highest number of amphibians.
+Step 2. Conclusion: The country with the highest number of amphibians can be identified.
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the highest number of amphibians.
+Step 4. Lookup Question: Which country has the highest number of amphibians?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars.
+Step 6. Paraphrased Question: Which country's bar is the longest in the chart?
+Step 7. Operations: The mathematical operation to reach the conclusion in Step 2 is max.
+Step 8. Compositional Question: What is the maximum number of amphibians and which country does it belong to?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars and the corresponding country.
+Step 10. Paraphrased Question: Which bar is the longest in the chart and what country does it represent?
+Step 11. Open-ended Question: What can be inferred about the biodiversity of the country with the highest number of amphibians?",The decision that can be made by analyzing this chart is to determine which country has the highest number of amphibians.,The country with the highest number of amphibians can be identified.,The specific value that can be retrieved to reach this conclusion is the highest number of amphibians.,Which country has the highest number of amphibians?,The visual attributes required to paraphrase this question are the length of the bars.,Which country's bar is the longest in the chart?,The mathematical operation to reach the conclusion in Step 2 is max.,What is the maximum number of amphibians and which country does it belong to?,The visual attributes required to paraphrase this question are the length of the bars and the corresponding country.,Which bar is the longest in the chart and what country does it represent?,What can be inferred about the biodiversity of the country with the highest number of amphibians?,wikitables-201|8_0
+"Step 1. Decision: The decision that can be made by analyzing this chart is to determine which country has the highest number of birds.
+Step 2. Conclusion: The country with the highest number of birds is the one with the highest value on the y-axis.
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the highest value of the 'Birds' field.
+Step 4. Lookup Question: Which country has the highest number of birds?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars.
+Step 6. Paraphrased Question: Which country's bar reaches the highest on the y-axis?
+Step 7. Operations: The mathematical operation to reach the conclusion in Step 2 is max.
+Step 8. Compositional Question: What is the maximum number of birds and which country does it belong to?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars and the corresponding country on the x-axis.
+Step 10. Paraphrased Question: Which bar reaches the highest on the y-axis and what country does it represent?
+Step 11. Open-ended Question: What can be inferred about the bird population in the country with the highest number of birds?",The decision that can be made by analyzing this chart is to determine which country has the highest number of birds.,The country with the highest number of birds is the one with the highest value on the y-axis.,The specific value that can be retrieved to reach this conclusion is the highest value of the 'Birds' field.,Which country has the highest number of birds?,The visual attributes required to paraphrase this question are the length of the bars.,Which country's bar reaches the highest on the y-axis?,The mathematical operation to reach the conclusion in Step 2 is max.,What is the maximum number of birds and which country does it belong to?,The visual attributes required to paraphrase this question are the length of the bars and the corresponding country on the x-axis.,Which bar reaches the highest on the y-axis and what country does it represent?,What can be inferred about the bird population in the country with the highest number of birds?,wikitables-201|8_1
+"Step 1. Decision: The decision that can be made by analyzing this chart is to determine which candidate received the most votes.
+Step 2. Conclusion: The candidate with the highest number of votes is the most popular.
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the number of votes for each candidate.
+Step 4. Lookup Question: How many votes did the candidate with the most votes receive?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars.
+Step 6. Paraphrased Question: Which bar is the longest in the chart?
+Step 7. Operations: The mathematical operation to reach the conclusion in Step 2 is max.
+Step 8. Compositional Question: Which candidate received the maximum number of votes?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars and the labels on the x-axis.
+Step 10. Paraphrased Question: Which bar is the longest and what is the corresponding candidate's name on the x-axis?
+Step 11. Open-ended Question: Who is the most popular candidate according to the number of votes received?",The decision that can be made by analyzing this chart is to determine which candidate received the most votes.,The candidate with the highest number of votes is the most popular.,The specific value that can be retrieved to reach this conclusion is the number of votes for each candidate.,How many votes did the candidate with the most votes receive?,The visual attributes required to paraphrase this question are the length of the bars.,Which bar is the longest in the chart?,The mathematical operation to reach the conclusion in Step 2 is max.,Which candidate received the maximum number of votes?,The visual attributes required to paraphrase this question are the length of the bars and the labels on the x-axis.,Which bar is the longest and what is the corresponding candidate's name on the x-axis?,Who is the most popular candidate according to the number of votes received?,wikitables-202|271_0
+"Step 1. Decision: The decision that can be made by analyzing this chart is to determine which candidate received the highest percentage of votes.
+Step 2. Conclusion: The candidate with the highest percentage of votes is the most popular candidate.
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the highest percentage value.
+Step 4. Lookup Question: Which candidate received the highest percentage of votes?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars.
+Step 6. Paraphrased Question: Which candidate's bar is the longest?
+Step 7. Operations: The mathematical operation to reach the conclusion in Step 2 is max.
+Step 8. Compositional Question: What is the difference in percentage of votes between the candidate with the highest votes and the one with the lowest?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the lengths of the bars.
+Step 10. Paraphrased Question: What is the difference in length between the longest and shortest bars?
+Step 11. Open-ended Question: How does the popularity of the candidates compare based on the percentage of votes they received?",The decision that can be made by analyzing this chart is to determine which candidate received the highest percentage of votes.,The candidate with the highest percentage of votes is the most popular candidate.,The specific value that can be retrieved to reach this conclusion is the highest percentage value.,Which candidate received the highest percentage of votes?,The visual attributes required to paraphrase this question are the length of the bars.,Which candidate's bar is the longest?,The mathematical operation to reach the conclusion in Step 2 is max.,What is the difference in percentage of votes between the candidate with the highest votes and the one with the lowest?,The visual attributes required to paraphrase this question are the lengths of the bars.,What is the difference in length between the longest and shortest bars?,How does the popularity of the candidates compare based on the percentage of votes they received?,wikitables-202|271_1
+"Step 1. Decision: The decision could be determining which airport handled the most passengers.
+Step 2. Conclusion: The airport that handled the most passengers is the busiest.
+Step 3. Specific Value: The number of passengers handled by the airport with the highest value.
+Step 4. Lookup Question: Which airport handled the most passengers?
+Step 5. Visual Attributes: The length of the bar represents the number of passengers handled.
+Step 6. Paraphrased Question: Which airport has the longest bar in the chart?
+Step 7. Operations: The operation would be finding the maximum value of passengers handled.
+Step 8. Compositional Question: What is the difference in the number of passengers handled between the airport with the most and the one with the least?
+Step 9. Visual Attributes: The length of the bars represents the number of passengers handled.
+Step 10. Paraphrased Question: What is the difference in length between the longest and shortest bars in the chart?
+Step 11. Open-ended Question: How does the number of passengers handled by the busiest airport compare to the others?",The decision could be determining which airport handled the most passengers.,The airport that handled the most passengers is the busiest.,The number of passengers handled by the airport with the highest value.,Which airport handled the most passengers?,The length of the bar represents the number of passengers handled.,Which airport has the longest bar in the chart?,The operation would be finding the maximum value of passengers handled.,What is the difference in the number of passengers handled between the airport with the most and the one with the least?,The length of the bars represents the number of passengers handled.,What is the difference in length between the longest and shortest bars in the chart?,How does the number of passengers handled by the busiest airport compare to the others?,wikitables-202|48
+"Step 1. Decision: The decision to be made could be determining which team in the Central Division has the highest number of wins (W).
+Step 2. Conclusion: The team with the highest number of wins is the best performing team in the Central Division.
+Step 3. Specific Value: The highest number of wins (W) and the corresponding team.
+Step 4. Lookup Question: Which team in the Central Division has the highest number of wins?
+Step 5. Visual Attributes: The length of the bar represents the number of wins.
+Step 6. Paraphrased Question: Which team in the Central Division has the longest bar in the chart?
+Step 7. Operations: The operation needed is max (to find the highest number of wins).
+Step 8. Compositional Question: What is the maximum number of wins achieved by a team in the Central Division and which team achieved it?
+Step 9. Visual Attributes: The length of the bar represents the number of wins.
+Step 10. Paraphrased Question: Which team's bar in the chart is the longest and what is the length of that bar?
+Step 11. Open-ended Question: How does the performance of the team with the highest number of wins compare to the other teams in the Central Division?",The decision to be made could be determining which team in the Central Division has the highest number of wins (W).,The team with the highest number of wins is the best performing team in the Central Division.,The highest number of wins (W) and the corresponding team.,Which team in the Central Division has the highest number of wins?,The length of the bar represents the number of wins.,Which team in the Central Division has the longest bar in the chart?,The operation needed is max (to find the highest number of wins).,What is the maximum number of wins achieved by a team in the Central Division and which team achieved it?,The length of the bar represents the number of wins.,Which team's bar in the chart is the longest and what is the length of that bar?,How does the performance of the team with the highest number of wins compare to the other teams in the Central Division?,wikitables-202|59_0
+"Step 1. Decision: The decision that can be made by analyzing this chart is to determine which team in the Central Division has the highest number of losses (L).
+Step 2. Conclusion: The team with the highest number of losses in the Central Division can be identified.
+Step 3. Specific Value: The specific value that can be retrieved to reach this conclusion is the highest number of losses (L) for a team in the Central Division.
+Step 4. Lookup Question: Which team in the Central Division has the highest number of losses?
+Step 5. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars on the chart.
+Step 6. Paraphrased Question: Which team in the Central Division is represented by the longest bar on the chart?
+Step 7. Operations: The mathematical operation required to reach the conclusion in Step 2 is the maximum operation.
+Step 8. Compositional Question: What is the maximum number of losses for a team in the Central Division?
+Step 9. Visual Attributes: The visual attributes required to paraphrase this question are the length of the bars on the chart.
+Step 10. Paraphrased Question: Which bar on the chart is the longest?
+Step 11. Open-ended Question: How does the team with the highest number of losses compare to other teams in the Central Division?",The decision that can be made by analyzing this chart is to determine which team in the Central Division has the highest number of losses (L).,The team with the highest number of losses in the Central Division can be identified.,The specific value that can be retrieved to reach this conclusion is the highest number of losses (L) for a team in the Central Division.,Which team in the Central Division has the highest number of losses?,The visual attributes required to paraphrase this question are the length of the bars on the chart.,Which team in the Central Division is represented by the longest bar on the chart?,The mathematical operation required to reach the conclusion in Step 2 is the maximum operation.,What is the maximum number of losses for a team in the Central Division?,The visual attributes required to paraphrase this question are the length of the bars on the chart.,Which bar on the chart is the longest?,How does the team with the highest number of losses compare to other teams in the Central Division?,wikitables-202|59_1

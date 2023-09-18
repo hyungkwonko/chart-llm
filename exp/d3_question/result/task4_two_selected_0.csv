@@ -1,0 +1,630 @@
+sentences,axes,axes2,ptypes,scores,scores2,dnames
+What is the difference between the highest and lowest proportion of a certain belief and which countries do they come from?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,3,kong|kong_27
+What's the difference between the highest and lowest opinion percentages and which countries do they belong to?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,3,3,kong|kong_27
+Could you clarify the difference between the top and bottom opinion percentages and the countries they originate from?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,4,2,kong|kong_27
+What's the difference between the maximum and minimum percentage of a certain viewpoint and where are they from?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,2,kong|kong_27
+Could you explain the difference between the highest and lowest proportion of a specific opinion and the countries they correspond to?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,2,kong|kong_27
+Can you tell me about the biggest and smallest share of people who think a certain way and where they're from?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,1,1,kong|kong_27
+"What is the disparity between the highest and lowest opinion percentages and which countries are they from, in your view?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,1,4,kong|kong_27
+"Which country's bar, representing a certain perspective, extends the furthest along the x-axis?",Non-technical-Technical,Subjective-Objective,lookup-visual,3,4,kong|kong_27
+"I think the longest bar is much longer than the shortest one, isn't it? And they're representing which countries?",Non-technical-Technical,Subjective-Objective,compositional-visual,1,3,kong|kong_27
+"There's a difference in length between the longest and shortest bars, right? And they represent certain countries, correct?",Subjective-Objective,Implicit-Explicit,compositional-visual,3,3,kong|kong_27
+Please provide the exact data on the response in country X.,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,5,3,kong|kong_30
+Please provide the precise response percentage in country X.,Colloquial-Standard,Subjective-Objective,lookup-nonvisual,5,5,kong|kong_30
+Can you provide the exact figure for the response rate in country X?,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,4,3,kong|kong_30
+Which country has the highest number of positive responses?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,1,4,kong|kong_30
+"It's a fact that one country has the highest response rate, right?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,4,4,kong|kong_30
+Which country has the highest proportion of affirmative feedback?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,5,kong|kong_30
+Can you tell me which region has the highest agreement rate?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,2,kong|kong_30
+Which geopolitical entity has the highest proportion of affirmative responses?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,5,kong|kong_30
+Do you think which country has the most responses?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,2,kong|kong_30
+"It seems like one country might have the highest response rate, right?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,3,2,kong|kong_30
+Which country has the highest percentage of positive responses?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,5,kong|kong_30
+Can you tell me which nation has the highest response rate?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,3,kong|kong_30
+Could you inform me of the length of the bar for X country?,Colloquial-Standard,Subjective-Objective,lookup-visual,4,3,kong|kong_30
+What's your assessment of the length of the bar for X country?,Colloquial-Standard,Subjective-Objective,lookup-visual,2,5,kong|kong_30
+Can you tell me the length of the bar for X country?,Colloquial-Standard,Subjective-Objective,lookup-visual,4,1,kong|kong_30
+Can you ascertain which bar has the greatest length?,Non-technical-Technical,Subjective-Objective,compositional-visual,3,4,kong|kong_30
+Which one do you think is the longest bar?,Non-technical-Technical,Subjective-Objective,compositional-visual,1,1,kong|kong_30
+"You know which tech company's stock price has hit the roof the most, right?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,1,1,vega-lite-example-gallery|line_color
+Could you inform me which technological corporation has the highest stock price historically?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,4,5,vega-lite-example-gallery|line_color
+Which company's line ascends to the highest point on the y-axis over time?,Colloquial-Standard,Non-technical-Technical,compositional-visual,2,2,vega-lite-example-gallery|line_color
+Can you determine which company's trajectory reaches the highest point on the graph over time?,Non-technical-Technical,Subjective-Objective,compositional-visual,3,4,vega-lite-example-gallery|line_color
+"It's likely that one country had the highest GDP in Year Y, do you know which one?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,3,2,d3|d3_12
+"In your opinion, which country had the highest Gross Domestic Product in Year Y?",Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,4,d3|d3_12
+Could you provide information on which country had the highest GDP value in Year Y?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,4,d3|d3_12
+Do you know which country was the richest in Year Y?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,3,1,d3|d3_12
+The country with the highest economic output in Year Y was...?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,3,d3|d3_12
+Do you have information on which country had the largest economy in Year Y?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,3,d3|d3_12
+The country with the highest Gross Domestic Product in Year Y was...?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,4,d3|d3_12
+"There's a country that definitely had the highest GDP in Year Y, do you know which one?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,3,d3|d3_12
+"A country had the highest GDP in Year Y, do you know which one?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,3,5,d3|d3_12
+Any idea which country had the highest Gross Domestic Product in that year?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,1,4,d3|d3_12
+The nation with the highest Gross Domestic Product in Year Y was...?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,5,d3|d3_12
+Please designate the line that ascends to the highest point on the y-axis in Year Y.,Colloquial-Standard,Implicit-Explicit,compositional-visual,5,5,d3|d3_12
+What is the demographic distribution for that age cohort in that state?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,4,5,d3|d3_4
+The population of the age range X in state Y is probably large.,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,4,3,d3|d3_4
+I believe there's a considerable population in the age range X in state Y.,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,3,1,d3|d3_4
+Can you provide the demographic data for that age group in that state?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,4,2,d3|d3_4
+"I am investigating, which state has the highest population in the age range X?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,5,d3|d3_4
+Could you please provide the data on which state has the highest population in that specific age stratification?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,5,d3|d3_4
+Can you guess which state has the highest population in that age cohort?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,4,d3|d3_4
+Any idea about the state with the most folks in that age bracket?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,3,d3|d3_4
+I think the state with the most people in that age group is...?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,2,1,d3|d3_4
+Can you tell me where the most people of a certain age group live?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,1,d3|d3_4
+Could you clarify which state has the highest demographic in that age range?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,3,d3|d3_4
+Any idea which state has the most people in that age bracket?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,1,2,d3|d3_4
+Any clue which state has the highest population in that specific age stratification?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,1,d3|d3_4
+"Which state definitely has the most people in that age range, X?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,5,d3|d3_4
+The data should show which state has the most people in that age group.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,1,d3|d3_4
+Can you tell me which state has the most people in that age bracket?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,2,d3|d3_4
+Would you be so kind as to provide the distribution of that response in that religious demographic?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,4,5,kong|kong_3
+Do you have an estimate of the response percentage for that religion?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,2,4,kong|kong_3
+"It's likely that there's a religion that gets a certain response more than others, do you concur?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,4,2,kong|kong_3
+The data should indicate which faith group has the highest proportion of a specific response.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,5,1,kong|kong_3
+"It seems like there's a religion that gets a certain response more than others, right?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,1,2,kong|kong_3
+Is it plausible that there's a religion that gets a certain response more than others?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,3,kong|kong_3
+Any idea which religious group has the most people leaning towards a specific response?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,1,2,kong|kong_3
+"I believe, which denomination has the highest proportion of adherents responding in a certain way?",Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,3,kong|kong_3
+The information should reveal which religious affiliation has the highest proportion of adherents responding affirmatively to a specific query.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,5,kong|kong_3
+Which religion has the highest percentage of a specific response?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,2,kong|kong_3
+Can you tell me which religious denomination has the highest proportion of a specific response?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,3,kong|kong_3
+Which religious group exhibits the highest percentage of a particular response?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,4,kong|kong_3
+"So, which religious institution do you think gets the most of a certain answer, eh?",Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,5,kong|kong_3
+Could you please tell me which religious denomination has the highest percentage of a particular response?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,5,4,kong|kong_3
+Which religion garners a certain response more than others?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,4,5,kong|kong_3
+Do you know how many cases there were in 2010?,Colloquial-Standard,Subjective-Objective,lookup-nonvisual,2,1,d3|d3_1
+It's important to know the number of cases in 2010.,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,3,4,d3|d3_1
+Could you provide the count of case incidences for the year 2010?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,5,2,d3|d3_1
+What's your estimate of the maximum number of cases in a year?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,2,2,d3|d3_1
+What year had the highest case incidence?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,5,d3|d3_1
+I need the maximum number of cases in any year.,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,4,5,d3|d3_1
+Can you provide the absolute maximum of cases documented in a year?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,4,d3|d3_1
+What would you say is the maximum number of cases in a year?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,2,3,d3|d3_1
+Any idea what the max number of cases in a year is?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,2,d3|d3_1
+"In your view, what's the highest number of cases we've had in a year?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,2,d3|d3_1
+What is the authoritative maximum of cases in a year?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,5,d3|d3_1
+Could you provide the highest incidence of cases in a year?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,2,d3|d3_1
+What's the highest number of cases in a year?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,1,5,d3|d3_1
+What year had the most cases?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,1,d3|d3_1
+Could you tell me what the maximum number of cases in a year is?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,2,2,d3|d3_1
+Can you inform me of the maximum number of cases in a year?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,3,4,d3|d3_1
+"What's the biggest number of cases we've seen in a year, you reckon?",Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,1,d3|d3_1
+What is the maximum epidemiological count recorded in a year?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,5,d3|d3_1
+Indicate the height of the 2010 bar on the x-axis.,Non-technical-Technical,Subjective-Objective,lookup-visual,5,2,d3|d3_1
+What was the company's revenue for the year 2015?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,4,4,d3|d3_10
+What was the company's financial intake in 2015?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,3,1,d3|d3_10
+Can you recall the company's earnings for 2015?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,2,1,d3|d3_10
+How did our fiscal yield change from 2015 to 2020?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,3,d3|d3_10
+What's the discrepancy in the financial returns between the fiscal years 2015 and 2020?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,2,d3|d3_10
+Any thoughts on the revenue difference between 2015 and 2020?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,3,d3|d3_10
+Could there be a revenue difference between 2015 and 2020?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,2,5,d3|d3_10
+Could you tell me the difference in our earnings from 2015 to 2020?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,3,2,d3|d3_10
+What was the capital expenditure on research and development in the fiscal year 2010?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,5,1,d3|d3_11
+"The research and development expenditure in 2010 was substantial, can you provide the exact figure?",Subjective-Objective,Implicit-Explicit,lookup-nonvisual,4,3,d3|d3_11
+"How much did we spend on R&D at the most and the least, you reckon?",Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,1,d3|d3_11
+Can you tell me the difference in the funds allocated for research and development from the highest to the lowest year?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,3,d3|d3_11
+Can you tell me the difference in the money we've spent on trying new things and learning over time?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,1,d3|d3_11
+Could you provide the difference between the maximum and minimum expenditure on research and development?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,2,d3|d3_11
+Could you tell me the maximum percentage value among all the majors?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,4,2,d3|d3_3
+I would like to know the highest percentage for any major.,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,1,4,d3|d3_3
+Can we figure out which major has the highest percentage?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,3,2,d3|d3_3
+Can you tell me the major with the highest percentage?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,2,d3|d3_3
+I'm curious about the maximum percentage among all the majors.,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,3,d3|d3_3
+Please articulate the major with the maximal percentile value.,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,5,d3|d3_3
+What is the maximum percentage value among all the majors?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,4,5,d3|d3_3
+Could you please provide the maximum percentage value among all the majors?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,5,5,d3|d3_3
+What's the biggest percent for any major?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,1,1,d3|d3_3
+What's the highest percentage among all the subjects?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,1,d3|d3_3
+What is the most frequently utilized mode of transportation?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,4,5,d3|d3_5
+Which method of transportation has the greatest number of users?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,5,2,d3|d3_5
+"I'm intrigued, how much more frequented is the most utilized mode of transport compared to the least utilized one?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,1,4,d3|d3_5
+Do you believe there's a significant difference in ridership between the mode of transportation with the highest ridership and the one with the lowest?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,5,d3|d3_5
+"There's likely a noticeable difference between the most and least used modes of transportation, don't you think?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,2,3,d3|d3_5
+What is the exact numerical difference in ridership between the most and least used mode of transportation?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,5,5,d3|d3_5
+Could you elucidate the difference in ridership between the most utilized and least utilized modes of transport?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,3,d3|d3_5
+What is the difference in usage data between the transportation mode with the highest and lowest ridership?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,5,3,d3|d3_5
+Can you tell me the disparity in patronage between the most and least patronized modes of transport?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,3,d3|d3_5
+There's a significant difference in the number of people using the most popular mode of transportation and the least popular one.,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,3,d3|d3_5
+I would like to understand the difference in utilization between the transport mode with the highest usage and the one with the lowest.,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,4,d3|d3_5
+What's the maximum value in the data we have?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,1,3,d3|d3_6
+Any idea which one's got the highest count?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,1,2,d3|d3_6
+"Which platform, in your assessment, has the maximum count?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,3,4,d3|d3_6
+I feel like which platform has the most?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,2,d3|d3_6
+"I feel like there's one platform that's really outshining the others, don't you think?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,1,1,d3|d3_6
+Which platform has the maximum count value?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,5,d3|d3_6
+The data demonstrates that which platform has the maximum count?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,4,d3|d3_6
+Do you know which one has the most?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,1,1,d3|d3_6
+Which platform has the maximum count value?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,3,d3|d3_6
+"I wonder, how much did the country that donated the most give?",Colloquial-Standard,Subjective-Objective,lookup-nonvisual,1,3,d3|d3_7
+Could you provide the exact fiscal contribution from the country with the highest donations?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,4,4,d3|d3_7
+What is the exact monetary contribution of the country that donated the most?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,4,3,d3|d3_7
+Which nation holds the highest record for philanthropic contributions?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,1,d3|d3_7
+Any insights on the country with the most donations?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,4,d3|d3_7
+Which country has the highest amount of donations?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,5,2,d3|d3_7
+"I think it's interesting to consider which country has given the most, don't you?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,3,1,d3|d3_7
+Which place do you think gives the most?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,1,d3|d3_7
+"Which country, in your opinion, donates the most?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,4,1,d3|d3_7
+Can you identify the country with the highest donation amount?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,4,3,d3|d3_7
+Can you tell me which geopolitical entity has the maximum monetary donation?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,5,d3|d3_7
+Do you know which country donates the most?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,1,2,d3|d3_7
+Any thoughts on the country that donates the most?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,2,d3|d3_7
+Which country has the highest donation amount?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,5,d3|d3_7
+Can you guess the geopolitical entity that has the maximum monetary donation?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,5,d3|d3_7
+Which country is the highest contributor in terms of donations?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,2,d3|d3_7
+Could you explicate the apex rating value and the nation it corresponds to?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,5,4,d3|d3_8
+Do you know which country has the highest score and what that score is?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,1,2,d3|d3_8
+"I'm just wondering, you know, which country has the top rating, if you get what I mean?",Subjective-Objective,Implicit-Explicit,lookup-nonvisual,1,1,d3|d3_8
+Which place is top of the list and how much better is it than the next one?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,1,1,d3|d3_8
+Could you inform me which country has the highest average rating and what's the difference in terms of standard deviation with the next one?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,4,d3|d3_8
+Could you please tell me which country has the highest average rating and by how much it surpasses the next one?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,4,5,d3|d3_8
+Can you tell me which country has the highest rating and how much it exceeds the next one?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,1,3,d3|d3_8
+Can you guess which place is the best and how much better it is than the second best?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,1,1,d3|d3_8
+Which country is at the top and by what margin?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,5,d3|d3_8
+Could you please tell me which country has the highest average rating and by how much it exceeds the next one?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,4,4,d3|d3_8
+May I inquire about the financial contribution from the country with the highest donations?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,2,5,d3|d3_9
+"It's a fact that one country donates more than any other, do you know which one it is?",Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,1,d3|d3_9
+Do you know which country gives the most?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,3,1,d3|d3_9
+Which country is at the forefront of donation contributions?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,3,d3|d3_9
+"I wonder, which country's the top donator?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,1,3,d3|d3_9
+Which nation contributes the most funds?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,3,d3|d3_9
+Could you ascertain which country donates the most?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,3,4,d3|d3_9
+Got a clue about the country that's the biggest donor?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,2,d3|d3_9
+Which country seems to be the top donor?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,2,5,d3|d3_9
+Which country leads in terms of donation contributions?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,4,d3|d3_9
+Any idea which place is super crowded?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,2,1,kong|kong_15
+Can you tell me which country has the highest number of people per square kilometer?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,2,4,kong|kong_15
+Do you know which country has the highest number of individuals per square kilometer?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,4,1,kong|kong_15
+What is the maximum population per square kilometer and which country does it correspond to?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,3,kong|kong_15
+Could you inform me of the maximum population density and the country it pertains to?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,2,kong|kong_15
+Can you provide information on the maximum population density per square kilometer and the country it's in?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,5,kong|kong_15
+"What is the maximum population density in persons per square kilometer, and which country is it associated with?",Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,3,kong|kong_15
+Do you know the maximum population density per square kilometer and the country it corresponds to?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,4,kong|kong_15
+"I'm certain there's a country with the highest population density, can you tell me which one it is?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,2,kong|kong_15
+Please provide the maximum population per square kilometer and its corresponding country.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,5,3,kong|kong_15
+Please elucidate on the methodological bias of pollster X.,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,4,5,kong|kong_17
+Who's the one that always has unique results in these polls?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,2,kong|kong_17
+I'm curious about your thoughts on which pollster has the most influence on election predictions?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,3,kong|kong_17
+"According to statistics, who has the most significant house effect?",Non-technical-Technical,Subjective-Objective,compositional-nonvisual,5,4,kong|kong_17
+I am striving to specify the pollster with the most pronounced house effect?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,5,kong|kong_17
+Who do you reckon is the pollster with the highest house effect?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,2,kong|kong_17
+Could you provide information on which pollster has the highest house effect?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,1,kong|kong_17
+"I feel like the bar for pollster X is pretty long, don't you think?",Subjective-Objective,Implicit-Explicit,lookup-visual,1,1,kong|kong_17
+Can you infer the length of the bar corresponding to pollster X?,Non-technical-Technical,Implicit-Explicit,lookup-visual,1,4,kong|kong_17
+Can you estimate the size of the bar for X?,Colloquial-Standard,Implicit-Explicit,lookup-visual,2,3,kong|kong_17
+Got any clue about the percentage of 30-35 year olds in 2015?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,1,2,kong|kong_18
+I am interested in the percentage of the population aged 30-35 in 2015. I presume it's quite significant.,Colloquial-Standard,Subjective-Objective,lookup-nonvisual,1,5,kong|kong_18
+What was the demographic proportion of the 30-35 age group in 2015?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,4,3,kong|kong_18
+Could you confirm which age group had the highest percentage each year?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,3,kong|kong_18
+Identify the age group with the highest representation each year.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,5,1,kong|kong_18
+Determine the demographic segment with the highest percentage each year.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,5,4,kong|kong_18
+"I'm interested to know, which age group had the highest percentage each year?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,3,kong|kong_18
+Which age cohort had the highest representation in the data set each year?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,5,kong|kong_18
+Any idea which age group was leading the pack each year?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,1,kong|kong_18
+"I'm questioning, which age group do you think had the highest percentage each year?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,3,5,kong|kong_18
+What is the variance in percentage growth between the religion with the highest growth and the one with the lowest growth?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,5,kong|kong_5
+Please provide the variance in percentage growth between the religion with the highest growth rate and the one with the lowest.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,5,5,kong|kong_5
+Maybe we could look at the difference in growth between the top and bottom religions?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,1,2,kong|kong_5
+What's the growth rate difference between the religion that's growing the fastest and the one that's not?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,1,kong|kong_5
+Could you provide the exact percentage growth discrepancy between the religion with the maximal and minimal growth?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,4,kong|kong_5
+"I'm wondering, what's the growth difference between the religion that's growing the most and the one that's not?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,1,2,kong|kong_5
+What if we determine the exact difference in growth percentages between the fastest and slowest growing religions?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,3,kong|kong_5
+"I feel like there's a religion that's really growing, you know? It's like its bar is stretching out on the x-axis more than the others. Can you see it?",Subjective-Objective,Implicit-Explicit,lookup-visual,1,1,kong|kong_5
+Can you see which faith's line is the longest on the horizontal line and has a color that means it's growing?,Non-technical-Technical,Implicit-Explicit,lookup-visual,2,1,kong|kong_5
+Identify the faith whose line extends the furthest and is colored to denote growth.,Non-technical-Technical,Subjective-Objective,lookup-visual,5,1,kong|kong_5
+Which religion's bar on the x-axis extends the furthest and is colored to explicitly represent growth?,Non-technical-Technical,Implicit-Explicit,lookup-visual,5,5,kong|kong_5
+Which religion's bar on the x-axis extends the furthest and is colored to indicate growth?,Non-technical-Technical,Implicit-Explicit,lookup-visual,3,4,kong|kong_5
+Which religion's bar extends the furthest on the x-coordinate and is colored to represent quantitative growth?,Colloquial-Standard,Non-technical-Technical,lookup-visual,5,1,kong|kong_5
+There's a clear difference in length on the x-axis between the longest and shortest bars showing growth.,Subjective-Objective,Implicit-Explicit,compositional-visual,4,4,kong|kong_5
+What's the most we've ever spent on a certain thing?,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,1,3,kong|kong_50
+What's the maximum budget allocation for a specific category?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,1,3,kong|kong_50
+What is the highest amount allocated for a specific budget category?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,2,2,kong|kong_50
+What is the zenith of fiscal allocation for a specific budgetary classification?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,5,2,kong|kong_50
+Could you inform me about the highest allocation for a specific budget category?,Colloquial-Standard,Subjective-Objective,lookup-nonvisual,4,2,kong|kong_50
+Can you tell me the maximum allocation for a specific budget category?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,2,3,kong|kong_50
+How much money do we have at most for a certain thing we need to spend on?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,1,1,kong|kong_50
+"I reckon there's a country that tops the list in budget allocation for a specific category, isn't it?",Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,3,kong|kong_50
+Which nation has the maximum fiscal allocation for a specific budgetary classification?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,4,kong|kong_50
+Which country has the maximum fiscal allocation for a specific budgetary division?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,4,kong|kong_50
+Which country has the highest budget allocation for a specific budget item?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,2,kong|kong_50
+Which nation has the largest budget for a particular category?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,1,4,kong|kong_50
+Which nation do you think has the highest monetary allocation for a specific fiscal category?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,5,kong|kong_50
+Which country do you think allocates the most funds for a certain budget item?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,2,kong|kong_50
+Can you figure out which country has the maximum fiscal allocation for a specific budgetary division?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,4,kong|kong_50
+"How many Asians are there, you reckon?",Colloquial-Standard,Subjective-Objective,lookup-nonvisual,1,1,kong|kong_53
+What is the demographic percentage of Asians?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,3,3,kong|kong_53
+Can you infer which population segment is leading?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,4,kong|kong_53
+Which population has the highest prevalence?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,3,kong|kong_53
+"You're aware of the race that's topping the charts, right?",Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,3,kong|kong_53
+Can you explicitly inform me which race is topping the charts?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,5,3,kong|kong_53
+Can you ascertain which race has a higher proportion?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,4,kong|kong_53
+Which category has the highest percentage?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,5,kong|kong_53
+Any thoughts on which demographic is leading?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,1,3,kong|kong_53
+What's the length of the bar representing the Asian population?,Non-technical-Technical,Implicit-Explicit,lookup-visual,3,3,kong|kong_53
+Do you have the data on the percentage for Asians?,Colloquial-Standard,Subjective-Objective,lookup-nonvisual,5,3,kong|kong_54
+I would like to know the demographic data for Asians.,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,3,5,kong|kong_54
+Could you provide the statistical proportion of the Asian demographic in the population sample?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,5,3,kong|kong_54
+What is the exact percentage of the Asian demographic?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,4,4,kong|kong_54
+Could you tell me the specific percentage that represents the Asian population?,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,3,4,kong|kong_54
+Which demographic is showing the highest prevalence?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,1,kong|kong_54
+Which demographic has the highest percentage?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,3,kong|kong_54
+"So, who's got the most numbers?",Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,2,kong|kong_54
+Which group is demonstrating the highest incidence?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,2,kong|kong_54
+Do you have any idea which race is the most populous?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,2,kong|kong_54
+"The question we should ask is, which race has the highest percentage?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,4,kong|kong_54
+"So, which race is currently leading?",Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,4,kong|kong_54
+"The question is, which race has the highest percentage?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,5,kong|kong_54
+"Based on your understanding, which race has the highest percentage?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,3,3,kong|kong_54
+Which population segment has the highest percentage?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,4,kong|kong_54
+"The bar that's linked to the Asian race, it's definitely long.",Subjective-Objective,Implicit-Explicit,lookup-visual,4,2,kong|kong_54
+"You know the bar related to Asians, right? How long is it?",Colloquial-Standard,Implicit-Explicit,lookup-visual,1,2,kong|kong_54
+It would be informative to know which race has the highest population.,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,4,2,kong|kong_55
+Which population segment has the highest proportion?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,4,kong|kong_55
+Which demographic group has the highest percentage?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,5,kong|kong_55
+Which group has the highest proportion?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,5,kong|kong_55
+"I'm under the impression that one demographic has a larger percentage, would you agree?",Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,3,kong|kong_55
+"According to the data, which race has the highest percentage?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,2,kong|kong_55
+I believe one race might have the highest percentage.,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,1,4,kong|kong_55
+Which demographic is in the majority?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,3,kong|kong_55
+Which ethnic group has the maximum percentage?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,5,kong|kong_55
+"According to the data, which race has the highest percentage?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,3,kong|kong_55
+What is the maximum percentage of affirmative responses to the neighborhood safety perception questionnaire?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,3,kong|kong_65
+What is the maximum percentage of individuals who feel safe in their neighborhood?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,5,kong|kong_65
+What is the maximum percentage of affirmative responses to the neighborhood safety perception questionnaire?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,5,kong|kong_65
+What's the highest percentage of individuals stating they're safe in their own area?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,4,kong|kong_65
+I'm endeavoring to find out the maximum percentage of positive responses to the neighborhood safety question.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,4,kong|kong_65
+What is the highest proportion of affirmative responses to the query regarding personal safety in one's neighborhood?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,1,kong|kong_65
+"I'm not sure, but I think a lot of people feel safe in their neighborhood.",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,1,2,kong|kong_65
+I'm striving to identify the maximum percentage of positive responses to the neighborhood safety inquiry.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,4,kong|kong_65
+What is the measurement of the line that represents the proportion of people who feel safe in their neighborhood?,Non-technical-Technical,Subjective-Objective,lookup-visual,4,1,kong|kong_65
+What is the exact length of the bar representing those who agreed with the statement about feeling safe in their neighborhood?,Colloquial-Standard,Implicit-Explicit,lookup-visual,5,5,kong|kong_65
+"How long is the bar representing the ""Agree"" responses to the neighborhood safety question?",Colloquial-Standard,Implicit-Explicit,lookup-visual,1,5,kong|kong_65
+Which bar is the most for the safety feeling in the neighborhood?,Colloquial-Standard,Implicit-Explicit,compositional-visual,3,3,kong|kong_65
+"Can you confirm if the longest bar is for the statement ""I feel safe in my neighborhood""?",Subjective-Objective,Implicit-Explicit,compositional-visual,4,2,kong|kong_65
+"I'm trying to figure out the apex percentage for a specific category under a particular administration, any ideas?",Non-technical-Technical,Subjective-Objective,lookup-nonvisual,1,4,kong|kong_68
+I am seeking information on the maximum percentage for a certain category under a specific administration.,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,4,3,kong|kong_68
+Can you tell me the peak percentage for a particular category under a particular administration?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,2,4,kong|kong_68
+Could we possibly find out the top percentage in that category for that administration?,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,1,2,kong|kong_68
+"I'm just wondering, you know, what's the top percentage in that one category for that specific administration?",Subjective-Objective,Implicit-Explicit,lookup-nonvisual,1,1,kong|kong_68
+Please provide the maximum percentage across all categories for each administration.,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,5,kong|kong_68
+I hypothesize that the maximum percentage for each category would be of interest.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,4,kong|kong_68
+Please provide the peak percentage for each category.,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,3,kong|kong_68
+What is the peak percentage in each category?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,3,kong|kong_68
+Could you please provide the highest percentage across all categories for each administration?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,5,3,kong|kong_68
+"I'm curious, which income bracket has experienced the greatest percentage increase in income?",Non-technical-Technical,Subjective-Objective,lookup-nonvisual,1,3,kong|kong_69
+Could you elucidate the income rank associated with the most substantial percentage increase?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,3,5,kong|kong_69
+Do you know the income percentile with the highest percent change in income?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,2,4,kong|kong_69
+Can you tell me which income level had the biggest change?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,2,1,kong|kong_69
+Would you be able to identify the rank with the most significant increase in income?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,2,4,kong|kong_69
+It might be interesting to find out the income rank with the biggest income change.,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,2,2,kong|kong_69
+Which income group had the largest increase in their income?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,5,1,kong|kong_69
+"What is the maximum percentage change in income, and what income rank does it correspond to?",Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,3,kong|kong_69
+"Do you know the maximum possible change in income, and the corresponding income rank?",Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,2,kong|kong_69
+"I believe we need to find the maximum income change and its rank, right?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,2,2,kong|kong_69
+"What is the maximum percentage change in income, and what income rank does that correspond to?",Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,4,kong|kong_69
+"What is the paramount percentage change in income, and which income rank do you estimate it's impacting?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,5,kong|kong_69
+What is the maximum change in income and to whom does it correspond?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,5,1,kong|kong_69
+What is the maximum percent variation in income and to which income rank does it correspond?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,5,3,kong|kong_69
+I need to know the ratio of people who concur.,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,4,3,kong|kong_70
+Can you provide the number of people who agree?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,4,2,kong|kong_70
+Do you have an understanding of the percentage of individuals who are in agreement?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,1,5,kong|kong_70
+Do you think the majority of people agree?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,2,2,kong|kong_70
+Can you provide the proportion of people who are in agreement?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,3,3,kong|kong_70
+Could you tell me the proportion of people who agree?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,3,4,kong|kong_70
+It seems we might not all agree. What do you think is the highest level of agreement we can reach?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,1,3,kong|kong_70
+What's the highest level of agreement we can expect?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,1,kong|kong_70
+What is the utmost percentage of agreement?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,5,kong|kong_70
+I think we might not all agree. Can you explicitly tell me what the maximum percentage of agreement is?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,2,kong|kong_70
+What do you think is the maximum percentage of unanimity we can achieve?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,2,5,kong|kong_70
+What's the maximum possible agreement?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,4,kong|kong_70
+What is the maximum percentage of agreement that can be statistically and objectively anticipated?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,5,kong|kong_70
+"It seems to me that the bar for those who agree is long, is that correct?",Subjective-Objective,Implicit-Explicit,lookup-visual,3,2,kong|kong_70
+Can you tell how big the bar is for those who agree?,Colloquial-Standard,Implicit-Explicit,lookup-visual,2,1,kong|kong_70
+"What's the extent of the bar for those who agree, in your view?",Colloquial-Standard,Subjective-Objective,lookup-visual,2,4,kong|kong_70
+It seems to me that the longest bar represents the highest percentage of agreement.,Subjective-Objective,Implicit-Explicit,compositional-visual,3,2,kong|kong_70
+Can you deduce which bar is the longest?,Colloquial-Standard,Implicit-Explicit,compositional-visual,2,4,kong|kong_70
+"Can you tell which line is the longest, indicating the most people agreeing?",Non-technical-Technical,Subjective-Objective,compositional-visual,2,1,kong|kong_70
+What is the count of males in the 20-30 age demographic?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,5,2,kong|kong_71
+What is the proportion of males in the 20-30 age range?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,5,3,kong|kong_71
+Could you provide the data on which age group has the highest percentage of females?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,4,kong|kong_71
+Could you specify which age group has the highest number of females?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,3,kong|kong_71
+"I reckon, which age group's got the most girls, right?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,1,kong|kong_71
+Which age cohort do you suppose has the highest female proportion?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,4,kong|kong_71
+Could you determine the age group with the highest female ratio?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,3,kong|kong_71
+Can you tell me the height of the blue bar in the 20-30 section?,Non-technical-Technical,Implicit-Explicit,lookup-visual,4,1,kong|kong_71
+Where is the red bar highest?,Colloquial-Standard,Non-technical-Technical,compositional-visual,1,3,kong|kong_71
+"Which demographic, in terms of age and gender, exhibits the highest prevalence of this characteristic?",Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,1,kong|kong_73
+Can you tell me which age and gender stratification has the highest prevalence of this characteristic?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,5,kong|kong_73
+I propose we ascertain the demographic segment with the highest incidence of this trait.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,2,4,kong|kong_73
+Which age and gender demographic has the highest prevalence of this attribute?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,2,kong|kong_73
+Can you tell me which age and gender group has the most of this characteristic?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,1,2,kong|kong_73
+"I'm contemplating, which age and gender group could potentially have the most of that characteristic?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,4,kong|kong_73
+"The empirical evidence should designate which demographic, in terms of age and gender, has the highest percentage of the characteristic.",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,5,kong|kong_73
+It is probable that a particular age and gender group has the most of that characteristic.,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,4,4,kong|kong_73
+Can you specify which age and gender group is exhibiting the highest percentage of this characteristic?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,5,4,kong|kong_73
+The information on which age group and gender has the highest percentage of this characteristic is needed.,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,3,5,kong|kong_73
+"Based on the empirical data, which geopolitical entity has the highest rate of philanthropic financial contributions?",Non-technical-Technical,Subjective-Objective,lookup-nonvisual,3,5,kong|kong_74
+"In your opinion, which nation receives the most philanthropic contributions?",Non-technical-Technical,Subjective-Objective,lookup-nonvisual,1,4,kong|kong_74
+"According to the data, which country has the highest amount of donations?",Subjective-Objective,Implicit-Explicit,lookup-nonvisual,5,5,kong|kong_74
+"I feel like there's a country that's really generous, can you guess which one?",Subjective-Objective,Implicit-Explicit,lookup-nonvisual,2,1,kong|kong_74
+What's the difference between the country that gives the most and the one that gives the least?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,1,kong|kong_74
+What is the difference between the country that donates the most and the one that donates the least?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,3,2,kong|kong_74
+Could you please specify the difference between the country with the highest donations and the country with the lowest donations?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,5,1,kong|kong_74
+Can you tell me the difference between the country that donates the most and the one that donates the least?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,3,kong|kong_74
+Can you tell me the disparity between the highest and lowest donating countries?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,1,kong|kong_74
+There appears to be a disparity between the country with the highest donations and the one with the lowest.,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,2,5,kong|kong_74
+Can you tell me about the difference in philanthropic contributions between the highest and lowest donating countries?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,1,3,kong|kong_74
+Could you please elaborate on the difference between the country with the highest donations and the country with the lowest donations?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,5,2,kong|kong_74
+There is a difference between the country with the highest donations and the country with the lowest donations.,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,3,kong|kong_74
+Can you explain the difference in philanthropic contributions between the highest and lowest donating countries?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,3,kong|kong_74
+What is the disparity between the country that donates the most and the one that donates the least?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,4,kong|kong_74
+"Do you have information about the country that leads in generosity, considering their total income?",Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,1,5,kong|kong_75
+Which country has the highest GDP-adjusted generosity?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,5,2,kong|kong_75
+"Can you specify the country with the highest donations, relative to their GDP?",Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,3,5,kong|kong_75
+Could you specify the country with the highest ratio of donations to GDP?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,4,2,kong|kong_75
+"Could you provide the country with the maximum value of generous donations as a proportion of GDP, and what that value is?",Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,5,kong|kong_75
+Do you know the country with the maximum value of charitable contributions as a proportion of Gross Domestic Product?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,5,kong|kong_75
+"The country with the maximum value of ""Generous donations by GDP"" is... Can you confirm?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,4,5,kong|kong_75
+"Could you tell me which country has the highest donations relative to their GDP, and what that value is?",Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,2,kong|kong_75
+It seems like there's a country that's very generous with their GDP. Do you know which one it is?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,3,2,kong|kong_75
+Could you provide the maximum value of GDP donations and the country it originates from?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,1,kong|kong_75
+Can you tell me the maximum GDP donation and the country it's from?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,3,2,kong|kong_75
+Which country has the highest GDP in terms of donations?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,4,3,kong|kong_75
+Which country's bar extends the furthest along the horizontal axis?,Non-technical-Technical,Implicit-Explicit,lookup-visual,3,4,kong|kong_75
+"Which country's bar extends the furthest along the x-axis, and what is the corresponding country, can you verify?",Colloquial-Standard,Subjective-Objective,compositional-visual,4,2,kong|kong_75
+"Which country's bar is the longest on the x-axis, and what's the country, would you suggest?",Colloquial-Standard,Subjective-Objective,compositional-visual,2,5,kong|kong_75
+What is the exact sum of funds that country X received?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,5,5,kong|kong_76
+Got a clue about the country with the most funds?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,2,kong|kong_76
+"I surmise, which country has received the most funds?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,4,4,kong|kong_76
+Do you have any idea which country has the highest aggregate funding?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,4,kong|kong_76
+It's uncertain which country has received the most funds.,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,2,4,kong|kong_76
+Do you know the top value in our number collection?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,2,2,kong|kong_77
+What is the zenith percentile in the data compilation?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,4,5,kong|kong_77
+Would you be so kind as to inform me of the highest percentage value in this data?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,3,5,kong|kong_77
+I think we need to determine the highest percentage value in the dataset.,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,5,1,kong|kong_77
+"What, based on the facts, is the highest percentage in the dataset?",Colloquial-Standard,Subjective-Objective,lookup-nonvisual,5,3,kong|kong_77
+Could you identify the maximum percentage value in the data?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,4,1,kong|kong_77
+Can you identify the highest percentage in the dataset?,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,1,4,kong|kong_77
+Do you know the maximum percentage in our data?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,2,3,kong|kong_77
+Which bar's the biggest on the chart?,Colloquial-Standard,Non-technical-Technical,lookup-visual,1,1,kong|kong_77
+Determine the bar on the chart with the maximum length.,Non-technical-Technical,Subjective-Objective,lookup-visual,5,3,kong|kong_77
+What is the numerical difference between the age group with the most and the least people in 2000?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,3,vega-lite-example-gallery|bar_aggregate
+What's the population disparity between the age group with the most and least people in 2000?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,3,vega-lite-example-gallery|bar_aggregate
+Could you provide the numerical difference between the most populated and least populated age groups in 2000?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,1,vega-lite-example-gallery|bar_aggregate
+"I hypothesize there's a significant demographic variance between the age group with the highest and the lowest population in 2000, correct?",Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,5,vega-lite-example-gallery|bar_aggregate
+Could you elaborate on the population disparity between the age cohort with the maximum and minimum population in 2000?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,4,vega-lite-example-gallery|bar_aggregate
+What was the population difference between the age group with the highest and the lowest population in 2000?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,3,4,vega-lite-example-gallery|bar_aggregate
+Can you provide more information on the population difference between the age groups in 2000?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,4,5,vega-lite-example-gallery|bar_aggregate
+Could you tell me the population disparity between the age group with the most and least people in 2000?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,3,vega-lite-example-gallery|bar_aggregate
+"What's the length differential between the longest and shortest bars, symbolizing the age groups with the maximum and minimum populations in 2000?",Colloquial-Standard,Non-technical-Technical,compositional-visual,5,1,vega-lite-example-gallery|bar_aggregate
+Can you estimate the female population aged 30-34 in 2000?,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,3,3,vega-lite-example-gallery|bar_grouped
+What's the number of women aged 30-34 in 2000? I need accurate information.,Colloquial-Standard,Subjective-Objective,lookup-nonvisual,4,2,vega-lite-example-gallery|bar_grouped
+Please provide the total population of males and females aged 30-34 in 2000.,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,2,vega-lite-example-gallery|bar_grouped
+What is the exact total population of both males and females in the age group of 30-34 in the year 2000?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,5,vega-lite-example-gallery|bar_grouped
+What's the total count of male and female individuals in the 30-34 age bracket in the year 2000?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,1,vega-lite-example-gallery|bar_grouped
+Could you provide the total population of males and females in the 30-34 age bracket in the year 2000?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,3,vega-lite-example-gallery|bar_grouped
+"Do you have any idea about the number of people, both men and women, who were between 30 and 34 in 2000?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,1,2,vega-lite-example-gallery|bar_grouped
+Please provide the gender-specific population census data for the 30-34 age cohort in the year 2000.,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,5,vega-lite-example-gallery|bar_grouped
+Any insights on the gender-specific population census data for the 30-34 age cohort in the year 2000?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,1,5,vega-lite-example-gallery|bar_grouped
+"Could you guess the population of people, both men and women, who were between 30 and 34 in 2000?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,2,3,vega-lite-example-gallery|bar_grouped
+What is the specific total population of both males and females in the age group of 30-34 in the year 2000?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,4,5,vega-lite-example-gallery|bar_grouped
+I am interested in the total population of males and females in the 30-34 age demographic in the year 2000.,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,5,vega-lite-example-gallery|bar_grouped
+What is the gender-specific demographic distribution for the 30-34 age cohort in 2000?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,4,vega-lite-example-gallery|bar_grouped
+"I presume there were a significant number of individuals aged 30-34 in 2000, correct?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,4,vega-lite-example-gallery|bar_grouped
+Do you know how much Google's stock was on that day?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,2,1,vega-lite-example-gallery|line
+Could you clarify the difference between the peak and trough of Google's stock price?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,2,vega-lite-example-gallery|line
+Can you tell me about the price dispersion in Google's stock?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,5,vega-lite-example-gallery|line
+Could you explain the difference in Google's stock price over time?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,4,vega-lite-example-gallery|line
+Can you tell me how much Google's stock has gone up and down over time?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,1,vega-lite-example-gallery|line
+What's your perspective on the difference between the highest and lowest price of Google's stock?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,5,vega-lite-example-gallery|line
+What is the total yield of the Manchuria barley variety?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,3,5,vega-lite-example-gallery|stacked_bar_h
+Can you estimate the yield of the Manchuria barley variety?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,2,4,vega-lite-example-gallery|stacked_bar_h
+How much barley does the Manchuria type produce?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,3,1,vega-lite-example-gallery|stacked_bar_h
+What is the yield of the Manchuria barley variety?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,3,4,vega-lite-example-gallery|stacked_bar_h
+Do you think we get a good yield from the Manchuria barley?,Colloquial-Standard,Subjective-Objective,lookup-nonvisual,2,3,vega-lite-example-gallery|stacked_bar_h
+What's the factual sum of the yields of the Manchuria and Glabron barley?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,4,3,vega-lite-example-gallery|stacked_bar_h
+What's the combined yield of Manchuria and Glabron barley?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,2,vega-lite-example-gallery|stacked_bar_h
+"You want to know the total yield of Manchuria and Glabron barley, correct?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,3,vega-lite-example-gallery|stacked_bar_h
+Do you know the total yield of barley from Manchuria and Glabron?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,3,vega-lite-example-gallery|stacked_bar_h
+Could you please provide the total yield of barley from Manchuria and Glabron?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,4,2,vega-lite-example-gallery|stacked_bar_h
+Could you tell me the total amount of barley from Manchuria and Glabron?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,1,4,vega-lite-example-gallery|stacked_bar_h
+May I inquire about the combined yield of the Manchuria and Glabron barley varieties?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,5,vega-lite-example-gallery|stacked_bar_h
+"You want to know the total yield of Manchuria and Glabron barley, correct?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,2,vega-lite-example-gallery|stacked_bar_h
+Do you know the total yield of barley from Manchuria and Glabron?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,5,vega-lite-example-gallery|stacked_bar_h
+Can you tell me the total yield of barley from Manchuria and Glabron?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,3,2,vega-lite-example-gallery|stacked_bar_h
+What is the combined yield of the Manchuria and Glabron barley types?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,2,vega-lite-example-gallery|stacked_bar_h
+"You're asking about the combined yield of Manchuria and Glabron barley, correct?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,1,4,vega-lite-example-gallery|stacked_bar_h
+Please provide the exact total yield of barley from Manchuria and Glabron.,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,5,4,vega-lite-example-gallery|stacked_bar_h
+Please provide the exact combined yield of barley from both Manchuria and Glabron varieties.,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,2,vega-lite-example-gallery|stacked_bar_h
+"You're interested in the total yield of Manchuria and Glabron barley, correct?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,3,2,vega-lite-example-gallery|stacked_bar_h
+"You're asking about the total yield of Manchuria and Glabron barley, right?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,4,5,vega-lite-example-gallery|stacked_bar_h
+What's the combined yield of Manchuria and Glabron barley?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,4,vega-lite-example-gallery|stacked_bar_h
+"You're asking about the total yield of Manchuria and Glabron barley, correct?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,4,1,vega-lite-example-gallery|stacked_bar_h
+What is the exact sum of the yields of the Manchuria and Glabron barley?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,5,vega-lite-example-gallery|stacked_bar_h
+What is the combined yield of the Manchuria and Glabron barley varieties?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,4,vega-lite-example-gallery|stacked_bar_h
+"You want to know the total yield of Manchuria and Glabron barley, correct?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,5,vega-lite-example-gallery|stacked_bar_h
+What do you think is the cumulative yield of the Manchuria and Glabron barley cultivars?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,2,5,vega-lite-example-gallery|stacked_bar_h
+"You're asking about the total yield of Manchuria and Glabron barley, correct?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,3,4,vega-lite-example-gallery|stacked_bar_h
+Please provide the exact total yield of barley from Manchuria and Glabron.,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,5,5,vega-lite-example-gallery|stacked_bar_h
+Could you provide the aggregate yield of the Manchuria and Glabron barley cultivars?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,4,vega-lite-example-gallery|stacked_bar_h
+What's the factual sum of the yields of the Manchuria and Glabron barley?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,4,5,vega-lite-example-gallery|stacked_bar_h
+"You're asking about the total yield of Manchuria and Glabron barley, correct?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,3,5,vega-lite-example-gallery|stacked_bar_h
+What is the precise total yield of the Manchuria and Glabron barley?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,2,vega-lite-example-gallery|stacked_bar_h
+What's the sum of the yields from Manchuria and Glabron barley?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,1,3,vega-lite-example-gallery|stacked_bar_h
+How much barley do Manchuria and Glabron give us altogether?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,1,vega-lite-example-gallery|stacked_bar_h
+"I hypothesize that the bar representing the Manchuria variety of barley is of significant length, what's your opinion?",Non-technical-Technical,Subjective-Objective,lookup-visual,1,5,vega-lite-example-gallery|stacked_bar_h
+"The length of the Manchuria barley bar is long, can you verify this?",Subjective-Objective,Implicit-Explicit,lookup-visual,3,5,vega-lite-example-gallery|stacked_bar_h
+Could you specify the exact length of the bar representing the Manchuria variety of barley?,Colloquial-Standard,Implicit-Explicit,lookup-visual,4,5,vega-lite-example-gallery|stacked_bar_h
+"I think the Manchuria barley bar is long, can you confirm?",Subjective-Objective,Implicit-Explicit,lookup-visual,4,1,vega-lite-example-gallery|stacked_bar_h
+"I feel like the bar for the Manchuria barley is pretty long, don't you think?",Subjective-Objective,Implicit-Explicit,lookup-visual,1,1,vega-lite-example-gallery|stacked_bar_h
+Can you estimate the length of the bar representing the Manchuria variety of barley?,Non-technical-Technical,Implicit-Explicit,lookup-visual,2,5,vega-lite-example-gallery|stacked_bar_h
+Can you tell me exactly how long the line for the Manchuria barley is?,Non-technical-Technical,Implicit-Explicit,lookup-visual,4,1,vega-lite-example-gallery|stacked_bar_h
+Could you provide the exact measurement of the bar representing the Manchuria variety of barley?,Colloquial-Standard,Subjective-Objective,lookup-visual,5,4,vega-lite-example-gallery|stacked_bar_h
+What is the length of the bar representing the Manchuria variety of barley?,Non-technical-Technical,Implicit-Explicit,lookup-visual,3,5,vega-lite-example-gallery|stacked_bar_h
+"From my perspective, the Manchuria barley bar appears long, do you see it the same way?",Subjective-Objective,Implicit-Explicit,lookup-visual,2,2,vega-lite-example-gallery|stacked_bar_h
+"I'm under the impression that the Manchuria barley bar is quite lengthy, wouldn't you agree?",Subjective-Objective,Implicit-Explicit,lookup-visual,2,1,vega-lite-example-gallery|stacked_bar_h
+Please provide the exact measurement of the bar representing the Manchuria barley variety.,Non-technical-Technical,Implicit-Explicit,lookup-visual,5,4,vega-lite-example-gallery|stacked_bar_h
+Can you estimate the length of the bar representing the Manchuria variety of barley?,Colloquial-Standard,Implicit-Explicit,lookup-visual,2,5,vega-lite-example-gallery|stacked_bar_h
+Could you ascertain the exact length of the bar representing the Manchuria variety of barley?,Colloquial-Standard,Subjective-Objective,lookup-visual,3,5,vega-lite-example-gallery|stacked_bar_h
+"I reckon that bar for the Manchuria barley's pretty long, don't you think?",Colloquial-Standard,Subjective-Objective,lookup-visual,2,1,vega-lite-example-gallery|stacked_bar_h
+Can you tell me how long the bar is for the Manchuria barley?,Colloquial-Standard,Non-technical-Technical,lookup-visual,1,2,vega-lite-example-gallery|stacked_bar_h
+Can you provide the length of the bar representing the Manchuria barley?,Colloquial-Standard,Subjective-Objective,lookup-visual,3,3,vega-lite-example-gallery|stacked_bar_h
+Can you give me an idea of the length of the line for the Manchuria barley?,Non-technical-Technical,Implicit-Explicit,lookup-visual,2,1,vega-lite-example-gallery|stacked_bar_h
+Could you tell me the length of the bar for the Manchuria type of barley?,Colloquial-Standard,Non-technical-Technical,lookup-visual,2,3,vega-lite-example-gallery|stacked_bar_h
+Can you provide the combined length of the bars for the Manchuria and Glabron barley?,Non-technical-Technical,Subjective-Objective,compositional-visual,4,2,vega-lite-example-gallery|stacked_bar_h
+Please calculate the combined length of the bars representing the Manchuria and Glabron varieties of barley.,Colloquial-Standard,Implicit-Explicit,compositional-visual,5,2,vega-lite-example-gallery|stacked_bar_h
+Please provide the total length of the bars representing the Manchuria and Glabron barley varieties.,Colloquial-Standard,Non-technical-Technical,compositional-visual,3,5,vega-lite-example-gallery|stacked_bar_h
+Could you tell me how many days it rained?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,3,2,vega-lite-example-gallery|stacked_bar_weather
+Can you provide the count of rainy days?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,4,2,vega-lite-example-gallery|stacked_bar_weather
+Which climatic phenomenon is most recurrent?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,4,vega-lite-example-gallery|stacked_bar_weather
+The most common weather type needs to be identified.,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,2,5,vega-lite-example-gallery|stacked_bar_weather
+What meteorological condition has the highest frequency of occurrence?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,5,4,vega-lite-example-gallery|stacked_bar_weather
+Which weather do we have the most?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,1,vega-lite-example-gallery|stacked_bar_weather
+Which type of weather is most commonly observed?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,5,vega-lite-example-gallery|stacked_bar_weather
+What climatological phenomenon is most commonly documented?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,5,vega-lite-example-gallery|stacked_bar_weather
+What climatic phenomenon do we experience most often?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,4,vega-lite-example-gallery|stacked_bar_weather
+What's the weather we see the most?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,1,vega-lite-example-gallery|stacked_bar_weather
+Could you tell me the number of deaths in 2000?,Colloquial-Standard,Subjective-Objective,lookup-nonvisual,3,2,wikitables-200|10_0
+Could you tell me the years with the highest and lowest number of fatalities?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,3,wikitables-200|10_0
+"Can you tell me, objectively, which years had the most and least deaths?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,3,2,wikitables-200|10_0
+I posit that it's crucial to identify the temporal distribution of the maximum and minimum mortality indices.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,2,5,wikitables-200|10_0
+Specify the years with the maximum and minimum mortality incidence.,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,4,wikitables-200|10_0
+In which years did we see the peak and trough in mortality rates?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,1,wikitables-200|10_0
+Can you tell me which years had the most and least people passing away?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,3,1,wikitables-200|10_0
+Could you please elucidate the years with the highest and lowest mortality indices?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,5,wikitables-200|10_0
+Could you determine the length of the bar representing the year 2000 on the x-axis?,Colloquial-Standard,Subjective-Objective,lookup-visual,3,5,wikitables-200|10_0
+I request the total cost of the highest-priced service in 2012/13.,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,2,5,wikitables-200|25_0
+Can you confirm the total cost of the most expensive service in 2012/13?,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,4,3,wikitables-200|25_0
+Provide the expenditure for the service with the highest cost in 2012/13.,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,5,4,wikitables-200|25_0
+Do you know the cost of the most expensive service we had in 2012/13?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,3,1,wikitables-200|25_0
+Can you tell me the exact financial expenditure for the highest echelon service in the fiscal year 2012/13?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,4,5,wikitables-200|25_0
+Please provide the exact total cost of the highest priced service in the fiscal year 2012/13.,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,5,1,wikitables-200|25_0
+Identify the service that had the maximum fiscal outlay in the fiscal year 2012/13.,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,5,4,wikitables-200|25_0
+Which service had the highest financial burden in 2012/13?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,2,wikitables-200|25_0
+I am interested in ascertaining the service with the highest total economic expenditure in the fiscal year 2012/13.,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,4,wikitables-200|25_0
+"So, which bar is the most elevated?",Colloquial-Standard,Implicit-Explicit,compositional-visual,1,4,wikitables-200|25_0
+Any idea which political group has the most fans?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,1,2,wikitables-200|28_0
+"In your assessment, which political party has the most voters?",Colloquial-Standard,Subjective-Objective,lookup-nonvisual,3,5,wikitables-200|28_0
+Which political organization do you think has the highest voter registration?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,3,4,wikitables-200|28_0
+Can you inform me which party has the most voters?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,4,3,wikitables-200|28_0
+Can you guess which group has the most supporters?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,2,1,wikitables-200|28_0
+I feel it's crucial to determine the exact difference in total voters between the party with the most and the party with the least total voters.,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,1,wikitables-200|28_0
+What's your perspective on the difference in total voters between the most and least popular party?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,4,wikitables-200|28_0
+Can you tell me the difference in total voters between the party with the most and the least?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,3,2,wikitables-200|28_0
+Could you explain the difference in total voters between the party with the most votes and the one with the least?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,3,wikitables-200|28_0
+How many more people voted for the party with the most votes than the one with the least?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,1,wikitables-200|28_0
+How many more votes did the party with the maximum electoral support receive compared to the party with the minimum electoral support?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,4,wikitables-200|28_0
+What is the numerical difference in voter count between the party with the most votes and the one with the least?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,2,wikitables-200|28_0
+It might be interesting to see the difference in voter numbers between the most and least popular parties.,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,2,2,wikitables-200|28_0
+Could you tell me the numerical difference in total voters between the party with the most and the least?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,5,wikitables-200|28_0
+What is the quantifiable discrepancy in the electoral body between the party with the maximal and minimal voter turnout?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,5,5,wikitables-200|28_0
+"What's the biggest district, area-wise, do you think?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,3,1,wikitables-200|33_0
+I would like to identify which district possesses the greatest geographical expanse.,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,4,wikitables-200|33_0
+It seems to me that we should find out which district has the most land.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,2,2,wikitables-200|33_0
+"What's the biggest district, area-wise, in your opinion?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,1,wikitables-200|33_0
+Can you infer which district has the maximum area?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,4,wikitables-200|33_0
+"So, which area's got the biggest bar on the graph, huh?",Colloquial-Standard,Subjective-Objective,lookup-visual,1,1,wikitables-200|33_0
+"A bar seems to be the longest, can you point it out?",Subjective-Objective,Implicit-Explicit,compositional-visual,4,5,wikitables-200|33_0
+Which one's topping the rest?,Colloquial-Standard,Implicit-Explicit,compositional-visual,1,2,wikitables-200|33_0
+Could you provide the statistical data on the population of the district with the highest population density?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,3,5,wikitables-200|33_1
+I'm curious about the demographic count of the district with the highest population.,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,2,4,wikitables-200|33_1
+What's the number of inhabitants in the district with the most people?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,4,1,wikitables-200|33_1
+"You're aware of the district with the highest number of inhabitants, correct? What's the population count?",Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,1,4,wikitables-200|33_1
+Please provide the exact population density for the district with the highest population.,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,5,3,wikitables-200|33_1
+I believe the population difference between the district with the highest population and the district with the lowest population is significant.,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,5,1,wikitables-200|33_1
+How many more people live in the biggest district than the smallest one?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,1,1,wikitables-200|33_1
+What's the populace disparity between the district with the highest and lowest populace density?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,4,wikitables-200|33_1
+Which bar would you determine to be the longest?,Colloquial-Standard,Implicit-Explicit,lookup-visual,3,5,wikitables-200|33_1
+I would appreciate if you could specify the most extended bar on the bar graph.,Colloquial-Standard,Non-technical-Technical,lookup-visual,4,5,wikitables-200|33_1
+We should determine the population of the region with the highest population.,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,4,2,wikitables-201|11
+I feel it's important to know the exact population of the region with the highest population.,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,5,1,wikitables-201|11
+Can you provide the factual number of individuals residing in the most populated region?,Colloquial-Standard,Subjective-Objective,lookup-nonvisual,4,4,wikitables-201|11
+"I think the most crowded place has a lot of people, right?",Non-technical-Technical,Subjective-Objective,lookup-nonvisual,2,1,wikitables-201|11
+Do you know which geographical zone has the maximum population density index?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,5,wikitables-201|11
+Can you guess where the most people are?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,1,wikitables-201|11
+Where do you think the most people live?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,1,wikitables-201|11
+Can you tell me the region with the highest population density?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,3,wikitables-201|11
+"I think it's hard to say which region has the most people, isn't it?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,1,2,wikitables-201|11
+"I'm of the opinion that I don't know the most populated region, can you tell me?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,4,1,wikitables-201|11
+"I reckon, where's the most folks at?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,1,wikitables-201|11
+Can you identify the demographic region with the maximum population density?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,5,wikitables-201|11
+Could you elucidate the region with the highest population density?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,2,wikitables-201|11
+You know where the most folks are at?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,1,wikitables-201|11
+Do you know where the highest population resides?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,5,wikitables-201|11
+What is the maximum character length of a name?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,4,5,wikitables-201|46
+What is the exact character count of the longest name?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,4,4,wikitables-201|46
+Could you tell me the length of the longest name?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,2,3,wikitables-201|46
+What do you think is the length of the longest name?,Colloquial-Standard,Subjective-Objective,lookup-nonvisual,2,1,wikitables-201|46
+Could you conjecture the difference in length between the longest and shortest name?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,2,5,wikitables-201|46
+What is the precise difference in length between the longest and shortest name?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,4,wikitables-201|46
+Could you tell me the difference in length between the longest and shortest name?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,4,5,wikitables-201|46
+What's the difference in length between the longest and shortest name?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,1,wikitables-201|46
+Can you help me understand the length difference between the longest and shortest name?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,2,2,wikitables-201|46
+Can you tell me the difference in length between the longest and shortest name?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,4,wikitables-201|46
+Can you tell me the place with the highest number of amphibians?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,3,3,wikitables-201|8_0
+"I'm pondering, where is the spot with the most amphibians and which country is it?",Non-technical-Technical,Subjective-Objective,compositional-nonvisual,2,3,wikitables-201|8_0
+Do you know where the most frogs and toads live and which country they call home?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,1,wikitables-201|8_0
+Where is the maximum number of amphibians located?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,1,5,wikitables-201|8_0
+Any idea about the country with the highest amphibian biodiversity?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,1,4,wikitables-201|8_0
+"I wonder, where is the place with the highest number of frogs and toads and which country is it?",Non-technical-Technical,Subjective-Objective,compositional-nonvisual,2,2,wikitables-201|8_0
+Any thoughts on the place with the most amphibians?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,1,3,wikitables-201|8_0
+"Do you know where the most frogs and stuff are? Like, the max number?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,3,1,wikitables-201|8_0
+"Where's the most frogs and stuff, and where's that at?",Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,1,1,wikitables-201|8_0
+Do you know the country with the highest number of frogs and toads?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,3,2,wikitables-201|8_0
+Where is the greatest number of birds located?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,5,1,wikitables-201|8_1
+Can you figure out where the most bird species are found?,Non-technical-Technical,Implicit-Explicit,lookup-nonvisual,2,2,wikitables-201|8_1
+Could you elucidate the maximum ornithological population and the country it pertains to?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,4,wikitables-201|8_1
+Could you provide data on the maximum avian population and the country it's located in?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,3,wikitables-201|8_1
+What is the maximum avifauna concentration and its geographical location?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,5,4,wikitables-201|8_1
+"You're aware of the location with the maximum number of birds and its country, right?",Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,3,wikitables-201|8_1
+"There's a country that has the most birds, can you guess which one?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,2,4,wikitables-201|8_1
+What is the place that has the highest bird population and its country?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,5,4,wikitables-201|8_1
+What's the maximum ornithological count and to which geopolitical entity does it correspond?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,1,wikitables-201|8_1
+It's important to know the maximum bird population and its country of residence.,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,2,wikitables-201|8_1
+Do you have data on the votes the candidate with the most votes received?,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,2,5,wikitables-202|271_0
+What is the precise number of votes that the leading candidate received?,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,5,2,wikitables-202|271_0
+I need to know the number of votes the candidate with the most votes received.,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,3,4,wikitables-202|271_0
+Who's the candidate with the highest vote count?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,4,wikitables-202|271_0
+"Who do you reckon got the most votes, eh?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,1,1,wikitables-202|271_0
+"Who, in your estimation, was the primary recipient of votes?",Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,4,wikitables-202|271_0
+I desire to find out who garnered the highest tally.,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,4,wikitables-202|271_0
+"Who, according to the official tally, received the most votes?",Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,4,wikitables-202|271_0
+Who do you think got the most votes?,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,1,1,wikitables-202|271_0
+Who received the highest number of votes?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,5,1,wikitables-202|271_0
+Who do you think got the most votes?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,2,1,wikitables-202|271_1
+Who was the candidate that secured the highest percentage of the electoral votes?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,5,4,wikitables-202|271_1
+Do you know who got the most votes?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,2,2,wikitables-202|271_1
+Who was the candidate with the maximum proportion of the electoral votes?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,3,5,wikitables-202|271_1
+What's the difference in votes between the frontrunner and the candidate with the least support?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,3,4,wikitables-202|271_1
+What is the percentage difference in votes between the candidate with the highest votes and the one with the lowest?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,3,3,wikitables-202|271_1
+What is the numerical difference in percentage of votes between the candidate with the highest vote count and the one with the lowest?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,5,wikitables-202|271_1
+Can you tell me the percentage difference in votes between the top and bottom candidates?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,2,wikitables-202|271_1
+Can you give me an idea of the gap between the top and bottom candidates?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,1,2,wikitables-202|271_1
+What is the percentage difference in electoral support between the candidate with the highest vote count and the one with the lowest?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,5,wikitables-202|271_1
+"I wonder, which airport accommodated the most individuals?",Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,1,4,wikitables-202|48
+The airport with the highest passenger volume is...?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,5,2,wikitables-202|48
+What is the difference in passenger volume between the airport with the highest and lowest traffic?,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,4,2,wikitables-202|48
+What is the difference in passenger volume between the airport with the highest and lowest traffic?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,5,3,wikitables-202|48
+Can you estimate the passenger difference between the busiest and least busy airports?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,2,2,wikitables-202|48
+Can you provide the exact difference in passenger numbers between the busiest and least busy airport?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,4,3,wikitables-202|48
+What's the variance in passenger volume between the airport with the maximum and minimum throughput?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,2,wikitables-202|48
+There's likely a significant difference in the number of passengers between the busiest and least busy airports.,Subjective-Objective,Implicit-Explicit,compositional-nonvisual,4,3,wikitables-202|48
+"In your opinion, which airport possesses the longest bar?",Colloquial-Standard,Subjective-Objective,lookup-visual,1,5,wikitables-202|48
+The data chart is expected to provide information on which airport has the longest bar.,Non-technical-Technical,Subjective-Objective,lookup-visual,4,3,wikitables-202|48
+Which team in the Central Division has recorded the most victories?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,2,4,wikitables-202|59_0
+Is there a team in the Central Division that's ahead?,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,3,3,wikitables-202|59_0
+Could you inform me about the top winning team in the Central Division and their identity?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,2,2,wikitables-202|59_0
+"I'm interested in knowing, which team in the Central Division has the most wins? Can you name the team?",Subjective-Objective,Implicit-Explicit,compositional-nonvisual,4,1,wikitables-202|59_0
+Which team in the Central Division has reached the maximum number of victories?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,3,4,wikitables-202|59_0
+Can you provide the information on the team with the maximum wins in the Central Division and who achieved it? This is based on the statistics.,Colloquial-Standard,Subjective-Objective,compositional-nonvisual,4,4,wikitables-202|59_0
+Can you identify the team in the Central Division that has attained the maximum number of wins?,Non-technical-Technical,Implicit-Explicit,compositional-nonvisual,4,5,wikitables-202|59_0
+Could you provide the information on the team in the Central Division with the highest win record?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,4,3,wikitables-202|59_0
+Which team in the Central Division has recorded the highest number of losses?,Colloquial-Standard,Non-technical-Technical,lookup-nonvisual,2,4,wikitables-202|59_1
+Can you tell me which team in the Central Division has lost the most games?,Colloquial-Standard,Implicit-Explicit,lookup-nonvisual,4,1,wikitables-202|59_1
+Could you identify the team with the most losses in the Central Division?,Non-technical-Technical,Subjective-Objective,lookup-nonvisual,3,2,wikitables-202|59_1
+The team with the most losses is in the Central Division.,Subjective-Objective,Implicit-Explicit,lookup-nonvisual,4,4,wikitables-202|59_1
+Do you know the maximum number of unsuccessful matches a team in the Central Division can have?,Non-technical-Technical,Subjective-Objective,compositional-nonvisual,1,4,wikitables-202|59_1
+What's the maximum number of losses a team in the Central Division can sustain?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,4,2,wikitables-202|59_1
+Are you aware of the maximum losses a Central Division team can have?,Colloquial-Standard,Implicit-Explicit,compositional-nonvisual,2,4,wikitables-202|59_1
+What is the maximum number of losses a team in the Central Division can accrue?,Colloquial-Standard,Non-technical-Technical,compositional-nonvisual,5,4,wikitables-202|59_1
+Identify the bar with the greatest length on the chart.,Non-technical-Technical,Subjective-Objective,compositional-visual,5,1,wikitables-202|59_1

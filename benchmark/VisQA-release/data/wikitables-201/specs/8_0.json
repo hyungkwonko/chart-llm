@@ -1,0 +1,11 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc4.json",
+  "data": {
+    "url": "data/wikitables-201/data/8.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Country", "type": "nominal"},
+    "y": {"field": "Amphibians", "type": "quantitative"}
+  }
+}

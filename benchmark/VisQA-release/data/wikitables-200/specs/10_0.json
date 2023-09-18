@@ -1,0 +1,14 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc4.json",
+  "data": {
+    "url": "data/wikitables-200/data/10.csv"
+  },
+  "transform": [
+    {"calculate": "replace(datum.deaths, /,/g, '')", "as": "deaths"}
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal"},
+    "y": {"field": "deaths", "type": "quantitative"}
+  }
+}

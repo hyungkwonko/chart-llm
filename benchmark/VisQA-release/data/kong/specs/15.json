@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc4.json",
+  "encoding": {
+    "row": {
+      "field": "Country",
+      "type": "nominal",
+      "sort":null
+    },
+    "y": {
+      "field": "Urban/total",
+      "type": "nominal",
+      "title": null,
+      "sort":null
+    },
+    "color": {
+      "field": "Urban/total",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "Persons per square kilometers",
+      "type": "quantitative"
+    }
+  },
+  "data": {
+    "url": "data/kong/data/15.csv"
+  },
+  "mark": "bar"
+}

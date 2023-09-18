@@ -1,0 +1,451 @@
+outs,out2s,insts,firsts,seconds,command,query,question,dnames,vids
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file named ""superstore.csv""; [Chart-Type]: Create a bar chart; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, bin the data from the field ""Quantity"" and label the axis as ""Order Quantity""; [Encoding]: On the y-axis, count the number of data points and label the axis as ""COUNT"".
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file named ""superstore.csv""; [Chart-Type]: Create a bar chart; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, bin the data from the field ""Order Quantity"" and label the axis as ""Order Quantity""; [Encoding]: On the y-axis, count the number of data points and label the axis as ""COUNT"".","View #1:
+Step 1. Primary Information: The chart is a bar chart with ""Order Quantity"" on the x-axis and the count of data points on the y-axis.
+Step 2. Secondary Information: The x-axis is labeled as ""Order Quantity"" and the y-axis is labeled as ""COUNT"".
+Step 3. Command: Create a bar chart with ""Order Quantity"" on the x-axis and the count of data points on the y-axis.
+Step 4. Query: Bar chart, Order Quantity, count of data points
+Step 5. Question: How many data points are there for each order quantity in the bar chart?","View #1: [Chart-Type]: Create a bar chart; [Encoding]: On the x-axis, bin the data from the field ""Order Quantity"" and label the axis as ""Order Quantity""; [Encoding]: On the y-axis, count the number of data points and label the axis as ""COUNT"".","['The chart is a bar chart with ""Order Quantity"" on the x-axis and the count of data points on the y-axis.']","['The x-axis is labeled as ""Order Quantity"" and the y-axis is labeled as ""COUNT"".']","['Create a bar chart with ""Order Quantity"" on the x-axis and the count of data points on the y-axis.']","['Bar chart, Order Quantity, count of data points']",['How many data points are there for each order quantity in the bar chart?'],superstore,histogram
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file named ""superstore.csv""; [Chart-Type]: Create a bar chart; [Mark]: Do not include any tooltips on the bars; [Encoding]: On the x-axis, display the ""Sub-Category"" field as nominal data, sorted in descending order based on the y-axis values; [Encoding]: On the y-axis, display the count of each ""Sub-Category"" as quantitative data, and title the axis as ""COUNT"".
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file named ""superstore.csv""; [Chart-Type]: Create a bar chart; [Mark]: Do not include any tooltips on the bars; [Encoding]: On the x-axis, display the field representing the types of products (e.g., 'Appliances', 'Phones', 'Bookcases', 'Binders', 'Fasteners') as nominal data, sorted in descending order based on the y-axis values; [Encoding]: On the y-axis, display the count of each type of product as quantitative data, and title the axis as ""COUNT"".","View #1:
+Step 1. Primary Information: The chart is a bar chart displaying the count of each type of product on the y-axis and the types of products on the x-axis.
+Step 2. Secondary Information: The types of products are sorted in descending order based on the count.
+Step 3. Command: Create a bar chart with product types on the x-axis and their count on the y-axis.
+Step 4. Query: Product types, count of product types, order by count descending
+Step 5. Question: How many of each type of product are there?","View #1: [Chart-Type]: Create a bar chart; [Encoding]: On the x-axis, display the field representing the types of products (e.g., 'Appliances', 'Phones', 'Bookcases', 'Binders', 'Fasteners') as nominal data, sorted in descending order based on the y-axis values; [Encoding]: On the y-axis, display the count of each type of product as quantitative data, and title the axis as ""COUNT"".",['The chart is a bar chart displaying the count of each type of product on the y-axis and the types of products on the x-axis.'],['The types of products are sorted in descending order based on the count.'],['Create a bar chart with product types on the x-axis and their count on the y-axis.'],"['Product types, count of product types, order by count descending']",['How many of each type of product are there?'],superstore,singleAttrBar
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file named 'superstore.csv'; [Chart-Type]: Create a bar chart; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, encode the 'State' field as ordinal; [Encoding]: On the y-axis, encode the 'Profit' field as quantitative and aggregate it by summing up the values. Also, title this axis as 'AVG (Profit)'; [Interaction]: No interaction is specified.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file named 'superstore.csv'; [Chart-Type]: Create a bar chart; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, encode the 'Indiana', 'New York', 'California', 'Colorado', 'Michigan' field as ordinal; [Encoding]: On the y-axis, encode the 'AVG (Profit)' field as quantitative and aggregate it by summing up the values. Also, title this axis as 'AVG (Profit)'; [Interaction]: No interaction is specified.","View #1:
+Step 1. Primary Information: The primary information is the 'AVG (Profit)' field for the states 'Indiana', 'New York', 'California', 'Colorado', 'Michigan' which is to be represented on a bar chart.
+Step 2. Secondary Information: The secondary information is that the 'AVG (Profit)' field is to be aggregated by summing up the values and the y-axis is to be titled as 'AVG (Profit)'.
+Step 3. Command: Create a bar chart with 'Indiana', 'New York', 'California', 'Colorado', 'Michigan' on the x-axis and the sum of 'AVG (Profit)' on the y-axis.
+Step 4. Query: 'Indiana', 'New York', 'California', 'Colorado', 'Michigan', sum of 'AVG (Profit)'
+Step 5. Question: What is the sum of 'AVG (Profit)' for the states 'Indiana', 'New York', 'California', 'Colorado', 'Michigan'?","View #1: [Chart-Type]: Create a bar chart; [Encoding]: On the x-axis, encode the 'Indiana', 'New York', 'California', 'Colorado', 'Michigan' field as ordinal; [Encoding]: On the y-axis, encode the 'AVG (Profit)' field as quantitative and aggregate it by summing up the values. Also, title this axis as 'AVG (Profit)'","[""The primary information is the 'AVG (Profit)' field for the states 'Indiana', 'New York', 'California', 'Colorado', 'Michigan' which is to be represented on a bar chart.""]","[""The secondary information is that the 'AVG (Profit)' field is to be aggregated by summing up the values and the y-axis is to be titled as 'AVG (Profit)'.""]","[""Create a bar chart with 'Indiana', 'New York', 'California', 'Colorado', 'Michigan' on the x-axis and the sum of 'AVG (Profit)' on the y-axis.""]","[""'Indiana', 'New York', 'California', 'Colorado', 'Michigan', sum of 'AVG (Profit)'""]","[""What is the sum of 'AVG (Profit)' for the states 'Indiana', 'New York', 'California', 'Colorado', 'Michigan'?""]",superstore,bar
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file named ""superstore.csv""; [Chart-Type]: Create a point chart; [Mark]: Fill the points and set their opacity to 0.5; [Encoding]: Map the ""Profit"" field to the x-axis and the ""Sales"" field to the y-axis; [Style]: Do not display any tooltips.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file named ""superstore.csv""; [Chart-Type]: Create a point chart; [Mark]: Fill the points and set their opacity to 0.5; [Encoding]: Map the ""Profit"" field to the x-axis and the ""Sales"" field to the y-axis; [Style]: Do not display any tooltips.","View #1:
+Step 1. Primary Information: The chart type is a point chart with ""Profit"" field mapped to the x-axis and the ""Sales"" field mapped to the y-axis.
+Step 2. Secondary Information: There is no secondary information in this view.
+Step 3. Command: Create a point chart with ""Profit"" on the x-axis and ""Sales"" on the y-axis.
+Step 4. Query: Point chart, Profit on x-axis, Sales on y-axis
+Step 5. Question: Can you create a point chart with ""Profit"" on the x-axis and ""Sales"" on the y-axis?","View #1: [Chart-Type]: Create a point chart; [Encoding]: Map the ""Profit"" field to the x-axis and the ""Sales"" field to the y-axis","['The chart type is a point chart with ""Profit"" field mapped to the x-axis and the ""Sales"" field mapped to the y-axis.']",['There is no secondary information in this view.'],"['Create a point chart with ""Profit"" on the x-axis and ""Sales"" on the y-axis.']","['Point chart, Profit on x-axis, Sales on y-axis']","['Can you create a point chart with ""Profit"" on the x-axis and ""Sales"" on the y-axis?']",superstore,scatter
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file named ""superstore.csv""; [Chart-Type]: Choose a line chart to represent the data; [Mark]: Do not include any tooltips in the chart; [Encoding]: On the x-axis, represent the 'Order Date' field with a temporal data type and title it as 'Order Date'; [Encoding]: On the y-axis, represent the sum of the 'Sales Forecast' field with a quantitative data type and title it as 'SUM (Sales Forecast)'; [Interaction]: No interaction is specified in this visualization.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file named ""superstore.csv""; [Chart-Type]: Choose a line chart to represent the data; [Mark]: Do not include any tooltips in the chart; [Encoding]: On the x-axis, represent the 'Order Date' field with a temporal data type and title it as 'Order Date'; [Encoding]: On the y-axis, represent the sum of the 'Sales Forecast' field with a quantitative data type and title it as 'SUM (Sales Forecast)'; [Interaction]: No interaction is specified in this visualization.","View #1:
+Step 1. Primary Information: The chart type is a line chart, representing 'Order Date' on the x-axis and the sum of 'Sales Forecast' on the y-axis.
+Step 2. Secondary Information: The data type for 'Order Date' is temporal and for 'Sales Forecast' is quantitative.
+Step 3. Command: Create a line chart with 'Order Date' on the x-axis and the sum of 'Sales Forecast' on the y-axis.
+Step 4. Query: Line chart, Order Date, SUM (Sales Forecast)
+Step 5. Question: What does the line chart of 'Order Date' versus the sum of 'Sales Forecast' show?","View #1: [Chart-Type]: Choose a line chart to represent the data; [Encoding]: On the x-axis, represent the 'Order Date' field with a temporal data type and title it as 'Order Date'; [Encoding]: On the y-axis, represent the sum of the 'Sales Forecast' field with a quantitative data type and title it as 'SUM (Sales Forecast)'","[""The chart type is a line chart, representing 'Order Date' on the x-axis and the sum of 'Sales Forecast' on the y-axis.""]","[""The data type for 'Order Date' is temporal and for 'Sales Forecast' is quantitative.""]","[""Create a line chart with 'Order Date' on the x-axis and the sum of 'Sales Forecast' on the y-axis.""]","['Line chart, Order Date, SUM (Sales Forecast)']","[""What does the line chart of 'Order Date' versus the sum of 'Sales Forecast' show?""]",superstore,line
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: trellis
+- Number of plots: 4
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file named ""superstore.csv""; [Chart-Type]: Choose a bar chart to represent the data; [Mark]: Do not include any tooltips in the marks; [Encoding]: Encode the data such that the ""Ship Mode"" field is represented as columns, the ""Segment"" field is represented on the x-axis, and the mean of the ""Profit"" field is represented on the y-axis; [Encoding]: Also, color the bars based on the ""Segment"" field; [Style]: Set the range step of the x-axis scale to 15 and remove the title, labels, and ticks from the x-axis; [Style]: Set the title of the y-axis to ""AVG (Profit)"".
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file named ""superstore.csv""; [Chart-Type]: Choose a bar chart to represent the data; [Mark]: Do not include any tooltips in the marks; [Encoding]: Encode the data such that the shipping method is represented as columns, the customer segment is represented on the x-axis, and the average profit is represented on the y-axis; [Encoding]: Also, color the bars based on the customer segment; [Style]: Set the range step of the x-axis scale to 15 and remove the title, labels, and ticks from the x-axis; [Style]: Set the title of the y-axis to ""Average Profit"".","View #1:
+Step 1. Primary Information: The data is about the shipping method, customer segment, and average profit.
+Step 2. Secondary Information: The data is to be represented in a bar chart, with the shipping method as columns, customer segment on the x-axis, and average profit on the y-axis. The bars are to be colored based on the customer segment.
+Step 3. Command: Create a bar chart with shipping method as columns, customer segment on the x-axis, and average profit on the y-axis.
+Step 4. Query: Average profit by shipping method and customer segment
+Step 5. Question: What is the average profit for each shipping method and customer segment?","View #1: [Chart-Type]: Choose a bar chart to represent the data; [Encoding]: Encode the data such that the shipping method is represented as columns, the customer segment is represented on the x-axis, and the average profit is represented on the y-axis; [Encoding]: Also, color the bars based on the customer segment","['The data is about the shipping method, customer segment, and average profit.']","['The data is to be represented in a bar chart, with the shipping method as columns, customer segment on the x-axis, and average profit on the y-axis. The bars are to be colored based on the customer segment.']","['Create a bar chart with shipping method as columns, customer segment on the x-axis, and average profit on the y-axis.']",['Average profit by shipping method and customer segment'],['What is the average profit for each shipping method and customer segment?'],superstore,groupedBar
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file named ""superstore.csv""; [Chart-Type]: Choose a bar chart for the visualization; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, place the 'Region' field and treat it as ordinal data; [Encoding]: On the y-axis, place the 'Profit' field, aggregate it by summing up the values, and treat it as quantitative data. Label the y-axis as 'SUM (Profit)'; [Encoding]: Use the 'Ship Status' field to color the bars and treat it as nominal data. Label the color legend as 'Ship Status'; [Style]: No specific style instructions; [Interaction]: No specific interaction instructions <%>
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file named ""superstore.csv""; [Chart-Type]: Choose a bar chart for the visualization; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, place the 'Region' field and treat it as ordinal data; [Encoding]: On the y-axis, place the 'Profit' field, aggregate it by summing up the values, and treat it as quantitative data. Label the y-axis as 'Total Profit'; [Encoding]: Use the 'Ship Status' field to color the bars and treat it as nominal data. Label the color legend as 'Shipping Status'; [Style]: No specific style instructions; [Interaction]: No specific interaction instructions <%>","View #1:
+Step 1. Primary Information: The chart type is a bar chart. The x-axis represents the 'Region' field as ordinal data. The y-axis represents the 'Profit' field as quantitative data, aggregated by summing up the values. The bars are colored based on the 'Ship Status' field as nominal data.
+Step 2. Secondary Information: The y-axis is labeled as 'Total Profit'. The color legend is labeled as 'Shipping Status'.
+Step 3. Command: Create a bar chart with 'Region' on the x-axis and the sum of 'Profit' on the y-axis, colored by 'Ship Status'.
+Step 4. Query: Bar chart of 'Region' vs sum of 'Profit', colored by 'Ship Status'
+Step 5. Question: What is the total profit for each region, differentiated by shipping status?","View #1: [Chart-Type]: Choose a bar chart for the visualization; [Encoding]: On the x-axis, place the 'Region' field and treat it as ordinal data; [Encoding]: On the y-axis, place the 'Profit' field, aggregate it by summing up the values, and treat it as quantitative data. Label the y-axis as 'Total Profit'; [Encoding]: Use the 'Ship Status' field to color the bars and treat it as nominal data. Label the color legend as 'Shipping Status'","[""The chart type is a bar chart. The x-axis represents the 'Region' field as ordinal data. The y-axis represents the 'Profit' field as quantitative data, aggregated by summing up the values. The bars are colored based on the 'Ship Status' field as nominal data.""]","[""The y-axis is labeled as 'Total Profit'. The color legend is labeled as 'Shipping Status'.""]","[""Create a bar chart with 'Region' on the x-axis and the sum of 'Profit' on the y-axis, colored by 'Ship Status'.""]","[""Bar chart of 'Region' vs sum of 'Profit', colored by 'Ship Status'""]","['What is the total profit for each region, differentiated by shipping status?']",superstore,stackedBar
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/superstore.csv'; [Chart-Type]: Choose a point chart type; [Mark]: Fill the points and set the opacity to 0.75; [Encoding]: Map the 'Region' field to color, 'Sales' field to the x-axis, and 'Profit' field to the y-axis; [Style]: Do not include any tooltips.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/superstore.csv'; [Chart-Type]: Choose a point chart type; [Mark]: Fill the points and set the opacity to 0.75; [Encoding]: Map the 'Region' field to color, 'Sales' field to the x-axis, and 'Profit' field to the y-axis; [Style]: Do not include any tooltips.","View #1:
+Step 1. Primary Information: The chart type is a point chart. The 'Region' field is mapped to color, 'Sales' field is mapped to the x-axis, and 'Profit' field is mapped to the y-axis.
+Step 2. Secondary Information: None
+Step 3. Command: Create a point chart with 'Region' as color, 'Sales' on the x-axis, and 'Profit' on the y-axis.
+Step 4. Query: Point chart, 'Region' color, 'Sales' x-axis, 'Profit' y-axis
+Step 5. Question: Can you create a point chart with 'Region' as color, 'Sales' on the x-axis, and 'Profit' on the y-axis?","View #1: [Chart-Type]: Choose a point chart type; [Encoding]: Map the 'Region' field to color, 'Sales' field to the x-axis, and 'Profit' field to the y-axis","[""The chart type is a point chart. The 'Region' field is mapped to color, 'Sales' field is mapped to the x-axis, and 'Profit' field is mapped to the y-axis.""]",['None'],"[""Create a point chart with 'Region' as color, 'Sales' on the x-axis, and 'Profit' on the y-axis.""]","[""Point chart, 'Region' color, 'Sales' x-axis, 'Profit' y-axis""]","[""Can you create a point chart with 'Region' as color, 'Sales' on the x-axis, and 'Profit' on the y-axis?""]",superstore,scatterColor
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Trellis
+- Number of plots: 4
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/superstore.csv'; [Chart-Type]: Choose a point chart; [Mark]: Fill the points and set the opacity to 0.5; [Encoding]: Set 'Region' as the column field, 'Sales' as the x-axis, and 'Profit' as the y-axis; [Style]: No specific style instructions; [Interaction]: No specific interaction instructions.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/superstore.csv'; [Chart-Type]: Choose a point chart; [Mark]: Fill the points and set the opacity to 0.5; [Encoding]: Set 'Central', 'East', 'West', 'South' as the column field, 'Sales' as the x-axis, and 'Profit' as the y-axis; [Style]: No specific style instructions; [Interaction]: No specific interaction instructions.","View #1:
+Step 1. Primary Information: The chart type is a point chart. The column field is 'Central', 'East', 'West', 'South'. The x-axis is 'Sales' and the y-axis is 'Profit'.
+Step 2. Secondary Information: None
+Step 3. Command: Create a point chart with 'Central', 'East', 'West', 'South' as the column field, 'Sales' as the x-axis, and 'Profit' as the y-axis.
+Step 4. Query: Point chart of 'Sales' vs 'Profit' by 'Central', 'East', 'West', 'South'
+Step 5. Question: What does the point chart reveal about the relationship between 'Sales' and 'Profit' across 'Central', 'East', 'West', 'South'?","View #1: [Chart-Type]: Choose a point chart; [Encoding]: Set 'Central', 'East', 'West', 'South' as the column field, 'Sales' as the x-axis, and 'Profit' as the y-axis","[""The chart type is a point chart. The column field is 'Central', 'East', 'West', 'South'. The x-axis is 'Sales' and the y-axis is 'Profit'.""]",['None'],"[""Create a point chart with 'Central', 'East', 'West', 'South' as the column field, 'Sales' as the x-axis, and 'Profit' as the y-axis.""]","[""Point chart of 'Sales' vs 'Profit' by 'Central', 'East', 'West', 'South'""]","[""What does the point chart reveal about the relationship between 'Sales' and 'Profit' across 'Central', 'East', 'West', 'South'?""]",superstore,scatterFaceted
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the URL 'datasets/superstore.csv'; [Chart-Type]: Choose a line chart to represent the data; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, represent the 'Order Date' field with a time unit of 'monthyear' and title it 'Order Date'; [Encoding]: On the y-axis, represent the sum of the 'Sales' field and title it 'SUM (Sales)'; [Encoding]: Use color to represent the 'Category' field and include a legend titled 'Category'; [Interaction]: No interaction is specified in this visualization.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the URL 'datasets/superstore.csv'; [Chart-Type]: Choose a line chart to represent the data; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, represent the 'Order Date' field with a time unit of 'monthyear' and title it 'Order Date'; [Encoding]: On the y-axis, represent the sum of the 'Sales' field and title it 'SUM (Sales)'; [Encoding]: Use color to represent the 'Category' field and include a legend titled 'Category'; [Interaction]: No interaction is specified in this visualization.","View #1:
+Step 1. Primary Information: The chart is a line chart representing the sum of 'Sales' over 'Order Date' with 'Category' as a differentiating factor.
+Step 2. Secondary Information: The 'Order Date' is represented in 'monthyear' time unit.
+Step 3. Command: Create a line chart with 'Order Date' on the x-axis and sum of 'Sales' on the y-axis, differentiated by 'Category'.
+Step 4. Query: Line chart, Order Date (monthyear), SUM (Sales), Category
+Step 5. Question: How does the sum of sales vary over time for each category?","View #1: [Chart-Type]: Choose a line chart to represent the data; [Encoding]: On the x-axis, represent the 'Order Date' field with a time unit of 'monthyear' and title it 'Order Date'; [Encoding]: On the y-axis, represent the sum of the 'Sales' field and title it 'SUM (Sales)'; [Encoding]: Use color to represent the 'Category' field and include a legend titled 'Category'","[""The chart is a line chart representing the sum of 'Sales' over 'Order Date' with 'Category' as a differentiating factor.""]","[""The 'Order Date' is represented in 'monthyear' time unit.""]","[""Create a line chart with 'Order Date' on the x-axis and sum of 'Sales' on the y-axis, differentiated by 'Category'.""]","['Line chart, Order Date (monthyear), SUM (Sales), Category']",['How does the sum of sales vary over time for each category?'],superstore,multiLine
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a bar chart for the visualization; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, bin the 'Running Time' field and label it as 'Running Time'; [Encoding]: On the y-axis, count the number of records and label it as 'COUNT'; [Style]: N/A; [Interaction]: N/A.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a bar chart for the visualization; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, bin the 'Running Time' field and label it as 'Running Time'; [Encoding]: On the y-axis, count the number of records and label it as 'COUNT'; [Style]: N/A; [Interaction]: N/A.","View #1:
+Step 1. Primary Information: The chart type is a bar chart with 'Running Time' on the x-axis and the count of records on the y-axis.
+Step 2. Secondary Information: The x-axis is labeled 'Running Time' and the y-axis is labeled 'COUNT'.
+Step 3. Command: Create a bar chart with 'Running Time' on the x-axis and the count of records on the y-axis.
+Step 4. Query: Bar chart, 'Running Time', count of records
+Step 5. Question: How many records are there for each 'Running Time' in the bar chart?","View #1: [Chart-Type]: Choose a bar chart for the visualization; [Encoding]: On the x-axis, bin the 'Running Time' field and label it as 'Running Time'; [Encoding]: On the y-axis, count the number of records and label it as 'COUNT'","[""The chart type is a bar chart with 'Running Time' on the x-axis and the count of records on the y-axis.""]","[""The x-axis is labeled 'Running Time' and the y-axis is labeled 'COUNT'.""]","[""Create a bar chart with 'Running Time' on the x-axis and the count of records on the y-axis.""]","[""Bar chart, 'Running Time', count of records""]","[""How many records are there for each 'Running Time' in the bar chart?""]",movies,histogram
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Create a bar chart; [Mark]: Do not include any tooltips; [Encoding]: On the x-axis, display the 'Creative Type' field as nominal data, sorted in descending order based on the y-axis; [Encoding]: On the y-axis, display the count of each 'Creative Type' as quantitative data, with the axis title as 'COUNT'.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Create a bar chart; [Mark]: Do not include any tooltips; [Encoding]: On the x-axis, display the 'Creative Type' field as nominal data, sorted in descending order based on the y-axis; [Encoding]: On the y-axis, display the count of each 'Creative Type' as quantitative data, with the axis title as 'COUNT'.","View #1:
+Step 1. Primary Information: The chart is a bar chart displaying the count of each 'Creative Type' on the y-axis and the 'Creative Type' field on the x-axis.
+Step 2. Secondary Information: The 'Creative Type' field is displayed as nominal data and is sorted in descending order based on the y-axis. The y-axis title is 'COUNT'.
+Step 3. Command: Create a bar chart with 'Creative Type' on the x-axis and its count on the y-axis.
+Step 4. Query: Bar chart, 'Creative Type' on x-axis, count of 'Creative Type' on y-axis, descending order
+Step 5. Question: What is the count of each 'Creative Type' displayed on a bar chart?","View #1: [Chart-Type]: Create a bar chart; [Encoding]: On the x-axis, display the 'Creative Type' field as nominal data, sorted in descending order based on the y-axis; [Encoding]: On the y-axis, display the count of each 'Creative Type' as quantitative data, with the axis title as 'COUNT'.","[""The chart is a bar chart displaying the count of each 'Creative Type' on the y-axis and the 'Creative Type' field on the x-axis.""]","[""The 'Creative Type' field is displayed as nominal data and is sorted in descending order based on the y-axis. The y-axis title is 'COUNT'.""]","[""Create a bar chart with 'Creative Type' on the x-axis and its count on the y-axis.""]","[""Bar chart, 'Creative Type' on x-axis, count of 'Creative Type' on y-axis, descending order""]","[""What is the count of each 'Creative Type' displayed on a bar chart?""]",movies,singleAttrBar
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file named ""movies.csv""; [Chart-Type]: Create a bar chart; [Mark]: Do not include a tooltip for the bars; [Encoding]: On the x-axis, represent the 'Major Genre' field as nominal data; [Encoding]: On the y-axis, represent the mean of the 'Worldwide Gross' field as quantitative data and title it 'AVG (Worldwide Gross)'. Format the axis with the '~s' format.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file named ""movies.csv""; [Chart-Type]: Create a bar chart; [Mark]: Do not include a tooltip for the bars; [Encoding]: On the x-axis, represent the 'Major Genre' field as nominal data; [Encoding]: On the y-axis, represent the mean of the 'Worldwide Gross' field as quantitative data and title it 'Average Worldwide Gross'. Format the axis with the '~s' format.","View #1:
+Step 1. Primary Information: The chart is a bar chart representing the 'Major Genre' field on the x-axis and the mean of the 'Worldwide Gross' field on the y-axis.
+Step 2. Secondary Information: The y-axis is titled 'Average Worldwide Gross' and the axis is formatted with the '~s' format.
+Step 3. Command: Create a bar chart with 'Major Genre' on the x-axis and the average 'Worldwide Gross' on the y-axis.
+Step 4. Query: Bar chart, 'Major Genre', mean of 'Worldwide Gross'
+Step 5. Question: What is the average 'Worldwide Gross' for each 'Major Genre'?","View #1: [Chart-Type]: Create a bar chart; [Encoding]: On the x-axis, represent the 'Major Genre' field as nominal data; [Encoding]: On the y-axis, represent the mean of the 'Worldwide Gross' field as quantitative data and title it 'Average Worldwide Gross'. Format the axis with the '~s' format.","[""The chart is a bar chart representing the 'Major Genre' field on the x-axis and the mean of the 'Worldwide Gross' field on the y-axis.""]","[""The y-axis is titled 'Average Worldwide Gross' and the axis is formatted with the '~s' format.""]","[""Create a bar chart with 'Major Genre' on the x-axis and the average 'Worldwide Gross' on the y-axis.""]","[""Bar chart, 'Major Genre', mean of 'Worldwide Gross'""]","[""What is the average 'Worldwide Gross' for each 'Major Genre'?""]",movies,bar
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a point chart type; [Mark]: Fill the points and set the opacity to 0.5, disable the tooltip; [Encoding]: Map the 'IMDB Rating' field to the x-axis and set its type to quantitative; [Encoding]: Map the 'Rotten Tomatoes Rating' field to the y-axis and set its type to quantitative.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a point chart type; [Mark]: Fill the points and set the opacity to 0.5, disable the tooltip; [Encoding]: Map the 'IMDB Rating' synonym to the x-axis and set its type to quantitative; [Encoding]: Map the 'Rotten Tomatoes Rating' synonym to the y-axis and set its type to quantitative.","View #1:
+Step 1. Primary Information: The chart type is a point chart. 'IMDB Rating' is mapped to the x-axis and is quantitative. 'Rotten Tomatoes Rating' is mapped to the y-axis and is also quantitative.
+Step 2. Secondary Information: None
+Step 3. Command: Create a point chart with 'IMDB Rating' on the x-axis and 'Rotten Tomatoes Rating' on the y-axis.
+Step 4. Query: Point chart, 'IMDB Rating' on x-axis, 'Rotten Tomatoes Rating' on y-axis
+Step 5. Question: How does the 'IMDB Rating' compare to the 'Rotten Tomatoes Rating' on a point chart?",View #1: [Chart-Type]: Choose a point chart type; [Encoding]: Map the 'IMDB Rating' synonym to the x-axis and set its type to quantitative; [Encoding]: Map the 'Rotten Tomatoes Rating' synonym to the y-axis and set its type to quantitative.,"[""The chart type is a point chart. 'IMDB Rating' is mapped to the x-axis and is quantitative. 'Rotten Tomatoes Rating' is mapped to the y-axis and is also quantitative.""]",['None'],"[""Create a point chart with 'IMDB Rating' on the x-axis and 'Rotten Tomatoes Rating' on the y-axis.""]","[""Point chart, 'IMDB Rating' on x-axis, 'Rotten Tomatoes Rating' on y-axis""]","[""How does the 'IMDB Rating' compare to the 'Rotten Tomatoes Rating' on a point chart?""]",movies,scatter
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file named ""movies.csv""; [Chart-Type]: Create a line chart; [Mark]: Use a line mark without tooltip; [Encoding]: On the x-axis, represent the 'Release Year' field as a temporal data type and title it as 'Release Year'; [Encoding]: On the y-axis, represent the mean of the 'Production Budget' field as a quantitative data type and title it as 'AVG (Production Budget)', format the axis with '~s' format; [Interaction]: No interaction is specified.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file named ""movies.csv""; [Chart-Type]: Create a line chart; [Mark]: Use a line mark without tooltip; [Encoding]: On the x-axis, represent the 'Release Year' field as a temporal data type and title it as 'Release Year'; [Encoding]: On the y-axis, represent the mean of the 'AVG (Production Budget)' field as a quantitative data type and title it as 'AVG (Production Budget)', format the axis with '~s' format; [Interaction]: No interaction is specified.","View #1:
+Step 1. Primary Information: The line chart represents the 'Release Year' on the x-axis and the mean of the 'AVG (Production Budget)' on the y-axis.
+Step 2. Secondary Information: The x-axis is titled 'Release Year' and the y-axis is titled 'AVG (Production Budget)'. The y-axis is formatted with '~s' format.
+Step 3. Command: Create a line chart with 'Release Year' on the x-axis and the mean of 'AVG (Production Budget)' on the y-axis.
+Step 4. Query: Line chart, 'Release Year', mean of 'AVG (Production Budget)'
+Step 5. Question: How does the mean of the 'AVG (Production Budget)' change over the 'Release Year'?","View #1: [Chart-Type]: Create a line chart; [Encoding]: On the x-axis, represent the 'Release Year' field as a temporal data type and title it as 'Release Year'; [Encoding]: On the y-axis, represent the mean of the 'AVG (Production Budget)' field as a quantitative data type and title it as 'AVG (Production Budget)', format the axis with '~s' format","[""The line chart represents the 'Release Year' on the x-axis and the mean of the 'AVG (Production Budget)' on the y-axis.""]","[""The x-axis is titled 'Release Year' and the y-axis is titled 'AVG (Production Budget)'. The y-axis is formatted with '~s' format.""]","[""Create a line chart with 'Release Year' on the x-axis and the mean of 'AVG (Production Budget)' on the y-axis.""]","[""Line chart, 'Release Year', mean of 'AVG (Production Budget)'""]","[""How does the mean of the 'AVG (Production Budget)' change over the 'Release Year'?""]",movies,line
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a bar chart for the visualization; [Mark]: Set the mark type to 'bar' and disable the tooltip; [Encoding]: Set the column encoding to the 'Content Rating' field and set its type to 'ordinal'; [Encoding]: Set the x encoding to the 'Creative Type' field, set its type to 'nominal', and disable the title, labels, and ticks for the x-axis; [Encoding]: Set the y encoding to the mean of the 'Production Budget' field, set its type to 'quantitative', and set the title to 'AVG (Production Budget)' with a format of '~s'; [Encoding]: Set the color encoding to the 'Creative Type' field and set its type to 'nominal'; [Style]: Set the range step of the x scale to 15.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a bar chart for the visualization; [Mark]: Set the mark type to 'bar' and disable the tooltip; [Encoding]: Set the column encoding to the 'Content Rating' field and set its type to 'ordinal'; [Encoding]: Set the x encoding to the 'Creative Type' field, set its type to 'nominal', and disable the title, labels, and ticks for the x-axis; [Encoding]: Set the y encoding to the average of the 'Production Budget' field, set its type to 'quantitative', and set the title to 'Average Production Budget' with a format of '~s'; [Encoding]: Set the color encoding to the 'Creative Type' field and set its type to 'nominal'; [Style]: Set the range step of the x scale to 15.","View #1:
+Step 1. Primary Information: The chart is a bar chart visualizing the average production budget for different creative types, grouped by content rating.
+Step 2. Secondary Information: The x-axis is the 'Creative Type' field with no title, labels, or ticks. The color encoding is also set to the 'Creative Type' field.
+Step 3. Command: Create a bar chart showing the average production budget for each creative type, grouped by content rating.
+Step 4. Query: Average of 'Production Budget' by 'Creative Type' and 'Content Rating'
+Step 5. Question: What is the average production budget for each creative type, grouped by content rating?","View #1: [Chart-Type]: Choose a bar chart for the visualization; [Encoding]: Set the column encoding to the 'Content Rating' field and set its type to 'ordinal'; [Encoding]: Set the x encoding to the 'Creative Type' field, set its type to 'nominal', and disable the title, labels, and ticks for the x-axis; [Encoding]: Set the y encoding to the average of the 'Production Budget' field, set its type to 'quantitative', and set the title to 'Average Production Budget' with a format of '~s'; [Encoding]: Set the color encoding to the 'Creative Type' field and set its type to 'nominal'","['The chart is a bar chart visualizing the average production budget for different creative types, grouped by content rating.']","[""The x-axis is the 'Creative Type' field with no title, labels, or ticks. The color encoding is also set to the 'Creative Type' field.""]","['Create a bar chart showing the average production budget for each creative type, grouped by content rating.']","[""Average of 'Production Budget' by 'Creative Type' and 'Content Rating'""]","['What is the average production budget for each creative type, grouped by content rating?']",movies,groupedBar
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a bar chart for the visualization; [Mark]: Do not include any tooltip for the marks; [Encoding]: Map the 'Major Genre' field to the x-axis and set its type as ordinal; [Encoding]: Map the 'Worldwide Gross' field to the y-axis, aggregate it by sum, set its type as quantitative, and title it as 'SUM (Worldwide Gross)'. Also, format the axis with '~s'; [Encoding]: Map the 'Content Rating' field to the color and set its type as nominal.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a bar chart for the visualization; [Mark]: Do not include any tooltip for the marks; [Encoding]: Map the 'Major Genre' field to the x-axis and set its type as ordinal; [Encoding]: Map the 'Worldwide Gross' field to the y-axis, aggregate it by sum, set its type as quantitative, and title it as 'Total Worldwide Gross'. Also, format the axis with '~s'; [Encoding]: Map the 'Content Rating' field to the color and set its type as nominal.","View #1:
+Step 1. Primary Information: The chart type is a bar chart with 'Major Genre' on the x-axis and the sum of 'Worldwide Gross' on the y-axis.
+Step 2. Secondary Information: The 'Content Rating' field is mapped to the color and the y-axis is titled as 'Total Worldwide Gross' and formatted with '~s'.
+Step 3. Command: Create a bar chart with 'Major Genre' on the x-axis and the sum of 'Worldwide Gross' on the y-axis.
+Step 4. Query: Bar chart, 'Major Genre', sum of 'Worldwide Gross'
+Step 5. Question: What is the total worldwide gross for each major genre?","View #1: [Chart-Type]: Choose a bar chart for the visualization; [Encoding]: Map the 'Major Genre' field to the x-axis and set its type as ordinal; [Encoding]: Map the 'Worldwide Gross' field to the y-axis, aggregate it by sum, set its type as quantitative, and title it as 'Total Worldwide Gross'. Also, format the axis with '~s'; [Encoding]: Map the 'Content Rating' field to the color and set its type as nominal.","[""The chart type is a bar chart with 'Major Genre' on the x-axis and the sum of 'Worldwide Gross' on the y-axis.""]","[""The 'Content Rating' field is mapped to the color and the y-axis is titled as 'Total Worldwide Gross' and formatted with '~s'.""]","[""Create a bar chart with 'Major Genre' on the x-axis and the sum of 'Worldwide Gross' on the y-axis.""]","[""Bar chart, 'Major Genre', sum of 'Worldwide Gross'""]",['What is the total worldwide gross for each major genre?'],movies,stackedBar
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a point chart type; [Mark]: Fill the points and set the opacity to 0.8, disable the tooltip; [Encoding]: Map 'Production Budget' to the x-axis as a quantitative variable; [Encoding]: Map 'Worldwide Gross' to the y-axis as a quantitative variable and format the axis with '~s'; [Encoding]: Map 'Major Genre' to color as a nominal variable; [Style]: No specific style instructions; [Interaction]: No specific interaction instructions.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a point chart type; [Mark]: Fill the points and set the opacity to 0.8, disable the tooltip; [Encoding]: Map 'Production Budget' to the x-axis as a quantitative variable; [Encoding]: Map 'Worldwide Gross' to the y-axis as a quantitative variable and format the axis with '~s'; [Encoding]: Map 'Major Genre' to color as a nominal variable; [Style]: No specific style instructions; [Interaction]: No specific interaction instructions.","View #1:
+Step 1. Primary Information: The chart type is a point chart with 'Production Budget' on the x-axis and 'Worldwide Gross' on the y-axis. 'Major Genre' is represented by color.
+Step 2. Secondary Information: The y-axis is formatted with '~s'.
+Step 3. Command: Create a point chart with 'Production Budget' on the x-axis and 'Worldwide Gross' on the y-axis, color-coded by 'Major Genre'.
+Step 4. Query: Point chart, 'Production Budget' on x-axis, 'Worldwide Gross' on y-axis, 'Major Genre' color-coded
+Step 5. Question: How does the 'Production Budget' relate to the 'Worldwide Gross' for each 'Major Genre' in a point chart?",View #1: [Chart-Type]: Choose a point chart type; [Encoding]: Map 'Production Budget' to the x-axis as a quantitative variable; [Encoding]: Map 'Worldwide Gross' to the y-axis as a quantitative variable and format the axis with '~s'; [Encoding]: Map 'Major Genre' to color as a nominal variable,"[""The chart type is a point chart with 'Production Budget' on the x-axis and 'Worldwide Gross' on the y-axis. 'Major Genre' is represented by color.""]","[""The y-axis is formatted with '~s'.""]","[""Create a point chart with 'Production Budget' on the x-axis and 'Worldwide Gross' on the y-axis, color-coded by 'Major Genre'.""]","[""Point chart, 'Production Budget' on x-axis, 'Worldwide Gross' on y-axis, 'Major Genre' color-coded""]","[""How does the 'Production Budget' relate to the 'Worldwide Gross' for each 'Major Genre' in a point chart?""]",movies,scatterColor
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: trellis
+- Number of plots: 4
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a point chart type; [Mark]: Fill the points and disable tooltips; [Encoding]: Encode the 'Content Rating' field as the column; [Encoding]: Encode the 'Production Budget' field as the x-axis with a quantitative scale and format the axis with '~s'; [Encoding]: Encode the 'Worldwide Gross' field as the y-axis with a quantitative scale and format the axis with '~s' <%>
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a point chart type; [Mark]: Fill the points and disable tooltips; [Encoding]: Encode the 'Content Rating' field as the column; [Encoding]: Encode the 'Production Budget' field as the x-axis with a quantitative scale and format the axis with '~s'; [Encoding]: Encode the 'Worldwide Gross' field as the y-axis with a quantitative scale and format the axis with '~s' <%>","View #1:
+Step 1. Primary Information: The chart type is a point chart. The 'Content Rating' field is encoded as the column. The 'Production Budget' field is encoded as the x-axis with a quantitative scale. The 'Worldwide Gross' field is encoded as the y-axis with a quantitative scale.
+Step 2. Secondary Information: The x-axis and y-axis are formatted with '~s'.
+Step 3. Command: Create a point chart with 'Content Rating' as the column, 'Production Budget' as the x-axis, and 'Worldwide Gross' as the y-axis.
+Step 4. Query: Point chart of 'Content Rating', 'Production Budget' on x-axis, 'Worldwide Gross' on y-axis
+Step 5. Question: How does the 'Worldwide Gross' vary with the 'Production Budget' for each 'Content Rating' in the point chart?",View #1: [Chart-Type]: Choose a point chart type; [Encoding]: Encode the 'Content Rating' field as the column; [Encoding]: Encode the 'Production Budget' field as the x-axis with a quantitative scale and format the axis with '~s'; [Encoding]: Encode the 'Worldwide Gross' field as the y-axis with a quantitative scale and format the axis with '~s',"[""The chart type is a point chart. The 'Content Rating' field is encoded as the column. The 'Production Budget' field is encoded as the x-axis with a quantitative scale. The 'Worldwide Gross' field is encoded as the y-axis with a quantitative scale.""]","[""The x-axis and y-axis are formatted with '~s'.""]","[""Create a point chart with 'Content Rating' as the column, 'Production Budget' as the x-axis, and 'Worldwide Gross' as the y-axis.""]","[""Point chart of 'Content Rating', 'Production Budget' on x-axis, 'Worldwide Gross' on y-axis""]","[""How does the 'Worldwide Gross' vary with the 'Production Budget' for each 'Content Rating' in the point chart?""]",movies,scatterFaceted
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a line chart to represent the data; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, represent the 'Release Year' field as a temporal type and title it 'Release Year'; [Encoding]: On the y-axis, represent the sum of the 'Worldwide Gross' field as a quantitative type and title it 'SUM (Worldwide Gross)', format the axis with '~s'; [Encoding]: Use the 'Major Genre' field to color the lines, treating it as a nominal type; [Interaction]: No specific interaction is defined.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/movies.csv'; [Chart-Type]: Choose a line chart to represent the data; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, represent the 'Release Year' field as a temporal type and title it 'Release Year'; [Encoding]: On the y-axis, represent the sum of the 'Worldwide Gross' field as a quantitative type and title it 'SUM (Worldwide Gross)', format the axis with '~s'; [Encoding]: Use the 'Major Genre' field to color the lines, treating it as a nominal type; [Interaction]: No specific interaction is defined.","View #1:
+Step 1. Primary Information: The chart is a line chart representing the sum of 'Worldwide Gross' over 'Release Year' for different 'Major Genres'.
+Step 2. Secondary Information: The 'Release Year' is represented on the x-axis and the sum of 'Worldwide Gross' is represented on the y-axis. The lines are colored based on the 'Major Genre'.
+Step 3. Command: Create a line chart with 'Release Year' on the x-axis and sum of 'Worldwide Gross' on the y-axis, colored by 'Major Genre'.
+Step 4. Query: Line chart of sum of 'Worldwide Gross' over 'Release Year' by 'Major Genre'
+Step 5. Question: How does the sum of 'Worldwide Gross' change over 'Release Year' for different 'Major Genres'?","View #1: [Chart-Type]: Choose a line chart to represent the data; [Encoding]: On the x-axis, represent the 'Release Year' field as a temporal type and title it 'Release Year'; [Encoding]: On the y-axis, represent the sum of the 'Worldwide Gross' field as a quantitative type and title it 'SUM (Worldwide Gross)', format the axis with '~s'; [Encoding]: Use the 'Major Genre' field to color the lines, treating it as a nominal type","[""The chart is a line chart representing the sum of 'Worldwide Gross' over 'Release Year' for different 'Major Genres'.""]","[""The 'Release Year' is represented on the x-axis and the sum of 'Worldwide Gross' is represented on the y-axis. The lines are colored based on the 'Major Genre'.""]","[""Create a line chart with 'Release Year' on the x-axis and sum of 'Worldwide Gross' on the y-axis, colored by 'Major Genre'.""]","[""Line chart of sum of 'Worldwide Gross' over 'Release Year' by 'Major Genre'""]","[""How does the sum of 'Worldwide Gross' change over 'Release Year' for different 'Major Genres'?""]",movies,multiLine
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file named ""cars.csv""; [Chart-Type]: Create a bar chart; [Mark]: Do not include a tooltip for the bars; [Encoding]: On the x-axis, represent the ""Weight"" field with bins and title it ""Weight""; [Encoding]: On the y-axis, represent the count of the data and title it ""COUNT"".
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file named ""cars.csv""; [Chart-Type]: Create a bar chart; [Mark]: Do not include a tooltip for the bars; [Encoding]: On the x-axis, represent the ""Weight"" field with bins and title it ""Weight""; [Encoding]: On the y-axis, represent the count of the data and title it ""COUNT"".","View #1:
+Step 1. Primary Information: The chart is a bar chart representing the ""Weight"" field on the x-axis and the count of the data on the y-axis.
+Step 2. Secondary Information: The x-axis is titled ""Weight"" and the y-axis is titled ""COUNT"".
+Step 3. Command: Create a bar chart with ""Weight"" on the x-axis and data count on the y-axis.
+Step 4. Query: Bar chart, Weight, count of data
+Step 5. Question: How many data points are there for each weight category in the bar chart?","View #1: [Chart-Type]: Create a bar chart; [Encoding]: On the x-axis, represent the ""Weight"" field with bins and title it ""Weight""; [Encoding]: On the y-axis, represent the count of the data and title it ""COUNT"".","['The chart is a bar chart representing the ""Weight"" field on the x-axis and the count of the data on the y-axis.']","['The x-axis is titled ""Weight"" and the y-axis is titled ""COUNT"".']","['Create a bar chart with ""Weight"" on the x-axis and data count on the y-axis.']","['Bar chart, Weight, count of data']",['How many data points are there for each weight category in the bar chart?'],cars,histogram
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file ""cars.csv""; [Chart-Type]: Choose a bar chart to represent the data; [Mark]: Do not include any tooltips in the bar chart; [Encoding]: On the x-axis, display the 'Origin' field as a nominal type and sort it in descending order based on the y-axis; [Encoding]: On the y-axis, display the count of each 'Origin' as a quantitative type and title the axis as 'COUNT'.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file ""cars.csv""; [Chart-Type]: Choose a bar chart to represent the data; [Mark]: Do not include any tooltips in the bar chart; [Encoding]: On the x-axis, display the 'Country of Origin' field as a nominal type and sort it in descending order based on the y-axis; [Encoding]: On the y-axis, display the count of each 'Country of Origin' as a quantitative type and title the axis as 'COUNT'.","View #1:
+Step 1. Primary Information: The chart is a bar chart representing the count of each 'Country of Origin'.
+Step 2. Secondary Information: The 'Country of Origin' field is displayed on the x-axis in descending order based on the y-axis count.
+Step 3. Command: Create a bar chart with 'Country of Origin' on the x-axis and their count on the y-axis.
+Step 4. Query: Bar chart, 'Country of Origin', count, descending order
+Step 5. Question: How many counts are there for each 'Country of Origin'?","View #1: [Chart-Type]: Choose a bar chart to represent the data; [Encoding]: On the x-axis, display the 'Country of Origin' field as a nominal type and sort it in descending order based on the y-axis; [Encoding]: On the y-axis, display the count of each 'Country of Origin' as a quantitative type and title the axis as 'COUNT'.","[""The chart is a bar chart representing the count of each 'Country of Origin'.""]","[""The 'Country of Origin' field is displayed on the x-axis in descending order based on the y-axis count.""]","[""Create a bar chart with 'Country of Origin' on the x-axis and their count on the y-axis.""]","[""Bar chart, 'Country of Origin', count, descending order""]","[""How many counts are there for each 'Country of Origin'?""]",cars,singleAttrBar
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file named ""cars.csv""; [Chart-Type]: Choose a bar chart to represent the data; [Mark]: Do not include any tooltips in the chart; [Encoding]: On the x-axis, represent the 'Cylinders' field as a nominal type; [Encoding]: On the y-axis, represent the mean of the 'MPG' field as a quantitative type and title it as 'AVG (MPG)'. Format the axis with the '~s' format; [Interaction]: No interaction is specified in this visualization.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file named ""cars.csv""; [Chart-Type]: Choose a bar chart to represent the data; [Mark]: Do not include any tooltips in the chart; [Encoding]: On the x-axis, represent the 'Number of Cylinders' field as a nominal type; [Encoding]: On the y-axis, represent the average of the 'Miles Per Gallon' field as a quantitative type and title it as 'Average Miles Per Gallon'. Format the axis with the '~s' format; [Interaction]: No interaction is specified in this visualization.","View #1:
+Step 1. Primary Information: The chart type is a bar chart, the x-axis represents the 'Number of Cylinders' field, and the y-axis represents the average of the 'Miles Per Gallon' field.
+Step 2. Secondary Information: The y-axis is titled 'Average Miles Per Gallon' and the axis is formatted with the '~s' format.
+Step 3. Command: Create a bar chart with 'Number of Cylinders' on the x-axis and the average 'Miles Per Gallon' on the y-axis.
+Step 4. Query: Bar chart, 'Number of Cylinders', average 'Miles Per Gallon'
+Step 5. Question: What is the average 'Miles Per Gallon' for each 'Number of Cylinders' in a bar chart representation?","View #1: [Chart-Type]: Choose a bar chart to represent the data; [Encoding]: On the x-axis, represent the 'Number of Cylinders' field as a nominal type; [Encoding]: On the y-axis, represent the average of the 'Miles Per Gallon' field as a quantitative type and title it as 'Average Miles Per Gallon'. Format the axis with the '~s' format","[""The chart type is a bar chart, the x-axis represents the 'Number of Cylinders' field, and the y-axis represents the average of the 'Miles Per Gallon' field.""]","[""The y-axis is titled 'Average Miles Per Gallon' and the axis is formatted with the '~s' format.""]","[""Create a bar chart with 'Number of Cylinders' on the x-axis and the average 'Miles Per Gallon' on the y-axis.""]","[""Bar chart, 'Number of Cylinders', average 'Miles Per Gallon'""]","[""What is the average 'Miles Per Gallon' for each 'Number of Cylinders' in a bar chart representation?""]",cars,bar
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file named ""cars.csv""; [Chart-Type]: Create a point chart; [Mark]: Fill the points and set their opacity to 0.7; [Encoding]: Map the ""Horsepower"" field to the x-axis and the ""Acceleration"" field to the y-axis; [Style]: Do not display any tooltips when hovering over the points.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file named ""cars.csv""; [Chart-Type]: Create a point chart; [Mark]: Fill the points and set their opacity to 0.7; [Encoding]: Map the ""Horsepower"" field to the x-axis and the ""Acceleration"" field to the y-axis; [Style]: Do not display any tooltips when hovering over the points.","View #1:
+Step 1. Primary Information: The chart type is a point chart with ""Horsepower"" field mapped to the x-axis and the ""Acceleration"" field mapped to the y-axis.
+Step 2. Secondary Information: There is no secondary information in this view.
+Step 3. Command: Create a point chart with ""Horsepower"" on the x-axis and ""Acceleration"" on the y-axis.
+Step 4. Query: Point chart, Horsepower x-axis, Acceleration y-axis
+Step 5. Question: What does the point chart of ""Horsepower"" versus ""Acceleration"" look like?","View #1: [Chart-Type]: Create a point chart; [Encoding]: Map the ""Horsepower"" field to the x-axis and the ""Acceleration"" field to the y-axis","['The chart type is a point chart with ""Horsepower"" field mapped to the x-axis and the ""Acceleration"" field mapped to the y-axis.']",['There is no secondary information in this view.'],"['Create a point chart with ""Horsepower"" on the x-axis and ""Acceleration"" on the y-axis.']","['Point chart, Horsepower x-axis, Acceleration y-axis']","['What does the point chart of ""Horsepower"" versus ""Acceleration"" look like?']",cars,scatter
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1
+
+Step 2. Instructions:
+[View 1]; [Data]: Load data from the URL 'datasets/cars.csv'; [Chart-Type]: Choose a line chart as the chart type; [Mark]: Do not include a tooltip for the line mark; [Encoding]: Set 'Year' as the x-axis with a temporal type and title it 'Year'; [Encoding]: Set the mean of 'Weight' as the y-axis with a quantitative type, title it 'AVG (Weight)', and format it with '~s'; [Interaction]: No interaction is specified.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load data from the URL 'datasets/cars.csv'; [Chart-Type]: Choose a line chart as the chart type; [Mark]: Do not include a tooltip for the line mark; [Encoding]: Set 'Year' as the x-axis with a temporal type and title it 'Year'; [Encoding]: Set the mean of 'AVG (Weight)' as the y-axis with a quantitative type, title it 'AVG (Weight)', and format it with '~s'; [Interaction]: No interaction is specified.","View #1:
+Step 1. Primary Information: The chart type is a line chart with 'Year' as the x-axis and the mean of 'AVG (Weight)' as the y-axis.
+Step 2. Secondary Information: The x-axis is titled 'Year' and the y-axis is titled 'AVG (Weight)', formatted with '~s'.
+Step 3. Command: Create a line chart with 'Year' on the x-axis and the mean of 'AVG (Weight)' on the y-axis.
+Step 4. Query: Line chart, Year, mean of AVG (Weight)
+Step 5. Question: What does the line chart of the mean of 'AVG (Weight)' over 'Year' show?","View #1: [Chart-Type]: Choose a line chart as the chart type; [Encoding]: Set 'Year' as the x-axis with a temporal type and title it 'Year'; [Encoding]: Set the mean of 'AVG (Weight)' as the y-axis with a quantitative type, title it 'AVG (Weight)', and format it with '~s'","[""The chart type is a line chart with 'Year' as the x-axis and the mean of 'AVG (Weight)' as the y-axis.""]","[""The x-axis is titled 'Year' and the y-axis is titled 'AVG (Weight)', formatted with '~s'.""]","[""Create a line chart with 'Year' on the x-axis and the mean of 'AVG (Weight)' on the y-axis.""]","['Line chart, Year, mean of AVG (Weight)']","[""What does the line chart of the mean of 'AVG (Weight)' over 'Year' show?""]",cars,line
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file ""cars.csv""; [Chart-Type]: Choose a bar chart for the visualization; [Mark]: Do not include any tooltips in the marks; [Encoding]: Set ""Cylinders"" as the ordinal field for the column encoding; [Encoding]: Set ""Origin"" as the nominal field for the x-axis encoding, remove the title, labels, and ticks from the x-axis; [Encoding]: Set ""Acceleration"" as the quantitative field for the y-axis encoding, aggregate it by mean, set the title to ""AVG (Acceleration)"", and format it with ""~s""; [Encoding]: Set ""Origin"" as the nominal field for the color encoding; [Style]: Set the range step of the x-axis scale to 15.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file ""cars.csv""; [Chart-Type]: Choose a bar chart for the visualization; [Mark]: Do not include any tooltips in the marks; [Encoding]: Set the number of ""Cylinders"" as the ordinal field for the column encoding; [Encoding]: Set the ""Origin"" of the car as the nominal field for the x-axis encoding, remove the title, labels, and ticks from the x-axis; [Encoding]: Set the ""Acceleration"" as the quantitative field for the y-axis encoding, aggregate it by mean, set the title to ""AVG (Acceleration)"", and format it with ""~s""; [Encoding]: Set the ""Origin"" of the car as the nominal field for the color encoding; [Style]: Set the range step of the x-axis scale to 15.","View #1:
+Step 1. Primary Information: The chart is a bar chart visualizing the average acceleration of cars based on their origin and number of cylinders.
+Step 2. Secondary Information: The x-axis is the origin of the car with no title, labels, or ticks. The y-axis is the average acceleration with the title ""AVG (Acceleration)"" and is formatted with ""~s"". The color encoding is based on the origin of the car.
+Step 3. Command: Create a bar chart with the average acceleration of cars based on their origin and number of cylinders.
+Step 4. Query: Bar chart, average acceleration, origin of car, number of cylinders
+Step 5. Question: What is the average acceleration of cars based on their origin and number of cylinders?","View #1: [Chart-Type]: Choose a bar chart for the visualization; [Encoding]: Set the number of ""Cylinders"" as the ordinal field for the column encoding; [Encoding]: Set the ""Origin"" of the car as the nominal field for the x-axis encoding, remove the title, labels, and ticks from the x-axis; [Encoding]: Set the ""Acceleration"" as the quantitative field for the y-axis encoding, aggregate it by mean, set the title to ""AVG (Acceleration)"", and format it with ""~s""; [Encoding]: Set the ""Origin"" of the car as the nominal field for the color encoding",['The chart is a bar chart visualizing the average acceleration of cars based on their origin and number of cylinders.'],"['The x-axis is the origin of the car with no title, labels, or ticks. The y-axis is the average acceleration with the title ""AVG (Acceleration)"" and is formatted with ""~s"". The color encoding is based on the origin of the car.']",['Create a bar chart with the average acceleration of cars based on their origin and number of cylinders.'],"['Bar chart, average acceleration, origin of car, number of cylinders']",['What is the average acceleration of cars based on their origin and number of cylinders?'],cars,groupedBar
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1
+
+Step 2. Instructions:
+[View 1]; [Data]: Load data from the file named 'cars.csv'; [Chart-Type]: Choose a bar chart for the visualization; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, encode the 'Cylinders' field as ordinal; [Encoding]: On the y-axis, encode the count of records as quantitative and title the axis as 'COUNT' with a format of '~s'; [Encoding]: Encode the 'Origin' field as color and treat it as nominal data; [Style]: No specific style instructions; [Interaction]: No specific interaction instructions.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load data from the file named 'cars.csv'; [Chart-Type]: Choose a bar chart for the visualization; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, encode the 'Cylinders' field as ordinal; [Encoding]: On the y-axis, encode the count of records as quantitative and title the axis as 'COUNT' with a format of '~s'; [Encoding]: Encode the 'Origin' field as color and treat it as nominal data; [Style]: No specific style instructions; [Interaction]: No specific interaction instructions.","View #1:
+Step 1. Primary Information: The chart type is a bar chart with 'Cylinders' field on the x-axis and count of records on the y-axis. The 'Origin' field is encoded as color.
+Step 2. Secondary Information: The y-axis is titled as 'COUNT' with a format of '~s'. The 'Origin' field is treated as nominal data.
+Step 3. Command: Create a bar chart with 'Cylinders' on the x-axis and count of records on the y-axis, color-coded by 'Origin'.
+Step 4. Query: Bar chart of 'Cylinders' by count of records, color for 'Origin'
+Step 5. Question: How many records are there for each category of 'Cylinders', differentiated by 'Origin'?","View #1: [Chart-Type]: Choose a bar chart for the visualization; [Encoding]: On the x-axis, encode the 'Cylinders' field as ordinal; [Encoding]: On the y-axis, encode the count of records as quantitative and title the axis as 'COUNT' with a format of '~s'; [Encoding]: Encode the 'Origin' field as color and treat it as nominal data","[""The chart type is a bar chart with 'Cylinders' field on the x-axis and count of records on the y-axis. The 'Origin' field is encoded as color.""]","[""The y-axis is titled as 'COUNT' with a format of '~s'. The 'Origin' field is treated as nominal data.""]","[""Create a bar chart with 'Cylinders' on the x-axis and count of records on the y-axis, color-coded by 'Origin'.""]","[""Bar chart of 'Cylinders' by count of records, color for 'Origin'""]","[""How many records are there for each category of 'Cylinders', differentiated by 'Origin'?""]",cars,stackedBar
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file named ""cars.csv""; [Chart-Type]: Choose a point chart type; [Mark]: Fill the points and set the opacity to 0.8; [Encoding]: Map the ""Displacement"" field to the x-axis and set its type to quantitative. Format the axis with ""~s""; [Encoding]: Map the ""MPG"" field to the y-axis and set its type to quantitative. Format the axis with ""~s""; [Encoding]: Map the ""Origin"" field to the color and set its type to nominal; [Style]: Do not display any tooltip.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file named ""cars.csv""; [Chart-Type]: Choose a point chart type; [Mark]: Fill the points and set the opacity to 0.8; [Encoding]: Map the ""Displacement"" field to the x-axis and set its type to quantitative. Format the axis with ""~s""; [Encoding]: Map the ""MPG"" field to the y-axis and set its type to quantitative. Format the axis with ""~s""; [Encoding]: Map the ""Origin"" field to the color and set its type to nominal; [Style]: Do not display any tooltip.","View #1:
+Step 1. Primary Information: The chart type is a point chart. The ""Displacement"" field is mapped to the x-axis and its type is quantitative. The ""MPG"" field is mapped to the y-axis and its type is quantitative. The ""Origin"" field is mapped to the color and its type is nominal.
+Step 2. Secondary Information: The x-axis and y-axis are formatted with ""~s"".
+Step 3. Command: Create a point chart with ""Displacement"" on the x-axis and ""MPG"" on the y-axis, and color the points based on ""Origin"".
+Step 4. Query: Point chart of ""Displacement"" vs ""MPG"", color by ""Origin""
+Step 5. Question: How does the ""MPG"" vary with ""Displacement"" for different ""Origins""?","View #1: [Chart-Type]: Choose a point chart type; [Encoding]: Map the ""Displacement"" field to the x-axis and set its type to quantitative. Format the axis with ""~s""; [Encoding]: Map the ""MPG"" field to the y-axis and set its type to quantitative. Format the axis with ""~s""; [Encoding]: Map the ""Origin"" field to the color and set its type to nominal","['The chart type is a point chart. The ""Displacement"" field is mapped to the x-axis and its type is quantitative. The ""MPG"" field is mapped to the y-axis and its type is quantitative. The ""Origin"" field is mapped to the color and its type is nominal.']","['The x-axis and y-axis are formatted with ""~s"".']","['Create a point chart with ""Displacement"" on the x-axis and ""MPG"" on the y-axis, and color the points based on ""Origin"".']","['Point chart of ""Displacement"" vs ""MPG"", color by ""Origin""']","['How does the ""MPG"" vary with ""Displacement"" for different ""Origins""?']",cars,scatterColor
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Trellis
+- Number of plots: 3
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/cars.csv'; [Chart-Type]: Choose a point chart type; [Mark]: Fill the points and disable tooltips; [Encoding]: Encode the 'Origin' field as the column; [Encoding]: Encode the 'Weight' field as the x-axis with a quantitative scale and format the axis with '~s'; [Encoding]: Encode the 'Acceleration' field as the y-axis with a quantitative scale and format the axis with '~s'.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the dataset from the URL 'datasets/cars.csv'; [Chart-Type]: Choose a point chart type; [Mark]: Fill the points and disable tooltips; [Encoding]: Encode the 'Origin' field as the column; [Encoding]: Encode the 'Weight' field as the x-axis with a quantitative scale and format the axis with '~s'; [Encoding]: Encode the 'Acceleration' field as the y-axis with a quantitative scale and format the axis with '~s'.","View #1:
+Step 1. Primary Information: The chart type is a point chart. The 'Origin' field is encoded as the column. The 'Weight' field is encoded as the x-axis with a quantitative scale. The 'Acceleration' field is encoded as the y-axis with a quantitative scale.
+Step 2. Secondary Information: The x-axis and y-axis are formatted with '~s'.
+Step 3. Command: Create a point chart with 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis.
+Step 4. Query: Point chart, 'Origin' column, 'Weight' x-axis, 'Acceleration' y-axis
+Step 5. Question: What does the point chart show with 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis?",View #1: [Chart-Type]: Choose a point chart type; [Encoding]: Encode the 'Origin' field as the column; [Encoding]: Encode the 'Weight' field as the x-axis with a quantitative scale and format the axis with '~s'; [Encoding]: Encode the 'Acceleration' field as the y-axis with a quantitative scale and format the axis with '~s'.,"[""The chart type is a point chart. The 'Origin' field is encoded as the column. The 'Weight' field is encoded as the x-axis with a quantitative scale. The 'Acceleration' field is encoded as the y-axis with a quantitative scale.""]","[""The x-axis and y-axis are formatted with '~s'.""]","[""Create a point chart with 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis.""]","[""Point chart, 'Origin' column, 'Weight' x-axis, 'Acceleration' y-axis""]","[""What does the point chart show with 'Origin' as the column, 'Weight' as the x-axis, and 'Acceleration' as the y-axis?""]",cars,scatterFaceted
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Instructions:
+[View 1]; [Data]: Load the data from the file ""cars.csv""; [Chart-Type]: Choose a line chart to represent the data; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, represent the 'Year' field as a temporal type and title it 'Year'; [Encoding]: On the y-axis, represent the mean of the 'Horsepower' field as a quantitative type and title it 'AVG (Horsepower)', format the axis with '~s'; [Encoding]: Use the 'Origin' field to color the lines, treating it as a nominal type; [Interaction]: No interaction is specified.
+
+Step 3. Instructions:
+[View 1]; [Data]: Load the data from the file ""cars.csv""; [Chart-Type]: Choose a line chart to represent the data; [Mark]: Do not include any tooltips in the marks; [Encoding]: On the x-axis, represent the 'Year' field as a temporal type and title it 'Year'; [Encoding]: On the y-axis, represent the mean of the 'AVG (Horsepower)' field as a quantitative type and title it 'AVG (Horsepower)', format the axis with '~s'; [Encoding]: Use the 'Origin' field to color the lines, treating it as a nominal type; [Interaction]: No interaction is specified.","View #1:
+Step 1. Primary Information: The chart is a line chart representing the mean of the 'AVG (Horsepower)' field over the 'Year' field, with different lines colored based on the 'Origin' field.
+Step 2. Secondary Information: The x-axis is titled 'Year' and the y-axis is titled 'AVG (Horsepower)', formatted with '~s'.
+Step 3. Command: Create a line chart with 'Year' on the x-axis and the mean of 'AVG (Horsepower)' on the y-axis, colored by 'Origin'.
+Step 4. Query: Line chart of mean 'AVG (Horsepower)' over 'Year', colored by 'Origin'
+Step 5. Question: How does the mean of 'AVG (Horsepower)' change over the years for different origins?","View #1: [Chart-Type]: Choose a line chart to represent the data; [Encoding]: On the x-axis, represent the 'Year' field as a temporal type and title it 'Year'; [Encoding]: On the y-axis, represent the mean of the 'AVG (Horsepower)' field as a quantitative type and title it 'AVG (Horsepower)', format the axis with '~s'; [Encoding]: Use the 'Origin' field to color the lines, treating it as a nominal type","[""The chart is a line chart representing the mean of the 'AVG (Horsepower)' field over the 'Year' field, with different lines colored based on the 'Origin' field.""]","[""The x-axis is titled 'Year' and the y-axis is titled 'AVG (Horsepower)', formatted with '~s'.""]","[""Create a line chart with 'Year' on the x-axis and the mean of 'AVG (Horsepower)' on the y-axis, colored by 'Origin'.""]","[""Line chart of mean 'AVG (Horsepower)' over 'Year', colored by 'Origin'""]","[""How does the mean of 'AVG (Horsepower)' change over the years for different origins?""]",cars,multiLine

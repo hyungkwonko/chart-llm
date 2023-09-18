@@ -1,0 +1,805 @@
+dataset,visId,commands,count,Sequence_Length,Phrasing_Type
+Cars,groupedBar,plot separately cylinders by average acceleration,1,2,command
+Cars,groupedBar,color by origin,1,2,command
+Superstore,scatterColor,show profit vs sales as scatter plot,1,2,command
+Superstore,scatterColor,use a different color for each region,1,2,command
+Cars,stackedBar,Show cylinders by COUNT(Model) in a bar chart,1,2,command
+Cars,stackedBar,Add origin to legend,1,2,command
+Superstore,groupedBar,Create Bar chart,1,5,command
+Superstore,groupedBar,X axis is Ship Mode,1,5,command
+Superstore,groupedBar,Y axis is AVG(Profit),1,5,command
+Superstore,groupedBar,"Separate by First Class, Same Day, Second Class, Standard Class",1,5,command
+Superstore,groupedBar,Color by Segment,1,5,command
+Movies,scatter,show me a scatterplot,1,3,command
+Movies,scatter,show me rating,1,3,command
+Movies,scatter,show me rotten tomatoes rating,1,3,command
+Movies,bar,show me bars,1,3,command
+Movies,bar,show me major genre,1,3,command
+Movies,bar,show me average of worldwide gross,1,3,command
+Superstore,histogram,Create Bar Chart,1,3,command
+Superstore,histogram,X-axis is Order Quanitity,1,3,command
+Superstore,histogram,Y-Axis is COUNT,1,3,command
+Superstore,scatter,Create Scatterplot,1,3,command
+Superstore,scatter,X-axis is Profit,1,3,command
+Superstore,scatter,Y-axis is Sales,1,3,command
+Superstore,multiLine,Create line graph,1,3,command
+Superstore,multiLine,Axes are Order Date and SUM(Sales),1,3,command
+Superstore,multiLine,Color by category,1,3,command
+Superstore,scatterColor,Create scatterplot,1,3,command
+Superstore,scatterColor,Axes are sales and profit,1,3,command
+Superstore,scatterColor,color by region,1,3,command
+Superstore,singleAttrBar,create bar graph,1,3,command
+Superstore,singleAttrBar,axes are sub-category and count,1,3,command
+Superstore,singleAttrBar,order by descending,1,3,command
+Superstore,stackedBar,create stacked bar chart,1,3,command
+Superstore,stackedBar,axes are region and SUM(Profit),1,3,command
+Superstore,stackedBar,color by ship status,1,3,command
+Superstore,scatterFaceted,create scatterplot,1,3,command
+Superstore,scatterFaceted,axes are sales and profit,1,3,command
+Superstore,scatterFaceted,separate by region // or // dual x axis region,1,3,command
+Cars,groupedBar,Show Cylinders and AVG(Acceleration) in bar chart,1,3,command
+Cars,groupedBar,Add Cylinders to groups,1,3,command
+Cars,groupedBar,Add Origin to legend,1,3,command
+Movies,histogram,draw bars,1,2,command
+Movies,histogram,show me running time,1,2,command
+Movies,singleAttrBar,show me bars,1,2,command
+Movies,singleAttrBar,show me creative type,1,2,command
+Movies,scatter,Make a simple scatter plot of Rotten Tomatoes Rating versus IMDB Rating.,1,2,command
+Movies,scatter,Use only major gridlines.,1,2,command
+Superstore,line,Create line graph,1,2,command
+Superstore,line,Axes are Order Date and SUM(Sales Forecast),1,2,command
+Superstore,scatterFaceted,Show me the sales versus profit for each region,1,2,command
+Superstore,scatterFaceted,Divide the data into 4 graphs,1,2,command
+Superstore,stackedBar,Show me a bar graph of the profit for each region,1,2,command
+Superstore,stackedBar,Make the bars stacked with the ship status,1,2,command
+Cars,multiLine,plot year by average horsepower,1,2,command
+Cars,multiLine,color by origin,1,2,command
+Cars,scatterColor,plot displacement by mpg,1,2,command
+Cars,scatterColor,color by origin,1,2,command
+Cars,stackedBar,plot cylinder histogram,1,2,command
+Cars,stackedBar,stack by origin,1,2,command
+Superstore,scatterFaceted,show the profit vs sales as scatter plots,1,2,command
+Superstore,scatterFaceted,use one plot for each region,1,2,command
+Cars,scatterColor,Show displacement and MPG in a XY chart,1,2,command
+Cars,scatterColor,Add origin in legend,1,2,command
+Cars,groupedBar,Group by Origin,1,2,command
+Cars,groupedBar,"Faceting on Cylinder, plot Cylinder by AVG Acceleration",1,2,command
+Superstore,line,Groupby (Order Date),1,2,command
+Superstore,line,"For each Order Date, calculate sum of the sales forecast",1,2,command
+Superstore,bar,groupby(state),1,2,command
+Superstore,bar,"for each state, get average of profit",1,2,command
+Cars,multiLine,Show year and AVG(Horsepower) in line chart,1,2,command
+Cars,multiLine,Add origin to legend,1,2,command
+Cars,scatterFaceted,Show weight and acceleration in a XYplot,1,2,command
+Cars,scatterFaceted,Add origin to groups,1,2,command
+Cars,scatterColor,"create a scatterplot of mpg vs displacement by model, color marks by origin",1,2,command
+Cars,scatterColor,"set origin colors to: europe, blue, japan, orange, usa, red",1,2,command
+Cars,groupedBar,create a bar chart of average acceleration grouped by origin,1,2,command
+Cars,groupedBar,split splots by cylinders,1,2,command
+Cars,scatterColor,correlate MPG and Displacement of cars,1,2,command
+Cars,scatterColor,color the points by the car's origin,1,2,command
+Cars,groupedBar,Compare AVG (Acceleration) with Cylinders.,1,2,command
+Cars,groupedBar,Segregate the cylinders by their origin.,1,2,command
+Cars,scatterFaceted,Show a scatterplot of acceleration vs Weight,1,2,command
+Cars,scatterFaceted,Facet it by Origin.,1,2,command
+Movies,multiLine,give me line charts of worldwide gross over year by major genres,1,1,command
+Movies,groupedBar,show me average budget split by content rating colored by creative type,1,1,command
+Movies,scatter,show me imdb rating versus rotten tomatoes rating,1,1,command
+Movies,scatter,give me a scatterplot of imdb rating as x axis and rotten tomatoes rating as y axis,2,1,command
+Movies,multiLine,plot worldwide gross over release year split by genre,1,1,command
+Movies,scatterFaceted,give me scatterplots of worldwide gross versus production budget by different content ratings,1,1,command
+Movies,bar,plot average worldwide growth over major genre,1,1,command
+Movies,stackedBar,"Show the total worldwide gross by category of film, broken down by movie rating.",1,1,command
+Movies,scatterFaceted,show me production budget against worldwide gross split by content rating,1,1,command
+Movies,scatter,Plot IMDB rating against Rotten Tomatoes rating.,1,1,command
+Movies,singleAttrBar,show me movies by creative types,1,1,command
+Movies,singleAttrBar,Show me count of movies categorized by creative type,1,1,command
+Movies,histogram,give me the number of movies by running time,1,1,command
+Superstore,stackedBar,Show me a bar chart of the total profitability of each region with a breakdown based on shipping time.,1,1,command
+Superstore,groupedBar,Show me a bar chart showing the average profitability for orders by shipping mode and segment.,1,1,command
+Superstore,scatterColor,Show me a scatterplot of profitability by sales for each region.,1,1,command
+Superstore,line,Show me total sales by month for the two-year period between Jan 2016 and Dec 2017.,1,1,command
+Superstore,scatterColor,plot profit amount by sales amount and region,1,1,command
+Superstore,scatter,plot profit amount by sales amount,1,1,command
+Superstore,scatterFaceted,plot profit versus sales with a separate plot for each region. Make the axes identical.,1,1,command
+Movies,singleAttrBar,Make a simple bar chart of Count of Titles versus the category of Creative Type.,1,1,command
+Movies,scatterFaceted,Make simple scatter plots of the Worldwide Gross versus Production Budget. Parameterize by Content Rating.,1,1,command
+Movies,scatterColor,Make a simple scatter plot of worldwide Gross by Production Budget categorized by Major Genre.,1,1,command
+Cars,line,Show me weight over year,1,1,command
+Cars,scatter,show me horsepower vs acceleration,1,1,command
+Cars,singleAttrBar,show me the number of cars per country,1,1,command
+Cars,histogram,show me the categorization of weights,1,1,command
+Cars,bar,show me how the number of cylinders is related to miles per gallon,1,1,command
+Cars,scatterFaceted,show me how weight is related to acceleration per country,1,1,command
+Movies,stackedBar,Show how content ratings are associated with gross receipts by genre.,1,1,command
+Movies,multiLine,Show how genres have been associated with worldwide grosses from 1995 to 2009.,1,1,command
+Movies,scatter,Show how films' Rotten Tomato ratings compare with IMDB ratings.,1,1,command
+Movies,histogram,Show the number of films categorized by their running times.,1,1,command
+Movies,line,Show the trend in average production budgets from 1995 to 2010.,1,1,command
+Movies,scatterColor,Show how worldwide grosses are related to production budgets by genre.,1,1,command
+Movies,bar,Show average worldwide gross by genre.,1,1,command
+Movies,scatterFaceted,Show how worldwide gross is related to production budgets for each content rating.,1,1,command
+Cars,singleAttrBar,count the number of cars based on their origins.,1,1,command
+Cars,histogram,Please show me the distribution of weights by 500 interval.,1,1,command
+Cars,histogram,Please show me a histogram of weights with 500 intervals.,2,1,command
+Cars,scatterFaceted,Please show me multiple correlation charts of weights and accelerations of cars based on their origins.,1,1,command
+Cars,bar,Please show me a bar chart with the x-axis representing the number of cylinders and the y-axis depicting the average MPG.,1,1,command
+Cars,line,Please show me how the average weights change in a timeline.,1,1,command
+Superstore,scatter,Create a scatterplot of profit in columns and Sales in rows,1,1,command
+Superstore,scatter,Create a scatterplot of profit in abscissa and sales in ordinate,2,1,command
+Superstore,groupedBar,create a series of bar chats for different ship modes that represent average of profit for different segments,1,1,command
+Superstore,scatterColor,Creare a scatterplot of sales and profit that represent different regions,1,1,command
+Superstore,stackedBar,Create a stacked bar chart that represents sum of profit in different regions stacked by ship status,1,1,command
+Superstore,scatterFaceted,Create a multiple scatterplot that represents sales and profit for different regions,1,1,command
+Cars,scatterColor,"plot displacement against mpg for individual models, colored by country",2,1,command
+Movies,groupedBar,"Show me the average production budget for each movie type, broken down by content rating.",1,1,command
+Movies,stackedBar,Plot the total worldwide gross for each major genre using a stacked bar chart. Break down within each genre by content rating.,1,1,command
+Movies,bar,Plot the average worldwide gross for each major genre. Sort alphabetically.,1,1,command
+Movies,scatterFaceted,"Plot the worldwide gross v.s. production budget on a scatter plot, broken down by content rating.",1,1,command
+Movies,multiLine,Plot the total worldwide gross over time for each major genre.,1,1,command
+Movies,line,Plot the average production budget each year across all movies.,1,1,command
+Movies,histogram,Plot a histogram of movie running time.,1,1,command
+Movies,scatter,Plot rotten tomatoes rating v.s. IMDB rating on a scatter plot.,1,1,command
+Movies,scatterColor,"Plot the worldwide gross versus production budget for individual movies, coloring each movie by its genre.",1,1,command
+Cars,singleAttrBar,"Compare the number of models in USA, Japan and Europe ?",1,1,command
+Cars,stackedBar,Group cars by countries and cylinders,2,1,command
+Cars,scatterFaceted,Compare acceleration vs weight across different countries,1,1,command
+Cars,histogram,Show distribution of cars by weight,1,1,command
+Cars,groupedBar,Compare car cylinder count against acceleration across countries,1,1,command
+Superstore,multiLine,"Create a line chart showing order date and sum of sales, divided by category",3,1,command
+Superstore,bar,Create a bar chart showing average profit by state,2,1,command
+Superstore,scatter,Create a scatter plot showing profit vs. sales,2,1,command
+Superstore,groupedBar,Create one bar chart for each ship mode showing average profit by segment,2,1,command
+Superstore,line,Create a line chart showing total sales forecast over time,2,1,command
+Superstore,histogram,Create a bar chart showing order quantity vs. count,2,1,command
+Superstore,scatterColor,"Create a scatter plot showing sales vs. profit, with each point colored by region",2,1,command
+Superstore,scatterFaceted,Create one scatter plot for each region that shows the relationship between sales and profit,2,1,command
+Superstore,singleAttrBar,"Create a bar chart that shows count of each sub-category, sorted high to low by count",2,1,command
+Superstore,stackedBar,"Create a stacked bar chart showing region and profit, colored by ship status",2,1,command
+Superstore,bar,Create bar chart based on state and AVG(Profit),1,1,command
+Superstore,bar,Show me a bar graph of the average profit per state,1,1,command
+Superstore,histogram,Show me the count of each order quantity,1,1,command
+Superstore,line,Show me the sales forecast for each order date,1,1,command
+Superstore,singleAttrBar,Show me the count of each subcategory of product,1,1,command
+Superstore,multiLine,"Show me the sales of furniture, office supplies, and technology over time",1,1,command
+Superstore,scatterColor,Show me the sales versus profit of each region,1,1,command
+Superstore,scatter,Show me the profit versus sales,1,1,command
+Cars,scatter,Show the scatter plot between horse power and acceleration,1,1,command
+Cars,multiLine,Through a visualization show average horsepower of cars for each country from 1997 to 2011,1,1,command
+Cars,stackedBar,Show the relationship between number of cars and cylinders in each country,1,1,command
+Cars,histogram,Show a bar chart showing weight distribution of cars,1,1,command
+Cars,scatterColor,"for country in USA, JAPAN and EUROPE show MPG vs Displacement",1,1,command
+Cars,groupedBar,For each country show the relationship between average acceleration and number of cylinders,1,1,command
+Cars,scatterFaceted,Give different scatter plots of acceleration vs weight for each country,1,1,command
+Cars,singleAttrBar,Show number of cars from each country,1,1,command
+Superstore,histogram,show me the order count grouped by quantity,1,1,command
+Cars,groupedBar,Visualize average accelaration based on number of cyclinders a model has summed across different origins,1,1,command
+Cars,scatterFaceted,Visualize accelaration v/s weight across distribution across different origins,1,1,command
+Cars,stackedBar,Visualize distribution of models by number of cyclinders grouped by origin,1,1,command
+Cars,singleAttrBar,Plot count of models by grouped by origin,1,1,command
+Cars,scatterColor,Visualize distribution of MPG v/s displacement across origin,1,1,command
+Cars,line,Visualize the general trend of car model weights over the years,1,1,command
+Cars,histogram,Visualize the distribution of models by weight into 8 buckets,1,1,command
+Cars,scatter,plot the distribution of acceleration v/s horsepower,1,1,command
+Cars,bar,Plot average MPG by number of cylinders,1,1,command
+Cars,line,plot year by average weight,1,1,command
+Superstore,multiLine,"draw a line chart of monthly sales by order date, with a different colored line for each category",1,1,command
+Superstore,scatterColor,draw a scatterplot of sales vs profit where sales is on the x-axis and points are colored by region,1,1,command
+Superstore,singleAttrBar,draw a bar chart of count by sub-category,1,1,command
+Superstore,scatterFaceted,"by region, draw a scatterplot of sales and profit, with sales on the x axis",1,1,command
+Superstore,line,draw a line chart of daily sales forecasts,1,1,command
+Superstore,histogram,"draw a histogram showing the count by order quantity, with a 2 order bin size",1,1,command
+Superstore,groupedBar,"by ship mode, draw a bar chart of average profit by split by segment",1,1,command
+Superstore,stackedBar,"make a stacked bar chart summing profit across region, where profit is colored by ship status",1,1,command
+Superstore,bar,"make a bar chart of avgerage profit by state, with state on x axis.",1,1,command
+Superstore,scatter,"make a scatterplot of profit vs sales, with profit on x-axis",1,1,command
+Cars,singleAttrBar,Plot count of cars by origin,1,1,command
+Cars,scatterFaceted,show acceleration of cars by weight for different orgin,1,1,command
+Cars,scatterFaceted,show scatterplot of cars acceleration to weight by origin,2,1,command
+Cars,scatterColor,show how MPG varies with displacement by different origin,1,1,command
+Cars,scatterColor,visualize in scatter plot the Displacement and MPG by orgin,2,1,command
+Cars,multiLine,show how horsepower varies each year by origin,1,1,command
+Cars,bar,show mpg for each cylinder type,1,1,command
+Cars,groupedBar,show acceleration by cylinders by origin,1,1,command
+Cars,line,show weight by year,1,1,command
+Cars,scatter,show scatter plot of accelration and horse power,3,1,command
+Cars,singleAttrBar,show number of cars produced by each country,1,1,command
+Cars,histogram,show weight by count,1,1,command
+Cars,stackedBar,show cars produced by diiferent origin in various cylinders,1,1,command
+Superstore,scatter,"plot the (profit, sales) pairs.",1,1,command
+Cars,scatterFaceted,Show me small multiples of acceleration by weight for each country.,1,1,command
+Movies,scatterFaceted,Display budget by gross of movies broken down by content rating,1,1,command
+Movies,groupedBar,show me bar charts of average production budget by creative types grouped by content rating,1,1,command
+Movies,singleAttrBar,Show a count of movies by creative type.,1,1,command
+Movies,line,plot average production budget over release year,1,1,command
+Movies,line,show me average production budget over release year,1,1,command
+Movies,multiLine,Show worldwide gross timeline by movie genre,1,1,command
+Movies,scatter,plot IMDB rating against rotten tomatoes rating,1,1,command
+Movies,scatterColor,"give me wordwide gross versus production budget, colored by major genres",1,1,command
+Movies,histogram,Show a count of movies binned by running time in 20-minute increments.,1,1,command
+Movies,bar,show me worldwide gross averaged by major genres,1,1,command
+Movies,multiLine,Show a time series plot by year of the worldwide gross sum of movies by genre.,1,1,command
+Superstore,singleAttrBar,"show number of orders for the sub categories as bar chart, and sort the bars by count, highest first",1,1,command
+Movies,stackedBar,give me a bar chart of worldwide gross sum by major genres stacked by content ratings,1,1,command
+Superstore,multiLine,"show the total sales over time as line chart for the categories furniture, office supplies, and technology",1,1,command
+Superstore,scatter,show sales and profit as a scatter plot,1,1,command
+Movies,line,I want to see trend of production budget by the release year,1,1,command
+Superstore,histogram,show a histogram for order quantity,1,1,command
+Superstore,line,show the total number of sales forecast over time,1,1,command
+Superstore,bar,show the average profit by state,1,1,command
+Superstore,groupedBar,"For each ship mode, plot a bar graph where each bar indicates the average profit of each segment",1,1,command
+Movies,histogram,Show me count of movie runtimes,1,1,command
+Movies,scatterFaceted,Plot production budget against worldwide gross for the different rating categories of movies.,1,1,command
+Cars,stackedBar,show me the origin country by cylinder count in a bar chart,1,1,command
+Cars,line,show me the average weight in a line chart,1,1,command
+Cars,groupedBar,show me average acceleration based on cylinders and country of origin,1,1,command
+Cars,singleAttrBar,show me the count of cars by country of origin in bar chart,1,1,command
+Cars,scatter,should me acceleration compared to horsepower in a scatter chart,1,1,command
+Cars,bar,show me average Miles Per Gallaon by cylinders in a bar chart,1,1,command
+Cars,scatterColor,show me MPG by displacement and origin in scatter chart,1,1,command
+Cars,scatterFaceted,show me acceleration by weight and by country of origin,1,1,command
+Cars,singleAttrBar,Show model count by origin in a bar chart,1,1,command
+Cars,bar,Plot average mpg against cyliners,1,1,command
+Cars,bar,Show average mgp for each type of cylinder,2,1,command
+Cars,line,plot average weight across time,1,1,command
+Cars,line,show time series plot of average weight,2,1,command
+Cars,singleAttrBar,show frequency by country,1,1,command
+Cars,singleAttrBar,Show distribution by counties,2,1,command
+Cars,multiLine,Plot average horsepower across time by countries,1,1,command
+Cars,multiLine,"For each country, show time series of average horse power",2,1,command
+Cars,stackedBar,Show distribution of cylinders by country,1,1,command
+Cars,scatterFaceted,Plot wight across acceleration for each country separately,1,1,command
+Cars,histogram,Show distribution of weight,1,1,command
+Cars,histogram,Show histogram of weight,2,1,command
+Cars,groupedBar,"Show average horse power across cylinders, each country shown separately",1,1,command
+Cars,scatterColor,Plot MPG vs Displacement colored by Origin,1,1,command
+Cars,scatter,Plot acceleration vs Horsepower,1,1,command
+Cars,bar,Plot the average of MPG vs Cylinders,1,1,command
+Cars,bar,Plot AVG(MPG) vs Cylinders,2,1,command
+Superstore,scatter,Show me profits by number of sales per product,1,1,command
+Cars,groupedBar,"Plot the average of Acceleration, grouped by Cylinders, colored by Origin",1,1,command
+Superstore,scatterFaceted,Show me by region sales and profits by product,1,1,command
+Cars,stackedBar,"Plot the Count of cars vs Cylinders, colored by Origin, stacked by Origin",1,1,command
+Superstore,histogram,I want to know how many orders there are by the quantity of the order,1,1,command
+Cars,multiLine,"Draw axes for the average of Horsepower vs Year, colored by Origin",1,1,command
+Cars,multiLine,"Draw axes for AVG(Horsepower) vs Year, colored by Origin",2,1,command
+Superstore,scatterColor,Visualize in one chart sales and profits by product by region,1,1,command
+Cars,scatterFaceted,"Plot Acceleration vs Weight, grouped by Origin",1,1,command
+Superstore,singleAttrBar,Show me how many products were ordered by sub-category,1,1,command
+Superstore,stackedBar,By region show our profits based on the shipping status of the order,1,1,command
+Cars,histogram,Plot Count of cars vs Weight,1,1,command
+Superstore,bar,Show me the average profit by state where the order was placed,1,1,command
+Superstore,line,Show me our forecasted number of sales between Jan 2016 and December 2017,1,1,command
+Cars,line,Draw the axes for the average of Weight vs Year,1,1,command
+Cars,line,Draw the axes for AVG(Weight) vs Year,2,1,command
+Movies,stackedBar,Give me a stacked column chart of worldwide gross by genre and rating,3,1,command
+Movies,groupedBar,"For each content rating, show a column chart of average production budget by creative type",2,1,command
+Movies,line,Give me a line chart of average budget by year,3,1,command
+Movies,scatter,Compare imdb rating to rotten tomatoes rating,1,1,command
+Movies,scatter,Show a scatter plot of imdb rating vs rotten tomatoes rating,2,1,command
+Movies,scatter,Give me a scatter plot showing a comparison of ratings between imdb and rotten tomatoes,3,1,command
+Movies,singleAttrBar,Count movies by creative type,1,1,command
+Movies,singleAttrBar,Sort creative types by number of movies,3,1,command
+Movies,scatterFaceted,Give me a scatter chart of production budget vs worldwide gross for each content rating,1,1,command
+Movies,scatterFaceted,"For each content rating, compare budget vs gross in a scatter plot",2,1,command
+Movies,scatterColor,Give me a scatter plot of budget vs gross broken down by movie but with genre as a legend,1,1,command
+Movies,scatterColor,"For each movie, show its budget and gross on a scatter plot and include the genre",2,1,command
+Movies,histogram,Give me a histogram of the number of movies by running time,1,1,command
+Movies,histogram,Count the movies by how long they are,3,1,command
+Movies,histogram,Show a histogram of the number of movies by how long they are,4,1,command
+Movies,histogram,Count movies by how long they are to the nearest 20 minutes,5,1,command
+Movies,histogram,Count movies by length in 20 minute buckets,6,1,command
+Superstore,line,Show the trend in the total sales from january to october 2017,1,1,command
+Superstore,singleAttrBar,arrange the sub categories as per order count,1,1,command
+Superstore,histogram,plot a histogram of the total count of orders,1,1,command
+Superstore,multiLine,show the trend in sales of all categories,1,1,command
+Movies,multiLine,Show the total gross across genres over time,1,1,command
+Cars,scatterFaceted,"Faceting on Origin, plot Weight by Acceleration",1,1,command
+Cars,scatterColor,"Coloring by Orign, Plot Displacement by MPG",1,1,command
+Cars,histogram,Plot a histogram of Weight with a bin width of 500,1,1,command
+Movies,scatter,Plot IMBD vs Rotten Tomatoes ratings for all movies,1,1,command
+Movies,scatter,Help me see outliers in IMDB and Rotten Tomatoes ratings,2,1,command
+Movies,histogram,Show me a boring bar chart of movie running time and count,1,1,command
+Movies,histogram,Give me a histogram of running time for movies,2,1,command
+Superstore,stackedBar,"For each (region, ship status), plot the sum of the profit into a stacked bar",1,1,command
+Superstore,singleAttrBar,"For each sub-category, plot a bar of the count for the sub-category",1,1,command
+Movies,line,Display production budget by release date,1,1,command
+Superstore,line,"Draw a line graph that connects all (order date, sum of sales forecast) pairs",1,1,command
+Movies,groupedBar,Display column graph of average production budget by creative type broken down by content rating,1,1,command
+Movies,scatterFaceted,Chart scatter plot of worldwide gross by production budget broken down by content rating,1,1,command
+Superstore,scatterColor,"For each data element, draw a circle at (its sales, profit) with the proper color by the region",1,1,command
+Movies,histogram,Create histogram of running time,1,1,command
+Superstore,bar,"For each state, draw a bar that has its average profit as the height",1,1,command
+Movies,scatterColor,Chart scatter plot of production budget by worldwide growth coded by major genre,1,1,command
+Movies,bar,Create column graph of worldwide gross by major genre for all movies,1,1,command
+Movies,stackedBar,Create stacked column graph of worldwide gross by major genre by content rating,1,1,command
+Superstore,groupedBar,Split Ship Mode by category and segement and Avg(Profit) render barchart,1,1,command
+Superstore,stackedBar,Split region by ship status and Sum(Profit) render Stacked barchart,1,1,command
+Superstore,stackedBar,Split region by ship status and Sum(Profit) render best,2,1,command
+Superstore,bar,Show Avg(Profit) by state asc,1,1,command
+Superstore,bar,Show Avg(Profit) by state asc render best,2,1,command
+Cars,scatterFaceted,"Show me each car's acceleration by weight, and split out separate charts for each country",1,1,command
+Cars,scatterColor,"chart each model MPG by displacement, and idetnify coutnry of origin",1,1,command
+Cars,groupedBar,"show average acceleration by country of origin, with separate charts for # of cylinders",1,1,command
+Cars,multiLine,"Show average horsepower over time, separated by country of origin",1,1,command
+Movies,multiLine,Show me the total worldwide gross over time by release year for the major genres,1,1,command
+Movies,singleAttrBar,Show me how many movies were made by creative type,1,1,command
+Movies,scatter,Show me a scatterplot of movies by imdb rating and rotten tomatoes rating,1,1,command
+Movies,stackedBar,Show me the total worldwide gross for all major genres in a stacked bar chart and color it out by content rating,1,1,command
+Movies,scatterColor,"plot all titles on a scatter plot chart by production budget an worldwide gross, and color the dots by major genre",1,1,command
+Movies,line,show me the average production budget by release year in a line chart,1,1,command
+Movies,groupedBar,"i want to see the average production budget of each creative type in a column chart, and grouped together by content rating",1,1,command
+Movies,histogram,show me the count of movies by running time buckets,1,1,command
+Movies,scatterFaceted,"Show me scatterplots of production budget and woldwide gross for each title, by content rating",1,1,command
+Cars,scatter,Show Horsepower by Acceleration in a XYplot,1,1,command
+Cars,line,show year and avg(Weight) in a line chart,1,1,command
+Cars,groupedBar,Show me Average Acceleration grouped by cylinders and broken out by Origin,1,1,command
+Cars,histogram,Show weight in a histogram,1,1,command
+Cars,scatter,Show Me Acceleration vs. Horespower For each Model,1,1,command
+Cars,bar,Show cylinfers and AVG(MPG) in a bar chart,1,1,command
+Cars,bar,Show me Average MPG per Cylinders,1,1,command
+Cars,singleAttrBar,Show me count of models by origin,1,1,command
+Cars,scatterFaceted,Show me Acceleration vs. Weight broken out by Origin,1,1,command
+Cars,scatterColor,Show me MPG vs Displacement colored by Origin,1,1,command
+Cars,scatterColor,Show me MPG vs Displacement distinguished by Origin,2,1,command
+Cars,multiLine,"Show me the Average Horespower per origin, trended by ascending years",1,1,command
+Cars,stackedBar,"Show me count of models grouped by cylinders, stacked by Origin",1,1,command
+Cars,histogram,"Show me a histogram of weight, rounded to 500",1,1,command
+Cars,line,Show me average weight trended over ascending years,1,1,command
+Cars,scatterFaceted,"create scatter plot of weight vs acceleration by car model, group by origin",1,1,command
+Cars,singleAttrBar,create a histogram of the count of models by origin,1,1,command
+Cars,scatter,create a scatterplot of acceleration vs horsepower by model,1,1,command
+Cars,bar,create a bar chart showing the average MPG grouped by cylinders,1,1,command
+Cars,stackedBar,"create a stacked bar chart of the count of models by cylinder, group by origin",1,1,command
+Cars,multiLine,create a line graph of average horsepower by year grouped by origin,1,1,command
+Cars,histogram,create a histogram of model count by weight,1,1,command
+Cars,line,create a line graph of average weight by year,1,1,command
+Superstore,line,Show me the total sales forecast by order date,1,1,command
+Superstore,line,Show me the cumulative sales by order date,2,1,command
+Superstore,bar,Show me the average profit by state,1,1,command
+Superstore,multiLine,"Show me the total sales by order date, one line for each category",1,1,command
+Superstore,multiLine,Show me the total sales by order date split by category,2,1,command
+Superstore,multiLine,"Show me the total sales over time for these categories: furniture, office supplies, and technology",3,1,command
+Superstore,stackedBar,"Show me a bar chart of total profit by region, and stack the bars by ship status",1,1,command
+Superstore,stackedBar,"Show me a stacked bar chart of total profit by region, stacked by ship status",2,1,command
+Superstore,scatterFaceted,"Show me a series of scatter charts of profit by sales, one chart for each region",1,1,command
+Superstore,scatterFaceted,Show me a scatter chart of profit by sales for each region,2,1,command
+Superstore,scatterFaceted,"Show me a scatter chart of profit by sales, one chart for each region",3,1,command
+Superstore,scatter,Show me a scatter chart of sales by profit,1,1,command
+Superstore,histogram,show me a bar chart of count by order quantity,1,1,command
+Movies,scatterColor,show the spread of production budget and worldwide gross for each movie with genre as a legend,2,1,command
+Superstore,scatterColor,"show me a scatter chart of profit by sales, color coded by region",1,1,command
+Superstore,scatterColor,"show me a scatter chart of profit by sales, split by region",2,1,command
+Superstore,groupedBar,"show me a series of bar charts of average profit, split by segment, one chart per ship mode",1,1,command
+Superstore,groupedBar,show me one bar chart of average profit split by segment for each ship mode,2,1,command
+Superstore,singleAttrBar,"show me a bar chart of count by sub-category, sorted by count highest to lowest",1,1,command
+Superstore,singleAttrBar,"show me a bar chart of count by sub-category, sorted by count descending",2,1,command
+Superstore,singleAttrBar,"show me a bar chart of count by sub-category, descending sort by count",3,1,command
+Superstore,singleAttrBar,"show me a bar chart of count by sub-category, highest count to lowest",4,1,command
+Superstore,singleAttrBar,show me a highest to lowest bar chart of count by sub-category,5,1,command
+Superstore,singleAttrBar,"show me a bar chart of count by sub-category, highest first",6,1,command
+Movies,singleAttrBar,Create column graph of all movies by creative type,1,1,command
+Movies,scatter,Create scatter graph of IMDB rating by Rotten Tomatoes Rating,1,1,command
+Movies,multiLine,Create timeline of worldwide gross by release year displayed by major genre,1,1,command
+Superstore,histogram,Show me the variation in the amount ordered by different entities in different orders,1,1,command
+Cars,histogram,show me the distribution of car weight,1,1,command
+Cars,stackedBar,show me a distribution of cylinders grouped by car origin,1,1,command
+Cars,scatter,Correlate Acceleration and Horsepower.,1,1,command
+Cars,bar,Compare AVG (MPG) with Cylinders,1,1,command
+Movies,line,show me a line plot of average movie production budget over time for all movies,1,1,command
+Movies,line,show me small multiple scatter plots of movie production budget vs gross worldwide where each multiple is a specific rating,2,1,command
+Movies,scatterFaceted,show me scatter plots of movie production budget vs gross worldwide revenue broken down by rating,1,1,command
+Movies,scatterFaceted,show me small multiple scatter plots of movie production budget vs gross worldwide where each multiple is a specific rating,2,1,command
+Movies,groupedBar,show me average production budget of each creative type across content ratings.,1,1,command
+Movies,groupedBar,show me small multiples of average production budget for each creative type across different ratings,2,1,command
+Movies,groupedBar,"show me how each rating, broken down by creative type, affects the average production budget",3,1,command
+Movies,histogram,show me a histogram of movie length,1,1,command
+Movies,multiLine,show me how total gross revenue of all movies changes over a year for each genre,1,1,command
+Movies,multiLine,show me a line plot of sum of gross revenue for each genre over time,2,1,command
+Movies,multiLine,show me how gross revenue of genres changes over time,3,1,command
+Movies,scatter,show me a scatterplot of rotten tomatoes ratings vs imdb ratings,1,1,command
+Movies,scatterColor,show me a scatterplot of worldwide gross margin vs production budget; color movies by their genre,1,1,command
+Movies,bar,show me the average gross revenue of for each genrea,1,1,command
+Movies,bar,show me a bar plot where the x axis is movie genre and the y axis is average worldwide revenue,2,1,command
+Movies,singleAttrBar,"show me a histogram of the count of each creative type, sorted in descending number of releases.",1,1,command
+Movies,singleAttrBar,"show me the number of each creative type move in a bar chart, order the bars in decreasing order.",2,1,command
+Superstore,scatterColor,Can you create a graph showing sales and profit by region?,1,1,command
+Superstore,groupedBar,Show average profit by ship mode broken out by each segment,1,1,command
+Superstore,bar,Show the average profit by state,1,1,command
+Superstore,scatter,Show correlation between sales and profit,1,1,command
+Superstore,histogram,show a relationship using a bar chart to show the relationship between items order and the count of those items,1,1,command
+Superstore,line,Show a line chart the semi-annual sales forecast,1,1,command
+Superstore,multiLine,show a line chart of semi sales by category,1,1,command
+Cars,line,chart average weight over time,1,1,command
+Cars,histogram,chart number of vehicles by weight in buckets of 500,1,1,command
+Cars,stackedBar,show a stacked bar chart of number of vehicles to number for cylinders grouped by country,1,1,command
+Cars,bar,chart average MPG to cylinders,1,1,command
+Cars,singleAttrBar,chart count to country,1,1,command
+Cars,scatterFaceted,Europe acceleration by weight,1,3,query
+Cars,scatterFaceted,japan,1,3,query
+Cars,scatterFaceted,usa,1,3,query
+Superstore,singleAttrBar,The count of orders by sub-category,1,3,query
+Superstore,singleAttrBar,Bar chart,1,3,query
+Superstore,singleAttrBar,Descending order,1,3,query
+Movies,scatterFaceted,Scatter Production Budget vs Worldwide Gross,1,2,query
+Movies,scatterFaceted,Slice by Content Rating,1,2,query
+Movies,multiLine,time series: Sum(Worldwide Gross) by Release Year,1,2,query
+Movies,multiLine,group and color code by Major Genre,1,2,query
+Cars,histogram,Histogram by weight,1,2,query
+Cars,histogram,Count of binned weight,1,2,query
+Cars,multiLine,Group by Origin,1,2,query
+Cars,multiLine,plot Year by AVG Horsepower,1,2,query
+Cars,bar,Group by Cylinders,1,2,query
+Cars,bar,Plot Cylinders by AVG MPG,1,2,query
+Superstore,bar,The average profit of orders by each state,1,2,query
+Superstore,bar,Bar chart,1,2,query
+Superstore,scatterFaceted,The distribution of profit and sales by regions,1,2,query
+Superstore,scatterFaceted,Scatter plots,1,2,query
+Superstore,scatterColor,The distribution of profit and sales by regions,1,2,query
+Superstore,scatterColor,Colored scatter plot,1,2,query
+Superstore,scatter,The distribution of profit and sales,1,2,query
+Superstore,scatter,Scatter plot,1,2,query
+Cars,scatterColor,Scatterplot mpg vs displacement color by origin,1,1,query
+Cars,stackedBar,Cylinders count bar chart Color by origin,1,1,query
+Movies,histogram,histogram of running time,1,1,query
+Cars,bar,Cylinders average mpg,1,1,query
+Cars,multiLine,Line chart avg horsepower per year Color by origin,1,1,query
+Cars,singleAttrBar,Count by origin,1,1,query
+Movies,singleAttrBar,histogram for creative type,1,1,query
+Cars,scatterFaceted,Acceleration by weight scatterplot per origin,1,1,query
+Cars,scatterFaceted,Acceleration by weight scatterplot facet by origin,2,1,query
+Cars,scatterFaceted,"For each origin, acceleration by weight scatterplot",3,1,query
+Cars,scatter,Acceleration by horsepower scatterplot,1,1,query
+Cars,scatter,Acceleration by horsepower points,2,1,query
+Movies,scatterColor,scatterplot budget and worldwide gross colored by genre,1,1,query
+Superstore,line,Line Graph of SUM (Sales Forecast) vs Order Date,1,1,query
+Superstore,bar,Column Chart of AVG (Profit) vs alphabetical order State,1,1,query
+Superstore,groupedBar,Column Chart of Avg (Profit) by Segment vs each Ship Mode,1,1,query
+Superstore,scatterColor,Scatter Plot of Profit by region vs Sales,1,1,query
+Superstore,singleAttrBar,Descending Column Chart of Count vs Sub-category,1,1,query
+Superstore,scatterFaceted,Scatter Plot for each region of Profit vs Sales,1,1,query
+Superstore,multiLine,Multi-line Graph of Sum (Sales) by Category vs Order Date,1,1,query
+Superstore,scatter,Scatter Plot of Sales vs Profit,1,1,query
+Superstore,histogram,Columns of Count vs Order Quantity,1,1,query
+Superstore,stackedBar,Stacked columns of Sum (profit) segmented by Ship Status vs Region,1,1,query
+Superstore,stackedBar,"Stacked bar chart on ship status, Sum of profit by region",1,1,query
+Superstore,multiLine,"Line chart, Sum of sales by order date, on category",1,1,query
+Superstore,scatter,"Scatter plot, sales by profit",1,1,query
+Superstore,line,"Line chart, Sum of Sales Forecast by Order Date",1,1,query
+Superstore,scatterColor,"Scatter Plot, Profit by Sales, on Region",1,1,query
+Superstore,groupedBar,"Clustered Column chart, Average of Profit by segment, small multiples on ship mode",1,1,query
+Superstore,bar,"Column chart, Average of profit by state",1,1,query
+Superstore,histogram,"Frequency chart, order quantity",1,1,query
+Superstore,singleAttrBar,"Column chart, count by sub-category",1,1,query
+Superstore,scatterFaceted,"Scatter Plot, profit by sales, small multiples on region",1,1,query
+Superstore,histogram,count of orders by order quantity,1,1,query
+Superstore,singleAttrBar,count by sub-category distinct item,1,1,query
+Superstore,singleAttrBar,count for each subcategory item,2,1,query
+Superstore,singleAttrBar,total count for each subcategory item,3,1,query
+Superstore,scatterFaceted,profit amount per sales amount by region,1,1,query
+Superstore,multiLine,"total sales by order date and category where category is furniture, office supplies, technology",1,1,query
+Superstore,stackedBar,total profit by region and ship status,1,1,query
+Superstore,line,total sales forecast by order date in 2016-2017,1,1,query
+Superstore,line,total sales forecast by order date where year in 2016 or 2017,2,1,query
+Superstore,bar,average profit by state,1,1,query
+Superstore,groupedBar,average profit by ship mode type and segment,1,1,query
+Movies,scatter,scatter IMDB Rating vs Rotten Tomatoes Rating,1,1,query
+Movies,bar,Average Worldwide Gross by Major Genre,1,1,query
+Movies,histogram,histogram of Running Time,1,1,query
+Movies,line,Average Production Budget by Year,1,1,query
+Movies,stackedBar,Sum(Worldwide Gross) grouped by Genre and sub grouped by Content Rating,1,1,query
+Movies,scatterColor,Scatter Production Budget vs Worldwide Gross. Color Code Major Genre.,1,1,query
+Movies,groupedBar,Avg(Poduction Budget) Grouped by Content Rating and sub-grouped by Creative Type,1,1,query
+Cars,groupedBar,"average acceleration by origin, with small multiples by cylinders",1,1,query
+Cars,groupedBar,"bars of avg acceleration, colored by origin, with small multiples by cylinders",2,1,query
+Cars,scatterFaceted,"scatterplot weight by acceleration for individual models, small multiples by origin",2,1,query
+Cars,scatter,"scatterplot of horsepower by acceleration, separated by individual models",2,1,query
+Cars,multiLine,"average horsepower over years, colored by origin",1,1,query
+Cars,multiLine,"average horsepower over time, colored by origin",2,1,query
+Cars,line,average weight over year,1,1,query
+Cars,line,average weight over time,2,1,query
+Cars,line,line chart of average weight over year,3,1,query
+Cars,line,line chart of average weight over time,4,1,query
+Cars,histogram,"histogram of weight, bin size 500",1,1,query
+Cars,histogram,"histogram of weight, number of bins 8",2,1,query
+Cars,stackedBar,"stacked bar of count of models by cylinders, colored by origin",1,1,query
+Cars,stackedBar,"stacked bar of number of models by cylinders, colored by origin",2,1,query
+Cars,stackedBar,"vertical stacked bar of number of models by cylinders, colored by origin",3,1,query
+Cars,bar,bar chart of average mpg by cylinders,1,1,query
+Cars,bar,vertical bar chart of average mpg by cylinders,2,1,query
+Cars,singleAttrBar,number of models by origin,1,1,query
+Cars,singleAttrBar,count of models by origin,2,1,query
+Cars,singleAttrBar,bar chart of number of models by origin,3,1,query
+Cars,singleAttrBar,bar chart of count of models by origin,4,1,query
+Cars,singleAttrBar,vertical bar chart of count of models by origin,5,1,query
+Cars,singleAttrBar,vertical bar chart of number of models by origin,6,1,query
+Cars,line,Weight of cars grouped by year,1,1,query
+Cars,histogram,Histogram of cars by weight,2,1,query
+Cars,singleAttrBar,Histogram of car models by country,2,1,query
+Cars,bar,bar chart for mpg v/s cylinders,1,1,query
+Superstore,scatterColor,"select sales, profit from table group by(region)",1,1,query
+Superstore,groupedBar,"select profit, class from table group by segment",1,1,query
+Cars,groupedBar,"Mean acceleration group by Cylinders and Origin, X axis Origin, Color Origin, Each plot Cylinders",1,1,query
+Cars,stackedBar,"Stacked bar chart, x axis cylinder, y axis count, color by Origin",1,1,query
+Cars,scatter,"Scatter plot, x axis horsepower, y axis acceleration",1,1,query
+Cars,scatterColor,"Scatter plot, x axis Displacement, Y axis MPG, Color by Origin",1,1,query
+Cars,bar,"Bar chart, x axis cylinders, y axis mean MPG",1,1,query
+Cars,scatterFaceted,"Scatterplot, x axis weight, y axis acceleration, facet by origin",1,1,query
+Cars,singleAttrBar,"Bar chart, x axis origin, y axis count of rows",1,1,query
+Cars,histogram,"Histogram of weight, bin width of 500, min x axis 1500, max x axis 5500",1,1,query
+Movies,scatter,Scatterplot of Rotten Tomatoes Rating by IMDB Rating,1,1,query
+Movies,stackedBar,"Bar chart of total worldwide gross by major genre, by content rating",1,1,query
+Cars,scatter,plot horsepower by acceleration,1,1,query
+Cars,bar,plot cylinders by average mpg,1,1,query
+Cars,singleAttrBar,plot origin,1,1,query
+Cars,histogram,plot weight histogram,1,1,query
+Cars,scatterFaceted,plot weight vs acceleration by origin,1,1,query
+Cars,scatter,acceleration to horsepower,2,1,query
+Cars,singleAttrBar,count of cars by origin,2,1,query
+Movies,singleAttrBar,Movie count based on creative type,1,1,query
+Cars,groupedBar,"For each cylinders, average acceleration per origin",1,1,query
+Cars,groupedBar,"For each cylinders, average acceleration Color by origin",2,1,query
+Movies,histogram,Movie run time distribution,1,1,query
+Cars,line,Average weight over year,1,1,query
+Cars,line,Line chart average weight over year,2,1,query
+Movies,scatterFaceted,Gross vs. production budget over different ratings,1,1,query
+Movies,stackedBar,Stack bar chart of SUM(worldwide gross) vs. movie genre based on content rating,1,1,query
+Cars,histogram,Sum weight in a bar chart,1,1,query
+Superstore,line,sales forecast between Jan 2016 and July 2017,1,1,query
+Movies,line,budget over time,1,1,query
+Cars,scatter,Scatter plot of horsepower across acceleration,1,1,query
+Movies,scatter,Rating of movies in IMBD and Rotten Tomatoes,1,1,query
+Movies,scatterColor,budget vs gross income across movie genres,1,1,query
+Movies,line,production budget across years,1,1,query
+Movies,scatterFaceted,production budget vs worldwide gross regarding movie rating,1,1,query
+Movies,bar,gross across genres,1,1,query
+Cars,singleAttrBar,Plot Count vs Origin,1,1,query
+Cars,singleAttrBar,Plot ROWCOUNT vs Origin,1,1,query
+Cars,singleAttrBar,Plot Count(cars) vs Origin,1,1,query
+Superstore,line,Product Sales Revenue by Month,1,1,query
+Superstore,histogram,Product Single Order Quantity Trend,1,1,query
+Superstore,scatter,Profit vs. Sales Cluster,1,1,query
+Superstore,scatterFaceted,Profit vs. Sales Cluster by Region,1,1,query
+Superstore,scatterColor,Profit vs. Sales Cluster by Region,1,1,query
+Superstore,bar,Profit by State,1,1,query
+Cars,singleAttrBar,count by origin,1,1,query
+Cars,line,average weight by year,1,1,query
+Cars,stackedBar,count by cylinders and origin,1,1,query
+Cars,histogram,count by weight,1,1,query
+Cars,scatter,horsepower by acceleration,1,1,query
+Cars,bar,cylinders by acceleration,1,1,query
+Movies,stackedBar,Total ww gross by genre and content rating,2,1,query
+Movies,line,Average budget by year,1,1,query
+Movies,bar,Average ww gross by genre,1,1,query
+Movies,multiLine,Total gross by year and genre,1,1,query
+Movies,multiLine,Total gross by genre and year,2,1,query
+Movies,multiLine,Gross by genre and year,3,1,query
+Movies,multiLine,"Gross, year and genre as a line chart",4,1,query
+Cars,line,Plot Year by AVG Weight,1,1,query
+Movies,histogram,histogram of running time,1,1,query
+Movies,line,line chart of AVG production budget of each release year,1,1,query
+Movies,scatter,scatter plot of IMDB rating vs Rotten tomatoes rating,1,1,query
+Superstore,groupedBar,Avg(Profit) Split by Ship Mode by category and segement,2,1,query
+Superstore,singleAttrBar,Count Sub-Category Asc,1,1,query
+Superstore,singleAttrBar,Count asc Sub-Category render best,2,1,query
+Superstore,scatterColor,Sum(Sales) X Sum(Profit) Y by region render cluster,1,1,query
+Superstore,scatterColor,Sum(Sales) 1 Sum(Profit) 2 by region render cluster,2,1,query
+Superstore,histogram,Count Order Quantity asc render best,1,1,query
+Superstore,histogram,Count Order Quantity asc order render best,2,1,query
+Superstore,line,Sum(Sales Forecast) by Order Date asc render line,1,1,query
+Superstore,line,Sum(Sales Forecast) by Order Date asc render best,2,1,query
+Superstore,scatter,Sum(Profit) and Sum(Sales) render cluster,1,1,query
+Superstore,scatter,Sum(Profit) 1and Sum(Sales) 2 render cluster,2,1,query
+Superstore,scatter,Sum(Profit) x and Sum(Sales) y render cluster,3,1,query
+Superstore,multiLine,Sum(Sales) by Order Date split by Category render line,1,1,query
+Superstore,multiLine,Sum(Sales) by Order Date split by Category render line asc,2,1,query
+Cars,bar,Average MPG based on cylinders,1,1,query
+Cars,histogram,Histogram of number of cars by weight,1,1,query
+Movies,multiLine,gross per genre over time,1,1,query
+Movies,scatter,IMDB rating by rotten tomatoes rating,1,1,query
+Movies,scatterFaceted,budget by worldwide gross per content rating,1,1,query
+Movies,scatterColor,prod budget by gross for movies per genre,1,1,query
+Movies,groupedBar,budget vs content rating regarding different creative types,1,1,query
+Movies,multiLine,release year vs worldwide gross in genres,1,1,query
+Movies,singleAttrBar,counts of movies by creative type,1,1,query
+Movies,stackedBar,gross across genres regarding content rating,1,1,query
+Cars,scatter,acceleration vs horsepower,1,1,query
+Movies,scatterColor,production budget vs ww gross by movie and major genre,1,1,query
+Movies,bar,average worldwide gross by major genre,1,1,query
+Movies,bar,avg ww gross by genre,2,1,query
+Movies,scatter,scatter of imdb rating by rotting tomatoes rating,1,1,query
+Movies,scatter,imdb rating vs rotten tomatoes rating by movie,2,1,query
+Movies,stackedBar,ww gross by major genre and content rating,1,1,query
+Movies,stackedBar,total ww gross by genre and rating,2,1,query
+Movies,groupedBar,average production budget by creative type and content rating,1,1,query
+Movies,line,average production budget over time,1,1,query
+Movies,line,average production budget by year,2,1,query
+Movies,line,avg production budget over time,3,1,query
+Movies,histogram,count of movies by binned running time,1,1,query
+Movies,multiLine,ww gross over time by genre,1,1,query
+Movies,multiLine,total worldwide gross by release year and major genre,2,1,query
+Movies,singleAttrBar,count of movies by creative type,3,1,query
+Superstore,scatter,Scatterplot of sales vs. profit,1,1,query
+Movies,scatter,relation between rotten tomatoes rating and IMDB rating,1,1,query
+Movies,scatter,relation between rotten tomatoes and IMDB ratings,2,1,query
+Movies,scatterFaceted,wordwide gross versus production budget for each content rating,1,1,query
+Superstore,singleAttrBar,Bart chart quantity vs. product type all orders,1,1,query
+Superstore,multiLine,"line chart of sales vs. order date of furniture, office supplies, technology. Distnighish by color",1,1,query
+Superstore,line,line chart sum of sales forecast vs. order date all orders,1,1,query
+Movies,histogram,running time distribution,1,1,query
+Movies,histogram,"running time distribution, buckets of 20 minutes for running time",2,1,query
+Movies,histogram,running time in 20 minute buckets,3,1,query
+Movies,bar,Gross versus major genre,1,1,query
+Movies,bar,Gross versus genre,2,1,query
+Superstore,bar,Bar chart scale -10000-50000 average profit vs. state all orders,1,1,query
+Movies,multiLine,worldwide gross for each genre for each year 1995 to now,2,1,query
+Movies,stackedBar,"Stacked bar chart of gross for each content rating, by major genre",1,1,query
+Movies,stackedBar,"Cumulative gross for each content rating, by major genre",2,1,query
+Movies,scatterColor,Relation between worldwide gross and production budget for each major genre,1,1,query
+Movies,groupedBar,"Production budget for each creative type, by content rating",1,1,query
+Movies,line,"average production budget by year, 1995 to 2009",1,1,query
+Cars,scatter,Scatterplot of horsepower vs acceleration,1,1,query
+Cars,multiLine,Line graph of year versus average horsepower by origin,1,1,query
+Cars,stackedBar,Bar chart of number of cylinders. Stack bar charts by origin,1,1,query
+Cars,histogram,Bar chart of weight,1,1,query
+Cars,bar,Bar chart of cylinders versus average mpg,1,1,query
+Cars,scatterColor,Scatterplot of displacement vs mpg. Color by origin.,1,1,query
+Cars,scatterFaceted,Scatterplot of weight vs. acceleration. Break into multiple scatterplots by origin,1,1,query
+Cars,line,Line graph of year vs. average weight,1,1,query
+Cars,singleAttrBar,Bar chart of number of cars from each origin,1,1,query
+Movies,scatter,Scatter Plot of Rotten Tomatoes rating by the IMDB rating.,1,1,query
+Movies,scatterColor,Scatter Plot of Worldwide Gross by Production Budget with Major Genre labels,1,1,query
+Movies,scatterFaceted,Worldwide Gross relationship to Production Budget filtered by Content Rating,1,1,query
+Movies,scatterFaceted,Worldwide Gross relationship to Production Budget separated by Content Rating,2,1,query
+Movies,multiLine,Worldwide Gross through time for each Major Genre,1,1,query
+Movies,multiLine,Yearly Worldwide Gross for each Major Genre,2,1,query
+Movies,histogram,Total Count based on Running Time,1,1,query
+Movies,line,Yearly average Production Budget,1,1,query
+Movies,stackedBar,Total Worldwide Gross by Major Genre separated by Content Rating,1,1,query
+Movies,stackedBar,Total Worldwide Gross by Major Genre with Content Rating labels,2,1,query
+Movies,bar,Average Worldwide Gross by Major Genre,1,1,query
+Movies,groupedBar,Average Production Budget by Creative Type filtered by Content Rating,1,1,query
+Movies,groupedBar,Average Production Budget by Creative Type separated by Content Rating,2,1,query
+Movies,singleAttrBar,Count by Creative Type,1,1,query
+Cars,singleAttrBar,Count Rows by Origin,1,1,query
+Cars,groupedBar,Average Acceleration by Engine Cylinders and Origin,1,1,query
+Cars,histogram,Count by Weight Buckets,1,1,query
+Cars,stackedBar,"Count by Cylinders and Origin, Stacked",1,1,query
+Cars,line,Avg weight by Year,1,1,query
+Cars,scatterFaceted,Acceleration distribution by Weight and Origin,1,1,query
+Cars,multiLine,Average Horsepower per year and origin,1,1,query
+Cars,scatter,Horsepower distribution by acceleration,1,1,query
+Cars,bar,Average MPG by cylinders,1,1,query
+Superstore,scatter,scatter plot sales vs profit,1,1,query
+Superstore,line,line chart sum of sales forecast by order date,1,1,query
+Superstore,multiLine,line chart sum of sales by order date categorized by category,1,1,query
+Superstore,bar,Bar Graph AVG(Profit) by State,1,1,query
+Superstore,singleAttrBar,Bar Chart Count by Sub-Category,1,1,query
+Superstore,line,Linegraph SUM(Sales Forecast) by Order Date,1,1,query
+Superstore,histogram,Bar Chart Count by Order Quantity,1,1,query
+Superstore,scatter,Scatterplot Sales by Profit,1,1,query
+Superstore,scatterFaceted,Region Scatterplot Profit by Sales,1,1,query
+Superstore,groupedBar,Ship Mode Bar Chart AVG(Profit) by Segment),1,1,query
+Superstore,multiLine,Category Line Graph Sum(Sales) by Order date,1,1,query
+Cars,scatterFaceted,scatterplot acceleration vs weight per country,1,1,query
+Cars,scatter,scatterplot acceleration vs horsepower,1,1,query
+Cars,scatterColor,scatterplot MPG vs Displacement separated by country,1,1,query
+Cars,histogram,Distribution of car weight,1,1,query
+Cars,histogram,Histogram of car weight,2,1,query
+Cars,singleAttrBar,Distribution of country,1,1,query
+Cars,bar,Average MPG by cylinders histogram,1,1,query
+Cars,multiLine,How has AVG (Horsepower) evolved over time?,1,2,question
+Cars,multiLine,Segregate it by the car origin.,1,2,question
+Movies,line,what's the production budget for movies in different years?,1,1,question
+Cars,scatter,Is there a correlation between acceleration and horsepower?,1,1,question
+Cars,histogram,How many heavy cars are in the dataset?,1,1,question
+Cars,stackedBar,Are there any American 5 cylinder cars?,1,1,question
+Cars,scatterColor,How does displacement relate to fuel economy for cars from Europe v. USA?,1,1,question
+Cars,bar,Which cylinder cars have the highest fuel economy?,1,1,question
+Cars,singleAttrBar,Which countries have the most cars in this dataset?,1,1,question
+Cars,groupedBar,Which countries have the highest acceleration for cars of different cylinders?,1,1,question
+Cars,multiLine,How do the horsepowers of the cars from different regions change with years?,1,1,question
+Cars,scatterColor,What is the correlation between displacement and MPG of cars with different origins?,1,1,question
+Cars,scatter,what is the correlation between horsepower and acceleration?,1,1,question
+Cars,scatter,Is there a correlation between cars' horsepower and acceleration?,2,1,question
+Cars,scatterColor,"how does displacement relate to mpg for individual models, partitioned by country",1,1,question
+Cars,scatterFaceted,"how does weight relate to acceleration for car models, small multiples by origin",1,1,question
+Cars,scatter,how does horsepower relate to acceleration for individual car models,1,1,question
+Superstore,bar,How much is the average of profit of each state?,1,1,question
+Superstore,bar,How do the company earn in each state?,2,1,question
+Movies,groupedBar,What creative type of movie had the highest production budget for each content rating?,1,1,question
+Movies,scatterColor,What is the relationship between production budget and worldwide gross for each major genre?,1,1,question
+Movies,line,What is the relationship between release year and average production budget?,1,1,question
+Movies,bar,What major genre had the highest average worldwide gross?,1,1,question
+Movies,bar,What major genre had the lowest average worldwide gross?,2,1,question
+Movies,bar,How much did average worldwide gross vary by major genre?,3,1,question
+Movies,singleAttrBar,How many movies are there are of each creative type?,1,1,question
+Movies,singleAttrBar,Which creative type had the most movies?,2,1,question
+Movies,singleAttrBar,Which creative type had the fewest movies?,3,1,question
+Movies,multiLine,What is the total worldwide gross for each major genre across time?,1,1,question
+Movies,scatterFaceted,Is there a relationship between production budget and worldwide gross for each content rating?,1,1,question
+Movies,histogram,What is the distribution of running times for each movie?,1,1,question
+Movies,scatter,Is there a relationship between IMDB rating and rotten tomatoes rating?,1,1,question
+Cars,scatter,Does higher horsepower mean lower acceleration?,1,1,question
+Cars,stackedBar,How many cylinders do cars manufactured in different countries have?,1,1,question
+Cars,singleAttrBar,How many cars do each country manufacture?,1,1,question
+Cars,bar,What's the mileage for cars based on the number of cylinders present?,1,1,question
+Cars,bar,Does higher cylinder count mean mean lower mileage?,2,1,question
+Cars,bar,How does mileage relate to cylinder count?,3,1,question
+Superstore,multiLine,What were the total sales for each date in each category?,1,1,question
+Superstore,multiLine,How much was sold each day for each category?,2,1,question
+Superstore,bar,What is the average profit for each state?,1,1,question
+Superstore,scatter,What is the relationship between profit and sales?,1,1,question
+Superstore,groupedBar,What is the average profit of each ship mode divided by segment?,1,1,question
+Superstore,line,What is the sales forecast for each date?,1,1,question
+Superstore,histogram,How many orders were placed for each order quantity?,1,1,question
+Superstore,scatterColor,What is the relationship between sales and profit for each region?,1,1,question
+Superstore,scatterFaceted,What is the relationship between sales and profit for each region?,1,1,question
+Superstore,singleAttrBar,How many orders were placed for each sub-category?,1,1,question
+Superstore,stackedBar,"What is the total profit for each region, based on ship status?",1,1,question
+Cars,bar,what is the average MPG for different cylinders,2,1,question
+Cars,scatter,What is the relation between horsepower and acceleration,2,1,question
+Cars,line,What is the average weight distribution of cars between 1974 and 1980,1,1,question
+Cars,bar,how mpg varies for different cylinder type,2,1,question
+Cars,groupedBar,how acceleration varies with number of cylinders by origin,2,1,question
+Cars,line,how weight varies each year,2,1,question
+Cars,scatter,how is acceleration related to horsepower,1,1,question
+Cars,multiLine,How has horsepower changed over time by country?,1,1,question
+Cars,line,Have cars gotten lighter over time?,1,1,question
+Movies,line,How production budge changes over release years?,1,1,question
+Movies,line,What was the average production budget of movies by year?,1,1,question
+Movies,groupedBar,"What's the average production budget of the different rated movies, separated by creative type.",1,1,question
+Movies,bar,Which genre movie makes most worldwide gross,1,1,question
+Movies,scatter,Are IMDb rating and rotten tomatoes rating related,1,1,question
+Superstore,multiLine,what is the sales trend of the different product categories?,1,1,question
+Superstore,histogram,How many products have 3 or more quantity ordered ?,1,1,question
+Superstore,histogram,How many products are ordered in single quantity ?,2,1,question
+Superstore,bar,What are the profits across different states?,1,1,question
+Superstore,singleAttrBar,What product category has more orders placed?,1,1,question
+Movies,bar,what is the worldwide gross distribution per genre,1,1,question
+Movies,groupedBar,what's the breakdown of production budget by creative type per content rating?,1,1,question
+Superstore,groupedBar,What is our profit based on shipping mode by customer segment?,1,1,question
+Movies,scatter,how does Rotten Tomatoes Rating change as IMDB Rating?,1,1,question
+Movies,stackedBar,What is the total worldwide gross earned by each major genre and content rating?,1,1,question
+Movies,stackedBar,"For each genre and rating, what is the total world-wide gross earnings?",4,1,question
+Movies,stackedBar,How much did each type of movie earn in across the whole world?,5,1,question
+Movies,stackedBar,How much money did movies of each genre and rating make?,7,1,question
+Movies,groupedBar,"What was the average budget for each content rating and creative type, as multiple column charts",1,1,question
+Movies,line,What is the average production budget in each year,2,1,question
+Movies,singleAttrBar,Which creative types have the most movies?,2,1,question
+Movies,bar,"On average, how much was earned by movies of each genre?",2,1,question
+Movies,histogram,How many movies are of each length?,2,1,question
+Superstore,scatterFaceted,What is the sales vs profit ratio of the four regions,1,1,question
+Superstore,bar,What is the average profit of each state,1,1,question
+Superstore,scatterColor,What is the sales vs profit ratio of all the zones,1,1,question
+Superstore,groupedBar,What is the average profit of different segments on the ship modes of transport,1,1,question
+Superstore,scatter,how much is the profit for sales for each,1,1,question
+Movies,bar,What was the average worldwide gross of movies by genre?,1,1,question
+Cars,singleAttrBar,how many models are proudced by each country,1,1,question
+Cars,line,what is the average weight of cars over time,1,1,question
+Movies,bar,How much did major genres gross in total,1,1,question
+Cars,histogram,What is the distribution of weight across all cars?,1,1,question
+Cars,histogram,How much do various cars weigh?,2,1,question
+Cars,histogram,What is the range of weights for all cars?,3,1,question
+Superstore,scatterFaceted,What is the correlation between sales and profit by region,1,1,question
+Movies,histogram,what's the distribution of running times by movie,2,1,question
+Movies,histogram,how many movies are there in 20 minute bins of running time,3,1,question
+Movies,singleAttrBar,how many movies are there for each creative type,1,1,question
+Movies,singleAttrBar,which creative types had the most movies?,2,1,question
+Movies,singleAttrBar,how many films of each creative type,1,1,question
+Cars,singleAttrBar,where do the cars originate from?,1,1,question
+Cars,line,How does AVG (Weight) evolve over the years?,1,1,question
+Cars,groupedBar,How does the acceleration of cars from different countries vary by the number of cylinders?,1,1,question
+Cars,scatterFaceted,How does acceleration vary by weight for cars from different regions?,1,1,question
+Cars,bar,What is the average MPG for cars with different cylinders?,1,1,question
+Cars,bar,How does MPG vary by the number of cylinders in a car?,2,1,question
+Cars,scatter,How does acceleration change with horsepower?,1,1,question
+Cars,scatter,How does acceleration behave compared to horsepower?,2,1,question
+Cars,singleAttrBar,How many cars are from each region?,1,1,question
+Cars,scatterColor,"how does MPG compare to displacement, broken out by region?",1,1,question
+Cars,scatterColor,"For each region, how does a car's MPG vary with displacement?",2,1,question
+Cars,multiLine,How has horsepower changed over time in each region?,1,1,question
+Cars,stackedBar,what is the breakdown of cars by the number of cylinders in each region?,1,1,question
+Cars,stackedBar,How many cars have various numbers of cylinders in each region?,2,1,question
+Cars,line,What is the average weight of cars by model year?,1,1,question
+Cars,line,How has the average weight of cars changed over the years?,2,1,question
