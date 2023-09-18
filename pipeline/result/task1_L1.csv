@@ -1,0 +1,1193 @@
+out1s,composites,semantics,NL1
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+Step 2. Chart Semantics:
+- Data: Google's stock price over time
+- Field (Value): Date (temporal), Price (quantitative)
+- Transform: N/A
+- Mark: Line
+- Chart-Type: Line Chart
+- Encoding: X-axis represents the date in a temporal format (year, month, date, hours, minutes) and Y-axis represents the price in a quantitative format.
+- Style: N/A
+- Interaction (e.g., tooltip): N/A
+Step 3. Level 1 NL Description:
+This is a line chart representing Google's stock price over time. The X-axis is encoded with the date in a temporal format (year, month, date, hours, minutes) and the Y-axis is encoded with the price in a quantitative format. The line mark is used to connect the data points.","- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A","- Data: Google's stock price over time
+- Field (Value): Date (temporal), Price (quantitative)
+- Transform: N/A
+- Mark: Line
+- Chart-Type: Line Chart
+- Encoding: X-axis represents the date in a temporal format (year, month, date, hours, minutes) and Y-axis represents the price in a quantitative format.
+- Style: N/A
+- Interaction (e.g., tooltip): N/A","This is a line chart representing Google's stock price over time. The X-axis is encoded with the date in a temporal format (year, month, date, hours, minutes) and the Y-axis is encoded with the price in a quantitative format. The line mark is used to connect the data points."
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file located at 'https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/mobility.csv'.
+- Field (Value): The fields used in this visualization are 'Income', 'Mobility', and 'Population'. All of these fields are quantitative.
+- Transform: The 'Population' field is transformed using a logarithmic scale.
+- Mark: The mark used in this visualization is 'point'.
+- Chart-Type: This is a scatter plot.
+- Encoding: The 'Income' field is encoded with color, the 'Mobility' field is encoded with the x-axis, and the 'Population' field is encoded with the y-axis. The color encoding uses a 'sinebow' color scheme and is binned into 5 categories.
+- Style: The width of the visualization is set to match the container.
+- Interaction (e.g., tooltip): Not specified.
+
+Step 3. Level 1 NL Description:
+This is a scatter plot visualization that uses point marks to represent data from a CSV file. The data fields 'Income', 'Mobility', and 'Population' are all quantitative. The 'Income' field is represented by color, which is binned into 5 categories and uses a 'sinebow' color scheme. The 'Mobility' field is represented on the x-axis, and the 'Population' field is represented on the y-axis with a logarithmic scale. The width of the visualization is set to match the container.","- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A","- Data: The data is sourced from a CSV file located at 'https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/mobility.csv'.
+- Field (Value): The fields used in this visualization are 'Income', 'Mobility', and 'Population'. All of these fields are quantitative.
+- Transform: The 'Population' field is transformed using a logarithmic scale.
+- Mark: The mark used in this visualization is 'point'.
+- Chart-Type: This is a scatter plot.
+- Encoding: The 'Income' field is encoded with color, the 'Mobility' field is encoded with the x-axis, and the 'Population' field is encoded with the y-axis. The color encoding uses a 'sinebow' color scheme and is binned into 5 categories.
+- Style: The width of the visualization is set to match the container.
+- Interaction (e.g., tooltip): Not specified.","This is a scatter plot visualization that uses point marks to represent data from a CSV file. The data fields 'Income', 'Mobility', and 'Population' are all quantitative. The 'Income' field is represented by color, which is binned into 5 categories and uses a 'sinebow' color scheme. The 'Mobility' field is represented on the x-axis, and the 'Population' field is represented on the y-axis with a logarithmic scale. The width of the visualization is set to match the container."
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Multiple views
+- Number of plots: 2
+
+Step 2. Chart Semantics:
+- Data: Building inventory data from a CSV file
+- Field (Value): Agency Name (Department of Natural Resources, Department of Corrections, Department of Human Services, Department of Transportation, Department of State Police), County (Fulton, Pope, LaSalle, Clinton, Schuyler), Square Footage (quantitative)
+- Transform: Filter selection
+- Mark: Rectangular and Bar
+- Chart-Type: Heatmap and Bar chart
+- Encoding: Color, X, Y
+- Style: Green color for bar chart
+- Interaction (e.g., tooltip): Interval selection on the heatmap
+
+Step 3. Level 1 NL Description:
+This visualization consists of two views. The first view is a heatmap that shows the count of buildings by agency name and county. The color intensity represents the count of buildings. The second view is a bar chart that shows the total square footage of buildings by agency name. The bar chart is filtered based on the selection in the heatmap. The bars are colored green.","- True/False: True
+- (If True) Type: Multiple views
+- Number of plots: 2","- Data: Building inventory data from a CSV file
+- Field (Value): Agency Name (Department of Natural Resources, Department of Corrections, Department of Human Services, Department of Transportation, Department of State Police), County (Fulton, Pope, LaSalle, Clinton, Schuyler), Square Footage (quantitative)
+- Transform: Filter selection
+- Mark: Rectangular and Bar
+- Chart-Type: Heatmap and Bar chart
+- Encoding: Color, X, Y
+- Style: Green color for bar chart
+- Interaction (e.g., tooltip): Interval selection on the heatmap",This visualization consists of two views. The first view is a heatmap that shows the count of buildings by agency name and county. The color intensity represents the count of buildings. The second view is a bar chart that shows the total square footage of buildings by agency name. The bar chart is filtered based on the selection in the heatmap. The bars are colored green.
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Layered
+- Number of plots: 2
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted on a URL. The data pertains to the percentage of population in extreme poverty and the net official development aid (ODA) received.
+- Field (Value): The fields used in the visualization are 'X' (1 - HDI), 'y' (ODA in millions of US$), and 'y2'.
+- Transform: No specific transformation is mentioned.
+- Mark: The marks used are 'point' and 'line'.
+- Chart-Type: The chart is a scatter plot with a regression line.
+- Encoding: The 'X' field is encoded to the x-axis, the 'y' field is encoded to the y-axis, and the 'y2' field is also encoded to the y-axis for the regression line.
+- Style: The points are colored dark blue and the regression line is colored red.
+- Interaction (e.g., tooltip): No specific interaction is mentioned.
+
+Step 3. Level 1 NL Description:
+This layered visualization consists of a scatter plot and a regression line. The scatter plot uses dark blue points to represent the relationship between '1 - HDI' and 'ODA in millions of US$'. The regression line, colored in red, is drawn based on these points. The data used for this visualization is sourced from a CSV file and pertains to the percentage of population in extreme poverty and the net official development aid (ODA) received.","- True/False: True
+- (If True) Type: Layered
+- Number of plots: 2","- Data: The data is sourced from a CSV file hosted on a URL. The data pertains to the percentage of population in extreme poverty and the net official development aid (ODA) received.
+- Field (Value): The fields used in the visualization are 'X' (1 - HDI), 'y' (ODA in millions of US$), and 'y2'.
+- Transform: No specific transformation is mentioned.
+- Mark: The marks used are 'point' and 'line'.
+- Chart-Type: The chart is a scatter plot with a regression line.
+- Encoding: The 'X' field is encoded to the x-axis, the 'y' field is encoded to the y-axis, and the 'y2' field is also encoded to the y-axis for the regression line.
+- Style: The points are colored dark blue and the regression line is colored red.
+- Interaction (e.g., tooltip): No specific interaction is mentioned.","This layered visualization consists of a scatter plot and a regression line. The scatter plot uses dark blue points to represent the relationship between '1 - HDI' and 'ODA in millions of US$'. The regression line, colored in red, is drawn based on these points. The data used for this visualization is sourced from a CSV file and pertains to the percentage of population in extreme poverty and the net official development aid (ODA) received."
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted on GitHub, which contains information about the alpha, beta, and log-likelihood (llhd) values.
+- Field (Value): The fields used in the visualization are 'alpha', 'beta', and 'llhd'.
+- Transform: No transformation is applied to the data.
+- Mark: The mark used in the visualization is 'point'.
+- Chart-Type: This is a scatter plot.
+- Encoding: The 'alpha' and 'beta' fields are encoded as the x and y axes respectively, both of which are quantitative. The 'llhd' field is encoded as both the size and color of the points, which is also quantitative.
+- Style: The x and y axes do not start from zero and do not have a grid. The points do not have a stroke.
+- Interaction (e.g., tooltip): No interaction is specified in the visualization.
+
+Step 3. Level 1 NL Description:
+This is a scatter plot where each point represents data from a CSV file. The x-axis represents the 'alpha' field and the y-axis represents the 'beta' field, both of which are quantitative. The size and color of the points represent the 'llhd' field, which is also quantitative. The size of the points increases and the color changes from green to red as the 'llhd' value increases. The x and y axes do not start from zero and do not have a grid. The points do not have a stroke.","- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A","- Data: The data is sourced from a CSV file hosted on GitHub, which contains information about the alpha, beta, and log-likelihood (llhd) values.
+- Field (Value): The fields used in the visualization are 'alpha', 'beta', and 'llhd'.
+- Transform: No transformation is applied to the data.
+- Mark: The mark used in the visualization is 'point'.
+- Chart-Type: This is a scatter plot.
+- Encoding: The 'alpha' and 'beta' fields are encoded as the x and y axes respectively, both of which are quantitative. The 'llhd' field is encoded as both the size and color of the points, which is also quantitative.
+- Style: The x and y axes do not start from zero and do not have a grid. The points do not have a stroke.
+- Interaction (e.g., tooltip): No interaction is specified in the visualization.","This is a scatter plot where each point represents data from a CSV file. The x-axis represents the 'alpha' field and the y-axis represents the 'beta' field, both of which are quantitative. The size and color of the points represent the 'llhd' field, which is also quantitative. The size of the points increases and the color changes from green to red as the 'llhd' value increases. The x and y axes do not start from zero and do not have a grid. The points do not have a stroke."
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted on a GitHub repository. The file contains demographic data from the United Nations.
+- Field (Value): The fields used in the visualization are 'Year' (temporal), 'sh_65+' (quantitative), and 'Region' (nominal). The 'Region' field has values such as 'Australia', 'Bangladesh', 'Brazil', 'Canada', 'Chile', etc.
+- Transform: The visualization includes a filter transform based on the 'Region' field.
+- Mark: The mark type used in the visualization is 'line'.
+- Chart-Type: This is a line chart.
+- Encoding: The 'Year' field is encoded to the x-axis, the 'sh_65+' field is encoded to the y-axis, and the 'Region' field is encoded to the color of the lines.
+- Style: The chart has a dark background with transparent stroke. The lines are 2 pixels wide. The color of the lines is determined by the 'Region' field, with Japan and South Korea highlighted in red and yellow respectively.
+- Interaction (e.g., tooltip): The visualization includes a single selection interaction on the 'Region' field, allowing users to select a country from a dropdown menu.
+
+Step 3. Level 1 NL Description:
+This is a line chart that visualizes demographic data from the United Nations. The chart plots the share of the population that is aged 65 and over ('sh_65+') against the 'Year'. Each line represents a different region, with the color of the line indicating the region. The chart includes an interaction that allows users to select a specific region to view. The chart is styled with a dark background and transparent stroke, and the lines are 2 pixels wide. Japan and South Korea are highlighted in red and yellow respectively.","- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1","- Data: The data is sourced from a CSV file hosted on a GitHub repository. The file contains demographic data from the United Nations.
+- Field (Value): The fields used in the visualization are 'Year' (temporal), 'sh_65+' (quantitative), and 'Region' (nominal). The 'Region' field has values such as 'Australia', 'Bangladesh', 'Brazil', 'Canada', 'Chile', etc.
+- Transform: The visualization includes a filter transform based on the 'Region' field.
+- Mark: The mark type used in the visualization is 'line'.
+- Chart-Type: This is a line chart.
+- Encoding: The 'Year' field is encoded to the x-axis, the 'sh_65+' field is encoded to the y-axis, and the 'Region' field is encoded to the color of the lines.
+- Style: The chart has a dark background with transparent stroke. The lines are 2 pixels wide. The color of the lines is determined by the 'Region' field, with Japan and South Korea highlighted in red and yellow respectively.
+- Interaction (e.g., tooltip): The visualization includes a single selection interaction on the 'Region' field, allowing users to select a country from a dropdown menu.","This is a line chart that visualizes demographic data from the United Nations. The chart plots the share of the population that is aged 65 and over ('sh_65+') against the 'Year'. Each line represents a different region, with the color of the line indicating the region. The chart includes an interaction that allows users to select a specific region to view. The chart is styled with a dark background and transparent stroke, and the lines are 2 pixels wide. Japan and South Korea are highlighted in red and yellow respectively."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from an online CSV file, which contains information about the GDP of G7 countries from 1952 to 2017.
+- Field (Value): The fields used in this visualization are 'country', 'year', and 'gdp'. The 'country' field is nominal and includes the G7 countries. The 'year' field is temporal. The 'gdp' field is calculated by multiplying the population with the GDP per capita.
+- Transform: The data is filtered to include only the G7 countries. Then, the GDP is calculated. Finally, the total GDP is aggregated for each year and country.
+- Mark: The mark used in this visualization is 'area'.
+- Chart-Type: This is a Stacked Area Chart.
+- Encoding: The 'year' field is encoded to the x-axis, and the 'total' field is encoded to the y-axis. The 'country' field is encoded with color. The opacity of the areas is also encoded, with selected areas having an opacity of 1 and unselected areas having an opacity of 0.2.
+- Style: The grid lines on the x-axis are removed. The color scheme used is 'set2'. The legend is placed at the bottom and oriented horizontally. The stroke of the view is set to transparent.
+- Interaction: A tooltip is provided that shows the 'year', 'country', and 'total' when hovered over an area. A multi-selection interaction is also provided, which allows the user to select multiple countries from the legend.
+
+Step 3. Level 1 NL Description:
+This is a Stacked Area Chart that visualizes the GDP of G7 countries from 1952 to 2017. The x-axis represents the year, and the y-axis represents the total GDP. Each country is represented by a different color. The areas are semi-transparent, but become opaque when selected from the legend. A tooltip provides additional information when an area is hovered over.",- False,"- Data: The data is sourced from an online CSV file, which contains information about the GDP of G7 countries from 1952 to 2017.
+- Field (Value): The fields used in this visualization are 'country', 'year', and 'gdp'. The 'country' field is nominal and includes the G7 countries. The 'year' field is temporal. The 'gdp' field is calculated by multiplying the population with the GDP per capita.
+- Transform: The data is filtered to include only the G7 countries. Then, the GDP is calculated. Finally, the total GDP is aggregated for each year and country.
+- Mark: The mark used in this visualization is 'area'.
+- Chart-Type: This is a Stacked Area Chart.
+- Encoding: The 'year' field is encoded to the x-axis, and the 'total' field is encoded to the y-axis. The 'country' field is encoded with color. The opacity of the areas is also encoded, with selected areas having an opacity of 1 and unselected areas having an opacity of 0.2.
+- Style: The grid lines on the x-axis are removed. The color scheme used is 'set2'. The legend is placed at the bottom and oriented horizontally. The stroke of the view is set to transparent.
+- Interaction: A tooltip is provided that shows the 'year', 'country', and 'total' when hovered over an area. A multi-selection interaction is also provided, which allows the user to select multiple countries from the legend.","This is a Stacked Area Chart that visualizes the GDP of G7 countries from 1952 to 2017. The x-axis represents the year, and the y-axis represents the total GDP. Each country is represented by a different color. The areas are semi-transparent, but become opaque when selected from the legend. A tooltip provides additional information when an area is hovered over."
+"Step 1. Composite Views:
+- True/False: True
+- Type: Trellis
+- Number of plots: Multiple plots arranged in a grid, with the number of plots depending on the unique combinations of dataset size and dataset.
+
+Step 2. Chart Semantics:
+- Data: The data is not provided in the visualization, but it appears to involve different datasets, dataset sizes, DBMS drivers, and response rates.
+- Field (Value): 
+  - dataset_size (Dataset Size), Type: ordinal, Value: ['100M' '10M' '1M']
+  - dataset (Dataset), Type: nominal, Value: ['flights' 'movies' 'weather']
+  - driver (DBMS), Type: nominal, Value: ['monetdb' 'postgresql' 'sqlite' 'verdictdb' 'duckdb']
+- Transform: The response rate is calculated and presented in a nice format, and its position is clamped between 0 and 70.
+- Mark: Bar and text
+- Chart-Type: Bar chart
+- Encoding: 
+  - Y-axis: DBMS driver
+  - X-axis: Response rate
+  - Color: DBMS driver
+- Style: The bars are clipped to the chart area, and the text is aligned to the left and clipped to the chart area.
+- Interaction: No interaction is specified.
+
+Step 3. Level 1 NL Description:
+This visualization presents a trellis of bar charts, each representing a different combination of dataset and dataset size. Each bar chart shows the response rate of different DBMS drivers, with the drivers represented on the y-axis and the response rate on the x-axis. The bars are colored according to the driver. The response rate is also displayed as text on each bar.","- True/False: True
+- Type: Trellis
+- Number of plots: Multiple plots arranged in a grid, with the number of plots depending on the unique combinations of dataset size and dataset.","- Data: The data is not provided in the visualization, but it appears to involve different datasets, dataset sizes, DBMS drivers, and response rates.
+- Field (Value): 
+  - dataset_size (Dataset Size), Type: ordinal, Value: ['100M' '10M' '1M']
+  - dataset (Dataset), Type: nominal, Value: ['flights' 'movies' 'weather']
+  - driver (DBMS), Type: nominal, Value: ['monetdb' 'postgresql' 'sqlite' 'verdictdb' 'duckdb']
+- Transform: The response rate is calculated and presented in a nice format, and its position is clamped between 0 and 70.
+- Mark: Bar and text
+- Chart-Type: Bar chart
+- Encoding: 
+  - Y-axis: DBMS driver
+  - X-axis: Response rate
+  - Color: DBMS driver
+- Style: The bars are clipped to the chart area, and the text is aligned to the left and clipped to the chart area.
+- Interaction: No interaction is specified.","This visualization presents a trellis of bar charts, each representing a different combination of dataset and dataset size. Each bar chart shows the response rate of different DBMS drivers, with the drivers represented on the y-axis and the response rate on the x-axis. The bars are colored according to the driver. The response rate is also displayed as text on each bar."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a URL: 'https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv'.
+- Field (Value): The fields used in the visualization are 'year', 'region', 'gdpPercap' (GDP per capita), and 'country'. The 'year' and 'region' fields are used to filter the data to only include records from the year 2017 and the region Europe. The 'gdpPercap' field is used to calculate the median income per person and the difference from the median for each country. The 'country' field is used as the nominal variable in the y-axis encoding.
+- Transform: The data is transformed by filtering for the year 2017 and the region Europe, calculating the median income per person and the difference from the median for each country, and categorizing each country as 'Below median' or 'Above median' based on their GDP per capita.
+- Mark: The mark type used in the visualization is 'bar'.
+- Chart-Type: This is a bar chart.
+- Encoding: The y-axis encodes the 'country' field, sorted by the mean difference from the median income per person. The x-axis encodes the 'diff' field, representing the difference from the median income per person. The color encodes the 'type' field, categorizing each country as 'Below median' or 'Above median'. The opacity is set to 0.7. The tooltip displays the 'country', 'gdpPercap', and 'diff' fields.
+- Style: The style configuration removes the domain color from the axis and the stroke from the cell.
+- Interaction: The interaction in the visualization is the tooltip, which displays the 'country', 'gdpPercap', and 'diff' fields when a bar is hovered over.
+
+Step 3. Level 1 NL Description:
+This is a bar chart that displays the income per person for different countries in Europe in the year 2017. The countries are represented on the y-axis and the difference from the median income per person is represented on the x-axis. The bars are colored to indicate whether the country's income per person is below or above the median. The chart includes a tooltip that displays the country name, GDP per capita, and difference from the median when a bar is hovered over.",- False,"- Data: The data is sourced from a URL: 'https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv'.
+- Field (Value): The fields used in the visualization are 'year', 'region', 'gdpPercap' (GDP per capita), and 'country'. The 'year' and 'region' fields are used to filter the data to only include records from the year 2017 and the region Europe. The 'gdpPercap' field is used to calculate the median income per person and the difference from the median for each country. The 'country' field is used as the nominal variable in the y-axis encoding.
+- Transform: The data is transformed by filtering for the year 2017 and the region Europe, calculating the median income per person and the difference from the median for each country, and categorizing each country as 'Below median' or 'Above median' based on their GDP per capita.
+- Mark: The mark type used in the visualization is 'bar'.
+- Chart-Type: This is a bar chart.
+- Encoding: The y-axis encodes the 'country' field, sorted by the mean difference from the median income per person. The x-axis encodes the 'diff' field, representing the difference from the median income per person. The color encodes the 'type' field, categorizing each country as 'Below median' or 'Above median'. The opacity is set to 0.7. The tooltip displays the 'country', 'gdpPercap', and 'diff' fields.
+- Style: The style configuration removes the domain color from the axis and the stroke from the cell.
+- Interaction: The interaction in the visualization is the tooltip, which displays the 'country', 'gdpPercap', and 'diff' fields when a bar is hovered over.","This is a bar chart that displays the income per person for different countries in Europe in the year 2017. The countries are represented on the y-axis and the difference from the median income per person is represented on the x-axis. The bars are colored to indicate whether the country's income per person is below or above the median. The chart includes a tooltip that displays the country name, GDP per capita, and difference from the median when a bar is hovered over."
+"Step 1. Composite Views:
+- True/False: True
+- Type: Layered
+- Number of plots: 3
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted on GitHub. It contains financial information from Nintendo's Consolidated Statements of Income.
+- Field (Value): The fields include 'date' (year), 'Net sales' (net sales in million yen), 'Gross profit' (gross profit in million yen), 'Gross profit ratio', 'Operating profit' (operating profit in million yen), and 'Operating profit ratio'.
+- Transform: No specific transformations are mentioned.
+- Mark: The marks used are bars (for net sales) and lines (for gross profit ratio and operating profit ratio).
+- Chart-Type: This is a layered bar and line chart.
+- Encoding: The x-axis represents the 'date' (year), and the y-axis represents 'Net sales', 'Gross profit ratio', and 'Operating profit ratio'. The color encoding is used to differentiate between net sales, gross profit ratio, and operating profit ratio.
+- Style: The chart has a specific color scheme for each mark, with net sales represented in red, gross profit ratio in dark green, and operating profit ratio in light green. The chart also has a title and subtitle.
+- Interaction: The chart includes tooltips that display detailed information for each data point when hovered over.
+
+Step 3. Level 1 NL Description:
+This is a layered bar and line chart that displays Nintendo's Consolidated Statements of Income over time. The x-axis represents the year, and the y-axis represents net sales, gross profit ratio, and operating profit ratio. Net sales are represented by red bars, while the gross profit ratio and operating profit ratio are represented by dark green and light green lines, respectively. The chart includes tooltips that provide more detailed information when you hover over each data point.","- True/False: True
+- Type: Layered
+- Number of plots: 3","- Data: The data is sourced from a CSV file hosted on GitHub. It contains financial information from Nintendo's Consolidated Statements of Income.
+- Field (Value): The fields include 'date' (year), 'Net sales' (net sales in million yen), 'Gross profit' (gross profit in million yen), 'Gross profit ratio', 'Operating profit' (operating profit in million yen), and 'Operating profit ratio'.
+- Transform: No specific transformations are mentioned.
+- Mark: The marks used are bars (for net sales) and lines (for gross profit ratio and operating profit ratio).
+- Chart-Type: This is a layered bar and line chart.
+- Encoding: The x-axis represents the 'date' (year), and the y-axis represents 'Net sales', 'Gross profit ratio', and 'Operating profit ratio'. The color encoding is used to differentiate between net sales, gross profit ratio, and operating profit ratio.
+- Style: The chart has a specific color scheme for each mark, with net sales represented in red, gross profit ratio in dark green, and operating profit ratio in light green. The chart also has a title and subtitle.
+- Interaction: The chart includes tooltips that display detailed information for each data point when hovered over.","This is a layered bar and line chart that displays Nintendo's Consolidated Statements of Income over time. The x-axis represents the year, and the y-axis represents net sales, gross profit ratio, and operating profit ratio. Net sales are represented by red bars, while the gross profit ratio and operating profit ratio are represented by dark green and light green lines, respectively. The chart includes tooltips that provide more detailed information when you hover over each data point."
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from two URLs, one containing geographical data about Canadian provinces and the other containing population density data for 2021.
+- Field (Value): The fields used are 'properties.gn_name' (representing the province name) and 'Population density per square kilometre, 2021' (representing the population density).
+- Transform: A lookup transformation is performed to match the province names from the geographical data with the corresponding population density data.
+- Mark: The mark type is 'geoshape', which is used to represent geographical regions. The stroke is light gray and the stroke width is 0.3.
+- Chart-Type: This is a geoshape chart.
+- Encoding: The color encoding is quantitative, representing the population density. The tooltip displays the province name and population density.
+- Style: The color scheme is 'magma'. The legend is oriented at the bottom. The title of the color encoding is 'People per Km²'.
+- Interaction (e.g., tooltip): The tooltip displays the province name and population density.
+
+Step 3. Level 1 NL Description:
+This is a geoshape chart representing the population density of Canadian provinces. The provinces are represented by geographical shapes, with the color encoding indicating the population density. The color scheme used is 'magma'. The chart includes a tooltip that displays the province name and population density when hovered over. The data is sourced from two URLs, one containing geographical data about Canadian provinces and the other containing population density data for 2021. A lookup transformation is performed to match the province names from the geographical data with the corresponding population density data.","- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A","- Data: The data is sourced from two URLs, one containing geographical data about Canadian provinces and the other containing population density data for 2021.
+- Field (Value): The fields used are 'properties.gn_name' (representing the province name) and 'Population density per square kilometre, 2021' (representing the population density).
+- Transform: A lookup transformation is performed to match the province names from the geographical data with the corresponding population density data.
+- Mark: The mark type is 'geoshape', which is used to represent geographical regions. The stroke is light gray and the stroke width is 0.3.
+- Chart-Type: This is a geoshape chart.
+- Encoding: The color encoding is quantitative, representing the population density. The tooltip displays the province name and population density.
+- Style: The color scheme is 'magma'. The legend is oriented at the bottom. The title of the color encoding is 'People per Km²'.
+- Interaction (e.g., tooltip): The tooltip displays the province name and population density.","This is a geoshape chart representing the population density of Canadian provinces. The provinces are represented by geographical shapes, with the color encoding indicating the population density. The color scheme used is 'magma'. The chart includes a tooltip that displays the province name and population density when hovered over. The data is sourced from two URLs, one containing geographical data about Canadian provinces and the other containing population density data for 2021. A lookup transformation is performed to match the province names from the geographical data with the corresponding population density data."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: The data is not provided in the visualization.
+- Field (Value): The fields are 'Year', 'Value', and 'LOCATION' with types 'temporal', 'quantitative', and 'nominal' respectively.
+- Transform: No transformation is applied.
+- Mark: The mark type is 'bar'.
+- Chart-Type: This is a bar chart.
+- Encoding: The 'Year' field is encoded to the x-axis, 'Value' field is encoded to the y-axis, and 'LOCATION' field is encoded to the color and xOffset of the bars.
+- Style: The color of the bars is determined by the 'LOCATION' field with a range of ['#033542', '#78969d']. The opacity of the bars is set to 0.9.
+- Interaction: No interaction is specified.
+
+Step 3. Level 1 NL Description:
+This is a bar chart representing the gender pay gap. The x-axis represents the 'Year' and the y-axis represents the 'Value'. The color and xOffset of the bars are determined by the 'LOCATION' field. The chart does not provide any interaction. The opacity of the bars is set to 0.9 and the color ranges from '#033542' to '#78969d'.",- False,"- Data: The data is not provided in the visualization.
+- Field (Value): The fields are 'Year', 'Value', and 'LOCATION' with types 'temporal', 'quantitative', and 'nominal' respectively.
+- Transform: No transformation is applied.
+- Mark: The mark type is 'bar'.
+- Chart-Type: This is a bar chart.
+- Encoding: The 'Year' field is encoded to the x-axis, 'Value' field is encoded to the y-axis, and 'LOCATION' field is encoded to the color and xOffset of the bars.
+- Style: The color of the bars is determined by the 'LOCATION' field with a range of ['#033542', '#78969d']. The opacity of the bars is set to 0.9.
+- Interaction: No interaction is specified.",This is a bar chart representing the gender pay gap. The x-axis represents the 'Year' and the y-axis represents the 'Value'. The color and xOffset of the bars are determined by the 'LOCATION' field. The chart does not provide any interaction. The opacity of the bars is set to 0.9 and the color ranges from '#033542' to '#78969d'.
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a URL, specifically a CSV file named 'GiltsInIssueClean.csv'.
+- Field (Value): The fields used are 'issueAmount' and 'giltType'. 'issueAmount' is a quantitative field, while 'giltType' is a nominal field with possible values of 'Index Linked', 'Treasury Stock', 'Treasury Gilt', and 'Green Gilt'.
+- Transform: No transformation is applied to the data.
+- Mark: The mark type used is 'arc' with an inner radius of 100, creating a donut chart.
+- Chart-Type: This is a donut chart.
+- Encoding: The 'theta' encoding is based on the 'issueAmount' field, while the 'color' encoding is based on the 'giltType' field. The color legend is placed at the bottom with no title, and the color scale ranges from red, purple, orange, to green. The color encoding is sorted in descending order based on the 'name' field.
+- Style: The chart has a height of 300 and a width of 290. The view stroke is transparent. The title of the chart is 'UK debt - by type' with a subtitle stating the source of the data. The subtitle is styled in italic font with a font size of 10, anchored at the start, and colored black.
+- Interaction: No interaction is specified.
+
+Step 3. Level 1 NL Description:
+This is a donut chart representing UK debt by type. The chart is sourced from a CSV file named 'GiltsInIssueClean.csv'. The chart uses an 'arc' mark with an inner radius of 100. The 'theta' encoding is based on the 'issueAmount' field, while the 'color' encoding is based on the 'giltType' field. The color scale ranges from red, purple, orange, to green, sorted in descending order based on the 'name' field. The chart has a height of 300 and a width of 290, with a transparent view stroke. The title of the chart is 'UK debt - by type', with a subtitle stating the source of the data, styled in italic font with a font size of 10, anchored at the start, and colored black.",- False,"- Data: The data is sourced from a URL, specifically a CSV file named 'GiltsInIssueClean.csv'.
+- Field (Value): The fields used are 'issueAmount' and 'giltType'. 'issueAmount' is a quantitative field, while 'giltType' is a nominal field with possible values of 'Index Linked', 'Treasury Stock', 'Treasury Gilt', and 'Green Gilt'.
+- Transform: No transformation is applied to the data.
+- Mark: The mark type used is 'arc' with an inner radius of 100, creating a donut chart.
+- Chart-Type: This is a donut chart.
+- Encoding: The 'theta' encoding is based on the 'issueAmount' field, while the 'color' encoding is based on the 'giltType' field. The color legend is placed at the bottom with no title, and the color scale ranges from red, purple, orange, to green. The color encoding is sorted in descending order based on the 'name' field.
+- Style: The chart has a height of 300 and a width of 290. The view stroke is transparent. The title of the chart is 'UK debt - by type' with a subtitle stating the source of the data. The subtitle is styled in italic font with a font size of 10, anchored at the start, and colored black.
+- Interaction: No interaction is specified.","This is a donut chart representing UK debt by type. The chart is sourced from a CSV file named 'GiltsInIssueClean.csv'. The chart uses an 'arc' mark with an inner radius of 100. The 'theta' encoding is based on the 'issueAmount' field, while the 'color' encoding is based on the 'giltType' field. The color scale ranges from red, purple, orange, to green, sorted in descending order based on the 'name' field. The chart has a height of 300 and a width of 290, with a transparent view stroke. The title of the chart is 'UK debt - by type', with a subtitle stating the source of the data, styled in italic font with a font size of 10, anchored at the start, and colored black."
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Trellis
+- Number of plots: 4
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file located at 'https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_SizeRLP.csv'.
+- Field (Value): The fields used in the visualization are 'Size' (quantitative), 'Year' (nominal), and 'metricClean' (calculated from 'metric' field).
+- Transform: The 'metric' field is folded into 'metric' and 'value'. Then, a new field 'metricClean' is calculated from 'metric'.
+- Mark: The mark type used in the visualization is 'point'.
+- Chart-Type: The chart type is a point chart.
+- Encoding: The 'Size' field is encoded to the x-axis, 'value' to the y-axis, 'Year' to the facet, and 'metricClean' to the color. 
+- Style: The grid for both x and y axes is turned off. The color scheme used is 'inferno'. The legend is oriented at the bottom with 5 columns.
+- Interaction (e.g., tooltip): Not specified.
+
+Step 3. Level 1 NL Description:
+This visualization is a trellis point chart with 4 plots. The data is sourced from a CSV file and includes fields such as 'Size', 'Year', and 'metricClean'. The 'Size' field is represented on the x-axis, 'value' on the y-axis, 'Year' as different facets, and 'metricClean' as different colors. The color scheme used is 'inferno' and the legend is oriented at the bottom with 5 columns. The grid for both x and y axes is turned off for a cleaner look.","- True/False: True
+- (If True) Type: Trellis
+- Number of plots: 4","- Data: The data is sourced from a CSV file located at 'https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_SizeRLP.csv'.
+- Field (Value): The fields used in the visualization are 'Size' (quantitative), 'Year' (nominal), and 'metricClean' (calculated from 'metric' field).
+- Transform: The 'metric' field is folded into 'metric' and 'value'. Then, a new field 'metricClean' is calculated from 'metric'.
+- Mark: The mark type used in the visualization is 'point'.
+- Chart-Type: The chart type is a point chart.
+- Encoding: The 'Size' field is encoded to the x-axis, 'value' to the y-axis, 'Year' to the facet, and 'metricClean' to the color. 
+- Style: The grid for both x and y axes is turned off. The color scheme used is 'inferno'. The legend is oriented at the bottom with 5 columns.
+- Interaction (e.g., tooltip): Not specified.","This visualization is a trellis point chart with 4 plots. The data is sourced from a CSV file and includes fields such as 'Size', 'Year', and 'metricClean'. The 'Size' field is represented on the x-axis, 'value' on the y-axis, 'Year' as different facets, and 'metricClean' as different colors. The color scheme used is 'inferno' and the legend is oriented at the bottom with 5 columns. The grid for both x and y axes is turned off for a cleaner look."
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Trellis
+- Number of plots: Multiple, based on the number of unique values in the 'Industry' field.
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file located at 'https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_Industries.csv'.
+- Field (Value): The fields used in the visualization are 'period2', 'Industry', 'entryReallocate', 'growReallocate', 'exitReallocate', 'shrinkReallocate'. The 'metric' and 'value' fields are created through transformation.
+- Transform: The 'fold' transformation is applied to create 'metric' and 'value' fields. A 'calculate' transformation is also applied to create a 'metricClean' field.
+- Mark: The mark type is 'bar'.
+- Chart-Type: This is a bar chart.
+- Encoding: The 'x' axis represents the 'period2' field, the 'y' axis represents the 'value' field, the 'color' represents the 'metricClean' field, and the 'facet' represents the 'Industry' field.
+- Style: The color scheme is 'inferno'. The bar has a stroke width of 1 and does not include points.
+- Interaction (e.g., tooltip): Not specified.
+
+Step 3. Level 1 NL Description:
+This visualization is a trellis bar chart sourced from a CSV file. It uses the 'period2', 'Industry', 'entryReallocate', 'growReallocate', 'exitReallocate', 'shrinkReallocate' fields from the data. The 'metric' and 'value' fields are created through a 'fold' transformation, and a 'calculate' transformation is used to create a 'metricClean' field. The 'x' axis represents the 'period2' field, the 'y' axis represents the 'value' field, the 'color' represents the 'metricClean' field, and the 'facet' represents the 'Industry' field. The color scheme is 'inferno', and the bars have a stroke width of 1.","- True/False: True
+- (If True) Type: Trellis
+- Number of plots: Multiple, based on the number of unique values in the 'Industry' field.","- Data: The data is sourced from a CSV file located at 'https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/BSD_Industries.csv'.
+- Field (Value): The fields used in the visualization are 'period2', 'Industry', 'entryReallocate', 'growReallocate', 'exitReallocate', 'shrinkReallocate'. The 'metric' and 'value' fields are created through transformation.
+- Transform: The 'fold' transformation is applied to create 'metric' and 'value' fields. A 'calculate' transformation is also applied to create a 'metricClean' field.
+- Mark: The mark type is 'bar'.
+- Chart-Type: This is a bar chart.
+- Encoding: The 'x' axis represents the 'period2' field, the 'y' axis represents the 'value' field, the 'color' represents the 'metricClean' field, and the 'facet' represents the 'Industry' field.
+- Style: The color scheme is 'inferno'. The bar has a stroke width of 1 and does not include points.
+- Interaction (e.g., tooltip): Not specified.","This visualization is a trellis bar chart sourced from a CSV file. It uses the 'period2', 'Industry', 'entryReallocate', 'growReallocate', 'exitReallocate', 'shrinkReallocate' fields from the data. The 'metric' and 'value' fields are created through a 'fold' transformation, and a 'calculate' transformation is used to create a 'metricClean' field. The 'x' axis represents the 'period2' field, the 'y' axis represents the 'value' field, the 'color' represents the 'metricClean' field, and the 'facet' represents the 'Industry' field. The color scheme is 'inferno', and the bars have a stroke width of 1."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file located at 'https://raw.githubusercontent.com/RDeconomist/teaching2/main/cpiContributions.csv'.
+- Field (Value): The fields in the data include 'Date', 'Value', and 'series'.
+- Transform: The data is filtered based on the selection 'pickSeries'.
+- Mark: The mark type of the chart is 'bar' with a width of 3.
+- Chart-Type: This is a bar chart.
+- Encoding: The 'Date' field is encoded to the x-axis, the 'Value' field is encoded to the y-axis, and the 'series' field is encoded to the color of the bars. The color scale ranges from 'rgb(0, 0, 255)' to 'rgb(200, 200, 255)'.
+- Style: The chart has a height and width of 300. The title of the chart is 'CPI - sources of inflation' with a subtitle 'Contributions to CPI all items by sub series'. The subtitle is styled in italic font with a font size of 10.
+- Interaction: The chart has a single selection interaction named 'pickSeries' which allows the user to select a series from the options provided.
+
+Step 3. Level 1 NL Description:
+This is a bar chart that visualizes data from a CSV file. The chart is filtered based on the selection of a series. The x-axis represents the 'Date' field, the y-axis represents the 'Value' field, and the color of the bars represents the 'series' field. The color scale ranges from 'rgb(0, 0, 255)' to 'rgb(200, 200, 255)'. The chart allows the user to interact with it by selecting a series from the options provided. The chart is titled 'CPI - sources of inflation' with a subtitle 'Contributions to CPI all items by sub series' styled in italic font.",- False,"- Data: The data is sourced from a CSV file located at 'https://raw.githubusercontent.com/RDeconomist/teaching2/main/cpiContributions.csv'.
+- Field (Value): The fields in the data include 'Date', 'Value', and 'series'.
+- Transform: The data is filtered based on the selection 'pickSeries'.
+- Mark: The mark type of the chart is 'bar' with a width of 3.
+- Chart-Type: This is a bar chart.
+- Encoding: The 'Date' field is encoded to the x-axis, the 'Value' field is encoded to the y-axis, and the 'series' field is encoded to the color of the bars. The color scale ranges from 'rgb(0, 0, 255)' to 'rgb(200, 200, 255)'.
+- Style: The chart has a height and width of 300. The title of the chart is 'CPI - sources of inflation' with a subtitle 'Contributions to CPI all items by sub series'. The subtitle is styled in italic font with a font size of 10.
+- Interaction: The chart has a single selection interaction named 'pickSeries' which allows the user to select a series from the options provided.","This is a bar chart that visualizes data from a CSV file. The chart is filtered based on the selection of a series. The x-axis represents the 'Date' field, the y-axis represents the 'Value' field, and the color of the bars represents the 'series' field. The color scale ranges from 'rgb(0, 0, 255)' to 'rgb(200, 200, 255)'. The chart allows the user to interact with it by selecting a series from the options provided. The chart is titled 'CPI - sources of inflation' with a subtitle 'Contributions to CPI all items by sub series' styled in italic font."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file located at 'https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/db_AdjustmentFrequency.csv'.
+- Field (Value): The fields used in this visualization are 'date4' and 'change_sh'.
+- Transform: The data is transformed by parsing the 'date3' field into a date format, filtering out years less than 1989, and filtering out 'change_sh' values greater than 0.4.
+- Mark: The mark type is 'point' with a color of 'rgba(0,67,167)', a size of 90, and an opacity of 0.7.
+- Chart-Type: This is a scatter plot.
+- Encoding: The 'date4' field is encoded on the x-axis as a temporal type with a time unit of 'month'. The 'change_sh' field is encoded on the y-axis as a quantitative type with a scale domain of [0, 0.35]. The size of the points is conditionally set to 150 if the 'paintbrush' selection is true, otherwise it is set to 90. The tooltip displays the 'date4' field as a date in the format '%b-%Y' and the 'change_sh' field as a percentage in the format ',.1%'.
+- Style: The title of the visualization is 'Price flexibility, by month' with a subtitle of 'Share of prices changing month-on-month, 1990-2021'. The title is anchored to the start and is colored black. The subtitle is styled in italic with a font size of 10.
+- Interaction: The visualization has a 'paintbrush' selection interaction that is activated on mouseover and selects the nearest point.
+
+Step 3. Level 1 NL Description:
+This is a scatter plot showing the share of prices changing month-on-month from 1990 to 2021. The data points are represented as blue points, with the size of the point increasing when hovered over. The x-axis represents the month and the y-axis represents the share of price changes. The visualization includes a tooltip that displays the date and the percentage of price changes when a point is hovered over.",- False,"- Data: The data is sourced from a CSV file located at 'https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/db_AdjustmentFrequency.csv'.
+- Field (Value): The fields used in this visualization are 'date4' and 'change_sh'.
+- Transform: The data is transformed by parsing the 'date3' field into a date format, filtering out years less than 1989, and filtering out 'change_sh' values greater than 0.4.
+- Mark: The mark type is 'point' with a color of 'rgba(0,67,167)', a size of 90, and an opacity of 0.7.
+- Chart-Type: This is a scatter plot.
+- Encoding: The 'date4' field is encoded on the x-axis as a temporal type with a time unit of 'month'. The 'change_sh' field is encoded on the y-axis as a quantitative type with a scale domain of [0, 0.35]. The size of the points is conditionally set to 150 if the 'paintbrush' selection is true, otherwise it is set to 90. The tooltip displays the 'date4' field as a date in the format '%b-%Y' and the 'change_sh' field as a percentage in the format ',.1%'.
+- Style: The title of the visualization is 'Price flexibility, by month' with a subtitle of 'Share of prices changing month-on-month, 1990-2021'. The title is anchored to the start and is colored black. The subtitle is styled in italic with a font size of 10.
+- Interaction: The visualization has a 'paintbrush' selection interaction that is activated on mouseover and selects the nearest point.","This is a scatter plot showing the share of prices changing month-on-month from 1990 to 2021. The data points are represented as blue points, with the size of the point increasing when hovered over. The x-axis represents the month and the y-axis represents the share of price changes. The visualization includes a tooltip that displays the date and the percentage of price changes when a point is hovered over."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted on GitHub. It contains information about different consumer items, their prices, and the share of prices rising and falling.
+- Field (Value): The fields in the data include 'down_sh' (Prices cut, Share falling), 'up_sh' (Prices rising, Share rising), 'p' (Price (median), Price), 'name1' (Item type), 'item_desc' (Description), and 'item_id' (Item ID). The 'name1' field has values like 'Food and drink', 'Eating out and hotels', 'Alcohol and tobacco', 'Housing and utilities', etc. The 'item_desc' field has values like 'LARGE LOAF-WHITE-UNSLICED-800G', 'SIX BREAD ROLLS-WHITE/BROWN', 'WHITE SLICED LOAF BRANDED 750G', 'WHOLEMEAL SLICED LOAF BRANDED', 'CHILLED GARLIC BREAD', etc. The 'item_id' field has numerical values.
+- Transform: No transformation is applied to the data.
+- Mark: The mark type is 'circle' with an opacity of 0.8 and color of 'rgb(0, 47, 167)'.
+- Chart-Type: The chart is a scatter plot.
+- Encoding: The 'down_sh' field is encoded to the x-axis, 'up_sh' to the y-axis, 'p' to the size of the circles, and 'name1' to the color of the circles. The tooltip displays information about 'item_desc', 'item_id', 'p', 'up_sh', and 'down_sh'.
+- Style: The chart has a height and width of 300. The title and subtitle are styled with specific font sizes and colors.
+- Interaction: The chart has a 'mouseover' interaction that highlights the nearest data point.
+
+Step 3. Level 1 NL Description:
+This is a scatter plot visualizing the share of prices rising and falling for different consumer items. The x-axis represents the share of prices cut, and the y-axis represents the share of prices rising. Each data point is represented by a circle, the size of which corresponds to the median price of the item. The color of the circles represents the type of item. The chart includes a tooltip that displays detailed information about each item when hovered over.",- False,"- Data: The data is sourced from a CSV file hosted on GitHub. It contains information about different consumer items, their prices, and the share of prices rising and falling.
+- Field (Value): The fields in the data include 'down_sh' (Prices cut, Share falling), 'up_sh' (Prices rising, Share rising), 'p' (Price (median), Price), 'name1' (Item type), 'item_desc' (Description), and 'item_id' (Item ID). The 'name1' field has values like 'Food and drink', 'Eating out and hotels', 'Alcohol and tobacco', 'Housing and utilities', etc. The 'item_desc' field has values like 'LARGE LOAF-WHITE-UNSLICED-800G', 'SIX BREAD ROLLS-WHITE/BROWN', 'WHITE SLICED LOAF BRANDED 750G', 'WHOLEMEAL SLICED LOAF BRANDED', 'CHILLED GARLIC BREAD', etc. The 'item_id' field has numerical values.
+- Transform: No transformation is applied to the data.
+- Mark: The mark type is 'circle' with an opacity of 0.8 and color of 'rgb(0, 47, 167)'.
+- Chart-Type: The chart is a scatter plot.
+- Encoding: The 'down_sh' field is encoded to the x-axis, 'up_sh' to the y-axis, 'p' to the size of the circles, and 'name1' to the color of the circles. The tooltip displays information about 'item_desc', 'item_id', 'p', 'up_sh', and 'down_sh'.
+- Style: The chart has a height and width of 300. The title and subtitle are styled with specific font sizes and colors.
+- Interaction: The chart has a 'mouseover' interaction that highlights the nearest data point.","This is a scatter plot visualizing the share of prices rising and falling for different consumer items. The x-axis represents the share of prices cut, and the y-axis represents the share of prices rising. Each data point is represented by a circle, the size of which corresponds to the median price of the item. The color of the circles represents the type of item. The chart includes a tooltip that displays detailed information about each item when hovered over."
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Layered
+- Number of plots: 2
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted online, which contains information about the daily price and volume of Ether.
+- Field (Value): The fields used in this visualization are 'Date', 'Volume', and 'Price'.
+- Transform: No transformation is applied to the data.
+- Mark: The marks used in this visualization are lines.
+- Chart-Type: This is a line chart.
+- Encoding: The 'Date' field is encoded as the x-axis, while the 'Volume' and 'Price' fields are encoded as the y-axis in two separate layers. The color of the lines is also encoded based on the 'Volume' and 'Price' fields.
+- Style: The lines are styled with different colors and the labels on the y-axis are colored red and blue respectively. The legend is oriented at the top-left of the chart.
+- Interaction (e.g., tooltip): No interaction is specified in this visualization.
+
+Step 3. Level 1 NL Description:
+This layered line chart visualizes the daily price and volume of Ether. The 'Date' field is represented on the x-axis, while the 'Volume' and 'Price' fields are represented on the y-axis in two separate layers. The volume is represented by a line that changes color from blue to red, and the price is represented by a line that changes color from orange to hotpink. The labels on the y-axis for volume and price are colored red and blue respectively. The legend is located at the top-left of the chart.","- True/False: True
+- (If True) Type: Layered
+- Number of plots: 2","- Data: The data is sourced from a CSV file hosted online, which contains information about the daily price and volume of Ether.
+- Field (Value): The fields used in this visualization are 'Date', 'Volume', and 'Price'.
+- Transform: No transformation is applied to the data.
+- Mark: The marks used in this visualization are lines.
+- Chart-Type: This is a line chart.
+- Encoding: The 'Date' field is encoded as the x-axis, while the 'Volume' and 'Price' fields are encoded as the y-axis in two separate layers. The color of the lines is also encoded based on the 'Volume' and 'Price' fields.
+- Style: The lines are styled with different colors and the labels on the y-axis are colored red and blue respectively. The legend is oriented at the top-left of the chart.
+- Interaction (e.g., tooltip): No interaction is specified in this visualization.","This layered line chart visualizes the daily price and volume of Ether. The 'Date' field is represented on the x-axis, while the 'Volume' and 'Price' fields are represented on the y-axis in two separate layers. The volume is represented by a line that changes color from blue to red, and the price is represented by a line that changes color from orange to hotpink. The labels on the y-axis for volume and price are colored red and blue respectively. The legend is located at the top-left of the chart."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted on GitHub. It contains information about the CO2 emissions from different types of food.
+- Field (Value): The fields in the data are 'Entity' (ordinal type), 'food_emissions' (quantitative type), and 'Type' (nominal type). The 'Entity' field contains different types of food, the 'food_emissions' field contains the amount of CO2 emissions, and the 'Type' field contains the source of the emissions.
+- Transform: No transformation is applied to the data.
+- Mark: The mark type is 'bar', indicating a bar chart.
+- Chart-Type: The chart type is a bar chart.
+- Encoding: The 'Entity' field is encoded on the y-axis, the 'food_emissions' field is encoded on the x-axis, and the 'Type' field is encoded as the color of the bars.
+- Style: The chart has a title and subtitle, and the color scheme is 'yellowgreenblue'.
+- Interaction: No interaction is specified.
+
+Step 3. Level 1 NL Description:
+This is a bar chart that visualizes the CO2 emissions from different types of food. The types of food are represented on the y-axis, the amount of CO2 emissions is represented on the x-axis, and the source of the emissions is represented by the color of the bars. The chart is titled ""Food - CO2 greenhouse gas emissions"" and the subtitle is ""Kg of CO2 emitted per kg of food, source: Our World in Data"". The color scheme of the chart is 'yellowgreenblue'.",- False,"- Data: The data is sourced from a CSV file hosted on GitHub. It contains information about the CO2 emissions from different types of food.
+- Field (Value): The fields in the data are 'Entity' (ordinal type), 'food_emissions' (quantitative type), and 'Type' (nominal type). The 'Entity' field contains different types of food, the 'food_emissions' field contains the amount of CO2 emissions, and the 'Type' field contains the source of the emissions.
+- Transform: No transformation is applied to the data.
+- Mark: The mark type is 'bar', indicating a bar chart.
+- Chart-Type: The chart type is a bar chart.
+- Encoding: The 'Entity' field is encoded on the y-axis, the 'food_emissions' field is encoded on the x-axis, and the 'Type' field is encoded as the color of the bars.
+- Style: The chart has a title and subtitle, and the color scheme is 'yellowgreenblue'.
+- Interaction: No interaction is specified.","This is a bar chart that visualizes the CO2 emissions from different types of food. The types of food are represented on the y-axis, the amount of CO2 emissions is represented on the x-axis, and the source of the emissions is represented by the color of the bars. The chart is titled ""Food - CO2 greenhouse gas emissions"" and the subtitle is ""Kg of CO2 emitted per kg of food, source: Our World in Data"". The color scheme of the chart is 'yellowgreenblue'."
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Layered
+- Number of plots: 9
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted on GitHub. The file contains information about annual drug-related deaths in Scotland.
+- Field (Value): The fields include 'Year' and various types of drugs such as 'All', 'Heroin', 'Methadone', 'Benzodiazepines', 'Gabapentin/Pregabalin', 'Cocaine', 'Ecstasy', 'Amphetamines', and 'Alcohol'.
+- Transform: No transformation is applied to the data.
+- Mark: The mark type is a line with points. The stroke width is set to 2.
+- Chart-Type: Line Chart
+- Encoding: The 'Year' field is encoded on the x-axis as a temporal type. The y-axis is encoded with the repeat layer field as a quantitative type. The color is determined by the repeat layer datum.
+- Style: The background color is set to '#122b39'. The stroke color is set to 'transparent'. The axis labels and ticks are styled with various shades of grey, white, and pink.
+- Interaction (e.g., tooltip): No interaction is specified.
+
+Step 3. Level 1 NL Description:
+This visualization is a layered line chart with 9 plots, each representing a different type of drug. The data, sourced from a CSV file, reports the annual drug-related deaths in Scotland. The x-axis represents the 'Year', and the y-axis represents the number of deaths for each type of drug. The lines are colored differently for each drug type. The chart is styled with a dark background and light-colored text and lines.","- True/False: True
+- (If True) Type: Layered
+- Number of plots: 9","- Data: The data is sourced from a CSV file hosted on GitHub. The file contains information about annual drug-related deaths in Scotland.
+- Field (Value): The fields include 'Year' and various types of drugs such as 'All', 'Heroin', 'Methadone', 'Benzodiazepines', 'Gabapentin/Pregabalin', 'Cocaine', 'Ecstasy', 'Amphetamines', and 'Alcohol'.
+- Transform: No transformation is applied to the data.
+- Mark: The mark type is a line with points. The stroke width is set to 2.
+- Chart-Type: Line Chart
+- Encoding: The 'Year' field is encoded on the x-axis as a temporal type. The y-axis is encoded with the repeat layer field as a quantitative type. The color is determined by the repeat layer datum.
+- Style: The background color is set to '#122b39'. The stroke color is set to 'transparent'. The axis labels and ticks are styled with various shades of grey, white, and pink.
+- Interaction (e.g., tooltip): No interaction is specified.","This visualization is a layered line chart with 9 plots, each representing a different type of drug. The data, sourced from a CSV file, reports the annual drug-related deaths in Scotland. The x-axis represents the 'Year', and the y-axis represents the number of deaths for each type of drug. The lines are colored differently for each drug type. The chart is styled with a dark background and light-colored text and lines."
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Multiple views
+- Number of plots: 3
+
+Step 2. Chart Semantics:
+- Data: World countries, 25 largest shoe factories, Vietnam regions, Indonesia regions
+- Field (Value): Longitude, Latitude, number (Workers), brand (Brand), country (Country), location2 (Region)
+- Transform: Filter, Projection
+- Mark: Geoshape, Circle
+- Chart-Type: Geographical Map
+- Encoding: Longitude, Latitude, Size, Color, Tooltip
+- Style: Background color, Stroke color, Fill color, Font style, Font size
+- Interaction (e.g., tooltip): Tooltip on hover
+
+Step 3. Level 1 NL Description:
+This visualization consists of three geographical maps. The first map shows the world countries with the 25 largest shoe factories marked as circles. The size of the circle represents the number of workers, and the color represents the brand (Nike or Adidas). The second and third maps zoom in on Vietnam and Indonesia, respectively, showing the regions within these countries and the location of the shoe factories. The maps have tooltips that display the country, region, number of workers, and brand on hover.","- True/False: True
+- (If True) Type: Multiple views
+- Number of plots: 3","- Data: World countries, 25 largest shoe factories, Vietnam regions, Indonesia regions
+- Field (Value): Longitude, Latitude, number (Workers), brand (Brand), country (Country), location2 (Region)
+- Transform: Filter, Projection
+- Mark: Geoshape, Circle
+- Chart-Type: Geographical Map
+- Encoding: Longitude, Latitude, Size, Color, Tooltip
+- Style: Background color, Stroke color, Fill color, Font style, Font size
+- Interaction (e.g., tooltip): Tooltip on hover","This visualization consists of three geographical maps. The first map shows the world countries with the 25 largest shoe factories marked as circles. The size of the circle represents the number of workers, and the color represents the brand (Nike or Adidas). The second and third maps zoom in on Vietnam and Indonesia, respectively, showing the regions within these countries and the location of the shoe factories. The maps have tooltips that display the country, region, number of workers, and brand on hover."
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from Homeland Security and is about total immigrants by state as a percentage of the population.
+- Field (Value): The fields in the data are 'State', 'ValueC' (Migration as % of State Population), and 'Type1'.
+- Transform: The data is sorted in ascending order based on the sum of 'ValueC'.
+- Mark: The mark type of the chart is 'bar'.
+- Chart-Type: This is a bar chart.
+- Encoding: The 'State' field is encoded on the y-axis, the sum of 'ValueC' is encoded on the x-axis, and the 'Type1' field is encoded as color. A tooltip is also encoded showing the 'ValueC' field.
+- Style: The chart has a width and height of 600. The title and subtitle are anchored at the start with a font size of 13.
+- Interaction (e.g., tooltip): The tooltip shows the 'ValueC' field.
+
+Step 3. Level 1 NL Description:
+This is a bar chart that displays the total immigrants by state as a percentage of the population. The data is sourced from Homeland Security. The states are represented on the y-axis and the percentage of migration is represented on the x-axis. The bars are colored based on the 'Type1' field. The chart is sorted in ascending order based on the sum of the migration percentage. A tooltip is provided that shows the migration percentage for each state.","- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A","- Data: The data is sourced from Homeland Security and is about total immigrants by state as a percentage of the population.
+- Field (Value): The fields in the data are 'State', 'ValueC' (Migration as % of State Population), and 'Type1'.
+- Transform: The data is sorted in ascending order based on the sum of 'ValueC'.
+- Mark: The mark type of the chart is 'bar'.
+- Chart-Type: This is a bar chart.
+- Encoding: The 'State' field is encoded on the y-axis, the sum of 'ValueC' is encoded on the x-axis, and the 'Type1' field is encoded as color. A tooltip is also encoded showing the 'ValueC' field.
+- Style: The chart has a width and height of 600. The title and subtitle are anchored at the start with a font size of 13.
+- Interaction (e.g., tooltip): The tooltip shows the 'ValueC' field.",This is a bar chart that displays the total immigrants by state as a percentage of the population. The data is sourced from Homeland Security. The states are represented on the y-axis and the percentage of migration is represented on the x-axis. The bars are colored based on the 'Type1' field. The chart is sorted in ascending order based on the sum of the migration percentage. A tooltip is provided that shows the migration percentage for each state.
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted on GitHub, which contains information about the GDP per capita for different countries.
+- Field (Value): The fields in the data are 'year' and 'GDPpc' (GDP per capita), and the countries 'COD', 'CAF', 'HTI', 'MDG', 'NER', 'WLD'.
+- Transform: The data is transformed by folding the country fields into a single 'country' field and their corresponding GDP per capita into 'GDPpc'.
+- Mark: The mark type of the chart is a line with a stroke width of 2.
+- Chart-Type: This is a line chart.
+- Encoding: The 'year' field is encoded to the x-axis and the 'GDPpc' field is encoded to the y-axis. The 'country' field is encoded to the color of the lines.
+- Style: The chart has a title and subtitle, and the grid opacity of the y-axis is set to 0.3. The color legend is oriented at the top-left.
+- Interaction (e.g., tooltip): Not specified.
+
+Step 3. Level 1 NL Description:
+This is a line chart that represents the GDP per capita for different countries over time. The data is sourced from a CSV file and has been transformed to fold the country fields into a single 'country' field and their corresponding GDP per capita into 'GDPpc'. The 'year' field is encoded to the x-axis and the 'GDPpc' field is encoded to the y-axis. The 'country' field is encoded to the color of the lines. The chart has a title and subtitle, and the grid opacity of the y-axis is set to 0.3. The color legend is oriented at the top-left.","- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A","- Data: The data is sourced from a CSV file hosted on GitHub, which contains information about the GDP per capita for different countries.
+- Field (Value): The fields in the data are 'year' and 'GDPpc' (GDP per capita), and the countries 'COD', 'CAF', 'HTI', 'MDG', 'NER', 'WLD'.
+- Transform: The data is transformed by folding the country fields into a single 'country' field and their corresponding GDP per capita into 'GDPpc'.
+- Mark: The mark type of the chart is a line with a stroke width of 2.
+- Chart-Type: This is a line chart.
+- Encoding: The 'year' field is encoded to the x-axis and the 'GDPpc' field is encoded to the y-axis. The 'country' field is encoded to the color of the lines.
+- Style: The chart has a title and subtitle, and the grid opacity of the y-axis is set to 0.3. The color legend is oriented at the top-left.
+- Interaction (e.g., tooltip): Not specified.","This is a line chart that represents the GDP per capita for different countries over time. The data is sourced from a CSV file and has been transformed to fold the country fields into a single 'country' field and their corresponding GDP per capita into 'GDPpc'. The 'year' field is encoded to the x-axis and the 'GDPpc' field is encoded to the y-axis. The 'country' field is encoded to the color of the lines. The chart has a title and subtitle, and the grid opacity of the y-axis is set to 0.3. The color legend is oriented at the top-left."
+"Step 1. Composite Views:
+- True/False: True
+- Type: Layered and multiple views
+- Number of plots: 2
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from two URLs, one containing information about the best tennis players and their wins, and the other containing images of these players.
+- Field (Value): The fields include 'Wins' (quantitative), 'winner_name' (nominal), 'img' (ordinal), and 'year' (temporal).
+- Transform: The data is filtered based on the tournament level and the selected player name. It is also aggregated to calculate the total wins for each player.
+- Mark: The marks used are bar, image, text, and line.
+- Chart-Type: The charts are a bar chart and a line chart.
+- Encoding: The encoding channels used are x, y, color, opacity, tooltip, and url.
+- Style: The style includes specific font sizes, colors, and alignments for the text and images. The background color is also specified.
+- Interaction: The interaction includes a selection parameter for the player name and a tooltip that displays the player name, total wins, and year.
+
+Step 3. Level 1 NL Description:
+This visualization consists of two layered charts. The first chart is a horizontal bar chart that displays the total wins of five tennis players: Jimmy Connors, Roger Federer, Ivan Lendl, Rafael Nadal, and Novak Djokovic. Each player's name is displayed on the left, and their corresponding image is displayed on the right. The length of the bar represents the total number of wins, and the color of the bar corresponds to the player. The second chart is a line chart that shows the number of wins over the years for the selected player. The x-axis represents the year, and the y-axis represents the number of wins. The line color also corresponds to the player. The user can select a player to view their performance over the years.","- True/False: True
+- Type: Layered and multiple views
+- Number of plots: 2","- Data: The data is sourced from two URLs, one containing information about the best tennis players and their wins, and the other containing images of these players.
+- Field (Value): The fields include 'Wins' (quantitative), 'winner_name' (nominal), 'img' (ordinal), and 'year' (temporal).
+- Transform: The data is filtered based on the tournament level and the selected player name. It is also aggregated to calculate the total wins for each player.
+- Mark: The marks used are bar, image, text, and line.
+- Chart-Type: The charts are a bar chart and a line chart.
+- Encoding: The encoding channels used are x, y, color, opacity, tooltip, and url.
+- Style: The style includes specific font sizes, colors, and alignments for the text and images. The background color is also specified.
+- Interaction: The interaction includes a selection parameter for the player name and a tooltip that displays the player name, total wins, and year.","This visualization consists of two layered charts. The first chart is a horizontal bar chart that displays the total wins of five tennis players: Jimmy Connors, Roger Federer, Ivan Lendl, Rafael Nadal, and Novak Djokovic. Each player's name is displayed on the left, and their corresponding image is displayed on the right. The length of the bar represents the total number of wins, and the color of the bar corresponds to the player. The second chart is a line chart that shows the number of wins over the years for the selected player. The x-axis represents the year, and the y-axis represents the number of wins. The line color also corresponds to the player. The user can select a player to view their performance over the years."
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a TopoJSON file containing the geographical data of Europe and a CSV file containing the export data of each country.
+- Field (Value): The field is ""Exports of goods and services (current US$billion)"".
+- Transform: The data is transformed by looking up the 'geounit' property from the TopoJSON file and matching it with the 'Country Name' from the CSV file.
+- Mark: The mark is 'geoshape', indicating that the data is represented as geographical shapes.
+- Chart-Type: This is a choropleth map.
+- Encoding: The color encoding represents the export value of each country, with the color scheme 'viridis'. The tooltip displays the country name and its corresponding export value.
+- Style: The projection type is 'equalEarth'.
+- Interaction (e.g., tooltip): The tooltip displays the country name and its corresponding export value.
+
+Step 3. Level 1 NL Description:
+This visualization is a choropleth map of Europe, showing the exports of goods and services of each country in current US billion dollars. The data is represented as geographical shapes, with the color encoding representing the export value. The color scheme used is 'viridis'. The map uses an 'equalEarth' projection. When hovering over a country, a tooltip displays the country name and its corresponding export value.","- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A","- Data: The data is sourced from a TopoJSON file containing the geographical data of Europe and a CSV file containing the export data of each country.
+- Field (Value): The field is ""Exports of goods and services (current US$billion)"".
+- Transform: The data is transformed by looking up the 'geounit' property from the TopoJSON file and matching it with the 'Country Name' from the CSV file.
+- Mark: The mark is 'geoshape', indicating that the data is represented as geographical shapes.
+- Chart-Type: This is a choropleth map.
+- Encoding: The color encoding represents the export value of each country, with the color scheme 'viridis'. The tooltip displays the country name and its corresponding export value.
+- Style: The projection type is 'equalEarth'.
+- Interaction (e.g., tooltip): The tooltip displays the country name and its corresponding export value.","This visualization is a choropleth map of Europe, showing the exports of goods and services of each country in current US billion dollars. The data is represented as geographical shapes, with the color encoding representing the export value. The color scheme used is 'viridis'. The map uses an 'equalEarth' projection. When hovering over a country, a tooltip displays the country name and its corresponding export value."
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1
+
+Step 2. Chart Semantics:
+- Data: The data represents the share of world GDP by four main regimes.
+- Field (Value): The value field represents the GDP, and the Regime field represents the type of regime.
+- Transform: No transformation is applied.
+- Mark: The mark type is 'arc'.
+- Chart-Type: This is a pie chart.
+- Encoding: The theta encoding is quantitative and represents the value (GDP), and the color encoding is nominal and represents the Regime.
+- Style: The inner radius of the arc is 40.
+- Interaction (e.g., tooltip): The tooltip shows the GDP value.
+
+Step 3. Level 1 NL Description:
+This is a pie chart that represents the share of world GDP by four main regimes: Flawed Democracy, Authoritarian Regime, Hybrid Regime, and Full Democracy. The size of each arc (slice) corresponds to the GDP value of each regime, and the color of the arc represents the type of regime. When hovering over an arc, a tooltip shows the GDP value.","- True/False: False
+- (If True) Type: N/A
+- Number of plots: 1","- Data: The data represents the share of world GDP by four main regimes.
+- Field (Value): The value field represents the GDP, and the Regime field represents the type of regime.
+- Transform: No transformation is applied.
+- Mark: The mark type is 'arc'.
+- Chart-Type: This is a pie chart.
+- Encoding: The theta encoding is quantitative and represents the value (GDP), and the color encoding is nominal and represents the Regime.
+- Style: The inner radius of the arc is 40.
+- Interaction (e.g., tooltip): The tooltip shows the GDP value.","This is a pie chart that represents the share of world GDP by four main regimes: Flawed Democracy, Authoritarian Regime, Hybrid Regime, and Full Democracy. The size of each arc (slice) corresponds to the GDP value of each regime, and the color of the arc represents the type of regime. When hovering over an arc, a tooltip shows the GDP value."
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+Step 2. Chart Semantics:
+- Data: Embedded data
+- Field (Value): Year (temporal), Gross savings (% of GDP) (quantitative), Country Name (nominal: Canada, Saudi Arabia, Senegal)
+- Transform: None
+- Mark: Bar
+- Chart-Type: Bar chart
+- Encoding: X-axis represents the 'Year', Y-axis represents the 'Gross savings (% of GDP)', and the color represents the 'Country Name'.
+- Style: Width and height of the chart are 300. The color range for the countries are ['#03f7b8', '#899fdb', '#422b39'].
+- Interaction (e.g., tooltip): None
+Step 3. Level 1 NL Description:
+This is a bar chart with embedded data. The chart is 300x300 in size. The X-axis represents the 'Year' and the Y-axis represents the 'Gross savings (% of GDP)'. The color of the bars represents the 'Country Name', with specific colors assigned to Canada, Saudi Arabia, and Senegal. The chart does not involve any transformations or interactions.","- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A","- Data: Embedded data
+- Field (Value): Year (temporal), Gross savings (% of GDP) (quantitative), Country Name (nominal: Canada, Saudi Arabia, Senegal)
+- Transform: None
+- Mark: Bar
+- Chart-Type: Bar chart
+- Encoding: X-axis represents the 'Year', Y-axis represents the 'Gross savings (% of GDP)', and the color represents the 'Country Name'.
+- Style: Width and height of the chart are 300. The color range for the countries are ['#03f7b8', '#899fdb', '#422b39'].
+- Interaction (e.g., tooltip): None","This is a bar chart with embedded data. The chart is 300x300 in size. The X-axis represents the 'Year' and the Y-axis represents the 'Gross savings (% of GDP)'. The color of the bars represents the 'Country Name', with specific colors assigned to Canada, Saudi Arabia, and Senegal. The chart does not involve any transformations or interactions."
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Layered
+- Number of plots: 2
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted on GitHub. It contains information about the change in WGI Overall Score between 2017 and 2021 for different countries.
+- Field (Value): The fields include 'year' (2017, 2021), 'CAF' (WGI Score), 'Country' (Country), and 'Increase/Decrease?' (Increase, Decrease, Neither).
+- Transform: The data is filtered to include only the years 2017 and 2021.
+- Mark: The marks used are lines and filled points.
+- Chart-Type: This is a layered plot.
+- Encoding: The 'CAF' field is encoded on the x-axis, the 'Country' field is encoded on the y-axis, and the 'year' field is encoded as color. The 'Increase/Decrease?' field is encoded as shape.
+- Style: The plot has a height of 1000 and a width of 200. The color scheme is 'inferno'.
+- Interaction (e.g., tooltip): The tooltip displays the 'Country' and 'CAF' fields.
+
+Step 3. Level 1 NL Description:
+This layered plot visualizes the change in WGI Overall Score between 2017 and 2021 for different countries. The data is represented as lines and filled points, with the WGI Score encoded on the x-axis and the Country encoded on the y-axis. The year is represented by color, and whether the score increased, decreased, or remained the same is represented by the shape of the points. The plot allows for interaction through a tooltip that displays the Country and WGI Score.","- True/False: True
+- (If True) Type: Layered
+- Number of plots: 2","- Data: The data is sourced from a CSV file hosted on GitHub. It contains information about the change in WGI Overall Score between 2017 and 2021 for different countries.
+- Field (Value): The fields include 'year' (2017, 2021), 'CAF' (WGI Score), 'Country' (Country), and 'Increase/Decrease?' (Increase, Decrease, Neither).
+- Transform: The data is filtered to include only the years 2017 and 2021.
+- Mark: The marks used are lines and filled points.
+- Chart-Type: This is a layered plot.
+- Encoding: The 'CAF' field is encoded on the x-axis, the 'Country' field is encoded on the y-axis, and the 'year' field is encoded as color. The 'Increase/Decrease?' field is encoded as shape.
+- Style: The plot has a height of 1000 and a width of 200. The color scheme is 'inferno'.
+- Interaction (e.g., tooltip): The tooltip displays the 'Country' and 'CAF' fields.","This layered plot visualizes the change in WGI Overall Score between 2017 and 2021 for different countries. The data is represented as lines and filled points, with the WGI Score encoded on the x-axis and the Country encoded on the y-axis. The year is represented by color, and whether the score increased, decreased, or remained the same is represented by the shape of the points. The plot allows for interaction through a tooltip that displays the Country and WGI Score."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: Corporate Tax Rate and Country
+- Field (Value): Corporate Tax Rate (quantitative), Country (ordinal)
+- Transform: None
+- Mark: Bar
+- Chart-Type: Bar Chart
+- Encoding: X-axis (Corporate Tax Rate), Y-axis (Country)
+- Style: Color (#8268ca), StrokeWidth (2), Opacity (1)
+- Interaction: None
+
+Step 3. Level 1 NL Description:
+This is a simple bar chart that represents the corporate tax rate of different countries. The x-axis represents the corporate tax rate, which is a quantitative field, and the y-axis represents the country, which is an ordinal field. The bars are colored in #8268ca with a stroke width of 2 and an opacity of 1. There are no interactions or transformations applied to this chart.",- False,"- Data: Corporate Tax Rate and Country
+- Field (Value): Corporate Tax Rate (quantitative), Country (ordinal)
+- Transform: None
+- Mark: Bar
+- Chart-Type: Bar Chart
+- Encoding: X-axis (Corporate Tax Rate), Y-axis (Country)
+- Style: Color (#8268ca), StrokeWidth (2), Opacity (1)
+- Interaction: None","This is a simple bar chart that represents the corporate tax rate of different countries. The x-axis represents the corporate tax rate, which is a quantitative field, and the y-axis represents the country, which is an ordinal field. The bars are colored in #8268ca with a stroke width of 2 and an opacity of 1. There are no interactions or transformations applied to this chart."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: The data values are not specified in the visualization.
+- Field (Value): The fields 'col' and 'row' are calculated from the 'id' field.
+- Transform: Two calculations are performed on the 'id' field to derive 'col' and 'row'.
+- Mark: The mark type is 'point' and it is filled.
+- Chart-Type: This is a point chart.
+- Encoding: The 'x' and 'y' positions are encoded with 'col' and 'row' respectively. The shape is a fixed value. The color is conditionally set based on the 'id' value. The size is a fixed value.
+- Style: The chart has a width and height of 400, and the background is transparent. The view stroke is not set. The title is set to 'Australian Olympic Medals' and 'Bronze / Silver / Gold' with a font size of 25.
+- Interaction: No interaction is specified.
+
+Step 3. Level 1 NL Description:
+This is a point chart representing Australian Olympic Medals. The points are filled and their shape is fixed. The 'x' and 'y' positions of the points are determined by the calculated fields 'col' and 'row'. The color of the points is conditionally set based on the 'id' value, representing different types of medals. The size of the points is a fixed value. The chart has a width and height of 400, and the background is transparent. The title of the chart is 'Australian Olympic Medals' and 'Bronze / Silver / Gold'.",- False,"- Data: The data values are not specified in the visualization.
+- Field (Value): The fields 'col' and 'row' are calculated from the 'id' field.
+- Transform: Two calculations are performed on the 'id' field to derive 'col' and 'row'.
+- Mark: The mark type is 'point' and it is filled.
+- Chart-Type: This is a point chart.
+- Encoding: The 'x' and 'y' positions are encoded with 'col' and 'row' respectively. The shape is a fixed value. The color is conditionally set based on the 'id' value. The size is a fixed value.
+- Style: The chart has a width and height of 400, and the background is transparent. The view stroke is not set. The title is set to 'Australian Olympic Medals' and 'Bronze / Silver / Gold' with a font size of 25.
+- Interaction: No interaction is specified.","This is a point chart representing Australian Olympic Medals. The points are filled and their shape is fixed. The 'x' and 'y' positions of the points are determined by the calculated fields 'col' and 'row'. The color of the points is conditionally set based on the 'id' value, representing different types of medals. The size of the points is a fixed value. The chart has a width and height of 400, and the background is transparent. The title of the chart is 'Australian Olympic Medals' and 'Bronze / Silver / Gold'."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a URL and includes properties such as the name of the country, the most popular Premier League team in that country, and the maximum percentage of search queries for that team.
+- Field (Value): The fields include 'Most Popular Team' (nominal type) and 'Max % of search queries' (quantitative type). The values for 'Most Popular Team' include 'Manchester United', 'Liverpool', 'Manchester City', 'Chelsea', and 'Arsenal'.
+- Transform: The data is transformed by looking up the 'properties.name' from the data and mapping it to the 'geoName' key in the data from another URL. The fields 'Most Popular Team' and 'Max % of search queries' are also fetched from this data.
+- Mark: The mark type is 'geoshape' with no stroke and a stroke width of 2.
+- Chart-Type: This is a geoshape chart.
+- Encoding: The tooltip is encoded with the 'properties.name' (Country), 'Most Popular Team', and 'Max % of search queries'. The color is encoded with the 'Most Popular Team' field.
+- Style: The color scale ranges from black to purple. The legend is oriented at the bottom with one column and a fill color of '#FfFfFf'.
+- Interaction: The interaction is through a tooltip that displays the country, the most popular team, and the maximum percentage of search queries.
+
+Step 3. Level 1 NL Description:
+This is a geoshape chart that displays the most popular Premier League teams in different countries, based on the maximum percentage of search queries over the past year. The countries are represented by different shapes, and the teams are represented by different colors. The tooltip provides additional information about the country, the most popular team, and the maximum percentage of search queries. The legend is located at the bottom of the chart.",- False,"- Data: The data is sourced from a URL and includes properties such as the name of the country, the most popular Premier League team in that country, and the maximum percentage of search queries for that team.
+- Field (Value): The fields include 'Most Popular Team' (nominal type) and 'Max % of search queries' (quantitative type). The values for 'Most Popular Team' include 'Manchester United', 'Liverpool', 'Manchester City', 'Chelsea', and 'Arsenal'.
+- Transform: The data is transformed by looking up the 'properties.name' from the data and mapping it to the 'geoName' key in the data from another URL. The fields 'Most Popular Team' and 'Max % of search queries' are also fetched from this data.
+- Mark: The mark type is 'geoshape' with no stroke and a stroke width of 2.
+- Chart-Type: This is a geoshape chart.
+- Encoding: The tooltip is encoded with the 'properties.name' (Country), 'Most Popular Team', and 'Max % of search queries'. The color is encoded with the 'Most Popular Team' field.
+- Style: The color scale ranges from black to purple. The legend is oriented at the bottom with one column and a fill color of '#FfFfFf'.
+- Interaction: The interaction is through a tooltip that displays the country, the most popular team, and the maximum percentage of search queries.","This is a geoshape chart that displays the most popular Premier League teams in different countries, based on the maximum percentage of search queries over the past year. The countries are represented by different shapes, and the teams are represented by different colors. The tooltip provides additional information about the country, the most popular team, and the maximum percentage of search queries. The legend is located at the bottom of the chart."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: The data is embedded and not provided in the schema.
+- Field (Value): The fields are 'Responce' with nominal type and 'Percentage of Responces' with quantitative type.
+- Transform: No transformation is applied to the data.
+- Mark: The mark type is 'bar'.
+- Chart-Type: This is a bar chart.
+- Encoding: The 'Responce' field is encoded on the x-axis and the 'Percentage of Responces' field is encoded on the y-axis.
+- Style: The x-axis labels are angled at 45 degrees. The title and subtitle are styled with specific font sizes and colors.
+- Interaction: No interaction is specified in the schema.
+
+Step 3. Level 1 NL Description:
+This is a simple bar chart titled 'Comfortability of data being shared', with a subtitle providing additional context. The chart does not have any composite views. It uses a nominal field 'Responce' encoded on the x-axis and a quantitative field 'Percentage of Responces' encoded on the y-axis. The x-axis labels are angled at 45 degrees for better readability. The chart does not specify any data transformations or interactions.",- False,"- Data: The data is embedded and not provided in the schema.
+- Field (Value): The fields are 'Responce' with nominal type and 'Percentage of Responces' with quantitative type.
+- Transform: No transformation is applied to the data.
+- Mark: The mark type is 'bar'.
+- Chart-Type: This is a bar chart.
+- Encoding: The 'Responce' field is encoded on the x-axis and the 'Percentage of Responces' field is encoded on the y-axis.
+- Style: The x-axis labels are angled at 45 degrees. The title and subtitle are styled with specific font sizes and colors.
+- Interaction: No interaction is specified in the schema.","This is a simple bar chart titled 'Comfortability of data being shared', with a subtitle providing additional context. The chart does not have any composite views. It uses a nominal field 'Responce' encoded on the x-axis and a quantitative field 'Percentage of Responces' encoded on the y-axis. The x-axis labels are angled at 45 degrees for better readability. The chart does not specify any data transformations or interactions."
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Layered
+- Number of plots: 5
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted on GitHub. It contains observations from 1981-2021 for 52 countries.
+- Field (Value): The fields used in this visualization are 'pct_chn_exa' (Change in Energy Consumption) and 'GDP Growth Rates' (GDP Growth). Both are quantitative.
+- Transform: The data is filtered to highlight China's growth rates. 
+- Mark: The marks used are 'rect' for the heatmap and 'rule' for the mean lines.
+- Chart-Type: This is a heatmap.
+- Encoding: The x-axis represents the Change in Energy Consumption, and the y-axis represents GDP Growth. The color represents the count of observations. 
+- Style: The visualization uses a range of colors from black to red to represent the count of observations. The mean lines are represented in dark grey and dark orange for overall and China's growth rates respectively.
+- Interaction (e.g., tooltip): The tooltip shows the count of observations.
+
+Step 3. Level 1 NL Description:
+This layered heatmap visualization shows the positive relationship between Change in Energy Consumption and GDP Growth for 52 countries from 1981-2021. The x-axis represents the Change in Energy Consumption, and the y-axis represents GDP Growth. The color intensity, ranging from black to red, represents the count of observations. The visualization also includes mean lines in dark grey for overall growth rates and dark orange for China's growth rates. The tooltip interaction provides the count of observations.","- True/False: True
+- (If True) Type: Layered
+- Number of plots: 5","- Data: The data is sourced from a CSV file hosted on GitHub. It contains observations from 1981-2021 for 52 countries.
+- Field (Value): The fields used in this visualization are 'pct_chn_exa' (Change in Energy Consumption) and 'GDP Growth Rates' (GDP Growth). Both are quantitative.
+- Transform: The data is filtered to highlight China's growth rates. 
+- Mark: The marks used are 'rect' for the heatmap and 'rule' for the mean lines.
+- Chart-Type: This is a heatmap.
+- Encoding: The x-axis represents the Change in Energy Consumption, and the y-axis represents GDP Growth. The color represents the count of observations. 
+- Style: The visualization uses a range of colors from black to red to represent the count of observations. The mean lines are represented in dark grey and dark orange for overall and China's growth rates respectively.
+- Interaction (e.g., tooltip): The tooltip shows the count of observations.","This layered heatmap visualization shows the positive relationship between Change in Energy Consumption and GDP Growth for 52 countries from 1981-2021. The x-axis represents the Change in Energy Consumption, and the y-axis represents GDP Growth. The color intensity, ranging from black to red, represents the count of observations. The visualization also includes mean lines in dark grey for overall growth rates and dark orange for China's growth rates. The tooltip interaction provides the count of observations."
+"Step 1. Composite Views:
+- True/False: True
+- Type: Multiple views
+- Number of plots: 2
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file and two JSON files. The CSV file contains information about the response times of different FRV districts and stations. The JSON files contain geographical data for the districts and stations.
+- Field (Value): The fields include 'dis' (FRV District), 'perMet' (% Above Standard, % Responses Above 7.7 Min), 'sNumber' (Number of Stations), 'totInc' (Number of Incidences), 'q' (Quarter, Financial Quarter), 'servArea', and '90Avg' (90% Response Time (m)).
+- Transform: The data is filtered and sorted based on different conditions. For example, the data is filtered based on the selected quarter and district, and sorted based on the percentage of responses above the standard.
+- Mark: The marks used include geoshape, line, circle, and text.
+- Chart-Type: The visualization includes a geoshape chart and a line chart.
+- Encoding: The encoding includes shape, color, tooltip, x, y, and text. For example, the shape is encoded with the geographical data, the color is encoded with the percentage of responses above the standard, and the tooltip is encoded with the district, percentage of responses above the standard, number of stations, and number of incidences.
+- Style: The style includes font, color, opacity, stroke width, and size. For example, the font used is 'Calibri Light', the color scheme used is 'goldred' for the geoshape chart and 'greys' for the line chart, and the opacity is set to different values for different marks.
+- Interaction: The interaction includes selection and tooltip. For example, the user can select a quarter and a district, and view detailed information about a district or a station through the tooltip.
+
+Step 3. Level 1 NL Description:
+This visualization consists of two views. The first view is a geoshape chart that shows the geographical distribution of FRV districts. The districts are colored based on the percentage of responses above the 7.7-minute standard. The user can select a quarter and a district to view detailed information. The second view is a line chart that ranks the stations based on the percentage of responses above the standard. The stations are represented by lines and circles, and the user can select a station to highlight it. The chart also includes text marks that label the stations and their rankings.","- True/False: True
+- Type: Multiple views
+- Number of plots: 2","- Data: The data is sourced from a CSV file and two JSON files. The CSV file contains information about the response times of different FRV districts and stations. The JSON files contain geographical data for the districts and stations.
+- Field (Value): The fields include 'dis' (FRV District), 'perMet' (% Above Standard, % Responses Above 7.7 Min), 'sNumber' (Number of Stations), 'totInc' (Number of Incidences), 'q' (Quarter, Financial Quarter), 'servArea', and '90Avg' (90% Response Time (m)).
+- Transform: The data is filtered and sorted based on different conditions. For example, the data is filtered based on the selected quarter and district, and sorted based on the percentage of responses above the standard.
+- Mark: The marks used include geoshape, line, circle, and text.
+- Chart-Type: The visualization includes a geoshape chart and a line chart.
+- Encoding: The encoding includes shape, color, tooltip, x, y, and text. For example, the shape is encoded with the geographical data, the color is encoded with the percentage of responses above the standard, and the tooltip is encoded with the district, percentage of responses above the standard, number of stations, and number of incidences.
+- Style: The style includes font, color, opacity, stroke width, and size. For example, the font used is 'Calibri Light', the color scheme used is 'goldred' for the geoshape chart and 'greys' for the line chart, and the opacity is set to different values for different marks.
+- Interaction: The interaction includes selection and tooltip. For example, the user can select a quarter and a district, and view detailed information about a district or a station through the tooltip.","This visualization consists of two views. The first view is a geoshape chart that shows the geographical distribution of FRV districts. The districts are colored based on the percentage of responses above the 7.7-minute standard. The user can select a quarter and a district to view detailed information. The second view is a line chart that ranks the stations based on the percentage of responses above the standard. The stations are represented by lines and circles, and the user can select a station to highlight it. The chart also includes text marks that label the stations and their rankings."
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Layered
+- Number of plots: 2
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted online. It contains information about hate crimes in the UK, specifically focusing on the gender 'Women'. The fields in the data are 'value', 'model', 'group', 'min', 'max'.
+- Field (Value): The fields 'value', 'model', 'group', 'min', 'max' are of types quantitative, nominal, nominal, quantitative, quantitative respectively.
+- Transform: The data is transformed to calculate a new field 'groupaction' which is a combination of 'action', 'group' and 'model'. The data is then filtered to only include records where 'gender' is 'Women'.
+- Mark: The marks used are 'point' and 'rule'.
+- Chart-Type: This is a scatter plot with a rule mark to indicate range.
+- Encoding: The 'value' field is encoded to the x-axis, 'model' is encoded as shape, 'groupaction' is encoded to the y-axis, 'group' is encoded as color and fill. The 'min' and 'max' fields are encoded to the x-axis for the rule mark.
+- Style: The size of the point mark is 50 and its opacity is 1. The color scheme used is 'dark2'.
+- Interaction: No interaction is specified.
+
+Step 3. Level 1 NL Description:
+This layered scatter plot visualizes data about hate crimes in the UK, specifically focusing on women. The scatter plot uses points to represent the 'value' of each record, with different shapes indicating different 'models'. The points are colored and filled based on the 'group' field. A rule mark is used to indicate the range between 'min' and 'max' for each 'groupaction'. The color scheme used is 'dark2'.","- True/False: True
+- (If True) Type: Layered
+- Number of plots: 2","- Data: The data is sourced from a CSV file hosted online. It contains information about hate crimes in the UK, specifically focusing on the gender 'Women'. The fields in the data are 'value', 'model', 'group', 'min', 'max'.
+- Field (Value): The fields 'value', 'model', 'group', 'min', 'max' are of types quantitative, nominal, nominal, quantitative, quantitative respectively.
+- Transform: The data is transformed to calculate a new field 'groupaction' which is a combination of 'action', 'group' and 'model'. The data is then filtered to only include records where 'gender' is 'Women'.
+- Mark: The marks used are 'point' and 'rule'.
+- Chart-Type: This is a scatter plot with a rule mark to indicate range.
+- Encoding: The 'value' field is encoded to the x-axis, 'model' is encoded as shape, 'groupaction' is encoded to the y-axis, 'group' is encoded as color and fill. The 'min' and 'max' fields are encoded to the x-axis for the rule mark.
+- Style: The size of the point mark is 50 and its opacity is 1. The color scheme used is 'dark2'.
+- Interaction: No interaction is specified.","This layered scatter plot visualizes data about hate crimes in the UK, specifically focusing on women. The scatter plot uses points to represent the 'value' of each record, with different shapes indicating different 'models'. The points are colored and filled based on the 'group' field. A rule mark is used to indicate the range between 'min' and 'max' for each 'groupaction'. The color scheme used is 'dark2'."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: Access to Electricity in East Africa
+- Field (Value): Year (2000-2020), Access to electricity (% of population), Country (Tanzania, Somalia, Uganda, Kenya, Rwanda)
+- Transform: None
+- Mark: Bar
+- Chart-Type: Bar chart
+- Encoding: X-axis represents the 'Year', Y-axis represents the 'Access to electricity (% of population)', Color represents different 'Countries'.
+- Style: None
+- Interaction: None
+
+Step 3. Level 1 NL Description:
+This is a bar chart titled 'Access to Electricity in East Africa' with a subtitle 'Access to Electricity (% of population) from 2000-2020, Source: World Bank'. The chart does not contain any composite views. The chart uses a nominal field 'Year' on the X-axis ranging from 2000 to 2020 and a quantitative field 'Access to electricity (% of population)' on the Y-axis. The bars are colored based on the nominal field 'Country' which includes Tanzania, Somalia, Uganda, Kenya, and Rwanda. The chart does not involve any transformations, styles, or interactions.",- False,"- Data: Access to Electricity in East Africa
+- Field (Value): Year (2000-2020), Access to electricity (% of population), Country (Tanzania, Somalia, Uganda, Kenya, Rwanda)
+- Transform: None
+- Mark: Bar
+- Chart-Type: Bar chart
+- Encoding: X-axis represents the 'Year', Y-axis represents the 'Access to electricity (% of population)', Color represents different 'Countries'.
+- Style: None
+- Interaction: None","This is a bar chart titled 'Access to Electricity in East Africa' with a subtitle 'Access to Electricity (% of population) from 2000-2020, Source: World Bank'. The chart does not contain any composite views. The chart uses a nominal field 'Year' on the X-axis ranging from 2000 to 2020 and a quantitative field 'Access to electricity (% of population)' on the Y-axis. The bars are colored based on the nominal field 'Country' which includes Tanzania, Somalia, Uganda, Kenya, and Rwanda. The chart does not involve any transformations, styles, or interactions."
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted on GitHub, which contains information about energy consumption in Africa by source.
+- Field (Value): The fields include 'Date' (temporal), 'EnergyConsumption' (quantitative), and 'Energy Source' (nominal with values '1 Geo Biomass', '2 Nuclear', '3 Solar', '4 Wind', '5 Hydro', '6 Coal', '7 Gas', '8 Oil').
+- Transform: The data is filtered based on the year and the selected energy source. The year of the date is also calculated.
+- Mark: The mark type is 'area'.
+- Chart-Type: This is an area chart.
+- Encoding: The x-axis represents the 'Date', the y-axis represents the 'EnergyConsumption', and the color represents the 'Energy Source'. The tooltip shows the 'Energy Source' and 'Energy Consumption'.
+- Style: The chart has a white background and no cell stroke.
+- Interaction: The chart allows for interaction through a selection input for the 'Energy Source' and range inputs for the 'Start year' and 'End year'.
+
+Step 3. Level 1 NL Description:
+This is an interactive area chart that visualizes the energy consumption in Africa by source over time. The x-axis represents the date, and the y-axis represents the energy consumption. Different energy sources are represented by different colors. The chart allows users to select a specific energy source and a range of years to filter the data. The chart has a white background and no cell stroke. When hovering over the chart, a tooltip appears showing the energy source and energy consumption.","- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A","- Data: The data is sourced from a CSV file hosted on GitHub, which contains information about energy consumption in Africa by source.
+- Field (Value): The fields include 'Date' (temporal), 'EnergyConsumption' (quantitative), and 'Energy Source' (nominal with values '1 Geo Biomass', '2 Nuclear', '3 Solar', '4 Wind', '5 Hydro', '6 Coal', '7 Gas', '8 Oil').
+- Transform: The data is filtered based on the year and the selected energy source. The year of the date is also calculated.
+- Mark: The mark type is 'area'.
+- Chart-Type: This is an area chart.
+- Encoding: The x-axis represents the 'Date', the y-axis represents the 'EnergyConsumption', and the color represents the 'Energy Source'. The tooltip shows the 'Energy Source' and 'Energy Consumption'.
+- Style: The chart has a white background and no cell stroke.
+- Interaction: The chart allows for interaction through a selection input for the 'Energy Source' and range inputs for the 'Start year' and 'End year'.","This is an interactive area chart that visualizes the energy consumption in Africa by source over time. The x-axis represents the date, and the y-axis represents the energy consumption. Different energy sources are represented by different colors. The chart allows users to select a specific energy source and a range of years to filter the data. The chart has a white background and no cell stroke. When hovering over the chart, a tooltip appears showing the energy source and energy consumption."
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Trellis
+- Number of plots: 5
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted on GitHub. The data fields include 'Date', 'value', 'type', and 'area'.
+- Field (Value): The fields are 'Date' (Time), 'value' (Index), 'type' (nominal), and 'area' (nominal).
+- Transform: No transformation is applied to the data.
+- Mark: The mark type is 'line'.
+- Chart-Type: The chart type is a line chart.
+- Encoding: The 'x' axis represents the 'Date', the 'y' axis represents the 'value', the color represents the 'type', and the 'row' represents the 'area'.
+- Style: The chart has a width of 300 and a height of 40. The title and subtitle are styled with specific font sizes and colors. The 'x' axis is formatted to display years and does not have a grid. The 'y' axis has a grid and displays two tick counts.
+- Interaction (e.g., tooltip): No interaction is specified in the visualization.
+
+Step 3. Level 1 NL Description:
+This visualization is a trellis line chart with five plots. The data is sourced from a CSV file and includes fields for 'Date', 'value', 'type', and 'area'. The 'x' axis represents the 'Date', the 'y' axis represents the 'value', the color represents the 'type', and the 'row' represents the 'area'. The chart is styled with a width of 300 and a height of 40, and the title and subtitle are styled with specific font sizes and colors. The 'x' axis is formatted to display years and does not have a grid, while the 'y' axis has a grid and displays two tick counts. No interaction is specified in the visualization.","- True/False: True
+- (If True) Type: Trellis
+- Number of plots: 5","- Data: The data is sourced from a CSV file hosted on GitHub. The data fields include 'Date', 'value', 'type', and 'area'.
+- Field (Value): The fields are 'Date' (Time), 'value' (Index), 'type' (nominal), and 'area' (nominal).
+- Transform: No transformation is applied to the data.
+- Mark: The mark type is 'line'.
+- Chart-Type: The chart type is a line chart.
+- Encoding: The 'x' axis represents the 'Date', the 'y' axis represents the 'value', the color represents the 'type', and the 'row' represents the 'area'.
+- Style: The chart has a width of 300 and a height of 40. The title and subtitle are styled with specific font sizes and colors. The 'x' axis is formatted to display years and does not have a grid. The 'y' axis has a grid and displays two tick counts.
+- Interaction (e.g., tooltip): No interaction is specified in the visualization.","This visualization is a trellis line chart with five plots. The data is sourced from a CSV file and includes fields for 'Date', 'value', 'type', and 'area'. The 'x' axis represents the 'Date', the 'y' axis represents the 'value', the color represents the 'type', and the 'row' represents the 'area'. The chart is styled with a width of 300 and a height of 40, and the title and subtitle are styled with specific font sizes and colors. The 'x' axis is formatted to display years and does not have a grid, while the 'y' axis has a grid and displays two tick counts. No interaction is specified in the visualization."
+"Step 1. Composite Views:
+- True/False: True
+- Type: Multiple views
+- Number of plots: 2
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file hosted on GitHub, which contains information about the second round of the 2018 presidential elections in Colombia. The data includes fields for the total number of voters, the number of voters who actually voted, the department, and the municipality.
+- Field (Value): The fields include 'total_voters' (quantitative), 'department' (nominal), 'municipality' (nominal), and 'voters' (quantitative).
+- Transform: The data is transformed through aggregation operations such as sum and mean, and calculations such as calculating the abstention rate. Filters are also applied based on user selection.
+- Mark: The marks used include 'tick' and 'bar'.
+- Chart-Type: The charts include a tick chart and a bar chart.
+- Encoding: The encoding includes x and y axes, color, fill, stroke, and tooltip. The x-axis represents the total number of voters or the number of voters who actually voted, while the y-axis represents the department. The color and fill represent different conditions and values, and the tooltip provides additional information when hovering over a data point.
+- Style: The style includes different colors for different conditions and values, and different opacities for different layers.
+- Interaction: The interaction includes a selection interaction, where the user can select a range on the y-axis to filter the data.
+
+Step 3. Level 1 NL Description:
+This visualization consists of two plots that display information about the second round of the 2018 presidential elections in Colombia. The first plot is a tick chart that shows the distribution of total voters by department and by municipality, with different colors indicating different departments. The second plot is a layered bar chart that shows the total number of voters and the number of voters who actually voted by department, with different colors indicating different conditions. The user can select a range on the y-axis to filter the data. The visualization also includes a tooltip that provides additional information when hovering over a data point.","- True/False: True
+- Type: Multiple views
+- Number of plots: 2","- Data: The data is sourced from a CSV file hosted on GitHub, which contains information about the second round of the 2018 presidential elections in Colombia. The data includes fields for the total number of voters, the number of voters who actually voted, the department, and the municipality.
+- Field (Value): The fields include 'total_voters' (quantitative), 'department' (nominal), 'municipality' (nominal), and 'voters' (quantitative).
+- Transform: The data is transformed through aggregation operations such as sum and mean, and calculations such as calculating the abstention rate. Filters are also applied based on user selection.
+- Mark: The marks used include 'tick' and 'bar'.
+- Chart-Type: The charts include a tick chart and a bar chart.
+- Encoding: The encoding includes x and y axes, color, fill, stroke, and tooltip. The x-axis represents the total number of voters or the number of voters who actually voted, while the y-axis represents the department. The color and fill represent different conditions and values, and the tooltip provides additional information when hovering over a data point.
+- Style: The style includes different colors for different conditions and values, and different opacities for different layers.
+- Interaction: The interaction includes a selection interaction, where the user can select a range on the y-axis to filter the data.","This visualization consists of two plots that display information about the second round of the 2018 presidential elections in Colombia. The first plot is a tick chart that shows the distribution of total voters by department and by municipality, with different colors indicating different departments. The second plot is a layered bar chart that shows the total number of voters and the number of voters who actually voted by department, with different colors indicating different conditions. The user can select a range on the y-axis to filter the data. The visualization also includes a tooltip that provides additional information when hovering over a data point."
+"Step 1. Composite Views:
+- True/False: True
+- Type: Layered and multiple views
+- Number of plots: 5
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a JSON file hosted on GitHub. It contains information about the gender distribution in different UPZs.
+- Field (Value): The fields include 'UPlName' (UPZ), 'Cnt_UPlCod' (Whereabouts), 'OBJECTID' (OBJECTID), 'UPlCode' (UPZ), 'Men_20' (Men [%]), and 'Women_20' (Women [%]).
+- Transform: No specific transformation is applied to the data.
+- Mark: The marks used in the visualization include tick, bar, line, and circle.
+- Chart-Type: The visualization includes bar charts, line charts, and scatter plots.
+- Encoding: The encoding channels used include x, y, color, and tooltip. The x and y channels are used to represent the UPZ and the count of whereabouts respectively. The color channel is used to differentiate between selected and non-selected data points. The tooltip channel is used to display additional information when a data point is hovered over.
+- Style: The style of the visualization includes the use of green color to highlight selected data points and gray for non-selected ones. The visualization also uses pink color to represent the 'Women_20' field in one of the line charts.
+- Interaction: The visualization includes an interval selection interaction that allows users to select a range of data points on the y-axis.
+
+Step 3. Level 1 NL Description:
+This visualization presents the gender distribution in different UPZs. It is a composite view consisting of five plots, including bar charts, line charts, and scatter plots. The data is represented using tick, bar, line, and circle marks. The x-axis represents the UPZ, while the y-axis represents the count of whereabouts. The color encoding is used to differentiate between selected and non-selected data points, with green representing selected data points and gray representing non-selected ones. Additionally, pink color is used to represent the 'Women_20' field in one of the line charts. The visualization also includes an interval selection interaction that allows users to select a range of data points on the y-axis.","- True/False: True
+- Type: Layered and multiple views
+- Number of plots: 5","- Data: The data is sourced from a JSON file hosted on GitHub. It contains information about the gender distribution in different UPZs.
+- Field (Value): The fields include 'UPlName' (UPZ), 'Cnt_UPlCod' (Whereabouts), 'OBJECTID' (OBJECTID), 'UPlCode' (UPZ), 'Men_20' (Men [%]), and 'Women_20' (Women [%]).
+- Transform: No specific transformation is applied to the data.
+- Mark: The marks used in the visualization include tick, bar, line, and circle.
+- Chart-Type: The visualization includes bar charts, line charts, and scatter plots.
+- Encoding: The encoding channels used include x, y, color, and tooltip. The x and y channels are used to represent the UPZ and the count of whereabouts respectively. The color channel is used to differentiate between selected and non-selected data points. The tooltip channel is used to display additional information when a data point is hovered over.
+- Style: The style of the visualization includes the use of green color to highlight selected data points and gray for non-selected ones. The visualization also uses pink color to represent the 'Women_20' field in one of the line charts.
+- Interaction: The visualization includes an interval selection interaction that allows users to select a range of data points on the y-axis.","This visualization presents the gender distribution in different UPZs. It is a composite view consisting of five plots, including bar charts, line charts, and scatter plots. The data is represented using tick, bar, line, and circle marks. The x-axis represents the UPZ, while the y-axis represents the count of whereabouts. The color encoding is used to differentiate between selected and non-selected data points, with green representing selected data points and gray representing non-selected ones. Additionally, pink color is used to represent the 'Women_20' field in one of the line charts. The visualization also includes an interval selection interaction that allows users to select a range of data points on the y-axis."
+"Step 1. Composite Views:
+- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from an external URL, specifically a CSV file containing information about onion quantities across different states and dates.
+- Field (Value): The fields include 'date' (temporal), 'quantity' (quantitative), and 'state' (nominal with values 'MS', 'GUJ', 'KNT', 'MP', 'TN').
+- Transform: No specific transformation is applied to the data.
+- Mark: The mark type is 'area' with a 'monotone' interpolation.
+- Chart-Type: This is an area chart.
+- Encoding: The 'date' field is encoded to the x-axis with a time unit of 'yearmonth', the 'quantity' field is encoded to the y-axis with a sum aggregate, and the 'state' field is conditionally encoded to the color with a nominal scale.
+- Style: The area fill opacity is set to '0.69', and the color value is '#e8eaf6' unless the 'st' selection is active.
+- Interaction (e.g., tooltip): A single selection interaction is enabled on mouseover, allowing the user to select a 'state' from a dropdown menu.
+
+Step 3. Level 1 NL Description:
+This is an area chart representing the sum of onion quantities across different states over time. The x-axis represents the date in a 'yearmonth' format, while the y-axis represents the sum of the quantity. The chart uses a monotone interpolation for the area mark. The states are represented by different colors, with a default color of '#e8eaf6'. The chart allows for interaction through a dropdown menu, where a specific state can be selected to highlight its data. The chart's style features an area fill opacity of '0.69'.","- True/False: False
+- (If True) Type: N/A
+- Number of plots: N/A","- Data: The data is sourced from an external URL, specifically a CSV file containing information about onion quantities across different states and dates.
+- Field (Value): The fields include 'date' (temporal), 'quantity' (quantitative), and 'state' (nominal with values 'MS', 'GUJ', 'KNT', 'MP', 'TN').
+- Transform: No specific transformation is applied to the data.
+- Mark: The mark type is 'area' with a 'monotone' interpolation.
+- Chart-Type: This is an area chart.
+- Encoding: The 'date' field is encoded to the x-axis with a time unit of 'yearmonth', the 'quantity' field is encoded to the y-axis with a sum aggregate, and the 'state' field is conditionally encoded to the color with a nominal scale.
+- Style: The area fill opacity is set to '0.69', and the color value is '#e8eaf6' unless the 'st' selection is active.
+- Interaction (e.g., tooltip): A single selection interaction is enabled on mouseover, allowing the user to select a 'state' from a dropdown menu.","This is an area chart representing the sum of onion quantities across different states over time. The x-axis represents the date in a 'yearmonth' format, while the y-axis represents the sum of the quantity. The chart uses a monotone interpolation for the area mark. The states are represented by different colors, with a default color of '#e8eaf6'. The chart allows for interaction through a dropdown menu, where a specific state can be selected to highlight its data. The chart's style features an area fill opacity of '0.69'."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: Not provided
+- Field (Value): item (nominal), time (quantitative), quantity (quantitative)
+- Transform: Not provided
+- Mark: Line
+- Chart-Type: Line chart
+- Encoding: Color (item), X-axis (time), Y-axis (quantity)
+- Style: Not provided
+- Interaction (e.g., tooltip): Not provided
+
+Step 3. Level 1 NL Description:
+This is a line chart with three fields: item, time, and quantity. The 'item' field is nominal and is represented by different colors. The 'time' field is quantitative and is represented on the x-axis. The 'quantity' field is also quantitative and is represented on the y-axis.",- False,"- Data: Not provided
+- Field (Value): item (nominal), time (quantitative), quantity (quantitative)
+- Transform: Not provided
+- Mark: Line
+- Chart-Type: Line chart
+- Encoding: Color (item), X-axis (time), Y-axis (quantity)
+- Style: Not provided
+- Interaction (e.g., tooltip): Not provided","This is a line chart with three fields: item, time, and quantity. The 'item' field is nominal and is represented by different colors. The 'time' field is quantitative and is represented on the x-axis. The 'quantity' field is also quantitative and is represented on the y-axis."
+"Step 1. Composite Views:
+- True/False: True
+- Type: Trellis
+- Number of plots: 8 (2 types of offenses x 4 urbanicity categories)
+
+Step 2. Chart Semantics:
+- Data: Not provided
+- Field (Value): Year (2014, 2015, 2016), Total Population (quantitative), Type of Offense (Misdemeanor, Felony), Poverty Rate (%) (quantitative), Urbanicity (small/mid, rural, suburban, urban), % Money Bonds (quantitative)
+- Transform: None
+- Mark: Point
+- Chart-Type: Scatterplot
+- Encoding: Color (Year), Size (Total Population), Row (Type of Offense), X-axis (Poverty Rate), Column (Urbanicity), Y-axis (% Money Bonds)
+- Style: Background (White)
+- Interaction: None
+
+Step 3. Level 1 NL Description:
+This trellis scatterplot visualization consists of 8 plots, categorized by type of offense and urbanicity. Each plot represents the relationship between poverty rate and the percentage of money bonds, with each point's size indicating the total population and color representing the year. The plots are arranged in a grid, with rows representing different types of offenses (Misdemeanor, Felony) and columns representing different urbanicity categories (small/mid, rural, suburban, urban). The visualization has a white background and does not include any interactive elements.","- True/False: True
+- Type: Trellis
+- Number of plots: 8 (2 types of offenses x 4 urbanicity categories)","- Data: Not provided
+- Field (Value): Year (2014, 2015, 2016), Total Population (quantitative), Type of Offense (Misdemeanor, Felony), Poverty Rate (%) (quantitative), Urbanicity (small/mid, rural, suburban, urban), % Money Bonds (quantitative)
+- Transform: None
+- Mark: Point
+- Chart-Type: Scatterplot
+- Encoding: Color (Year), Size (Total Population), Row (Type of Offense), X-axis (Poverty Rate), Column (Urbanicity), Y-axis (% Money Bonds)
+- Style: Background (White)
+- Interaction: None","This trellis scatterplot visualization consists of 8 plots, categorized by type of offense and urbanicity. Each plot represents the relationship between poverty rate and the percentage of money bonds, with each point's size indicating the total population and color representing the year. The plots are arranged in a grid, with rows representing different types of offenses (Misdemeanor, Felony) and columns representing different urbanicity categories (small/mid, rural, suburban, urban). The visualization has a white background and does not include any interactive elements."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: The data is not provided in the visualization.
+- Field (Value): The fields are 'sample_id' with nominal values like 'Cancer7', 'Cancer2', 'Cancer3', 'Healthy4', 'Cancer1'; 'metabolite' with nominal values like 'glyc3p_m', 'cytd_m', 'dcyt_m', 'cgly_m', 'amp_m'; and 'flux' with quantitative values.
+- Transform: No transformation is applied.
+- Mark: The mark type is 'rect'.
+- Chart-Type: This is a heatmap.
+- Encoding: The 'sample_id' is encoded to the x-axis, 'metabolite' is encoded to the y-axis, and 'flux' is encoded to the color of the rectangles. The color scale is logarithmic and uses the 'viridis' scheme.
+- Style: Not specified.
+- Interaction: The tooltip shows the data when hovered over.
+
+Step 3. Level 1 NL Description:
+This is a heatmap where each rectangle represents a sample and a metabolite. The x-axis represents the sample ID with values like 'Cancer7', 'Cancer2', 'Cancer3', 'Healthy4', 'Cancer1'. The y-axis represents the metabolite with values like 'glyc3p_m', 'cytd_m', 'dcyt_m', 'cgly_m', 'amp_m'. The color of the rectangles, which follows a logarithmic scale and uses the 'viridis' scheme, represents the flux. When you hover over a rectangle, a tooltip shows the data.",- False,"- Data: The data is not provided in the visualization.
+- Field (Value): The fields are 'sample_id' with nominal values like 'Cancer7', 'Cancer2', 'Cancer3', 'Healthy4', 'Cancer1'; 'metabolite' with nominal values like 'glyc3p_m', 'cytd_m', 'dcyt_m', 'cgly_m', 'amp_m'; and 'flux' with quantitative values.
+- Transform: No transformation is applied.
+- Mark: The mark type is 'rect'.
+- Chart-Type: This is a heatmap.
+- Encoding: The 'sample_id' is encoded to the x-axis, 'metabolite' is encoded to the y-axis, and 'flux' is encoded to the color of the rectangles. The color scale is logarithmic and uses the 'viridis' scheme.
+- Style: Not specified.
+- Interaction: The tooltip shows the data when hovered over.","This is a heatmap where each rectangle represents a sample and a metabolite. The x-axis represents the sample ID with values like 'Cancer7', 'Cancer2', 'Cancer3', 'Healthy4', 'Cancer1'. The y-axis represents the metabolite with values like 'glyc3p_m', 'cytd_m', 'dcyt_m', 'cgly_m', 'amp_m'. The color of the rectangles, which follows a logarithmic scale and uses the 'viridis' scheme, represents the flux. When you hover over a rectangle, a tooltip shows the data."
+"Step 1. Composite Views:
+- False
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from an online CSV file.
+- Field (Value): The fields include 'Period' (nominal type), 'Number employed (thousands)' (quantitative type), and 'Age Group' (nominal type).
+- Transform: No transformation is applied.
+- Mark: The mark type is 'line'.
+- Chart-Type: This is a line chart.
+- Encoding: The 'Period' field is encoded to the x-axis, the 'Number employed (thousands)' field is encoded to the y-axis, and the 'Age Group' field is encoded to the color of the lines.
+- Style: The color scale ranges from '#233a58', '#e54753', '#FFD859', '#ff8f32', to '#1771b2'.
+- Interaction: No interaction is specified.
+
+Step 3. Level 1 NL Description:
+This is a line chart that uses data from an online CSV file. The chart plots 'Period' on the x-axis and 'Number employed (thousands)' on the y-axis, with different 'Age Groups' represented by lines of different colors. The chart does not involve any data transformation or user interaction.",- False,"- Data: The data is sourced from an online CSV file.
+- Field (Value): The fields include 'Period' (nominal type), 'Number employed (thousands)' (quantitative type), and 'Age Group' (nominal type).
+- Transform: No transformation is applied.
+- Mark: The mark type is 'line'.
+- Chart-Type: This is a line chart.
+- Encoding: The 'Period' field is encoded to the x-axis, the 'Number employed (thousands)' field is encoded to the y-axis, and the 'Age Group' field is encoded to the color of the lines.
+- Style: The color scale ranges from '#233a58', '#e54753', '#FFD859', '#ff8f32', to '#1771b2'.
+- Interaction: No interaction is specified.","This is a line chart that uses data from an online CSV file. The chart plots 'Period' on the x-axis and 'Number employed (thousands)' on the y-axis, with different 'Age Groups' represented by lines of different colors. The chart does not involve any data transformation or user interaction."
+"Step 1. Composite Views:
+- True/False: True
+- Type: Layered
+- Number of plots: 2
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a CSV file containing information about confirmed COVID-19 cases in South Western Sydney.
+- Field (Value): The fields include 'lhd_2010_name', 'lga_name19' (LGA), 'confirmed_cases_count' (Daily Cases by SWS LGA, Cases), and 'notification_date' (Date).
+- Transform: The data is filtered to include only records where 'lhd_2010_name' equals 'South Western Sydney' and 'lga_name19' does not equal 'Penrith'. A cumulative count of confirmed cases is also calculated.
+- Mark: The marks used are bars (for daily cases) and lines (for cumulative cases).
+- Chart-Type: This is a layered bar and line chart.
+- Encoding: The x-axis represents the date of notification, the y-axis represents the number of cases (either daily or cumulative), and the color represents the LGA. 
+- Style: The legend is oriented at the top with 4 columns.
+- Interaction: The chart includes a tooltip and allows for interval selection on the x-axis (date).
+
+Step 3. Level 1 NL Description:
+This layered bar and line chart visualizes the daily and cumulative COVID-19 cases in South Western Sydney by LGA, excluding Penrith. The x-axis represents the date of notification, while the y-axis represents the number of cases. Each LGA is represented by a different color. The chart includes a tooltip for additional information and allows for interval selection on the x-axis.","- True/False: True
+- Type: Layered
+- Number of plots: 2","- Data: The data is sourced from a CSV file containing information about confirmed COVID-19 cases in South Western Sydney.
+- Field (Value): The fields include 'lhd_2010_name', 'lga_name19' (LGA), 'confirmed_cases_count' (Daily Cases by SWS LGA, Cases), and 'notification_date' (Date).
+- Transform: The data is filtered to include only records where 'lhd_2010_name' equals 'South Western Sydney' and 'lga_name19' does not equal 'Penrith'. A cumulative count of confirmed cases is also calculated.
+- Mark: The marks used are bars (for daily cases) and lines (for cumulative cases).
+- Chart-Type: This is a layered bar and line chart.
+- Encoding: The x-axis represents the date of notification, the y-axis represents the number of cases (either daily or cumulative), and the color represents the LGA. 
+- Style: The legend is oriented at the top with 4 columns.
+- Interaction: The chart includes a tooltip and allows for interval selection on the x-axis (date).","This layered bar and line chart visualizes the daily and cumulative COVID-19 cases in South Western Sydney by LGA, excluding Penrith. The x-axis represents the date of notification, while the y-axis represents the number of cases. Each LGA is represented by a different color. The chart includes a tooltip for additional information and allows for interval selection on the x-axis."
+"Step 1. Composite Views:
+- True/False: True
+- (If True) Type: Layered
+- Number of plots: 2
+
+Step 2. Chart Semantics:
+- Data: The data is sourced from a JSON file hosted on GitHub. It contains information about different agents and their performance in the Walker2d-v3 environment.
+- Field (Value): The fields include 'Agent' (nominal type with values 'PPO', 'TD3', 'REINFORCE', 'SAC', 'TRPO'), 'env_step' (quantitative type), and 'rew' (quantitative type).
+- Transform: The data is transformed to calculate the standard deviation of the reward and filter the environment steps based on a range parameter.
+- Mark: The marks used are 'line' and 'area'.
+- Chart-Type: Line chart
+- Encoding: The 'Agent' field is encoded with color, 'env_step' is encoded with the x-axis, and 'rew' is encoded with the y-axis. The standard deviation of the reward is encoded with the y and y2 axes in the area mark.
+- Style: The area mark has an opacity of 0.3.
+- Interaction (e.g., tooltip): The tooltip displays the environment step, agent, and return.
+
+Step 3. Level 1 NL Description:
+This layered line chart visualizes the performance of different agents ('PPO', 'TD3', 'REINFORCE', 'SAC', 'TRPO') in the Walker2d-v3 environment. The x-axis represents the environment steps, and the y-axis represents the reward. The standard deviation of the reward is represented as an area around the line, providing a sense of the variability in the reward. The chart allows interaction through a tooltip that displays the environment step, agent, and return. The data is filtered based on a range parameter for the environment steps.","- True/False: True
+- (If True) Type: Layered
+- Number of plots: 2","- Data: The data is sourced from a JSON file hosted on GitHub. It contains information about different agents and their performance in the Walker2d-v3 environment.
+- Field (Value): The fields include 'Agent' (nominal type with values 'PPO', 'TD3', 'REINFORCE', 'SAC', 'TRPO'), 'env_step' (quantitative type), and 'rew' (quantitative type).
+- Transform: The data is transformed to calculate the standard deviation of the reward and filter the environment steps based on a range parameter.
+- Mark: The marks used are 'line' and 'area'.
+- Chart-Type: Line chart
+- Encoding: The 'Agent' field is encoded with color, 'env_step' is encoded with the x-axis, and 'rew' is encoded with the y-axis. The standard deviation of the reward is encoded with the y and y2 axes in the area mark.
+- Style: The area mark has an opacity of 0.3.
+- Interaction (e.g., tooltip): The tooltip displays the environment step, agent, and return.","This layered line chart visualizes the performance of different agents ('PPO', 'TD3', 'REINFORCE', 'SAC', 'TRPO') in the Walker2d-v3 environment. The x-axis represents the environment steps, and the y-axis represents the reward. The standard deviation of the reward is represented as an area around the line, providing a sense of the variability in the reward. The chart allows interaction through a tooltip that displays the environment step, agent, and return. The data is filtered based on a range parameter for the environment steps."
