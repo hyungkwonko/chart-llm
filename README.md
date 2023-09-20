@@ -56,10 +56,12 @@ python -m pipeline_sample.task4_all
 You can use the following bibtex to cite our work:
 
 ```bibtex
-@inproceedings{,
-  title={},
-  author={},
-  pages={},
-  year={}
+@misc{ko2023natural,
+  title={Natural Language Dataset Generation Framework for Visualizations Powered by Large Language Models}, 
+  author={Hyung-Kwon Ko and Hyeon Jeon and Gwanmo Park and Dae Hyun Kim and Nam Wook Kim and Juho Kim and Jinwook Seo},
+  year={2023},
+  eprint={2309.10245},
+  archivePrefix={arXiv},
+  primaryClass={cs.HC}
 }
 ```
