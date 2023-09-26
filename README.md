@@ -25,7 +25,7 @@ print(f"len(json_data): {len(json_data)}")
 ```
 
 
-## Examples NL Dataset Generation
+## Example NL Dataset Generation
 Please prepare [Open-AI API KEY](https://openai.com/blog/openai-api) and locate the `.env` file in the root:
 ```
 OPENAI_API_KEY=your-openai-api-key
