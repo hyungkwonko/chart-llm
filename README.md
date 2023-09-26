@@ -13,6 +13,17 @@ We introduce an LLM framework for generating various NL datasets from Vega-Lite 
 
 We also present a new collection of [1,981 Vega-Lite specifications](https://github.com/hyungkwonko/chart-llm/tree/main/docs/data/chart), which is used to demonstrate the generalizability and viability of our NL generation framework. This collection is the largest set of human-generated charts obtained from GitHub to date. It covers varying levels of complexity from a simple line chart without any interaction (i.e., simple) to a chart with four plots where data points are linked with selection interactions (i.e., extra complex). As we focus on collecting complex charts, more than 86% of them are in complex and extra complex levels. Compared to the benchmarks, our dataset shows the highest average pairwise edit distance between specifications, which proves that the charts are highly diverse from one another. Moreover, it contains the largest number of charts with composite views, interactions (e.g., tooltips, panning & zooming, and linking), and diverse chart types (e.g., map, grid & matrix, diagram, etc.). Also refer to [our website](https://hyungkwonko.info/chart-llm/explorer.html) to see the charts. The metdata for charts including the licenses for each chart is presented [here](https://docs.google.com/spreadsheets/d/1zszDR2Rtf64v2RSUi7PpuWymhVV-4uQOmYJZqVxxDqc/edit?usp=sharing).
 
+### Loading the dataset via Huggingface
+Please refer to this code:
+```python
+import json
+from datasets import load_dataset
+
+dataset = load_dataset("hyungkwonko/chart-llm", data_files="data.txt")
+json_data = [json.loads(data) for data in dataset["train"]["text"]]
+print(f"len(json_data): {len(json_data)}")
+```
+
 
 ## Examples NL Dataset Generation
 Please prepare [Open-AI API KEY](https://openai.com/blog/openai-api) and locate the `.env` file in the root:
