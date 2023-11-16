@@ -28,9 +28,9 @@ DATA_TYPE = "task4"  # ["task4", "task4_two"]
 TASK_TYPE = 2  # [2, 3]
 
 D_LOC = {
-    1: os.path.join("pipeline", "result", "task1.csv"),
-    2: os.path.join("pipeline", "result", "task2.csv"),
-    3: os.path.join("pipeline", "result", "task3.csv"),
+    1: os.path.join("framework", "result", "task1.csv"),
+    2: os.path.join("framework", "result", "task2.csv"),
+    3: os.path.join("framework", "result", "task3.csv"),
 }
 
 COLS = {

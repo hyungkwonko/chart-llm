@@ -30,7 +30,7 @@ MODELS = ["gpt-3.5-turbo-0613", "gpt-4-0613", "gpt-4-32k-0613"]
 ENC = tiktoken.encoding_for_model("gpt-4")
 
 
-RESULT_FOLDER = os.path.join("pipeline", "result")
+RESULT_FOLDER = os.path.join("framework", "result")
 os.makedirs(RESULT_FOLDER, exist_ok=True)
 
 data_df = {
@@ -119,6 +119,6 @@ if __name__ == "__main__":
 
     df = pd.DataFrame(data_df)
     df.to_csv(
-        os.path.join("pipeline", "result", f"task1_L1_{datetime.now()}.csv"),
+        os.path.join("framework", "result", f"task1_L1_{datetime.now()}.csv"),
         index=False,
     )

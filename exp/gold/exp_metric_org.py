@@ -19,8 +19,8 @@ N = 5
 DATA_TYPE = "task2_original"  # [""task2_original", "task3_original"]
 
 D_LOC = os.path.join("exp", "gold", "result", "gold.csv")
-D2_LOC = os.path.join("pipeline", "result", f"task2.csv")
-D3_LOC = os.path.join("pipeline", "result", f"task3.csv")
+D2_LOC = os.path.join("framework", "result", f"task2.csv")
+D3_LOC = os.path.join("framework", "result", f"task3.csv")
 
 
 metrics = {

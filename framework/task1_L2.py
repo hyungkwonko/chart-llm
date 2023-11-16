@@ -161,6 +161,6 @@ if __name__ == "__main__":
 
     df = pd.DataFrame(data_df)
     df.to_csv(
-        os.path.join("pipeline", "result", f"task1_L2_{datetime.now()}.csv"),
+        os.path.join("framework", "result", f"task1_L2_{datetime.now()}.csv"),
         index=False,
     )

@@ -109,6 +109,6 @@ if __name__ == "__main__":
 
     df = pd.DataFrame(data)
     df.to_csv(
-        os.path.join("pipeline", "result", f"task4_{datetime.now()}.csv"),
+        os.path.join("framework", "result", f"task4_{datetime.now()}.csv"),
         index=False,
     )
