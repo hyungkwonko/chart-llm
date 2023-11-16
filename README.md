@@ -1,5 +1,5 @@
 <p align="center">
-  <h2 align="center">NL generation pipeline using Vega-Lite specifications and LLMs</h2>
+  <h2 align="center">NL generation framework using Vega-Lite specifications and LLMs</h2>
 </p>
 
 ![img](https://github.com/hyungkwonko/chart-llm/blob/main/docs/static/img/fig3.png?raw=true)
@@ -34,16 +34,16 @@ OPENAI_API_KEY=your-openai-api-key
 To run the example codes, refer to below:
 ```python
 # L1 Caption Generation (Caption)
-python -m pipeline_sample.task1_L1
+python -m framework_sample.task1_L1
 
 # L2 Caption Generation (Caption)
-python -m pipeline_sample.task1_L2
+python -m framework_sample.task1_L2
 
 # Utterance (NL to Chart Generation)
-python -m pipeline_sample.task2
+python -m framework_sample.task2
 
 # Question (Chart Question Answering)
-python -m pipeline_sample.task3
+python -m framework_sample.task3
 ```
 
 
@@ -56,10 +56,10 @@ Our paraphrasing technique is inspired by a linear interpolation in the latent s
 ## Examples NL Dataset Paraphrasing
 ```python
 # Paraphrasing with Random one or two Axis
-python -m pipeline_sample.task4_1
+python -m framework_sample.task4_1
 
 # Paraphrasing with two Axex and print them all (5*5=25)
-python -m pipeline_sample.task4_all
+python -m framework_sample.task4_all
 ```
 
 ## Citation
