@@ -15,7 +15,7 @@ import numpy as np
 import pandas as pd
 
 from dotenv import load_dotenv
-from pipeline.utils import get_nl, AXES
+from framework.utils import get_nl, AXES
 from langchain.chat_models import ChatOpenAI
 
 np.random.seed(0)

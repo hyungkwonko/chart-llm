@@ -2,14 +2,14 @@ import os
 import json
 from dotenv import load_dotenv
 from langchain.chat_models import ChatOpenAI
-from pipeline.utils import get_nl
+from framework.utils import get_nl
 
 load_dotenv(".env")
 
 MODELS = ["gpt-3.5-turbo-0613", "gpt-4-0613", "gpt-4-32k-0613"]
 
-filename = os.path.join("pipeline_sample", "sample.vl.json")
-dataname = os.path.join("pipeline_sample", "superstore.csv")
+filename = os.path.join("framework_sample", "sample.vl.json")
+dataname = os.path.join("framework_sample", "superstore.csv")
 
 
 def get_prompt_question(vl):

@@ -8,7 +8,7 @@ import pandas as pd
 from datetime import datetime
 from dotenv import load_dotenv
 
-from pipeline.utils import get_nl, AXES
+from framework.utils import get_nl, AXES
 from langchain.chat_models import ChatOpenAI
 
 

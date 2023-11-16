@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 
 from openai.error import RateLimitError, InvalidRequestError
 from langchain.chat_models import ChatOpenAI
-from pipeline.utils import get_ftt_str, get_nl, get_nl_all, get_instruction
+from framework.utils import get_ftt_str, get_nl, get_nl_all, get_instruction
 
 
 load_dotenv(".env")

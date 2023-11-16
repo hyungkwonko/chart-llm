@@ -3,7 +3,7 @@ import json
 import pandas as pd
 from dotenv import load_dotenv
 from langchain.chat_models import ChatOpenAI
-from pipeline.utils import get_ftt_str, get_nl
+from framework.utils import get_ftt_str, get_nl
 
 
 load_dotenv(".env")
@@ -11,8 +11,8 @@ load_dotenv(".env")
 NUM_VALUES = 5
 
 MODELS = ["gpt-3.5-turbo-0613", "gpt-4-0613", "gpt-4-32k-0613"]
-filename = os.path.join("pipeline_sample", "sample.vl.json")
-dataname = os.path.join("pipeline_sample", "superstore.csv")
+filename = os.path.join("framework_sample", "sample.vl.json")
+dataname = os.path.join("framework_sample", "superstore.csv")
 
 
 def get_prompt_L1(vl, ftt_str):

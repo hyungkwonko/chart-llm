@@ -1,6 +1,16 @@
+"""
+Task 4: Paraphrasing
+"""
+
+import os
 import random
+import pandas as pd
+
 from dotenv import load_dotenv
-from pipeline.utils import get_nl, AXES
+from datetime import datetime
+
+from framework.utils import get_nl, AXES
+
 from langchain.chat_models import ChatOpenAI
 
 
@@ -61,25 +71,44 @@ load_dotenv(".env")
 
 MODELS = ["gpt-3.5-turbo-0613", "gpt-4-0613", "gpt-4-32k-0613"]
 
+SAMPLE_SENTENCES = [
+    "Create a pie chart with 'Regime' as color and 'value' as the angle.",
+]
+# SAMPLE_SENTENCES = pd.read_csv(
+#     os.path.join("docs", "data", "baseline", "d2_utterance.csv")
+# )
+
+
+paraphrases, sentences, axes, values = [], [], [], []
 
 if __name__ == "__main__":
-    print("provide input: ")
-    sentence = input()
+    for sentence in SAMPLE_SENTENCES:
+        output, ax, value = run_agent(sentence, AXES, model=MODELS[1])
 
-    if sentence == "":
-        sentence = (
-            "Create a bar chart showing the sum of profit from different regions."
-        )
-        print(f"proceeding with default sentence: {sentence}")
+        if "Paraphrase:" in output:
+            paraphrase = get_nl(output, pattern=r"Paraphrase:(.+)")
+        else:
+            paraphrase = output.replace("Paraphrase: ", "").strip()
 
-    output, ax, value = run_agent(sentence, AXES, model=MODELS[1])
+        paraphrases.append(paraphrase)
+        axes.append([sub_list[:-1] for sub_list in ax])
+        values.append(value)
+        sentences.append(sentence)
 
-    if "Paraphrase:" in output:
-        paraphrase = get_nl(output, pattern=r"Paraphrase:(.+)")
-    else:
-        paraphrase = output.replace("Paraphrase: ", "").strip()
+    data = {
+        "originals": sentences,
+        "paraphrases": paraphrases,
+        "axes": axes,
+        "values": values,
+    }
 
-    print(f"original: {sentence}")
-    print(f"paraphrase: {paraphrase}")
-    print(f"axes: {[sub_list[:-1] for sub_list in ax]}")
-    print(f"value: {value}")
+    print(f"originals: {sentences}")
+    print(f"paraphrases: {paraphrases}")
+    print(f"axes: {axes}")
+    print(f"values: {values}")
+
+    df = pd.DataFrame(data)
+    df.to_csv(
+        os.path.join("pipeline", "result", f"task4_{datetime.now()}.csv"),
+        index=False,
+    )

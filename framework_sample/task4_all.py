@@ -2,7 +2,7 @@ import random
 import numpy as np
 
 from dotenv import load_dotenv
-from pipeline.utils import AXES
+from framework.utils import AXES
 from langchain.chat_models import ChatOpenAI
 
 np.random.seed(0)
