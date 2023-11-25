@@ -55,11 +55,14 @@ Our paraphrasing technique is inspired by a linear interpolation in the latent s
 
 ## Examples NL Dataset Paraphrasing
 ```python
-# Paraphrasing with Random one or two Axis
+# Paraphrasing with Random one/two Axes
 python -m framework_sample.task4_1
 
-# Paraphrasing with two Axex and print them all (5*5=25)
-python -m framework_sample.task4_all
+# Paraphrasing with one Axis and print them all (5)
+python -m framework_sample.task4_all1
+
+# Paraphrasing with two Axes and print them all (5*5=25)
+python -m framework_sample.task4_all2
 ```
 
 ## Citation
