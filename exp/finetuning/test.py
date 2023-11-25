@@ -1,3 +1,4 @@
+import os
 import time
 import json
 import openai
@@ -8,6 +9,7 @@ load_dotenv(".env")
 
 NAMES = ["bm", "bmllmp", "bmllmpllmp2"]
 
+os.makedirs("exp/finetuning/result", exist_ok=True)
 
 for i, name in enumerate(NAMES):
     with open(f"exp/finetuning/data/model_{name}.txt", "r") as file:
