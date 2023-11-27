@@ -72,3 +72,14 @@ if __name__ == "__main__":
     combined2_df.to_json(
         "exp/finetuning/data/bmllmpllmp2.jsonl", orient="records", lines=True
     )
+
+    half_len_file1 = len(file1_df) // 2
+    half_len_file2 = len(file1_df) - half_len_file1
+
+    combined_half_df = pd.concat(
+        [file1_df.iloc[:half_len_file1], file2_df.iloc[:half_len_file2]]
+    )
+
+    combined_half_df.to_json(
+        "exp/finetuning/data/half.jsonl", orient="records", lines=True
+    )

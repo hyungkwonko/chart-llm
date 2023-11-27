@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv(".env")
 
 MODELS = ["babbage-002", "davinci-002", "gpt-3.5-turbo-0613"]
-NAMES = ["bm", "llmp", "llmp2", "bmllmp", "bmllmpllmp2"]
+NAMES = ["bm", "bmllmp", "bmllmpllmp2", "llmp", "llmp2", "half"]
 
 
 if __name__ == "__main__":

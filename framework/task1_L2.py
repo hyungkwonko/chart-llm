@@ -104,7 +104,7 @@ Information: {info}
 
 {ftt_str}
 
-Generate a concise level 2 natural language description of a visualization, with 1 or 2 sentences for each level.
+Generate a concise level 2 natural language description of a visualization, with 1 or 2 sentences.
 The level 2 description should contain statistical and relational properties of the visualization (e.g., descriptive statistics, extrema, outliers, correlations, point-wise comparisons).
 
 ##

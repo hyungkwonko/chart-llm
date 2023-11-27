@@ -1,0 +1,52 @@
+// https://codepen.io/migli/pen/QaGNVp
+
+.placeholder-text::placeholder {
+  font-size: 13px;
+}
+
+.bold-text {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.italic-text {
+  font-size: 12px;
+  font-style: italic;
+  text-decoration: line-through;
+  margin: 10px 0;
+}
+
+.explanation-text {
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.explanation-text2 {
+  font-size: 10px;
+  color: grey;
+}
+
+.header-text {
+  font-size: 13px;
+  color: #C0C0C0;
+}
+
+.circle-button {
+  width: 11px !important;
+  height: 11px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+}
+
+.circle-button2 {
+  font-size: 25;
+  width: 25px !important;
+  height: 25px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+}

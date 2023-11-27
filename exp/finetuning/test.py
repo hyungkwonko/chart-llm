@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv(".env")
 
-NAMES = ["bm", "bmllmp", "bmllmpllmp2"]
+NAMES = ["bm", "bmllmp", "bmllmpllmp2", "half"]
 
 os.makedirs("exp/finetuning/result", exist_ok=True)
 
@@ -39,7 +39,7 @@ for i, name in enumerate(NAMES):
                     "Correct": correct,
                 }
                 outputs.append(output)
-                print(output)
+                # print(output)
 
                 time.sleep(0.7)
 
