@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": "container",
+  "title": "Stock price of China Mobile Limited 2012-2017",
+  "data": {
+    "url": "https://raw.githubusercontent.com/hyungkwonko/chart-llm/main/app/server/data/tech/0.csv"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "title": "Date"
+      }
+    },
+    "y": {
+      "field": "price",
+      "type": "quantitative",
+      "axis": {
+        "title": "Price"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "date",
+        "type": "temporal",
+        "title": "Date"
+      },
+      {
+        "field": "price",
+        "type": "quantitative",
+        "title": "Price"
+      }
+    ]
+  }
+}
