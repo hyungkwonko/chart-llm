@@ -3,6 +3,6 @@ import textSlice from './textSlice'
 
 export default configureStore({
   reducer: {
-    textSlice: textSlice,
+    text: textSlice,
   },
 })

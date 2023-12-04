@@ -57,7 +57,7 @@ Step 4. Generate a lookup question using this value, without including any visua
 Step 5. What visual attributes are required to paraphrase this question?
 Step 6. Paraphrase the generated question using the chart's visual attributes.
 Step 7. What are the mathematical operations (e.g., max, min, sum, difference, and average) to reach the conclusion in Step 2?
-Step 8. Generate a compositional question using this value, without including any visual attributes such as color, length, size, or position.
+Step 8. Generate a compositional question using these operations, without including any visual attributes such as color, length, size, or position.
 Step 9. What visual attributes are required to paraphrase this question?
 Step 10. Paraphrase the generated question using the chart's visual attributes.
 Step 11. Generate an open-ended question to reach the conclusion in Step 2.
