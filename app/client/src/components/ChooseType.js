@@ -11,6 +11,8 @@ function ChooseType({ datasetTypes }) {
   const selectedTypeId = useSelector((state) => state.text.selectedTypeId);
   const selectedIndices = useSelector((state) => state.text.selectedIndices);
 
+  const pageType = useSelector(state => state.text.pageType);
+
   // Task 1-1, 2
   const selectedSemantics = useSelector(state => state.text.selectedSemantics);
 
@@ -19,6 +21,7 @@ function ChooseType({ datasetTypes }) {
 
   // Task 2
   const utteranceType = useSelector(state => state.text.utteranceType);
+  const consider = useSelector(state => state.text.consider);
 
   // Task 3
   const questionType = useSelector(state => state.text.questionType);
@@ -56,10 +59,12 @@ function ChooseType({ datasetTypes }) {
     dispatch(setLoading(true));
 
     const data = {
+      pageType,
       selectedTypeId,
       selectedIndices,
       selectedSemantics,
       feature,
+      consider,
       utteranceType,
       questionType,
       visualizationType,
@@ -70,7 +75,8 @@ function ChooseType({ datasetTypes }) {
     };
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/generate_nl`, {
+      // const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/generate_nl`, {
+      const response = await fetch('/generate_nl', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -126,7 +132,7 @@ function ChooseType({ datasetTypes }) {
             style={{
               fontSize: "14px",
               cursor: 'pointer',
-              backgroundColor: chartIndex === index ? '#f8f9fa' : 'transparent',
+              backgroundColor: chartIndex === index ? 'lightgrey' : 'transparent',
               border: '0px',
               marginRight: '10px'
             }}
@@ -160,7 +166,6 @@ function ChooseType({ datasetTypes }) {
           checked={selectedIndices.length === 10}
           onChange={handleSelectAllChange}
         />
-
       </div>
 
       <div className="d-flex align-items-center gap-2 mt-2">
@@ -170,7 +175,7 @@ function ChooseType({ datasetTypes }) {
           className='w-100'
           disabled={
             selectedIndices.length === 0 ||
-            (['l1', 'utterance'].includes(selectedTypeId) && !Object.values(selectedSemantics).some(value => value)) ||
+            (['l1'].includes(selectedTypeId) && !Object.values(selectedSemantics).some(value => value)) ||
             (['l2'].includes(selectedTypeId) && feature === '') ||
             (['question'].includes(selectedTypeId) && higherLevelDecision === '') ||
             isLoading

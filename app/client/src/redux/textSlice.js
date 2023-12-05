@@ -5,13 +5,15 @@ export const textSlice = createSlice({
   name: 'text',
   initialState: {
     value: '',
-    selectedTypeId: 'l1',
+    pageType: 'c0',
+    selectedTypeId: 'utterance',
     chartIndex: 0,
     selectedIndices: [],
     selectedSemantics: {},
     nl: {},
     isLoading: false,
     feature: '',
+    consider: '',
     utteranceType: 'command',
     questionType: 'lookup',
     visualizationType: 'visual',
@@ -23,6 +25,9 @@ export const textSlice = createSlice({
   reducers: {
     updateText: (state, action) => {
       state.value = action.payload;
+    },
+    updatePageType: (state, action) => {
+      state.pageType = action.payload;
     },
     updateSelectedTypeId: (state, action) => {
       state.selectedTypeId = action.payload;
@@ -52,6 +57,9 @@ export const textSlice = createSlice({
     setLoading: (state, action) => {
       state.isLoading = action.payload;
     },
+    updateConsider: (state, action) => {
+      state.consider = action.payload;
+    },
     updateFeature: (state, action) => {
       state.feature = action.payload;
     },
@@ -79,8 +87,8 @@ export const textSlice = createSlice({
   },
 });
 
-export const { updateText, updateSelectedTypeId, updateChartIndex, updateIndex,
-  updateSelectedSemantics, updateNL, setLoading, updateUtteranceType, updateFeature,
+export const { updateText, updatePageType, updateSelectedTypeId, updateChartIndex, updateIndex,
+  updateSelectedSemantics, updateNL, setLoading, updateUtteranceType, updateFeature, updateConsider,
   updateQuestionType, updateVisualizationType, updateHigherLevelDecision,
   updateParaphrase, updateSelectedAxis, updateAxisScore } = textSlice.actions;
 

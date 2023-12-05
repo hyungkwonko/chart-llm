@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/nlvcorpus/nlvcorpus.github.io/main/datasets/superstore.csv"
+  },
+  "width": "container",
+  "mark": {
+    "type": "bar",
+    "tooltip": null
+  },
+  "transform": [],
+  "encoding": {
+    "x": {
+      "field": "Region",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Profit",
+      "type": "quantitative",
+      "axis": {
+        "title": "SUM (Profit)"
+      }
+    },
+    "color": {
+      "field": "Ship Status",
+      "type": "nominal",
+      "legend": {
+        "title": "Ship Status"
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Card, Form, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import {
-  updateSelectedSemantics, updateUtteranceType, updateFeature,
+  updateSelectedSemantics, updateUtteranceType, updateFeature, updateConsider,
   updateQuestionType, updateVisualizationType, updateHigherLevelDecision,
   updateSelectedAxis, updateAxisScore, updateParaphrase
 } from '../redux/textSlice';
@@ -20,6 +20,7 @@ function NLSpecificTool() {
   const [newSemantic, setNewSemantic] = useState('');
 
   const feature = useSelector(state => state.text.feature);
+  const consider = useSelector(state => state.text.consider);
   const utteranceType = useSelector(state => state.text.utteranceType);
 
   const questionType = useSelector(state => state.text.questionType);
@@ -65,6 +66,10 @@ function NLSpecificTool() {
     dispatch(updateFeature(e.target.value));
   };
 
+  const handleConsider = (e) => {
+    dispatch(updateConsider(e.target.value));
+  };
+
   const handleUtteranceTypeChange = (e) => {
     dispatch(updateUtteranceType(e.target.value));
   };
@@ -95,41 +100,8 @@ function NLSpecificTool() {
 
   return (
     <>
-      {(selectedTypeId === 'l1' || selectedTypeId === 'utterance') && (
-        <Card>
-          <Card.Body>
-            <Card.Title>Chart Semantics</Card.Title>
-            {semantics.map(semantic => (
-              <div key={semantic} className="d-flex justify-content-between align-items-center my-2">
-                <Form.Check
-                  type="checkbox"
-                  id={semantic}
-                  label={semantic}
-                  checked={!!selectedSemantics[semantic]}
-                  onChange={() => handleCheckboxChange(semantic)}
-                />
-                {!initialSemantics.includes(semantic) && (
-                  <Button variant="danger" size="sm" onClick={() => handleRemoveSemantic(semantic)}>Remove</Button>
-                )}
-              </div>
-            ))}
-            <div className="d-flex justify-content-between">
-              <Form.Control
-                type="text"
-                placeholder="Add semantic"
-                value={newSemantic}
-                onChange={(e) => setNewSemantic(e.target.value)}
-                className="me-2"
-                style={{ flex: 1 }}
-              />
-              <Button onClick={handleAddSemantic}>Add</Button>
-            </div>
-          </Card.Body>
-        </Card>
-      )}
-
       {selectedTypeId === 'l2' && (
-        <Card>
+        <Card style={{ border: '0px' }}>
           <Card.Body>
             <Card.Title>What is the most prominent and meaningful feature in this chart to analyze?</Card.Title>
             <Form.Control
@@ -144,7 +116,7 @@ function NLSpecificTool() {
       )}
 
       {selectedTypeId === 'utterance' && (
-        <Card className='mt-3'>
+        <Card style={{ border: '0px' }}>
           <Card.Body>
             <Card.Title>Utterance Type</Card.Title>
             <Form.Group>
@@ -165,9 +137,58 @@ function NLSpecificTool() {
         </Card>
       )}
 
+      {(selectedTypeId === 'l1' || selectedTypeId === 'utterance') && (
+        <Card style={{ border: '0px' }}>
+          <Card.Body>
+            <Card.Title>Chart Semantics</Card.Title>
+            {semantics.map(semantic => (
+              <div key={semantic} className="d-flex justify-content-between align-items-center my-2">
+                <Form.Check
+                  type="checkbox"
+                  id={semantic}
+                  label={semantic}
+                  checked={!!selectedSemantics[semantic]}
+                  onChange={() => handleCheckboxChange(semantic)}
+                />
+                {!initialSemantics.includes(semantic) && (
+                  <Button variant="danger" size="sm" onClick={() => handleRemoveSemantic(semantic)}>Remove</Button>
+                )}
+              </div>
+            ))}
+            <div className="d-flex justify-content-between">
+              <Form.Control
+                type="text"
+                placeholder="+ Add additional semantics"
+                value={newSemantic}
+                onChange={(e) => setNewSemantic(e.target.value)}
+                className="me-2"
+                style={{ flex: 1 }}
+              />
+              <Button onClick={handleAddSemantic}>Add</Button>
+            </div>
+          </Card.Body>
+        </Card>
+      )}
+
+      {selectedTypeId === 'utterance' && (
+        <>
+          <Card style={{ border: '0px' }}>
+            <Card.Body>
+              <Card.Title>Please provide additional considerations</Card.Title>
+              <Form.Control
+                as="textarea"
+                placeholder="Write here..."
+                value={consider}
+                onChange={handleConsider}
+              />
+            </Card.Body>
+          </Card>
+        </>
+      )}
+
       {selectedTypeId === 'question' && (
         <>
-          <Card>
+          <Card style={{ border: '0px' }}>
             <Card.Body>
               <Card.Title>Choose Question Type</Card.Title>
               {['lookup', 'compositional', 'open-ended'].map(type => (
@@ -185,7 +206,7 @@ function NLSpecificTool() {
             </Card.Body>
           </Card>
           {(questionType === 'lookup' || questionType === 'compositional') && (
-            <Card className='mt-3'>
+            <Card style={{ border: '0px' }}>
               <Card.Body>
                 <Card.Title>Choose Visualization Type</Card.Title>
                 <Form.Check
@@ -209,7 +230,7 @@ function NLSpecificTool() {
               </Card.Body>
             </Card>
           )}
-          <Card className='mt-3'>
+          <Card style={{ border: '0px' }}>
             <Card.Body>
               <Card.Title>What higher-level decision can be made by analyzing this chart?</Card.Title>
               <Form.Control
@@ -225,7 +246,7 @@ function NLSpecificTool() {
       )}
 
       {(selectedTypeId === 'utterance' || selectedTypeId === 'question') && (
-        <Card className='mt-3'>
+        <Card style={{ border: '0px' }}>
           <Card.Body>
             <div className="d-flex justify-content-between align-items-center">
               <Card.Title>Paraphrase</Card.Title>

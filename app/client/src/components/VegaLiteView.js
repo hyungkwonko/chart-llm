@@ -9,7 +9,8 @@ function VegaLiteView() {
 
   useEffect(() => {
     const loadVegaLiteChart = () => {
-      fetch(`${process.env.REACT_APP_BACKEND_URL}/data/chart/${chartIndex}.vl.json`)
+      // fetch(`${process.env.REACT_APP_BACKEND_URL}/data/chart/${chartIndex}.vl.json`)
+      fetch(`/data/chart/${chartIndex}.vl.json`)
         .then(response => response.json())
         .then(spec => {
           vegaEmbed(vegaChartRef.current, spec)

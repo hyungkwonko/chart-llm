@@ -107,7 +107,7 @@ Step 3. Instructions:
     return prompt
 
 
-def get_prompt_utterance2(utteranceType, inst_first_concat):
+def get_prompt_utterance2(utteranceType, inst_first_concat, consider):
     if utteranceType == "command":
         prompt = f"""{inst_first_concat}
 
@@ -120,6 +120,7 @@ Step 3. Generate an utterance for each view using only the primary info. Please 
 - Write in a single sentence
 - Use only the primary info
 - Make it concise and simple
+- {consider}
 
 ##
 View #<Number>:
@@ -140,6 +141,7 @@ Step 3. Generate an utterance for each view using only the primary info. Please 
 - Write in a single sentence
 - Use only the primary info
 - Make it concise and simple
+- {consider}
 
 ##
 View #<Number>:
@@ -159,6 +161,7 @@ Step 3. Generate an utterance for each view using only the primary info. Please 
 - Write in a single sentence
 - Use only the primary info
 - Make it concise and simple
+- {consider}
 
 ##
 View #<Number>:
