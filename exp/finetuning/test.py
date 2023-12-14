@@ -7,7 +7,9 @@ from dotenv import load_dotenv
 
 load_dotenv(".env")
 
-NAMES = ["bm", "bmllmp", "bmllmpllmp2", "half"]
+# NAMES = ["bm", "bmllmp", "bmllmpllmp2", "half"]
+NAMES = ["llmp", "llmp2"]
+# NAMES = ["bm", "bmllmp", "bmllmpllmp2", "half", "llmp", "llmp2"]
 
 os.makedirs("exp/finetuning/result", exist_ok=True)
 
