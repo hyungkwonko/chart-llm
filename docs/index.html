@@ -214,6 +214,88 @@
         </div>
     </section>
 
+    <section class="section">
+        <div class="container is-max-desktop">
+            <p class="title is-4">Types of NL Datasets</p>
+
+            <div class="hero-body">
+                <img src="./static/img/sample.png" height="100%">
+                <h2 class="subtitle has-text-centered">
+                    <span class="dnerf">Example Vega-Lite chart</span>
+                </h2>
+            </div>
+
+            <p class="title is-5">L1 Caption</p>
+            <p class="title is-6">It contains elemental and encoded
+                properties of the visualization (i.e., the visual components that comprise a graphical representation's
+                design and construction).</p>
+            <p class="is-6" style="font-style: italic;">e.g., This is a bar chart that uses data from a
+                superstore. The chart encodes the 'Region' field on the x-axis and the sum of 'Profit' on the y-axis.
+                The 'Ship Status' field is represented by different colors.</p>
+
+            <br>
+
+            <p class="title is-5">L2 Caption</p>
+            <p class="title is-6">It contains statistical and relational properties of the visualization.</p>
+            <p class="is-6" style="font-style: italic;">e.g., The visualization presents the total profit for each
+                region, with the West region having the highest profit of approximately 67860.56 and the South region
+                having the lowest profit of approximately 26551.72.</p>
+
+            <br>
+
+            <p class="title is-5">Utterance</p>
+            <p class="title is-6">An utterance is what a user would say to generate a given chart. There are three types
+                of utterances.</p>
+            <p class="is-6" style="font-style: italic;">e.g., Create a bar chart showing the sum of profit from
+                different regions.</p>
+
+            <br>
+
+            <p class="title is-5">Question</p>
+            <p class="title is-6">Questions are used to analyze charts and elicit high-level decision. There are
+                different types of questions.</p>
+            <p class="is-6" style="font-style: italic;">e.g., What is the Sum(profit) of Central region?</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <p class="title is-4">Sentence Paraphrasing Example (Formality score: <span
+                    id="formalityScoreDisplay">3</span>)</p>
+            <p class="title is-6">e.g., Create a bar chart showing the sum of profit from different regions.</p>
+            <p class="title is-6" style="font-style: italic;" id="paraphrasedSentence">Please create a bar chart
+                illustrating
+                the aggregate
+                profit from various geographical areas.</p>
+            <div>
+                <span style="font-style: italic;">Score 1: Colloquial</span>
+                <span style="font-style: italic; float: right;">Score 5: Standard</span>
+            </div>
+            <input style="width: 100%;" type="range" min="1" max="5" value="3" id="formalityScoreSlider"
+                class="form-range">
+        </div>
+    </section>
+
+    <script>
+        const sentences = {
+            1: "Can you put together a bar chart showing the aggregate profit from various geographical areas?",
+            2: "Could you create a bar chart that illustrates the aggregate profit from various geographical areas?",
+            3: "Please create a bar chart illustrating the aggregate profit from various geographical areas.",
+            4: "It is requested that you create a bar chart illustrating the aggregate profit from various geographical areas.",
+            5: "You are required to construct a bar chart illustrating the aggregate profit from various geographical areas."
+        };
+
+        const formalityScoreSlider = document.getElementById('formalityScoreSlider');
+        const formalityScoreDisplay = document.getElementById('formalityScoreDisplay');
+        const paraphrasedSentence = document.getElementById('paraphrasedSentence');
+
+        formalityScoreSlider.oninput = function () {
+            const score = this.value;
+            formalityScoreDisplay.textContent = score;
+            paraphrasedSentence.textContent = sentences[score];
+        };
+    </script>
+
     <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
             <h2 class="title">BibTeX</h2>
